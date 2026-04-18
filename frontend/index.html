@@ -1378,12 +1378,25 @@ mark{background:rgba(79,195,247,.3);color:var(--text,#e8ebf5);padding:0 2px;bord
 }
 .leaf-sup-note{font-size:10.5px;color:var(--dim);margin-bottom:10px}
 .leaf-sup-row{
-  display:flex;justify-content:space-between;padding:5px 0;font-size:11.5px;
+  display:grid;grid-template-columns:1fr auto 14px;gap:10px;
+  padding:6px 8px;font-size:11.5px;align-items:center;
   border-top:1px solid rgba(255,255,255,.03);
+  border-radius:4px;transition:background .1s;
 }
 .leaf-sup-row:first-of-type{border-top:0}
-.leaf-sup-name{color:var(--text)}
+.leaf-sup-clickable{cursor:pointer}
+.leaf-sup-clickable:hover{background:rgba(79,195,247,.08)}
+.leaf-sup-clickable:hover .leaf-sup-arrow{color:var(--accent);transform:translateX(2px)}
+.leaf-sup-name{color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .leaf-sup-amt{color:var(--accent);font-variant-numeric:tabular-nums}
+.leaf-sup-arrow{color:var(--dim);font-size:11px;transition:all .12s;text-align:center}
+.leaf-sup-more{
+  margin-top:10px;padding:8px 10px;text-align:center;
+  background:rgba(79,195,247,.05);border:1px dashed rgba(79,195,247,.2);
+  border-radius:5px;cursor:pointer;color:var(--accent);font-size:11px;
+  transition:background .1s;
+}
+.leaf-sup-more:hover{background:rgba(79,195,247,.1)}
 .leaf-footnote{
   font-size:10.5px;color:var(--dim);line-height:1.55;margin-top:14px;
   padding-top:12px;border-top:1px dashed rgba(255,255,255,.06);
@@ -12954,6 +12967,13 @@ function _cmplistRender(){
       }
     }
 
+    // Suppliers block — if this node carries _top_suppliers metadata, show
+    // it whether the node is a leaf or has children. Many nodes (e.g. GLA)
+    // have BOTH service-level children AND supplier-level enrichment.
+    if (node._top_suppliers && node._top_suppliers.suppliers?.length) {
+      h += _cmplistSuppliersBlock(node._top_suppliers, s.country);
+    }
+
     // List children with drill-in
     const children = node.children || [];
     if (children.length === 0) {
@@ -13039,6 +13059,52 @@ function _cmplistRender(){
 }
 
 function _cmpEsc(s){return String(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))}
+
+// Route a supplier-name click from Explore → Budget Recipients. Tries to
+// resolve the name against the suppliers index to get a CH number; falls
+// back to opening the tab with a search pre-fill.
+async function _cmpOpenSupplier(name){
+  // Ensure the suppliers index is loaded
+  if (!window._suppliersIndex) {
+    try {
+      const r = await fetch('/data/suppliers/_index.json');
+      if (r.ok) window._suppliersIndex = await r.json();
+    } catch(e) { console.warn('suppliers index fetch failed', e); }
+  }
+  const list = window._suppliersIndex || [];
+  const norm = s => String(s||'').toUpperCase()
+    .replace(/\bLIMITED\b|\bLTD\b|\bPLC\b|\.|,/g, '')
+    .replace(/\s+/g, ' ').trim();
+  const target = norm(name);
+  let hit = list.find(x => norm(x.display_name) === target)
+         || list.find(x => norm(x.official_name) === target)
+         || list.find(x => norm(x.display_name).startsWith(target))
+         || list.find(x => norm(x.official_name).startsWith(target))
+         || list.find(x => target && norm(x.display_name).includes(target))
+         || list.find(x => target && norm(x.official_name).includes(target));
+
+  if (hit && hit.company_number) {
+    try { history.replaceState({}, '', '/#suppliers/' + hit.company_number); } catch(e) {}
+    showTab('suppliers', null);
+    // The tab loader reads the hash and auto-selects
+    return;
+  }
+  // No match — just open the tab with the search seeded
+  try {
+    const input = document.getElementById('suppliers-search');
+    if (input) input.value = name;
+  } catch(e) {}
+  showTab('suppliers', null);
+  // Toast-style note: searched but not matched in our 402-supplier enriched cohort
+  setTimeout(() => {
+    const el = document.getElementById('suppliers-count');
+    if (el) el.insertAdjacentHTML('afterbegin',
+      `<div style="background:rgba(255,213,79,.08);border:1px solid rgba(255,213,79,.25);padding:8px 12px;border-radius:6px;margin-bottom:10px;font-size:11.5px;color:var(--yellow)">
+        💡 Searched for "${_cmpEsc(name)}" — not in the current 402-supplier enriched cohort.
+        Council-level spend registers list many suppliers we haven't onboarded yet.
+       </div>`);
+  }, 200);
+}
 
 // ── Composition stacked bar: shows how children split the parent ──
 // Reuses getGalaxyColor() for category-consistent hues between Galaxy and E&C.
@@ -13162,22 +13228,11 @@ function _cmplistLeafCard(node, s, breadcrumbNames){
     }
   }
 
-  // Suppliers if present on the leaf
-  const sup = node._top_suppliers;
-  let supHtml = '';
-  if (sup && sup.suppliers && sup.suppliers.length) {
-    const top3 = sup.suppliers.slice(0, 5);
-    supHtml = `<div class="leaf-suppliers">
-      <div class="leaf-section-title">Top suppliers paid from this line</div>
-      <div class="leaf-sup-note">${sup.suppliers.length} suppliers · ${_cmplistFmt(sup.spend_total, s.country)} total</div>
-      ${top3.map(sp => `
-        <div class="leaf-sup-row">
-          <span class="leaf-sup-name">${_cmpEsc(sp.name||sp.supplier||'?').slice(0, 48)}</span>
-          <span class="leaf-sup-amt">${_cmplistFmt(sp.amount||sp.value, s.country)}</span>
-        </div>
-      `).join('')}
-    </div>`;
-  }
+
+  // Suppliers block (shared helper — same renderer used when node is a non-leaf with _top_suppliers)
+  const supHtml = (node._top_suppliers && node._top_suppliers.suppliers?.length)
+    ? _cmplistSuppliersBlock(node._top_suppliers, s.country)
+    : '';
 
   return `<div class="leaf-card">
     <div class="leaf-hero">
@@ -13192,6 +13247,31 @@ function _cmplistLeafCard(node, s, breadcrumbNames){
       This is the finest breakdown available in our source data for this line.
       ${s.country === 'uk' ? 'Deeper detail (supplier-level) exists for local-authority spend only.' : ''}
     </div>
+  </div>`;
+}
+
+// Shared renderer — used both in leaf card AND when a non-leaf node carries
+// supplier metadata (e.g. Greater London Authority has children + suppliers).
+function _cmplistSuppliersBlock(sup, country){
+  if (!sup || !sup.suppliers || !sup.suppliers.length) return '';
+  const top5 = sup.suppliers.slice(0, 5);
+  return `<div class="leaf-suppliers">
+    <div class="leaf-section-title">Top suppliers paid from this node</div>
+    <div class="leaf-sup-note">${sup.suppliers.length} suppliers · ${_cmplistFmt(sup.spend_total, country)} total · click a row for full profile</div>
+    ${top5.map(sp => {
+      const name = sp.name || sp.supplier || '?';
+      return `<div class="leaf-sup-row leaf-sup-clickable" onclick="event.stopPropagation();_cmpOpenSupplier('${_cmpEsc(name).replace(/'/g, "\\'")}')"
+           title="Open ${_cmpEsc(name)} in Budget Recipients">
+        <span class="leaf-sup-name">${_cmpEsc(name).slice(0, 60)}</span>
+        <span class="leaf-sup-amt">${_cmplistFmt(sp.amount||sp.value, country)}</span>
+        <span class="leaf-sup-arrow">→</span>
+      </div>`;
+    }).join('')}
+    ${sup.suppliers.length > 5 ? `
+      <div class="leaf-sup-more" onclick="event.stopPropagation();showTab('suppliers', null)">
+        + ${sup.suppliers.length - 5} more · open Budget Recipients →
+      </div>
+    ` : ''}
   </div>`;
 }
 
