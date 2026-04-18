@@ -84,6 +84,11 @@
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
 <script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/d3-sankey@0.12"></script>
+<script src="/tax/uk_calc.js"></script>
+<script src="/tax/uk_vat.js"></script>
+<script src="/tax/uk_council_tax.js"></script>
+<script src="/tax/uk_trace.js"></script>
 <style>
 :root{--bg:#0a0a0f;--surface:#12121e;--surface2:#1a1a2c;--border:#282840;--text:#e0e0e8;--dim:#7a7a95;--accent:#4fc3f7;--accent2:#ff7043;--green:#66bb6a;--yellow:#ffd54f;--red:#ef5350}
 *{margin:0;padding:0;box-sizing:border-box}
@@ -1202,6 +1207,10 @@ mark{background:rgba(79,195,247,.3);color:var(--text,#e8ebf5);padding:0 2px;bord
   <div class="explore-toolbar-group" title="Timeline overlay">
     <button type="button" class="etool-btn" data-toggle="timeline" data-value="on" onclick="setExploreMode({timeline:'toggle'})">📈 Timeline</button>
   </div>
+  <div class="etool-sep"></div>
+  <div class="explore-toolbar-group" title="Trace YOUR taxes — UK only (beta)">
+    <button type="button" class="etool-btn etool-btn-taxpayer" data-toggle="taxpayer" onclick="showTab('taxpayer', null)">💰 Your Taxes <span class="etool-badge">UK · beta</span></button>
+  </div>
 </div>
 <style>
 .explore-subnav{
@@ -1283,6 +1292,137 @@ mark{background:rgba(79,195,247,.3);color:var(--text,#e8ebf5);padding:0 2px;bord
 .cmplist-sync-hint .hint-action{color:var(--text);cursor:pointer;text-decoration:underline}
 @media (max-width:900px){
   .cmplist-layout{grid-template-columns:1fr;grid-template-rows:1fr 1fr}
+}
+
+/* ── Taxpayer (Your Taxes) tab ── */
+.etool-btn-taxpayer{
+  background:linear-gradient(90deg,rgba(255,112,67,.14),rgba(79,195,247,.14));
+  border-color:rgba(255,112,67,.4);
+}
+.etool-btn-taxpayer.active{
+  background:linear-gradient(90deg,rgba(255,112,67,.28),rgba(79,195,247,.24));
+  border-color:var(--accent2);color:var(--text);
+}
+.etool-badge{
+  display:inline-block;margin-left:6px;padding:1px 5px;border-radius:3px;
+  background:rgba(255,112,67,.18);color:var(--accent2);font-size:9px;
+  font-weight:600;letter-spacing:.03em;text-transform:uppercase;
+}
+#tab-taxpayer.panel{padding:0;overflow:hidden}
+.taxpayer-layout{
+  display:grid;grid-template-columns:360px 1fr;gap:1px;
+  background:var(--border);height:calc(100vh - 120px);
+}
+.taxpayer-sidebar{
+  background:var(--surface);overflow-y:auto;padding:20px 18px;
+}
+.taxpayer-header h2{font-size:22px;font-weight:600;margin-bottom:4px}
+.taxpayer-header .taxpayer-lede{color:var(--dim);font-size:12px;line-height:1.5;margin-bottom:18px}
+.taxpayer-methodology{color:var(--accent);text-decoration:none;font-size:11px}
+.taxpayer-methodology:hover{text-decoration:underline}
+.taxpayer-input-group{margin-bottom:20px}
+.taxpayer-input-group > label{
+  display:flex;justify-content:space-between;align-items:baseline;margin-bottom:8px;
+}
+.tp-label{font-size:11px;color:var(--dim);text-transform:uppercase;letter-spacing:.04em;font-weight:500}
+.tp-value{font-size:18px;font-weight:600;color:var(--accent);font-variant-numeric:tabular-nums}
+.tp-sub{font-size:12px;color:var(--accent2);font-variant-numeric:tabular-nums}
+.taxpayer-input-group input[type="range"]{
+  width:100%;accent-color:var(--accent);margin:0;cursor:pointer;
+}
+.tp-range-labels{
+  display:flex;justify-content:space-between;font-size:10px;color:var(--dim);margin-top:4px;
+}
+.tp-segmented{display:flex;background:var(--surface2);border-radius:6px;padding:3px;gap:2px}
+.tp-seg{
+  flex:1;background:transparent;border:0;color:var(--dim);padding:6px 10px;
+  font-size:11px;font-family:inherit;cursor:pointer;border-radius:4px;transition:all .12s;
+}
+.tp-seg:hover{color:var(--text)}
+.tp-seg.active{background:var(--surface);color:var(--accent);font-weight:600}
+.taxpayer-input-group input[type="text"]{
+  width:100%;background:var(--surface2);border:1px solid var(--border);
+  color:var(--text);padding:8px 10px;font-family:inherit;font-size:13px;
+  border-radius:5px;outline:none;transition:border-color .12s;
+}
+.taxpayer-input-group input[type="text"]:focus{border-color:var(--accent)}
+.tp-dropdown{
+  max-height:200px;overflow-y:auto;background:var(--surface2);
+  border:1px solid var(--border);border-top:0;border-radius:0 0 5px 5px;
+  margin-top:-1px;display:none;
+}
+.tp-dropdown.active{display:block}
+.tp-dropdown-item{
+  padding:8px 10px;cursor:pointer;font-size:12px;
+  border-bottom:1px solid rgba(255,255,255,.03);
+}
+.tp-dropdown-item:hover,.tp-dropdown-item.selected{background:rgba(79,195,247,.1)}
+.tp-dropdown-item .tp-dd-amt{float:right;color:var(--accent);font-variant-numeric:tabular-nums;font-size:11px}
+.tp-bands{display:grid;grid-template-columns:repeat(8,1fr);gap:3px}
+.tp-band{
+  background:var(--surface2);border:1px solid var(--border);color:var(--dim);
+  padding:6px 0;font-family:inherit;font-size:11px;font-weight:600;cursor:pointer;
+  border-radius:4px;transition:all .12s;
+}
+.tp-band:hover{color:var(--text)}
+.tp-band.active{background:var(--accent);border-color:var(--accent);color:#0a0a0f}
+.tp-help{font-size:10px;color:var(--dim);margin-top:6px}
+.tp-help a{color:var(--accent);text-decoration:none}
+.tp-help a:hover{text-decoration:underline}
+.taxpayer-summary{
+  padding:14px;background:linear-gradient(180deg,rgba(79,195,247,.07),rgba(79,195,247,.02));
+  border:1px solid rgba(79,195,247,.2);border-radius:8px;margin-bottom:16px;
+}
+.tp-summary-headline{font-size:13px;color:var(--dim);margin-bottom:4px}
+.tp-summary-total{font-size:28px;font-weight:700;color:var(--text);font-variant-numeric:tabular-nums}
+.tp-summary-rate{font-size:13px;color:var(--accent2);margin-top:2px}
+.tp-summary-split{
+  display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px;
+  padding-top:12px;border-top:1px solid rgba(255,255,255,.06);font-size:11px;
+}
+.tp-summary-split .k{color:var(--dim);font-size:10px;text-transform:uppercase;letter-spacing:.04em}
+.tp-summary-split .v{color:var(--text);font-weight:600;font-variant-numeric:tabular-nums}
+.taxpayer-caveats{font-size:11px;color:var(--dim)}
+.taxpayer-caveats details{background:rgba(0,0,0,.2);border-radius:6px;padding:10px 14px}
+.taxpayer-caveats summary{cursor:pointer;color:var(--accent);font-weight:500;list-style:none;user-select:none}
+.taxpayer-caveats summary::before{content:"▸ ";font-size:10px}
+.taxpayer-caveats[open] summary::before,.taxpayer-caveats details[open] summary::before{content:"▾ "}
+.taxpayer-caveats ul{margin-top:10px;padding-left:18px;line-height:1.55}
+.taxpayer-caveats li{margin-bottom:6px}
+.taxpayer-caveats b{color:var(--text)}
+.tp-not-included{margin-top:10px;padding-top:10px;border-top:1px dashed rgba(255,255,255,.08);font-size:10.5px;line-height:1.6}
+.taxpayer-main{
+  background:rgba(13,18,30,.5);overflow-y:auto;padding:20px 24px;position:relative;
+}
+.tp-hero{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin-bottom:20px;
+}
+.tp-hero-card{
+  background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:12px 14px;
+}
+.tp-hero-k{font-size:10px;color:var(--dim);text-transform:uppercase;letter-spacing:.04em;margin-bottom:3px}
+.tp-hero-v{font-size:20px;font-weight:700;color:var(--text);font-variant-numeric:tabular-nums}
+.tp-hero-sub{font-size:11px;color:var(--accent);margin-top:2px}
+.tp-sankey-wrap{position:relative;min-height:560px;background:transparent}
+#tp-sankey{width:100%;height:560px;display:block}
+#tp-sankey .tp-node rect{stroke:var(--surface);stroke-width:1px;cursor:pointer}
+#tp-sankey .tp-node text{fill:var(--text);font-size:11px;font-family:inherit;pointer-events:none}
+#tp-sankey .tp-node .tp-subtext{fill:var(--dim);font-size:10px}
+#tp-sankey .tp-link{fill:none;mix-blend-mode:screen;transition:opacity .15s}
+#tp-sankey .tp-link:hover{opacity:1 !important}
+.tp-tooltip{
+  position:fixed;pointer-events:none;background:rgba(18,18,30,.97);
+  border:1px solid var(--accent);border-radius:6px;padding:8px 11px;
+  font-size:12px;color:var(--text);z-index:10000;max-width:280px;
+  box-shadow:0 4px 16px rgba(0,0,0,.5);
+}
+.tp-tooltip .tt-name{color:var(--accent);font-weight:600;margin-bottom:3px}
+.tp-tooltip .tt-val{font-size:15px;font-weight:700;font-variant-numeric:tabular-nums}
+.tp-tooltip .tt-ctx{font-size:10px;color:var(--dim);margin-top:3px}
+@media (max-width:900px){
+  .taxpayer-layout{grid-template-columns:1fr;grid-template-rows:auto 1fr;height:auto}
+  .taxpayer-sidebar{max-height:60vh}
+  #tp-sankey{height:480px}
 }
 </style>
 
@@ -1668,6 +1808,93 @@ mark{background:rgba(79,195,247,.3);color:var(--text,#e8ebf5);padding:0 2px;bord
   <div class="cmplist-layout">
     <div class="cmplist-col" id="cmplist-col-a"></div>
     <div class="cmplist-col" id="cmplist-col-b"></div>
+  </div>
+</div>
+
+<!-- TAXPAYER TAB (added 2026-04-18) — personal £-trace Sankey.
+     User inputs: salary, council, band. Frontend computes: IT+NI via uk_calc,
+     VAT via uk_vat (decile), Council Tax via uk_council_tax. Flow tracer
+     (uk_trace) builds a directed graph consumed by d3-sankey.
+     Data: data/uk/fiscal/* + data/uk/uk_budget_tree_2024.json. -->
+<div id="tab-taxpayer" class="panel" style="display:none">
+  <div class="taxpayer-layout">
+    <aside class="taxpayer-sidebar">
+      <div class="taxpayer-header">
+        <h2>Your Taxes</h2>
+        <p class="taxpayer-lede">Where every £ of your tax actually goes.
+          <a href="#" onclick="showAboutTax(); return false;" class="taxpayer-methodology">Methodology ↗</a>
+        </p>
+      </div>
+
+      <div class="taxpayer-input-group">
+        <label>
+          <span class="tp-label">Your salary</span>
+          <span class="tp-value" id="tp-salary-value">£42,000</span>
+        </label>
+        <input type="range" id="tp-salary" min="0" max="200000" step="500" value="42000" />
+        <div class="tp-range-labels"><span>£0</span><span>£100k</span><span>£200k+</span></div>
+      </div>
+
+      <div class="taxpayer-input-group">
+        <label>
+          <span class="tp-label">Nation</span>
+        </label>
+        <div class="tp-segmented">
+          <button class="tp-seg active" data-jur="rUK" onclick="setTaxpayerJurisdiction('rUK')">England / Wales / NI</button>
+          <button class="tp-seg" data-jur="scotland" onclick="setTaxpayerJurisdiction('scotland')">Scotland</button>
+        </div>
+      </div>
+
+      <div class="taxpayer-input-group">
+        <label>
+          <span class="tp-label">Your council</span>
+          <span class="tp-sub" id="tp-council-ctax">£—</span>
+        </label>
+        <input type="text" id="tp-council-search" placeholder="Start typing your council…" autocomplete="off" />
+        <div id="tp-council-dropdown" class="tp-dropdown"></div>
+      </div>
+
+      <div class="taxpayer-input-group">
+        <label>
+          <span class="tp-label">Council Tax band</span>
+        </label>
+        <div class="tp-bands">
+          <button class="tp-band" data-band="A" onclick="setTaxpayerBand('A')">A</button>
+          <button class="tp-band" data-band="B" onclick="setTaxpayerBand('B')">B</button>
+          <button class="tp-band" data-band="C" onclick="setTaxpayerBand('C')">C</button>
+          <button class="tp-band active" data-band="D" onclick="setTaxpayerBand('D')">D</button>
+          <button class="tp-band" data-band="E" onclick="setTaxpayerBand('E')">E</button>
+          <button class="tp-band" data-band="F" onclick="setTaxpayerBand('F')">F</button>
+          <button class="tp-band" data-band="G" onclick="setTaxpayerBand('G')">G</button>
+          <button class="tp-band" data-band="H" onclick="setTaxpayerBand('H')">H</button>
+        </div>
+        <div class="tp-help">Don't know your band? <a href="https://www.gov.uk/council-tax-bands" target="_blank" rel="noopener">Check on gov.uk ↗</a></div>
+      </div>
+
+      <div id="tp-summary" class="taxpayer-summary"></div>
+
+      <div class="taxpayer-caveats">
+        <details>
+          <summary>How this is calculated</summary>
+          <ul>
+            <li><b>Income Tax + NI</b>: exact per HMRC bands for 2024-25 (rUK or Scotland).</li>
+            <li><b>VAT + duties</b>: estimated from ONS decile consumption data — the number depends on spending habits, this shows the typical figure for your income level.</li>
+            <li><b>Council Tax</b>: exact from MHCLG 2024-25 tables (all-in: billing authority + county + GLA + police + fire + parish).</li>
+            <li><b>Borrowing</b>: UK gov. borrowed £139B in 2022-23 (~£4,900/household). Shown as a separate source funding the Consolidated Fund.</li>
+            <li><b>Spending attribution</b>: government doesn't earmark taxes — all revenue pools in the Consolidated Fund. This visualisation shows pro-rata <i>"for every £ spent by central gov, where a £ of yours would fit."</i></li>
+            <li><b>Your council's share</b>: real per-council grant data from MHCLG Revenue Outturn.</li>
+          </ul>
+          <p class="tp-not-included"><b>Not included:</b> dividend/savings tax · self-employed NIC Class 2/4 · pension contributions (your savings, not tax) · student loan (not a tax) · employer NIC · corporation tax incidence.</p>
+        </details>
+      </div>
+    </aside>
+
+    <main class="taxpayer-main">
+      <div id="tp-hero" class="tp-hero"></div>
+      <div id="tp-sankey-wrap" class="tp-sankey-wrap">
+        <svg id="tp-sankey"></svg>
+      </div>
+    </main>
   </div>
 </div>
 
@@ -2516,7 +2743,7 @@ function restoreTabState(tab){
 
 // Maps sub-mode names to their parent main tab. 'explore' is the unified
 // Explore & Compare tab introduced 2026-04-18. Legacy URL aliases preserved.
-const EXPLORE_SUBMODES = {galaxy:1, compare:1, evolution:1, budgetlist:1};
+const EXPLORE_SUBMODES = {galaxy:1, compare:1, evolution:1, budgetlist:1, comparelist:1, taxpayer:1};
 function _exploreParent(name){ return EXPLORE_SUBMODES[name] ? 'explore' : name; }
 
 function showTab(name,el){
@@ -2548,6 +2775,10 @@ function showTab(name,el){
       subnav.querySelectorAll('.subnav-btn').forEach(b => {
         b.classList.toggle('active', b.dataset.sub === name);
       });
+      // Highlight the Taxpayer button when in that sub-mode
+      subnav.querySelectorAll('.etool-btn[data-toggle="taxpayer"]').forEach(b => {
+        b.classList.toggle('active', name === 'taxpayer');
+      });
       // Remember last sub-mode for when user clicks "Explore & Compare" tab directly
       localStorage.setItem('last_explore_sub', name);
     } else {
@@ -2565,6 +2796,7 @@ function showTab(name,el){
   if(name==='galaxy')loadGalaxy();
   if(name==='suppliers' && typeof loadSuppliersTab==='function') loadSuppliersTab();
   if(name==='comparelist' && typeof loadCompareList==='function') loadCompareList();
+  if(name==='taxpayer' && typeof loadTaxpayer==='function') loadTaxpayer();
   if(name==='compare')cmpInit();
   if(name==='budgetlist'&&!blRoot) showBudgetYearPicker();
   if(name==='evolution'){
@@ -11751,6 +11983,304 @@ function _supUboBadge(res, countries){
   const [cls,label]=map[res]||['','?'];
   const flag=countries&&countries.length?' '+countries.map(c=>c.substring(0,10)).join(', '):'';
   return {cls,label:label+flag};
+}
+
+// ── Taxpayer (Your Taxes) tab ──────────────────────────────────────────────
+window._taxpayer = {
+  salary: 42000,
+  jurisdiction: 'rUK',
+  council: 'Hillingdon',
+  band: 'D',
+  year: '2024-25',
+  _loaded: false,
+  _debounce: null,
+};
+
+async function loadTaxpayer(){
+  const TP = window._taxpayer;
+  if (!TP._loaded) {
+    try {
+      await Promise.all([
+        UKTax.loadBands(),
+        UKVAT.loadShares(),
+        UKCouncilTax.load(),
+        UKTrace.loadTrees({
+          spendingUrl: '/data/uk/uk_budget_tree_2024.json',
+          revenueUrl:  '/data/uk/fiscal/uk_revenue_2024_2025.json',
+          psnbUrl:     '/data/uk/fiscal/uk_psnb_historical.json',
+          councilFinanceUrl: '/data/uk/fiscal/uk_council_finance_2023_24.json',
+        }),
+      ]);
+      TP._loaded = true;
+      _tpSetupHandlers();
+      _tpPopulateCouncils();
+    } catch (e) {
+      console.error('Taxpayer load failed:', e);
+      document.getElementById('tp-sankey-wrap').innerHTML =
+        `<div style="padding:40px;text-align:center;color:var(--red)">Failed to load taxpayer data: ${e.message}</div>`;
+      return;
+    }
+  }
+  _tpRecompute();
+}
+
+function _tpSetupHandlers(){
+  const slider = document.getElementById('tp-salary');
+  slider.addEventListener('input', (e) => {
+    window._taxpayer.salary = +e.target.value;
+    document.getElementById('tp-salary-value').textContent = '£' + (+e.target.value).toLocaleString('en-GB');
+    clearTimeout(window._taxpayer._debounce);
+    window._taxpayer._debounce = setTimeout(_tpRecompute, 80);
+  });
+
+  const search = document.getElementById('tp-council-search');
+  search.addEventListener('input', (e) => _tpFilterCouncils(e.target.value));
+  search.addEventListener('focus', () => document.getElementById('tp-council-dropdown').classList.add('active'));
+  document.addEventListener('click', (e) => {
+    const inside = e.target.closest('#tp-council-search, #tp-council-dropdown');
+    if (!inside) document.getElementById('tp-council-dropdown').classList.remove('active');
+  });
+}
+
+function setTaxpayerJurisdiction(j){
+  window._taxpayer.jurisdiction = j;
+  document.querySelectorAll('.tp-seg').forEach(b => b.classList.toggle('active', b.dataset.jur===j));
+  _tpRecompute();
+}
+
+function setTaxpayerBand(b){
+  window._taxpayer.band = b;
+  document.querySelectorAll('.tp-band').forEach(x => x.classList.toggle('active', x.dataset.band===b));
+  _tpRecompute();
+}
+
+function _tpPopulateCouncils(){
+  const list = UKCouncilTax.listCouncils();
+  list.sort((a,b) => a.name.localeCompare(b.name));
+  window._taxpayer._councils = list;
+  _tpFilterCouncils('');
+  // Initial search input shows current council
+  document.getElementById('tp-council-search').value = window._taxpayer.council;
+}
+
+function _tpFilterCouncils(query){
+  const q = (query||'').toLowerCase().trim();
+  const dd = document.getElementById('tp-council-dropdown');
+  const list = window._taxpayer._councils || [];
+  const filtered = q ? list.filter(c => c.name.toLowerCase().includes(q)) : list;
+  dd.innerHTML = filtered.slice(0, 60).map(c =>
+    `<div class="tp-dropdown-item" data-council="${_tpEsc(c.name)}" onclick="_tpPickCouncil('${_tpEsc(c.name).replace(/'/g,"\\'")}')">
+       ${_tpEsc(c.name)}
+       <span class="tp-dd-amt">£${Math.round(c.band_D).toLocaleString('en-GB')} (D)</span>
+     </div>`
+  ).join('') || '<div class="tp-dropdown-item" style="color:var(--dim)">No matches</div>';
+  dd.classList.add('active');
+}
+
+function _tpPickCouncil(name){
+  window._taxpayer.council = name;
+  document.getElementById('tp-council-search').value = name;
+  document.getElementById('tp-council-dropdown').classList.remove('active');
+  _tpRecompute();
+}
+
+function _tpEsc(s){ return String(s).replace(/[<>&"']/g, c => ({'<':'&lt;','>':'&gt;','&':'&amp;','"':'&quot;',"'":'&#39;'})[c]); }
+
+function _tpRecompute(){
+  const TP = window._taxpayer;
+  if (!TP._loaded) return;
+
+  const direct = UKTax.calcTotal(TP.salary, TP.year, TP.jurisdiction);
+  const ctLookup = UKCouncilTax.lookup({ council: TP.council, band: TP.band });
+  const councilTax = ctLookup ? ctLookup.amount_gbp : 0;
+
+  // Update sidebar council-tax subtitle
+  const subEl = document.getElementById('tp-council-ctax');
+  if (ctLookup) subEl.textContent = `£${Math.round(councilTax).toLocaleString('en-GB')} / yr`;
+  else subEl.textContent = '£—';
+
+  const disposable = Math.max(0, TP.salary - direct.total_direct_tax - councilTax);
+  const vatEst = UKVAT.estimate({ grossSalary: TP.salary, disposableIncome: disposable, year: TP.year });
+
+  const trace = UKTrace.traceFlow({
+    gross_salary: TP.salary,
+    income_tax: direct.income_tax.total,
+    national_insurance: direct.national_insurance.total,
+    vat_estimate: vatEst.per_tax_gbp.vat,
+    council_tax: councilTax,
+    council_name: TP.council,
+    fiscal_year_label: TP.year,
+    jurisdiction: TP.jurisdiction,
+  });
+
+  _tpRenderSummary(trace, direct, vatEst, councilTax);
+  _tpRenderHero(trace);
+  _tpRenderSankey(trace);
+}
+
+function _tpFmtGBP(v, decimals){
+  if (v == null || !isFinite(v)) return '—';
+  const d = decimals != null ? decimals : 0;
+  return '£' + Number(v).toLocaleString('en-GB', { minimumFractionDigits: d, maximumFractionDigits: d });
+}
+
+function _tpRenderSummary(trace, direct, vat, ct){
+  const s = trace.summary;
+  const total = s.taxes_you_paid_gbp.total;
+  const el = document.getElementById('tp-summary');
+  el.innerHTML = `
+    <div class="tp-summary-headline">You paid in tax this year</div>
+    <div class="tp-summary-total">${_tpFmtGBP(total)}</div>
+    <div class="tp-summary-rate">${(s.effective_rate_vs_salary*100).toFixed(1)}% of your salary · ${_tpFmtGBP(s.per_day_equivalent_gbp, 2)}/day</div>
+    <div class="tp-summary-split">
+      <div><div class="k">Income Tax</div><div class="v">${_tpFmtGBP(s.taxes_you_paid_gbp.income_tax)}</div></div>
+      <div><div class="k">NI</div><div class="v">${_tpFmtGBP(s.taxes_you_paid_gbp.national_insurance)}</div></div>
+      <div><div class="k">VAT (est.)</div><div class="v">${_tpFmtGBP(s.taxes_you_paid_gbp.vat_estimated)}</div></div>
+      <div><div class="k">Council Tax</div><div class="v">${_tpFmtGBP(s.taxes_you_paid_gbp.council_tax)}</div></div>
+    </div>
+  `;
+}
+
+function _tpRenderHero(trace){
+  const s = trace.summary;
+  const cf = s.council_facts;
+  const perDay = s.per_day_equivalent_gbp;
+  const borrowed = s.per_household_borrowing_gbp;
+  const yourCouncilTotal = cf ? cf.your_total_to_this_council_gbp : 0;
+
+  const hero = document.getElementById('tp-hero');
+  hero.innerHTML = `
+    <div class="tp-hero-card">
+      <div class="tp-hero-k">Per day</div>
+      <div class="tp-hero-v">${_tpFmtGBP(perDay, 2)}</div>
+      <div class="tp-hero-sub">of yours to gov, every day</div>
+    </div>
+    <div class="tp-hero-card">
+      <div class="tp-hero-k">Borrowed on your behalf</div>
+      <div class="tp-hero-v">${_tpFmtGBP(borrowed)}</div>
+      <div class="tp-hero-sub">per-household deficit share</div>
+    </div>
+    <div class="tp-hero-card">
+      <div class="tp-hero-k">To ${cf ? cf.name : 'your council'}</div>
+      <div class="tp-hero-v">${_tpFmtGBP(yourCouncilTotal)}</div>
+      <div class="tp-hero-sub">Council Tax direct + central grant share</div>
+    </div>
+  `;
+}
+
+function _tpRenderSankey(trace){
+  const svgEl = document.getElementById('tp-sankey');
+  const wrap = document.getElementById('tp-sankey-wrap');
+  const W = wrap.clientWidth || 900;
+  const H = 560;
+
+  const svg = d3.select(svgEl).attr('viewBox', `0 0 ${W} ${H}`);
+  svg.selectAll('*').remove();
+
+  // Build d3-sankey data
+  const nodeMap = new Map();
+  trace.nodes.forEach((n,i) => { nodeMap.set(n.id, { ...n, idx: i }); });
+  const nodes = trace.nodes.map((n,i) => ({ node: i, name: n.name, id: n.id, type: n.type, ...n }));
+  const links = trace.links
+    .filter(l => l.value > 0.5)
+    .map(l => ({
+      source: nodeMap.get(l.source).idx,
+      target: nodeMap.get(l.target).idx,
+      value: l.value,
+      label: l.label,
+    }));
+
+  if (!window.d3 || !d3.sankey) {
+    svg.append('text').attr('x', 20).attr('y', 40).attr('fill','var(--red)').text('d3-sankey failed to load');
+    return;
+  }
+
+  const sk = d3.sankey()
+    .nodeWidth(14)
+    .nodePadding(8)
+    .extent([[8, 8], [W-160, H-8]]);
+
+  let graph;
+  try {
+    graph = sk({ nodes: nodes.map(d => ({ ...d })), links: links.map(d => ({ ...d })) });
+  } catch(e) {
+    svg.append('text').attr('x', 20).attr('y', 40).attr('fill','var(--red)')
+      .text('Sankey layout error: ' + e.message);
+    return;
+  }
+
+  const typeColor = {
+    source:         '#ff7043',
+    revenue_bucket: '#4fc3f7',
+    pool:           '#9575cd',
+    debt:           '#ef5350',
+    spending:       '#66bb6a',
+    local_pool:     '#ffb74d',
+    council_service:'#81c784',
+  };
+
+  // Links
+  const link = svg.append('g').attr('class','tp-links')
+    .selectAll('path').data(graph.links).enter()
+    .append('path')
+      .attr('class','tp-link')
+      .attr('d', d3.sankeyLinkHorizontal())
+      .attr('stroke', d => typeColor[d.source.type] || '#4fc3f7')
+      .attr('stroke-width', d => Math.max(1, d.width))
+      .attr('opacity', 0.35)
+      .on('mousemove', (e,d) => _tpShowTooltip(e,
+        `<div class="tt-name">${_tpEsc(d.source.name)} → ${_tpEsc(d.target.name)}</div>
+         <div class="tt-val">${_tpFmtGBP(d.value)}</div>
+         ${d.label ? `<div class="tt-ctx">${_tpEsc(d.label)}</div>` : ''}`))
+      .on('mouseleave', _tpHideTooltip);
+
+  // Nodes
+  const node = svg.append('g').attr('class','tp-nodes')
+    .selectAll('g').data(graph.nodes).enter()
+    .append('g').attr('class','tp-node')
+    .on('mousemove', (e,d) => _tpShowTooltip(e,
+      `<div class="tt-name">${_tpEsc(d.name)}</div>
+       <div class="tt-val">${_tpFmtGBP(d.value || 0)}</div>
+       ${d.annual_total_gbp ? `<div class="tt-ctx">National total: ${_tpFmtGBP(d.annual_total_gbp/1e9, 1)}B</div>` : ''}`))
+    .on('mouseleave', _tpHideTooltip);
+
+  node.append('rect')
+    .attr('x', d => d.x0).attr('y', d => d.y0)
+    .attr('width', d => d.x1 - d.x0)
+    .attr('height', d => Math.max(1, d.y1 - d.y0))
+    .attr('fill', d => typeColor[d.type] || '#4fc3f7');
+
+  node.append('text')
+    .attr('x', d => d.x0 < W/2 ? d.x1 + 6 : d.x0 - 6)
+    .attr('y', d => (d.y0 + d.y1) / 2)
+    .attr('dy', '0.35em')
+    .attr('text-anchor', d => d.x0 < W/2 ? 'start' : 'end')
+    .text(d => d.name);
+
+  node.append('text')
+    .attr('class','tp-subtext')
+    .attr('x', d => d.x0 < W/2 ? d.x1 + 6 : d.x0 - 6)
+    .attr('y', d => (d.y0 + d.y1) / 2 + 14)
+    .attr('text-anchor', d => d.x0 < W/2 ? 'start' : 'end')
+    .text(d => (d.value||0) >= 1 ? _tpFmtGBP(d.value||0) : '');
+}
+
+function _tpShowTooltip(ev, html){
+  let tt = document.querySelector('.tp-tooltip');
+  if (!tt) { tt = document.createElement('div'); tt.className = 'tp-tooltip'; document.body.appendChild(tt); }
+  tt.innerHTML = html;
+  const padding = 12;
+  tt.style.left = Math.min(window.innerWidth - 300, ev.clientX + padding) + 'px';
+  tt.style.top  = Math.min(window.innerHeight - 100, ev.clientY + padding) + 'px';
+  tt.style.display = 'block';
+}
+function _tpHideTooltip(){ const tt = document.querySelector('.tp-tooltip'); if (tt) tt.style.display = 'none'; }
+
+function showAboutTax(){
+  window.open(
+    'https://github.com/JuanBlanco9/Budget-Galaxy/blob/main/data/uk/fiscal/SOURCES_TAX.md',
+    '_blank', 'noopener'
+  );
 }
 
 async function loadSuppliersTab(){
