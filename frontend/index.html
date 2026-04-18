@@ -1031,7 +1031,7 @@ mark{background:rgba(255,200,0,.25);color:inherit;border-radius:2px;padding:0 2p
     <div style="font-size:11px;color:rgba(255,255,255,.85);margin-bottom:20px;text-shadow:0 1px 6px rgba(0,0,0,.7)">More countries coming: &#127482;&#127480; US &middot; &#127465;&#127466; Germany &middot; &#127467;&#127479; France &middot; &#127463;&#127479; Brazil</div>
 
     <div class="lp-footer">
-      MIT License &middot; Open Source &middot; <a href="/methodology.html" style="color:var(--accent)">Methodology</a> &middot; <a href="https://github.com/JuanBlanco9/German-Budget-Galaxy" target="_blank" style="color:var(--accent)">GitHub</a> &middot; <a href="https://github.com/sponsors/JuanBlanco9" target="_blank" style="color:var(--accent)">&hearts; Support</a> &middot; Juan Blanco
+      MIT License &middot; Open Source &middot; <a href="/methodology.html" style="color:var(--accent)">Methodology</a> &middot; <a href="https://github.com/JuanBlanco9/Budget-Galaxy" target="_blank" style="color:var(--accent)">GitHub</a> &middot; <a href="https://github.com/sponsors/JuanBlanco9" target="_blank" style="color:var(--accent)">&hearts; Support</a> &middot; Juan Blanco
     </div>
   </div>
 </div>
@@ -1092,8 +1092,8 @@ mark{background:rgba(255,200,0,.25);color:inherit;border-radius:2px;padding:0 2p
 </div>
 
 <!-- Global search modal (Cmd+K / Ctrl+K from anywhere, also opened from
-     Multiverse search bar). Searches tree nodes + supplier names across all
-     4 countries. Clicking a result navigates to that node. Added 2026-04-18. -->
+     the Multiverse search bar). Searches UK tree nodes + supplier names.
+     Clicking a result navigates to that node. Added 2026-04-18. -->
 <div id="global-search" class="global-search" style="display:none" onclick="if(event.target===this)closeGlobalSearch()">
   <div class="gs-card" onclick="event.stopPropagation()">
     <div class="gs-input-row">
@@ -2337,23 +2337,34 @@ mark{background:rgba(79,195,247,.3);color:var(--text,#e8ebf5);padding:0 2px;bord
             <span class="about-acc-chevron"></span>
           </div>
           <div class="about-acc-body">
-            <p>Budget Galaxy aggregates public spending data from official sources in four countries. The structure below summarizes the pipeline for each country.</p>
+            <p>Budget Galaxy aggregates UK public spending and tax data from the official primary sources. Every number traces back to a named file we committed with a SHA256 hash.</p>
 
-            <div class="about-country">United Kingdom</div>
+            <div class="about-country">Central government spending</div>
             <ul>
-              <li>Central government: HM Treasury OSCAR II, covering approximately 55 departments, executive agencies and bodies. The 2023 OSCAR edition was reprocessed to correct a &pound;114B NHS artifact that would otherwise double-count health spending.</li>
+              <li>HM Treasury OSCAR II: ~55 departments, executive agencies and bodies. The 2023 OSCAR edition was reprocessed to correct a &pound;114B NHS artifact that would otherwise double-count health spending. Same n/a-trust artifact also removed for 2020-2022.</li>
               <li>NHS: trust-level operating cost breakdowns for 206 provider trusts (118 acute, 45 mental health, 18 community, 15 specialist, 10 ambulance), with workforce and cost-type metadata where published. NHS commissioner (ICB) and provider (trust) values are netted against each other to avoid double-counting.</li>
-              <li>Local government: 401 English local authorities from MHCLG Revenue Outturn, plus 19 councils with supplier-level spend parsed from their own published registers and classified into MHCLG service categories. An additional 7 police and fire authorities are covered as separate entities.</li>
-              <li>Population data: ONS mid-2023 local authority estimates (residents, all ages, both sexes), attached to the 19 councils for per-capita analysis. Police and fire authorities do not receive population since they are service areas, not geographic entities.</li>
             </ul>
 
-            <div class="about-country">Germany, France, United States</div>
+            <div class="about-country">Tax receipts &amp; bands</div>
             <ul>
-              <li>Federal budgets from the equivalent official sources (Bundeshaushalt, Loi de Finances / Budget de l&rsquo;&Eacute;tat, OMB Budget of the United States Government).</li>
-              <li>Multi-level consolidation (federal to state to local) is documented per country where the accounting crosses levels.</li>
+              <li>HMRC tax receipts 2005-2024 (annual bulletin): full breakdown by tax type &mdash; Income Tax, NI, VAT, Corporation Tax, fuel duty, stamp taxes, IHT, CGT, APD, IPT, duties and more.</li>
+              <li>Income Tax + NI bands for rUK and Scotland, fiscal years 2017-18 through 2024-25, from HMRC's "Rates and thresholds for employers" and Scottish Government publications.</li>
+              <li>VAT &amp; indirect tax estimation: ONS "Effects of Taxes and Benefits" decile consumption shares.</li>
             </ul>
 
-            <p>The full data pipeline is in the project repository. Every number on this site can be traced back to a specific line in a specific source file. See the <a href="https://github.com/JuanBlanco9/Budget-Galaxy/blob/main/data/uk/SOURCES.md" target="_blank" rel="noopener" style="color:var(--accent)">full source manifest</a> for the three-layer audit trail: live landing pages, Wayback Machine snapshots, and SHA256-hashed raw files committed to git.</p>
+            <div class="about-country">Local government</div>
+            <ul>
+              <li>401 English local authorities from MHCLG Revenue Outturn (2017/18-2024/25), plus 32 Scottish councils from gov.scot for council tax bands.</li>
+              <li>19 English councils with supplier-level spend parsed from their own published registers and classified into MHCLG service categories. An additional 7 police and fire authorities are covered as separate entities.</li>
+              <li>Population data: ONS mid-2023 local authority estimates for per-capita analysis.</li>
+            </ul>
+
+            <div class="about-country">Borrowing</div>
+            <ul>
+              <li>OBR Historical Public Finances Database: Public Sector Net Borrowing (PSNB) and Net Debt (PSND) from 2000-01 through 2022-23, with nominal GDP for % calculations.</li>
+            </ul>
+
+            <p>The full data pipeline is in the project repository. Every number on this site can be traced back to a specific line in a specific source file. See the <a href="https://github.com/JuanBlanco9/Budget-Galaxy/blob/main/data/uk/SOURCES.md" target="_blank" rel="noopener" style="color:var(--accent)">council spend source manifest</a> and the <a href="https://github.com/JuanBlanco9/Budget-Galaxy/blob/main/data/uk/fiscal/SOURCES_TAX.md" target="_blank" rel="noopener" style="color:var(--accent)">tax data source manifest</a> for the three-layer audit trail: live landing pages, Wayback Machine snapshots, and SHA256-hashed raw files committed to git.</p>
           </div>
         </div>
 
@@ -2390,7 +2401,7 @@ mark{background:rgba(79,195,247,.3);color:var(--text,#e8ebf5);padding:0 2px;bord
               Each of the four UK nations has its total public spending captured at the devolved administration level (Scottish Government &pound;36.84B, Welsh Assembly Government &pound;23.90B, Northern Ireland Executive &pound;33.21B), but only England has a council-by-council breakdown inside Local Government (England). The reason is regulatory: England&rsquo;s 401 local authorities all report to MHCLG in a standardized Revenue Outturn format. Scotland&rsquo;s 32 councils report to the Accounts Commission, Wales&rsquo;s 22 to Welsh Government, and Northern Ireland&rsquo;s 11 districts to DoF NI &mdash; three separate data regimes with different schemas. Integrating them would require three independent pipelines carefully netted against the devolved government totals already captured, to avoid double-counting. For now, treat Scotland, Wales, and NI local spending as aggregated inside their devolved administration node, not broken down by council. The 19 councils with supplier-level detail are also all English for the same reason.
             </div>
 
-            <p>Germany, France, and the United States have their own data quirks documented in the source repository. This page focuses on the UK because it is where we have the deepest coverage.</p>
+            <p>When additional countries are enabled (US / Germany / France / Brazil are next on the roadmap), each will get its own gap-disclosure section below.</p>
           </div>
         </div>
 
@@ -2402,7 +2413,7 @@ mark{background:rgba(79,195,247,.3);color:var(--text,#e8ebf5);padding:0 2px;bord
           <div class="about-acc-body">
             <p>Budget Galaxy is built and maintained by an independent developer. The project is open and every number is traceable to an official source.</p>
 
-            <p>The project exists because public spending data in most countries is technically published but practically unreadable. Central government datasets are scattered across official portals, local government data is fragmented across hundreds of councils, and cross-country comparison is almost impossible without manual reconciliation. Budget Galaxy is one attempt at closing that gap for four countries.</p>
+            <p>The project exists because public spending data is technically published but practically unreadable. Central government datasets are scattered across official portals, tax receipts are in monthly ODS bulletins, local government data is fragmented across 400+ councils, and nothing connects your specific tax bill to the services it funds. Budget Galaxy connects all of it for the UK; more countries are being onboarded with the same depth.</p>
 
             <p>The data, the pipeline, and the full source are in the project repository.</p>
           </div>
@@ -2453,7 +2464,7 @@ mark{background:rgba(79,195,247,.3);color:var(--text,#e8ebf5);padding:0 2px;bord
     </div>
 
     <div style="margin-top:32px;padding:16px;text-align:center;font-size:11px;color:var(--dim)">
-      MIT License &middot; Open Source &middot; <a href="/methodology.html" style="color:var(--accent)">Methodology</a> &middot; <a href="https://github.com/JuanBlanco9/German-Budget-Galaxy" target="_blank" style="color:var(--accent)">GitHub</a> &middot; <a href="https://github.com/sponsors/JuanBlanco9" target="_blank" style="color:var(--accent)">&hearts; Support</a> &middot; Juan Blanco
+      MIT License &middot; Open Source &middot; <a href="/methodology.html" style="color:var(--accent)">Methodology</a> &middot; <a href="https://github.com/JuanBlanco9/Budget-Galaxy" target="_blank" style="color:var(--accent)">GitHub</a> &middot; <a href="https://github.com/sponsors/JuanBlanco9" target="_blank" style="color:var(--accent)">&hearts; Support</a> &middot; Juan Blanco
     </div>
   </div>
 </div>
