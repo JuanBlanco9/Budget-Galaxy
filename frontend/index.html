@@ -5528,27 +5528,162 @@ const EPL_SHORT_DE={'11':'Arbeit & Soziales','14':'Verteidigung','12':'Verkehr &
 const EPL_SHORT_EN={'11':'Min. of Labour & Social','14':'Min. of Defence','12':'Min. of Transport & Digital','60':'General Finance','32':'Federal Debt','30':'Min. of Education & Research','15':'Min. of Health','17':'Min. of Family','06':'Min. of Interior','23':'Min. of Development (BMZ)','09':'Min. of Economy','08':'Min. of Finance','10':'Min. of Agriculture','25':'Min. of Housing','05':'Foreign Office','04':'Chancellery','16':'Min. of Environment','02':'Parliament','07':'Min. of Justice','01':'Federal President','19':'Constitutional Court','20':'Court of Auditors','21':'Data Protection','03':'Federal Council','22':'Control Council'};
 const EPL_SHORT=new Proxy({},{get:(_,id)=>(galaxyLang==='de'?EPL_SHORT_DE:EPL_SHORT_EN)[id]});
 
+// Functional colour palette. Each category a distinct hue; departments mapped
+// by id (UK gov produces stable string ids like 'department_for_work_and_pensions')
+// or by keywords in the name as a fallback for unseen ids.
+const GALAXY_CATEGORY_COLORS = {
+  social:      '#c0392b',  // Work & Pensions, Health, pension schemes
+  nhs:         '#d4380d',  // NHS Provider Sector — NHS red
+  defence:     '#8b1a1a',  // MoD, Home Office, CPS, NCA, SFO
+  transport:   '#1d3461',  // DfT, rail/road/water regulators
+  energy:      '#2a6f97',  // DESNZ, OFGEM
+  housing:     '#0d8a8a',  // MHCLG, local gov England
+  education:   '#7b2d8b',  // DfE, STEM, Ofsted, Ofqual, exams
+  science:     '#5b2c6f',  // DSIT
+  culture:     '#e76f51',  // DCMS
+  finance:     '#6b705c',  // HMT, HMRC, Business & Trade, CMA, NS&I
+  international:'#118ab2', // FCDO
+  justice:     '#4a2574',  // MoJ, Supreme Court, solicitor
+  environment: '#4c956c',  // DEFRA, Food Standards
+  devolved_sc: '#1e5594',  // Scotland blue
+  devolved_wl: '#a63d40',  // Wales burgundy
+  devolved_ni: '#2e7d32',  // NI green
+  parliament:  '#8e24aa',  // Parliament, Lords, Commons, admin
+  institutional:'#3f4a5c', // Misc — institutional grey-blue (was 4a4e69, slightly punchier)
+};
+
+// Fast ID → category lookup (prefix match on top-level UK department ids)
+const GALAXY_ID_CATEGORY = {
+  // Social / welfare / pensions
+  'department_for_work_and_pensions': 'social',
+  'department_of_health': 'social',
+  'teachers_pension_scheme_england_and_wales': 'social',
+  'cabinet_office_civil_superannuation': 'social',
+  'armed_forces_pension_and_compensation_schemes': 'social',
+  'royal_mail_statutory_pension_scheme': 'social',
+  'united_kingdom_atomic_energy_authority_pension_schemes': 'social',
+  'ministry_of_justice_judicial_pensions_scheme': 'social',
+  'foreign_commonwealth_and_development_office_overseas_superannuation': 'social',
+  // NHS
+  'nhs_provider_sector': 'nhs',
+  // Defence / security
+  'ministry_of_defence': 'defence',
+  'home_office': 'defence',
+  'crown_prosecution_service': 'defence',
+  'national_crime_agency': 'defence',
+  'serious_fraud_office': 'defence',
+  // Transport
+  'department_for_transport': 'transport',
+  'office_of_rail_and_road': 'transport',
+  'water_services_regulation_authority': 'transport',
+  'hm_land_registry': 'transport',
+  // Energy
+  'department_for_energy_security_and_net_zero': 'energy',
+  'office_of_gas_and_electricity_markets': 'energy',
+  // Housing / local gov
+  'ministry_of_housing_communities_and_local_government': 'housing',
+  'local_government_england': 'housing',
+  'local_government_boundary_commission_for_england': 'housing',
+  // Education
+  'department_for_education': 'education',
+  'office_for_standards_in_education_children_s_services_and_skills': 'education',
+  'office_of_qualifications_and_examinations_regulation': 'education',
+  // Science
+  'department_for_science_innovation_and_technology': 'science',
+  // Culture
+  'department_for_culture_media_and_sport': 'culture',
+  // Finance / Treasury / Business
+  'hm_treasury': 'finance',
+  'hm_revenue_and_customs': 'finance',
+  'department_for_business_and_trade': 'finance',
+  'national_savings_and_investments': 'finance',
+  'competition_and_markets_authority': 'finance',
+  'export_credits_guarantee_department': 'finance',
+  'charity_commission': 'finance',
+  'crown_estate_office': 'finance',
+  'government_actuary_s_department': 'finance',
+  // International
+  'foreign_commonwealth_and_development_office': 'international',
+  // Justice
+  'ministry_of_justice': 'justice',
+  'united_kingdom_supreme_court': 'justice',
+  'hm_procurator_general_and_treasury_solicitor': 'justice',
+  // Environment
+  'department_for_environment_food_and_rural_affairs': 'environment',
+  'food_standards_agency': 'environment',
+  // Devolved
+  'scotland_office_and_office_of_the_advocate_general': 'devolved_sc',
+  'scottish_government': 'devolved_sc',
+  'wales_office': 'devolved_wl',
+  'welsh_assembly_government': 'devolved_wl',
+  'northern_ireland_office': 'devolved_ni',
+  'northern_ireland_executive': 'devolved_ni',
+  // Parliament / admin
+  'cabinet_office': 'parliament',
+  'house_of_commons_administration': 'parliament',
+  'house_of_lords': 'parliament',
+  'house_of_commons_members': 'parliament',
+  'parliamentary_works_grant': 'parliament',
+  'independent_parliamentary_standards_authority': 'parliament',
+  'the_statistics_board': 'parliament',
+  'national_audit_office': 'parliament',
+  'electoral_commission': 'parliament',
+  'the_national_archives': 'parliament',
+  'office_of_the_parliamentary_commissioner_for_administration_and_the_health_service_commissioner_for_england': 'parliament',
+};
+
+// Keyword-based fallback for unseen ids (covers future renames)
+function _galaxyCategoryFromName(name){
+  const n = String(name || '').toLowerCase();
+  if (/\bnhs\b/.test(n)) return 'nhs';
+  if (/pension|superannuation/.test(n)) return 'social';
+  if (/work and pension|health|social security|welfare/.test(n)) return 'social';
+  if (/defence|military|armed forces|home office|police|crime|prosecution|fraud/.test(n)) return 'defence';
+  if (/transport|rail|road|water|land registry/.test(n)) return 'transport';
+  if (/energy|gas|electricity|renewable|climate/.test(n)) return 'energy';
+  if (/housing|local government|community|boundary/.test(n)) return 'housing';
+  if (/education|school|teach|ofsted|ofqual|exam/.test(n)) return 'education';
+  if (/science|innovation|research/.test(n)) return 'science';
+  if (/culture|media|sport|art|heritage/.test(n)) return 'culture';
+  if (/treasury|revenue|customs|business|trade|economy|competition|market|savings|investment|actuary|credits/.test(n)) return 'finance';
+  if (/foreign|international|commonwealth|overseas|development/.test(n)) return 'international';
+  if (/justice|court|solicitor|judicial|legal/.test(n)) return 'justice';
+  if (/environment|food|rural|agriculture/.test(n)) return 'environment';
+  if (/scotland|scottish/.test(n)) return 'devolved_sc';
+  if (/wales|welsh/.test(n)) return 'devolved_wl';
+  if (/northern ireland/.test(n)) return 'devolved_ni';
+  if (/parliament|commons|lords|electoral|national audit|archives|statistics/.test(n)) return 'parliament';
+  return null;
+}
+
 function getGalaxyColor(d){
   let node=d;
   while(node.depth>1&&node.parent) node=node.parent;
   const id=node.data.id||'';
-  // New top-level branches (string IDs)
-  if(id==='sv') return '#1b9e4b';                   // Sozialversicherung — green
-  if(id==='laender') return '#a63d40';               // Länder — burgundy
-  if(id==='kommunen') return '#0d8a8a';              // Kommunen — teal
-  if(id==='uk_la') return '#0d8a8a';                 // UK Local Authorities — teal
-  if(id==='nhs_provider_sector') return '#d4380d';   // NHS Provider Sector — NHS red
-  if(id==='local_government_england') return '#0d8a8a'; // Local Government England — teal
-  if(id==='secu') return '#1b9e4b';                  // FR Sécurité Sociale — green
+  const name=node.data.name||'';
+
+  // ── Non-UK branches (DE, FR) retained from original palette ──
+  if(id==='sv') return '#1b9e4b';
+  if(id==='laender') return '#a63d40';
+  if(id==='kommunen') return '#0d8a8a';
+  if(id==='uk_la') return GALAXY_CATEGORY_COLORS.housing;
+  if(id==='secu') return '#1b9e4b';
   const ep=parseInt(id,10);
-  if([11,15,17].includes(ep)) return '#2d6a4f'; // Social
-  if([14,6].includes(ep)) return '#c1121f';      // Security
-  if([12,25].includes(ep)) return '#1d3461';      // Infrastructure
-  if(ep===30) return '#7b2d8b';                    // Education
-  if([9,10,8].includes(ep)) return '#e76f51';      // Economy
-  if([5,23,16].includes(ep)) return '#118ab2';     // International
-  if([32,60].includes(ep)) return '#6b705c';       // Finance
-  return '#4a4e69';                                 // Institutional
+  if(!isNaN(ep) && ep > 0 && ep < 100){
+    if([11,15,17].includes(ep)) return '#2d6a4f';
+    if([14,6].includes(ep)) return '#c1121f';
+    if([12,25].includes(ep)) return '#1d3461';
+    if(ep===30) return '#7b2d8b';
+    if([9,10,8].includes(ep)) return '#e76f51';
+    if([5,23,16].includes(ep)) return '#118ab2';
+    if([32,60].includes(ep)) return '#6b705c';
+  }
+
+  // ── UK department category lookup ──
+  const cat = GALAXY_ID_CATEGORY[id] || _galaxyCategoryFromName(name);
+  if (cat && GALAXY_CATEGORY_COLORS[cat]) return GALAXY_CATEGORY_COLORS[cat];
+
+  return GALAXY_CATEGORY_COLORS.institutional;
 }
 
 function getGalaxyChildColor(d){
