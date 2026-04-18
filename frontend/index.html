@@ -3,24 +3,24 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Budget Galaxy — Explore Government Budgets</title>
-<meta name="description" content="Interactive visualization of government budgets for Germany, USA, France and UK. 4 countries, 11 years, every euro and dollar visualized.">
-<meta name="keywords" content="government budget, budget visualization, Germany budget, US federal budget, France budget, UK budget, public spending, fiscal transparency">
+<title>Budget Galaxy — Where every £ of UK public money goes</title>
+<meta name="description" content="Interactive visualization of UK government spending. From HMRC receipts to your council's bin collection — see where every pound of your tax ends up, with full audit trail.">
+<meta name="keywords" content="UK government budget, UK public spending, HMRC, council tax, budget visualization, fiscal transparency, where does my money go">
 <meta name="author" content="Juan Blanco">
 <link rel="canonical" href="https://budgetgalaxy.com/">
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
-<meta property="og:title" content="Budget Galaxy — Explore Government Budgets">
-<meta property="og:description" content="Interactive visualization of government budgets for Germany, USA, France and UK. 4 countries, 11 years, every euro and dollar visualized.">
+<meta property="og:title" content="Budget Galaxy — Where every £ of UK public money goes">
+<meta property="og:description" content="Interactive visualization of UK government spending. From HMRC receipts to your council's bin collection — see where every pound of your tax ends up, with full audit trail.">
 <meta property="og:image" content="https://budgetgalaxy.com/og_preview.jpg">
 <meta property="og:url" content="https://budgetgalaxy.com/">
 <meta property="og:site_name" content="Budget Galaxy">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Budget Galaxy — Explore Government Budgets">
-<meta name="twitter:description" content="Interactive visualization of government budgets for Germany, USA, France and UK. 4 countries, 11 years, every euro and dollar visualized.">
+<meta name="twitter:title" content="Budget Galaxy — Where every £ of UK public money goes">
+<meta name="twitter:description" content="Interactive visualization of UK government spending. From HMRC receipts to your council's bin collection — see where every pound of your tax ends up.">
 <meta name="twitter:image" content="https://budgetgalaxy.com/og_preview.jpg">
 
 <!-- JSON-LD Structured Data -->
@@ -30,48 +30,38 @@
   "@type": "WebApplication",
   "name": "Budget Galaxy",
   "url": "https://budgetgalaxy.com",
-  "description": "Interactive visualization of government budgets for Germany, USA, France and UK.",
+  "description": "Interactive visualization of UK government spending, tax, and where every £ flows from your payslip to your council's services.",
   "applicationCategory": "DataVisualization",
   "operatingSystem": "Web",
   "creator": {"@type": "Person", "name": "Juan Blanco"},
-  "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"},
+  "offers": {"@type": "Offer", "price": "0", "priceCurrency": "GBP"},
   "hasPart": [
-    {
-      "@type": "Dataset",
-      "name": "German Federal Budget (Bundeshaushalt) 2015–2025",
-      "description": "11 years of German federal budget data with ~5,900 line items per year, sourced from bundeshaushalt.de.",
-      "url": "https://budgetgalaxy.com/app?country=de",
-      "temporalCoverage": "2015/2025",
-      "spatialCoverage": "Germany",
-      "creator": {"@type": "Person", "name": "Juan Blanco"},
-      "license": "https://creativecommons.org/licenses/by/4.0/"
-    },
-    {
-      "@type": "Dataset",
-      "name": "US Federal Budget 2017–2025",
-      "description": "9 years of US federal budget data with ~5,500 accounts per year, sourced from USAspending.gov.",
-      "url": "https://budgetgalaxy.com/app?country=us",
-      "temporalCoverage": "2017/2025",
-      "spatialCoverage": "United States",
-      "creator": {"@type": "Person", "name": "Juan Blanco"},
-      "license": "https://creativecommons.org/licenses/by/4.0/"
-    },
-    {
-      "@type": "Dataset",
-      "name": "France Budget (PLF/LFI) 2015–2025",
-      "description": "11 years of French government budget data with ~900 programmes per year, sourced from data.gouv.fr and data.economie.gouv.fr.",
-      "url": "https://budgetgalaxy.com/app?country=fr",
-      "temporalCoverage": "2015/2025",
-      "spatialCoverage": "France",
-      "creator": {"@type": "Person", "name": "Juan Blanco"},
-      "license": "https://creativecommons.org/licenses/by/4.0/"
-    },
     {
       "@type": "Dataset",
       "name": "UK Government Budget (OSCAR) 2020–2024",
       "description": "5 years of UK government budget data with ~800 items per year, sourced from HM Treasury OSCAR.",
       "url": "https://budgetgalaxy.com/app?country=uk",
       "temporalCoverage": "2020/2024",
+      "spatialCoverage": "United Kingdom",
+      "creator": {"@type": "Person", "name": "Juan Blanco"},
+      "license": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "@type": "Dataset",
+      "name": "UK HMRC Tax Receipts 2005–2024",
+      "description": "20 fiscal years of HMRC tax receipts broken down by tax type (Income Tax, NI, VAT, Corp Tax, fuel duty, stamp taxes and more).",
+      "url": "https://budgetgalaxy.com/#taxpayer",
+      "temporalCoverage": "2005/2024",
+      "spatialCoverage": "United Kingdom",
+      "creator": {"@type": "Person", "name": "Juan Blanco"},
+      "license": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "@type": "Dataset",
+      "name": "UK Council Tax Bands + MHCLG Revenue Outturn",
+      "description": "328 English + Scottish councils with Band A–H council tax values and MHCLG Revenue Outturn financial data.",
+      "url": "https://budgetgalaxy.com/#taxpayer",
+      "temporalCoverage": "2017/2024",
       "spatialCoverage": "United Kingdom",
       "creator": {"@type": "Person", "name": "Juan Blanco"},
       "license": "https://creativecommons.org/licenses/by/4.0/"
@@ -1007,41 +997,38 @@ mark{background:rgba(255,200,0,.25);color:inherit;border-radius:2px;padding:0 2p
 <div id="landing-page">
   <div class="lp-container">
     <div class="lp-title" style="font-size:32px;margin-bottom:4px;letter-spacing:2px">BUDGET GALAXY</div>
-    <div class="lp-tagline" style="max-width:none;margin:0 auto 8px;line-height:1.6;font-size:14px;color:rgba(255,255,255,.95);white-space:nowrap;background:rgba(0,0,0,.4);display:inline-block;padding:6px 18px;border-radius:6px">Explore how nations spend. Every ministry, every department, every dollar, euro and pound &mdash; visualized.</div>
+    <div class="lp-tagline" style="max-width:none;margin:0 auto 8px;line-height:1.6;font-size:14px;color:rgba(255,255,255,.95);white-space:nowrap;background:rgba(0,0,0,.4);display:inline-block;padding:6px 18px;border-radius:6px">&#127468;&#127463; UK public money, traced &mdash; from your payslip to your council's bin collection.</div>
 
-    <!-- Two primary action cards (2026-04-18 IA redesign) -->
-    <div class="lp-action-row" style="display:flex;justify-content:center;gap:16px;flex-wrap:wrap;margin:0 auto 20px;max-width:760px">
-      <div onclick="lpGoToTab('multiverse')" class="lp-action-card" style="flex:1;min-width:280px;background:linear-gradient(135deg,rgba(18,18,30,.9),rgba(30,30,50,.9));border:1px solid var(--accent);border-radius:12px;padding:22px 28px;cursor:pointer;text-align:center;transition:transform .2s,box-shadow .2s" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 8px 24px rgba(79,195,247,.2)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
-        <div style="font-size:32px;margin-bottom:6px">&#127776;</div>
-        <div style="font-size:20px;font-weight:700;color:var(--text);letter-spacing:1px">MULTIVERSE</div>
-        <div style="font-size:12px;color:var(--accent);margin-top:4px">All 4 countries in one canvas</div>
-        <div style="font-size:10px;color:rgba(255,255,255,.7);margin-top:2px">DE &middot; US &middot; FR &middot; GB</div>
+    <!-- Three primary action cards (UK-only launch, 2026-04-18) -->
+    <div class="lp-action-row" style="display:flex;justify-content:center;gap:16px;flex-wrap:wrap;margin:0 auto 20px;max-width:960px">
+      <div onclick="lpGoToTab('taxpayer')" class="lp-action-card lp-action-card-hero" style="flex:1;min-width:260px;background:linear-gradient(135deg,rgba(255,112,67,.16),rgba(79,195,247,.08));border:1px solid var(--accent2);border-radius:12px;padding:22px 28px;cursor:pointer;text-align:center;transition:transform .2s,box-shadow .2s" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 8px 24px rgba(255,112,67,.2)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+        <div style="font-size:32px;margin-bottom:6px">&#128176;</div>
+        <div style="font-size:20px;font-weight:700;color:var(--text);letter-spacing:1px">YOUR TAXES</div>
+        <div style="font-size:12px;color:var(--accent2);margin-top:4px">Where every £ of your tax goes</div>
+        <div style="font-size:10px;color:rgba(255,255,255,.7);margin-top:2px">Salary &middot; Council &middot; Band &rarr; personal Sankey</div>
       </div>
-      <div onclick="lpGoToTab('explore')" class="lp-action-card" style="flex:1;min-width:280px;background:linear-gradient(135deg,rgba(18,18,30,.9),rgba(30,30,50,.9));border:1px solid var(--border);border-radius:12px;padding:22px 28px;cursor:pointer;text-align:center;transition:transform .2s,box-shadow .2s,border-color .2s" onmouseover="this.style.transform='translateY(-3px)';this.style.borderColor='var(--accent)';this.style.boxShadow='0 8px 24px rgba(79,195,247,.15)'" onmouseout="this.style.transform='';this.style.borderColor='var(--border)';this.style.boxShadow=''">
+      <div onclick="lpGoToTab('galaxy')" class="lp-action-card" style="flex:1;min-width:260px;background:linear-gradient(135deg,rgba(18,18,30,.9),rgba(30,30,50,.9));border:1px solid var(--accent);border-radius:12px;padding:22px 28px;cursor:pointer;text-align:center;transition:transform .2s,box-shadow .2s" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 8px 24px rgba(79,195,247,.2)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+        <div style="font-size:32px;margin-bottom:6px">&#127776;</div>
+        <div style="font-size:20px;font-weight:700;color:var(--text);letter-spacing:1px">BUDGET GALAXY</div>
+        <div style="font-size:12px;color:var(--accent);margin-top:4px">The whole £1.4T spending, visual</div>
+        <div style="font-size:10px;color:rgba(255,255,255,.7);margin-top:2px">DWP &middot; NHS &middot; Defence &middot; 60+ departments</div>
+      </div>
+      <div onclick="lpGoToTab('explore')" class="lp-action-card" style="flex:1;min-width:260px;background:linear-gradient(135deg,rgba(18,18,30,.9),rgba(30,30,50,.9));border:1px solid var(--border);border-radius:12px;padding:22px 28px;cursor:pointer;text-align:center;transition:transform .2s,box-shadow .2s,border-color .2s" onmouseover="this.style.transform='translateY(-3px)';this.style.borderColor='var(--accent)';this.style.boxShadow='0 8px 24px rgba(79,195,247,.15)'" onmouseout="this.style.transform='';this.style.borderColor='var(--border)';this.style.boxShadow=''">
         <div style="font-size:32px;margin-bottom:6px">&#128269;</div>
         <div style="font-size:20px;font-weight:700;color:var(--text);letter-spacing:1px">EXPLORE &amp; COMPARE</div>
-        <div style="font-size:12px;color:var(--accent);margin-top:4px">Deep-dive one budget, or compare two</div>
-        <div style="font-size:10px;color:rgba(255,255,255,.7);margin-top:2px">Single &middot; Compare &middot; Timeline &middot; List</div>
+        <div style="font-size:12px;color:var(--accent);margin-top:4px">Drill into the numbers, year-on-year</div>
+        <div style="font-size:10px;color:rgba(255,255,255,.7);margin-top:2px">Single &middot; Compare &middot; Evolution</div>
       </div>
     </div>
 
-    <!-- Quick-pick country chips (for direct-link users landing here from Google) -->
-    <div style="font-size:11px;color:rgba(255,255,255,.75);margin-bottom:8px">Or jump directly to a country:</div>
-    <div style="display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-bottom:24px">
-      <button onclick="lpSelectCountry('uk')" class="lp-country-chip" style="background:rgba(18,18,30,.6);border:1px solid var(--border);border-radius:20px;padding:6px 14px;cursor:pointer;color:var(--text);font-size:12px;font-family:inherit">&#127468;&#127463; UK &middot; &pound;1,130B</button>
-      <button onclick="lpSelectCountry('us')" class="lp-country-chip" style="background:rgba(18,18,30,.6);border:1px solid var(--border);border-radius:20px;padding:6px 14px;cursor:pointer;color:var(--text);font-size:12px;font-family:inherit">&#127482;&#127480; US &middot; $12.7T</button>
-      <button onclick="lpSelectCountry('de')" class="lp-country-chip" style="background:rgba(18,18,30,.6);border:1px solid var(--border);border-radius:20px;padding:6px 14px;cursor:pointer;color:var(--text);font-size:12px;font-family:inherit">&#127465;&#127466; DE &middot; &euro;502B</button>
-      <button onclick="lpSelectCountry('fr')" class="lp-country-chip" style="background:rgba(18,18,30,.6);border:1px solid var(--border);border-radius:20px;padding:6px 14px;cursor:pointer;color:var(--text);font-size:12px;font-family:inherit">&#127467;&#127479; FR &middot; &euro;823B</button>
-    </div>
     <style>
-      .lp-country-chip:hover{border-color:var(--accent);background:rgba(79,195,247,.08)}
-      @media (max-width:640px){
+      @media (max-width:720px){
         .lp-action-row{flex-direction:column;gap:12px;max-width:420px}
         .lp-action-card{min-width:0;padding:18px 20px}
       }
     </style>
 
-    <div style="font-size:11px;color:rgba(255,255,255,.85);margin-bottom:20px;text-shadow:0 1px 6px rgba(0,0,0,.7)">More countries coming soon: &#127463;&#127479; Brazil &middot; &#127470;&#127473; Israel &middot; &#127464;&#127462; Canada &middot; &#127471;&#127477; Japan</div>
+    <div style="font-size:11px;color:rgba(255,255,255,.85);margin-bottom:20px;text-shadow:0 1px 6px rgba(0,0,0,.7)">More countries coming: &#127482;&#127480; US &middot; &#127465;&#127466; Germany &middot; &#127467;&#127479; France &middot; &#127463;&#127479; Brazil</div>
 
     <div class="lp-footer">
       MIT License &middot; Open Source &middot; <a href="/methodology.html" style="color:var(--accent)">Methodology</a> &middot; <a href="https://github.com/JuanBlanco9/German-Budget-Galaxy" target="_blank" style="color:var(--accent)">GitHub</a> &middot; <a href="https://github.com/sponsors/JuanBlanco9" target="_blank" style="color:var(--accent)">&hearts; Support</a> &middot; Juan Blanco
@@ -1056,9 +1043,12 @@ mark{background:rgba(255,200,0,.25);color:inherit;border-radius:2px;padding:0 2p
   <div class="header-text">
     <h1 id="app-title" onclick="goToLanding()" title="Back to home" style="cursor:pointer;user-select:none"><span>Budget</span> Galaxy</h1>
     <div class="header-tagline">Where does public money actually go?</div>
-    <div class="header-subhead">A tool for comparing public spending across UK, Germany, France, and the US &mdash; down to individual council suppliers when the data exists.</div>
+    <div class="header-subhead">From your salary to HMRC to every council and service &mdash; UK public money, drillable, auditable, down to the line item.</div>
   </div>
-  <div class="country-switch" id="country-switch">
+  <!-- Country switcher hidden for UK-only launch (2026-04-18). Retained in the DOM
+       so internal showTab('multiverse'), switchCountry('*'), and deep-links still
+       function; unhide when additional countries are ready. -->
+  <div class="country-switch" id="country-switch" style="display:none">
     <button data-country="mv" onclick="showTab('multiverse',null)" style="font-size:10px">&#127760; ALL</button>
     <button data-country="de" onclick="switchCountry('de')">&#127465;&#127466; DE</button>
     <button data-country="us" onclick="switchCountry('us')">&#127482;&#127480; US</button>
@@ -1066,7 +1056,9 @@ mark{background:rgba(255,200,0,.25);color:inherit;border-radius:2px;padding:0 2p
     <button class="active" data-country="uk" onclick="switchCountry('uk')">&#127468;&#127463; UK</button>
   </div>
   <div class="stats" style="display:none">Loading...</div>
-  <div class="global-lang" id="global-lang">
+  <!-- Language switcher hidden for UK launch — EN only until a DE/FR-fluent UK
+       audience appears. Retained so setGlobalLang() call sites still wire. -->
+  <div class="global-lang" id="global-lang" style="display:none">
     <button class="active" onclick="setGlobalLang('en')" id="gbl-en">EN</button>
     <button onclick="setGlobalLang('de')" id="gbl-de">DE</button>
   </div>
@@ -1904,9 +1896,10 @@ mark{background:rgba(79,195,247,.3);color:var(--text,#e8ebf5);padding:0 2px;bord
           <div class="cmp-selectors">
             <select class="cmp-country-select" id="cmp-left-country" onchange="cmpChangeCountry('left', this.value)">
               <option value="uk">&#127468;&#127463; UK</option>
-              <option value="de">&#127465;&#127466; Germany</option>
-              <option value="fr">&#127467;&#127479; France</option>
-              <option value="us">&#127482;&#127480; US</option>
+              <!-- Other countries re-enabled when data coverage matches UK's depth -->
+              <option value="de" disabled style="display:none">&#127465;&#127466; Germany</option>
+              <option value="fr" disabled style="display:none">&#127467;&#127479; France</option>
+              <option value="us" disabled style="display:none">&#127482;&#127480; US</option>
             </select>
             <select class="cmp-year-select" id="cmp-left-year" onchange="cmpChangeYear('left', this.value)"></select>
           </div>
@@ -1925,9 +1918,10 @@ mark{background:rgba(79,195,247,.3);color:var(--text,#e8ebf5);padding:0 2px;bord
           <div class="cmp-selectors">
             <select class="cmp-country-select" id="cmp-right-country" onchange="cmpChangeCountry('right', this.value)">
               <option value="uk">&#127468;&#127463; UK</option>
-              <option value="de">&#127465;&#127466; Germany</option>
-              <option value="fr">&#127467;&#127479; France</option>
-              <option value="us">&#127482;&#127480; US</option>
+              <!-- Other countries re-enabled when data coverage matches UK's depth -->
+              <option value="de" disabled style="display:none">&#127465;&#127466; Germany</option>
+              <option value="fr" disabled style="display:none">&#127467;&#127479; France</option>
+              <option value="us" disabled style="display:none">&#127482;&#127480; US</option>
             </select>
             <select class="cmp-year-select" id="cmp-right-year" onchange="cmpChangeYear('right', this.value)"></select>
           </div>
@@ -6220,7 +6214,7 @@ const CMP_HELP_CONTENT_SIMPLE = [
   '<ul>',
   '<li>Each column has its own country and year selector</li>',
   '<li>Both columns default to UK 2024</li>',
-  '<li>You can compare UK 2019 vs UK 2024 to see change over time, or UK vs Germany to compare across countries</li>',
+  '<li>You can compare any two UK fiscal years (e.g. 2019 vs 2024) to see change over time</li>',
   '</ul>',
   '<h3>Lenses</h3>',
   '<ul>',
@@ -12197,9 +12191,11 @@ function _applyExploreMode(){
 // Compare + List — 2-column breadcrumb navigation (new combo)
 // ═══════════════════════════════════════════════════════════════════════
 
+// UK-only launch: default compare is UK 2024 vs UK 2019 (5-year change).
+// When other countries are enabled, update these defaults.
 window._cmplistState = window._cmplistState || {
   a: {country:'uk', path:[], root:null, year:2024},
-  b: {country:'de', path:[], root:null, year:2025},
+  b: {country:'uk', path:[], root:null, year:2019},
 };
 
 async function loadCompareList(){
