@@ -1181,16 +1181,13 @@ mark{background:rgba(79,195,247,.3);color:var(--text,#e8ebf5);padding:0 2px;bord
 }
 </style>
 
-<!-- Explore & Compare sub-nav (2026-04-18 v3 refactor): 3 flat modes.
-     Circles belong to Budget Galaxy; E&C is the analytical/list/timeline tab.
-     - Single:   one country, breadcrumb drill-down (table-style)
-     - Compare:  two countries side-by-side, synced breadcrumbs
-     - Evolution: time-series (Chart.js) -->
-<div id="explore-subnav" class="explore-subnav" style="display:none">
-  <button type="button" class="etool-btn" data-mode="budgetlist" onclick="showTab('budgetlist',null)">📋 Single</button>
-  <button type="button" class="etool-btn" data-mode="comparelist" onclick="showTab('comparelist',null)">⚖️ Compare</button>
-  <button type="button" class="etool-btn" data-mode="evolution" onclick="showTab('evolution',null)">📈 Evolution</button>
-</div>
+<!-- Explore & Compare sub-nav (2026-04-18 v4 — simplification):
+     Single and Evolution removed. The Compare-list view is the only mode —
+     one column explores a single budget, two columns compare them. The old
+     budgetlist + evolution panels remain in the DOM for deep-link backcompat
+     but are no longer reachable from the UI. We'll redesign the visualization
+     language here in a dedicated pass. -->
+<div id="explore-subnav" class="explore-subnav" style="display:none"></div>
 <style>
 .explore-subnav{
   display:flex;gap:12px;padding:8px 14px;align-items:center;
@@ -3024,12 +3021,11 @@ const TAB_ALIASES = {
 function showTab(name,el){
   // Resolve legacy aliases
   if (TAB_ALIASES[name]) name = TAB_ALIASES[name];
-  // 'explore' alone has no panel — redirect to last chosen sub-mode or default 'comparelist'
+  // 'explore' alone has no panel — v4 simplification: always route to
+  // 'comparelist' (the single mode). Budgetlist/evolution/compare-spheres are
+  // reachable only via deep-links (/#budgetlist etc.), not the main nav.
   if (name === 'explore') {
-    name = localStorage.getItem('last_explore_sub') || 'comparelist';
-    // Don't let stale localStorage send them to a now-promoted tab (galaxy/taxpayer)
-    // or to the now-retired 2-sphere 'compare' view
-    if (!EXPLORE_SUBMODES[name] || name === 'compare') name = 'comparelist';
+    name = 'comparelist';
   }
   // Save current tab state before switching
   saveCurrentTabState();
@@ -3047,16 +3043,16 @@ function showTab(name,el){
     if (mainEl) mainEl.classList.add('active');
   }
 
-  // Toggle Explore & Compare sub-nav visibility + active sub-button
+  // Toggle Explore & Compare sub-nav visibility. v4 (2026-04-18): the subnav
+  // is currently empty (one-mode simplification). Kept in DOM so we can
+  // re-populate it in the viz-redesign pass. Only show if it has children.
   const subnav = document.getElementById('explore-subnav');
   if (subnav) {
-    if (_mainTab === 'explore') {
+    if (_mainTab === 'explore' && subnav.children.length > 0) {
       subnav.style.display = 'flex';
-      // New flat-button model: highlight by data-mode
       subnav.querySelectorAll('.etool-btn[data-mode]').forEach(b => {
         b.classList.toggle('active', b.dataset.mode === name);
       });
-      // Remember last sub-mode for when user clicks "Explore & Compare" tab directly
       localStorage.setItem('last_explore_sub', name);
     } else {
       subnav.style.display = 'none';
