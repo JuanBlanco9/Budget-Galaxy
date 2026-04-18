@@ -85,10 +85,10 @@
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
 <script src="https://d3js.org/d3.v7.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/d3-sankey@0.12"></script>
-<script src="/tax/uk_calc.js?v=3"></script>
-<script src="/tax/uk_vat.js?v=3"></script>
-<script src="/tax/uk_council_tax.js?v=3"></script>
-<script src="/tax/uk_trace.js?v=3"></script>
+<script src="/tax/uk_calc.js?v=4"></script>
+<script src="/tax/uk_vat.js?v=4"></script>
+<script src="/tax/uk_council_tax.js?v=4"></script>
+<script src="/tax/uk_trace.js?v=4"></script>
 <style>
 :root{--bg:#0a0a0f;--surface:#12121e;--surface2:#1a1a2c;--border:#282840;--text:#e0e0e8;--dim:#7a7a95;--accent:#4fc3f7;--accent2:#ff7043;--green:#66bb6a;--yellow:#ffd54f;--red:#ef5350}
 *{margin:0;padding:0;box-sizing:border-box}
@@ -1358,6 +1358,14 @@ mark{background:rgba(79,195,247,.3);color:var(--text,#e8ebf5);padding:0 2px;bord
 }
 .tp-dropdown-item:hover,.tp-dropdown-item.selected{background:rgba(79,195,247,.1)}
 .tp-dropdown-item .tp-dd-amt{float:right;color:var(--accent);font-variant-numeric:tabular-nums;font-size:11px}
+.tp-year-pills{display:grid;grid-template-columns:repeat(8,1fr);gap:3px}
+.tp-year-pill{
+  background:var(--surface2);border:1px solid var(--border);color:var(--dim);
+  padding:5px 0;font-family:inherit;font-size:10.5px;font-weight:600;cursor:pointer;
+  border-radius:4px;transition:all .12s;
+}
+.tp-year-pill:hover{color:var(--text)}
+.tp-year-pill.active{background:var(--accent);border-color:var(--accent);color:#0a0a0f}
 .tp-bands{display:grid;grid-template-columns:repeat(8,1fr);gap:3px}
 .tp-band{
   background:var(--surface2);border:1px solid var(--border);color:var(--dim);
@@ -1515,6 +1523,33 @@ mark{background:rgba(79,195,247,.3);color:var(--text,#e8ebf5);padding:0 2px;bord
   .tp-modal-body{padding:24px 22px 30px}
   .tp-not-list{columns:1}
 }
+
+/* Pinned-scenario compare strip */
+.tp-compare-strip{
+  display:flex;gap:10px;align-items:stretch;margin-bottom:16px;
+  background:linear-gradient(90deg,rgba(156,39,176,.06),rgba(79,195,247,.05));
+  border:1px solid rgba(156,39,176,.3);border-radius:8px;padding:10px 14px;
+  font-size:12px;animation:tp-callout-in .3s ease-out;flex-wrap:wrap;
+}
+.tp-compare-pinned-summary{
+  display:flex;flex-direction:column;min-width:140px;gap:2px;
+  padding-right:14px;border-right:1px solid rgba(156,39,176,.25);
+}
+.tp-compare-pinned-summary .tp-cmp-k{font-size:10px;color:var(--dim);text-transform:uppercase;letter-spacing:.04em}
+.tp-compare-pinned-summary .tp-cmp-v{font-weight:600;color:#ce93d8;font-variant-numeric:tabular-nums}
+.tp-compare-pinned-summary .tp-cmp-sub{font-size:10.5px;color:var(--dim)}
+.tp-compare-deltas{display:flex;flex-wrap:wrap;gap:10px;flex:1;align-items:center}
+.tp-delta{display:flex;flex-direction:column;gap:2px;min-width:88px}
+.tp-delta .tp-delta-k{font-size:10px;color:var(--dim);text-transform:uppercase;letter-spacing:.04em}
+.tp-delta .tp-delta-v{font-weight:600;font-variant-numeric:tabular-nums;font-size:13px}
+.tp-delta-v.up{color:var(--red)}
+.tp-delta-v.down{color:var(--green)}
+.tp-delta-v.same{color:var(--dim)}
+.tp-unpin{
+  background:transparent;border:0;color:var(--dim);cursor:pointer;font-family:inherit;font-size:11px;
+  padding:2px 6px;border-radius:4px;
+}
+.tp-unpin:hover{color:var(--red);background:rgba(239,83,80,.1)}
 
 /* Did-you-know callouts */
 .tp-callouts{display:flex;flex-direction:column;gap:8px;margin-bottom:18px}
@@ -1985,6 +2020,23 @@ mark{background:rgba(79,195,247,.3);color:var(--text,#e8ebf5);padding:0 2px;bord
 
       <div class="taxpayer-input-group">
         <label>
+          <span class="tp-label">Tax year</span>
+          <span class="tp-sub" id="tp-year-caveat"></span>
+        </label>
+        <div class="tp-year-pills" id="tp-year-pills">
+          <button class="tp-year-pill" data-year="2017-18" onclick="setTaxpayerYear('2017-18')">2017</button>
+          <button class="tp-year-pill" data-year="2018-19" onclick="setTaxpayerYear('2018-19')">2018</button>
+          <button class="tp-year-pill" data-year="2019-20" onclick="setTaxpayerYear('2019-20')">2019</button>
+          <button class="tp-year-pill" data-year="2020-21" onclick="setTaxpayerYear('2020-21')">2020</button>
+          <button class="tp-year-pill" data-year="2021-22" onclick="setTaxpayerYear('2021-22')">2021</button>
+          <button class="tp-year-pill" data-year="2022-23" onclick="setTaxpayerYear('2022-23')">2022</button>
+          <button class="tp-year-pill" data-year="2023-24" onclick="setTaxpayerYear('2023-24')">2023</button>
+          <button class="tp-year-pill active" data-year="2024-25" onclick="setTaxpayerYear('2024-25')">2024</button>
+        </div>
+      </div>
+
+      <div class="taxpayer-input-group">
+        <label>
           <span class="tp-label">Borrowing attribution</span>
           <span class="tp-sub tp-help-inline" title="Flat = every UK household gets the same £4,902 share. Pro-rata = scales with your share of total direct taxes (richer households 'own' more of the debt that will be repaid by future progressive taxes).">?</span>
         </label>
@@ -2043,11 +2095,15 @@ mark{background:rgba(79,195,247,.3);color:var(--text,#e8ebf5);padding:0 2px;bord
         <button class="tp-action-btn" onclick="tpCopyShareLink()" title="Copy a link that preserves these exact inputs">
           <span class="tp-action-icon">🔗</span> Share
         </button>
+        <button class="tp-action-btn" onclick="tpPinScenario()" id="tp-pin-btn" title="Pin current inputs as a comparison baseline">
+          <span class="tp-action-icon">📌</span> Pin scenario
+        </button>
         <button class="tp-action-btn" onclick="tpShowMethodology()" title="How every £ is computed">
           <span class="tp-action-icon">📖</span> Methodology
         </button>
         <span class="tp-toast" id="tp-toast"></span>
       </div>
+      <div id="tp-compare-strip" class="tp-compare-strip" style="display:none"></div>
       <div id="tp-hero" class="tp-hero"></div>
       <div id="tp-callouts" class="tp-callouts"></div>
       <div id="tp-sankey-wrap" class="tp-sankey-wrap">
@@ -12223,6 +12279,45 @@ function setTaxpayerBorrowMode(mode){
   _tpRecompute();
 }
 
+// Cache of revenue trees per fiscal year (lazy-loaded on year switch)
+window._taxpayer_revCache = new Map();
+
+async function setTaxpayerYear(year){
+  const TP = window._taxpayer;
+  if (TP.year === year && TP._prevGraph) return;
+  TP.year = year;
+  document.querySelectorAll('.tp-year-pill').forEach(b =>
+    b.classList.toggle('active', b.dataset.year === year));
+
+  // Load the revenue tree for this year (if not cached) and swap into UKTrace
+  if (!window._taxpayer_revCache.has(year)) {
+    const short = year.replace('-', '_20');  // '2024-25' -> '2024_2025'
+    const fullYear = '20' + year.split('-')[0].slice(2) + '_20' + year.split('-')[1];
+    try {
+      const url = `/data/uk/fiscal/uk_revenue_${fullYear}.json`;
+      const res = await fetch(url);
+      if (res.ok) window._taxpayer_revCache.set(year, await res.json());
+    } catch(e) { console.warn('Year load failed:', e); }
+  }
+
+  const revTree = window._taxpayer_revCache.get(year);
+  if (revTree) {
+    // Swap revenue tree in UKTrace; keep spending + psnb + councilFinance the same
+    UKTrace.setTrees({ revenue: revTree });
+  }
+
+  // Year caveat: council tax is pinned to 2024-25 for non-current years
+  const cav = document.getElementById('tp-year-caveat');
+  if (cav) {
+    cav.textContent = (year !== '2024-25')
+      ? 'CT at 2024-25 rates'
+      : '';
+    cav.style.color = 'var(--yellow)';
+  }
+
+  _tpRecompute();
+}
+
 async function loadTaxpayer(){
   const TP = window._taxpayer;
   if (!TP._loaded) {
@@ -12365,6 +12460,7 @@ function _tpRecompute(){
   _tpRenderHero(trace);
   _tpRenderCallouts(trace, direct, vatEst);
   _tpRenderSankey(trace);
+  _tpRenderCompareStrip();
 }
 
 // Rescale borrowing flow if user picks 'prorata'.
@@ -12853,6 +12949,101 @@ function _tpDecodeShare(hash){
   if (kv.c) { try { out.council = decodeURIComponent(kv.c); } catch(e) {} }
   return out;
 }
+// ── Pin scenario / compare delta ───────────────────────────────────────────
+function tpPinScenario(){
+  const TP = window._taxpayer;
+  // Capture the current computed snapshot
+  const direct = UKTax.calcTotal(TP.salary, TP.year, TP.jurisdiction);
+  const ctLk = UKCouncilTax.lookup({council:TP.council, band:TP.band});
+  const ct = ctLk ? ctLk.amount_gbp : 0;
+  const disp = Math.max(0, TP.salary - direct.total_direct_tax - ct);
+  const vat = UKVAT.estimate({grossSalary:TP.salary, disposableIncome:disp, year:TP.year});
+  const vatAmt = vat.per_tax_gbp.vat;
+
+  TP._pinned = {
+    salary: TP.salary, jurisdiction: TP.jurisdiction,
+    council: TP.council, band: TP.band, year: TP.year,
+    it: direct.income_tax.total, ni: direct.national_insurance.total,
+    vat: vatAmt, ct, total: direct.total_direct_tax + vatAmt + ct,
+    rate: (direct.total_direct_tax + vatAmt + ct) / Math.max(1, TP.salary),
+  };
+
+  // Update pin button to "Unpin"
+  const btn = document.getElementById('tp-pin-btn');
+  if (btn) {
+    btn.innerHTML = '<span class="tp-action-icon">📍</span> Unpin';
+    btn.setAttribute('onclick', 'tpUnpinScenario()');
+    btn.title = 'Remove the pinned comparison';
+  }
+
+  _tpRenderCompareStrip();
+}
+
+function tpUnpinScenario(){
+  window._taxpayer._pinned = null;
+  const btn = document.getElementById('tp-pin-btn');
+  if (btn) {
+    btn.innerHTML = '<span class="tp-action-icon">📌</span> Pin scenario';
+    btn.setAttribute('onclick', 'tpPinScenario()');
+    btn.title = 'Pin current inputs as a comparison baseline';
+  }
+  document.getElementById('tp-compare-strip').style.display = 'none';
+}
+
+function _tpRenderCompareStrip(){
+  const TP = window._taxpayer;
+  const p = TP._pinned;
+  const el = document.getElementById('tp-compare-strip');
+  if (!p || !el) { if (el) el.style.display = 'none'; return; }
+
+  // Recompute current
+  const direct = UKTax.calcTotal(TP.salary, TP.year, TP.jurisdiction);
+  const ctLk = UKCouncilTax.lookup({council:TP.council, band:TP.band});
+  const ct = ctLk ? ctLk.amount_gbp : 0;
+  const disp = Math.max(0, TP.salary - direct.total_direct_tax - ct);
+  const vat = UKVAT.estimate({grossSalary:TP.salary, disposableIncome:disp, year:TP.year}).per_tax_gbp.vat;
+  const cur = {
+    it: direct.income_tax.total, ni: direct.national_insurance.total, vat, ct,
+    total: direct.total_direct_tax + vat + ct,
+    rate: (direct.total_direct_tax + vat + ct) / Math.max(1, TP.salary),
+  };
+
+  function delta(k, key, fmt = 'money') {
+    const d = cur[key] - p[key];
+    const cls = Math.abs(d) < 0.5 ? 'same' : (d > 0 ? 'up' : 'down');
+    const sign = d >= 0 ? '+' : '−';
+    let val;
+    if (fmt === 'rate') val = (Math.abs(d) * 100).toFixed(1) + 'pp';
+    else val = _tpFmtGBP(Math.abs(d));
+    return `<div class="tp-delta">
+      <div class="tp-delta-k">${_tpEsc(k)}</div>
+      <div class="tp-delta-v ${cls}">${sign}${val}</div>
+    </div>`;
+  }
+
+  const nationLabel = TP.jurisdiction === 'scotland' ? 'Scotland' : 'rUK';
+  const pinnedNationLabel = p.jurisdiction === 'scotland' ? 'Scotland' : 'rUK';
+
+  el.innerHTML = `
+    <div class="tp-compare-pinned-summary">
+      <div class="tp-cmp-k">Pinned baseline</div>
+      <div class="tp-cmp-v">${_tpFmtGBP(p.salary)} · ${_tpEsc(pinnedNationLabel)}</div>
+      <div class="tp-cmp-sub">${_tpEsc(p.council)} Band ${_tpEsc(p.band)} · ${_tpEsc(p.year)}</div>
+      <div class="tp-cmp-sub">Total: <b>${_tpFmtGBP(p.total)}</b> (${(p.rate*100).toFixed(1)}%)</div>
+    </div>
+    <div class="tp-compare-deltas">
+      ${delta('Income Tax', 'it')}
+      ${delta('NI', 'ni')}
+      ${delta('VAT (est.)', 'vat')}
+      ${delta('Council Tax', 'ct')}
+      ${delta('Total', 'total')}
+      ${delta('Effective rate', 'rate', 'rate')}
+    </div>
+    <button class="tp-unpin" onclick="tpUnpinScenario()" title="Clear pinned baseline">✕ Unpin</button>
+  `;
+  el.style.display = 'flex';
+}
+
 function tpCopyShareLink(){
   const url = window.location.origin + window.location.pathname + _tpEncodeShare();
   const show = (msg, ok) => {
