@@ -1515,6 +1515,53 @@ mark{background:rgba(79,195,247,.3);color:var(--text,#e8ebf5);padding:0 2px;bord
   .tp-modal-body{padding:24px 22px 30px}
   .tp-not-list{columns:1}
 }
+
+/* Did-you-know callouts */
+.tp-callouts{display:flex;flex-direction:column;gap:8px;margin-bottom:18px}
+.tp-callout{
+  display:flex;gap:12px;align-items:flex-start;
+  background:linear-gradient(90deg,rgba(255,213,79,.06),rgba(79,195,247,.04));
+  border:1px solid rgba(255,213,79,.25);border-radius:7px;padding:10px 14px;
+  animation:tp-callout-in .35s ease-out;
+}
+.tp-callout-icon{font-size:18px;flex-shrink:0;line-height:1.2}
+.tp-callout-text{font-size:12.5px;color:var(--text);line-height:1.55}
+.tp-callout-text b{color:var(--yellow)}
+.tp-callout-text i{color:var(--dim)}
+@keyframes tp-callout-in{
+  from{opacity:0;transform:translateY(-4px)}
+  to{opacity:1;transform:translateY(0)}
+}
+.tp-help-inline{
+  width:16px;height:16px;line-height:16px;text-align:center;border-radius:50%;
+  background:rgba(79,195,247,.12);color:var(--accent);font-size:10px;
+  font-weight:700;cursor:help;
+}
+
+/* Smooth transitions on Sankey */
+#tp-sankey .tp-node rect,
+#tp-sankey .tp-node text,
+#tp-sankey .tp-link{transition:opacity .18s ease-out}
+#tp-sankey .tp-link{transition:stroke-width .4s cubic-bezier(.4,.0,.2,1), opacity .18s ease-out}
+
+/* Mobile polish */
+@media (max-width:900px){
+  .taxpayer-layout{grid-template-columns:1fr;grid-template-rows:auto 1fr;height:auto}
+  .taxpayer-sidebar{max-height:65vh}
+  .taxpayer-main{padding:14px 14px}
+  #tp-sankey{height:auto}
+  .tp-hero{grid-template-columns:1fr 1fr;gap:8px}
+  .tp-hero-card{padding:10px 12px}
+  .tp-hero-v{font-size:17px}
+  .tp-main-toolbar{flex-wrap:wrap}
+  .tp-callouts .tp-callout{padding:8px 10px;gap:8px}
+  .tp-callout-text{font-size:11.5px}
+  .tp-summary-split{grid-template-columns:1fr 1fr;font-size:10.5px}
+}
+@media (max-width:560px){
+  .tp-hero{grid-template-columns:1fr}
+  .tp-bands{grid-template-columns:repeat(4,1fr)}
+}
 </style>
 
 <!-- MULTIVERSE TAB -->
@@ -1938,6 +1985,17 @@ mark{background:rgba(79,195,247,.3);color:var(--text,#e8ebf5);padding:0 2px;bord
 
       <div class="taxpayer-input-group">
         <label>
+          <span class="tp-label">Borrowing attribution</span>
+          <span class="tp-sub tp-help-inline" title="Flat = every UK household gets the same £4,902 share. Pro-rata = scales with your share of total direct taxes (richer households 'own' more of the debt that will be repaid by future progressive taxes).">?</span>
+        </label>
+        <div class="tp-segmented">
+          <button class="tp-seg active" data-borrow="flat" onclick="setTaxpayerBorrowMode('flat')">Flat per household</button>
+          <button class="tp-seg" data-borrow="prorata" onclick="setTaxpayerBorrowMode('prorata')">Pro-rata to your tax</button>
+        </div>
+      </div>
+
+      <div class="taxpayer-input-group">
+        <label>
           <span class="tp-label">Your council</span>
           <span class="tp-sub" id="tp-council-ctax">£—</span>
         </label>
@@ -1991,6 +2049,7 @@ mark{background:rgba(79,195,247,.3);color:var(--text,#e8ebf5);padding:0 2px;bord
         <span class="tp-toast" id="tp-toast"></span>
       </div>
       <div id="tp-hero" class="tp-hero"></div>
+      <div id="tp-callouts" class="tp-callouts"></div>
       <div id="tp-sankey-wrap" class="tp-sankey-wrap">
         <svg id="tp-sankey"></svg>
       </div>
@@ -12151,9 +12210,18 @@ window._taxpayer = {
   council: 'Hillingdon',
   band: 'D',
   year: '2024-25',
+  borrowMode: 'flat',  // 'flat' | 'prorata'
   _loaded: false,
   _debounce: null,
+  _prevGraph: null,
 };
+
+function setTaxpayerBorrowMode(mode){
+  window._taxpayer.borrowMode = mode;
+  document.querySelectorAll('.tp-seg[data-borrow]').forEach(b =>
+    b.classList.toggle('active', b.dataset.borrow === mode));
+  _tpRecompute();
+}
 
 async function loadTaxpayer(){
   const TP = window._taxpayer;
@@ -12278,9 +12346,66 @@ function _tpRecompute(){
     jurisdiction: TP.jurisdiction,
   });
 
+  // Apply borrowing attribution mode (flat vs prorata)
+  _tpApplyBorrowMode(trace, direct, vatEst);
+
   _tpRenderSummary(trace, direct, vatEst, councilTax);
   _tpRenderHero(trace);
+  _tpRenderCallouts(trace, direct, vatEst);
   _tpRenderSankey(trace);
+}
+
+// Rescale borrowing flow if user picks 'prorata'.
+// Flat: £4,902 same for every household (default).
+// Prorata: your tax share × national PSNB.
+function _tpApplyBorrowMode(trace, direct, vatEst){
+  const mode = window._taxpayer.borrowMode;
+  if (mode !== 'prorata') return;  // flat is the default already baked in
+
+  // Revenue + PSNB context
+  const rev = UKTrace._test ? null : null; // unused here; read from trace nodes
+  const borrowNode = trace.nodes.find(n => n.id === 'borrowing');
+  if (!borrowNode) return;
+  const psnb_gbp = borrowNode.annual_total_gbp || 0;
+
+  // User's share of national direct taxes (IT + NI + VAT)
+  // Approximate national totals from trace node annual_total_gbp
+  const hmrcIT = (trace.nodes.find(n => n.id === 'hmrc_income_tax') || {}).annual_total_gbp || 0;
+  const hmrcNI = (trace.nodes.find(n => n.id === 'hmrc_ni') || {}).annual_total_gbp || 0;
+  const hmrcVAT = (trace.nodes.find(n => n.id === 'hmrc_vat') || {}).annual_total_gbp || 0;
+  const nationalDirect = hmrcIT + hmrcNI + hmrcVAT;
+  const userDirect = direct.total_direct_tax + vatEst.per_tax_gbp.vat;
+  if (nationalDirect <= 0) return;
+
+  const userShareOfDirect = userDirect / nationalDirect;
+  const newBorrow = Math.round(psnb_gbp * userShareOfDirect);
+
+  // Overwrite the borrowing link + node value
+  for (const l of trace.links) {
+    if (l.source === 'borrowing') l.value = newBorrow;
+  }
+  borrowNode.per_household_gbp = newBorrow;
+  borrowNode._mode = 'prorata';
+
+  // Recalculate CF distribution downstream (the central spending flows scaled by new effective contribution)
+  const oldEffective = trace.summary.effective_contribution_gbp - trace.summary.taxes_you_paid_gbp.council_tax;
+  const flatBorrow = trace.summary.per_household_borrowing_gbp;
+  const delta = newBorrow - flatBorrow;
+  if (Math.abs(delta) > 0.5) {
+    const baseUserCF = userDirect;
+    const newEffective = baseUserCF + newBorrow;
+    // Rescale all CF outflows
+    for (const l of trace.links) {
+      if (l.source === 'consolidated_fund') {
+        l.value = l.value * (newEffective / (baseUserCF + flatBorrow));
+      }
+    }
+    // Update summary
+    trace.summary.per_household_borrowing_gbp = newBorrow;
+    trace.summary.effective_contribution_gbp = newEffective + trace.summary.taxes_you_paid_gbp.council_tax;
+    trace.summary._attribution_mode = 'prorata';
+    trace.summary._user_share_of_direct_tax = userShareOfDirect;
+  }
 }
 
 function _tpFmtGBP(v, decimals){
@@ -12304,6 +12429,111 @@ function _tpRenderSummary(trace, direct, vat, ct){
       <div><div class="k">Council Tax</div><div class="v">${_tpFmtGBP(s.taxes_you_paid_gbp.council_tax)}</div></div>
     </div>
   `;
+}
+
+function _tpRenderCallouts(trace, direct, vat){
+  const el = document.getElementById('tp-callouts');
+  if (!el) return;
+  const TP = window._taxpayer;
+  const callouts = [];
+  const s = trace.summary;
+  const cf = s.council_facts;
+
+  // UK median gross household income ~£35,000 (ONS 2023)
+  const MEDIAN_GROSS = 35000;
+
+  // Tax band narrative
+  if (TP.jurisdiction === 'scotland' && TP.salary > 50270) {
+    const rUKDirect = _tpIncomeTaxRUK(TP.salary);
+    const scotDirect = direct.income_tax.total;
+    const delta = scotDirect - rUKDirect;
+    if (delta > 50) callouts.push({
+      icon: '🏴󠁧󠁢󠁳󠁣󠁴󠁿',
+      text: `Scotland's 42% Higher Rate (vs 40% in rUK) means you pay <b>£${Math.round(delta).toLocaleString('en-GB')} more</b> in Income Tax than the same salary would pay in England.`,
+    });
+  }
+  if (TP.salary >= 100000 && TP.salary <= 125140) {
+    callouts.push({
+      icon: '📉',
+      text: `You're in the <b>Personal Allowance taper zone</b>. Every £2 above £100k reduces your tax-free allowance by £1 — your effective marginal rate is ~60% on the next pound earned.`,
+    });
+  } else if (TP.salary > 50270 && TP.salary < 100000) {
+    const higherRateTax = Math.min(TP.salary - 50270, 125140 - 50270) * 0.40;
+    callouts.push({
+      icon: '📈',
+      text: `You crossed into the <b>Higher Rate band (40%)</b> at £50,270. So far £${Math.round(higherRateTax).toLocaleString('en-GB')} of your Income Tax is at that rate.`,
+    });
+  }
+  if (TP.salary >= 125140) {
+    callouts.push({
+      icon: '💎',
+      text: `Additional Rate (45%) territory — you're paying tax at one of the highest bands. The top 1% of UK earners pay ~28% of all Income Tax revenue.`,
+    });
+  }
+
+  // Median comparison
+  if (TP.salary >= MEDIAN_GROSS * 3) {
+    callouts.push({
+      icon: '📊',
+      text: `Your total tax bill (£${Math.round(s.taxes_you_paid_gbp.total).toLocaleString('en-GB')}) is more than the <b>median UK household's gross income</b> (£${MEDIAN_GROSS.toLocaleString('en-GB')}).`,
+    });
+  } else if (TP.salary < 15000) {
+    callouts.push({
+      icon: '🫱',
+      text: `At this income, direct tax is minimal. The Personal Allowance (£12,570) protects most of your earnings — gov likely transfers money <i>to</i> you via benefits.`,
+    });
+  }
+
+  // VAT regressivity
+  if (vat && direct) {
+    const vatShare = vat.per_tax_gbp.vat / (direct.total_direct_tax + vat.per_tax_gbp.vat);
+    if (vatShare > 0.45) callouts.push({
+      icon: '🛒',
+      text: `You pay more in indirect taxes (VAT + duties) than in Income Tax + NI. This is the classic regressive pattern — consumption taxes hit lower incomes proportionally harder.`,
+    });
+  }
+
+  // Council tax outliers
+  if (cf && s.taxes_you_paid_gbp.council_tax) {
+    const ct = s.taxes_you_paid_gbp.council_tax;
+    if (ct < 1100 && TP.band === 'D') callouts.push({
+      icon: '🏛️',
+      text: `${cf.name}'s Band D (£${Math.round(ct).toLocaleString('en-GB')}) is among the lowest in England — the national average is £2,171.`,
+    });
+    if (ct > 2400 && TP.band === 'D') callouts.push({
+      icon: '🏛️',
+      text: `${cf.name}'s Band D (£${Math.round(ct).toLocaleString('en-GB')}) is well above the English average (£2,171).`,
+    });
+  }
+
+  // Borrowing narrative
+  if (TP.borrowMode === 'prorata' && s._user_share_of_direct_tax) {
+    const bShare = s.per_household_borrowing_gbp;
+    const flatRef = 4902;
+    const diff = bShare - flatRef;
+    const direction = diff >= 0 ? 'more' : 'less';
+    callouts.push({
+      icon: '🧮',
+      text: `Pro-rata attribution: your share of the debt (<b>£${Math.round(bShare).toLocaleString('en-GB')}</b>) is £${Math.abs(Math.round(diff)).toLocaleString('en-GB')} <b>${direction}</b> than the flat £${flatRef.toLocaleString('en-GB')}/household — because you fund a <b>${(s._user_share_of_direct_tax*100*1000).toFixed(2)} per 100k</b> share of national tax revenue.`,
+    });
+  }
+
+  // Pick up to 3 to display (priority = first ones)
+  const display = callouts.slice(0, 3);
+
+  if (display.length === 0) { el.innerHTML = ''; return; }
+  el.innerHTML = display.map(c => `
+    <div class="tp-callout">
+      <span class="tp-callout-icon">${c.icon}</span>
+      <div class="tp-callout-text">${c.text}</div>
+    </div>
+  `).join('');
+}
+
+// Helper: what would rUK Income Tax be for this salary (for Scotland delta callout)
+function _tpIncomeTaxRUK(salary){
+  try { return UKTax.calcIncomeTax(salary, '2024-25', 'rUK').total; }
+  catch(e) { return 0; }
 }
 
 function _tpRenderHero(trace){
@@ -12338,9 +12568,6 @@ function _tpRenderSankey(trace){
   const wrap = document.getElementById('tp-sankey-wrap');
   const W = wrap.clientWidth || 900;
 
-  // Height must accommodate the densest column. Terminal nodes
-  // (spending groups + council services) land in the rightmost column.
-  // Each node needs ~30px (label + subtext + padding) to be legible.
   const terminalNodes = trace.nodes.filter(n =>
     ['spending', 'council_service', 'local_pool'].includes(n.type)
   ).length;
@@ -12349,7 +12576,17 @@ function _tpRenderSankey(trace){
   const svg = d3.select(svgEl)
     .attr('viewBox', `0 0 ${W} ${H}`)
     .attr('height', H);
-  svg.selectAll('*').remove();
+
+  // Decide: full redraw or transition update?
+  const prev = window._taxpayer._prevGraph;
+  const sameStructure = prev &&
+    prev.nodeIds.length === trace.nodes.length &&
+    prev.linkKeys.length === trace.links.length &&
+    prev.nodeIds.every((id,i) => id === trace.nodes[i].id) &&
+    prev.linkKeys.every((k,i) => k === (trace.links[i].source + '→' + trace.links[i].target));
+  if (!sameStructure) {
+    svg.selectAll('*').remove();
+  }
 
   // Build d3-sankey data
   const nodeMap = new Map();
@@ -12396,17 +12633,17 @@ function _tpRenderSankey(trace){
   // Pre-compute, for each node, the set of connected link+node indices (up+downstream)
   const connected = _tpBuildConnectivity(graph);
 
-  // Links
-  const link = svg.append('g').attr('class','tp-links')
-    .selectAll('path').data(graph.links).enter()
-    .append('path')
+  // Links — data join with enter/update/exit transitions
+  const linkGroup = svg.selectAll('g.tp-links').data([0]).join('g').attr('class','tp-links');
+  const link = linkGroup.selectAll('path.tp-link').data(graph.links, (d,i) =>
+    (d.source.id || d.source) + '→' + (d.target.id || d.target));
+
+  link.exit().remove();
+
+  const linkEnter = link.enter().append('path')
       .attr('class', d => 'tp-link' + (d.source.type === 'debt' ? ' tp-link-borrowing' : ''))
-      .attr('d', d3.sankeyLinkHorizontal())
+      .attr('fill', 'none')
       .attr('stroke', d => d.source.type === 'debt' ? '#ef5350' : (typeColor[d.source.type] || '#4fc3f7'))
-      .attr('stroke-width', d => Math.max(
-        d.source.type === 'debt' ? 6 : 1,
-        d.width
-      ))
       .attr('opacity', d => d.source.type === 'debt' ? 0.75 : 0.35)
       .on('mouseenter', (e,d) => _tpHighlightLink(d, svgEl, graph))
       .on('mouseleave', (e,d) => { _tpClearHighlight(svgEl); _tpHideTooltip(); })
@@ -12419,47 +12656,86 @@ function _tpRenderSankey(trace){
            <div class="tt-val">${_tpFmtGBP(d.value)}</div>
            ${d.label ? `<div class="tt-ctx">${_tpEsc(d.label)}</div>` : ''}`));
 
-  // Nodes
-  const node = svg.append('g').attr('class','tp-nodes')
-    .selectAll('g').data(graph.nodes).enter()
-    .append('g')
+  linkEnter.merge(link)
+    .transition().duration(sameStructure ? 380 : 0).ease(d3.easeCubicInOut)
+      .attr('d', d3.sankeyLinkHorizontal())
+      .attr('stroke-width', d => Math.max(d.source.type === 'debt' ? 6 : 1, d.width));
+
+  // Nodes — data join with transitions
+  const nodeGroup = svg.selectAll('g.tp-nodes').data([0]).join('g').attr('class','tp-nodes');
+  const node = nodeGroup.selectAll('g.tp-node').data(graph.nodes, d => d.id);
+
+  node.exit().remove();
+
+  const nodeEnter = node.enter().append('g')
     .attr('class', d => 'tp-node' + (d.type === 'debt' ? ' tp-node-borrowing' : ''))
     .on('mouseenter', (e,d) => _tpHighlightNode(d, svgEl, graph, connected))
     .on('mouseleave', (e,d) => { _tpClearHighlight(svgEl); _tpHideTooltip(); })
     .on('mousemove', (e,d) => _tpShowTooltip(e, d.type === 'debt'
       ? `<div class="tt-name">⚠︎ ${_tpEsc(d.name)}</div>
          <div class="tt-val">${_tpFmtGBP(d.value || 0)}</div>
-         <div class="tt-ctx">This is the UK gov's total borrowing this year (${_tpFmtGBP((d.annual_total_gbp||0)/1e9, 1)}B) divided evenly across ~28.4M households.
-           It does <b>not</b> change with your salary. Future repayment comes from progressive taxes.</div>`
+         <div class="tt-ctx">UK gov's total borrowing this year (${_tpFmtGBP((d.annual_total_gbp||0)/1e9, 1)}B) divided across ~28.4M households.
+           Does <b>not</b> change with your salary (unless you switch to Pro-rata attribution). Future repayment comes from progressive taxes.</div>`
       : `<div class="tt-name">${_tpEsc(d.name)}</div>
          <div class="tt-val">${_tpFmtGBP(d.value || 0)}</div>
          ${d.annual_total_gbp ? `<div class="tt-ctx">National total: ${_tpFmtGBP(d.annual_total_gbp/1e9, 1)}B</div>` : ''}`));
 
-  node.append('rect')
-    .attr('x', d => d.x0).attr('y', d => d.y0)
+  nodeEnter.append('rect')
+    .attr('fill', d => typeColor[d.type] || '#4fc3f7')
+    .attr('x', d => d.x0)
+    .attr('y', d => d.y0)
     .attr('width', d => d.x1 - d.x0)
-    .attr('height', d => d.type === 'debt' ? Math.max(32, d.y1 - d.y0) : Math.max(1, d.y1 - d.y0))
-    .attr('fill', d => typeColor[d.type] || '#4fc3f7');
+    .attr('height', d => d.type === 'debt' ? Math.max(32, d.y1 - d.y0) : Math.max(1, d.y1 - d.y0));
 
-  node.append('text')
-    .attr('x', d => d.x0 < W/2 ? d.x1 + 6 : d.x0 - 6)
-    .attr('y', d => (d.y0 + d.y1) / 2)
-    .attr('dy', '0.35em')
-    .attr('text-anchor', d => d.x0 < W/2 ? 'start' : 'end')
+  nodeEnter.append('text').attr('class','tp-main-label')
     .attr('font-weight', d => d.type === 'debt' ? 600 : 400)
     .attr('fill', d => d.type === 'debt' ? '#ef5350' : 'var(--text)')
+    .attr('dy', '0.35em')
+    .attr('x', d => d.x0 < W/2 ? d.x1 + 6 : d.x0 - 6)
+    .attr('y', d => (d.y0 + d.y1) / 2)
+    .attr('text-anchor', d => d.x0 < W/2 ? 'start' : 'end')
     .text(d => d.type === 'debt' ? '⚠︎ ' + d.name : d.name);
 
-  node.append('text')
-    .attr('class','tp-subtext')
+  nodeEnter.append('text').attr('class','tp-subtext')
     .attr('x', d => d.x0 < W/2 ? d.x1 + 6 : d.x0 - 6)
     .attr('y', d => (d.y0 + d.y1) / 2 + 14)
     .attr('text-anchor', d => d.x0 < W/2 ? 'start' : 'end')
-    .attr('fill', d => d.type === 'debt' ? '#ef5350' : 'var(--dim)')
-    .text(d => {
-      if (d.type === 'debt') return _tpFmtGBP(d.value||0) + ' · fixed per household';
-      return (d.value||0) >= 1 ? _tpFmtGBP(d.value||0) : '';
-    });
+    .attr('fill', d => d.type === 'debt' ? '#ef5350' : 'var(--dim)');
+
+  // Update (transition) for both entering and existing nodes
+  const nodeAll = nodeEnter.merge(node);
+  nodeAll.select('rect')
+    .transition().duration(sameStructure ? 380 : 0).ease(d3.easeCubicInOut)
+      .attr('x', d => d.x0)
+      .attr('y', d => d.y0)
+      .attr('width', d => d.x1 - d.x0)
+      .attr('height', d => d.type === 'debt' ? Math.max(32, d.y1 - d.y0) : Math.max(1, d.y1 - d.y0));
+
+  nodeAll.select('text.tp-main-label')
+    .transition().duration(sameStructure ? 380 : 0).ease(d3.easeCubicInOut)
+      .attr('x', d => d.x0 < W/2 ? d.x1 + 6 : d.x0 - 6)
+      .attr('y', d => (d.y0 + d.y1) / 2);
+
+  nodeAll.select('text.tp-subtext')
+    .transition().duration(sameStructure ? 380 : 0).ease(d3.easeCubicInOut)
+      .attr('x', d => d.x0 < W/2 ? d.x1 + 6 : d.x0 - 6)
+      .attr('y', d => (d.y0 + d.y1) / 2 + 14)
+      .textTween(function(d){
+        const self = d3.select(this);
+        const prev = +((self.text().replace(/[^\d.]/g,'')) || 0);
+        const newV = d.value || 0;
+        return (t) => {
+          const v = prev + (newV - prev) * t;
+          if (d.type === 'debt') return _tpFmtGBP(v) + ' · fixed per household';
+          return v >= 1 ? _tpFmtGBP(v) : '';
+        };
+      });
+
+  // Save graph key for next render
+  window._taxpayer._prevGraph = {
+    nodeIds: graph.nodes.map(n => n.id),
+    linkKeys: graph.links.map(l => (l.source.id || l.source) + '→' + (l.target.id || l.target)),
+  };
 }
 
 function _tpBuildConnectivity(graph){
