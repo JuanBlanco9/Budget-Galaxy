@@ -1403,6 +1403,24 @@ mark{background:rgba(79,195,247,.3);color:var(--text,#e8ebf5);padding:0 2px;bord
 .tp-hero-k{font-size:10px;color:var(--dim);text-transform:uppercase;letter-spacing:.04em;margin-bottom:3px}
 .tp-hero-v{font-size:20px;font-weight:700;color:var(--text);font-variant-numeric:tabular-nums}
 .tp-hero-sub{font-size:11px;color:var(--accent);margin-top:2px}
+.tp-hero-borrowed{
+  border-color:rgba(239,83,80,.4);
+  background:linear-gradient(180deg,rgba(239,83,80,.08),rgba(239,83,80,.02));
+}
+.tp-hero-borrowed .tp-hero-sub{color:var(--red)}
+.tp-fixed-badge{
+  display:inline-block;margin-left:6px;padding:1px 6px;border-radius:3px;
+  background:rgba(239,83,80,.18);color:var(--red);font-size:9px;
+  font-weight:700;letter-spacing:.04em;text-transform:uppercase;
+}
+#tp-sankey .tp-link-borrowing{
+  stroke-dasharray:6 4;
+  animation:tp-borrow-flow 18s linear infinite;
+}
+@keyframes tp-borrow-flow{to{stroke-dashoffset:-100}}
+#tp-sankey .tp-node-borrowing rect{
+  filter:drop-shadow(0 0 6px rgba(239,83,80,.5));
+}
 .tp-sankey-wrap{position:relative;min-height:560px;background:transparent}
 #tp-sankey{width:100%;height:560px;display:block}
 #tp-sankey .tp-node rect{stroke:var(--surface);stroke-width:1px;cursor:pointer}
@@ -1880,7 +1898,7 @@ mark{background:rgba(79,195,247,.3);color:var(--text,#e8ebf5);padding:0 2px;bord
             <li><b>Income Tax + NI</b>: exact per HMRC bands for 2024-25 (rUK or Scotland).</li>
             <li><b>VAT + duties</b>: estimated from ONS decile consumption data — the number depends on spending habits, this shows the typical figure for your income level.</li>
             <li><b>Council Tax</b>: exact from MHCLG 2024-25 tables (all-in: billing authority + county + GLA + police + fire + parish).</li>
-            <li><b>Borrowing</b>: UK gov. borrowed £139B in 2022-23 (~£4,900/household). Shown as a separate source funding the Consolidated Fund.</li>
+            <li><b>Borrowing</b>: UK gov. borrowed £139B in 2022-23 (~£4,900/household). This figure is <b>the same for every household</b> regardless of salary — what the state added to the national debt on your behalf this year, to be repaid by future taxes. It does not shrink when your salary grows; the Sankey link just looks smaller in proportion because your own tax contribution is larger.</li>
             <li><b>Spending attribution</b>: government doesn't earmark taxes — all revenue pools in the Consolidated Fund. This visualisation shows pro-rata <i>"for every £ spent by central gov, where a £ of yours would fit."</i></li>
             <li><b>Your council's share</b>: real per-council grant data from MHCLG Revenue Outturn.</li>
           </ul>
@@ -12155,10 +12173,10 @@ function _tpRenderHero(trace){
       <div class="tp-hero-v">${_tpFmtGBP(perDay, 2)}</div>
       <div class="tp-hero-sub">of yours to gov, every day</div>
     </div>
-    <div class="tp-hero-card">
-      <div class="tp-hero-k">Borrowed on your behalf</div>
+    <div class="tp-hero-card tp-hero-borrowed">
+      <div class="tp-hero-k">Borrowed on your behalf <span class="tp-fixed-badge">fixed</span></div>
       <div class="tp-hero-v">${_tpFmtGBP(borrowed)}</div>
-      <div class="tp-hero-sub">per-household deficit share</div>
+      <div class="tp-hero-sub">Same for every UK household — doesn't change with your salary</div>
     </div>
     <div class="tp-hero-card">
       <div class="tp-hero-k">To ${cf ? cf.name : 'your council'}</div>
@@ -12223,31 +12241,45 @@ function _tpRenderSankey(trace){
   const link = svg.append('g').attr('class','tp-links')
     .selectAll('path').data(graph.links).enter()
     .append('path')
-      .attr('class','tp-link')
+      .attr('class', d => 'tp-link' + (d.source.type === 'debt' ? ' tp-link-borrowing' : ''))
       .attr('d', d3.sankeyLinkHorizontal())
-      .attr('stroke', d => typeColor[d.source.type] || '#4fc3f7')
-      .attr('stroke-width', d => Math.max(1, d.width))
-      .attr('opacity', 0.35)
-      .on('mousemove', (e,d) => _tpShowTooltip(e,
-        `<div class="tt-name">${_tpEsc(d.source.name)} → ${_tpEsc(d.target.name)}</div>
-         <div class="tt-val">${_tpFmtGBP(d.value)}</div>
-         ${d.label ? `<div class="tt-ctx">${_tpEsc(d.label)}</div>` : ''}`))
+      .attr('stroke', d => d.source.type === 'debt' ? '#ef5350' : (typeColor[d.source.type] || '#4fc3f7'))
+      .attr('stroke-width', d => Math.max(
+        d.source.type === 'debt' ? 6 : 1,   // minimum 6px for borrowing, so it stays visible at high salaries
+        d.width
+      ))
+      .attr('opacity', d => d.source.type === 'debt' ? 0.75 : 0.35)
+      .on('mousemove', (e,d) => _tpShowTooltip(e, d.source.type === 'debt'
+        ? `<div class="tt-name">⚠︎ ${_tpEsc(d.source.name)}</div>
+           <div class="tt-val">${_tpFmtGBP(d.value)}</div>
+           <div class="tt-ctx">UK gov. borrowed ${_tpFmtGBP((d.source.annual_total_gbp||0)/1e9, 1)}B this year.
+             This figure is <b>fixed per household</b> — it does NOT change with your salary.
+             It's what the state added to the national debt on your behalf, to be repaid by future taxes.</div>`
+        : `<div class="tt-name">${_tpEsc(d.source.name)} → ${_tpEsc(d.target.name)}</div>
+           <div class="tt-val">${_tpFmtGBP(d.value)}</div>
+           ${d.label ? `<div class="tt-ctx">${_tpEsc(d.label)}</div>` : ''}`))
       .on('mouseleave', _tpHideTooltip);
 
   // Nodes
   const node = svg.append('g').attr('class','tp-nodes')
     .selectAll('g').data(graph.nodes).enter()
-    .append('g').attr('class','tp-node')
-    .on('mousemove', (e,d) => _tpShowTooltip(e,
-      `<div class="tt-name">${_tpEsc(d.name)}</div>
-       <div class="tt-val">${_tpFmtGBP(d.value || 0)}</div>
-       ${d.annual_total_gbp ? `<div class="tt-ctx">National total: ${_tpFmtGBP(d.annual_total_gbp/1e9, 1)}B</div>` : ''}`))
+    .append('g')
+    .attr('class', d => 'tp-node' + (d.type === 'debt' ? ' tp-node-borrowing' : ''))
+    .on('mousemove', (e,d) => _tpShowTooltip(e, d.type === 'debt'
+      ? `<div class="tt-name">⚠︎ ${_tpEsc(d.name)}</div>
+         <div class="tt-val">${_tpFmtGBP(d.value || 0)}</div>
+         <div class="tt-ctx">This is the UK gov's total borrowing this year (${_tpFmtGBP((d.annual_total_gbp||0)/1e9, 1)}B) divided evenly across ~28.4M households.
+           It does <b>not</b> change with your salary — every household gets the same share.
+           In practice, future repayment will be funded by future taxes, which are progressive.</div>`
+      : `<div class="tt-name">${_tpEsc(d.name)}</div>
+         <div class="tt-val">${_tpFmtGBP(d.value || 0)}</div>
+         ${d.annual_total_gbp ? `<div class="tt-ctx">National total: ${_tpFmtGBP(d.annual_total_gbp/1e9, 1)}B</div>` : ''}`))
     .on('mouseleave', _tpHideTooltip);
 
   node.append('rect')
     .attr('x', d => d.x0).attr('y', d => d.y0)
     .attr('width', d => d.x1 - d.x0)
-    .attr('height', d => Math.max(1, d.y1 - d.y0))
+    .attr('height', d => d.type === 'debt' ? Math.max(32, d.y1 - d.y0) : Math.max(1, d.y1 - d.y0))
     .attr('fill', d => typeColor[d.type] || '#4fc3f7');
 
   node.append('text')
@@ -12255,14 +12287,20 @@ function _tpRenderSankey(trace){
     .attr('y', d => (d.y0 + d.y1) / 2)
     .attr('dy', '0.35em')
     .attr('text-anchor', d => d.x0 < W/2 ? 'start' : 'end')
-    .text(d => d.name);
+    .attr('font-weight', d => d.type === 'debt' ? 600 : 400)
+    .attr('fill', d => d.type === 'debt' ? '#ef5350' : 'var(--text)')
+    .text(d => d.type === 'debt' ? '⚠︎ ' + d.name : d.name);
 
   node.append('text')
     .attr('class','tp-subtext')
     .attr('x', d => d.x0 < W/2 ? d.x1 + 6 : d.x0 - 6)
     .attr('y', d => (d.y0 + d.y1) / 2 + 14)
     .attr('text-anchor', d => d.x0 < W/2 ? 'start' : 'end')
-    .text(d => (d.value||0) >= 1 ? _tpFmtGBP(d.value||0) : '');
+    .attr('fill', d => d.type === 'debt' ? '#ef5350' : 'var(--dim)')
+    .text(d => {
+      if (d.type === 'debt') return _tpFmtGBP(d.value||0) + ' · fixed per household';
+      return (d.value||0) >= 1 ? _tpFmtGBP(d.value||0) : '';
+    });
 }
 
 function _tpShowTooltip(ev, html){
