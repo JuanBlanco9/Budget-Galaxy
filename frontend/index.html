@@ -1186,31 +1186,15 @@ mark{background:rgba(79,195,247,.3);color:var(--text,#e8ebf5);padding:0 2px;bord
 }
 </style>
 
-<!-- Explore & Compare sub-nav: visible only when the active main tab is 'explore'.
-     Switches between the 4 legacy panels (galaxy/compare/evolution/budgetlist)
-     now presented as modes of a single unified tab. -->
-<!-- Explore & Compare toolbar (2026-04-18 refactor): 3 orthogonal toggles
-     replace the 4 fixed sub-modes. State = (budgets, style, timeline).
-     - Budgets: single or compare (1 or 2 columns)
-     - Style: circles (D3) or list (breadcrumb text)
-     - Timeline: overlay on/off
-     6 combos emerge; all mapped to existing panels + new compare-list. -->
+<!-- Explore & Compare sub-nav (2026-04-18 v3 refactor): 3 flat modes.
+     Circles belong to Budget Galaxy; E&C is the analytical/list/timeline tab.
+     - Single:   one country, breadcrumb drill-down (table-style)
+     - Compare:  two countries side-by-side, synced breadcrumbs
+     - Evolution: time-series (Chart.js) -->
 <div id="explore-subnav" class="explore-subnav" style="display:none">
-  <div class="explore-toolbar-group" title="How many budgets">
-    <span class="etool-label">Budgets:</span>
-    <button type="button" class="etool-btn active" data-toggle="budgets" data-value="single" onclick="setExploreMode({budgets:'single'})">1</button>
-    <button type="button" class="etool-btn" data-toggle="budgets" data-value="compare" onclick="setExploreMode({budgets:'compare'})">1 + 1 compare</button>
-  </div>
-  <div class="etool-sep"></div>
-  <div class="explore-toolbar-group" title="Display style">
-    <span class="etool-label">Style:</span>
-    <button type="button" class="etool-btn active" data-toggle="style" data-value="circles" onclick="setExploreMode({style:'circles'})">🌌 Circles</button>
-    <button type="button" class="etool-btn" data-toggle="style" data-value="list" onclick="setExploreMode({style:'list'})">📋 List</button>
-  </div>
-  <div class="etool-sep"></div>
-  <div class="explore-toolbar-group" title="Timeline overlay">
-    <button type="button" class="etool-btn" data-toggle="timeline" data-value="on" onclick="setExploreMode({timeline:'toggle'})">📈 Timeline</button>
-  </div>
+  <button type="button" class="etool-btn" data-mode="budgetlist" onclick="showTab('budgetlist',null)">📋 Single</button>
+  <button type="button" class="etool-btn" data-mode="comparelist" onclick="showTab('comparelist',null)">⚖️ Compare</button>
+  <button type="button" class="etool-btn" data-mode="evolution" onclick="showTab('evolution',null)">📈 Evolution</button>
 </div>
 <style>
 .explore-subnav{
@@ -3016,10 +3000,10 @@ function restoreTabState(tab){
 }
 
 // Maps sub-mode names to their parent main tab.
-// 2026-04-18: 'galaxy', 'taxpayer' promoted to top-level (Budget Galaxy / Your Taxes).
-// Explore & Compare still hosts: compare, comparelist, budgetlist, evolution.
-// Legacy deep-links (#multiverse, #suppliers) redirect to their new homes.
-const EXPLORE_SUBMODES = {compare:1, evolution:1, budgetlist:1, comparelist:1};
+// 2026-04-18 v3: E&C is the analytical/list tab (circles live in Budget Galaxy).
+// Active sub-modes: budgetlist (Single), comparelist (Compare), evolution.
+// 'compare' (the 2-sphere view) stays hidden for deep-link backward compat.
+const EXPLORE_SUBMODES = {budgetlist:1, comparelist:1, evolution:1, compare:1};
 function _exploreParent(name){ return EXPLORE_SUBMODES[name] ? 'explore' : name; }
 
 // Legacy aliases — map old hash fragments to new canonical tabs.
@@ -3032,11 +3016,12 @@ const TAB_ALIASES = {
 function showTab(name,el){
   // Resolve legacy aliases
   if (TAB_ALIASES[name]) name = TAB_ALIASES[name];
-  // 'explore' alone has no panel — redirect to last chosen sub-mode or default 'compare'
+  // 'explore' alone has no panel — redirect to last chosen sub-mode or default 'comparelist'
   if (name === 'explore') {
-    name = localStorage.getItem('last_explore_sub') || 'compare';
-    // Don't let stale localStorage send them to a now-promoted tab
-    if (!EXPLORE_SUBMODES[name]) name = 'compare';
+    name = localStorage.getItem('last_explore_sub') || 'comparelist';
+    // Don't let stale localStorage send them to a now-promoted tab (galaxy/taxpayer)
+    // or to the now-retired 2-sphere 'compare' view
+    if (!EXPLORE_SUBMODES[name] || name === 'compare') name = 'comparelist';
   }
   // Save current tab state before switching
   saveCurrentTabState();
@@ -3059,12 +3044,9 @@ function showTab(name,el){
   if (subnav) {
     if (_mainTab === 'explore') {
       subnav.style.display = 'flex';
-      subnav.querySelectorAll('.subnav-btn').forEach(b => {
-        b.classList.toggle('active', b.dataset.sub === name);
-      });
-      // Highlight the Taxpayer button when in that sub-mode
-      subnav.querySelectorAll('.etool-btn[data-toggle="taxpayer"]').forEach(b => {
-        b.classList.toggle('active', name === 'taxpayer');
+      // New flat-button model: highlight by data-mode
+      subnav.querySelectorAll('.etool-btn[data-mode]').forEach(b => {
+        b.classList.toggle('active', b.dataset.mode === name);
       });
       // Remember last sub-mode for when user clicks "Explore & Compare" tab directly
       localStorage.setItem('last_explore_sub', name);
