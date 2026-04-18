@@ -996,35 +996,38 @@ mark{background:rgba(255,200,0,.25);color:inherit;border-radius:2px;padding:0 2p
 <!-- ── LANDING PAGE ─────────────────────────────── -->
 <div id="landing-page">
   <div class="lp-container">
-    <div class="lp-title" style="font-size:32px;margin-bottom:4px;letter-spacing:2px">BUDGET GALAXY</div>
-    <div class="lp-tagline" style="max-width:none;margin:0 auto 8px;line-height:1.6;font-size:14px;color:rgba(255,255,255,.95);white-space:nowrap;background:rgba(0,0,0,.4);display:inline-block;padding:6px 18px;border-radius:6px">&#127468;&#127463; UK public money, traced &mdash; from your payslip to your council's bin collection.</div>
+    <div class="lp-title" style="font-size:36px;margin-bottom:6px;letter-spacing:2px">BUDGET GALAXY</div>
+    <div class="lp-tagline" style="max-width:720px;margin:0 auto 22px;line-height:1.55;font-size:15px;color:rgba(255,255,255,.95);background:rgba(0,0,0,.4);padding:8px 20px;border-radius:6px;display:inline-block">&#127468;&#127463; Every &pound;1 of UK public money &mdash; from HMRC to your council&rsquo;s bin collection, visualized.</div>
 
-    <!-- Three primary action cards (UK-only launch, 2026-04-18) -->
-    <div class="lp-action-row" style="display:flex;justify-content:center;gap:16px;flex-wrap:wrap;margin:0 auto 20px;max-width:960px">
-      <div onclick="lpGoToTab('taxpayer')" class="lp-action-card lp-action-card-hero" style="flex:1;min-width:260px;background:linear-gradient(135deg,rgba(255,112,67,.16),rgba(79,195,247,.08));border:1px solid var(--accent2);border-radius:12px;padding:22px 28px;cursor:pointer;text-align:center;transition:transform .2s,box-shadow .2s" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 8px 24px rgba(255,112,67,.2)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
-        <div style="font-size:32px;margin-bottom:6px">&#128176;</div>
-        <div style="font-size:20px;font-weight:700;color:var(--text);letter-spacing:1px">YOUR TAXES</div>
-        <div style="font-size:12px;color:var(--accent2);margin-top:4px">Where every £ of your tax goes</div>
-        <div style="font-size:10px;color:rgba(255,255,255,.7);margin-top:2px">Salary &middot; Council &middot; Band &rarr; personal Sankey</div>
-      </div>
-      <div onclick="lpGoToTab('galaxy')" class="lp-action-card" style="flex:1;min-width:260px;background:linear-gradient(135deg,rgba(18,18,30,.9),rgba(30,30,50,.9));border:1px solid var(--accent);border-radius:12px;padding:22px 28px;cursor:pointer;text-align:center;transition:transform .2s,box-shadow .2s" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 8px 24px rgba(79,195,247,.2)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
-        <div style="font-size:32px;margin-bottom:6px">&#127776;</div>
-        <div style="font-size:20px;font-weight:700;color:var(--text);letter-spacing:1px">BUDGET GALAXY</div>
-        <div style="font-size:12px;color:var(--accent);margin-top:4px">The whole £1.4T spending, visual</div>
-        <div style="font-size:10px;color:rgba(255,255,255,.7);margin-top:2px">DWP &middot; NHS &middot; Defence &middot; 60+ departments</div>
-      </div>
-      <div onclick="lpGoToTab('explore')" class="lp-action-card" style="flex:1;min-width:260px;background:linear-gradient(135deg,rgba(18,18,30,.9),rgba(30,30,50,.9));border:1px solid var(--border);border-radius:12px;padding:22px 28px;cursor:pointer;text-align:center;transition:transform .2s,box-shadow .2s,border-color .2s" onmouseover="this.style.transform='translateY(-3px)';this.style.borderColor='var(--accent)';this.style.boxShadow='0 8px 24px rgba(79,195,247,.15)'" onmouseout="this.style.transform='';this.style.borderColor='var(--border)';this.style.boxShadow=''">
-        <div style="font-size:32px;margin-bottom:6px">&#128269;</div>
-        <div style="font-size:20px;font-weight:700;color:var(--text);letter-spacing:1px">EXPLORE &amp; COMPARE</div>
-        <div style="font-size:12px;color:var(--accent);margin-top:4px">Drill into the numbers, year-on-year</div>
-        <div style="font-size:10px;color:rgba(255,255,255,.7);margin-top:2px">Single &middot; Compare &middot; Evolution</div>
+    <!-- Primary CTA: the Budget Galaxy itself is the star of the show. -->
+    <div class="lp-hero-row" style="display:flex;justify-content:center;margin:0 auto 18px">
+      <div onclick="lpGoToTab('galaxy')" class="lp-hero-card" style="min-width:360px;max-width:520px;background:linear-gradient(135deg,rgba(79,195,247,.12),rgba(18,18,30,.95));border:1px solid var(--accent);border-radius:14px;padding:30px 36px;cursor:pointer;text-align:center;transition:transform .2s,box-shadow .2s" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 12px 34px rgba(79,195,247,.28)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+        <div style="font-size:40px;margin-bottom:8px">&#127776;</div>
+        <div style="font-size:26px;font-weight:700;color:var(--text);letter-spacing:1.5px">ENTER THE GALAXY</div>
+        <div style="font-size:14px;color:var(--accent);margin-top:6px">&pound;1.4 trillion of UK spending, navigable</div>
+        <div style="font-size:11px;color:rgba(255,255,255,.65);margin-top:4px">DWP &middot; NHS &middot; Defence &middot; 60+ departments, down to the line item</div>
       </div>
     </div>
 
+    <!-- Secondary CTA row: analytical tools that support the galaxy but don't compete for protagonism. -->
+    <div class="lp-secondary-row" style="display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:0 auto 24px;max-width:720px">
+      <button onclick="lpGoToTab('explore')" class="lp-secondary-btn" style="background:rgba(18,18,30,.6);border:1px solid var(--border);border-radius:10px;padding:10px 18px;cursor:pointer;color:var(--text);font-size:13px;font-family:inherit;display:flex;align-items:center;gap:8px">
+        <span style="font-size:16px">&#128269;</span> <b>Explore &amp; Compare</b> &middot; year-on-year
+      </button>
+      <button onclick="lpGoToTab('suppliers')" class="lp-secondary-btn" style="background:rgba(18,18,30,.6);border:1px solid var(--border);border-radius:10px;padding:10px 18px;cursor:pointer;color:var(--text);font-size:13px;font-family:inherit;display:flex;align-items:center;gap:8px">
+        <span style="font-size:16px">&#127970;</span> <b>Budget Recipients</b> &middot; 400 UK suppliers
+      </button>
+      <button onclick="lpGoToTab('taxpayer')" class="lp-secondary-btn lp-secondary-btn-tax" style="background:rgba(255,112,67,.08);border:1px solid rgba(255,112,67,.35);border-radius:10px;padding:10px 18px;cursor:pointer;color:var(--text);font-size:13px;font-family:inherit;display:flex;align-items:center;gap:8px">
+        <span style="font-size:16px">&#128176;</span> <b>Your Taxes</b> &middot; personal trace
+      </button>
+    </div>
+
     <style>
-      @media (max-width:720px){
-        .lp-action-row{flex-direction:column;gap:12px;max-width:420px}
-        .lp-action-card{min-width:0;padding:18px 20px}
+      .lp-secondary-btn:hover{border-color:var(--accent)!important;background:rgba(79,195,247,.08)!important}
+      .lp-secondary-btn-tax:hover{border-color:var(--accent2)!important;background:rgba(255,112,67,.15)!important}
+      @media (max-width:640px){
+        .lp-hero-card{min-width:0!important;padding:22px 22px!important}
+        .lp-secondary-row{flex-direction:column;max-width:360px}
       }
     </style>
 
@@ -5727,7 +5730,7 @@ function galaxySummary(d){
   return `${n} ${childType} · Top: ${top.join(', ')}`;
 }
 
-let galaxyYear=2025;
+let galaxyYear=2024;  // UK-default: 2024 is the latest OSCAR edition with full council + supplier enrichment
 let currentCountry='uk';
 let frTranslations={};
 fetch('/data/fr/translations_fr_en.json').then(r=>r.json()).then(d=>{frTranslations=d}).catch(()=>{});
@@ -8539,11 +8542,21 @@ function renderGalaxy(){
   searchDiv.innerHTML='<span class="gs-icon">🔍</span><input type="text" id="galaxy-search-input" placeholder="Search budget..." oninput="galaxySearchInput(this.value)"><div class="galaxy-search-results" id="galaxy-search-results"></div>';
   container.appendChild(searchDiv);
 
-  // Year selector
+  // Header: country + total + year selector
   const yearDiv=document.createElement('div');
-  yearDiv.style.cssText='position:absolute;top:10px;left:60px;z-index:20;display:flex;align-items:center;gap:8px';
+  yearDiv.style.cssText='position:absolute;top:10px;left:60px;z-index:20;display:flex;align-items:center;gap:14px;flex-wrap:wrap';
   const yearOpts=[2025,2024,2023,2022,2021,2020,2019,2018,2017,2016,2015].map(y=>`<option value="${y}"${y===galaxyYear?' selected':''}>${y}</option>`).join('');
-  yearDiv.innerHTML=`<select id="galaxy-year-select" onchange="changeGalaxyYear(this.value)" style="background:rgba(15,15,25,.85);border:1px solid var(--border);border-radius:6px;padding:6px 10px;color:var(--text);font-size:12px;font-family:Inter,sans-serif;cursor:pointer">${yearOpts}</select>`;
+  const countryMeta = COUNTRY_META[currentCountry] || COUNTRY_META.uk;
+  const totalStr = galaxyRoot ? fmtEur(galaxyRoot.value) : (galaxyData && galaxyData.value ? fmtEur(galaxyData.value) : '');
+  yearDiv.innerHTML = `
+    <div style="display:flex;align-items:baseline;gap:10px;padding:4px 0">
+      <span style="font-size:22px;line-height:1">${countryMeta.flag||''}</span>
+      <span style="font-size:16px;font-weight:700;color:var(--text);letter-spacing:.3px">${countryMeta.name||'United Kingdom'}</span>
+      <span style="font-size:11px;color:var(--dim);text-transform:uppercase;letter-spacing:.08em">Public Spending</span>
+      <span id="galaxy-total-label" style="font-size:18px;font-weight:700;color:var(--accent);font-variant-numeric:tabular-nums">${totalStr}</span>
+    </div>
+    <select id="galaxy-year-select" onchange="changeGalaxyYear(this.value)" style="background:rgba(15,15,25,.85);border:1px solid var(--border);border-radius:6px;padding:6px 10px;color:var(--text);font-size:12px;font-family:Inter,sans-serif;cursor:pointer" title="Fiscal year">${yearOpts}</select>
+  `;
   container.appendChild(yearDiv);
 
   // Build hierarchy
