@@ -1285,6 +1285,73 @@ mark{background:rgba(79,195,247,.3);color:var(--text,#e8ebf5);padding:0 2px;bord
   color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
 }
 .cmplist-row .amt{text-align:right;color:var(--accent);font-variant-numeric:tabular-nums}
+
+/* ── Enriched row (Fase 1 redesign) ── */
+.cmplist-row-rich{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) auto;
+  grid-template-areas:'primary metrics' 'subtitle metrics';
+  column-gap:18px;row-gap:1px;
+  padding:9px 14px 9px 10px;
+  border-bottom:1px solid rgba(255,255,255,.05);
+  cursor:pointer;transition:background .1s;
+  align-items:center;
+}
+.cmplist-row-rich:hover{background:rgba(79,195,247,.05)}
+.cmplist-row-rich .row-primary{
+  grid-area:primary;
+  display:flex;align-items:baseline;gap:10px;min-width:0;
+}
+.cmplist-row-rich .row-name{
+  font-size:13px;color:var(--text);font-weight:500;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0;
+}
+.cmplist-row-rich .row-pct{
+  font-size:10.5px;color:var(--dim);flex-shrink:0;letter-spacing:.02em;
+}
+.cmplist-row-rich .row-subtitle{
+  grid-area:subtitle;
+  font-size:10.5px;color:var(--dim);line-height:1.35;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0;
+  padding-top:2px;
+}
+.cmplist-row-rich .row-metrics{
+  grid-area:metrics;
+  display:flex;align-items:center;gap:14px;
+  font-variant-numeric:tabular-nums;
+}
+.cmplist-row-rich .cell-spark{
+  color:var(--dim);display:flex;align-items:center;
+  min-width:90px;
+}
+.cmplist-row-rich .cell-spark svg.spark{vertical-align:middle}
+.cmplist-row-rich .cell-amount{
+  font-size:13px;color:var(--accent);font-weight:500;
+  min-width:80px;text-align:right;
+}
+.cmplist-row-rich .cell-yoy,
+.cmplist-row-rich .cell-5yr{
+  min-width:58px;text-align:right;font-size:11px;
+}
+.cmplist-row-rich .cell-yoy{color:var(--dim)}
+.cmplist-row-rich .cell-arrow{
+  color:var(--dim);font-size:11px;width:12px;text-align:right;
+}
+.cmplist-row-rich:hover .cell-arrow{color:var(--accent)}
+
+.delta{font-weight:500;letter-spacing:.01em}
+/* Convention matches finance dashboards: green = grew, red = fell.
+   This is directional, not evaluative — we make no judgment about which
+   direction is "good" for any given spending line. */
+.delta-up{color:var(--green)}
+.delta-down{color:var(--red)}
+.delta-flat{color:var(--dim)}
+
+@media (max-width:760px){
+  .cmplist-row-rich{grid-template-columns:1fr;grid-template-areas:'primary' 'metrics' 'subtitle'}
+  .cmplist-row-rich .row-metrics{justify-content:space-between}
+  .cmplist-row-rich .cell-spark{min-width:60px}
+}
 .cmplist-sync-hint{
   background:rgba(79,195,247,.06);border:1px dashed rgba(79,195,247,.3);
   border-radius:6px;padding:10px 12px;margin-bottom:12px;font-size:11px;
@@ -12466,7 +12533,88 @@ async function loadCompareList(){
   // Load column A always; column B only when in compare mode
   const cols = savedMode === 'compare' ? ['a','b'] : ['a'];
   await Promise.all(cols.map(col => _cmplistLoadTree(col)));
+  // Load 10-year history for sparklines (UK only; non-blocking if fails)
+  _cmplistLoadHistory('uk').then(() => _cmplistRender()).catch(e =>
+    console.warn('history load failed', e));
   _cmplistRender();
+}
+
+// Lazy-loaded per-country map { year: tree }
+window._cmplistHistoryCache = window._cmplistHistoryCache || {};
+async function _cmplistLoadHistory(country){
+  if (window._cmplistHistoryCache[country]) return window._cmplistHistoryCache[country];
+  const years = country === 'uk' ? [2015,2016,2017,2018,2019,2020,2021,2022,2023,2024] : [];
+  const trees = {};
+  await Promise.all(years.map(async y => {
+    try {
+      const url = `${API}/budget/country/${country}?year=${y}`;
+      const r = await fetch(url);
+      if (r.ok) trees[y] = await r.json();
+    } catch(e) { /* skip */ }
+  }));
+  window._cmplistHistoryCache[country] = trees;
+  return trees;
+}
+
+// Build a name → [10 annual values] history for children of a given node path.
+// Uses case-insensitive name matching; falls back to null for missing years.
+function _cmplistNodeHistory(country, rootPathNames, nodeName){
+  const trees = window._cmplistHistoryCache?.[country];
+  if (!trees) return null;
+  const years = Object.keys(trees).map(Number).sort((a,b)=>a-b);
+  const norm = s => String(s||'').toUpperCase().trim();
+  const target = norm(nodeName);
+  const rootTargets = rootPathNames.map(norm);
+  return years.map(y => {
+    let cur = trees[y];
+    if (!cur) return null;
+    // Walk the root path first
+    for (const rt of rootTargets) {
+      const hit = (cur.children||[]).find(c => norm(c.name) === rt);
+      if (!hit) return null;
+      cur = hit;
+    }
+    // Then find target at that level
+    const hit = (cur.children||[]).find(c => norm(c.name) === target);
+    return hit ? (hit.value || 0) : null;
+  });
+}
+
+// Inline SVG sparkline — thin line (Bloomberg-style).
+function _cmplistSparkline(series, w=90, h=18){
+  const vals = series.filter(v => v != null);
+  if (vals.length < 2) return '';
+  const min = Math.min(...vals), max = Math.max(...vals);
+  const range = max - min || 1;
+  const step = w / (series.length - 1);
+  const pts = series.map((v, i) => {
+    if (v == null) return null;
+    const x = (i * step).toFixed(1);
+    const y = (h - ((v - min) / range) * (h - 2) - 1).toFixed(1);
+    return `${x},${y}`;
+  }).filter(p => p);
+  const last = series.length - 1;
+  const lastY = series[last] != null
+    ? (h - ((series[last] - min) / range) * (h - 2) - 1).toFixed(1)
+    : null;
+  return `<svg class="spark" viewBox="0 0 ${w} ${h}" width="${w}" height="${h}">
+    <polyline points="${pts.join(' ')}" fill="none" stroke="currentColor" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" opacity="0.65"/>
+    ${lastY != null ? `<circle cx="${((last)*step).toFixed(1)}" cy="${lastY}" r="1.8" fill="var(--accent)"/>` : ''}
+  </svg>`;
+}
+
+function _cmplistDeltas(series){
+  // Δ y/y: last value vs 2nd-to-last
+  // Δ 5y: last value vs last−5 (nominal — add a deflator pass in Phase 2)
+  const n = series.length;
+  const last = series[n - 1];
+  const prev = series[n - 2];
+  const fiveBack = series[n - 6] ?? series.find(v => v != null);
+  const yoy = (last != null && prev != null && prev > 0)
+    ? ((last - prev) / prev) * 100 : null;
+  const fiveYr = (last != null && fiveBack != null && fiveBack > 0)
+    ? ((last - fiveBack) / fiveBack) * 100 : null;
+  return { yoy, fiveYr };
 }
 
 function toggleCompareColumn(){
@@ -12608,11 +12756,53 @@ function _cmplistRender(){
       </div>`;
     } else {
       const total = children.reduce((a,c)=>a+(c.value||0),0) || 1;
+      // Build the breadcrumb name path (skip the root country label — history
+      // matches at top-level-department level)
+      const rootPathNames = breadcrumbNames;
       children.forEach((c, i) => {
-        const pct = c.value ? (c.value/total*100).toFixed(1) : 0;
-        h += `<div class="cmplist-row" onclick="_cmplistDrill('${col}',${i})">
-          <div class="name">${_cmpEsc(c.name||'?')} <span style="color:var(--dim);font-size:10px">${pct}%</span></div>
-          <div class="amt">${_cmplistFmt(c.value, s.country)}</div>
+        const pct = c.value ? (c.value/total*100).toFixed(1) : '0.0';
+        const kids = c.children || [];
+        const kidCount = kids.length;
+        const topKidNames = kids.slice()
+          .sort((a,b) => (b.value||0) - (a.value||0))
+          .slice(0, 2)
+          .map(k => (k.name||'').split(/[—:-]/)[0].trim())
+          .filter(n => n && n.length < 50);
+        const subtitle = kidCount > 0
+          ? `${kidCount} sub-item${kidCount!==1?'s':''}${topKidNames.length?' · Top: '+topKidNames.join(', '):''}`
+          : `Leaf node`;
+
+        // History + sparkline + deltas (UK only, where history is loaded)
+        let sparkHtml = '', yoyHtml = '', fiveYrHtml = '';
+        if (s.country === 'uk' && rootPathNames.length === 0) {
+          const series = _cmplistNodeHistory('uk', rootPathNames, c.name);
+          if (series && series.filter(v=>v!=null).length >= 2) {
+            sparkHtml = `<div class="cell-spark">${_cmplistSparkline(series)}</div>`;
+            const d = _cmplistDeltas(series);
+            const fmtDelta = (v) => {
+              if (v == null) return '';
+              const cls = v > 0.5 ? 'up' : v < -0.5 ? 'down' : 'flat';
+              const sign = v >= 0 ? '+' : '';
+              return `<span class="delta delta-${cls}">${sign}${v.toFixed(1)}%</span>`;
+            };
+            yoyHtml = `<div class="cell-yoy" title="Change vs previous year (nominal)">${fmtDelta(d.yoy)}</div>`;
+            fiveYrHtml = `<div class="cell-5yr" title="Change vs 5 years ago (nominal)">${fmtDelta(d.fiveYr)}</div>`;
+          }
+        }
+
+        h += `<div class="cmplist-row-rich" onclick="_cmplistDrill('${col}',${i})">
+          <div class="row-primary">
+            <div class="row-name">${_cmpEsc(c.name||'?')}</div>
+            <div class="row-pct">${pct}% of parent</div>
+          </div>
+          <div class="row-subtitle">${_cmpEsc(subtitle)}</div>
+          <div class="row-metrics">
+            ${sparkHtml}
+            <div class="cell-amount">${_cmplistFmt(c.value, s.country)}</div>
+            ${yoyHtml}
+            ${fiveYrHtml}
+            <div class="cell-arrow">${kidCount > 0 ? '▸' : ''}</div>
+          </div>
         </div>`;
       });
     }
