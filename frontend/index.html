@@ -1442,6 +1442,79 @@ mark{background:rgba(79,195,247,.3);color:var(--text,#e8ebf5);padding:0 2px;bord
   .taxpayer-sidebar{max-height:60vh}
   #tp-sankey{height:480px}
 }
+/* Toolbar above Sankey */
+.tp-main-toolbar{
+  display:flex;gap:8px;align-items:center;margin-bottom:14px;
+}
+.tp-action-btn{
+  background:var(--surface);border:1px solid var(--border);color:var(--dim);
+  padding:6px 12px;font-size:12px;font-family:inherit;cursor:pointer;
+  border-radius:5px;transition:all .12s;display:inline-flex;align-items:center;gap:5px;
+}
+.tp-action-btn:hover{color:var(--text);border-color:var(--accent);background:rgba(79,195,247,.08)}
+.tp-action-icon{font-size:13px}
+.tp-toast{
+  font-size:11px;color:var(--green);opacity:0;transition:opacity .2s;
+}
+.tp-toast.show{opacity:1}
+
+/* Hover highlight on Sankey */
+#tp-sankey.tp-dimmed .tp-link{opacity:0.08 !important}
+#tp-sankey.tp-dimmed .tp-link.tp-link-hl{opacity:0.85 !important}
+#tp-sankey.tp-dimmed .tp-node rect{opacity:0.3}
+#tp-sankey.tp-dimmed .tp-node.tp-node-hl rect{opacity:1}
+#tp-sankey.tp-dimmed .tp-node text{opacity:0.35}
+#tp-sankey.tp-dimmed .tp-node.tp-node-hl text{opacity:1}
+
+/* Methodology modal */
+.tp-modal{
+  position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:9999;
+  display:flex;align-items:center;justify-content:center;padding:40px 20px;
+  backdrop-filter:blur(4px);
+}
+.tp-modal-inner{
+  background:var(--surface);border:1px solid var(--border);border-radius:10px;
+  max-width:820px;max-height:90vh;width:100%;overflow-y:auto;
+  position:relative;box-shadow:0 10px 50px rgba(0,0,0,.6);
+}
+.tp-modal-close{
+  position:sticky;top:10px;float:right;margin:10px 10px 0 0;
+  width:32px;height:32px;background:rgba(255,255,255,.05);
+  border:1px solid var(--border);color:var(--text);font-size:20px;font-weight:300;
+  cursor:pointer;border-radius:50%;display:flex;align-items:center;justify-content:center;
+  transition:all .12s;z-index:10;
+}
+.tp-modal-close:hover{background:var(--accent);color:#0a0a0f;border-color:var(--accent)}
+.tp-modal-body{padding:32px 40px 40px}
+.tp-modal-body h2{font-size:24px;font-weight:600;margin-bottom:10px;color:var(--text)}
+.tp-modal-body h3{
+  font-size:14px;font-weight:600;margin:22px 0 10px;color:var(--accent);
+  text-transform:uppercase;letter-spacing:.04em;border-bottom:1px solid var(--border);padding-bottom:6px;
+}
+.tp-modal-lede{color:var(--dim);font-size:13px;line-height:1.6;margin-bottom:16px}
+.tp-modal-body p{color:var(--text);font-size:13px;line-height:1.6;margin-bottom:10px}
+.tp-modal-body ol, .tp-modal-body ul{padding-left:22px;margin-bottom:10px}
+.tp-modal-body li{color:var(--text);font-size:13px;line-height:1.7}
+.tp-modal-body code{
+  background:rgba(79,195,247,.08);color:var(--accent);padding:1px 4px;
+  border-radius:3px;font-size:11px;font-family:ui-monospace,monospace;
+}
+.tp-modal-body a{color:var(--accent);text-decoration:none}
+.tp-modal-body a:hover{text-decoration:underline}
+.tp-modal-table{
+  width:100%;border-collapse:collapse;font-size:12px;margin-bottom:10px;
+}
+.tp-modal-table th,.tp-modal-table td{
+  padding:8px 10px;text-align:left;border-bottom:1px solid var(--border);
+}
+.tp-modal-table th{color:var(--dim);font-weight:500;text-transform:uppercase;font-size:10px;letter-spacing:.04em}
+.tp-modal-table td{color:var(--text)}
+.tp-not-list{columns:2;column-gap:30px}
+.tp-not-list li{break-inside:avoid}
+@media (max-width:700px){
+  .tp-modal-body{padding:24px 22px 30px}
+  .tp-not-list{columns:1}
+}
 </style>
 
 <!-- MULTIVERSE TAB -->
@@ -1908,11 +1981,79 @@ mark{background:rgba(79,195,247,.3);color:var(--text,#e8ebf5);padding:0 2px;bord
     </aside>
 
     <main class="taxpayer-main">
+      <div class="tp-main-toolbar">
+        <button class="tp-action-btn" onclick="tpCopyShareLink()" title="Copy a link that preserves these exact inputs">
+          <span class="tp-action-icon">🔗</span> Share
+        </button>
+        <button class="tp-action-btn" onclick="tpShowMethodology()" title="How every £ is computed">
+          <span class="tp-action-icon">📖</span> Methodology
+        </button>
+        <span class="tp-toast" id="tp-toast"></span>
+      </div>
       <div id="tp-hero" class="tp-hero"></div>
       <div id="tp-sankey-wrap" class="tp-sankey-wrap">
         <svg id="tp-sankey"></svg>
       </div>
     </main>
+  </div>
+</div>
+
+<!-- TAXPAYER METHODOLOGY MODAL -->
+<div id="tp-methodology" class="tp-modal" style="display:none" onclick="tpCloseMethodology(event)">
+  <div class="tp-modal-inner" onclick="event.stopPropagation()">
+    <button class="tp-modal-close" onclick="tpCloseMethodology()" aria-label="Close">×</button>
+    <div class="tp-modal-body">
+      <h2>Where does every £ come from?</h2>
+      <p class="tp-modal-lede">Budget Galaxy's taxpayer view combines six public datasets with a calculator that reconciles everything to HMRC-published totals. Every number you see is auditable in our public repo.</p>
+
+      <h3>The four taxes we compute directly</h3>
+      <table class="tp-modal-table">
+        <thead><tr><th>Tax</th><th>Source</th><th>Precision</th></tr></thead>
+        <tbody>
+          <tr><td><b>Income Tax</b></td><td>HMRC 2024-25 bands (rUK + Scotland)</td><td>Exact</td></tr>
+          <tr><td><b>NI Class 1 (employee)</b></td><td>HMRC 2024-25 thresholds (8% / 2%)</td><td>Exact</td></tr>
+          <tr><td><b>VAT + indirect duties</b></td><td>ONS "Effects of Taxes &amp; Benefits" decile consumption</td><td>Estimated — scales with your disposable income decile</td></tr>
+          <tr><td><b>Council Tax</b></td><td>MHCLG 2024-25 area council tax tables (all-in: billing authority + county/GLA + police + fire + parish)</td><td>Exact</td></tr>
+        </tbody>
+      </table>
+
+      <h3>How your £ flows through government</h3>
+      <p>Government does not earmark taxes — every pound enters the Consolidated Fund and gets spent from there. We visualise pro-rata: <i>"for every £ spent by central gov, where a £ of yours would fit."</i></p>
+      <ol>
+        <li>Your IT + NI + VAT flows from HMRC buckets into the Consolidated Fund.</li>
+        <li>The Consolidated Fund distributes across 10 spending groups (Health, DWP, Education, Defence, Debt Interest, Local Gov grants, Scotland/Wales/NI block grants, Transport, HMRC ops, Other) in proportion to HM Treasury's <code>uk_budget_tree_2024.json</code>.</li>
+        <li>Your Council Tax goes <b>directly</b> to your billing authority — not via the Consolidated Fund.</li>
+        <li>Your council's share of the central "Local Gov grants" pot is computed from <b>real MHCLG Revenue Outturn data</b> — your council's grant ÷ all-councils grant. So if your council is Birmingham (big city, ~2% of all council grants), that 2% of the central grant bucket flows to them.</li>
+        <li>That total reaching your council (Council Tax + grant share) is then split across the services your council spends on — Adult Social Care, Education, Children's Social Care, Public Health, Transport, Housing, etc. — in proportion to their <code>RS_*_net_exp</code> figures.</li>
+      </ol>
+
+      <h3>Government borrowing — why it's a separate node</h3>
+      <p>UK government <b>spent more than it received</b> in 2022-23 — £139 billion more. That difference is borrowed. Divided evenly across the UK's ~28.4 million households, <b>every household gets a £4,902 share of the debt added this year</b>. This figure is <b>the same for every household regardless of salary</b>.</p>
+      <p>In the Sankey, borrowing appears as a separate red source funding the Consolidated Fund — on top of what your taxes cover. It will be repaid by future taxes. Because future taxes are progressive, a high earner's <i>future repayment obligation</i> is larger than a low earner's — but the <i>this-year-added</i> figure is the same flat per-household amount.</p>
+
+      <h3>What is NOT included</h3>
+      <ul class="tp-not-list">
+        <li>Self-employed NIC (Class 2 &amp; 4)</li>
+        <li>Dividend tax &amp; savings tax</li>
+        <li>Capital gains tax (event-based)</li>
+        <li>Stamp Duty Land Tax (event-based — only on property purchase)</li>
+        <li>Employer NIC (not your direct liability)</li>
+        <li>Corporation Tax incidence on consumers (disputed)</li>
+        <li>Pension contributions (these are your savings, not tax)</li>
+        <li>Student loan repayments (not a tax)</li>
+      </ul>
+
+      <h3>Audit trail</h3>
+      <p>Every raw file is committed to the public <a href="https://github.com/JuanBlanco9/Budget-Galaxy" target="_blank" rel="noopener">Budget Galaxy repository</a> with a SHA256 hash in <a href="https://github.com/JuanBlanco9/Budget-Galaxy/blob/main/data/uk/fiscal/SOURCES_TAX.md" target="_blank" rel="noopener"><code>data/uk/fiscal/SOURCES_TAX.md</code></a>. Re-run any of our parsing scripts in <code>scripts/</code> to reproduce the JSON files the frontend loads.</p>
+
+      <h3>Known limitations (v1)</h3>
+      <ul>
+        <li><b>England-only council data</b> — Scotland/Wales/NI have different systems; coming v1.1.</li>
+        <li><b>Decile VAT estimate</b> is ONS FY2017-18; ratios are stable year-to-year.</li>
+        <li><b>Precepts</b> to county/GLA/police/fire are collapsed into the billing authority total.</li>
+        <li><b>PSNB</b> uses 2022-23 outturn (£139bn); 2023-24 and 2024-25 forecasts land in subsequent OBR releases.</li>
+      </ul>
+    </div>
   </div>
 </div>
 
@@ -12032,6 +12173,12 @@ async function loadTaxpayer(){
       TP._loaded = true;
       _tpSetupHandlers();
       _tpPopulateCouncils();
+      // Apply share link if present in URL hash
+      _tpApplyShareFromHash();
+      // ESC closes the methodology modal
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') tpCloseMethodology();
+      });
     } catch (e) {
       console.error('Taxpayer load failed:', e);
       document.getElementById('tp-sankey-wrap').innerHTML =
@@ -12246,6 +12393,9 @@ function _tpRenderSankey(trace){
     council_service:'#81c784',
   };
 
+  // Pre-compute, for each node, the set of connected link+node indices (up+downstream)
+  const connected = _tpBuildConnectivity(graph);
+
   // Links
   const link = svg.append('g').attr('class','tp-links')
     .selectAll('path').data(graph.links).enter()
@@ -12254,36 +12404,36 @@ function _tpRenderSankey(trace){
       .attr('d', d3.sankeyLinkHorizontal())
       .attr('stroke', d => d.source.type === 'debt' ? '#ef5350' : (typeColor[d.source.type] || '#4fc3f7'))
       .attr('stroke-width', d => Math.max(
-        d.source.type === 'debt' ? 6 : 1,   // minimum 6px for borrowing, so it stays visible at high salaries
+        d.source.type === 'debt' ? 6 : 1,
         d.width
       ))
       .attr('opacity', d => d.source.type === 'debt' ? 0.75 : 0.35)
+      .on('mouseenter', (e,d) => _tpHighlightLink(d, svgEl, graph))
+      .on('mouseleave', (e,d) => { _tpClearHighlight(svgEl); _tpHideTooltip(); })
       .on('mousemove', (e,d) => _tpShowTooltip(e, d.source.type === 'debt'
         ? `<div class="tt-name">⚠︎ ${_tpEsc(d.source.name)}</div>
            <div class="tt-val">${_tpFmtGBP(d.value)}</div>
            <div class="tt-ctx">UK gov. borrowed ${_tpFmtGBP((d.source.annual_total_gbp||0)/1e9, 1)}B this year.
-             This figure is <b>fixed per household</b> — it does NOT change with your salary.
-             It's what the state added to the national debt on your behalf, to be repaid by future taxes.</div>`
+             This figure is <b>fixed per household</b> — it does NOT change with your salary.</div>`
         : `<div class="tt-name">${_tpEsc(d.source.name)} → ${_tpEsc(d.target.name)}</div>
            <div class="tt-val">${_tpFmtGBP(d.value)}</div>
-           ${d.label ? `<div class="tt-ctx">${_tpEsc(d.label)}</div>` : ''}`))
-      .on('mouseleave', _tpHideTooltip);
+           ${d.label ? `<div class="tt-ctx">${_tpEsc(d.label)}</div>` : ''}`));
 
   // Nodes
   const node = svg.append('g').attr('class','tp-nodes')
     .selectAll('g').data(graph.nodes).enter()
     .append('g')
     .attr('class', d => 'tp-node' + (d.type === 'debt' ? ' tp-node-borrowing' : ''))
+    .on('mouseenter', (e,d) => _tpHighlightNode(d, svgEl, graph, connected))
+    .on('mouseleave', (e,d) => { _tpClearHighlight(svgEl); _tpHideTooltip(); })
     .on('mousemove', (e,d) => _tpShowTooltip(e, d.type === 'debt'
       ? `<div class="tt-name">⚠︎ ${_tpEsc(d.name)}</div>
          <div class="tt-val">${_tpFmtGBP(d.value || 0)}</div>
          <div class="tt-ctx">This is the UK gov's total borrowing this year (${_tpFmtGBP((d.annual_total_gbp||0)/1e9, 1)}B) divided evenly across ~28.4M households.
-           It does <b>not</b> change with your salary — every household gets the same share.
-           In practice, future repayment will be funded by future taxes, which are progressive.</div>`
+           It does <b>not</b> change with your salary. Future repayment comes from progressive taxes.</div>`
       : `<div class="tt-name">${_tpEsc(d.name)}</div>
          <div class="tt-val">${_tpFmtGBP(d.value || 0)}</div>
-         ${d.annual_total_gbp ? `<div class="tt-ctx">National total: ${_tpFmtGBP(d.annual_total_gbp/1e9, 1)}B</div>` : ''}`))
-    .on('mouseleave', _tpHideTooltip);
+         ${d.annual_total_gbp ? `<div class="tt-ctx">National total: ${_tpFmtGBP(d.annual_total_gbp/1e9, 1)}B</div>` : ''}`));
 
   node.append('rect')
     .attr('x', d => d.x0).attr('y', d => d.y0)
@@ -12312,6 +12462,64 @@ function _tpRenderSankey(trace){
     });
 }
 
+function _tpBuildConnectivity(graph){
+  // For each node, collect all upstream + downstream links + nodes
+  const upLinks = new Map(), downLinks = new Map();
+  graph.nodes.forEach(n => { upLinks.set(n.index, []); downLinks.set(n.index, []); });
+  graph.links.forEach((l, i) => {
+    upLinks.get(l.target.index).push(i);
+    downLinks.get(l.source.index).push(i);
+  });
+  // BFS upstream/downstream from a node index
+  function reach(start){
+    const seenN = new Set([start]);
+    const seenL = new Set();
+    const up = [start], down = [start];
+    while (up.length){
+      const n = up.pop();
+      for (const li of upLinks.get(n) || []) {
+        seenL.add(li);
+        const src = graph.links[li].source.index;
+        if (!seenN.has(src)) { seenN.add(src); up.push(src); }
+      }
+    }
+    while (down.length){
+      const n = down.pop();
+      for (const li of downLinks.get(n) || []) {
+        seenL.add(li);
+        const tgt = graph.links[li].target.index;
+        if (!seenN.has(tgt)) { seenN.add(tgt); down.push(tgt); }
+      }
+    }
+    return { nodes: seenN, links: seenL };
+  }
+  return { reach };
+}
+
+function _tpHighlightNode(node, svgEl, graph, connected){
+  const { nodes: hlN, links: hlL } = connected.reach(node.index);
+  const svg = d3.select(svgEl);
+  svg.classed('tp-dimmed', true);
+  svg.selectAll('.tp-link').classed('tp-link-hl', (d,i) => hlL.has(i));
+  svg.selectAll('.tp-node').classed('tp-node-hl', (d,i) => hlN.has(d.index));
+}
+
+function _tpHighlightLink(link, svgEl, graph){
+  const svg = d3.select(svgEl);
+  svg.classed('tp-dimmed', true);
+  svg.selectAll('.tp-link').classed('tp-link-hl', d => d === link);
+  svg.selectAll('.tp-node').classed('tp-node-hl',
+    d => d.index === link.source.index || d.index === link.target.index
+  );
+}
+
+function _tpClearHighlight(svgEl){
+  const svg = d3.select(svgEl);
+  svg.classed('tp-dimmed', false);
+  svg.selectAll('.tp-link-hl').classed('tp-link-hl', false);
+  svg.selectAll('.tp-node-hl').classed('tp-node-hl', false);
+}
+
 function _tpShowTooltip(ev, html){
   let tt = document.querySelector('.tp-tooltip');
   if (!tt) { tt = document.createElement('div'); tt.className = 'tp-tooltip'; document.body.appendChild(tt); }
@@ -12323,11 +12531,72 @@ function _tpShowTooltip(ev, html){
 }
 function _tpHideTooltip(){ const tt = document.querySelector('.tp-tooltip'); if (tt) tt.style.display = 'none'; }
 
-function showAboutTax(){
-  window.open(
-    'https://github.com/JuanBlanco9/Budget-Galaxy/blob/main/data/uk/fiscal/SOURCES_TAX.md',
-    '_blank', 'noopener'
-  );
+function showAboutTax(){ tpShowMethodology(); }
+function tpShowMethodology(){
+  const m = document.getElementById('tp-methodology');
+  if (m) { m.style.display = 'flex'; document.body.style.overflow = 'hidden'; }
+}
+function tpCloseMethodology(ev){
+  const m = document.getElementById('tp-methodology');
+  if (m) { m.style.display = 'none'; document.body.style.overflow = ''; }
+}
+
+// ── Share link ─────────────────────────────────────────────────────────────
+function _tpEncodeShare(){
+  const TP = window._taxpayer;
+  const parts = [
+    's', TP.salary,
+    'j', TP.jurisdiction === 'scotland' ? 's' : 'r',
+    'b', TP.band,
+    'c', encodeURIComponent(TP.council),
+  ];
+  return '#taxpayer/' + parts.join('/');
+}
+function _tpDecodeShare(hash){
+  // Format: #taxpayer/s/42000/j/r/b/D/c/Hillingdon
+  if (!hash || !hash.startsWith('#taxpayer/')) return null;
+  const tokens = hash.slice('#taxpayer/'.length).split('/');
+  const kv = {};
+  for (let i = 0; i + 1 < tokens.length; i += 2) kv[tokens[i]] = tokens[i + 1];
+  const out = {};
+  if (kv.s != null) out.salary = Math.max(0, Math.min(500000, parseInt(kv.s, 10) || 0));
+  if (kv.j) out.jurisdiction = kv.j === 's' ? 'scotland' : 'rUK';
+  if (kv.b && /^[A-H]$/i.test(kv.b)) out.band = kv.b.toUpperCase();
+  if (kv.c) { try { out.council = decodeURIComponent(kv.c); } catch(e) {} }
+  return out;
+}
+function tpCopyShareLink(){
+  const url = window.location.origin + window.location.pathname + _tpEncodeShare();
+  const show = (msg, ok) => {
+    const t = document.getElementById('tp-toast');
+    t.textContent = msg;
+    t.style.color = ok ? 'var(--green)' : 'var(--red)';
+    t.classList.add('show');
+    setTimeout(() => t.classList.remove('show'), 2200);
+  };
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(url)
+      .then(() => show('✓ Link copied to clipboard', true))
+      .catch(() => { window.prompt('Copy this link:', url); show('Link ready — copy manually', false); });
+  } else {
+    window.prompt('Copy this link:', url);
+  }
+  // Also update the address bar so users can share directly
+  if (history && history.replaceState) history.replaceState(null, '', _tpEncodeShare());
+}
+function _tpApplyShareFromHash(){
+  const share = _tpDecodeShare(window.location.hash);
+  if (!share) return false;
+  const TP = window._taxpayer;
+  if (share.salary != null) {
+    TP.salary = share.salary;
+    const sl = document.getElementById('tp-salary');
+    if (sl) { sl.value = share.salary; document.getElementById('tp-salary-value').textContent = '£' + share.salary.toLocaleString('en-GB'); }
+  }
+  if (share.jurisdiction) { TP.jurisdiction = share.jurisdiction; document.querySelectorAll('.tp-seg').forEach(b => b.classList.toggle('active', b.dataset.jur === TP.jurisdiction)); }
+  if (share.band) { TP.band = share.band; document.querySelectorAll('.tp-band').forEach(b => b.classList.toggle('active', b.dataset.band === TP.band)); }
+  if (share.council) { TP.council = share.council; const s = document.getElementById('tp-council-search'); if (s) s.value = share.council; }
+  return true;
 }
 
 async function loadSuppliersTab(){
