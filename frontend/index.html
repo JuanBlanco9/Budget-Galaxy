@@ -1060,10 +1060,10 @@ mark{background:rgba(255,200,0,.25);color:inherit;border-radius:2px;padding:0 2p
   </div>
   <div class="country-switch" id="country-switch">
     <button data-country="mv" onclick="showTab('multiverse',null)" style="font-size:10px">&#127760; ALL</button>
-    <button class="active" data-country="de" onclick="switchCountry('de')">&#127465;&#127466; DE</button>
+    <button data-country="de" onclick="switchCountry('de')">&#127465;&#127466; DE</button>
     <button data-country="us" onclick="switchCountry('us')">&#127482;&#127480; US</button>
     <button data-country="fr" onclick="switchCountry('fr')">&#127467;&#127479; FR</button>
-    <button data-country="uk" onclick="switchCountry('uk')">&#127468;&#127463; UK</button>
+    <button class="active" data-country="uk" onclick="switchCountry('uk')">&#127468;&#127463; UK</button>
   </div>
   <div class="stats" style="display:none">Loading...</div>
   <div class="global-lang" id="global-lang">
@@ -1073,10 +1073,14 @@ mark{background:rgba(255,200,0,.25);color:inherit;border-radius:2px;padding:0 2p
 </div>
 
 <div class="tabs">
-  <div class="tab" data-tab="multiverse" onclick="showTab('multiverse',this)">Multiverse</div>
-  <div class="tab active" data-tab="explore" onclick="showTab('explore',this)">Explore &amp; Compare</div>
-  <div class="tab" data-tab="suppliers" onclick="showTab('suppliers',this)">Suppliers</div>
+  <div class="tab" data-tab="taxpayer" onclick="showTab('taxpayer',this)">💰 Your Taxes</div>
+  <div class="tab active" data-tab="galaxy" onclick="showTab('galaxy',this)">🌌 Budget Galaxy</div>
+  <div class="tab" data-tab="suppliers" onclick="showTab('suppliers',this)">🏢 Budget Recipients</div>
+  <div class="tab" data-tab="explore" onclick="showTab('explore',this)">📊 Explore &amp; Compare</div>
   <div class="tab" data-tab="about" onclick="showTab('about',this)">About</div>
+  <!-- 'Multiverse' view is reachable via the 🌐 ALL button in the country switcher.
+       Kept here (hidden) so internal showTab routing and deep-links still work. -->
+  <div class="tab" data-tab="multiverse" onclick="showTab('multiverse',this)" style="display:none">Multiverse</div>
   <!-- Legacy tabs consolidated into 'explore' (2026-04-18). Old data-tab values
        preserved for deep-link aliasing in showTab routing logic. -->
   <!-- <div class="tab" data-tab="galaxy">Budget Galaxy</div> -->
@@ -1206,10 +1210,6 @@ mark{background:rgba(79,195,247,.3);color:var(--text,#e8ebf5);padding:0 2px;bord
   <div class="etool-sep"></div>
   <div class="explore-toolbar-group" title="Timeline overlay">
     <button type="button" class="etool-btn" data-toggle="timeline" data-value="on" onclick="setExploreMode({timeline:'toggle'})">📈 Timeline</button>
-  </div>
-  <div class="etool-sep"></div>
-  <div class="explore-toolbar-group" title="Trace YOUR taxes — UK only (beta)">
-    <button type="button" class="etool-btn etool-btn-taxpayer" data-toggle="taxpayer" onclick="showTab('taxpayer', null)">💰 Your Taxes <span class="etool-badge">UK · beta</span></button>
   </div>
 </div>
 <style>
@@ -3015,15 +3015,28 @@ function restoreTabState(tab){
   }
 }
 
-// Maps sub-mode names to their parent main tab. 'explore' is the unified
-// Explore & Compare tab introduced 2026-04-18. Legacy URL aliases preserved.
-const EXPLORE_SUBMODES = {galaxy:1, compare:1, evolution:1, budgetlist:1, comparelist:1, taxpayer:1};
+// Maps sub-mode names to their parent main tab.
+// 2026-04-18: 'galaxy', 'taxpayer' promoted to top-level (Budget Galaxy / Your Taxes).
+// Explore & Compare still hosts: compare, comparelist, budgetlist, evolution.
+// Legacy deep-links (#multiverse, #suppliers) redirect to their new homes.
+const EXPLORE_SUBMODES = {compare:1, evolution:1, budgetlist:1, comparelist:1};
 function _exploreParent(name){ return EXPLORE_SUBMODES[name] ? 'explore' : name; }
 
+// Legacy aliases — map old hash fragments to new canonical tabs.
+// (Multiverse stays accessible via the "🌐 ALL" country-switcher button, but
+//  it's no longer in the primary nav. Deep-links to #multiverse still work.)
+const TAB_ALIASES = {
+  recipients: 'suppliers',  // new name → internal id stays 'suppliers' for backward compat
+};
+
 function showTab(name,el){
-  // 'explore' alone has no panel — redirect to last chosen sub-mode or default 'galaxy'
+  // Resolve legacy aliases
+  if (TAB_ALIASES[name]) name = TAB_ALIASES[name];
+  // 'explore' alone has no panel — redirect to last chosen sub-mode or default 'compare'
   if (name === 'explore') {
-    name = localStorage.getItem('last_explore_sub') || 'galaxy';
+    name = localStorage.getItem('last_explore_sub') || 'compare';
+    // Don't let stale localStorage send them to a now-promoted tab
+    if (!EXPLORE_SUBMODES[name]) name = 'compare';
   }
   // Save current tab state before switching
   saveCurrentTabState();
@@ -5593,7 +5606,7 @@ function galaxySummary(d){
 }
 
 let galaxyYear=2025;
-let currentCountry='de';
+let currentCountry='uk';
 let frTranslations={};
 fetch('/data/fr/translations_fr_en.json').then(r=>r.json()).then(d=>{frTranslations=d}).catch(()=>{});
 const COUNTRY_META={
