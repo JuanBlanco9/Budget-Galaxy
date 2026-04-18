@@ -1421,8 +1421,8 @@ mark{background:rgba(79,195,247,.3);color:var(--text,#e8ebf5);padding:0 2px;bord
 #tp-sankey .tp-node-borrowing rect{
   filter:drop-shadow(0 0 6px rgba(239,83,80,.5));
 }
-.tp-sankey-wrap{position:relative;min-height:560px;background:transparent}
-#tp-sankey{width:100%;height:560px;display:block}
+.tp-sankey-wrap{position:relative;background:transparent}
+#tp-sankey{width:100%;display:block}
 #tp-sankey .tp-node rect{stroke:var(--surface);stroke-width:1px;cursor:pointer}
 #tp-sankey .tp-node text{fill:var(--text);font-size:11px;font-family:inherit;pointer-events:none}
 #tp-sankey .tp-node .tp-subtext{fill:var(--dim);font-size:10px}
@@ -12190,9 +12190,18 @@ function _tpRenderSankey(trace){
   const svgEl = document.getElementById('tp-sankey');
   const wrap = document.getElementById('tp-sankey-wrap');
   const W = wrap.clientWidth || 900;
-  const H = 560;
 
-  const svg = d3.select(svgEl).attr('viewBox', `0 0 ${W} ${H}`);
+  // Height must accommodate the densest column. Terminal nodes
+  // (spending groups + council services) land in the rightmost column.
+  // Each node needs ~30px (label + subtext + padding) to be legible.
+  const terminalNodes = trace.nodes.filter(n =>
+    ['spending', 'council_service', 'local_pool'].includes(n.type)
+  ).length;
+  const H = Math.max(620, terminalNodes * 30 + 60);
+
+  const svg = d3.select(svgEl)
+    .attr('viewBox', `0 0 ${W} ${H}`)
+    .attr('height', H);
   svg.selectAll('*').remove();
 
   // Build d3-sankey data
