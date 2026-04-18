@@ -462,7 +462,7 @@ Distribution of councils by grant-share band:
 | 10–30% | 25 |
 | Below 10% | 20 |
 
-The median council funds 43.5% of its net current expenditure via central grants. Two-thirds of councils (131 of 203) fund between 30% and 50% from central grants; the remaining third splits between lower-dependency (council-tax-heavy) and higher-dependency (grant-heavy, often with large ring-fenced Dedicated Schools Grant flows).
+The median council funds 43.5% of its net current expenditure via central grants. Two-thirds of councils (131 of 203) fund between 30% and 50% from central grants; the remaining third splits between lower-dependency (council-tax-heavy) and higher-dependency (grant-heavy, often driven by ring-fenced Dedicated Schools Grant flows).
 
 Scope: councils with > £100M net current expenditure in 2023-24 are in scope (omits small district councils).
 
