@@ -1,0 +1,64 @@
+{
+  "id": "tax_ladder_ruk_2024",
+  "order": 1,
+  "title": "Effective tax rate by income bracket, 2024-25 (rest of UK)",
+  "category": "tax",
+  "category_meta": {
+    "label": "Tax",
+    "emoji": "💰"
+  },
+  "tags": [
+    "#tax-ladder",
+    "#effective-rate",
+    "#distribution"
+  ],
+  "narrative_md": "For rest-of-UK (England, Wales, Northern Ireland) employees in fiscal year 2024-25, the combined Income Tax + Employee Class 1 NI liability across the earnings range:\n\n| Gross salary | Income Tax | NI | IT + NI | Effective rate |\n| ---: | ---: | ---: | ---: | ---: |\n| £15,000 | £486 | £194 | £680 | 4.5% |\n| £25,000 | £2,486 | £994 | £3,480 | 13.9% |\n| £35,000 | £4,486 | £1,794 | £6,280 | 17.9% |\n| £50,270 (UEL) | £7,540 | £3,016 | £10,556 | 21.0% |\n| £75,000 | £17,432 | £3,511 | £20,943 | 27.9% |\n| £100,000 | £27,432 | £4,011 | £31,443 | 31.4% |\n| £125,140 (additional) | £42,516 | £4,513 | £47,029 | 37.6% |\n| £200,000 | £76,203 | £6,011 | £82,214 | 41.1% |\n\nThe marginal rate reaches its peak between £100,000 and £125,140, where the Personal Allowance tapers out by £1 per £2 above £100,000. In that zone, the effective marginal rate on each additional pound earned is approximately 62% (40% higher rate + 2% NI + 20% from PA loss on the taxed £2).",
+  "viz_spec": "Line chart: gross salary (x) vs effective rate (y).",
+  "actions": [
+    {
+      "icon": "🔍",
+      "label": "Try your exact salary",
+      "target": "Your Taxes`, preloaded"
+    },
+    {
+      "icon": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+      "label": "Compare with Scotland",
+      "target": "insight `scotland_vs_ruk_2024"
+    },
+    {
+      "icon": "📊",
+      "label": "How rates changed 2017 → 2024",
+      "target": "Explore & Compare"
+    },
+    {
+      "icon": "💰",
+      "label": "See what this tax funded",
+      "target": "Budget Galaxy"
+    },
+    {
+      "icon": "📤",
+      "label": "Copy link",
+      "target": "/#insights/tax/tax_ladder_ruk_2024"
+    }
+  ],
+  "sources": [
+    {
+      "type": "publisher",
+      "description": "gov.uk",
+      "url": "https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2024-to-2025"
+    },
+    {
+      "type": "our_file",
+      "path": "data/uk/fiscal/uk_tax_bands.json",
+      "sha256_head": "053522be2a497ee4…"
+    },
+    {
+      "type": "manifest",
+      "description": "`SOURCES_TAX.md` · [GitHub](https://github.com/JuanBlanco9/Budget-Galaxy/blob/main/data/uk/fiscal/SOURCES_TAX.md)"
+    }
+  ],
+  "related": [],
+  "source_markdown_section": "## 1. Effective tax rate by income bracket, 2024-25 (rest of UK)",
+  "last_updated": "2026-04-18",
+  "human_reviewed": true
+}

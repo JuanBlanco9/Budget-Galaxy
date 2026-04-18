@@ -1,0 +1,57 @@
+{
+  "id": "supplier_incorporation_years",
+  "order": 9,
+  "title": "Supplier incorporation-year distribution, enriched UK gov cohort",
+  "category": "recipients",
+  "category_meta": {
+    "label": "Recipients",
+    "emoji": "🏢"
+  },
+  "tags": [
+    "#companies-house",
+    "#incorporation",
+    "#supplier-age"
+  ],
+  "narrative_md": "Of **402 enriched UK government supplier profiles** in the Budget Galaxy cohort, **383 (95%)** carry a Companies House incorporation date. Distribution by decade of incorporation, with cumulative 2024 UK-gov spend per bucket:\n\n| Incorporation period | Profiles | 2024 spend captured |\n| --- | ---: | ---: |\n| Before 1970 | 43 | £4.1B |\n| 1970–1979 | 19 | £1.8B |\n| 1980–1989 | 64 | £27.9B |\n| 1990–1999 | 66 | £5.0B |\n| 2000–2009 | 86 | £16.2B |\n| 2010–2019 | 85 | £13.9B |\n| 2020–2024 | 17 | £0.6B |\n\nSummary statistics:\n\n| Metric | Value |\n| --- | --- |\n| Oldest incorporation | 1897 |\n| Median incorporation year | 1999 |\n| Newest incorporation | 2025 |\n| Suppliers incorporated < 4 years before entering the 2024 spend dataset | 15 |\n\nThe 1980–1989 decade contains the largest single-decade spend concentration (£27.9B) despite representing 17% of the profile count — a function of several long-running outsourced-service companies incorporated in that period receiving continuing government contracts. The 2020–2024 cohort (17 suppliers, 4% of the profiles) has received £0.6B cumulative to date.",
+  "viz_spec": "Histogram with dual axis: count (left) + spend £B (right) by decade bucket.",
+  "actions": [
+    {
+      "icon": "🏢",
+      "label": "See the 17 suppliers incorporated since 2020",
+      "target": "Budget Recipients` filter age=recent"
+    },
+    {
+      "icon": "📊",
+      "label": "Sort profiles by incorporation year",
+      "target": "Budget Recipients` sort"
+    },
+    {
+      "icon": "🔍",
+      "label": "Verify an individual company in Companies House",
+      "target": "profile page link"
+    }
+  ],
+  "sources": [
+    {
+      "type": "publisher",
+      "description": "developer.company-information.service.gov.uk",
+      "url": "https://developer.company-information.service.gov.uk/"
+    },
+    {
+      "type": "our_file",
+      "path": "data/suppliers/{ch_number}.json"
+    },
+    {
+      "type": "methodology",
+      "description": "Computed by: `scripts/verify_insights.py` function `v9_incorporation_years`"
+    },
+    {
+      "type": "other",
+      "description": "# 🏛 COUNCILS (3)"
+    }
+  ],
+  "related": [],
+  "source_markdown_section": "## 9. Supplier incorporation-year distribution, enriched UK gov cohort",
+  "last_updated": "2026-04-18",
+  "human_reviewed": true
+}

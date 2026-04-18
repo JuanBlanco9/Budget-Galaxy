@@ -1,0 +1,60 @@
+{
+  "id": "scotland_vs_ruk_2024",
+  "order": 2,
+  "title": "Scottish Income Tax delta vs rest-of-UK, 2024-25",
+  "category": "tax",
+  "category_meta": {
+    "label": "Tax",
+    "emoji": "💰"
+  },
+  "tags": [
+    "#tax-ladder",
+    "#devolved",
+    "#comparison"
+  ],
+  "narrative_md": "Scotland applies a different Income Tax schedule (NI is UK-wide and identical). The delta in Income Tax only, fiscal year 2024-25:\n\n| Gross salary | rUK IT | Scotland IT | Δ |\n| ---: | ---: | ---: | ---: |\n| £25,000 | £2,486 | £2,463 | −£23 |\n| £35,000 | £4,486 | £4,547 | +£61 |\n| £50,000 | £7,486 | £9,028 | +£1,542 |\n| £75,000 | £17,432 | £19,528 | +£2,096 |\n| £100,000 | £27,432 | £30,778 | +£3,346 |\n| £125,140 | £42,516 | £47,748 | +£5,232 |\n| £200,000 | £76,203 | £83,681 | +£7,478 |\n\nBelow approximately £28,000 annual salary, the Scottish schedule produces a marginally lower Income Tax bill than rUK. From £50,000 onward the Scottish rate structure (42% Higher Rate at £62,430, 48% Top Rate above £125,140, 45% Advanced Rate) produces a larger liability; at £200,000 the delta is +£7,478.",
+  "viz_spec": "Line chart with two series (rUK, Scotland) on effective rate.",
+  "actions": [
+    {
+      "icon": "💰",
+      "label": "Model your salary in both",
+      "target": "Your Taxes`, jurisdiction toggle"
+    },
+    {
+      "icon": "📊",
+      "label": "See the band tables",
+      "target": "Related insight (bands reference)"
+    },
+    {
+      "icon": "🏢",
+      "label": "Where the receipts went",
+      "target": "Budget Galaxy"
+    },
+    {
+      "icon": "🔀",
+      "label": "Combine with council tax",
+      "target": "insight `band_d_scotland_vs_england_2024"
+    }
+  ],
+  "sources": [
+    {
+      "type": "publisher",
+      "description": "gov.scot",
+      "url": "https://www.gov.scot/publications/scottish-income-tax/"
+    },
+    {
+      "type": "publisher",
+      "description": "gov.uk",
+      "url": "https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2024-to-2025"
+    },
+    {
+      "type": "our_file",
+      "path": "data/uk/fiscal/uk_tax_bands.json",
+      "sha256_head": "053522be…"
+    }
+  ],
+  "related": [],
+  "source_markdown_section": "## 2. Scottish Income Tax delta vs rest-of-UK, 2024-25",
+  "last_updated": "2026-04-18",
+  "human_reviewed": true
+}

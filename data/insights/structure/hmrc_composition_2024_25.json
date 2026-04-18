@@ -1,0 +1,49 @@
+{
+  "id": "hmrc_composition_2024_25",
+  "order": 13,
+  "title": "HMRC receipts composition, fiscal year 2024-25",
+  "category": "structure",
+  "category_meta": {
+    "label": "Structure",
+    "emoji": "🔀"
+  },
+  "tags": [
+    "#hmrc",
+    "#composition"
+  ],
+  "narrative_md": "Of **£858.6B** total HMRC receipts in 2024-25, the composition by our 5 top-level categories:\n\n| Category | £B | Share |\n| --- | ---: | ---: |\n| Taxes on income & earnings | 493.1 | 57.4% |\n| Consumption / indirect taxes | 235.7 | 27.5% |\n| Business & corporate taxes | 97.5 | 11.4% |\n| Capital & wealth taxes | 26.6 | 3.1% |\n| Customs & other | 5.7 | 0.7% |\n\nDetail within each category:\n\n**Income & earnings (£493.1B)**: Income Tax £302.8B · NI £172.5B · Capital Gains Tax £13.7B · Apprenticeship Levy £4.1B\n\n**Consumption (£235.7B)**: VAT £171.0B · Fuel Duty £24.4B · Alcohol Duties £12.6B (Spirits £4.2B + Beer £3.5B + Wines £4.7B + Cider £0.2B) · Insurance Premium Tax £8.9B · Tobacco £7.9B · Air Passenger Duty £4.1B · Betting & Gaming £3.6B · Climate Change Levy £1.8B · Landfill Tax £0.5B · Aggregates Levy £0.4B · Soft Drinks Industry Levy £0.3B · Plastic Packaging Tax £0.3B\n\n**Business / corporate (£97.5B)**: Corporation Tax £90.9B · Energy Profits Levy £2.9B · Bank Levy + Surcharge £2.3B · Digital Services Tax £0.8B · other £0.6B\n\n**Capital & wealth (£26.6B)**: Stamp Duty Land Tax £13.9B · Inheritance Tax £8.2B · Stamp Duty (Shares) £4.3B · Annual Tax on Enveloped Dwellings £0.1B\n\n**Customs & other (£5.7B)**: Customs Duties £4.9B · Penalties £0.8B",
+  "viz_spec": "Sunburst: 858.6B → 5 categories → individual taxes.",
+  "actions": [
+    {
+      "icon": "💰",
+      "label": "Your share of each category",
+      "target": "Your Taxes"
+    },
+    {
+      "icon": "📊",
+      "label": "How this mix changed 2005-2024",
+      "target": "insight `hmrc_receipts_composition_2005_2024"
+    },
+    {
+      "icon": "🔍",
+      "label": "Raw HMRC ODS",
+      "target": "gov.uk"
+    }
+  ],
+  "sources": [
+    {
+      "type": "publisher",
+      "description": "gov.uk",
+      "url": "https://www.gov.uk/government/statistics/hmrc-tax-and-nics-receipts-for-the-uk"
+    },
+    {
+      "type": "our_file",
+      "path": "data/uk/fiscal/uk_revenue_2024_2025.json",
+      "sha256_head": "f2ada495…"
+    }
+  ],
+  "related": [],
+  "source_markdown_section": "## 13. HMRC receipts composition, fiscal year 2024-25",
+  "last_updated": "2026-04-18",
+  "human_reviewed": true
+}

@@ -1,0 +1,53 @@
+{
+  "id": "ubo_resolution_summary",
+  "order": 8,
+  "title": "Ultimate beneficial ownership resolution: pipeline summary",
+  "category": "recipients",
+  "category_meta": {
+    "label": "Recipients",
+    "emoji": "🏢"
+  },
+  "tags": [
+    "#ubo",
+    "#companies-house",
+    "#data-pipeline"
+  ],
+  "narrative_md": "The Budget Galaxy supplier-enrichment pipeline processed 400 UK government suppliers through the UBO-resolution layer (from the 402-profile cohort in `data/suppliers/`), using the Companies House PSC register with a Wikidata fallback for parent-company chains. Of those 400:\n\n- **62** have multiple declared UBO chains (co-owned entities)\n- **29** terminate in a UK government body (state-owned trading entities)\n\nTerminal resolution type of each UBO chain:\n\n| Resolution type | Count |\n| --- | ---: |\n| Individual (named natural person) | 150 |\n| Foreign parent resolved via Wikidata | 62 |\n| Listed / dispersed ownership | 58 |\n| No PSC declared (legitimate exemption) | 71 |\n| No PSC identified | 53 |\n| Foreign parent unresolved | 32 |\n| Data gap (other) | 66 |\n| No registration number | 12 |\n| Cycle detected in ownership chain | 2 |\n| Parent inactive | 1 |\n\nCounts exceed 400 because suppliers with multiple chains appear in more than one category. The 62 foreign-via-Wikidata + 32 foreign-unresolved together represent a minimum of 94 chains with non-UK parent ownership in the enriched cohort. A full country-code breakdown requires a second pass to extract jurisdiction from the `name` field of each terminal record (work scheduled for the pipeline v2).",
+  "viz_spec": "Stacked bar: resolution types, 400 suppliers.",
+  "actions": [
+    {
+      "icon": "🏢",
+      "label": "Browse enriched supplier profiles",
+      "target": "Budget Recipients"
+    },
+    {
+      "icon": "🔗",
+      "label": "Raw UBO JSONL",
+      "target": "GitHub"
+    },
+    {
+      "icon": "📋",
+      "label": "Methodology note",
+      "target": "SOURCES.md` supplier enrichment section"
+    }
+  ],
+  "sources": [
+    {
+      "type": "publisher",
+      "description": "find-and-update.company-information.service.gov.uk",
+      "url": "https://find-and-update.company-information.service.gov.uk/"
+    },
+    {
+      "type": "other",
+      "description": "🔗 Wikidata (parent-resolution fallback)"
+    },
+    {
+      "type": "our_file",
+      "path": "data/recipients/uk/supplier_ubo.jsonl"
+    }
+  ],
+  "related": [],
+  "source_markdown_section": "## 8. Ultimate beneficial ownership resolution: pipeline summary",
+  "last_updated": "2026-04-18",
+  "human_reviewed": true
+}

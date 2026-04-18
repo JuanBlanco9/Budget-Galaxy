@@ -1,0 +1,52 @@
+{
+  "id": "central_gov_supplier_concentration_2024",
+  "order": 7,
+  "title": "Concentration in UK central-government supplier payments, 2024",
+  "category": "recipients",
+  "category_meta": {
+    "label": "Recipients",
+    "emoji": "🏢"
+  },
+  "tags": [
+    "#concentration",
+    "#suppliers",
+    "#central-gov"
+  ],
+  "narrative_md": "Across 15 UK central-government departments that publish L5 top-recipient data for 2024, **2,388 unique suppliers** received cumulative payments totalling **£282.8B**. Concentration of spend among top-ranked suppliers:\n\n| Rank band | Cumulative flow | Share of total |\n| --- | ---: | ---: |\n| Top 100 suppliers | £230.5B | **81.5%** |\n| Top 500 suppliers | £275.6B | **97.5%** |\n| Remaining 1,888 suppliers | £7.2B | 2.5% |\n\nThe 15 departments covered include DWP, DoH, DfE, MoD, HMRC, HMT, MHCLG, DfT, FCDO, Cabinet Office, DESNZ, DCMS, DEFRA, DSIT, and Home Office.",
+  "viz_spec": "Pareto curve: cumulative share of spend (y) against ranked suppliers (x, log scale).",
+  "actions": [
+    {
+      "icon": "🏢",
+      "label": "Browse the top 400 enriched suppliers",
+      "target": "Budget Recipients"
+    },
+    {
+      "icon": "🔍",
+      "label": "View the raw ranking JSON",
+      "target": "GitHub"
+    },
+    {
+      "icon": "🏛",
+      "label": "Council-level concentration",
+      "target": "insight `council_supplier_concentration` (draft)"
+    }
+  ],
+  "sources": [
+    {
+      "type": "other",
+      "description": "🔗 UK gov departments publishing L5 top-recipient spend · (per-department official publications)"
+    },
+    {
+      "type": "our_file",
+      "path": "data/recipients/uk/supplier_ranking.json"
+    },
+    {
+      "type": "other",
+      "description": "📂 Underlying: `data/recipients/uk/l5_{department}_2024.json` (15 files)"
+    }
+  ],
+  "related": [],
+  "source_markdown_section": "## 7. Concentration in UK central-government supplier payments, 2024",
+  "last_updated": "2026-04-18",
+  "human_reviewed": true
+}

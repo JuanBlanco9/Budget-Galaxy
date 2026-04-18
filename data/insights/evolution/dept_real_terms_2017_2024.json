@@ -1,0 +1,61 @@
+{
+  "id": "dept_real_terms_2017_2024",
+  "order": 6,
+  "title": "UK central government department real-terms growth, 2017 → 2024",
+  "category": "evolution",
+  "category_meta": {
+    "label": "Evolution",
+    "emoji": "📈"
+  },
+  "tags": [
+    "#departments",
+    "#real-terms",
+    "#growth"
+  ],
+  "narrative_md": "Comparing total top-level department values between `uk_budget_tree_2017.json` and `uk_budget_tree_2024.json`, adjusted to 2024 prices using a GDP deflator factor of **1.222** (ONS MM23 series, 2017 → 2024):\n\n| Department | 2017 (£B real-2024) | 2024 £B | Real-terms Δ |\n| --- | ---: | ---: | ---: |\n| Health (DoH + NHS Provider Sector, combined) | 169.8 | 214.2 | **+26.1%** |\n| Department for Work & Pensions | 227.5 | 297.4 | +30.7% |\n| Local Government (England) | 110.3 | 141.7 | +28.4% |\n| Department for Education | 112.1 | 140.3 | +25.1% |\n| Ministry of Defence | 64.6 | 71.9 | +11.3% |\n| Scotland Office + Advocate General | 34.5 | 48.6 | +40.6% |\n| Department for Transport | 34.5 | 41.2 | +19.4% |\n| Scottish Government | 46.1 | 36.8 | **−20.1%** |\n| HM Revenue and Customs | 55.9 | 34.3 | **−38.6%** |\n| Northern Ireland Executive | 26.5 | 33.2 | +25.2% |\n| Northern Ireland Office | 19.2 | 25.5 | +33.1% |\n| Welsh Assembly Government | 20.4 | 23.9 | +17.1% |\n\nTwo departments shrank in real terms in the period: Scottish Government (−20.1%) and HM Revenue & Customs (−38.6%). The Scottish Government contraction sits alongside a +40.6% increase in Scotland Office and +25.2% in the Northern Ireland Executive — reflecting Barnett-formula-linked flow shifts and post-referendum fiscal-framework changes that moved amounts between devolved-admin and Scotland/Wales/NI Office entries.\n\n**Reconciliation notes:**\n\n- **Health row** combines 2024's `DEPARTMENT OF HEALTH` (£83.4B) + `NHS PROVIDER SECTOR` (£130.8B) = £214.2B, vs 2017's `DEPARTMENT OF HEALTH` (£139.0B, £169.8B in 2024 prices). In 2017 NHS provider costs were folded inside DoH; 2024 splits them out. The combined comparison re-unifies them.\n- **HM Treasury excluded from ranking**: 2017 value was £−19.8B (net-negative convention, treasury captured as net-of-receipts), 2024 value is £63.5B (gross-of-debt-interest convention). Sign flip prevents a direct growth calculation. Shown in the sources block for auditability.\n- **FCDO excluded**: merger of FCO + DfID into FCDO in September 2020 means the 2017 row name (\"FOREIGN AND COMMONWEALTH OFFICE\") has no direct match in 2024. Comparison requires manual linkage of FCO 2017 + DfID 2017 → FCDO 2024 (future refinement).",
+  "viz_spec": "Horizontal bar chart of the 12 comparable departments.",
+  "actions": [
+    {
+      "icon": "📊",
+      "label": "Compare 2017 and 2024 side-by-side",
+      "target": "Explore & Compare"
+    },
+    {
+      "icon": "🌌",
+      "label": "Browse the 2024 tree",
+      "target": "Budget Galaxy"
+    },
+    {
+      "icon": "🔀",
+      "label": "Receipts that funded this",
+      "target": "insight `hmrc_receipts_composition_2005_2024"
+    }
+  ],
+  "sources": [
+    {
+      "type": "publisher",
+      "description": "gov.uk",
+      "url": "https://www.gov.uk/government/publications/oscar-online-system-for-central-accounting-and-reporting"
+    },
+    {
+      "type": "our_file",
+      "path": "data/uk/uk_budget_tree_2017.json"
+    },
+    {
+      "type": "other",
+      "description": "🔗 GDP deflator: ONS MM23 series"
+    },
+    {
+      "type": "methodology",
+      "description": "Computed by: `scripts/verify_insights.py` function `v6_dept_real_terms`"
+    },
+    {
+      "type": "other",
+      "description": "# 🏢 RECIPIENTS (3)"
+    }
+  ],
+  "related": [],
+  "source_markdown_section": "## 6. UK central government department real-terms growth, 2017 → 2024",
+  "last_updated": "2026-04-18",
+  "human_reviewed": true
+}

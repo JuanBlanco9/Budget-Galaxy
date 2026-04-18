@@ -1,0 +1,57 @@
+{
+  "id": "band_d_scotland_vs_england_2024",
+  "order": 11,
+  "title": "Band D council tax: Scotland vs England, 2024-25",
+  "category": "councils",
+  "category_meta": {
+    "label": "Councils",
+    "emoji": "🏛"
+  },
+  "tags": [
+    "#council-tax",
+    "#devolved",
+    "#comparison"
+  ],
+  "narrative_md": "Scotland's 32 councils and England's 296 councils compared on Band D, 2024-25:\n\n| Statistic | Scotland | England |\n| --- | ---: | ---: |\n| Council count | 32 | 296 |\n| Lowest | £1,260.61 (Shetland) | £968.76 (Wandsworth) |\n| Median | £1,415.44 | £2,214.72 |\n| Highest | £1,547.01 (Inverclyde) | £2,543.29 (Rutland) |\n| Range | £286.40 | £1,574.53 |\n\nScotland's range is £286 — 5.5× smaller than England's £1,575. The median Scottish Band D is **£799 below** the median English Band D (£1,415.44 vs £2,214.72).\n\n**3 English councils** have Band D values below Scotland's lowest: **Wandsworth (£968.76), Westminster (£975.02), and City of London (£1,217.89)**. Two more English councils — Hammersmith & Fulham (£1,386.77) and Kensington & Chelsea (£1,529.85) — sit within the Scottish Band D range. The remaining **291** English councils have Band D values above Scotland's highest of £1,547.01.\n\n(Note: direct cross-border comparison requires adjusting for differences in devolved public-service funding — a larger share of Scottish local-government spend is funded via block grant rather than council tax.)",
+  "viz_spec": "Side-by-side boxplot: Scotland vs England Band D distributions.",
+  "actions": [
+    {
+      "icon": "🏛",
+      "label": "Model both in `Your Taxes`",
+      "target": "jurisdiction toggle"
+    },
+    {
+      "icon": "📊",
+      "label": "Grant dependency",
+      "target": "insight `council_central_grant_dependency"
+    },
+    {
+      "icon": "🔗",
+      "label": "gov.scot source",
+      "target": "[gov.scot](https://www.gov.scot/publications/council-tax-datasets/)"
+    }
+  ],
+  "sources": [
+    {
+      "type": "publisher",
+      "description": "gov.scot",
+      "url": "https://www.gov.scot/publications/council-tax-datasets/"
+    },
+    {
+      "type": "other",
+      "description": "🔗 MHCLG Council Tax levels in England 2024-25 · gov.uk"
+    },
+    {
+      "type": "our_file",
+      "path": "data/uk/fiscal/council_tax/scotland_council_tax_2024_25.json"
+    },
+    {
+      "type": "our_file",
+      "path": "data/uk/fiscal/council_tax/uk_council_tax_2024_25.json"
+    }
+  ],
+  "related": [],
+  "source_markdown_section": "## 11. Band D council tax: Scotland vs England, 2024-25",
+  "last_updated": "2026-04-18",
+  "human_reviewed": true
+}

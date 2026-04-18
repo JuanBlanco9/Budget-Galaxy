@@ -1,0 +1,57 @@
+{
+  "id": "council_central_grant_dependency",
+  "order": 12,
+  "title": "Central-grant share of net current expenditure, English councils 2023-24",
+  "category": "councils",
+  "category_meta": {
+    "label": "Councils",
+    "emoji": "🏛"
+  },
+  "tags": [
+    "#grants",
+    "#revenue",
+    "#distribution"
+  ],
+  "narrative_md": "Across **203 English local authorities** with net current expenditure above £100M in 2023-24, the ratio (central grants in / net current expenditure):\n\n| Statistic | Grant share |\n| --- | ---: |\n| 25th percentile | 33.7% |\n| Median | **43.5%** |\n| 75th percentile | 47.8% |\n\nDistribution of councils by grant-share band:\n\n| Grant share | Council count |\n| --- | ---: |\n| Above 70% | 2 |\n| 50–70% | 28 |\n| 30–50% | 128 |\n| 10–30% | 25 |\n| Below 10% | 20 |\n\nThe median council funds 43.5% of its net current expenditure via central grants. Two-thirds of councils (131 of 203) fund between 30% and 50% from central grants; the remaining third splits between lower-dependency (council-tax-heavy) and higher-dependency (grant-heavy, often driven by ring-fenced Dedicated Schools Grant flows).\n\nScope: councils with > £100M net current expenditure in 2023-24 are in scope (omits small district councils).",
+  "viz_spec": "Histogram of grant-share ratio across 203 councils, banded.",
+  "actions": [
+    {
+      "icon": "🏛",
+      "label": "Model your council's revenue split",
+      "target": "Your Taxes"
+    },
+    {
+      "icon": "📊",
+      "label": "Correlate with Band D",
+      "target": "Related insight (draft)"
+    },
+    {
+      "icon": "🔍",
+      "label": "MHCLG Revenue Outturn CSV",
+      "target": "gov.uk"
+    }
+  ],
+  "sources": [
+    {
+      "type": "publisher",
+      "description": "gov.uk",
+      "url": "https://www.gov.uk/government/statistical-data-sets/live-tables-on-local-government-finance"
+    },
+    {
+      "type": "our_file",
+      "path": "data/uk/local_authorities/revenue_outturn_timeseries.csv"
+    },
+    {
+      "type": "our_file",
+      "path": "data/uk/fiscal/uk_council_finance_2023_24.json"
+    },
+    {
+      "type": "other",
+      "description": "# 🔀 STRUCTURE (3)"
+    }
+  ],
+  "related": [],
+  "source_markdown_section": "## 12. Central-grant share of net current expenditure, English councils 2023-24",
+  "last_updated": "2026-04-18",
+  "human_reviewed": true
+}

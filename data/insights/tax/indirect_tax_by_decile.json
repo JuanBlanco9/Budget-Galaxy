@@ -1,0 +1,60 @@
+{
+  "id": "indirect_tax_by_decile",
+  "order": 3,
+  "title": "Indirect tax burden as share of disposable income, by decile",
+  "category": "tax",
+  "category_meta": {
+    "label": "Tax",
+    "emoji": "💰"
+  },
+  "tags": [
+    "#indirect-tax",
+    "#vat",
+    "#distribution",
+    "#decile"
+  ],
+  "narrative_md": "From ONS \"Effects of Taxes and Benefits\" (FY 2017-18 historical reference; decile ratios are stable year-on-year), indirect tax burden by decile:\n\n| Decile | Label | Disposable | VAT | Total indirect | Indirect / disposable |\n| ---: | --- | ---: | ---: | ---: | ---: |\n| 1 | Bottom | £9,329 | £1,404 | £2,622 | 28.1% |\n| 2 | 2nd | £17,047 | £1,632 | £3,074 | 18.0% |\n| 3 | 3rd | £20,609 | £1,713 | £3,150 | 15.3% |\n| 4 | 4th | £24,602 | £2,195 | £3,908 | 15.9% |\n| 5 | 5th | £29,055 | £2,404 | £4,283 | 14.7% |\n| 6 | 6th | £32,790 | £2,915 | £4,939 | 15.1% |\n| 7 | 7th | £37,617 | £3,120 | £5,332 | 14.2% |\n| 8 | 8th | £45,653 | £3,797 | £6,308 | 13.8% |\n| 9 | 9th | £56,795 | £4,666 | £7,686 | 13.5% |\n| 10 | Top | £95,207 | £6,101 | £9,482 | 10.0% |\n\nThe Bottom decile ratio (28.1%) is **2.81× the Top decile ratio** (10.0%).\n\n**Definition of \"indirect taxes\" (this insight):** VAT + fuel duty + tobacco duty + beer/cider duty + wines/spirits duty + VED + TV licence + Stamp Duty Land Tax + customs duties + betting taxes + Insurance Premium Tax + Air Passenger Duty + National Lottery + other. Excludes commercial/industrial rates and employer NI (intermediate taxes, borne by the firm before reaching the household).",
+  "viz_spec": "Bar chart: decile (x) vs indirect-tax-% (y).",
+  "actions": [
+    {
+      "icon": "💰",
+      "label": "Estimate your indirect tax",
+      "target": "Your Taxes`, VAT tooltip"
+    },
+    {
+      "icon": "🔍",
+      "label": "ONS source",
+      "target": "[ons.gov.uk](https://www.ons.gov.uk/peoplepopulationandcommunity/personalandhouseholdfinances/incomeandwealth/datasets/theeffectsoftaxesandbenefitsonhouseholdincomehistoricaldatasets)"
+    },
+    {
+      "icon": "📊",
+      "label": "Compare with direct tax progressivity",
+      "target": "insight `tax_ladder_ruk_2024"
+    }
+  ],
+  "sources": [
+    {
+      "type": "publisher",
+      "description": "ons.gov.uk",
+      "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/personalandhouseholdfinances/incomeandwealth/datasets/theeffectsoftaxesandbenefitsonhouseholdincomehistoricaldatasets"
+    },
+    {
+      "type": "our_file",
+      "path": "data/uk/fiscal/ons_etb_by_decile_all.xlsx",
+      "sha256_head": "a22791d0…"
+    },
+    {
+      "type": "our_file",
+      "path": "data/uk/fiscal/uk_indirect_tax_shares_by_decile.json",
+      "sha256_head": "7c1b84c7…"
+    },
+    {
+      "type": "other",
+      "description": "# 📈 EVOLUTION (3)"
+    }
+  ],
+  "related": [],
+  "source_markdown_section": "## 3. Indirect tax burden as share of disposable income, by decile",
+  "last_updated": "2026-04-18",
+  "human_reviewed": true
+}

@@ -1,0 +1,54 @@
+{
+  "id": "band_d_distribution_english_2024",
+  "order": 10,
+  "title": "Band D council tax distribution across English councils, 2024-25",
+  "category": "councils",
+  "category_meta": {
+    "label": "Councils",
+    "emoji": "🏛"
+  },
+  "tags": [
+    "#council-tax",
+    "#band-d",
+    "#distribution"
+  ],
+  "narrative_md": "Across **296 English billing authorities**, Band D council tax for fiscal year 2024-25:\n\n| Statistic | Band D value |\n| --- | ---: |\n| Lowest (Wandsworth) | £968.76 |\n| 10th percentile | £2,026.71 |\n| 25th percentile (Q1) | £2,128.98 |\n| Median | £2,214.72 |\n| 75th percentile (Q3) | £2,296.80 |\n| 90th percentile | £2,372.60 |\n| Highest (Rutland) | £2,543.29 |\n\nRange between lowest and highest: **£1,574.53** (the highest is 2.63× the lowest). Interquartile range (Q3 − Q1): £167.82 (7.6% of the median). Seven of the ten lowest values are Inner London boroughs.\n\nSource coverage excludes Police & Crime Commissioner precepts (reported separately) and adjustments for parish precepts.",
+  "viz_spec": "Histogram + boxplot overlay (296 councils).",
+  "actions": [
+    {
+      "icon": "🏛",
+      "label": "Look up your council",
+      "target": "Your Taxes`, council picker"
+    },
+    {
+      "icon": "🗺",
+      "label": "See top 20 / bottom 20",
+      "target": "Explore & Compare"
+    },
+    {
+      "icon": "🔀",
+      "label": "Scotland comparison",
+      "target": "insight `band_d_scotland_vs_england_2024"
+    }
+  ],
+  "sources": [
+    {
+      "type": "publisher",
+      "description": "gov.uk",
+      "url": "https://www.gov.uk/government/statistics/council-tax-levels-set-by-local-authorities-in-england-2024-to-2025"
+    },
+    {
+      "type": "our_file",
+      "path": "data/uk/fiscal/council_tax/ct_table8_2024_25.ods",
+      "sha256_head": "249127ae…"
+    },
+    {
+      "type": "our_file",
+      "path": "data/uk/fiscal/council_tax/uk_council_tax_2024_25.json"
+    }
+  ],
+  "related": [],
+  "source_markdown_section": "## 10. Band D council tax distribution across English councils, 2024-25",
+  "last_updated": "2026-04-18",
+  "human_reviewed": true
+}

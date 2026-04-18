@@ -1,0 +1,53 @@
+{
+  "id": "per_household_borrowing",
+  "order": 14,
+  "title": "Per-household borrowing by year, 2000-01 to 2022-23",
+  "category": "structure",
+  "category_meta": {
+    "label": "Structure",
+    "emoji": "🔀"
+  },
+  "tags": [
+    "#borrowing",
+    "#per-household",
+    "#ratio"
+  ],
+  "narrative_md": "Dividing annual Public Sector Net Borrowing by UK household count (approximated per year from ONS estimates):\n\n| Year | PSNB £B | Households (M) | Per household |\n| --- | ---: | ---: | ---: |\n| 2000-01 | −15.2 | 24.4 | **−£625** (surplus) |\n| 2007-08 | +47.1 | 26.1 | £1,806 |\n| 2009-10 | +159.9 | 26.6 | £6,012 |\n| 2014-15 | +96.9 | 27.3 | £3,548 |\n| 2019-20 | +61.5 | 28.0 | £2,195 |\n| 2020-21 | +312.9 | 28.1 | £11,137 |\n| 2022-23 | +139.2 | 28.3 | £4,919 |\n\nThe 2000-01 figure is negative (surplus) — £625 per household less debt created than paid down. The series peak is 2020-21 at £11,137 per household.\n\n**Cumulative 23-year per-household borrowing** (2000-01 through 2022-23): £74,122 — each UK household's average share of additional national debt incurred in this period. This figure is calculated before interest, and equally apportioned across households; future repayment burden will follow the progressive tax structure.\n\n**Reconciliation with Your Taxes tab**: The Your Taxes tab uses a single round figure of 28.4M UK households (uk_trace.js) for all year calculations, producing £4,902 per household for 2022-23. This insight uses year-specific ONS estimates (28.3M for 2022) and returns £4,919 — a £17 delta at that year's scale. Both figures are within the rounding tolerance of the underlying ONS estimate range.",
+  "viz_spec": "Line chart: per-household PSNB across 23 years with event annotations.",
+  "actions": [
+    {
+      "icon": "💰",
+      "label": "Your 2024-25 share",
+      "target": "Your Taxes` borrowing node"
+    },
+    {
+      "icon": "📊",
+      "label": "What the borrowing funded",
+      "target": "Budget Galaxy"
+    },
+    {
+      "icon": "🔀",
+      "label": "Pro-rata to your tax",
+      "target": "Your Taxes` borrowing attribution toggle"
+    }
+  ],
+  "sources": [
+    {
+      "type": "publisher",
+      "description": "obr.uk/data",
+      "url": "https://obr.uk/data/"
+    },
+    {
+      "type": "other",
+      "description": "🔗 ONS household estimates · ons.gov.uk"
+    },
+    {
+      "type": "our_file",
+      "path": "data/uk/fiscal/uk_psnb_historical.json"
+    }
+  ],
+  "related": [],
+  "source_markdown_section": "## 14. Per-household borrowing by year, 2000-01 to 2022-23",
+  "last_updated": "2026-04-18",
+  "human_reviewed": true
+}

@@ -1,0 +1,61 @@
+{
+  "id": "la_net_current_expenditure_composition",
+  "order": 15,
+  "title": "Net current expenditure composition, English local authorities 2023-24",
+  "category": "structure",
+  "category_meta": {
+    "label": "Structure",
+    "emoji": "🔀"
+  },
+  "tags": [
+    "#councils",
+    "#services",
+    "#composition"
+  ],
+  "narrative_md": "Aggregated across 423 English reporting entities (353 principal local authorities + 40 police-related bodies + 30 fire-related bodies) in MHCLG Revenue Outturn for fiscal year 2023-24, **£123.8B** total net current expenditure, by service:\n\n| Service | £B | Share |\n| --- | ---: | ---: |\n| Education Services | 39.9 | 32.2% |\n| Adult Social Care | 23.5 | 19.0% |\n| Police Services | 15.8 | 12.8% |\n| Children's Social Care | 14.6 | 11.8% |\n| Environmental and Regulatory Services | 6.4 | 5.2% |\n| Highways and Transport | 4.9 | 4.0% |\n| Central Services | 4.3 | 3.4% |\n| Public Health | 3.9 | 3.2% |\n| Housing Services | 2.8 | 2.3% |\n| Cultural and Related Services | 2.7 | 2.2% |\n| Fire and Rescue Services | 2.6 | 2.1% |\n| Planning and Development | 2.2 | 1.7% |\n| Other Services | 0.2 | 0.2% |\n\nThe three largest categories — Education + Adult Social Care + Children's Social Care — together account for **63.0%** of net current expenditure. The five largest account for 80.9%.",
+  "viz_spec": "Stacked bar: 100% = £123.8B, split by 13 service categories.",
+  "actions": [
+    {
+      "icon": "🏛",
+      "label": "See your council's specific split",
+      "target": "Budget Recipients` council detail"
+    },
+    {
+      "icon": "💰",
+      "label": "Your council-tax journey",
+      "target": "Your Taxes"
+    },
+    {
+      "icon": "🔍",
+      "label": "MHCLG CSV source",
+      "target": "gov.uk"
+    }
+  ],
+  "sources": [
+    {
+      "type": "publisher",
+      "description": "gov.uk",
+      "url": "https://www.gov.uk/government/statistical-data-sets/live-tables-on-local-government-finance"
+    },
+    {
+      "type": "our_file",
+      "path": "data/uk/local_authorities/uk_la_tree_2024.json"
+    },
+    {
+      "type": "other",
+      "description": "📂 Underlying: `data/uk/local_authorities/revenue_outturn_timeseries.csv`"
+    },
+    {
+      "type": "other",
+      "description": "# Summary table"
+    },
+    {
+      "type": "other",
+      "description": "| --- | --- | --- |"
+    }
+  ],
+  "related": [],
+  "source_markdown_section": "## 15. Net current expenditure composition, English local authorities 2023-24",
+  "last_updated": "2026-04-18",
+  "human_reviewed": true
+}

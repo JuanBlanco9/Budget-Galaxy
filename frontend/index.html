@@ -1068,6 +1068,7 @@ mark{background:rgba(255,200,0,.25);color:inherit;border-radius:2px;padding:0 2p
 </div>
 
 <div class="tabs">
+  <div class="tab" data-tab="insights" onclick="showTab('insights',this)">💡 Insights</div>
   <div class="tab" data-tab="taxpayer" onclick="showTab('taxpayer',this)">💰 Your Taxes</div>
   <div class="tab active" data-tab="galaxy" onclick="showTab('galaxy',this)">🌌 Budget Galaxy</div>
   <div class="tab" data-tab="suppliers" onclick="showTab('suppliers',this)">🏢 Budget Recipients</div>
@@ -1268,6 +1269,175 @@ mark{background:rgba(79,195,247,.3);color:var(--text,#e8ebf5);padding:0 2px;bord
 .cmplist-sync-hint .hint-action{color:var(--text);cursor:pointer;text-decoration:underline}
 @media (max-width:900px){
   .cmplist-layout{grid-template-columns:1fr;grid-template-rows:1fr 1fr}
+}
+
+/* ── Insights tab ── */
+#tab-insights.panel{padding:0;overflow:hidden}
+.insights-layout{
+  display:grid;grid-template-columns:300px 1fr;gap:1px;
+  background:var(--border);height:calc(100vh - 120px);
+}
+.insights-sidebar{
+  background:var(--surface);overflow-y:auto;padding:20px 18px;
+  border-right:1px solid var(--border);
+}
+.insights-header h2{font-size:22px;font-weight:600;margin-bottom:6px}
+.insights-lede{color:var(--dim);font-size:12px;line-height:1.55;margin-bottom:18px}
+.insights-tree{display:flex;flex-direction:column;gap:4px;margin-bottom:20px}
+.insights-cat{
+  background:rgba(0,0,0,.15);border-radius:7px;overflow:hidden;
+  transition:background .15s;
+}
+.insights-cat-header{
+  padding:10px 12px;cursor:pointer;display:flex;align-items:center;gap:8px;
+  font-size:12px;font-weight:600;color:var(--text);
+}
+.insights-cat-header:hover{background:rgba(255,255,255,.04)}
+.insights-cat-emoji{font-size:15px}
+.insights-cat-count{margin-left:auto;font-size:10px;color:var(--dim);font-weight:400}
+.insights-cat-chev{
+  font-size:8px;color:var(--dim);transition:transform .15s;margin-right:4px;
+}
+.insights-cat.open .insights-cat-chev{transform:rotate(90deg)}
+.insights-cat-items{display:none;padding:2px 0 6px}
+.insights-cat.open .insights-cat-items{display:block}
+.insights-item{
+  display:block;padding:6px 12px 6px 32px;cursor:pointer;
+  font-size:11.5px;color:var(--dim);line-height:1.4;
+  border-left:2px solid transparent;transition:all .1s;
+}
+.insights-item:hover{color:var(--text);background:rgba(79,195,247,.05)}
+.insights-item.active{
+  color:var(--accent);border-left-color:var(--accent);
+  background:rgba(79,195,247,.08);font-weight:500;
+}
+.insights-footer-note{
+  font-size:10.5px;color:var(--dim);line-height:1.55;
+  padding:14px;background:rgba(0,0,0,.2);border-radius:6px;
+  border-left:2px solid rgba(255,213,79,.4);
+}
+.insights-footer-note b{color:var(--yellow);font-size:10.5px}
+
+.insights-main{
+  background:rgba(13,18,30,.5);overflow-y:auto;padding:32px 48px;
+}
+.insights-detail{max-width:780px;margin:0 auto}
+.insights-placeholder{
+  text-align:center;padding:80px 20px;color:var(--dim);
+}
+.insights-placeholder h3{font-size:18px;color:var(--text);margin-bottom:8px;font-weight:500}
+.insights-placeholder p{font-size:13px;line-height:1.6}
+
+/* Insight card */
+.insight-card{animation:tp-callout-in .3s ease-out}
+.insight-cat-tag{
+  display:inline-flex;align-items:center;gap:6px;font-size:11px;
+  color:var(--accent);text-transform:uppercase;letter-spacing:.06em;
+  margin-bottom:10px;font-weight:600;
+}
+.insight-title{
+  font-size:26px;font-weight:600;line-height:1.3;color:var(--text);
+  margin-bottom:10px;font-family:Georgia,'Times New Roman',serif;letter-spacing:-.01em;
+}
+.insight-tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:22px}
+.insight-tag{
+  font-size:10.5px;color:var(--dim);background:rgba(255,255,255,.04);
+  padding:2px 8px;border-radius:10px;
+}
+.insight-narrative{
+  font-size:14px;line-height:1.7;color:var(--text);margin-bottom:20px;
+}
+.insight-narrative p{margin-bottom:12px}
+.insight-narrative table{
+  width:100%;border-collapse:collapse;margin:16px 0;font-size:12.5px;
+  background:rgba(0,0,0,.15);border-radius:6px;overflow:hidden;
+}
+.insight-narrative th{
+  text-align:left;padding:8px 12px;background:rgba(79,195,247,.08);
+  color:var(--accent);font-weight:600;font-size:11px;
+  text-transform:uppercase;letter-spacing:.04em;
+}
+.insight-narrative td{
+  padding:7px 12px;border-top:1px solid rgba(255,255,255,.04);
+  color:var(--text);
+}
+.insight-narrative td:nth-child(n+2){
+  text-align:right;font-variant-numeric:tabular-nums;
+}
+.insight-narrative strong{color:var(--text);font-weight:600}
+.insight-narrative b{color:var(--accent2)}
+.insight-narrative code{
+  background:rgba(79,195,247,.08);color:var(--accent);
+  padding:1px 4px;border-radius:3px;font-size:11.5px;
+}
+
+.insight-viz-placeholder{
+  padding:22px;background:rgba(0,0,0,.15);border:1px dashed rgba(255,255,255,.08);
+  border-radius:6px;margin:16px 0;font-size:11.5px;color:var(--dim);
+}
+.insight-viz-placeholder::before{content:'📊  '}
+
+.insight-section-header{
+  font-size:11px;color:var(--dim);text-transform:uppercase;letter-spacing:.06em;
+  margin:28px 0 12px;font-weight:500;
+  border-top:1px solid var(--border);padding-top:20px;
+}
+
+.insight-actions{display:flex;flex-direction:column;gap:8px;margin-bottom:20px}
+.insight-action{
+  display:flex;align-items:center;gap:10px;padding:10px 14px;
+  background:rgba(79,195,247,.05);border:1px solid rgba(79,195,247,.15);
+  border-radius:6px;cursor:pointer;transition:all .12s;
+  text-align:left;font-family:inherit;color:var(--text);font-size:12.5px;
+}
+.insight-action:hover{
+  background:rgba(79,195,247,.1);border-color:var(--accent);
+  transform:translateX(3px);
+}
+.insight-action-icon{font-size:16px}
+.insight-action-label{flex:1}
+.insight-action-label b{color:var(--accent)}
+.insight-action-target{
+  font-size:10.5px;color:var(--dim);font-family:ui-monospace,monospace;
+}
+
+.insight-sources{display:flex;flex-direction:column;gap:6px;margin-bottom:14px}
+.insight-source{
+  font-size:11.5px;color:var(--dim);line-height:1.5;
+  padding:6px 0;
+}
+.insight-source a{color:var(--accent);text-decoration:none}
+.insight-source a:hover{text-decoration:underline}
+.insight-source code{
+  background:rgba(255,255,255,.04);padding:1px 5px;border-radius:3px;
+  font-size:10.5px;color:var(--accent);
+}
+
+.insight-related{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:8px;
+  margin-top:4px;
+}
+.insight-related-card{
+  padding:10px 12px;background:var(--surface);border:1px solid var(--border);
+  border-radius:6px;cursor:pointer;font-size:11.5px;color:var(--text);
+  line-height:1.45;transition:all .12s;
+}
+.insight-related-card:hover{
+  border-color:var(--accent);background:rgba(79,195,247,.06);
+}
+
+.insight-meta{
+  font-size:10.5px;color:var(--dim);margin-top:30px;padding-top:14px;
+  border-top:1px dashed var(--border);display:flex;gap:14px;flex-wrap:wrap;
+}
+.insight-meta span{display:inline-flex;align-items:center;gap:4px}
+
+/* Mobile */
+@media (max-width:900px){
+  .insights-layout{grid-template-columns:1fr;grid-template-rows:auto 1fr;height:auto}
+  .insights-sidebar{max-height:45vh;border-right:0;border-bottom:1px solid var(--border)}
+  .insights-main{padding:24px 18px}
+  .insight-title{font-size:22px}
 }
 
 /* ── Taxpayer (Your Taxes) tab ── */
@@ -1959,6 +2129,36 @@ mark{background:rgba(79,195,247,.3);color:var(--text,#e8ebf5);padding:0 2px;bord
   <div class="cmplist-layout">
     <div class="cmplist-col" id="cmplist-col-a"></div>
     <div class="cmplist-col" id="cmplist-col-b"></div>
+  </div>
+</div>
+
+<!-- INSIGHTS TAB (added 2026-04-18) — curated editorial findings from the
+     Budget Galaxy data. 15 pilot insights across 5 categories (tax, evolution,
+     recipients, councils, structure). Each card follows the four editorial
+     rules: no adjectives, no proper names in the body, descriptive-not-negative,
+     sourced + drillable. Data: data/insights/{category}/*.json + _index.json.
+     Script: scripts/md_to_insight_json.py regenerates JSONs from the master
+     markdown (PILOT_15_VERIFIED.md). -->
+<div id="tab-insights" class="panel" style="display:none">
+  <div class="insights-layout">
+    <aside class="insights-sidebar">
+      <div class="insights-header">
+        <h2>Insights</h2>
+        <p class="insights-lede">Facts the Budget Galaxy data reveals.
+          Every card is sourced, verifiable, and links to the raw data.</p>
+      </div>
+      <div id="insights-tree" class="insights-tree">
+        <!-- Categories populated by JS from _index.json -->
+      </div>
+      <div class="insights-footer-note">
+        <b>Editorial rules:</b> descriptive not evaluative · numbers over adjectives · names only in Budget Recipients profiles, never here · every claim has a source and a drill-link.
+      </div>
+    </aside>
+    <main class="insights-main">
+      <div id="insights-detail" class="insights-detail">
+        <!-- Selected insight card rendered here -->
+      </div>
+    </main>
   </div>
 </div>
 
@@ -3070,6 +3270,7 @@ function showTab(name,el){
   if(name==='suppliers' && typeof loadSuppliersTab==='function') loadSuppliersTab();
   if(name==='comparelist' && typeof loadCompareList==='function') loadCompareList();
   if(name==='taxpayer' && typeof loadTaxpayer==='function') loadTaxpayer();
+  if(name==='insights' && typeof loadInsights==='function') loadInsights();
   if(name==='compare')cmpInit();
   if(name==='budgetlist'&&!blRoot) showBudgetYearPicker();
   if(name==='evolution'){
@@ -12412,6 +12613,249 @@ function _supUboBadge(res, countries){
   const [cls,label]=map[res]||['','?'];
   const flag=countries&&countries.length?' '+countries.map(c=>c.substring(0,10)).join(', '):'';
   return {cls,label:label+flag};
+}
+
+// ── Insights tab ───────────────────────────────────────────────────────────
+window._insights = { index: null, cache: new Map(), selected: null };
+
+async function loadInsights(){
+  const INS = window._insights;
+  if (!INS.index) {
+    try {
+      const res = await fetch('/data/insights/_index.json');
+      if (!res.ok) throw new Error('index fetch ' + res.status);
+      INS.index = await res.json();
+    } catch (e) {
+      document.getElementById('insights-detail').innerHTML =
+        `<div class="insights-placeholder"><h3>Insights index failed to load</h3><p>${_insEsc(e.message)}</p></div>`;
+      return;
+    }
+  }
+  _insRenderTree();
+
+  // Apply deep-link state /#insights/<category>/<id> if present
+  const hash = window.location.hash || '';
+  const m = hash.match(/^#insights\/([^/]+)\/([^/?]+)/);
+  if (m) {
+    _insLoadCard(m[1], m[2]);
+    return;
+  }
+
+  // Otherwise show placeholder
+  if (!INS.selected) {
+    const first = Object.entries(INS.index.categories)[0];
+    if (first) {
+      // Auto-expand the first category but show a welcome placeholder
+      document.getElementById('insights-detail').innerHTML = `
+        <div class="insights-placeholder">
+          <h3>Pick an insight from the left</h3>
+          <p>${INS.index.total} pilot findings across ${Object.keys(INS.index.categories).length} categories.
+             Every card is sourced, numbered, and links to the raw data.</p>
+        </div>`;
+      // Open the first category by default
+      _insToggleCategory(first[0]);
+    }
+  }
+}
+
+function _insRenderTree(){
+  const tree = document.getElementById('insights-tree');
+  const INS = window._insights;
+  if (!tree || !INS.index) return;
+  const cats = INS.index.categories;
+  tree.innerHTML = Object.entries(cats).map(([catKey, cat]) => `
+    <div class="insights-cat" data-cat="${_insEsc(catKey)}">
+      <div class="insights-cat-header" onclick="_insToggleCategory('${_insEsc(catKey)}')">
+        <span class="insights-cat-chev">▶</span>
+        <span class="insights-cat-emoji">${cat.emoji}</span>
+        <span>${_insEsc(cat.label)}</span>
+        <span class="insights-cat-count">${cat.items.length}</span>
+      </div>
+      <div class="insights-cat-items">
+        ${cat.items.map(item => `
+          <div class="insights-item" data-id="${_insEsc(item.id)}"
+               onclick="_insLoadCard('${_insEsc(catKey)}','${_insEsc(item.id)}')">
+            ${_insEsc(item.title)}
+          </div>
+        `).join('')}
+      </div>
+    </div>
+  `).join('');
+}
+
+function _insToggleCategory(catKey){
+  const el = document.querySelector(`.insights-cat[data-cat="${catKey}"]`);
+  if (el) el.classList.toggle('open');
+}
+
+async function _insLoadCard(category, id){
+  const INS = window._insights;
+  const key = `${category}/${id}`;
+  if (!INS.cache.has(key)) {
+    try {
+      const res = await fetch(`/data/insights/${category}/${id}.json`);
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      INS.cache.set(key, await res.json());
+    } catch (e) {
+      document.getElementById('insights-detail').innerHTML =
+        `<div class="insights-placeholder"><h3>Failed to load insight</h3><p>${_insEsc(e.message)}</p></div>`;
+      return;
+    }
+  }
+  const insight = INS.cache.get(key);
+  INS.selected = insight;
+  _insRenderCard(insight);
+  // Update highlight in tree
+  document.querySelectorAll('.insights-item').forEach(el =>
+    el.classList.toggle('active', el.dataset.id === id));
+  // Open its category
+  const catEl = document.querySelector(`.insights-cat[data-cat="${category}"]`);
+  if (catEl) catEl.classList.add('open');
+  // Update URL hash
+  if (history && history.replaceState) {
+    history.replaceState(null, '', `#insights/${category}/${id}`);
+  }
+}
+
+function _insRenderCard(ins){
+  const el = document.getElementById('insights-detail');
+  if (!el) return;
+
+  const catMeta = ins.category_meta || {};
+  const tags = (ins.tags || []).map(t => `<span class="insight-tag">${_insEsc(t)}</span>`).join('');
+
+  // Render markdown narrative (minimal: headings, tables, bold, code, paragraphs)
+  const narrative = _insRenderMd(ins.narrative_md || '');
+
+  const vizHtml = ins.viz_spec
+    ? `<div class="insight-viz-placeholder">Viz: ${_insEsc(ins.viz_spec)}</div>`
+    : '';
+
+  const actions = (ins.actions || []).map(a => `
+    <button class="insight-action" onclick="_insActionClick('${_insEsc(a.target)}')">
+      <span class="insight-action-icon">${a.icon || '→'}</span>
+      <span class="insight-action-label">${_insRenderInline(a.label)}</span>
+      <span class="insight-action-target">${_insEsc(a.target).slice(0,40)}</span>
+    </button>
+  `).join('');
+
+  const sources = (ins.sources || []).map(s => {
+    if (s.type === 'publisher') {
+      return `<div class="insight-source">🔗 <b>Publisher</b>: ${_insRenderInline(s.description)}</div>`;
+    }
+    if (s.type === 'our_file') {
+      const hash = s.sha256_head ? ` · SHA256 <code>${_insEsc(s.sha256_head)}</code>` : '';
+      return `<div class="insight-source">📂 <b>File</b>: <code>${_insEsc(s.path)}</code>${hash}</div>`;
+    }
+    if (s.type === 'manifest') {
+      return `<div class="insight-source">📋 ${_insRenderInline(s.description)}</div>`;
+    }
+    if (s.type === 'methodology') {
+      return `<div class="insight-source">🔧 ${_insRenderInline(s.description)}</div>`;
+    }
+    return `<div class="insight-source">· ${_insRenderInline(s.description || JSON.stringify(s))}</div>`;
+  }).join('');
+
+  const related = (ins.related || []).map(rid => {
+    // Find the related insight's category + title from index
+    const idx = window._insights.index;
+    let target = null;
+    for (const [catKey, cat] of Object.entries(idx.categories)) {
+      const item = cat.items.find(i => i.id === rid);
+      if (item) { target = { catKey, item }; break; }
+    }
+    if (!target) return `<div class="insight-related-card" style="opacity:.5;cursor:default" title="Not yet published">${_insEsc(rid)}</div>`;
+    return `<div class="insight-related-card" onclick="_insLoadCard('${_insEsc(target.catKey)}','${_insEsc(rid)}')">
+      ${_insEsc(target.item.title)}
+    </div>`;
+  }).join('');
+
+  el.innerHTML = `
+    <article class="insight-card">
+      <div class="insight-cat-tag">${catMeta.emoji || ''} ${_insEsc(catMeta.label || ins.category)}</div>
+      <h1 class="insight-title">${_insEsc(ins.title)}</h1>
+      <div class="insight-tags">${tags}</div>
+
+      <div class="insight-narrative">${narrative}</div>
+      ${vizHtml}
+
+      <div class="insight-section-header">What now?</div>
+      <div class="insight-actions">${actions}</div>
+
+      <div class="insight-section-header">Sources</div>
+      <div class="insight-sources">${sources}</div>
+
+      ${related ? `
+        <div class="insight-section-header">Related</div>
+        <div class="insight-related">${related}</div>
+      ` : ''}
+
+      <div class="insight-meta">
+        <span>✅ Reviewed: ${ins.human_reviewed ? 'yes' : 'pending'}</span>
+        <span>📅 Last updated: ${_insEsc(ins.last_updated || '—')}</span>
+        <span>🔧 Generated by: ${_insEsc(ins.generated_by || 'pipeline')}</span>
+      </div>
+    </article>
+  `;
+  // Scroll to top of the card area
+  const main = document.querySelector('.insights-main');
+  if (main) main.scrollTop = 0;
+}
+
+// Route an action target to the right tab + state
+function _insActionClick(target){
+  if (!target) return;
+  // Deep-link pattern like /#taxpayer or /#insights/tax/...
+  if (target.startsWith('#') || target.startsWith('/#')) {
+    window.location.hash = target.replace(/^\//, '');
+    // Force activation
+    const t = target.replace(/^\/?#/, '');
+    const [tab] = t.split('/');
+    if (typeof showTab === 'function') showTab(tab === 'insights' ? 'insights' : tab, null);
+    return;
+  }
+  // Backtick-labelled tab names inside the label — best-effort match
+  const lower = target.toLowerCase();
+  if (lower.includes('your taxes') || lower.includes('taxpayer')) return showTab('taxpayer', null);
+  if (lower.includes('budget galaxy') || lower.includes('galaxy')) return showTab('galaxy', null);
+  if (lower.includes('budget recipients') || lower.includes('supplier')) return showTab('suppliers', null);
+  if (lower.includes('explore')) return showTab('explore', null);
+  if (lower.includes('insight')) return; // already here
+}
+
+// --- Very small markdown subset renderer (tables + bold + code + paragraphs) ---
+function _insRenderMd(md){
+  if (!md) return '';
+  // Escape HTML first
+  let html = md.replace(/[<>&]/g, c => ({'<':'&lt;','>':'&gt;','&':'&amp;'}[c]));
+  // Tables: | a | b | \n | ---: | ---: | \n | 1 | 2 |
+  html = html.replace(/((?:^\|[^\n]+\|\n)+)/gm, (block) => {
+    const lines = block.trim().split('\n');
+    if (lines.length < 2) return block;
+    const header = lines[0].split('|').slice(1, -1).map(c => c.trim());
+    // Skip line 2 (alignment)
+    const rows = lines.slice(2).map(l => l.split('|').slice(1, -1).map(c => c.trim()));
+    return `<table><thead><tr>${header.map(h => `<th>${h}</th>`).join('')}</tr></thead><tbody>${
+      rows.map(r => `<tr>${r.map(c => `<td>${_insRenderInlineRaw(c)}</td>`).join('')}</tr>`).join('')
+    }</tbody></table>\n`;
+  });
+  // Paragraphs
+  const paras = html.split(/\n\n+/).filter(p => p.trim());
+  return paras.map(p => {
+    if (p.startsWith('<table>')) return p;
+    return `<p>${_insRenderInlineRaw(p.replace(/\n/g, ' '))}</p>`;
+  }).join('');
+}
+
+function _insRenderInline(s){ return _insRenderInlineRaw(_insEsc(s)); }
+function _insRenderInlineRaw(s){
+  return s
+    .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+    .replace(/`([^`]+)`/g, '<code>$1</code>')
+    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>');
+}
+function _insEsc(s){
+  return String(s).replace(/[<>&"']/g, c => ({'<':'&lt;','>':'&gt;','&':'&amp;','"':'&quot;',"'":'&#39;'}[c]));
 }
 
 // ── Taxpayer (Your Taxes) tab ──────────────────────────────────────────────
