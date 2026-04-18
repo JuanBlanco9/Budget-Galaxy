@@ -1226,11 +1226,10 @@ mark{background:rgba(79,195,247,.3);color:var(--text,#e8ebf5);padding:0 2px;bord
 /* Compare + List — single default, toggleable second column */
 #tab-comparelist.panel{padding:0;position:relative}
 .cmplist-toolbar{
-  position:sticky;top:0;right:0;z-index:20;
+  /* Own row above the layout — no overlay, no gradient, doesn't block header */
   display:flex;gap:8px;align-items:center;justify-content:flex-end;
-  padding:12px 20px;background:linear-gradient(180deg,rgba(10,10,15,.95),rgba(10,10,15,.7),transparent);
-  backdrop-filter:blur(6px);
-  margin-bottom:-52px;  /* overlay the column header area */
+  padding:10px 20px;background:var(--bg);
+  border-bottom:1px solid var(--border);
 }
 .cmplist-add-btn{
   background:rgba(79,195,247,.1);border:1px solid rgba(79,195,247,.35);
@@ -1249,7 +1248,7 @@ mark{background:rgba(79,195,247,.3);color:var(--text,#e8ebf5);padding:0 2px;bord
   font-size:16px;font-weight:400;color:var(--accent);line-height:1;
 }
 .cmplist-layout{
-  display:grid;gap:1px;background:var(--border);height:calc(100vh - 120px);
+  display:grid;gap:1px;background:var(--border);height:calc(100vh - 170px);
 }
 .cmplist-layout[data-columns="1"]{grid-template-columns:1fr}
 .cmplist-layout[data-columns="2"]{grid-template-columns:1fr 1fr}
@@ -1285,6 +1284,111 @@ mark{background:rgba(79,195,247,.3);color:var(--text,#e8ebf5);padding:0 2px;bord
   color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
 }
 .cmplist-row .amt{text-align:right;color:var(--accent);font-variant-numeric:tabular-nums}
+
+/* ── Composition stacked bar (shows visual breakdown above list) ── */
+.composition-block{
+  margin:4px 0 16px;
+  padding:12px 14px;
+  background:rgba(0,0,0,.2);
+  border:1px solid var(--border);
+  border-radius:7px;
+}
+.composition-title{
+  font-size:10.5px;color:var(--dim);text-transform:uppercase;
+  letter-spacing:.05em;margin-bottom:8px;font-weight:500;
+}
+.composition-bar{
+  display:flex;height:16px;border-radius:3px;overflow:hidden;
+  box-shadow:0 0 0 1px rgba(255,255,255,.04) inset;
+}
+.comp-seg{
+  transition:opacity .15s,transform .15s;cursor:default;
+  min-width:1px;
+}
+.comp-seg:hover{opacity:.8;transform:scaleY(1.15)}
+.composition-legend{
+  display:flex;flex-wrap:wrap;gap:10px 18px;margin-top:10px;
+  font-size:11px;
+}
+.comp-legend-item{
+  display:flex;align-items:center;gap:5px;min-width:0;
+}
+.comp-legend-dot{
+  display:inline-block;width:9px;height:9px;border-radius:2px;flex-shrink:0;
+}
+.comp-legend-label{color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.comp-legend-pct{color:var(--dim);font-variant-numeric:tabular-nums;margin-left:2px}
+.comp-legend-more{color:var(--dim);font-size:10.5px;font-style:italic}
+
+/* ── Leaf node rich card ── */
+.leaf-card{
+  padding:24px 20px;margin:8px 0;
+  background:linear-gradient(135deg,rgba(79,195,247,.04),rgba(18,18,30,.2));
+  border:1px solid var(--border);border-radius:10px;
+}
+.leaf-hero{margin-bottom:18px}
+.leaf-value{
+  font-size:34px;font-weight:700;color:var(--accent);
+  font-variant-numeric:tabular-nums;letter-spacing:-.02em;
+  line-height:1.1;
+}
+.leaf-name{
+  font-size:14px;color:var(--text);margin-top:4px;line-height:1.4;
+}
+.leaf-spark{
+  margin:14px 0;
+  padding:12px;background:rgba(0,0,0,.15);border-radius:6px;
+  color:var(--dim);
+}
+.leaf-spark svg.spark{display:block;width:100%;height:auto;max-width:420px}
+.leaf-deltas{
+  display:flex;gap:24px;margin:14px 0 18px;
+}
+.leaf-metric-label{
+  font-size:10px;color:var(--dim);text-transform:uppercase;letter-spacing:.06em;
+}
+.leaf-metric-val{font-size:20px;font-weight:600;font-variant-numeric:tabular-nums;margin-top:2px}
+.leaf-ancestors{
+  margin:18px 0;padding:12px 14px;
+  background:rgba(0,0,0,.18);border-radius:6px;
+}
+.leaf-ancestors-title{
+  font-size:10.5px;color:var(--dim);text-transform:uppercase;letter-spacing:.05em;
+  margin-bottom:10px;
+}
+.leaf-ancestor-row{
+  display:grid;grid-template-columns:70px 1fr auto;gap:10px;
+  padding:5px 0;font-size:12px;align-items:center;
+  border-top:1px solid rgba(255,255,255,.03);
+}
+.leaf-ancestor-row:first-child{border-top:0}
+.leaf-ancestor-pct{
+  text-align:right;color:var(--accent);font-weight:600;font-variant-numeric:tabular-nums;
+}
+.leaf-ancestor-label{color:var(--dim);font-size:11.5px}
+.leaf-ancestor-label b{color:var(--text);font-weight:500}
+.leaf-ancestor-val{color:var(--text);font-variant-numeric:tabular-nums;font-size:11.5px}
+.leaf-suppliers{
+  margin:18px 0;padding:12px 14px;
+  background:rgba(255,213,79,.04);border:1px solid rgba(255,213,79,.15);border-radius:6px;
+}
+.leaf-section-title{
+  font-size:10.5px;color:var(--yellow);text-transform:uppercase;letter-spacing:.05em;
+  margin-bottom:6px;font-weight:500;
+}
+.leaf-sup-note{font-size:10.5px;color:var(--dim);margin-bottom:10px}
+.leaf-sup-row{
+  display:flex;justify-content:space-between;padding:5px 0;font-size:11.5px;
+  border-top:1px solid rgba(255,255,255,.03);
+}
+.leaf-sup-row:first-of-type{border-top:0}
+.leaf-sup-name{color:var(--text)}
+.leaf-sup-amt{color:var(--accent);font-variant-numeric:tabular-nums}
+.leaf-footnote{
+  font-size:10.5px;color:var(--dim);line-height:1.55;margin-top:14px;
+  padding-top:12px;border-top:1px dashed rgba(255,255,255,.06);
+  font-style:italic;
+}
 
 /* ── Lens selector (Fase 2) ── */
 .cmplist-lens-bar{
@@ -12853,11 +12957,11 @@ function _cmplistRender(){
     // List children with drill-in
     const children = node.children || [];
     if (children.length === 0) {
-      h += `<div style="padding:20px;text-align:center;color:var(--dim);font-size:12px;font-style:italic">
-        Leaf node — no further breakdown.
-        ${node._top_suppliers ? `<br><br>💡 ${node._top_suppliers.suppliers?.length||0} suppliers paid · ${_cmplistFmt(node._top_suppliers.spend_total, s.country)}` : ''}
-      </div>`;
+      h += _cmplistLeafCard(node, s, breadcrumbNames);
     } else {
+      // Composition stacked-bar — the visual of "how the money splits"
+      h += _cmplistCompositionBar(children, s.country);
+
       const total = children.reduce((a,c)=>a+(c.value||0),0) || 1;
       // Build the breadcrumb name path (skip the root country label — history
       // matches at top-level-department level)
@@ -12935,6 +13039,161 @@ function _cmplistRender(){
 }
 
 function _cmpEsc(s){return String(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))}
+
+// ── Composition stacked bar: shows how children split the parent ──
+// Reuses getGalaxyColor() for category-consistent hues between Galaxy and E&C.
+function _cmplistCompositionBar(children, country){
+  const total = children.reduce((a,c) => a + (c.value||0), 0) || 1;
+  // Colour helper — pull galaxy palette if available, else a cycle
+  const palette = ['#c0392b','#d4380d','#8b1a1a','#1d3461','#2a6f97',
+                   '#0d8a8a','#7b2d8b','#5b2c6f','#e76f51','#6b705c',
+                   '#118ab2','#4a2574','#4c956c','#1e5594','#a63d40',
+                   '#2e7d32','#8e24aa','#3f4a5c'];
+  const colourOf = (node, i) => {
+    try {
+      if (typeof getGalaxyColor === 'function') {
+        // Build a fake d3-hierarchy-like object to pass through
+        const fake = { depth:1, data:{id:node.id||node.name, name:node.name}, parent:null };
+        const c = getGalaxyColor(fake);
+        if (c && c !== '#4a4e69' && c !== '#3f4a5c') return c;
+      }
+    } catch(e) {}
+    return palette[i % palette.length];
+  };
+
+  // Aggregate small slices into "Other" when > 10 children
+  const sorted = [...children].sort((a,b) => (b.value||0) - (a.value||0));
+  const maxShown = 8;
+  const shown = sorted.slice(0, maxShown);
+  const rest = sorted.slice(maxShown);
+  const restTotal = rest.reduce((a,c) => a + (c.value||0), 0);
+
+  const segments = shown.map((c, i) => ({
+    name: c.name,
+    value: c.value || 0,
+    pct: ((c.value||0) / total * 100),
+    color: colourOf(c, i),
+  }));
+  if (restTotal > 0) {
+    segments.push({
+      name: `Other (${rest.length} items)`,
+      value: restTotal,
+      pct: (restTotal / total * 100),
+      color: '#3f4a5c',
+    });
+  }
+
+  const bar = segments.map(seg => `
+    <div class="comp-seg" style="flex:${seg.pct.toFixed(4)};background:${seg.color}"
+         title="${_cmpEsc(seg.name)} · ${_cmplistFmt(seg.value, country)} · ${seg.pct.toFixed(1)}%">
+    </div>
+  `).join('');
+
+  const legend = segments.slice(0, 6).map(seg => `
+    <div class="comp-legend-item">
+      <span class="comp-legend-dot" style="background:${seg.color}"></span>
+      <span class="comp-legend-label">${_cmpEsc(seg.name).slice(0, 28)}${seg.name.length > 28 ? '…' : ''}</span>
+      <span class="comp-legend-pct">${seg.pct.toFixed(1)}%</span>
+    </div>
+  `).join('');
+
+  return `<div class="composition-block">
+    <div class="composition-title">Composition — ${children.length} items totalling ${_cmplistFmt(total, country)}</div>
+    <div class="composition-bar">${bar}</div>
+    <div class="composition-legend">${legend}${segments.length > 6 ? `<span class="comp-legend-more">+ ${segments.length - 6} more</span>` : ''}</div>
+  </div>`;
+}
+
+// ── Leaf node rich view ──
+function _cmplistLeafCard(node, s, breadcrumbNames){
+  // For UK top-level departments, show historical sparkline
+  let sparkHtml = '', deltaHtml = '';
+  if (s.country === 'uk' && breadcrumbNames.length <= 3) {
+    // Try to pull history using this node's name + path
+    const parentPath = breadcrumbNames.slice(0, -1);
+    const nodeName = node.name;
+    const series = _cmplistNodeHistory('uk', parentPath, nodeName);
+    if (series && series.filter(v => v != null).length >= 2) {
+      // Bigger sparkline for the leaf view
+      sparkHtml = `<div class="leaf-spark">${_cmplistSparkline(series, 320, 60)}</div>`;
+      const d = _cmplistDeltas(series);
+      const fmtD = v => {
+        if (v == null) return '—';
+        const cls = v > 0.5 ? 'delta-up' : v < -0.5 ? 'delta-down' : 'delta-flat';
+        return `<span class="delta ${cls}">${v >= 0 ? '+' : ''}${v.toFixed(1)}%</span>`;
+      };
+      deltaHtml = `<div class="leaf-deltas">
+        <div><div class="leaf-metric-label">Δ y/y</div><div class="leaf-metric-val">${fmtD(d.yoy)}</div></div>
+        <div><div class="leaf-metric-label">Δ 5y</div><div class="leaf-metric-val">${fmtD(d.fiveYr)}</div></div>
+      </div>`;
+    }
+  }
+
+  // Ancestor percentages: how this leaf fits into each level above
+  let ancestorHtml = '';
+  if (breadcrumbNames.length > 0) {
+    // Reconstruct walking from root
+    let cur = s.root;
+    const steps = [];
+    for (let i = 0; i < breadcrumbNames.length; i++) {
+      const nextIdx = s.path[i];
+      const next = (cur.children || [])[nextIdx];
+      if (!next) break;
+      const pct = cur.value > 0 ? (next.value / cur.value * 100) : 0;
+      steps.push({
+        parent: cur.name || s.root.name,
+        name: next.name,
+        pct,
+        value: next.value,
+      });
+      cur = next;
+    }
+    if (steps.length > 0) {
+      ancestorHtml = `<div class="leaf-ancestors">
+        <div class="leaf-ancestors-title">Where this line sits</div>
+        ${steps.map(step => `
+          <div class="leaf-ancestor-row">
+            <span class="leaf-ancestor-pct">${step.pct.toFixed(1)}%</span>
+            <span class="leaf-ancestor-label">of <b>${_cmpEsc(step.parent).slice(0,40)}</b></span>
+            <span class="leaf-ancestor-val">${_cmplistFmt(step.value, s.country)}</span>
+          </div>
+        `).join('')}
+      </div>`;
+    }
+  }
+
+  // Suppliers if present on the leaf
+  const sup = node._top_suppliers;
+  let supHtml = '';
+  if (sup && sup.suppliers && sup.suppliers.length) {
+    const top3 = sup.suppliers.slice(0, 5);
+    supHtml = `<div class="leaf-suppliers">
+      <div class="leaf-section-title">Top suppliers paid from this line</div>
+      <div class="leaf-sup-note">${sup.suppliers.length} suppliers · ${_cmplistFmt(sup.spend_total, s.country)} total</div>
+      ${top3.map(sp => `
+        <div class="leaf-sup-row">
+          <span class="leaf-sup-name">${_cmpEsc(sp.name||sp.supplier||'?').slice(0, 48)}</span>
+          <span class="leaf-sup-amt">${_cmplistFmt(sp.amount||sp.value, s.country)}</span>
+        </div>
+      `).join('')}
+    </div>`;
+  }
+
+  return `<div class="leaf-card">
+    <div class="leaf-hero">
+      <div class="leaf-value">${_cmplistFmt(node.value, s.country)}</div>
+      <div class="leaf-name">${_cmpEsc(node.name || 'Line item')}</div>
+    </div>
+    ${sparkHtml}
+    ${deltaHtml}
+    ${ancestorHtml}
+    ${supHtml}
+    <div class="leaf-footnote">
+      This is the finest breakdown available in our source data for this line.
+      ${s.country === 'uk' ? 'Deeper detail (supplier-level) exists for local-authority spend only.' : ''}
+    </div>
+  </div>`;
+}
 
 function _cmplistDrill(col, idx){
   window._cmplistState[col].path.push(idx);
