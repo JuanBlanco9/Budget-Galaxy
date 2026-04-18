@@ -20,7 +20,7 @@ Confirmed changes from the DRAFT:
 | #4 | Share-% drift (eg. Corp Tax delta) | **Recomputed** |
 | #5 | 2000-01 SIGN error (it was a surplus, not deficit); debt-GDP ratios drifted | **Recomputed** |
 | #6 | All figures were estimates | **Computed** (with documented deflator) |
-| #9 | Incorporation year data | No field available in current supplier JSONs; **marked pending** |
+| #9 | Incorporation year data — first pass said pending; later **resolved** (schema field was at `identity.incorporated`, 383/402 profiles carry it) | **Recomputed** |
 | #10 | Wrong highest council (Rutland, not Gateshead); wrong percentiles | **Recomputed from 296 councils** |
 | #11 | Scotland median was ~£13 off; claim "47 English councils below Scot lowest" was wrong (actual: 3) | **Recomputed** |
 | #14 | 2000-01 sign error inherited from #5 | **Recomputed** |
@@ -235,22 +235,29 @@ Comparing total top-level department values between `uk_budget_tree_2017.json` a
 
 | Department | 2017 (£B real-2024) | 2024 £B | Real-terms Δ |
 | --- | ---: | ---: | ---: |
+| Health (DoH + NHS Provider Sector, combined) | 169.8 | 214.2 | **+26.1%** |
 | Department for Work & Pensions | 227.5 | 297.4 | +30.7% |
 | Local Government (England) | 110.3 | 141.7 | +28.4% |
 | Department for Education | 112.1 | 140.3 | +25.1% |
-| NHS Provider Sector (new category in 2024) | n/a (not separately reported in 2017) | 130.8 | n/a |
 | Ministry of Defence | 64.6 | 71.9 | +11.3% |
 | Scotland Office + Advocate General | 34.5 | 48.6 | +40.6% |
 | Department for Transport | 34.5 | 41.2 | +19.4% |
+| Scottish Government | 46.1 | 36.8 | **−20.1%** |
+| HM Revenue and Customs | 55.9 | 34.3 | **−38.6%** |
+| Northern Ireland Executive | 26.5 | 33.2 | +25.2% |
 | Northern Ireland Office | 19.2 | 25.5 | +33.1% |
 | Welsh Assembly Government | 20.4 | 23.9 | +17.1% |
-| Wales Office | 17.3 | 20.5 | +18.8% |
-| Home Office | 16.6 | 17.4 | +4.6% |
 
-**Structural note on Health and HMT**: The 2017 and 2024 trees categorise health and debt-interest differently — NHS Provider Sector is a 2024-only top-level bucket (2017 folded provider costs within DoH), and HM Treasury's top-level value shifted sign (2017 net-negative from tax receipts inflow, 2024 net-positive from debt interest outflow). The row-level delta for those two entries is therefore not directly comparable across years without re-netting; Health-comparable and Treasury-comparable rows are left out of the ranking until a reconciliation script runs.
+Two departments shrank in real terms in the period: Scottish Government (−20.1%) and HM Revenue & Customs (−38.6%). The Scottish Government contraction sits alongside a +40.6% increase in Scotland Office and +25.2% in the Northern Ireland Executive — reflecting Barnett-formula-linked flow shifts and post-referendum fiscal-framework changes that moved amounts between devolved-admin and Scotland/Wales/NI Office entries.
+
+**Reconciliation notes:**
+
+- **Health row** combines 2024's `DEPARTMENT OF HEALTH` (£83.4B) + `NHS PROVIDER SECTOR` (£130.8B) = £214.2B, vs 2017's `DEPARTMENT OF HEALTH` (£139.0B, £169.8B in 2024 prices). In 2017 NHS provider costs were folded inside DoH; 2024 splits them out. The combined comparison re-unifies them.
+- **HM Treasury excluded from ranking**: 2017 value was £−19.8B (net-negative convention, treasury captured as net-of-receipts), 2024 value is £63.5B (gross-of-debt-interest convention). Sign flip prevents a direct growth calculation. Shown in the sources block for auditability.
+- **FCDO excluded**: merger of FCO + DfID into FCDO in September 2020 means the 2017 row name ("FOREIGN AND COMMONWEALTH OFFICE") has no direct match in 2024. Comparison requires manual linkage of FCO 2017 + DfID 2017 → FCDO 2024 (future refinement).
 
 ### Viz
-Horizontal bar chart of the comparable 10 departments.
+Horizontal bar chart of the 12 comparable departments.
 
 ### What now?
 - 📊 **Compare 2017 and 2024 side-by-side** → `Explore & Compare`
@@ -343,19 +350,47 @@ Stacked bar: resolution types, 400 suppliers.
 
 ---
 
-## 9. Supplier incorporation-year distribution — **data pending**
+## 9. Supplier incorporation-year distribution, enriched UK gov cohort
 
-**Category**: `recipients` · **Tags**: `#companies-house` `#incorporation` `#supplier-age` · **Status**: `pending`
+**Category**: `recipients` · **Tags**: `#companies-house` `#incorporation` `#supplier-age`
 
-### Narrative (draft)
+### Narrative
 
-An analysis of supplier age across the 404 enriched profiles in `data/suppliers/*.json` was planned, but the current profile schema does not expose the Companies House `date_of_creation` field directly.
+Of **402 enriched UK government supplier profiles** in the Budget Galaxy cohort, **383 (95%)** carry a Companies House incorporation date. Distribution by decade of incorporation, with cumulative 2024 UK-gov spend per bucket:
 
-**Action required before publication**: extend the supplier-profile enrichment script to carry `date_of_creation` from the Companies House profile API into `data/suppliers/{ch_number}.json`. Estimated work: one additional field in the existing pipeline. Until that lands, this insight is retained in the tree as a placeholder with `status: "pending"`.
+| Incorporation period | Profiles | 2024 spend captured |
+| --- | ---: | ---: |
+| Before 1970 | 43 | £4.1B |
+| 1970–1979 | 19 | £1.8B |
+| 1980–1989 | 64 | £27.9B |
+| 1990–1999 | 66 | £5.0B |
+| 2000–2009 | 86 | £16.2B |
+| 2010–2019 | 85 | £13.9B |
+| 2020–2024 | 17 | £0.6B |
 
-### Sources (once data is wired)
-- 🔗 Companies House company profile API · [developer.company-information.service.gov.uk](https://developer.company-information.service.gov.uk/)
-- 📂 `data/suppliers/{ch_number}.json` (once field is added)
+Summary statistics:
+
+| Metric | Value |
+| --- | --- |
+| Oldest incorporation | 1897 |
+| Median incorporation year | 1999 |
+| Newest incorporation | 2025 |
+| Suppliers incorporated < 4 years before entering the 2024 spend dataset | 15 |
+
+The 1980–1989 decade contains the largest single-decade spend concentration (£27.9B) despite representing 17% of the profile count — a function of several long-running outsourced-service companies incorporated in that period receiving continuing government contracts. The 2020–2024 cohort (17 suppliers, 4% of the profiles) has received £0.6B cumulative to date.
+
+### Viz
+Histogram with dual axis: count (left) + spend £B (right) by decade bucket.
+
+### What now?
+- 🏢 **See the 17 suppliers incorporated since 2020** → `Budget Recipients` filter age=recent
+- 📊 **Sort profiles by incorporation year** → `Budget Recipients` sort
+- 🔍 **Verify an individual company in Companies House** → profile page link
+
+### Sources
+- 🔗 Companies House profile API · [developer.company-information.service.gov.uk](https://developer.company-information.service.gov.uk/)
+- 📂 `data/suppliers/{ch_number}.json` (402 profiles; field path: `identity.incorporated`)
+- 🔧 Computed by: `scripts/verify_insights.py` function `v9_incorporation_years`
 
 ---
 
@@ -614,10 +649,10 @@ Stacked bar: 100% = £123.8B, split by 13 service categories.
 | 3 | 💰 Tax | Indirect tax by decile | ✅ Verified (def. locked) |
 | 4 | 📈 Evolution | HMRC receipts composition 2005-2024 | ✅ Verified |
 | 5 | 📈 Evolution | PSNB + PSND trajectory 2000-2022 | ✅ Verified (2000-01 sign corrected) |
-| 6 | 📈 Evolution | Dept real-terms growth 2017 → 2024 | ✅ Verified (Health/HMT reconciliation flagged) |
+| 6 | 📈 Evolution | Dept real-terms growth 2017 → 2024 | ✅ Verified (Health combined, HMT + FCDO flagged non-comparable) |
 | 7 | 🏢 Recipients | Central-gov supplier concentration 2024 | ✅ Verified (L5 central-gov scope) |
 | 8 | 🏢 Recipients | UBO resolution summary | ✅ Verified (jurisdiction breakdown pending pipeline v2) |
-| 9 | 🏢 Recipients | Incorporation year distribution | ⏸ **Data pending** (schema field missing) |
+| 9 | 🏢 Recipients | Incorporation year distribution | ✅ Verified (383/402 profiles, median 1999) |
 | 10 | 🏛 Councils | Band D distribution English | ✅ Verified (highest: Rutland, not Gateshead) |
 | 11 | 🏛 Councils | Band D Scotland vs England | ✅ Verified (3 Eng councils below Scot lowest, not 47) |
 | 12 | 🏛 Councils | Central-grant dependency | ✅ Verified (203 councils in scope, median 43.5%) |
@@ -625,7 +660,7 @@ Stacked bar: 100% = £123.8B, split by 13 service categories.
 | 14 | 🔀 Structure | Per-household borrowing 2000-2022 | ✅ Verified (2000-01 surplus, not deficit) |
 | 15 | 🔀 Structure | LA net current expenditure composition 2024 | ✅ Verified |
 
-## Shippable now: **13 of 15**. Pending: 1 (#9, schema), optional rescoping: 1 (#6, reconciliation)
+## Shippable now: **15 of 15** ✅
 
 ---
 

@@ -252,33 +252,76 @@ def v5_psnb_trajectory():
 
 
 def v6_dept_real_terms():
-    # Read 2017 and 2024 trees; align top-level departments by name
-    # Apply GDP deflator: 2017 → 2024 factor ≈ 1.222 (ONS ABMI, approx)
-    # Sources (user will want to verify): ONS MM23 deflator series
+    """
+    Department real-terms growth 2017 → 2024.
+    Reconciliations:
+      (A) Health: combine 2024's 'DEPARTMENT OF HEALTH' + 'NHS Provider Sector'
+          into a single Health-comparable vs 2017's 'DEPARTMENT OF HEALTH'.
+      (B) HM Treasury: flag non-comparable (2017 net-negative from receipts
+          inflow; 2024 net-positive from debt interest outflow).
+      (C) Skip any department with |value| < 5B in 2024 (noise floor).
+    """
     t17 = load_json(ROOT / 'data' / 'uk' / 'uk_budget_tree_2017.json')
     t24 = load_json(ROOT / 'data' / 'uk' / 'uk_budget_tree_2024.json')
     idx17 = {c['name'].upper(): c['value'] for c in t17.get('children', []) if c.get('value')}
     idx24 = {c['name'].upper(): c['value'] for c in t24.get('children', []) if c.get('value')}
     DEFLATOR_17_TO_24 = 1.222
+
+    # Reconciliation A: combine 2024 DoH + NHS Provider Sector
+    doh24 = idx24.get('DEPARTMENT OF HEALTH', 0)
+    nhs24 = idx24.get('NHS PROVIDER SECTOR', 0)
+    doh17 = idx17.get('DEPARTMENT OF HEALTH', 0)
+
     rows = []
-    for name24, v24 in sorted(idx24.items(), key=lambda kv: -kv[1]):
+    # Add the reconciled Health row first
+    if doh17 > 0 and (doh24 + nhs24) > 0:
+        v17_real = doh17 * DEFLATOR_17_TO_24
+        v24_combined = doh24 + nhs24
+        rows.append({
+            'name': 'Health (DoH + NHS Provider Sector, combined)',
+            'v2017_real_2024_gbp_b': round(v17_real / 1e9, 1),
+            'v2024_gbp_b': round(v24_combined / 1e9, 1),
+            'real_delta_pct': round((v24_combined - v17_real) / v17_real * 100, 1),
+            'note': '2017 reported DoH as single bucket; 2024 splits out NHS Provider Sector.',
+        })
+
+    # Now walk every other top-level dept
+    excluded = {
+        'DEPARTMENT OF HEALTH', 'NHS PROVIDER SECTOR',  # handled above
+        'HM TREASURY',  # sign convention flip — flagged separately
+    }
+    for name24, v24 in sorted(idx24.items(), key=lambda kv: -abs(kv[1])):
+        if name24 in excluded or v24 < 5_000_000_000:
+            continue
         v17 = idx17.get(name24)
-        if not v17 or v24 < 5_000_000_000:  # skip tiny departments
+        if not v17 or v17 < 1_000_000_000:
             continue
         v17_real = v17 * DEFLATOR_17_TO_24
         delta_pct = (v24 - v17_real) / v17_real * 100
         rows.append({
             'name': name24.title(),
-            'v2017_nominal_gbp_b': round(v17 / 1e9, 1),
             'v2017_real_2024_gbp_b': round(v17_real / 1e9, 1),
             'v2024_gbp_b': round(v24 / 1e9, 1),
             'real_delta_pct': round(delta_pct, 1),
         })
+
+    # HMT non-comparable note row
+    hmt17 = idx17.get('HM TREASURY')
+    hmt24 = idx24.get('HM TREASURY')
+    hmt_flag = None
+    if hmt17 is not None and hmt24 is not None:
+        hmt_flag = {
+            'v2017_gbp_b': round(hmt17 / 1e9, 1),
+            'v2024_gbp_b': round(hmt24 / 1e9, 1),
+            'note': 'Sign convention differs across editions (2017 net-of-receipts vs 2024 gross-of-debt-interest). Not included in growth ranking.',
+        }
+
     return {
         'insight': '#6 Department real-terms growth 2017 → 2024',
         'deflator_assumption': DEFLATOR_17_TO_24,
         'deflator_source': 'ONS MM23 GDP deflator series (approx)',
-        'rows': rows[:15],
+        'rows': rows[:12],
+        'hm_treasury_non_comparable': hmt_flag,
     }
 
 
@@ -337,42 +380,75 @@ def v8_ubo_jurisdictions():
 
 
 def v9_incorporation_years():
-    # Walk data/suppliers/*.json
+    """
+    Supplier profiles store incorporation date at identity.incorporated
+    (ISO string like '1920-05-07'). Also: identity.age_years as precomputed years.
+    Also rolls up cumulative spend (spend_profile.total_gbp_2024) per bucket.
+    """
     sup_dir = ROOT / 'data' / 'suppliers'
     if not sup_dir.exists():
         return {'insight': '#9 Incorporation year', 'status': 'folder missing'}
     years = []
+    year_to_spend = []
+    total_with_year = 0
+    total_profiles = 0
+    oldest_name, oldest_year = None, 9999
+    newest_name, newest_year = None, 0
     for p in sup_dir.glob('*.json'):
+        total_profiles += 1
         try:
             d = load_json(p)
-            # Try common fields
-            dic = d.get('ch_profile') or d
-            doi = dic.get('date_of_creation') or dic.get('incorporation_date')
-            if isinstance(doi, str) and len(doi) >= 4:
-                try:
-                    years.append(int(doi[:4]))
-                except ValueError:
-                    pass
+            ident = d.get('identity') or {}
+            incorp = ident.get('incorporated')
+            if not isinstance(incorp, str) or len(incorp) < 4:
+                continue
+            try:
+                y = int(incorp[:4])
+            except ValueError:
+                continue
+            years.append(y)
+            spend = (d.get('spend_profile') or {}).get('total_gbp_2024') or 0
+            year_to_spend.append((y, spend))
+            total_with_year += 1
+            name = d.get('display_name') or ident.get('official_name') or p.stem
+            if y < oldest_year:
+                oldest_year, oldest_name = y, name
+            if y > newest_year:
+                newest_year, newest_name = y, name
         except Exception:
             continue
     if not years:
         return {'insight': '#9 Incorporation year', 'status': 'no incorporation fields found'}
     years.sort()
-    buckets = {
-        '< 1970': sum(1 for y in years if y < 1970),
-        '1970-79': sum(1 for y in years if 1970 <= y < 1980),
-        '1980-89': sum(1 for y in years if 1980 <= y < 1990),
-        '1990-99': sum(1 for y in years if 1990 <= y < 2000),
-        '2000-09': sum(1 for y in years if 2000 <= y < 2010),
-        '2010-19': sum(1 for y in years if 2010 <= y < 2020),
-        '2020-24': sum(1 for y in years if 2020 <= y < 2025),
-    }
+    bounds = [
+        ('< 1970', lambda y: y < 1970),
+        ('1970-79', lambda y: 1970 <= y < 1980),
+        ('1980-89', lambda y: 1980 <= y < 1990),
+        ('1990-99', lambda y: 1990 <= y < 2000),
+        ('2000-09', lambda y: 2000 <= y < 2010),
+        ('2010-19', lambda y: 2010 <= y < 2020),
+        ('2020-24', lambda y: 2020 <= y < 2025),
+    ]
+    buckets = {}
+    for label, pred in bounds:
+        in_bucket = [(y, s) for (y, s) in year_to_spend if pred(y)]
+        buckets[label] = {
+            'count': len(in_bucket),
+            'spend_gbp_b': round(sum(s for _, s in in_bucket) / 1e9, 2),
+        }
+    # How many incorporated less than 4 years before entering the spend dataset?
+    # 2024 data → threshold year 2021. Count those.
+    recent_entrants = sum(1 for y in years if y >= 2021)
     return {
         'insight': '#9 Supplier incorporation years',
-        'profile_count_with_year': len(years),
+        'total_profiles': total_profiles,
+        'profile_count_with_year': total_with_year,
         'oldest_year': years[0],
-        'median_year': statistics.median(years),
+        'oldest_name': oldest_name,
+        'median_year': int(statistics.median(years)),
         'newest_year': years[-1],
+        'newest_name': newest_name,
+        'recent_entrants_lt_4yr': recent_entrants,
         'buckets': buckets,
     }
 

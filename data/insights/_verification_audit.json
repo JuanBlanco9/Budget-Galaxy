@@ -375,111 +375,84 @@
       "deflator_source": "ONS MM23 GDP deflator series (approx)",
       "rows": [
         {
+          "name": "Health (DoH + NHS Provider Sector, combined)",
+          "v2017_real_2024_gbp_b": 169.8,
+          "v2024_gbp_b": 214.2,
+          "real_delta_pct": 26.1,
+          "note": "2017 reported DoH as single bucket; 2024 splits out NHS Provider Sector."
+        },
+        {
           "name": "Department For Work And Pensions",
-          "v2017_nominal_gbp_b": 186.2,
           "v2017_real_2024_gbp_b": 227.5,
           "v2024_gbp_b": 297.4,
           "real_delta_pct": 30.7
         },
         {
           "name": "Local Government (England)",
-          "v2017_nominal_gbp_b": 90.3,
           "v2017_real_2024_gbp_b": 110.3,
           "v2024_gbp_b": 141.7,
           "real_delta_pct": 28.4
         },
         {
           "name": "Department For Education",
-          "v2017_nominal_gbp_b": 91.7,
           "v2017_real_2024_gbp_b": 112.1,
           "v2024_gbp_b": 140.3,
           "real_delta_pct": 25.1
         },
         {
-          "name": "Department Of Health",
-          "v2017_nominal_gbp_b": 139.0,
-          "v2017_real_2024_gbp_b": 169.8,
-          "v2024_gbp_b": 83.4,
-          "real_delta_pct": -50.9
-        },
-        {
           "name": "Ministry Of Defence",
-          "v2017_nominal_gbp_b": 52.9,
           "v2017_real_2024_gbp_b": 64.6,
           "v2024_gbp_b": 71.9,
           "real_delta_pct": 11.3
         },
         {
-          "name": "Hm Treasury",
-          "v2017_nominal_gbp_b": -19.8,
-          "v2017_real_2024_gbp_b": -24.2,
-          "v2024_gbp_b": 63.5,
-          "real_delta_pct": -362.7
-        },
-        {
           "name": "Scotland Office And Office Of The Advocate General",
-          "v2017_nominal_gbp_b": 28.3,
           "v2017_real_2024_gbp_b": 34.5,
           "v2024_gbp_b": 48.6,
           "real_delta_pct": 40.6
         },
         {
           "name": "Department For Transport",
-          "v2017_nominal_gbp_b": 28.3,
           "v2017_real_2024_gbp_b": 34.5,
           "v2024_gbp_b": 41.2,
           "real_delta_pct": 19.4
         },
         {
           "name": "Scottish Government",
-          "v2017_nominal_gbp_b": 37.7,
           "v2017_real_2024_gbp_b": 46.1,
           "v2024_gbp_b": 36.8,
           "real_delta_pct": -20.1
         },
         {
           "name": "Hm Revenue And Customs",
-          "v2017_nominal_gbp_b": 45.7,
           "v2017_real_2024_gbp_b": 55.9,
           "v2024_gbp_b": 34.3,
           "real_delta_pct": -38.6
         },
         {
           "name": "Northern Ireland Executive",
-          "v2017_nominal_gbp_b": 21.7,
           "v2017_real_2024_gbp_b": 26.5,
           "v2024_gbp_b": 33.2,
           "real_delta_pct": 25.2
         },
         {
           "name": "Northern Ireland Office",
-          "v2017_nominal_gbp_b": 15.7,
           "v2017_real_2024_gbp_b": 19.2,
           "v2024_gbp_b": 25.5,
           "real_delta_pct": 33.1
         },
         {
           "name": "Welsh Assembly Government",
-          "v2017_nominal_gbp_b": 16.7,
           "v2017_real_2024_gbp_b": 20.4,
           "v2024_gbp_b": 23.9,
           "real_delta_pct": 17.1
-        },
-        {
-          "name": "Wales Office",
-          "v2017_nominal_gbp_b": 14.1,
-          "v2017_real_2024_gbp_b": 17.3,
-          "v2024_gbp_b": 20.5,
-          "real_delta_pct": 18.8
-        },
-        {
-          "name": "Home Office",
-          "v2017_nominal_gbp_b": 13.6,
-          "v2017_real_2024_gbp_b": 16.6,
-          "v2024_gbp_b": 17.4,
-          "real_delta_pct": 4.6
         }
-      ]
+      ],
+      "hm_treasury_non_comparable": {
+        "v2017_gbp_b": -19.8,
+        "v2024_gbp_b": 63.5,
+        "note": "Sign convention differs across editions (2017 net-of-receipts vs 2024 gross-of-debt-interest). Not included in growth ranking."
+      }
     },
     {
       "insight": "#7 UK central-gov supplier concentration (L5 top recipients, 2024)",
@@ -511,8 +484,45 @@
       "note": "UBO country breakdown needs second pass: cross-ref `resolution` values with country codes. Present stats verify the pipeline ran and ~how many resolved."
     },
     {
-      "insight": "#9 Incorporation year",
-      "status": "no incorporation fields found"
+      "insight": "#9 Supplier incorporation years",
+      "total_profiles": 402,
+      "profile_count_with_year": 383,
+      "oldest_year": 1897,
+      "oldest_name": "ENTSERV UK LIMITED",
+      "median_year": 1999,
+      "newest_year": 2025,
+      "newest_name": "DVLA",
+      "recent_entrants_lt_4yr": 15,
+      "buckets": {
+        "< 1970": {
+          "count": 43,
+          "spend_gbp_b": 4.14
+        },
+        "1970-79": {
+          "count": 19,
+          "spend_gbp_b": 1.79
+        },
+        "1980-89": {
+          "count": 64,
+          "spend_gbp_b": 27.9
+        },
+        "1990-99": {
+          "count": 66,
+          "spend_gbp_b": 5.04
+        },
+        "2000-09": {
+          "count": 86,
+          "spend_gbp_b": 16.22
+        },
+        "2010-19": {
+          "count": 85,
+          "spend_gbp_b": 13.94
+        },
+        "2020-24": {
+          "count": 17,
+          "spend_gbp_b": 0.63
+        }
+      }
     },
     {
       "insight": "#10 Band D distribution, English councils 2024-25",
