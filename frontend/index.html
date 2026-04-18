@@ -1223,14 +1223,155 @@ mark{background:rgba(79,195,247,.3);color:var(--text,#e8ebf5);padding:0 2px;bord
   .etool-sep:first-of-type{display:none}
 }
 
-/* Compare + List — single default, toggleable second column */
-#tab-comparelist.panel{padding:0;position:relative}
-.cmplist-toolbar{
-  /* Own row above the layout — no overlay, no gradient, doesn't block header */
-  display:flex;gap:8px;align-items:center;justify-content:flex-end;
-  padding:10px 20px;background:var(--bg);
+/* Master-detail layout for Explore & Compare (replaces the old list view) */
+#tab-comparelist.panel{padding:0;position:relative;overflow:hidden}
+.cmplist-md-layout{
+  display:grid;grid-template-columns:340px 1fr;gap:1px;
+  background:var(--border);height:calc(100vh - 120px);
+}
+.cmplist-tree-panel{
+  background:var(--surface);overflow-y:auto;padding:14px 12px;
+  border-right:1px solid var(--border);
+  display:flex;flex-direction:column;
+}
+.cmplist-tree-header{padding:0 4px 10px;border-bottom:1px solid var(--border);margin-bottom:10px}
+.cmplist-tree-title{font-size:14px;font-weight:600;color:var(--text);margin-bottom:2px}
+.cmplist-tree-subtitle{font-size:11px;color:var(--dim)}
+.cmplist-tree{flex:1;font-size:12px;overflow-y:auto;padding-right:2px}
+.tree-node{
+  display:grid;grid-template-columns:14px 1fr auto;gap:6px;align-items:center;
+  padding:4px 6px;cursor:pointer;border-radius:4px;min-height:24px;
+  transition:background .1s;
+}
+.tree-node:hover{background:rgba(255,255,255,.04)}
+.tree-node.selected{background:rgba(79,195,247,.14)}
+.tree-node.selected .tree-name{color:var(--accent);font-weight:500}
+.tree-node.tree-root{font-weight:600;border-bottom:1px solid var(--border);padding-bottom:6px;margin-bottom:4px}
+.tree-chev{
+  font-size:8px;color:var(--dim);line-height:1;cursor:pointer;
+  width:14px;text-align:center;
+  transition:color .1s;
+}
+.tree-chev:hover{color:var(--accent)}
+.tree-chev.leaf{color:rgba(255,255,255,.15);cursor:default}
+.tree-name{
+  color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+  min-width:0;
+}
+.tree-val{
+  color:var(--dim);font-size:10.5px;font-variant-numeric:tabular-nums;
+  flex-shrink:0;
+}
+.tree-children{border-left:1px dashed rgba(255,255,255,.06);margin-left:8px}
+
+.cmplist-detail{
+  background:rgba(13,18,30,.5);overflow-y:auto;padding:24px 32px;
+}
+.cmplist-detail-empty{
+  padding:80px 30px;text-align:center;color:var(--dim);
+}
+.detail-crumb{
+  font-size:11px;color:var(--dim);margin-bottom:12px;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+}
+.detail-crumb .crumb-step{color:var(--accent);cursor:pointer;text-decoration:none}
+.detail-crumb .crumb-step:hover{text-decoration:underline}
+.detail-crumb .crumb-here{color:var(--text);font-weight:500}
+.detail-hero{
+  margin-bottom:18px;padding-bottom:18px;
   border-bottom:1px solid var(--border);
 }
+.detail-name{
+  font-size:22px;font-weight:600;color:var(--text);line-height:1.3;
+  margin-bottom:6px;
+}
+.detail-value-row{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.detail-value{
+  font-size:30px;font-weight:700;color:var(--accent);
+  font-variant-numeric:tabular-nums;letter-spacing:-.02em;
+}
+.detail-sub-pct{font-size:12px;color:var(--dim)}
+.detail-spark{
+  margin:14px 0 0;padding:12px;background:rgba(0,0,0,.18);
+  border-radius:6px;color:var(--dim);
+}
+.detail-spark svg.spark{display:block;width:100%;height:auto;max-width:520px}
+.detail-deltas{
+  display:flex;gap:28px;margin:14px 0 6px;flex-wrap:wrap;
+}
+.detail-metric{min-width:80px}
+.detail-metric-label{
+  font-size:10px;color:var(--dim);text-transform:uppercase;letter-spacing:.05em;
+}
+.detail-metric-val{font-size:18px;font-weight:600;font-variant-numeric:tabular-nums;margin-top:2px}
+.detail-subitems-title{
+  font-size:11px;color:var(--dim);text-transform:uppercase;letter-spacing:.05em;
+  margin:20px 0 8px;font-weight:500;
+}
+.detail-subitems{display:flex;flex-direction:column;gap:1px;background:var(--border);border-radius:6px;overflow:hidden}
+.detail-subitem{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) 48px 100px 100px 14px;
+  gap:12px;align-items:center;
+  padding:10px 12px;background:var(--surface);
+  cursor:pointer;transition:background .1s;
+  font-size:12px;
+}
+.detail-subitem:hover{background:rgba(79,195,247,.06)}
+.detail-subitem-name{
+  color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+  min-width:0;
+}
+.detail-subitem-pct{
+  color:var(--dim);font-size:10.5px;text-align:right;
+  font-variant-numeric:tabular-nums;
+}
+.detail-subitem .cell-spark{color:var(--dim);display:flex;align-items:center}
+.detail-subitem-val{
+  color:var(--accent);font-variant-numeric:tabular-nums;
+  text-align:right;font-weight:500;
+}
+.detail-subitem-arrow{color:var(--dim);text-align:center}
+.detail-subitem:hover .detail-subitem-arrow{color:var(--accent)}
+.detail-leaf-note{
+  margin:16px 0;padding:14px;background:rgba(0,0,0,.2);
+  border-radius:6px;font-size:12px;color:var(--dim);line-height:1.6;
+  font-style:italic;
+}
+
+.cmplist-lens-bar{
+  display:flex;align-items:center;gap:4px;flex-wrap:wrap;
+  padding:6px 8px;margin:0 0 8px 0;
+  background:rgba(0,0,0,.2);border:1px solid var(--border);
+  border-radius:6px;font-size:10.5px;
+}
+.cmplist-lens-label{
+  color:var(--dim);text-transform:uppercase;letter-spacing:.04em;
+  margin-right:2px;font-weight:500;font-size:9.5px;
+}
+.lens-pill{
+  background:transparent;border:1px solid var(--border);color:var(--dim);
+  padding:2px 8px;font-family:inherit;font-size:10.5px;cursor:pointer;
+  border-radius:3px;transition:all .12s;font-weight:500;
+}
+.lens-pill:hover{color:var(--text);border-color:rgba(79,195,247,.4)}
+.lens-pill.active{
+  background:var(--accent);border-color:var(--accent);color:#0a0a0f;
+  font-weight:600;
+}
+
+@media (max-width:900px){
+  .cmplist-md-layout{grid-template-columns:1fr;grid-template-rows:auto 1fr;height:auto}
+  .cmplist-tree-panel{max-height:45vh;border-right:0;border-bottom:1px solid var(--border)}
+  .cmplist-detail{padding:18px 14px}
+  .detail-subitem{grid-template-columns:1fr auto;gap:8px}
+  .detail-subitem .cell-spark,
+  .detail-subitem-pct,
+  .detail-subitem-arrow{display:none}
+}
+
+/* Legacy toolbar (unused in master-detail mode, kept harmless) */
+.cmplist-toolbar{display:none}
 .cmplist-add-btn{
   background:rgba(79,195,247,.1);border:1px solid rgba(79,195,247,.35);
   color:var(--text);padding:7px 14px;font-size:12px;font-family:inherit;
@@ -2356,15 +2497,28 @@ mark{background:rgba(79,195,247,.3);color:var(--text,#e8ebf5);padding:0 2px;bord
 
 <!-- COMPARE + LIST combo — 2-column breadcrumb (added 2026-04-18) -->
 <div id="tab-comparelist" class="panel" style="display:none">
-  <div class="cmplist-toolbar">
-    <button class="cmplist-add-btn" id="cmplist-add-btn" onclick="toggleCompareColumn()">
-      <span class="cmplist-add-icon">+</span>
-      <span class="cmplist-add-label">Add comparison</span>
-    </button>
-  </div>
-  <div class="cmplist-layout" data-columns="1">
-    <div class="cmplist-col" id="cmplist-col-a"></div>
-    <div class="cmplist-col" id="cmplist-col-b" style="display:none"></div>
+  <div class="cmplist-md-layout">
+    <aside class="cmplist-tree-panel" id="cmplist-tree-panel">
+      <div class="cmplist-tree-header">
+        <div class="cmplist-tree-title">🇬🇧 UK Public Spending 2024</div>
+        <div class="cmplist-tree-subtitle" id="cmplist-tree-total">£1,390.5B · 61 departments</div>
+      </div>
+      <div class="cmplist-lens-bar" id="cmplist-lens-bar">
+        <span class="cmplist-lens-label">Show as:</span>
+        <button class="lens-pill active" data-lens="absolute" onclick="setCmplistLens('absolute')">£</button>
+        <button class="lens-pill" data-lens="per_capita" onclick="setCmplistLens('per_capita')">per cap.</button>
+        <button class="lens-pill" data-lens="pct_total" onclick="setCmplistLens('pct_total')">% total</button>
+        <button class="lens-pill" data-lens="yoy" onclick="setCmplistLens('yoy')">Δ y/y</button>
+      </div>
+      <div class="cmplist-tree" id="cmplist-tree"></div>
+    </aside>
+    <main class="cmplist-detail" id="cmplist-detail">
+      <div class="cmplist-detail-empty">
+        <div style="font-size:40px;margin-bottom:10px;opacity:.4">📊</div>
+        <div style="font-size:16px;color:var(--text);margin-bottom:6px">Select a node from the tree</div>
+        <div style="font-size:12px;color:var(--dim)">Click any department on the left to see its full breakdown, trend, and suppliers.</div>
+      </div>
+    </main>
   </div>
 </div>
 
@@ -12716,22 +12870,30 @@ function _cmplistFmtLens(val, context) {
 }
 
 async function loadCompareList(){
-  // Restore toggle state from localStorage (default: single column)
-  const savedMode = localStorage.getItem('cmplist_mode') || 'single';
-  _cmplistApplyMode(savedMode);
-
   // Restore lens preference (default: absolute £)
   const savedLens = localStorage.getItem('cmplist_lens') || 'absolute';
   if (['absolute','per_capita','pct_total','yoy'].includes(savedLens)) {
     window._cmplistState._lens = savedLens;
+    document.querySelectorAll('.lens-pill[data-lens]').forEach(b =>
+      b.classList.toggle('active', b.dataset.lens === savedLens));
   }
 
-  // Load column A always; column B only when in compare mode
-  const cols = savedMode === 'compare' ? ['a','b'] : ['a'];
-  await Promise.all(cols.map(col => _cmplistLoadTree(col)));
-  // Load 10-year history for sparklines (UK only; non-blocking if fails)
-  _cmplistLoadHistory('uk').then(() => _cmplistRender()).catch(e =>
-    console.warn('history load failed', e));
+  // Ensure the expansion state exists
+  if (!window._cmplistState._expanded) window._cmplistState._expanded = new Set(['']);
+  if (!window._cmplistState._selected) window._cmplistState._selected = null;
+
+  // Load primary tree
+  await _cmplistLoadTree('a');
+  // Kick off history load in background for sparklines
+  _cmplistLoadHistory('uk').then(() => _cmplistRender()).catch(() => {});
+
+  // Update tree-panel header with real total
+  const root = window._cmplistState.a.root;
+  if (root) {
+    const totalEl = document.getElementById('cmplist-tree-total');
+    if (totalEl) totalEl.textContent = `${_cmplistFmt(root.value, 'uk')} · ${(root.children||[]).length} departments`;
+  }
+
   _cmplistRender();
 }
 
@@ -12892,7 +13054,281 @@ function _cmplistFmt(v, country){
 const _CMPLIST_FLAGS = {uk:'🇬🇧', us:'🇺🇸', de:'🇩🇪', fr:'🇫🇷'};
 const _CMPLIST_LABELS = {uk:'United Kingdom', us:'United States', de:'Germany', fr:'France'};
 
+// ── Master-detail render — new model (was 2-column compare) ──
+// Renders the left tree + right detail for the currently-selected node.
+// Tree items are expandable; detail shows rich node info.
 function _cmplistRender(){
+  _cmplistRenderTree();
+  _cmplistRenderDetail();
+}
+
+function _cmplistPathKey(path){
+  // Stable string key for a path array for expansion state
+  return path.join('.');
+}
+
+function _cmplistIsExpanded(path){
+  const st = window._cmplistState._expanded;
+  return st && st.has(_cmplistPathKey(path));
+}
+
+function _cmplistToggleExpand(pathStr, event){
+  if (event) event.stopPropagation();
+  const st = window._cmplistState._expanded = window._cmplistState._expanded || new Set();
+  if (st.has(pathStr)) st.delete(pathStr);
+  else st.add(pathStr);
+  _cmplistRender();
+}
+
+function _cmplistSelectPath(pathArr){
+  window._cmplistState.a.path = pathArr;
+  window._cmplistState._selected = _cmplistPathKey(pathArr);
+  // Auto-expand the selected node if it has children
+  const node = _cmplistCurrentNode('a');
+  if (node && (node.children||[]).length > 0) {
+    window._cmplistState._expanded.add(_cmplistPathKey(pathArr));
+  }
+  // Also ensure all ancestors are expanded
+  for (let i = 0; i <= pathArr.length; i++) {
+    window._cmplistState._expanded.add(_cmplistPathKey(pathArr.slice(0, i)));
+  }
+  _cmplistRender();
+  // Scroll detail to top
+  const det = document.getElementById('cmplist-detail');
+  if (det) det.scrollTop = 0;
+}
+
+function _cmplistRenderTree(){
+  const container = document.getElementById('cmplist-tree');
+  const s = window._cmplistState.a;
+  if (!container) return;
+  if (!s.root) {
+    container.innerHTML = `<div style="padding:20px;color:var(--dim);font-size:12px">Loading…</div>`;
+    return;
+  }
+  const rootCtx = { country: s.country, year: s.year, total: s.root.value, yoyPct: null };
+  const rootTotal = s.root.value || 1;
+  // Recursively build the tree HTML
+  const lens = window._cmplistState._lens || 'absolute';
+
+  function renderLevel(node, pathArr, depth){
+    const pathKey = _cmplistPathKey(pathArr);
+    const expanded = _cmplistIsExpanded(pathArr);
+    const selected = window._cmplistState._selected === pathKey;
+    const children = node.children || [];
+    const hasChildren = children.length > 0;
+
+    // Compute the display value for this node under the active lens
+    let nodeYoy = null;
+    if (s.country === 'uk' && pathArr.length === 1) {
+      const series = _cmplistNodeHistory('uk', [], node.name);
+      if (series) nodeYoy = _cmplistDeltas(series).yoy;
+    }
+    const ctx = { country: s.country, year: s.year, total: rootTotal, yoyPct: nodeYoy };
+    const displayVal = lens === 'absolute'
+      ? _cmplistFmt(node.value, s.country)
+      : _cmplistFmtLens(_cmplistTransform(node.value, ctx), ctx);
+
+    let html = `<div class="tree-node ${selected?'selected':''}" data-path="${pathKey}"
+         style="padding-left:${8 + depth*14}px"
+         onclick="_cmplistSelectPath([${pathArr.join(',')}])">
+      <span class="tree-chev ${hasChildren?(expanded?'open':''):'leaf'}"
+            onclick="_cmplistToggleExpand('${pathKey}', event)">${hasChildren ? (expanded ? '▼' : '▶') : '·'}</span>
+      <span class="tree-name" title="${_cmpEsc(node.name)}">${_cmpEsc(node.name)}</span>
+      <span class="tree-val">${displayVal}</span>
+    </div>`;
+
+    if (hasChildren && expanded) {
+      // Sort children by value for stable display
+      const sortedChildren = children
+        .map((c, i) => ({ c, i }))
+        .sort((a, b) => (b.c.value || 0) - (a.c.value || 0));
+      html += `<div class="tree-children">`;
+      for (const { c, i } of sortedChildren) {
+        html += renderLevel(c, [...pathArr, i], depth + 1);
+      }
+      html += `</div>`;
+    }
+    return html;
+  }
+
+  // Root rendering starts with path=[] (the root itself)
+  const rootExpanded = _cmplistIsExpanded([]);
+  const rootSelected = window._cmplistState._selected === '';
+  let html = `<div class="tree-node tree-root ${rootSelected?'selected':''}"
+       onclick="_cmplistSelectPath([])">
+    <span class="tree-chev ${rootExpanded?'open':''}"
+          onclick="_cmplistToggleExpand('', event)">${rootExpanded ? '▼' : '▶'}</span>
+    <span class="tree-name">${_cmpEsc(s.root.name || 'UK Public Spending')}</span>
+    <span class="tree-val">${_cmplistFmt(s.root.value, s.country)}</span>
+  </div>`;
+
+  if (rootExpanded) {
+    const sortedChildren = (s.root.children || [])
+      .map((c, i) => ({ c, i }))
+      .sort((a, b) => (b.c.value || 0) - (a.c.value || 0));
+    html += `<div class="tree-children">`;
+    for (const { c, i } of sortedChildren) {
+      html += renderLevel(c, [i], 1);
+    }
+    html += `</div>`;
+  }
+  container.innerHTML = html;
+}
+
+function _cmplistRenderDetail(){
+  const container = document.getElementById('cmplist-detail');
+  const s = window._cmplistState.a;
+  if (!container) return;
+  if (!s.root) {
+    container.innerHTML = `<div class="cmplist-detail-empty">Loading tree…</div>`;
+    return;
+  }
+
+  const selKey = window._cmplistState._selected;
+  if (selKey === null || selKey === undefined) {
+    container.innerHTML = `<div class="cmplist-detail-empty">
+      <div style="font-size:40px;margin-bottom:10px;opacity:.4">📊</div>
+      <div style="font-size:16px;color:var(--text);margin-bottom:6px">Select a node from the tree</div>
+      <div style="font-size:12px;color:var(--dim)">Click any department on the left to see its full breakdown, trend, and suppliers.</div>
+    </div>`;
+    return;
+  }
+
+  const node = _cmplistCurrentNode('a');
+  if (!node) {
+    container.innerHTML = `<div class="cmplist-detail-empty">Node not found</div>`;
+    return;
+  }
+
+  const path = s.path;
+  const children = node.children || [];
+  const rootTotal = s.root.value || 1;
+  const parentTotal = path.length === 0 ? rootTotal
+    : (function(){
+        let p = s.root;
+        for (let i = 0; i < path.length - 1; i++) p = (p.children||[])[path[i]] || p;
+        return p.value || rootTotal;
+      })();
+
+  // Ancestors breadcrumb with values
+  let ancHtml = '';
+  {
+    const parts = [];
+    let walker = s.root;
+    parts.push({ name: walker.name || 'UK Public Spending', value: walker.value, pathArr: [] });
+    for (let i = 0; i < path.length; i++) {
+      walker = (walker.children||[])[path[i]];
+      if (!walker) break;
+      parts.push({ name: walker.name, value: walker.value, pathArr: path.slice(0, i+1) });
+    }
+    ancHtml = `<div class="detail-crumb">`;
+    parts.forEach((p, i) => {
+      const isLast = i === parts.length - 1;
+      const label = _cmpEsc(p.name||'?').slice(0, 34) + ((p.name||'').length > 34 ? '…' : '');
+      ancHtml += isLast
+        ? `<span class="crumb-here">${label}</span>`
+        : `<span class="crumb-step" onclick="_cmplistSelectPath([${p.pathArr.join(',')}])">${label}</span>`;
+      if (!isLast) ancHtml += ` <span style="color:var(--dim);margin:0 4px">›</span> `;
+    });
+    ancHtml += `</div>`;
+  }
+
+  // Hero header — name, value, % of UK total, % of parent
+  const pctTotal = rootTotal > 0 ? (node.value / rootTotal * 100) : 0;
+  const pctParent = parentTotal > 0 ? (node.value / parentTotal * 100) : 0;
+
+  // Sparkline + deltas (UK top-level only; deeper needs name-path history support)
+  let sparkHtml = '', deltaHtml = '';
+  if (s.country === 'uk' && path.length <= 1 && path.length > 0) {
+    const series = _cmplistNodeHistory('uk', [], node.name);
+    if (series && series.filter(v => v != null).length >= 2) {
+      sparkHtml = `<div class="detail-spark">${_cmplistSparkline(series, 420, 60)}</div>`;
+      const d = _cmplistDeltas(series);
+      const fmtD = v => {
+        if (v == null) return '—';
+        const cls = v > 0.5 ? 'delta-up' : v < -0.5 ? 'delta-down' : 'delta-flat';
+        return `<span class="delta ${cls}">${v >= 0 ? '+' : ''}${v.toFixed(1)}%</span>`;
+      };
+      deltaHtml = `<div class="detail-deltas">
+        <div class="detail-metric"><div class="detail-metric-label">Δ y/y</div><div class="detail-metric-val">${fmtD(d.yoy)}</div></div>
+        <div class="detail-metric"><div class="detail-metric-label">Δ 5y</div><div class="detail-metric-val">${fmtD(d.fiveYr)}</div></div>
+        <div class="detail-metric"><div class="detail-metric-label">% of UK</div><div class="detail-metric-val">${pctTotal.toFixed(2)}%</div></div>
+        ${path.length > 1 ? `<div class="detail-metric"><div class="detail-metric-label">% of parent</div><div class="detail-metric-val">${pctParent.toFixed(1)}%</div></div>` : ''}
+      </div>`;
+    }
+  }
+
+  // Suppliers block (if _top_suppliers)
+  const supHtml = (node._top_suppliers && node._top_suppliers.suppliers?.length)
+    ? _cmplistSuppliersBlock(node._top_suppliers, s.country)
+    : '';
+
+  // Composition + sub-item list (if has children)
+  let bodyHtml = '';
+  if (children.length > 0) {
+    bodyHtml += _cmplistCompositionBar(children, s.country);
+
+    // Enriched sub-item list — reuses the Phase 1 row template
+    const total = children.reduce((a, c) => a + (c.value || 0), 0) || 1;
+    const sortedKids = children
+      .map((c, i) => ({ c, i }))
+      .sort((a, b) => (b.c.value || 0) - (a.c.value || 0));
+    bodyHtml += `<div class="detail-subitems-title">Sub-items (${children.length})</div>`;
+    bodyHtml += `<div class="detail-subitems">`;
+    sortedKids.forEach(({ c, i }) => {
+      const pct = c.value ? (c.value / total * 100).toFixed(1) : '0.0';
+      const kidCount = (c.children || []).length;
+      const childPath = [...path, i];
+      const childCtx = { country: s.country, year: s.year, total: rootTotal, yoyPct: null };
+      const cDisplay = window._cmplistState._lens === 'absolute'
+        ? _cmplistFmt(c.value, s.country)
+        : _cmplistFmtLens(_cmplistTransform(c.value, childCtx), childCtx);
+
+      let sparkInline = '';
+      if (s.country === 'uk' && path.length === 0) {
+        const series = _cmplistNodeHistory('uk', [], c.name);
+        if (series && series.filter(v => v != null).length >= 2) {
+          sparkInline = `<div class="cell-spark">${_cmplistSparkline(series)}</div>`;
+        }
+      }
+
+      bodyHtml += `<div class="detail-subitem" onclick="_cmplistSelectPath([${childPath.join(',')}])">
+        <div class="detail-subitem-name">${_cmpEsc(c.name||'?')}</div>
+        <div class="detail-subitem-pct">${pct}%</div>
+        ${sparkInline}
+        <div class="detail-subitem-val">${cDisplay}</div>
+        <div class="detail-subitem-arrow">${kidCount > 0 ? '▸' : ''}</div>
+      </div>`;
+    });
+    bodyHtml += `</div>`;
+  } else {
+    // Leaf — show a note; supHtml (if present) already covers the rest
+    bodyHtml += `<div class="detail-leaf-note">
+      Finest breakdown available for this line.
+      ${node._top_suppliers ? '' : 'No supplier-level data available here.'}
+    </div>`;
+  }
+
+  container.innerHTML = `
+    ${ancHtml}
+    <div class="detail-hero">
+      <div class="detail-name">${_cmpEsc(node.name||'?')}</div>
+      <div class="detail-value-row">
+        <span class="detail-value">${_cmplistFmt(node.value, s.country)}</span>
+        <span class="detail-sub-pct">${pctTotal.toFixed(2)}% of UK${path.length>1?` · ${pctParent.toFixed(1)}% of parent`:''}</span>
+      </div>
+    </div>
+    ${sparkHtml}
+    ${deltaHtml}
+    ${supHtml}
+    ${bodyHtml}
+  `;
+}
+
+// Legacy — preserved for deep-link compatibility but no longer used in
+// master-detail flow. Kept so external callers don't break.
+function _cmplistRender_legacy(){
   ['a','b'].forEach(col => {
     const s = window._cmplistState[col];
     const container = document.getElementById('cmplist-col-'+col);
