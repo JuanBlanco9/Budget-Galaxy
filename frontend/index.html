@@ -85,10 +85,10 @@
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
 <script src="https://d3js.org/d3.v7.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/d3-sankey@0.12"></script>
-<script src="/tax/uk_calc.js"></script>
-<script src="/tax/uk_vat.js"></script>
-<script src="/tax/uk_council_tax.js"></script>
-<script src="/tax/uk_trace.js"></script>
+<script src="/tax/uk_calc.js?v=3"></script>
+<script src="/tax/uk_vat.js?v=3"></script>
+<script src="/tax/uk_council_tax.js?v=3"></script>
+<script src="/tax/uk_trace.js?v=3"></script>
 <style>
 :root{--bg:#0a0a0f;--surface:#12121e;--surface2:#1a1a2c;--border:#282840;--text:#e0e0e8;--dim:#7a7a95;--accent:#4fc3f7;--accent2:#ff7043;--green:#66bb6a;--yellow:#ffd54f;--red:#ef5350}
 *{margin:0;padding:0;box-sizing:border-box}
@@ -12277,7 +12277,17 @@ function _tpSetupHandlers(){
 
 function setTaxpayerJurisdiction(j){
   window._taxpayer.jurisdiction = j;
-  document.querySelectorAll('.tp-seg').forEach(b => b.classList.toggle('active', b.dataset.jur===j));
+  document.querySelectorAll('.tp-seg[data-jur]').forEach(b => b.classList.toggle('active', b.dataset.jur===j));
+  // Rebuild council picker list to match jurisdiction; fall back to a default if current pick is wrong nation
+  _tpPopulateCouncils();
+  const TP = window._taxpayer;
+  const available = (TP._councils || []);
+  const stillValid = available.some(c => c.name === TP.council);
+  if (!stillValid && available.length > 0) {
+    TP.council = (j === 'scotland') ? 'Glasgow City' : 'Hillingdon';
+    if (!available.some(c => c.name === TP.council)) TP.council = available[0].name;
+    const s = document.getElementById('tp-council-search'); if (s) s.value = TP.council;
+  }
   _tpRecompute();
 }
 
@@ -12288,12 +12298,14 @@ function setTaxpayerBand(b){
 }
 
 function _tpPopulateCouncils(){
-  const list = UKCouncilTax.listCouncils();
+  const j = window._taxpayer.jurisdiction;
+  const list = UKCouncilTax.listCouncilsFor(j);
   list.sort((a,b) => a.name.localeCompare(b.name));
   window._taxpayer._councils = list;
   _tpFilterCouncils('');
   // Initial search input shows current council
-  document.getElementById('tp-council-search').value = window._taxpayer.council;
+  const s = document.getElementById('tp-council-search');
+  if (s) s.value = window._taxpayer.council;
 }
 
 function _tpFilterCouncils(query){

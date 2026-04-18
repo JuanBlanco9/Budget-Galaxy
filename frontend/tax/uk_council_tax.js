@@ -15,16 +15,41 @@
 
   let _data = null;
 
-  async function load(url) {
+  async function load(opts) {
     if (_data) return _data;
-    const href = url || '/data/uk/fiscal/council_tax/uk_council_tax_2024_25.json';
-    const res = await fetch(href);
-    if (!res.ok) throw new Error(`load: HTTP ${res.status} for ${href}`);
-    _data = await res.json();
+    const o = (typeof opts === 'string') ? { englandUrl: opts } : (opts || {});
+    const englandUrl = o.englandUrl || '/data/uk/fiscal/council_tax/uk_council_tax_2024_25.json';
+    const scotlandUrl = o.scotlandUrl || '/data/uk/fiscal/council_tax/scotland_council_tax_2024_25.json';
+    const [eng, sco] = await Promise.all([
+      fetch(englandUrl).then(r => r.ok ? r.json() : null).catch(() => null),
+      fetch(scotlandUrl).then(r => r.ok ? r.json() : null).catch(() => null),
+    ]);
+    const merged = { ...(eng || {}), councils: [] };
+    if (eng && eng.councils) merged.councils = merged.councils.concat(eng.councils);
+    if (sco && sco.councils) {
+      // Tag jurisdiction on each Scottish council so UI can display flag/hint
+      const scoTagged = sco.councils.map(c => ({ ...c, jurisdiction: 'scotland' }));
+      merged.councils = merged.councils.concat(scoTagged);
+    }
+    merged.england = eng;
+    merged.scotland = sco;
+    _data = merged;
     return _data;
   }
 
   function setData(d) { _data = d; }
+  function setDataMerged(england, scotland) {
+    const merged = { ...(england || {}), councils: [] };
+    if (england && england.councils) merged.councils = merged.councils.concat(england.councils);
+    if (scotland && scotland.councils) {
+      merged.councils = merged.councils.concat(
+        scotland.councils.map(c => ({ ...c, jurisdiction: 'scotland' }))
+      );
+    }
+    merged.england = england;
+    merged.scotland = scotland;
+    _data = merged;
+  }
 
   function _normalise(s) {
     return String(s || '')
@@ -91,6 +116,7 @@
       council_name: c.name,
       ons_code: c.ons_code,
       region_code: c.region_code,
+      jurisdiction: c.jurisdiction || 'england',
       band,
       amount_gbp: amount,
       fiscal_year_label: _data.fiscal_year_label,
@@ -101,7 +127,23 @@
     };
   }
 
-  const api = { load, setData, lookup, findCouncil, listCouncils };
+  function listCouncilsFor(jurisdiction) {
+    if (!_data) throw new Error('UKCouncilTax: call load() first');
+    const j = (jurisdiction || 'rUK').toLowerCase();
+    return _data.councils
+      .filter(c => j === 'scotland'
+        ? c.jurisdiction === 'scotland'
+        : c.jurisdiction !== 'scotland')
+      .map(c => ({
+        name: c.name,
+        ons_code: c.ons_code,
+        region_code: c.region_code,
+        jurisdiction: c.jurisdiction || 'england',
+        band_D: c.band_D,
+      }));
+  }
+
+  const api = { load, setData, setDataMerged, lookup, findCouncil, listCouncils, listCouncilsFor };
 
   if (typeof module !== 'undefined' && module.exports) {
     module.exports = api;
