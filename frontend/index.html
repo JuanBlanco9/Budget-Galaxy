@@ -602,7 +602,7 @@ mark{background:rgba(255,200,0,.25);color:inherit;border-radius:2px;padding:0 2p
 #galaxy-container{position:relative;width:100%;height:calc(100vh - 80px);background:#0a0a14;overflow:hidden}
 #galaxy-svg{width:100%;height:100%;cursor:grab}
 #galaxy-svg:active{cursor:grabbing}
-.galaxy-breadcrumb{position:absolute;top:12px;left:60px;right:12px;font-size:13px;color:var(--dim);z-index:10;background:rgba(10,10,20,.7);padding:6px 12px;border-radius:6px;backdrop-filter:blur(8px)}
+.galaxy-breadcrumb{position:absolute;top:56px;left:60px;right:12px;font-size:13px;color:var(--dim);z-index:10;background:rgba(10,10,20,.7);padding:6px 12px;border-radius:6px;backdrop-filter:blur(8px)}
 .galaxy-breadcrumb span{cursor:pointer;color:var(--accent)}
 .galaxy-breadcrumb span:hover{text-decoration:underline}
 .galaxy-hamburger{position:absolute;top:10px;left:10px;width:40px;height:40px;background:rgba(20,20,30,.8);border:1px solid var(--border);border-radius:6px;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:20px;color:var(--text);z-index:20}
@@ -9060,7 +9060,16 @@ function setGlobalLang(lang){
 function updateGalaxyBreadcrumb(d){
   const bc=document.getElementById('galaxy-breadcrumb');
   if(!bc) return;
-  const ancestors=d.ancestors().reverse();
+  // At root depth the country + total are already shown in the header strip,
+  // so hide the breadcrumb to avoid visual overlap. Show it only when drilled in.
+  if (!d || d.depth === 0) {
+    bc.style.display = 'none';
+    bc.innerHTML = '';
+    return;
+  }
+  bc.style.display = '';
+  // Skip the root "UK Public Spending YYYY" ancestor — the header already shows it.
+  const ancestors=d.ancestors().reverse().slice(1);
   bc.innerHTML=ancestors.map((a,i)=>{
     const name=trG(a.data.name).replace(/^\d+\s*/,'');
     const short=name.length>30?name.slice(0,28)+'…':name;
