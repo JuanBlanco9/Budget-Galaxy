@@ -1286,6 +1286,28 @@ mark{background:rgba(79,195,247,.3);color:var(--text,#e8ebf5);padding:0 2px;bord
 }
 .cmplist-row .amt{text-align:right;color:var(--accent);font-variant-numeric:tabular-nums}
 
+/* ── Lens selector (Fase 2) ── */
+.cmplist-lens-bar{
+  display:flex;align-items:center;gap:6px;flex-wrap:wrap;
+  padding:8px 14px;margin:0 0 10px 0;
+  background:rgba(0,0,0,.2);border:1px solid var(--border);
+  border-radius:7px;font-size:11px;
+}
+.cmplist-lens-label{
+  color:var(--dim);text-transform:uppercase;letter-spacing:.04em;
+  margin-right:4px;font-weight:500;font-size:10px;
+}
+.lens-pill{
+  background:transparent;border:1px solid var(--border);color:var(--dim);
+  padding:4px 11px;font-family:inherit;font-size:11px;cursor:pointer;
+  border-radius:4px;transition:all .12s;font-weight:500;
+}
+.lens-pill:hover{color:var(--text);border-color:rgba(79,195,247,.4)}
+.lens-pill.active{
+  background:var(--accent);border-color:var(--accent);color:#0a0a0f;
+  font-weight:600;
+}
+
 /* ── Enriched row (Fase 1 redesign) ── */
 .cmplist-row-rich{
   display:grid;
@@ -12523,12 +12545,69 @@ function _applyExploreMode(){
 window._cmplistState = window._cmplistState || {
   a: {country:'uk', path:[], root:null, year:2024},
   b: {country:'uk', path:[], root:null, year:2019},
+  _lens: 'absolute',  // 'absolute' | 'per_capita' | 'pct_total' | 'yoy'
 };
+
+// UK population by year (ONS mid-year estimates, rounded). Used by per-capita lens.
+const UK_POPULATION = {
+  2015: 65_110_000, 2016: 65_620_000, 2017: 66_040_000,
+  2018: 66_440_000, 2019: 66_800_000, 2020: 67_020_000,
+  2021: 67_080_000, 2022: 67_600_000, 2023: 68_300_000,
+  2024: 68_500_000,
+};
+
+function setCmplistLens(lens) {
+  window._cmplistState._lens = lens;
+  try { localStorage.setItem('cmplist_lens', lens); } catch(e) {}
+  _cmplistRender();
+}
+
+// Transform a value according to the active lens.
+// context = { country, year, total, yoyPct }
+function _cmplistTransform(val, context) {
+  if (val == null) return null;
+  const lens = window._cmplistState._lens || 'absolute';
+  if (lens === 'per_capita') {
+    const pop = UK_POPULATION[context.year] || UK_POPULATION[2024];
+    return val / pop;
+  }
+  if (lens === 'pct_total' && context.total) {
+    return (val / context.total) * 100;
+  }
+  if (lens === 'yoy') {
+    return context.yoyPct;  // may be null
+  }
+  return val; // absolute default
+}
+
+// Format a lens-transformed value for display.
+function _cmplistFmtLens(val, context) {
+  const lens = window._cmplistState._lens || 'absolute';
+  if (val == null) return '—';
+  if (lens === 'absolute') return _cmplistFmt(val, context.country);
+  if (lens === 'per_capita') {
+    const sym = context.country === 'us' ? '$' : context.country === 'uk' ? '£' : '€';
+    if (val >= 1000) return sym + val.toFixed(0).replace(/\B(?=(\d{3})+(?!\d))/g,',');
+    return sym + val.toFixed(0);
+  }
+  if (lens === 'pct_total') return val.toFixed(2) + '%';
+  if (lens === 'yoy') {
+    const sign = val > 0 ? '+' : '';
+    return sign + val.toFixed(1) + '%';
+  }
+  return String(val);
+}
 
 async function loadCompareList(){
   // Restore toggle state from localStorage (default: single column)
   const savedMode = localStorage.getItem('cmplist_mode') || 'single';
   _cmplistApplyMode(savedMode);
+
+  // Restore lens preference (default: absolute £)
+  const savedLens = localStorage.getItem('cmplist_lens') || 'absolute';
+  if (['absolute','per_capita','pct_total','yoy'].includes(savedLens)) {
+    window._cmplistState._lens = savedLens;
+  }
 
   // Load column A always; column B only when in compare mode
   const cols = savedMode === 'compare' ? ['a','b'] : ['a'];
@@ -12723,6 +12802,18 @@ function _cmplistRender(){
       breadcrumb += ` <span style="color:var(--dim)">›</span> <a class="crumb-step" onclick="_cmplistNavigate('${col}',${i})">${_cmpEsc(walker.name)}</a>`;
     }
 
+    // Lens-aware header value
+    const lens = window._cmplistState._lens || 'absolute';
+    const nodeCtx = {
+      country: s.country,
+      year: s.year,
+      total: s.root?.value || 0,
+      yoyPct: null,  // header node itself doesn't have y/y context here
+    };
+    const headerVal = lens === 'absolute'
+      ? _cmplistFmt(node.value, s.country)
+      : _cmplistFmtLens(_cmplistTransform(node.value, nodeCtx), nodeCtx);
+
     // Header
     let h = `<div class="cmplist-header">
       <div class="cmplist-flag">${_CMPLIST_FLAGS[s.country]||'🏳️'}</div>
@@ -12730,8 +12821,20 @@ function _cmplistRender(){
         ${Object.entries(_CMPLIST_LABELS).map(([c,name])=>`<option value="${c}" ${c===s.country?'selected':''}>${_CMPLIST_FLAGS[c]} ${name}</option>`).join('')}
       </select>
       <div style="flex:1;font-size:13px;color:var(--text);font-weight:600">${_cmpEsc(node.name||'')}</div>
-      <div style="font-size:13px;color:var(--accent);font-weight:600">${_cmplistFmt(node.value, s.country)}</div>
+      <div style="font-size:13px;color:var(--accent);font-weight:600">${headerVal}</div>
     </div>`;
+
+    // Lens selector (column A only — applies globally)
+    if (col === 'a') {
+      h += `<div class="cmplist-lens-bar">
+        <span class="cmplist-lens-label">Show as:</span>
+        <button class="lens-pill ${lens==='absolute'?'active':''}" onclick="setCmplistLens('absolute')" title="Raw pound amount">£</button>
+        <button class="lens-pill ${lens==='per_capita'?'active':''}" onclick="setCmplistLens('per_capita')" title="£ per UK resident (${(UK_POPULATION[s.year]||68.5e6)/1e6 | 0}M)">per capita</button>
+        <button class="lens-pill ${lens==='pct_total'?'active':''}" onclick="setCmplistLens('pct_total')" title="Share of total UK public spending">% of total</button>
+        <button class="lens-pill ${lens==='yoy'?'active':''}" onclick="setCmplistLens('yoy')" title="Year-on-year change (nominal)">Δ y/y</button>
+      </div>`;
+    }
+
     h += `<div class="cmplist-crumb">${breadcrumb}</div>`;
 
     // Sync hint: if the OTHER column is at a different depth, suggest matching
@@ -12790,15 +12893,35 @@ function _cmplistRender(){
           }
         }
 
+        // Compute the value to show under the active lens
+        const rowCtx = {
+          country: s.country,
+          year: s.year,
+          total: s.root?.value || total,
+          yoyPct: null,
+        };
+        if (s.country === 'uk' && rootPathNames.length === 0) {
+          const series = _cmplistNodeHistory('uk', rootPathNames, c.name);
+          if (series) {
+            const d = _cmplistDeltas(series);
+            rowCtx.yoyPct = d.yoy;
+          }
+        }
+        const transformedVal = _cmplistTransform(c.value, rowCtx);
+        const displayVal = _cmplistFmtLens(transformedVal, rowCtx);
+        // Under the "% of total" lens, don't also show "% of parent" (redundant)
+        const lens = window._cmplistState._lens;
+        const pctLabel = lens === 'pct_total' ? '' : `${pct}% of parent`;
+
         h += `<div class="cmplist-row-rich" onclick="_cmplistDrill('${col}',${i})">
           <div class="row-primary">
             <div class="row-name">${_cmpEsc(c.name||'?')}</div>
-            <div class="row-pct">${pct}% of parent</div>
+            <div class="row-pct">${pctLabel}</div>
           </div>
           <div class="row-subtitle">${_cmpEsc(subtitle)}</div>
           <div class="row-metrics">
             ${sparkHtml}
-            <div class="cell-amount">${_cmplistFmt(c.value, s.country)}</div>
+            <div class="cell-amount">${displayVal}</div>
             ${yoyHtml}
             ${fiveYrHtml}
             <div class="cell-arrow">${kidCount > 0 ? '▸' : ''}</div>
