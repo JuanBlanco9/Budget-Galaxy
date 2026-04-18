@@ -1226,8 +1226,11 @@ mark{background:rgba(79,195,247,.3);color:var(--text,#e8ebf5);padding:0 2px;bord
 /* Compare + List — single default, toggleable second column */
 #tab-comparelist.panel{padding:0;position:relative}
 .cmplist-toolbar{
-  position:absolute;top:14px;right:20px;z-index:20;
-  display:flex;gap:8px;align-items:center;
+  position:sticky;top:0;right:0;z-index:20;
+  display:flex;gap:8px;align-items:center;justify-content:flex-end;
+  padding:12px 20px;background:linear-gradient(180deg,rgba(10,10,15,.95),rgba(10,10,15,.7),transparent);
+  backdrop-filter:blur(6px);
+  margin-bottom:-52px;  /* overlay the column header area */
 }
 .cmplist-add-btn{
   background:rgba(79,195,247,.1);border:1px solid rgba(79,195,247,.35);
