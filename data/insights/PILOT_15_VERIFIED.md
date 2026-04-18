@@ -66,7 +66,7 @@ Line chart: gross salary (x) vs effective rate (y).
 
 ### Sources
 - 🔗 HMRC Rates and thresholds for employers 2024-25 · [gov.uk](https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2024-to-2025)
-- 📂 `data/uk/fiscal/uk_tax_bands.json` · SHA256 `98d1ecbd8ea9e29e…`
+- 📂 `data/uk/fiscal/uk_tax_bands.json` · SHA256 `053522be2a497ee4…`
 - 📋 `SOURCES_TAX.md` · [GitHub](https://github.com/JuanBlanco9/Budget-Galaxy/blob/main/data/uk/fiscal/SOURCES_TAX.md)
 
 ---
@@ -103,7 +103,7 @@ Line chart with two series (rUK, Scotland) on effective rate.
 ### Sources
 - 🔗 Scottish Government Scottish Income Tax · [gov.scot](https://www.gov.scot/publications/scottish-income-tax/)
 - 🔗 HMRC Rates & thresholds 2024-25 · [gov.uk](https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2024-to-2025)
-- 📂 `data/uk/fiscal/uk_tax_bands.json` · SHA256 `98d1ecbd…`
+- 📂 `data/uk/fiscal/uk_tax_bands.json` · SHA256 `053522be…`
 
 ---
 
@@ -313,7 +313,7 @@ Pareto curve: cumulative share of spend (y) against ranked suppliers (x, log sca
 
 ### Narrative
 
-The Budget Galaxy supplier-enrichment pipeline processed 400 UK government suppliers, resolving ultimate beneficial ownership via the Companies House PSC register with a Wikidata fallback for parent-company chains. Of those 400:
+The Budget Galaxy supplier-enrichment pipeline processed 400 UK government suppliers through the UBO-resolution layer (from the 402-profile cohort in `data/suppliers/`), using the Companies House PSC register with a Wikidata fallback for parent-company chains. Of those 400:
 
 - **62** have multiple declared UBO chains (co-owned entities)
 - **29** terminate in a UK government body (state-owned trading entities)
@@ -453,7 +453,7 @@ Scotland's 32 councils and England's 296 councils compared on Band D, 2024-25:
 
 Scotland's range is £286 — 5.5× smaller than England's £1,575. The median Scottish Band D is **£799 below** the median English Band D (£1,415.44 vs £2,214.72).
 
-**3 English councils** have Band D values below Scotland's lowest: Wandsworth (£968.76), Westminster (£975.02), and Kensington & Chelsea (£1,019.90). The remaining 293 English Band D values exceed Scotland's highest of £1,547.
+**3 English councils** have Band D values below Scotland's lowest: **Wandsworth (£968.76), Westminster (£975.02), and City of London (£1,217.89)**. Two more English councils — Hammersmith & Fulham (£1,386.77) and Kensington & Chelsea (£1,529.85) — sit within the Scottish Band D range. The remaining **291** English councils have Band D values above Scotland's highest of £1,547.01.
 
 (Note: direct cross-border comparison requires adjusting for differences in devolved public-service funding — a larger share of Scottish local-government spend is funded via block grant rather than council tax.)
 
@@ -584,6 +584,8 @@ The 2000-01 figure is negative (surplus) — £625 per household less debt creat
 
 **Cumulative 23-year per-household borrowing** (2000-01 through 2022-23): £74,122 — each UK household's average share of additional national debt incurred in this period. This figure is calculated before interest, and equally apportioned across households; future repayment burden will follow the progressive tax structure.
 
+**Reconciliation with Your Taxes tab**: The Your Taxes tab uses a single round figure of 28.4M UK households (uk_trace.js) for all year calculations, producing £4,902 per household for 2022-23. This insight uses year-specific ONS estimates (28.3M for 2022) and returns £4,919 — a £17 delta at that year's scale. Both figures are within the rounding tolerance of the underlying ONS estimate range.
+
 ### Viz
 Line chart: per-household PSNB across 23 years with event annotations.
 
@@ -599,13 +601,13 @@ Line chart: per-household PSNB across 23 years with event annotations.
 
 ---
 
-## 15. Net current expenditure composition, English local authorities 2024
+## 15. Net current expenditure composition, English local authorities 2023-24
 
 **Category**: `structure` · **Tags**: `#councils` `#services` `#composition`
 
 ### Narrative
 
-Aggregated across 401 English local authorities (MHCLG Revenue Outturn, year-ending 2024), **£123.8B** total net current expenditure, by service:
+Aggregated across 423 English reporting entities (353 principal local authorities + 40 police-related bodies + 30 fire-related bodies) in MHCLG Revenue Outturn for fiscal year 2023-24, **£123.8B** total net current expenditure, by service:
 
 | Service | £B | Share |
 | --- | ---: | ---: |
