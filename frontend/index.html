@@ -79,6 +79,93 @@
 <script src="/tax/uk_vat.js?v=5"></script>
 <script src="/tax/uk_council_tax.js?v=5"></script>
 <script src="/tax/uk_trace.js?v=5"></script>
+
+<!-- ──────────────────────────────────────────────────────────────────────────
+     Analytics + error monitoring (2026-04-18)
+     Both gated on (a) production hostname and (b) user NOT being on an
+     anti-tracking browser signal. Both loaders fail open: absence of the
+     library does NOT break the app.
+     TO ACTIVATE after launch:
+       1. Sign up at plausible.io (or self-host) — free until 10k views/mo
+       2. Sign up at sentry.io — free tier 5k events/mo
+       3. Replace BG_MONITOR.plausibleDomain + BG_MONITOR.sentryDsn below
+     Leave defaults (null) for local dev — no network calls made.
+────────────────────────────────────────────────────────────────────────── -->
+<script>
+window.BG_MONITOR = {
+  // Leave null to disable. Set to "budgetgalaxy.com" to enable Plausible.
+  plausibleDomain: null,
+  // Leave null to disable. Set your Sentry DSN to enable.
+  sentryDsn: null,
+  // Browser Do-Not-Track respected (W3C DNT header).
+  dntEnabled: (typeof navigator !== 'undefined' && (navigator.doNotTrack === '1' || window.doNotTrack === '1')),
+  // Only load on production hostname
+  isProduction: (typeof location !== 'undefined' && /(^|\.)budgetgalaxy\.com$/i.test(location.hostname)),
+};
+
+(function loadMonitoring(){
+  const M = window.BG_MONITOR;
+  if (!M.isProduction) return;      // never in local/dev
+  if (M.dntEnabled)    return;      // respect DNT
+
+  // 1. Plausible — cookie-less, privacy-first pageviews
+  if (M.plausibleDomain) {
+    const s = document.createElement('script');
+    s.defer = true;
+    s.setAttribute('data-domain', M.plausibleDomain);
+    s.src = 'https://plausible.io/js/script.hash.outbound-links.js';
+    s.onerror = () => { console.warn('[BG] Plausible failed to load'); };
+    document.head.appendChild(s);
+    // Expose plausible() for manual events (SPA-like tab switches)
+    window.plausible = window.plausible || function(){ (window.plausible.q = window.plausible.q || []).push(arguments); };
+  }
+
+  // 2. Sentry — JS errors + unhandled promise rejections
+  if (M.sentryDsn) {
+    const s = document.createElement('script');
+    s.src = 'https://browser.sentry-cdn.com/7.100.0/bundle.tracing.min.js';
+    s.crossOrigin = 'anonymous';
+    s.onload = () => {
+      try {
+        window.Sentry.init({
+          dsn: M.sentryDsn,
+          tracesSampleRate: 0.1,         // 10% of sessions traced
+          replaysSessionSampleRate: 0,    // no session replay (privacy)
+          replaysOnErrorSampleRate: 0,
+          environment: 'production',
+          release: 'budget-galaxy@launch',
+          ignoreErrors: [
+            'ResizeObserver loop limit exceeded',
+            'Non-Error promise rejection captured',
+          ],
+        });
+      } catch (e) { console.warn('[BG] Sentry init failed', e); }
+    };
+    s.onerror = () => { console.warn('[BG] Sentry failed to load'); };
+    document.head.appendChild(s);
+  }
+
+  // 3. Fallback — always log unhandled errors to console with context,
+  //    so bug reports from users have something useful even if Sentry is off.
+  window.addEventListener('error', (e) => {
+    try {
+      const info = { msg: e.message, file: e.filename, line: e.lineno, col: e.colno };
+      console.error('[BG-error]', info, e.error);
+    } catch(_){}
+  }, { passive: true });
+  window.addEventListener('unhandledrejection', (e) => {
+    try { console.error('[BG-rejection]', e.reason); } catch(_){}
+  }, { passive: true });
+})();
+
+// Helper: record a tab-switch as a Plausible event so we see which tab
+// actually gets used. Called from showTab().
+window.bgTrackTab = function(tabName){
+  try {
+    if (window.plausible) window.plausible('tab:' + tabName);
+  } catch(_){}
+};
+</script>
 <style>
 :root{--bg:#0a0a0f;--surface:#12121e;--surface2:#1a1a2c;--border:#282840;--text:#e0e0e8;--dim:#7a7a95;--accent:#4fc3f7;--accent2:#ff7043;--green:#66bb6a;--yellow:#ffd54f;--red:#ef5350}
 *{margin:0;padding:0;box-sizing:border-box}
@@ -1071,8 +1158,8 @@ mark{background:rgba(255,200,0,.25);color:inherit;border-radius:2px;padding:0 2p
   <div class="tab" data-tab="insights" onclick="showTab('insights',this)">💡 Insights</div>
   <div class="tab" data-tab="taxpayer" onclick="showTab('taxpayer',this)">💰 Your Taxes</div>
   <div class="tab active" data-tab="galaxy" onclick="showTab('galaxy',this)">🌌 Budget Galaxy</div>
-  <div class="tab" data-tab="suppliers" onclick="showTab('suppliers',this)">🏢 Budget Recipients</div>
   <div class="tab" data-tab="explore" onclick="showTab('explore',this)">📊 Explore &amp; Compare</div>
+  <div class="tab" data-tab="suppliers" onclick="showTab('suppliers',this)">🏢 Budget Recipients</div>
   <div class="tab" data-tab="about" onclick="showTab('about',this)">About</div>
   <!-- 'Multiverse' view is reachable via the 🌐 ALL button in the country switcher.
        Kept here (hidden) so internal showTab routing and deep-links still work. -->
@@ -1296,6 +1383,31 @@ mark{background:rgba(79,195,247,.3);color:var(--text,#e8ebf5);padding:0 2px;bord
   border-radius:6px;color:var(--dim);
 }
 .detail-spark svg.spark{display:block;width:100%;height:auto;max-width:520px}
+/* Full time-chart (axis-labeled, hover-enabled) */
+.tchart-wrap{
+  margin:14px 0 2px;padding:12px 14px 10px;
+  background:rgba(0,0,0,.22);border-radius:6px;
+}
+.tchart-title{
+  font-size:10.5px;color:var(--dim);text-transform:uppercase;letter-spacing:.05em;
+  margin-bottom:8px;font-weight:500;
+}
+.tchart-surface{position:relative}
+.tchart-surface svg{display:block;max-width:560px;cursor:crosshair}
+.tchart-sub{
+  font-size:10.5px;color:var(--dim);margin-top:6px;font-style:italic;line-height:1.5;
+}
+.tchart-tooltip{
+  position:absolute;pointer-events:none;
+  padding:5px 9px;background:rgba(10,10,20,.96);
+  border:1px solid rgba(79,195,247,.4);border-radius:4px;
+  font-size:11px;color:var(--text);white-space:nowrap;
+  font-variant-numeric:tabular-nums;letter-spacing:.01em;z-index:10;
+  transform:translateY(-2px);
+  box-shadow:0 2px 8px rgba(0,0,0,.3);
+}
+.tchart-dot{transition:r .08s}
+.tchart-wrap:hover .tchart-dot{r:3}
 .detail-deltas{
   display:flex;gap:28px;margin:14px 0 6px;flex-wrap:wrap;
 }
@@ -1337,6 +1449,238 @@ mark{background:rgba(79,195,247,.3);color:var(--text,#e8ebf5);padding:0 2px;bord
   margin:16px 0;padding:14px;background:rgba(0,0,0,.2);
   border-radius:6px;font-size:12px;color:var(--dim);line-height:1.6;
   font-style:italic;
+}
+/* "Where this line sits" — ancestor percentages, any depth */
+.detail-ancestors{
+  margin:18px 0;padding:12px 14px;
+  background:rgba(0,0,0,.18);border-radius:6px;
+}
+.detail-ancestors-title{
+  font-size:10.5px;color:var(--dim);text-transform:uppercase;letter-spacing:.05em;
+  margin-bottom:10px;
+}
+.detail-ancestor-row{
+  display:grid;grid-template-columns:70px 1fr auto;gap:10px;
+  padding:5px 0;font-size:12px;align-items:center;
+  border-top:1px solid rgba(255,255,255,.03);
+}
+.detail-ancestor-row:first-of-type{border-top:0}
+.detail-ancestor-pct{
+  text-align:right;color:var(--accent);font-weight:600;font-variant-numeric:tabular-nums;
+}
+.detail-ancestor-label{color:var(--dim);font-size:11.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.detail-ancestor-label b{color:var(--text);font-weight:500}
+.detail-ancestor-val{color:var(--text);font-variant-numeric:tabular-nums;font-size:11.5px}
+
+/* Per-capita chip — sits next to the hero value */
+.detail-pc-chip{
+  display:inline-block;padding:3px 9px;border-radius:999px;
+  background:rgba(79,195,247,.1);border:1px solid rgba(79,195,247,.3);
+  color:var(--accent);font-size:10.5px;font-weight:500;
+  font-variant-numeric:tabular-nums;
+}
+.detail-rank-chip{
+  display:inline-block;padding:3px 9px;border-radius:999px;
+  background:rgba(255,213,79,.08);border:1px solid rgba(255,213,79,.3);
+  color:var(--yellow);font-size:10.5px;font-weight:500;
+}
+.detail-cofog-chip{
+  display:inline-block;padding:2px 8px;border-radius:3px;
+  background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);
+  color:var(--dim);font-size:10px;font-family:ui-monospace,Menlo,Consolas,monospace;
+  margin-top:2px;
+}
+
+/* Explainer lede — appears under the hero for known top-level depts */
+.detail-explainer{
+  margin:10px 0 16px;padding:12px 14px;
+  background:rgba(79,195,247,.04);
+  border-left:2px solid rgba(79,195,247,.45);border-radius:4px;
+  font-size:12.5px;color:var(--text);line-height:1.55;
+}
+
+/* "Compare to" callout — quick sense-making line */
+.detail-compare{
+  margin:10px 0;padding:8px 12px;
+  background:rgba(255,213,79,.05);
+  border-left:2px solid rgba(255,213,79,.4);border-radius:4px;
+  font-size:11.5px;color:var(--text);line-height:1.5;
+}
+.detail-compare b{color:var(--yellow);font-weight:500}
+
+/* Related-insight chip — jumps to Insights tab */
+.detail-related{
+  margin:12px 0 4px;padding:10px 12px;
+  background:rgba(102,187,106,.05);
+  border:1px solid rgba(102,187,106,.25);border-radius:5px;
+  font-size:11.5px;color:var(--text);cursor:pointer;
+  display:flex;align-items:center;gap:10px;transition:background .12s;
+}
+.detail-related:hover{background:rgba(102,187,106,.1)}
+.detail-related-icon{color:var(--green)}
+.detail-related-title{color:var(--text);font-weight:500;flex:1}
+.detail-related-arrow{color:var(--green);font-size:13px}
+
+/* NHS trust metadata card */
+.detail-trust-card{
+  margin:12px 0;padding:10px 14px;
+  background:rgba(79,195,247,.04);
+  border:1px solid rgba(79,195,247,.15);border-radius:5px;
+  font-size:11.5px;
+}
+.detail-trust-row{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:3px 0;border-top:1px solid rgba(255,255,255,.04);
+}
+.detail-trust-row:first-of-type{border-top:0}
+.detail-trust-label{color:var(--dim);font-size:10.5px;text-transform:uppercase;letter-spacing:.04em}
+.detail-trust-val{color:var(--text);font-size:11.5px;text-align:right}
+
+/* Rich enrichment card — the "About this programme" panel */
+.detail-enrich{
+  margin:14px 0;padding:14px 16px;
+  background:linear-gradient(180deg,rgba(79,195,247,.04),rgba(0,0,0,.12));
+  border:1px solid rgba(79,195,247,.18);border-radius:7px;
+}
+.detail-enrich-title{
+  font-size:10.5px;color:var(--accent);text-transform:uppercase;letter-spacing:.06em;
+  margin-bottom:10px;font-weight:600;display:flex;align-items:center;gap:8px;
+}
+.detail-enrich-dot{
+  width:6px;height:6px;border-radius:50%;background:var(--accent);
+  box-shadow:0 0 0 3px rgba(79,195,247,.15);
+}
+.detail-enrich-desc{
+  font-size:12.5px;line-height:1.65;color:var(--text);margin-bottom:12px;
+}
+.detail-enrich-stats{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));
+  gap:8px;margin-bottom:12px;
+}
+.detail-enrich-stat{
+  padding:8px 10px;background:rgba(0,0,0,.22);border-radius:5px;
+  border:1px solid rgba(255,255,255,.04);
+}
+.detail-enrich-stat-label{
+  font-size:9.5px;color:var(--dim);text-transform:uppercase;letter-spacing:.04em;
+  margin-bottom:3px;font-weight:500;
+}
+.detail-enrich-stat-val{
+  font-size:12px;color:var(--text);font-weight:500;line-height:1.35;
+  font-variant-numeric:tabular-nums;
+}
+.detail-enrich-notes{
+  margin:10px 0 0;padding:10px 12px;
+  background:rgba(255,213,79,.04);
+  border-left:2px solid rgba(255,213,79,.4);border-radius:4px;
+}
+.detail-enrich-notes-label{
+  font-size:10px;color:var(--yellow);text-transform:uppercase;letter-spacing:.05em;
+  margin-bottom:4px;font-weight:500;
+}
+.detail-enrich-notes-body{
+  font-size:11.5px;color:var(--text);line-height:1.6;
+}
+.detail-enrich-legal{
+  margin-top:10px;padding-top:10px;
+  border-top:1px dashed rgba(255,255,255,.06);
+  font-size:10.5px;color:var(--dim);line-height:1.5;
+}
+.detail-enrich-legal-label{color:var(--dim);text-transform:uppercase;letter-spacing:.04em;font-size:9.5px;margin-right:4px}
+
+/* Beneficiaries prominent banner */
+.detail-enrich-benefs{
+  margin:0 0 12px;padding:9px 12px;
+  background:rgba(102,187,106,.06);
+  border-left:2px solid rgba(102,187,106,.4);border-radius:4px;
+  font-size:11.5px;line-height:1.55;
+}
+.detail-enrich-benefs-label{
+  color:var(--green);font-size:9.5px;text-transform:uppercase;letter-spacing:.05em;
+  font-weight:500;display:block;margin-bottom:3px;
+}
+.detail-enrich-benefs-val{color:var(--text);font-size:12px}
+
+/* Denser grid when we have 6+ key stats */
+.detail-enrich-stats-grid{
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+}
+
+/* Sources block */
+.detail-enrich-sources{
+  margin-top:10px;padding-top:10px;
+  border-top:1px dashed rgba(255,255,255,.06);
+}
+.detail-enrich-sources-label{
+  font-size:9.5px;color:var(--dim);text-transform:uppercase;letter-spacing:.05em;
+  margin-bottom:5px;font-weight:500;
+}
+.detail-enrich-sources-list{font-size:10.5px;line-height:1.55}
+.detail-enrich-src{color:var(--dim);padding:2px 0}
+.detail-enrich-src b{color:var(--text);font-weight:500}
+.detail-enrich-src a{color:var(--accent);text-decoration:none;margin-left:2px}
+.detail-enrich-src a:hover{text-decoration:underline}
+
+/* Tier C procedural variant — slight colour shift to signal "auto-generated" */
+.detail-enrich-procedural{
+  background:linear-gradient(180deg,rgba(155,89,182,.05),rgba(0,0,0,.12));
+  border-color:rgba(155,89,182,.22);
+}
+.detail-enrich-procedural .detail-enrich-title{color:#c39bd3}
+.detail-enrich-procedural .detail-enrich-dot{background:#c39bd3;box-shadow:0 0 0 3px rgba(195,155,211,.15)}
+
+/* Tier D fallback — dimmer, signals "minimal context" */
+.detail-enrich-fallback{
+  background:rgba(0,0,0,.12);
+  border:1px solid rgba(255,255,255,.04);
+}
+.detail-enrich-fallback .detail-enrich-title{color:var(--dim)}
+.detail-enrich-fallback .detail-enrich-dot{background:var(--dim);box-shadow:0 0 0 3px rgba(122,122,149,.15)}
+.detail-enrich-neighbours{
+  margin-top:10px;display:flex;flex-direction:column;gap:4px;
+  padding:8px 10px;background:rgba(0,0,0,.2);border-radius:4px;
+  font-size:11px;
+}
+.detail-enrich-neighbours > div{display:flex;gap:10px;align-items:center}
+.detail-enrich-n-arrow{color:var(--dim);font-size:10px;min-width:60px}
+.detail-enrich-n-name{color:var(--text);flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.detail-enrich-n-val{color:var(--accent);font-variant-numeric:tabular-nums;font-size:11px}
+
+/* Leaf escape hatch — constructive next step instead of dead-end */
+.detail-leaf-next{
+  margin:14px 0;padding:12px 14px;
+  background:rgba(79,195,247,.05);
+  border:1px dashed rgba(79,195,247,.3);border-radius:6px;
+  font-size:12px;color:var(--text);line-height:1.6;
+}
+.detail-leaf-next-title{color:var(--accent);font-weight:500;margin-bottom:4px;font-size:11.5px}
+.detail-leaf-next a{color:var(--accent);text-decoration:none;font-weight:500}
+.detail-leaf-next a:hover{text-decoration:underline}
+
+/* Source attribution — always-on footer */
+.detail-source{
+  margin:18px 0 6px;padding:11px 14px;
+  background:rgba(0,0,0,.18);
+  border-left:2px solid rgba(79,195,247,.35);
+  border-radius:4px;
+  font-size:11px;line-height:1.6;color:var(--dim);
+}
+.detail-source-title{
+  font-size:10px;color:var(--dim);text-transform:uppercase;letter-spacing:.06em;
+  margin-bottom:5px;font-weight:500;
+}
+.detail-source-body{color:var(--text);font-size:11.5px}
+.detail-source-body a{color:var(--accent);text-decoration:none}
+.detail-source-body a:hover{text-decoration:underline}
+.detail-source-origin{font-size:10.5px;color:var(--dim);margin-top:4px}
+.detail-source-codes{
+  margin-top:6px;font-size:10px;color:var(--dim);
+  font-family:ui-monospace,Menlo,Consolas,monospace;
+}
+.detail-source-codes code{
+  display:inline-block;padding:1px 6px;margin:2px 3px 0 0;
+  background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.06);
+  border-radius:3px;font-size:10px;color:var(--text);
 }
 
 .cmplist-lens-bar{
@@ -1915,6 +2259,46 @@ mark{background:rgba(79,195,247,.3);color:var(--text,#e8ebf5);padding:0 2px;bord
 .taxpayer-caveats ul{margin-top:10px;padding-left:18px;line-height:1.55}
 .taxpayer-caveats li{margin-bottom:6px}
 .taxpayer-caveats b{color:var(--text)}
+
+/* Sources attribution panel — always visible at bottom of Your Taxes */
+.tp-sources{
+  margin:20px 0 10px;padding:14px 16px 12px;
+  background:rgba(0,0,0,.22);
+  border-left:2px solid rgba(79,195,247,.35);
+  border-radius:6px;
+}
+.tp-sources-title{
+  font-size:10.5px;color:var(--dim);text-transform:uppercase;letter-spacing:.05em;
+  margin-bottom:10px;font-weight:500;
+}
+.tp-sources-grid{
+  display:flex;flex-direction:column;gap:6px;
+}
+.tp-source-row{
+  display:grid;grid-template-columns:minmax(180px,1fr) auto minmax(0,1.4fr);
+  gap:12px;align-items:center;font-size:11px;
+  padding:4px 0;border-top:1px solid rgba(255,255,255,.04);
+}
+.tp-source-row:first-child{border-top:0}
+.tp-source-label{color:var(--text);font-weight:500}
+.tp-source-row a{color:var(--accent);text-decoration:none;font-size:11px;white-space:nowrap}
+.tp-source-row a:hover{text-decoration:underline}
+.tp-source-row code{
+  font-family:ui-monospace,Menlo,Consolas,monospace;font-size:10px;
+  color:var(--dim);background:rgba(255,255,255,.03);padding:2px 6px;
+  border-radius:3px;border:1px solid rgba(255,255,255,.04);
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+}
+.tp-sources-foot{
+  margin-top:12px;padding-top:10px;border-top:1px dashed rgba(255,255,255,.05);
+  font-size:10.5px;color:var(--dim);line-height:1.6;
+}
+.tp-sources-foot a{color:var(--accent);text-decoration:none}
+.tp-sources-foot a:hover{text-decoration:underline}
+@media (max-width:760px){
+  .tp-source-row{grid-template-columns:1fr;gap:3px}
+  .tp-source-row code{font-size:9.5px}
+}
 .tp-not-included{margin-top:10px;padding-top:10px;border-top:1px dashed rgba(255,255,255,.08);font-size:10.5px;line-height:1.6}
 .taxpayer-main{
   background:rgba(13,18,30,.5);overflow-y:auto;padding:20px 24px;position:relative;
@@ -2677,6 +3061,47 @@ mark{background:rgba(79,195,247,.3);color:var(--text,#e8ebf5);padding:0 2px;bord
       <div id="tp-sankey-wrap" class="tp-sankey-wrap">
         <svg id="tp-sankey"></svg>
       </div>
+      <!-- Source attribution panel — always visible, 6 data layers listed explicitly -->
+      <div class="tp-sources">
+        <div class="tp-sources-title">Sources · every number above is traceable</div>
+        <div class="tp-sources-grid">
+          <div class="tp-source-row">
+            <span class="tp-source-label">Income Tax &amp; NI bands</span>
+            <a href="https://www.gov.uk/income-tax-rates" target="_blank" rel="noopener">HMRC 2024-25 ↗</a>
+            <code>data/uk/fiscal/uk_tax_bands.json</code>
+          </div>
+          <div class="tp-source-row">
+            <span class="tp-source-label">VAT &amp; indirect tax by decile</span>
+            <a href="https://www.ons.gov.uk/peoplepopulationandcommunity/personalandhouseholdfinances/incomeandwealth/bulletins/theeffectsoftaxesandbenefitsonhouseholdincome/financialyearending2022" target="_blank" rel="noopener">ONS ETB 2022 ↗</a>
+            <code>data/uk/fiscal/uk_indirect_tax_by_decile.json</code>
+          </div>
+          <div class="tp-source-row">
+            <span class="tp-source-label">Council Tax (all-in, 328 councils)</span>
+            <a href="https://www.gov.uk/government/statistics/council-tax-levels-set-by-local-authorities-in-england-2024-to-2025" target="_blank" rel="noopener">MHCLG 2024-25 ↗</a>
+            <code>data/uk/fiscal/uk_council_tax_2024.json</code>
+          </div>
+          <div class="tp-source-row">
+            <span class="tp-source-label">Central spending composition</span>
+            <a href="https://www.gov.uk/government/collections/hmt-oscar-publishing-from-the-database" target="_blank" rel="noopener">HMT OSCAR II ↗</a>
+            <code>data/uk/uk_budget_tree_2024.json</code>
+          </div>
+          <div class="tp-source-row">
+            <span class="tp-source-label">Per-council grant share</span>
+            <a href="https://www.gov.uk/government/collections/local-authority-revenue-expenditure-and-financing" target="_blank" rel="noopener">MHCLG RO5 ↗</a>
+            <code>data/uk/local_authorities/council_spend_lookup_2024.json</code>
+          </div>
+          <div class="tp-source-row">
+            <span class="tp-source-label">Public borrowing (PSNB)</span>
+            <a href="https://obr.uk/efo/economic-and-fiscal-outlook-march-2024/" target="_blank" rel="noopener">OBR March 2024 EFO ↗</a>
+            <code>data/uk/fiscal/uk_public_finance_totals.json</code>
+          </div>
+        </div>
+        <div class="tp-sources-foot">
+          Every committed data file has a SHA256 you can verify against our
+          <a href="https://github.com/JuanBlanco9/Budget-Galaxy" target="_blank" rel="noopener">public repo ↗</a>.
+          Open a methodology question? <a href="https://github.com/JuanBlanco9/Budget-Galaxy/issues/new" target="_blank" rel="noopener">File an issue ↗</a>.
+        </div>
+      </div>
     </main>
   </div>
 </div>
@@ -2992,6 +3417,38 @@ mark{background:rgba(79,195,247,.3);color:var(--text,#e8ebf5);padding:0 2px;bord
             </div>
 
             <p>When additional countries are enabled (US / Germany / France / Brazil are next on the roadmap), each will get its own gap-disclosure section below.</p>
+          </div>
+        </div>
+
+        <div class="about-acc-item" id="acc-enrichment">
+          <div class="about-acc-header" onclick="toggleAboutAcc('acc-enrichment')">
+            Enrichment coverage &amp; quality (audit 2026-04-20)
+            <span class="about-acc-chevron"></span>
+          </div>
+          <div class="about-acc-body">
+            <p>When you click any node in Explore &amp; Compare or Budget Galaxy, you see a contextual "About this programme" panel. The content comes from four layers of increasing quality, documented here honestly because quality varies.</p>
+
+            <div class="about-country">The four tiers</div>
+            <ul>
+              <li><b>Tier A &mdash; Hand-curated</b> (36 programmes).
+                Written from six batches of research against official publishers &mdash; DWP Stat-Xplore, HMRC Annual Report, NHS England TAC, ONS, IFS, OBR, NAO, House of Commons Library briefings. Each entry has a description, beneficiary count, legal basis, 7&ndash;11 key stats, recent-change notes, and source citations. <b>Caveat:</b> the underlying research was prepared by LLM agents using their training data (through early 2026). Numbers are cross-checked against our own tree JSON by <code>scripts/verify_enrichment.py</code> &mdash; the 2026-04-20 audit caught ten stat labels where scope wasn't clear (e.g. "total DSG" nationally vs the specific sub-line a user might be clicking). Those labels now include scope clarifiers. Not every source has a URL yet (31 of 36 entries cite the publisher + title but not a clickable link); URL enrichment is on the post-launch list.</li>
+              <li><b>Tier B &mdash; Imported</b> (2,225 nodes).
+                Pre-existing enrichment content in the repo: <code>program_enrichment.json</code> (779 compact entries, schema <i>year / description / beneficiaries</i>) and <code>enrichment_top50.json</code> (651 rich entries, adding <i>legal basis / notes / OSCAR category</i>). These cover 25% of the tree. <b>Caveat:</b> most of this content was LLM-drafted at an earlier stage and not re-audited. The 2026-04-20 audit flagged 11 top-level departments with incorrect founding years (Home Office listed as founded in 2024 vs actual 1782, MoJ as 2024 vs 2007, etc.). The frontend now suppresses any <i>Established: 2024</i> field coming from this layer as a sentinel for "unknown" &mdash; but other factual details in these 2,225 entries are not individually verified.</li>
+              <li><b>Tier C &mdash; Procedural</b> (~1,500 council + council-service nodes).
+                Generated at render time from our own data: <code>_top_suppliers</code> metadata joined with ONS mid-2023 local-authority populations (345 England + Wales authorities) to show population, spend per resident, tier-average comparator, top supplier, supplier concentration, and top purposes. 69% of councils in the tree match an ONS population row; the other 31% are police &amp; crime commissioners, fire authorities and combined authorities &mdash; they don't have population rows by design (they serve multiple councils' populations combined). Those still get Tier D.</li>
+              <li><b>Tier D &mdash; Contextual fallback</b> (every remaining node).
+                For any node that doesn't match A/B/C, the frontend generates a card showing the ancestor chain ("part of X, part of Y"), the node's rank among siblings, and the neighbours immediately above and below it in size. Purely from the tree; zero external data needed. This guarantees <b>every single node in the UK tree shows some context &mdash; no bare "MEH" card anywhere.</b></li>
+            </ul>
+
+            <div class="about-country">What we know is still weak</div>
+            <ul>
+              <li>Scotland, Wales and Northern Ireland councils get Tier D (not C) because ONS publishes England &amp; Wales population data only; SG/WG/NISRA equivalents are not yet loaded.</li>
+              <li>Combined Authorities (GLA, Greater Manchester, West Midlands etc.) get Tier C via a heuristic but the "tier comparator" line uses the wrong reference group. Cosmetic, not factual.</li>
+              <li>Most Tier A source citations point at a publisher + title but not a clickable URL. The publications are all real and findable, but users can't one-click.</li>
+              <li>The Tier B 2,225-entry layer has not been individually fact-checked. A user may encounter a date or figure that's out of sync. Please <a href="https://github.com/JuanBlanco9/Budget-Galaxy/issues/new" target="_blank" rel="noopener" style="color:var(--accent)">file an issue</a> &mdash; the verifier script (<code>scripts/verify_enrichment.py</code>) is kept in the repo to make each flag quick to reproduce.</li>
+            </ul>
+
+            <p>The verifier is reproducible: <code>py scripts/verify_enrichment.py</code> writes <code>data/uk/_enrichment_audit.json</code> with per-entry flags for tree-match, scope discrepancy, missing URLs, and suspicious founding years. It runs in under a second.</p>
           </div>
         </div>
 
@@ -3619,6 +4076,9 @@ function showTab(name,el){
   }
   // Save current tab state before switching
   saveCurrentTabState();
+
+  // Track tab usage (Plausible, fail-open)
+  try { if (window.bgTrackTab) window.bgTrackTab(name); } catch(_){}
 
   document.querySelectorAll('.panel').forEach(p=>{p.classList.remove('active');p.style.display='none'});
   document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
@@ -10173,6 +10633,49 @@ function renderSupplierMap(suppliers,containerEl){
 }
 
 // ── GALAXY INFO CARD (simple) ──────────────────
+// Galaxy-flavour source resolver — walks the d3.hierarchy parent chain
+// (as opposed to _cmplistResolveSource which takes a pathArr).
+// Returns { source, sourceUrl, origin, exp_codes, sta_codes, estimated } or null.
+function _galaxyResolveSource(node){
+  if (!node || !node.data) return null;
+  if (currentCountry !== 'uk') return null;
+  // Walk up collecting the nearest _source and the top-level name
+  let nearest = null, nearestOrigin = 'inherited';
+  let walker = node;
+  let topLevelName = '';
+  let loops = 0;
+  while (walker && loops++ < 50) {
+    const d = walker.data;
+    if (d && d._source && !nearest) {
+      nearest = d._source;
+      nearestOrigin = (walker === node)
+        ? 'own'
+        : `inherited from ${d.name || 'ancestor'}`;
+    }
+    if (walker.parent && walker.parent.depth === 0) topLevelName = walker.data.name || '';
+    walker = walker.parent;
+  }
+  // If topLevelName not set (clicking the root itself), skip
+  if (!topLevelName && node.depth === 1) topLevelName = node.data.name || '';
+
+  let source = nearest, origin = nearestOrigin;
+  if (!source && typeof _cmplistBranchDefault === 'function') {
+    const d = _cmplistBranchDefault(topLevelName);
+    source = d.source;
+    origin = d.origin;
+  }
+  if (!source) return null;
+
+  const url = (typeof _UK_SOURCE_URLS !== 'undefined' && _UK_SOURCE_URLS[source]) || null;
+  const d = node.data || {};
+  return {
+    source, sourceUrl: url, origin,
+    exp_codes: d._exp_codes || null,
+    sta_codes: d._sta_codes || null,
+    estimated: d._estimated_source_year || d._estimated_reason || null,
+  };
+}
+
 function openGalaxyInfo(node){
   if(!node) return;
   const card=document.getElementById('galaxy-info');
@@ -10307,6 +10810,14 @@ function openGalaxyInfo(node){
     if(nChildren>6) html+=`<div style="font-size:9px;color:var(--dim)">+${nChildren-6} more</div>`;
     html+=`</div>`;
   }
+
+  // Source attribution — every UK node, every depth (matches Explore & Compare)
+  try {
+    const attrib = _galaxyResolveSource(node);
+    if (attrib && typeof _cmplistSourceFooter === 'function') {
+      html += _cmplistSourceFooter(attrib);
+    }
+  } catch(e) { /* non-critical */ }
 
   const shortName=name.length>20?name.slice(0,18)+'…':name;
   html+=`<button class="gi-btn" onclick="goToBudgetList(${node.depth},'${esc(nodeId)}')">${galaxyLang==='de'?shortName+' erkunden':'Explore '+shortName} →</button>`;
@@ -12886,6 +13397,8 @@ async function loadCompareList(){
   await _cmplistLoadTree('a');
   // Kick off history load in background for sparklines
   _cmplistLoadHistory('uk').then(() => _cmplistRender()).catch(() => {});
+  // Kick off enrichment load in background — powers the "About this programme" card
+  _cmplistLoadEnrichment().then(() => _cmplistRender()).catch(() => {});
 
   // Update tree-panel header with real total
   const root = window._cmplistState.a.root;
@@ -12938,6 +13451,152 @@ function _cmplistNodeHistory(country, rootPathNames, nodeName){
   });
 }
 
+// Axis-labeled time chart — upgrade from decorative sparkline to a proper
+// chart with year-axis, £-axis, gridlines, hover tooltip. Used in the detail
+// panel hero where we have room for context. The thin sparkline below
+// stays for inline sub-item decoration.
+//
+// series: [val_2015, val_2016, ..., val_2024] — nulls OK for missing years
+// title:  short header text ("Nominal spend · 2015 → 2024")
+// Returns HTML string; the surrounding container must have position:relative
+// for the tooltip to position correctly.
+function _cmplistTimeChart(series, opts={}){
+  const years = opts.years || [2015,2016,2017,2018,2019,2020,2021,2022,2023,2024];
+  const w = opts.width || 480;
+  const h = opts.height || 150;
+  const m = { top: 14, right: 12, bottom: 26, left: 56 };
+  const iw = w - m.left - m.right;
+  const ih = h - m.top  - m.bottom;
+
+  const pts = series.map((v, i) => v == null ? null : { y: years[i], v });
+  const defined = pts.filter(p => p);
+  if (defined.length < 2) return ''; // fall back to text
+
+  const min = Math.min(...defined.map(p => p.v));
+  const max = Math.max(...defined.map(p => p.v));
+  const range = (max - min) || 1;
+  const pad = range * 0.08;
+  const yMin = Math.max(0, min - pad);
+  const yMax = max + pad;
+  const yRange = (yMax - yMin) || 1;
+
+  const xScale = i => (years.length <= 1 ? 0 : (i / (years.length - 1)) * iw);
+  const yScale = v => ih - ((v - yMin) / yRange) * ih;
+
+  // Format the axis tick ("£88.8B", "£1.24T", "£45M")
+  const fmtAxis = v => {
+    if (v >= 1e12) return '£' + (v/1e12).toFixed(2) + 'T';
+    if (v >= 1e9)  return '£' + (v/1e9 ).toFixed(v >= 100e9 ? 0 : 1) + 'B';
+    if (v >= 1e6)  return '£' + (v/1e6 ).toFixed(0) + 'M';
+    if (v >= 1e3)  return '£' + (v/1e3 ).toFixed(0) + 'K';
+    return '£' + Math.round(v);
+  };
+
+  // Path + dots
+  const ptsStr = series.map((v, i) => v == null ? null : `${xScale(i).toFixed(1)},${yScale(v).toFixed(1)}`)
+                       .filter(p => p).join(' ');
+  // Gridlines — 3 horizontal (25/50/75%)
+  const grid = [0.25, 0.5, 0.75].map(t => {
+    const y = ih * t;
+    return `<line x1="0" x2="${iw}" y1="${y.toFixed(1)}" y2="${y.toFixed(1)}" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>`;
+  }).join('');
+
+  // Each data point gets a dot + invisible hover rect
+  const dots = series.map((v, i) => {
+    if (v == null) return '';
+    const cx = xScale(i).toFixed(1);
+    const cy = yScale(v).toFixed(1);
+    const prev = i > 0 ? series[i-1] : null;
+    const yoy = (prev != null && prev > 0) ? ((v - prev) / prev * 100).toFixed(1) : null;
+    const yoyStr = yoy != null ? `${yoy >= 0 ? '+' : ''}${yoy}% y/y` : '—';
+    const label = `${years[i]} · ${fmtAxis(v)} · ${yoyStr}`;
+    const isLast = i === series.length - 1 || series.slice(i+1).every(x => x == null);
+    return `<circle cx="${cx}" cy="${cy}" r="${isLast ? 3.5 : 2.5}"
+      fill="${isLast ? 'var(--accent)' : 'rgba(79,195,247,0.7)'}"
+      stroke="${isLast ? 'rgba(79,195,247,0.25)' : 'none'}"
+      stroke-width="${isLast ? 5 : 0}"
+      data-x="${cx}" data-y="${cy}" data-label="${_cmpEsc(label)}"
+      class="tchart-dot"/>`;
+  }).join('');
+
+  // X-axis labels (first, middle, last year)
+  const firstYear = years[0];
+  const midIdx = Math.floor((years.length - 1) / 2);
+  const midYear = years[midIdx];
+  const lastYear = years[years.length - 1];
+  const xLabels = [
+    { x: 0, label: firstYear },
+    { x: xScale(midIdx), label: midYear },
+    { x: iw, label: lastYear },
+  ].map(d => `<text x="${d.x}" y="${ih + 16}" fill="var(--dim)" font-size="10"
+    text-anchor="${d.x === 0 ? 'start' : d.x === iw ? 'end' : 'middle'}"
+    font-family="Inter,system-ui">${d.label}</text>`).join('');
+
+  // Y-axis labels (min and max only — 2 labels, keeps it clean)
+  const yLabels = `
+    <text x="-6" y="3" fill="var(--dim)" font-size="10" text-anchor="end" font-family="Inter,system-ui">${fmtAxis(yMax)}</text>
+    <text x="-6" y="${ih.toFixed(1)}" fill="var(--dim)" font-size="10" text-anchor="end" font-family="Inter,system-ui">${fmtAxis(yMin)}</text>
+  `;
+
+  // Build unique id for this chart instance
+  const chartId = 'tc_' + Math.random().toString(36).slice(2, 8);
+
+  return `<div class="tchart-wrap" id="${chartId}">
+    ${opts.title ? `<div class="tchart-title">${_cmpEsc(opts.title)}</div>` : ''}
+    <div class="tchart-surface">
+      <svg viewBox="0 0 ${w} ${h}" width="100%" height="${h}" preserveAspectRatio="none"
+           onmousemove="_cmplistTchartHover(event, '${chartId}')"
+           onmouseleave="_cmplistTchartLeave('${chartId}')">
+        <g transform="translate(${m.left},${m.top})">
+          ${grid}
+          <line x1="0" y1="${ih}" x2="${iw}" y2="${ih}" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+          <polyline points="${ptsStr}" fill="none" stroke="var(--accent)" stroke-width="1.5"
+                    stroke-linejoin="round" stroke-linecap="round" opacity="0.85"/>
+          ${dots}
+          ${yLabels}
+          ${xLabels}
+        </g>
+      </svg>
+      <div class="tchart-tooltip" id="${chartId}-tt" style="display:none"></div>
+    </div>
+    ${opts.subtitle ? `<div class="tchart-sub">${_cmpEsc(opts.subtitle)}</div>` : ''}
+  </div>`;
+}
+
+// Tooltip handler — finds the nearest dot to the cursor and shows its label.
+function _cmplistTchartHover(event, chartId){
+  const wrap = document.getElementById(chartId);
+  if (!wrap) return;
+  const svg  = wrap.querySelector('svg');
+  const tt   = document.getElementById(chartId + '-tt');
+  if (!svg || !tt) return;
+  const dots = wrap.querySelectorAll('.tchart-dot');
+  if (!dots.length) return;
+  const rect = svg.getBoundingClientRect();
+  const x = event.clientX - rect.left;
+  // Find nearest dot by horizontal distance
+  let best = null, bestDx = Infinity;
+  dots.forEach(dot => {
+    const dx = +dot.getAttribute('data-x');
+    // SVG coords mapped to screen — approximate via viewBox ratio
+    const svgW = svg.viewBox.baseVal.width;
+    const scale = rect.width / svgW;
+    const marginL = 56 * scale;
+    const screenX = marginL + dx * scale;
+    const delta = Math.abs(x - screenX);
+    if (delta < bestDx) { bestDx = delta; best = dot; }
+  });
+  if (!best) { tt.style.display = 'none'; return; }
+  tt.textContent = best.getAttribute('data-label') || '';
+  tt.style.display = 'block';
+  tt.style.left = (event.clientX - rect.left + 12) + 'px';
+  tt.style.top  = (event.clientY - rect.top  - 28) + 'px';
+}
+function _cmplistTchartLeave(chartId){
+  const tt = document.getElementById(chartId + '-tt');
+  if (tt) tt.style.display = 'none';
+}
+
 // Inline SVG sparkline — thin line (Bloomberg-style).
 function _cmplistSparkline(series, w=90, h=18){
   const vals = series.filter(v => v != null);
@@ -12962,17 +13621,43 @@ function _cmplistSparkline(series, w=90, h=18){
 }
 
 function _cmplistDeltas(series){
-  // Δ y/y: last value vs 2nd-to-last
-  // Δ 5y: last value vs last−5 (nominal — add a deflator pass in Phase 2)
+  // Δ y/y: last non-null vs the immediate prior non-null year.
+  // Δ 5y: ONLY computed when the 5-year window is methodologically stable —
+  //       that is, no single-year jump exceeds ±40%. This suppresses artifacts
+  //       from OSCAR I→II reclassifications (2019→2020), NHS Provider Sector
+  //       carve-out (2022), BEIS split into DESNZ/DSIT/DBT (2023), etc., which
+  //       otherwise produce absurd deltas like DoH's "-38% in 5 years" (actually
+  //       the same money re-booked into a new tree branch).
   const n = series.length;
   const last = series[n - 1];
   const prev = series[n - 2];
-  const fiveBack = series[n - 6] ?? series.find(v => v != null);
+
   const yoy = (last != null && prev != null && prev > 0)
     ? ((last - prev) / prev) * 100 : null;
-  const fiveYr = (last != null && fiveBack != null && fiveBack > 0)
-    ? ((last - fiveBack) / fiveBack) * 100 : null;
-  return { yoy, fiveYr };
+
+  // Walk backwards from the last value, stopping at the first "methodology
+  // shift" (a year-on-year ratio outside [0.6, 1.6]). This gives us the length
+  // of the stable-comparable run ending at the most recent year.
+  let stableYears = 1;
+  let cursor = last;
+  for (let i = n - 2; i >= 0; i--) {
+    const v = series[i];
+    if (v == null || v <= 0 || cursor == null || cursor <= 0) break;
+    const r = cursor / v;      // how the next year compares to this one
+    if (r > 1.6 || r < 0.6) break;   // methodology shift detected — stop
+    stableYears++;
+    cursor = v;
+  }
+
+  // Only compute 5y (actually 4y since we start counting at last year)
+  // when we have >=5 consecutive stable years.
+  let fiveYr = null;
+  if (stableYears >= 5 && last != null && last > 0) {
+    const back = series[n - 5];  // 4 years prior to last
+    if (back != null && back > 0) fiveYr = ((last - back) / back) * 100;
+  }
+
+  return { yoy, fiveYr, stableYears };
 }
 
 function toggleCompareColumn(){
@@ -13054,6 +13739,904 @@ function _cmplistFmt(v, country){
 const _CMPLIST_FLAGS = {uk:'🇬🇧', us:'🇺🇸', de:'🇩🇪', fr:'🇫🇷'};
 const _CMPLIST_LABELS = {uk:'United Kingdom', us:'United States', de:'Germany', fr:'France'};
 
+// ─────────────────────────────────────────────────────────────────────────
+// Node enrichment loader — lazy-loads two files:
+//   1. /data/uk/program_enrichment.json (compact: {y, d, b} — 779 entries)
+//   2. /data/uk/enrichment_top50.json   (rich: description + beneficiaries
+//      + legal_basis + notes + oscar_category + created + rank — 651 entries)
+// Both are keyed by node name (either the raw OSCAR tree name OR the
+// plain-English programme name — we try the raw first and fall back to
+// the prettified name, then to any enrichment key whose lowercase+alphanum
+// normalisation matches).
+// ─────────────────────────────────────────────────────────────────────────
+window._cmplistEnrichment = window._cmplistEnrichment || {
+  compact: null,        // { rawName: {y, d, b} }          from program_enrichment.json
+  rich: null,           // { rawName: {rank, department, oscar_category, ...} }  from enrichment_top50.json
+  extended: null,       // { rawName: {description, key_stats[], sources[], notes, ...} }  from node_enrichment_extended.json
+  populations: null,    // { normName: {gss, pop} }        from ons/gss_population_mid2023.json
+  normIndex: null,      // { normKey: rawName } — for fuzzy fallback
+  loaded: false,
+  loading: null,
+};
+async function _cmplistLoadEnrichment(){
+  const S = window._cmplistEnrichment;
+  if (S.loaded) return;
+  if (S.loading) return S.loading;
+  const norm = s => String(s||'').toLowerCase().replace(/[^a-z0-9]/g,'');
+  S.loading = Promise.all([
+    fetch('/data/uk/program_enrichment.json').then(r => r.ok ? r.json() : {}).catch(() => ({})),
+    fetch('/data/uk/enrichment_top50.json').then(r => r.ok ? r.json() : []).catch(() => ([])),
+    fetch('/data/uk/node_enrichment_extended.json').then(r => r.ok ? r.json() : {entries:{}}).catch(() => ({entries:{}})),
+    fetch('/data/uk/ons/gss_population_mid2023.json').then(r => r.ok ? r.json() : {populations:{}}).catch(() => ({populations:{}})),
+  ]).then(([compact, richList, ext, popFile]) => {
+    S.compact = compact || {};
+    // richList is a List of entries. Index by name.
+    const rich = {};
+    for (const e of (richList || [])) {
+      if (e && e.name) rich[e.name] = e;
+    }
+    S.rich = rich;
+    S.extended = (ext && ext.entries) || {};
+    // Register aliases — each entry's `aliases` array points alternative raw tree
+    // names to the same enrichment content. Surfaces entries whose primary key
+    // doesn't match the tree's OSCAR naming (e.g. "HS2" → tree's "High Speed 2").
+    //
+    // Alias format supports TWO shapes:
+    //   "Simple string"                         → unscoped alias (matches any tree
+    //                                               node with that name)
+    //   {name: "Transport", parent: "GLA"}      → SCOPED alias (matches only when
+    //                                               the clicked node's immediate
+    //                                               parent is "GLA"). Used to allow
+    //                                               generic names (e.g. "Transport")
+    //                                               without polluting unrelated nodes.
+    const aliasMap = {};
+    const scopedAliasMap = {};  // key: "parent||name" → entry
+    for (const [primaryKey, entry] of Object.entries(S.extended)) {
+      const aliases = (entry && entry.aliases) || [];
+      for (const alias of aliases) {
+        if (!alias) continue;
+        if (typeof alias === 'string') {
+          if (!S.extended[alias]) aliasMap[alias] = entry;
+        } else if (typeof alias === 'object' && alias.name && alias.parent) {
+          scopedAliasMap[alias.parent + '||' + alias.name] = entry;
+        }
+      }
+    }
+    Object.assign(S.extended, aliasMap);
+    S.scopedAliases = scopedAliasMap;
+    // Build a name→population lookup from ONS data, keyed by normalised name.
+    const pops = {};
+    const rawPops = (popFile && popFile.populations) || {};
+    for (const gss of Object.keys(rawPops)) {
+      const entry = rawPops[gss];
+      if (entry && entry.name && entry.population) {
+        pops[norm(entry.name)] = { gss, pop: entry.population, name: entry.name };
+        // Also register common suffixes the tree uses (e.g. "Kent CC" for "Kent")
+        pops[norm(entry.name + ' CC')] = { gss, pop: entry.population, name: entry.name };
+        pops[norm(entry.name + ' Council')] = { gss, pop: entry.population, name: entry.name };
+      }
+    }
+    S.populations = pops;
+    // Build normalised index for fuzzy fallback — union of all three key spaces.
+    const idx = {};
+    for (const k of Object.keys(S.compact  || {})) idx[norm(k)] = k;
+    for (const k of Object.keys(S.rich     || {})) idx[norm(k)] = k;
+    for (const k of Object.keys(S.extended || {})) idx[norm(k)] = k;
+    S.normIndex = idx;
+    S.loaded = true;
+    delete S.loading;
+  }).catch(e => {
+    console.warn('[BG] enrichment load failed', e);
+    S.loaded = true;
+    delete S.loading;
+  });
+  return S.loading;
+}
+
+// ─────────────────────────────────────────────────────────────────────────
+// Tier C — Procedural enrichment for nodes without hand-curated entries.
+// Generates a contextually-rich card FROM EXISTING TREE DATA for:
+//   • Individual councils (pop + per-head + tier comparator)
+//   • Council-service leaves (Adult Social Care, etc.)
+//   • NHS trust cost lines (Staff Costs / Clinical Supplies)
+// Uses _top_suppliers + ancestor walk + ONS populations.
+// ─────────────────────────────────────────────────────────────────────────
+function _cmplistLookupPopulation(name){
+  const S = window._cmplistEnrichment;
+  if (!S || !S.populations) return null;
+  const norm = s => String(s||'').toLowerCase().replace(/[^a-z0-9]/g,'');
+  const k = norm(name);
+  if (S.populations[k]) return S.populations[k];
+  // Try stripping common suffixes
+  const stripped = name.replace(/\b(CC|MBC|UA|Borough|City|District|County|Council|Corporation)\b/gi, '').trim();
+  return S.populations[norm(stripped)] || null;
+}
+
+// Is this node a COUNCIL (as opposed to a service line or tier root)?
+// Heuristic: parent is a LG tier AND node has children that look like MHCLG service categories.
+function _cmplistIsCouncilNode(node, ancestors){
+  if (!node || !ancestors || ancestors.length < 2) return false;
+  const lgTier = ['Shire Counties','London Boroughs','Metropolitan Districts',
+                  'Unitary Authorities','Shire Districts','Other Authorities'];
+  const parentName = ancestors[ancestors.length - 1]?.name || '';
+  return lgTier.includes(parentName);
+}
+
+// Is this node a COUNCIL SERVICE LEAF (e.g. "Adult Social Care" under "Hillingdon")?
+function _cmplistIsCouncilServiceNode(node, ancestors){
+  if (!node || !ancestors || ancestors.length < 3) return false;
+  // Direct parent is a council; grandparent is a LG tier
+  const gpName = ancestors[ancestors.length - 2]?.name || '';
+  const tiers = ['Shire Counties','London Boroughs','Metropolitan Districts',
+                 'Unitary Authorities','Shire Districts','Other Authorities'];
+  return tiers.includes(gpName);
+}
+
+// MHCLG service category descriptors (shown as the "what this is" lede)
+const UK_COUNCIL_SERVICE_DESC = {
+  'Adult Social Care': "Means-tested care for adults (older people, working-age disabled, mental-health). Typically 40–45% of a council's non-schools budget — the biggest single pressure. Mostly commissioned from private/voluntary providers.",
+  "Children's Social Care": "Safeguarding, child protection, looked-after children, care leavers, fostering, adoption. Cost driver = residential placements (avg £5,600/week; complex cases £10–25k/week). ~14% of LAC in residential consume ~45% of placement spend.",
+  'Public Health': "Ring-fenced grant funded services — sexual health, drugs/alcohol treatment, stop-smoking, 0–5 health visiting, obesity. Grant cut ~24% in real terms 2015–2023 (Health Foundation).",
+  'Education': "Locally-managed school funding that hasn't gone direct to academy trusts, plus Education Welfare, Music Hubs, home-to-school transport, pupil referral units, adult and community learning.",
+  'Housing': "Homelessness prevention and temporary accommodation duties under Housing Act 1996 Part 7. TA costs exploded since 2020 — 117,450 households in TA at March 2024 (all-time high).",
+  'Transport': "Local roads, concessionary fares (ENCTS), bus subsidies, school transport, traffic management, public rights of way.",
+  'Environment': "Waste collection + disposal (different tiers), recycling, street cleaning, parks, food standards, regulatory services.",
+  'Culture': "Libraries, museums, galleries, sport, leisure centres, community centres. Discretionary spend — first to be cut.",
+  'Planning': "Development management (applications), local-plan preparation, enforcement, building control.",
+  'Police': "Council's share of policing precept — but most police funding flows separately via Home Office grant + PCC precept.",
+  'Fire & Rescue': "Fire authorities are separate bodies in most areas; this is any council-level fire spend where the council is itself the fire authority (e.g. GLA, shire counties with combined fire).",
+  'Central Services': "Council tax & business rates admin, revenues & benefits processing, corporate overhead, democratic services.",
+  'Other Services': "Everything not fitting the other 12 categories — trading-standards, coroners, registrars, economic development, etc.",
+};
+
+// Generate a Tier-C enrichment card for a council node.
+function _cmplistProceduralCouncilCard(node, ancestors, root){
+  const popEntry = _cmplistLookupPopulation(node.name);
+  const tierParent = ancestors[ancestors.length - 1];
+  const siblings = (tierParent && tierParent.children) || [];
+
+  let stats = [];
+  if (popEntry) {
+    stats.push({ label: 'Population (mid-2023)', value: popEntry.pop.toLocaleString('en-GB') });
+    if (node.value) {
+      const perHead = node.value / popEntry.pop;
+      stats.push({ label: 'Net spend per resident', value: '£' + Math.round(perHead).toLocaleString('en-GB') });
+    }
+    stats.push({ label: 'ONS GSS code', value: popEntry.gss });
+  }
+  // Rank in tier by size
+  if (siblings.length > 1) {
+    const sorted = [...siblings].sort((a,b) => (b.value||0) - (a.value||0));
+    const idx = sorted.findIndex(c => c === node);
+    if (idx >= 0) stats.push({ label: 'Rank in tier', value: `${idx+1} of ${siblings.length} ${_cmplistPrettyName(tierParent.name)}` });
+  }
+  // Top supplier
+  if (node._top_suppliers && node._top_suppliers.suppliers && node._top_suppliers.suppliers.length) {
+    const top = node._top_suppliers.suppliers[0];
+    stats.push({ label: 'Top recipient (payments)', value: `${top.name} · £${(top.amount/1e6).toFixed(1)}M` });
+    if (node._top_suppliers.suppliers_count) {
+      stats.push({ label: 'Suppliers in register', value: node._top_suppliers.suppliers_count.toLocaleString('en-GB') });
+    }
+    if (node._top_suppliers.spend_total) {
+      stats.push({ label: 'Supplier spend covered', value: _cmplistFmt(node._top_suppliers.spend_total, 'uk') });
+    }
+  }
+  // Tier-average £/head comparator
+  if (popEntry && siblings.length > 2) {
+    const pops = siblings.map(s => {
+      const p = _cmplistLookupPopulation(s.name);
+      return p && p.pop ? { v: (s.value||0) / p.pop, name: s.name } : null;
+    }).filter(x => x && x.v > 0);
+    if (pops.length > 2) {
+      const avg = pops.reduce((a,b) => a + b.v, 0) / pops.length;
+      const myV = (node.value || 0) / popEntry.pop;
+      const diff = myV - avg;
+      const pct = (diff / avg * 100);
+      stats.push({
+        label: 'vs. tier avg per head',
+        value: (pct >= 0 ? '+' : '') + pct.toFixed(0) + '% (tier avg £' + Math.round(avg).toLocaleString('en-GB') + ')',
+      });
+    }
+  }
+
+  if (!stats.length) return '';
+
+  const desc = `Principal council in the "${_cmplistPrettyName(tierParent.name)}" tier. Spending covers the services the council is statutorily responsible for, funded from council tax, retained business rates, central grants and fees. The top-supplier list below shows the largest recipients of cheques written from this budget.`;
+
+  return `<div class="detail-enrich detail-enrich-procedural">
+    <div class="detail-enrich-title">
+      <span class="detail-enrich-dot"></span>
+      About this council · auto-generated from our data
+    </div>
+    <div class="detail-enrich-desc">${_cmpEsc(desc)}</div>
+    <div class="detail-enrich-stats detail-enrich-stats-grid">
+      ${stats.map(s => `<div class="detail-enrich-stat">
+        <div class="detail-enrich-stat-label">${_cmpEsc(s.label)}</div>
+        <div class="detail-enrich-stat-val">${_cmpEsc(s.value)}</div>
+      </div>`).join('')}
+    </div>
+  </div>`;
+}
+
+// Generate a Tier-C enrichment card for a council-service leaf.
+function _cmplistProceduralServiceCard(node, ancestors, root){
+  const council = ancestors[ancestors.length - 1];
+  const tier = ancestors[ancestors.length - 2];
+  const popEntry = _cmplistLookupPopulation(council && council.name);
+  const tier13 = Object.keys(UK_COUNCIL_SERVICE_DESC);
+
+  // Service description
+  const matchedService = tier13.find(s =>
+    String(node.name||'').toLowerCase().trim() === s.toLowerCase() ||
+    String(node.name||'').toLowerCase().includes(s.toLowerCase())
+  );
+  const desc = matchedService
+    ? UK_COUNCIL_SERVICE_DESC[matchedService]
+    : `A service line within ${_cmplistPrettyName(council?.name || 'this council')}. Spending is auto-classified by our classifier into one of 13 MHCLG service categories.`;
+
+  const stats = [];
+  if (popEntry && node.value) {
+    const perHead = node.value / popEntry.pop;
+    stats.push({ label: 'Per resident', value: '£' + Math.round(perHead).toLocaleString('en-GB') });
+    stats.push({ label: 'Council population', value: popEntry.pop.toLocaleString('en-GB') });
+  }
+  // Tier comparator — avg £/head for this service across tier siblings
+  if (popEntry && tier && tier.children && tier.children.length > 3) {
+    const sameService = [];
+    for (const peer of tier.children) {
+      if (peer === council) continue;
+      const peerPop = _cmplistLookupPopulation(peer.name);
+      if (!peerPop) continue;
+      const peerSvc = (peer.children||[]).find(c =>
+        String(c.name||'').toLowerCase() === String(node.name||'').toLowerCase()
+      );
+      if (peerSvc && peerSvc.value) {
+        sameService.push(peerSvc.value / peerPop.pop);
+      }
+    }
+    if (sameService.length > 2) {
+      const avg = sameService.reduce((a,b) => a+b, 0) / sameService.length;
+      const mine = node.value / popEntry.pop;
+      const pct = ((mine - avg) / avg * 100);
+      stats.push({
+        label: 'vs. tier avg',
+        value: (pct >= 0 ? '+' : '') + pct.toFixed(0) + '% (avg £' + Math.round(avg).toLocaleString('en-GB') + '/head)',
+      });
+    }
+  }
+  // Suppliers
+  if (node._top_suppliers && node._top_suppliers.suppliers && node._top_suppliers.suppliers.length) {
+    const top = node._top_suppliers.suppliers[0];
+    stats.push({ label: 'Top recipient', value: `${top.name} · £${(top.amount/1e6).toFixed(1)}M (${(top.pct||0).toFixed(0)}%)` });
+    if (node._top_suppliers.suppliers_count)
+      stats.push({ label: 'Suppliers registered', value: node._top_suppliers.suppliers_count.toLocaleString('en-GB') });
+    // Concentration: top-3 share
+    if (node._top_suppliers.suppliers.length >= 3) {
+      const top3 = node._top_suppliers.suppliers.slice(0, 3).reduce((a,b) => a + (b.pct||0), 0);
+      stats.push({ label: 'Top-3 concentration', value: top3.toFixed(0) + '% of registered spend' });
+    }
+  }
+  // Top purposes
+  if (node._top_suppliers && node._top_suppliers.top_purposes && node._top_suppliers.top_purposes.length) {
+    const top_p = node._top_suppliers.top_purposes.slice(0, 3);
+    stats.push({ label: 'Top purposes', value: top_p.map(p => p.purpose || p).filter(Boolean).slice(0, 3).join(' · ') });
+  }
+
+  if (!stats.length) return '';
+
+  return `<div class="detail-enrich detail-enrich-procedural">
+    <div class="detail-enrich-title">
+      <span class="detail-enrich-dot"></span>
+      About this service line · auto-generated from our data
+    </div>
+    <div class="detail-enrich-desc">${_cmpEsc(desc)}</div>
+    <div class="detail-enrich-stats detail-enrich-stats-grid">
+      ${stats.map(s => `<div class="detail-enrich-stat">
+        <div class="detail-enrich-stat-label">${_cmpEsc(s.label)}</div>
+        <div class="detail-enrich-stat-val">${_cmpEsc(s.value)}</div>
+      </div>`).join('')}
+    </div>
+  </div>`;
+}
+
+// ─────────────────────────────────────────────────────────────────────────
+// Tier D — Universal contextual fallback. Runs when nothing else matched.
+// Every single node in the tree gets this as a safety net. Produces:
+//   • Ancestor chain summary
+//   • Sibling context (rank + neighbours)
+//   • A one-line observation ("concentrated with X" / "biggest of tier")
+// ─────────────────────────────────────────────────────────────────────────
+function _cmplistContextualFallback(node, path, root){
+  if (path.length === 0) return ''; // root handled elsewhere
+  const parent = _cmplistFindParent(root, path);
+  if (!parent) return '';
+  const siblings = parent.children || [];
+  const sorted = [...siblings].sort((a,b) => (b.value||0) - (a.value||0));
+  const idx = sorted.findIndex(c => c === node);
+  if (idx < 0) return '';
+
+  // Build ancestor chain
+  const ancNames = _cmplistAncestorNames(root, path).map(n => _cmplistPrettyName(n));
+  const parentPretty = _cmplistPrettyName(parent.name || root.name || 'UK Public Spending');
+
+  // Observations
+  const observations = [];
+  const mine = node.value || 0;
+  const total = siblings.reduce((a,c) => a + (c.value||0), 0);
+  const share = total > 0 ? (mine / total * 100) : 0;
+  if (idx === 0 && siblings.length > 3)
+    observations.push(`The <b>biggest single line</b> within ${_cmpEsc(parentPretty)} — it alone accounts for ${share.toFixed(1)}% of the parent total.`);
+  else if (idx < 3 && share >= 25)
+    observations.push(`Ranks <b>${_cmplistRank(node, parent)}</b> and consumes ${share.toFixed(1)}% of ${_cmpEsc(parentPretty)}'s total.`);
+  else if (share < 1 && siblings.length > 10)
+    observations.push(`A small (<1%) line of ${_cmpEsc(parentPretty)} — useful mainly when aggregated with its ${siblings.length - 1} peers.`);
+
+  // Neighbour context
+  let neighbourHtml = '';
+  if (siblings.length > 2 && idx >= 0) {
+    const neighbours = [];
+    if (idx > 0) neighbours.push({ label: '↑ larger', node: sorted[idx - 1] });
+    if (idx < sorted.length - 1) neighbours.push({ label: '↓ smaller', node: sorted[idx + 1] });
+    if (neighbours.length) {
+      neighbourHtml = `<div class="detail-enrich-neighbours">
+        ${neighbours.map(n => `<div><span class="detail-enrich-n-arrow">${n.label}</span>
+          <span class="detail-enrich-n-name">${_cmpEsc(_cmplistPrettyName(n.node.name || '?')).slice(0, 40)}</span>
+          <span class="detail-enrich-n-val">${_cmplistFmt(n.node.value||0, 'uk')}</span></div>`).join('')}
+      </div>`;
+    }
+  }
+
+  if (!observations.length && !neighbourHtml && !ancNames.length) return '';
+
+  // Description
+  const desc = ancNames.length > 0
+    ? `A line within <b>${_cmpEsc(ancNames.slice(-2).join(' › '))}</b> — part of the UK public-spending tree.`
+    : `A top-level spending line in the UK public-spending tree.`;
+
+  return `<div class="detail-enrich detail-enrich-fallback">
+    <div class="detail-enrich-title">
+      <span class="detail-enrich-dot"></span>
+      Context · how this line fits
+    </div>
+    <div class="detail-enrich-desc">${desc}</div>
+    ${observations.length ? `<div class="detail-enrich-notes">
+      <div class="detail-enrich-notes-label">Observation</div>
+      <div class="detail-enrich-notes-body">${observations.join(' ')}</div>
+    </div>` : ''}
+    ${neighbourHtml}
+  </div>`;
+}
+// Find an enrichment record for a given tree node name.
+// Strategy: exact raw → exact prettified → normalised fallback.
+function _cmplistLookupEnrichment(rawName, parentName){
+  const S = window._cmplistEnrichment;
+  if (!S.loaded || !rawName) return null;
+  const pretty = (typeof _cmplistPrettyName === 'function') ? _cmplistPrettyName(rawName) : rawName;
+  const norm = s => String(s||'').toLowerCase().replace(/[^a-z0-9]/g,'');
+  // PARENT-SCOPED alias check first — if an entry declared a scoped alias
+  // {name, parent} that matches the current node's immediate parent, prefer it.
+  // This lets generic names like "Transport" route correctly only under "GLA"
+  // without polluting the 199 other "Transport" nodes in the tree.
+  if (parentName && S.scopedAliases) {
+    for (const k of [rawName, pretty]) {
+      const hit = S.scopedAliases[parentName + '||' + k];
+      if (hit) {
+        return { extended: hit, rich: null, compact: null, matchedBy: 'scoped-alias' };
+      }
+    }
+  }
+  // Try exact raw then pretty across all three layers
+  for (const k of [rawName, pretty]) {
+    const ext  = S.extended && S.extended[k];
+    const rich = S.rich && S.rich[k];
+    const comp = S.compact && S.compact[k];
+    if (ext || rich || comp) {
+      return { extended: ext || null, rich: rich || null, compact: comp || null,
+               matchedBy: k === rawName ? 'raw' : 'pretty' };
+    }
+  }
+  // Normalised fallback
+  const key = S.normIndex[norm(rawName)] || S.normIndex[norm(pretty)];
+  if (key) {
+    return {
+      extended: (S.extended && S.extended[key]) || null,
+      rich:     (S.rich     && S.rich[key])     || null,
+      compact:  (S.compact  && S.compact[key])  || null,
+      matchedBy: 'fuzzy',
+    };
+  }
+  return null;
+}
+
+// ─────────────────────────────────────────────────────────────────────────
+// Name prettifier — turn OSCAR/COFOG database strings into readable English
+// ─────────────────────────────────────────────────────────────────────────
+// The UK tree comes straight from HM Treasury OSCAR II with names that are
+// fine for auditors but awful for citizens:
+//   "DEPARTMENT FOR WORK AND PENSIONS"                 → "Department for Work and Pensions"
+//   "10.2 Old age; of which: pensions"                 → "Old-age pensions"
+//   "9.1 of which: primary education"                  → "Primary education"
+//   "4.3 Fuel and energy"                              → "Fuel and energy (COFOG 4.3)"
+//   "HM REVENUE AND CUSTOMS"                           → "HM Revenue and Customs"   (HM preserved)
+// Used only for display; the raw name is still used for history/key matching.
+const _UK_NAME_ACRONYMS = new Set([
+  'HM','UK','EU','NHS','BBC','NCA','CPS','HMRC','MOD','MOJ','DWP','DFE','DFT',
+  'DHSC','DCMS','DBT','DSIT','FCDO','DEFRA','DESNZ','MHCLG','HMT','ICB','IPSA',
+  'PCC','HQ','IT','R&D','AI','GDP','VAT','NI','CT','UBI','WFS','SPN','GLA','GMP','II',
+]);
+function _cmplistPrettyName(raw){
+  if (!raw) return '';
+  let s = String(raw).trim();
+  // OSCAR placeholder cleanup — the raw tree contains "n/a" and "Not known"
+  // as aggregator labels for spending the Treasury classification couldn't
+  // place in a specific category. Show them as "Other (unclassified)" to
+  // avoid users thinking "n/a" is a real programme.
+  const sLower = s.toLowerCase();
+  if (sLower === 'n/a' || sLower === 'not known' || sLower === 'unclassified') {
+    return 'Other (unclassified)';
+  }
+  // COFOG strip — "10.2 Old age; of which: pensions" → "Old-age pensions"
+  const cofogMatch = s.match(/^(\d+\.[A-Za-z0-9]+)\s+(.+)$/);
+  let cofogCode = null;
+  if (cofogMatch) {
+    cofogCode = cofogMatch[1];
+    s = cofogMatch[2];
+  }
+  // "<cat>; of which: <specific>" → use the specific, drop the cat
+  const semiMatch = s.match(/^(.+?);\s*of which:\s*(.+)$/i);
+  if (semiMatch) s = semiMatch[2];
+  // "of which: X" alone → "X"
+  s = s.replace(/^of which:\s*/i, '');
+  // "n.e.c." → "(other)"
+  s = s.replace(/\bn\.e\.c\.\b/gi, '(other)');
+  // Title-case if the string is >80% uppercase (a full-caps dept name)
+  const alpha = s.replace(/[^A-Za-z]/g,'');
+  if (alpha.length > 3 && alpha === alpha.toUpperCase()) {
+    s = s.toLowerCase().replace(/\b([a-z])/g, (m,c) => c.toUpperCase());
+    // Preserve known acronyms
+    s = s.split(/(\s+|[:()'])/).map(tok => {
+      const up = tok.toUpperCase();
+      return _UK_NAME_ACRONYMS.has(up) ? up : tok;
+    }).join('');
+    // Small conjunctions lowercased
+    s = s.replace(/\b(And|Of|For|The|In|To|Or|A|An|As|By|On)\b/g, m => m.toLowerCase());
+    // First char always cap
+    s = s.charAt(0).toUpperCase() + s.slice(1);
+  }
+  // Final polish — capitalize first letter after punctuation
+  s = s.charAt(0).toUpperCase() + s.slice(1);
+  // Capitalize after em-dash
+  s = s.replace(/—\s+([a-z])/g, (m,c) => '— ' + c.toUpperCase());
+  return s;
+}
+
+// Build a short caption explaining which COFOG group a node sits in — used
+// as a subtitle under names that had a code stripped.
+function _cmplistCofogLabel(raw){
+  const m = String(raw||'').match(/^(\d+)\.([A-Za-z0-9]+)\s/);
+  if (!m) return '';
+  const g1 = {
+    '01':'General Public Services','02':'Defence','03':'Public Order & Safety',
+    '04':'Economic Affairs','05':'Environmental Protection','06':'Housing & Community',
+    '07':'Health','08':'Recreation, Culture & Religion','09':'Education',
+    '10':'Social Protection',
+  };
+  const key = m[1].padStart(2,'0');
+  const label = g1[key];
+  if (!label) return '';
+  return `COFOG ${m[1]}.${m[2]} · ${label}`;
+}
+
+// ─────────────────────────────────────────────────────────────────────────
+// Department explainers — one plain-English sentence per top-level dept.
+// Shown as a lede under the hero. Hand-curated; priority = the 30 biggest.
+// Keyed by the RAW tree name (before prettification) so lookup is exact.
+// ─────────────────────────────────────────────────────────────────────────
+const UK_DEPT_EXPLAINERS = {
+  'DEPARTMENT FOR WORK AND PENSIONS':
+    "Pays the State Pension (~£125B), Universal Credit, disability and carer benefits, and all working-age support. Roughly £1 in every £5 of UK public spending flows through DWP.",
+  'DEPARTMENT FOR EDUCATION':
+    "Funds schools, teacher pensions, further + higher education (via Student Loans), apprenticeships and skills. Most spend reaches schools via local authorities.",
+  'NHS Provider Sector':
+    "The 206 NHS trusts that actually deliver care — acute hospitals, mental-health, community and ambulance trusts. Data comes from each trust's audited annual accounts (NHS TAC).",
+  'DEPARTMENT OF HEALTH':
+    "DHSC's commissioning arm (NHS England) plus central DH functions — public health, social-care reform, pandemic preparedness. The NHS Provider Sector sits separately.",
+  'Local Government (England)':
+    "England's 353 councils plus 40 police & 30 fire authorities. Funded ~42% by council tax, ~30% by central grants, the rest by fees and business rates.",
+  'MINISTRY OF DEFENCE':
+    "Armed Forces, equipment, the nuclear deterrent renewal and service pensions. Rose sharply from 2022 onwards under Ukraine commitments and NATO 2% floor.",
+  'HM TREASURY':
+    "HMT's own operating budget plus the UK's debt-interest bill and arm's-length bodies (OBR, GAD). Not the Consolidated Fund — that's a distinct accounting concept.",
+  'SCOTTISH GOVERNMENT':
+    "Scotland's devolved spending — NHS Scotland, schools, councils, transport, police, justice. Funded mainly by the Barnett-formula block grant from HMT.",
+  'HM REVENUE AND CUSTOMS':
+    "Collects ~£850B in tax receipts; administers Child Benefit and Tax Credits (phasing into Universal Credit). About 0.6% of receipts goes on running HMRC itself.",
+  'DEPARTMENT FOR TRANSPORT':
+    "Rail subsidies (Network Rail, HS2, GB Railways), strategic roads (National Highways), aviation regulation, active travel, buses outside London.",
+  'MINISTRY OF HOUSING, COMMUNITIES AND LOCAL GOVERNMENT':
+    "Pays grants to English councils (Revenue Support Grant, Levelling Up funds), runs housing programmes and oversees local-authority finance + planning.",
+  'NORTHERN IRELAND EXECUTIVE':
+    "Block-grant spending for Northern Ireland's devolved administration — NHS NI, schools, Invest NI, transport.",
+  'NORTHERN IRELAND OFFICE':
+    "The UK-government's liaison with Northern Ireland. Small department that channels NI-wide programmes not covered by the NI Executive.",
+  'DEPARTMENT FOR ENERGY SECURITY AND NET ZERO':
+    "Split from BEIS in 2023. Runs Energy Bills Support, nuclear decommissioning (NDA), Contracts-for-Difference renewables and net-zero strategy.",
+  'WALES OFFICE':
+    "UK-government's Wales liaison. Channels the Welsh block grant; actual Welsh spending sits under Welsh Assembly Government.",
+  'HOME OFFICE':
+    "Police grants (outside London), Border Force, the asylum system, counter-terrorism policing, drugs policy. Asylum costs ballooned 2022-24.",
+  'CABINET OFFICE':
+    "Central coordination — PM's delivery, national security, civil-service HR, propriety & ethics, Crown Commercial Service.",
+  'MINISTRY OF JUSTICE':
+    "Prisons, probation, courts, legal aid, judicial salaries. One of the most real-terms-squeezed departments since 2010.",
+  'DEPARTMENT FOR SCIENCE, INNOVATION AND TECHNOLOGY':
+    "Research Councils (UKRI), Innovate UK, space, AI strategy. Carved out of BEIS in 2023 to ringfence R&D funding.",
+  'DEPARTMENT FOR CULTURE, MEDIA AND SPORT':
+    "BBC licence fee (net-neutral to HMT), BFI, Arts Council, Sport England, National Lottery distribution framework.",
+  'FOREIGN, COMMONWEALTH AND DEVELOPMENT OFFICE':
+    "UK diplomacy plus the aid budget (ODA). Running around 0.5% of GNI — half the statutory 0.7% target since the 2021 reduction.",
+  'CABINET OFFICE: CIVIL SUPERANNUATION':
+    "Pays pensions to retired civil servants (Principal Civil Service Pension Scheme). An accounting line — the scheme itself has its own actuarial accounts.",
+  "TEACHERS' PENSION SCHEME (ENGLAND AND WALES)":
+    "Pays pensions to retired teachers. Separate from DfE's current-year education spend.",
+  'DEPARTMENT FOR ENVIRONMENT, FOOD AND RURAL AFFAIRS':
+    "Farm payments (replacing EU CAP via ELM schemes), Environment Agency, Natural England, flood defences, food standards.",
+  'ARMED FORCES PENSION AND COMPENSATION SCHEMES':
+    "Pensions + compensation for retired or injured service personnel. Separated from MoD's operating budget for accounting clarity.",
+  'DEPARTMENT FOR BUSINESS AND TRADE':
+    "The other half of former BEIS — Post Office, Companies House, British Business Bank, trade remedies, export promotion.",
+  'ROYAL MAIL STATUTORY PENSION SCHEME':
+    "Statutory obligation taken over from Royal Mail at privatisation (2012). An accounting line covering historic pension liabilities.",
+  'CROWN PROSECUTION SERVICE':
+    "Prosecutes all criminal cases in England & Wales. Funded separately from MoJ despite the obvious overlap.",
+  'NATIONAL CRIME AGENCY':
+    "UK-wide lead on serious and organised crime — cyber, drugs, human trafficking. Operates across police-force boundaries.",
+  "HOUSE OF COMMONS: ADMINISTRATION":
+    "Running costs of Parliament — staff, IT, security, estate. Does NOT include MP salaries or offices (that's 'House of Commons: Members').",
+  "HOUSE OF COMMONS: MEMBERS":
+    "MP salaries, office costs and their staff pay. Scrutinised by IPSA.",
+  "WELSH ASSEMBLY GOVERNMENT":
+    "Welsh devolved spending — NHS Wales, schools, councils, Transport for Wales. Funded by the Barnett-formula block grant.",
+  "SCOTLAND OFFICE AND OFFICE OF THE ADVOCATE GENERAL":
+    "UK-government's Scotland liaison. Small department; Scottish Government itself (~£37B) is a separate tree branch.",
+};
+
+// ─────────────────────────────────────────────────────────────────────────
+// Comparables — anchor values used for "Compare to" callouts
+// ─────────────────────────────────────────────────────────────────────────
+// The user sees raw £ values constantly — 100B means nothing without a
+// reference point. These are hand-picked anchors keyed by approximate £ value
+// (2024 figures). The resolver finds the nearest anchor and produces a line
+// like: "≈ 2× the Ministry of Defence's entire budget".
+const UK_COMPARABLES = [
+  { label: 'Ministry of Defence', value:  71_900_000_000 },
+  { label: 'NHS Provider Sector', value: 130_800_000_000 },
+  { label: 'the State Pension',   value: 125_000_000_000 },
+  { label: 'HMRC tax receipts',   value: 850_000_000_000 },
+  { label: 'UK debt interest',    value: 104_000_000_000 },
+  { label: 'English local gov',   value: 141_700_000_000 },
+  { label: 'the Home Office',     value:  22_000_000_000 },
+  { label: 'FCDO (UK aid + diplomacy)', value: 12_000_000_000 },
+  { label: 'the BBC licence fee', value:  3_700_000_000 },
+  { label: 'HS2',                 value:  66_000_000_000 },
+];
+function _cmplistComparable(value, ownName){
+  if (!value || value < 1e8) return null;   // < £100M — too small for a headline comparable
+  // Exclude comparing a node to itself
+  const anchors = UK_COMPARABLES.filter(a => !ownName || !a.label.toLowerCase().includes(String(ownName).toLowerCase().split(/[\s,]/)[0]));
+  // Pick the anchor with the smallest |log ratio|
+  let best = null, bestScore = Infinity;
+  for (const a of anchors) {
+    const r = value / a.value;
+    if (r <= 0 || !isFinite(r)) continue;
+    const score = Math.abs(Math.log(r));
+    if (score < bestScore) { bestScore = score; best = { a, ratio: r }; }
+  }
+  if (!best) return null;
+  const r = best.ratio;
+  // Build phrase
+  let phrase;
+  if (r >= 0.92 && r <= 1.08) phrase = `About the same as ${best.a.label}`;
+  else if (r >= 1.5)          phrase = `About ${r.toFixed(r >= 10 ? 0 : 1)}× ${best.a.label}`;
+  else if (r >= 0.3)          phrase = `About ${Math.round(r * 100)}% of ${best.a.label}`;
+  else if (r >= 0.05)         phrase = `About ${(r * 100).toFixed(1)}% of ${best.a.label}`;
+  else                        return null; // too small to relate
+  return phrase;
+}
+
+// Rank chip — "3rd largest of 16" — given a node and its parent.
+function _cmplistRank(node, parent){
+  if (!parent || !parent.children || parent.children.length < 2) return null;
+  const sibs = parent.children.slice().sort((a,b) => (b.value||0) - (a.value||0));
+  const idx = sibs.findIndex(c => c === node);
+  if (idx < 0) return null;
+  const total = sibs.length;
+  if (idx === 0) return `largest of ${total}`;
+  if (idx === 1) return `2nd largest of ${total}`;
+  if (idx === 2) return `3rd largest of ${total}`;
+  if (idx === total - 1) return `smallest of ${total}`;
+  return `${idx + 1}th of ${total}`;
+}
+function _cmplistFindParent(root, pathArr){
+  if (!pathArr.length) return null;
+  let walker = root;
+  for (let i = 0; i < pathArr.length - 1; i++) {
+    walker = (walker.children||[])[pathArr[i]];
+    if (!walker) return null;
+  }
+  return walker;
+}
+
+// ─────────────────────────────────────────────────────────────────────────
+// Related insights — match a node's ancestor path to insight keywords
+// ─────────────────────────────────────────────────────────────────────────
+// Hand-curated mapping: ancestor name (or substring) → insight id in _index.
+// Shown as a clickable chip that jumps to the Insights tab deep-linked.
+const UK_INSIGHT_HOOKS = [
+  { match: /debt\s*interest|borrowing|public\s*sector\s*net/i, cat: 'evolution', id: 'psnb_trajectory_2000_2022',          title: 'UK borrowing trajectory 2000–2022' },
+  { match: /pension|old\s*age|state pension/i,                 cat: 'structure', id: 'per_household_borrowing',            title: 'Borrowing per household' },
+  { match: /council tax|band d/i,                              cat: 'councils',  id: 'band_d_distribution_english_2024',   title: 'English Band D distribution 2024' },
+  { match: /local government|local authorit/i,                 cat: 'councils',  id: 'council_central_grant_dependency',   title: 'Council grant dependency' },
+  { match: /scotland|scottish/i,                               cat: 'councils',  id: 'band_d_scotland_vs_england_2024',    title: 'Scotland vs. England council tax' },
+  { match: /nhs|health/i,                                      cat: 'evolution', id: 'dept_real_terms_2017_2024',          title: 'Departments real-terms 2017–2024' },
+  { match: /supplier|procurement|outsourc/i,                   cat: 'recipients',id: 'central_gov_supplier_concentration_2024', title: 'Central-gov supplier concentration' },
+  { match: /hmrc|revenue/i,                                    cat: 'structure', id: 'hmrc_composition_2024_25',           title: 'HMRC composition 2024–25' },
+  { match: /work and pensions|benefit|universal credit/i,      cat: 'evolution', id: 'hmrc_receipts_composition_2005_2024',title: 'Where HMRC gets its £850B' },
+];
+function _cmplistRelatedInsight(ancestorNames, ownName){
+  const hay = ((ancestorNames || []).join(' ') + ' ' + (ownName || '')).toLowerCase();
+  for (const hook of UK_INSIGHT_HOOKS) {
+    if (hook.match.test(hay)) return hook;
+  }
+  return null;
+}
+
+// ─────────────────────────────────────────────────────────────────────────
+// Source attribution — every node, every depth
+// ─────────────────────────────────────────────────────────────────────────
+// The UK tree carries `_source` strings on NHS trust lines (depth 3-4) and
+// on the Local Government / NHS Provider Sector branch roots. Most nodes
+// (DWP lines, dept sub-programmes) have NO explicit _source — we resolve by
+// walking up ancestors, then fall back to branch-specific defaults.
+//
+// Returns: { source, sourceUrl, origin, exp_codes, sta_codes, estimated }
+// `origin` explains whether the attribution is the node's own, inherited
+// from an ancestor, or a branch default.
+const _UK_SOURCE_URLS = {
+  'HMT OSCAR II':          'https://www.gov.uk/government/collections/hmt-oscar-publishing-from-the-database',
+  'HMT PESA 2024':         'https://www.gov.uk/government/collections/public-expenditure-statistical-analyses-pesa',
+  'MHCLG Revenue Outturn (RO5)': 'https://www.gov.uk/government/collections/local-authority-revenue-expenditure-and-financing',
+  'MHCLG RO5':             'https://www.gov.uk/government/collections/local-authority-revenue-expenditure-and-financing',
+  'NHS England TAC 2023/24': 'https://www.england.nhs.uk/financial-accounting-and-reporting/trust-accounts-consolidation-tac-data-publications/',
+  'NHS TAC 2023/24':       'https://www.england.nhs.uk/financial-accounting-and-reporting/trust-accounts-consolidation-tac-data-publications/',
+  'NHS TAC08 2023/24':     'https://www.england.nhs.uk/financial-accounting-and-reporting/trust-accounts-consolidation-tac-data-publications/',
+  'NHS TAC09 2023/24':     'https://www.england.nhs.uk/financial-accounting-and-reporting/trust-accounts-consolidation-tac-data-publications/',
+  'gov.scot Scottish Budget 2024-25': 'https://www.gov.scot/collections/scottish-budget/',
+  'gov.wales Final Budget 2024-25': 'https://www.gov.wales/budget',
+  'finance-ni.gov.uk Budget 2024-25': 'https://www.finance-ni.gov.uk/topics/budget',
+};
+
+// Branch-default resolver — used when no ancestor declares a _source.
+// Keyed by the top-level department NAME (UPPERCASE match as stored).
+function _cmplistBranchDefault(topName){
+  const n = String(topName || '').toUpperCase();
+  if (n.startsWith('LOCAL GOVERNMENT'))
+    return { source: 'MHCLG Revenue Outturn (RO5)',
+             origin: 'MHCLG Local Authority Revenue Outturn 2023-24 (RO5 return)' };
+  if (n.includes('NHS PROVIDER'))
+    return { source: 'NHS England TAC 2023/24',
+             origin: 'NHS England Trust Accounts Consolidation (TAC), financial year 2023-24' };
+  if (n.startsWith('SCOTTISH GOVERNMENT') || n.startsWith('SCOTLAND OFFICE'))
+    return { source: 'gov.scot Scottish Budget 2024-25',
+             origin: 'Scottish Government final Budget 2024-25 via HMT OSCAR II' };
+  if (n.startsWith('WELSH') || n.startsWith('WALES'))
+    return { source: 'gov.wales Final Budget 2024-25',
+             origin: 'Welsh Government Final Budget 2024-25 via HMT OSCAR II' };
+  if (n.startsWith('NORTHERN IRELAND'))
+    return { source: 'finance-ni.gov.uk Budget 2024-25',
+             origin: 'Department of Finance (NI) Budget 2024-25 via HMT OSCAR II' };
+  // Everything else = central gov department, routed through HMT OSCAR II
+  return { source: 'HMT OSCAR II',
+           origin: 'HM Treasury Online System for Central Accounting and Reporting (OSCAR II), 2024-25' };
+}
+
+function _cmplistResolveSource(node, pathArr, root){
+  // 1. Walk from the node up to the root, collecting nearest _source
+  const ancestors = [];
+  let walker = root;
+  ancestors.push(walker);
+  for (const i of pathArr) {
+    walker = (walker.children || [])[i];
+    if (!walker) break;
+    ancestors.push(walker);
+  }
+  // Search nearest-first
+  let resolved = null, origin = 'inherited';
+  for (let i = ancestors.length - 1; i >= 0; i--) {
+    const a = ancestors[i];
+    if (a && a._source) {
+      resolved = a._source;
+      origin = i === ancestors.length - 1
+        ? 'own'
+        : `inherited from ${a.name || 'ancestor'}`;
+      break;
+    }
+  }
+  // 2. Fall back to branch default based on top-level name
+  if (!resolved) {
+    const topName = pathArr.length > 0 && ancestors[1] ? ancestors[1].name : (root.name || '');
+    const d = _cmplistBranchDefault(topName);
+    resolved = d.source;
+    origin = d.origin;
+  }
+  // 3. Build return payload
+  const url = _UK_SOURCE_URLS[resolved] || null;
+  const n = node || {};
+  return {
+    source: resolved,
+    sourceUrl: url,
+    origin,
+    exp_codes: n._exp_codes || null,
+    sta_codes: n._sta_codes || null,
+    estimated: n._estimated_source_year || n._estimated_reason || null,
+  };
+}
+
+// ─────────────────────────────────────────────────────────────────────────
+// Render the rich enrichment card — the "juicy" panel users see on click.
+// Pulls from both compact (program_enrichment.json) and rich
+// (enrichment_top50.json) sources, displaying whatever fields exist.
+// ─────────────────────────────────────────────────────────────────────────
+function _cmplistEnrichmentCard(rawName, parentName){
+  const hit = _cmplistLookupEnrichment(rawName, parentName);
+  if (!hit) return '';
+  const ext  = hit.extended;
+  const rich = hit.rich;
+  const comp = hit.compact;
+
+  // Prefer extended → rich → compact for each field
+  const description   = (ext && ext.description)    || (rich && rich.description)    || (comp && comp.d) || '';
+  const beneficiaries = (ext && ext.beneficiaries)  || (rich && rich.beneficiaries)  || (comp && comp.b) || '';
+  const legal         = (ext && ext.legal_basis)    || (rich && rich.legal_basis)    || '';
+  const notes         = (ext && ext.notes)          || (rich && rich.notes)          || '';
+  // Audit 2026-04-20: `y: 2024` in program_enrichment.json is the LLM-generated
+  // default for most entries (Home Office actually dates from 1782, MoJ from 2007,
+  // etc.) — so treat 2024 as a sentinel "unknown" and suppress it. Keep values
+  // from ext/rich where author hand-set them.
+  let createdY = (ext && ext.created) || (rich && rich.created) || (comp && comp.y);
+  if (createdY === 2024 && !ext) createdY = null;
+  const oscarCat      = (ext && ext.oscar_category) || (rich && rich.oscar_category) || '';
+  const dept          = (ext && ext.department)     || (rich && rich.department)     || '';
+  const keyStats      = (ext && Array.isArray(ext.key_stats)) ? ext.key_stats : null;
+  const sources       = (ext && Array.isArray(ext.sources))   ? ext.sources   : null;
+
+  // If we have literally nothing useful, skip
+  if (!description && !beneficiaries && !notes && !legal && !keyStats) return '';
+
+  let html = `<div class="detail-enrich">
+    <div class="detail-enrich-title">
+      <span class="detail-enrich-dot"></span>
+      About this programme
+    </div>`;
+
+  // Lead description paragraph
+  if (description) {
+    html += `<div class="detail-enrich-desc">${_cmpEsc(description)}</div>`;
+  }
+
+  // Beneficiaries — prominent banner line
+  if (beneficiaries) {
+    html += `<div class="detail-enrich-benefs">
+      <span class="detail-enrich-benefs-label">Who it serves</span>
+      <span class="detail-enrich-benefs-val">${_cmpEsc(beneficiaries)}</span>
+    </div>`;
+  }
+
+  // Key stats grid — the "juicy numbers" layer. Prefer extended key_stats; fall back to derived stats.
+  if (keyStats && keyStats.length) {
+    html += `<div class="detail-enrich-stats detail-enrich-stats-grid">
+      ${keyStats.map(s => `<div class="detail-enrich-stat">
+        <div class="detail-enrich-stat-label">${_cmpEsc(s.label||'')}</div>
+        <div class="detail-enrich-stat-val">${_cmpEsc(s.value||'')}</div>
+      </div>`).join('')}
+    </div>`;
+  } else {
+    // Fallback compact stats for nodes without extended key_stats
+    const stats = [];
+    if (createdY)      stats.push({ label: 'Established', value: String(createdY) });
+    if (oscarCat)      stats.push({ label: 'Budget type', value: oscarCat });
+    if (dept && !/DEPARTMENT|MINISTRY|HM |NHS/i.test(rawName))
+      stats.push({ label: 'Administered by', value: dept });
+    if (stats.length) {
+      html += `<div class="detail-enrich-stats">
+        ${stats.map(s => `<div class="detail-enrich-stat">
+          <div class="detail-enrich-stat-label">${_cmpEsc(s.label)}</div>
+          <div class="detail-enrich-stat-val">${_cmpEsc(s.value)}</div>
+        </div>`).join('')}
+      </div>`;
+    }
+  }
+
+  // Notes paragraph — "why it matters / recent change / controversy"
+  if (notes) {
+    html += `<div class="detail-enrich-notes">
+      <div class="detail-enrich-notes-label">Why it matters</div>
+      <div class="detail-enrich-notes-body">${_cmpEsc(notes)}</div>
+    </div>`;
+  }
+
+  // Legal basis — small footer
+  if (legal) {
+    html += `<div class="detail-enrich-legal">
+      <span class="detail-enrich-legal-label">Legal basis:</span> ${_cmpEsc(legal)}
+    </div>`;
+  }
+
+  // Sources — citations for every number shown above
+  if (sources && sources.length) {
+    html += `<div class="detail-enrich-sources">
+      <div class="detail-enrich-sources-label">Sources</div>
+      <div class="detail-enrich-sources-list">
+        ${sources.map(src => {
+          const pub = _cmpEsc(src.publisher || '');
+          const title = _cmpEsc(src.title || '');
+          const year = src.year ? ` (${_cmpEsc(src.year)})` : '';
+          const link = src.url ? `<a href="${_cmpEsc(src.url)}" target="_blank" rel="noopener">↗</a>` : '';
+          return `<div class="detail-enrich-src"><b>${pub}</b> · ${title}${year} ${link}</div>`;
+        }).join('')}
+      </div>
+    </div>`;
+  }
+
+  html += `</div>`;
+  return html;
+}
+
+// Render the always-on source footer.
+function _cmplistSourceFooter(attrib){
+  if (!attrib || !attrib.source) return '';
+  const url = attrib.sourceUrl;
+  const sourceHtml = url
+    ? `<a href="${url}" target="_blank" rel="noopener">${_cmpEsc(attrib.source)} ↗</a>`
+    : _cmpEsc(attrib.source);
+  let codesHtml = '';
+  if (attrib.exp_codes && attrib.exp_codes.length) {
+    codesHtml += `<div class="detail-source-codes">COFOG / EXP: ${
+      attrib.exp_codes.slice(0, 6).map(c => `<code>${_cmpEsc(c)}</code>`).join('')
+    }${attrib.exp_codes.length > 6 ? ` <span style="color:var(--dim)">+${attrib.exp_codes.length-6} more</span>` : ''}</div>`;
+  }
+  if (attrib.sta_codes && attrib.sta_codes.length) {
+    codesHtml += `<div class="detail-source-codes">STA: ${
+      attrib.sta_codes.slice(0, 6).map(c => `<code>${_cmpEsc(c)}</code>`).join('')
+    }${attrib.sta_codes.length > 6 ? ` <span style="color:var(--dim)">+${attrib.sta_codes.length-6} more</span>` : ''}</div>`;
+  }
+  const estHtml = attrib.estimated
+    ? `<div class="detail-source-origin" style="color:var(--yellow)">⚠ ${_cmpEsc(String(attrib.estimated))}</div>`
+    : '';
+  return `<div class="detail-source">
+    <div class="detail-source-title">Source</div>
+    <div class="detail-source-body">${sourceHtml}</div>
+    <div class="detail-source-origin">${_cmpEsc(attrib.origin)}</div>
+    ${estHtml}
+    ${codesHtml}
+  </div>`;
+}
+
+// Walk the root→node path and return the ancestor names as a list (for
+// history name-path matching). Excludes the root container and the node
+// itself — just the intermediate ancestors the history walker needs.
+function _cmplistAncestorNames(root, pathArr){
+  const names = [];
+  let walker = root;
+  // We want names for ancestors EXCLUDING the node itself (last path step)
+  for (let i = 0; i < pathArr.length - 1; i++) {
+    walker = (walker.children || [])[pathArr[i]];
+    if (!walker) return names;
+    names.push(walker.name);
+  }
+  return names;
+}
+
 // ── Master-detail render — new model (was 2-column compare) ──
 // Renders the left tree + right detail for the currently-selected node.
 // Tree items are expandable; detail shows rich node info.
@@ -13129,12 +14712,13 @@ function _cmplistRenderTree(){
       ? _cmplistFmt(node.value, s.country)
       : _cmplistFmtLens(_cmplistTransform(node.value, ctx), ctx);
 
+    const treePretty = _cmplistPrettyName(node.name);
     let html = `<div class="tree-node ${selected?'selected':''}" data-path="${pathKey}"
          style="padding-left:${8 + depth*14}px"
          onclick="_cmplistSelectPath([${pathArr.join(',')}])">
       <span class="tree-chev ${hasChildren?(expanded?'open':''):'leaf'}"
             onclick="_cmplistToggleExpand('${pathKey}', event)">${hasChildren ? (expanded ? '▼' : '▶') : '·'}</span>
-      <span class="tree-name" title="${_cmpEsc(node.name)}">${_cmpEsc(node.name)}</span>
+      <span class="tree-name" title="${_cmpEsc(node.name)}">${_cmpEsc(treePretty)}</span>
       <span class="tree-val">${displayVal}</span>
     </div>`;
 
@@ -13234,27 +14818,140 @@ function _cmplistRenderDetail(){
     ancHtml += `</div>`;
   }
 
-  // Hero header — name, value, % of UK total, % of parent
+  // Hero header — prettified name, value, % of UK total, % of parent
   const pctTotal = rootTotal > 0 ? (node.value / rootTotal * 100) : 0;
   const pctParent = parentTotal > 0 ? (node.value / parentTotal * 100) : 0;
+  const rawName = node.name || '?';
+  const prettyName = _cmplistPrettyName(rawName);
+  const cofogLabel = _cmplistCofogLabel(rawName);
 
-  // Sparkline + deltas (UK top-level only; deeper needs name-path history support)
+  // Per-capita chip (UK only — always visible for any non-root node)
+  let perCapitaChip = '';
+  if (s.country === 'uk' && path.length > 0 && node.value) {
+    const pop = (typeof UK_POPULATION !== 'undefined' && UK_POPULATION[s.year]) || 68_500_000;
+    const pc = node.value / pop;
+    const pcLabel = pc >= 1000
+      ? `£${(pc/1000).toFixed(1)}k`
+      : `£${pc.toFixed(pc >= 100 ? 0 : pc >= 10 ? 1 : 2)}`;
+    perCapitaChip = `<span class="detail-pc-chip" title="Annual cost per UK resident (pop. ${(pop/1e6).toFixed(1)}M)">${pcLabel} / person</span>`;
+  }
+
+  // Rank chip — "3rd largest of 16 DWP programmes"
+  let rankChip = '';
+  if (path.length > 0) {
+    const parent = _cmplistFindParent(s.root, path);
+    const r = _cmplistRank(node, parent);
+    if (r) rankChip = `<span class="detail-rank-chip" title="Rank among siblings at this level">${r}</span>`;
+  }
+
+  // Department explainer (lede under hero) — only if we have one
+  let explainerHtml = '';
+  const explainerText = UK_DEPT_EXPLAINERS[rawName];
+  if (explainerText) {
+    explainerHtml = `<div class="detail-explainer">${_cmpEsc(explainerText)}</div>`;
+  }
+
+  // "Compare to" — anchor-based sense-making
+  let compareHtml = '';
+  if (s.country === 'uk' && path.length > 0 && node.value >= 5e8) {
+    const phrase = _cmplistComparable(node.value, rawName);
+    if (phrase) compareHtml = `<div class="detail-compare">📏 <b>${_cmpEsc(phrase)}</b></div>`;
+  }
+
+  // NHS trust metadata card — surface _icb, _sector, _region, _workforce
+  let trustHtml = '';
+  if (node._sector || node._icb || node._region || node._workforce) {
+    const rows = [];
+    if (node._sector) rows.push(['Sector', _cmpEsc(node._sector)]);
+    if (node._icb) {
+      const icb = typeof node._icb === 'object' ? node._icb : { name: node._icb };
+      rows.push(['Integrated Care Board', _cmpEsc((icb.name || '') + (icb.code ? ` (${icb.code})` : ''))]);
+    }
+    if (node._region) rows.push(['NHS Region', _cmpEsc(node._region)]);
+    if (node._workforce) {
+      const wf = typeof node._workforce === 'object' ? node._workforce : null;
+      if (wf && wf.total) rows.push(['Total workforce', Math.round(wf.total).toLocaleString('en-GB') + ' FTE']);
+    }
+    if (rows.length) {
+      trustHtml = `<div class="detail-trust-card">
+        ${rows.map(([l,v]) => `<div class="detail-trust-row"><span class="detail-trust-label">${l}</span><span class="detail-trust-val">${v}</span></div>`).join('')}
+      </div>`;
+    }
+  }
+
+  // Time chart + deltas — ANY depth. Uses ancestor name-path for matching.
   let sparkHtml = '', deltaHtml = '';
-  if (s.country === 'uk' && path.length <= 1 && path.length > 0) {
-    const series = _cmplistNodeHistory('uk', [], node.name);
+  if (s.country === 'uk' && path.length > 0) {
+    const ancNames = _cmplistAncestorNames(s.root, path);
+    const series = _cmplistNodeHistory('uk', ancNames, node.name);
+    const d = series ? _cmplistDeltas(series) : { yoy: null, fiveYr: null };
+    const fmtD = v => {
+      if (v == null) return '—';
+      const cls = v > 0.5 ? 'delta-up' : v < -0.5 ? 'delta-down' : 'delta-flat';
+      return `<span class="delta ${cls}">${v >= 0 ? '+' : ''}${v.toFixed(1)}%</span>`;
+    };
     if (series && series.filter(v => v != null).length >= 2) {
-      sparkHtml = `<div class="detail-spark">${_cmplistSparkline(series, 420, 60)}</div>`;
-      const d = _cmplistDeltas(series);
-      const fmtD = v => {
-        if (v == null) return '—';
-        const cls = v > 0.5 ? 'delta-up' : v < -0.5 ? 'delta-down' : 'delta-flat';
-        return `<span class="delta ${cls}">${v >= 0 ? '+' : ''}${v.toFixed(1)}%</span>`;
-      };
-      deltaHtml = `<div class="detail-deltas">
-        <div class="detail-metric"><div class="detail-metric-label">Δ y/y</div><div class="detail-metric-val">${fmtD(d.yoy)}</div></div>
-        <div class="detail-metric"><div class="detail-metric-label">Δ 5y</div><div class="detail-metric-val">${fmtD(d.fiveYr)}</div></div>
-        <div class="detail-metric"><div class="detail-metric-label">% of UK</div><div class="detail-metric-val">${pctTotal.toFixed(2)}%</div></div>
-        ${path.length > 1 ? `<div class="detail-metric"><div class="detail-metric-label">% of parent</div><div class="detail-metric-val">${pctParent.toFixed(1)}%</div></div>` : ''}
+      const dataYears = series
+        .map((v, i) => v != null ? 2015 + i : null)
+        .filter(y => y != null);
+      const firstYear = dataYears[0];
+      const lastYear  = dataYears[dataYears.length - 1];
+      // Flag methodology break if the stable-comparable run is shorter than
+      // the non-null history. Means OSCAR reclassified this line at some point.
+      const nonNull = series.filter(v => v != null).length;
+      const isUnstable = d.stableYears != null && d.stableYears < nonNull;
+      const subtitle = isUnstable
+        ? `Nominal £. OSCAR reclassification detected — only the last ${d.stableYears} years are methodologically comparable for this line (tree structure changed before then). 5-year delta suppressed.`
+        : 'Not inflation-adjusted. Hover a year for the exact figure and year-on-year change.';
+      sparkHtml = _cmplistTimeChart(series, {
+        title: `Nominal spend · ${firstYear} → ${lastYear}`,
+        subtitle,
+        width: 520, height: 150,
+      });
+    } else {
+      // History not available at this depth — show explicit "why blank"
+      sparkHtml = `<div class="tchart-wrap" style="padding:10px 14px">
+        <div class="tchart-title">Historical trend</div>
+        <div class="tchart-sub" style="font-style:normal;color:var(--dim);margin:4px 0 0">
+          Historical match not available at this depth — department-level trends show on the parent node.
+        </div>
+      </div>`;
+    }
+    // Deltas block — always render (shows "—" if history missing)
+    deltaHtml = `<div class="detail-deltas">
+      <div class="detail-metric"><div class="detail-metric-label">Δ y/y</div><div class="detail-metric-val">${fmtD(d.yoy)}</div></div>
+      <div class="detail-metric"><div class="detail-metric-label">Δ 5y</div><div class="detail-metric-val">${fmtD(d.fiveYr)}</div></div>
+      <div class="detail-metric"><div class="detail-metric-label">% of UK</div><div class="detail-metric-val">${pctTotal.toFixed(2)}%</div></div>
+      ${path.length > 1 ? `<div class="detail-metric"><div class="detail-metric-label">% of parent</div><div class="detail-metric-val">${pctParent.toFixed(1)}%</div></div>` : ''}
+    </div>`;
+  }
+
+  // "Where this line sits" — ancestor percentages, any depth ≥ 1
+  let ancestorsHtml = '';
+  if (path.length > 0) {
+    let cur = s.root;
+    const steps = [];
+    for (let i = 0; i < path.length; i++) {
+      const nextIdx = path[i];
+      const next = (cur.children || [])[nextIdx];
+      if (!next) break;
+      const pct = (cur.value || 0) > 0 ? (next.value / cur.value * 100) : 0;
+      steps.push({
+        parent: cur.name || s.root.name || 'UK Public Spending',
+        pct, value: next.value, name: next.name,
+      });
+      cur = next;
+    }
+    if (steps.length > 0) {
+      ancestorsHtml = `<div class="detail-ancestors">
+        <div class="detail-ancestors-title">Where this line sits</div>
+        ${steps.map(step => `
+          <div class="detail-ancestor-row">
+            <span class="detail-ancestor-pct">${step.pct.toFixed(1)}%</span>
+            <span class="detail-ancestor-label">of <b>${_cmpEsc((step.parent||'').slice(0, 42))}</b></span>
+            <span class="detail-ancestor-val">${_cmplistFmt(step.value, s.country)}</span>
+          </div>
+        `).join('')}
       </div>`;
     }
   }
@@ -13269,13 +14966,20 @@ function _cmplistRenderDetail(){
   if (children.length > 0) {
     bodyHtml += _cmplistCompositionBar(children, s.country);
 
-    // Enriched sub-item list — reuses the Phase 1 row template
+    // Enriched sub-item list — sparklines at any depth via ancestor path
     const total = children.reduce((a, c) => a + (c.value || 0), 0) || 1;
     const sortedKids = children
       .map((c, i) => ({ c, i }))
       .sort((a, b) => (b.c.value || 0) - (a.c.value || 0));
     bodyHtml += `<div class="detail-subitems-title">Sub-items (${children.length})</div>`;
     bodyHtml += `<div class="detail-subitems">`;
+    // Name-path for THIS node (so children's history walker knows where to look)
+    let childAncestors;
+    if (s.country === 'uk') {
+      // Ancestors of the child = ancestors of THIS node + this node's name
+      const ownAncestors = _cmplistAncestorNames(s.root, path);
+      childAncestors = path.length === 0 ? [] : [...ownAncestors, node.name];
+    }
     sortedKids.forEach(({ c, i }) => {
       const pct = c.value ? (c.value / total * 100).toFixed(1) : '0.0';
       const kidCount = (c.children || []).length;
@@ -13286,15 +14990,17 @@ function _cmplistRenderDetail(){
         : _cmplistFmtLens(_cmplistTransform(c.value, childCtx), childCtx);
 
       let sparkInline = '';
-      if (s.country === 'uk' && path.length === 0) {
-        const series = _cmplistNodeHistory('uk', [], c.name);
+      if (s.country === 'uk' && childAncestors) {
+        const series = _cmplistNodeHistory('uk', childAncestors, c.name);
         if (series && series.filter(v => v != null).length >= 2) {
           sparkInline = `<div class="cell-spark">${_cmplistSparkline(series)}</div>`;
         }
       }
+      // Empty spark slot so grid stays aligned
+      if (!sparkInline) sparkInline = `<div class="cell-spark"></div>`;
 
-      bodyHtml += `<div class="detail-subitem" onclick="_cmplistSelectPath([${childPath.join(',')}])">
-        <div class="detail-subitem-name">${_cmpEsc(c.name||'?')}</div>
+      bodyHtml += `<div class="detail-subitem" onclick="_cmplistSelectPath([${childPath.join(',')}])" title="${_cmpEsc(c.name||'')}">
+        <div class="detail-subitem-name">${_cmpEsc(_cmplistPrettyName(c.name||'?'))}</div>
         <div class="detail-subitem-pct">${pct}%</div>
         ${sparkInline}
         <div class="detail-subitem-val">${cDisplay}</div>
@@ -13302,27 +15008,114 @@ function _cmplistRenderDetail(){
       </div>`;
     });
     bodyHtml += `</div>`;
-  } else {
-    // Leaf — show a note; supHtml (if present) already covers the rest
-    bodyHtml += `<div class="detail-leaf-note">
-      Finest breakdown available for this line.
-      ${node._top_suppliers ? '' : 'No supplier-level data available here.'}
-    </div>`;
+  } else if (path.length > 0) {
+    // Leaf — constructive escape hatch (not a dead end)
+    const hasSup = node._top_suppliers && node._top_suppliers.suppliers?.length;
+    // Determine if we're under Local Government (so we can plug the council spend register)
+    const topName = path.length > 0 ? (s.root.children||[])[path[0]]?.name || '' : '';
+    const isLocalGov = /local government/i.test(topName);
+    let nextHtml = `<div class="detail-leaf-next-title">What you can do from here</div>`;
+    const bullets = [];
+    if (hasSup) bullets.push(`See the <b>${node._top_suppliers.suppliers.length} top suppliers</b> paid from this line above — click any row for a full company profile.`);
+    if (isLocalGov && !hasSup) bullets.push(`This council doesn't yet have a supplier-level register in our dataset. You can still <a href="https://www.gov.uk/government/publications/local-government-transparency-code-2015" target="_blank" rel="noopener">request it via the Transparency Code ↗</a>.`);
+    if (!hasSup && !isLocalGov) bullets.push(`This is the finest breakdown HMT publishes for this line. <a href="#" onclick="event.preventDefault();showTab('suppliers',null)">Browse Budget Recipients →</a> for supplier-level data on comparable central-gov lines.`);
+    bullets.push(`Compare with <a href="#" onclick="event.preventDefault();_cmplistSelectPath([${path.slice(0,-1).join(',')}])">sibling lines in the parent</a> — same page, no reload.`);
+    nextHtml += bullets.map(b => `<div style="margin-top:5px">· ${b}</div>`).join('');
+    bodyHtml += `<div class="detail-leaf-next">${nextHtml}</div>`;
   }
+
+  // Related-insight cross-link — matches node's ancestor chain against our 15 insights
+  let relatedHtml = '';
+  if (s.country === 'uk' && path.length > 0) {
+    const ancNames = _cmplistAncestorNames(s.root, path);
+    const hook = _cmplistRelatedInsight(ancNames, rawName);
+    if (hook) {
+      relatedHtml = `<div class="detail-related"
+        onclick="location.hash='insights/${hook.cat}/${hook.id}'; showTab('insights', null); setTimeout(()=>{ if(typeof _insLoadCard==='function') _insLoadCard('${hook.cat}','${hook.id}'); }, 200);">
+        <span class="detail-related-icon">💡</span>
+        <span class="detail-related-title">Related insight: <b>${_cmpEsc(hook.title)}</b></span>
+        <span class="detail-related-arrow">→</span>
+      </div>`;
+    }
+  }
+
+  // Rich enrichment card — 4-tier cascade for 100% coverage:
+  //   Tier A/B: hand-curated extended/rich + imported compact (via _cmplistEnrichmentCard)
+  //   Tier C:   procedural generator for councils + council-services
+  //   Tier D:   universal contextual fallback (ancestor chain + siblings)
+  let enrichmentHtml = '';
+  if (s.country === 'uk') {
+    // Walk ancestors first — we need the immediate parent name for scoped
+    // alias resolution (so "Transport" under "GLA" resolves to the GLA entry
+    // but "Transport" under "Kent CC" does not).
+    const ancestors = [];
+    let walker = s.root;
+    ancestors.push(walker);
+    for (let i = 0; i < path.length - 1; i++) {
+      walker = (walker.children||[])[path[i]];
+      if (!walker) break;
+      ancestors.push(walker);
+    }
+    const parentName = ancestors.length ? (ancestors[ancestors.length-1].name || null) : null;
+    // Placeholder-name special case — "n/a" / "Not known" aren't real programmes,
+    // they're OSCAR aggregators. Show an explanatory card rather than attempting
+    // a fuzzy enrichment lookup.
+    const rawLower = (rawName || '').trim().toLowerCase();
+    if (rawLower === 'n/a' || rawLower === 'not known' || rawLower === 'unclassified') {
+      const parentPretty = parentName ? _cmplistPrettyName(parentName) : 'this budget line';
+      enrichmentHtml = `<div class="detail-enrich detail-enrich-placeholder">
+        <div class="detail-enrich-title">
+          <span class="detail-enrich-dot" style="background:#888"></span>
+          Unclassified residual
+        </div>
+        <div class="detail-enrich-desc">HM Treasury's OSCAR classification system groups spending that doesn't fit cleanly into a named sub-category as <b>"n/a"</b> or <b>"Not known"</b>. This is an <b>aggregator line</b> inside <i>${_cmpEsc(parentPretty)}</i> — not a specific programme. The £ shown is real spending; the absence of a name reflects a Treasury reporting gap, not missing data on Budget Galaxy's side.</div>
+      </div>`;
+    } else {
+      enrichmentHtml = _cmplistEnrichmentCard(rawName, parentName);
+    }
+    if (!enrichmentHtml) {
+      // Tier C procedural: council or council-service
+      if (_cmplistIsCouncilNode(node, ancestors)) {
+        enrichmentHtml = _cmplistProceduralCouncilCard(node, ancestors, s.root);
+      } else if (_cmplistIsCouncilServiceNode(node, ancestors)) {
+        enrichmentHtml = _cmplistProceduralServiceCard(node, ancestors, s.root);
+      }
+    }
+    if (!enrichmentHtml) {
+      // Tier D universal fallback — any remaining node
+      enrichmentHtml = _cmplistContextualFallback(node, path, s.root);
+    }
+  }
+
+  // Source attribution — always on, every depth
+  const attrib = s.country === 'uk'
+    ? _cmplistResolveSource(node, path, s.root)
+    : null;
+  const sourceFooter = attrib ? _cmplistSourceFooter(attrib) : '';
 
   container.innerHTML = `
     ${ancHtml}
     <div class="detail-hero">
-      <div class="detail-name">${_cmpEsc(node.name||'?')}</div>
+      <div class="detail-name" title="${_cmpEsc(rawName)}">${_cmpEsc(prettyName)}</div>
+      ${cofogLabel ? `<div class="detail-cofog-chip">${_cmpEsc(cofogLabel)}</div>` : ''}
       <div class="detail-value-row">
         <span class="detail-value">${_cmplistFmt(node.value, s.country)}</span>
-        <span class="detail-sub-pct">${pctTotal.toFixed(2)}% of UK${path.length>1?` · ${pctParent.toFixed(1)}% of parent`:''}</span>
+        <span class="detail-sub-pct">${pctTotal.toFixed(2)}% of UK${path.length>0?` · ${pctParent.toFixed(1)}% of parent`:''}</span>
+        ${perCapitaChip}
+        ${rankChip}
       </div>
     </div>
+    ${explainerHtml}
+    ${enrichmentHtml}
+    ${compareHtml}
+    ${trustHtml}
     ${sparkHtml}
     ${deltaHtml}
+    ${ancestorsHtml}
+    ${relatedHtml}
     ${supHtml}
     ${bodyHtml}
+    ${sourceFooter}
   `;
 }
 
@@ -13592,9 +15385,9 @@ function _cmplistCompositionBar(children, country){
   `).join('');
 
   const legend = segments.slice(0, 6).map(seg => `
-    <div class="comp-legend-item">
+    <div class="comp-legend-item" title="${_cmpEsc(seg.name)}">
       <span class="comp-legend-dot" style="background:${seg.color}"></span>
-      <span class="comp-legend-label">${_cmpEsc(seg.name).slice(0, 28)}${seg.name.length > 28 ? '…' : ''}</span>
+      <span class="comp-legend-label">${_cmpEsc(_cmplistPrettyName(seg.name)).slice(0, 28)}${_cmplistPrettyName(seg.name).length > 28 ? '…' : ''}</span>
       <span class="comp-legend-pct">${seg.pct.toFixed(1)}%</span>
     </div>
   `).join('');

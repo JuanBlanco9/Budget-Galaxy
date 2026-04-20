@@ -6,95 +6,1746 @@
     "sheet_used": "MYE2 - Persons",
     "column_used": "All ages",
     "downloaded_from": "https://www.ons.gov.uk/file?uri=/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/estimatesofthepopulationforenglandandwales/mid20232023localauthorityboundarieseditionofthisdataset/mye23tablesew.xlsx",
-    "downloaded_at": "2026-04-13",
-    "note": "Only England and Wales authorities. Police (E23xxx) and Fire (E31xxx) entities are NOT in this file — those are service areas, not geographic local authorities. They do not receive population data (handled by lens system as \"no data\")."
+    "generated_by": "scripts/build_populations_from_xlsx.py",
+    "note": "England + Wales only (345 LAs). Police (E23xxx) and Fire (E31xxx) entities are NOT in this file — they are service areas, not geographic local authorities."
   },
   "reference_aggregates": {
     "E92000001": {
-      "name": "England",
-      "population": 57690323
+      "name": "ENGLAND",
+      "population": 57690323,
+      "geography": "Country"
     },
     "K04000001": {
-      "name": "England and Wales",
-      "population": 60854727
+      "name": "ENGLAND AND WALES",
+      "population": 60854727,
+      "geography": "Country"
     }
   },
   "populations": {
+    "E06000047": {
+      "name": "County Durham",
+      "population": 532182,
+      "geography": "Unitary Authority"
+    },
+    "E06000005": {
+      "name": "Darlington",
+      "population": 110562,
+      "geography": "Unitary Authority"
+    },
+    "E06000001": {
+      "name": "Hartlepool",
+      "population": 95366,
+      "geography": "Unitary Authority"
+    },
+    "E06000002": {
+      "name": "Middlesbrough",
+      "population": 152650,
+      "geography": "Unitary Authority"
+    },
+    "E06000057": {
+      "name": "Northumberland",
+      "population": 327055,
+      "geography": "Unitary Authority"
+    },
+    "E06000003": {
+      "name": "Redcar and Cleveland",
+      "population": 137938,
+      "geography": "Unitary Authority"
+    },
+    "E06000004": {
+      "name": "Stockton-on-Tees",
+      "population": 202415,
+      "geography": "Unitary Authority"
+    },
+    "E11000007": {
+      "name": "Tyne and Wear (Met County)",
+      "population": 1153212,
+      "geography": "Metropolitan County"
+    },
+    "E08000037": {
+      "name": "Gateshead",
+      "population": 199139,
+      "geography": "Metropolitan District"
+    },
+    "E08000021": {
+      "name": "Newcastle upon Tyne",
+      "population": 311976,
+      "geography": "Metropolitan District"
+    },
+    "E08000022": {
+      "name": "North Tyneside",
+      "population": 211769,
+      "geography": "Metropolitan District"
+    },
+    "E08000023": {
+      "name": "South Tyneside",
+      "population": 149270,
+      "geography": "Metropolitan District"
+    },
+    "E08000024": {
+      "name": "Sunderland",
+      "population": 281058,
+      "geography": "Metropolitan District"
+    },
+    "E06000008": {
+      "name": "Blackburn with Darwen",
+      "population": 157503,
+      "geography": "Unitary Authority"
+    },
+    "E06000009": {
+      "name": "Blackpool",
+      "population": 142708,
+      "geography": "Unitary Authority"
+    },
+    "E06000049": {
+      "name": "Cheshire East",
+      "population": 412458,
+      "geography": "Unitary Authority"
+    },
+    "E06000050": {
+      "name": "Cheshire West and Chester",
+      "population": 365061,
+      "geography": "Unitary Authority"
+    },
+    "E06000063": {
+      "name": "Cumberland",
+      "population": 276876,
+      "geography": "Unitary Authority"
+    },
+    "E06000006": {
+      "name": "Halton",
+      "population": 129587,
+      "geography": "Unitary Authority"
+    },
+    "E06000007": {
+      "name": "Warrington",
+      "population": 212389,
+      "geography": "Unitary Authority"
+    },
+    "E06000064": {
+      "name": "Westmorland and Furness",
+      "population": 228187,
+      "geography": "Unitary Authority"
+    },
+    "E11000001": {
+      "name": "Greater Manchester (Met County)",
+      "population": 2948633,
+      "geography": "Metropolitan County"
+    },
+    "E08000001": {
+      "name": "Bolton",
+      "population": 302383,
+      "geography": "Metropolitan District"
+    },
+    "E08000002": {
+      "name": "Bury",
+      "population": 195476,
+      "geography": "Metropolitan District"
+    },
     "E08000003": {
       "name": "Manchester",
-      "population": 579917
+      "population": 579917,
+      "geography": "Metropolitan District"
+    },
+    "E08000004": {
+      "name": "Oldham",
+      "population": 246130,
+      "geography": "Metropolitan District"
     },
     "E08000005": {
       "name": "Rochdale",
-      "population": 229756
+      "population": 229756,
+      "geography": "Metropolitan District"
+    },
+    "E08000006": {
+      "name": "Salford",
+      "population": 284106,
+      "geography": "Metropolitan District"
+    },
+    "E08000007": {
+      "name": "Stockport",
+      "population": 299545,
+      "geography": "Metropolitan District"
+    },
+    "E08000008": {
+      "name": "Tameside",
+      "population": 234666,
+      "geography": "Metropolitan District"
+    },
+    "E08000009": {
+      "name": "Trafford",
+      "population": 237480,
+      "geography": "Metropolitan District"
+    },
+    "E08000010": {
+      "name": "Wigan",
+      "population": 339174,
+      "geography": "Metropolitan District"
+    },
+    "E10000017": {
+      "name": "Lancashire",
+      "population": 1270162,
+      "geography": "County"
+    },
+    "E07000117": {
+      "name": "Burnley",
+      "population": 96435,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000118": {
+      "name": "Chorley",
+      "population": 119352,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000119": {
+      "name": "Fylde",
+      "population": 83846,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000120": {
+      "name": "Hyndburn",
+      "population": 84261,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000121": {
+      "name": "Lancaster",
+      "population": 145559,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000122": {
+      "name": "Pendle",
+      "population": 97039,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000123": {
+      "name": "Preston",
+      "population": 156411,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000124": {
+      "name": "Ribble Valley",
+      "population": 64469,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000125": {
+      "name": "Rossendale",
+      "population": 71541,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000126": {
+      "name": "South Ribble",
+      "population": 113552,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000127": {
+      "name": "West Lancashire",
+      "population": 120703,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000128": {
+      "name": "Wyre",
+      "population": 116994,
+      "geography": "Non-metropolitan District"
+    },
+    "E11000002": {
+      "name": "Merseyside (Met County)",
+      "population": 1456562,
+      "geography": "Metropolitan County"
+    },
+    "E08000011": {
+      "name": "Knowsley",
+      "population": 159243,
+      "geography": "Metropolitan District"
+    },
+    "E08000012": {
+      "name": "Liverpool",
+      "population": 503740,
+      "geography": "Metropolitan District"
+    },
+    "E08000014": {
+      "name": "Sefton",
+      "population": 282745,
+      "geography": "Metropolitan District"
+    },
+    "E08000013": {
+      "name": "St. Helens",
+      "population": 185982,
+      "geography": "Metropolitan District"
+    },
+    "E08000015": {
+      "name": "Wirral",
+      "population": 324852,
+      "geography": "Metropolitan District"
+    },
+    "E06000011": {
+      "name": "East Riding of Yorkshire",
+      "population": 350119,
+      "geography": "Unitary Authority"
+    },
+    "E06000010": {
+      "name": "Kingston upon Hull, City of",
+      "population": 271942,
+      "geography": "Unitary Authority"
+    },
+    "E06000012": {
+      "name": "North East Lincolnshire",
+      "population": 158335,
+      "geography": "Unitary Authority"
+    },
+    "E06000013": {
+      "name": "North Lincolnshire",
+      "population": 170087,
+      "geography": "Unitary Authority"
     },
     "E06000065": {
       "name": "North Yorkshire",
-      "population": 627629
+      "population": 627629,
+      "geography": "Unitary Authority"
+    },
+    "E06000014": {
+      "name": "York",
+      "population": 206780,
+      "geography": "Unitary Authority"
+    },
+    "E11000003": {
+      "name": "South Yorkshire (Met County)",
+      "population": 1407072,
+      "geography": "Metropolitan County"
+    },
+    "E08000016": {
+      "name": "Barnsley",
+      "population": 248449,
+      "geography": "Metropolitan District"
+    },
+    "E08000017": {
+      "name": "Doncaster",
+      "population": 314176,
+      "geography": "Metropolitan District"
+    },
+    "E08000018": {
+      "name": "Rotherham",
+      "population": 271195,
+      "geography": "Metropolitan District"
     },
     "E08000019": {
       "name": "Sheffield",
-      "population": 573252
+      "population": 573252,
+      "geography": "Metropolitan District"
+    },
+    "E11000006": {
+      "name": "West Yorkshire (Met County)",
+      "population": 2402161,
+      "geography": "Metropolitan County"
+    },
+    "E08000032": {
+      "name": "Bradford",
+      "population": 560194,
+      "geography": "Metropolitan District"
+    },
+    "E08000033": {
+      "name": "Calderdale",
+      "population": 208735,
+      "geography": "Metropolitan District"
+    },
+    "E08000034": {
+      "name": "Kirklees",
+      "population": 442033,
+      "geography": "Metropolitan District"
     },
     "E08000035": {
       "name": "Leeds",
-      "population": 829413
+      "population": 829413,
+      "geography": "Metropolitan District"
+    },
+    "E08000036": {
+      "name": "Wakefield",
+      "population": 361786,
+      "geography": "Metropolitan District"
+    },
+    "E06000015": {
+      "name": "Derby",
+      "population": 266460,
+      "geography": "Unitary Authority"
+    },
+    "E06000016": {
+      "name": "Leicester",
+      "population": 379780,
+      "geography": "Unitary Authority"
+    },
+    "E06000061": {
+      "name": "North Northamptonshire",
+      "population": 367991,
+      "geography": "Unitary Authority"
+    },
+    "E06000018": {
+      "name": "Nottingham",
+      "population": 329276,
+      "geography": "Unitary Authority"
+    },
+    "E06000017": {
+      "name": "Rutland",
+      "population": 40643,
+      "geography": "Unitary Authority"
+    },
+    "E06000062": {
+      "name": "West Northamptonshire",
+      "population": 434349,
+      "geography": "Unitary Authority"
+    },
+    "E10000007": {
+      "name": "Derbyshire",
+      "population": 811449,
+      "geography": "County"
+    },
+    "E07000032": {
+      "name": "Amber Valley",
+      "population": 127709,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000033": {
+      "name": "Bolsover",
+      "population": 82829,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000034": {
+      "name": "Chesterfield",
+      "population": 104883,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000035": {
+      "name": "Derbyshire Dales",
+      "population": 71530,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000036": {
+      "name": "Erewash",
+      "population": 113844,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000037": {
+      "name": "High Peak",
+      "population": 91569,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000038": {
+      "name": "North East Derbyshire",
+      "population": 105035,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000039": {
+      "name": "South Derbyshire",
+      "population": 114050,
+      "geography": "Non-metropolitan District"
+    },
+    "E10000018": {
+      "name": "Leicestershire",
+      "population": 734015,
+      "geography": "County"
+    },
+    "E07000129": {
+      "name": "Blaby",
+      "population": 105278,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000130": {
+      "name": "Charnwood",
+      "population": 188010,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000131": {
+      "name": "Harborough",
+      "population": 102581,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000132": {
+      "name": "Hinckley and Bosworth",
+      "population": 114970,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000133": {
+      "name": "Melton",
+      "population": 53237,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000134": {
+      "name": "North West Leicestershire",
+      "population": 110316,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000135": {
+      "name": "Oadby and Wigston",
+      "population": 59623,
+      "geography": "Non-metropolitan District"
+    },
+    "E10000019": {
+      "name": "Lincolnshire",
+      "population": 782808,
+      "geography": "County"
+    },
+    "E07000136": {
+      "name": "Boston",
+      "population": 71367,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000137": {
+      "name": "East Lindsey",
+      "population": 145371,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000138": {
+      "name": "Lincoln",
+      "population": 103314,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000139": {
+      "name": "North Kesteven",
+      "population": 121203,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000140": {
+      "name": "South Holland",
+      "population": 97915,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000141": {
+      "name": "South Kesteven",
+      "population": 145758,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000142": {
+      "name": "West Lindsey",
+      "population": 97880,
+      "geography": "Non-metropolitan District"
     },
     "E10000024": {
       "name": "Nottinghamshire",
-      "population": 844494
+      "population": 844494,
+      "geography": "County"
+    },
+    "E07000170": {
+      "name": "Ashfield",
+      "population": 128360,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000171": {
+      "name": "Bassetlaw",
+      "population": 122286,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000172": {
+      "name": "Broxtowe",
+      "population": 113172,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000173": {
+      "name": "Gedling",
+      "population": 118563,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000174": {
+      "name": "Mansfield",
+      "population": 112091,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000175": {
+      "name": "Newark and Sherwood",
+      "population": 126168,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000176": {
+      "name": "Rushcliffe",
+      "population": 123854,
+      "geography": "Non-metropolitan District"
+    },
+    "E06000019": {
+      "name": "Herefordshire, County of",
+      "population": 189890,
+      "geography": "Unitary Authority"
+    },
+    "E06000051": {
+      "name": "Shropshire",
+      "population": 329260,
+      "geography": "Unitary Authority"
+    },
+    "E06000021": {
+      "name": "Stoke-on-Trent",
+      "population": 263157,
+      "geography": "Unitary Authority"
+    },
+    "E06000020": {
+      "name": "Telford and Wrekin",
+      "population": 191915,
+      "geography": "Unitary Authority"
+    },
+    "E10000028": {
+      "name": "Staffordshire",
+      "population": 898521,
+      "geography": "County"
+    },
+    "E07000192": {
+      "name": "Cannock Chase",
+      "population": 102838,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000193": {
+      "name": "East Staffordshire",
+      "population": 127637,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000194": {
+      "name": "Lichfield",
+      "population": 110173,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000195": {
+      "name": "Newcastle-under-Lyme",
+      "population": 128060,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000196": {
+      "name": "South Staffordshire",
+      "population": 113088,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000197": {
+      "name": "Stafford",
+      "population": 140677,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000198": {
+      "name": "Staffordshire Moorlands",
+      "population": 95785,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000199": {
+      "name": "Tamworth",
+      "population": 80263,
+      "geography": "Non-metropolitan District"
+    },
+    "E10000031": {
+      "name": "Warwickshire",
+      "population": 617823,
+      "geography": "County"
+    },
+    "E07000218": {
+      "name": "North Warwickshire",
+      "population": 66166,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000219": {
+      "name": "Nuneaton and Bedworth",
+      "population": 137794,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000220": {
+      "name": "Rugby",
+      "population": 118781,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000221": {
+      "name": "Stratford-on-Avon",
+      "population": 141929,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000222": {
+      "name": "Warwick",
+      "population": 153153,
+      "geography": "Non-metropolitan District"
+    },
+    "E11000005": {
+      "name": "West Midlands (Met County)",
+      "population": 2980936,
+      "geography": "Metropolitan County"
+    },
+    "E08000025": {
+      "name": "Birmingham",
+      "population": 1166049,
+      "geography": "Metropolitan District"
+    },
+    "E08000026": {
+      "name": "Coventry",
+      "population": 360702,
+      "geography": "Metropolitan District"
     },
     "E08000027": {
       "name": "Dudley",
-      "population": 326680
+      "population": 326680,
+      "geography": "Metropolitan District"
+    },
+    "E08000028": {
+      "name": "Sandwell",
+      "population": 347551,
+      "geography": "Metropolitan District"
+    },
+    "E08000029": {
+      "name": "Solihull",
+      "population": 218793,
+      "geography": "Metropolitan District"
+    },
+    "E08000030": {
+      "name": "Walsall",
+      "population": 288736,
+      "geography": "Metropolitan District"
+    },
+    "E08000031": {
+      "name": "Wolverhampton",
+      "population": 272425,
+      "geography": "Metropolitan District"
+    },
+    "E10000034": {
+      "name": "Worcestershire",
+      "population": 614185,
+      "geography": "County"
+    },
+    "E07000234": {
+      "name": "Bromsgrove",
+      "population": 100679,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000235": {
+      "name": "Malvern Hills",
+      "population": 81822,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000236": {
+      "name": "Redditch",
+      "population": 87059,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000237": {
+      "name": "Worcester",
+      "population": 105143,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000238": {
+      "name": "Wychavon",
+      "population": 136229,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000239": {
+      "name": "Wyre Forest",
+      "population": 103253,
+      "geography": "Non-metropolitan District"
+    },
+    "E06000055": {
+      "name": "Bedford",
+      "population": 189891,
+      "geography": "Unitary Authority"
+    },
+    "E06000056": {
+      "name": "Central Bedfordshire",
+      "population": 308302,
+      "geography": "Unitary Authority"
+    },
+    "E06000032": {
+      "name": "Luton",
+      "population": 231028,
+      "geography": "Unitary Authority"
+    },
+    "E06000031": {
+      "name": "Peterborough",
+      "population": 219509,
+      "geography": "Unitary Authority"
+    },
+    "E06000033": {
+      "name": "Southend-on-Sea",
+      "population": 182271,
+      "geography": "Unitary Authority"
+    },
+    "E06000034": {
+      "name": "Thurrock",
+      "population": 178201,
+      "geography": "Unitary Authority"
+    },
+    "E10000003": {
+      "name": "Cambridgeshire",
+      "population": 699573,
+      "geography": "County"
+    },
+    "E07000008": {
+      "name": "Cambridge",
+      "population": 149963,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000009": {
+      "name": "East Cambridgeshire",
+      "population": 91466,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000010": {
+      "name": "Fenland",
+      "population": 103537,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000011": {
+      "name": "Huntingdonshire",
+      "population": 186066,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000012": {
+      "name": "South Cambridgeshire",
+      "population": 168541,
+      "geography": "Non-metropolitan District"
+    },
+    "E10000012": {
+      "name": "Essex",
+      "population": 1536118,
+      "geography": "County"
+    },
+    "E07000066": {
+      "name": "Basildon",
+      "population": 190544,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000067": {
+      "name": "Braintree",
+      "population": 159957,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000068": {
+      "name": "Brentwood",
+      "population": 78152,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000069": {
+      "name": "Castle Point",
+      "population": 89858,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000070": {
+      "name": "Chelmsford",
+      "population": 185278,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000071": {
+      "name": "Colchester",
+      "population": 196998,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000072": {
+      "name": "Epping Forest",
+      "population": 135975,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000073": {
+      "name": "Harlow",
+      "population": 96040,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000074": {
+      "name": "Maldon",
+      "population": 68327,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000075": {
+      "name": "Rochford",
+      "population": 88188,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000076": {
+      "name": "Tendring",
+      "population": 153207,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000077": {
+      "name": "Uttlesford",
+      "population": 93594,
+      "geography": "Non-metropolitan District"
     },
     "E10000015": {
       "name": "Hertfordshire",
-      "population": 1215387
+      "population": 1215387,
+      "geography": "County"
+    },
+    "E07000095": {
+      "name": "Broxbourne",
+      "population": 100042,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000096": {
+      "name": "Dacorum",
+      "population": 157827,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000242": {
+      "name": "East Hertfordshire",
+      "population": 153391,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000098": {
+      "name": "Hertsmere",
+      "population": 108993,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000099": {
+      "name": "North Hertfordshire",
+      "population": 135596,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000240": {
+      "name": "St Albans",
+      "population": 148755,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000243": {
+      "name": "Stevenage",
+      "population": 90146,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000102": {
+      "name": "Three Rivers",
+      "population": 94693,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000103": {
+      "name": "Watford",
+      "population": 104195,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000241": {
+      "name": "Welwyn Hatfield",
+      "population": 121749,
+      "geography": "Non-metropolitan District"
     },
     "E10000020": {
       "name": "Norfolk",
-      "population": 931943
+      "population": 931943,
+      "geography": "County"
+    },
+    "E07000143": {
+      "name": "Breckland",
+      "population": 145081,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000144": {
+      "name": "Broadland",
+      "population": 135565,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000145": {
+      "name": "Great Yarmouth",
+      "population": 100065,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000146": {
+      "name": "King's Lynn and West Norfolk",
+      "population": 155758,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000147": {
+      "name": "North Norfolk",
+      "population": 103228,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000148": {
+      "name": "Norwich",
+      "population": 145591,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000149": {
+      "name": "South Norfolk",
+      "population": 146655,
+      "geography": "Non-metropolitan District"
+    },
+    "E10000029": {
+      "name": "Suffolk",
+      "population": 776442,
+      "geography": "County"
+    },
+    "E07000200": {
+      "name": "Babergh",
+      "population": 95872,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000244": {
+      "name": "East Suffolk",
+      "population": 247100,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000202": {
+      "name": "Ipswich",
+      "population": 139378,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000203": {
+      "name": "Mid Suffolk",
+      "population": 108029,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000245": {
+      "name": "West Suffolk",
+      "population": 186063,
+      "geography": "Non-metropolitan District"
     },
     "E09000007": {
       "name": "Camden",
-      "population": 220903
+      "population": 220903,
+      "geography": "London Borough"
+    },
+    "E09000001": {
+      "name": "City of London",
+      "population": 13462,
+      "geography": "London Borough"
+    },
+    "E09000012": {
+      "name": "Hackney",
+      "population": 263282,
+      "geography": "London Borough"
+    },
+    "E09000013": {
+      "name": "Hammersmith and Fulham",
+      "population": 186176,
+      "geography": "London Borough"
+    },
+    "E09000014": {
+      "name": "Haringey",
+      "population": 262895,
+      "geography": "London Borough"
+    },
+    "E09000019": {
+      "name": "Islington",
+      "population": 220584,
+      "geography": "London Borough"
+    },
+    "E09000020": {
+      "name": "Kensington and Chelsea",
+      "population": 147460,
+      "geography": "London Borough"
     },
     "E09000022": {
       "name": "Lambeth",
-      "population": 315706
+      "population": 315706,
+      "geography": "London Borough"
+    },
+    "E09000023": {
+      "name": "Lewisham",
+      "population": 298708,
+      "geography": "London Borough"
+    },
+    "E09000025": {
+      "name": "Newham",
+      "population": 362552,
+      "geography": "London Borough"
     },
     "E09000028": {
       "name": "Southwark",
-      "population": 315519
+      "population": 315519,
+      "geography": "London Borough"
+    },
+    "E09000030": {
+      "name": "Tower Hamlets",
+      "population": 328626,
+      "geography": "London Borough"
+    },
+    "E09000032": {
+      "name": "Wandsworth",
+      "population": 331456,
+      "geography": "London Borough"
+    },
+    "E09000033": {
+      "name": "Westminster",
+      "population": 211508,
+      "geography": "London Borough"
+    },
+    "E09000002": {
+      "name": "Barking and Dagenham",
+      "population": 222308,
+      "geography": "London Borough"
+    },
+    "E09000003": {
+      "name": "Barnet",
+      "population": 395007,
+      "geography": "London Borough"
+    },
+    "E09000004": {
+      "name": "Bexley",
+      "population": 250853,
+      "geography": "London Borough"
+    },
+    "E09000005": {
+      "name": "Brent",
+      "population": 344521,
+      "geography": "London Borough"
+    },
+    "E09000006": {
+      "name": "Bromley",
+      "population": 331162,
+      "geography": "London Borough"
+    },
+    "E09000008": {
+      "name": "Croydon",
+      "population": 397741,
+      "geography": "London Borough"
+    },
+    "E09000009": {
+      "name": "Ealing",
+      "population": 375340,
+      "geography": "London Borough"
+    },
+    "E09000010": {
+      "name": "Enfield",
+      "population": 327429,
+      "geography": "London Borough"
+    },
+    "E09000011": {
+      "name": "Greenwich",
+      "population": 294113,
+      "geography": "London Borough"
+    },
+    "E09000015": {
+      "name": "Harrow",
+      "population": 263448,
+      "geography": "London Borough"
+    },
+    "E09000016": {
+      "name": "Havering",
+      "population": 268145,
+      "geography": "London Borough"
+    },
+    "E09000017": {
+      "name": "Hillingdon",
+      "population": 319018,
+      "geography": "London Borough"
+    },
+    "E09000018": {
+      "name": "Hounslow",
+      "population": 295706,
+      "geography": "London Borough"
+    },
+    "E09000021": {
+      "name": "Kingston upon Thames",
+      "population": 170454,
+      "geography": "London Borough"
     },
     "E09000024": {
       "name": "Merton",
-      "population": 215219
+      "population": 215219,
+      "geography": "London Borough"
+    },
+    "E09000026": {
+      "name": "Redbridge",
+      "population": 313392,
+      "geography": "London Borough"
+    },
+    "E09000027": {
+      "name": "Richmond upon Thames",
+      "population": 195513,
+      "geography": "London Borough"
+    },
+    "E09000029": {
+      "name": "Sutton",
+      "population": 211123,
+      "geography": "London Borough"
+    },
+    "E09000031": {
+      "name": "Waltham Forest",
+      "population": 275980,
+      "geography": "London Borough"
+    },
+    "E06000036": {
+      "name": "Bracknell Forest",
+      "population": 128351,
+      "geography": "Unitary Authority"
+    },
+    "E06000043": {
+      "name": "Brighton and Hove",
+      "population": 279637,
+      "geography": "Unitary Authority"
+    },
+    "E06000046": {
+      "name": "Isle of Wight",
+      "population": 140906,
+      "geography": "Unitary Authority"
+    },
+    "E06000035": {
+      "name": "Medway",
+      "population": 286800,
+      "geography": "Unitary Authority"
+    },
+    "E06000042": {
+      "name": "Milton Keynes",
+      "population": 298270,
+      "geography": "Unitary Authority"
+    },
+    "E06000044": {
+      "name": "Portsmouth",
+      "population": 210297,
+      "geography": "Unitary Authority"
+    },
+    "E06000038": {
+      "name": "Reading",
+      "population": 178196,
+      "geography": "Unitary Authority"
+    },
+    "E06000039": {
+      "name": "Slough",
+      "population": 160713,
+      "geography": "Unitary Authority"
+    },
+    "E06000045": {
+      "name": "Southampton",
+      "population": 256110,
+      "geography": "Unitary Authority"
+    },
+    "E06000037": {
+      "name": "West Berkshire",
+      "population": 163367,
+      "geography": "Unitary Authority"
+    },
+    "E06000040": {
+      "name": "Windsor and Maidenhead",
+      "population": 155239,
+      "geography": "Unitary Authority"
+    },
+    "E06000041": {
+      "name": "Wokingham",
+      "population": 183870,
+      "geography": "Unitary Authority"
     },
     "E06000060": {
       "name": "Buckinghamshire",
-      "population": 566694
+      "population": 566694,
+      "geography": "Unitary Authority"
     },
     "E10000011": {
       "name": "East Sussex",
-      "population": 555484
+      "population": 555484,
+      "geography": "County"
+    },
+    "E07000061": {
+      "name": "Eastbourne",
+      "population": 103796,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000062": {
+      "name": "Hastings",
+      "population": 90817,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000063": {
+      "name": "Lewes",
+      "population": 101356,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000064": {
+      "name": "Rother",
+      "population": 94862,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000065": {
+      "name": "Wealden",
+      "population": 164653,
+      "geography": "Non-metropolitan District"
+    },
+    "E10000014": {
+      "name": "Hampshire",
+      "population": 1428559,
+      "geography": "County"
+    },
+    "E07000084": {
+      "name": "Basingstoke and Deane",
+      "population": 190198,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000085": {
+      "name": "East Hampshire",
+      "population": 128440,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000086": {
+      "name": "Eastleigh",
+      "population": 140950,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000087": {
+      "name": "Fareham",
+      "population": 114155,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000088": {
+      "name": "Gosport",
+      "population": 82385,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000089": {
+      "name": "Hart",
+      "population": 101542,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000090": {
+      "name": "Havant",
+      "population": 125682,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000091": {
+      "name": "New Forest",
+      "population": 175398,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000092": {
+      "name": "Rushmoor",
+      "population": 102908,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000093": {
+      "name": "Test Valley",
+      "population": 134461,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000094": {
+      "name": "Winchester",
+      "population": 132440,
+      "geography": "Non-metropolitan District"
     },
     "E10000016": {
       "name": "Kent",
-      "population": 1610251
+      "population": 1610251,
+      "geography": "County"
+    },
+    "E07000105": {
+      "name": "Ashford",
+      "population": 138283,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000106": {
+      "name": "Canterbury",
+      "population": 159939,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000107": {
+      "name": "Dartford",
+      "population": 120699,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000108": {
+      "name": "Dover",
+      "population": 118591,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000112": {
+      "name": "Folkestone and Hythe",
+      "population": 110995,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000109": {
+      "name": "Gravesham",
+      "population": 107737,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000110": {
+      "name": "Maidstone",
+      "population": 184187,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000111": {
+      "name": "Sevenoaks",
+      "population": 121262,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000113": {
+      "name": "Swale",
+      "population": 155893,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000114": {
+      "name": "Thanet",
+      "population": 140439,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000115": {
+      "name": "Tonbridge and Malling",
+      "population": 135206,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000116": {
+      "name": "Tunbridge Wells",
+      "population": 117020,
+      "geography": "Non-metropolitan District"
+    },
+    "E10000025": {
+      "name": "Oxfordshire",
+      "population": 750230,
+      "geography": "County"
+    },
+    "E07000177": {
+      "name": "Cherwell",
+      "population": 166321,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000178": {
+      "name": "Oxford",
+      "population": 165184,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000179": {
+      "name": "South Oxfordshire",
+      "population": 153424,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000180": {
+      "name": "Vale of White Horse",
+      "population": 145970,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000181": {
+      "name": "West Oxfordshire",
+      "population": 119331,
+      "geography": "Non-metropolitan District"
+    },
+    "E10000030": {
+      "name": "Surrey",
+      "population": 1228671,
+      "geography": "County"
+    },
+    "E07000207": {
+      "name": "Elmbridge",
+      "population": 140500,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000208": {
+      "name": "Epsom and Ewell",
+      "population": 81989,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000209": {
+      "name": "Guildford",
+      "population": 149176,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000210": {
+      "name": "Mole Valley",
+      "population": 88266,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000211": {
+      "name": "Reigate and Banstead",
+      "population": 155985,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000212": {
+      "name": "Runnymede",
+      "population": 90442,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000213": {
+      "name": "Spelthorne",
+      "population": 103954,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000214": {
+      "name": "Surrey Heath",
+      "population": 92168,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000215": {
+      "name": "Tandridge",
+      "population": 89409,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000216": {
+      "name": "Waverley",
+      "population": 132146,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000217": {
+      "name": "Woking",
+      "population": 104636,
+      "geography": "Non-metropolitan District"
+    },
+    "E10000032": {
+      "name": "West Sussex",
+      "population": 900862,
+      "geography": "County"
+    },
+    "E07000223": {
+      "name": "Adur",
+      "population": 64687,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000224": {
+      "name": "Arun",
+      "population": 168008,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000225": {
+      "name": "Chichester",
+      "population": 128003,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000226": {
+      "name": "Crawley",
+      "population": 120545,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000227": {
+      "name": "Horsham",
+      "population": 149464,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000228": {
+      "name": "Mid Sussex",
+      "population": 157915,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000229": {
+      "name": "Worthing",
+      "population": 112240,
+      "geography": "Non-metropolitan District"
+    },
+    "E06000022": {
+      "name": "Bath and North East Somerset",
+      "population": 199818,
+      "geography": "Unitary Authority"
+    },
+    "E06000058": {
+      "name": "Bournemouth, Christchurch and Poole",
+      "population": 404050,
+      "geography": "Unitary Authority"
     },
     "E06000023": {
       "name": "Bristol, City of",
-      "population": 482998
+      "population": 482998,
+      "geography": "Unitary Authority"
     },
     "E06000052": {
       "name": "Cornwall",
-      "population": 578324
+      "population": 578324,
+      "geography": "Unitary Authority"
+    },
+    "E06000059": {
+      "name": "Dorset",
+      "population": 384809,
+      "geography": "Unitary Authority"
+    },
+    "E06000053": {
+      "name": "Isles of Scilly",
+      "population": 2229,
+      "geography": "Unitary Authority"
+    },
+    "E06000024": {
+      "name": "North Somerset",
+      "population": 221146,
+      "geography": "Unitary Authority"
+    },
+    "E06000026": {
+      "name": "Plymouth",
+      "population": 268736,
+      "geography": "Unitary Authority"
+    },
+    "E06000066": {
+      "name": "Somerset",
+      "population": 581145,
+      "geography": "Unitary Authority"
     },
     "E06000025": {
       "name": "South Gloucestershire",
-      "population": 299439
+      "population": 299439,
+      "geography": "Unitary Authority"
+    },
+    "E06000030": {
+      "name": "Swindon",
+      "population": 238417,
+      "geography": "Unitary Authority"
+    },
+    "E06000027": {
+      "name": "Torbay",
+      "population": 139485,
+      "geography": "Unitary Authority"
+    },
+    "E06000054": {
+      "name": "Wiltshire",
+      "population": 517979,
+      "geography": "Unitary Authority"
+    },
+    "E10000008": {
+      "name": "Devon",
+      "population": 833408,
+      "geography": "County"
+    },
+    "E07000040": {
+      "name": "East Devon",
+      "population": 156167,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000041": {
+      "name": "Exeter",
+      "population": 137050,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000042": {
+      "name": "Mid Devon",
+      "population": 84148,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000043": {
+      "name": "North Devon",
+      "population": 100543,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000044": {
+      "name": "South Hams",
+      "population": 90842,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000045": {
+      "name": "Teignbridge",
+      "population": 137074,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000046": {
+      "name": "Torridge",
+      "population": 68830,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000047": {
+      "name": "West Devon",
+      "population": 58754,
+      "geography": "Non-metropolitan District"
+    },
+    "E10000013": {
+      "name": "Gloucestershire",
+      "population": 659276,
+      "geography": "County"
+    },
+    "E07000078": {
+      "name": "Cheltenham",
+      "population": 120255,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000079": {
+      "name": "Cotswold",
+      "population": 91490,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000080": {
+      "name": "Forest of Dean",
+      "population": 89104,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000081": {
+      "name": "Gloucester",
+      "population": 134991,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000082": {
+      "name": "Stroud",
+      "population": 124540,
+      "geography": "Non-metropolitan District"
+    },
+    "E07000083": {
+      "name": "Tewkesbury",
+      "population": 98896,
+      "geography": "Non-metropolitan District"
+    },
+    "W06000001": {
+      "name": "Isle of Anglesey",
+      "population": 69291,
+      "geography": "Unitary Authority"
+    },
+    "W06000002": {
+      "name": "Gwynedd",
+      "population": 119173,
+      "geography": "Unitary Authority"
+    },
+    "W06000003": {
+      "name": "Conwy",
+      "population": 114410,
+      "geography": "Unitary Authority"
+    },
+    "W06000004": {
+      "name": "Denbighshire",
+      "population": 97156,
+      "geography": "Unitary Authority"
+    },
+    "W06000005": {
+      "name": "Flintshire",
+      "population": 155812,
+      "geography": "Unitary Authority"
+    },
+    "W06000006": {
+      "name": "Wrexham",
+      "population": 136149,
+      "geography": "Unitary Authority"
+    },
+    "W06000023": {
+      "name": "Powys",
+      "population": 134439,
+      "geography": "Unitary Authority"
+    },
+    "W06000008": {
+      "name": "Ceredigion",
+      "population": 73050,
+      "geography": "Unitary Authority"
+    },
+    "W06000009": {
+      "name": "Pembrokeshire",
+      "population": 125006,
+      "geography": "Unitary Authority"
+    },
+    "W06000010": {
+      "name": "Carmarthenshire",
+      "population": 190083,
+      "geography": "Unitary Authority"
+    },
+    "W06000011": {
+      "name": "Swansea",
+      "population": 246742,
+      "geography": "Unitary Authority"
+    },
+    "W06000012": {
+      "name": "Neath Port Talbot",
+      "population": 142898,
+      "geography": "Unitary Authority"
+    },
+    "W06000013": {
+      "name": "Bridgend",
+      "population": 146743,
+      "geography": "Unitary Authority"
+    },
+    "W06000014": {
+      "name": "Vale of Glamorgan",
+      "population": 134733,
+      "geography": "Unitary Authority"
+    },
+    "W06000015": {
+      "name": "Cardiff",
+      "population": 383536,
+      "geography": "Unitary Authority"
+    },
+    "W06000016": {
+      "name": "Rhondda Cynon Taf",
+      "population": 241178,
+      "geography": "Unitary Authority"
+    },
+    "W06000024": {
+      "name": "Merthyr Tydfil",
+      "population": 58593,
+      "geography": "Unitary Authority"
+    },
+    "W06000018": {
+      "name": "Caerphilly",
+      "population": 176437,
+      "geography": "Unitary Authority"
+    },
+    "W06000019": {
+      "name": "Blaenau Gwent",
+      "population": 67356,
+      "geography": "Unitary Authority"
+    },
+    "W06000020": {
+      "name": "Torfaen",
+      "population": 93419,
+      "geography": "Unitary Authority"
+    },
+    "W06000021": {
+      "name": "Monmouthshire",
+      "population": 94572,
+      "geography": "Unitary Authority"
+    },
+    "W06000022": {
+      "name": "Newport",
+      "population": 163628,
+      "geography": "Unitary Authority"
     }
   }
 }

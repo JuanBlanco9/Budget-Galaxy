@@ -1,7 +1,7 @@
 # Budget Galaxy — Complete Project Handoff
 
 **For: any new Claude Code instance taking over this project**
-**Last updated: 2026-04-17 end of 2-day session, 86.54% MHCLG coverage**
+**Last updated: 2026-04-18 — launch week, frontend polish complete**
 
 This file is self-contained. Read this first; everything else is referenced from here.
 
@@ -32,12 +32,36 @@ A public-spending visualization tool that drills from £1.4T UK government total
 
 ## 2. Current state (what was just shipped)
 
-### UK 2024 tree
+### Launch-week frontend — 2026-04-18
+Six tabs in order: `💡 Insights · 💰 Your Taxes · 🌌 Budget Galaxy · 📊 Explore & Compare · 🏢 Budget Recipients · About`. Budget Galaxy is the default landing. All tabs UK-only for launch.
+
+- **Insights** — 15 verified editorial findings (5 categories × 3 each). Python verifier mirrors calculator logic + recomputes every number. Data: `data/insights/` (per-category JSONs + `_index.json`). Source: `data/insights/PILOT_15_VERIFIED.md`.
+- **Your Taxes** — Honest Taxpayer Slider. IT + NI + VAT + council tax for any salary, any jurisdiction, any council. Sankey flow + per-council trace. Deep-link: `#taxpayer/s/{salary}/j/r/{jur}/r/{region}/c/{council}`.
+- **Budget Galaxy** — D3 force-directed hierarchy. 70-colour palette across 17 department categories. Borrowing node always legible at any salary.
+- **Explore & Compare** — master-detail (tree sidebar 340px + detail panel). Every node at every depth: 10-year sparkline, Δ y/y, Δ 5y, % of UK, % of parent, per-capita chip, "Where this line sits" ancestor card, composition bar, sub-items with inline sparklines, and **always-on source attribution** (walks ancestors → branch default → URL to publisher + code chips).
+- **Budget Recipients** — 402 supplier profiles with UBO resolution (government / individual / listed / foreign / data-gap). Deep-link: `#suppliers/{CH}`.
+
+### UK 2024 tree (data layer — unchanged since 2026-04-17)
 - **86.54% MHCLG coverage** (167/411 councils, £122.6B / £141.7B)
 - 1488 service nodes have `_top_suppliers` metadata
 - 96.7% of those nodes have `top_purposes` breakdown (purpose-level transparency)
 - File: `data/uk/uk_budget_tree_2024.json` (16.09 MB)
 - Live: deployed to Vultr, served at `https://budgetgalaxy.com/data/uk/uk_budget_tree_2024.json`
+
+### Source attribution system (new 2026-04-18)
+Every node in Explore & Compare resolves provenance via 4-step chain:
+1. Node's own `_source` (NHS trust lines at depth 3-4)
+2. Nearest ancestor's `_source` (NHS Provider Sector + Local Gov branch roots)
+3. Branch default by top-level department:
+   - `LOCAL GOVERNMENT (ENGLAND)` → MHCLG Revenue Outturn RO5
+   - `NHS PROVIDER SECTOR` → NHS England TAC 2023/24
+   - `SCOTTISH GOVERNMENT` / `SCOTLAND OFFICE` → gov.scot Budget
+   - `WELSH` / `WALES` → gov.wales Budget
+   - `NORTHERN IRELAND*` → finance-ni.gov.uk
+   - Default → **HMT OSCAR II**
+4. URL lookup from `_UK_SOURCE_URLS` map in `frontend/index.html`
+
+No node anywhere in the tree lacks an attribution footer. Functions: `_cmplistResolveSource`, `_cmplistBranchDefault`, `_cmplistSourceFooter`, `_cmplistAncestorNames`.
 
 ### Coverage by class
 | Class | Covered | % |
