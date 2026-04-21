@@ -1656,6 +1656,52 @@ mark{background:rgba(79,195,247,.3);color:var(--text,#e8ebf5);padding:0 2px;bord
   grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
 }
 
+/* Enhanced stats v2: hero + wide + grouped + progressive disclosure */
+.detail-enrich-stats-v2 { margin-bottom:12px; }
+.detail-enrich-hero {
+  padding:14px 16px; margin-bottom:12px;
+  background:linear-gradient(135deg, rgba(64,184,255,.08) 0%, rgba(64,184,255,.02) 100%);
+  border:1px solid rgba(64,184,255,.2);
+  border-radius:8px;
+}
+.detail-enrich-hero-val {
+  font-size:22px; font-weight:600; color:#dbe7fa;
+  font-variant-numeric:tabular-nums; line-height:1.2;
+  letter-spacing:-.01em;
+}
+.detail-enrich-hero-label {
+  font-size:10px; color:var(--dim); text-transform:uppercase;
+  letter-spacing:.06em; margin-top:4px; font-weight:500;
+}
+/* Wide stat: spans 2 columns (or full width if grid is 2-col) */
+.detail-enrich-stat-wide { grid-column: span 2; }
+@media (max-width:700px){
+  .detail-enrich-stat-wide { grid-column: 1 / -1; }
+}
+/* Group header between stat blocks */
+.detail-enrich-stats-group-header {
+  font-size:10.5px; color:var(--dim); text-transform:uppercase;
+  letter-spacing:.08em; font-weight:600;
+  margin:14px 0 6px;
+  padding-bottom:4px;
+  border-bottom:1px dashed rgba(255,255,255,.08);
+}
+.detail-enrich-stats-group-header:first-child { margin-top:0; }
+/* Show all / hide toggle */
+.detail-enrich-stats-toggle {
+  display:inline-block; margin-top:10px;
+  padding:6px 12px; font-size:11px;
+  background:rgba(64,184,255,.08); color:#8ec8ff;
+  border:1px solid rgba(64,184,255,.2); border-radius:4px;
+  cursor:pointer; font-family:inherit;
+  transition:background .15s, color .15s;
+}
+.detail-enrich-stats-toggle:hover {
+  background:rgba(64,184,255,.15); color:#bfdcff;
+}
+.detail-enrich-stats-grid.detail-enrich-stats-hidden { display:none; }
+.detail-enrich-stats-grid.detail-enrich-stats-grid:not(.detail-enrich-stats-hidden) { display:grid; }
+
 /* Sources block */
 .detail-enrich-sources{
   margin-top:10px;padding-top:10px;
@@ -14616,6 +14662,140 @@ function _cmplistResolveSource(node, pathArr, root){
 }
 
 // ─────────────────────────────────────────────────────────────────────────
+// Enhanced stats renderer — handles:
+//  • Hero stat at top (primary £ or headline number)
+//  • Wide stats (value > 80 chars) span 2 columns
+//  • Semantic grouping by label prefix (Leadership 2024-25, etc.)
+//  • Progressive disclosure (show first N, "Show all" toggle) for large grids
+// ─────────────────────────────────────────────────────────────────────────
+const _cmplistStatIdCounter = { n: 0 };
+function _cmplistRenderStatsEnhanced(keyStats){
+  if (!keyStats || !keyStats.length) return '';
+  const WIDE_THRESHOLD = 85;      // chars of value → full-width card
+  const INITIAL_VISIBLE = 10;     // show first N stats; collapse rest behind toggle
+  const GROUP_MIN_SIZE = 3;       // don't render a group header for < 3 stats
+
+  // Normalise stats → { label, value, wide, groupKey }
+  const normed = keyStats.map((s, i) => {
+    const label = String(s.label || '');
+    const value = String(s.value || '');
+    // Detect group by label suffix like "2024-25" (leadership / governance bucket)
+    let groupKey = '';
+    const govMatch = label.match(/\b20\d{2}[-–]\d{2}\b/);
+    if (govMatch) groupKey = 'Leadership & governance 2024-25';
+    else if (/^(Staff|Workforce|Agency|Salaries|Pay|Pension|FTE|WTE|Clinical)\b/i.test(label)) groupKey = 'Workforce & pay';
+    else if (/^(PFI|Building Safety|NHP Cohort|Cost Growth|Cost Baseline|Financial|Surplus|Deficit|Underlying)\b/i.test(label)) groupKey = 'Financial position';
+    else if (/^(CQC|Ofsted|NAO|PAC|Evaluation|Audit|Review|Inspection)\b/i.test(label)) groupKey = 'Regulation & scrutiny';
+    else if (/^(Policy|Legal|Statute|Act|Reform|White Paper)\b/i.test(label)) groupKey = 'Policy & legal';
+    return {
+      label,
+      value,
+      wide: value.length > WIDE_THRESHOLD,
+      groupKey,
+      idx: i,
+    };
+  });
+
+  // Choose hero stat: first one that looks like the headline (usually index 0 if it has £ or % or big number)
+  let hero = null;
+  for (const s of normed.slice(0, 3)) {
+    if (/£[\d,]+(?:\.\d+)?\s*(?:M|B|bn|m|k)|\b\d+(?:\.\d+)?(?:\s?%|\smillion|\sbillion)\b/i.test(s.value) && s.value.length < 80) {
+      hero = s;
+      break;
+    }
+  }
+
+  const rest = hero ? normed.filter((s, i) => i !== hero.idx) : normed;
+  const instanceId = ++_cmplistStatIdCounter.n;
+
+  // Split rest into groups, unground those below min size
+  const grouped = {};
+  const ungrouped = [];
+  for (const s of rest) {
+    if (s.groupKey) {
+      (grouped[s.groupKey] = grouped[s.groupKey] || []).push(s);
+    } else {
+      ungrouped.push(s);
+    }
+  }
+  // Merge small groups back to ungrouped
+  for (const k of Object.keys(grouped)) {
+    if (grouped[k].length < GROUP_MIN_SIZE) {
+      ungrouped.push(...grouped[k]);
+      delete grouped[k];
+    }
+  }
+  // Sort groups by a priority order
+  const GROUP_ORDER = ['Leadership & governance 2024-25', 'Workforce & pay', 'Financial position', 'Regulation & scrutiny', 'Policy & legal'];
+  const groupKeys = Object.keys(grouped).sort((a, b) => {
+    const ai = GROUP_ORDER.indexOf(a);
+    const bi = GROUP_ORDER.indexOf(b);
+    return (ai === -1 ? 99 : ai) - (bi === -1 ? 99 : bi);
+  });
+
+  let html = `<div class="detail-enrich-stats-v2" data-stats-id="${instanceId}">`;
+
+  // Hero
+  if (hero) {
+    html += `<div class="detail-enrich-hero">
+      <div class="detail-enrich-hero-val">${_cmpEsc(hero.value)}</div>
+      <div class="detail-enrich-hero-label">${_cmpEsc(hero.label)}</div>
+    </div>`;
+  }
+
+  const renderStat = (s) => `<div class="detail-enrich-stat${s.wide ? ' detail-enrich-stat-wide' : ''}">
+    <div class="detail-enrich-stat-label">${_cmpEsc(s.label)}</div>
+    <div class="detail-enrich-stat-val">${_cmpEsc(s.value)}</div>
+  </div>`;
+
+  // Ungrouped stats go first (if any), in initial+collapsed blocks
+  let globalIdx = 0;
+  const renderBlock = (items) => {
+    if (!items.length) return '';
+    const visible = items.slice(0, Math.max(0, INITIAL_VISIBLE - globalIdx));
+    const hidden  = items.slice(visible.length);
+    globalIdx += visible.length;
+    let frag = `<div class="detail-enrich-stats-grid">${visible.map(renderStat).join('')}</div>`;
+    if (hidden.length) {
+      frag += `<div class="detail-enrich-stats-grid detail-enrich-stats-hidden" data-more-block="${instanceId}" style="display:none">${hidden.map(renderStat).join('')}</div>`;
+    }
+    return frag;
+  };
+
+  if (ungrouped.length) {
+    html += renderBlock(ungrouped);
+  }
+  for (const gk of groupKeys) {
+    html += `<div class="detail-enrich-stats-group-header">${_cmpEsc(gk)}</div>`;
+    html += renderBlock(grouped[gk]);
+  }
+
+  // "Show all" toggle if anything was hidden
+  const totalHidden = rest.length - Math.min(rest.length, INITIAL_VISIBLE);
+  if (totalHidden > 0) {
+    html += `<button class="detail-enrich-stats-toggle" data-toggle-stats="${instanceId}" onclick="_cmplistToggleStats(${instanceId}, this)">
+      Show all ${rest.length} stats (${totalHidden} more) ▾
+    </button>`;
+  }
+
+  html += `</div>`;
+  return html;
+}
+
+// Toggle hidden-stat blocks
+function _cmplistToggleStats(id, btn){
+  const blocks = document.querySelectorAll(`[data-more-block="${id}"]`);
+  const isHidden = blocks.length && blocks[0].style.display === 'none';
+  for (const b of blocks) b.style.display = isHidden ? 'grid' : 'none';
+  if (btn) {
+    btn.textContent = isHidden
+      ? `Hide extra stats ▴`
+      : btn.textContent.replace('Hide extra stats ▴', btn.dataset.originalText || 'Show all ▾');
+    if (isHidden && !btn.dataset.originalText) btn.dataset.originalText = btn.textContent;
+  }
+}
+
+// ─────────────────────────────────────────────────────────────────────────
 // Render the rich enrichment card — the "juicy" panel users see on click.
 // Pulls from both compact (program_enrichment.json) and rich
 // (enrichment_top50.json) sources, displaying whatever fields exist.
@@ -14667,12 +14847,7 @@ function _cmplistEnrichmentCard(rawName, parentName, ancestorNames){
 
   // Key stats grid — the "juicy numbers" layer. Prefer extended key_stats; fall back to derived stats.
   if (keyStats && keyStats.length) {
-    html += `<div class="detail-enrich-stats detail-enrich-stats-grid">
-      ${keyStats.map(s => `<div class="detail-enrich-stat">
-        <div class="detail-enrich-stat-label">${_cmpEsc(s.label||'')}</div>
-        <div class="detail-enrich-stat-val">${_cmpEsc(s.value||'')}</div>
-      </div>`).join('')}
-    </div>`;
+    html += _cmplistRenderStatsEnhanced(keyStats);
   } else {
     // Fallback compact stats for nodes without extended key_stats
     const stats = [];
