@@ -14090,6 +14090,69 @@ function _cmplistProceduralServiceCard(node, ancestors, root){
 }
 
 // ─────────────────────────────────────────────────────────────────────────
+// Tier C extension — NHS trust financial sub-line procedural template.
+// Fires for nodes like "Staff Costs" / "Clinical Supplies and Services" /
+// "Premises" / "Depreciation" appearing directly under an NHS trust, where
+// the standard council-service template does not apply. Uses standardised
+// NHS IFRS accounting definitions so users get consistent context.
+// ─────────────────────────────────────────────────────────────────────────
+const UK_NHS_TRUST_SUBLINE_DESC = {
+  'Staff Costs': "Employees, locums, and bank/agency staff. Typically 65-70% of NHS trust revenue spend. Growth since 2021 driven by pay settlements (5-6.5% consolidated awards 2023-24) and agency rate caps being breached during industrial action.",
+  'Salaries & wages': "Substantive payroll (Agenda for Change bands 1-9 + medical/dental pay scales + Very Senior Managers). Excludes pension employer contribution (separate line) but includes National Insurance + apprenticeship levy.",
+  'Salaries and wages': "Substantive payroll (Agenda for Change bands 1-9 + medical/dental pay scales + Very Senior Managers). Excludes pension employer contribution (separate line) but includes National Insurance + apprenticeship levy.",
+  'Clinical Supplies and Services': "Drugs, devices, diagnostics, surgical consumables, patient food, cleaning contracts. Drugs alone typically 10-12% of trust spend; high-cost specialist cancer drugs commissioned centrally via NHS England.",
+  'Other Operating Expenses': "Estates, facilities management, utilities, non-clinical IT, training, professional services, external audit fees.",
+  'Premises': "Business rates, utilities, maintenance, leases, cleaning, security. Increasing share as NHS estate ages — backlog maintenance across England ~£13.8B (ERIC 2023-24).",
+  'Depreciation': "Non-cash charge consuming net book value of PPE over useful life (typically 50-60yr buildings, 5-10yr medical equipment). Larger for PFI-heavy trusts.",
+  'Drug Costs': "Pharmaceuticals administered to inpatients + outpatients. High-cost drugs (oncology, biologics) commissioned via NHS England specialised commissioning list.",
+  'Other Clinical Costs': "Non-drug clinical consumables: surgical devices, diagnostic reagents, dressings, PPE.",
+  'Impairments': "Write-downs on assets where recoverable amount falls below carrying value (IAS 36). Often driven by strategic service moves or condition surveys.",
+};
+
+function _cmplistIsNhsTrustSubLine(node, ancestors){
+  if (!node || !ancestors || ancestors.length < 2) return false;
+  const parent = ancestors[ancestors.length - 1]?.name || '';
+  // Parent must be an NHS trust (name contains "NHS Trust" or "NHS Foundation Trust")
+  if (!/NHS (Foundation )?Trust\b/.test(parent)) return false;
+  // And the node name should be one of the standard IFRS sub-line categories
+  // (or we still run — any leaf directly under an NHS trust gets context)
+  return true;
+}
+
+function _cmplistProceduralNhsTrustSubLine(node, ancestors){
+  const trust = ancestors[ancestors.length - 1] || {};
+  const nodeName = String(node.name||'').trim();
+  // Try exact, case-insensitive, and prefix match
+  let desc = UK_NHS_TRUST_SUBLINE_DESC[nodeName];
+  if (!desc) {
+    const keyLower = nodeName.toLowerCase();
+    for (const [k, v] of Object.entries(UK_NHS_TRUST_SUBLINE_DESC)) {
+      if (keyLower === k.toLowerCase() || keyLower.includes(k.toLowerCase())) {
+        desc = v;
+        break;
+      }
+    }
+  }
+  if (!desc) {
+    desc = `An IFRS-classified financial sub-line within <b>${_cmpEsc(_cmplistPrettyName(trust.name||''))}</b>. NHS trusts report against a standard account framework (NHS Group Manual + FReM) enabling cross-trust comparison.`;
+  }
+  const valStr = node.value ? '£' + (node.value/1e9 >= 1
+    ? (node.value/1e9).toFixed(2) + 'B'
+    : (node.value/1e6).toFixed(0) + 'M') : '';
+  return `<div class="detail-enrich detail-enrich-procedural">
+    <div class="detail-enrich-title">
+      <span class="detail-enrich-dot" style="background:#c39bd3"></span>
+      NHS trust sub-line
+    </div>
+    <div class="detail-enrich-desc">${desc}</div>
+    <div class="detail-enrich-notes">
+      <div class="detail-enrich-notes-label">Context</div>
+      <div class="detail-enrich-notes-body">This line (${_cmpEsc(nodeName)}${valStr ? ` · ${valStr}` : ''}) is reported by ${_cmpEsc(_cmplistPrettyName(trust.name||''))} in its annual accounts. NHS England consolidates all ~215 trusts' accounts in the <b>Trust Accounts Consolidation (TAC)</b> dataset — enabling like-for-like peer comparison.</div>
+    </div>
+  </div>`;
+}
+
+// ─────────────────────────────────────────────────────────────────────────
 // Tier D — Universal contextual fallback. Runs when nothing else matched.
 // Every single node in the tree gets this as a safety net. Produces:
 //   • Ancestor chain summary
@@ -15177,11 +15240,13 @@ function _cmplistRenderDetail(){
       enrichmentHtml = _cmplistEnrichmentCard(rawName, parentName);
     }
     if (!enrichmentHtml) {
-      // Tier C procedural: council or council-service
+      // Tier C procedural: council · council-service · NHS trust sub-line
       if (_cmplistIsCouncilNode(node, ancestors)) {
         enrichmentHtml = _cmplistProceduralCouncilCard(node, ancestors, s.root);
       } else if (_cmplistIsCouncilServiceNode(node, ancestors)) {
         enrichmentHtml = _cmplistProceduralServiceCard(node, ancestors, s.root);
+      } else if (_cmplistIsNhsTrustSubLine(node, ancestors)) {
+        enrichmentHtml = _cmplistProceduralNhsTrustSubLine(node, ancestors);
       }
     }
     if (!enrichmentHtml) {

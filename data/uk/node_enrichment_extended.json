@@ -1580,6 +1580,16 @@
         "Local Government Funding",
         "WALES OFFICE",
         "NHS"
+      ],
+      "aliases": [
+        {
+          "name": "Not known",
+          "parent": "WELSH ASSEMBLY GOVERNMENT"
+        },
+        {
+          "name": "n/a",
+          "parent": "WELSH ASSEMBLY GOVERNMENT"
+        }
       ]
     },
     "Dedicated Schools Grant (DSG)": {
@@ -2039,7 +2049,11 @@
       "aliases": [
         "BBC",
         "BBC World Service",
-        "Bbc World Service"
+        "Bbc World Service",
+        {
+          "name": "n/a",
+          "parent": "Bristish Broadcasting Corporation"
+        }
       ],
       "_note": "BBC Licence Fee itself is not a spending line in OSCAR 2024 (it's a levy). Aliases cover the BBC-related spending lines that do exist (FCDO World Service funding).",
       "description": "Compulsory annual fee payable by any household watching live TV (any channel) or using BBC iPlayer. Primary funding source for the BBC under Royal Charter. Evasion is a criminal offence punishable by fine up to £1,000.",
@@ -2512,7 +2526,15 @@
     "DEPARTMENT FOR EDUCATION": {
       "aliases": [
         "Department for Education",
-        "DfE"
+        "DfE",
+        {
+          "name": "Not known",
+          "parent": "DEPARTMENT FOR EDUCATION"
+        },
+        {
+          "name": "n/a",
+          "parent": "DEPARTMENT FOR EDUCATION"
+        }
       ],
       "description": "England's third-largest spending department. Funds schools (via LAs and academy trusts), SEND provision, early years, 16-19 education, apprenticeships, higher-education regulation, student loans, and teacher pensions. Money reaches schools through two channels: Dedicated Schools Grant ring-fenced to LAs, and ESFA direct grants to academy trusts (now 82% of secondary pupils, 42% of primary).",
       "beneficiaries": "~8.2M pupils in state-funded schools · ~2.86M HE students · ~339,580 apprenticeship starts / year · ~1.3M children in funded early-years · ~468,400 FTE teachers",
@@ -2640,7 +2662,11 @@
         "Ministry of Housing, Communities and Local Government",
         "MHCLG",
         "DLUHC",
-        "Department for Levelling Up, Housing and Communities"
+        "Department for Levelling Up, Housing and Communities",
+        {
+          "name": "n/a",
+          "parent": "MHCLG Communities"
+        }
       ],
       "description": "The UK central-government department that funds English local authorities (grants, not the councils' own spend), sets national housing and planning policy, and oversees building safety after Grenfell. Renamed from DLUHC to MHCLG in July 2024 under the Starmer government. Distinct from the £141.7B 'Local Government (England)' branch — that's the councils themselves; this is the money central government channels TO them.",
       "beneficiaries": "317 principal councils in England · 40 PCCs · 30 fire authorities · ~57 million England residents using council services · registered providers of social housing · leaseholders and social tenants in unsafe post-Grenfell buildings",
@@ -3141,7 +3167,11 @@
     "DEPARTMENT FOR TRANSPORT": {
       "aliases": [
         "Department for Transport",
-        "DfT"
+        "DfT",
+        {
+          "name": "n/a",
+          "parent": "Department for Transport"
+        }
       ],
       "description": "UK department for the English transport system + reserved transport matters GB-wide. Covers rail (Network Rail infrastructure · HS2 · Train Operating Companies post-franchising) · Strategic Road Network (via National Highways) · buses · aviation (CAA) · maritime · active travel · road safety. Administers the largest single passenger-rail grant in Europe and the multi-year Road Investment Strategy. Following the Passenger Railway Services (Public Ownership) Act 2024, DfT is progressively taking TOCs back into public ownership as franchises expire — pending the full Great British Railways Bill expected in 2025.",
       "beneficiaries": "~1.6 billion rail passenger journeys / year · 3.4 billion bus journeys (England outside London) · ~2/3 of UK road freight routed via SRN · TfL Tube ~1.16B + London bus ~1.8B journeys · 34 Local Transport Authorities receiving BSIP funding",
@@ -3259,7 +3289,11 @@
     "DEPARTMENT FOR ENERGY SECURITY AND NET ZERO": {
       "aliases": [
         "Department for Energy Security and Net Zero",
-        "DESNZ"
+        "DESNZ",
+        {
+          "name": "n/a",
+          "parent": "Department for Energy Security and Net Zero"
+        }
       ],
       "description": "UK department created 7 February 2023 when the Sunak government split BEIS. Scope: energy security, decarbonisation + climate policy, Contracts for Difference (CfD) renewables subsidies, Nuclear Decommissioning Authority (including Sellafield), nuclear new-build (Hinkley Point C · Sizewell C · SMRs via Great British Nuclear), Energy Bills Support schemes (wound down), and sponsorship of Great British Energy + Ofgem + Low Carbon Contracts Company.",
       "beneficiaries": "All GB electricity + gas consumers (EBSS rebates 2022-23; standing-charge levies) · offshore wind + solar + tidal developers · ~11,000 Sellafield staff + EDF Hinkley C workforce (~10,000 at peak) · ~3.5M fuel-poor households via Warm Home Discount · Aberdeen supply chain + Crown Estate partnership via GB Energy",
@@ -3370,7 +3404,11 @@
     "DEPARTMENT FOR CULTURE, MEDIA AND SPORT": {
       "aliases": [
         "Department for Culture, Media and Sport",
-        "DCMS"
+        "DCMS",
+        {
+          "name": "n/a",
+          "parent": "Sport England"
+        }
       ],
       "description": "UK department for arts, heritage, sport, gambling regulation, civil society, creative industries, and cultural aspects of digital policy. After the February 2023 split, most telecoms + AI + digital-infrastructure functions moved to DSIT; DCMS retained creative industries, cultural digital and media. **Scope note**: the department's own spend is ~£9B — NOT to be confused with 'DCMS sectors GVA' (~£125B, 6% of UK GVA) which is an economic-footprint statistic.",
       "beneficiaries": "~24.5M TV Licence-holding households funding the BBC · ~985 Arts Council England NPOs (2023-26) · 16 DCMS-sponsored national museums (~50M+ visits/year pre-pandemic) · ~22M UK adult gamblers regulated by Gambling Commission · ~400,000 listed buildings + ~20,000 scheduled monuments under Historic England · ~2.4M jobs in creative industries",
@@ -3483,7 +3521,11 @@
     "DEPARTMENT FOR SCIENCE, INNOVATION AND TECHNOLOGY": {
       "aliases": [
         "Department for Science, Innovation and Technology",
-        "DSIT"
+        "DSIT",
+        {
+          "name": "n/a",
+          "parent": "United Kingdom Atomic Energy Authority"
+        }
       ],
       "description": "UK department created 7 February 2023 when the Sunak government split BEIS into four successor departments — DSIT was designed to ring-fence R&D + digital + tech policy. Inherits science and research from BEIS; digital and telecoms from former DCMS; and (from November 2023) absorbed the Government Digital Service (GDS), Central Digital and Data Office (CDDO) and Incubator for AI (i.AI) from the Cabinet Office. Sponsors UKRI + AI Security Institute + UK Space Agency + Alan Turing Institute.",
       "beneficiaries": "157 universities + research institutes (REF 2021) · ~22,000 UKRI-funded PhD students · 10,000+ SMEs per year via Innovate UK + Catapults + KTPs · UK AI frontier ecosystem (DeepMind, Anthropic UK, Cohere) · ~52,000 UK space sector jobs · rural + urban telecoms consumers via Project Gigabit",
@@ -4147,7 +4189,15 @@
         "BRR Top-Ups",
         "BR S31 Relief Measures",
         "Revenue Support Grants",
-        "Non Domestic Rates Non-Dept"
+        "Non Domestic Rates Non-Dept",
+        {
+          "name": "Not known",
+          "parent": "MHCLG Local Government"
+        },
+        {
+          "name": "n/a",
+          "parent": "MHCLG Local Government"
+        }
       ],
       "description": "The grant-routing sub-line of MHCLG — principal conduit through which central government channels revenue + specific-purpose funding to England's 317 principal local authorities. Sits alongside (and is quantitatively larger than) the 'Communities' policy side. Controls Social Care Grant, pooled Better Care Fund, residual Revenue Support Grant, Section 31 pass-through grants, Levelling Up/Towns/UKSPF programmes. Does NOT control council-tax or retained business rates — those are local — but sets the rules, the settlement, and top-up grants that complete 'Core Spending Power' (CSP).",
       "beneficiaries": "317 English principal local authorities (county · district · unitary · metropolitan · London borough) · GLA + 10 Mayoral Combined Authorities · adult + children's social-care services · homelessness duty services · residents of Levelling Up 'places' (101 Towns Fund towns · 216 LUF-funded bids) · 4 devolved nations via Barnett consequentials",
@@ -4452,7 +4502,11 @@
     },
     "Nuclear Decommissioning Authority": {
       "aliases": [
-        "NDA"
+        "NDA",
+        {
+          "name": "n/a",
+          "parent": "Nuclear Decommissioning Authority"
+        }
       ],
       "description": "Non-Departmental Public Body sponsored by DESNZ, created by Energy Act 2004, operational since 1 April 2005. Responsible for the safe + secure clean-up of the UK's 17 earliest civil nuclear sites, legacy fuel cycle management (Sellafield + Magnox closure), and long-term geological disposal of higher-activity radioactive waste. Group encompasses Sellafield Ltd (integrated 2016) · Magnox Ltd (12 reactor sites, in-house 2019) · Dounreay Site Restoration · Nuclear Waste Services (formed 2022 merging LLWR + RWM + NDA waste functions) · International Nuclear Services · Nuclear Transport Solutions.",
       "beneficiaries": "~17,000 staff across NDA estate + thousands more in nuclear supply chain · West Cumbria regional economy (Sellafield is UK's largest nuclear employer · ~11,000 staff) · future generations (intergenerational waste-management benefit) · GDF candidate-community host economies (Mid-Copeland · South-Copeland · Theddlethorpe) · UK tier-2/tier-3 nuclear contractors (civils · robotics · waste handling)",
@@ -8699,7 +8753,11 @@
     "Arts Council": {
       "aliases": [
         "Arts Council England",
-        "ACE"
+        "ACE",
+        {
+          "name": "n/a",
+          "parent": "Arts Council"
+        }
       ],
       "description": "**Arts Council England (ACE)** — DCMS's principal arm's-length body for the arts · museums + libraries. Established by **Royal Charter 1994** when Arts Council of Great Britain (founded 1946 under Keynes) was split into separate councils for England · Wales · Scotland · NI. ACE distributes two revenue streams — **HM Treasury grant-in-aid via DCMS + share of National Lottery good-cause proceeds** — to a portfolio of National Portfolio Organisations (NPOs/IPSOs) + via project grants. **Tree £1.15B likely aggregates ACE core (~£770M) with associated DCMS cultural programmes** — scope flag.",
       "beneficiaries": "985 National Portfolio Organisations (2023-26 cycle · theatres · orchestras · museums · dance companies · literature bodies) · individual artists via DYCP + project grants · public libraries (ACE development body since 2011) · regional audiences especially in 'Levelling Up for Culture' priority places",
@@ -8894,7 +8952,11 @@
     "DEPARTMENT FOR BUSINESS AND TRADE": {
       "aliases": [
         "DBT",
-        "Business and Trade"
+        "Business and Trade",
+        {
+          "name": "n/a",
+          "parent": "Department for Business and Trade"
+        }
       ],
       "description": "Formed **7 February 2023** in Rishi Sunak's machinery-of-government reshuffle that broke up BEIS. Combines Department for International Trade (DIT, 2016-23) + business + corporate governance + labour markets + consumer functions of BEIS. Energy went to DESNZ · Science to DSIT. Remit: trade policy + negotiation · business regulation · corporate transparency · competition + consumer policy · SME support · labour market regulation · export finance. Sponsors Companies House · CMA · UK Export Finance · Insolvency Service · Trade Remedies Authority · Regulatory Policy Committee · co-shareholder in Post Office Ltd.",
       "beneficiaries": "UK exporters + importers navigating trade regimes + UKEF financing (~£8.8B facility) · SMEs via British Business Bank programmes (co-sponsored with HMT) · consumers via CMA enforcement + DMCC Act digital markets regime · workers via Employment Rights Bill · directors + company-formation users of Companies House · Post Office sub-postmasters receiving Horizon redress",
@@ -9936,7 +9998,15 @@
     "SCOTLAND OFFICE AND OFFICE OF THE ADVOCATE GENERAL": {
       "aliases": [
         "Scotland Office",
-        "Office of the Advocate General"
+        "Office of the Advocate General",
+        {
+          "name": "n/a",
+          "parent": "SCOTLAND OFFICE AND OFFICE OF THE ADVOCATE GENERAL"
+        },
+        {
+          "name": "Not known",
+          "parent": "SCOTLAND OFFICE AND OFFICE OF THE ADVOCATE GENERAL"
+        }
       ],
       "_scope_note": "£48.57B tree total is OVERWHELMINGLY a PASS-THROUGH: Scottish Government Block Grant is voted in Supply Estimates through the Scotland Office accounting officer. The Scotland Office's own operational resource is ~£15-20M — separate from the £48.57B passthrough to devolved Scottish Government.",
       "description": "Small UK Government department acting as Scotland's voice at Westminster + Westminster's interlocutor with the Scottish Government. Also houses **Office of the Advocate General for Scotland (OAG)** — UK Government's principal Scottish legal adviser. HQ Dover House, Whitehall + Edinburgh office (Melville Crescent). Operational budget ~£16M; the £48.57B is Scottish Government Block Grant passthrough + Scotland-specific passthroughs.",
@@ -10028,7 +10098,15 @@
     "NORTHERN IRELAND OFFICE": {
       "aliases": [
         "NIO",
-        "Grant Payable To Northern Ireland (Non-Budget/Voted)"
+        "Grant Payable To Northern Ireland (Non-Budget/Voted)",
+        {
+          "name": "n/a",
+          "parent": "NORTHERN IRELAND OFFICE"
+        },
+        {
+          "name": "Not known",
+          "parent": "NORTHERN IRELAND OFFICE"
+        }
       ],
       "_scope_note": "£25.52B tree total dominated by NI Executive Block Grant passthrough + NI-specific reserved-matter spending (security). NIO's own operational budget is ~£25M.",
       "description": "UK Government's department for Northern Ireland — handling constitutional · security · intergovernmental matters post-Belfast/Good Friday Agreement. Small operational footprint (Stormont House Belfast + Whitehall). £25.52B line dominated by NI Executive Block Grant passthrough plus NI-specific reserved-matter spending (security). NIO has specific additional role given complex constitutional + security context.",
@@ -10123,7 +10201,15 @@
     },
     "WALES OFFICE": {
       "aliases": [
-        "Office of the Secretary of State for Wales"
+        "Office of the Secretary of State for Wales",
+        {
+          "name": "n/a",
+          "parent": "WALES OFFICE"
+        },
+        {
+          "name": "Not known",
+          "parent": "WALES OFFICE"
+        }
       ],
       "_scope_note": "£20.52B tree total is overwhelmingly Welsh Government Block Grant passthrough. Wales Office's own operational resource is ~£8M.",
       "description": "Small UK Government department representing Welsh interests in Whitehall + Westminster. HQ Gwydyr House Whitehall + Cardiff office. Operational budget ~£8M; £20.52B tree line is overwhelmingly Welsh Government Block Grant passthrough.",
