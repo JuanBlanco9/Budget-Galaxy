@@ -14111,12 +14111,14 @@ const UK_NHS_TRUST_SUBLINE_DESC = {
 
 function _cmplistIsNhsTrustSubLine(node, ancestors){
   if (!node || !ancestors || ancestors.length < 2) return false;
-  const parent = ancestors[ancestors.length - 1]?.name || '';
-  // Parent must be an NHS trust (name contains "NHS Trust" or "NHS Foundation Trust")
-  if (!/NHS (Foundation )?Trust\b/.test(parent)) return false;
-  // And the node name should be one of the standard IFRS sub-line categories
-  // (or we still run — any leaf directly under an NHS trust gets context)
-  return true;
+  // Walk up to 3 levels to find an NHS trust ancestor — catches both:
+  //   (a) "Drug Costs" directly under "Barts Health NHS Trust"
+  //   (b) "Salaries & wages" under "Staff Costs" under "Barts Health NHS Trust"
+  for (let i = ancestors.length - 1; i >= Math.max(0, ancestors.length - 3); i--) {
+    const anc = ancestors[i]?.name || '';
+    if (/NHS (Foundation )?Trust\b/.test(anc)) return true;
+  }
+  return false;
 }
 
 function _cmplistProceduralNhsTrustSubLine(node, ancestors){
