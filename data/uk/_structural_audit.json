@@ -151,11 +151,10 @@
   "NORTHERN IRELAND EXECUTIVE": {
     "archetype": "DEPT",
     "gaps": [
-      "perm_sec",
       "mog_history",
       "alb_inventory"
     ],
-    "gap_count": 3,
+    "gap_count": 2,
     "demand_count": 7
   },
   "WELSH ASSEMBLY GOVERNMENT": {
@@ -824,10 +823,9 @@
   "SCOTLAND OFFICE AND OFFICE OF THE ADVOCATE GENERAL": {
     "archetype": "NON_MIN_DEPT",
     "gaps": [
-      "leadership",
-      "statutory_powers"
+      "leadership"
     ],
-    "gap_count": 2,
+    "gap_count": 1,
     "demand_count": 5
   },
   "NORTHERN IRELAND OFFICE": {
@@ -876,10 +874,9 @@
     "archetype": "DEPT",
     "gaps": [
       "mog_history",
-      "alb_inventory",
-      "barnett_interaction"
+      "alb_inventory"
     ],
-    "gap_count": 3,
+    "gap_count": 2,
     "demand_count": 7
   },
   "CROWN PROSECUTION SERVICE": {
@@ -1096,12 +1093,8 @@
   },
   "Debt Interest Payments (National Debt Servicing)": {
     "archetype": "PROGRAMME",
-    "gaps": [
-      "policy_owner_dept",
-      "beneficiary_count",
-      "predecessor_successor"
-    ],
-    "gap_count": 3,
+    "gaps": [],
+    "gap_count": 0,
     "demand_count": 6
   },
   "COMPETITION AND MARKETS AUTHORITY": {
@@ -1161,20 +1154,16 @@
   },
   "OFFICE OF THE PARLIAMENTARY COMMISSIONER FOR ADMINISTRATION AND HEALTH SERVICE COMMISSIONER FOR ENGLAND": {
     "archetype": "NON_MIN_DEPT",
-    "gaps": [
-      "leadership",
-      "statutory_powers"
-    ],
-    "gap_count": 2,
+    "gaps": [],
+    "gap_count": 0,
     "demand_count": 5
   },
   "PARLIAMENTARY WORKS GRANT": {
     "archetype": "NON_MIN_DEPT",
     "gaps": [
-      "leadership",
-      "statutory_powers"
+      "leadership"
     ],
-    "gap_count": 2,
+    "gap_count": 1,
     "demand_count": 5
   },
   "OFFICE OF RAIL AND ROAD": {
@@ -1192,19 +1181,17 @@
   "HM PROCURATOR GENERAL AND TREASURY SOLICITOR": {
     "archetype": "NON_MIN_DEPT",
     "gaps": [
-      "leadership",
-      "statutory_powers"
+      "leadership"
     ],
-    "gap_count": 2,
+    "gap_count": 1,
     "demand_count": 5
   },
   "UNITED KINGDOM SUPREME COURT": {
     "archetype": "NON_MIN_DEPT",
     "gaps": [
-      "leadership",
-      "statutory_powers"
+      "leadership"
     ],
-    "gap_count": 2,
+    "gap_count": 1,
     "demand_count": 5
   },
   "LOCAL GOVERNMENT BOUNDARY COMMISSION FOR ENGLAND": {
@@ -1217,11 +1204,8 @@
   },
   "HOUSE OF COMMONS: MEMBERS": {
     "archetype": "NON_MIN_DEPT",
-    "gaps": [
-      "leadership",
-      "statutory_powers"
-    ],
-    "gap_count": 2,
+    "gaps": [],
+    "gap_count": 0,
     "demand_count": 5
   },
   "FOOD STANDARDS AGENCY": {
@@ -1247,13 +1231,11 @@
   "FOREIGN, COMMONWEALTH AND DEVELOPMENT OFFICE: OVERSEAS SUPERANNUATION": {
     "archetype": "DEPT",
     "gaps": [
-      "perm_sec",
       "mog_history",
       "alb_inventory",
-      "policy_priorities",
-      "barnett_interaction"
+      "policy_priorities"
     ],
-    "gap_count": 5,
+    "gap_count": 3,
     "demand_count": 7
   },
   "MINISTRY OF JUSTICE: JUDICIAL PENSIONS SCHEME": {
@@ -1299,19 +1281,17 @@
   "NATIONAL SAVINGS AND INVESTMENTS": {
     "archetype": "NON_MIN_DEPT",
     "gaps": [
-      "statutory_powers",
       "policy_priorities"
     ],
-    "gap_count": 2,
+    "gap_count": 1,
     "demand_count": 5
   },
   "GOVERNMENT ACTUARY'S DEPARTMENT": {
     "archetype": "NON_MIN_DEPT",
     "gaps": [
-      "leadership",
-      "policy_priorities"
+      "leadership"
     ],
-    "gap_count": 2,
+    "gap_count": 1,
     "demand_count": 5
   },
   "Asylum Support, Resettlement and Accommodation": {
@@ -1819,12 +1799,8 @@
   },
   "Royal Hospital, Chelsea": {
     "archetype": "PROGRAMME",
-    "gaps": [
-      "funding_trajectory",
-      "evaluation_evidence",
-      "predecessor_successor"
-    ],
-    "gap_count": 3,
+    "gaps": [],
+    "gap_count": 0,
     "demand_count": 6
   },
   "Marine Management Organisation": {
@@ -1848,11 +1824,9 @@
   "Commonwealth Scholarship Commission": {
     "archetype": "REGULATOR",
     "gaps": [
-      "statutory_powers",
-      "enforcement_cadence",
       "cross_regulator_boundaries"
     ],
-    "gap_count": 3,
+    "gap_count": 1,
     "demand_count": 7
   },
   "Oak National Academy Limited": {
@@ -1864,6 +1838,112 @@
     "demand_count": 7
   },
   "Joint Nature Conservation Committee": {
+    "archetype": "PROGRAMME",
+    "gaps": [],
+    "gap_count": 0,
+    "demand_count": 6
+  },
+  "Royal Air Force Museum": {
+    "archetype": "CULTURAL",
+    "gaps": [],
+    "gap_count": 0,
+    "demand_count": 7
+  },
+  "National Army Museum": {
+    "archetype": "CULTURAL",
+    "gaps": [],
+    "gap_count": 0,
+    "demand_count": 7
+  },
+  "The Pensions Ombudsman": {
+    "archetype": "REGULATOR",
+    "gaps": [],
+    "gap_count": 0,
+    "demand_count": 7
+  },
+  "Office for Environmental Protection": {
+    "archetype": "REGULATOR",
+    "gaps": [],
+    "gap_count": 0,
+    "demand_count": 7
+  },
+  "United Kingdom Anti Doping": {
+    "archetype": "PROGRAMME",
+    "gaps": [
+      "beneficiary_count",
+      "funding_trajectory",
+      "evaluation_evidence",
+      "predecessor_successor"
+    ],
+    "gap_count": 4,
+    "demand_count": 6
+  },
+  "Civil Nuclear Police Authority and Constabulary": {
+    "archetype": "REGULATOR",
+    "gaps": [],
+    "gap_count": 0,
+    "demand_count": 7
+  },
+  "Consumer Council for Water": {
+    "archetype": "PROGRAMME",
+    "gaps": [
+      "funding_trajectory"
+    ],
+    "gap_count": 1,
+    "demand_count": 6
+  },
+  "United Kingdom Government Investments Limited": {
+    "archetype": "PROGRAMME",
+    "gaps": [],
+    "gap_count": 0,
+    "demand_count": 6
+  },
+  "Commission for Local Administration CLG Main": {
+    "archetype": "REGULATOR",
+    "gaps": [
+      "leadership",
+      "enforcement_cadence"
+    ],
+    "gap_count": 2,
+    "demand_count": 7
+  },
+  "Armed Forces Covenant Fund Trustee Ltd": {
+    "archetype": "PROGRAMME",
+    "gaps": [],
+    "gap_count": 0,
+    "demand_count": 6
+  },
+  "LocatED PLC": {
+    "archetype": "PROGRAMME",
+    "gaps": [],
+    "gap_count": 0,
+    "demand_count": 6
+  },
+  "Westminster Foundation for Democracy": {
+    "archetype": "PROGRAMME",
+    "gaps": [],
+    "gap_count": 0,
+    "demand_count": 6
+  },
+  "Committee on Climate Change": {
+    "archetype": "PROGRAMME",
+    "gaps": [],
+    "gap_count": 0,
+    "demand_count": 6
+  },
+  "Single Source Regulations Office": {
+    "archetype": "PROGRAMME",
+    "gaps": [],
+    "gap_count": 0,
+    "demand_count": 6
+  },
+  "National Forest Company": {
+    "archetype": "PROGRAMME",
+    "gaps": [],
+    "gap_count": 0,
+    "demand_count": 6
+  },
+  "Valuation Tribunal Service CLG Main": {
     "archetype": "PROGRAMME",
     "gaps": [],
     "gap_count": 0,
