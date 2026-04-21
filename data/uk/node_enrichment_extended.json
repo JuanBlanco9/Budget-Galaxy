@@ -12798,6 +12798,9 @@
         "Personal Independence Payment",
         "Housing Benefit - Excluding Hb For Pensioners - England",
         "10.4 Family and children; of which: family benefits, income support and tax credits"
+      ],
+      "aliases": [
+        "Personal Tax Credit - Dept"
       ]
     },
     "Personal Independence Payment": {
@@ -12868,7 +12871,8 @@
         }
       ],
       "aliases": [
-        "Social Security - Personal Independence Payment"
+        "Social Security - Personal Independence Payment",
+        "Social Security Benefits Sickness And Disability Inside We"
       ],
       "related": [
         "DEPARTMENT FOR WORK AND PENSIONS",
@@ -13296,7 +13300,8 @@
         {
           "name": "5.6 Environment protection n.e.c.",
           "parent": "HM REVENUE AND CUSTOMS"
-        }
+        },
+        "Additional Tax Revenue (R/F)"
       ],
       "related": [
         "1.1 Executive and legislative organs, financial and fiscal affairs, external affairs",
@@ -14409,7 +14414,8 @@
         {
           "name": "n/a",
           "parent": "Bristish Broadcasting Corporation"
-        }
+        },
+        "8.3 Broadcasting and publishing services"
       ],
       "_note": "BBC Licence Fee itself is not a spending line in OSCAR 2024 (it's a levy). Aliases cover the BBC-related spending lines that do exist (FCDO World Service funding).",
       "description": "Compulsory annual fee payable by any household watching live TV (any channel) or using BBC iPlayer. Primary funding source for the BBC under Royal Charter. Evasion is a criminal offence punishable by fine up to £1,000.",
@@ -17333,7 +17339,8 @@
         {
           "name": "Health Central Budgets (Other)",
           "parent": "7.A Medical services"
-        }
+        },
+        "Health - Outpatient Services"
       ],
       "_note": "This COFOG-coded node appears under SCOTTISH GOVERNMENT (£19.0B = NHS Scotland) · WELSH ASSEMBLY GOVERNMENT (£11.6B = NHS Wales) · NORTHERN IRELAND EXECUTIVE (£7.2B = NI HSC). Content below focuses on NHS Scotland — the biggest. Dedicated NHS Wales + NI entries would further differentiate.",
       "description": "Devolved health services across the UK's three non-England nations. Each has an INTEGRATED model (no purchaser-provider split like NHS England): NHS Scotland runs 14 territorial Health Boards + 7 national special boards; NHS Wales runs 7 Local Health Boards + 3 trusts; Northern Ireland uniquely INTEGRATES health + social care in 5 HSC Trusts (not 'NHS', branded 'HSC' since 1973). All three free at point of use with free prescriptions.",
@@ -25517,7 +25524,8 @@
         {
           "name": "n/a",
           "parent": "TEACHERS' PENSION SCHEME (ENGLAND AND WALES)"
-        }
+        },
+        "Uk Govt Funded: Teachers Pension Scheme - Old Age"
       ],
       "description": "**UNFUNDED defined-benefit pension scheme for teachers in state-funded + eligible independent schools · FE colleges · higher-education institutions in England and Wales.** Scheme administrator: Capita Teachers' Pensions under contract to DfE (scheme manager). £9.25B is DfE TPS Estimate — current-year payments.",
       "beneficiaries": "Active contributing teachers ~495,000 · deferred members + pensioners in payment ~760,000+ (TPS Annual Report 2023-24) · dependants receive survivor benefits",
@@ -26388,7 +26396,8 @@
     "Provision Of Defence Capability": {
       "aliases": [
         "PDC",
-        "PDC parent residual"
+        "PDC parent residual",
+        "Provision Of Defence Capability Receipts And Other Income"
       ],
       "description": "MoD's PDC is the accounting segment covering delivery of military capability (personnel · equipment · infrastructure · R&D · operations). This £5B line captures the **non-sub-allocated residual** at the PDC parent once named sub-lines (Service Personnel · Defence Nuclear Enterprise · Equipment Support · Infrastructure · Civilian Personnel · Other Costs and Services) are assigned. Best interpreted as cross-cutting/unprogrammed capability spend + centralised enablers.",
       "beneficiaries": "UK Armed Forces collectively · defence primes + SMEs via centralised programmes · NATO allies through shared capability · UK Intelligence Community (small share via MoD-hosted programmes)",
@@ -26774,7 +26783,8 @@
         "Food Biosecurity And Trade Dg Sponsored Albs Directorate - Rpa",
         "Food Biosecurity And Trade Dg Office Directorate",
         "APHA",
-        "Animal and Plant Health Agency"
+        "Animal and Plant Health Agency",
+        "Food Biosecurity And Trade Dg Sponsored Albs Directorate - Apha"
       ],
       "description": "DEFRA directorate covering **food · biosecurity · trade** functions. Sponsor for key ALBs: **APHA** (Animal and Plant Health Agency) · **VMD** (Veterinary Medicines Directorate) · **RPA** (Rural Payments Agency) · FSA (non-ministerial dept · aligned) · **MMO** (Marine Management Organisation). Channels the bulk of UK domestic farm support payments (post-CAP Environmental Land Management + transitional delinked payments). £2.3B+ scale dominated by FARM SUPPORT SPEND rather than ALB running costs.",
       "beneficiaries": "~80,000 English farmers + land managers (under delinked BPS + ELM) · food + feed businesses via APHA/VMD/FSA regulation · fisheries via MMO · importers/exporters of animals · plants · products of animal origin · consumers (via food safety)",
@@ -29934,6 +29944,1797 @@
         "HM TREASURY",
         "CABINET OFFICE: CIVIL SUPERANNUATION",
         "TEACHERS' PENSION SCHEME (ENGLAND AND WALES)"
+      ]
+    },
+    "Asylum Support, Resettlement and Accommodation": {
+      "aliases": [
+        "AASC",
+        "Asylum Accommodation"
+      ],
+      "description": "HO's largest asylum line — **Section 95** (accommodation for destitute asylum seekers), **Section 98** (initial/contingency incl. hotels), **Section 4** (failed with barriers to return), subsistence cash support, and resettlement schemes (Ukraine · Afghan · Syrian · Hong Kong BN(O)). AASC (Asylum Contract Accommodation) contracts with Serco · Mears · Clearsprings Ready Homes (10-year deals from 2019).",
+      "beneficiaries": "Asylum seekers awaiting decision · recognised refugees transitioning out of support · Ukrainians under Homes for Ukraine · Afghan evacuees (ARAP/ACRS) · Syrian VPRS · Hong Kong BN(O) · AASC contractors · LAs receiving dispersal tariffs",
+      "legal_basis": "Immigration and Asylum Act 1999 (ss.4, 95, 98) · Nationality, Immigration and Asylum Act 2002 · Immigration Act 2016 · **Nationality and Borders Act 2022** · Illegal Migration Act 2023",
+      "key_stats": [
+        {
+          "label": "Peak hotel population Sept 2023",
+          "value": "~56,042 asylum seekers · hotels cost ~£8M/day"
+        },
+        {
+          "label": "AASC contract value",
+          "value": "Original £4.6B envelope (2019) · NAO Mar 2024 projected £15.3B lifetime (232% ballooning)"
+        },
+        {
+          "label": "Legacy backlog cleared end-2023",
+          "value": "~92,601 pre-28 Jun 2022 cases · wider backlog exceeded 175,000"
+        },
+        {
+          "label": "Initial decisions 2023",
+          "value": "112,138 — record annual figure"
+        },
+        {
+          "label": "Wethersfield site (Essex)",
+          "value": "Opened July 2023 · Labour wind-down announced 2024"
+        },
+        {
+          "label": "RAF Scampton",
+          "value": "Opened 2023 · closed 2024"
+        },
+        {
+          "label": "Bibby Stockholm barge",
+          "value": "Closed January 2025 under Labour following 2 deaths"
+        },
+        {
+          "label": "Homes for Ukraine",
+          "value": "~236,900 arrivals by April 2024 · ~302,000 across all Ukraine schemes"
+        },
+        {
+          "label": "Afghan ARAP + ACRS",
+          "value": "~29,800 relocated to UK by 2024"
+        },
+        {
+          "label": "Hong Kong BN(O) visas",
+          "value": "~191,897 issued since Jan 2021 to end-2023"
+        },
+        {
+          "label": "Section 95 subsistence",
+          "value": "£49.18/week per person (2024 uprating)"
+        },
+        {
+          "label": "Rwanda preparation sunk cost",
+          "value": "~£715M committed · scheme scrapped by PM Starmer 6 July 2024"
+        }
+      ],
+      "notes": "**NAO Investigation into asylum accommodation (Mar 2024)** found 10-year AASC contracts ballooned from £4.6B original to £15.3B projected lifetime due to hotel reliance. **Home Affairs Committee** criticised Clearsprings profits (~£62M in 2022-23). **Bibby Stockholm** deaths + Legionella findings drew sustained criticism. Labour scrapped Rwanda (Jul 2024) · ended Wethersfield male adult use · closed Bibby Stockholm Jan 2025. **Border Security Command** formed under Border Security, Asylum and Immigration Bill 2024-25.",
+      "sources": [
+        {
+          "publisher": "NAO",
+          "title": "Investigation into asylum accommodation (Mar 2024)",
+          "url": "https://www.nao.org.uk/reports/investigation-into-asylum-accommodation/"
+        },
+        {
+          "publisher": "Home Office",
+          "title": "Immigration statistics year ending Dec 2023",
+          "url": "https://www.gov.uk/government/statistics/immigration-system-statistics-year-ending-december-2023"
+        },
+        {
+          "publisher": "HoC",
+          "title": "Home Affairs Committee reports",
+          "url": "https://committees.parliament.uk/committee/83/home-affairs-committee/"
+        },
+        {
+          "publisher": "Institute for Government",
+          "title": "Rwanda plan explainer",
+          "url": "https://www.instituteforgovernment.org.uk/explainer/rwanda-plan"
+        }
+      ],
+      "related": [
+        "HOME OFFICE",
+        "Asylum System",
+        "Immigration Enforcement",
+        "Border Force"
+      ]
+    },
+    "Border Force": {
+      "aliases": [
+        "UK Border Force"
+      ],
+      "description": "Uniformed law-enforcement command of HO · controls immigration + customs at 140+ air · sea · rail ports. Sits within Migration and Borders Group. DG Phil Douglas (from March 2023). Implemented BTOM (Border Target Operating Model) + eVisa + ETA during 2024-25.",
+      "beneficiaries": "Travelling public · UK businesses (customs clearance) · HMRC (revenue collection at border) · victims of trafficking identified at ports",
+      "legal_basis": "**Immigration Act 1971** · UK Borders Act 2007 · Customs and Excise Management Act 1979 · Borders, Citizenship and Immigration Act 2009 · Taxation (Cross-border Trade) Act 2018 · Nationality and Borders Act 2022",
+      "key_stats": [
+        {
+          "label": "Staff",
+          "value": "~9,500 FTE"
+        },
+        {
+          "label": "Ports + airports",
+          "value": "140+ locations manned"
+        },
+        {
+          "label": "Small boat arrivals",
+          "value": "45,774 in 2022 (peak) · 29,437 in 2023 · 36,816 in 2024"
+        },
+        {
+          "label": "E-Gates",
+          "value": "Deployed at 15+ air terminals · age extended to 10-11 in 2024"
+        },
+        {
+          "label": "Border Target Operating Model (BTOM)",
+          "value": "Phased from 31 Jan 2024 · full SPS checks from 30 Apr 2024"
+        },
+        {
+          "label": "eVisa rollout",
+          "value": "Physical BRPs expired 31 Dec 2024 · all visa holders transitioned to digital status"
+        },
+        {
+          "label": "ETA (Electronic Travel Authorisation)",
+          "value": "Launched Nov 2023 Qataris → all non-visa nationals incl. Europeans by 2 Apr 2025"
+        },
+        {
+          "label": "CHIEF replaced by CDS",
+          "value": "Imports Sep 2022 · exports Mar 2024"
+        },
+        {
+          "label": "Modern Slavery NRM referrals from BF",
+          "value": "~2,700 in 2023"
+        },
+        {
+          "label": "Border Force Maritime Command",
+          "value": "5 cutters patrolling Channel/coast"
+        },
+        {
+          "label": "Drugs seizures 2023-24",
+          "value": "~197 tonnes Class A+B intercepted"
+        }
+      ],
+      "notes": "**Chief Inspector of Borders David Neal SACKED Feb 2024** after briefing press about unchecked private-jet passengers at London City · his reports on Manston and asylum casework widely leaked. **Channel small-boat fatalities** (notably 27 drowned Nov 2021) prompted repeated parliamentary inquiries into BF/MoD rescue coordination. Airline industry complained about eVisa rollout glitches.",
+      "sources": [
+        {
+          "publisher": "HMICFRS",
+          "title": "An inspection of Border Force (2023)",
+          "url": "https://hmicfrs.justiceinspectorates.gov.uk/"
+        },
+        {
+          "publisher": "Home Office",
+          "title": "Irregular migration statistics 2024",
+          "url": "https://www.gov.uk/government/statistics/irregular-migration-to-the-uk-year-ending-december-2024"
+        },
+        {
+          "publisher": "HMRC/Cabinet Office",
+          "title": "Border Target Operating Model",
+          "url": "https://www.gov.uk/government/publications/the-border-target-operating-model"
+        },
+        {
+          "publisher": "Home Office",
+          "title": "eVisa/ETA guidance",
+          "url": "https://www.gov.uk/guidance/apply-for-an-electronic-travel-authorisation-eta"
+        }
+      ],
+      "related": [
+        "HOME OFFICE",
+        "Asylum Support, Resettlement and Accommodation",
+        "Immigration Enforcement"
+      ]
+    },
+    "Homeland Security Group": {
+      "aliases": [
+        "HSG"
+      ],
+      "description": "One of 3 principal HO business groups (with Migration & Borders + Public Safety). Created in 2021 HO restructure (replaced Office for Security and Counter-Terrorism). Covers: counter-terrorism policy · **Prevent** · state threats · cyber · serious organised crime policy · economic crime · CBRN resilience · critical national infrastructure protection. Works jointly with NCSC · MI5 · NCA.",
+      "beneficiaries": "General public (protective security) · CT Policing network · MI5 · LAs delivering Prevent · operators of critical infrastructure · victims of terrorism",
+      "legal_basis": "Terrorism Act 2000 · Terrorism Act 2006 · **Counter-Terrorism and Security Act 2015** (Prevent duty) · Investigatory Powers Act 2016 · CT and Border Security Act 2019 · **National Security Act 2023** · **Terrorism (Protection of Premises) Act 2025**",
+      "key_stats": [
+        {
+          "label": "Created",
+          "value": "2021 HO restructure (replaced OSCT)"
+        },
+        {
+          "label": "Prevent spending",
+          "value": "~£49M in 2022-23 across HO + local partners"
+        },
+        {
+          "label": "CONTEST strategy refreshed",
+          "value": "July 2023 (CONTEST 2023)"
+        },
+        {
+          "label": "Shawcross Independent Review of Prevent",
+          "value": "Published 8 Feb 2023 · 34 recommendations · all accepted"
+        },
+        {
+          "label": "MI5 via SSB budget",
+          "value": "~£3.6B across security + intelligence agencies"
+        },
+        {
+          "label": "National Security Act 2023",
+          "value": "Royal Assent 11 Jul 2023 · FIRS enforceable from 1 Jul 2025"
+        },
+        {
+          "label": "ACT Awareness training",
+          "value": "2M+ users completed e-learning by 2024"
+        },
+        {
+          "label": "Martyn's Law (TPPA 2025)",
+          "value": "Royal Assent 3 Apr 2025"
+        },
+        {
+          "label": "Prevent referrals 2022-23",
+          "value": "6,817 · 554 adopted as Channel cases"
+        },
+        {
+          "label": "Home Secretary",
+          "value": "Shabana Mahmood from 5 Sept 2025"
+        }
+      ],
+      "notes": "**Shawcross Review** criticised Prevent for disproportionate focus on Islamist vs far-right + institutional 'tolerance of extremism' · Amnesty · Liberty · Shami Chakrabarti countered as politically skewed. **Southport murders 29 Jul 2024** exposed Rudakubana referred to Prevent 3 times · closed out each time · triggered major policy review ongoing through 2025.",
+      "sources": [
+        {
+          "publisher": "HM Government",
+          "title": "CONTEST 2023",
+          "url": "https://www.gov.uk/government/publications/counter-terrorism-strategy-contest-2023"
+        },
+        {
+          "publisher": "Shawcross",
+          "title": "Independent Review of Prevent",
+          "url": "https://www.gov.uk/government/publications/independent-review-of-prevents-report-and-government-response"
+        },
+        {
+          "publisher": "legislation.gov.uk",
+          "title": "National Security Act 2023",
+          "url": "https://www.legislation.gov.uk/ukpga/2023/32"
+        }
+      ],
+      "related": [
+        "HOME OFFICE",
+        "Public Safety Group",
+        "NATIONAL CRIME AGENCY"
+      ]
+    },
+    "Immigration Enforcement": {
+      "aliases": [
+        "IE"
+      ],
+      "description": "Delivers removals · returns · detention (IRCs) · illegal-working ops · Criminal and Financial Investigations · compliance with immigration rules. Part of Migration and Borders Group. Works with police · HMRC · DWP through hostile/compliant environment framework.",
+      "beneficiaries": "General public (immigration rules) · victims of trafficking/modern slavery (referrals) · detainees (legal safeguards) · foreign-national offenders subject to removal",
+      "legal_basis": "Immigration Act 1971 · UK Borders Act 2007 · **Immigration Act 2014 + 2016** · Nationality and Borders Act 2022 · Illegal Migration Act 2023 (largely disapplied) · Safety of Rwanda Act 2024 (REPEALED July 2024)",
+      "key_stats": [
+        {
+          "label": "Staff",
+          "value": "~5,000 FTE enforcement + returns"
+        },
+        {
+          "label": "IRC estate",
+          "value": "Colnbrook · Harmondsworth · Brook House · Tinsley House · Dungavel · Derwentside · Yarl's Wood (STHF 2024)"
+        },
+        {
+          "label": "Returns 2024",
+          "value": "29,867 (highest since 2018) · ~9,400 enforced + 17,000 voluntary"
+        },
+        {
+          "label": "Foreign National Offender returns",
+          "value": "~4,500 in 2024"
+        },
+        {
+          "label": "Illegal working visits 2023-24",
+          "value": "7,400+ (UP ~68% YoY)"
+        },
+        {
+          "label": "Brook House Inquiry final report",
+          "value": "19 Sept 2023 · Kate Eves · found 19 Article 3 ECHR breaches by Serco staff 2017"
+        },
+        {
+          "label": "Windrush Compensation Scheme",
+          "value": "£98.5M paid/offered to 2,991 claimants by end-2024"
+        },
+        {
+          "label": "Border Security Command",
+          "value": "Formed July 2024 under Martin Hewitt · £150M Returns investment"
+        },
+        {
+          "label": "IRC detention capacity",
+          "value": "~2,200 beds across estate"
+        },
+        {
+          "label": "Hostile Environment regime",
+          "value": "Introduced 2012-16 under Home Secretary Theresa May"
+        }
+      ],
+      "notes": "**Brook House Inquiry** catalogued racist, degrading treatment by G4S (then Serco) staff. **Windrush Scandal** Compensation Scheme criticised by NAO (2021) + Home Affairs Committee for slow payouts + low offers. **Derwentside female IRC** opened Dec 2021 drew criticism for remote location from legal services. Labour scrapped Rwanda (Jul 2024) + launched Returns/Enforcement surge + Border Security, Asylum and Immigration Bill (Jan 2025).",
+      "sources": [
+        {
+          "publisher": "Home Office",
+          "title": "Immigration Enforcement annual report 2023-24",
+          "url": "https://www.gov.uk/government/organisations/immigration-enforcement"
+        },
+        {
+          "publisher": "Brook House Inquiry",
+          "title": "Final report",
+          "url": "https://brookhouseinquiry.org.uk/"
+        },
+        {
+          "publisher": "Home Office",
+          "title": "Windrush Compensation Scheme data",
+          "url": "https://www.gov.uk/government/publications/windrush-compensation-scheme-data"
+        }
+      ],
+      "related": [
+        "HOME OFFICE",
+        "Border Force",
+        "Asylum Support, Resettlement and Accommodation"
+      ]
+    },
+    "Police Pensions": {
+      "aliases": [
+        "Police Pension Scheme",
+        "PPS"
+      ],
+      "description": "Top-up grant to the 43 E+W police forces to meet pay-as-you-go cost of UNFUNDED police pension schemes. Three schemes coexist: **PPS 1987** (final salary) · **NPPS 2006** (final salary) · **CARE 2015**. Funded jointly by employer + employee contributions + HO top-up.",
+      "beneficiaries": "~130,000 serving officers + pensioners + dependants · surviving spouses/civil partners · medically retired officers",
+      "legal_basis": "**Police Pensions Act 1976** · Public Service Pensions Act 2013 · Police Pensions Regulations 1987 · 2006 · 2015 · **Public Service Pensions and Judicial Offices Act 2022** (McCloud remedy)",
+      "key_stats": [
+        {
+          "label": "Active members",
+          "value": "~147,000 officers across 43 E+W forces (2024)"
+        },
+        {
+          "label": "Pensioners in payment",
+          "value": "~145,000"
+        },
+        {
+          "label": "Employer contribution rate",
+          "value": "Rose 31.0% → 35.3% from 1 Apr 2024 (post-2020 valuation)"
+        },
+        {
+          "label": "Employee contribution",
+          "value": "11.0-12.75% tiered by salary (CARE 2015)"
+        },
+        {
+          "label": "Normal Pension Age",
+          "value": "60 under CARE 2015 · age 55 with 30 years under PPS 1987"
+        },
+        {
+          "label": "PSPJOA 2022 McCloud remedy",
+          "value": "Members returned to legacy scheme for 1 Apr 2015 - 31 Mar 2022 period"
+        },
+        {
+          "label": "Commutation",
+          "value": "Officers may commute up to 25% of pension for lump sum"
+        },
+        {
+          "label": "Next valuation",
+          "value": "2024 data · results ~2027"
+        },
+        {
+          "label": "PRRB pay award 2024",
+          "value": "4.75% officer pay uplift"
+        },
+        {
+          "label": "Pensions Increase April 2024",
+          "value": "6.7% (CPI Sep 2023)"
+        }
+      ],
+      "notes": "**2015 reforms ruled unlawfully age-discriminatory** (McCloud/Sargeant judgment 2018). PSPJOA 2022 remedy still being worked through into 2025-26. **Force finance officers warn April 2024 contribution rise (+4.3pp) without full Treasury reimbursement cost forces ~£200M of operating budget**. Treasury SCAPE discount rate cut to CPI+1.7% (Mar 2023) drove higher employer costs across all unfunded schemes.",
+      "sources": [
+        {
+          "publisher": "Home Office",
+          "title": "Police Pension Scheme accounts 2023-24",
+          "url": "https://www.gov.uk/government/publications/police-pension-scheme-accounts"
+        },
+        {
+          "publisher": "Home Office",
+          "title": "Circular 2023/21 Police pension contributions",
+          "url": "https://www.gov.uk/government/collections/police-pension-scheme-circulars"
+        },
+        {
+          "publisher": "HM Treasury",
+          "title": "Public service pensions remedy",
+          "url": "https://www.gov.uk/government/publications/public-service-pensions-remedy"
+        },
+        {
+          "publisher": "PRRB",
+          "title": "10th Report 2024",
+          "url": "https://www.gov.uk/government/publications/police-remuneration-review-body-tenth-report-2024"
+        }
+      ],
+      "related": [
+        "HOME OFFICE",
+        "3.1 of which: other police services",
+        "Public Safety Group"
+      ]
+    },
+    "Corporate and": {
+      "aliases": [
+        "HO Corporate and Delivery",
+        "HO internal functions"
+      ],
+      "description": "Home Office's **Corporate and Delivery Group** — enabling functions: Finance · HR · Commercial · Digital/Data/Technology (DDaT) · Legal · Estates · Security · Analysis + Insight · Communications. Also houses strategic-delivery units supporting Migration & Borders · Public Safety · Homeland Security groups.",
+      "beneficiaries": "Internal HO workforce (~42,000 across all groups) · contractors delivering transformation · downstream operational users of IT systems (Border Force officers · caseworkers)",
+      "legal_basis": "Operates under HO Ministerial direction per **Constitutional Reform and Governance Act 2010** · procurement under Public Contracts Regulations 2015 / **Procurement Act 2023** (live Feb 2025)",
+      "key_stats": [
+        {
+          "label": "Corporate FTE within HO (2024)",
+          "value": "~3,500"
+        },
+        {
+          "label": "Total HO workforce",
+          "value": "~42,000 FTE across all groups"
+        },
+        {
+          "label": "ATLAS programme",
+          "value": "Legacy CID → Atlas case-working platform · phased 2020-24 · ~£450M total"
+        },
+        {
+          "label": "HO estate",
+          "value": "~60 sites incl. 2 Marsham Street HQ (PFI expiring 2032)"
+        },
+        {
+          "label": "Commercial third-party spend",
+          "value": "~£5.5B annually (top Whitehall contract spender with MoD + DHSC)"
+        },
+        {
+          "label": "DSAB programme",
+          "value": "Digital Services at the Border · replacing Semaphore/Warnings Index · ~£396M lifetime"
+        },
+        {
+          "label": "HM Passport Office",
+          "value": "~8M passports issued 2023"
+        },
+        {
+          "label": "eVisa accounts created",
+          "value": "~4M by end-2024"
+        },
+        {
+          "label": "IPA Annual Report 2024",
+          "value": "4 HO major projects rated 'red/amber' delivery confidence"
+        }
+      ],
+      "notes": "**NAO 'Digital Services at the Border'** reports (2020 · 2022) heavily criticised HO for repeated slippage and legacy-system risk. **PAC 2023** criticised asylum contracts without adequate commercial oversight. **HO permanent secretary Sir Matthew Rycroft** faced PAC questioning 2024 over Atlas stability post-migration.",
+      "sources": [
+        {
+          "publisher": "Home Office",
+          "title": "Annual Report and Accounts 2023-24",
+          "url": "https://www.gov.uk/government/publications/home-office-annual-report-and-accounts-2023-to-2024"
+        },
+        {
+          "publisher": "IPA",
+          "title": "Annual Report on Major Projects 2024",
+          "url": "https://www.gov.uk/government/publications/infrastructure-and-projects-authority-annual-report-2024"
+        },
+        {
+          "publisher": "Cabinet Office",
+          "title": "Government Commercial Function",
+          "url": "https://www.gov.uk/government/organisations/government-commercial-function"
+        }
+      ],
+      "related": [
+        "HOME OFFICE",
+        "Public Safety Group",
+        "Homeland Security Group"
+      ]
+    },
+    "Tax Revenues In Scotland": {
+      "aliases": [
+        "Scottish devolved tax revenues offset"
+      ],
+      "description": "**NOT a spending programme — it is a RECEIPTS-side deduction** shown against Scottish Government block grant flows in whole-of-government accounting. Represents devolved + assigned Scottish tax revenues — Scottish Income Tax (NSND) · LBTT · Scottish Landfill Tax · Scottish assigned VAT · Air Departure Tax (unimplemented) · Aggregates Levy from 2026 — netted via the Block Grant Adjustment (BGA).",
+      "beneficiaries": "Scottish public services funded via post-BGA block grant · UK taxpayers through HMRC-Revenue Scotland joint collection · Scottish Fiscal Commission (independent forecaster)",
+      "legal_basis": "**Scotland Act 1998** · Scotland Act 2012 · **Scotland Act 2016** · Revenue Scotland and Tax Powers Act 2014 · Land and Buildings Transaction Tax (Scotland) Act 2013 · Scottish Fiscal Framework 2016 (reviewed 2023)",
+      "key_stats": [
+        {
+          "label": "Scotland Act 2016 devolved NSND income tax",
+          "value": "From April 2017"
+        },
+        {
+          "label": "Scottish income tax bands 2024-25",
+          "value": "Starter 19% · Basic 20% · Intermediate 21% · Higher 42% · Advanced 45% (NEW 2024-25) · Top 48% (raised from 47%)"
+        },
+        {
+          "label": "Scottish Income Tax outturn 2022-23",
+          "value": "£15.809B (HMRC final)"
+        },
+        {
+          "label": "LBTT 2023-24",
+          "value": "£797M receipts (Revenue Scotland)"
+        },
+        {
+          "label": "Scottish Landfill Tax 2023-24",
+          "value": "£76M"
+        },
+        {
+          "label": "BGA for income tax 2024-25",
+          "value": "~£16.2B deducted before Barnett block grant"
+        },
+        {
+          "label": "Indexed Per Capita BGA",
+          "value": "Made permanent Aug 2023 Fiscal Framework review"
+        },
+        {
+          "label": "SFC forecast 2028-29",
+          "value": "Devolved tax revenues £23.8B"
+        },
+        {
+          "label": "VAT assignment",
+          "value": "Legislated but deferred again 2023 (not yet implemented)"
+        },
+        {
+          "label": "Air Departure Tax",
+          "value": "Legislated in ADT (Scotland) Act 2017 · not commenced due to Highlands + Islands state-aid issue"
+        }
+      ],
+      "notes": "**Widening divergence of Scottish income tax from rUK** for higher earners (marginal rates now up to 69.5% on some bands including NI) prompted **CBI Scotland · IFS · FSB** to warn of behavioural + cross-border shifting. IFS Green Budget Scotland 2024 estimated modest revenue but sizeable migration-risk. VAT assignment impasse continues to draw audit concerns.",
+      "sources": [
+        {
+          "publisher": "Scottish Fiscal Commission",
+          "title": "Forecasts",
+          "url": "https://www.fiscalcommission.scot/"
+        },
+        {
+          "publisher": "HMRC",
+          "title": "Scottish Income Tax outturn 2022-23",
+          "url": "https://www.gov.uk/government/statistics/scottish-income-tax-outturn-statistics"
+        },
+        {
+          "publisher": "Revenue Scotland",
+          "title": "Annual Report 2023-24",
+          "url": "https://revenue.scot/"
+        },
+        {
+          "publisher": "HMT / SG",
+          "title": "Fiscal Framework Agreement (2023 review)",
+          "url": "https://www.gov.uk/government/publications/the-agreement-between-the-scottish-government-and-the-uk-government-on-the-scottish-governments-fiscal-framework"
+        }
+      ],
+      "related": [
+        "SCOTTISH GOVERNMENT",
+        "SCOTLAND OFFICE AND OFFICE OF THE ADVOCATE GENERAL",
+        "General Resource Grant"
+      ]
+    },
+    "Sale of shares": {
+      "aliases": [
+        "UKGI Disposals",
+        "Treasury share sales"
+      ],
+      "description": "**NEGATIVE offset line** — HMT proceeds from disposal of government equity holdings. Primarily UKGI-managed NatWest Group (ex-RBS) · with historic contributions from Lloyds · Royal Mail · Channel Tunnel Rail Link/Eurostar · UKAR/B&B mortgage books · student loan book securitisations. Proceeds score as negative financial-transactions spending / debt reduction.",
+      "beneficiaries": "UK taxpayer (debt reduction) · institutional investors in placings · retail investors via directed offers",
+      "legal_basis": "Banking Act 2009 (UKFI/UKGI stewardship) · Financial Services Act 2012 · Infrastructure (Financial Assistance) Act 2012 · Companies Act 2006 · Sale of Shares in Royal Mail plc (FSA 2013 provisions)",
+      "key_stats": [
+        {
+          "label": "NatWest state holding",
+          "value": "Reduced from 84% (2008 bailout) to ~11% by March 2025 via trading plan + directed buybacks"
+        },
+        {
+          "label": "Treasury receipts from NatWest since 2015",
+          "value": ">£25B total by 2024"
+        },
+        {
+          "label": "NatWest retail offer",
+          "value": "Announced Hunt Budget 6 Mar 2024 · SHELVED by Reeves after July 2024 election"
+        },
+        {
+          "label": "RBS bailout book-cost",
+          "value": "502p/share (2008-09) · disposals largely below book cost"
+        },
+        {
+          "label": "Lloyds fully exited",
+          "value": "May 2017 · £21.2B returned vs £20.3B bailout (~£900M surplus)"
+        },
+        {
+          "label": "Royal Mail IPO 2013",
+          "value": "60% sale at 330p raised ~£2B · residual 30% sold 2015"
+        },
+        {
+          "label": "Eurostar UK stake sold 2015",
+          "value": "£757M"
+        },
+        {
+          "label": "UKAR (B&B + NRAM) sales 2015-21",
+          "value": "£25B+ of assets sold down"
+        },
+        {
+          "label": "Student loan book securitisations 2017-19",
+          "value": "~£3.6B across sales"
+        },
+        {
+          "label": "Channel 4 privatisation",
+          "value": "Proposed 2022 · abandoned Jan 2023"
+        },
+        {
+          "label": "Autumn Budget 2024",
+          "value": "No retail NatWest offer · disposals continue via accelerated bookbuild + directed buyback"
+        }
+      ],
+      "notes": "**NAO reports on RBS/NatWest sales** (2015 · 2018 · 2022) concluded taxpayers will NOT recover full 2008-09 bailout book-cost (estimated loss ~£10B+). **Abandoned Channel 4 privatisation** wasted preparatory costs. **Scrapped retail NatWest offer** drew criticism from brokerage industry which had committed marketing spend. UKGI projecting full exit from NatWest during 2025-26.",
+      "sources": [
+        {
+          "publisher": "UKGI",
+          "title": "Annual Report 2023-24",
+          "url": "https://www.gov.uk/government/organisations/uk-government-investments"
+        },
+        {
+          "publisher": "HM Treasury",
+          "title": "Autumn Budget 2024",
+          "url": "https://www.gov.uk/government/publications/autumn-budget-2024"
+        },
+        {
+          "publisher": "NAO",
+          "title": "Sale of student loans (Dec 2018)",
+          "url": "https://www.nao.org.uk/reports/the-sale-of-student-loans/"
+        }
+      ],
+      "related": [
+        "HM TREASURY",
+        "Debt Interest Payments (National Debt Servicing)",
+        "National Wealth Fund Limited"
+      ]
+    },
+    "Eysg Pupil Premium Acads": {
+      "aliases": [
+        "Academy Pupil Premium"
+      ],
+      "description": "Pupil Premium routed DIRECT from Education and Skills Funding Agency (ESFA) to academy trusts · bypassing LA intermediation. Part of broader Early Years and Schools Grant (EYSG) block. Represents majority share of total PP spend given academy sector dominance (60% primary · 82% secondary).",
+      "beneficiaries": "Academy trusts (MATs + single-academy) covering ~60% of primary + ~82% of secondary pupils · ultimately disadvantaged pupils on FSM-ever-6 + LAC/post-LAC + Service Premium criteria",
+      "legal_basis": "**Academies Act 2010** · School and Early Years Finance (England) Regulations (annual) · Equality Act 2010 s.149 PSED",
+      "key_stats": [
+        {
+          "label": "2024-25 rates primary/secondary",
+          "value": "£1,480 / £1,050 per pupil"
+        },
+        {
+          "label": "LAC/post-LAC premium",
+          "value": "£2,570 per pupil"
+        },
+        {
+          "label": "Service Premium",
+          "value": "£340 per pupil (armed forces families)"
+        },
+        {
+          "label": "Academy-sector PP",
+          "value": "~£1.66B of ~£2.9B national total (~57%)"
+        },
+        {
+          "label": "Eligibility basis",
+          "value": "FSM-ever-6 register + LAC + Service"
+        },
+        {
+          "label": "Eligible pupils nationally",
+          "value": "~2.05M (2024-25)"
+        },
+        {
+          "label": "EEF PP tiered menu",
+          "value": "Teaching · targeted academic support · wider strategies"
+        },
+        {
+          "label": "Ofsted requires PP strategy statement",
+          "value": "3-year cycle"
+        },
+        {
+          "label": "EPI 2024 disadvantage gap",
+          "value": "3.94 months at GCSE · WIDEST since 2012"
+        },
+        {
+          "label": "Real-terms uplift 2024-25",
+          "value": "~2.1% vs 2023-24"
+        }
+      ],
+      "notes": "**PP cash-terms has FALLEN ~13% in real value since 2015** when adjusted for CPI (EPI · NFER · Sutton Trust). Concerns that academy trusts pool PP centrally without transparent pupil-level tracing. **IFS research (2024)** found no reliable national evidence PP has narrowed attainment gap.",
+      "sources": [
+        {
+          "publisher": "DfE",
+          "title": "Pupil Premium policy",
+          "url": "https://www.gov.uk/government/publications/pupil-premium/pupil-premium"
+        },
+        {
+          "publisher": "EEF",
+          "title": "Pupil Premium guidance",
+          "url": "https://educationendowmentfoundation.org.uk/education-evidence/guidance-reports/pupil-premium"
+        },
+        {
+          "publisher": "EPI",
+          "title": "Annual Report 2024",
+          "url": "https://epi.org.uk/publications/annual-report-2024/"
+        }
+      ],
+      "related": [
+        "Pupil Premium",
+        "Academies - Pre 16",
+        "DEPARTMENT FOR EDUCATION"
+      ]
+    },
+    "Pupil Premium La": {
+      "aliases": [
+        "LA-maintained Pupil Premium"
+      ],
+      "description": "Pupil Premium allocated via Local Authorities to LA-maintained schools (community · voluntary-controlled · voluntary-aided · foundation). Represents shrinking pre-academy portion of the PP envelope as academies grow.",
+      "beneficiaries": "~10,800 LA-maintained schools (predominantly primary) · disadvantaged pupils on same eligibility criteria as academy route",
+      "legal_basis": "School Standards and Framework Act 1998 · Education Act 2002 · School and Early Years Finance (England) Regulations",
+      "key_stats": [
+        {
+          "label": "Primary LA-maintained share",
+          "value": "~41% (Jan 2024 census)"
+        },
+        {
+          "label": "Secondary LA-maintained share",
+          "value": "~18%"
+        },
+        {
+          "label": "Funding rates",
+          "value": "IDENTICAL to academy route (£1,480 / £1,050 / £2,570 / £340)"
+        },
+        {
+          "label": "LA pass-through",
+          "value": "NO top-slice permitted on PP"
+        },
+        {
+          "label": "Historical decline",
+          "value": "LA share was ~70% of PP in 2011-12"
+        },
+        {
+          "label": "LA-maintained schools nationally",
+          "value": "~10,800 (2024)"
+        },
+        {
+          "label": "Schools Forum scrutiny",
+          "value": "Of LA PP distribution"
+        },
+        {
+          "label": "Ofsted PP inspection",
+          "value": "Inspects LA + academy routes identically"
+        }
+      ],
+      "notes": "**Academy conversion rate slowed substantially 2022-2025** after 2022 Schools White Paper 'all schools in a strong trust by 2030' ambition was effectively dropped. Criticism that **PP eligibility data held at LA level is less reliable post-UC rollout**. Some LAs accused of slow pass-through to schools (cash-flow issues).",
+      "sources": [
+        {
+          "publisher": "DfE",
+          "title": "Schools, pupils and their characteristics",
+          "url": "https://explore-education-statistics.service.gov.uk/find-statistics/school-pupils-and-their-characteristics"
+        },
+        {
+          "publisher": "DfE",
+          "title": "Pupil Premium allocations 2024-25",
+          "url": "https://www.gov.uk/government/publications/pupil-premium-allocations-and-conditions-of-grant-2024-to-2025"
+        },
+        {
+          "publisher": "HoC Library",
+          "title": "CBP-8902",
+          "url": "https://commonslibrary.parliament.uk/research-briefings/cbp-8902/"
+        }
+      ],
+      "related": [
+        "Pupil Premium",
+        "Eysg Pupil Premium Acads",
+        "Local Government (England)"
+      ]
+    },
+    "Academies And Free Schools": {
+      "aliases": [
+        "Free Schools Programme"
+      ],
+      "description": "Academy + Free Schools specific funding outside core DSG block — start-up grants · sponsor capacity funding · Free School revenue · UTC/Studio School support · academy-specific programme costs.",
+      "beneficiaries": "Academy trusts (Converter · Sponsored · MAT) · Free School proposers · University Technical Colleges (UTCs) · Studio Schools · Regions Group (ex-RSC) operational budgets",
+      "legal_basis": "**Academies Act 2010** · Education Act 2011 · Education and Adoption Act 2016",
+      "key_stats": [
+        {
+          "label": "Open Free Schools Sept 2024",
+          "value": "713"
+        },
+        {
+          "label": "Academies total",
+          "value": "~10,000 (~56% of state-funded schools)"
+        },
+        {
+          "label": "Academy routes",
+          "value": "Sponsored · Converter · Free School · UTC · Studio School"
+        },
+        {
+          "label": "Regions Group",
+          "value": "9 regional offices (formerly RSC)"
+        },
+        {
+          "label": "Multi-academy trusts",
+          "value": "~2,900 nationally"
+        },
+        {
+          "label": "Secondary pupils in academies",
+          "value": "~82% (2024)"
+        },
+        {
+          "label": "Primary pupils in academies",
+          "value": "~60%"
+        },
+        {
+          "label": "UTCs operational",
+          "value": "48 (2024)"
+        },
+        {
+          "label": "Trust Capacity Fund",
+          "value": "~£25M annual"
+        },
+        {
+          "label": "Studio Schools",
+          "value": "Effectively wound down · very few remain"
+        }
+      ],
+      "notes": "**Labour Jul 2024+** paused/reviewed some Free School pipeline. **Schools Bill 2025** adjusts academy trust accountability framework. Increased focus on trust-level Ofsted-style oversight via Regions Group. **NAO 2024** flagged MAT executive pay (175 trust CEOs earning >£150k). **Free School programme** criticised by PAC for siting in areas without pupil demand.",
+      "sources": [
+        {
+          "publisher": "DfE",
+          "title": "Open Academies and Academy Projects",
+          "url": "https://www.gov.uk/government/publications/open-academies-and-academy-projects-in-development"
+        },
+        {
+          "publisher": "NAO",
+          "title": "Academy schools sector annual report",
+          "url": "https://www.nao.org.uk/reports/academy-schools-sector-annual-report-and-accounts/"
+        }
+      ],
+      "related": [
+        "Academies - Pre 16",
+        "DEPARTMENT FOR EDUCATION",
+        "9.2 Secondary education"
+      ]
+    },
+    "La - Devolved": {
+      "aliases": [
+        "LA Devolved Education",
+        "LA Central Services"
+      ],
+      "description": "LA-retained education funding covering central services · statutory school-improvement duties · specific devolved grants outside the direct schools block.",
+      "beneficiaries": "LA education departments (152 LAs in England) · indirectly LA-maintained schools · SEND pupils · excluded pupils · early-years providers",
+      "legal_basis": "Education Act 1996 · Education Act 2002 · School Standards and Framework Act 1998 · **Schools Forum (England) Regulations 2012**",
+      "key_stats": [
+        {
+          "label": "Schools Forum approval required",
+          "value": "For LA central top-slice"
+        },
+        {
+          "label": "LA-retained DSG central services block",
+          "value": "Capped"
+        },
+        {
+          "label": "Schools Forum membership",
+          "value": "Majority school members (statutory)"
+        },
+        {
+          "label": "SEND statutory assessment infrastructure",
+          "value": "Funded here"
+        },
+        {
+          "label": "Education welfare/attendance services",
+          "value": "LA statutory duty"
+        },
+        {
+          "label": "School improvement monitoring role",
+          "value": "Post-2017 reduced role"
+        },
+        {
+          "label": "Early years entitlement administration",
+          "value": "LA-run"
+        },
+        {
+          "label": "Upper-tier LAs with ed responsibility",
+          "value": "152"
+        }
+      ],
+      "notes": "**LGA + County Councils Network** repeatedly warned (2023-24) LA-devolved budgets insufficient to meet SEND statutory duties · causing 'safety valve' deficit agreements in ~40 LAs. DSG statutory override on LA balance sheets extended to March 2026 — significant audit concern.",
+      "sources": [
+        {
+          "publisher": "DfE",
+          "title": "DSG technical note 2024-25",
+          "url": "https://www.gov.uk/government/publications/dedicated-schools-grant-dsg-technical-note-2024-to-2025"
+        },
+        {
+          "publisher": "LGA",
+          "title": "SEND crisis statements",
+          "url": "https://www.local.gov.uk/about/news/lga-responds-send-crisis"
+        }
+      ],
+      "related": [
+        "DEPARTMENT FOR EDUCATION",
+        "High Needs Dsg",
+        "Local Government (England)"
+      ]
+    },
+    "La - Pfi Special Current Grant": {
+      "aliases": [
+        "PFI Schools Grant"
+      ],
+      "description": "**Ring-fenced specific grant to LAs for unitary charge payments on Private Finance Initiative school contracts** signed 1997-2018. Treasury stopped new PFI in Autumn Budget 2018. First major PFI school contracts expire from early 2030s.",
+      "beneficiaries": "~120 LAs with legacy PFI school contracts · PFI project SPVs (Special Purpose Vehicles) + investors · ultimately pupils in PFI-built schools",
+      "legal_basis": "Local Government Act 2003 · individual PFI project agreements · HM Treasury PFI contract guidance (historic)",
+      "key_stats": [
+        {
+          "label": "School PFI contracts",
+          "value": "~240 operational across England"
+        },
+        {
+          "label": "Total lifetime contract value",
+          "value": "~£40B"
+        },
+        {
+          "label": "Unitary charges",
+          "value": "RPI-indexed · compounding annual growth"
+        },
+        {
+          "label": "Contract expiry",
+          "value": "First major wave from early 2030s"
+        },
+        {
+          "label": "CHPI estimate schools PFI lifetime",
+          "value": ">£30B"
+        },
+        {
+          "label": "BSF cancelled",
+          "value": "2010 · many PFI schools were under BSF"
+        },
+        {
+          "label": "Avg contract length",
+          "value": "25-30 years"
+        },
+        {
+          "label": "NAO 2018 finding",
+          "value": "PFI schools ~40% more expensive lifetime than conventional procurement"
+        },
+        {
+          "label": "Outstanding education unitary charges",
+          "value": "~£10B remaining"
+        }
+      ],
+      "notes": "**Long-running criticism** PFI schools face punitive charges for minor modifications (fixing lightbulbs · moving whiteboards). TUC + CHPI research suggests schools sector overpaid by £4-6B over PFI lifetimes. **2024 Private Eye investigations** highlighted offshore PFI equity ownership.",
+      "sources": [
+        {
+          "publisher": "NAO",
+          "title": "PFI and PF2",
+          "url": "https://www.nao.org.uk/reports/pfi-and-pf2/"
+        },
+        {
+          "publisher": "CHPI",
+          "title": "PFI research",
+          "url": "https://chpi.org.uk/"
+        },
+        {
+          "publisher": "HM Treasury",
+          "title": "PFI/PF2 projects 2023 summary data",
+          "url": "https://www.gov.uk/government/publications/private-finance-initiative-and-private-finance-2-projects-2023-summary-data"
+        }
+      ],
+      "related": [
+        "DEPARTMENT FOR EDUCATION",
+        "NHS Trusts (capital & residual funding)"
+      ]
+    },
+    "10.4 Family and children; of which: personal social services": {
+      "aliases": [
+        "Children's Social Care (DfE)"
+      ],
+      "description": "**DfE-funded children's social care** programme spend — distinct from MHCLG LG children's services grant. Covers national programmes · adoption funding · kinship strategy · care leaver support · specific reform investment.",
+      "beneficiaries": "Looked-after children · care leavers · adopted children · special-guardianship families · kinship carers · foster carers · children's social care workforce · delivered through LAs + sector",
+      "legal_basis": "**Children Act 1989** · Children Act 2004 · Care Standards Act 2000 · Children and Social Work Act 2017 · **Adoption and Children Act 2002**",
+      "key_stats": [
+        {
+          "label": "Children looked after in England (31 March 2024)",
+          "value": "83,840"
+        },
+        {
+          "label": "Special Guardianship Orders",
+          "value": "~3,500+ annually"
+        },
+        {
+          "label": "Children adopted from care (YE March 2024)",
+          "value": "~2,980"
+        },
+        {
+          "label": "Care leavers aged 17-18",
+          "value": "~13,000/year"
+        },
+        {
+          "label": "Adoption Support Fund",
+          "value": "~£50M annual"
+        },
+        {
+          "label": "MacAlister Care Review",
+          "value": "February 2022"
+        },
+        {
+          "label": "Kinship care national strategy",
+          "value": "Published December 2023"
+        },
+        {
+          "label": "National Kinship Allowance",
+          "value": "Piloted 8 LAs (2024-25)"
+        },
+        {
+          "label": "Regional Care Cooperatives rollout",
+          "value": "From 2024"
+        },
+        {
+          "label": "Children's Social Care Reform programme",
+          "value": "~£200M"
+        }
+      ],
+      "notes": "**CMA 2022-24 work** exposed excessive profits at large children's homes + fostering providers (~22% operating margins at some). Cost of children's placements surged — individual placements occasionally >£500k/year. **Children's Wellbeing and Schools Bill 2024-25** introduced profit caps on children's homes providers consultation · Ofsted powers expansion · kinship allowance rollout.",
+      "sources": [
+        {
+          "publisher": "DfE",
+          "title": "Children looked after in England including adoptions",
+          "url": "https://explore-education-statistics.service.gov.uk/find-statistics/children-looked-after-in-england-including-adoptions"
+        },
+        {
+          "publisher": "DfE",
+          "title": "MacAlister Independent Review of Children's Social Care",
+          "url": "https://www.gov.uk/government/publications/independent-review-of-childrens-social-care-final-report"
+        },
+        {
+          "publisher": "CMA",
+          "title": "Children's Social Care study",
+          "url": "https://www.gov.uk/cma-cases/childrens-social-care-study"
+        }
+      ],
+      "related": [
+        "DEPARTMENT FOR EDUCATION",
+        "High Needs Dsg",
+        "Local Government (England)"
+      ]
+    },
+    "Departmental unallocated provision": {
+      "aliases": [
+        "Welsh DUP",
+        "Welsh Gov contingency"
+      ],
+      "description": "**Welsh Government's internal contingency reserve** held centrally at start of year · unallocated to specific portfolio MEGs (Main Expenditure Groups). Flexibility mechanism for in-year pressures + supplementary budgets.",
+      "beneficiaries": "Any devolved Welsh service — NHS Wales · 22 Welsh councils · flood response · cost-of-living interventions · emergency demand · ultimately Welsh citizens",
+      "legal_basis": "**Government of Wales Act 2006** (as amended by Wales Act 2014 + 2017) · Welsh Government Fiscal Framework 2016 · Public Finance and Accountability (Wales) Act 2023",
+      "key_stats": [
+        {
+          "label": "Historical DUP size",
+          "value": "~£0.5-1.5B at year start"
+        },
+        {
+          "label": "Wales Reserve cap",
+          "value": "£350M (fiscal framework)"
+        },
+        {
+          "label": "Annual drawdown limit",
+          "value": "£125M resource / £50M capital"
+        },
+        {
+          "label": "Supplementary Budget process",
+          "value": "Typically two per year"
+        },
+        {
+          "label": "Fiscal Framework agreed",
+          "value": "2016 · revised December 2023"
+        },
+        {
+          "label": "Cost-of-living top-ups routed via DUP",
+          "value": "2022-23 + 2023-24"
+        },
+        {
+          "label": "NHS Wales pressure",
+          "value": "Typically LARGEST DUP claim"
+        },
+        {
+          "label": "Flood recovery (Storm Bert 2024)",
+          "value": "Drew on DUP"
+        }
+      ],
+      "notes": "**Welsh Fiscal Framework review (Dec 2023)** expanded drawdown flexibilities. **2025-26 budget saw LARGER than typical opening DUP** due to UK Spending Review settlement timing. Welsh Conservatives + Plaid Cymru have at times criticised DUP size as political 'war chest'. **Audit Wales** concerns about transparency of DUP in-year deployment.",
+      "sources": [
+        {
+          "publisher": "Welsh Government",
+          "title": "Final Budget 2025-26",
+          "url": "https://www.gov.wales/final-budget-2025-to-2026"
+        },
+        {
+          "publisher": "Senedd",
+          "title": "Finance Committee",
+          "url": "https://senedd.wales/committee/741"
+        },
+        {
+          "publisher": "Cardiff University",
+          "title": "Wales Fiscal Analysis",
+          "url": "https://www.cardiff.ac.uk/wales-fiscal-analysis"
+        }
+      ],
+      "related": [
+        "WELSH ASSEMBLY GOVERNMENT",
+        "Local Government Funding",
+        "WALES OFFICE"
+      ]
+    },
+    "6.1 of which: local authority housing": {
+      "aliases": [
+        "Welsh LA Housing",
+        "Welsh HRA"
+      ],
+      "description": "Welsh LA **Housing Revenue Account (HRA)** — council-owned social housing stock spend across the 11 Welsh councils that retained stock (11 transferred to RSLs via Large Scale Voluntary Transfer). Ring-fenced self-financing since 2015.",
+      "beneficiaries": "~130,000 Welsh council house tenants · 11 stock-holding Welsh councils · tenants benefiting from WHQS 2023 retrofit + decarbonisation",
+      "legal_basis": "Housing Act 1985 · Local Government and Housing Act 1989 (HRA) · **Housing (Wales) Act 2014** · **Abolition of the Right to Buy and Associated Rights (Wales) Act 2018** · Renting Homes (Wales) Act 2016",
+      "key_stats": [
+        {
+          "label": "Stock-holding Welsh councils",
+          "value": "11 of 22"
+        },
+        {
+          "label": "Biggest stock-holders",
+          "value": "Carmarthenshire · Flintshire · Swansea · Caerphilly · Cardiff"
+        },
+        {
+          "label": "Council homes in Wales",
+          "value": "~130,000"
+        },
+        {
+          "label": "Welsh Housing Quality Standard 2023",
+          "value": "Revised from 2004 · extends to decarbonisation + biodiversity + affordability"
+        },
+        {
+          "label": "Right-to-Buy ABOLISHED in Wales",
+          "value": "Abolition Act 2018"
+        },
+        {
+          "label": "Rent policy",
+          "value": "CPI + 1% cap (current framework)"
+        },
+        {
+          "label": "HRA ring-fenced",
+          "value": "Self-financing since 2015 · £918M buy-out"
+        },
+        {
+          "label": "WHQS 2023 compliance deadline",
+          "value": "Rolling through to 2034"
+        }
+      ],
+      "notes": "**Audit Wales 2024** flagged pace of WHQS 2023 compliance varying significantly between councils. **Tenant groups (TPAS Cymru)** concerned about affordability under CPI+1% rents during cost-of-living period. Damp + mould post-Awaab's Law Wales equivalent consultations ongoing.",
+      "sources": [
+        {
+          "publisher": "Welsh Government",
+          "title": "WHQS 2023",
+          "url": "https://www.gov.wales/welsh-housing-quality-standard-2023"
+        },
+        {
+          "publisher": "legislation.gov.uk",
+          "title": "Abolition of Right to Buy (Wales) Act 2018",
+          "url": "https://www.gov.wales/abolition-right-buy-and-associated-rights-wales-act-2018"
+        },
+        {
+          "publisher": "StatsWales",
+          "title": "Housing datasets",
+          "url": "https://statswales.gov.wales/Catalogue/Housing"
+        }
+      ],
+      "related": [
+        "WELSH ASSEMBLY GOVERNMENT",
+        "Local Government Funding"
+      ]
+    },
+    "Sawdg Arms Length Bodies - Ea (Flood)": {
+      "aliases": [
+        "EA Flood Defence",
+        "FCERM"
+      ],
+      "description": "Funding for Environment Agency's **flood and coastal erosion risk management (FCERM)** functions — capital flood defence · maintenance · incident response · reservoir safety regulation · mapping/forecasting (Flood Forecasting Centre jointly with Met Office) · grant-in-aid to Internal Drainage Boards.",
+      "beneficiaries": "Households + businesses in flood-risk zones · farmers via catchment schemes · coastal communities · insurers via Flood Re · LAs receiving FCERM capital grants",
+      "legal_basis": "**Flood and Water Management Act 2010** · Water Resources Act 1991 · **Reservoirs Act 1975** · Civil Contingencies Act 2004 · Land Drainage Act 1991",
+      "key_stats": [
+        {
+          "label": "6-year capital programme 2021-27",
+          "value": "£5.2B"
+        },
+        {
+          "label": "EA defence assets managed",
+          "value": "~38,000 (walls · embankments · pumps)"
+        },
+        {
+          "label": "Properties better protected target",
+          "value": "336,000 by March 2027"
+        },
+        {
+          "label": "Properties at some flood risk",
+          "value": "5.7M in England"
+        },
+        {
+          "label": "Storm Babet (Oct 2023)",
+          "value": "2,100+ properties flooded"
+        },
+        {
+          "label": "Storm Henk (Jan 2024)",
+          "value": "2,800+ flooded"
+        },
+        {
+          "label": "Flood Re levy",
+          "value": "~£135M/yr on household insurers"
+        },
+        {
+          "label": "Bellwin threshold",
+          "value": "0.2% of LA net revenue budget"
+        },
+        {
+          "label": "Internal Drainage Boards",
+          "value": "~120 covering 9.7% of land area"
+        },
+        {
+          "label": "Maintenance backlog gap",
+          "value": "£34M/yr gap (NAO 2023)"
+        },
+        {
+          "label": "Autumn Budget 2024",
+          "value": "Added ~£2.4B over 2 years to FCERM"
+        },
+        {
+          "label": "High-consequence assets in required condition",
+          "value": "~94% vs 98% target"
+        }
+      ],
+      "notes": "**NAO Nov 2023 'Resilience to flooding'** found EA would likely miss 336,000-properties target + maintenance funding had fallen in real terms. **PAC criticised 'managed decline' of defences**. Farming groups criticised ELM scheme cuts to flood-adjacent land management. Defra 2024-25 reprofiled capital programme.",
+      "sources": [
+        {
+          "publisher": "NAO",
+          "title": "Resilience to flooding (2023)",
+          "url": "https://www.nao.org.uk/reports/resilience-to-flooding/"
+        },
+        {
+          "publisher": "DEFRA",
+          "title": "National FCERM Strategy for England",
+          "url": "https://www.gov.uk/government/publications/national-flood-and-coastal-erosion-risk-management-strategy-for-england--2"
+        },
+        {
+          "publisher": "Flood Re",
+          "title": "Levy + operations",
+          "url": "https://www.floodre.co.uk/"
+        }
+      ],
+      "related": [
+        "Environment Agency",
+        "DEPARTMENT FOR ENVIRONMENT, FOOD AND RURAL AFFAIRS"
+      ]
+    },
+    "7.B Medical research": {
+      "aliases": [
+        "NIHR",
+        "DHSC Medical Research"
+      ],
+      "description": "DHSC's health research spend · dominated by **National Institute for Health and Care Research (NIHR)** · with smaller allocations to Office for Life Sciences joint activities · Genomics England · clinical trial infrastructure. Complements UKRI's MRC (DSIT vote).",
+      "beneficiaries": "NHS trusts hosting NIHR infrastructure · universities · life-sciences SMEs · trial participants (~1M/yr) · indirectly patients benefiting from translated research",
+      "legal_basis": "**Health and Social Care Act 2012 s.97** (SoS duty to promote research) · Medicines for Human Use (Clinical Trials) Regulations 2004 · Care Act 2014 (HRA) · Human Tissue Act 2004",
+      "key_stats": [
+        {
+          "label": "NIHR budget 2024-25",
+          "value": "~£1.4B"
+        },
+        {
+          "label": "NIHR BRCs (Biomedical Research Centres)",
+          "value": "20 centres · 5-year awards total £790M from Dec 2022"
+        },
+        {
+          "label": "NIHR Clinical Research Network",
+          "value": "~1M participants/yr"
+        },
+        {
+          "label": "HRA approves new studies",
+          "value": "~1,000/yr"
+        },
+        {
+          "label": "UK Biobank participants",
+          "value": "500,000 · genotyped + imaged subset"
+        },
+        {
+          "label": "Genomics England 100,000 Genomes",
+          "value": "Complete · Newborn Genomes programme rolling out 2024-25"
+        },
+        {
+          "label": "Dementia Mission",
+          "value": "£160M over 5 years (announced 2023)"
+        },
+        {
+          "label": "Our Future Health",
+          "value": "Recruiting 5M volunteers"
+        },
+        {
+          "label": "Commercial clinical trials UK decline",
+          "value": "44% 2017-21 (O'Shaughnessy Review 2023)"
+        },
+        {
+          "label": "VMIC sold to Catalent 2022",
+          "value": "~£120M"
+        },
+        {
+          "label": "Trial start-up times improved",
+          "value": "~40% end-2024 post-CTA programme"
+        }
+      ],
+      "notes": "**Lord O'Shaughnessy's commercial clinical trials review (May 2023)** led to Clinical Trials Acceleration Programme + MHRA combined review service. **Post-Brexit loss of EU Clinical Trials Regulation alignment** caused multi-year trial decline. NIHR concentration in 'golden triangle' (Oxford/Cambridge/London) prompted 2022 Levelling Up regional BRC rebalancing.",
+      "sources": [
+        {
+          "publisher": "NIHR",
+          "title": "Our Plan",
+          "url": "https://www.nihr.ac.uk/about-us/our-key-priorities/our-plan.htm"
+        },
+        {
+          "publisher": "DHSC",
+          "title": "O'Shaughnessy Review on Commercial Trials",
+          "url": "https://www.gov.uk/government/publications/commercial-clinical-trials-in-the-uk-the-lord-oshaughnessy-review"
+        },
+        {
+          "publisher": "DHSC",
+          "title": "Life Sciences Vision",
+          "url": "https://www.gov.uk/government/publications/life-sciences-vision"
+        }
+      ],
+      "related": [
+        "DEPARTMENT OF HEALTH",
+        "NHS Commissioning Board (NHS England)",
+        "4.8 R&D economic affairs",
+        "UK Research and Innovation"
+      ]
+    },
+    "Industrial Injuries Disablement Benefit": {
+      "aliases": [
+        "IIDB"
+      ],
+      "description": "**Non-contributory · non-means-tested benefit** for people disabled by an accident at work or a prescribed industrial disease. DWP-administered · medical assessment via Industrial Injuries Advisory Council (IIAC) framework. Legacy from 1948 Industrial Injuries Scheme (Attlee).",
+      "beneficiaries": "Workers (employees · NOT self-employed) injured after 5 Jul 1948 · prescribed-disease sufferers (notably miners · asbestos-exposed · agricultural workers) · surviving dependants via Reduced Earnings Allowance + Constant Attendance Allowance add-ons",
+      "legal_basis": "**Social Security Contributions and Benefits Act 1992 Part V** · Social Security (Industrial Injuries) (Prescribed Diseases) Regulations 1985 · Social Security Administration Act 1992",
+      "key_stats": [
+        {
+          "label": "Recipients",
+          "value": "~275,000 (DWP Stat-Xplore Feb 2024)"
+        },
+        {
+          "label": "Prescribed diseases",
+          "value": "~80 (Schedule 1)"
+        },
+        {
+          "label": "2024-25 max rate (100% assessment)",
+          "value": "£117.60/week"
+        },
+        {
+          "label": "2025-26 rate (1.7% CPI uprating)",
+          "value": "£119.60/week"
+        },
+        {
+          "label": "Minimum payable assessment",
+          "value": "14% (except pneumoconiosis/byssinosis/mesothelioma — from 1%)"
+        },
+        {
+          "label": "Mesothelioma claims",
+          "value": "~2,000/yr (driven by historic asbestos)"
+        },
+        {
+          "label": "Self-employed EXCLUDED",
+          "value": "Long-standing campaign issue"
+        },
+        {
+          "label": "Reduced Earnings Allowance",
+          "value": "Closed to new claimants since 1990"
+        },
+        {
+          "label": "Pneumoconiosis Act 1979",
+          "value": "Provides lump sums outside IIDB"
+        },
+        {
+          "label": "IIAC reviews new disease prescriptions",
+          "value": "~3-5/yr"
+        },
+        {
+          "label": "Accident vs disease caseload",
+          "value": "<1% accidents · disease-dominated"
+        },
+        {
+          "label": "Caseload declining",
+          "value": "~3%/yr as historical industries recede"
+        }
+      ],
+      "notes": "**IIAC 2024 report** recommended adding breast cancer among night-shift workers to prescribed diseases (government response pending). **DWP 'Pathways to Work' Green Paper (March 2025)** signalled review of IIDB assessment process alongside wider disability-benefit reform. **TUC + Hazards Campaign** long-running campaign to cover self-employed workers + modern occupational conditions (musculoskeletal · work-related stress).",
+      "sources": [
+        {
+          "publisher": "IIAC",
+          "title": "Publications",
+          "url": "https://www.gov.uk/government/collections/industrial-injuries-advisory-council-information-and-publications"
+        },
+        {
+          "publisher": "DWP",
+          "title": "Industrial Injuries Disablement Benefit",
+          "url": "https://www.gov.uk/industrial-injuries-disablement-benefit"
+        },
+        {
+          "publisher": "HoC Library",
+          "title": "CBP-7330",
+          "url": "https://commonslibrary.parliament.uk/research-briefings/cbp-7330/"
+        }
+      ],
+      "related": [
+        "DEPARTMENT FOR WORK AND PENSIONS",
+        "Personal Independence Payment",
+        "Disability Living Allowance"
+      ]
+    },
+    "4.5 of which: local public transport": {
+      "aliases": [
+        "Bus + Light Rail funding"
+      ],
+      "description": "DfT funding for buses · light rail · trams in England outside London (TfL separate). Bus Service Operators Grant (BSOG) fuel rebate · concessionary fares via ENCTS · bus franchising/enhanced-partnership support under Bus Services Act 2017 + **Better Buses Bill 2024** · capital grants to light rail systems.",
+      "beneficiaries": "Bus operators (Stagecoach · First · Go-Ahead · Arriva · National Express) · LTAs · MCAs (GM Bee Network · West Yorkshire · Liverpool City Region) · tram operators · ~9.8M ENCTS pass-holders · ~4.1B annual passenger journeys",
+      "legal_basis": "Transport Act 1985 · **Transport Act 2000 (as amended by Bus Services Act 2017)** · Local Transport Act 2008 · **Better Buses Bill 2024** · ENCTS under Transport Act 2000 s.145A",
+      "key_stats": [
+        {
+          "label": "England bus journeys 2023-24",
+          "value": "~3.4B (recovered to ~80% of pre-pandemic)"
+        },
+        {
+          "label": "£2 bus fare cap",
+          "value": "Jan 2023-Dec 2024 · RAISED to £3 Jan 2025 (+50%)"
+        },
+        {
+          "label": "BSOG",
+          "value": "~£200M/yr total (E+W) · ~£50M/yr DfT portion to commercial operators"
+        },
+        {
+          "label": "Concessionary fares reimbursement",
+          "value": "~£1.0-1.2B/yr"
+        },
+        {
+          "label": "BSIP funding 2022-25",
+          "value": "£1.1B allocated"
+        },
+        {
+          "label": "ZEBRA 1 + 2",
+          "value": "~£400M total · ~3,500 zero-emission buses ordered"
+        },
+        {
+          "label": "Greater Manchester Bee Network",
+          "value": "Franchising fully rolled out Jan 2025"
+        },
+        {
+          "label": "Tram/light rail systems",
+          "value": "Manchester Metrolink (~44M journeys/yr) · Tyne & Wear Metro · Sheffield Supertram · Nottingham Express Transit · West Midlands Metro · Blackpool Tramway · Edinburgh Trams"
+        },
+        {
+          "label": "Supertram renewal",
+          "value": "DfT took over franchise March 2024"
+        },
+        {
+          "label": "Franchising/enhanced partnership share",
+          "value": "~38% of England bus mileage"
+        },
+        {
+          "label": "Rural bus mileage",
+          "value": "DOWN ~15% since 2019"
+        },
+        {
+          "label": "October 2024 Budget",
+          "value": "£925M for bus services 2025-26"
+        }
+      ],
+      "notes": "**Raising fare cap £2→£3 (50% rise) Jan 2025** drew criticism from Campaign for Better Transport as hitting low-income rural users hardest. **Franchising transition in GM** was challenged (unsuccessfully) by Stagecoach in 2022 judicial review. **Buses Bill 2024** removes 2017 restriction preventing new municipal bus companies · enabling authorities to set up own operators.",
+      "sources": [
+        {
+          "publisher": "DfT",
+          "title": "Bus Services Bill 2024",
+          "url": "https://www.gov.uk/government/publications/bus-services-bill-2024"
+        },
+        {
+          "publisher": "DfT",
+          "title": "Annual bus statistics YE March 2024",
+          "url": "https://www.gov.uk/government/statistics/annual-bus-statistics-year-ending-march-2024"
+        },
+        {
+          "publisher": "TfGM",
+          "title": "Bee Network",
+          "url": "https://tfgm.com/bee-network"
+        }
+      ],
+      "related": [
+        "DEPARTMENT FOR TRANSPORT",
+        "Greater London Authority"
+      ]
+    },
+    "4.5 of which: other transport": {
+      "aliases": [
+        "Maritime + Aviation + Freight"
+      ],
+      "description": "Residual DfT spend covering maritime · ports · aviation · freight · internal DfT running costs. Major components: **Maritime and Coastguard Agency (MCA)** · Air Accidents Investigation Branch · Marine Accident Investigation Branch · port infrastructure schemes · freight decarbonisation.",
+      "beneficiaries": "MCA (~£160M) · CAA (self-funded but policy-steered) · freeports · freight operators · ship-owners via tonnage tax · coastal communities via SAR · aviation passengers via ATOL",
+      "legal_basis": "**Merchant Shipping Act 1995** · Civil Aviation Act 1982 · Harbours Act 1964 · **Seafarers' Wages Act 2023** · Transport Act 2000",
+      "key_stats": [
+        {
+          "label": "MCA budget",
+          "value": "~£160M · 350 coastguard rescue teams · 10 SAR helicopters (Bristow contract)"
+        },
+        {
+          "label": "UK ports",
+          "value": "Handle ~455M tonnes/yr · ~95% of UK trade by volume"
+        },
+        {
+          "label": "English freeports",
+          "value": "8 designated 2021-22 (Teesside · Humber · Felixstowe · Liverpool · Plymouth · Solent · Thames · East Midlands)"
+        },
+        {
+          "label": "National Emergency Tug Vessels",
+          "value": "4 contracts covering UK waters"
+        },
+        {
+          "label": "Aviation passengers 2023",
+          "value": "~270M through UK airports"
+        },
+        {
+          "label": "Transport Decarbonisation Plan 2021",
+          "value": "Net-zero domestic transport by 2050"
+        },
+        {
+          "label": "UK SHORE clean maritime",
+          "value": "£206M programme · Round 3 extension 2024"
+        },
+        {
+          "label": "HGV zero-emission trials",
+          "value": "~£200M"
+        },
+        {
+          "label": "DfT HQ staff",
+          "value": "~9,500 FTE across group"
+        }
+      ],
+      "notes": "**P&O Ferries mass-sacked 786 seafarers** March 2022 without consultation — exposed gaps in UK maritime employment law. **Seafarers' Wages Regulations** came into force late 2024 after scandal · requiring ferries calling UK ports ≥120 times/yr to pay NMW-equivalent in UK waters (criticised by unions as too narrow). **Freeports** criticised by IFS + Centre for Cities as risk of displacement rather than additional growth.",
+      "sources": [
+        {
+          "publisher": "MCA",
+          "title": "Official",
+          "url": "https://www.gov.uk/government/organisations/maritime-and-coastguard-agency"
+        },
+        {
+          "publisher": "DfT",
+          "title": "Transport Decarbonisation Plan",
+          "url": "https://www.gov.uk/government/publications/transport-decarbonisation-plan"
+        },
+        {
+          "publisher": "NAO",
+          "title": "Freeports progress",
+          "url": "https://www.nao.org.uk/reports/freeports-progress-in-setting-up-the-programme/"
+        }
+      ],
+      "related": [
+        "DEPARTMENT FOR TRANSPORT",
+        "4.5 of which: national roads",
+        "4.5 of which: railway"
+      ]
+    },
+    "4.5 of which: local roads": {
+      "aliases": [
+        "LA Highways",
+        "Pothole Fund"
+      ],
+      "description": "DfT capital + resource support to **Local Highway Authorities** for maintenance + improvement of local (non-strategic) roads — the 97% of England's road network NOT managed by National Highways. Via Highway Maintenance Block · Pothole Fund · Integrated Transport Block · Network North redirected funds.",
+      "beneficiaries": "152 local highway authorities in England (county councils · unitaries · London boroughs · metropolitan districts) · road users · cyclists · vehicle-damage insurers",
+      "legal_basis": "**Highways Act 1980 s.41** (statutory duty to maintain) · New Roads and Street Works Act 1991 · Traffic Management Act 2004 · Local Government Finance Act 1988 (block grants)",
+      "key_stats": [
+        {
+          "label": "LA-managed road length England",
+          "value": "~183,000 miles"
+        },
+        {
+          "label": "SRN (National Highways)",
+          "value": "~4,500 miles — separate RIS stream"
+        },
+        {
+          "label": "Pothole/resurfacing",
+          "value": "£8.3B over 11 years (Network North Oct 2023) · ~£150M/yr additional"
+        },
+        {
+          "label": "Highway Maintenance Block baseline",
+          "value": "~£900M/yr across England"
+        },
+        {
+          "label": "ALARM 2024 one-time catch-up cost",
+          "value": "£16.3B · backlog at all-time high"
+        },
+        {
+          "label": "Potholes filled 2023",
+          "value": "~1.9M (ALARM survey estimate)"
+        },
+        {
+          "label": "Avg cost per pothole",
+          "value": "~£70 reactive vs ~£28 planned"
+        },
+        {
+          "label": "Roads needing planned maintenance",
+          "value": "~4% A-roads · 6% B/C · 17% unclassified"
+        },
+        {
+          "label": "AA pothole-related callouts 2023",
+          "value": "~632,000"
+        },
+        {
+          "label": "Integrated Transport Block",
+          "value": "~£110M/yr (walking · cycling · small schemes)"
+        },
+        {
+          "label": "Active Travel England",
+          "value": "Assumes LA oversight for cycle schemes"
+        },
+        {
+          "label": "Dec 2024 additional allocation",
+          "value": "£500M for 2025-26"
+        }
+      ],
+      "notes": "**AIA's ALARM annual report** consistently finds backlog grows faster than funding. **LGA + AA argue short annual settlements prevent cost-effective preventative maintenance**. **Network North arithmetic questioned** by IFS + Transport Committee as over-claimed vs actual new cash. 50% of local roads have <15 years structural life remaining.",
+      "sources": [
+        {
+          "publisher": "AIA",
+          "title": "ALARM survey",
+          "url": "https://www.asphaltuk.org/alarm-survey-page/"
+        },
+        {
+          "publisher": "DfT",
+          "title": "Network North",
+          "url": "https://www.gov.uk/government/publications/network-north"
+        },
+        {
+          "publisher": "DfT",
+          "title": "Road conditions England 2023",
+          "url": "https://www.gov.uk/government/statistics/road-conditions-in-england-to-march-2023"
+        }
+      ],
+      "related": [
+        "DEPARTMENT FOR TRANSPORT",
+        "4.5 of which: national roads",
+        "Local Government (England)"
+      ]
+    },
+    "4.1 General economic, commercial and labour affairs DWP": {
+      "aliases": [
+        "DWP employment programmes",
+        "Restart Scheme + Work and Health"
+      ],
+      "description": "**DWP's COFOG 4.1 line covering employment programmes** + labour-market support + disability employment support + in-work progression. Excludes benefit payments themselves (those sit in DWP 10.x social protection). Restart · Work and Health Programme · Access to Work · Kickstart legacy · SWAPs · WorkWell pilots.",
+      "beneficiaries": "Unemployed claimants · long-term sick/disabled jobseekers · in-work low earners on UC · employers participating in Kickstart/Restart/SWAP · Disability Confident employers · Access to Work recipients",
+      "legal_basis": "**Welfare Reform Act 2012** · Jobseekers Act 1995 · **Employment and Training Act 1973 s.2** · Equality Act 2010 (reasonable adjustments = AtW)",
+      "key_stats": [
+        {
+          "label": "Restart Scheme",
+          "value": "~£2.5B · extended to June 2026 · ~750,000 starts target"
+        },
+        {
+          "label": "Work and Health Programme",
+          "value": "~£500M · ~240,000 starts"
+        },
+        {
+          "label": "Access to Work approvals 2023-24",
+          "value": "~44,000 · backlog peaked ~50,000 applications 2024"
+        },
+        {
+          "label": "AtW average award",
+          "value": "~£4,000/yr per person"
+        },
+        {
+          "label": "Kickstart Scheme 2020-22",
+          "value": "~163,000 young people placed · scheme closed"
+        },
+        {
+          "label": "Flexible Support Fund",
+          "value": "~£120M/yr discretionary"
+        },
+        {
+          "label": "SWAPs",
+          "value": "~80,000 starts/yr target"
+        },
+        {
+          "label": "In-Work Progression from Sept 2023",
+          "value": "Rolled out all UC claimants earning <18hrs*NLW"
+        },
+        {
+          "label": "UC AET raised May 2024",
+          "value": "To 18 hours"
+        },
+        {
+          "label": "WorkWell pilots Oct 2024",
+          "value": "15 ICS areas · ~£64M"
+        },
+        {
+          "label": "JSA contribution-based",
+          "value": "Residual caseload ~20,000"
+        },
+        {
+          "label": "Disability Confident employers",
+          "value": "~19,000 signed up"
+        }
+      ],
+      "notes": "**March 2025 'Pathways to Work' Green Paper** proposed major reform: stricter WCA · tightening PIP descriptors · shifting funding from incapacity benefits into employment support. **Access to Work backlog** provoked disability-rights legal challenges 2024. **NAO 2022** criticised Restart for uncertain VfM + 'creaming and parking' by providers. Green Paper sparked significant cross-bench + charity opposition over projected £5B benefit cuts.",
+      "sources": [
+        {
+          "publisher": "NAO",
+          "title": "The Restart Scheme",
+          "url": "https://www.nao.org.uk/reports/the-restart-scheme/"
+        },
+        {
+          "publisher": "DWP",
+          "title": "Pathways to Work Green Paper",
+          "url": "https://www.gov.uk/government/publications/pathways-to-work-reforming-benefits-and-support-to-get-britain-working-green-paper"
+        },
+        {
+          "publisher": "DWP",
+          "title": "Access to Work",
+          "url": "https://www.gov.uk/access-to-work"
+        }
+      ],
+      "related": [
+        "DEPARTMENT FOR WORK AND PENSIONS",
+        "Universal Credit",
+        "Personal Independence Payment"
+      ]
+    },
+    "4.1 General economic, commercial and labour affairs Scottish": {
+      "aliases": [
+        "Fair Start Scotland",
+        "Scottish Enterprise"
+      ],
+      "description": "**Scottish Government spend on devolved employability + enterprise + skills + business support** — complementary to (not overlapping with) DWP's reserved social security. Fair Start Scotland · Scottish Enterprise · HIE · SoSE · Skills Development Scotland · Parental Employability Support Fund · Young Person's Guarantee.",
+      "beneficiaries": "Long-term unemployed + disabled Scots (Fair Start Scotland) · Scottish businesses (SE + HIE + SoSE) · school leavers + apprentices (SDS) · low-income parents (PESF) · young people (YPG)",
+      "legal_basis": "**Scotland Act 2016** (devolved employment support for >12-months unemployed + disabled) · Enterprise and New Towns (Scotland) Act 1990 · **South of Scotland Enterprise Act 2019** · Further and Higher Education (Scotland) Act 2005",
+      "key_stats": [
+        {
+          "label": "Fair Start Scotland",
+          "value": "~65,000+ starts since April 2018 · ~25% sustained-job outcome rate"
+        },
+        {
+          "label": "FSS current phase",
+          "value": "Runs to March 2026 · successor integration with 'No One Left Behind'"
+        },
+        {
+          "label": "Scottish Enterprise 2024-25",
+          "value": "~£330M"
+        },
+        {
+          "label": "Highlands and Islands Enterprise",
+          "value": "~£80M"
+        },
+        {
+          "label": "South of Scotland Enterprise (founded 2020)",
+          "value": "~£35M"
+        },
+        {
+          "label": "Skills Development Scotland",
+          "value": "~£230M · ~25,000 Modern Apprenticeship starts/yr"
+        },
+        {
+          "label": "Modern Apprenticeship target 2024-25",
+          "value": "25,500 starts"
+        },
+        {
+          "label": "Young Person's Guarantee",
+          "value": "~£70M/yr (2020+)"
+        },
+        {
+          "label": "Parental Employability Support Fund",
+          "value": "~£14M/yr"
+        },
+        {
+          "label": "No One Left Behind",
+          "value": "Devolved to 32 councils · ~£96M/yr"
+        },
+        {
+          "label": "UC/JSA remain RESERVED",
+          "value": "Scotland runs only employability · not income-replacement benefits"
+        }
+      ],
+      "notes": "**Scottish Budget 2025-26 (Dec 2024) reprofiled employability funding** — reduced No One Left Behind allocations by ~£10M amid overall Scottish Government deficit pressure. **Fair Start Scotland** being phased into integrated LA-led delivery model from April 2026. **Audit Scotland 2023 'Employability in Scotland'** found landscape fragmented across 100+ programmes + questioned additionality of FSS outcomes vs prior DWP Work Programme benchmarks. Scottish Enterprise grants to multinationals drew sustained criticism.",
+      "sources": [
+        {
+          "publisher": "Scottish Government",
+          "title": "Fair Start Scotland evaluation",
+          "url": "https://www.gov.scot/publications/fair-start-scotland-evaluation/"
+        },
+        {
+          "publisher": "Audit Scotland",
+          "title": "Employability in Scotland",
+          "url": "https://www.audit-scotland.gov.uk/publications/employability-in-scotland"
+        },
+        {
+          "publisher": "Skills Development Scotland",
+          "title": "Official",
+          "url": "https://www.skillsdevelopmentscotland.co.uk/"
+        }
+      ],
+      "related": [
+        "SCOTTISH GOVERNMENT",
+        "General Resource Grant"
       ]
     }
   }
