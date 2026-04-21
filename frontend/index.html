@@ -1018,6 +1018,100 @@ mark{background:rgba(255,200,0,.25);color:inherit;border-radius:2px;padding:0 2p
 .tc-label{font-size:9px;color:#4a5568;text-transform:uppercase;letter-spacing:0.8px;margin-bottom:6px}
 .tc-context svg,.tc-detail svg{width:100%;height:calc(100% - 20px)}
 @media(min-width:1200px){.right-col{display:flex}#tab-budgetlist .bl-container{margin-right:33%}}
+
+/* ═════════════════════ MAP SUB-TAB (Budget Recipients) ═════════════════════ */
+.sup-modebar{
+  display:flex;gap:8px;align-items:center;padding:8px 16px;
+  background:rgba(18,18,30,.8);border-bottom:1px solid rgba(255,255,255,.08);
+}
+.sup-modebtn{
+  padding:6px 14px;font-size:12px;font-family:inherit;
+  background:transparent;color:var(--dim,#8892a8);border:1px solid rgba(255,255,255,.1);
+  border-radius:5px;cursor:pointer;transition:all .15s;
+}
+.sup-modebtn.active{
+  background:rgba(79,195,247,.12);color:#dbe7fa;border-color:rgba(79,195,247,.3);
+}
+.sup-modebar-info{
+  margin-left:auto;font-size:10.5px;color:var(--dim,#8892a8);
+}
+
+.supmap-layout{
+  display:grid;grid-template-columns:340px 1fr;height:calc(100vh - 140px);
+}
+.supmap-sidebar{
+  border-right:1px solid var(--border,#252d42);
+  display:flex;flex-direction:column;background:rgba(18,18,30,.4);overflow:hidden;
+}
+.supmap-filters{padding:14px;border-bottom:1px solid rgba(255,255,255,.08)}
+.supmap-title{font-size:14px;font-weight:600;color:var(--text,#e8ebf5);}
+.supmap-sub{font-size:10.5px;color:var(--dim,#8892a8);margin-top:3px;margin-bottom:10px;}
+.supmap-pillrow{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:10px;}
+.supmap-pill{
+  padding:4px 8px;font-size:10.5px;
+  background:rgba(255,255,255,.03);color:var(--dim);
+  border:1px solid rgba(255,255,255,.06);border-radius:4px;
+  cursor:pointer;font-family:inherit;transition:all .12s;
+}
+.supmap-pill.active{background:rgba(79,195,247,.14);color:#dbe7fa;border-color:rgba(79,195,247,.3);}
+.supmap-pill:hover{background:rgba(255,255,255,.06);color:var(--text);}
+.supmap-search{
+  width:100%;padding:7px 10px;
+  background:rgba(255,255,255,.04);border:1px solid var(--border,#252d42);
+  color:var(--text,#e8ebf5);border-radius:5px;font-size:11.5px;font-family:inherit;outline:none;
+}
+.supmap-search:focus{border-color:var(--accent,#4fc3f7)}
+.supmap-hint{font-size:10px;color:var(--dim);margin-top:8px;font-style:italic;}
+.supmap-selection{flex:1;overflow-y:auto;padding:14px;}
+.supmap-selection-empty{text-align:center;padding:30px 10px;}
+.supmap-sel-header{
+  padding-bottom:10px;margin-bottom:10px;
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+.supmap-sel-name{font-size:13px;font-weight:600;color:var(--text);line-height:1.3;}
+.supmap-sel-meta{font-size:10.5px;color:var(--dim);margin-top:3px;}
+.supmap-sel-pill{
+  display:inline-block;font-size:9px;padding:2px 6px;margin-top:4px;
+  background:rgba(79,195,247,.08);color:#8ec8ff;border-radius:3px;text-transform:uppercase;letter-spacing:.04em;
+}
+.supmap-sup-row{
+  padding:8px 10px;border-bottom:1px solid rgba(255,255,255,.04);
+  cursor:pointer;transition:background .1s;
+}
+.supmap-sup-row:hover,.supmap-sup-row.active{background:rgba(79,195,247,.08);}
+.supmap-sup-name{font-size:11.5px;color:var(--text);font-weight:500;line-height:1.3;}
+.supmap-sup-amt{font-size:10px;color:var(--dim);margin-top:2px;font-variant-numeric:tabular-nums;}
+
+.supmap-canvas{position:relative;background:#0f1018;overflow:hidden;}
+.supmap-loading{
+  position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+  color:var(--dim);font-size:12px;
+}
+/* Leaflet theme overrides for dark background */
+.supmap-canvas .leaflet-container{background:#0f1018;}
+.supmap-canvas .leaflet-tile-pane{filter:invert(1) hue-rotate(180deg) brightness(.9) contrast(.85);}
+.supmap-canvas .leaflet-popup-content-wrapper{
+  background:rgba(18,18,30,.96);color:var(--text,#e8ebf5);border:1px solid rgba(79,195,247,.25);border-radius:6px;
+}
+.supmap-canvas .leaflet-popup-tip{background:rgba(18,18,30,.96);}
+.supmap-canvas .leaflet-popup-content{margin:10px 14px;font-size:11.5px;line-height:1.45;font-family:inherit;}
+.supmap-popup-name{font-weight:600;color:var(--text);font-size:12.5px;margin-bottom:4px;}
+.supmap-popup-meta{font-size:10.5px;color:var(--dim);margin-bottom:6px;}
+.supmap-popup-stat{font-size:11px;color:var(--text);margin-top:2px;font-variant-numeric:tabular-nums;}
+.supmap-popup-btn{
+  display:inline-block;margin-top:8px;padding:4px 10px;font-size:10.5px;
+  background:rgba(79,195,247,.14);color:#bfdcff;border:1px solid rgba(79,195,247,.3);border-radius:3px;
+  cursor:pointer;font-family:inherit;
+}
+.supmap-popup-btn:hover{background:rgba(79,195,247,.25);}
+.supmap-legend{
+  position:absolute;bottom:14px;left:14px;z-index:500;
+  background:rgba(18,18,30,.9);border:1px solid rgba(255,255,255,.08);
+  padding:8px 12px;border-radius:5px;font-size:10.5px;color:var(--text);
+  max-width:240px;
+}
+.supmap-legend-row{display:flex;align-items:center;gap:6px;margin-top:3px;}
+.supmap-legend-dot{width:10px;height:10px;border-radius:50%;display:inline-block;}
 </style>
 </head>
 <body>
@@ -3265,7 +3359,15 @@ mark{background:rgba(79,195,247,.3);color:var(--text,#e8ebf5);padding:0 2px;bord
      from data/suppliers/{ch_number}.json with list view + detail drill-in.
      Data: data/suppliers/_index.json + data/suppliers/{ch_number}.json -->
 <div id="tab-suppliers" class="panel" style="display:none">
-  <div class="suppliers-layout">
+  <!-- Sub-mode switcher: List vs Map -->
+  <div class="sup-modebar">
+    <button class="sup-modebtn active" data-sup-mode="list" onclick="_supSwitchMode('list',this)">📋 List</button>
+    <button class="sup-modebtn" data-sup-mode="map" onclick="_supSwitchMode('map',this)">🗺️ Map</button>
+    <span class="sup-modebar-info" id="sup-modebar-info">400 curated suppliers · 85,000 contracts 2024</span>
+  </div>
+
+  <!-- LIST MODE (default) -->
+  <div id="sup-mode-list" class="suppliers-layout">
     <!-- Master: list of suppliers -->
     <div class="suppliers-list" id="suppliers-list">
       <div class="suppliers-header">
@@ -3284,6 +3386,40 @@ mark{background:rgba(79,195,247,.3);color:var(--text,#e8ebf5);padding:0 2px;bord
           400 UK government suppliers with identity, governance, ownership chains and procurement history — click any name to explore.
         </div>
       </div>
+    </div>
+  </div>
+
+  <!-- MAP MODE -->
+  <div id="sup-mode-map" class="supmap-layout" style="display:none">
+    <!-- Left side: filters + selection detail -->
+    <div class="supmap-sidebar">
+      <div class="supmap-filters">
+        <div class="supmap-title">🗺️ Procurement geography</div>
+        <div class="supmap-sub">2024 contracts · 4,130 public buyers · ~80% of £ mapped</div>
+        <div class="supmap-pillrow" id="supmap-typefilters">
+          <button class="supmap-pill active" data-btype="all" onclick="_supmapSetType('all')">All · <span data-count-all>—</span></button>
+          <button class="supmap-pill" data-btype="council" onclick="_supmapSetType('council')">Councils</button>
+          <button class="supmap-pill" data-btype="nhs" onclick="_supmapSetType('nhs')">NHS</button>
+          <button class="supmap-pill" data-btype="central_govt" onclick="_supmapSetType('central_govt')">Depts</button>
+          <button class="supmap-pill" data-btype="police_fire" onclick="_supmapSetType('police_fire')">Police/Fire</button>
+          <button class="supmap-pill" data-btype="education" onclick="_supmapSetType('education')">Education</button>
+          <button class="supmap-pill" data-btype="agency" onclick="_supmapSetType('agency')">Agencies</button>
+          <button class="supmap-pill" data-btype="other" onclick="_supmapSetType('other')">Other</button>
+        </div>
+        <input type="text" id="supmap-search" class="supmap-search" placeholder="🔍 Search buyer (e.g. Kent, Barts, MOD)..." autocomplete="off" />
+        <div class="supmap-hint">Click any pin on the map · or select a buyer below to see their suppliers.</div>
+      </div>
+      <div class="supmap-selection" id="supmap-selection">
+        <div class="supmap-selection-empty">
+          <div style="font-size:32px;opacity:.4;margin-bottom:8px">🔘</div>
+          <div style="font-size:13px;color:var(--text);font-weight:600">Select a buyer</div>
+          <div style="font-size:11px;color:var(--dim);margin-top:6px">Click any pin to see that buyer's top suppliers + their geographic location on the map.</div>
+        </div>
+      </div>
+    </div>
+    <!-- Right side: Leaflet map canvas -->
+    <div class="supmap-canvas" id="supmap-canvas">
+      <div class="supmap-loading" id="supmap-loading">Loading map & data…</div>
     </div>
   </div>
 </div>
@@ -17286,6 +17422,282 @@ function _supClearDetail(){
     detail.innerHTML=`<div class="suppliers-empty"><div style="font-size:48px;margin-bottom:14px;opacity:.4">🏢</div><div style="font-size:16px;color:var(--text);font-weight:600;margin-bottom:4px">Select a supplier</div><div style="font-size:12px;color:var(--dim);max-width:320px;line-height:1.5">400 UK government suppliers with identity, governance, ownership chains and procurement history — click any name to explore.</div></div>`;
   }
 }
+
+// ═══════════════════════════════════════════════════════════════════════════
+// MAP sub-tab for Budget Recipients: UK procurement geography
+// Shows all 4,130 public buyers (councils · NHS · depts · etc.) and their
+// top suppliers on a Leaflet map. Click any pin → see buyer's top suppliers.
+// ═══════════════════════════════════════════════════════════════════════════
+let _supmapLeaflet = null;
+let _supmapLeafletReady = null;
+let _supmapData = null;
+let _supmapBuyersLayer = null;
+let _supmapSuppliersLayer = null;
+let _supmapActiveType = 'all';
+let _supmapSelectedBuyer = null;
+
+const SUPMAP_TYPE_COLOR = {
+  council: '#5fa8ff',
+  nhs: '#ff6b9d',
+  central_govt: '#ffb84f',
+  police_fire: '#c85bff',
+  education: '#48d1a0',
+  agency: '#6fe0d8',
+  trust: '#d49fff',
+  other: '#8892a8',
+};
+const SUPMAP_TYPE_LABEL = {
+  council: 'Council / local auth',
+  nhs: 'NHS / ICB / trust',
+  central_govt: 'Central department',
+  police_fire: 'Police / fire',
+  education: 'University / college',
+  agency: 'Govt agency',
+  trust: 'Public trust',
+  other: 'Other',
+};
+
+function _supSwitchMode(mode, btn){
+  document.querySelectorAll('.sup-modebtn').forEach(b => b.classList.toggle('active', b === btn));
+  const list = document.getElementById('sup-mode-list');
+  const map  = document.getElementById('sup-mode-map');
+  if (list) list.style.display = mode === 'list' ? '' : 'none';
+  if (map)  map.style.display  = mode === 'map'  ? '' : 'none';
+  if (mode === 'map') _supmapInit();
+}
+
+async function _supmapLoadLeaflet(){
+  if (window.L) return window.L;
+  if (_supmapLeafletReady) return _supmapLeafletReady;
+  _supmapLeafletReady = new Promise((resolve, reject) => {
+    // CSS
+    const css = document.createElement('link');
+    css.rel = 'stylesheet';
+    css.href = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css';
+    css.integrity = 'sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=';
+    css.crossOrigin = '';
+    document.head.appendChild(css);
+    // JS
+    const s = document.createElement('script');
+    s.src = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';
+    s.integrity = 'sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=';
+    s.crossOrigin = '';
+    s.onload = () => resolve(window.L);
+    s.onerror = () => reject(new Error('Failed to load Leaflet'));
+    document.head.appendChild(s);
+  });
+  return _supmapLeafletReady;
+}
+
+async function _supmapLoadData(){
+  if (_supmapData) return _supmapData;
+  const [buyers, suppliers, b2s, s2b] = await Promise.all([
+    fetch('/data/map/buyers.json').then(r => r.json()),
+    fetch('/data/map/suppliers.json').then(r => r.json()),
+    fetch('/data/map/buyer_to_suppliers.json').then(r => r.json()),
+    fetch('/data/map/supplier_to_buyers.json').then(r => r.json()),
+  ]);
+  _supmapData = { buyers, suppliers, b2s, s2b };
+  return _supmapData;
+}
+
+async function _supmapInit(){
+  if (_supmapLeaflet) return;
+  const loadingEl = document.getElementById('supmap-loading');
+  if (loadingEl) loadingEl.textContent = 'Loading map library & data…';
+  try {
+    const L = await _supmapLoadLeaflet();
+    const data = await _supmapLoadData();
+    const canvas = document.getElementById('supmap-canvas');
+    if (!canvas) return;
+    if (loadingEl) loadingEl.remove();
+
+    _supmapLeaflet = L.map('supmap-canvas', {
+      center: [54.0, -2.3],
+      zoom: 6,
+      minZoom: 5,
+      maxZoom: 16,
+      preferCanvas: true,
+    });
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '© OpenStreetMap contributors',
+      maxZoom: 18,
+    }).addTo(_supmapLeaflet);
+
+    // Update sidebar count
+    const info = document.getElementById('sup-modebar-info');
+    if (info) {
+      const buyerN = Object.keys(data.buyers).length;
+      const geoBuyerN = Object.values(data.buyers).filter(b => b.lat).length;
+      info.textContent = `${buyerN.toLocaleString()} public buyers · ${geoBuyerN.toLocaleString()} mapped · 2024 contracts`;
+    }
+
+    _supmapRenderBuyers();
+    _supmapRenderLegend();
+  } catch (e) {
+    console.error('Map init failed:', e);
+    if (loadingEl) loadingEl.textContent = 'Failed to load map: ' + e.message;
+  }
+}
+
+function _supmapRenderBuyers(){
+  if (!_supmapLeaflet || !_supmapData) return;
+  const L = window.L;
+  if (_supmapBuyersLayer) _supmapLeaflet.removeLayer(_supmapBuyersLayer);
+  const markers = [];
+  const searchQ = (document.getElementById('supmap-search')?.value || '').trim().toLowerCase();
+  for (const b of Object.values(_supmapData.buyers)) {
+    if (!b.lat || !b.lng) continue;
+    if (_supmapActiveType !== 'all' && b.type !== _supmapActiveType) continue;
+    if (searchQ && !(b.name || '').toLowerCase().includes(searchQ)) continue;
+    // Size based on total £
+    const gbpM = b.total_gbp_2024 / 1e6;
+    const radius = Math.max(4, Math.min(26, 4 + Math.log10(Math.max(gbpM, 0.01)) * 5));
+    const color = SUPMAP_TYPE_COLOR[b.type] || SUPMAP_TYPE_COLOR.other;
+    const m = L.circleMarker([b.lat, b.lng], {
+      radius, fillColor: color, color: '#fff', weight: 0.5,
+      opacity: 0.9, fillOpacity: 0.55,
+    });
+    m._supBuyerId = b.id;
+    m.on('click', () => _supmapSelectBuyer(b.id));
+    m.bindPopup(() => _supmapBuyerPopup(b));
+    markers.push(m);
+  }
+  _supmapBuyersLayer = L.layerGroup(markers).addTo(_supmapLeaflet);
+
+  // Refresh info count
+  const info = document.getElementById('sup-modebar-info');
+  if (info) {
+    const total = Object.keys(_supmapData.buyers).length;
+    info.textContent = `${markers.length.toLocaleString()} of ${total.toLocaleString()} buyers shown${searchQ ? ' · matching "' + searchQ + '"' : ''}`;
+  }
+}
+
+function _supmapBuyerPopup(b){
+  const fmt = v => v >= 1e9 ? '£' + (v/1e9).toFixed(2) + 'B'
+                : v >= 1e6 ? '£' + (v/1e6).toFixed(1) + 'M'
+                : v >= 1e3 ? '£' + (v/1e3).toFixed(0) + 'k' : '£' + Math.round(v);
+  return `<div>
+    <div class="supmap-popup-name">${_cmpEsc(b.name)}</div>
+    <div class="supmap-popup-meta">${SUPMAP_TYPE_LABEL[b.type] || b.type} · ${b.lad24_nm || b.region || ''}</div>
+    <div class="supmap-popup-stat"><b>${fmt(b.total_gbp_2024)}</b> in ${b.n_contracts.toLocaleString()} contracts</div>
+    <div class="supmap-popup-stat">${b.n_suppliers.toLocaleString()} unique suppliers</div>
+    <button class="supmap-popup-btn" onclick="_supmapSelectBuyer('${b.id}')">View suppliers →</button>
+  </div>`;
+}
+
+function _supmapSupplierPopup(s, flow){
+  const fmt = v => v >= 1e9 ? '£' + (v/1e9).toFixed(2) + 'B'
+                : v >= 1e6 ? '£' + (v/1e6).toFixed(1) + 'M'
+                : v >= 1e3 ? '£' + (v/1e3).toFixed(0) + 'k' : '£' + Math.round(v);
+  return `<div>
+    <div class="supmap-popup-name">${_cmpEsc(s.name)}</div>
+    <div class="supmap-popup-meta">${s.ch_number || ''} · ${s.lad24_nm || s.region || ''}</div>
+    ${flow ? `<div class="supmap-popup-stat">From this buyer: <b>${fmt(flow.gbp)}</b> (${flow.n_contracts} contracts)</div>` : ''}
+    <div class="supmap-popup-stat">Total 2024: <b>${fmt(s.total_gbp_2024)}</b> · ${s.n_buyers} buyers</div>
+  </div>`;
+}
+
+function _supmapSetType(t){
+  _supmapActiveType = t;
+  document.querySelectorAll('.supmap-pill').forEach(p => p.classList.toggle('active', p.dataset.btype === t));
+  _supmapRenderBuyers();
+}
+
+function _supmapSelectBuyer(buyerId){
+  if (!_supmapData) return;
+  const b = _supmapData.buyers[buyerId];
+  if (!b) return;
+  _supmapSelectedBuyer = buyerId;
+  const flows = _supmapData.b2s[buyerId] || [];
+  const fmt = v => v >= 1e9 ? '£' + (v/1e9).toFixed(2) + 'B'
+                : v >= 1e6 ? '£' + (v/1e6).toFixed(1) + 'M'
+                : v >= 1e3 ? '£' + (v/1e3).toFixed(0) + 'k' : '£' + Math.round(v);
+
+  const sidebar = document.getElementById('supmap-selection');
+  if (sidebar) {
+    sidebar.innerHTML = `<div class="supmap-sel-header">
+      <div class="supmap-sel-name">${_cmpEsc(b.name)}</div>
+      <div class="supmap-sel-meta">${b.lad24_nm || b.region || ''} · ${b.postcode || ''}</div>
+      <div class="supmap-sel-meta">${fmt(b.total_gbp_2024)} in ${b.n_contracts.toLocaleString()} contracts · ${b.n_suppliers} suppliers</div>
+      <span class="supmap-sel-pill">${SUPMAP_TYPE_LABEL[b.type] || b.type}</span>
+    </div>
+    <div style="font-size:11px;color:var(--dim);margin-bottom:8px;">Top ${flows.length} suppliers</div>
+    ${flows.map(f => {
+      const s = _supmapData.suppliers[f.supplier_id];
+      if (!s) return '';
+      const hasGeo = s.lat && s.lng;
+      return `<div class="supmap-sup-row" onclick="_supmapFocusSupplier('${f.supplier_id}')">
+        <div class="supmap-sup-name">${_cmpEsc(s.name)}${hasGeo ? '' : ' ·'} ${hasGeo ? '📍' : '<span style=\"color:#666;font-size:9px\">no geo</span>'}</div>
+        <div class="supmap-sup-amt">${fmt(f.gbp)} · ${f.n_contracts} contract${f.n_contracts>1?'s':''}</div>
+      </div>`;
+    }).join('')}`;
+  }
+
+  // Pan map to buyer + render suppliers
+  if (b.lat && b.lng) {
+    _supmapLeaflet.setView([b.lat, b.lng], 9, { animate: true });
+  }
+  _supmapRenderSuppliersFor(buyerId);
+}
+
+function _supmapRenderSuppliersFor(buyerId){
+  if (!_supmapLeaflet || !_supmapData) return;
+  const L = window.L;
+  if (_supmapSuppliersLayer) _supmapLeaflet.removeLayer(_supmapSuppliersLayer);
+  const flows = _supmapData.b2s[buyerId] || [];
+  const buyer = _supmapData.buyers[buyerId];
+  const markers = [];
+  for (const f of flows) {
+    const s = _supmapData.suppliers[f.supplier_id];
+    if (!s || !s.lat || !s.lng) continue;
+    const gbpM = f.gbp / 1e6;
+    const radius = Math.max(5, Math.min(22, 5 + Math.log10(Math.max(gbpM, 0.01)) * 4));
+    const m = L.circleMarker([s.lat, s.lng], {
+      radius, fillColor: '#ffb84f', color: '#fff', weight: 0.5,
+      opacity: 0.95, fillOpacity: 0.7,
+    });
+    m.bindPopup(() => _supmapSupplierPopup(s, f));
+    markers.push(m);
+    // Line from buyer to supplier
+    if (buyer && buyer.lat && buyer.lng) {
+      const line = L.polyline([[buyer.lat, buyer.lng], [s.lat, s.lng]], {
+        color: '#ffb84f', weight: 0.5, opacity: 0.25,
+      });
+      markers.push(line);
+    }
+  }
+  _supmapSuppliersLayer = L.layerGroup(markers).addTo(_supmapLeaflet);
+}
+
+function _supmapFocusSupplier(supplierId){
+  if (!_supmapData || !_supmapLeaflet) return;
+  const s = _supmapData.suppliers[supplierId];
+  if (!s || !s.lat || !s.lng) return;
+  _supmapLeaflet.setView([s.lat, s.lng], 11, { animate: true });
+}
+
+function _supmapRenderLegend(){
+  const canvas = document.getElementById('supmap-canvas');
+  if (!canvas) return;
+  let legend = canvas.querySelector('.supmap-legend');
+  if (legend) legend.remove();
+  legend = document.createElement('div');
+  legend.className = 'supmap-legend';
+  legend.innerHTML = `<div style="font-weight:600;font-size:11px;margin-bottom:4px;">Buyer type · pin size ∝ £</div>` +
+    Object.entries(SUPMAP_TYPE_LABEL).map(([k, v]) =>
+      `<div class="supmap-legend-row"><span class="supmap-legend-dot" style="background:${SUPMAP_TYPE_COLOR[k]}"></span>${v}</div>`
+    ).join('');
+  canvas.appendChild(legend);
+}
+
+// Wire up search input
+document.addEventListener('DOMContentLoaded', () => {
+  const search = document.getElementById('supmap-search');
+  if (search) search.addEventListener('input', () => {
+    if (_supmapLeaflet) _supmapRenderBuyers();
+  });
+});
 </script>
 </body>
 </html>
