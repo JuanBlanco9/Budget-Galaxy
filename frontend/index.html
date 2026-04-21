@@ -14230,7 +14230,7 @@ function _cmplistContextualFallback(node, path, root){
 }
 // Find an enrichment record for a given tree node name.
 // Strategy: exact raw → exact prettified → normalised fallback.
-function _cmplistLookupEnrichment(rawName, parentName){
+function _cmplistLookupEnrichment(rawName, parentName, ancestorNames){
   const S = window._cmplistEnrichment;
   if (!S.loaded || !rawName) return null;
   const pretty = (typeof _cmplistPrettyName === 'function') ? _cmplistPrettyName(rawName) : rawName;
@@ -14239,11 +14239,22 @@ function _cmplistLookupEnrichment(rawName, parentName){
   // {name, parent} that matches the current node's immediate parent, prefer it.
   // This lets generic names like "Transport" route correctly only under "GLA"
   // without polluting the 199 other "Transport" nodes in the tree.
-  if (parentName && S.scopedAliases) {
-    for (const k of [rawName, pretty]) {
-      const hit = S.scopedAliases[parentName + '||' + k];
-      if (hit) {
-        return { extended: hit, rich: null, compact: null, matchedBy: 'scoped-alias' };
+  // For multi-level sub-lines (e.g. "Salaries & wages" under "Staff Costs"
+  // under "Barts Health NHS Trust") we also walk the ancestor chain, so an
+  // alias {name, parent: trust} resolves even when immediate parent is the
+  // category rather than the trust itself.
+  if (S.scopedAliases) {
+    const ancestors = [];
+    if (parentName) ancestors.push(parentName);
+    if (Array.isArray(ancestorNames)) {
+      for (const a of ancestorNames) if (a && !ancestors.includes(a)) ancestors.push(a);
+    }
+    for (const parent of ancestors) {
+      for (const k of [rawName, pretty]) {
+        const hit = S.scopedAliases[parent + '||' + k];
+        if (hit) {
+          return { extended: hit, rich: null, compact: null, matchedBy: 'scoped-alias' };
+        }
       }
     }
   }
@@ -14609,8 +14620,8 @@ function _cmplistResolveSource(node, pathArr, root){
 // Pulls from both compact (program_enrichment.json) and rich
 // (enrichment_top50.json) sources, displaying whatever fields exist.
 // ─────────────────────────────────────────────────────────────────────────
-function _cmplistEnrichmentCard(rawName, parentName){
-  const hit = _cmplistLookupEnrichment(rawName, parentName);
+function _cmplistEnrichmentCard(rawName, parentName, ancestorNames){
+  const hit = _cmplistLookupEnrichment(rawName, parentName, ancestorNames);
   if (!hit) return '';
   const ext  = hit.extended;
   const rich = hit.rich;
@@ -15246,7 +15257,8 @@ function _cmplistRenderDetail(){
         <div class="detail-enrich-desc">HM Treasury's OSCAR classification system groups spending that doesn't fit cleanly into a named sub-category as <b>"n/a"</b> or <b>"Not known"</b>. This is an <b>aggregator line</b> inside <i>${_cmpEsc(parentPretty)}</i> — not a specific programme. The £ shown is real spending; the absence of a name reflects a Treasury reporting gap, not missing data on Budget Galaxy's side.</div>
       </div>`;
     } else {
-      enrichmentHtml = _cmplistEnrichmentCard(rawName, parentName);
+      const ancestorNames = (ancestors || []).map(a => a && a.name).filter(Boolean);
+      enrichmentHtml = _cmplistEnrichmentCard(rawName, parentName, ancestorNames);
     }
     if (!enrichmentHtml) {
       // Tier C procedural: council · council-service · NHS trust sub-line
