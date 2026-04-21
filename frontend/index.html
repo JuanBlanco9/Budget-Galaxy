@@ -1587,6 +1587,56 @@ mark{background:rgba(79,195,247,.3);color:var(--text,#e8ebf5);padding:0 2px;bord
   font-size:10.5px;color:var(--dim);line-height:1.5;
 }
 .detail-enrich-legal-label{color:var(--dim);text-transform:uppercase;letter-spacing:.04em;font-size:9.5px;margin-right:4px}
+/* Sprint 12 cross-links: "See also" chips (related Tier A entries) */
+.detail-enrich-related{
+  margin-top:12px;padding-top:10px;
+  border-top:1px dashed rgba(255,255,255,.06);
+}
+.detail-enrich-related-label{
+  font-size:10px;color:var(--dim);text-transform:uppercase;
+  letter-spacing:.05em;margin-bottom:6px;font-weight:500;
+}
+.detail-enrich-related-chips{display:flex;flex-wrap:wrap;gap:6px}
+.detail-enrich-related-chip{
+  display:inline-block;padding:4px 9px;
+  background:rgba(129,199,132,.08);
+  border:1px solid rgba(129,199,132,.25);
+  border-radius:12px;font-size:10.5px;color:#81c784;
+  text-decoration:none;transition:all .15s;
+  cursor:pointer;
+}
+.detail-enrich-related-chip:hover{
+  background:rgba(129,199,132,.15);
+  border-color:rgba(129,199,132,.45);
+  color:#a5d6a7;
+}
+/* Sprint 12 cross-links: "📰 Related Stories" surfacing insights from tree nodes */
+.detail-enrich-stories{
+  margin-top:12px;padding:10px 12px;
+  background:rgba(255,167,38,.04);
+  border-left:2px solid rgba(255,167,38,.4);border-radius:4px;
+}
+.detail-enrich-stories-label{
+  font-size:10px;color:#ffb74d;text-transform:uppercase;
+  letter-spacing:.05em;margin-bottom:6px;font-weight:600;
+}
+.detail-enrich-stories-list{display:flex;flex-direction:column;gap:6px}
+.detail-enrich-story{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:8px;padding:7px 10px;
+  background:rgba(255,167,38,.06);
+  border:1px solid rgba(255,167,38,.15);
+  border-radius:6px;text-decoration:none;
+  transition:all .15s;cursor:pointer;
+}
+.detail-enrich-story:hover{
+  background:rgba(255,167,38,.12);
+  border-color:rgba(255,167,38,.35);
+}
+.detail-enrich-story-title{
+  font-size:11.5px;color:var(--text);flex:1;line-height:1.35;
+}
+.detail-enrich-story-arrow{color:#ffb74d;font-size:13px}
 
 /* Beneficiaries prominent banner */
 .detail-enrich-benefs{
@@ -14588,6 +14638,59 @@ function _cmplistEnrichmentCard(rawName, parentName){
     </div>`;
   }
 
+  // Related budget lines — cross-link to sibling Tier A entries. Clicking a chip
+  // switches the Explore tree to that node by writing to location.hash (the
+  // Explore tab already listens for hash changes). Graceful: if related field
+  // missing or empty, no section is rendered.
+  const related = (ext && Array.isArray(ext.related)) ? ext.related : null;
+  if (related && related.length) {
+    html += `<div class="detail-enrich-related">
+      <div class="detail-enrich-related-label">See also</div>
+      <div class="detail-enrich-related-chips">
+        ${related.map(r => `<a class="detail-enrich-related-chip"
+          href="#explore/find/${encodeURIComponent(r)}"
+          title="Jump to this budget line">${_cmpEsc(_cmplistPrettyName(r))}</a>`).join('')}
+      </div>
+    </div>`;
+  }
+
+  // Related stories — surface insight cards whose `related` array includes this
+  // node's rawName. Shown only if insights index is loaded and matches exist.
+  const insIdx = (window._insights && window._insights.index) || null;
+  if (insIdx && insIdx.categories) {
+    const matchingStories = [];
+    for (const catKey of Object.keys(insIdx.categories)) {
+      const cat = insIdx.categories[catKey];
+      const items = (cat && cat.items) || [];
+      for (const item of items) {
+        // The _index.json doesn't carry `related` per-item — we need to check
+        // the loaded story files. Use a lightweight in-memory cache.
+        if (!window._insStoryRelatedMap) continue;
+        const rel = window._insStoryRelatedMap[item.id] || [];
+        if (rel.includes(rawName)) {
+          matchingStories.push({
+            id: item.id,
+            category: catKey,
+            title: item.title
+          });
+        }
+      }
+    }
+    if (matchingStories.length) {
+      html += `<div class="detail-enrich-stories">
+        <div class="detail-enrich-stories-label">📰 Related Stories</div>
+        <div class="detail-enrich-stories-list">
+          ${matchingStories.slice(0, 3).map(s => `<a class="detail-enrich-story"
+            href="#insights/${encodeURIComponent(s.category)}/${encodeURIComponent(s.id)}"
+            onclick="showTab('insights', null); setTimeout(()=>{ if(typeof _insLoadCard==='function') _insLoadCard('${s.category}','${s.id}'); }, 200);">
+            <span class="detail-enrich-story-title">${_cmpEsc(s.title)}</span>
+            <span class="detail-enrich-story-arrow">→</span>
+          </a>`).join('')}
+        </div>
+      </div>`;
+    }
+  }
+
   html += `</div>`;
   return html;
 }
@@ -15579,6 +15682,27 @@ async function loadInsights(){
       document.getElementById('insights-detail').innerHTML =
         `<div class="insights-placeholder"><h3>Insights index failed to load</h3><p>${_insEsc(e.message)}</p></div>`;
       return;
+    }
+  }
+  // Build the _insStoryRelatedMap: id → [related tree-node names]. Used by the
+  // Explore tab's enrichment card to surface "📰 Related Stories" chips under
+  // a budget line when one or more insights reference that node in their
+  // `related` array. We only prefetch story bodies (small) — tax/evolution/etc.
+  // categories rarely cross-link to tree nodes.
+  if (!window._insStoryRelatedMap) {
+    window._insStoryRelatedMap = {};
+    const storiesCat = INS.index.categories && INS.index.categories.stories;
+    if (storiesCat && storiesCat.items) {
+      // Fire all in parallel; ignore failures (insight still loads when clicked)
+      Promise.allSettled(storiesCat.items.map(item =>
+        fetch(`/data/insights/stories/${item.id}.json`)
+          .then(r => r.ok ? r.json() : null)
+          .then(doc => {
+            if (doc && Array.isArray(doc.related)) {
+              window._insStoryRelatedMap[item.id] = doc.related;
+            }
+          })
+      ));
     }
   }
   _insRenderTree();
