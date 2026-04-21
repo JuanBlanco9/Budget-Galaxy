@@ -1,6 +1,22 @@
 # Budget Galaxy — Next Session prompt
 
-## 🔖 SAVED STATE 2026-04-20 (paused mid-Sprint-4)
+## 🚨 READ FIRST — Latest state 2026-04-21
+
+**Full handoff**: `SESSION_HANDOFF_2026_04_21.md` (in repo root). Read that FIRST, it has everything.
+
+**Short version:**
+- Branch `claude/mystifying-ardinghelli-f4e66f` · last commit `80f37ed`
+- **2,621 Tier A entries** · **82.12% tailor-made per-entity** (not the 99.117% figure you might see in audit output — that one counts anything that "resolves", including 6,948 sub-items absorbing parent content)
+- User mandate: 100% tailor-made per-entity · no cut corners · pace batches 4-5 agents max · rate limits reset 2pm + 7pm Buenos Aires
+- **6,948 shared-parent orphan nodes remain** — user saw this visually (Social Fund - Cold Weather / Community Care / Net Lending all showing same COFOG parent content)
+- Fact-check is PENDING — I (previous Claude) did structural verification only, not factual. User explicitly flagged this.
+- Depth-4 work 60% done: ✅ Salaries & wages · Agency · Pensions · Depreciation · ❌ Drugs, Clinical supplies, Premises (other), Establishment, PFI, Transport, Business rates, Amortisation, Impairments, Lease, Termination, Inventories, Other (~2,250 entries)
+
+**Live production is NOT up to date**: production (budgetgalaxy.com) is at commit `7126451` era. Last 3 commits (depth-4 work) are committed locally but NOT deployed.
+
+---
+
+## 🔖 OLDER STATE — 2026-04-20 (paused mid-Sprint-4)
 
 **52 Tier A gold entries**. Sprint 4a complete in JSON.
 
