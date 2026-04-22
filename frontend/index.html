@@ -1192,7 +1192,29 @@ tr:hover .suprank-arrow{opacity:1;}
 }
 /* Leaflet theme overrides for dark background */
 .supmap-canvas .leaflet-container{background:#0f1018;}
-.supmap-canvas .leaflet-tile-pane{filter:invert(1) hue-rotate(180deg) brightness(.9) contrast(.85);}
+/* CARTO Dark tiles are pre-styled dark — no invert filter needed. */
+.supmap-canvas .leaflet-control-layers{
+  background:rgba(18,18,30,.92);backdrop-filter:blur(6px);
+  border:1px solid rgba(255,255,255,.1);border-radius:6px;
+  color:var(--text,#e8ebf5);font-family:inherit;font-size:12px;padding:8px 10px;
+}
+.supmap-canvas .leaflet-control-layers-expanded{padding:10px 14px;min-width:180px;}
+.supmap-canvas .leaflet-control-layers-overlays label{display:block;padding:3px 0;cursor:pointer;}
+.supmap-canvas .leaflet-control-layers-separator{border-top:1px solid rgba(255,255,255,.1);margin:6px 0;}
+.supmap-canvas .leaflet-control-attribution{background:rgba(18,18,30,.85);color:var(--dim,#8892a8);font-size:10px;}
+.supmap-canvas .leaflet-control-attribution a{color:var(--accent,#4fc3f7);}
+/* Legend for selected admin boundary */
+.supmap-boundlegend{
+  position:absolute;bottom:30px;left:14px;z-index:400;
+  background:rgba(18,18,30,.92);backdrop-filter:blur(6px);
+  border:1px solid rgba(255,255,255,.1);border-radius:6px;
+  padding:10px 14px;font-size:11.5px;color:var(--text,#e8ebf5);
+  max-width:280px;line-height:1.45;display:none;
+}
+.supmap-boundlegend.visible{display:block;}
+.supmap-boundlegend-label{font-size:10px;color:var(--dim,#8892a8);text-transform:uppercase;letter-spacing:.04em;margin-bottom:2px;}
+.supmap-boundlegend-name{font-weight:600;color:#dbe7fa;margin-bottom:4px;}
+.supmap-boundlegend-close{float:right;background:none;border:0;color:var(--dim);font-size:14px;cursor:pointer;padding:0 4px;}
 .supmap-canvas .leaflet-popup-content-wrapper{
   background:rgba(18,18,30,.96);color:var(--text,#e8ebf5);border:1px solid rgba(79,195,247,.25);border-radius:6px;
 }
@@ -3531,6 +3553,7 @@ mark{background:rgba(79,195,247,.3);color:var(--text,#e8ebf5);padding:0 2px;bord
     <!-- Right side: Leaflet map canvas -->
     <div class="supmap-canvas" id="supmap-canvas">
       <div class="supmap-loading" id="supmap-loading">Loading map & data…</div>
+      <div class="supmap-boundlegend" id="supmap-boundlegend"></div>
     </div>
   </div>
 
@@ -18201,6 +18224,179 @@ async function _supmapLoadData(){
   return _supmapData;
 }
 
+// --- ADMIN BOUNDARY OVERLAY MANAGER ---
+// Lazy-loads GeoJSON layers from /data/map/boundaries/*.geojson on toggle.
+// Click on a polygon fades siblings to 0.12 opacity + zooms to bounds + writes hash.
+const _supmapBoundaryMeta = {
+  countries:      { file: 'countries.geojson',      label: 'Nations',           color: '#b8c5d6', weight: 1.2, fillOpacity: 0.00, zindex: 400 },
+  regions:        { file: 'regions.geojson',        label: 'English Regions',   color: '#7ec0ff', weight: 1.0, fillOpacity: 0.05, zindex: 405 },
+  ctyua:          { file: 'ctyua.geojson',          label: 'Counties + UAs',    color: '#a5d6a7', weight: 1.0, fillOpacity: 0.05, zindex: 410 },
+  lad:            { file: 'lad.geojson',            label: 'Councils (LAD)',    color: '#ffc247', weight: 0.7, fillOpacity: 0.06, zindex: 415 },
+  constituencies: { file: 'constituencies.geojson', label: 'Constituencies',    color: '#b39ddb', weight: 0.6, fillOpacity: 0.04, zindex: 420 },
+  nhs_icb:        { file: 'nhs_icb.geojson',        label: 'NHS ICBs',          color: '#ff6b9d', weight: 1.0, fillOpacity: 0.05, zindex: 425 },
+  police:         { file: 'police.geojson',         label: 'Police Forces',     color: '#c85bff', weight: 1.0, fillOpacity: 0.05, zindex: 430 },
+};
+const _supmapBoundaryLayers = {};  // key -> L.GeoJSON
+const _supmapBoundaryData = {};    // key -> FeatureCollection (cached)
+let _supmapSelectedFeature = null; // { key, layer, name, code }
+
+async function _supmapLoadBoundary(key){
+  if (_supmapBoundaryData[key]) return _supmapBoundaryData[key];
+  const meta = _supmapBoundaryMeta[key];
+  if (!meta) throw new Error('unknown boundary key: ' + key);
+  const resp = await fetch('/data/map/boundaries/' + meta.file);
+  if (!resp.ok) throw new Error('fetch failed: ' + resp.status);
+  const fc = await resp.json();
+  _supmapBoundaryData[key] = fc;
+  return fc;
+}
+
+function _supmapStyleFor(key, highlighted){
+  const m = _supmapBoundaryMeta[key];
+  if (highlighted === true) return { color: m.color, weight: m.weight + 1.5, fillColor: m.color, fillOpacity: 0.22 };
+  if (highlighted === false) return { color: m.color, weight: Math.max(0.3, m.weight * 0.5), fillColor: m.color, fillOpacity: 0.015, opacity: 0.35 };
+  return { color: m.color, weight: m.weight, fillColor: m.color, fillOpacity: m.fillOpacity, opacity: 0.75 };
+}
+
+async function _supmapAddBoundaryLayer(key){
+  if (_supmapBoundaryLayers[key]) return;
+  if (!_supmapLeaflet) return;
+  const L = window.L;
+  const fc = await _supmapLoadBoundary(key);
+  const meta = _supmapBoundaryMeta[key];
+  const lyr = L.geoJSON(fc, {
+    style: _supmapStyleFor(key),
+    onEachFeature: (feature, layer) => {
+      layer.on('click', (e) => {
+        L.DomEvent.stopPropagation(e);
+        _supmapSelectFeature(key, feature, layer);
+      });
+      layer.on('mouseover', () => {
+        if (_supmapSelectedFeature && _supmapSelectedFeature.key === key) return;
+        layer.setStyle({ weight: meta.weight + 0.8, fillOpacity: meta.fillOpacity + 0.08 });
+      });
+      layer.on('mouseout', () => {
+        if (_supmapSelectedFeature && _supmapSelectedFeature.layer === layer) return;
+        layer.setStyle(_supmapStyleFor(key));
+      });
+    },
+  });
+  lyr.addTo(_supmapLeaflet);
+  _supmapBoundaryLayers[key] = lyr;
+}
+
+function _supmapRemoveBoundaryLayer(key){
+  const lyr = _supmapBoundaryLayers[key];
+  if (lyr && _supmapLeaflet){
+    _supmapLeaflet.removeLayer(lyr);
+    delete _supmapBoundaryLayers[key];
+    if (_supmapSelectedFeature && _supmapSelectedFeature.key === key) {
+      _supmapClearSelection();
+    }
+  }
+}
+
+function _supmapSelectFeature(key, feature, layer){
+  const L = window.L;
+  const meta = _supmapBoundaryMeta[key];
+  _supmapClearSelection();
+  // Fade all sibling features in this layer
+  const groupLyr = _supmapBoundaryLayers[key];
+  if (groupLyr){
+    groupLyr.eachLayer(l => {
+      if (l === layer) l.setStyle(_supmapStyleFor(key, true));
+      else l.setStyle(_supmapStyleFor(key, false));
+    });
+  }
+  // Zoom to selected bounds
+  try {
+    const b = layer.getBounds();
+    _supmapLeaflet.fitBounds(b, { padding: [30, 30], maxZoom: 11 });
+  } catch(e){}
+  const p = (feature && feature.properties) || {};
+  _supmapSelectedFeature = { key, layer, name: p.name || '', code: p.code || '' };
+  // Update legend
+  _supmapRenderBoundaryLegend();
+  // URL hash
+  try {
+    const slug = (p.name || '').replace(/[^a-zA-Z0-9]+/g, '-').replace(/^-|-$/g, '');
+    if (slug) history.replaceState({}, '', `#recipients/map?layer=${key}&sel=${encodeURIComponent(slug)}`);
+  } catch(e){}
+}
+
+function _supmapClearSelection(){
+  if (!_supmapSelectedFeature) return;
+  const { key } = _supmapSelectedFeature;
+  const lyr = _supmapBoundaryLayers[key];
+  if (lyr) lyr.eachLayer(l => l.setStyle(_supmapStyleFor(key)));
+  _supmapSelectedFeature = null;
+  _supmapRenderBoundaryLegend();
+}
+
+function _supmapRenderBoundaryLegend(){
+  const el = document.getElementById('supmap-boundlegend');
+  if (!el) return;
+  if (!_supmapSelectedFeature){ el.classList.remove('visible'); return; }
+  const { key, name, code } = _supmapSelectedFeature;
+  const meta = _supmapBoundaryMeta[key];
+  el.innerHTML = `<button class="supmap-boundlegend-close" onclick="_supmapClearSelection()" title="Clear selection">×</button>
+    <div class="supmap-boundlegend-label">${_cmpEsc(meta.label)}</div>
+    <div class="supmap-boundlegend-name">${_cmpEsc(name)}</div>
+    ${code ? `<div style="font-size:10px;color:var(--dim)">code: ${_cmpEsc(code)}</div>` : ''}`;
+  el.classList.add('visible');
+}
+
+async function _supmapInitBoundaries(){
+  if (!_supmapLeaflet) return;
+  const L = window.L;
+  // Build a Leaflet layer control with overlays — each toggled by the user
+  // Base layer is implicit (CARTO), so overlays array is enough.
+  const overlays = {};
+  for (const [key, meta] of Object.entries(_supmapBoundaryMeta)){
+    // Use a dummy L.layerGroup as placeholder; actual load happens on add
+    const placeholder = L.layerGroup();
+    placeholder._supBoundKey = key;
+    overlays[meta.label] = placeholder;
+  }
+  const ctl = L.control.layers(null, overlays, { position: 'topright', collapsed: false });
+  ctl.addTo(_supmapLeaflet);
+  // Intercept add/remove events to lazy-load/unload
+  _supmapLeaflet.on('overlayadd', async (e) => {
+    const key = e.layer && e.layer._supBoundKey;
+    if (!key) return;
+    // Remove the placeholder so we can replace with real layer
+    _supmapLeaflet.removeLayer(e.layer);
+    try { await _supmapAddBoundaryLayer(key); } catch(err){ console.error('boundary load failed', key, err); }
+  });
+  _supmapLeaflet.on('overlayremove', (e) => {
+    const key = e.layer && e.layer._supBoundKey;
+    if (!key) return;
+    _supmapRemoveBoundaryLayer(key);
+  });
+  // Click on empty map area clears selection
+  _supmapLeaflet.on('click', () => { if (_supmapSelectedFeature) _supmapClearSelection(); });
+  // Load default layer: countries (UK outline, near-zero visual weight)
+  try { await _supmapAddBoundaryLayer('countries'); } catch(e){ console.warn('countries boundary load failed', e); }
+  // Handle #recipients/map?layer=lad&sel=Westminster deep-link
+  const m = (location.hash || '').match(/#recipients\/map\?layer=([a-z_]+)&sel=([^&]+)/i);
+  if (m){
+    const k = m[1];
+    const sel = decodeURIComponent(m[2]).replace(/-/g, ' ').toLowerCase();
+    try {
+      await _supmapAddBoundaryLayer(k);
+      const lyr = _supmapBoundaryLayers[k];
+      if (lyr){
+        lyr.eachLayer(l => {
+          const n = (l.feature && l.feature.properties && l.feature.properties.name || '').toLowerCase();
+          if (n === sel || n.replace(/[^a-z0-9]+/g,' ').trim() === sel){
+            _supmapSelectFeature(k, l.feature, l);
+          }
+        });
+      }
+    } catch(e){ console.warn('deep-link load failed', e); }
+  }
+}
+
 async function _supmapInit(){
   if (_supmapLeaflet) return;
   const loadingEl = document.getElementById('supmap-loading');
@@ -18212,17 +18408,28 @@ async function _supmapInit(){
     if (!canvas) return;
     if (loadingEl) loadingEl.remove();
 
+    // UK-only constraints: pan bounded to UK bbox (Scilly SW → Shetland NE), min zoom prevents escape to Europe.
+    const UK_BOUNDS = L.latLngBounds([[49.5, -9.0], [61.5, 2.5]]);
     _supmapLeaflet = L.map('supmap-canvas', {
       center: [54.0, -2.3],
       zoom: 6,
       minZoom: 5,
       maxZoom: 16,
       preferCanvas: true,
+      maxBounds: UK_BOUNDS,
+      maxBoundsViscosity: 1.0,
+      worldCopyJump: false,
     });
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '© OpenStreetMap contributors',
-      maxZoom: 18,
+    // CARTO Dark Matter — clean political basemap, no relief. Already dark-themed (no invert filter needed).
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+      attribution: '© OpenStreetMap contributors © CARTO',
+      subdomains: 'abcd',
+      maxZoom: 19,
+      bounds: UK_BOUNDS,
     }).addTo(_supmapLeaflet);
+
+    // Initialize admin boundary overlay manager (lazy-loads GeoJSON layers on toggle).
+    await _supmapInitBoundaries();
 
     // Update sidebar count
     const info = document.getElementById('sup-modebar-info');
