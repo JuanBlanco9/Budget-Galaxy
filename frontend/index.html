@@ -1062,8 +1062,31 @@ mark{background:rgba(255,200,0,.25);color:inherit;border-radius:2px;padding:0 2p
 }
 .supmap-search:focus{border-color:var(--accent,#4fc3f7)}
 .supmap-hint{font-size:10px;color:var(--dim);margin-top:8px;font-style:italic;}
-.supmap-selection{flex:1;overflow-y:auto;padding:14px;}
+.supmap-buyerlist-header{
+  padding:8px 14px;font-size:10.5px;color:var(--dim);
+  border-bottom:1px solid rgba(255,255,255,.06);
+  text-transform:uppercase;letter-spacing:.05em;font-weight:600;
+}
+.supmap-selection{flex:1;overflow-y:auto;padding:0;}
 .supmap-selection-empty{text-align:center;padding:30px 10px;}
+.supmap-buyer-row{
+  padding:8px 14px;border-bottom:1px solid rgba(255,255,255,.04);
+  cursor:pointer;transition:background .1s;
+  display:flex;justify-content:space-between;align-items:flex-start;gap:8px;
+}
+.supmap-buyer-row:hover{background:rgba(79,195,247,.06);}
+.supmap-buyer-row.active{background:rgba(79,195,247,.12);border-left:3px solid var(--accent,#4fc3f7);padding-left:11px}
+.supmap-buyer-row-main{flex:1;min-width:0;}
+.supmap-buyer-row-name{font-size:11.5px;color:var(--text);font-weight:500;line-height:1.3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.supmap-buyer-row-loc{font-size:10px;color:var(--dim);margin-top:2px;}
+.supmap-buyer-row-amt{
+  font-size:11px;color:var(--text);font-weight:600;
+  font-variant-numeric:tabular-nums;white-space:nowrap;
+}
+.supmap-buyer-row-type{
+  display:inline-block;width:6px;height:6px;border-radius:50%;margin-right:4px;
+  vertical-align:middle;
+}
 .supmap-sel-header{
   padding-bottom:10px;margin-bottom:10px;
   border-bottom:1px solid rgba(255,255,255,.08);
@@ -3407,14 +3430,11 @@ mark{background:rgba(79,195,247,.3);color:var(--text,#e8ebf5);padding:0 2px;bord
           <button class="supmap-pill" data-btype="other" onclick="_supmapSetType('other')">Other</button>
         </div>
         <input type="text" id="supmap-search" class="supmap-search" placeholder="🔍 Search buyer (e.g. Kent, Barts, MOD)..." autocomplete="off" />
-        <div class="supmap-hint">Click any pin on the map · or select a buyer below to see their suppliers.</div>
+        <div class="supmap-hint">Scroll list below, click any pin, or search.</div>
       </div>
+      <div class="supmap-buyerlist-header" id="supmap-buyerlist-header"></div>
       <div class="supmap-selection" id="supmap-selection">
-        <div class="supmap-selection-empty">
-          <div style="font-size:32px;opacity:.4;margin-bottom:8px">🔘</div>
-          <div style="font-size:13px;color:var(--text);font-weight:600">Select a buyer</div>
-          <div style="font-size:11px;color:var(--dim);margin-top:6px">Click any pin to see that buyer's top suppliers + their geographic location on the map.</div>
-        </div>
+        <div class="supmap-loading" style="position:relative;transform:none;padding:30px 10px;text-align:center">Loading buyers…</div>
       </div>
     </div>
     <!-- Right side: Leaflet map canvas -->
@@ -17534,10 +17554,59 @@ async function _supmapInit(){
 
     _supmapRenderBuyers();
     _supmapRenderLegend();
+    _supmapRenderBuyerList();
   } catch (e) {
     console.error('Map init failed:', e);
     if (loadingEl) loadingEl.textContent = 'Failed to load map: ' + e.message;
   }
+}
+
+// Render the buyer list in the left sidebar — sorted by £ desc, filtered by type + search
+function _supmapRenderBuyerList(){
+  if (!_supmapData) return;
+  const searchQ = (document.getElementById('supmap-search')?.value || '').trim().toLowerCase();
+  let buyers = Object.values(_supmapData.buyers);
+  if (_supmapActiveType !== 'all') buyers = buyers.filter(b => b.type === _supmapActiveType);
+  if (searchQ) buyers = buyers.filter(b => (b.name || '').toLowerCase().includes(searchQ));
+  buyers.sort((a, b) => (b.total_gbp_2024 || 0) - (a.total_gbp_2024 || 0));
+
+  const TYPE_LABEL_SHORT = {
+    all: 'All buyers', council: 'Councils', nhs: 'NHS bodies', central_govt: 'Central depts',
+    police_fire: 'Police & fire', education: 'Education', agency: 'Agencies',
+    trust: 'Public trusts', other: 'Other bodies',
+  };
+  const totalLabel = TYPE_LABEL_SHORT[_supmapActiveType] || _supmapActiveType;
+  const totalSum = buyers.reduce((s, b) => s + (b.total_gbp_2024 || 0), 0);
+  const fmt = v => v >= 1e9 ? '£' + (v/1e9).toFixed(1) + 'B'
+                : v >= 1e6 ? '£' + (v/1e6).toFixed(0) + 'M'
+                : v >= 1e3 ? '£' + (v/1e3).toFixed(0) + 'k' : '£' + Math.round(v);
+
+  const header = document.getElementById('supmap-buyerlist-header');
+  if (header) {
+    header.textContent = `${totalLabel} · ${buyers.length.toLocaleString()} shown · ${fmt(totalSum)} total`;
+  }
+
+  const sel = document.getElementById('supmap-selection');
+  if (!sel) return;
+
+  if (!buyers.length) {
+    sel.innerHTML = `<div class="supmap-selection-empty"><div style="font-size:24px;opacity:.4;margin-bottom:6px">🫗</div><div style="font-size:11.5px;color:var(--dim)">No buyers match this filter${searchQ ? ' + search' : ''}.</div></div>`;
+    return;
+  }
+
+  // Show first 200 for perf; scrollable
+  const visible = buyers.slice(0, 200);
+  sel.innerHTML = visible.map(b => {
+    const color = SUPMAP_TYPE_COLOR[b.type] || SUPMAP_TYPE_COLOR.other;
+    const loc = b.lad24_nm || b.region || (b.postcode || '').split(' ')[0] || '—';
+    return `<div class="supmap-buyer-row${_supmapSelectedBuyer === b.id ? ' active' : ''}" onclick="_supmapSelectBuyer('${b.id}')">
+      <div class="supmap-buyer-row-main">
+        <div class="supmap-buyer-row-name"><span class="supmap-buyer-row-type" style="background:${color}"></span>${_cmpEsc(b.name)}</div>
+        <div class="supmap-buyer-row-loc">${_cmpEsc(loc)} · ${b.n_contracts.toLocaleString()} contracts</div>
+      </div>
+      <div class="supmap-buyer-row-amt">${fmt(b.total_gbp_2024)}</div>
+    </div>`;
+  }).join('') + (buyers.length > 200 ? `<div style="padding:10px 14px;font-size:10px;color:var(--dim);text-align:center">Showing top 200 of ${buyers.length.toLocaleString()} · use search to narrow</div>` : '');
 }
 
 function _supmapRenderBuyers(){
@@ -17600,8 +17669,11 @@ function _supmapSupplierPopup(s, flow){
 
 function _supmapSetType(t){
   _supmapActiveType = t;
+  _supmapSelectedBuyer = null;
   document.querySelectorAll('.supmap-pill').forEach(p => p.classList.toggle('active', p.dataset.btype === t));
   _supmapRenderBuyers();
+  _supmapRenderBuyerList();
+  if (_supmapSuppliersLayer) { _supmapLeaflet.removeLayer(_supmapSuppliersLayer); _supmapSuppliersLayer = null; }
 }
 
 function _supmapSelectBuyer(buyerId){
@@ -17615,23 +17687,27 @@ function _supmapSelectBuyer(buyerId){
                 : v >= 1e3 ? '£' + (v/1e3).toFixed(0) + 'k' : '£' + Math.round(v);
 
   const sidebar = document.getElementById('supmap-selection');
+  const listHeader = document.getElementById('supmap-buyerlist-header');
+  if (listHeader) listHeader.innerHTML = `<span style="cursor:pointer;color:#8ec8ff" onclick="_supmapBackToList()">← Back to buyer list</span>`;
   if (sidebar) {
-    sidebar.innerHTML = `<div class="supmap-sel-header">
-      <div class="supmap-sel-name">${_cmpEsc(b.name)}</div>
-      <div class="supmap-sel-meta">${b.lad24_nm || b.region || ''} · ${b.postcode || ''}</div>
-      <div class="supmap-sel-meta">${fmt(b.total_gbp_2024)} in ${b.n_contracts.toLocaleString()} contracts · ${b.n_suppliers} suppliers</div>
-      <span class="supmap-sel-pill">${SUPMAP_TYPE_LABEL[b.type] || b.type}</span>
-    </div>
-    <div style="font-size:11px;color:var(--dim);margin-bottom:8px;">Top ${flows.length} suppliers</div>
-    ${flows.map(f => {
-      const s = _supmapData.suppliers[f.supplier_id];
-      if (!s) return '';
-      const hasGeo = s.lat && s.lng;
-      return `<div class="supmap-sup-row" onclick="_supmapFocusSupplier('${f.supplier_id}')">
-        <div class="supmap-sup-name">${_cmpEsc(s.name)}${hasGeo ? '' : ' ·'} ${hasGeo ? '📍' : '<span style=\"color:#666;font-size:9px\">no geo</span>'}</div>
-        <div class="supmap-sup-amt">${fmt(f.gbp)} · ${f.n_contracts} contract${f.n_contracts>1?'s':''}</div>
-      </div>`;
-    }).join('')}`;
+    sidebar.innerHTML = `<div style="padding:14px">
+      <div class="supmap-sel-header">
+        <div class="supmap-sel-name">${_cmpEsc(b.name)}</div>
+        <div class="supmap-sel-meta">${b.lad24_nm || b.region || ''} · ${b.postcode || ''}</div>
+        <div class="supmap-sel-meta">${fmt(b.total_gbp_2024)} in ${b.n_contracts.toLocaleString()} contracts · ${b.n_suppliers} suppliers</div>
+        <span class="supmap-sel-pill">${SUPMAP_TYPE_LABEL[b.type] || b.type}</span>
+      </div>
+      <div style="font-size:11px;color:var(--dim);margin-bottom:8px;">Top ${flows.length} suppliers (by £)</div>
+      ${flows.map(f => {
+        const s = _supmapData.suppliers[f.supplier_id];
+        if (!s) return '';
+        const hasGeo = s.lat && s.lng;
+        return `<div class="supmap-sup-row" onclick="_supmapFocusSupplier('${f.supplier_id}')">
+          <div class="supmap-sup-name">${_cmpEsc(s.name)} ${hasGeo ? '<span style=\"color:#ffb84f;font-size:10px\">📍</span>' : '<span style=\"color:#666;font-size:9px\">no geo</span>'}</div>
+          <div class="supmap-sup-amt">${fmt(f.gbp)} · ${f.n_contracts} contract${f.n_contracts>1?'s':''}</div>
+        </div>`;
+      }).join('')}
+    </div>`;
   }
 
   // Pan map to buyer + render suppliers
@@ -17677,6 +17753,18 @@ function _supmapFocusSupplier(supplierId){
   _supmapLeaflet.setView([s.lat, s.lng], 11, { animate: true });
 }
 
+// Back from "selected buyer" view to the filtered buyer list
+function _supmapBackToList(){
+  _supmapSelectedBuyer = null;
+  if (_supmapSuppliersLayer) {
+    _supmapLeaflet.removeLayer(_supmapSuppliersLayer);
+    _supmapSuppliersLayer = null;
+  }
+  _supmapRenderBuyerList();
+  // Fit bounds back to whole UK
+  _supmapLeaflet.setView([54.0, -2.3], 6, { animate: true });
+}
+
 function _supmapRenderLegend(){
   const canvas = document.getElementById('supmap-canvas');
   if (!canvas) return;
@@ -17691,11 +17779,14 @@ function _supmapRenderLegend(){
   canvas.appendChild(legend);
 }
 
-// Wire up search input
+// Wire up search input — rerender both map pins AND sidebar list
 document.addEventListener('DOMContentLoaded', () => {
   const search = document.getElementById('supmap-search');
   if (search) search.addEventListener('input', () => {
-    if (_supmapLeaflet) _supmapRenderBuyers();
+    if (_supmapLeaflet) {
+      _supmapRenderBuyers();
+      _supmapRenderBuyerList();
+    }
   });
 });
 </script>
