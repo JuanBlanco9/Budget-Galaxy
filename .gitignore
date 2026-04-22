@@ -184,6 +184,10 @@ data/recipients/uk/_cleanup_inventory.json
 # Keep for now — will be merged into data/suppliers/ when integration is approved
 # data/suppliers_v2/
 
+# Live batch progress files — these are rewritten during runs, not content
+data/suppliers_v2/_ch_api_progress.json
+data/suppliers_v2/_ch_api_state.json
+
 # Quality dashboard output (regenerated, not hand-edited)
 data/_quality/dashboard.json
 data/_quality/freshness.json

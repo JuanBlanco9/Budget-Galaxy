@@ -3398,7 +3398,7 @@ mark{background:rgba(79,195,247,.3);color:var(--text,#e8ebf5);padding:0 2px;bord
   <div class="sup-modebar">
     <button class="sup-modebtn active" data-sup-mode="list" onclick="_supSwitchMode('list',this)">📋 List</button>
     <button class="sup-modebtn" data-sup-mode="map" onclick="_supSwitchMode('map',this)">🗺️ Map</button>
-    <span class="sup-modebar-info" id="sup-modebar-info">400 curated suppliers · 85,000 contracts 2024</span>
+    <span class="sup-modebar-info" id="sup-modebar-info">19,568 UK suppliers · 400 curated + bulk Companies House enrichment · 85k contracts 2024</span>
   </div>
 
   <!-- LIST MODE (default) -->
@@ -16124,7 +16124,9 @@ window._suppliersIndex = null;
 window._suppliersCurrentCh = null;
 
 const SUPPLIERS_INDEX_URL = '/data/suppliers/_index.json?v=2';
+const SUPPLIERS_INDEX_V2_URL = '/data/suppliers_v2/_index.json?v=1';
 const SUPPLIER_PROFILE_URL = (ch) => `/data/suppliers/${ch}.json`;
+const SUPPLIER_PROFILE_V2_URL = (ch) => `/data/suppliers_v2/${ch}.json`;
 
 function _supEscapeHtml(s){return String(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))}
 
@@ -17241,16 +17243,56 @@ function _tpApplyShareFromHash(){
 async function loadSuppliersTab(){
   if(!window._suppliersIndex){
     try{
-      const r=await fetch(SUPPLIERS_INDEX_URL);
-      if(!r.ok)throw new Error('fetch failed '+r.status);
-      window._suppliersIndex=await r.json();
+      // Fetch curated (400 hand-made) + v2 (19k bulk-enriched) indexes in parallel
+      const [rCur, rV2] = await Promise.all([
+        fetch(SUPPLIERS_INDEX_URL),
+        fetch(SUPPLIERS_INDEX_V2_URL),
+      ]);
+      if(!rCur.ok)throw new Error('curated fetch failed '+rCur.status);
+      const curated = await rCur.json();
+      let v2obj = {};
+      if (rV2.ok) v2obj = await rV2.json();
+
+      // Dedupe: curated wins (richer data). v2 entries fill in the long tail.
+      const curatedByCh = new Map(curated.filter(s => s.company_number).map(s => [s.company_number, s]));
+      // Tag curated with source marker
+      for (const s of curated) s._source = 'curated';
+      // Convert v2 obj → array, skip any already in curated
+      const v2arr = [];
+      for (const [ch, v] of Object.entries(v2obj)) {
+        if (curatedByCh.has(ch)) continue;
+        v2arr.push({
+          company_number: ch,
+          display_name: v.display_name || ch,
+          status: v.status,
+          total_gbp_2024: v.total_gbp_2024 || 0,
+          n_contracts: v.n_contracts || 0,
+          n_departments: v.n_buyers || 0,  // re-map: v2 uses n_buyers, curated uses n_departments
+          n_buyers: v.n_buyers || 0,
+          sic_codes: v.sic_codes || [],
+          postcode: v.postcode,
+          lad24_nm: v.lad24_nm,
+          incorporated: v.incorporated,
+          age_years: v.age_years,
+          enrichment_stages: v.enrichment_stages || {},
+          _source: 'v2',
+        });
+      }
+      // Merge + sort by £ descending, compute rank
+      const merged = [...curated, ...v2arr].sort((a,b) => (b.total_gbp_2024||0) - (a.total_gbp_2024||0));
+      merged.forEach((s, i) => { if (!s.rank) s.rank = i + 1; });
+      window._suppliersIndex = merged;
+      window._suppliersCuratedCount = curated.length;
+      window._suppliersV2Count = v2arr.length;
     }catch(e){
       document.getElementById('suppliers-rows').innerHTML=`<div style="padding:40px;text-align:center;color:var(--dim);font-size:12px">Failed to load supplier index: ${_supEscapeHtml(e.message)}</div>`;
       return;
     }
   }
   _supRenderList('');
-  document.getElementById('suppliers-count').textContent=`${window._suppliersIndex.length} suppliers · sorted by FY 2024 spend`;
+  const nCur = window._suppliersCuratedCount || 0;
+  const nV2 = window._suppliersV2Count || 0;
+  document.getElementById('suppliers-count').textContent = `${window._suppliersIndex.length.toLocaleString()} suppliers · ${nCur} curated + ${nV2.toLocaleString()} bulk-enriched`;
 
   // Wire search (once)
   const input=document.getElementById('suppliers-search');
@@ -17304,7 +17346,9 @@ async function _supRenderHierarchical(type, query){
     rows.innerHTML = `<div style="padding:40px;text-align:center;color:var(--dim);font-size:12px">Hierarchical data unavailable. Switch to "All" for flat view.</div>`;
     return;
   }
-  const curated = window._suppliersIndex || [];
+  const full = window._suppliersIndex || [];
+  // Only the 400 hand-curated have primary_buyer_type + rich profiles
+  const curated = full.filter(s => s._source === 'curated');
   const curatedByCh = new Map(curated.filter(s => s.company_number).map(s => [s.company_number, s]));
   // Curated suppliers whose dominant buyer-type matches this filter
   const curatedForType = curated
@@ -17425,7 +17469,7 @@ function _supRenderList(query){
     if (q) parts.push(`matching "${query}"`);
     count.textContent = parts.length
       ? `${base} · ${parts.join(' · ')}`
-      : `${list.length} suppliers · sorted by FY 2024 spend`;
+      : `${list.length.toLocaleString()} suppliers · sorted by FY 2024 spend`;
   }
   rows.innerHTML=filtered.slice(0,300).map(s=>{
     const ubo=_supUboBadge(s.ubo_resolution,s.ubo_ultimate_countries);
@@ -17433,15 +17477,28 @@ function _supRenderList(query){
     const statusBadge=s.status && s.status!=='active'?`<span class="sup-badge dissolved">${_supEscapeHtml(s.status.toUpperCase())}</span>`:'';
     const confBadge=s.match_confidence_label==='suspicious'||s.match_confidence_label==='low'
       ?`<span class="sup-badge suspicious">match: ${s.match_confidence_label}</span>`:'';
+    // Source marker: curated (hand-made) vs v2 (bulk) · enriched badge if CH API completed
+    let sourceBadge = '';
+    if (s._source === 'curated') {
+      sourceBadge = `<span class="sup-badge" style="background:rgba(79,195,247,.15);color:var(--accent);border-color:rgba(79,195,247,.3)">CURATED</span>`;
+    } else if (s._source === 'v2') {
+      const st = s.enrichment_stages || {};
+      if (st.ch_api_profile) {
+        sourceBadge = `<span class="sup-badge" style="background:rgba(34,197,94,.15);color:#4ade80;border-color:rgba(34,197,94,.3)">ENRICHED</span>`;
+      } else if (st.bcd_skeleton) {
+        sourceBadge = `<span class="sup-badge" style="background:rgba(148,163,184,.1);color:var(--dim);border-color:rgba(148,163,184,.2)">BASIC</span>`;
+      }
+    }
     return `
       <div class="sup-row${isActive?' active':''}" data-ch="${_supEscapeHtml(s.company_number)}" onclick="_supSelectSupplier('${_supEscapeHtml(s.company_number)}')">
         <div class="sup-row-name">${_supEscapeHtml(s.display_name||s.official_name||s.company_number)}</div>
         <div class="sup-row-meta">
           <span class="sup-row-rank">#${s.rank||'—'}</span>
           <span>${_supFmtGBP(s.total_gbp_2024)}</span>
-          <span>· ${s.n_departments||0} dept${s.n_departments===1?'':'s'}</span>
+          <span>· ${s.n_departments||s.n_buyers||0} buyer${(s.n_departments||s.n_buyers)===1?'':'s'}</span>
         </div>
         <div class="sup-row-badges">
+          ${sourceBadge}
           ${ubo?`<span class="sup-badge ${ubo.cls}">${_supEscapeHtml(ubo.label)}</span>`:''}
           ${statusBadge}
           ${confBadge}
@@ -17467,10 +17524,20 @@ async function _supSelectSupplier(chNumber){
   if(!detail)return;
   detail.innerHTML=`<div style="padding:40px;text-align:center;color:var(--dim);font-size:12px">Loading supplier profile...</div>`;
   try{
-    const r=await fetch(SUPPLIER_PROFILE_URL(chNumber));
-    if(!r.ok)throw new Error('fetch failed '+r.status);
-    const profile=await r.json();
-    detail.innerHTML=_supRenderDetail(profile);
+    // Try curated v1 first (richer, 400 hand-made). Fall back to v2 bulk (40k).
+    let profile=null;
+    let r=await fetch(SUPPLIER_PROFILE_URL(chNumber));
+    if(r.ok){ profile=await r.json(); }
+    else{
+      r=await fetch(SUPPLIER_PROFILE_V2_URL(chNumber));
+      if(r.ok){ profile=await r.json(); }
+    }
+    if(!profile)throw new Error('profile not found');
+    if(profile.schema_version==='v2'){
+      detail.innerHTML=_supRenderDetailV2(profile);
+    } else {
+      detail.innerHTML=_supRenderDetail(profile);
+    }
     detail.scrollTop=0;
   }catch(e){
     detail.innerHTML=`<div style="padding:40px;text-align:center;color:var(--dim);font-size:12px">Failed to load profile for ${_supEscapeHtml(chNumber)}: ${_supEscapeHtml(e.message)}</div>`;
@@ -17646,6 +17713,164 @@ function _supRenderDetail(p){
       </div>`;
     }
     h+=`</div></div>`;
+  }
+
+  return h;
+}
+
+// Renderer for v2 schema (bulk-enriched 40k suppliers from BCD + CH API)
+function _supRenderDetailV2(p){
+  const cp = p.ch_profile || {};
+  const gov = p.governance || {};
+  const pscs = p.pscs || {};
+  const acc = p.accounts || {};
+  const accPdf = p.accounts_pdf || null;
+  const ro = p.registered_office || {};
+  const sp = p.spend_profile || {};
+  const geo = p.geo || {};
+  const stages = p.enrichment_stages || {};
+
+  // Normalise incorporated date (BCD has DD/MM/YYYY but ch_profile has ISO)
+  let inc = cp.date_of_creation || p.incorporated || null;
+  if (inc && inc.indexOf('/') === 2) { // DD/MM/YYYY → ISO
+    const parts = inc.split('/');
+    if (parts.length === 3 && parts[2].length === 4) inc = parts[2]+'-'+parts[1].padStart(2,'0')+'-'+parts[0].padStart(2,'0');
+  }
+  const ageYears = inc ? (2026 - parseInt(inc.substring(0,4),10)) : null;
+
+  const status = cp.company_status || p.status || '';
+  const statusClass = ['active','open'].includes(status) ? 'active' : status;
+  const chUrl = `https://find-and-update.company-information.service.gov.uk/company/${p.company_number}`;
+
+  let h = `<button class="sd-back" onclick="_supSelectSupplier(null);_supClearDetail()">← Back to list</button>`;
+
+  // Header
+  h += `<div class="sd-header">
+    <div>
+      <h1 class="sd-title">${_supEscapeHtml(p.display_name || p.official_name)}</h1>
+      <div class="sd-subtitle">
+        <span class="sd-status ${_supEscapeHtml(statusClass)}">${_supEscapeHtml((status||'?').toUpperCase())}</span>
+        <span style="font-size:11px;color:var(--dim)">${_supEscapeHtml(p.category_raw || p.type || '')}</span>
+        <a href="${_supEscapeHtml(chUrl)}" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;font-size:11px;margin-left:8px">↗ Companies House</a>
+      </div>
+    </div>
+    <div>
+      <div class="sd-big-label">Total FY 2024</div>
+      <div class="sd-big-num">${_supFmtGBP(sp.total_gbp_2024||0)}</div>
+    </div>
+  </div>`;
+
+  // Identity + Accounts
+  h += `<div class="sd-cards">`;
+  h += `<div class="sd-card"><h3>Identity</h3><div class="sd-kv">
+    <div class="k">CH Number</div><div class="v">${_supEscapeHtml(p.company_number||'—')}</div>
+    <div class="k">Jurisdiction</div><div class="v">${_supEscapeHtml(cp.jurisdiction||p.jurisdiction||'—')}</div>
+    <div class="k">Incorporated</div><div class="v">${_supEscapeHtml(inc||'—')}${ageYears!=null?' <span style="color:var(--dim)">('+ageYears+' yr)</span>':''}</div>
+    ${cp.date_of_cessation?`<div class="k">Dissolved</div><div class="v" style="color:#f87171">${_supEscapeHtml(cp.date_of_cessation)}</div>`:''}
+    <div class="k">Type</div><div class="v">${_supEscapeHtml(p.type||'—')}</div>
+    <div class="k">SIC codes</div><div class="v">${(p.sic_codes||[]).join(', ')||'—'}</div>
+    <div class="k">Industry</div><div class="v">${_supEscapeHtml((p.sic_labels||[]).join(', ')||'—')}</div>
+    <div class="k">Registered office</div><div class="v">${_supEscapeHtml([ro.address_line_1,ro.post_town,ro.postal_code].filter(Boolean).join(', ')||'—')}</div>
+    ${geo.lad24_nm?`<div class="k">Local authority</div><div class="v">${_supEscapeHtml(geo.lad24_nm)} <span style="color:var(--dim)">· ${_supEscapeHtml(geo.region||'')}</span></div>`:''}
+  </div>
+  ${(p.previous_names||[]).length?`<div style="margin-top:12px;padding-top:12px;border-top:1px solid var(--border)"><div style="font-size:11px;color:var(--dim);text-transform:uppercase;letter-spacing:.8px;margin-bottom:6px">Previous names</div>${p.previous_names.slice(0,5).map(pn=>`<div style="font-size:12px;margin:3px 0"><strong>${_supEscapeHtml(pn.name)}</strong>${pn.condate?` <span style="color:var(--dim)">until ${_supEscapeHtml(pn.condate)}</span>`:''}</div>`).join('')}</div>`:''}
+  </div>`;
+
+  // Accounts card
+  h += `<div class="sd-card"><h3>Accounts & Filing</h3><div class="sd-kv">
+    <div class="k">Category</div><div class="v">${_supEscapeHtml(acc.category||'—')}</div>
+    <div class="k">Last made up</div><div class="v">${_supEscapeHtml(cp.accounts_last_made_up||acc.last_made_up||'—')}</div>
+    <div class="k">Next due</div><div class="v">${_supEscapeHtml(cp.accounts_next_due||acc.next_due||'—')}${cp.accounts_overdue?' <span class="sup-badge suspicious">OVERDUE</span>':''}</div>
+    <div class="k">Confirmation stmt next</div><div class="v">${_supEscapeHtml(cp.confirmation_statement_next_due||'—')}${cp.confirmation_statement_overdue?' <span class="sup-badge suspicious">OVERDUE</span>':''}</div>
+    ${cp.has_insolvency_history?'<div class="k">Insolvency</div><div class="v"><span class="sup-badge suspicious">HAS HISTORY</span></div>':''}
+    ${cp.has_charges?'<div class="k">Charges</div><div class="v"><span class="sup-badge gap">HAS CHARGES</span></div>':''}
+    ${p.mortgages?`<div class="k">Mortgages</div><div class="v">${p.mortgages.num_outstanding||0} outstanding / ${p.mortgages.num_charges||0} total</div>`:''}
+    ${accPdf&&accPdf.pdf_url?`<div class="k">Latest accounts</div><div class="v"><a href="${_supEscapeHtml(accPdf.pdf_url)}" target="_blank" rel="noopener">↗ ${_supEscapeHtml(accPdf.description||accPdf.type||'PDF')} (${_supEscapeHtml(accPdf.date||'')})</a></div>`:''}
+  </div></div>`;
+  h += `</div>`;
+
+  // Spend snapshot (full)
+  if (sp.total_gbp_2024 || sp.n_contracts) {
+    h += `<div class="sd-card full"><h3>Procurement · FY 2024</h3><div class="sd-kv">
+      <div class="k">Total £</div><div class="v" style="font-size:18px;font-weight:700;color:var(--accent)">${_supFmtGBP(sp.total_gbp_2024||0)}</div>
+      <div class="k">Contracts</div><div class="v">${(sp.n_contracts||0).toLocaleString()}</div>
+      <div class="k">Distinct buyers</div><div class="v">${(sp.n_buyers||0).toLocaleString()}</div>
+    </div></div>`;
+  }
+
+  // Governance + PSCs (ownership)
+  h += `<div class="sd-cards">`;
+  if (gov.active_officers || gov.total_officers != null) {
+    h += `<div class="sd-card"><h3>Governance · Board</h3>
+      <div class="sd-kv" style="margin-bottom:10px">
+        <div class="k">Active officers</div><div class="v">${gov.active_count||0}</div>
+        <div class="k">Resigned (historical)</div><div class="v">${gov.resigned_count||0}</div>
+        <div class="k">Total (all-time)</div><div class="v">${gov.total_officers||0}</div>
+      </div>`;
+    if ((gov.active_officers||[]).length) {
+      h += `<table class="sd-table">
+        <thead><tr><th>Officer</th><th>Role</th><th>Since</th><th>Nationality</th></tr></thead>
+        <tbody>`;
+      for (const o of gov.active_officers.slice(0,12)) {
+        h += `<tr><td><strong>${_supEscapeHtml(o.name||'—')}</strong></td><td>${_supEscapeHtml(o.role||'—')}</td><td>${_supEscapeHtml(o.appointed_on||'—')}</td><td>${_supEscapeHtml(o.nationality||o.country_of_residence||'—')}</td></tr>`;
+      }
+      h += `</tbody></table>`;
+    }
+    h += `</div>`;
+  } else if (stages.ch_api_officers === false) {
+    h += `<div class="sd-card"><h3>Governance · Board</h3><div style="color:var(--dim);font-size:12px;font-style:italic">Not yet fetched from CH API (pending enrichment batch)</div></div>`;
+  }
+
+  if (pscs.items || pscs.total_results != null) {
+    h += `<div class="sd-card"><h3>Ownership · PSCs</h3>
+      <div class="sd-kv" style="margin-bottom:10px">
+        <div class="k">Active PSCs</div><div class="v">${pscs.active_count!=null?pscs.active_count:(pscs.total_results||0)}</div>
+        <div class="k">Total registered</div><div class="v">${pscs.total_results||0}</div>
+      </div>`;
+    if ((pscs.items||[]).length) {
+      for (const psc of pscs.items.slice(0,8)) {
+        const kind = (psc.kind||'').replace(/-person-with-significant-control$/,'');
+        const icon = kind.indexOf('individual')>=0?'👤':kind.indexOf('corporate')>=0?'🏢':kind.indexOf('legal')>=0?'📜':'•';
+        h += `<div style="padding:8px;margin:6px 0;background:rgba(255,255,255,.02);border-radius:6px;font-size:12px">
+          <div><strong>${icon} ${_supEscapeHtml(psc.name||'—')}</strong>${psc.ceased?' <span class="sup-badge suspicious">CEASED</span>':''}</div>
+          <div style="color:var(--dim);margin-top:3px;font-size:11px">${_supEscapeHtml(kind||'')}${psc.nationality?' · '+_supEscapeHtml(psc.nationality):''}${psc.country_of_residence?' · resident '+_supEscapeHtml(psc.country_of_residence):''}</div>
+          ${(psc.natures_of_control||[]).length?`<div style="margin-top:4px;font-size:10px;color:var(--dim)">${psc.natures_of_control.map(n=>_supEscapeHtml(n.replace(/-/g,' '))).join(' · ')}</div>`:''}
+        </div>`;
+      }
+    } else if (pscs.total_results===0) {
+      h += `<div style="color:var(--dim);font-size:12px;font-style:italic">No active PSCs declared</div>`;
+    }
+    h += `</div>`;
+  } else if (stages.ch_api_pscs === false) {
+    h += `<div class="sd-card"><h3>Ownership · PSCs</h3><div style="color:var(--dim);font-size:12px;font-style:italic">Not yet fetched (pending enrichment batch)</div></div>`;
+  }
+  h += `</div>`;
+
+  // Enrichment status banner
+  const done = Object.values(stages).filter(Boolean).length;
+  const tot = Object.keys(stages).length;
+  if (tot > 0) {
+    h += `<div class="sd-card full" style="background:rgba(79,195,247,.04)"><h3>Enrichment status</h3>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;font-size:11px">
+        ${Object.entries(stages).map(([k,v])=>`<span class="sup-badge ${v?'':'gap'}" style="opacity:${v?1:.4}">${v?'✓':'○'} ${_supEscapeHtml(k.replace(/_/g,' '))}</span>`).join('')}
+      </div>
+      <div style="color:var(--dim);font-size:11px;margin-top:8px">${done}/${tot} stages complete · v2 bulk schema from Companies House BCD${cp.api_date?' + CH API ('+_supEscapeHtml(cp.api_date.substring(0,10))+')':''}</div>
+    </div>`;
+  }
+
+  // Sources
+  const sources = p.sources || [];
+  if (accPdf && accPdf.view_url) sources.push({publisher:'Companies House Filing History', title:accPdf.description||accPdf.type, url: accPdf.view_url});
+  if (sources.length) {
+    h += `<div class="sd-card full"><h3>Sources</h3><div class="sd-sources">`;
+    for (const s of sources) {
+      h += `<div style="padding:3px 0">
+        <span style="color:var(--dim)">${_supEscapeHtml(s.publisher||s.section||'')}</span> →
+        <span style="color:var(--text)">${_supEscapeHtml(s.title||s.type||'')}</span>
+        ${s.url?` · <a href="${_supEscapeHtml(s.url)}" target="_blank" rel="noopener">↗ ${_supEscapeHtml(s.url.substring(0,70))}${s.url.length>70?'…':''}</a>`:''}
+      </div>`;
+    }
+    h += `</div></div>`;
   }
 
   return h;
