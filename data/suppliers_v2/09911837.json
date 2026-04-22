@@ -64,9 +64,116 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T14:15:44Z",
+    "company_name": "ASPEN TOWER NICOL PROPCO (ILKLEY) LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2015-12-10",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-23"
+  },
+  "governance": {
+    "api_date": "2026-04-22T14:15:45Z",
+    "total_officers": 9,
+    "active_count": 4,
+    "resigned_count": 5,
+    "active_officers": [
+      {
+        "name": "CSC CORPORATE SERVICES (UK) LIMITED",
+        "role": "corporate-secretary",
+        "appointed_on": "2024-10-07",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "HAYAT, Khalid Ahmed",
+        "role": "director",
+        "appointed_on": "2024-10-07",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "MANRIQUE CHARRO, Jorge",
+        "role": "director",
+        "appointed_on": "2024-10-07",
+        "country_of_residence": "United Kingdom",
+        "nationality": "Spanish"
+      },
+      {
+        "name": "PIERPOINT, Misha Jane",
+        "role": "director",
+        "appointed_on": "2025-05-30",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T14:15:47Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Welltower Inc",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2024-10-08",
+        "identification": {
+          "legal_form": "Corporation",
+          "legal_authority": "Laws Of The State Of Delaware",
+          "country_registered": "United States",
+          "place_registered": "Delaware Divisions Of Corporation",
+          "registration_number": "6620888"
+        }
+      },
+      {
+        "name": "Shg (Care Villages) Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "England & Wales",
+          "registration_number": "09349619"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NDg0MTI4OGFkaXF6a2N4",
+    "date": "2025-07-23",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/K3fdGPOtIn1eumMfYA9cTDC-CujEFEaG-0bV9iAYZ6M/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/09911837/filing-history/MzQ3NDg0MTI4OGFkaXF6a2N4"
   }
 }

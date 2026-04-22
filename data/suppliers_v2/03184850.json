@@ -61,9 +61,149 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T14:53:38Z",
+    "company_name": "ERBE MEDICAL UK LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1996-04-12",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-08-15"
+  },
+  "governance": {
+    "api_date": "2026-04-22T14:53:40Z",
+    "total_officers": 16,
+    "active_count": 4,
+    "resigned_count": 12,
+    "active_officers": [
+      {
+        "name": "MEIR, David James",
+        "role": "secretary",
+        "appointed_on": "2025-04-01",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "FELSTEAD, Marcus Charles",
+        "role": "director",
+        "appointed_on": "2015-03-16",
+        "country_of_residence": "Germany",
+        "nationality": "German"
+      },
+      {
+        "name": "MEIR, David James",
+        "role": "director",
+        "appointed_on": "2025-04-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ZIMMERMANN, Daniel",
+        "role": "director",
+        "appointed_on": "2020-05-01",
+        "country_of_residence": "Germany",
+        "nationality": "French"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T14:53:42Z",
+    "total_results": 6,
+    "active_count": 3,
+    "items": [
+      {
+        "name": "Mr Daniel Zimmermann",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "French",
+        "country_of_residence": "Germany",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2020-05-01",
+        "identification": null
+      },
+      {
+        "name": "Mr Paul Simpson",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Reiner Thede",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "German",
+        "country_of_residence": "Germany",
+        "ceased": true,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Karlheinz Kraft",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "German",
+        "country_of_residence": "Germany",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Christian Otto Erbe",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "German",
+        "country_of_residence": "Germany",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Marcus Charles Felstead",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "German",
+        "country_of_residence": "Germany",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MDU4MTgyMWFkaXF6a2N4",
+    "date": "2025-09-15",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/OGiR5FIEq2ykEwfljV04BDK9U8cbuicZd3uQNepFCvc/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03184850/filing-history/MzQ4MDU4MTgyMWFkaXF6a2N4"
   }
 }

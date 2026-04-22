@@ -59,9 +59,127 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T14:31:31Z",
+    "company_name": "OFFSITE ARCHIVE STORAGE AND INTEGRATED SERVICES (UK) LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2008-01-14",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-07-31",
+    "accounts_last_made_up": "2024-10-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-04-16"
+  },
+  "governance": {
+    "api_date": "2026-04-22T14:31:33Z",
+    "total_officers": 30,
+    "active_count": 3,
+    "resigned_count": 27,
+    "active_officers": [
+      {
+        "name": "VESSELINOV, Ivo",
+        "role": "secretary",
+        "appointed_on": "2025-04-22",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "SPEAKMAN, Michael John",
+        "role": "director",
+        "appointed_on": "2024-02-07",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "VESSELINOV, Ivaylo Alexandrov",
+        "role": "director",
+        "appointed_on": "2024-02-07",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T14:31:35Z",
+    "total_results": 3,
+    "active_count": 3,
+    "items": [
+      {
+        "name": "Montagu Private Equity Llp",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent-as-firm",
+          "voting-rights-75-to-100-percent-as-firm",
+          "significant-influence-or-control-as-firm"
+        ],
+        "notified_on": "2017-08-15",
+        "identification": {
+          "legal_form": "Limited Liability Partnership",
+          "legal_authority": "Limited Liability Partnerships Act 2000",
+          "country_registered": "United Kingdom",
+          "place_registered": "Uk Companies House",
+          "registration_number": "Oc319972"
+        }
+      },
+      {
+        "name": "Mpe (General Partner V) Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent-as-firm",
+          "voting-rights-75-to-100-percent-as-firm",
+          "significant-influence-or-control-as-firm"
+        ],
+        "notified_on": "2017-08-15",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "Uk Companies House",
+          "registration_number": "Sc498403"
+        }
+      },
+      {
+        "name": "Offsite Archive Storage And Integrated Services (Ireland) Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-06-01",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "Republic Of Ireland",
+          "country_registered": "Ireland",
+          "place_registered": "Companies Register Of Ireland",
+          "registration_number": "371187"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4NTQ4NDcwOGFkaXF6a2N4",
+    "date": "2025-10-20",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/DtsNM9uRgr69PEJhmVbYjssc1iMnw1XZa6CcgDBa8cg/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/06472486/filing-history/MzQ4NTQ4NDcwOGFkaXF6a2N4"
   }
 }

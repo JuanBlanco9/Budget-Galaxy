@@ -59,9 +59,163 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T14:43:54Z",
+    "company_name": "VANGUARD HEALTHCARE SOLUTIONS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2002-02-27",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-19"
+  },
+  "governance": {
+    "api_date": "2026-04-22T14:43:55Z",
+    "total_officers": 37,
+    "active_count": 5,
+    "resigned_count": 32,
+    "active_officers": [
+      {
+        "name": "DILLON, Angela",
+        "role": "director",
+        "appointed_on": "2017-06-13",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "DRANSFIELD, Lindsay Joanne",
+        "role": "director",
+        "appointed_on": "2019-01-30",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "FOX, Mark David",
+        "role": "director",
+        "appointed_on": "2025-12-11",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GOWERS, Tobias Zachary",
+        "role": "director",
+        "appointed_on": "2019-01-30",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "RICH, Graham Francis, Dr",
+        "role": "director",
+        "appointed_on": "2025-10-31",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T14:43:57Z",
+    "total_results": 4,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Project Darwin Bidco Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2022-12-08",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "England And Wales",
+          "registration_number": "09696109"
+        }
+      },
+      {
+        "name": "Vanguard Healthcare Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2021-01-19",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "06764946"
+        }
+      },
+      {
+        "name": "Livingbridge Gp Company Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent",
+          "ownership-of-shares-50-to-75-percent-as-firm",
+          "voting-rights-50-to-75-percent-as-firm"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Scottish Law",
+          "country_registered": "Scotland",
+          "place_registered": "Scotland Companies Registry",
+          "registration_number": "Sc310692"
+        }
+      },
+      {
+        "name": "Livingbridge Ep Llp",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent-as-firm",
+          "voting-rights-50-to-75-percent-as-firm",
+          "right-to-appoint-and-remove-directors-as-firm"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Liability Partnership",
+          "legal_authority": "Limited Liability Partnerships Act 2000",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "Oc311889"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MjY2NjE1NGFkaXF6a2N4",
+    "date": "2025-09-25",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/7ML7hunei73eWv79jXtI2vajeBrnNVEwNkE4o9ki7Hg/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04382564/filing-history/MzQ4MjY2NjE1NGFkaXF6a2N4"
   }
 }

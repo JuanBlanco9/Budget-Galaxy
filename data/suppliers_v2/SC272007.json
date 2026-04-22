@@ -59,9 +59,108 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T14:47:31Z",
+    "company_name": "DEESIDE TIMBERFRAME LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2004-08-16",
+    "date_of_cessation": null,
+    "jurisdiction": "scotland",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-09-26"
+  },
+  "governance": {
+    "api_date": "2026-04-22T14:47:32Z",
+    "total_officers": 21,
+    "active_count": 6,
+    "resigned_count": 15,
+    "active_officers": [
+      {
+        "name": "BELL, Kirsten",
+        "role": "director",
+        "appointed_on": "2023-08-03",
+        "country_of_residence": "Scotland",
+        "nationality": "Scottish"
+      },
+      {
+        "name": "CRAWFORD, David, Mr.",
+        "role": "director",
+        "appointed_on": "2023-03-31",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      },
+      {
+        "name": "FERGUSON, Stewart",
+        "role": "director",
+        "appointed_on": "2019-12-01",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      },
+      {
+        "name": "ROBERTSON, Mark Bruce",
+        "role": "director",
+        "appointed_on": "2008-07-07",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      },
+      {
+        "name": "TWEEDIE, Andrew Hamilton",
+        "role": "director",
+        "appointed_on": "2017-11-01",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      },
+      {
+        "name": "WANN, Derek William, Mr.",
+        "role": "director",
+        "appointed_on": "2023-03-31",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T14:47:34Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Bancon Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Company",
+          "legal_authority": "Companies Act",
+          "country_registered": "Scotland",
+          "place_registered": "Companies House",
+          "registration_number": "Sc058713"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3Njg4OTIwN2FkaXF6a2N4",
+    "date": "2025-08-12",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/eZujE0ZtbB4S9oEXcMru9U0UFDiuPnU7R2-MuzSfWPk/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/SC272007/filing-history/MzQ3Njg4OTIwN2FkaXF6a2N4"
   }
 }

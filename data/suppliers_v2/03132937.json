@@ -72,9 +72,87 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T14:49:04Z",
+    "company_name": "KAEFER LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1995-12-01",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-13"
+  },
+  "governance": {
+    "api_date": "2026-04-22T14:49:06Z",
+    "total_officers": 28,
+    "active_count": 3,
+    "resigned_count": 25,
+    "active_officers": [
+      {
+        "name": "BOZONET, Marie-Louise",
+        "role": "secretary",
+        "appointed_on": "2025-03-24",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BELL, William Robert",
+        "role": "director",
+        "appointed_on": "2025-03-24",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      },
+      {
+        "name": "FOULKES, Christopher Jon",
+        "role": "director",
+        "appointed_on": "2020-07-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T14:49:08Z",
+    "total_results": 1,
+    "active_count": 0,
+    "items": [
+      {
+        "name": "Kaefer Se & Co. Kg (Formerly Kaefer Isoliertechnik Gmbh & Co. Kg)",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Liability",
+          "legal_authority": "German Company Law",
+          "country_registered": "Germany",
+          "place_registered": "Germany",
+          "registration_number": "02052050005758"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2MjcwMjA0MWFkaXF6a2N4",
+    "date": "2025-04-15",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/Hb_UWOBRBNk8NjN_EYOaobBRJSwfvxGTQuGoLKz1MAo/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03132937/filing-history/MzQ2MjcwMjA0MWFkaXF6a2N4"
   }
 }

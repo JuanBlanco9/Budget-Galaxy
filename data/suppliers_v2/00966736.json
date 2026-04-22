@@ -65,9 +65,82 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T14:53:58Z",
+    "company_name": "KEYMED (MEDICAL & INDUSTRIAL EQUIPMENT) LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1969-11-21",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-21"
+  },
+  "governance": {
+    "api_date": "2026-04-22T14:54:00Z",
+    "total_officers": 29,
+    "active_count": 2,
+    "resigned_count": 27,
+    "active_officers": [
+      {
+        "name": "YALLOP, Carl Andrew",
+        "role": "director",
+        "appointed_on": "2024-12-31",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ZANGEMEISTER, Carl Constantin",
+        "role": "director",
+        "appointed_on": "2013-09-19",
+        "country_of_residence": "Germany",
+        "nationality": "German"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T14:54:02Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Olympus Keymed Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "English",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "1210694"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxNDcwNzY2OGFkaXF6a2N4",
+    "date": "2026-04-14",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/UrkdeC4qo9fyz2veNl5RnIfTF4aZX1AyNpyAjGJOz_M/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/00966736/filing-history/MzUxNDcwNzY2OGFkaXF6a2N4"
   }
 }

@@ -61,9 +61,87 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T13:49:43Z",
+    "company_name": "VALEO LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2000-10-26",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-06-30",
+    "accounts_last_made_up": "2024-09-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-18"
+  },
+  "governance": {
+    "api_date": "2026-04-22T13:49:45Z",
+    "total_officers": 20,
+    "active_count": 3,
+    "resigned_count": 17,
+    "active_officers": [
+      {
+        "name": "DICKINSON, Christopher Keith",
+        "role": "secretary",
+        "appointed_on": "2020-01-13",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "DICKINSON, Christopher Keith",
+        "role": "director",
+        "appointed_on": "2020-01-13",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SHEIKH, Farouq Rashid",
+        "role": "director",
+        "appointed_on": "2008-06-16",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T13:49:47Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Caretech Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "England And Wales",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "04457287"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MjEwNTU0MGFkaXF6a2N4",
+    "date": "2025-07-01",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-audit-exemption-subsiduary",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/a-G_khTgrXHC0ZKwiUAAM--r20MkYRsP9u14gJY7mlI/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04099715/filing-history/MzQ3MjEwNTU0MGFkaXF6a2N4"
   }
 }

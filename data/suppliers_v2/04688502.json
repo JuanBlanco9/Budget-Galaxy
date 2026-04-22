@@ -59,9 +59,98 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T14:07:20Z",
+    "company_name": "CARLETON COURT RESIDENTIAL HOME LTD",
+    "company_status": "active",
+    "date_of_creation": "2003-03-06",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-04"
+  },
+  "governance": {
+    "api_date": "2026-04-22T14:07:22Z",
+    "total_officers": 7,
+    "active_count": 2,
+    "resigned_count": 5,
+    "active_officers": [
+      {
+        "name": "SHAH, Hilen Vinodray",
+        "role": "director",
+        "appointed_on": "2011-01-11",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "SHAH, Ketan Vinodray",
+        "role": "director",
+        "appointed_on": "2011-01-11",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T14:07:24Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Jenson Investors Inc",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2019-03-07",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "British Virgin Islands",
+          "country_registered": "British Virgin Islands",
+          "place_registered": "British Virgin Islands",
+          "registration_number": "1932362"
+        }
+      },
+      {
+        "name": "Scoby Investments Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited",
+          "legal_authority": "Companies (Jersey) Law 1991",
+          "country_registered": "Channel Islands",
+          "place_registered": "Jfsc Companies Registry",
+          "registration_number": "67511"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4Mjc3OTIzOGFkaXF6a2N4",
+    "date": "2025-09-26",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/Fu1WWlD-9GkFrP4WbhJhnWZQcIfZZaaFJM8OWYgVouM/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04688502/filing-history/MzQ4Mjc3OTIzOGFkaXF6a2N4"
   }
 }

@@ -70,9 +70,94 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T14:30:42Z",
+    "company_name": "SAFRAN HELICOPTER ENGINES UK LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1973-11-29",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-23"
+  },
+  "governance": {
+    "api_date": "2026-04-22T14:30:44Z",
+    "total_officers": 43,
+    "active_count": 4,
+    "resigned_count": 39,
+    "active_officers": [
+      {
+        "name": "MERCADIE, Sebastien",
+        "role": "secretary",
+        "appointed_on": "2022-12-20",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "ALBERT, Mathieu",
+        "role": "director",
+        "appointed_on": "2023-07-11",
+        "country_of_residence": "France",
+        "nationality": "French"
+      },
+      {
+        "name": "EARL, Nicholas Julian Christopher",
+        "role": "director",
+        "appointed_on": "2015-11-02",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MERCADIE, Sebastien",
+        "role": "director",
+        "appointed_on": "2022-12-20",
+        "country_of_residence": "England",
+        "nationality": "French"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T14:30:46Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Safran Uk Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Company Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Registrar Of Companies (England And Wales)",
+          "registration_number": "02178689"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4Mjg0MjM3M2FkaXF6a2N4",
+    "date": "2025-09-29",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/dqR0bq1C2kmm_vOQ3bPoSHRH4E70_1-iUQD-CvP9WwA/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01148466/filing-history/MzQ4Mjg0MjM3M2FkaXF6a2N4"
   }
 }

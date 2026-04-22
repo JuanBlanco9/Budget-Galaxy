@@ -64,9 +64,124 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T14:02:12Z",
+    "company_name": "MARIA MALLABAND LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1987-08-24",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-06-30",
+    "accounts_last_made_up": "2024-09-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-14"
+  },
+  "governance": {
+    "api_date": "2026-04-22T14:02:14Z",
+    "total_officers": 25,
+    "active_count": 8,
+    "resigned_count": 17,
+    "active_officers": [
+      {
+        "name": "BURGAN, Philip John",
+        "role": "director",
+        "appointed_on": "2005-05-11",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "BURNS, Jordan",
+        "role": "director",
+        "appointed_on": "2024-07-08",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "DALLISON, Adrian John",
+        "role": "director",
+        "appointed_on": "2025-04-02",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LOCK, Jason David",
+        "role": "director",
+        "appointed_on": "2019-01-02",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "MANGERA, Farouk",
+        "role": "director",
+        "appointed_on": "2024-07-08",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "MCPARTLAN, Paul Louis",
+        "role": "director",
+        "appointed_on": "2026-01-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "WALKER, Mark",
+        "role": "director",
+        "appointed_on": "2024-07-08",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "WOMACK, Christopher John",
+        "role": "director",
+        "appointed_on": "2010-10-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T14:02:16Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Maria Mallaband Care Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-06-30",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act",
+          "country_registered": "England",
+          "place_registered": "England And Wales",
+          "registration_number": "03135910"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MTE0MTMwOGFkaXF6a2N4",
+    "date": "2025-06-23",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-audit-exemption-subsiduary",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/g_HRa3odjNzaliCo0N9sWeUGFE7ysNZZKw1_gUhxeJQ/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02156720/filing-history/MzQ3MTE0MTMwOGFkaXF6a2N4"
   }
 }

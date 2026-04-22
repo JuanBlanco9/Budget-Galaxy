@@ -59,9 +59,93 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T14:12:49Z",
+    "company_name": "ALEXANDRA COURT RESIDENTIAL HOME LTD",
+    "company_status": "active",
+    "date_of_creation": "2011-02-02",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-16"
+  },
+  "governance": {
+    "api_date": "2026-04-22T14:12:51Z",
+    "total_officers": 5,
+    "active_count": 3,
+    "resigned_count": 2,
+    "active_officers": [
+      {
+        "name": "NELSON, Andrew Wray",
+        "role": "secretary",
+        "appointed_on": "2024-08-07",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BREE, Marilouise",
+        "role": "director",
+        "appointed_on": "2011-06-14",
+        "country_of_residence": "United Kingdom",
+        "nationality": "English"
+      },
+      {
+        "name": "NELSON, Charles Wray",
+        "role": "director",
+        "appointed_on": "2011-02-02",
+        "country_of_residence": "England",
+        "nationality": "English"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T14:12:53Z",
+    "total_results": 2,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Mr Charles Wray Nelson",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "English",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent"
+        ],
+        "notified_on": "2017-02-02",
+        "identification": null
+      },
+      {
+        "name": "Marilouise Bree",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "English",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2017-02-02",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4ODM4ODU2N2FkaXF6a2N4",
+    "date": "2025-11-12",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/MiGVzW1FHudIVd1-HnH6ecXnqMHP5nnnRFN2qQU43tA/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/07513901/filing-history/MzQ4ODM4ODU2N2FkaXF6a2N4"
   }
 }

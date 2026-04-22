@@ -59,9 +59,101 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T14:09:55Z",
+    "company_name": "ROSEBERRY CARE CENTRES GB LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2007-06-15",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-29"
+  },
+  "governance": {
+    "api_date": "2026-04-22T14:09:56Z",
+    "total_officers": 16,
+    "active_count": 3,
+    "resigned_count": 13,
+    "active_officers": [
+      {
+        "name": "WORSLEY, Andrew Frederick",
+        "role": "director",
+        "appointed_on": "2024-10-16",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WORSLEY, Ashley Lloyd",
+        "role": "director",
+        "appointed_on": "2025-12-22",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WORSLEY, Simon Andrew",
+        "role": "director",
+        "appointed_on": "2025-12-22",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T14:09:58Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Ronald Michael Mcnamara",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Irish",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2018-06-21",
+        "identification": null
+      },
+      {
+        "name": "Cleveland Healthcare Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2017-01-01",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "10523656"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4Mjg0ODc4OGFkaXF6a2N4",
+    "date": "2025-09-26",
+    "type": "AA01",
+    "description": "change-account-reference-date-company-current-extended",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/t8SsE8JdQacSjmf48Yke3XoEemkpPCU0gEYzgP48KEE/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/06281674/filing-history/MzQ4Mjg0ODc4OGFkaXF6a2N4"
   }
 }

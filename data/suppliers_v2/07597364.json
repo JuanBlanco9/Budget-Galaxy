@@ -68,9 +68,124 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T13:55:13Z",
+    "company_name": "TAMAR FRESH LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2011-04-08",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-04-30",
+    "accounts_last_made_up": "2025-07-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-04-22"
+  },
+  "governance": {
+    "api_date": "2026-04-22T13:55:14Z",
+    "total_officers": 13,
+    "active_count": 11,
+    "resigned_count": 2,
+    "active_officers": [
+      {
+        "name": "BARRETT, Claire Alice",
+        "role": "director",
+        "appointed_on": "2014-12-03",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BARRETT, David Francis",
+        "role": "director",
+        "appointed_on": "2011-04-08",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "BARRETT, Ian Michael",
+        "role": "director",
+        "appointed_on": "2011-04-08",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "BARRETT, Michelle Beverley",
+        "role": "director",
+        "appointed_on": "2014-12-03",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "BARRETT, Nigel Peter",
+        "role": "director",
+        "appointed_on": "2011-04-08",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BARRETT, Samantha Justine",
+        "role": "director",
+        "appointed_on": "2014-12-03",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "NAZARKO, Agata Karolina",
+        "role": "director",
+        "appointed_on": "2020-01-24",
+        "country_of_residence": "England",
+        "nationality": "Polish"
+      },
+      {
+        "name": "SPREADBOROUGH, Anthony",
+        "role": "director",
+        "appointed_on": "2015-10-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "TRENERRY, Christopher",
+        "role": "director",
+        "appointed_on": "2022-09-07",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "WILSKA, Dorota Diana",
+        "role": "director",
+        "appointed_on": "2025-11-06",
+        "country_of_residence": "United Kingdom",
+        "nationality": "Polish"
+      },
+      {
+        "name": "YEATES, Justin",
+        "role": "director",
+        "appointed_on": "2023-09-14",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T13:55:16Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxNjAxNzMzN2FkaXF6a2N4",
+    "date": "2026-04-14",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/N8jjUkwm9L5CMY-9Bu1C0ORFZ8jSBUnGf4MbkratBEU/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/07597364/filing-history/MzUxNjAxNzMzN2FkaXF6a2N4"
   }
 }

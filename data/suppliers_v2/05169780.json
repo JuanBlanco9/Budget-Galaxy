@@ -64,9 +64,96 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T13:58:14Z",
+    "company_name": "RESTORE PLC",
+    "company_status": "active",
+    "date_of_creation": "2004-07-02",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-06-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-16"
+  },
+  "governance": {
+    "api_date": "2026-04-22T13:58:16Z",
+    "total_officers": 32,
+    "active_count": 7,
+    "resigned_count": 25,
+    "active_officers": [
+      {
+        "name": "FUSSELL, Christopher",
+        "role": "secretary",
+        "appointed_on": "2023-03-20",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BAKER, Daniel John",
+        "role": "director",
+        "appointed_on": "2023-11-13",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "BUTCHER, Simon Patrick Loftus",
+        "role": "director",
+        "appointed_on": "2024-10-14",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "DAVY, Susan Jane",
+        "role": "director",
+        "appointed_on": "2019-01-02",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "FRETWELL, Lisa Elaine",
+        "role": "director",
+        "appointed_on": "2022-04-20",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "HOPKINS, Jameson Paul",
+        "role": "director",
+        "appointed_on": "2020-01-02",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SKINNER, Charles Antony Lawrence",
+        "role": "director",
+        "appointed_on": "2023-09-05",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T13:58:17Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2MjY5MTc5M2FkaXF6a2N4",
+    "date": "2025-04-15",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/Aq_2QPGni61GxroC111rRoMqCHKPusfdk-4t0BPGhp4/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/05169780/filing-history/MzQ2MjY5MTc5M2FkaXF6a2N4"
   }
 }

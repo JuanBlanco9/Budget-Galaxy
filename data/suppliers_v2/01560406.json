@@ -63,9 +63,114 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T14:42:19Z",
+    "company_name": "PINEWOOD STRUCTURES LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1981-05-11",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": true,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-11"
+  },
+  "governance": {
+    "api_date": "2026-04-22T14:42:21Z",
+    "total_officers": 20,
+    "active_count": 4,
+    "resigned_count": 16,
+    "active_officers": [
+      {
+        "name": "PIPER, Lowena Joanne",
+        "role": "secretary",
+        "appointed_on": "2017-08-16",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "ATKINSON, Jamie Leigh",
+        "role": "director",
+        "appointed_on": "2024-06-21",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CAMERON, Kerry",
+        "role": "director",
+        "appointed_on": "2026-01-05",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LAGAN, John Patrick",
+        "role": "director",
+        "appointed_on": "2024-06-21",
+        "country_of_residence": "United Kingdom",
+        "nationality": "Irish"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T14:42:23Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Pinewood Structures Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2020-12-18",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "England And Wales",
+          "registration_number": "12812722"
+        }
+      },
+      {
+        "name": "Hardwood Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act",
+          "country_registered": "England",
+          "place_registered": "England And Wales",
+          "registration_number": "03347348"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MDYxNDUwM2FkaXF6a2N4",
+    "date": "2025-09-16",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-medium",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/TtBGkSPhHV0fpQ1Lha8N44cTRCUgY-J0Ua6iuet9XSg/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01560406/filing-history/MzQ4MDYxNDUwM2FkaXF6a2N4"
   }
 }

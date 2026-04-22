@@ -70,9 +70,181 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T13:58:07Z",
+    "company_name": "SAINT JOHN OF GOD HOSPITALLER SERVICES",
+    "company_status": "active",
+    "date_of_creation": "2005-01-05",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-19"
+  },
+  "governance": {
+    "api_date": "2026-04-22T13:58:09Z",
+    "total_officers": 45,
+    "active_count": 10,
+    "resigned_count": 35,
+    "active_officers": [
+      {
+        "name": "WELFORD, Leanne Mcdonald",
+        "role": "secretary",
+        "appointed_on": "2019-05-08",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "AMPOFO, Abigail",
+        "role": "director",
+        "appointed_on": "2023-11-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "DENYER, Melanie Elizabeth",
+        "role": "director",
+        "appointed_on": "2024-06-28",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LEIGH, Mark Richard",
+        "role": "director",
+        "appointed_on": "2024-06-28",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PEACOCK, Emma Jane",
+        "role": "director",
+        "appointed_on": "2022-08-30",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "REID, Duncan Bryson",
+        "role": "director",
+        "appointed_on": "2020-12-10",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "SELFE, Lesley Karen",
+        "role": "director",
+        "appointed_on": "2019-07-30",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "TAYLOR, Jack Paul",
+        "role": "director",
+        "appointed_on": "2023-05-25",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "TURNER, Claire",
+        "role": "director",
+        "appointed_on": "2023-05-25",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WILLIAMS, Steven David",
+        "role": "director",
+        "appointed_on": "2024-11-18",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T13:58:11Z",
+    "total_results": 5,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Saint John Of God Hospitaller Services Group",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2019-07-30",
+        "identification": {
+          "legal_form": "Limited By Guarantee Company",
+          "legal_authority": "Companies Act"
+        }
+      },
+      {
+        "name": "Brother William Forkan",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Irish",
+        "country_of_residence": "Ireland",
+        "ceased": true,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Brother Michael Neild",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Brother William Brennan",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Irish",
+        "country_of_residence": "Ireland",
+        "ceased": true,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Brother John Lennon",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Irish",
+        "country_of_residence": "Ireland",
+        "ceased": true,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MTY2OTAzMWFkaXF6a2N4",
+    "date": "2025-06-30",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/bG5lv-6kQRa8tWPLu3Dw6Txcgqjt2j_8TPaXBzEi4Yk/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/05324279/filing-history/MzQ3MTY2OTAzMWFkaXF6a2N4"
   }
 }

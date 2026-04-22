@@ -74,9 +74,117 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T14:25:23Z",
+    "company_name": "MOTOROLA SOLUTIONS UK LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1967-08-02",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-06"
+  },
+  "governance": {
+    "api_date": "2026-04-22T14:25:25Z",
+    "total_officers": 57,
+    "active_count": 7,
+    "resigned_count": 50,
+    "active_officers": [
+      {
+        "name": "ENGLAND, David Jonathan Richard",
+        "role": "secretary",
+        "appointed_on": "2020-02-20",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "LEE, Yvonne Low Min",
+        "role": "director",
+        "appointed_on": "2021-03-31",
+        "country_of_residence": "United States",
+        "nationality": "Malaysian"
+      },
+      {
+        "name": "MAHER, Katherine Ann",
+        "role": "director",
+        "appointed_on": "2022-02-28",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      },
+      {
+        "name": "MAYNE, Fergus Andrew Otway",
+        "role": "director",
+        "appointed_on": "2020-02-26",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SHORLAND, David Roger",
+        "role": "director",
+        "appointed_on": "2025-12-22",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "SMITH, Simon Ross",
+        "role": "director",
+        "appointed_on": "2023-12-29",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "WADDELL, Ian Alexander",
+        "role": "director",
+        "appointed_on": "2023-11-30",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T14:25:27Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Motorola Solutions Finance Emea Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "United Kingdom",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "05540794"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NzI0MzM2MGFkaXF6a2N4",
+    "date": "2025-08-14",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/JBMkmdS98ZEs7ZEItL3pdan6i-gGv26Zbgoe_xANZ_U/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/00912182/filing-history/MzQ3NzI0MzM2MGFkaXF6a2N4"
   }
 }

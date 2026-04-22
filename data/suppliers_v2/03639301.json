@@ -59,9 +59,121 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T13:53:11Z",
+    "company_name": "DUCTCLEAN (UK) LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1998-09-28",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-17"
+  },
+  "governance": {
+    "api_date": "2026-04-22T13:53:13Z",
+    "total_officers": 42,
+    "active_count": 3,
+    "resigned_count": 39,
+    "active_officers": [
+      {
+        "name": "GORDON, James Robert Anthony",
+        "role": "secretary",
+        "appointed_on": "2024-04-01",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "HARRIS, Grace Elizabeth",
+        "role": "director",
+        "appointed_on": "2024-03-05",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "WOOD, Phillip Paul",
+        "role": "director",
+        "appointed_on": "2024-03-05",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T13:53:15Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Dcukfm Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2020-03-30",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "12519609"
+        }
+      },
+      {
+        "name": "Marlowe Plc",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors-as-firm"
+        ],
+        "notified_on": "2017-07-31",
+        "identification": {
+          "legal_form": "Public Company Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England And Wales",
+          "place_registered": "Register Of Companies For England And Wales",
+          "registration_number": "09952391"
+        }
+      },
+      {
+        "name": "Mr Nigel John Jones",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-07",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxNDA5ODEyMmFkaXF6a2N4",
+    "date": "2026-04-12",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/OxmRklq9-HYxozrkq4qd4bJ3FHA8lzOlshI7_0kcOho/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03639301/filing-history/MzUxNDA5ODEyMmFkaXF6a2N4"
   }
 }

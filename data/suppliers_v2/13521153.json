@@ -66,9 +66,89 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T14:20:59Z",
+    "company_name": "WT NICOL OPCO (SEACROFT GRANGE) LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2021-07-20",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-06-30",
+    "accounts_last_made_up": "2024-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-08-01"
+  },
+  "governance": {
+    "api_date": "2026-04-22T14:21:00Z",
+    "total_officers": 6,
+    "active_count": 3,
+    "resigned_count": 3,
+    "active_officers": [
+      {
+        "name": "CSC CORPORATE SERVICES (UK) LIMITED",
+        "role": "corporate-secretary",
+        "appointed_on": "2024-10-07",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "ISRAR, Qasim Raza",
+        "role": "director",
+        "appointed_on": "2024-10-07",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "MANRIQUE CHARRO, Jorge",
+        "role": "director",
+        "appointed_on": "2024-10-07",
+        "country_of_residence": "United Kingdom",
+        "nationality": "Spanish"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T14:21:02Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Wt Nicol Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2021-07-20",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "England And Wales",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "09349619"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NTgxMTA3MGFkaXF6a2N4",
+    "date": "2025-12-23",
+    "type": "AA01",
+    "description": "change-account-reference-date-company-previous-extended",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/ju3_IpFt0aGD0n2GoN0FpHImAjiYoFvjVTfW48Szb6Y/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/13521153/filing-history/MzQ5NTgxMTA3MGFkaXF6a2N4"
   }
 }

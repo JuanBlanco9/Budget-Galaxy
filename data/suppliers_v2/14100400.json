@@ -69,130 +69,26 @@
     "overdue": false
   },
   "governance": {
-    "officers_active_count": 2,
-    "officers_resigned_count": 2,
-    "board_turnover_ratio": 1.0,
-    "board_turnover_signal": "low",
-    "active_directors": [
+    "api_date": "2026-04-22T14:38:50Z",
+    "total_officers": 4,
+    "active_count": 2,
+    "resigned_count": 2,
+    "active_officers": [
       {
         "name": "ISIDRO MARTINEZ, Alberto",
         "role": "director",
         "appointed_on": "2024-10-10",
-        "resigned_on": null,
-        "nationality": "Spanish",
-        "occupation": null,
         "country_of_residence": "England",
-        "date_of_birth": {
-          "month": 10,
-          "year": 1977
-        },
-        "address": {
-          "locality": "Bristol",
-          "postal_code": "BS1 2NT",
-          "country": "England"
-        }
+        "nationality": "Spanish"
       },
       {
         "name": "MARTINEZ PEREZ DE ROJAS, Donato",
         "role": "director",
         "appointed_on": "2025-08-18",
-        "resigned_on": null,
-        "nationality": "Spanish",
-        "occupation": null,
         "country_of_residence": "England",
-        "date_of_birth": {
-          "month": 12,
-          "year": 1976
-        },
-        "address": {
-          "locality": "London",
-          "postal_code": "EC2R 8AY",
-          "country": "England"
-        }
+        "nationality": "Spanish"
       }
-    ],
-    "secretaries": [],
-    "all_active_officers": [
-      {
-        "name": "ISIDRO MARTINEZ, Alberto",
-        "role": "director",
-        "appointed_on": "2024-10-10",
-        "resigned_on": null,
-        "nationality": "Spanish",
-        "occupation": null,
-        "country_of_residence": "England",
-        "date_of_birth": {
-          "month": 10,
-          "year": 1977
-        },
-        "address": {
-          "locality": "Bristol",
-          "postal_code": "BS1 2NT",
-          "country": "England"
-        }
-      },
-      {
-        "name": "MARTINEZ PEREZ DE ROJAS, Donato",
-        "role": "director",
-        "appointed_on": "2025-08-18",
-        "resigned_on": null,
-        "nationality": "Spanish",
-        "occupation": null,
-        "country_of_residence": "England",
-        "date_of_birth": {
-          "month": 12,
-          "year": 1976
-        },
-        "address": {
-          "locality": "London",
-          "postal_code": "EC2R 8AY",
-          "country": "England"
-        }
-      }
-    ],
-    "resigned_officers_summary": {
-      "count": 2,
-      "recent": [
-        {
-          "name": "GARCIA, Juan Ignacio De La Cueva",
-          "role": "director",
-          "appointed_on": "2022-05-11",
-          "resigned_on": "2025-08-18",
-          "nationality": "Spanish",
-          "occupation": null,
-          "country_of_residence": "Spain",
-          "date_of_birth": {
-            "month": 7,
-            "year": 1974
-          },
-          "address": {
-            "locality": "London",
-            "postal_code": "EC2R 8AY",
-            "country": "United Kingdom"
-          }
-        },
-        {
-          "name": "BLANCO, Agustin Alvarez",
-          "role": "director",
-          "appointed_on": "2022-05-11",
-          "resigned_on": "2024-10-10",
-          "nationality": "Spanish",
-          "occupation": null,
-          "country_of_residence": "Spain",
-          "date_of_birth": {
-            "month": 6,
-            "year": 1963
-          },
-          "address": {
-            "locality": "London",
-            "postal_code": "EC2R 8AY",
-            "country": "United Kingdom"
-          }
-        }
-      ]
-    },
-    "direct_psc_count": 1,
-    "direct_psc_statements": []
+    ]
   },
   "ownership_chain": {
     "resolution": "government",
@@ -420,5 +316,58 @@
       "note": "Awarded 8.0× current payments — major pipeline for 2025+.",
       "ratio": 8.02
     }
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T14:38:49Z",
+    "company_name": "NAVANTIA UK LTD.",
+    "company_status": "active",
+    "date_of_creation": "2022-05-11",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-09-30",
+    "accounts_last_made_up": "2025-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-22"
+  },
+  "pscs": {
+    "api_date": "2026-04-22T14:38:52Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Sociedad Estatal De Participaciones Industriales",
+        "kind": "legal-person-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2022-05-11",
+        "identification": {
+          "legal_form": "Government Department",
+          "legal_authority": "Royal Law Decree 5/1995, Spain"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxMjIyODMwMGFkaXF6a2N4",
+    "date": "2026-03-28",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/WKAms8T6SSjIHdBiGqG9ltT1FR0dqjkUMqqqGug6f-Q/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/14100400/filing-history/MzUxMjIyODMwMGFkaXF6a2N4"
+  },
+  "enrichment_stages": {
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   }
 }

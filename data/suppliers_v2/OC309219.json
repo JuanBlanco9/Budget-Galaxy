@@ -55,9 +55,187 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T14:48:44Z",
+    "company_name": "BEVAN BRITTAN LLP",
+    "company_status": "active",
+    "date_of_creation": "2004-09-09",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-01-31",
+    "accounts_last_made_up": "2025-04-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-09-20"
+  },
+  "governance": {
+    "api_date": "2026-04-22T14:48:46Z",
+    "total_officers": 147,
+    "active_count": 65,
+    "resigned_count": 82,
+    "active_officers": [
+      {
+        "name": "COOPER, Virginia Liljana",
+        "role": "llp-designated-member",
+        "appointed_on": "2011-05-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "HARRISON, Robert Mark",
+        "role": "llp-designated-member",
+        "appointed_on": "2012-11-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "HODGETTS, Timothy Miles",
+        "role": "llp-designated-member",
+        "appointed_on": "2007-05-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "HOPPER, Judith",
+        "role": "llp-designated-member",
+        "appointed_on": "2020-08-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "JONES, Harriet Prudence",
+        "role": "llp-designated-member",
+        "appointed_on": "2022-10-17",
+        "country_of_residence": "Wales",
+        "nationality": null
+      },
+      {
+        "name": "KENDALL, Adam James",
+        "role": "llp-designated-member",
+        "appointed_on": "2007-09-03",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "SINCLAIR, Jodie Maree",
+        "role": "llp-designated-member",
+        "appointed_on": "2012-11-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "TURNER, Jonathan Michael",
+        "role": "llp-designated-member",
+        "appointed_on": "2016-05-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "WEIR, Duncan John",
+        "role": "llp-designated-member",
+        "appointed_on": "2004-11-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "AKHTER, Perveen",
+        "role": "llp-member",
+        "appointed_on": "2026-01-19",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "ARSHAD, Nadeem Abbas",
+        "role": "llp-member",
+        "appointed_on": "2011-06-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "AUJLA, Kirtpal Kaur",
+        "role": "llp-member",
+        "appointed_on": "2024-05-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "BOYD, Michael",
+        "role": "llp-member",
+        "appointed_on": "2015-09-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "BRADBERRY, Nathan Paul",
+        "role": "llp-member",
+        "appointed_on": "2019-05-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "BRAND, Neil Edward",
+        "role": "llp-member",
+        "appointed_on": "2024-05-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "BREALEY, Laura Jane",
+        "role": "llp-member",
+        "appointed_on": "2024-05-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "BUCKINGHAM, Alison Jane",
+        "role": "llp-member",
+        "appointed_on": "2004-11-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "BUSCEMI, Vincent Joseph",
+        "role": "llp-member",
+        "appointed_on": "2016-05-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "CAMPBELL, Lyndon Stuart",
+        "role": "llp-member",
+        "appointed_on": "2018-12-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "CAPLAN, Ian Neil",
+        "role": "llp-member",
+        "appointed_on": "2006-02-06",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T14:48:48Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NjAyNzk3OWFkaXF6a2N4",
+    "date": "2025-12-31",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/XSeIHJG9-E5H4ZsHGqJcCYHs0fhV38lgJZMNU2UaACw/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/OC309219/filing-history/MzQ5NjAyNzk3OWFkaXF6a2N4"
   }
 }

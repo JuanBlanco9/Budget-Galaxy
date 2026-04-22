@@ -63,9 +63,111 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T14:45:35Z",
+    "company_name": "SAANCHI SOLUTIONS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2015-08-12",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-05-31",
+    "accounts_last_made_up": "2025-08-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-01"
+  },
+  "governance": {
+    "api_date": "2026-04-22T14:45:36Z",
+    "total_officers": 4,
+    "active_count": 3,
+    "resigned_count": 1,
+    "active_officers": [
+      {
+        "name": "MUKHERJEE, Anindita",
+        "role": "secretary",
+        "appointed_on": "2015-08-12",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "MUKHERJEE, Anindita",
+        "role": "director",
+        "appointed_on": "2015-08-12",
+        "country_of_residence": "England",
+        "nationality": "Indian"
+      },
+      {
+        "name": "MUKHERJEE, Shantanu",
+        "role": "director",
+        "appointed_on": "2016-05-30",
+        "country_of_residence": "England",
+        "nationality": "Indian"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T14:45:38Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Pdca Holdings Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2022-11-15",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Limited Comapny",
+          "country_registered": "England",
+          "place_registered": "England",
+          "registration_number": "14483275"
+        }
+      },
+      {
+        "name": "Mr Shantanu Mukherjee",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Indian",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent"
+        ],
+        "notified_on": "2016-07-19",
+        "identification": null
+      },
+      {
+        "name": "Mrs Anindita Mukherjee",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Indian",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-06-01",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NzU0OTg1MGFkaXF6a2N4",
+    "date": "2026-01-05",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/j9b6u-CIE0sGmOntYA1VIgp1O0S_wZFLmQzcXrjHoxU/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/09730316/filing-history/MzQ5NzU0OTg1MGFkaXF6a2N4"
   }
 }

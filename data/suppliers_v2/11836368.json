@@ -62,76 +62,19 @@
     "overdue": false
   },
   "governance": {
-    "officers_active_count": 1,
-    "officers_resigned_count": 1,
-    "board_turnover_ratio": 1.0,
-    "board_turnover_signal": "low",
-    "active_directors": [
+    "api_date": "2026-04-22T14:32:34Z",
+    "total_officers": 2,
+    "active_count": 0,
+    "resigned_count": 1,
+    "active_officers": [
       {
         "name": "GRAHAM, Iysha Christianne",
         "role": "director",
         "appointed_on": "2019-06-04",
-        "resigned_on": null,
-        "nationality": "British",
-        "occupation": null,
         "country_of_residence": "England",
-        "date_of_birth": {
-          "month": 6,
-          "year": 1971
-        },
-        "address": {
-          "locality": "Maryport",
-          "postal_code": "CA15 6HQ",
-          "country": "England"
-        }
+        "nationality": "British"
       }
-    ],
-    "secretaries": [],
-    "all_active_officers": [
-      {
-        "name": "GRAHAM, Iysha Christianne",
-        "role": "director",
-        "appointed_on": "2019-06-04",
-        "resigned_on": null,
-        "nationality": "British",
-        "occupation": null,
-        "country_of_residence": "England",
-        "date_of_birth": {
-          "month": 6,
-          "year": 1971
-        },
-        "address": {
-          "locality": "Maryport",
-          "postal_code": "CA15 6HQ",
-          "country": "England"
-        }
-      }
-    ],
-    "resigned_officers_summary": {
-      "count": 1,
-      "recent": [
-        {
-          "name": "CREWE, Jai Sebastian",
-          "role": "director",
-          "appointed_on": "2019-02-20",
-          "resigned_on": "2019-06-04",
-          "nationality": "British",
-          "occupation": null,
-          "country_of_residence": "United Kingdom",
-          "date_of_birth": {
-            "month": 11,
-            "year": 1997
-          },
-          "address": {
-            "locality": "London",
-            "postal_code": "WC2H 9JQ",
-            "country": "United Kingdom"
-          }
-        }
-      ]
-    },
-    "direct_psc_count": 1,
-    "direct_psc_statements": []
+    ]
   },
   "ownership_chain": {
     "resolution": "individual",
@@ -230,5 +173,68 @@
   "procurement": {
     "status": "no_contracts_found",
     "note": "No Contracts Finder matches for this supplier in 2020-2024."
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T14:32:32Z",
+    "company_name": "ABELLIO LIMITED",
+    "company_status": "dissolved",
+    "date_of_creation": "2019-02-20",
+    "date_of_cessation": "2026-04-28",
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": null,
+    "accounts_next_due": null,
+    "accounts_last_made_up": "2025-02-28",
+    "confirmation_statement_overdue": null,
+    "confirmation_statement_next_due": null
+  },
+  "pscs": {
+    "api_date": "2026-04-22T14:32:35Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Ms Iysha Christianne Graham",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2019-06-04",
+        "identification": null
+      },
+      {
+        "name": "Mr Jai Sebastian Crewe",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2019-02-20",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MTY2MjU5N2FkaXF6a2N4",
+    "date": "2025-11-30",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-dormant",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/DDYoE7yS2X-KPTwwTugJA9OcdRZTfwRpz2Up3ww2ZBk/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/11836368/filing-history/MzQ5MTY2MjU5N2FkaXF6a2N4"
+  },
+  "enrichment_stages": {
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   }
 }

@@ -74,9 +74,117 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T14:14:50Z",
+    "company_name": "ABBEYFIELD THE DALES LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2014-04-24",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-04-20"
+  },
+  "governance": {
+    "api_date": "2026-04-22T14:14:52Z",
+    "total_officers": 39,
+    "active_count": 10,
+    "resigned_count": 29,
+    "active_officers": [
+      {
+        "name": "CARROLL, Terence Patrick",
+        "role": "director",
+        "appointed_on": "2022-12-16",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CARTER, Martin John, Dr",
+        "role": "director",
+        "appointed_on": "2015-12-07",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CONNELLY, John",
+        "role": "director",
+        "appointed_on": "2023-05-26",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HEPWORTH, Ian Richard",
+        "role": "director",
+        "appointed_on": "2019-04-15",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "HILL, Andrea Lesley",
+        "role": "director",
+        "appointed_on": "2020-10-23",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HUNT, Angela Marie",
+        "role": "director",
+        "appointed_on": "2024-05-31",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LOCKHART-MIRAMS, Andrew Richard",
+        "role": "director",
+        "appointed_on": "2025-07-25",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PRICE, Michael Ian",
+        "role": "director",
+        "appointed_on": "2019-04-15",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "RAWLING, Roger Graham",
+        "role": "director",
+        "appointed_on": "2022-02-25",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SMITH, Dale",
+        "role": "director",
+        "appointed_on": "2014-11-04",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T14:14:53Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4NTc3MjAyM2FkaXF6a2N4",
+    "date": "2025-10-22",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/rO3mVowLTtz8GoSBPx1ZyyASzIW9nV_wt2yp0oN59eI/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/09008680/filing-history/MzQ4NTc3MjAyM2FkaXF6a2N4"
   }
 }

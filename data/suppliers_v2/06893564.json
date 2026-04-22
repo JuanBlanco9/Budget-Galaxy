@@ -61,9 +61,110 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T13:50:04Z",
+    "company_name": "AFFINITY TRUST",
+    "company_status": "active",
+    "date_of_creation": "2009-04-30",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-23"
+  },
+  "governance": {
+    "api_date": "2026-04-22T13:50:06Z",
+    "total_officers": 25,
+    "active_count": 9,
+    "resigned_count": 16,
+    "active_officers": [
+      {
+        "name": "BUTLER, Robert Graham",
+        "role": "secretary",
+        "appointed_on": "2024-12-03",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "AKPAKWU, Christopher Oseji",
+        "role": "director",
+        "appointed_on": "2021-07-16",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BARRON, Tanya",
+        "role": "director",
+        "appointed_on": "2019-08-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BURGESS, Hanah Munzer",
+        "role": "director",
+        "appointed_on": "2020-06-12",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "EDWARDS, Jennifer Fitzgerald",
+        "role": "director",
+        "appointed_on": "2018-01-11",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GREENE, James Robert",
+        "role": "director",
+        "appointed_on": "2026-02-16",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "KING, Caroline Tracey",
+        "role": "director",
+        "appointed_on": "2021-07-16",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PARRY, Richard David",
+        "role": "director",
+        "appointed_on": "2022-07-26",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "REES, Sian Alison",
+        "role": "director",
+        "appointed_on": "2018-12-31",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T13:50:07Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4NzA1NTkyOGFkaXF6a2N4",
+    "date": "2025-11-04",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/4vFGJksRaiU1S7jGxkxCEIz2k7kLhFFiGN2UZ9UVYn0/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/06893564/filing-history/MzQ4NzA1NTkyOGFkaXF6a2N4"
   }
 }

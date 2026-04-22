@@ -59,9 +59,68 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T14:23:54Z",
+    "company_name": "MIND IN KINGSTON",
+    "company_status": "active",
+    "date_of_creation": "1999-02-25",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-14"
+  },
+  "governance": {
+    "api_date": "2026-04-22T14:23:56Z",
+    "total_officers": 46,
+    "active_count": 3,
+    "resigned_count": 43,
+    "active_officers": [
+      {
+        "name": "FAIRHURST, Harriet",
+        "role": "director",
+        "appointed_on": "2025-11-03",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MITCHELL, Kevin Graham",
+        "role": "director",
+        "appointed_on": "2017-07-28",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "RICHMOND, Rebecca Joanne",
+        "role": "director",
+        "appointed_on": "2026-03-02",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T14:23:58Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NTcwNjIzNmFkaXF6a2N4",
+    "date": "2025-12-22",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-medium",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/DhZfCjamGgZOFCAx7MSCYoyubzsbaj89AiYALmpSzFs/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03719792/filing-history/MzQ5NTcwNjIzNmFkaXF6a2N4"
   }
 }
