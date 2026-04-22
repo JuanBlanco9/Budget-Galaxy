@@ -179,6 +179,13 @@ def main():
         except Exception:
             pass
 
+    # Also load the CH BCD-resolved supplier postcodes (step 5 output)
+    resolved_file = ROOT / "data/map/supplier_postcodes_resolved.json"
+    resolved_postcodes = {}
+    if resolved_file.exists():
+        resolved_postcodes = json.loads(resolved_file.read_text(encoding="utf-8"))
+    print(f"Loaded {len(resolved_postcodes):,} CH-resolved supplier postcodes")
+
     suppliers_out = {}
     suppliers_no_geo = 0
     for k, s in supplier_agg.items():
@@ -186,6 +193,9 @@ def main():
         # If supplier has ch_number and we have postcode from supplier JSON, use that
         if s["ch_number"] and s["ch_number"] in sup_pc_by_ch:
             pc = sup_pc_by_ch[s["ch_number"]]
+        # Fall back to CH BCD resolution (step 5)
+        if not pc and k in resolved_postcodes:
+            pc = resolved_postcodes[k].get("postcode")
         g = geo.get(pc) if pc else None
         if not g:
             suppliers_no_geo += 1
