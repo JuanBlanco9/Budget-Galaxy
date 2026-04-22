@@ -1019,6 +1019,18 @@ mark{background:rgba(255,200,0,.25);color:inherit;border-radius:2px;padding:0 2p
 .tc-context svg,.tc-detail svg{width:100%;height:calc(100% - 20px)}
 @media(min-width:1200px){.right-col{display:flex}#tab-budgetlist .bl-container{margin-right:33%}}
 
+/* List-mode type-filter pills (parallel to map filter pills) */
+.suppliers-pillrow{display:flex;flex-wrap:wrap;gap:4px;margin-top:10px;}
+.sup-filter-pill{
+  padding:4px 8px;font-size:10.5px;font-family:inherit;
+  background:rgba(255,255,255,.03);color:var(--dim);
+  border:1px solid rgba(255,255,255,.06);border-radius:4px;
+  cursor:pointer;transition:all .12s;display:flex;align-items:center;gap:4px;
+}
+.sup-filter-pill.active{background:rgba(79,195,247,.14);color:#dbe7fa;border-color:rgba(79,195,247,.3);}
+.sup-filter-pill:hover{background:rgba(255,255,255,.06);color:var(--text);}
+.sup-dot{width:7px;height:7px;border-radius:50%;display:inline-block;}
+
 /* ═════════════════════ MAP SUB-TAB (Budget Recipients) ═════════════════════ */
 .sup-modebar{
   display:flex;gap:8px;align-items:center;padding:8px 16px;
@@ -3397,6 +3409,16 @@ mark{background:rgba(79,195,247,.3);color:var(--text,#e8ebf5);padding:0 2px;bord
         <div class="suppliers-title">🏢 UK Suppliers</div>
         <div class="suppliers-count" id="suppliers-count">Loading...</div>
         <input type="text" id="suppliers-search" placeholder="🔍 Search by name or CH number..." autocomplete="off" spellcheck="false" />
+        <div class="suppliers-pillrow" id="suppliers-pillrow">
+          <button class="sup-filter-pill active" data-supfilter="all" onclick="_supSetTypeFilter('all',this)">All</button>
+          <button class="sup-filter-pill" data-supfilter="council" onclick="_supSetTypeFilter('council',this)"><span class="sup-dot" style="background:#5fa8ff"></span>Council</button>
+          <button class="sup-filter-pill" data-supfilter="nhs" onclick="_supSetTypeFilter('nhs',this)"><span class="sup-dot" style="background:#ff6b9d"></span>NHS</button>
+          <button class="sup-filter-pill" data-supfilter="central_govt" onclick="_supSetTypeFilter('central_govt',this)"><span class="sup-dot" style="background:#ffb84f"></span>Depts</button>
+          <button class="sup-filter-pill" data-supfilter="police_fire" onclick="_supSetTypeFilter('police_fire',this)"><span class="sup-dot" style="background:#c85bff"></span>Police/Fire</button>
+          <button class="sup-filter-pill" data-supfilter="education" onclick="_supSetTypeFilter('education',this)"><span class="sup-dot" style="background:#48d1a0"></span>Education</button>
+          <button class="sup-filter-pill" data-supfilter="agency" onclick="_supSetTypeFilter('agency',this)"><span class="sup-dot" style="background:#6fe0d8"></span>Agency</button>
+          <button class="sup-filter-pill" data-supfilter="other" onclick="_supSetTypeFilter('other',this)"><span class="sup-dot" style="background:#8892a8"></span>Other</button>
+        </div>
       </div>
       <div class="suppliers-rows" id="suppliers-rows"></div>
     </div>
@@ -16053,7 +16075,7 @@ function _cmplistSetCountry(col, country){
 window._suppliersIndex = null;
 window._suppliersCurrentCh = null;
 
-const SUPPLIERS_INDEX_URL = '/data/suppliers/_index.json';
+const SUPPLIERS_INDEX_URL = '/data/suppliers/_index.json?v=2';
 const SUPPLIER_PROFILE_URL = (ch) => `/data/suppliers/${ch}.json`;
 
 function _supEscapeHtml(s){return String(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))}
@@ -17197,17 +17219,37 @@ async function loadSuppliersTab(){
   }
 }
 
+// Set type-filter for the list mode (parallel with search)
+window._supTypeFilter = window._supTypeFilter || 'all';
+function _supSetTypeFilter(t, btn){
+  window._supTypeFilter = t;
+  document.querySelectorAll('.sup-filter-pill').forEach(b => b.classList.toggle('active', b.dataset.supfilter === t));
+  const input = document.getElementById('suppliers-search');
+  _supRenderList(input ? input.value : '');
+}
+
 function _supRenderList(query){
   const rows=document.getElementById('suppliers-rows');
   if(!rows)return;
   const list=window._suppliersIndex||[];
   const q=(query||'').trim().toLowerCase();
-  const filtered=q
-    ? list.filter(s=>(s.display_name||'').toLowerCase().includes(q)||(s.company_number||'').toLowerCase().includes(q))
-    : list;
+  const type=window._supTypeFilter||'all';
+  let filtered = list;
+  if (q) filtered = filtered.filter(s=>(s.display_name||'').toLowerCase().includes(q)||(s.company_number||'').toLowerCase().includes(q));
+  if (type !== 'all') filtered = filtered.filter(s => (s.primary_buyer_type||'other') === type);
   const count=document.getElementById('suppliers-count');
+  const TYPE_LABEL = {
+    all:'all', council:'Council-led', nhs:'NHS-led', central_govt:'Dept-led',
+    police_fire:'Police/Fire-led', education:'Education-led', agency:'Agency-led', other:'Other',
+  };
   if(count){
-    count.textContent=q?`${filtered.length} of ${list.length} suppliers matching "${query}"`:`${list.length} suppliers · sorted by FY 2024 spend`;
+    const base = `${filtered.length} suppliers`;
+    const parts = [];
+    if (type !== 'all') parts.push(TYPE_LABEL[type]);
+    if (q) parts.push(`matching "${query}"`);
+    count.textContent = parts.length
+      ? `${base} · ${parts.join(' · ')}`
+      : `${list.length} suppliers · sorted by FY 2024 spend`;
   }
   rows.innerHTML=filtered.slice(0,300).map(s=>{
     const ubo=_supUboBadge(s.ubo_resolution,s.ubo_ultimate_countries);
@@ -17651,8 +17693,23 @@ function _supmapBuyerPopup(b){
     <div class="supmap-popup-meta">${SUPMAP_TYPE_LABEL[b.type] || b.type} · ${b.lad24_nm || b.region || ''}</div>
     <div class="supmap-popup-stat"><b>${fmt(b.total_gbp_2024)}</b> in ${b.n_contracts.toLocaleString()} contracts</div>
     <div class="supmap-popup-stat">${b.n_suppliers.toLocaleString()} unique suppliers</div>
-    <button class="supmap-popup-btn" onclick="_supmapZoomToSuppliers('${b.id}')">📍 Show supplier locations →</button>
+    <div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:8px">
+      <button class="supmap-popup-btn" onclick="_supmapZoomToSuppliers('${b.id}')">📍 Show locations</button>
+      <button class="supmap-popup-btn" onclick="_supmapJumpToList('${b.type}')">📋 ${SUPMAP_TYPE_LABEL[b.type] || 'See'} suppliers</button>
+    </div>
   </div>`;
+}
+
+// Switch from map mode to list mode with type filter pre-applied
+function _supmapJumpToList(type){
+  // Switch to list mode
+  const listBtn = document.querySelector('.sup-modebtn[data-sup-mode="list"]');
+  if (listBtn) listBtn.click();
+  // Apply type filter
+  if (typeof _supSetTypeFilter === 'function') {
+    const pill = document.querySelector(`.sup-filter-pill[data-supfilter="${type}"]`);
+    if (pill) _supSetTypeFilter(type, pill);
+  }
 }
 
 // Click handler for "Show supplier locations" popup button:
