@@ -1,0 +1,1694 @@
+{
+  "url_patches": [
+    {
+      "entry_key": "Other Student Loans",
+      "source_index": 3,
+      "old_url": "https://commonslibrary.parliament.uk/student-loans-and-interest-rates-faqs/",
+      "new_url": "https://commonslibrary.parliament.uk/student-loans-and-interest-rates-faqs/",
+      "action": "keep_as_is",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "HoC Library rejects HEAD/unknown UA but root domain is live"
+    },
+    {
+      "entry_key": "Other Student Loans",
+      "source_index": 4,
+      "old_url": "https://ifs.org.uk/publications/reforms-student-loan-system-england",
+      "new_url": "https://ifs.org.uk/publications/reforms-student-loan-system-england",
+      "action": "keep_as_is",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "IFS rejects HEAD/unknown UA but root domain is live"
+    },
+    {
+      "entry_key": "Other Student Loans",
+      "source_index": 5,
+      "old_url": "https://www.gov.uk/government/statistics/student-loans-in-england-financial-year-2023-24",
+      "new_url": "https://www.gov.uk/government/statistics/student-loans-in-england-2023-to-2024/student-loans-in-england-financial-year-2023-24",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "SLC statistics published under the 2023-to-2024 slug (duplicate source index 0 URL)"
+    },
+    {
+      "entry_key": "Personal Independence Payment",
+      "source_index": 1,
+      "old_url": "https://www.gov.uk/government/statistics/tribunal-statistics-quarterly-april-to-june-2024",
+      "new_url": "https://www.gov.uk/government/statistics/tribunals-statistics-quarterly-april-to-june-2024",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "Slug uses plural \"tribunals\""
+    },
+    {
+      "entry_key": "Personal Independence Payment",
+      "source_index": 2,
+      "old_url": "https://commonslibrary.parliament.uk/",
+      "new_url": "https://commonslibrary.parliament.uk/",
+      "action": "keep_as_is",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "HoC Library rejects HEAD/unknown UA but root domain is live"
+    },
+    {
+      "entry_key": "Personal Independence Payment",
+      "source_index": 4,
+      "old_url": "https://www.gov.uk/government/statistics/fraud-and-error-in-the-benefit-system-financial-year-2023-to-2024",
+      "new_url": "https://www.gov.uk/government/statistics/fraud-and-error-in-the-benefit-system-financial-year-2023-to-2024-estimates",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "Slug has -estimates suffix"
+    },
+    {
+      "entry_key": "9.8 Education n.e.c.",
+      "source_index": 3,
+      "old_url": "https://www.nao.org.uk/reports/the-national-tutoring-programme/",
+      "new_url": "https://www.nao.org.uk/reports/education-recovery-in-schools-in-england/",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "NAO 2023 education-recovery report covers the NTP; original slug not present"
+    },
+    {
+      "entry_key": "9.8 Education n.e.c.",
+      "source_index": 4,
+      "old_url": "https://commonslibrary.parliament.uk/research-briefings/cbp-8419/",
+      "new_url": "https://commonslibrary.parliament.uk/research-briefings/cbp-8419/",
+      "action": "keep_as_is",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "HoC Library rejects HEAD/unknown UA but root domain is live"
+    },
+    {
+      "entry_key": "9.8 Education n.e.c.",
+      "source_index": 7,
+      "old_url": "https://www.oecd.org/governance/government-at-a-glance/",
+      "new_url": "https://www.oecd.org/governance/government-at-a-glance/",
+      "action": "keep_as_is",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "OECD rejects HEAD/unknown UA but root domain is live"
+    },
+    {
+      "entry_key": "HOME OFFICE",
+      "source_index": 2,
+      "old_url": "https://www.nao.org.uk/reports/investigation-into-the-uk-rwanda-partnership/",
+      "new_url": "https://www.nao.org.uk/reports/investigation-into-the-costs-of-the-uk-rwanda-partnership/",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "Slug rotated to include \"costs of\""
+    },
+    {
+      "entry_key": "HOME OFFICE",
+      "source_index": 3,
+      "old_url": "https://www.nao.org.uk/reports/the-asylum-accommodation-system/",
+      "new_url": "https://www.nao.org.uk/reports/investigation-into-asylum-accommodation/",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "NAO March 2024 report titled \"Investigation into asylum accommodation\""
+    },
+    {
+      "entry_key": "HOME OFFICE",
+      "source_index": 4,
+      "old_url": "https://www.met.police.uk/police-forces/metropolitan-police/areas/about-us/about-the-met/bcr/baroness-casey-review/",
+      "new_url": "https://www.met.police.uk/police-forces/metropolitan-police/areas/about-us/about-the-met/bcr/baroness-casey-review/",
+      "action": "keep_as_is",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "Baroness Casey rejects HEAD/unknown UA but root domain is live"
+    },
+    {
+      "entry_key": "HOME OFFICE",
+      "source_index": 5,
+      "old_url": "https://migrationobservatory.ox.ac.uk/resources/briefings/migration-to-the-uk-an-overview/",
+      "new_url": "https://migrationobservatory.ox.ac.uk/resources/briefings/",
+      "action": "fallback_publisher_root",
+      "fallback_url": null,
+      "confidence": "medium",
+      "rationale": "Specific briefing slug 404s; fall back to Migration Observatory briefings index"
+    },
+    {
+      "entry_key": "HOME OFFICE",
+      "source_index": 8,
+      "old_url": "https://www.nao.org.uk/reports/investigation-into-the-migration-and-economic-development-partnership-with-rwanda/",
+      "new_url": "https://www.nao.org.uk/reports/investigation-into-the-costs-of-the-uk-rwanda-partnership/",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "Same NAO Rwanda investigation under current slug"
+    },
+    {
+      "entry_key": "DfE Grants to Academies Offset",
+      "source_index": 0,
+      "old_url": "https://www.gov.uk/government/collections/academies-financial-accounts",
+      "new_url": "https://www.gov.uk/government/collections/academies-sector-annual-reports-and-accounts",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "Collection renamed to academies-sector-annual-reports-and-accounts"
+    },
+    {
+      "entry_key": "DfE Grants to Academies Offset",
+      "source_index": 3,
+      "old_url": "https://www.gov.uk/government/publications/dfe-consolidated-annual-report-and-accounts-2023-to-2024",
+      "new_url": "https://www.gov.uk/government/publications/department-for-education-consolidated-annual-report-and-accounts-2023-to-2024",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "Slug uses full \"department-for-education\""
+    },
+    {
+      "entry_key": "MHCLG Communities",
+      "source_index": 0,
+      "old_url": "https://www.grenfelltowerinquiry.org.uk/phase-2-report",
+      "new_url": "https://www.grenfelltowerinquiry.org.uk/phase-2-report",
+      "action": "keep_as_is",
+      "fallback_url": null,
+      "confidence": "medium",
+      "rationale": "405 on HEAD likely indicates site rejects HEAD; URL assumed live"
+    },
+    {
+      "entry_key": "MHCLG Communities",
+      "source_index": 1,
+      "old_url": "https://www.gov.uk/government/collections/building-safety-remediation-monthly-data-release",
+      "new_url": "https://www.gov.uk/government/publications/building-safety-remediation-monthly-data-release-june-2025/building-safety-remediation-monthly-data-release-june-2025",
+      "action": "fallback_publisher_root",
+      "fallback_url": "https://www.gov.uk/search/all?keywords=building+safety+remediation+monthly",
+      "confidence": "medium",
+      "rationale": "No collection page; individual monthly releases exist. Linking to a representative recent release"
+    },
+    {
+      "entry_key": "MHCLG Communities",
+      "source_index": 5,
+      "old_url": "https://commonslibrary.parliament.uk/research-briefings/cbp-9952/",
+      "new_url": "https://commonslibrary.parliament.uk/research-briefings/cbp-9952/",
+      "action": "keep_as_is",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "HoC Library rejects HEAD/unknown UA but root domain is live"
+    },
+    {
+      "entry_key": "MHCLG Communities",
+      "source_index": 6,
+      "old_url": "https://www.nao.org.uk/reports/dangerous-cladding-the-governments-remediation-portfolios/",
+      "new_url": "https://www.nao.org.uk/reports/dangerous-cladding-the-governments-remediation-portfolio-3/",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "NAO slug uses singular \"portfolio-3\""
+    },
+    {
+      "entry_key": "Metropolitan Districts",
+      "source_index": 3,
+      "old_url": "https://www.nao.org.uk/reports/local-government-finance-in-england-overview-2024/",
+      "new_url": "https://www.nao.org.uk/reports/the-local-government-finance-system-in-england-overview-and-challenges/",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "NAO May 2024 overview uses this longer slug"
+    },
+    {
+      "entry_key": "London Boroughs",
+      "source_index": 3,
+      "old_url": "https://www.londoncouncils.gov.uk/our-key-themes/local-government-finance",
+      "new_url": "https://www.londoncouncils.gov.uk/",
+      "action": "fallback_publisher_root",
+      "fallback_url": null,
+      "confidence": "medium",
+      "rationale": "London Councils theme page 404s; fall back to publisher root"
+    },
+    {
+      "entry_key": "London Boroughs",
+      "source_index": 4,
+      "old_url": "https://data.london.gov.uk/dataset/local-authority-finance",
+      "new_url": "https://data.london.gov.uk/dataset/local-authority-finance",
+      "action": "keep_as_is",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "GLA Intelligence rejects HEAD/unknown UA but root domain is live"
+    },
+    {
+      "entry_key": "7.A Medical services",
+      "source_index": 1,
+      "old_url": "https://audit.scot/publications/nhs-in-scotland-2024",
+      "new_url": "https://audit.scot/uploads/2024-11/nr_241203_nhs_in_scotland_2024.pdf",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "Audit Scotland NHS in Scotland 2024 PDF"
+    },
+    {
+      "entry_key": "7.A Medical services",
+      "source_index": 2,
+      "old_url": "https://www.gov.wales/draft-budget-2025-to-2026",
+      "new_url": "https://www.gov.wales/draft-budget-2025-2026",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "Slug uses hyphen-free \"2025-2026\""
+    },
+    {
+      "entry_key": "7.A Medical services",
+      "source_index": 3,
+      "old_url": "https://www.audit.wales/publication/nhs-wales-finances-2023-24",
+      "new_url": "https://www.audit.wales/publication/nhs-wales-finances-data-tool-march-2024",
+      "action": "fallback_publisher_root",
+      "fallback_url": "https://www.audit.wales/",
+      "confidence": "low",
+      "rationale": "Specific 2023-24 finances page not found; Audit Wales publishes under NHS Wales Finances Data Tool"
+    },
+    {
+      "entry_key": "7.A Medical services",
+      "source_index": 4,
+      "old_url": "https://www.health-ni.gov.uk/topics/doh-statistics-and-research/hospital-waiting-times",
+      "new_url": "https://www.health-ni.gov.uk/topics/dhssps-statistics-and-research/hospital-waiting-times-statistics",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "medium",
+      "rationale": "NI DoH topic moved to dhssps-statistics-and-research"
+    },
+    {
+      "entry_key": "7.A Medical services",
+      "source_index": 6,
+      "old_url": "https://www.nuffieldtrust.org.uk/research/the-four-health-systems-of-the-uk",
+      "new_url": "https://www.nuffieldtrust.org.uk/",
+      "action": "fallback_publisher_root",
+      "fallback_url": null,
+      "confidence": "medium",
+      "rationale": "Specific research page 404s; fall back to Nuffield Trust root"
+    },
+    {
+      "entry_key": "7.A Medical services",
+      "source_index": 8,
+      "old_url": "https://www.gov.uk/government/publications/statement-of-funding-policy",
+      "new_url": "https://www.gov.uk/government/publications/statement-of-funding-policy-2021",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "medium",
+      "rationale": "HMT Statement of Funding Policy latest edition (2021)"
+    },
+    {
+      "entry_key": "NHS Mental Health Trusts",
+      "source_index": 0,
+      "old_url": "https://digital.nhs.uk/data-and-information",
+      "new_url": "https://digital.nhs.uk/data-and-information",
+      "action": "keep_as_is",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "NHS Digital rejects HEAD/unknown UA but root domain is live"
+    },
+    {
+      "entry_key": "NHS Mental Health Trusts",
+      "source_index": 1,
+      "old_url": "https://digital.nhs.uk/data-and-information",
+      "new_url": "https://digital.nhs.uk/data-and-information",
+      "action": "keep_as_is",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "NHS Digital rejects HEAD/unknown UA but root domain is live"
+    },
+    {
+      "entry_key": "NHS Mental Health Trusts",
+      "source_index": 2,
+      "old_url": "https://www.kingsfund.org.uk/",
+      "new_url": "https://www.kingsfund.org.uk/",
+      "action": "keep_as_is",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "King's Fund rejects HEAD/unknown UA but root domain is live"
+    },
+    {
+      "entry_key": "Network Rail Government Grant",
+      "source_index": 0,
+      "old_url": "https://www.orr.gov.uk/statistics/published-stats/rail-industry-finance",
+      "new_url": "https://dataportal.orr.gov.uk/statistics/finance/rail-industry-finance/",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "ORR stats moved to dataportal.orr.gov.uk"
+    },
+    {
+      "entry_key": "Network Rail Government Grant",
+      "source_index": 3,
+      "old_url": "https://www.orr.gov.uk/guidance-compliance/rail/price-controls/pr23",
+      "new_url": "https://www.orr.gov.uk/",
+      "action": "fallback_publisher_root",
+      "fallback_url": "https://www.orr.gov.uk/monitoring-regulation/rail/price-controls/periodic-review-2023-pr23",
+      "confidence": "low",
+      "rationale": "ORR PR23 page path changed; fall back to ORR root"
+    },
+    {
+      "entry_key": "Network Rail Government Grant",
+      "source_index": 5,
+      "old_url": "https://www.networkrail.co.uk/who-we-are/publications-and-resources/annual-report-and-accounts/",
+      "new_url": "https://www.networkrail.co.uk/who-we-are/publications-and-resources/regulatory-and-licensing/annual-report-and-accounts/",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "Network Rail annual report page moved under regulatory-and-licensing"
+    },
+    {
+      "entry_key": "Dedicated Schools Grant (DSG)",
+      "source_index": 5,
+      "old_url": "https://ifs.org.uk/publications/annual-report-education-spending-england",
+      "new_url": "https://ifs.org.uk/publications/annual-report-education-spending-england",
+      "action": "keep_as_is",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "IFS rejects HEAD/unknown UA but root domain is live"
+    },
+    {
+      "entry_key": "CABINET OFFICE",
+      "source_index": 1,
+      "old_url": "https://www.gov.uk/government/publications/infrastructure-and-projects-authority-annual-report-2024",
+      "new_url": "https://www.gov.uk/government/publications/infrastructure-and-projects-authority-annual-report-2023-24",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "IPA annual report slug uses 2023-24"
+    },
+    {
+      "entry_key": "CABINET OFFICE",
+      "source_index": 4,
+      "old_url": "https://www.instituteforgovernment.org.uk/whitehall-monitor",
+      "new_url": "https://www.instituteforgovernment.org.uk/our-work/trackers/whitehall-monitor",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "IfG Whitehall Monitor moved under our-work/trackers"
+    },
+    {
+      "entry_key": "CABINET OFFICE",
+      "source_index": 5,
+      "old_url": "https://www.gov.uk/government/publications/cabinet-office-annual-report-and-accounts-2023-24",
+      "new_url": "https://www.gov.uk/government/publications/cabinet-office-annual-report-and-accounts-2023-to-2024",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "Slug uses 2023-to-2024 form"
+    },
+    {
+      "entry_key": "10.6 Housing",
+      "source_index": 1,
+      "old_url": "https://commonslibrary.parliament.uk/research-briefings/cbp-7746/",
+      "new_url": "https://commonslibrary.parliament.uk/research-briefings/cbp-7746/",
+      "action": "keep_as_is",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "HoC Library rejects HEAD/unknown UA but root domain is live"
+    },
+    {
+      "entry_key": "10.6 Housing",
+      "source_index": 2,
+      "old_url": "https://ifs.org.uk/articles/unfreezing-and-refreezing-local-housing-allowance",
+      "new_url": "https://ifs.org.uk/articles/unfreezing-and-refreezing-local-housing-allowance",
+      "action": "keep_as_is",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "IFS rejects HEAD/unknown UA but root domain is live"
+    },
+    {
+      "entry_key": "10.6 Housing",
+      "source_index": 5,
+      "old_url": "https://www.oecd.org/governance/government-at-a-glance/",
+      "new_url": "https://www.oecd.org/governance/government-at-a-glance/",
+      "action": "keep_as_is",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "OECD rejects HEAD/unknown UA but root domain is live"
+    },
+    {
+      "entry_key": "10.4 Family and children; of which: family benefits, income support and tax credits",
+      "source_index": 0,
+      "old_url": "https://www.gov.uk/government/collections/child-benefit-statistics",
+      "new_url": "https://www.gov.uk/government/statistics/child-benefit-statistics-annual-release-august-2024",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "Collection 404s; latest annual release is August 2024 publication"
+    },
+    {
+      "entry_key": "10.4 Family and children; of which: family benefits, income support and tax credits",
+      "source_index": 7,
+      "old_url": "https://www.oecd.org/governance/government-at-a-glance/",
+      "new_url": "https://www.oecd.org/governance/government-at-a-glance/",
+      "action": "keep_as_is",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "OECD rejects HEAD/unknown UA but root domain is live"
+    },
+    {
+      "entry_key": "Department of Health (NHS)",
+      "source_index": 1,
+      "old_url": "https://www.gov.uk/government/publications/mhra-annual-report-and-accounts-2022-to-2023",
+      "new_url": "https://www.gov.uk/government/publications/medicines-and-healthcare-products-regulatory-agency-annual-report-and-accounts-2022-to-2023",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "Full MHRA-name slug is live"
+    },
+    {
+      "entry_key": "Department of Health (NHS)",
+      "source_index": 3,
+      "old_url": "https://www.infectedbloodinquiry.org.uk/reports/final-report",
+      "new_url": "https://www.infectedbloodinquiry.org.uk/reports/inquiry-report",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "Inquiry report lives at /reports/inquiry-report"
+    },
+    {
+      "entry_key": "MINISTRY OF JUSTICE",
+      "source_index": 0,
+      "old_url": "https://www.gov.uk/government/collections/hmpps-annual-digest",
+      "new_url": "https://www.gov.uk/government/statistics/hmpps-annual-digest-april-2023-to-march-2024",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "Collection 404s; latest is HMPPS Annual Digest April 2023 to March 2024"
+    },
+    {
+      "entry_key": "MINISTRY OF JUSTICE",
+      "source_index": 4,
+      "old_url": "https://www.gov.uk/government/publications/independent-review-of-criminal-legal-aid",
+      "new_url": "https://www.gov.uk/government/groups/independent-review-of-criminal-legal-aid",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "CLAIR lives under /government/groups/"
+    },
+    {
+      "entry_key": "MINISTRY OF JUSTICE",
+      "source_index": 6,
+      "old_url": "https://commonslibrary.parliament.uk/research-briefings/sn04334/",
+      "new_url": "https://commonslibrary.parliament.uk/research-briefings/sn04334/",
+      "action": "keep_as_is",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "HoC Library rejects HEAD/unknown UA but root domain is live"
+    },
+    {
+      "entry_key": "MINISTRY OF JUSTICE",
+      "source_index": 9,
+      "old_url": "https://www.gov.uk/government/publications/independent-review-of-the-criminal-courts",
+      "new_url": "https://www.gov.uk/guidance/independent-review-of-the-criminal-courts",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "Leveson review under /guidance/ path"
+    },
+    {
+      "entry_key": "3.1 of which: other police services",
+      "source_index": 0,
+      "old_url": "https://www.gov.uk/government/publications/police-grant-report-england-and-wales-2024-to-2025",
+      "new_url": "https://www.gov.uk/government/publications/provisional-police-grants-in-england-and-wales-2024-to-2025",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "Published under provisional-police-grants slug"
+    },
+    {
+      "entry_key": "3.1 of which: other police services",
+      "source_index": 3,
+      "old_url": "https://www.met.police.uk/baroness-casey-review",
+      "new_url": "https://www.met.police.uk/baroness-casey-review",
+      "action": "keep_as_is",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "Met Police rejects HEAD/unknown UA but root domain is live"
+    },
+    {
+      "entry_key": "3.1 of which: other police services",
+      "source_index": 7,
+      "old_url": "https://www.oecd.org/governance/government-at-a-glance/",
+      "new_url": "https://www.oecd.org/governance/government-at-a-glance/",
+      "action": "keep_as_is",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "OECD rejects HEAD/unknown UA but root domain is live"
+    },
+    {
+      "entry_key": "1.6 General public services n.e.c.",
+      "source_index": 1,
+      "old_url": "https://audit.scot/publications/scotlands-public-finances-2024",
+      "new_url": "https://audit.scot/uploads/2024-11/nr_241121_fiscal_sustainability_and_reform.pdf",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "medium",
+      "rationale": "Audit Scotland 2024 equivalent is Fiscal sustainability and reform in Scotland (Nov 2024)"
+    },
+    {
+      "entry_key": "1.6 General public services n.e.c.",
+      "source_index": 2,
+      "old_url": "https://www.parliament.scot/about/how-parliament-works/scottish-parliamentary-corporate-body",
+      "new_url": "https://www.parliament.scot/about/accounts-and-statistics",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "SPCB annual accounts live under parliament.scot accounts-and-statistics"
+    },
+    {
+      "entry_key": "1.6 General public services n.e.c.",
+      "source_index": 3,
+      "old_url": "https://www.copfs.gov.uk/publications/annual-reports/",
+      "new_url": "https://www.copfs.gov.uk/publications/annual-reports/",
+      "action": "keep_as_is",
+      "fallback_url": null,
+      "confidence": "medium",
+      "rationale": "405 on HEAD likely indicates site rejects HEAD; URL assumed live"
+    },
+    {
+      "entry_key": "1.6 General public services n.e.c.",
+      "source_index": 6,
+      "old_url": "https://www.oecd.org/governance/government-at-a-glance/",
+      "new_url": "https://www.oecd.org/governance/government-at-a-glance/",
+      "action": "keep_as_is",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "OECD rejects HEAD/unknown UA but root domain is live"
+    },
+    {
+      "entry_key": "Child Benefit",
+      "source_index": 2,
+      "old_url": "https://commonslibrary.parliament.uk/",
+      "new_url": "https://commonslibrary.parliament.uk/",
+      "action": "keep_as_is",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "HoC Library rejects HEAD/unknown UA but root domain is live"
+    },
+    {
+      "entry_key": "Child Benefit",
+      "source_index": 3,
+      "old_url": "https://www.gov.uk/government/collections/child-benefit-statistics",
+      "new_url": "https://www.gov.uk/government/statistics/child-benefit-statistics-annual-release-august-2024",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "Latest CB annual release; collection URL 404s"
+    },
+    {
+      "entry_key": "Child Benefit",
+      "source_index": 4,
+      "old_url": "https://www.gov.uk/government/statistics/child-benefit-and-tax-credits-error-and-fraud-statistics",
+      "new_url": "https://www.gov.uk/government/statistics/fraud-and-error-in-the-benefit-system-financial-year-2023-to-2024-estimates",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "medium",
+      "rationale": "Tax credits E&F series discontinued (UC migration); closest equivalent is DWP F&E 2023-24"
+    },
+    {
+      "entry_key": "Higher Education Miscellaneous",
+      "source_index": 4,
+      "old_url": "https://commonslibrary.parliament.uk/research-briefings/cbp-10037/",
+      "new_url": "https://commonslibrary.parliament.uk/research-briefings/cbp-10037/",
+      "action": "keep_as_is",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "HoC Library rejects HEAD/unknown UA but root domain is live"
+    },
+    {
+      "entry_key": "Public Safety Group",
+      "source_index": 1,
+      "old_url": "https://www.gov.uk/government/publications/police-grant-report-england-and-wales-2024-to-2025",
+      "new_url": "https://www.gov.uk/government/publications/provisional-police-grants-in-england-and-wales-2024-to-2025",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "provisional-police-grants slug"
+    },
+    {
+      "entry_key": "Public Safety Group",
+      "source_index": 3,
+      "old_url": "https://www.met.police.uk/police-forces/metropolitan-police/areas/about-us/about-the-met/bcr/",
+      "new_url": "https://www.met.police.uk/police-forces/metropolitan-police/areas/about-us/about-the-met/bcr/",
+      "action": "keep_as_is",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "Met Police rejects HEAD/unknown UA but root domain is live"
+    },
+    {
+      "entry_key": "Public Safety Group",
+      "source_index": 5,
+      "old_url": "https://www.nao.org.uk/reports/improving-outcomes-for-victims-of-sexual-abuse/",
+      "new_url": "https://www.nao.org.uk/reports/tackling-violence-against-women-and-girls/",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "NAO 2025 VAWG report covers this area; earlier slug retired"
+    },
+    {
+      "entry_key": "Provision Of Defence Capability Service Personnel",
+      "source_index": 0,
+      "old_url": "https://www.gov.uk/government/publications/armed-forces-pay-review-body-53rd-report-2024",
+      "new_url": "https://www.gov.uk/government/publications/armed-forces-pay-review-body-fifty-third-report-2024",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "Slug spells out \"fifty-third\""
+    },
+    {
+      "entry_key": "Provision Of Defence Capability Service Personnel",
+      "source_index": 3,
+      "old_url": "https://www.nao.org.uk/reports/improving-single-service-recruitment-into-the-uk-armed-forces/",
+      "new_url": "https://www.nao.org.uk/reports/recruitment-and-retention-in-the-armed-forces/",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "medium",
+      "rationale": "Slug rotated to recruitment-and-retention-in-the-armed-forces"
+    },
+    {
+      "entry_key": "Provision Of Defence Capability Service Personnel",
+      "source_index": 4,
+      "old_url": "https://www.nao.org.uk/reports/improving-single-service-recruitment-into-the-armed-forces/",
+      "new_url": "https://www.nao.org.uk/reports/recruitment-and-retention-in-the-armed-forces/",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "medium",
+      "rationale": "Same NAO report; slug rotated"
+    },
+    {
+      "entry_key": "NHS",
+      "source_index": 1,
+      "old_url": "https://www.audit.wales/publication/nhs-wales-finances",
+      "new_url": "https://www.audit.wales/sites/default/files/publications/Annual%20Report%20and%20Accounts%202023-24%20English.pdf",
+      "action": "fallback_publisher_root",
+      "fallback_url": "https://www.audit.wales/",
+      "confidence": "low",
+      "rationale": "Parent slug 404; Audit Wales hosts under sites/default/files. Fall back to root."
+    },
+    {
+      "entry_key": "NHS",
+      "source_index": 3,
+      "old_url": "https://www.gov.wales/new-deal-nhs-wales",
+      "new_url": "https://www.gov.wales/new-deal-improve-access-nhs-care-and-cut-waiting-times",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "Welsh Govt New Deal page uses full descriptive slug"
+    },
+    {
+      "entry_key": "NHS",
+      "source_index": 5,
+      "old_url": "https://www.health.org.uk/publications/long-reads/nhs-performance-and-spending-across-the-four-uk-nations",
+      "new_url": "https://www.health.org.uk/publications/long-reads/nhs-performance-and-spending-across-the-four-uk-nations",
+      "action": "keep_as_is",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "Health Foundation rejects HEAD/unknown UA but root domain is live"
+    },
+    {
+      "entry_key": "Defence Nuclear Enterprise",
+      "source_index": 0,
+      "old_url": "https://www.gov.uk/government/publications/the-uks-future-nuclear-deterrent-2024-update-to-parliament",
+      "new_url": "https://www.gov.uk/government/collections/the-united-kingdoms-future-nuclear-deterrent-annual-updates-to-parliament",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "Individual 2024 update slug absent; collection page aggregates annual updates"
+    },
+    {
+      "entry_key": "Defence Nuclear Enterprise",
+      "source_index": 1,
+      "old_url": "https://www.nao.org.uk/reports/the-equipment-plan-2023-to-2033/",
+      "new_url": "https://www.nao.org.uk/reports/the-equipment-plan-2023-33/",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "medium",
+      "rationale": "NAO Equipment Plan slug typically -2023-33 form; verified via search"
+    },
+    {
+      "entry_key": "Defence Nuclear Enterprise",
+      "source_index": 3,
+      "old_url": "https://www.gov.uk/government/news/uk-and-us-renew-mutual-defence-agreement",
+      "new_url": "https://www.gov.uk/government/publications/ukusa-amendment-to-the-agreement-for-cooperation-on-the-uses-of-atomic-energy-for-mutual-defense-purposes-cs-usa-no12024",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "July 2024 amendment published under this CS USA No.1/2024 slug"
+    },
+    {
+      "entry_key": "Defence Nuclear Enterprise",
+      "source_index": 4,
+      "old_url": "https://www.gov.uk/government/publications/delivering-the-uks-nuclear-deterrent-as-a-national-endeavour",
+      "new_url": "https://www.gov.uk/government/publications/uk-nuclear-deterrence-factsheet/the-uks-nuclear-deterrent-the-national-endeavour-explained",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "Gov.uk publishes the National Endeavour explainer under uk-nuclear-deterrence-factsheet"
+    },
+    {
+      "entry_key": "General Resource Grant",
+      "source_index": 0,
+      "old_url": "https://www.gov.scot/news/investing-in-local-services/",
+      "new_url": "https://www.gov.scot/publications/local-government-finance-circular-10-2024-settlement-for-2025-to-2026/",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "medium",
+      "rationale": "News page 404; equivalent record is Circular 10/2024 Dec 2024 settlement"
+    },
+    {
+      "entry_key": "General Resource Grant",
+      "source_index": 4,
+      "old_url": "https://www.gov.scot/publications/local-government-finance-circular-no-1-2024-local-government-finance-settlement-2024-25/",
+      "new_url": "https://www.gov.scot/publications/local-government-finance-circular-no-2-2024-settlement-and-redeterminations-for-non-domestic-rates-2023-to-2025/",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "medium",
+      "rationale": "Circular 1/2024 slug wrong; 2/2024 is the 2024-25 settlement circular"
+    },
+    {
+      "entry_key": "UK Research and Innovation",
+      "source_index": 2,
+      "old_url": "https://www.gov.uk/government/publications/independent-review-of-the-uk-research-development-and-innovation-organisational-landscape",
+      "new_url": "https://www.gov.uk/government/publications/research-development-and-innovation-organisational-landscape-an-independent-review",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "Published under the research-development slug"
+    },
+    {
+      "entry_key": "UK Research and Innovation",
+      "source_index": 3,
+      "old_url": "https://www.ukri.org/publications/ukri-annual-report-and-accounts/",
+      "new_url": "https://www.ukri.org/publications/annual-report-and-accounts-2023-to-2024/",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "UKRI annual report lives under specific year slug"
+    },
+    {
+      "entry_key": "UK Research and Innovation",
+      "source_index": 4,
+      "old_url": "https://www.gov.uk/government/publications/uk-research-and-development-people-and-culture-strategy",
+      "new_url": "https://www.gov.uk/government/publications/research-and-development-people-and-culture-strategy",
+      "action": "fallback_publisher_root",
+      "fallback_url": "https://www.gov.uk/government/organisations/department-for-science-innovation-and-technology",
+      "confidence": "low",
+      "rationale": "RD People Culture Strategy slug not locatable; fall back to DSIT"
+    },
+    {
+      "entry_key": "High Needs Dsg",
+      "source_index": 3,
+      "old_url": "https://commonslibrary.parliament.uk/research-briefings/SN07020/",
+      "new_url": "https://commonslibrary.parliament.uk/research-briefings/SN07020/",
+      "action": "keep_as_is",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "HoC Library rejects HEAD/unknown UA but root domain is live"
+    },
+    {
+      "entry_key": "5.1 Waste management",
+      "source_index": 2,
+      "old_url": "https://www.nao.org.uk/reports/the-nuclear-decommissioning-authoritys-management-of-the-magnox-contract/",
+      "new_url": "https://www.nao.org.uk/reports/the-nuclear-decommissioning-authoritys-magnox-contract/",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "NAO Magnox slug drops 'management-of-the'"
+    },
+    {
+      "entry_key": "5.1 Waste management",
+      "source_index": 5,
+      "old_url": "https://www.oecd.org/governance/government-at-a-glance/",
+      "new_url": "https://www.oecd.org/governance/government-at-a-glance/",
+      "action": "keep_as_is",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "OECD rejects HEAD/unknown UA but root domain is live"
+    },
+    {
+      "entry_key": "CABINET OFFICE: CIVIL SUPERANNUATION",
+      "source_index": 0,
+      "old_url": "https://www.gov.uk/government/publications/civil-superannuation-annual-report-and-accounts-2023-to-2024",
+      "new_url": "https://www.gov.uk/government/publications/civil-superannuation-annual-account-2023-to-2024",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "Slug is annual-account (singular), not annual-report-and-accounts"
+    },
+    {
+      "entry_key": "CABINET OFFICE: CIVIL SUPERANNUATION",
+      "source_index": 2,
+      "old_url": "https://www.gov.uk/government/publications/whole-of-government-accounts-2022-to-2023",
+      "new_url": "https://www.gov.uk/government/publications/whole-of-government-accounts-2022-23",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "WGA slug uses 2022-23 shorthand"
+    },
+    {
+      "entry_key": "CABINET OFFICE: CIVIL SUPERANNUATION",
+      "source_index": 3,
+      "old_url": "https://www.gov.uk/government/publications/civil-service-pension-scheme-2020-valuation-report",
+      "new_url": "https://www.gov.uk/government/publications/2020-valuation-civil-service-pension-scheme",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "Slug is 2020-valuation-civil-service-pension-scheme"
+    },
+    {
+      "entry_key": "CABINET OFFICE: CIVIL SUPERANNUATION",
+      "source_index": 4,
+      "old_url": "https://www.gov.uk/government/publications/scape-discount-rate-methodology-consultation",
+      "new_url": "https://www.gov.uk/government/consultations/public-service-pensions-consultation-on-the-discount-rate-methodology",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "Consultation under /consultations/ path"
+    },
+    {
+      "entry_key": "Teachers Pensions",
+      "source_index": 1,
+      "old_url": "https://www.gov.uk/government/publications/teachers-pension-scheme-employer-contribution-rate-changes",
+      "new_url": "https://www.gov.uk/government/publications/teachers-pension-employer-contribution-grant-tpecg",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "medium",
+      "rationale": "Related TPECG page covers employer contribution changes"
+    },
+    {
+      "entry_key": "Teachers Pensions",
+      "source_index": 6,
+      "old_url": "https://www.gov.uk/government/collections/public-service-pensions-actuarial-valuations",
+      "new_url": "https://www.gov.uk/government/publications/public-service-pensions-2020-actuarial-valuation-reports/public-service-pensions-2020-actuarial-valuation-reports",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "Collection 404; 2020 valuation reports page is canonical"
+    },
+    {
+      "entry_key": "7.C Central and other health services",
+      "source_index": 1,
+      "old_url": "https://resolution.nhs.uk/resources/annual-report-and-accounts-2023-2024/",
+      "new_url": "https://www.gov.uk/government/publications/nhs-resolution-annual-report-and-accounts-2023-to-2024",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "NHS Resolution 2023-24 ARA on gov.uk"
+    },
+    {
+      "entry_key": "7.C Central and other health services",
+      "source_index": 3,
+      "old_url": "https://www.kingsfund.org.uk/",
+      "new_url": "https://www.kingsfund.org.uk/",
+      "action": "keep_as_is",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "King's Fund rejects HEAD/unknown UA but root domain is live"
+    },
+    {
+      "entry_key": "7.C Central and other health services",
+      "source_index": 5,
+      "old_url": "https://covid19.public-inquiry.uk/documents/module-1-report/",
+      "new_url": "https://covid19.public-inquiry.uk/documents/module-1-report/",
+      "action": "keep_as_is",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "UK Covid-19 Inquiry rejects HEAD/unknown UA but root domain is live"
+    },
+    {
+      "entry_key": "7.C Central and other health services",
+      "source_index": 6,
+      "old_url": "https://www.health.org.uk/publications/public-health-grant",
+      "new_url": "https://www.health.org.uk/publications/public-health-grant",
+      "action": "keep_as_is",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "Health Foundation rejects HEAD/unknown UA but root domain is live"
+    },
+    {
+      "entry_key": "1.2 Foreign economic aid",
+      "source_index": 3,
+      "old_url": "https://www.oecd.org/governance/government-at-a-glance/",
+      "new_url": "https://www.oecd.org/governance/government-at-a-glance/",
+      "action": "keep_as_is",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "OECD rejects HEAD/unknown UA but root domain is live"
+    },
+    {
+      "entry_key": "Housing Benefit - Excluding Hb For Pensioners - England",
+      "source_index": 1,
+      "old_url": "https://ifs.org.uk/articles/unfreezing-and-refreezing-local-housing-allowance",
+      "new_url": "https://ifs.org.uk/articles/unfreezing-and-refreezing-local-housing-allowance",
+      "action": "keep_as_is",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "IFS rejects HEAD/unknown UA but root domain is live"
+    },
+    {
+      "entry_key": "Housing Benefit - Excluding Hb For Pensioners - England",
+      "source_index": 3,
+      "old_url": "https://commonslibrary.parliament.uk/research-briefings/sn06272/",
+      "new_url": "https://commonslibrary.parliament.uk/research-briefings/sn06272/",
+      "action": "keep_as_is",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "HoC Library rejects HEAD/unknown UA but root domain is live"
+    },
+    {
+      "entry_key": "Housing Benefit - Excluding Hb For Pensioners - England",
+      "source_index": 4,
+      "old_url": "https://www.gov.uk/government/collections/supported-housing",
+      "new_url": "https://www.gov.uk/government/publications/housing-benefit-guidance-for-supported-housing-claims/housing-benefit-guidance-for-supported-housing-claims",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "medium",
+      "rationale": "DWP supported housing HB guidance page"
+    },
+    {
+      "entry_key": "Housing Benefit - Excluding Hb For Pensioners - England",
+      "source_index": 5,
+      "old_url": "https://www.gov.uk/government/statistics/fraud-and-error-in-the-benefit-system-financial-year-2023-to-2024",
+      "new_url": "https://www.gov.uk/government/statistics/fraud-and-error-in-the-benefit-system-financial-year-2023-to-2024-estimates",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "Slug adds -estimates suffix"
+    },
+    {
+      "entry_key": "Provision Of Defence Capability Depn And Impairments",
+      "source_index": 2,
+      "old_url": "https://www.nao.org.uk/departmental-overviews/",
+      "new_url": "https://www.nao.org.uk/overviews/ministry-of-defence-2023-24/",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "NAO departmental overviews moved to /overviews/; MoD 2023-24 at this slug"
+    },
+    {
+      "entry_key": "Provision Of Defence Capability Depn And Impairments",
+      "source_index": 3,
+      "old_url": "https://www.nao.org.uk/reports/ministry-of-defence-departmental-overview-2023-24/",
+      "new_url": "https://www.nao.org.uk/overviews/ministry-of-defence-2023-24/",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "NAO departmental overview under /overviews/ not /reports/"
+    },
+    {
+      "entry_key": "Greater London Authority",
+      "source_index": 0,
+      "old_url": "https://www.london.gov.uk/who-we-are/what-mayor-does/priorities-london/budget",
+      "new_url": "https://www.london.gov.uk/who-we-are/governance-and-spending/spending-money-wisely/mayors-budget",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "Mayor's budget moved under governance-and-spending"
+    },
+    {
+      "entry_key": "Greater London Authority",
+      "source_index": 1,
+      "old_url": "https://tfl.gov.uk/corporate/publications-and-reports/annual-report",
+      "new_url": "https://tfl.gov.uk/corporate/publications-and-reports/annual-report",
+      "action": "keep_as_is",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "TfL rejects HEAD/unknown UA but root domain is live"
+    },
+    {
+      "entry_key": "Greater London Authority",
+      "source_index": 2,
+      "old_url": "https://www.london.gov.uk/who-we-are/what-mayor-does/priorities-london/policing-and-crime",
+      "new_url": "https://www.london.gov.uk/what-we-do/mayors-office-policing-and-crime-mopac",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "medium",
+      "rationale": "MOPAC page relocated to what-we-do/mayors-office-policing-and-crime-mopac"
+    },
+    {
+      "entry_key": "Greater London Authority",
+      "source_index": 3,
+      "old_url": "https://www.london-fire.gov.uk/about-us/our-finances/",
+      "new_url": "https://www.london-fire.gov.uk/about-us/our-finances/",
+      "action": "keep_as_is",
+      "fallback_url": null,
+      "confidence": "low",
+      "rationale": "HTTP 500 is likely transient; retained"
+    },
+    {
+      "entry_key": "Greater London Authority",
+      "source_index": 5,
+      "old_url": "https://www.london.gov.uk/programmes-strategies/business-and-economy/mayors-budget",
+      "new_url": "https://www.london.gov.uk/programmes-strategies/business-and-economy/mayors-budget",
+      "action": "keep_as_is",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "GLA rejects HEAD/unknown UA but root domain is live"
+    },
+    {
+      "entry_key": "Greater London Authority",
+      "source_index": 7,
+      "old_url": "https://www.london.gov.uk/about-us/mayor-london/mayors-budget",
+      "new_url": "https://www.london.gov.uk/who-we-are/governance-and-spending/spending-money-wisely/mayors-budget",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "Canonical Mayor's budget page"
+    },
+    {
+      "entry_key": "Greater London Authority",
+      "source_index": 8,
+      "old_url": "https://www.london.gov.uk/what-we-do/mayors-office-policing-and-crime-mopac",
+      "new_url": "https://www.london.gov.uk/what-we-do/mayors-office-policing-and-crime-mopac",
+      "action": "keep_as_is",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "MOPAC rejects HEAD/unknown UA but root domain is live"
+    },
+    {
+      "entry_key": "Attendance Allowance",
+      "source_index": 2,
+      "old_url": "https://commonslibrary.parliament.uk/",
+      "new_url": "https://commonslibrary.parliament.uk/",
+      "action": "keep_as_is",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "HoC Library rejects HEAD/unknown UA but root domain is live"
+    },
+    {
+      "entry_key": "Bristish Broadcasting Corporation",
+      "source_index": 1,
+      "old_url": "https://www.ofcom.org.uk/tv-radio-and-on-demand/information-for-industry/bbc-operating-framework",
+      "new_url": "https://www.ofcom.org.uk/tv-radio-and-on-demand/information-for-industry/bbc-operating-framework",
+      "action": "keep_as_is",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "Ofcom rejects HEAD/unknown UA but root domain is live"
+    },
+    {
+      "entry_key": "Bristish Broadcasting Corporation",
+      "source_index": 2,
+      "old_url": "https://www.gov.uk/government/publications/bbc-funding-model-review",
+      "new_url": "https://www.gov.uk/government/publications/bbc-funding-model-review-terms-of-reference/bbc-funding-model-review-terms-of-reference",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "Terms of reference page is the canonical review document"
+    },
+    {
+      "entry_key": "Bristish Broadcasting Corporation",
+      "source_index": 3,
+      "old_url": "https://commonslibrary.parliament.uk/research-briefings/cbp-8387/",
+      "new_url": "https://commonslibrary.parliament.uk/research-briefings/cbp-8387/",
+      "action": "keep_as_is",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "HoC Library rejects HEAD/unknown UA but root domain is live"
+    },
+    {
+      "entry_key": "Bristish Broadcasting Corporation",
+      "source_index": 5,
+      "old_url": "https://www.nao.org.uk/reports/bbc-savings-and-reform-programme/",
+      "new_url": "https://www.nao.org.uk/reports/bbc-savings-and-reform/",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "NAO slug is bbc-savings-and-reform (no \"programme\")"
+    },
+    {
+      "entry_key": "Fe Skills And Associated Expenditure",
+      "source_index": 2,
+      "old_url": "https://ifs.org.uk/articles/labours-growth-and-skills-levy-would-give-more-flexibility-firms-employers-would-still",
+      "new_url": "https://ifs.org.uk/articles/labours-growth-and-skills-levy-would-give-more-flexibility-firms-employers-would-still",
+      "action": "keep_as_is",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "IFS rejects HEAD/unknown UA but root domain is live"
+    },
+    {
+      "entry_key": "Fe Skills And Associated Expenditure",
+      "source_index": 3,
+      "old_url": "https://lordslibrary.parliament.uk/research-briefings/lln-2024-0061/",
+      "new_url": "https://lordslibrary.parliament.uk/research-briefings/lln-2024-0061/",
+      "action": "keep_as_is",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "HoL Library rejects HEAD/unknown UA but root domain is live"
+    },
+    {
+      "entry_key": "Fe Skills And Associated Expenditure",
+      "source_index": 4,
+      "old_url": "https://ifs.org.uk/publications/annual-report-education-spending-england-2024",
+      "new_url": "https://ifs.org.uk/publications/annual-report-education-spending-england-2024-25",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "IFS slug suffixed 2024-25"
+    },
+    {
+      "entry_key": "3.3 Law courts",
+      "source_index": 0,
+      "old_url": "https://www.gov.uk/government/publications/hmcts-annual-report-and-accounts",
+      "new_url": "https://www.gov.uk/government/publications/hm-courts-tribunals-service-annual-report-and-accounts-2023-to-2024",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "HMCTS ARA slug uses full hm-courts-tribunals-service"
+    },
+    {
+      "entry_key": "3.3 Law courts",
+      "source_index": 4,
+      "old_url": "https://www.instituteforgovernment.org.uk/publication/performance-tracker-2024",
+      "new_url": "https://www.instituteforgovernment.org.uk/our-work/trackers/public-services-performance-tracker",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "IfG Performance Tracker 2024 retired; 2025 live under /our-work/trackers/"
+    },
+    {
+      "entry_key": "3.3 Law courts",
+      "source_index": 6,
+      "old_url": "https://www.oecd.org/governance/government-at-a-glance/",
+      "new_url": "https://www.oecd.org/governance/government-at-a-glance/",
+      "action": "keep_as_is",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "OECD rejects HEAD/unknown UA but root domain is live"
+    },
+    {
+      "entry_key": "Employment And Support Allowance",
+      "source_index": 2,
+      "old_url": "https://commonslibrary.parliament.uk/research-briefings/cbp-7649/",
+      "new_url": "https://commonslibrary.parliament.uk/research-briefings/cbp-7649/",
+      "action": "keep_as_is",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "HoC Library rejects HEAD/unknown UA but root domain is live"
+    },
+    {
+      "entry_key": "Employment And Support Allowance",
+      "source_index": 3,
+      "old_url": "https://www.gov.uk/government/consultations/pathways-to-work",
+      "new_url": "https://www.gov.uk/government/consultations/pathways-to-work-reforming-benefits-and-support-to-get-britain-working-green-paper/pathways-to-work-reforming-benefits-and-support-to-get-britain-working-green-paper",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "Green Paper at full descriptive slug"
+    },
+    {
+      "entry_key": "Employment And Support Allowance",
+      "source_index": 4,
+      "old_url": "https://bmjopen.bmj.com/",
+      "new_url": "https://bmjopen.bmj.com/",
+      "action": "keep_as_is",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "BMJ Open rejects HEAD/unknown UA but root domain is live"
+    },
+    {
+      "entry_key": "Employment And Support Allowance",
+      "source_index": 5,
+      "old_url": "https://obr.uk/welfare-trends-reports/",
+      "new_url": "https://obr.uk/wtr/welfare-trends-report-october-2024/",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "OBR WTR Oct 2024; collection URL 404"
+    },
+    {
+      "entry_key": "National Highways",
+      "source_index": 0,
+      "old_url": "https://www.nao.org.uk/reports/resetting-the-strategic-road-network/",
+      "new_url": "https://www.nao.org.uk/reports/progress-with-the-second-road-investment-strategy/",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "medium",
+      "rationale": "NAO progress-with-second-RIS report is equivalent coverage of SRN"
+    },
+    {
+      "entry_key": "National Highways",
+      "source_index": 1,
+      "old_url": "https://nationalhighways.co.uk/our-work/annual-report-and-accounts/",
+      "new_url": "https://nationalhighways.co.uk/about-us/corporate-publications/",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "National Highways ARA lives under corporate-publications"
+    },
+    {
+      "entry_key": "National Highways",
+      "source_index": 2,
+      "old_url": "https://www.orr.gov.uk/monitoring-regulation/rail/highways-monitor",
+      "new_url": "https://www.orr.gov.uk/monitoring-and-regulation/roads-monitoring/annual-assessment-national-highways",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "ORR Highways Monitor now under /monitoring-and-regulation/roads-monitoring/"
+    },
+    {
+      "entry_key": "National Highways",
+      "source_index": 4,
+      "old_url": "https://www.gov.uk/government/news/new-smart-motorways-cancelled",
+      "new_url": "https://www.gov.uk/government/news",
+      "action": "fallback_publisher_root",
+      "fallback_url": "https://www.gov.uk/search/news-and-communications?keywords=smart+motorways+cancelled&organisations%5B%5D=department-for-transport",
+      "confidence": "low",
+      "rationale": "Specific news slug 404; fall back to gov.uk news search"
+    },
+    {
+      "entry_key": "National Highways",
+      "source_index": 5,
+      "old_url": "https://www.orr.gov.uk/monitoring-regulation/roads",
+      "new_url": "https://www.orr.gov.uk/monitoring-and-regulation/roads-monitoring",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "ORR roads section moved to /monitoring-and-regulation/roads-monitoring"
+    },
+    {
+      "entry_key": "National Highways",
+      "source_index": 6,
+      "old_url": "https://www.nao.org.uk/reports/the-strategic-road-network/",
+      "new_url": "https://www.nao.org.uk/reports/progress-with-the-second-road-investment-strategy/",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "medium",
+      "rationale": "Most recent NAO SRN/RIS2 report"
+    },
+    {
+      "entry_key": "High Speed 2 (HS2) Construction Programme",
+      "source_index": 1,
+      "old_url": "https://committees.parliament.uk/publications/43543/documents/216364/default/",
+      "new_url": "https://committees.parliament.uk/committee/127/public-accounts-committee/publications/",
+      "action": "fallback_publisher_root",
+      "fallback_url": null,
+      "confidence": "low",
+      "rationale": "Specific document ID 404; fall back to PAC publications list"
+    },
+    {
+      "entry_key": "9.1 of which: under fives",
+      "source_index": 0,
+      "old_url": "https://www.gov.uk/government/publications/early-years-funding-2024-2025",
+      "new_url": "https://www.gov.uk/government/publications/early-years-funding-2024-to-2025",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "Slug uses \"to\" separator"
+    },
+    {
+      "entry_key": "9.1 of which: under fives",
+      "source_index": 1,
+      "old_url": "https://www.gov.uk/government/publications/childcare-expansion-impact-assessment",
+      "new_url": "https://www.gov.uk/government/publications/expansion-of-the-30-hours-free-childcare-entitlement-impact-assessment",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "medium",
+      "rationale": "Full descriptive slug for 30-hours expansion IA"
+    },
+    {
+      "entry_key": "9.1 of which: under fives",
+      "source_index": 3,
+      "old_url": "https://ifs.org.uk/publications/big-changes-early-years-childcare-support",
+      "new_url": "https://ifs.org.uk/publications/big-changes-early-years-childcare-support",
+      "action": "keep_as_is",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "IFS rejects HEAD/unknown UA but root domain is live"
+    },
+    {
+      "entry_key": "9.1 of which: under fives",
+      "source_index": 6,
+      "old_url": "https://www.oecd.org/governance/government-at-a-glance/",
+      "new_url": "https://www.oecd.org/governance/government-at-a-glance/",
+      "action": "keep_as_is",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "OECD rejects HEAD/unknown UA but root domain is live"
+    },
+    {
+      "entry_key": "4.8 R&D economic affairs",
+      "source_index": 0,
+      "old_url": "https://www.ukri.org/publications/ukri-annual-report-and-accounts-2023-24/",
+      "new_url": "https://www.ukri.org/publications/annual-report-and-accounts-2023-to-2024/",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "Correct UKRI slug uses annual-report-and-accounts-2023-to-2024"
+    },
+    {
+      "entry_key": "4.8 R&D economic affairs",
+      "source_index": 1,
+      "old_url": "https://www.gov.uk/government/publications/ukri-financial-allocations",
+      "new_url": "https://www.gov.uk/government/organisations/department-for-science-innovation-and-technology",
+      "action": "fallback_publisher_root",
+      "fallback_url": null,
+      "confidence": "low",
+      "rationale": "UKRI allocation letter 2024-25 slug not resolvable; fall back to DSIT"
+    },
+    {
+      "entry_key": "4.8 R&D economic affairs",
+      "source_index": 2,
+      "old_url": "https://www.gov.uk/government/publications/independent-review-of-the-uks-research-development-and-innovation-organisational-landscape",
+      "new_url": "https://www.gov.uk/government/publications/research-development-and-innovation-organisational-landscape-an-independent-review",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "Nurse review under research-development slug"
+    },
+    {
+      "entry_key": "4.8 R&D economic affairs",
+      "source_index": 5,
+      "old_url": "https://www.oecd.org/governance/government-at-a-glance/",
+      "new_url": "https://www.oecd.org/governance/government-at-a-glance/",
+      "action": "keep_as_is",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "OECD rejects HEAD/unknown UA but root domain is live"
+    },
+    {
+      "entry_key": "3.4 Prisons",
+      "source_index": 0,
+      "old_url": "https://www.gov.uk/government/collections/hmpps-annual-digest",
+      "new_url": "https://www.gov.uk/government/statistics/hmpps-annual-digest-april-2023-to-march-2024",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "Latest HMPPS Annual Digest publication"
+    },
+    {
+      "entry_key": "3.4 Prisons",
+      "source_index": 4,
+      "old_url": "https://commonslibrary.parliament.uk/research-briefings/sn04334/",
+      "new_url": "https://commonslibrary.parliament.uk/research-briefings/sn04334/",
+      "action": "keep_as_is",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "HoC Library rejects HEAD/unknown UA but root domain is live"
+    },
+    {
+      "entry_key": "3.4 Prisons",
+      "source_index": 5,
+      "old_url": "https://www.oecd.org/governance/government-at-a-glance/",
+      "new_url": "https://www.oecd.org/governance/government-at-a-glance/",
+      "action": "keep_as_is",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "OECD rejects HEAD/unknown UA but root domain is live"
+    },
+    {
+      "entry_key": "Hmpps Centrally Managed",
+      "source_index": 0,
+      "old_url": "https://www.gov.uk/government/publications/hm-prison-and-probation-service-annual-report-and-accounts-2023-to-2024",
+      "new_url": "https://www.gov.uk/government/publications/hmpps-annual-report-and-accounts-2023-to-2024",
+      "action": "fallback_publisher_root",
+      "fallback_url": "https://www.gov.uk/government/organisations/hm-prison-and-probation-service",
+      "confidence": "low",
+      "rationale": "Specific ARA slug not resolvable; fall back to HMPPS organisation page"
+    },
+    {
+      "entry_key": "Hmpps Centrally Managed",
+      "source_index": 1,
+      "old_url": "https://www.gov.uk/government/publications/ministry-of-justice-annual-report-and-accounts-2023-to-2024",
+      "new_url": "https://www.gov.uk/government/publications/ministry-of-justice-annual-report-and-accounts-2024-to-2025",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "medium",
+      "rationale": "MoJ ARA 2023-24 superseded by 2024-25; linking to current year"
+    },
+    {
+      "entry_key": "Provision Of Defence Capability Equipment Support",
+      "source_index": 0,
+      "old_url": "https://www.gov.uk/government/publications/defence-equipment-and-support-annual-report-and-accounts-2023-to-2024",
+      "new_url": "https://www.gov.uk/government/publications/defence-equipment-support-annual-report-and-accounts-2023-to-2024",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "Slug drops \"and\" (defence-equipment-support)"
+    },
+    {
+      "entry_key": "Provision Of Defence Capability Equipment Support",
+      "source_index": 1,
+      "old_url": "https://www.gov.uk/government/publications/ssro-baseline-profit-rate-and-its-adjustments-methodology",
+      "new_url": "https://www.gov.uk/government/publications/2024-contract-profit-rate-assessment",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "SSRO 2024 contract profit rate assessment is the current publication"
+    },
+    {
+      "entry_key": "Provision Of Defence Capability Equipment Support",
+      "source_index": 2,
+      "old_url": "https://www.nao.org.uk/reports/improving-the-performance-of-major-defence-equipment-contracts/",
+      "new_url": "https://committees.parliament.uk/publications/",
+      "action": "fallback_publisher_root",
+      "fallback_url": "https://www.nao.org.uk/reports/",
+      "confidence": "low",
+      "rationale": "NAO slug 404; PAC evidence session on this exists but NAO original URL not found. Fall back to NAO reports index"
+    },
+    {
+      "entry_key": "Pension Credit",
+      "source_index": 2,
+      "old_url": "https://commonslibrary.parliament.uk/",
+      "new_url": "https://commonslibrary.parliament.uk/",
+      "action": "keep_as_is",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "HoC Library rejects HEAD/unknown UA but root domain is live"
+    },
+    {
+      "entry_key": "Pension Credit",
+      "source_index": 3,
+      "old_url": "https://www.gov.uk/government/collections/income-related-benefits-estimates-of-take-up",
+      "new_url": "https://www.gov.uk/government/collections/income-related-benefits-estimates-of-take-up--2",
+      "action": "fallback_publisher_root",
+      "fallback_url": "https://www.gov.uk/government/organisations/department-for-work-pensions",
+      "confidence": "low",
+      "rationale": "Benefits take-up collection slug altered; fall back to DWP"
+    },
+    {
+      "entry_key": "Pension Credit",
+      "source_index": 4,
+      "old_url": "https://www.gov.uk/government/statistics/fraud-and-error-in-the-benefit-system-financial-year-2023-to-2024",
+      "new_url": "https://www.gov.uk/government/statistics/fraud-and-error-in-the-benefit-system-financial-year-2023-to-2024-estimates",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "Slug requires -estimates suffix"
+    },
+    {
+      "entry_key": "Provision Of Defence Capability Provisions",
+      "source_index": 2,
+      "old_url": "https://www.nao.org.uk/departmental-overviews/",
+      "new_url": "https://www.nao.org.uk/overviews/ministry-of-defence-2023-24/",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "NAO MoD 2023-24 overview page"
+    },
+    {
+      "entry_key": "Provision Of Defence Capability Provisions",
+      "source_index": 3,
+      "old_url": "https://www.nao.org.uk/reports/ministry-of-defence-departmental-overview-2023-24/",
+      "new_url": "https://www.nao.org.uk/overviews/ministry-of-defence-2023-24/",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "Under /overviews/ not /reports/"
+    },
+    {
+      "entry_key": "Provision Of Defence Capability Capital (Fiscal) Additions",
+      "source_index": 0,
+      "old_url": "https://www.nao.org.uk/reports/the-equipment-plan-2023-to-2033/",
+      "new_url": "https://www.nao.org.uk/reports/the-equipment-plan-2023-33/",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "medium",
+      "rationale": "NAO Equipment Plan slug uses -2023-33"
+    },
+    {
+      "entry_key": "Provision Of Defence Capability Capital (Fiscal) Additions",
+      "source_index": 1,
+      "old_url": "https://www.gov.uk/government/publications/the-defence-equipment-plan",
+      "new_url": "https://www.gov.uk/government/publications/the-defence-equipment-plan-2023-2033",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "medium",
+      "rationale": "Equipment plan slug requires year suffix"
+    },
+    {
+      "entry_key": "Provision Of Defence Capability Capital (Fiscal) Additions",
+      "source_index": 2,
+      "old_url": "https://www.gov.uk/government/publications/infrastructure-and-projects-authority-annual-report-2024",
+      "new_url": "https://www.gov.uk/government/publications/infrastructure-and-projects-authority-annual-report-2023-24",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "IPA 2023-24 slug"
+    },
+    {
+      "entry_key": "Provision Of Defence Capability Capital (Fiscal) Additions",
+      "source_index": 3,
+      "old_url": "https://committees.parliament.uk/committee/24/defence-committee/",
+      "new_url": "https://committees.parliament.uk/committee/24/defence-committee/",
+      "action": "keep_as_is",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "HoC rejects HEAD/unknown UA but root domain is live"
+    },
+    {
+      "entry_key": "Provision Of Defence Capability Capital (Fiscal) Additions",
+      "source_index": 4,
+      "old_url": "https://www.gov.uk/government/publications/the-defence-equipment-plan-2023-2033",
+      "new_url": "https://www.gov.uk/government/organisations/ministry-of-defence",
+      "action": "fallback_publisher_root",
+      "fallback_url": null,
+      "confidence": "low",
+      "rationale": "MoD Equipment Plan 2023-33 not published on gov.uk under this slug; fall back to MoD org page"
+    },
+    {
+      "entry_key": "1.1 Executive and legislative organs, financial and fiscal affairs, external affairs",
+      "source_index": 3,
+      "old_url": "https://committees.parliament.uk/committee/158/treasury-committee/",
+      "new_url": "https://committees.parliament.uk/committee/158/treasury-committee/",
+      "action": "keep_as_is",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "HoC Treasury Committee rejects HEAD/unknown UA but root domain is live"
+    },
+    {
+      "entry_key": "Hospital Services",
+      "source_index": 0,
+      "old_url": "https://www.health-ni.gov.uk/topics/dhssps-statistics-and-research/hospital-waiting-times-statistics",
+      "new_url": "https://www.health-ni.gov.uk/articles/hospital-waiting-times-statistics",
+      "action": "fallback_publisher_root",
+      "fallback_url": "https://www.health-ni.gov.uk/",
+      "confidence": "low",
+      "rationale": "NI DoH stats topic page; both target and previously suggested slug 404. Fall back to root"
+    },
+    {
+      "entry_key": "Hospital Services",
+      "source_index": 2,
+      "old_url": "https://www.bma.org.uk/what-we-do/bma-in-the-four-nations/northern-ireland",
+      "new_url": "https://www.bma.org.uk/",
+      "action": "fallback_publisher_root",
+      "fallback_url": null,
+      "confidence": "medium",
+      "rationale": "BMA NI page 404; fall back to BMA root"
+    },
+    {
+      "entry_key": "Hospital Services",
+      "source_index": 3,
+      "old_url": "https://online.hscni.net/our-services/",
+      "new_url": "https://hscni.net/",
+      "action": "fallback_publisher_root",
+      "fallback_url": null,
+      "confidence": "medium",
+      "rationale": "HSC NI online.hscni path 404; fall back to hscni.net root"
+    },
+    {
+      "entry_key": "Provision Of Defence Capability Infrastructure",
+      "source_index": 2,
+      "old_url": "https://www.gov.uk/government/publications/a-better-defence-estate",
+      "new_url": "https://www.gov.uk/government/organisations/ministry-of-defence",
+      "action": "fallback_publisher_root",
+      "fallback_url": null,
+      "confidence": "low",
+      "rationale": "Better Defence Estate slug not resolving; fall back to MoD"
+    },
+    {
+      "entry_key": "Provision Of Defence Capability Infrastructure",
+      "source_index": 4,
+      "old_url": "https://www.nao.org.uk/reports/improving-single-living-accommodation-for-service-personnel/",
+      "new_url": "https://www.nao.org.uk/reports/improving-single-living-accommodation/",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "NAO slug is improving-single-living-accommodation"
+    },
+    {
+      "entry_key": "Provision Of Defence Capability Infrastructure",
+      "source_index": 5,
+      "old_url": "https://www.gov.uk/government/publications/defence-infrastructure-organisation-annual-report-and-accounts-2023-to-2024",
+      "new_url": "https://www.gov.uk/government/organisations/defence-infrastructure-organisation",
+      "action": "fallback_publisher_root",
+      "fallback_url": null,
+      "confidence": "low",
+      "rationale": "DIO 2023-24 ARA not published on gov.uk under this slug; fall back to DIO org page"
+    },
+    {
+      "entry_key": "Local Government Funding",
+      "source_index": 0,
+      "old_url": "https://www.gov.wales/local-government-settlement",
+      "new_url": "https://www.gov.wales/local-government-revenue-and-capital-settlement-2024-2025",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "Welsh Govt 2024-25 settlement page"
+    },
+    {
+      "entry_key": "Local Government Funding",
+      "source_index": 3,
+      "old_url": "https://research.senedd.wales/",
+      "new_url": "https://research.senedd.wales/",
+      "action": "keep_as_is",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "Senedd Research rejects HEAD/unknown UA but root domain is live"
+    },
+    {
+      "entry_key": "Local Government Funding",
+      "source_index": 4,
+      "old_url": "https://www.gov.wales/local-government-revenue-and-capital-settlement-2024-2025-final",
+      "new_url": "https://www.gov.wales/written-statement-final-local-government-settlement-2024-25",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "Final settlement page is Written Statement"
+    },
+    {
+      "entry_key": "10.9 Social protection n.e.c.",
+      "source_index": 1,
+      "old_url": "https://www.gov.uk/government/collections/pension-credit-statistics",
+      "new_url": "https://www.gov.uk/government/collections/income-related-benefits-estimates-of-take-up--2",
+      "action": "fallback_publisher_root",
+      "fallback_url": "https://www.gov.uk/government/organisations/department-for-work-pensions",
+      "confidence": "low",
+      "rationale": "PC stats collection 404; take-up collection is closest. Fall back to DWP"
+    },
+    {
+      "entry_key": "10.9 Social protection n.e.c.",
+      "source_index": 4,
+      "old_url": "https://committees.parliament.uk/committee/164/work-and-pensions-committee/",
+      "new_url": "https://committees.parliament.uk/committee/164/work-and-pensions-committee/",
+      "action": "keep_as_is",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "HoC W&P Committee rejects HEAD/unknown UA but root domain is live"
+    },
+    {
+      "entry_key": "10.9 Social protection n.e.c.",
+      "source_index": 6,
+      "old_url": "https://www.oecd.org/governance/government-at-a-glance/",
+      "new_url": "https://www.oecd.org/governance/government-at-a-glance/",
+      "action": "keep_as_is",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "OECD rejects HEAD/unknown UA but root domain is live"
+    },
+    {
+      "entry_key": "Adult Social Care Support Grant",
+      "source_index": 0,
+      "old_url": "https://www.gov.uk/government/collections/local-government-finance-settlement-england-2024-to-2025",
+      "new_url": "https://www.gov.uk/government/publications/local-government-finance-report-2024-to-2025",
+      "action": "repair",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "LGFS 2024-25 collection 404; Local Government Finance Report 2024-25 is canonical"
+    },
+    {
+      "entry_key": "Adult Social Care Support Grant",
+      "source_index": 2,
+      "old_url": "https://www.kingsfund.org.uk/publications/social-care-360",
+      "new_url": "https://www.kingsfund.org.uk/publications/social-care-360",
+      "action": "keep_as_is",
+      "fallback_url": null,
+      "confidence": "high",
+      "rationale": "King's Fund rejects HEAD/unknown UA but root domain is live"
+    }
+  ]
+}

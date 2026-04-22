@@ -1,0 +1,1575 @@
+{
+  "patches": [
+    {
+      "entry_key": "Provision Of Defence Capability",
+      "field": "key_stats",
+      "find": "~£56.9B (Main Estimates)",
+      "replace": "~£60.2B (Main Estimates)",
+      "severity": "medium",
+      "drift_ref": "F #1",
+      "kstat_index": 0,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Provision Of Defence Capability",
+      "field": "key_stats",
+      "find": "Returned to production 2024 · IOC July 2025",
+      "replace": "Returned to production 2024 · IOC November 2025",
+      "severity": "high",
+      "drift_ref": "F #4a",
+      "kstat_index": 5,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Provision Of Defence Capability",
+      "field": "key_stats",
+      "find": "IOC Dec 2024",
+      "replace": "IOC November 2025",
+      "severity": "high",
+      "drift_ref": "F #4b",
+      "kstat_index": 13,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "NHS Trusts (capital & residual funding)",
+      "field": "key_stats",
+      "find": "NHP Reset May 2025",
+      "replace": "NHP Reset Jan 2025",
+      "severity": "medium",
+      "drift_ref": "F #7",
+      "kstat_index": 3,
+      "kstat_subfield": "label"
+    },
+    {
+      "entry_key": "NHS Specialist Trusts",
+      "field": "notes",
+      "find": "Cass Review final report (April 2024) led to dissolution of Gender Identity Development Service + Tavistock & Portman trust itself",
+      "replace": "Cass Review final report (April 2024) led to managed closure of the Gender Identity Development Service; Tavistock & Portman Trust remains operational pending wind-up into NELFT",
+      "severity": "high",
+      "drift_ref": "F #16a"
+    },
+    {
+      "entry_key": "NHS Specialist Trusts",
+      "field": "key_stats",
+      "find": "Tavistock GIDS dissolved Apr 2024 — Cass Review final report · successor regional services",
+      "replace": "GIDS managed closure 31 March 2024; Cass Review final report 10 April 2024 · successor regional services",
+      "severity": "high",
+      "drift_ref": "F #16b",
+      "kstat_index": 16,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "NHS Specialist Trusts",
+      "field": "key_stats",
+      "find": "Entire trust dissolved Apr 2024 — merged into Northeast London NHS FT",
+      "replace": "Trust remains operational; planned wind-up into NELFT (North East London NHS FT) pending",
+      "severity": "high",
+      "drift_ref": "F #16c",
+      "kstat_index": 17,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "NHS Specialist Trusts",
+      "field": "key_stats",
+      "find": "~£650M turnover · ~650 beds · paediatric tertiary referral for England + Wales",
+      "replace": "~£650M turnover · ~400 beds · paediatric tertiary referral for England + Wales",
+      "severity": "medium",
+      "drift_ref": "F #17a",
+      "kstat_index": 2,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "NHS Specialist Trusts",
+      "field": "key_stats",
+      "find": "~£650M · ~650 beds · children's paediatric tertiary for England + Wales",
+      "replace": "~£650M · ~400 beds · children's paediatric tertiary for England + Wales",
+      "severity": "medium",
+      "drift_ref": "F #17b",
+      "kstat_index": 18,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Asylum Support, Resettlement and Accommodation",
+      "field": "notes",
+      "find": "NAO Investigation into asylum accommodation (Mar 2024)",
+      "replace": "NAO Investigation into asylum accommodation (May 2025)",
+      "severity": "medium",
+      "drift_ref": "F #24a"
+    },
+    {
+      "entry_key": "Asylum Support, Resettlement and Accommodation",
+      "field": "key_stats",
+      "find": "Original £4.6B envelope (2019) · NAO Mar 2024 projected £15.3B lifetime (232% ballooning)",
+      "replace": "Original £4.5B envelope (2019) · NAO May 2025 projected £15.3B lifetime",
+      "severity": "medium",
+      "drift_ref": "F #24b",
+      "kstat_index": 1,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Asylum Support, Resettlement and Accommodation",
+      "field": "key_stats",
+      "find": "£4.6B original 10-yr envelope (2019 Serco/Mears/Clearsprings) → NAO Mar 2024 projected £15.3B lifetime (232% overrun)",
+      "replace": "£4.5B original 10-yr envelope (2019 Serco/Mears/Clearsprings) → NAO May 2025 projected £15.3B lifetime",
+      "severity": "medium",
+      "drift_ref": "F #24c",
+      "kstat_index": 17,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Asylum Support, Resettlement and Accommodation",
+      "field": "key_stats",
+      "find": "NAO 'Asylum accommodation' (HC 595, Mar 2024); PAC '57th Report asylum accommodation' (Jul 2024)",
+      "replace": "NAO 'Asylum accommodation' (HC 595, May 2025); PAC '57th Report asylum accommodation' (Jul 2024)",
+      "severity": "medium",
+      "drift_ref": "F #24d",
+      "kstat_index": 14,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Asylum Support, Resettlement and Accommodation",
+      "field": "key_stats",
+      "find": "~236,900 arrivals by April 2024 · ~302,000 across all Ukraine schemes",
+      "replace": "~145,900 arrivals by April 2024 · ~302,000 visas across all Ukraine schemes",
+      "severity": "high",
+      "drift_ref": "F #29",
+      "kstat_index": 7,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Environment Agency",
+      "field": "key_stats",
+      "find": "Philip Duffy (from 10 July 2023, replacing Sir James Bevan)",
+      "replace": "Philip Duffy (from 1 July 2023, replacing Sir James Bevan)",
+      "severity": "low",
+      "drift_ref": "F #40",
+      "kstat_index": 9,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Office for Students",
+      "field": "key_stats",
+      "find": "Edward Peck CBE (from Sep 2024, replacing Lord Wharton)",
+      "replace": "Edward Peck CBE (from July 2025, replacing Lord Wharton)",
+      "severity": "high",
+      "drift_ref": "F #61a",
+      "kstat_index": 14,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Office for Students",
+      "field": "key_stats",
+      "find": "Lord (James) Wharton term ended Feb 2024 (stepped down early) -> Prof Edward Peck CBE (from Aug 2024, full term)",
+      "replace": "Lord (James) Wharton term ended after Jul 2024 election -> Prof Edward Peck CBE (from July 2025, full term) with interim chair gap",
+      "severity": "high",
+      "drift_ref": "F #61b",
+      "kstat_index": 23,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Office for Students",
+      "field": "key_stats",
+      "find": "Chair succession Feb-Aug 2024 (Wharton -> Peck with gap)",
+      "replace": "Chair succession 2024-25 (Wharton stepped down after Jul 2024 election -> Peck from Jul 2025 with interim gap)",
+      "severity": "high",
+      "drift_ref": "F #61c",
+      "kstat_index": 25,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Office for Students",
+      "field": "key_stats",
+      "find": "Philippa Pickford (from Aug 2024 pending substantive appointment; prior CEO Susan Lapworth resigned Jul 2024)",
+      "replace": "Susan Lapworth continuing as CEO through 2024-25 (announced Dec 2025 departure at Easter 2026)",
+      "severity": "high",
+      "drift_ref": "F #62",
+      "kstat_index": 15,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Office for Students",
+      "field": "key_stats",
+      "find": "University of Sussex £585k fine Aug 2024 on free-speech duty (academic freedom)",
+      "replace": "University of Sussex £585k fine March 2025 on free-speech duty (academic freedom)",
+      "severity": "medium",
+      "drift_ref": "F #64",
+      "kstat_index": 18,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Guy's & St Thomas' NHS Foundation Trust",
+      "field": "key_stats",
+      "find": "Professor Ian Abbs (Chief Executive since 2020)",
+      "replace": "Professor Ian Abbs (Chief Executive since August 2019)",
+      "severity": "medium",
+      "drift_ref": "G #2a",
+      "kstat_index": 3,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Guy's & St Thomas' NHS Foundation Trust",
+      "field": "key_stats",
+      "find": "Prof Ian Abbs (since Jan 2021, previously Medical Director) — continuing",
+      "replace": "Prof Ian Abbs (since August 2019, previously Medical Director) — continuing",
+      "severity": "medium",
+      "drift_ref": "G #2b",
+      "kstat_index": 15,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Guy's & St Thomas' NHS Foundation Trust",
+      "field": "key_stats",
+      "find": "Sir Hugh Taylor GCB (since 2015, extended; former Permanent Secretary DHSC) — continuing through 2024 when Charles Alexander CBE succeeded from Jan 2025",
+      "replace": "Sir Hugh Taylor GCB (since 2015); succeeded by Charles Alexander CBE as Joint Chairman (with King's College Hospital) from December 2022",
+      "severity": "high",
+      "drift_ref": "G #3",
+      "kstat_index": 16,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "2.4 R&D defence",
+      "field": "key_stats",
+      "find": "AUKUS treaty signed Sept 2021",
+      "replace": "AUKUS partnership announced Sept 2021 (nuclear-propulsion treaty signed Aug 2024)",
+      "severity": "medium",
+      "drift_ref": "G #9",
+      "kstat_index": 4,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "2.4 R&D defence",
+      "field": "notes",
+      "find": "repeated findings in 'Improving the Performance of Major Defence Equipment Contracts' (2021)",
+      "replace": "repeated findings; NAO 'The Ajax Programme' published March 2022",
+      "severity": "medium",
+      "drift_ref": "G #11"
+    },
+    {
+      "entry_key": "Manchester University NHS Foundation Trust",
+      "field": "key_stats",
+      "find": "Mark Cubbon (Group Chief Executive since Aug 2023)",
+      "replace": "Mark Cubbon (Group Chief Executive since April 2023)",
+      "severity": "medium",
+      "drift_ref": "G #13",
+      "kstat_index": 3,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Manchester University NHS Foundation Trust",
+      "field": "notes",
+      "find": "Group CEO Mark Cubbon (ex-Portsmouth Hospitals) took over Aug 2023 from interim Mark Lloyd",
+      "replace": "Group CEO Mark Cubbon (ex-Portsmouth Hospitals) took up post April 2023 (appointed Nov 2022), succeeding Sir Mike Deegan",
+      "severity": "medium",
+      "drift_ref": "G #14a"
+    },
+    {
+      "entry_key": "Manchester University NHS Foundation Trust",
+      "field": "key_stats",
+      "find": "Mark Cubbon (continuing since Nov 2023)",
+      "replace": "Mark Cubbon (continuing since April 2023)",
+      "severity": "medium",
+      "drift_ref": "G #14b",
+      "kstat_index": 15,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Tax Credits (Residual)",
+      "field": "description",
+      "find": "**Tax Credits officially closed 5 April 2025** — system ended after 23 years (Tax Credits Act 2002).",
+      "replace": "**Tax Credits officially closed 5 April 2025** — system ended after 22 years (Tax Credits Act 2002).",
+      "severity": "low",
+      "drift_ref": "G #23a"
+    },
+    {
+      "entry_key": "Tax Credits (Residual)",
+      "field": "notes",
+      "find": "End of a 23-year benefit that Gordon Brown introduced in 2003",
+      "replace": "End of a 22-year benefit that Gordon Brown introduced in 2003",
+      "severity": "low",
+      "drift_ref": "G #23b"
+    },
+    {
+      "entry_key": "6.1 of which: other social housing",
+      "field": "key_stats",
+      "find": "£0.487B",
+      "replace": "£0.768B",
+      "severity": "high",
+      "drift_ref": "G #31a",
+      "kstat_index": 0,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "6.1 of which: other social housing",
+      "field": "key_stats",
+      "find": "£0.487B · 110,000 affordable homes target 2022-2032",
+      "replace": "£0.768B · 110,000 affordable homes target 2022-2032",
+      "severity": "high",
+      "drift_ref": "G #31b",
+      "kstat_index": 15,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Hampshire CC",
+      "field": "description",
+      "find": "Leader Nick Adams-King (Con) from May 2023",
+      "replace": "Leader Nick Adams-King (Con) from May 2024",
+      "severity": "high",
+      "drift_ref": "G #37a"
+    },
+    {
+      "entry_key": "Hampshire CC",
+      "field": "notes",
+      "find": "Leader Nick Adams-King (Con) took over from Rob Humby in 2023",
+      "replace": "Leader Nick Adams-King (Con) took over from Rob Humby in 2024",
+      "severity": "high",
+      "drift_ref": "G #37b"
+    },
+    {
+      "entry_key": "Hampshire CC",
+      "field": "key_stats",
+      "find": "Nick Adams-King (Conservative, from 2023)",
+      "replace": "Nick Adams-King (Conservative, from 2024)",
+      "severity": "high",
+      "drift_ref": "G #37c",
+      "kstat_index": 8,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Hampshire CC",
+      "field": "key_stats",
+      "find": "Cllr Nick Adams-King (Conservative, from Nov 2023 following Rob Humby resignation; continuing through 2024-25)",
+      "replace": "Cllr Nick Adams-King (Conservative, from May 2024 following Rob Humby resignation; continuing through 2024-25)",
+      "severity": "high",
+      "drift_ref": "G #37d",
+      "kstat_index": 15,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Lancashire CC",
+      "field": "notes",
+      "find": "Lancashire Combined County Authority (with Blackburn with Darwen and Blackpool) launched in 2024 as a non-mayoral CCA — the first in England under the Levelling-up and Regeneration Act 2023",
+      "replace": "Lancashire Combined County Authority (with Blackburn with Darwen and Blackpool) approved by Labour government 19 Sept 2024; came into being in 2025 as a non-mayoral CCA (East Midlands CCA was the first established)",
+      "severity": "high",
+      "drift_ref": "G #56a"
+    },
+    {
+      "entry_key": "Lancashire CC",
+      "field": "key_stats",
+      "find": "Lancashire CCA (non-mayoral, launched 2024)",
+      "replace": "Lancashire CCA (non-mayoral, launched 2025)",
+      "severity": "high",
+      "drift_ref": "G #56b",
+      "kstat_index": 12,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Lancashire CC",
+      "field": "key_stats",
+      "find": "Lancs CCA (non-mayoral) launched Feb 2024",
+      "replace": "Lancs CCA (non-mayoral) launched 2025",
+      "severity": "high",
+      "drift_ref": "G #56c",
+      "kstat_index": 18,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "University Hospitals Birmingham NHS Foundation Trust",
+      "field": "key_stats",
+      "find": "Jonathan Brotherton (substantive CEO from Apr 2024, prior interim)",
+      "replace": "Jonathan Brotherton (substantive CEO from 17 July 2023, prior interim)",
+      "severity": "high",
+      "drift_ref": "G #64a",
+      "kstat_index": 3,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "University Hospitals Birmingham NHS Foundation Trust",
+      "field": "key_stats",
+      "find": "Jonathan Brotherton (substantive from Apr 2023, continuing; previously interim)",
+      "replace": "Jonathan Brotherton (substantive from 17 July 2023, continuing; previously interim)",
+      "severity": "high",
+      "drift_ref": "G #64b",
+      "kstat_index": 15,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "University Hospitals Birmingham NHS Foundation Trust",
+      "field": "notes",
+      "find": "Jonathan Brotherton was confirmed as substantive CEO April 2024 after ~18 months interim",
+      "replace": "Jonathan Brotherton was confirmed as substantive CEO on 17 July 2023 after a period as interim",
+      "severity": "high",
+      "drift_ref": "G #64c"
+    },
+    {
+      "entry_key": "University Hospitals Birmingham NHS Foundation Trust",
+      "field": "key_stats",
+      "find": "Good (post-Bewick/Mannion reviews; inspection 2023)",
+      "replace": "Requires Improvement (per CQC provider RRK; most recent inspection Nov 2023)",
+      "severity": "medium",
+      "drift_ref": "G #65",
+      "kstat_index": 18,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Barts Health NHS Trust",
+      "field": "key_stats",
+      "find": "Shane DeGaris (Group Chief Executive since Jan 2023)",
+      "replace": "Shane DeGaris (Group Chief Executive since 2022)",
+      "severity": "medium",
+      "drift_ref": "G #72a",
+      "kstat_index": 3,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Barts Health NHS Trust",
+      "field": "notes",
+      "find": "CEO Shane DeGaris (since Jan 2023) leads the largest NHS trust by staff in England",
+      "replace": "CEO Shane DeGaris (since 2022) leads the largest NHS trust by staff in England",
+      "severity": "medium",
+      "drift_ref": "G #72b"
+    },
+    {
+      "entry_key": "Barts Health NHS Trust",
+      "field": "key_stats",
+      "find": "Shane DeGaris (since Oct 2020, previously CE Hillingdon Hospitals) — continuing",
+      "replace": "Shane DeGaris (since 2022, previously CE Hillingdon Hospitals) — continuing",
+      "severity": "medium",
+      "drift_ref": "G #72c",
+      "kstat_index": 15,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Barts Health NHS Trust",
+      "field": "key_stats",
+      "find": "Rt Hon Jacqui Smith (since 2022, former Labour Home Secretary 2007-09 under Brown) — continuing until Oct 2024 when appointed Skills Minister; Charlie Chan interim from Oct 2024",
+      "replace": "Rt Hon Jacqui Smith (since 2022, former Labour Home Secretary 2007-09 under Brown) — stepped down July 2024 on appointment as Skills Minister; Charlie Chan interim from July 2024",
+      "severity": "medium",
+      "drift_ref": "G #73a",
+      "kstat_index": 16,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Barts Health NHS Trust",
+      "field": "key_stats",
+      "find": "Jacqui Smith appointed Minister of State for Skills in Starmer govt Jul 2024, formally resigned Chair Oct 2024; Charlie Chan stepped up as interim Chair",
+      "replace": "Jacqui Smith appointed Minister of State for Skills in Starmer govt Jul 2024 and resigned Chair; Charlie Chan stepped up as interim Chair",
+      "severity": "medium",
+      "drift_ref": "G #73b",
+      "kstat_index": 19,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Essex CC",
+      "field": "key_stats",
+      "find": "Gavin Jones (to 2024) → Nicole Wood (from 2024)",
+      "replace": "Gavin Jones (to Jan 2025) → Nicole Wood (from 2025)",
+      "severity": "high",
+      "drift_ref": "G #86a",
+      "kstat_index": 9,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Essex CC",
+      "field": "key_stats",
+      "find": "Gavin Jones CBE (to Mar 2024) → Nicole Wood (permanent CE from Apr 2024)",
+      "replace": "Gavin Jones CBE (retired Jan 2025 after 14 years) → Nicole Wood (CE from 2025)",
+      "severity": "high",
+      "drift_ref": "G #86b",
+      "kstat_index": 16,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Essex CC",
+      "field": "key_stats",
+      "find": "CE transition Apr 2024: Gavin Jones retired after 14 years; Nicole Wood permanent CE",
+      "replace": "CE transition Jan 2025: Gavin Jones retired after 14 years; Nicole Wood permanent CE",
+      "severity": "high",
+      "drift_ref": "G #86c",
+      "kstat_index": 18,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Birmingham",
+      "field": "notes",
+      "find": "interim CE Joanne Roney CBE (from Jul 2024, recruited from Manchester)",
+      "replace": "Managing Director Joanne Roney CBE (from June 2024, recruited from Manchester)",
+      "severity": "medium",
+      "drift_ref": "G #94a"
+    },
+    {
+      "entry_key": "Birmingham",
+      "field": "key_stats",
+      "find": "Joanne Roney CBE (interim from Jul 2024 — recruited from Manchester)",
+      "replace": "Joanne Roney CBE (Managing Director from June 2024 — recruited from Manchester)",
+      "severity": "medium",
+      "drift_ref": "G #94b",
+      "kstat_index": 4,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Birmingham",
+      "field": "key_stats",
+      "find": "Deborah Cadman OBE (to 2024) -> Joanne Roney CBE (interim from Jul 2024, recruited from Manchester) -> permanent 2025",
+      "replace": "Deborah Cadman OBE (to March 2024) -> Joanne Roney CBE (Managing Director from June 2024, recruited from Manchester) -> permanent 2025",
+      "severity": "medium",
+      "drift_ref": "G #94c",
+      "kstat_index": 16,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Hertfordshire CC",
+      "field": "description",
+      "find": "Conservative lost overall control in 2022 to a Liberal Democrat / Labour / Green coalition, with Lib Dem Steve Jarvis as Leader since 2023",
+      "replace": "Conservative held overall control from 2021 through 2024-25 (won 46 of 78 seats in May 2021); Conservatives lost control at the May 2025 election and Steve Jarvis (Lib Dem) became Leader of Council on 20 May 2025",
+      "severity": "high",
+      "drift_ref": "G #100"
+    },
+    {
+      "entry_key": "Hertfordshire CC",
+      "field": "notes",
+      "find": "Leader Steve Jarvis (Lib Dem) leads a NOC coalition with Labour and Greens since the Conservatives lost control in 2022",
+      "replace": "Conservatives held a majority on Hertfordshire CC from May 2021 through 2024-25; at the May 2025 election Conservatives lost control and Lib Dem Steve Jarvis became Leader of Council on 20 May 2025",
+      "severity": "high",
+      "drift_ref": "G #100b"
+    },
+    {
+      "entry_key": "Hertfordshire CC",
+      "field": "key_stats",
+      "find": "No Overall Control (Lib Dem-led coalition)",
+      "replace": "Conservative majority (46 of 78 seats from May 2021) — held through 2024-25",
+      "severity": "high",
+      "drift_ref": "G #102a",
+      "kstat_index": 7,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Hertfordshire CC",
+      "field": "key_stats",
+      "find": "Steve Jarvis (Liberal Democrats, from 2023)",
+      "replace": "Richard Roberts (Conservative) through 2024-25; Steve Jarvis (Liberal Democrats) became Leader 20 May 2025 post-election",
+      "severity": "high",
+      "drift_ref": "G #101a",
+      "kstat_index": 8,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Hertfordshire CC",
+      "field": "key_stats",
+      "find": "No Overall Control — Lib Dem-led minority/coalition (37 of 78 seats; elected May 2021) through 2024-25",
+      "replace": "Conservative majority (46 of 78 seats; elected May 2021) through 2024-25",
+      "severity": "high",
+      "drift_ref": "G #102b",
+      "kstat_index": 14,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Hertfordshire CC",
+      "field": "key_stats",
+      "find": "Cllr Steve Jarvis (Liberal Democrat, from May 2023 after Con lost majority; continuing through 2024-25)",
+      "replace": "Cllr Richard Roberts (Conservative) led Hertfordshire CC through 2024-25; Cllr Steve Jarvis (Liberal Democrat) became Leader of Council on 20 May 2025 after Lib Dems formed minority administration",
+      "severity": "high",
+      "drift_ref": "G #101b",
+      "kstat_index": 15,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Sizewell C (Holding) Limited",
+      "field": "key_stats",
+      "find": "China General Nuclear pushed out under National Security and Investment Act 2021 pressure · HMG bought CGN's 20% development-phase stake for ~£700M",
+      "replace": "China General Nuclear pushed out under National Security and Investment Act 2021 pressure · HMG invested £679M-£700M on 29 November 2022 to enable CGN's exit",
+      "severity": "medium",
+      "drift_ref": "G #108",
+      "kstat_index": 6,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Surrey CC",
+      "field": "key_stats",
+      "find": "Terence Herbert (continuing since Mar 2021)",
+      "replace": "Terence Herbert (continuing since August 2024, replacing Joanna Killian; previously CE of Wiltshire Council)",
+      "severity": "high",
+      "drift_ref": "G #130",
+      "kstat_index": 16,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "7.B Medical research",
+      "field": "key_stats",
+      "find": "~£1.4B",
+      "replace": "~£1.64B",
+      "severity": "medium",
+      "drift_ref": "G #140",
+      "kstat_index": 0,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Northern Care Alliance NHS Foundation Trust",
+      "field": "key_stats",
+      "find": "Owen Williams OBE (to 2023) -> Dr Owen Williams stepped aside for health; Peter Keogh Acting CE 2023 -> Prof Raj Jain (Interim Apr 2024) -> Jacqui Burrow (CE from Jul 2024)",
+      "replace": "Dr Owen Williams OBE CEO through 2024-25 (announced departure in 2025, leaving September 2025)",
+      "severity": "high",
+      "drift_ref": "H #2",
+      "kstat_index": 15,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Northern Care Alliance NHS Foundation Trust",
+      "field": "key_stats",
+      "find": "Sir David Dalton (former Salford Royal CEO)",
+      "replace": "Sheena McDonnell (current Chair, ex-Barnsley Hospital FT Chair)",
+      "severity": "high",
+      "drift_ref": "H #3a",
+      "kstat_index": 4,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Northern Care Alliance NHS Foundation Trust",
+      "field": "key_stats",
+      "find": "Judith Williamson Acting Chair 2023 -> Dr Lesley Mort (Chair from 2024)",
+      "replace": "Current Chair Sheena McDonnell (ex-Barnsley Hospital FT Chair)",
+      "severity": "high",
+      "drift_ref": "H #3b",
+      "kstat_index": 16,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Northern Care Alliance NHS Foundation Trust",
+      "field": "notes",
+      "find": "Chair Sir David Dalton — the former Salford Royal CEO credited with turning Salford Royal into a national exemplar — brings continuity to the group model",
+      "replace": "Chair Sheena McDonnell (ex-Barnsley Hospital FT Chair); Sir David Dalton was a former Salford Royal CEO who turned that trust into a national exemplar but is not the NCA Chair",
+      "severity": "high",
+      "drift_ref": "H #3c"
+    },
+    {
+      "entry_key": "Northern Care Alliance NHS Foundation Trust",
+      "field": "key_stats",
+      "find": "Requires Improvement (most recent 2023; post-merger integration plan continues)",
+      "replace": "Good (most recent inspection January 2024 per CQC provider RM3; post-merger integration plan continues)",
+      "severity": "medium",
+      "drift_ref": "H #4",
+      "kstat_index": 18,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "The Leeds Teaching Hospitals NHS Trust",
+      "field": "key_stats",
+      "find": "Professor Phil Wood (Chief Executive since Nov 2022)",
+      "replace": "Professor Phil Wood (Chief Executive since February 2023)",
+      "severity": "low",
+      "drift_ref": "H #8",
+      "kstat_index": 3,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "The Leeds Teaching Hospitals NHS Trust",
+      "field": "notes",
+      "find": "£900M+ rebuild of the LGI estate with new adult and children's hospitals whose full business case was approved in 2024, with construction phasing from 2025-30",
+      "replace": "~£1.42B rebuild of the LGI estate (up from original ~£600M in 2021) with new adult and children's hospitals; NHP Jan 2025 review priced scheme at £1.5-2B with construction not to start until ~2032, completion c.2040",
+      "severity": "high",
+      "drift_ref": "H #10a"
+    },
+    {
+      "entry_key": "The Leeds Teaching Hospitals NHS Trust",
+      "field": "key_stats",
+      "find": "Hospitals of the Future (Adults' + Children's new build, £900M+) full business case approved 2024",
+      "replace": "Hospitals of the Future (Adults' + Children's new build, ~£1.42B by Sep 2024; NHP Jan 2025 review £1.5-2B); construction delayed to ~2032, completion c.2040",
+      "severity": "high",
+      "drift_ref": "H #10b",
+      "kstat_index": 14,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "4.2 of which: other agriculture, food and fisheries policy",
+      "field": "key_stats",
+      "find": "Operational Oct 2024",
+      "replace": "Operational Oct 2023",
+      "severity": "medium",
+      "drift_ref": "H #23",
+      "kstat_index": 10,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Provision Of Defence Capability Civilian Personnel",
+      "field": "key_stats",
+      "find": "~57,000 FTE (Quarterly Personnel Statistics)",
+      "replace": "~63,702 headcount (MoD Biannual Civilian Personnel Report, 1 Apr 2024)",
+      "severity": "high",
+      "drift_ref": "H #27a",
+      "kstat_index": 0,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Provision Of Defence Capability Civilian Personnel",
+      "field": "key_stats",
+      "find": "~57,000 FTE (MoD Quarterly Personnel Statistics)",
+      "replace": "~63,702 headcount (MoD Biannual Civilian Personnel Report, 1 Apr 2024)",
+      "severity": "high",
+      "drift_ref": "H #27b",
+      "kstat_index": 15,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "5.3 Pollution abatement",
+      "field": "key_stats",
+      "find": "8 cities as of 2024: Birmingham (2021), Bradford (2022), Bristol (2022), Portsmouth (2021), Sheffield (2023), Tyneside/Newcastle (2023), Manchester pilot, Oxford Zero Emission Zone — plus London ULEZ expanded Aug 2023",
+      "replace": "7 charging CAZs in England 2024: Bath (2021), Birmingham (2021), Portsmouth (2021), Bradford (2022), Bristol (2022), Sheffield (2023), Tyneside/Newcastle (2023) + Oxford Zero Emission Zone; Manchester CAZ not charging (GM Bee Network replaced it) — plus London ULEZ expanded Aug 2023",
+      "severity": "medium",
+      "drift_ref": "H #32",
+      "kstat_index": 3,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Nottingham University Hospitals NHS Trust",
+      "field": "key_stats",
+      "find": "Anthony May (continuing since Apr 2023)",
+      "replace": "Anthony May (continuing since Nov 2022)",
+      "severity": "low",
+      "drift_ref": "H #53",
+      "kstat_index": 15,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Imperial College Healthcare NHS Trust",
+      "field": "description",
+      "find": "Announced formal merger talks with Chelsea and Westminster Hospital NHS FT in July 2025",
+      "replace": "In 2025 established the 'North West London Acute Provider Group' with Chelsea & Westminster, Hillingdon and London NW (collaborative/group CEO model, not a legal merger)",
+      "severity": "medium",
+      "drift_ref": "H #62a"
+    },
+    {
+      "entry_key": "Imperial College Healthcare NHS Trust",
+      "field": "notes",
+      "find": "In July 2025 Imperial and Chelsea & Westminster announced formal merger talks, which would create a ~£2.6B NW London acute group",
+      "replace": "In 2025 the four NW London acute trusts (Imperial, Chelsea & Westminster, Hillingdon, London NW) formally established a 'North West London Acute Provider Group' — a collaborative/group CEO model, not a legal merger; each trust retains its own leadership",
+      "severity": "medium",
+      "drift_ref": "H #62b"
+    },
+    {
+      "entry_key": "Imperial College Healthcare NHS Trust",
+      "field": "key_stats",
+      "find": "Chelsea & Westminster merger announced July 2025",
+      "replace": "NW London Acute Provider Group with Chelsea & Westminster, Hillingdon and London NW established 2025 (group model, not legal merger)",
+      "severity": "medium",
+      "drift_ref": "H #62c",
+      "kstat_index": 14,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Imperial College Healthcare NHS Trust",
+      "field": "key_stats",
+      "find": "Formal merger talks with Chelsea & Westminster Hospital NHS FT announced May/Jul 2025",
+      "replace": "NW London Acute Provider Group established 2025 (Imperial + Chelsea & Westminster + Hillingdon + London NW; collaborative group model, not legal merger)",
+      "severity": "medium",
+      "drift_ref": "H #62d",
+      "kstat_index": 19,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "University Hospitals Sussex NHS Foundation Trust",
+      "field": "notes",
+      "find": "CEO George Findlay took over Nov 2022 after the retirement of Dame Marianne Griffiths (who had overseen the merger)",
+      "replace": "CEO George Findlay took up the role on 1 June 2022 after the retirement of Dame Marianne Griffiths Sep 2022 (who had overseen the merger)",
+      "severity": "medium",
+      "drift_ref": "H #66a"
+    },
+    {
+      "entry_key": "University Hospitals Sussex NHS Foundation Trust",
+      "field": "key_stats",
+      "find": "Dame Marianne Griffiths DBE stepped down Sept 2022; George Findlay CEO since Nov 2022",
+      "replace": "Dame Marianne Griffiths DBE stepped down Sept 2022; George Findlay CEO since 1 June 2022",
+      "severity": "medium",
+      "drift_ref": "H #66b",
+      "kstat_index": 3,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Academies And Free Schools",
+      "field": "key_stats",
+      "find": "~60%",
+      "replace": "~40%",
+      "severity": "medium",
+      "drift_ref": "H #72",
+      "kstat_index": 6,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Eysg Pupil Premium Acads",
+      "field": "notes",
+      "find": "PP cash-terms has FALLEN ~13% in real value since 2015",
+      "replace": "PP cash-terms has FALLEN ~20% in real value since 2014/15",
+      "severity": "medium",
+      "drift_ref": "H #91a"
+    },
+    {
+      "entry_key": "Eysg Pupil Premium Acads",
+      "field": "key_stats",
+      "find": "~13% real-terms fall in PP per-pupil value since 2015 baseline (EPI/Sutton Trust 2024) once CPI-adjusted",
+      "replace": "~20% real-terms fall in PP per-pupil value since 2014/15 baseline (Sutton Trust May 2024) once CPI-adjusted",
+      "severity": "medium",
+      "drift_ref": "H #91b",
+      "kstat_index": 19,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Leeds",
+      "field": "notes",
+      "find": "WYCA Mayor Brabin re-elected May 2024 with 64%",
+      "replace": "WYCA Mayor Brabin re-elected May 2024 with 50.4% (275,430 votes)",
+      "severity": "high",
+      "drift_ref": "H #97"
+    },
+    {
+      "entry_key": "Oxford University Hospitals NHS Foundation Trust",
+      "field": "notes",
+      "find": "CEO Eileen Walsh has been leading OUH from 2024 following Dr Bruno Holthof's departure and an interim period chaired by Sir Jonathan Montgomery",
+      "replace": "CEO Prof Meghana Pandit led OUH substantively from March 2023 through 2024-25 (following Dr Bruno Holthof's departure); Simon Crowther became Acting CEO from March 2025 when Pandit moved to NHSE",
+      "severity": "high",
+      "drift_ref": "H #106a"
+    },
+    {
+      "entry_key": "Oxford University Hospitals NHS Foundation Trust",
+      "field": "key_stats",
+      "find": "Eileen Walsh (acting CEO from 2024 after Prof Sir Jonathan Montgomery interim; substantive appointment progressing)",
+      "replace": "Prof Meghana Pandit (substantive CEO from March 2023 through 2024-25); Simon Crowther Acting CEO from March 2025 when Pandit moved to NHSE",
+      "severity": "high",
+      "drift_ref": "H #106b",
+      "kstat_index": 3,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Oxford University Hospitals NHS Foundation Trust",
+      "field": "key_stats",
+      "find": "Eileen Walsh (Interim 2022-23) -> substantive from 2023, continuing",
+      "replace": "Prof Meghana Pandit (substantive CEO from March 2023) -> Simon Crowther Acting CEO from March 2025",
+      "severity": "high",
+      "drift_ref": "H #106c",
+      "kstat_index": 15,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Oxford University Hospitals NHS Foundation Trust",
+      "field": "notes",
+      "find": "NIHR Oxford Biomedical Research Centre, at £118M across 2022-27, is the largest NIHR BRC award",
+      "replace": "NIHR Oxford BRC received £86.6M 2022-27 (~£122M combined with Oxford Health BRC £35.4M); later revised to £95.9M Dec 2022-Mar 2028",
+      "severity": "high",
+      "drift_ref": "H #107a"
+    },
+    {
+      "entry_key": "Oxford University Hospitals NHS Foundation Trust",
+      "field": "key_stats",
+      "find": "NIHR Oxford BRC £118M 2022-27 — the largest single NIHR BRC award",
+      "replace": "NIHR Oxford BRC £86.6M 2022-27 (combined £122M with Oxford Health BRC £35.4M); later revised to £95.9M Dec 2022-Mar 2028",
+      "severity": "high",
+      "drift_ref": "H #107b",
+      "kstat_index": 13,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Oxford University Hospitals NHS Foundation Trust",
+      "field": "key_stats",
+      "find": "Prof Sir Jonathan Montgomery (continuing since 2018)",
+      "replace": "Prof Sir Jonathan Montgomery (appointed Dec 2018; term began Jan 2019; re-appointed 1 Sep 2024 to end-March 2026)",
+      "severity": "medium",
+      "drift_ref": "H #108",
+      "kstat_index": 16,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Sawdg Arms Length Bodies - Ea (Flood)",
+      "field": "key_stats",
+      "find": "2,100+ properties flooded",
+      "replace": "~1,260 properties flooded",
+      "severity": "medium",
+      "drift_ref": "H #123a",
+      "kstat_index": 4,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Sawdg Arms Length Bodies - Ea (Flood)",
+      "field": "key_stats",
+      "find": "2,800+ flooded",
+      "replace": "several hundred flooded",
+      "severity": "medium",
+      "drift_ref": "H #123b",
+      "kstat_index": 5,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "West Sussex CC",
+      "field": "key_stats",
+      "find": "Becky Shaw (continuing since Feb 2022)",
+      "replace": "Becky Shaw (continuing since January 2020; joint CE of West and East Sussex)",
+      "severity": "medium",
+      "drift_ref": "H #126",
+      "kstat_index": 16,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "West Sussex CC",
+      "field": "notes",
+      "find": "West Sussex children's services rated 'Good' by Ofsted (2023) after improvement from 'Inadequate' (2019)",
+      "replace": "West Sussex children's services improved from 'Inadequate' (2019) to 'Requires Improvement' at the subsequent ILACS inspection; focused visits in 2024 praised progress on care leavers",
+      "severity": "medium",
+      "drift_ref": "H #127"
+    },
+    {
+      "entry_key": "University College London Hospitals NHS Foundation Trust",
+      "field": "key_stats",
+      "find": "David Probert (Chief Executive since March 2021)",
+      "replace": "David Probert (Chief Executive since 31 August 2021)",
+      "severity": "low",
+      "drift_ref": "I #1a",
+      "kstat_index": 3,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "University College London Hospitals NHS Foundation Trust",
+      "field": "notes",
+      "find": "CEO David Probert has led UCLH since March 2021",
+      "replace": "CEO David Probert has led UCLH since 31 August 2021 (previously interim CE earlier that year)",
+      "severity": "low",
+      "drift_ref": "I #1b"
+    },
+    {
+      "entry_key": "University College London Hospitals NHS Foundation Trust",
+      "field": "key_stats",
+      "find": "David Probert (continuing since 2019)",
+      "replace": "David Probert (continuing since 31 August 2021)",
+      "severity": "low",
+      "drift_ref": "I #1c",
+      "kstat_index": 15,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "University College London Hospitals NHS Foundation Trust",
+      "field": "key_stats",
+      "find": "Sir Richard Murley (continuing since 2020)",
+      "replace": "Baroness Julia Neuberger DBE (continuing since 25 February 2019; to stand down 30 September 2026)",
+      "severity": "high",
+      "drift_ref": "I #2",
+      "kstat_index": 16,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "The Newcastle Upon Tyne Hospitals NHS Foundation Trust",
+      "field": "notes",
+      "find": "In Oct 2024 Mackey was also appointed NHS England's transition CEO to manage NHSE's abolition announced by Wes Streeting",
+      "replace": "In 2025 Mackey was appointed NHS England's Interim CEO from 1 April 2025 to manage NHSE's abolition announced by Wes Streeting",
+      "severity": "medium",
+      "drift_ref": "I #13a"
+    },
+    {
+      "entry_key": "The Newcastle Upon Tyne Hospitals NHS Foundation Trust",
+      "field": "key_stats",
+      "find": "Sir Jim Mackey appointed NHSE transition CEO alongside Newcastle Oct 2024; trust under financial special measures equivalent",
+      "replace": "Sir Jim Mackey appointed NHSE Interim CEO 1 April 2025; trust under financial special measures equivalent",
+      "severity": "medium",
+      "drift_ref": "I #13b",
+      "kstat_index": 14,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "The Newcastle Upon Tyne Hospitals NHS Foundation Trust",
+      "field": "key_stats",
+      "find": "Sir James Mackey (returned as CE 2023; seconded to NHS England as National Director, Elective Recovery then Transition CE Jan 2025) -> interim arrangements from Jan 2025",
+      "replace": "Sir James Mackey (Newcastle CE January 2024 to March 2025; appointed NHS England Interim CEO from 1 April 2025) -> interim CE arrangements at Newcastle from April 2025",
+      "severity": "medium",
+      "drift_ref": "I #13c",
+      "kstat_index": 15,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "The Newcastle Upon Tyne Hospitals NHS Foundation Trust",
+      "field": "key_stats",
+      "find": "Sir James Mackey seconded to NHS England as transition CE from Jan 2025 following Amanda Pritchard's announced departure; Newcastle entered interim CE arrangements",
+      "replace": "Sir James Mackey appointed NHS England Interim CEO from 1 April 2025 following Amanda Pritchard's announced departure; Newcastle entered interim CE arrangements from April 2025",
+      "severity": "medium",
+      "drift_ref": "I #13d",
+      "kstat_index": 19,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Mid and South Essex NHS Foundation Trust",
+      "field": "notes",
+      "find": "CEO Matthew Hopkins (ex-Barking, Havering and Redbridge CEO) has led MSE since 2021, post-merger",
+      "replace": "CEO Matthew Hopkins (ex-Barking, Havering and Redbridge CEO) has led MSE since March 2023 (Hannah Coffey served as Acting CEO before him)",
+      "severity": "medium",
+      "drift_ref": "I #20a"
+    },
+    {
+      "entry_key": "Mid and South Essex NHS Foundation Trust",
+      "field": "key_stats",
+      "find": "Matthew Hopkins (Chief Executive since 2021)",
+      "replace": "Matthew Hopkins (Chief Executive since March 2023; Hannah Coffey Acting CEO before)",
+      "severity": "medium",
+      "drift_ref": "I #20b",
+      "kstat_index": 3,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Mid and South Essex NHS Foundation Trust",
+      "field": "key_stats",
+      "find": "Hannah Coffey (continuing since 2023)",
+      "replace": "Matthew Hopkins (substantive CEO from March 2023, continuing; Hannah Coffey was Acting CEO before him)",
+      "severity": "high",
+      "drift_ref": "I #22",
+      "kstat_index": 15,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Royal Free London NHS Foundation Trust",
+      "field": "notes",
+      "find": "Royal Free completed the acquisition of North Middlesex University Hospital on 1 July 2024, bringing Haringey/Enfield services into the Royal Free London group",
+      "replace": "Royal Free completed the merger with North Middlesex University Hospital on 1 January 2025, bringing Haringey/Enfield services into the Royal Free London group",
+      "severity": "high",
+      "drift_ref": "I #23a"
+    },
+    {
+      "entry_key": "Royal Free London NHS Foundation Trust",
+      "field": "description",
+      "find": "North Mid University Hospital (acquired 1 July 2024 from the dissolved North Middlesex University Hospital NHS Trust)",
+      "replace": "North Mid University Hospital (merged 1 January 2025 from the dissolved North Middlesex University Hospital NHS Trust)",
+      "severity": "high",
+      "drift_ref": "I #23b"
+    },
+    {
+      "entry_key": "Royal Free London NHS Foundation Trust",
+      "field": "key_stats",
+      "find": "North Mid University Hospital (from Jul 2024)",
+      "replace": "North Mid University Hospital (from 1 Jan 2025)",
+      "severity": "high",
+      "drift_ref": "I #23c",
+      "kstat_index": 1,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Royal Free London NHS Foundation Trust",
+      "field": "key_stats",
+      "find": "~14,000 pre-North Mid; ~17,500 post-Jul 2024",
+      "replace": "~14,000 pre-North Mid; ~17,500 post-Jan 2025",
+      "severity": "high",
+      "drift_ref": "I #23d",
+      "kstat_index": 6,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Royal Free London NHS Foundation Trust",
+      "field": "key_stats",
+      "find": "North Middlesex acquisition 1 Jul 2024; group model continues; resident doctor strikes",
+      "replace": "North Middlesex merger 1 Jan 2025; group model continues; resident doctor strikes",
+      "severity": "high",
+      "drift_ref": "I #23e",
+      "kstat_index": 14,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Border Force",
+      "field": "description",
+      "find": "DG Phil Douglas (from March 2023)",
+      "replace": "DG Phil Douglas (from November 2021)",
+      "severity": "high",
+      "drift_ref": "I #32a"
+    },
+    {
+      "entry_key": "Border Force",
+      "field": "key_stats",
+      "find": "DG Phil Douglas since Mar 2023",
+      "replace": "DG Phil Douglas since Nov 2021",
+      "severity": "high",
+      "drift_ref": "I #32b",
+      "kstat_index": 11,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "ROYAL MAIL STATUTORY PENSION SCHEME",
+      "field": "key_stats",
+      "find": "~450,000 across pensioner · deferred · dependant categories",
+      "replace": "~432,000 across pensioner · deferred · dependant categories (Commons Library SN4940)",
+      "severity": "low",
+      "drift_ref": "I #45a",
+      "kstat_index": 1,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Cambridge University Hospitals NHS Foundation Trust",
+      "field": "key_stats",
+      "find": "Professor Michael Anderson (from 2024)",
+      "replace": "Baroness Sally Morgan (current Chair)",
+      "severity": "high",
+      "drift_ref": "I #59a",
+      "kstat_index": 4,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Cambridge University Hospitals NHS Foundation Trust",
+      "field": "key_stats",
+      "find": "Prof Mike More CBE (since 2019, extended) — continuing",
+      "replace": "Baroness Sally Morgan (current Chair, per Dec 2025 Sinker departure announcements)",
+      "severity": "high",
+      "drift_ref": "I #59b",
+      "kstat_index": 17,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Cambridge University Hospitals NHS Foundation Trust",
+      "field": "key_stats",
+      "find": "NIHR Cambridge BRC £96M 2022-27; NHS Genomic Medicine Service Alliance hub",
+      "replace": "NIHR Cambridge BRC £86.2M (Oct 2022); NHS Genomic Medicine Service Alliance hub",
+      "severity": "medium",
+      "drift_ref": "I #60",
+      "kstat_index": 13,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "University Hospital Southampton NHS Foundation Trust",
+      "field": "key_stats",
+      "find": "David French (Chief Executive since 2023) — interim Paula Head Jan 2024 during transition",
+      "replace": "David French (Chief Executive substantively since April 2021; was interim before then after Paula Head's Nov 2020 departure)",
+      "severity": "medium",
+      "drift_ref": "I #95a",
+      "kstat_index": 3,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "University Hospital Southampton NHS Foundation Trust",
+      "field": "notes",
+      "find": "CEO David French took up post in 2023 succeeding Paula Head (who returned briefly as interim)",
+      "replace": "CEO David French was appointed substantively in April 2021, having been interim after Paula Head's Nov 2020 departure",
+      "severity": "medium",
+      "drift_ref": "I #95b"
+    },
+    {
+      "entry_key": "University Hospital Southampton NHS Foundation Trust",
+      "field": "key_stats",
+      "find": "David French (substantive since 2023, continuing)",
+      "replace": "David French (substantive since April 2021, continuing)",
+      "severity": "medium",
+      "drift_ref": "I #95c",
+      "kstat_index": 15,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Nottinghamshire CC",
+      "field": "description",
+      "find": "Leader Sam Smith (Con, from 2023)",
+      "replace": "Leader Sam Smith (Con, from 5 December 2024)",
+      "severity": "high",
+      "drift_ref": "I #108a"
+    },
+    {
+      "entry_key": "Nottinghamshire CC",
+      "field": "notes",
+      "find": "Leader Sam Smith (Con) took over in 2023 from Ben Bradley (also Mansfield MP)",
+      "replace": "Leader Sam Smith (Con) elected 5 December 2024 replacing Ben Bradley (also Mansfield MP) who stepped down November 2024",
+      "severity": "high",
+      "drift_ref": "I #108b"
+    },
+    {
+      "entry_key": "Nottinghamshire CC",
+      "field": "key_stats",
+      "find": "Sam Smith (Conservative, from 2023)",
+      "replace": "Sam Smith (Conservative, from 5 Dec 2024)",
+      "severity": "high",
+      "drift_ref": "I #108c",
+      "kstat_index": 8,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Nottinghamshire CC",
+      "field": "key_stats",
+      "find": "Cllr Sam Smith (Con, since May 2023; took over from Ben Bradley MP)",
+      "replace": "Cllr Sam Smith (Con, since 5 December 2024; took over from Ben Bradley MP who stepped down Nov 2024)",
+      "severity": "high",
+      "drift_ref": "I #108d",
+      "kstat_index": 15,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Nottinghamshire CC",
+      "field": "key_stats",
+      "find": "Adrian Smith (to 2024) → Marjorie Toward",
+      "replace": "Anthony May OBE (CE Oct 2022 — later moved to NUH Hospitals Trust); subsequent CE arrangements per Nottinghamshire CC",
+      "severity": "high",
+      "drift_ref": "I #109",
+      "kstat_index": 9,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Liverpool University Hospitals NHS Foundation Trust",
+      "field": "key_stats",
+      "find": "James Sumner (Chief Executive since Sep 2022)",
+      "replace": "James Sumner (Chief Executive since May 2022)",
+      "severity": "medium",
+      "drift_ref": "I #124a",
+      "kstat_index": 3,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Liverpool University Hospitals NHS Foundation Trust",
+      "field": "notes",
+      "find": "CEO James Sumner (ex-Salford Royal) took over Sep 2022, immediately before the Royal Liverpool finally opened",
+      "replace": "CEO James Sumner (ex-Salford Royal) took over May 2022, before the Royal Liverpool finally opened",
+      "severity": "medium",
+      "drift_ref": "I #124b"
+    },
+    {
+      "entry_key": "Liverpool University Hospitals NHS Foundation Trust",
+      "field": "key_stats",
+      "find": "Royal Liverpool rebuild ~£746M — opened Sept 2022, ~6 years late vs original 2017 plan",
+      "replace": "Royal Liverpool rebuild ~£746M — opened 20 October 2022 (old hospital closed 19 Oct 2022), ~6 years late vs original 2017 plan",
+      "severity": "medium",
+      "drift_ref": "I #125",
+      "kstat_index": 13,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "De&S",
+      "field": "key_stats",
+      "find": "Andy Start from February 2023 · predecessor Sir Simon Bollom",
+      "replace": "Andy Start from September 2022 (announced April 2022) · predecessor Air Marshal Sir Simon Bollom",
+      "severity": "low",
+      "drift_ref": "J #1a",
+      "kstat_index": 3,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "De&S",
+      "field": "key_stats",
+      "find": "CEO Andy Start (from Feb 2023) succeeded Sir Simon Bollom",
+      "replace": "CEO Andy Start (from September 2022) succeeded Air Marshal Sir Simon Bollom",
+      "severity": "low",
+      "drift_ref": "J #1b",
+      "kstat_index": 17,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Devon CC",
+      "field": "description",
+      "find": "now under No Overall Control from May 2024 with a Liberal Democrat-led coalition (Leader Julian Brazil, Lib Dem)",
+      "replace": "now under No Overall Control from May 2025 with a Liberal Democrat-led coalition (Leader Julian Brazil, Lib Dem); James McInnes (Con) led DCC through 2024-25",
+      "severity": "high",
+      "drift_ref": "J #11a"
+    },
+    {
+      "entry_key": "Devon CC",
+      "field": "notes",
+      "find": "Lib Dem Julian Brazil took over from John Hart (Con) in May 2024 as NOC Leader",
+      "replace": "Lib Dem Julian Brazil became Leader at May 2025 Devon election (Lib Dems largest party, NOC); James McInnes (Con) led DCC through 2024-25",
+      "severity": "high",
+      "drift_ref": "J #11b"
+    },
+    {
+      "entry_key": "Devon CC",
+      "field": "key_stats",
+      "find": "No Overall Control (Lib Dem-led, from May 2024)",
+      "replace": "No Overall Control (Lib Dem-led, from May 2025); Conservative-led through 2024-25",
+      "severity": "high",
+      "drift_ref": "J #11c",
+      "kstat_index": 7,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Devon CC",
+      "field": "key_stats",
+      "find": "Julian Brazil (Liberal Democrats)",
+      "replace": "James McInnes (Conservative) through 2024-25; Julian Brazil (Liberal Democrats) from May 2025",
+      "severity": "high",
+      "drift_ref": "J #11d",
+      "kstat_index": 8,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Manchester",
+      "field": "notes",
+      "find": "CE Joanne Roney CBE (departs 2024 for Westminster CE role) run the fastest-growing English core city",
+      "replace": "CE Joanne Roney CBE (departed 2024 to become CE of Birmingham City Council) run the fastest-growing English core city",
+      "severity": "medium",
+      "drift_ref": "J #39b"
+    },
+    {
+      "entry_key": "Manchester",
+      "field": "key_stats",
+      "find": "Joanne Roney CBE (steps down 2024 to Westminster; successor TBC)",
+      "replace": "Joanne Roney CBE (stepped down 2024 to become CE of Birmingham City Council; successor Tom Stannard)",
+      "severity": "medium",
+      "drift_ref": "J #39c",
+      "kstat_index": 4,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "University Hospitals Bristol and Weston NHS Foundation Trust",
+      "field": "notes",
+      "find": "CEO Eugine Yafele (ex-South Western Ambulance) took over December 2022 — one of the few Black CEOs of a major NHS acute trust",
+      "replace": "CEO Eugine Yafele (ex-South Western Ambulance) took over 2022 but stood down early 2024 to move to Australia; Maria Kane named joint CEO (UHBW+NBT) July 2024",
+      "severity": "medium",
+      "drift_ref": "J #47a"
+    },
+    {
+      "entry_key": "University Hospitals Bristol and Weston NHS Foundation Trust",
+      "field": "key_stats",
+      "find": "Eugine Yafele (Chief Executive since December 2022)",
+      "replace": "Maria Kane (joint CEO UHBW+NBT from July 2024); Eugine Yafele was CEO 2022-early 2024 (departed for Australia)",
+      "severity": "medium",
+      "drift_ref": "J #47b",
+      "kstat_index": 3,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "University Hospitals Bristol and Weston NHS Foundation Trust",
+      "field": "key_stats",
+      "find": "Eugine Yafele (from 2023, continuing)",
+      "replace": "Maria Kane (joint CEO UHBW+NBT from July 2024); Yafele stood down early 2024",
+      "severity": "medium",
+      "drift_ref": "J #47c",
+      "kstat_index": 15,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "University Hospitals Bristol and Weston NHS Foundation Trust",
+      "field": "key_stats",
+      "find": "Ingrid Barker (continuing since 2019)",
+      "replace": "Ingrid Barker (UHBW Chair since 2019; joint Chair UHBW+NBT under Bristol NHS Group from April 2024)",
+      "severity": "low",
+      "drift_ref": "J #48",
+      "kstat_index": 16,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "National Wealth Fund Limited",
+      "field": "description",
+      "find": "rebadging + expanding the UK Infrastructure Bank (UKIB) on 14 July 2024",
+      "replace": "rebadging + expanding the UK Infrastructure Bank (UKIB) — announced 9 July 2024 by Chancellor Reeves; formally established 14 October 2024 under Statement of Strategic Priorities",
+      "severity": "medium",
+      "drift_ref": "J #56a"
+    },
+    {
+      "entry_key": "National Wealth Fund Limited",
+      "field": "key_stats",
+      "find": "14 July 2024 by Chancellor Rachel Reeves (rebadging UKIB)",
+      "replace": "Announced 9 July 2024 by Chancellor Reeves; formally established 14 October 2024 (rebadging UKIB)",
+      "severity": "medium",
+      "drift_ref": "J #56b",
+      "kstat_index": 0,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "National Wealth Fund Limited",
+      "field": "key_stats",
+      "find": "14 July 2024 — rebadging of UK Infrastructure Bank by Chancellor Reeves",
+      "replace": "Announced 9 July 2024 by Chancellor Reeves; formally established 14 October 2024 — rebadging of UK Infrastructure Bank",
+      "severity": "medium",
+      "drift_ref": "J #56c",
+      "kstat_index": 15,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Liverpool",
+      "field": "notes",
+      "find": "MHCLG lifted intervention 31 Mar 2024 — the ended intervention is a landmark devolution-era recovery",
+      "replace": "Statutory intervention at Liverpool City Council ended 9 June 2024 (when directions expired); commissioner team reduced from March 2024 — landmark devolution-era recovery",
+      "severity": "high",
+      "drift_ref": "J #66a"
+    },
+    {
+      "entry_key": "Liverpool",
+      "field": "key_stats",
+      "find": "Labour commissioners 2021-24 (Caller report); lifted 31 Mar 2024 after recovery plan",
+      "replace": "Labour commissioners 2021-24 (Caller report); intervention ended 9 June 2024 when directions expired",
+      "severity": "high",
+      "drift_ref": "J #66b",
+      "kstat_index": 11,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Liverpool",
+      "field": "description",
+      "find": "intervention ended Mar 2024 after recovery plan delivery",
+      "replace": "intervention ended 9 June 2024 (directions expired) after recovery plan delivery",
+      "severity": "high",
+      "drift_ref": "J #66c"
+    },
+    {
+      "entry_key": "Transport Development Fund-Other",
+      "field": "key_stats",
+      "find": "~£44B (£27.4B renewals + £4B operations + enhancements)",
+      "replace": "~£43.1B CP7 plan (£45.4B cash prices inc. Scotland); £19.3B renewals + £12.6B maintenance",
+      "severity": "medium",
+      "drift_ref": "J #74",
+      "kstat_index": 0,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Centrally Managed",
+      "field": "notes",
+      "find": "**ISF replaced CSSF April 2023**",
+      "replace": "**ISF replaced CSSF April 2024** (announced 2023; 2024-25 is ISF's first operational year)",
+      "severity": "medium",
+      "drift_ref": "J #84a"
+    },
+    {
+      "entry_key": "Centrally Managed",
+      "field": "description",
+      "find": "**Integrated Security Fund (ISF)** (renamed from CSSF April 2023)",
+      "replace": "**Integrated Security Fund (ISF)** (renamed from CSSF April 2024)",
+      "severity": "medium",
+      "drift_ref": "J #84b"
+    },
+    {
+      "entry_key": "University Hospitals of Derby and Burton NHS Foundation Trust",
+      "field": "notes",
+      "find": "CEO Stephen Posey (ex-Harrogate and District FT) took over in November 2023 from Gavin Boyle",
+      "replace": "CEO Stephen Posey (ex-Royal Papworth) joined UHDB as substantive CEO in September 2022; Gavin Boyle left Feb 2022 for South Yorkshire ICB",
+      "severity": "high",
+      "drift_ref": "J #100a"
+    },
+    {
+      "entry_key": "University Hospitals of Derby and Burton NHS Foundation Trust",
+      "field": "key_stats",
+      "find": "Stephen Posey (Chief Executive since Nov 2023)",
+      "replace": "Stephen Posey (Chief Executive since September 2022)",
+      "severity": "high",
+      "drift_ref": "J #100b",
+      "kstat_index": 3,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "University Hospitals of Derby and Burton NHS Foundation Trust",
+      "field": "key_stats",
+      "find": "CEO transition Nov 2023; Queen's Hospital Burton rebuild in NHP; resident doctor strikes",
+      "replace": "CEO transition Sept 2022; Queen's Hospital Burton rebuild in NHP; resident doctor strikes",
+      "severity": "high",
+      "drift_ref": "J #100c",
+      "kstat_index": 13,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "University Hospitals of Derby and Burton NHS Foundation Trust",
+      "field": "key_stats",
+      "find": "Stephen Posey (substantive from 2023, continuing)",
+      "replace": "Stephen Posey (substantive from September 2022, continuing)",
+      "severity": "high",
+      "drift_ref": "J #100d",
+      "kstat_index": 14,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Higher Education Funding",
+      "field": "key_stats",
+      "find": "Office for Students (OfS) — DfE-sponsored NDPB; CEO Susan Lapworth (since 2022); Chair Edward Peck (Mar 2024)",
+      "replace": "Office for Students (OfS) — DfE-sponsored NDPB; CEO Susan Lapworth (since 2022); Chair Edward Peck (from July 2025)",
+      "severity": "low",
+      "drift_ref": "J #107",
+      "kstat_index": 12,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Legal Aid Agency Fund - Criminal",
+      "field": "key_stats",
+      "find": "Jane Harbottle (from Aug 2022)",
+      "replace": "Jane Harbottle (from March 2021)",
+      "severity": "medium",
+      "drift_ref": "J #110a",
+      "kstat_index": 11,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Legal Aid Agency Fund - Criminal",
+      "field": "key_stats",
+      "find": "Jane Harbottle (from 2024, replacing Shaun McNally CBE); single CE covers both civil & criminal funds",
+      "replace": "Jane Harbottle (from March 2021, replacing Shaun McNally CBE); single CE covers both civil & criminal funds",
+      "severity": "medium",
+      "drift_ref": "J #110b",
+      "kstat_index": 21,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Staffordshire CC",
+      "field": "key_stats",
+      "find": "John Henderson CBE (since 2018)",
+      "replace": "Pat Flaherty (CE from April 2023, succeeding John Henderson CB who was CE from May 2015 and stepped down summer 2023)",
+      "severity": "high",
+      "drift_ref": "J #118a",
+      "kstat_index": 16,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Staffordshire CC",
+      "field": "notes",
+      "find": "Leader Alan White (Con), CE John Henderson",
+      "replace": "Leader Alan White (Con), CE Pat Flaherty (from April 2023, succeeding John Henderson CB who served as CE from May 2015 to summer 2023)",
+      "severity": "high",
+      "drift_ref": "J #118b"
+    },
+    {
+      "entry_key": "University Hospitals of North Midlands NHS Trust",
+      "field": "notes",
+      "find": "Substantive CEO Simon Evans-Evans took over in 2024 from interim Tracy Bullock",
+      "replace": "Substantive CEO Dr Simon Constable joined UHNM in September 2024; Tracy Bullock retired end June 2024 (she was substantive, not interim)",
+      "severity": "high",
+      "drift_ref": "J #122a"
+    },
+    {
+      "entry_key": "University Hospitals of North Midlands NHS Trust",
+      "field": "key_stats",
+      "find": "Simon Evans-Evans (substantive CEO from 2024; Tracy Bullock interim 2023-24)",
+      "replace": "Dr Simon Constable (substantive CEO from September 2024; Tracy Bullock retired end June 2024, she was substantive CEO not interim)",
+      "severity": "high",
+      "drift_ref": "J #122b",
+      "kstat_index": 3,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "University Hospitals of North Midlands NHS Trust",
+      "field": "key_stats",
+      "find": "Simon Evans (substantive from 2023, continuing)",
+      "replace": "Dr Simon Constable (substantive from September 2024, continuing)",
+      "severity": "high",
+      "drift_ref": "J #122c",
+      "kstat_index": 15,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Royal Devon University Healthcare NHS Foundation Trust",
+      "field": "key_stats",
+      "find": "Sam Higginson (Chief Executive since Mar 2024)",
+      "replace": "Sam Higginson (Chief Executive since 22 January 2024)",
+      "severity": "low",
+      "drift_ref": "J #128a",
+      "kstat_index": 3,
+      "kstat_subfield": "value"
+    },
+    {
+      "entry_key": "Royal Devon University Healthcare NHS Foundation Trust",
+      "field": "notes",
+      "find": "CEO Sam Higginson took over in March 2024, succeeding the architects of the 2022 merger",
+      "replace": "CEO Sam Higginson took over on 22 January 2024 (announced Nov 2023), succeeding the architects of the 2022 merger",
+      "severity": "low",
+      "drift_ref": "J #128b"
+    },
+    {
+      "entry_key": "Sheffield",
+      "field": "notes",
+      "find": "first modern English council to revert to the committee system (May 2022 referendum, ditching the strong-leader model)",
+      "replace": "first modern English council to revert to the committee system (governance referendum 6 May 2021, system adopted May 2022 following referendum result)",
+      "severity": "medium",
+      "drift_ref": "J #133a"
+    },
+    {
+      "entry_key": "Sheffield",
+      "field": "key_stats",
+      "find": "Adopted May 2022 after referendum (first English council in 20 yrs)",
+      "replace": "Governance referendum 6 May 2021 (65% for change); committee system adopted May 2022 (first English council in 20 yrs)",
+      "severity": "medium",
+      "drift_ref": "J #133b",
+      "kstat_index": 13,
+      "kstat_subfield": "value"
+    }
+  ],
+  "unresolved": [
+    {
+      "drift_ref": "H #5",
+      "reason": "R0A appears only in a source URL, not in description/notes/key_stats display text",
+      "suggestion": "Update source URL from /provider/R0A to /provider/RM3 in sources block (outside scope of display patches)"
+    }
+  ]
+}
