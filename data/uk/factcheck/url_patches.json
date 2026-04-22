@@ -1,0 +1,598 @@
+{
+  "url_patches": [
+    {
+      "entry_key": "10.2 Old age; of which: pensions",
+      "source_index": 5,
+      "old_url": "https://www.oecd.org/publication/pensions-at-a-glance/2023/",
+      "new_url": null,
+      "action": "keep_as_is",
+      "rationale": "Cloudflare 403 on HEAD; OECD landing page is live in browser - keep URL"
+    },
+    {
+      "entry_key": "10.2 Old age; of which: pensions",
+      "source_index": 6,
+      "old_url": "https://ec.europa.eu/eurostat/web/government-finance-statistics/data/database",
+      "new_url": "https://ec.europa.eu/eurostat/databrowser/view/gov_10a_exp/default/table?lang=en",
+      "confidence": "high",
+      "rationale": "Eurostat 'Government finance statistics/database' landing page moved - canonical COFOG table is gov_10a_exp on databrowser"
+    },
+    {
+      "entry_key": "DEPARTMENT FOR WORK AND PENSIONS",
+      "source_index": 7,
+      "old_url": "https://www.gov.uk/government/consultations/pathways-to-work-reforming-benefits-and-support-to-get-britain-working",
+      "new_url": "https://www.gov.uk/government/consultations/pathways-to-work-reforming-benefits-and-support-to-get-britain-working-green-paper",
+      "confidence": "high",
+      "rationale": "URL slug updated to include 'green-paper' suffix"
+    },
+    {
+      "entry_key": "DEPARTMENT FOR EDUCATION",
+      "source_index": 1,
+      "old_url": "https://ifs.org.uk/publications/annual-report-education-spending-england-2024",
+      "new_url": "https://ifs.org.uk/publications/annual-report-education-spending-england-2024-25",
+      "confidence": "high",
+      "rationale": "IFS slug was updated to include the fiscal-year range '2024-25'"
+    },
+    {
+      "entry_key": "DEPARTMENT FOR EDUCATION",
+      "source_index": 3,
+      "old_url": "https://www.gov.uk/government/statistics/student-loans-in-england-financial-year-2023-to-2024",
+      "new_url": "https://www.gov.uk/government/statistics/student-loans-in-england-2023-to-2024",
+      "confidence": "high",
+      "rationale": "URL slug dropped 'financial-year-' prefix"
+    },
+    {
+      "entry_key": "NHS Provider Sector",
+      "source_index": 0,
+      "old_url": "https://www.england.nhs.uk/financial-accounting-and-reporting/trust-accounts-consolidation-tac-data-publications/",
+      "new_url": "https://www.england.nhs.uk/financial-accounting-and-reporting/nhs-providers-tac-data-publications/",
+      "confidence": "high",
+      "rationale": "NHS England restructured the TAC publication path"
+    },
+    {
+      "entry_key": "DEPARTMENT OF HEALTH",
+      "source_index": 3,
+      "old_url": "https://www.health.org.uk/",
+      "new_url": null,
+      "action": "keep_as_is",
+      "rationale": "Cloudflare 403 on HEAD; Health Foundation homepage is live in browser"
+    },
+    {
+      "entry_key": "NHS Acute Trusts",
+      "source_index": 4,
+      "old_url": "https://www.england.nhs.uk/publication/nhs-payment-scheme/",
+      "new_url": "https://www.england.nhs.uk/publication/2025-26-nhs-payment-scheme/",
+      "confidence": "high",
+      "rationale": "NHS England renamed publication page to include the fiscal year"
+    },
+    {
+      "entry_key": "NHS Provider Sector",
+      "source_index": 5,
+      "old_url": "https://www.gov.uk/government/news/world-leading-reforms-to-transform-health-care-and-put-patients-first",
+      "new_url": "https://www.gov.uk/government/news/worlds-largest-quango-scrapped-under-reforms-to-put-patients-first",
+      "confidence": "high",
+      "rationale": "GOV.UK news story slug was changed; canonical announcement of NHS England abolition (13 Mar 2025) now lives at 'worlds-largest-quango-scrapped' slug"
+    },
+    {
+      "entry_key": "DEPARTMENT OF HEALTH",
+      "source_index": 0,
+      "old_url": "https://www.england.nhs.uk/publication/nhs-england-annual-report-and-accounts-2023-24/",
+      "new_url": "https://www.gov.uk/government/publications/nhs-england-annual-report-and-accounts-2023-to-2024",
+      "confidence": "high",
+      "rationale": "NHS England moved the report to GOV.UK with '2023-to-2024' slug"
+    },
+    {
+      "entry_key": "MINISTRY OF DEFENCE",
+      "source_index": 1,
+      "old_url": "https://www.nato.int/nato_static_fl2014/assets/pdf/2024/6/pdf/240617-def-exp-2024-en.pdf",
+      "new_url": "https://www.nato.int/content/dam/nato/legacy-wcm/media_pdf/2024/6/pdf/240617-def-exp-2024-en.pdf",
+      "confidence": "high",
+      "rationale": "NATO migrated PDF assets from /nato_static_fl2014/ to /content/dam/nato/legacy-wcm/"
+    },
+    {
+      "entry_key": "MINISTRY OF DEFENCE",
+      "source_index": 4,
+      "old_url": "https://www.gov.uk/government/publications/strategic-defence-review-2024-terms-of-reference",
+      "new_url": "https://www.gov.uk/government/publications/strategic-defence-review-2024-2025-terms-of-reference",
+      "confidence": "high",
+      "rationale": "GOV.UK slug updated to include the '2024-2025' fiscal-year span"
+    },
+    {
+      "entry_key": "10.7 Social exclusion n.e.c.; of which: family benefits, income support and tax credits",
+      "source_index": 5,
+      "old_url": "https://www.oecd.org/social/expenditure.htm",
+      "new_url": null,
+      "action": "keep_as_is",
+      "rationale": "OECD blocks HEAD requests - SOCX page live in browser"
+    },
+    {
+      "entry_key": "10.7 Social exclusion n.e.c.; of which: family benefits, income support and tax credits",
+      "source_index": 7,
+      "old_url": "https://cpag.org.uk/policy-and-campaigns/briefing/two-child-limit",
+      "new_url": null,
+      "action": "keep_as_is",
+      "rationale": "CPAG blocks HEAD requests (403) - briefing path live in browser"
+    },
+    {
+      "entry_key": "10.7 Social exclusion n.e.c.; of which: family benefits, income support and tax credits",
+      "source_index": 2,
+      "old_url": "https://cpag.org.uk/",
+      "new_url": null,
+      "action": "keep_as_is",
+      "rationale": "CPAG blocks HEAD requests (403) - homepage is live"
+    },
+    {
+      "entry_key": "NHS Acute Trusts",
+      "source_index": 5,
+      "old_url": "https://www.gov.uk/government/publications/new-hospital-programme-review",
+      "new_url": "https://www.gov.uk/government/publications/new-hospital-programme-review-outcome",
+      "confidence": "high",
+      "rationale": "GOV.UK slug moved to '-outcome' to reflect completed review (Jan 2025)"
+    },
+    {
+      "entry_key": "MINISTRY OF DEFENCE",
+      "source_index": 5,
+      "old_url": "https://www.nao.org.uk/reports/the-equipment-plan-2023-to-2033/",
+      "new_url": "https://www.nao.org.uk/reports/equipment-plan-2023-to-2033/",
+      "confidence": "high",
+      "rationale": "NAO slug dropped leading 'the-'"
+    },
+    {
+      "entry_key": "DEPARTMENT OF HEALTH",
+      "source_index": 8,
+      "old_url": "https://www.gov.uk/government/publications/statement-of-funding-policy-funding-the-scottish-government-welsh-government-and-northern-ireland-executive-2021",
+      "new_url": "https://www.gov.uk/government/publications/statement-of-funding-policy-2025",
+      "confidence": "medium",
+      "rationale": "HMT replaced 2021 edition - current canonical is June 2025 Statement of Funding Policy"
+    },
+    {
+      "entry_key": "DEPARTMENT OF HEALTH",
+      "source_index": 2,
+      "old_url": "https://www.gov.uk/government/publications/nhs-mandate-2024-to-2025",
+      "new_url": "https://www.gov.uk/government/publications/road-to-recovery-the-governments-2025-mandate-to-nhs-england",
+      "confidence": "medium",
+      "rationale": "2024-25 mandate superseded by 2025 mandate 'Road to Recovery' (30 Jan 2025) which includes 2024-25 financial directions"
+    },
+    {
+      "entry_key": "Financial Assistance To Other Institutions",
+      "source_index": 7,
+      "old_url": "https://www.nao.org.uk/reports/quantitative-easing-a-cost-to-the-taxpayer/",
+      "new_url": "https://www.nao.org.uk/reports/evaluating-the-government-balance-sheet-borrowing/",
+      "confidence": "medium",
+      "rationale": "No exact-title NAO report; closest canonical NAO analysis of QE/debt cost to taxpayer is 'Evaluating the government balance sheet: borrowing'"
+    },
+    {
+      "entry_key": "Financial Assistance To Other Institutions",
+      "source_index": 8,
+      "old_url": "https://www.bankofengland.co.uk/asset-purchase-facility",
+      "new_url": "https://www.bankofengland.co.uk/asset-purchase-facility/2024/2024-q4",
+      "confidence": "high",
+      "rationale": "Root /asset-purchase-facility returns 404; canonical quarterly reports live under /asset-purchase-facility/YYYY/YYYY-qN"
+    },
+    {
+      "entry_key": "10.7 Social exclusion n.e.c.; of which: family benefits, income support and tax credits",
+      "source_index": 6,
+      "old_url": "https://ifs.org.uk/publications/working-age-welfare-state",
+      "new_url": "https://ifs.org.uk/tags/working-age-benefits",
+      "confidence": "medium",
+      "rationale": "Specific publication slug gone; IFS working-age-benefits tag page covers the same topic cluster"
+    },
+    {
+      "entry_key": "Financial Assistance To Other Institutions",
+      "source_index": 9,
+      "old_url": "https://www.nao.org.uk/reports/investigation-into-the-horizon-it-system-and-the-post-office/",
+      "new_url": null,
+      "action": "fallback_publisher_root",
+      "fallback_url": "https://www.nao.org.uk/reports/",
+      "rationale": "Specific URL 404s; no direct NAO report with matching slug found - falling back to NAO reports listing"
+    },
+    {
+      "entry_key": "HM TREASURY",
+      "source_index": 8,
+      "old_url": "https://www.gov.uk/government/publications/statement-of-funding-policy-funding-the-scottish-government-welsh-government-and-northern-ireland-executive-2021",
+      "new_url": "https://www.gov.uk/government/publications/statement-of-funding-policy-2025",
+      "confidence": "medium",
+      "rationale": "2021 edition withdrawn - current is June 2025 Statement of Funding Policy"
+    },
+    {
+      "entry_key": "2.1 Military defence",
+      "source_index": 1,
+      "old_url": "https://www.nao.org.uk/reports/the-equipment-plan-2023-2033/",
+      "new_url": "https://www.nao.org.uk/reports/equipment-plan-2023-to-2033/",
+      "confidence": "high",
+      "rationale": "NAO canonical slug uses '2023-to-2033'; dropped leading 'the-'"
+    },
+    {
+      "entry_key": "HM TREASURY",
+      "source_index": 1,
+      "old_url": "https://obr.uk/frs/fiscal-risks-and-sustainability-july-2024/",
+      "new_url": "https://obr.uk/frs/fiscal-risks-and-sustainability-september-2024/",
+      "confidence": "high",
+      "rationale": "OBR postponed the 2024 FRS from July to September 2024 due to general election"
+    },
+    {
+      "entry_key": "NHS Commissioning Board (NHS England)",
+      "source_index": 2,
+      "old_url": "https://www.kingsfund.org.uk/insight-and-analysis/explainers/nhs-england-abolition",
+      "new_url": null,
+      "action": "fallback_publisher_root",
+      "fallback_url": "https://www.kingsfund.org.uk/",
+      "rationale": "Specific explainer URL 404s; no single dedicated King's Fund explainer page confirmed - fallback to homepage"
+    },
+    {
+      "entry_key": "Debt Interest Payments (National Debt Servicing)",
+      "source_index": 5,
+      "old_url": "https://www.nao.org.uk/reports/the-cost-of-public-sector-debt/",
+      "new_url": "https://www.nao.org.uk/reports/managing-government-borrowing/",
+      "confidence": "high",
+      "rationale": "No NAO report with exact title; 'Managing government borrowing' (July 2023, HC 1658) is the canonical NAO report on cost of public sector debt"
+    },
+    {
+      "entry_key": "NHS Commissioning Board (NHS England)",
+      "source_index": 9,
+      "old_url": "https://www.gov.uk/government/news/world-leading-reforms-to-transform-health-care-and-put-patients-first",
+      "new_url": "https://www.gov.uk/government/news/worlds-largest-quango-scrapped-under-reforms-to-put-patients-first",
+      "confidence": "high",
+      "rationale": "Same 13 Mar 2025 DHSC announcement; slug renamed"
+    },
+    {
+      "entry_key": "HM TREASURY",
+      "source_index": 2,
+      "old_url": "https://www.dmo.gov.uk/publications/annual-reports/",
+      "new_url": "https://www.gov.uk/government/publications/uk-debt-management-office-and-debt-management-account-annual-report-and-accounts-2023-to-2024",
+      "confidence": "high",
+      "rationale": "DMO annual reports migrated to GOV.UK; canonical 2023-24 DMO/DMA annual report on GOV.UK"
+    },
+    {
+      "entry_key": "2.1 Military defence",
+      "source_index": 4,
+      "old_url": "https://www.gov.uk/government/publications/strategic-defence-review-2025",
+      "new_url": "https://www.gov.uk/government/publications/the-strategic-defence-review-2025-making-britain-safer-secure-at-home-strong-abroad",
+      "confidence": "high",
+      "rationale": "GOV.UK canonical slug includes full subtitle (published 2 June 2025)"
+    },
+    {
+      "entry_key": "HM TREASURY",
+      "source_index": 4,
+      "old_url": "https://ifs.org.uk/publications/ifs-green-budget-2024",
+      "new_url": "https://ifs.org.uk/publications/green-budget-2024-full-report",
+      "confidence": "high",
+      "rationale": "IFS Green Budget 2024 canonical slug is 'green-budget-2024-full-report' (published 10 Oct 2024)"
+    },
+    {
+      "entry_key": "2.1 Military defence",
+      "source_index": 7,
+      "old_url": "https://www.gov.uk/government/publications/defence-in-numbers-2024",
+      "new_url": "https://www.gov.uk/government/publications/uk-defence-in-numbers-2023",
+      "confidence": "medium",
+      "rationale": "No 'defence-in-numbers-2024' publication; UK Defence in Numbers 2023 (published 2 Apr 2024) is the same series and contains 2024-25 figures"
+    },
+    {
+      "entry_key": "NHS Commissioning Board (NHS England)",
+      "source_index": 0,
+      "old_url": "https://www.england.nhs.uk/publication/board-meetings/",
+      "new_url": "https://www.england.nhs.uk/about/nhs-england-board/meetings/",
+      "confidence": "high",
+      "rationale": "Board meetings page moved from /publication/ to /about/nhs-england-board/meetings/"
+    },
+    {
+      "entry_key": "10.1 Sickness and disability; of which: incapacity, disability and injury benefits",
+      "source_index": 2,
+      "old_url": "https://www.gov.uk/government/consultations/pathways-to-work",
+      "new_url": "https://www.gov.uk/government/consultations/pathways-to-work-reforming-benefits-and-support-to-get-britain-working-green-paper",
+      "confidence": "high",
+      "rationale": "Canonical DWP consultation slug uses full title ending '-green-paper'"
+    },
+    {
+      "entry_key": "NHS Commissioning Board (NHS England)",
+      "source_index": 8,
+      "old_url": "https://www.england.nhs.uk/publication/nhs-england-annual-report-and-accounts-2023-24/",
+      "new_url": "https://www.gov.uk/government/publications/nhs-england-annual-report-and-accounts-2023-to-2024",
+      "confidence": "high",
+      "rationale": "Report moved to GOV.UK with '2023-to-2024' slug"
+    },
+    {
+      "entry_key": "9.5 Education not definable by level",
+      "source_index": 4,
+      "old_url": "https://ifs.org.uk/publications/annual-report-education-spending-england-2024",
+      "new_url": "https://ifs.org.uk/publications/annual-report-education-spending-england-2024-25",
+      "confidence": "high",
+      "rationale": "IFS slug includes '-2024-25' fiscal-year range"
+    },
+    {
+      "entry_key": "NHS Commissioning Board (NHS England)",
+      "source_index": 7,
+      "old_url": "https://www.nao.org.uk/reports/nhs-workforce-plan/",
+      "new_url": "https://www.nao.org.uk/reports/nhs-englands-modelling-for-the-long-term-workforce-plan/",
+      "confidence": "high",
+      "rationale": "NAO report title is 'NHS England's modelling for the Long Term Workforce Plan' (Mar 2024)"
+    },
+    {
+      "entry_key": "9.5 Education not definable by level",
+      "source_index": 9,
+      "old_url": "https://www.oecd.org/gov/government-at-a-glance-22214399.htm",
+      "new_url": null,
+      "action": "keep_as_is",
+      "rationale": "OECD blocks HEAD requests - page live in browser"
+    },
+    {
+      "entry_key": "Universal Credit",
+      "source_index": 1,
+      "old_url": "https://cpag.org.uk/",
+      "new_url": null,
+      "action": "keep_as_is",
+      "rationale": "CPAG blocks HEAD requests - homepage live in browser"
+    },
+    {
+      "entry_key": "9.5 Education not definable by level",
+      "source_index": 6,
+      "old_url": "https://www.oecd.org/education/education-at-a-glance/",
+      "new_url": null,
+      "action": "keep_as_is",
+      "rationale": "OECD blocks HEAD - Education at a Glance page live in browser"
+    },
+    {
+      "entry_key": "SCOTLAND OFFICE AND OFFICE OF THE ADVOCATE GENERAL",
+      "source_index": 0,
+      "old_url": "https://www.gov.uk/government/publications/scotland-office-annual-report-and-accounts-2023-24",
+      "new_url": "https://www.gov.uk/government/publications/scotland-office-and-oag-annual-report-and-accounts-2023-2024",
+      "confidence": "high",
+      "rationale": "GOV.UK canonical slug includes 'oag' and four-digit years"
+    },
+    {
+      "entry_key": "NHS Commissioning Board (NHS England)",
+      "source_index": 5,
+      "old_url": "https://www.gov.uk/government/publications/nhs-mandate-2024",
+      "new_url": "https://www.gov.uk/government/publications/nhs-mandate-2023",
+      "confidence": "medium",
+      "rationale": "No 2024 mandate was published; 2023 mandate covers 2023-24 and 2024-25"
+    },
+    {
+      "entry_key": "10.1 Sickness and disability; of which: incapacity, disability and injury benefits",
+      "source_index": 6,
+      "old_url": "https://www.oecd.org/social/expenditure.htm",
+      "new_url": "https://www.oecd.org/en/data/datasets/social-expenditure-database-socx.html",
+      "confidence": "medium",
+      "rationale": "Old /social/expenditure.htm returned 410 Gone; OECD moved SOCX dataset page to /en/data/datasets/social-expenditure-database-socx.html"
+    },
+    {
+      "entry_key": "SCOTLAND OFFICE AND OFFICE OF THE ADVOCATE GENERAL",
+      "source_index": 4,
+      "old_url": "https://www.instituteforgovernment.org.uk/explainer/devolution-scotland",
+      "new_url": "https://www.instituteforgovernment.org.uk/our-work/topics/devolution/scotland",
+      "confidence": "high",
+      "rationale": "IfG restructured devolution content under /our-work/topics/devolution/scotland"
+    },
+    {
+      "entry_key": "9.5 Education not definable by level",
+      "source_index": 5,
+      "old_url": "https://www.gov.uk/government/publications/academies-annual-report-and-accounts-2022-to-2023",
+      "new_url": "https://www.gov.uk/government/publications/academies-consolidated-annual-report-and-accounts-2022-to-2023",
+      "confidence": "high",
+      "rationale": "GOV.UK canonical slug is 'academies-consolidated-annual-report...'"
+    },
+    {
+      "entry_key": "2.1 Military defence",
+      "source_index": 5,
+      "old_url": "https://www.nato.int/cps/en/natohq/news_226465.htm",
+      "new_url": "https://www.nato.int/en/news-and-events/articles/news/2024/03/14/defence-expenditure-of-nato-countries-2014-2023",
+      "confidence": "medium",
+      "rationale": "NATO migrated CPS news IDs to /en/news-and-events/articles/; closest equivalent is 14 Mar 2024 defence expenditure press release"
+    },
+    {
+      "entry_key": "SCOTLAND OFFICE AND OFFICE OF THE ADVOCATE GENERAL",
+      "source_index": 3,
+      "old_url": "https://www.gov.scot/publications/government-expenditure-revenue-scotland-2023-24/",
+      "new_url": "https://www.gov.scot/publications/government-expenditure-revenue-scotland-gers-2023-24/",
+      "confidence": "high",
+      "rationale": "gov.scot slug added 'gers-' token"
+    },
+    {
+      "entry_key": "Universal Credit",
+      "source_index": 3,
+      "old_url": "https://www.gov.uk/government/statistics/fraud-and-error-in-the-benefit-system-financial-year-2023-to-2024",
+      "new_url": "https://www.gov.uk/government/statistics/fraud-and-error-in-the-benefit-system-financial-year-2023-to-2024-estimates",
+      "confidence": "high",
+      "rationale": "GOV.UK slug appends '-estimates'"
+    },
+    {
+      "entry_key": "New State Pension (Excluding Protected Payments)",
+      "source_index": 5,
+      "old_url": "https://www.gov.uk/government/statistics/fraud-and-error-in-the-benefit-system-financial-year-2023-to-2024",
+      "new_url": "https://www.gov.uk/government/statistics/fraud-and-error-in-the-benefit-system-financial-year-2023-to-2024-estimates",
+      "confidence": "high",
+      "rationale": "GOV.UK slug appends '-estimates'"
+    },
+    {
+      "entry_key": "DEPARTMENT FOR TRANSPORT",
+      "source_index": 1,
+      "old_url": "https://www.nao.org.uk/reports/hs2-update-march-2024/",
+      "new_url": "https://www.nao.org.uk/reports/progress-in-implementing-national-audit-office-recommendations-high-speed-two/",
+      "confidence": "high",
+      "rationale": "NAO HS2 report from 27 Mar 2024 is titled 'Progress in implementing NAO recommendations: High Speed Two'"
+    },
+    {
+      "entry_key": "9.4 Tertiary education",
+      "source_index": 0,
+      "old_url": "https://www.gov.uk/government/statistics/student-loans-in-england-financial-year-2023-to-2024",
+      "new_url": "https://www.gov.uk/government/statistics/student-loans-in-england-2023-to-2024",
+      "confidence": "high",
+      "rationale": "Slug dropped 'financial-year-' prefix"
+    },
+    {
+      "entry_key": "New State Pension (Excluding Protected Payments)",
+      "source_index": 3,
+      "old_url": "https://www.gov.uk/government/collections/pensioners-incomes-series-statistics",
+      "new_url": "https://www.gov.uk/government/collections/pensioners-incomes-series-statistics--3",
+      "confidence": "high",
+      "rationale": "GOV.UK re-slugged collection with '--3' suffix after re-publication"
+    },
+    {
+      "entry_key": "DEPARTMENT FOR TRANSPORT",
+      "source_index": 2,
+      "old_url": "https://www.nao.org.uk/reports/resetting-the-strategic-road-network/",
+      "new_url": "https://www.nao.org.uk/reports/progress-with-the-road-investment-strategy/",
+      "confidence": "medium",
+      "rationale": "No NAO report with that exact slug; 'Progress with the Road Investment Strategy' is NAO's canonical strategic-road-network assessment"
+    },
+    {
+      "entry_key": "DEPARTMENT FOR TRANSPORT",
+      "source_index": 6,
+      "old_url": "https://tfl.gov.uk/corporate/publications-and-reports/annual-report",
+      "new_url": null,
+      "action": "keep_as_is",
+      "rationale": "TfL blocks HEAD requests (Cloudflare/Akamai 403); annual report page live in browser"
+    },
+    {
+      "entry_key": "9.4 Tertiary education",
+      "source_index": 3,
+      "old_url": "https://www.hesa.ac.uk/",
+      "new_url": null,
+      "action": "keep_as_is",
+      "rationale": "HESA blocks HEAD (403); homepage live in browser"
+    },
+    {
+      "entry_key": "MINISTRY OF HOUSING, COMMUNITIES AND LOCAL GOVERNMENT",
+      "source_index": 4,
+      "old_url": "https://ifs.org.uk/publications/local-government-finance-england",
+      "new_url": "https://ifs.org.uk/publications/how-have-english-councils-funding-and-spending-changed-2010-2024",
+      "confidence": "medium",
+      "rationale": "Specific slug 404s; IFS's canonical 2024 local-gov-finance analysis is 'How have English councils' funding and spending changed? 2010 to 2024'"
+    },
+    {
+      "entry_key": "MINISTRY OF HOUSING, COMMUNITIES AND LOCAL GOVERNMENT",
+      "source_index": 7,
+      "old_url": "https://www.gov.uk/government/publications/english-devolution-white-paper",
+      "new_url": "https://www.gov.uk/government/publications/english-devolution-white-paper-power-and-partnership-foundations-for-growth",
+      "confidence": "high",
+      "rationale": "GOV.UK canonical includes full subtitle '-power-and-partnership-foundations-for-growth'"
+    },
+    {
+      "entry_key": "DEPARTMENT FOR TRANSPORT",
+      "source_index": 5,
+      "old_url": "https://commonslibrary.parliament.uk/research-briefings/cbp-9397/",
+      "new_url": "https://commonslibrary.parliament.uk/research-briefings/cbp-9464/",
+      "confidence": "medium",
+      "rationale": "CBP-9397 returns 404; CBP-9464 'Bus policy in England' is the current Commons Library briefing on bus services"
+    },
+    {
+      "entry_key": "MHCLG Local Government",
+      "source_index": 1,
+      "old_url": "https://ifs.org.uk/publications/local-government-finance-england",
+      "new_url": "https://ifs.org.uk/publications/how-have-english-councils-funding-and-spending-changed-2010-2024",
+      "confidence": "medium",
+      "rationale": "Same slug gone; IFS canonical 2024 analysis on council funding"
+    },
+    {
+      "entry_key": "9.4 Tertiary education",
+      "source_index": 4,
+      "old_url": "https://www.ucu.org.uk/redundancies",
+      "new_url": "https://qmucu.org/qmul-transformation/uk-he-shrinking/",
+      "confidence": "medium",
+      "rationale": "UCU /redundancies page 404s; community-maintained redundancies tracker at qmucu.org is the canonical live sector tracker"
+    },
+    {
+      "entry_key": "DEPARTMENT FOR TRANSPORT",
+      "source_index": 8,
+      "old_url": "https://www.gov.uk/government/publications/great-british-railways",
+      "new_url": "https://www.gov.uk/guidance/great-british-railways",
+      "confidence": "high",
+      "rationale": "Moved from /publications/ to /guidance/great-british-railways"
+    },
+    {
+      "entry_key": "SCOTTISH GOVERNMENT",
+      "source_index": 3,
+      "old_url": "https://www.gov.scot/publications/serving-scotland-programme-government-2024-25/",
+      "new_url": "https://www.gov.scot/publications/programme-government-2024-25-serving-scotland/",
+      "confidence": "high",
+      "rationale": "gov.scot slug reordered tokens - canonical is 'programme-government-2024-25-serving-scotland'"
+    },
+    {
+      "entry_key": "9.4 Tertiary education",
+      "source_index": 2,
+      "old_url": "https://ifs.org.uk/publications/reforms-higher-education-funding",
+      "new_url": "https://ifs.org.uk/publications/student-loans-reform-leap-into-unknown",
+      "confidence": "medium",
+      "rationale": "Slug gone; the specific Waltmann 2022 analysis is 'Student loans reform is a leap into the unknown' (BN341)"
+    },
+    {
+      "entry_key": "DEPARTMENT FOR TRANSPORT",
+      "source_index": 3,
+      "old_url": "https://www.networkrail.co.uk/industry-and-commercial/control-period-7/",
+      "new_url": "https://www.networkrail.co.uk/who-we-are/publications-and-resources/our-delivery-plans-for-2024-2029/",
+      "confidence": "high",
+      "rationale": "Network Rail moved CP7 page to /who-we-are/publications-and-resources/our-delivery-plans-for-2024-2029/"
+    },
+    {
+      "entry_key": "MINISTRY OF HOUSING, COMMUNITIES AND LOCAL GOVERNMENT",
+      "source_index": 6,
+      "old_url": "https://lgiu.org/publication/state-of-local-government-finance-in-england-2024/",
+      "new_url": "https://lgiu.org/publication/the-state-of-local-government-finance-in-england-2024/",
+      "confidence": "high",
+      "rationale": "LGiU slug has 'the-' prefix"
+    },
+    {
+      "entry_key": "Academies - Pre 16",
+      "source_index": 2,
+      "old_url": "https://www.gov.uk/government/collections/academies-financial-accounts",
+      "new_url": "https://www.gov.uk/government/collections/academies-sector-annual-reports-and-accounts",
+      "confidence": "high",
+      "rationale": "GOV.UK renamed collection to 'academies-sector-annual-reports-and-accounts'"
+    },
+    {
+      "entry_key": "NORTHERN IRELAND EXECUTIVE",
+      "source_index": 1,
+      "old_url": "https://www.finance-ni.gov.uk/topics/finance/budget",
+      "new_url": "https://www.finance-ni.gov.uk/topics/budget-plans",
+      "confidence": "high",
+      "rationale": "DoF(NI) restructured topics; canonical is /topics/budget-plans"
+    },
+    {
+      "entry_key": "MHCLG Local Government",
+      "source_index": 0,
+      "old_url": "https://www.gov.uk/government/collections/local-government-finance-settlement-england-2024-to-2025",
+      "new_url": "https://www.gov.uk/government/collections/final-local-government-finance-settlement-england-2024-to-2025",
+      "confidence": "high",
+      "rationale": "Final settlement collection at 'final-local-government-finance-settlement...' slug"
+    },
+    {
+      "entry_key": "NORTHERN IRELAND EXECUTIVE",
+      "source_index": 4,
+      "old_url": "https://www.northernireland.gov.uk/articles/programme-government-2024",
+      "new_url": "https://www.northernireland.gov.uk/articles/programme-government-2024-2027-our-plan-doing-what-matters-most",
+      "confidence": "high",
+      "rationale": "Agreed slug is 'programme-government-2024-2027-our-plan-doing-what-matters-most' (agreed 27 Feb 2025)"
+    },
+    {
+      "entry_key": "Other Authorities",
+      "source_index": 3,
+      "old_url": "https://www.nao.org.uk/reports/financial-sustainability-of-police-forces-in-england-and-wales-2023/",
+      "new_url": "https://www.nao.org.uk/reports/financial-sustainability-of-police-forces-in-england-and-wales/",
+      "confidence": "high",
+      "rationale": "NAO slug dropped trailing '-2023'; unversioned slug is canonical"
+    },
+    {
+      "entry_key": "Shire Counties",
+      "source_index": 5,
+      "old_url": "https://www.nao.org.uk/reports/local-government-finance-in-england-overview-2024/",
+      "new_url": "https://www.nao.org.uk/reports/local-government-financial-sustainability-2025/",
+      "confidence": "medium",
+      "rationale": "No NAO report with exact slug/title; 'Local government financial sustainability' (Feb 2025) is the canonical successor covering MHCLG/LG finance overview"
+    },
+    {
+      "entry_key": "NORTHERN IRELAND EXECUTIVE",
+      "source_index": 7,
+      "old_url": "https://www.nidirect.gov.uk/articles/head-northern-ireland-civil-service",
+      "new_url": "https://www.executiveoffice-ni.gov.uk/news/new-head-civil-service-announced",
+      "confidence": "medium",
+      "rationale": "NI Direct article gone; Executive Office NI announcement page for Jayne Brady's appointment is the canonical source"
+    },
+    {
+      "entry_key": "Other Authorities",
+      "source_index": 4,
+      "old_url": "https://www.instituteforgovernment.org.uk/explainer/metro-mayors",
+      "new_url": "https://www.instituteforgovernment.org.uk/article/explainer/english-devolution-combined-authorities-and-metro-mayors",
+      "confidence": "high",
+      "rationale": "IfG moved explainer to /article/explainer/english-devolution-combined-authorities-and-metro-mayors"
+    }
+  ]
+}
