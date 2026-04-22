@@ -18069,7 +18069,12 @@ function _supSwitchMode(mode, btn){
   if (list) list.style.display = mode === 'list' ? '' : 'none';
   if (map)  map.style.display  = mode === 'map'  ? '' : 'none';
   if (rank) rank.style.display = mode === 'ranking' ? '' : 'none';
-  if (mode === 'map') _supmapInit();
+  if (mode === 'map') {
+    _supmapInit();
+    // If map was already initialised but tab was hidden, Leaflet needs a size refresh
+    // to re-draw tiles at the correct container dimensions.
+    if (_supmapLeaflet) setTimeout(() => _supmapLeaflet.invalidateSize(), 50);
+  }
   if (mode === 'ranking') _supRenderRanking();
   // Persist chosen mode in URL hash (#recipients/ranking) without clobbering #suppliers/<ch>
   try{
@@ -18408,8 +18413,9 @@ async function _supmapInit(){
     if (!canvas) return;
     if (loadingEl) loadingEl.remove();
 
-    // UK-only constraints: pan bounded to UK bbox (Scilly SW → Shetland NE), min zoom prevents escape to Europe.
-    const UK_BOUNDS = L.latLngBounds([[49.5, -9.0], [61.5, 2.5]]);
+    // UK-centred view with soft elastic bounds (Channel Isles + Shetland + some pan slack).
+    // minZoom 5 prevents escape to Europe; viscosity 0.3 lets the user drift a bit before springing back.
+    const UK_BOUNDS = L.latLngBounds([[48.5, -11.5], [62.5, 4.0]]);
     _supmapLeaflet = L.map('supmap-canvas', {
       center: [54.0, -2.3],
       zoom: 6,
@@ -18417,7 +18423,7 @@ async function _supmapInit(){
       maxZoom: 16,
       preferCanvas: true,
       maxBounds: UK_BOUNDS,
-      maxBoundsViscosity: 1.0,
+      maxBoundsViscosity: 0.3,
       worldCopyJump: false,
     });
     // CARTO Dark Matter — clean political basemap, no relief. Already dark-themed (no invert filter needed).
@@ -18596,12 +18602,31 @@ function _supmapSupplierPopup(s, flow){
   const fmt = v => v >= 1e9 ? '£' + (v/1e9).toFixed(2) + 'B'
                 : v >= 1e6 ? '£' + (v/1e6).toFixed(1) + 'M'
                 : v >= 1e3 ? '£' + (v/1e3).toFixed(0) + 'k' : '£' + Math.round(v);
+  const ch = s.ch_number || '';
+  const profileBtn = ch
+    ? `<button class="supmap-popup-btn" onclick="_supmapJumpToSupplierProfile('${_cmpEsc(ch)}')">→ Open full profile</button>`
+    : '';
   return `<div>
     <div class="supmap-popup-name">${_cmpEsc(s.name)}</div>
-    <div class="supmap-popup-meta">${s.ch_number || ''} · ${s.lad24_nm || s.region || ''}</div>
+    <div class="supmap-popup-meta">${_cmpEsc(ch)} · ${_cmpEsc(s.lad24_nm || s.region || '')}</div>
     ${flow ? `<div class="supmap-popup-stat">From this buyer: <b>${fmt(flow.gbp)}</b> (${flow.n_contracts} contracts)</div>` : ''}
     <div class="supmap-popup-stat">Total 2024: <b>${fmt(s.total_gbp_2024)}</b> · ${s.n_buyers} buyers</div>
+    ${profileBtn ? `<div style="margin-top:8px">${profileBtn}</div>` : ''}
   </div>`;
+}
+
+// Jump from map supplier popup → List tab with that supplier's dossier open.
+// Preserves the map's internal state (zoom/pan/selected buyer/visible suppliers) because
+// _supmapInit has an early-return when already initialised. The user's next click on
+// the 🗺️ Map toggle will land on exactly the same view.
+function _supmapJumpToSupplierProfile(ch){
+  if (!ch) return;
+  try { _supmapLeaflet && _supmapLeaflet.closePopup(); } catch(e){}
+  // Flag that we came from map so the hash router doesn't reset the map view on return
+  window._supReturnToMap = true;
+  const listBtn = document.querySelector('.sup-modebtn[data-sup-mode="list"]');
+  if (listBtn && typeof _supSwitchMode === 'function') _supSwitchMode('list', listBtn);
+  if (typeof _supSelectSupplier === 'function') _supSelectSupplier(ch);
 }
 
 function _supmapSetType(t){
