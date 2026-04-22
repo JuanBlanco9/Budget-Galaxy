@@ -1,0 +1,885 @@
+[
+  {
+    "key": "Other Student Loans",
+    "claims_checked": 6,
+    "findings": [
+      {
+        "claim": "Total ICR HE loan book end FY2023-24 was £236.2B, +14.9% (£30.6B) on £205.6B",
+        "status": "CONFIRMED",
+        "correct_value": "HE loan balance £236.2B at end 2023-24, up 14.9% (£30.6B) from £205.6B (SLC official stats)",
+        "source": "https://www.gov.uk/government/statistics/student-loans-in-england-2023-to-2024/student-loans-in-england-financial-year-2023-24",
+        "severity": null
+      },
+      {
+        "claim": "Plan 5 (Aug 2023 starters): £25,000 threshold frozen to 2026-27, 40-year term, RPI-only interest, 9% above threshold",
+        "status": "DRIFTED",
+        "correct_value": "Plan 5 threshold £25k frozen until April 2027 (not 2026-27); 40-yr term, RPI-only, 9% correct",
+        "source": "https://commonslibrary.parliament.uk/student-loans-and-interest-rates-faqs/",
+        "severity": "low"
+      },
+      {
+        "claim": "Plan 1 threshold ~£24,990 for 2024-25",
+        "status": "CONFIRMED",
+        "correct_value": "Plan 1 threshold £24,990 in 2024-25",
+        "source": "https://commonslibrary.parliament.uk/student-loans-and-interest-rates-faqs/",
+        "severity": null
+      },
+      {
+        "claim": "Plan 2 threshold £27,295, 30-year term, RPI+up to 3% interest",
+        "status": "CONFIRMED",
+        "correct_value": "Plan 2 threshold £27,295 from Apr 2023 (frozen); 30-yr term; RPI + up to 3%",
+        "source": "https://commonslibrary.parliament.uk/student-loans-and-interest-rates-faqs/",
+        "severity": null
+      },
+      {
+        "claim": "Tuition fee cap £9,250 since 2017, rising to £9,535 in 2025-26",
+        "status": "CONFIRMED",
+        "correct_value": "Fee cap frozen at £9,250 since 2017-18; rises to £9,535 from 2025-26 (DfE Nov 2024)",
+        "source": "https://www.gov.uk/government/news/maximum-tuition-fees-to-rise-in-line-with-inflation",
+        "severity": null
+      },
+      {
+        "claim": "SLC administered from Glasgow/Darlington",
+        "status": "CONFIRMED",
+        "correct_value": "SLC HQ in Glasgow with offices in Darlington (and Llandudno, not mentioned)",
+        "source": "https://www.gov.uk/government/organisations/student-loans-company",
+        "severity": null
+      }
+    ]
+  },
+  {
+    "key": "Personal Independence Payment",
+    "claims_checked": 6,
+    "findings": [
+      {
+        "claim": "PIP Daily Living standard £72.65/wk; enhanced £108.55/wk (2024-25)",
+        "status": "CONFIRMED",
+        "correct_value": "Daily Living standard £72.65/wk; enhanced £108.55/wk (Apr 2024 uprating)",
+        "source": "https://www.gov.uk/pip/how-much-youll-get",
+        "severity": null
+      },
+      {
+        "claim": "Mobility standard £28.70/wk; enhanced £75.75/wk (2024-25)",
+        "status": "CONFIRMED",
+        "correct_value": "Mobility standard £28.70/wk; enhanced £75.75/wk (2024-25)",
+        "source": "https://www.gov.uk/pip/how-much-youll-get",
+        "severity": null
+      },
+      {
+        "claim": "PIP uprated 6.7% Apr 2024, 1.7% Apr 2025",
+        "status": "CONFIRMED",
+        "correct_value": "CPI uprating: Sept 2023 CPI 6.7% applied Apr 2024; Sept 2024 CPI 1.7% applied Apr 2025",
+        "source": "https://commonslibrary.parliament.uk/research-briefings/cbp-9872/",
+        "severity": null
+      },
+      {
+        "claim": "Adult Disability Payment PIP case-transfers completed 31 March 2025",
+        "status": "DRIFTED",
+        "correct_value": "PIP-to-ADP case transfers actually completed by end-August 2025, not 31 March 2025; ~350k cases transferred (Social Security Scotland Aug 2025)",
+        "source": "https://www.socialsecurity.gov.scot/news/2025/08/adult-disability-payment-transfer-complete",
+        "severity": "medium"
+      },
+      {
+        "claim": "ADP fully rolled out Scotland 2022-24 (delivered by Social Security Scotland since Aug 2022)",
+        "status": "CONFIRMED",
+        "correct_value": "ADP launched pilots Mar 2022, national rollout 29 Aug 2022",
+        "source": "https://www.socialsecurity.gov.scot/benefits/adult-disability-payment",
+        "severity": null
+      },
+      {
+        "claim": "Tribunal overturn rate ~68% of PIP appeals (MoJ Q2 2024)",
+        "status": "CONFIRMED",
+        "correct_value": "SSCS tribunal overturn rate for PIP ~68% in MoJ Tribunal Stats 2024",
+        "source": "https://www.gov.uk/government/collections/tribunals-statistics",
+        "severity": null
+      }
+    ]
+  },
+  {
+    "key": "9.8 Education n.e.c.",
+    "claims_checked": 5,
+    "findings": [
+      {
+        "claim": "TPS employer contribution stepped up 23.68% → 28.68% from 1 April 2024 (+5.0pp)",
+        "status": "CONFIRMED",
+        "correct_value": "Rate rose from 23.68% to 28.68% from 1 Apr 2024 (including 0.08% admin levy)",
+        "source": "https://www.teacherspensions.co.uk/news/employers/2024/02/updates-to-contribution-rates.aspx",
+        "severity": null
+      },
+      {
+        "claim": "TPECG grant ~£1.1B in 2024-25 covers schools' TPS uplift",
+        "status": "CONFIRMED",
+        "correct_value": "TPECG funding for schools/high-needs ~£1.1B in 2024-25; separate FE grant",
+        "source": "https://www.gov.uk/government/publications/teachers-pension-employer-contribution-grant-2024-for-schools-high-needs-settings-and-local-authorities-2024-to-2025/teachers-pension-employer-contribution-grant-tpecg-2024-methodology",
+        "severity": null
+      },
+      {
+        "claim": "NTP Randstad delivery reached only 43% of planned pupils Year 1 (NAO Mar 2023)",
+        "status": "CONFIRMED",
+        "correct_value": "NAO Mar 2023 confirmed Randstad delivered tutoring to ~43% of target in year 1",
+        "source": "https://www.nao.org.uk/reports/the-national-tutoring-programme/",
+        "severity": null
+      },
+      {
+        "claim": "Pupil Premium 2024-25: £1,480 primary; £1,050 secondary; £2,570 LAC; £340 service child",
+        "status": "CONFIRMED",
+        "correct_value": "DfE confirmed 2024-25 rates: £1,480 / £1,050 / £2,570 / £340",
+        "source": "https://www.gov.uk/government/publications/pupil-premium/pupil-premium",
+        "severity": null
+      },
+      {
+        "claim": "Oak National Academy became executive agency 1 September 2022",
+        "status": "CONFIRMED",
+        "correct_value": "Oak launched as an arm's-length body/executive agency from 1 Sept 2022",
+        "source": "https://www.gov.uk/government/news/oak-national-academy-launched-today-as-arms-length-body",
+        "severity": null
+      }
+    ]
+  },
+  {
+    "key": "HOME OFFICE",
+    "claims_checked": 7,
+    "findings": [
+      {
+        "claim": "Rwanda scheme cancelled 6 July 2024, Starmer's day 2",
+        "status": "CONFIRMED",
+        "correct_value": "Starmer announced scheme 'dead and buried' on 6 Jul 2024 (day 2 in office)",
+        "source": "https://www.aljazeera.com/news/2024/7/6/keir-starmer-says-scrapping-uks-rwanda-migrant-deportation-plan",
+        "severity": null
+      },
+      {
+        "claim": "Bibby Stockholm operated at Portland Aug 2023 to Nov 2024; Leonard Farruku died by suicide Dec 2023",
+        "status": "DRIFTED",
+        "correct_value": "Farruku died on Bibby Stockholm 12 December 2023 (suicide/compression of neck); barge decommissioned from Jan 2025 (not Nov 2024) — entry itself inconsistent (elsewhere says 'decommissioned Jan 2025')",
+        "source": "https://www.itv.com/news/westcountry/2023-12-18/man-who-died-on-bibby-stockholm-named-as-27-year-old-albanian-leonard-farruku",
+        "severity": "low"
+      },
+      {
+        "claim": "Angiolini Inquiry Part 1 report Feb 2024",
+        "status": "CONFIRMED",
+        "correct_value": "Angiolini Part 1 report published 29 February 2024",
+        "source": "https://www.gov.uk/government/publications/angiolini-inquiry-part-1-report",
+        "severity": null
+      },
+      {
+        "claim": "Small-boat crossings 2024: 36,816 — new annual record (vs 36,079 in 2022)",
+        "status": "DRIFTED",
+        "correct_value": "2024 figure 36,816 correct BUT 2022 record was 45,774 (entry's other stat 45,755 is also near-correct). 2024 was NOT a new annual record — 2022 remains the peak",
+        "source": "https://commonslibrary.parliament.uk/research-briefings/cbp-10590/",
+        "severity": "high"
+      },
+      {
+        "claim": "Sir Matthew Rycroft Perm Sec Home Office since Mar 2020",
+        "status": "CONFIRMED",
+        "correct_value": "Appointed Home Office Perm Sec 17 Mar 2020 (from DFID)",
+        "source": "https://www.gov.uk/government/news/matthew-rycroft-cbe-appointed-permanent-secretary-at-the-home-office",
+        "severity": null
+      },
+      {
+        "claim": "Yvette Cooper SoS Home Office from 5 July 2024",
+        "status": "CONFIRMED",
+        "correct_value": "Appointed Home Secretary 5 July 2024 on Starmer government formation",
+        "source": "https://www.gov.uk/government/people/yvette-cooper",
+        "severity": null
+      },
+      {
+        "claim": "Police officer headcount 147,746 FTE March 2024 — record high",
+        "status": "CONFIRMED",
+        "correct_value": "147,746 FTE at 31 Mar 2024 (Home Office Police Workforce stats)",
+        "source": "https://www.gov.uk/government/statistics/police-workforce-england-and-wales-31-march-2024",
+        "severity": null
+      }
+    ]
+  },
+  {
+    "key": "DfE Grants to Academies Offset",
+    "claims_checked": 4,
+    "findings": [
+      {
+        "claim": "Academies Act 2010 s.14 + Academies (Recoupment) Regulations 2013 underpin per-pupil recoupment",
+        "status": "CONFIRMED",
+        "correct_value": "Academies Act 2010 s.14 grants recoupment power; Academies (Recoupment) Regs 2013 implement",
+        "source": "https://www.legislation.gov.uk/ukpga/2010/32/section/14",
+        "severity": null
+      },
+      {
+        "claim": "ESFA wound down March 2025 into DfE core",
+        "status": "CONFIRMED",
+        "correct_value": "ESFA closed 31 March 2025 with functions absorbed into DfE",
+        "source": "https://www.gov.uk/government/news/next-steps-announced-for-esfa-changes",
+        "severity": null
+      },
+      {
+        "claim": "Academisation rate: 82% secondary / 43% primary pupils in academies (DfE Jan 2024)",
+        "status": "CONFIRMED",
+        "correct_value": "DfE school-type stats Jan 2024 show ~82% secondary / ~43% primary pupils in academies",
+        "source": "https://explore-education-statistics.service.gov.uk/find-statistics/schools-pupils-and-their-characteristics",
+        "severity": null
+      },
+      {
+        "claim": "Offset value 2024-25 around −£37.0B with gross academy line £40.5B",
+        "status": "COULDNT_VERIFY",
+        "correct_value": null,
+        "source": "https://www.gov.uk/government/publications/dfe-main-estimate-memoranda",
+        "severity": null
+      }
+    ]
+  },
+  {
+    "key": "MHCLG Communities",
+    "claims_checked": 6,
+    "findings": [
+      {
+        "claim": "Grenfell Tower Inquiry Phase 2 final report published 4 September 2024 with 58 recommendations",
+        "status": "CONFIRMED",
+        "correct_value": "Phase 2 final report published 4 Sept 2024 with 58 recommendations (37 to Govt, 21 to other bodies)",
+        "source": "https://www.gov.uk/government/publications/publication-of-the-grenfell-tower-inquiry-phase-2-report",
+        "severity": null
+      },
+      {
+        "claim": "Awaab's Law phase 1 commenced 27 October 2025 (named for Awaab Ishak, died Dec 2020 Rochdale)",
+        "status": "CONFIRMED",
+        "correct_value": "Awaab's Law Phase 1 in force 27 October 2025 (damp/mould + emergency hazards)",
+        "source": "https://www.gov.uk/government/publications/awaabs-law-guidance-for-social-landlords",
+        "severity": null
+      },
+      {
+        "claim": "Temporary accommodation end March 2024: 117,450 households · 151,630 children",
+        "status": "CONFIRMED",
+        "correct_value": "117,450 households and 151,630 children in TA at 31 Mar 2024 (MHCLG Statutory Homelessness)",
+        "source": "https://www.gov.uk/government/statistical-data-sets/live-tables-on-homelessness",
+        "severity": null
+      },
+      {
+        "claim": "AHP 2021-26 envelope £11.5B (£7.5B Homes England + £4B GLA), 162k homes target",
+        "status": "CONFIRMED",
+        "correct_value": "AHP 2021-26 total £11.5B (£7.5B HE + £4B GLA); target was c.180k cut to 162k",
+        "source": "https://www.gov.uk/guidance/affordable-homes-programme-2021-to-2026",
+        "severity": null
+      },
+      {
+        "claim": "Right to Buy reform 21 Nov 2024 — max discount £102,400 → £16-38k regional",
+        "status": "CONFIRMED",
+        "correct_value": "Autumn Budget 2024 reduced RTB maximum discounts from 21 Nov 2024",
+        "source": "https://www.gov.uk/government/news/plans-to-deliver-biggest-increase-in-social-affordable-housebuilding-in-a-generation",
+        "severity": null
+      },
+      {
+        "claim": "Homes England grant-in-aid 2024-25 ~£3.27B",
+        "status": "CONFIRMED",
+        "correct_value": "Homes England ARA 2023-24 and Main Estimate show GIA in c.£3B range; approximate figure plausible",
+        "source": "https://www.gov.uk/government/publications/homes-england-annual-report-and-financial-statements-2023-to-2024",
+        "severity": null
+      }
+    ]
+  },
+  {
+    "key": "Metropolitan Districts",
+    "claims_checked": 5,
+    "findings": [
+      {
+        "claim": "Birmingham s114 notice 5 September 2023 — £760M equal-pay + £131M Oracle",
+        "status": "CONFIRMED",
+        "correct_value": "Birmingham issued s114 on 5 Sept 2023; equal-pay liability est £650M–£760M; Oracle overrun cited as major factor",
+        "source": "https://www.birmingham.gov.uk/news/article/1381/statement_regarding_section_114_notice",
+        "severity": null
+      },
+      {
+        "claim": "36 single-tier metropolitan district councils nest within 7 Mayoral CAs",
+        "status": "CONFIRMED",
+        "correct_value": "36 met districts correct; 7 MCAs (GMCA, WMCA, WYCA, SYMCA, LCR, NECA, Tees Valley)",
+        "source": "https://www.gov.uk/guidance/devolution-deals",
+        "severity": null
+      },
+      {
+        "claim": "Metropolitan County Councils abolished 1986 by Local Government Act 1985",
+        "status": "CONFIRMED",
+        "correct_value": "Local Government Act 1985 abolished MCCs on 1 April 1986",
+        "source": "https://www.legislation.gov.uk/ukpga/1985/51",
+        "severity": null
+      },
+      {
+        "claim": "English Devolution White Paper published 16 Dec 2024",
+        "status": "CONFIRMED",
+        "correct_value": "English Devolution White Paper published 16 Dec 2024 by MHCLG",
+        "source": "https://www.gov.uk/government/publications/english-devolution-white-paper-power-and-partnership-foundations-for-growth",
+        "severity": null
+      },
+      {
+        "claim": "Birmingham (1.15M) largest single council in Europe",
+        "status": "CONFIRMED",
+        "correct_value": "Birmingham population ~1.15M (ONS 2023); widely cited as largest local authority in Europe",
+        "source": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates",
+        "severity": null
+      }
+    ]
+  },
+  {
+    "key": "London Boroughs",
+    "claims_checked": 5,
+    "findings": [
+      {
+        "claim": "32 London boroughs plus City of London Corporation",
+        "status": "CONFIRMED",
+        "correct_value": "32 London boroughs + City of London Corporation (33 authorities total)",
+        "source": "https://londoncouncils.gov.uk/who-we-are",
+        "severity": null
+      },
+      {
+        "claim": "Replaced by London Government Act 1963 (effective 1965)",
+        "status": "CONFIRMED",
+        "correct_value": "London Government Act 1963 took effect 1 April 1965",
+        "source": "https://www.legislation.gov.uk/ukpga/1963/33",
+        "severity": null
+      },
+      {
+        "claim": "Croydon three s114 notices (Nov 2020, Dec 2020, Nov 2022)",
+        "status": "CONFIRMED",
+        "correct_value": "Croydon issued 3 s114 notices — only council to do so",
+        "source": "https://www.gov.uk/government/news/croydon-best-value-intervention",
+        "severity": null
+      },
+      {
+        "claim": "GLA precept 2024-25 £471.40 Band D",
+        "status": "CONFIRMED",
+        "correct_value": "GLA Band D precept 2024-25 £471.40 (up from £434.14)",
+        "source": "https://www.london.gov.uk/who-we-are/what-london-assembly-does/questions-mayor/find-an-answer/2024-25-council-tax-levels",
+        "severity": null
+      },
+      {
+        "claim": "Westminster Band D 2024-25 £973",
+        "status": "CONFIRMED",
+        "correct_value": "Westminster 2024-25 Band D ~£973 (very low historic base)",
+        "source": "https://www.westminster.gov.uk/council-tax/council-tax-bands-and-charges",
+        "severity": null
+      }
+    ]
+  },
+  {
+    "key": "7.A Medical services",
+    "claims_checked": 6,
+    "findings": [
+      {
+        "claim": "Audit Scotland Feb 2025 found NHS Scotland 'not financially sustainable'; 7/14 territorial boards required brokerage 2024-25 (up from 4)",
+        "status": "CONFIRMED",
+        "correct_value": "Audit Scotland NHS in Scotland 2024/25 report stated finances unsustainable; 7 territorial boards required brokerage",
+        "source": "https://audit.scot/news/health-boards-reliant-on-loans-and-financially-unsustainable",
+        "severity": null
+      },
+      {
+        "claim": "Betsi Cadwaladr special measures Feb 2023 → de-escalated to 'targeted intervention' June 2024",
+        "status": "DRIFTED",
+        "correct_value": "Escalated to special measures 27 Feb 2023; remained in special measures through 2024 — refreshed framework in May 2024 but NOT de-escalated to targeted intervention in June 2024 (stayed at level 5)",
+        "source": "https://www.gov.wales/betsi-cadwaladr-university-health-board-special-measures-progress-report-april-june-2024-html",
+        "severity": "medium"
+      },
+      {
+        "claim": "NHS Scotland 14 territorial boards + 7 special national boards",
+        "status": "CONFIRMED",
+        "correct_value": "14 territorial + 7 special boards (NHS 24, Scottish Ambulance, Golden Jubilee, NES, PHS, HIS, NSS)",
+        "source": "https://www.scot.nhs.uk/about-nhs-scotland/",
+        "severity": null
+      },
+      {
+        "claim": "NI HSC 5 HSC Trusts (Belfast, Northern, South Eastern, Southern, Western) + ambulance",
+        "status": "CONFIRMED",
+        "correct_value": "5 HSC Trusts + NI Ambulance Service; HSC Board abolished 2022",
+        "source": "https://www.health-ni.gov.uk/articles/health-and-social-care-trusts",
+        "severity": null
+      },
+      {
+        "claim": "Free prescriptions: Wales 2007, NI 2010, Scotland 2011 (England still £9.90)",
+        "status": "CONFIRMED",
+        "correct_value": "Wales 1 Apr 2007; NI 1 Apr 2010; Scotland 1 Apr 2011; England prescription charge £9.90 from May 2024",
+        "source": "https://www.nhs.uk/nhs-services/prescriptions-and-pharmacies/nhs-prescription-charges/",
+        "severity": null
+      },
+      {
+        "claim": "Frank's Law extended free personal care to eligible under-65s in Scotland (2019)",
+        "status": "CONFIRMED",
+        "correct_value": "Carers (Scotland) Act + Community Care and Health provisions; Frank's Law took effect 1 April 2019",
+        "source": "https://www.gov.scot/policies/social-care/free-personal-nursing-care/",
+        "severity": null
+      }
+    ]
+  },
+  {
+    "key": "NHS Mental Health Trusts",
+    "claims_checked": 4,
+    "findings": [
+      {
+        "claim": "~50 specialist MH/LD trusts in England",
+        "status": "CONFIRMED",
+        "correct_value": "Approximately 50 MH & combined MH/community trusts (NHS England provider list)",
+        "source": "https://www.england.nhs.uk/providers/",
+        "severity": null
+      },
+      {
+        "claim": "~52,500 new MH Act detentions in 2022-23",
+        "status": "CONFIRMED",
+        "correct_value": "NHS Digital MH Act Statistics 2022-23 show c.52,500 new detentions",
+        "source": "https://digital.nhs.uk/data-and-information/publications/statistical/mental-health-act-statistics-annual-figures",
+        "severity": null
+      },
+      {
+        "claim": "Edenfield Centre BBC Panorama abuse scandal Sept 2022 (Greater Manchester MH FT)",
+        "status": "CONFIRMED",
+        "correct_value": "BBC Panorama undercover report on Edenfield Centre aired 28 Sept 2022; subsequent Rapid Review + convictions",
+        "source": "https://www.bbc.co.uk/news/uk-england-manchester-63043412",
+        "severity": null
+      },
+      {
+        "claim": "MH Investment Standard requires ICBs to grow MH spend faster than overall allocation (since 2015-16)",
+        "status": "CONFIRMED",
+        "correct_value": "MHIS introduced 2015-16 as CCG requirement, continued post-ICB 2022",
+        "source": "https://www.england.nhs.uk/mental-health/taskforce/imp/mh-dashboard/",
+        "severity": null
+      }
+    ]
+  },
+  {
+    "key": "Network Rail Government Grant",
+    "claims_checked": 6,
+    "findings": [
+      {
+        "claim": "CP7 (2024-29) settlement £43.1B total",
+        "status": "CONFIRMED",
+        "correct_value": "ORR PR23 final determination confirmed £43.1B CP7 funding (£38.5B E&W + £4.6B Scotland)",
+        "source": "https://www.orr.gov.uk/monitoring-regulation/rail/networks/network-rail/price-controls/pr23/final-determination",
+        "severity": null
+      },
+      {
+        "claim": "Passenger Railway Services (Public Ownership) Act 2024 Royal Assent 28 Nov 2024",
+        "status": "CONFIRMED",
+        "correct_value": "Royal Assent 28 November 2024",
+        "source": "https://bills.parliament.uk/bills/3732/stages/19312",
+        "severity": null
+      },
+      {
+        "claim": "SWR first transfer 25 May 2025",
+        "status": "CONFIRMED",
+        "correct_value": "South Western Railway brought into public ownership 25 May 2025",
+        "source": "https://www.gov.uk/government/news/south-western-railway-returns-to-public-ownership",
+        "severity": null
+      },
+      {
+        "claim": "Andrew Haines CE from Aug 2018",
+        "status": "CONFIRMED",
+        "correct_value": "Haines joined Network Rail as CE in August 2018; retired Oct 2025",
+        "source": "https://www.networkrailmediacentre.co.uk/news/press-release",
+        "severity": null
+      },
+      {
+        "claim": "Sir Peter Hendy was Chair until Nov 2024 on appointment as Rail Minister",
+        "status": "DRIFTED",
+        "correct_value": "Hendy left Network Rail on his appointment as Rail Minister in July 2024 (on Labour govt formation), not November 2024",
+        "source": "https://www.railjournal.com/policy/network-rail-chair-appointed-as-british-transport-minister/",
+        "severity": "medium"
+      },
+      {
+        "claim": "ONS reclassified Network Rail to central government 1 Sept 2014",
+        "status": "CONFIRMED",
+        "correct_value": "ONS reclassified Network Rail as central-government body from 1 Sept 2014",
+        "source": "https://www.ons.gov.uk/economy/nationalaccounts/uksectoraccounts/articles/reclassificationofnetworkrailascentralgovernment/2013-12-17",
+        "severity": null
+      }
+    ]
+  },
+  {
+    "key": "Dedicated Schools Grant (DSG)",
+    "claims_checked": 5,
+    "findings": [
+      {
+        "claim": "Total DSG 2024-25 ~£59.6 billion (whole England)",
+        "status": "CONFIRMED",
+        "correct_value": "Core schools budget (DSG + grants) 2024-25 £59.6B per DfE",
+        "source": "https://www.gov.uk/government/publications/dedicated-schools-grant-dsg-2024-to-2025",
+        "severity": null
+      },
+      {
+        "claim": "High Needs Block ~£10.5B 2024-25",
+        "status": "CONFIRMED",
+        "correct_value": "DfE NFF confirms High Needs block £10.5B for 2024-25",
+        "source": "https://assets.publishing.service.gov.uk/media/651d2587bef21800156ded01/National_funding_formula_for__schools_and_high_needs_2024_to_2025.pdf",
+        "severity": null
+      },
+      {
+        "claim": "DSG ring-fenced under s.14 Education Act 2002",
+        "status": "CONFIRMED",
+        "correct_value": "DSG ring-fence statutory basis Education Act 2002 s.14",
+        "source": "https://www.legislation.gov.uk/ukpga/2002/32/section/14",
+        "severity": null
+      },
+      {
+        "claim": "Statutory override on DSG deficits extended to March 2026",
+        "status": "CONFIRMED",
+        "correct_value": "DfE extended statutory override on LA DSG deficit accounting to 31 Mar 2026",
+        "source": "https://www.gov.uk/government/consultations/dedicated-schools-grant-statutory-override",
+        "severity": null
+      },
+      {
+        "claim": "Cumulative LA DSG deficits ~£3.2B (NAO Mar 2024)",
+        "status": "CONFIRMED",
+        "correct_value": "NAO Support for children with special educational needs HC 460 (Oct 2024) + earlier analysis cite ~£3.2B cumulative",
+        "source": "https://www.nao.org.uk/reports/support-for-children-with-special-educational-needs-and-disabilities/",
+        "severity": null
+      }
+    ]
+  },
+  {
+    "key": "CABINET OFFICE",
+    "claims_checked": 6,
+    "findings": [
+      {
+        "claim": "Chris Wormald became Cabinet Secretary from 16 Dec 2024, replacing Simon Case",
+        "status": "CONFIRMED",
+        "correct_value": "Wormald appointed Cabinet Secretary 16 Dec 2024 (previously Perm Sec DHSC)",
+        "source": "https://www.gov.uk/government/news/prime-minister-appoints-sir-chris-wormald-as-new-cabinet-secretary-and-head-of-the-civil-service",
+        "severity": null
+      },
+      {
+        "claim": "Pat McFadden CDL from 5 July 2024",
+        "status": "CONFIRMED",
+        "correct_value": "Appointed Chancellor of the Duchy of Lancaster 5 Jul 2024",
+        "source": "https://www.gov.uk/government/people/pat-mcfadden",
+        "severity": null
+      },
+      {
+        "claim": "Infected Blood Inquiry Langstaff final report 20 May 2024",
+        "status": "CONFIRMED",
+        "correct_value": "Final Report published 20 May 2024 by Sir Brian Langstaff",
+        "source": "https://www.infectedbloodinquiry.org.uk/reports/inquiry-report",
+        "severity": null
+      },
+      {
+        "claim": "IBCA launched 20 August 2024",
+        "status": "DRIFTED",
+        "correct_value": "IBCA established as executive NDPB via Infected Blood Compensation Scheme Regulations 2024 which came into force 23 Aug 2024 (not 20 Aug); Sir Robert Francis named interim chair May 2024",
+        "source": "https://en.wikipedia.org/wiki/Infected_Blood_Compensation_Scheme_Regulations_2024",
+        "severity": "low"
+      },
+      {
+        "claim": "Covid Inquiry Module 1 reported 18 July 2024",
+        "status": "CONFIRMED",
+        "correct_value": "Module 1 (Resilience and Preparedness) report published 18 Jul 2024",
+        "source": "https://covid19.public-inquiry.uk/",
+        "severity": null
+      },
+      {
+        "claim": "Civil Service 517,400 FTE March 2024 — highest since 2010",
+        "status": "CONFIRMED",
+        "correct_value": "Civil service headcount 517,400 FTE at 31 Mar 2024 (ONS Quarterly CS stats)",
+        "source": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/publicsectorpersonnel/bulletins/civilservicestatistics/2024",
+        "severity": null
+      }
+    ]
+  },
+  {
+    "key": "10.6 Housing",
+    "claims_checked": 4,
+    "findings": [
+      {
+        "claim": "LHA unfrozen April 2024 then re-frozen April 2025 (30th percentile link for 12 months)",
+        "status": "CONFIRMED",
+        "correct_value": "LHA restored to 30th percentile Apr 2024; Autumn Budget 2024 froze LHA at those rates for 2025-26",
+        "source": "https://commonslibrary.parliament.uk/research-briefings/cbp-8419/",
+        "severity": null
+      },
+      {
+        "claim": "~400,000 working-age social tenants affected by bedroom tax",
+        "status": "CONFIRMED",
+        "correct_value": "DWP stats show c.400-430k working-age HB/UC social tenants subject to under-occupation deduction",
+        "source": "https://www.gov.uk/government/statistics/housing-benefit-caseload-statistics",
+        "severity": null
+      },
+      {
+        "claim": "HB caseload peak 5.06M (2013) → 2.3M (May 2024)",
+        "status": "CONFIRMED",
+        "correct_value": "DWP Stat-Xplore shows HB caseload peaked above 5M in 2013 and fell to c.2.3M by mid-2024 due to UC migration",
+        "source": "https://stat-xplore.dwp.gov.uk/",
+        "severity": null
+      },
+      {
+        "claim": "Supported Housing (Regulatory Oversight) Act 2023",
+        "status": "CONFIRMED",
+        "correct_value": "Supported Housing (Regulatory Oversight) Act 2023, Royal Assent 29 Jun 2023",
+        "source": "https://www.legislation.gov.uk/ukpga/2023/29",
+        "severity": null
+      }
+    ]
+  },
+  {
+    "key": "10.4 Family and children; of which: family benefits, income support and tax credits",
+    "claims_checked": 5,
+    "findings": [
+      {
+        "claim": "Child Benefit 2024-25 rates £25.60/wk eldest and £16.95/wk each additional",
+        "status": "CONFIRMED",
+        "correct_value": "HMRC confirmed £25.60/£16.95 for 2024-25",
+        "source": "https://www.gov.uk/government/news/what-the-child-benefit-rate-rise-means-for-you",
+        "severity": null
+      },
+      {
+        "claim": "HICBC threshold raised £50k → £60k from April 2024; full taper at £80k; first uprating since Jan 2013",
+        "status": "CONFIRMED",
+        "correct_value": "Spring Budget 2024 announced £50k → £60k threshold with full withdrawal at £80k, first change since HICBC introduced Jan 2013",
+        "source": "https://www.gov.uk/government/publications/spring-budget-2024/spring-budget-2024-html",
+        "severity": null
+      },
+      {
+        "claim": "Tax-Free Childcare launched April 2017; 20% top-up up to £2,000/child/yr (£4,000 if disabled)",
+        "status": "CONFIRMED",
+        "correct_value": "TFC launched 21 April 2017; caps £2k / £4k disabled",
+        "source": "https://www.gov.uk/tax-free-childcare",
+        "severity": null
+      },
+      {
+        "claim": "Scottish Child Payment £26.70/week in 2024-25",
+        "status": "CONFIRMED",
+        "correct_value": "SCP £26.70/wk in 2024-25; rose to £27.15 from Apr 2025",
+        "source": "https://www.gov.scot/publications/social-security-assistance-scotland-up-rating-inflation-2025-26/",
+        "severity": null
+      },
+      {
+        "claim": "HMRC administering Child Benefit since April 2003",
+        "status": "CONFIRMED",
+        "correct_value": "Child Benefit transferred from DWP to Inland Revenue (HMRC predecessor) in 2003",
+        "source": "https://commonslibrary.parliament.uk/research-briefings/cbp-8631/",
+        "severity": null
+      }
+    ]
+  },
+  {
+    "key": "Department of Health (NHS)",
+    "claims_checked": 6,
+    "findings": [
+      {
+        "claim": "Infected Blood Inquiry Sir Brian Langstaff final report 20 May 2024",
+        "status": "CONFIRMED",
+        "correct_value": "Final report published 20 May 2024",
+        "source": "https://www.infectedbloodinquiry.org.uk/reports/inquiry-report",
+        "severity": null
+      },
+      {
+        "claim": "UKHSA live from 1 October 2021 (post-PHE split with OHID)",
+        "status": "CONFIRMED",
+        "correct_value": "UKHSA operational 1 Oct 2021 (Public Health England abolished)",
+        "source": "https://www.gov.uk/government/organisations/uk-health-security-agency",
+        "severity": null
+      },
+      {
+        "claim": "MHRA standalone regulator since 1 Jan 2021 (post-Brexit)",
+        "status": "CONFIRMED",
+        "correct_value": "MHRA became UK standalone regulator from 1 Jan 2021",
+        "source": "https://www.gov.uk/government/organisations/medicines-and-healthcare-products-regulatory-agency",
+        "severity": null
+      },
+      {
+        "claim": "Max and Keira's Law (opt-out organ donation) in force 20 May 2020",
+        "status": "CONFIRMED",
+        "correct_value": "Organ Donation (Deemed Consent) Act 2019 took effect 20 May 2020",
+        "source": "https://www.organdonation.nhs.uk/uk-laws/organ-donation-law-in-england/",
+        "severity": null
+      },
+      {
+        "claim": "Ockenden Final Report (30 March 2022) — Shrewsbury & Telford, 1,486 cases, 201 baby deaths + 9 maternal deaths possibly avoidable",
+        "status": "DRIFTED",
+        "correct_value": "Published 30 Mar 2022; 1,486 cases correct; report found 201 babies + 9 mothers could/would have survived with better care — but total maternal deaths examined were 12 (9 'possibly avoidable' is widely cited though entry's 9 matches the 'could have survived' finding)",
+        "source": "https://www.gov.uk/government/publications/final-report-of-the-ockenden-review",
+        "severity": "low"
+      },
+      {
+        "claim": "Darzi Investigation reported September 2024, found NHS in 'critical condition'",
+        "status": "CONFIRMED",
+        "correct_value": "Lord Darzi report published 12 Sept 2024; described NHS as 'in critical condition'",
+        "source": "https://www.gov.uk/government/publications/independent-investigation-of-the-nhs-in-england",
+        "severity": null
+      }
+    ]
+  },
+  {
+    "key": "MINISTRY OF JUSTICE",
+    "claims_checked": 7,
+    "findings": [
+      {
+        "claim": "SDS40 live 10 September 2024 — automatic release moved 50% → 40%",
+        "status": "CONFIRMED",
+        "correct_value": "SDS40 Regulations came into force 10 Sept 2024 (Criminal Justice Act 2003 (Requisite and Minimum Custodial Periods) Order 2024)",
+        "source": "https://www.legislation.gov.uk/uksi/2024/844/contents/made",
+        "severity": null
+      },
+      {
+        "claim": "Prison population peak 88,521 on 6 September 2024",
+        "status": "CONFIRMED",
+        "correct_value": "MoJ weekly prison pop data show peak of 88,521 on 6 Sept 2024",
+        "source": "https://www.gov.uk/government/statistics/prison-population-figures-2024",
+        "severity": null
+      },
+      {
+        "claim": "HMP Wandsworth escape — Daniel Khalife clung to underside of food delivery lorry 6 September 2023",
+        "status": "CONFIRMED",
+        "correct_value": "Khalife escaped HMP Wandsworth 6 Sept 2023 strapped to underside of food delivery van",
+        "source": "https://en.wikipedia.org/wiki/Daniel_Khalife",
+        "severity": null
+      },
+      {
+        "claim": "Shabana Mahmood Lord Chancellor & SoS Justice from 5 Jul 2024; first Muslim Lord Chancellor",
+        "status": "CONFIRMED",
+        "correct_value": "Appointed 5 Jul 2024; first Muslim Lord Chancellor",
+        "source": "https://www.gov.uk/government/people/shabana-mahmood",
+        "severity": null
+      },
+      {
+        "claim": "Dame Antonia Romeo Perm Sec MoJ since January 2021",
+        "status": "CONFIRMED",
+        "correct_value": "Romeo took up post 18 January 2021",
+        "source": "https://www.gov.uk/government/people/antonia-romeo",
+        "severity": null
+      },
+      {
+        "claim": "Crown Court backlog 73,105 at end September 2024 — record",
+        "status": "CONFIRMED",
+        "correct_value": "MoJ Criminal Court Statistics Q3 2024 show 73,105 open Crown Court cases at end-Sept 2024",
+        "source": "https://www.gov.uk/government/statistics/criminal-court-statistics-quarterly-july-to-september-2024",
+        "severity": null
+      },
+      {
+        "claim": "Gauke-led Independent Sentencing Review launched Oct 2024; interim Feb 2025, final Apr 2025",
+        "status": "DRIFTED",
+        "correct_value": "Review launched Oct 2024 (correct); final report published 22 May 2025 (not April 2025)",
+        "source": "https://www.gov.uk/guidance/independent-sentencing-review-2024-to-2025",
+        "severity": "low"
+      }
+    ]
+  },
+  {
+    "key": "3.1 of which: other police services",
+    "claims_checked": 5,
+    "findings": [
+      {
+        "claim": "43 territorial forces in England & Wales",
+        "status": "CONFIRMED",
+        "correct_value": "43 territorial forces in E&W (plus BTP, MDP, CNC as specialist)",
+        "source": "https://www.gov.uk/government/publications/list-of-police-forces-in-england-wales-and-northern-ireland",
+        "severity": null
+      },
+      {
+        "claim": "PCC elections 2 May 2024, FPTP restored under Elections Act 2022",
+        "status": "CONFIRMED",
+        "correct_value": "PCC elections 2 May 2024; Elections Act 2022 restored FPTP",
+        "source": "https://www.legislation.gov.uk/ukpga/2022/37/contents/enacted",
+        "severity": null
+      },
+      {
+        "claim": "Police Uplift delivered 20,951 additional officers vs 2019 baseline",
+        "status": "CONFIRMED",
+        "correct_value": "Home Office confirmed +20,951 officers vs April 2019 baseline by end of programme",
+        "source": "https://www.gov.uk/government/statistics/police-officer-uplift-quarterly-update-to-march-2023",
+        "severity": null
+      },
+      {
+        "claim": "Casey Review (March 2023) found Met institutionally racist, misogynistic, homophobic",
+        "status": "CONFIRMED",
+        "correct_value": "Baroness Casey report published 21 March 2023",
+        "source": "https://www.met.police.uk/SysSiteAssets/media/downloads/met/about-us/baroness-casey-review/update-march-2023/baroness-casey-review-march-2023a.pdf",
+        "severity": null
+      },
+      {
+        "claim": "Police CARE scheme from 2015; McCloud remedy under Public Service Pensions and Judicial Offices Act 2022",
+        "status": "CONFIRMED",
+        "correct_value": "CARE scheme introduced Apr 2015; PSPJOA 2022 implements McCloud remedy",
+        "source": "https://www.legislation.gov.uk/ukpga/2022/7",
+        "severity": null
+      }
+    ]
+  },
+  {
+    "key": "1.6 General public services n.e.c.",
+    "claims_checked": 5,
+    "findings": [
+      {
+        "claim": "John Swinney First Minister from 8 May 2024 after Yousaf's resignation",
+        "status": "CONFIRMED",
+        "correct_value": "Swinney sworn in as FM 8 May 2024 at Court of Session",
+        "source": "https://en.wikipedia.org/wiki/John_Swinney",
+        "severity": null
+      },
+      {
+        "claim": "Scottish Parliament: 129 MSPs (73 constituency + 56 regional list AMS)",
+        "status": "CONFIRMED",
+        "correct_value": "129 MSPs: 73 constituency + 56 regional list (Additional Member System)",
+        "source": "https://www.parliament.scot/about/how-parliament-works",
+        "severity": null
+      },
+      {
+        "claim": "Holyrood building opened 2004, final cost ~£414M vs ~£40M original estimate",
+        "status": "CONFIRMED",
+        "correct_value": "Scottish Parliament Building opened 9 Oct 2004; final cost c.£414M vs initial c.£40M estimate",
+        "source": "https://www.parliament.scot/visit/our-building",
+        "severity": null
+      },
+      {
+        "claim": "Scottish income tax 2024-25 six bands with new Advanced band at £75,001",
+        "status": "CONFIRMED",
+        "correct_value": "2024-25 Scottish income tax introduced Advanced rate 45% from £75,001",
+        "source": "https://www.gov.scot/publications/scottish-income-tax-2024-2025/",
+        "severity": null
+      },
+      {
+        "claim": "Dorothy Bain KC is Lord Advocate heading COPFS",
+        "status": "CONFIRMED",
+        "correct_value": "Dorothy Bain KC appointed Lord Advocate June 2021, continuing into 2024-25",
+        "source": "https://www.copfs.gov.uk/about-copfs/the-lord-advocate/",
+        "severity": null
+      }
+    ]
+  },
+  {
+    "key": "Child Benefit",
+    "claims_checked": 6,
+    "findings": [
+      {
+        "claim": "Eldest/only £25.60/wk; each additional £16.95/wk (2024-25)",
+        "status": "CONFIRMED",
+        "correct_value": "HMRC confirmed rates £25.60 / £16.95 from April 2024",
+        "source": "https://www.gov.uk/child-benefit-rates",
+        "severity": null
+      },
+      {
+        "claim": "HICBC threshold raised £50k → £60k from 6 April 2024; full withdrawal at £80k",
+        "status": "CONFIRMED",
+        "correct_value": "Spring Budget 2024 raised threshold to £60k with full withdrawal at £80k from 6 Apr 2024",
+        "source": "https://www.gov.uk/government/publications/spring-budget-2024/spring-budget-2024-html",
+        "severity": null
+      },
+      {
+        "claim": "HMRC administering Child Benefit since April 2003 (transfer from DWP)",
+        "status": "CONFIRMED",
+        "correct_value": "Child Benefit transferred from DSS/DWP to Inland Revenue/HMRC in April 2003",
+        "source": "https://commonslibrary.parliament.uk/research-briefings/cbp-8631/",
+        "severity": null
+      },
+      {
+        "claim": "NI credits (Class 3) conferred for carers of children under 12",
+        "status": "CONFIRMED",
+        "correct_value": "CB claim confers Class 3 NI credits for parent/carer of child under 12",
+        "source": "https://www.gov.uk/national-insurance-credits/eligibility",
+        "severity": null
+      },
+      {
+        "claim": "Household-basis HICBC reform abandoned by Labour Apr 2025 (Spring Statement)",
+        "status": "CONFIRMED",
+        "correct_value": "Labour Spring Statement 2025 confirmed household-basis HICBC reform would not be implemented",
+        "source": "https://www.gov.uk/government/publications/spring-statement-2025-document",
+        "severity": null
+      },
+      {
+        "claim": "Finance (No. 2) Act 2023 restored discovery-assessment power for HICBC after HMRC v Wilkes",
+        "status": "DRIFTED",
+        "correct_value": "HICBC discovery-assessment fix was actually in Finance Act 2022 s.97 (retrospectively amending TMA 1970 s.29), not Finance (No. 2) Act 2023",
+        "source": "https://www.legislation.gov.uk/ukpga/2022/3/section/97",
+        "severity": "medium"
+      }
+    ]
+  }
+]

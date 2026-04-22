@@ -1,0 +1,555 @@
+{
+  "patches": [
+    {
+      "entry_key": "Other Student Loans",
+      "field": "key_stats",
+      "kstat_index": 2,
+      "kstat_subfield": "value",
+      "find": "£25,000 threshold frozen to 2026-27",
+      "replace": "£25,000 threshold frozen until April 2027",
+      "severity": "low",
+      "drift_ref": "Other Student Loans #1 (Plan 5 threshold freeze end — 2026-27 → April 2027)"
+    },
+    {
+      "entry_key": "Other Student Loans",
+      "field": "key_stats",
+      "kstat_index": 13,
+      "kstat_subfield": "value",
+      "find": "£25k threshold frozen to 2026-27",
+      "replace": "£25k threshold frozen until April 2027",
+      "severity": "low",
+      "drift_ref": "Other Student Loans #1 (Plan 5 threshold freeze end — 2026-27 → April 2027, 'Plan 5 terms' key_stat)"
+    },
+    {
+      "entry_key": "Personal Independence Payment",
+      "field": "notes",
+      "find": "with case-transfers complete by 31 March 2025",
+      "replace": "with case-transfers complete by end-August 2025",
+      "severity": "medium",
+      "drift_ref": "Personal Independence Payment #1 (ADP case transfers — 31 Mar 2025 → end-Aug 2025, notes)"
+    },
+    {
+      "entry_key": "Personal Independence Payment",
+      "field": "key_stats",
+      "kstat_index": 14,
+      "kstat_subfield": "value",
+      "find": "PIP case-transfers completed 31 Mar 2025",
+      "replace": "PIP case-transfers completed end-August 2025",
+      "severity": "medium",
+      "drift_ref": "Personal Independence Payment #1 (ADP case transfers — 31 Mar 2025 → end-Aug 2025, key_stat 'Transition roadmap — Scotland')"
+    },
+    {
+      "entry_key": "HOME OFFICE",
+      "field": "notes",
+      "find": "Bibby Stockholm barge** operated at Portland from Aug 2023 to Nov 2024",
+      "replace": "Bibby Stockholm barge** operated at Portland from Aug 2023 to Jan 2025",
+      "severity": "low",
+      "drift_ref": "HOME OFFICE #1 (Bibby Stockholm decommission — Nov 2024 → Jan 2025, notes; aligns with KS 22/29 'decommissioned Jan 2025')"
+    },
+    {
+      "entry_key": "HOME OFFICE",
+      "field": "key_stats",
+      "kstat_index": 7,
+      "kstat_subfield": "value",
+      "find": "36,816 — new annual record (vs 36,079 in 2022)",
+      "replace": "36,816 (below 2022's record of 45,774)",
+      "severity": "high",
+      "drift_ref": "HOME OFFICE #2 (2024 small-boats NOT a record — 2022 peak 45,774)"
+    },
+    {
+      "entry_key": "Network Rail Government Grant",
+      "field": "key_stats",
+      "kstat_index": 10,
+      "kstat_subfield": "value",
+      "find": "Sir Peter Hendy (until Nov 2024 on appointment as Rail Minister); successor Lord Hendy acting arrangement",
+      "replace": "Sir Peter Hendy (until Jul 2024 on appointment as Rail Minister); successor Lord Hendy acting arrangement",
+      "severity": "medium",
+      "drift_ref": "Network Rail #1 (Hendy departure — Nov 2024 → Jul 2024 on Labour govt formation)"
+    },
+    {
+      "entry_key": "CABINET OFFICE",
+      "field": "key_stats",
+      "kstat_index": 11,
+      "kstat_subfield": "value",
+      "find": "Launched 20 Aug 2024",
+      "replace": "Launched 23 Aug 2024",
+      "severity": "low",
+      "drift_ref": "CABINET OFFICE #1 (IBCA commencement — 20 Aug 2024 → 23 Aug 2024 per 2024 Regulations)"
+    },
+    {
+      "entry_key": "CABINET OFFICE",
+      "field": "key_stats",
+      "kstat_index": 30,
+      "kstat_subfield": "value",
+      "find": "Infected Blood Compensation Authority launched 20 Aug 2024",
+      "replace": "Infected Blood Compensation Authority launched 23 Aug 2024",
+      "severity": "low",
+      "drift_ref": "CABINET OFFICE #1 (IBCA commencement — 20 Aug 2024 → 23 Aug 2024, 'Machinery changes 2024-25')"
+    },
+    {
+      "entry_key": "7.A Medical services",
+      "field": "key_stats",
+      "kstat_index": 8,
+      "kstat_subfield": "value",
+      "find": "Special measures Feb 2023 → de-escalated to 'targeted intervention' June 2024 · £56M deficit 2023-24",
+      "replace": "Special measures Feb 2023 — remained in special measures through 2024 (framework refreshed May 2024, not de-escalated) · £56M deficit 2023-24",
+      "severity": "medium",
+      "drift_ref": "7.A Medical services #1 (Betsi Cadwaladr NOT de-escalated in Jun 2024 — stayed at level 5)"
+    },
+    {
+      "entry_key": "7.A Medical services",
+      "field": "notes",
+      "find": "De-escalated to 'targeted intervention' June 2024.",
+      "replace": "Remained in special measures through 2024 — framework refreshed May 2024, NOT de-escalated to targeted intervention.",
+      "severity": "medium",
+      "drift_ref": "7.A Medical services #1 (Betsi Cadwaladr NOT de-escalated — notes)"
+    },
+    {
+      "entry_key": "Department of Health (NHS)",
+      "field": "key_stats",
+      "kstat_index": 10,
+      "kstat_subfield": "value",
+      "find": "201 baby deaths + 9 maternal deaths possibly avoidable",
+      "replace": "201 babies + 9 mothers could/would have survived with better care (12 maternal deaths examined)",
+      "severity": "low",
+      "drift_ref": "Department of Health (NHS) #1 (Ockenden maternal deaths framing — 9 'possibly avoidable' vs 'could have survived' of 12 examined)"
+    },
+    {
+      "entry_key": "MINISTRY OF JUSTICE",
+      "field": "key_stats",
+      "kstat_index": 25,
+      "kstat_subfield": "value",
+      "find": "interim report Feb 2025; final Apr 2025 — presumption against short sentences",
+      "replace": "interim report Feb 2025; final 22 May 2025 — presumption against short sentences",
+      "severity": "low",
+      "drift_ref": "MINISTRY OF JUSTICE #1 (Gauke Review final date — Apr 2025 → 22 May 2025)"
+    },
+    {
+      "entry_key": "MINISTRY OF JUSTICE",
+      "field": "key_stats",
+      "kstat_index": 30,
+      "kstat_subfield": "value",
+      "find": "Gauke-led Independent Sentencing Review launched Oct 2024 (interim Feb 2025, final Apr 2025)",
+      "replace": "Gauke-led Independent Sentencing Review launched Oct 2024 (interim Feb 2025, final 22 May 2025)",
+      "severity": "low",
+      "drift_ref": "MINISTRY OF JUSTICE #1 (Gauke Review final date — Apr 2025 → 22 May 2025, 'Machinery changes 2024-25')"
+    },
+    {
+      "entry_key": "NHS",
+      "field": "key_stats",
+      "kstat_index": 14,
+      "kstat_subfield": "value",
+      "find": "Wales's 95% target unchanged since Bevan 1948 heritage framing",
+      "replace": "Wales's 95% target in place since 2011 (4-hour target dates from NHS Plan era, not 1948)",
+      "severity": "low",
+      "drift_ref": "NHS (Wales) #1 (4-hour target provenance — not Bevan 1948, 2011 Wales target)"
+    },
+    {
+      "entry_key": "CABINET OFFICE: CIVIL SUPERANNUATION",
+      "field": "key_stats",
+      "kstat_index": 5,
+      "kstat_subfield": "value",
+      "find": "4 bands: 28.97% · 28.97% · 30.22% · 30.22% (replaced earlier 26.6-30.3% post-2020 valuation)",
+      "replace": "Single flat rate: 28.97% (incl 0.08% admin levy) from 1 Apr 2024 — replaced earlier 26.6-30.3% banded structure post-2020 valuation",
+      "severity": "medium",
+      "drift_ref": "CABINET OFFICE: CIVIL SUPERANNUATION #1 (employer rate — flat 28.97%, not 4 bands)"
+    },
+    {
+      "entry_key": "7.C Central and other health services",
+      "field": "key_stats",
+      "kstat_index": 0,
+      "kstat_subfield": "value",
+      "find": "~£1.1B budget · ~5,500 staff · split from PHE with OHID retained in DHSC",
+      "replace": "~£400M core resource (wider envelope ~£1B incl. health-security spending) · ~5,500 staff · split from PHE with OHID retained in DHSC",
+      "severity": "medium",
+      "drift_ref": "7.C Central and other health services #1 (UKHSA budget — £1.1B overstated; £395M core + wider ~£1B)"
+    },
+    {
+      "entry_key": "1.2 Foreign economic aid",
+      "field": "key_stats",
+      "kstat_index": 13,
+      "kstat_subfield": "value",
+      "find": "UK 3rd largest DAC donor by volume 2023 (after US + Germany) · 3rd absolute · 12th by ODA/GNI — ranking eroded post-0.7% cut",
+      "replace": "UK 4th largest DAC donor by volume 2023 (after US, Germany, Japan) · 12th by ODA/GNI — ranking eroded post-0.7% cut",
+      "severity": "medium",
+      "drift_ref": "1.2 Foreign economic aid #1 (self-contradiction — KS 5 says #4 correctly; KS 13 #3 fixed to #4)"
+    },
+    {
+      "entry_key": "Housing Benefit - Excluding Hb For Pensioners - England",
+      "field": "key_stats",
+      "kstat_index": 1,
+      "kstat_subfield": "value",
+      "find": "~0.8M",
+      "replace": "~1.2M (DWP May 2024)",
+      "severity": "high",
+      "drift_ref": "Housing Benefit (excl pensioners) #1 (working-age caseload — 0.8M → 1.2M)"
+    },
+    {
+      "entry_key": "Housing Benefit - Excluding Hb For Pensioners - England",
+      "field": "key_stats",
+      "kstat_index": 20,
+      "kstat_subfield": "value",
+      "find": "Peak 4.9M (2013) → ~0.8M residual (2024) — ~84% migrated to UC; remaining caseload dominated by supported/exempt accommodation",
+      "replace": "Peak 4.9M (2013) → ~1.2M residual working-age (May 2024, DWP) — majority migrated to UC; remaining caseload dominated by supported/exempt accommodation",
+      "severity": "high",
+      "drift_ref": "Housing Benefit (excl pensioners) #1 (working-age caseload — 0.8M → 1.2M, 'Working-age caseload trajectory')"
+    },
+    {
+      "entry_key": "Provision Of Defence Capability Depn And Impairments",
+      "field": "key_stats",
+      "kstat_index": 15,
+      "kstat_subfield": "value",
+      "find": "AJAX (£3.2B impairment 2021-22 pre-resolution) · Nimrod MRA4 (£3.4B 2010) — reference cases",
+      "replace": "AJAX (~£1.1B cumulative impairment recognised in 2020-21 accounts, pre-resolution) · Nimrod MRA4 (£3.4B 2010) — reference cases",
+      "severity": "medium",
+      "drift_ref": "Provision Of Defence Capability Depn And Impairments #1 (Ajax impairment — £3.2B → ~£1.1B cumulative)"
+    },
+    {
+      "entry_key": "Greater London Authority",
+      "field": "key_stats",
+      "kstat_index": 6,
+      "kstat_subfield": "value",
+      "find": "Opened 24 May 2022 · final cost £18.9B · ~700,000 journeys/day late 2024 — busiest UK rail line",
+      "replace": "Opened 24 May 2022 · final cost £18.8B · ~700,000 journeys/day late 2024 — busiest UK rail line",
+      "severity": "low",
+      "drift_ref": "Greater London Authority #1 (Elizabeth line cost — £18.9B → £18.8B per NAO)"
+    },
+    {
+      "entry_key": "Greater London Authority",
+      "field": "key_stats",
+      "kstat_index": 11,
+      "kstat_subfield": "value",
+      "find": "Sadiq Khan (Labour) since 9 May 2016 · 3rd term from 4 May 2024 (43.8% FPTP after SV abolition under Elections Act 2022)",
+      "replace": "Sadiq Khan (Labour) since 9 May 2016 · 3rd term from 4 May 2024 (44% / 1,088,225 votes FPTP after SV abolition under Elections Act 2022)",
+      "severity": "low",
+      "drift_ref": "Greater London Authority #2 (Khan 2024 vote share — 43.8% → 44%, Mayor key_stat)"
+    },
+    {
+      "entry_key": "Greater London Authority",
+      "field": "key_stats",
+      "kstat_index": 38,
+      "kstat_subfield": "value",
+      "find": "Mayor Sir Sadiq Khan (Labour, 3rd term from 4 May 2024; 43.8% FPTP under Elections Act 2022 SV abolition)",
+      "replace": "Mayor Sir Sadiq Khan (Labour, 3rd term from 4 May 2024; 44% / 1,088,225 votes FPTP under Elections Act 2022 SV abolition)",
+      "severity": "low",
+      "drift_ref": "Greater London Authority #2 (Khan 2024 vote share — 43.8% → 44%, 'Leader 2024-25' key_stat)"
+    },
+    {
+      "entry_key": "Disability Living Allowance",
+      "field": "key_stats",
+      "kstat_index": 1,
+      "kstat_subfield": "value",
+      "find": "~450,000 children (DWP Stat-Xplore Feb 2024)",
+      "replace": "~682,000 children under 16 (Resolution Foundation 2023, E&W)",
+      "severity": "high",
+      "drift_ref": "Disability Living Allowance #1 (child caseload — 450k → 682k)"
+    },
+    {
+      "entry_key": "Disability Living Allowance",
+      "field": "key_stats",
+      "kstat_index": 16,
+      "kstat_subfield": "value",
+      "find": "~450,000 children (DWP Feb 2024) — rising ~7%/yr driven by autism + ADHD recognition; no cross-party appetite to extend PIP to under-16s",
+      "replace": "~682,000 children under 16 (Resolution Foundation 2023, E&W) — rising driven by autism + ADHD recognition; no cross-party appetite to extend PIP to under-16s",
+      "severity": "high",
+      "drift_ref": "Disability Living Allowance #1 (child caseload — 450k → 682k, 'DLA Child caseload still in use')"
+    },
+    {
+      "entry_key": "3.3 Law courts",
+      "field": "key_stats",
+      "kstat_index": 15,
+      "kstat_subfield": "value",
+      "find": "Magistrates outstanding ~345k (Sept 2024, stable); Family Court public law PLO 20-week target missed in 60%+ cases; Civil small-claims median 52 weeks",
+      "replace": "Magistrates outstanding ~327k (Sept 2024, stable); Family Court public law PLO 20-week target missed in 60%+ cases; Civil small-claims median 52 weeks",
+      "severity": "medium",
+      "drift_ref": "3.3 Law courts #1 (self-contradiction — KS 4 says ~327,000; KS 15 ~345k reconciled to ~327k)"
+    },
+    {
+      "entry_key": "Employment And Support Allowance",
+      "field": "key_stats",
+      "kstat_index": 1,
+      "kstat_subfield": "value",
+      "find": "~1.44M",
+      "replace": "~1.6M (DWP Feb 2024 release, covering Aug 2023)",
+      "severity": "medium",
+      "drift_ref": "Employment And Support Allowance #1 (caseload — 1.44M → 1.6M Aug 2023)"
+    },
+    {
+      "entry_key": "National Highways",
+      "field": "description",
+      "find": "Rebranded from Highways England on 18 August 2021",
+      "replace": "Rebranded from Highways England on 19 August 2021",
+      "severity": "low",
+      "drift_ref": "National Highways #1 (rebrand date — 18 Aug 2021 → 19 Aug 2021, description)"
+    },
+    {
+      "entry_key": "National Highways",
+      "field": "key_stats",
+      "kstat_index": 7,
+      "kstat_subfield": "value",
+      "find": "Highways England → National Highways on 18 August 2021",
+      "replace": "Highways England → National Highways on 19 August 2021",
+      "severity": "low",
+      "drift_ref": "National Highways #1 (rebrand date — 18 Aug 2021 → 19 Aug 2021, 'Rename' key_stat)"
+    },
+    {
+      "entry_key": "National Highways",
+      "field": "notes",
+      "find": "**Labour July 2024 A303 cancellation**: £166M sunk costs written off",
+      "replace": "**Labour July 2024 A303 cancellation**: c.£179M sunk costs written off",
+      "severity": "medium",
+      "drift_ref": "National Highways #2 (A303 sunk cost — £166M → c.£179M, notes)"
+    },
+    {
+      "entry_key": "National Highways",
+      "field": "key_stats",
+      "kstat_index": 6,
+      "kstat_subfield": "value",
+      "find": "Quashed July 2021 · re-approved July 2023 · CANCELLED by Labour July 2024 (~£166M sunk)",
+      "replace": "Quashed July 2021 · re-approved July 2023 · CANCELLED by Labour July 2024 (~£179M sunk)",
+      "severity": "medium",
+      "drift_ref": "National Highways #2 (A303 sunk cost — £166M → c.£179M, 'A303 Stonehenge tunnel' key_stat)"
+    },
+    {
+      "entry_key": "High Speed 2 (HS2) Construction Programme",
+      "field": "key_stats",
+      "kstat_index": 3,
+      "kstat_subfield": "value",
+      "find": "£53-61B (2019 prices), ~£66B+ cash",
+      "replace": "£53-71B (2019 prices, post-Oct 2023 range per NAO Jul 2024), ~£66B+ cash",
+      "severity": "medium",
+      "drift_ref": "HS2 #1 (NAO lifetime range — £53-61B → £53-71B post-Oct 2023, 'NAO 2023 lifetime estimate')"
+    },
+    {
+      "entry_key": "High Speed 2 (HS2) Construction Programme",
+      "field": "key_stats",
+      "kstat_index": 11,
+      "kstat_subfield": "value",
+      "find": "£33B (2012 Y-shape) → £55.7B (2015) → £53-61B Phase 1 only (NAO 2023, 2019 prices) · ~£470M/mile",
+      "replace": "£33B (2012 Y-shape) → £55.7B (2015) → £53-71B Phase 1 only (NAO Jul 2024 post-Oct 2023 range, 2019 prices) · ~£470M/mile",
+      "severity": "medium",
+      "drift_ref": "HS2 #1 (NAO lifetime range — £53-61B → £53-71B, 'Lifetime cost escalation')"
+    },
+    {
+      "entry_key": "9.1 of which: under fives",
+      "field": "key_stats",
+      "kstat_index": 1,
+      "kstat_subfield": "value",
+      "find": "15h/week for working parents of children aged 9 months to 2 years",
+      "replace": "15h/week for working parents of 2-year-olds",
+      "severity": "high",
+      "drift_ref": "9.1 of which: under fives #1 (childcare phase inversion — Phase 1 April 2024 covers 2-year-olds only)"
+    },
+    {
+      "entry_key": "9.1 of which: under fives",
+      "field": "key_stats",
+      "kstat_index": 2,
+      "kstat_subfield": "value",
+      "find": "15h extended to all children aged 2 of working parents",
+      "replace": "15h extended to children aged 9 months to 2 years of working parents",
+      "severity": "high",
+      "drift_ref": "9.1 of which: under fives #2 (childcare phase inversion — Phase 2 Sept 2024 extends to 9m-2yr)"
+    },
+    {
+      "entry_key": "9.1 of which: under fives",
+      "field": "key_stats",
+      "kstat_index": 15,
+      "kstat_subfield": "value",
+      "find": "Phase 1: 1 Apr 2024 (15h working-parent 9m-2y) · Phase 2: 1 Sept 2024 (15h all 2y working-parent) · Phase 3: 1 Sept 2025 (30h 9m-school age)",
+      "replace": "Phase 1: 1 Apr 2024 (15h working-parent 2y only) · Phase 2: 1 Sept 2024 (15h extended to 9m-2y working-parent) · Phase 3: 1 Sept 2025 (30h 9m-school age)",
+      "severity": "high",
+      "drift_ref": "9.1 of which: under fives (childcare phase inversion — '30 hours free childcare rollout' summary key_stat)"
+    },
+    {
+      "entry_key": "4.8 R&D economic affairs",
+      "field": "key_stats",
+      "kstat_index": 1,
+      "kstat_subfield": "value",
+      "find": "MRC ~£980M · BBSRC ~£530M · EPSRC ~£1.05B · STFC ~£900M · ESRC ~£220M · AHRC ~£110M · NERC ~£430M",
+      "replace": "MRC ~£1,184M · BBSRC ~£726M · EPSRC ~£1,000M · STFC ~£942M · ESRC ~£220M · AHRC ~£110M · NERC ~£430M",
+      "severity": "medium",
+      "drift_ref": "4.8 R&D economic affairs #1 & #2 (MRC £980M → £1,184M; BBSRC £530M → £726M per UKRI 2022-25 table)"
+    },
+    {
+      "entry_key": "4.8 R&D economic affairs",
+      "field": "key_stats",
+      "kstat_index": 16,
+      "kstat_subfield": "value",
+      "find": "Seven Councils: MRC £980M · BBSRC £530M · EPSRC £1.05B · STFC £900M · ESRC £220M · AHRC £110M · NERC £410M",
+      "replace": "Seven Councils: MRC £1,184M · BBSRC £726M · EPSRC £1,000M · STFC £942M · ESRC £220M · AHRC £110M · NERC £410M",
+      "severity": "medium",
+      "drift_ref": "4.8 R&D economic affairs #1 & #2 (MRC/BBSRC figures — UKRI allocation key_stat)"
+    },
+    {
+      "entry_key": "4.8 R&D economic affairs",
+      "field": "key_stats",
+      "kstat_index": 8,
+      "kstat_subfield": "value",
+      "find": "£800M over 4 years to 2025-26 · inaugural CEO Ilan Gur · DARPA-inspired programme-director model",
+      "replace": "£800M over 5 years · inaugural CEO Ilan Gur (stepped down 2025) · DARPA-inspired programme-director model",
+      "severity": "low",
+      "drift_ref": "4.8 R&D economic affairs #3 (ARIA — 4 years → 5 years per ARIA Act 2022, 'ARIA' key_stat)"
+    },
+    {
+      "entry_key": "4.8 R&D economic affairs",
+      "field": "key_stats",
+      "kstat_index": 19,
+      "kstat_subfield": "value",
+      "find": "ARIA £800M over 4 years (operational from 2023, Ilan Gur CEO) — new arm's-length body",
+      "replace": "ARIA £800M over 5 years (operational from 2023, Ilan Gur CEO stepped down 2025) — new arm's-length body",
+      "severity": "low",
+      "drift_ref": "4.8 R&D economic affairs #3 (ARIA — 4 years → 5 years, 'Innovate UK + ARIA' key_stat)"
+    },
+    {
+      "entry_key": "4.8 R&D economic affairs",
+      "field": "key_stats",
+      "kstat_index": 5,
+      "kstat_subfield": "value",
+      "find": "11 (HVM · Cell & Gene Therapy · Digital · Offshore Renewable Energy · Satellite Applications · Compound Semiconductor · Connected Places · Energy Systems · Medicines Discovery · Offshore Wind · Compound Semiconductor)",
+      "replace": "10 (HVM · Cell & Gene Therapy · Digital · Offshore Renewable Energy · Satellite Applications · Compound Semiconductor · Connected Places · Energy Systems · Medicines Discovery · Offshore Wind)",
+      "severity": "low",
+      "drift_ref": "4.8 R&D economic affairs #4 (Catapult list — duplicate 'Compound Semiconductor' removed, 11 → 10)"
+    },
+    {
+      "entry_key": "Hmpps Centrally Managed",
+      "field": "notes",
+      "find": "**HMP Wandsworth Daniel Khalife escape (6 Sept 2023)** → Lord Carlile review (published 2024)",
+      "replace": "**HMP Wandsworth Daniel Khalife escape (6 Sept 2023)** → Keith Bristow QPM (former NCA DG) independent investigation (concluded Jan 2024, findings published 15 Jan 2026)",
+      "severity": "high",
+      "drift_ref": "Hmpps Centrally Managed #1 (Wandsworth review author — Lord Carlile → Keith Bristow QPM)"
+    },
+    {
+      "entry_key": "Hmpps Centrally Managed",
+      "field": "key_stats",
+      "kstat_index": 12,
+      "kstat_subfield": "value",
+      "find": "HM Prison and Probation Service (executive agency of MoJ since 2017 merger of NOMS + NPS)",
+      "replace": "HM Prison and Probation Service (executive agency of MoJ — replaced NOMS 1 April 2017; NPS reunified separately 26 June 2021)",
+      "severity": "medium",
+      "drift_ref": "Hmpps Centrally Managed #2 (HMPPS origin — NPS merger was 2021, not 2017)"
+    },
+    {
+      "entry_key": "Hmpps Centrally Managed",
+      "field": "key_stats",
+      "kstat_index": 7,
+      "kstat_subfield": "value",
+      "find": "14 of 122 (11.5%) · G4S ×5 (Oakwood · Parc · Altcourse · Rye Hill · Five Wells) · Serco ×4 (Ashfield · Doncaster · Lowdham · Thameside) · Sodexo ×4 (Forest Bank · Bronzefield · Peterborough · Northumberland) · Mitie ×1 (Fosse Way, opened 2023)",
+      "replace": "14 of 122 (11.5%) · G4S ×4 (Oakwood · Parc · Rye Hill · Five Wells) · Serco ×4 (Ashfield · Doncaster · Lowdham · Thameside) · Sodexo ×5 (Forest Bank · Bronzefield · Peterborough · Northumberland · Altcourse from Jun 2023) · Mitie ×1 (Fosse Way, opened 2023)",
+      "severity": "medium",
+      "drift_ref": "Hmpps Centrally Managed #3 (contracted prisons — Altcourse moved G4S→Sodexo Jun 2023; G4S now ×4, Sodexo ×5)"
+    },
+    {
+      "entry_key": "Pension Credit",
+      "field": "notes",
+      "find": "leaving ~760,000 eligible households missing out on an average £2,500/year",
+      "replace": "leaving ~880,000 eligible households missing out on an average £2,200/year",
+      "severity": "medium",
+      "drift_ref": "Pension Credit #1 & #2 (eligible not claiming 760k → 880k; avg unclaimed £2,500 → £2,200, notes)"
+    },
+    {
+      "entry_key": "Pension Credit",
+      "field": "key_stats",
+      "kstat_index": 5,
+      "kstat_subfield": "value",
+      "find": "~760,000 households",
+      "replace": "~880,000 households",
+      "severity": "medium",
+      "drift_ref": "Pension Credit #1 (eligible not claiming — 760k → 880k FYE 2022 per DWP)"
+    },
+    {
+      "entry_key": "Pension Credit",
+      "field": "key_stats",
+      "kstat_index": 6,
+      "kstat_subfield": "value",
+      "find": "£2,500 / year",
+      "replace": "£2,200 / year",
+      "severity": "low",
+      "drift_ref": "Pension Credit #2 (avg unclaimed — £2,500 → £2,200 FYE 2022 per DWP)"
+    },
+    {
+      "entry_key": "Pension Credit",
+      "field": "key_stats",
+      "kstat_index": 14,
+      "kstat_subfield": "value",
+      "find": "~760k eligible households not claiming — largest cash-gap of any UK benefit",
+      "replace": "~880k eligible households not claiming — largest cash-gap of any UK benefit",
+      "severity": "medium",
+      "drift_ref": "Pension Credit #1 (eligible not claiming — 760k → 880k, 'Take-up rate history')"
+    },
+    {
+      "entry_key": "Provision Of Defence Capability Capital (Fiscal) Additions",
+      "field": "key_stats",
+      "kstat_index": 8,
+      "kstat_subfield": "value",
+      "find": "Budget £305.5B vs forecast £322.4B = **£16.9B shortfall** — NAO's first-EVER 'not affordable' rating",
+      "replace": "Budget £288.6B vs forecast £305.5B = **£16.9B shortfall** — LARGEST deficit since the Plan's introduction in 2012 (fourth successive unaffordable Plan, not first-ever)",
+      "severity": "high",
+      "drift_ref": "Provision Of Defence Capability Capital (Fiscal) Additions #1 (Equipment Plan 2023-33 — £305.5B→£288.6B budget; NOT first-ever unaffordable)"
+    },
+    {
+      "entry_key": "Provision Of Defence Capability Capital (Fiscal) Additions",
+      "field": "key_stats",
+      "kstat_index": 5,
+      "kstat_subfield": "value",
+      "find": "£5.5B for 589 vehicles · IOC declared July 2025 after ~decade slippage (2020-21 noise/vibration halt)",
+      "replace": "£5.5B for 589 vehicles · IOC declared September 2025 by Household Cavalry Regiment (announced DE&S 6 Nov 2025) after ~decade slippage (2020-21 noise/vibration halt)",
+      "severity": "medium",
+      "drift_ref": "Provision Of Defence Capability Capital (Fiscal) Additions #2 (Ajax IOC — July 2025 → September 2025)"
+    },
+    {
+      "entry_key": "Hospital Services",
+      "field": "key_stats",
+      "kstat_index": 9,
+      "kstat_subfield": "value",
+      "find": "Mike Nesbitt (UUP) since 3 Feb 2024 (Executive restoration after 2-year DUP-protocol boycott)",
+      "replace": "Mike Nesbitt (UUP) since 28 May 2024 (succeeded Robin Swann, who was reappointed 3 Feb 2024 on Executive restoration and resigned May 2024)",
+      "severity": "high",
+      "drift_ref": "Hospital Services #1 (Nesbitt start date — 3 Feb 2024 → 28 May 2024)"
+    },
+    {
+      "entry_key": "10.9 Social protection n.e.c.",
+      "field": "notes",
+      "find": "**Age UK-supported judicial review refused permission late 2024**",
+      "replace": "**UNITE-led judicial review (filed Nov 2024) refused permission late 2024**",
+      "severity": "medium",
+      "drift_ref": "10.9 Social protection n.e.c. #1 (JR challenger — Age UK → UNITE, notes)"
+    },
+    {
+      "entry_key": "10.9 Social protection n.e.c.",
+      "field": "key_stats",
+      "kstat_index": 19,
+      "kstat_subfield": "value",
+      "find": "£742M LA discretionary fund Apr-Sept 2025 (6-month extension Autumn Budget 2024) · successor to Covid Local Welfare; ends Sept 2025 with no confirmed successor",
+      "replace": "£742M LA discretionary fund 1 Apr 2025 – 31 Mar 2026 (12-month extension at Autumn Budget 2024) · successor to Covid Local Welfare",
+      "severity": "medium",
+      "drift_ref": "10.9 Social protection n.e.c. #2 (HSF extension — 6 months Apr-Sept 2025 → 12 months to 31 Mar 2026)"
+    },
+    {
+      "entry_key": "5.1 Waste management",
+      "field": "key_stats",
+      "kstat_index": 16,
+      "kstat_subfield": "value",
+      "find": "ONR brought criminal proceedings under Nuclear Industries Security Regulations 2003 — Sellafield pleaded GUILTY covering 2019-2023 IT-security offences (£332,500 fine Aug 2024)",
+      "replace": "ONR brought criminal proceedings under Nuclear Industries Security Regulations 2003 — Sellafield pleaded GUILTY June 2024 covering 2019-2023 IT-security offences (£332,500 fine 3 Oct 2024 at Westminster Magistrates' Court)",
+      "severity": "medium",
+      "drift_ref": "5.1 Waste management #1 (Sellafield fine date — Aug 2024 → 3 Oct 2024)"
+    }
+  ],
+  "unresolved": [
+    {
+      "drift_ref": "Child Benefit #1 (Finance (No. 2) Act 2023 → Finance Act 2022 s.97)",
+      "reason": "The specific claim about the Finance (No. 2) Act 2023 restoring HICBC discovery-assessment power (and the HMRC v Wilkes case reference) does not appear in the current 'Child Benefit' entry's description, notes, or key_stats fields — it was present in the fact-checker's claim list but not in the live enrichment text.",
+      "suggestion": "If a HICBC discovery-assessment reference is later added to this entry, cite 'Finance Act 2022 s.97 (retrospectively amending TMA 1970 s.29)' rather than 'Finance (No. 2) Act 2023'."
+    },
+    {
+      "drift_ref": "UK Research and Innovation / Horizon Europe re-association (Batch D)",
+      "reason": "Finding flagged as DRIFTED but correct_value ('association from 1 Jan 2024 following Sept 2023 deal') matches the current entry text ('UK rejoined Horizon Europe (Jan 2024)' in notes and 'Jan 2024 UK re-associated' in key_stats). No verbatim substring is factually wrong.",
+      "suggestion": "No patch required — optional editorial tweak would be adding 'agreed 7 Sept 2023' to provide the full chronology, but this is an embellishment not a correction."
+    },
+    {
+      "drift_ref": "Attendance Allowance #1 (caseload ~1.65M Aug 2024 vs 1.7M Aug 2023)",
+      "reason": "Correct_value states the 1.65M Aug 2024 figure is 'likely stated correctly in later data' — there is no authoritative alternative value to substitute, and severity is 'low'.",
+      "suggestion": "No mechanical patch — if DWP Stat-Xplore reveals a more current authoritative figure, revise KS 11 accordingly."
+    }
+  ]
+}

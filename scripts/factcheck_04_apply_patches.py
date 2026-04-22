@@ -7,7 +7,7 @@ from pathlib import Path
 sys.stdout.reconfigure(encoding='utf-8')
 
 ENR = Path('data/uk/node_enrichment_extended.json')
-PATCHES = Path('data/uk/factcheck/patches.json')
+PATCHES = Path(sys.argv[1]) if len(sys.argv) > 1 else Path('data/uk/factcheck/patches.json')
 
 ext = json.load(ENR.open(encoding='utf-8'))
 p = json.load(PATCHES.open(encoding='utf-8'))
