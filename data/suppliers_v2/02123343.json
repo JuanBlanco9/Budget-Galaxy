@@ -1,0 +1,76 @@
+{
+  "schema_version": "v2",
+  "company_number": "02123343",
+  "display_name": "Valcon Group Uk Limited",
+  "official_name": "VALCON GROUP UK LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "15/04/1987",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "62090"
+  ],
+  "sic_labels": [
+    "Other information technology service activities"
+  ],
+  "previous_names": [
+    {
+      "name": "VIQTOR DAVIS UK LTD",
+      "condate": "01/11/2021"
+    },
+    {
+      "name": "ENTITY GROUP LIMITED",
+      "condate": "18/01/2019"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "55 LOUDOUN ROAD",
+    "address_line_2": "ST. JOHN'S WOOD",
+    "post_town": "LONDON",
+    "county": "",
+    "country": "UNITED KINGDOM",
+    "postal_code": "NW8 0DL"
+  },
+  "accounts": {
+    "category": "GROUP",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 11,
+    "num_outstanding": 1,
+    "num_part_satisfied": 0,
+    "num_satisfied": 10
+  },
+  "spend_profile": {
+    "total_gbp_2024": 117360.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.540528,
+    "lng": -0.179091,
+    "lad24_cd": "E09000007",
+    "lad24_nm": "Camden",
+    "region": "London"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/02123343"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": false,
+    "ch_api_officers": false,
+    "ch_api_pscs": false,
+    "ch_api_accounts_pdf": false
+  }
+}

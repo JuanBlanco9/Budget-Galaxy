@@ -1,0 +1,74 @@
+{
+  "schema_version": "v2",
+  "company_number": "00594001",
+  "display_name": "Wfl (Uk) Limited",
+  "official_name": "WFL (UK) LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "20/11/1957",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "46120",
+    "46711"
+  ],
+  "sic_labels": [
+    "Agents involved in the sale of fuels, ores, metals and industrial chemicals",
+    "Wholesale of petroleum and petroleum products"
+  ],
+  "previous_names": [
+    {
+      "name": "WATSON PETROLEUM LIMITED",
+      "condate": "01/10/2014"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "WATSON FUELS CALLOW PARK",
+    "address_line_2": "CALLOW HILL",
+    "post_town": "CHIPPENHAM",
+    "county": "WILTSHIRE",
+    "country": "ENGLAND",
+    "postal_code": "SN15 5FD"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/12/2024",
+    "next_due": "31/12/2026",
+    "ref_day": "31",
+    "ref_month": "3"
+  },
+  "mortgages": {
+    "num_charges": 53,
+    "num_outstanding": 3,
+    "num_part_satisfied": 0,
+    "num_satisfied": 50
+  },
+  "spend_profile": {
+    "total_gbp_2024": 1340000.0,
+    "n_contracts": 2,
+    "n_buyers": 2
+  },
+  "geo": {
+    "lat": 51.557591,
+    "lng": -1.948925,
+    "lad24_cd": "E06000054",
+    "lad24_nm": "Wiltshire",
+    "region": "South West"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/00594001"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": false,
+    "ch_api_officers": false,
+    "ch_api_pscs": false,
+    "ch_api_accounts_pdf": false
+  }
+}

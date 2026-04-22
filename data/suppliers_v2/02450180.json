@@ -1,0 +1,74 @@
+{
+  "schema_version": "v2",
+  "company_number": "02450180",
+  "display_name": "Arden University Limited",
+  "official_name": "ARDEN UNIVERSITY LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "07/12/1989",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "85320",
+    "85421"
+  ],
+  "sic_labels": [
+    "Technical and vocational secondary education",
+    "First-degree level higher education"
+  ],
+  "previous_names": [
+    {
+      "name": "RESOURCE DEVELOPMENT INTERNATIONAL LIMITED",
+      "condate": "05/08/2015"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "ARDEN HOUSE",
+    "address_line_2": "MIDDLEMARCH  PARK",
+    "post_town": "COVENTRY",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "CV3 4FJ"
+  },
+  "accounts": {
+    "category": "GROUP",
+    "last_made_up": "31/05/2025",
+    "next_due": "28/02/2027",
+    "ref_day": "31",
+    "ref_month": "5"
+  },
+  "mortgages": {
+    "num_charges": 11,
+    "num_outstanding": 1,
+    "num_part_satisfied": 0,
+    "num_satisfied": 10
+  },
+  "spend_profile": {
+    "total_gbp_2024": 84000.0,
+    "n_contracts": 3,
+    "n_buyers": 2
+  },
+  "geo": {
+    "lat": 52.37288,
+    "lng": -1.465843,
+    "lad24_cd": "E07000222",
+    "lad24_nm": "Warwick",
+    "region": "West Midlands"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/02450180"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": false,
+    "ch_api_officers": false,
+    "ch_api_pscs": false,
+    "ch_api_accounts_pdf": false
+  }
+}

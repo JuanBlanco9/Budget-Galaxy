@@ -1,0 +1,69 @@
+{
+  "schema_version": "v2",
+  "company_number": "06489298",
+  "display_name": "Chapple & Jenkins Ltd",
+  "official_name": "CHAPPLE & JENKINS LTD",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "31/01/2008",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "46900",
+    "49410"
+  ],
+  "sic_labels": [
+    "Non-specialised wholesale trade",
+    "Freight transport by road"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "CHAPPLE & JENKINS WAREHOUSE UNIT 91",
+    "address_line_2": "STATION ROAD",
+    "post_town": "KINGSWOOD",
+    "county": "BRISTOL",
+    "country": "ENGLAND",
+    "postal_code": "BS15 4NR"
+  },
+  "accounts": {
+    "category": "MEDIUM",
+    "last_made_up": "31/01/2025",
+    "next_due": "31/10/2026",
+    "ref_day": "31",
+    "ref_month": "1"
+  },
+  "mortgages": {
+    "num_charges": 8,
+    "num_outstanding": 6,
+    "num_part_satisfied": 0,
+    "num_satisfied": 2
+  },
+  "spend_profile": {
+    "total_gbp_2024": 75000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "lad24_cd": null,
+    "lad24_nm": null,
+    "region": null
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/06489298"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": false,
+    "ch_api_officers": false,
+    "ch_api_pscs": false,
+    "ch_api_accounts_pdf": false
+  }
+}

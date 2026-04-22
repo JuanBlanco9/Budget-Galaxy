@@ -1,0 +1,74 @@
+{
+  "schema_version": "v2",
+  "company_number": "11666292",
+  "display_name": "Acg Operations Ltd",
+  "official_name": "ACG OPERATIONS LTD",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "08/11/2018",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "87100",
+    "87300"
+  ],
+  "sic_labels": [
+    "Residential nursing care facilities",
+    "Residential care activities for the elderly and disabled"
+  ],
+  "previous_names": [
+    {
+      "name": "4AWH OPERATIONS LIMITED",
+      "condate": "27/10/2021"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "BROWNE JACOBSON LLP (CS) 15TH FLOOR",
+    "address_line_2": "103 COLMORE ROW",
+    "post_town": "BIRMINGHAM",
+    "county": "",
+    "country": "UNITED KINGDOM",
+    "postal_code": "B3 3AG"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 4,
+    "num_outstanding": 1,
+    "num_part_satisfied": 0,
+    "num_satisfied": 3
+  },
+  "spend_profile": {
+    "total_gbp_2024": 358089000.0,
+    "n_contracts": 3,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 52.480943,
+    "lng": -1.901563,
+    "lad24_cd": "E08000025",
+    "lad24_nm": "Birmingham",
+    "region": "West Midlands"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/11666292"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": false,
+    "ch_api_officers": false,
+    "ch_api_pscs": false,
+    "ch_api_accounts_pdf": false
+  }
+}

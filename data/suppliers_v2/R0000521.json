@@ -1,0 +1,76 @@
+{
+  "schema_version": "v2",
+  "company_number": "R0000521",
+  "display_name": "Martin Estates Company Limited",
+  "official_name": "MARTIN ESTATES COMPANY LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "19/04/1898",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "68100"
+  ],
+  "sic_labels": [
+    "Buying and selling of own real estate"
+  ],
+  "previous_names": [
+    {
+      "name": "H&J MARTIN FIT OUT LIMITED",
+      "condate": "20/08/2019"
+    },
+    {
+      "name": "MARTIN ESTATES COMPANY LIMITED",
+      "condate": "22/01/2018"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "FORMATION WORKS",
+    "address_line_2": "2 EDENAVEYS INDUSTRIAL ESTATE",
+    "post_town": "ARMAGH",
+    "county": "",
+    "country": "NORTHERN IRELAND",
+    "postal_code": "BT60 1NF"
+  },
+  "accounts": {
+    "category": "UNAUDITED ABRIDGED",
+    "last_made_up": "31/03/2025",
+    "next_due": "31/12/2026",
+    "ref_day": "31",
+    "ref_month": "3"
+  },
+  "mortgages": {
+    "num_charges": 24,
+    "num_outstanding": 5,
+    "num_part_satisfied": 0,
+    "num_satisfied": 19
+  },
+  "spend_profile": {
+    "total_gbp_2024": 1744948.0,
+    "n_contracts": 2,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 54.332674,
+    "lng": -6.622143,
+    "lad24_cd": "N09000002",
+    "lad24_nm": "Armagh City, Banbridge and Craigavon",
+    "region": null
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/R0000521"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": false,
+    "ch_api_officers": false,
+    "ch_api_pscs": false,
+    "ch_api_accounts_pdf": false
+  }
+}

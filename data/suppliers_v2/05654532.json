@@ -1,0 +1,152 @@
+{
+  "schema_version": "v2",
+  "company_number": "05654532",
+  "display_name": "Lookers Leasing Limited",
+  "official_name": "LOOKERS LEASING LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "14/12/2005",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "45111"
+  ],
+  "sic_labels": [
+    "Sale of new cars and light motor vehicles"
+  ],
+  "previous_names": [
+    {
+      "name": "BRAMALL & JONES LEASING LIMITED",
+      "condate": "12/06/2008"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "LOOKERS HOUSE 1ST FLOOR, LOOKERS STOKE",
+    "address_line_2": "BEDE ROAD",
+    "post_town": "STOKE-ON-TRENT",
+    "county": "",
+    "country": "UNITED KINGDOM",
+    "postal_code": "ST4 4GU"
+  },
+  "accounts": {
+    "category": "AUDIT EXEMPTION SUBSIDIARY",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 18,
+    "num_outstanding": 4,
+    "num_part_satisfied": 0,
+    "num_satisfied": 14
+  },
+  "spend_profile": {
+    "total_gbp_2024": 504192920.63,
+    "n_contracts": 4,
+    "n_buyers": 2
+  },
+  "geo": {
+    "lat": 52.986302,
+    "lng": -2.188761,
+    "lad24_cd": "E06000021",
+    "lad24_nm": "Stoke-on-Trent",
+    "region": "West Midlands"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/05654532"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T03:04:25Z",
+    "company_name": "LOOKERS LEASING LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2005-12-14",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-28"
+  },
+  "governance": {
+    "api_date": "2026-04-22T03:04:27Z",
+    "total_officers": 25,
+    "active_count": 3,
+    "resigned_count": 22,
+    "active_officers": [
+      {
+        "name": "CASSIDY, Oona",
+        "role": "secretary",
+        "appointed_on": "2026-02-27",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "MCLELLAN, Owen John",
+        "role": "director",
+        "appointed_on": "2025-10-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "SMITH, Alex",
+        "role": "director",
+        "appointed_on": "2025-01-23",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T03:04:29Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Bramall & Jones Vw Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "United Kingdom (England And Wales)",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "06514534"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MzAxMDYxOGFkaXF6a2N4",
+    "date": "2025-09-29",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-audit-exemption-subsiduary",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/i77ZHPnEQIhJlmNS7VbTvoaqcS5NIzpfaeYdIfH7MF8/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/05654532/filing-history/MzQ4MzAxMDYxOGFkaXF6a2N4"
+  }
+}

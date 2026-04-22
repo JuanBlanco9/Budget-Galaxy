@@ -1,0 +1,73 @@
+{
+  "schema_version": "v2",
+  "company_number": "00185693",
+  "display_name": "Morris & Company Limited",
+  "official_name": "MORRIS & COMPANY LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "13/11/1922",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "41100",
+    "68100",
+    "68209",
+    "70210"
+  ],
+  "sic_labels": [
+    "Development of building projects",
+    "Buying and selling of own real estate",
+    "Other letting and operating of own or leased real estate",
+    "Public relations and communications activities"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "MORRIS BUILDING",
+    "address_line_2": "WELSH BRIDGE",
+    "post_town": "SHREWSBURY",
+    "county": "",
+    "country": "UNITED KINGDOM",
+    "postal_code": "SY3 8LH"
+  },
+  "accounts": {
+    "category": "SMALL",
+    "last_made_up": "31/03/2025",
+    "next_due": "31/12/2026",
+    "ref_day": "31",
+    "ref_month": "3"
+  },
+  "mortgages": {
+    "num_charges": 50,
+    "num_outstanding": 17,
+    "num_part_satisfied": 0,
+    "num_satisfied": 28
+  },
+  "spend_profile": {
+    "total_gbp_2024": 35260.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 52.709624,
+    "lng": -2.757979,
+    "lad24_cd": "E06000051",
+    "lad24_nm": "Shropshire",
+    "region": "West Midlands"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/00185693"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": false,
+    "ch_api_officers": false,
+    "ch_api_pscs": false,
+    "ch_api_accounts_pdf": false
+  }
+}

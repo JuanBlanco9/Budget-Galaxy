@@ -1,0 +1,72 @@
+{
+  "schema_version": "v2",
+  "company_number": "04830784",
+  "display_name": "Telana Limited",
+  "official_name": "TELANA LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "11/07/2003",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "62090"
+  ],
+  "sic_labels": [
+    "Other information technology service activities"
+  ],
+  "previous_names": [
+    {
+      "name": "ANCORIS LIMITED",
+      "condate": "31/03/2025"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "C/O WILSON PARTNERS LIMITED, TOR,",
+    "address_line_2": "SAINT-CLOUD WAY,",
+    "post_town": "MAIDENHEAD",
+    "county": "BERKSHIRE",
+    "country": "ENGLAND",
+    "postal_code": "SL6 8BN"
+  },
+  "accounts": {
+    "category": "MEDIUM",
+    "last_made_up": "31/07/2025",
+    "next_due": "30/04/2027",
+    "ref_day": "31",
+    "ref_month": "7"
+  },
+  "mortgages": {
+    "num_charges": 5,
+    "num_outstanding": 3,
+    "num_part_satisfied": 0,
+    "num_satisfied": 2
+  },
+  "spend_profile": {
+    "total_gbp_2024": 346980.0,
+    "n_contracts": 4,
+    "n_buyers": 2
+  },
+  "geo": {
+    "lat": 51.525032,
+    "lng": -0.715703,
+    "lad24_cd": "E06000040",
+    "lad24_nm": "Windsor and Maidenhead",
+    "region": "South East"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/04830784"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": false,
+    "ch_api_officers": false,
+    "ch_api_pscs": false,
+    "ch_api_accounts_pdf": false
+  }
+}

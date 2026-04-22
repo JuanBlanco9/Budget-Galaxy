@@ -1,0 +1,72 @@
+{
+  "schema_version": "v2",
+  "company_number": "01392762",
+  "display_name": "Taylor Wimpey Uk Limited",
+  "official_name": "TAYLOR WIMPEY UK LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "06/10/1978",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "41100"
+  ],
+  "sic_labels": [
+    "Development of building projects"
+  ],
+  "previous_names": [
+    {
+      "name": "GEORGE WIMPEY UK LIMITED",
+      "condate": "03/07/2007"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "GATE HOUSE",
+    "address_line_2": "TURNPIKE ROAD",
+    "post_town": "HIGH WYCOMBE",
+    "county": "BUCKINGHAMSHIRE",
+    "country": "",
+    "postal_code": "HP12 3NR"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 1059,
+    "num_outstanding": 548,
+    "num_part_satisfied": 2,
+    "num_satisfied": 509
+  },
+  "spend_profile": {
+    "total_gbp_2024": 1600000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.617677,
+    "lng": -0.782451,
+    "lad24_cd": "E06000060",
+    "lad24_nm": "Buckinghamshire",
+    "region": "South East"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/01392762"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": false,
+    "ch_api_officers": false,
+    "ch_api_pscs": false,
+    "ch_api_accounts_pdf": false
+  }
+}

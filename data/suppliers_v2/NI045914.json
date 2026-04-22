@@ -1,0 +1,155 @@
+{
+  "schema_version": "v2",
+  "company_number": "NI045914",
+  "display_name": "Maurice Flynn & Sons Ltd",
+  "official_name": "MAURICE FLYNN & SONS LTD",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "24/03/2003",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "42990"
+  ],
+  "sic_labels": [
+    "Construction of other civil engineering projects n.e.c."
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "SAUNDERS HOUSE SPRINGBANK INDUSTRIAL ESTATE",
+    "address_line_2": "2 SPRINGBANK PARK",
+    "post_town": "BELFAST",
+    "county": "",
+    "country": "NORTHERN IRELAND",
+    "postal_code": "BT17 0QL"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/08/2024",
+    "next_due": "31/05/2026",
+    "ref_day": "31",
+    "ref_month": "8"
+  },
+  "mortgages": {
+    "num_charges": 2,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 2
+  },
+  "spend_profile": {
+    "total_gbp_2024": 692000000.0,
+    "n_contracts": 2,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 54.568079,
+    "lng": -6.031851,
+    "lad24_cd": "N09000003",
+    "lad24_nm": "Belfast",
+    "region": null
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/NI045914"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T02:38:21Z",
+    "company_name": "MAURICE FLYNN & SONS LTD",
+    "company_status": "active",
+    "date_of_creation": "2003-03-24",
+    "date_of_cessation": null,
+    "jurisdiction": "northern-ireland",
+    "has_charges": false,
+    "has_insolvency_history": true,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-05-31",
+    "accounts_last_made_up": "2024-08-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-04-07"
+  },
+  "governance": {
+    "api_date": "2026-04-22T02:38:23Z",
+    "total_officers": 3,
+    "active_count": 3,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "FLYNN, Aidan Martin",
+        "role": "secretary",
+        "appointed_on": "2003-03-24",
+        "country_of_residence": null,
+        "nationality": "Irish"
+      },
+      {
+        "name": "FLYNN, Aidan Martin",
+        "role": "director",
+        "appointed_on": "2004-01-01",
+        "country_of_residence": "Northern Ireland",
+        "nationality": "Irish"
+      },
+      {
+        "name": "FLYNN, Maurice",
+        "role": "director",
+        "appointed_on": "2003-03-24",
+        "country_of_residence": "Northern Ireland",
+        "nationality": "Irish"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T02:38:25Z",
+    "total_results": 2,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Mr Maurice Flynn",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Irish",
+        "country_of_residence": "Northern Ireland",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2017-03-24",
+        "identification": null
+      },
+      {
+        "name": "Mr Aidan Martin Flynn",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Irish",
+        "country_of_residence": "Northern Ireland",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2017-03-24",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2NzExMTU0OGFkaXF6a2N4",
+    "date": "2025-05-23",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/iMvl9xyYVbW1jSQBzrbzel1spVsLZtBmTBOTplsjOq0/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/NI045914/filing-history/MzQ2NzExMTU0OGFkaXF6a2N4"
+  }
+}

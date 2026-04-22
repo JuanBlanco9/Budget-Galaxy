@@ -1,0 +1,74 @@
+{
+  "schema_version": "v2",
+  "company_number": "00754167",
+  "display_name": "Reassure Limited",
+  "official_name": "REASSURE LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "20/03/1963",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "65110",
+    "65300"
+  ],
+  "sic_labels": [
+    "Life insurance",
+    "Pension funding"
+  ],
+  "previous_names": [
+    {
+      "name": "WINDSOR LIFE ASSURANCE COMPANY LIMITED",
+      "condate": "01/12/2011"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "WINDSOR HOUSE",
+    "address_line_2": "TELFORD CENTRE",
+    "post_town": "TELFORD SHROPSHIRE",
+    "county": "",
+    "country": "",
+    "postal_code": "TF3 4NB"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 56,
+    "num_outstanding": 2,
+    "num_part_satisfied": 0,
+    "num_satisfied": 54
+  },
+  "spend_profile": {
+    "total_gbp_2024": 33850.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 52.680884,
+    "lng": -2.444088,
+    "lad24_cd": "E06000020",
+    "lad24_nm": "Telford and Wrekin",
+    "region": "West Midlands"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/00754167"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": false,
+    "ch_api_officers": false,
+    "ch_api_pscs": false,
+    "ch_api_accounts_pdf": false
+  }
+}

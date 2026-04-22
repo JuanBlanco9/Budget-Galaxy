@@ -1,0 +1,71 @@
+{
+  "schema_version": "v2",
+  "company_number": "SC143213",
+  "display_name": "Lochwynd Limited",
+  "official_name": "LOCHWYND LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "15/03/1993",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "42110",
+    "42220",
+    "42990"
+  ],
+  "sic_labels": [
+    "Construction of roads and motorways",
+    "Construction of utility projects for electricity and telecommunications",
+    "Construction of other civil engineering projects n.e.c."
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "19 LONMAY PLACE PANORAMA BUSINESS VILLAGE",
+    "address_line_2": "QUEENSLIE",
+    "post_town": "GLASGOW",
+    "county": "",
+    "country": "",
+    "postal_code": "G33 4ER"
+  },
+  "accounts": {
+    "category": "TOTAL EXEMPTION FULL",
+    "last_made_up": "30/06/2025",
+    "next_due": "31/03/2027",
+    "ref_day": "30",
+    "ref_month": "6"
+  },
+  "mortgages": {
+    "num_charges": 7,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 7
+  },
+  "spend_profile": {
+    "total_gbp_2024": 400000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 55.8657,
+    "lng": -4.147169,
+    "lad24_cd": "S12000049",
+    "lad24_nm": "Glasgow City",
+    "region": null
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/SC143213"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": false,
+    "ch_api_officers": false,
+    "ch_api_pscs": false,
+    "ch_api_accounts_pdf": false
+  }
+}

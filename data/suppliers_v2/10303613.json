@@ -1,0 +1,72 @@
+{
+  "schema_version": "v2",
+  "company_number": "10303613",
+  "display_name": "Tch Prop Ltd",
+  "official_name": "TCH PROP LTD",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "29/07/2016",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "68209"
+  ],
+  "sic_labels": [
+    "Other letting and operating of own or leased real estate"
+  ],
+  "previous_names": [
+    {
+      "name": "TRI CAPITAL HOUSING LIMITED",
+      "condate": "16/11/2023"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "78 SHENLEY ROAD",
+    "address_line_2": "",
+    "post_town": "BOREHAMWOOD",
+    "county": "",
+    "country": "UNITED KINGDOM",
+    "postal_code": "WD6 1EH"
+  },
+  "accounts": {
+    "category": "TOTAL EXEMPTION FULL",
+    "last_made_up": "31/07/2024",
+    "next_due": "30/04/2026",
+    "ref_day": "31",
+    "ref_month": "7"
+  },
+  "mortgages": {
+    "num_charges": 0,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 3000000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.655608,
+    "lng": -0.275783,
+    "lad24_cd": "E07000098",
+    "lad24_nm": "Hertsmere",
+    "region": "East of England"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/10303613"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": false,
+    "ch_api_officers": false,
+    "ch_api_pscs": false,
+    "ch_api_accounts_pdf": false
+  }
+}

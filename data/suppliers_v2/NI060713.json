@@ -1,0 +1,192 @@
+{
+  "schema_version": "v2",
+  "company_number": "NI060713",
+  "display_name": "Cts Projects Limited",
+  "official_name": "CTS PROJECTS LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "30/08/2006",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "43220"
+  ],
+  "sic_labels": [
+    "Plumbing, heat and air-conditioning installation"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "UNIT B2",
+    "address_line_2": "MILLTOWN EAST IND EST",
+    "post_town": "UPPER DROMORE ROAD",
+    "county": "WARRENPOINT, NEWRY",
+    "country": "",
+    "postal_code": "BT34 3PN"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/03/2025",
+    "next_due": "30/11/2026",
+    "ref_day": "28",
+    "ref_month": "2"
+  },
+  "mortgages": {
+    "num_charges": 4,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 4
+  },
+  "spend_profile": {
+    "total_gbp_2024": 2332000000.0,
+    "n_contracts": 4,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 54.114546,
+    "lng": -6.262502,
+    "lad24_cd": "N09000010",
+    "lad24_nm": "Newry, Mourne and Down",
+    "region": null
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/NI060713"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T01:52:32Z",
+    "company_name": "CTS PROJECTS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2006-08-30",
+    "date_of_cessation": null,
+    "jurisdiction": "northern-ireland",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-11-30",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-09-21"
+  },
+  "governance": {
+    "api_date": "2026-04-22T01:52:34Z",
+    "total_officers": 9,
+    "active_count": 5,
+    "resigned_count": 4,
+    "active_officers": [
+      {
+        "name": "BEVAN, Liam Christopher",
+        "role": "director",
+        "appointed_on": "2025-09-19",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "CREWE, Alexander",
+        "role": "director",
+        "appointed_on": "2025-09-19",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "HYLANDS, Serena, Mrs.",
+        "role": "director",
+        "appointed_on": "2025-03-27",
+        "country_of_residence": "Northern Ireland",
+        "nationality": "British"
+      },
+      {
+        "name": "MCGREEVY, Connaire Thomas",
+        "role": "director",
+        "appointed_on": "2006-08-30",
+        "country_of_residence": "Northern Ireland",
+        "nationality": "Irish"
+      },
+      {
+        "name": "NELSON, Jane",
+        "role": "director",
+        "appointed_on": "2025-09-19",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T01:52:36Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Cardo Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2025-09-19",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "England And Wales",
+          "country_registered": "Wales",
+          "place_registered": "Companies House",
+          "registration_number": "09435643"
+        }
+      },
+      {
+        "name": "Guiding Light Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent",
+          "voting-rights-50-to-75-percent"
+        ],
+        "notified_on": "2025-03-27",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Northern Ireland",
+          "country_registered": "Northern Ireland",
+          "place_registered": "Companies House",
+          "registration_number": "Ni645815"
+        }
+      },
+      {
+        "name": "Mr Connaire Thomas Stephen Mcgreevy",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Irish",
+        "country_of_residence": "Northern Ireland",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-05-01",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5Nzc4MjMyNWFkaXF6a2N4",
+    "date": "2026-01-06",
+    "type": "AA01",
+    "description": "change-account-reference-date-company-current-shortened",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/19vFXeVYY1LuNlafLl81F-YaG5UGJdDjf6g7vV07GMo/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/NI060713/filing-history/MzQ5Nzc4MjMyNWFkaXF6a2N4"
+  }
+}

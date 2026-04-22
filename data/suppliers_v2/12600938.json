@@ -1,0 +1,73 @@
+{
+  "schema_version": "v2",
+  "company_number": "12600938",
+  "display_name": "Oxford Human Capital Incorporated Ltd",
+  "official_name": "OXFORD HUMAN CAPITAL INCORPORATED LTD",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "13/05/2020",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "01500",
+    "62020",
+    "70229",
+    "86900"
+  ],
+  "sic_labels": [
+    "Mixed farming",
+    "Information technology consultancy activities",
+    "Management consultancy activities other than financial management",
+    "Other human health activities"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "12 MARKET PLACE",
+    "address_line_2": "",
+    "post_town": "FARINGDON",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "SN7 7HP"
+  },
+  "accounts": {
+    "category": "MICRO ENTITY",
+    "last_made_up": "31/05/2025",
+    "next_due": "28/02/2027",
+    "ref_day": "31",
+    "ref_month": "5"
+  },
+  "mortgages": {
+    "num_charges": 2,
+    "num_outstanding": 1,
+    "num_part_satisfied": 0,
+    "num_satisfied": 1
+  },
+  "spend_profile": {
+    "total_gbp_2024": 9000000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.658047,
+    "lng": -1.583888,
+    "lad24_cd": "E07000180",
+    "lad24_nm": "Vale of White Horse",
+    "region": "South East"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/12600938"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": false,
+    "ch_api_officers": false,
+    "ch_api_pscs": false,
+    "ch_api_accounts_pdf": false
+  }
+}

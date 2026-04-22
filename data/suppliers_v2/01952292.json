@@ -1,0 +1,72 @@
+{
+  "schema_version": "v2",
+  "company_number": "01952292",
+  "display_name": "Luke Hughes & Company Limited",
+  "official_name": "LUKE HUGHES & COMPANY LIMITED",
+  "status": "liquidation",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "03/10/1985",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "31090"
+  ],
+  "sic_labels": [
+    "Manufacture of other furniture"
+  ],
+  "previous_names": [
+    {
+      "name": "LUKE HUGHES & CO. LIMITED",
+      "condate": "29/01/2008"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "C/O PKF LITTLEJOHN ADVISORY LIMITED 4TH FLOOR",
+    "address_line_2": "12 KING STREET",
+    "post_town": "LEEDS",
+    "county": "",
+    "country": "",
+    "postal_code": "LS1 2HL"
+  },
+  "accounts": {
+    "category": "TOTAL EXEMPTION FULL",
+    "last_made_up": "30/06/2022",
+    "next_due": "30/06/2024",
+    "ref_day": "30",
+    "ref_month": "6"
+  },
+  "mortgages": {
+    "num_charges": 4,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 4
+  },
+  "spend_profile": {
+    "total_gbp_2024": 56850.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 53.797346,
+    "lng": -1.549834,
+    "lad24_cd": "E08000035",
+    "lad24_nm": "Leeds",
+    "region": "Yorkshire and The Humber"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/01952292"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": false,
+    "ch_api_officers": false,
+    "ch_api_pscs": false,
+    "ch_api_accounts_pdf": false
+  }
+}

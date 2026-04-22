@@ -1,0 +1,72 @@
+{
+  "schema_version": "v2",
+  "company_number": "06400214",
+  "display_name": "Sional Ltd",
+  "official_name": "SIONAL LTD",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "16/10/2007",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "32990"
+  ],
+  "sic_labels": [
+    "Other manufacturing n.e.c."
+  ],
+  "previous_names": [
+    {
+      "name": "PEETMEN LTD",
+      "condate": "18/06/2008"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "DOL HYFRYD",
+    "address_line_2": "RHUALLT",
+    "post_town": "ST. ASAPH",
+    "county": "DENBIGHSHIRE",
+    "country": "WALES",
+    "postal_code": "LL17 0TE"
+  },
+  "accounts": {
+    "category": "MICRO ENTITY",
+    "last_made_up": "31/03/2025",
+    "next_due": "31/12/2026",
+    "ref_day": "31",
+    "ref_month": "3"
+  },
+  "mortgages": {
+    "num_charges": 1,
+    "num_outstanding": 1,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 129000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 53.26407,
+    "lng": -3.38838,
+    "lad24_cd": "W06000004",
+    "lad24_nm": "Denbighshire",
+    "region": null
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/06400214"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": false,
+    "ch_api_officers": false,
+    "ch_api_pscs": false,
+    "ch_api_accounts_pdf": false
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "schema_version": "v2",
+  "company_number": "01384241",
+  "display_name": "Royston Limited",
+  "official_name": "ROYSTON LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "16/08/1978",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "33120"
+  ],
+  "sic_labels": [
+    "Repair of machinery"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "UNIT 3",
+    "address_line_2": "WALKER RIVERSIDE",
+    "post_town": "WINCOMBLEE ROAD",
+    "county": "NEWCASTLE UPON TYNE",
+    "country": "",
+    "postal_code": "NE6 3PF"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "28/02/2025",
+    "next_due": "30/11/2026",
+    "ref_day": "28",
+    "ref_month": "2"
+  },
+  "mortgages": {
+    "num_charges": 13,
+    "num_outstanding": 1,
+    "num_part_satisfied": 0,
+    "num_satisfied": 12
+  },
+  "spend_profile": {
+    "total_gbp_2024": 31802.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 54.965037,
+    "lng": -1.541621,
+    "lad24_cd": "E08000021",
+    "lad24_nm": "Newcastle upon Tyne",
+    "region": "North East"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/01384241"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": false,
+    "ch_api_officers": false,
+    "ch_api_pscs": false,
+    "ch_api_accounts_pdf": false
+  }
+}

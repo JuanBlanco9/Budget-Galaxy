@@ -1,0 +1,72 @@
+{
+  "schema_version": "v2",
+  "company_number": "12364342",
+  "display_name": "Cobb Warren Limited",
+  "official_name": "COBB WARREN LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "16/12/2019",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "69102"
+  ],
+  "sic_labels": [
+    "Solicitors"
+  ],
+  "previous_names": [
+    {
+      "name": "WARREN LEGAL LIMITED",
+      "condate": "03/01/2020"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "13-14 ORCHARD STREET",
+    "address_line_2": "",
+    "post_town": "BRISTOL",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "BS1 5EH"
+  },
+  "accounts": {
+    "category": "TOTAL EXEMPTION FULL",
+    "last_made_up": "31/12/2025",
+    "next_due": "30/09/2027",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 0,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 300000.0,
+    "n_contracts": 4,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.453788,
+    "lng": -2.599495,
+    "lad24_cd": "E06000023",
+    "lad24_nm": "Bristol, City of",
+    "region": "South West"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/12364342"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": false,
+    "ch_api_officers": false,
+    "ch_api_pscs": false,
+    "ch_api_accounts_pdf": false
+  }
+}

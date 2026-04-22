@@ -1,0 +1,71 @@
+{
+  "schema_version": "v2",
+  "company_number": "03708416",
+  "display_name": "Tier 1 Asset Management Limited",
+  "official_name": "TIER 1 ASSET MANAGEMENT LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "04/02/1999",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "47910",
+    "62020",
+    "62090"
+  ],
+  "sic_labels": [
+    "Retail sale via mail order houses or via Internet",
+    "Information technology consultancy activities",
+    "Other information technology service activities"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "59 STANLEY ROAD",
+    "address_line_2": "WHITEFIELD",
+    "post_town": "MANCHESTER",
+    "county": "GREATER MANCHESTER",
+    "country": "",
+    "postal_code": "M45 8GZ"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/03/2025",
+    "next_due": "31/12/2026",
+    "ref_day": "31",
+    "ref_month": "3"
+  },
+  "mortgages": {
+    "num_charges": 9,
+    "num_outstanding": 6,
+    "num_part_satisfied": 0,
+    "num_satisfied": 3
+  },
+  "spend_profile": {
+    "total_gbp_2024": 35000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 53.552758,
+    "lng": -2.286683,
+    "lad24_cd": "E08000002",
+    "lad24_nm": "Bury",
+    "region": "North West"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/03708416"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": false,
+    "ch_api_officers": false,
+    "ch_api_pscs": false,
+    "ch_api_accounts_pdf": false
+  }
+}

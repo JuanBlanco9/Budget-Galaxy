@@ -1,0 +1,125 @@
+{
+  "schema_version": "v2",
+  "company_number": "12236574",
+  "display_name": "Hc&D Ltd",
+  "official_name": "HC&D LTD",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "01/10/2019",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "70229"
+  ],
+  "sic_labels": [
+    "Management consultancy activities other than financial management"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "SUITE 2B RIBBLE COURT",
+    "address_line_2": "1 MEAD WAY",
+    "post_town": "PADIHAM",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "BB12 7NG"
+  },
+  "accounts": {
+    "category": "DORMANT",
+    "last_made_up": "25/10/2024",
+    "next_due": "25/07/2026",
+    "ref_day": "25",
+    "ref_month": "10"
+  },
+  "mortgages": {
+    "num_charges": 0,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 500000000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 53.79531,
+    "lng": -2.328978,
+    "lad24_cd": "E07000117",
+    "lad24_nm": "Burnley",
+    "region": "North West"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/12236574"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T03:10:38Z",
+    "company_name": "HC&D LTD",
+    "company_status": "active",
+    "date_of_creation": "2019-10-01",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-07-25",
+    "accounts_last_made_up": "2024-10-25",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-14"
+  },
+  "governance": {
+    "api_date": "2026-04-22T03:10:40Z",
+    "total_officers": 1,
+    "active_count": 1,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "O'DRISCOLL, Kevin",
+        "role": "director",
+        "appointed_on": "2019-10-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T03:10:41Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Kevin O'Driscoll",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2019-10-01",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4NDg0ODA4OWFkaXF6a2N4",
+    "date": "2025-10-14",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-dormant",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/TGvZZ7eanMfy1tGgHOxpG88Rj70FZUrA1z-8zM_3tmc/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/12236574/filing-history/MzQ4NDg0ODA4OWFkaXF6a2N4"
+  }
+}

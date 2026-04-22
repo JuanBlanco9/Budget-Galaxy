@@ -1,0 +1,154 @@
+{
+  "schema_version": "v2",
+  "company_number": "12267698",
+  "display_name": "Oakland Group Services Limited",
+  "official_name": "OAKLAND GROUP SERVICES LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "17/10/2019",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "82990"
+  ],
+  "sic_labels": [
+    "Other business support service activities n.e.c."
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "1 EAST PARADE",
+    "address_line_2": "",
+    "post_town": "LEEDS",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "LS1 2AD"
+  },
+  "accounts": {
+    "category": "TOTAL EXEMPTION FULL",
+    "last_made_up": "31/03/2025",
+    "next_due": "31/12/2026",
+    "ref_day": "31",
+    "ref_month": "3"
+  },
+  "mortgages": {
+    "num_charges": 3,
+    "num_outstanding": 1,
+    "num_part_satisfied": 0,
+    "num_satisfied": 2
+  },
+  "spend_profile": {
+    "total_gbp_2024": 500000000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 53.798119,
+    "lng": -1.549749,
+    "lad24_cd": "E08000035",
+    "lad24_nm": "Leeds",
+    "region": "Yorkshire and The Humber"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/12267698"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T03:16:40Z",
+    "company_name": "OAKLAND GROUP SERVICES LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2019-10-17",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-30"
+  },
+  "governance": {
+    "api_date": "2026-04-22T03:16:41Z",
+    "total_officers": 10,
+    "active_count": 4,
+    "resigned_count": 6,
+    "active_officers": [
+      {
+        "name": "CORDEROY, Richard",
+        "role": "director",
+        "appointed_on": "2019-10-17",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CROSSLEY, Andrew James",
+        "role": "director",
+        "appointed_on": "2019-10-17",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "OAKLAND, Robert James",
+        "role": "director",
+        "appointed_on": "2019-10-17",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SCOTT, Roderic Martin Casper",
+        "role": "director",
+        "appointed_on": "2019-10-17",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T03:16:43Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Softcat Plc",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2025-04-04",
+        "identification": {
+          "legal_form": "Public Limited Company",
+          "legal_authority": "English Law",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "02174990"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MTA3Njg3M2FkaXF6a2N4",
+    "date": "2025-11-26",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/rnshdYP3_nXA-ErMFIvHalVF5OtgThNfmvjb3j4bVEI/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/12267698/filing-history/MzQ5MTA3Njg3M2FkaXF6a2N4"
+  }
+}

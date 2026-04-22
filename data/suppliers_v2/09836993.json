@@ -1,0 +1,152 @@
+{
+  "schema_version": "v2",
+  "company_number": "09836993",
+  "display_name": "Pendennis House Ltd",
+  "official_name": "PENDENNIS HOUSE LTD",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "22/10/2015",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "87300"
+  ],
+  "sic_labels": [
+    "Residential care activities for the elderly and disabled"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "UNIT 3 BUILDING B GREEN COURT, TRURO BUSINESS PARK",
+    "address_line_2": "THREEMILESTONE",
+    "post_town": "TRURO",
+    "county": "CORNWALL",
+    "country": "ENGLAND",
+    "postal_code": "TR4 9LF"
+  },
+  "accounts": {
+    "category": "TOTAL EXEMPTION FULL",
+    "last_made_up": "30/09/2025",
+    "next_due": "30/06/2027",
+    "ref_day": "30",
+    "ref_month": "9"
+  },
+  "mortgages": {
+    "num_charges": 1,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 1
+  },
+  "spend_profile": {
+    "total_gbp_2024": 750000000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 50.260769,
+    "lng": -5.120948,
+    "lad24_cd": "E06000052",
+    "lad24_nm": "Cornwall",
+    "region": "South West"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/09836993"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T02:35:10Z",
+    "company_name": "PENDENNIS HOUSE LTD",
+    "company_status": "active",
+    "date_of_creation": "2015-10-22",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-06-30",
+    "accounts_last_made_up": "2025-09-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-06"
+  },
+  "governance": {
+    "api_date": "2026-04-22T02:35:12Z",
+    "total_officers": 3,
+    "active_count": 1,
+    "resigned_count": 2,
+    "active_officers": [
+      {
+        "name": "GRIMSEY, Claire May",
+        "role": "director",
+        "appointed_on": "2015-10-22",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T02:35:14Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mrs Penelope Phyllis Rapo",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Miss May Rita Coogan",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Miss Claire May Grimsey",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NTc2ODczM2FkaXF6a2N4",
+    "date": "2025-12-22",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/aUa_F9PqZcMrrSn5uagnadWXowy_m8zpRhzE1POJMQg/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/09836993/filing-history/MzQ5NTc2ODczM2FkaXF6a2N4"
+  }
+}

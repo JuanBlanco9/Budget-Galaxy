@@ -1,0 +1,71 @@
+{
+  "schema_version": "v2",
+  "company_number": "00532879",
+  "display_name": "Thompson Commercials Limited",
+  "official_name": "THOMPSON COMMERCIALS LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "05/05/1954",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "45190",
+    "45200",
+    "45320"
+  ],
+  "sic_labels": [
+    "Sale of other motor vehicles",
+    "Maintenance and repair of motor vehicles",
+    "Retail trade of motor vehicle parts and accessories"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "THOMPSON COMMERCIALS LIMITED SALVESEN WAY",
+    "address_line_2": "CLIVE SULLIVAN WAY",
+    "post_town": "HULL",
+    "county": "EAST YORKSHIRE",
+    "country": "UNITED KINGDOM",
+    "postal_code": "HU3 4UQ"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 28,
+    "num_outstanding": 4,
+    "num_part_satisfied": 0,
+    "num_satisfied": 24
+  },
+  "spend_profile": {
+    "total_gbp_2024": 8632545.0,
+    "n_contracts": 2,
+    "n_buyers": 2
+  },
+  "geo": {
+    "lat": 53.729369,
+    "lng": -0.378904,
+    "lad24_cd": "E06000010",
+    "lad24_nm": "Kingston upon Hull, City of",
+    "region": "Yorkshire and The Humber"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/00532879"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": false,
+    "ch_api_officers": false,
+    "ch_api_pscs": false,
+    "ch_api_accounts_pdf": false
+  }
+}

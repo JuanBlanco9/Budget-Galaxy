@@ -1,0 +1,73 @@
+{
+  "schema_version": "v2",
+  "company_number": "04443068",
+  "display_name": "T. M. Browne Limited",
+  "official_name": "T. M. BROWNE LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "20/05/2002",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "41201",
+    "41202",
+    "43210",
+    "43390"
+  ],
+  "sic_labels": [
+    "Construction of commercial buildings",
+    "Construction of domestic buildings",
+    "Electrical installation",
+    "Other building completion and finishing"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "UNIT 3 THE MILL MARKET LANE",
+    "address_line_2": "TERRINGTON ST CLEMENT",
+    "post_town": "KINGS LYNN",
+    "county": "NORFOLK",
+    "country": "",
+    "postal_code": "PE34 4HR"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "30/06/2025",
+    "next_due": "31/03/2027",
+    "ref_day": "30",
+    "ref_month": "6"
+  },
+  "mortgages": {
+    "num_charges": 8,
+    "num_outstanding": 1,
+    "num_part_satisfied": 0,
+    "num_satisfied": 7
+  },
+  "spend_profile": {
+    "total_gbp_2024": 50000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 52.747574,
+    "lng": 0.270391,
+    "lad24_cd": "E07000146",
+    "lad24_nm": "King's Lynn and West Norfolk",
+    "region": "East of England"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/04443068"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": false,
+    "ch_api_officers": false,
+    "ch_api_pscs": false,
+    "ch_api_accounts_pdf": false
+  }
+}

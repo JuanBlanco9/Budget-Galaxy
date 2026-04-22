@@ -1,0 +1,63 @@
+{
+  "schema_version": "v2",
+  "company_number": "FC033034",
+  "display_name": "Protector Insurance",
+  "official_name": "PROTECTOR INSURANCE",
+  "status": "active",
+  "type": "other_company_type",
+  "category_raw": "Other company type",
+  "jurisdiction": "norway",
+  "incorporated": "18/11/2015",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [],
+  "sic_labels": [],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "STOPERIGATA 2",
+    "address_line_2": "PB 1351 VIKA",
+    "post_town": "OSLO",
+    "county": "0113",
+    "country": "",
+    "postal_code": null
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/12/2024",
+    "next_due": null,
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 0,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 15810759.25,
+    "n_contracts": 4,
+    "n_buyers": 3
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "lad24_cd": null,
+    "lad24_nm": null,
+    "region": null
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/FC033034"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": false,
+    "ch_api_officers": false,
+    "ch_api_pscs": false,
+    "ch_api_accounts_pdf": false
+  }
+}

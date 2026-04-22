@@ -1,0 +1,72 @@
+{
+  "schema_version": "v2",
+  "company_number": "05277750",
+  "display_name": "Ambrell Limited",
+  "official_name": "AMBRELL LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "04/11/2004",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "46690"
+  ],
+  "sic_labels": [
+    "Wholesale of other machinery and equipment"
+  ],
+  "previous_names": [
+    {
+      "name": "CHELTENHAM INDUCTION HEATING LIMITED",
+      "condate": "05/08/2011"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "FRONT SUITE, 1ST FLOOR CHARLES HOUSE",
+    "address_line_2": "14-149 GT CHARLES STREET",
+    "post_town": "BIRMINGHAM",
+    "county": "",
+    "country": "UNITED KINGDOM",
+    "postal_code": "B3 3HT"
+  },
+  "accounts": {
+    "category": "SMALL",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 2,
+    "num_outstanding": 2,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 20000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 52.481854,
+    "lng": -1.905036,
+    "lad24_cd": "E08000025",
+    "lad24_nm": "Birmingham",
+    "region": "West Midlands"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/05277750"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": false,
+    "ch_api_officers": false,
+    "ch_api_pscs": false,
+    "ch_api_accounts_pdf": false
+  }
+}

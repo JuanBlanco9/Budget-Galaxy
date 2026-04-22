@@ -1,0 +1,76 @@
+{
+  "schema_version": "v2",
+  "company_number": "05536599",
+  "display_name": "Arc Group London Limited",
+  "official_name": "ARC GROUP LONDON LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "15/08/2005",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "43210",
+    "43220",
+    "43290"
+  ],
+  "sic_labels": [
+    "Electrical installation",
+    "Plumbing, heat and air-conditioning installation",
+    "Other construction installation"
+  ],
+  "previous_names": [
+    {
+      "name": "ARC ELECTRICAL (ESSEX) LIMITED",
+      "condate": "07/02/2012"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "NALKEN HOUSE",
+    "address_line_2": "UNIT 4A NOBLE ROAD",
+    "post_town": "UPPER EDMONTON",
+    "county": "LONDON",
+    "country": "ENGLAND",
+    "postal_code": "N18 3BH"
+  },
+  "accounts": {
+    "category": "GROUP",
+    "last_made_up": "31/08/2024",
+    "next_due": "31/05/2026",
+    "ref_day": "31",
+    "ref_month": "8"
+  },
+  "mortgages": {
+    "num_charges": 6,
+    "num_outstanding": 5,
+    "num_part_satisfied": 0,
+    "num_satisfied": 1
+  },
+  "spend_profile": {
+    "total_gbp_2024": 210000000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.616629,
+    "lng": -0.046447,
+    "lad24_cd": "E09000010",
+    "lad24_nm": "Enfield",
+    "region": "London"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/05536599"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": false,
+    "ch_api_officers": false,
+    "ch_api_pscs": false,
+    "ch_api_accounts_pdf": false
+  }
+}

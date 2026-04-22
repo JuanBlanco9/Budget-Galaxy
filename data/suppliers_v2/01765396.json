@@ -1,0 +1,67 @@
+{
+  "schema_version": "v2",
+  "company_number": "01765396",
+  "display_name": "C.G. Fry And Son Limited",
+  "official_name": "C.G. FRY AND SON LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "28/10/1983",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "41202"
+  ],
+  "sic_labels": [
+    "Construction of domestic buildings"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "LITTON CHENEY",
+    "address_line_2": "",
+    "post_town": "DORCHESTER",
+    "county": "DORSET",
+    "country": "UNITED KINGDOM",
+    "postal_code": "DT2 9AS"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 98,
+    "num_outstanding": 50,
+    "num_part_satisfied": 1,
+    "num_satisfied": 47
+  },
+  "spend_profile": {
+    "total_gbp_2024": -400000000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 50.710757,
+    "lng": -2.639207,
+    "lad24_cd": "E06000059",
+    "lad24_nm": "Dorset",
+    "region": "South West"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/01765396"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": false,
+    "ch_api_officers": false,
+    "ch_api_pscs": false,
+    "ch_api_accounts_pdf": false
+  }
+}

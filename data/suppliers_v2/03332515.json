@@ -1,0 +1,154 @@
+{
+  "schema_version": "v2",
+  "company_number": "03332515",
+  "display_name": "Lar Limited",
+  "official_name": "LAR LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "07/03/1997",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "38220"
+  ],
+  "sic_labels": [
+    "Treatment and disposal of hazardous waste"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "UNIT 5 CROSSLEY PARK INDUSTRIAL ESTATE",
+    "address_line_2": "CROSSLEY ROAD",
+    "post_town": "STOCKPORT",
+    "county": "CHESHIRE",
+    "country": "",
+    "postal_code": "SK4 5BF"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 7,
+    "num_outstanding": 1,
+    "num_part_satisfied": 0,
+    "num_satisfied": 6
+  },
+  "spend_profile": {
+    "total_gbp_2024": 862000000.0,
+    "n_contracts": 2,
+    "n_buyers": 2
+  },
+  "geo": {
+    "lat": 53.433068,
+    "lng": -2.186597,
+    "lad24_cd": "E08000007",
+    "lad24_nm": "Stockport",
+    "region": "North West"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/03332515"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T02:28:25Z",
+    "company_name": "LAR LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1997-03-07",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-21"
+  },
+  "governance": {
+    "api_date": "2026-04-22T02:28:26Z",
+    "total_officers": 13,
+    "active_count": 4,
+    "resigned_count": 9,
+    "active_officers": [
+      {
+        "name": "WHITFIELD, Andrew Simon",
+        "role": "secretary",
+        "appointed_on": "2012-07-01",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "CLARKE, Robert",
+        "role": "director",
+        "appointed_on": "2019-09-10",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HANNAH, Steven Edward",
+        "role": "director",
+        "appointed_on": "2015-01-08",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WHITFIELD, Andrew Simon",
+        "role": "director",
+        "appointed_on": "2002-06-30",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T02:28:28Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Amb Holdings Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act",
+          "country_registered": "England",
+          "place_registered": "England",
+          "registration_number": "04750965"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NzkwODg1NGFkaXF6a2N4",
+    "date": "2025-08-19",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/O3SXy4fI_Tpd-2H5D3X1oMh21o3OSFYHIvz43jcLktM/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03332515/filing-history/MzQ3NzkwODg1NGFkaXF6a2N4"
+  }
+}

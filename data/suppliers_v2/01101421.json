@@ -1,0 +1,67 @@
+{
+  "schema_version": "v2",
+  "company_number": "01101421",
+  "display_name": "Owen & Palmer Limited",
+  "official_name": "OWEN & PALMER LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "13/03/1973",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "43210"
+  ],
+  "sic_labels": [
+    "Electrical installation"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "UNIT 12",
+    "address_line_2": "LLANDYGAI INDUSTRIAL ESTATE",
+    "post_town": "BANGOR",
+    "county": "GWYNEDD",
+    "country": "",
+    "postal_code": "LL57 4YH"
+  },
+  "accounts": {
+    "category": "TOTAL EXEMPTION FULL",
+    "last_made_up": "31/10/2024",
+    "next_due": "31/07/2026",
+    "ref_day": "31",
+    "ref_month": "10"
+  },
+  "mortgages": {
+    "num_charges": 1,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 1
+  },
+  "spend_profile": {
+    "total_gbp_2024": 22000000.0,
+    "n_contracts": 2,
+    "n_buyers": 2
+  },
+  "geo": {
+    "lat": 53.217985,
+    "lng": -4.111526,
+    "lad24_cd": "W06000002",
+    "lad24_nm": "Gwynedd",
+    "region": null
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/01101421"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": false,
+    "ch_api_officers": false,
+    "ch_api_pscs": false,
+    "ch_api_accounts_pdf": false
+  }
+}

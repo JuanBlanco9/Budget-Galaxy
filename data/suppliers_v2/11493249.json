@@ -1,0 +1,78 @@
+{
+  "schema_version": "v2",
+  "company_number": "11493249",
+  "display_name": "Peterborough Limited",
+  "official_name": "PETERBOROUGH LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "31/07/2018",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "38110",
+    "68320",
+    "88910",
+    "93110"
+  ],
+  "sic_labels": [
+    "Collection of non-hazardous waste",
+    "Management of real estate on a fee or contract basis",
+    "Child day-care activities",
+    "Operation of sports facilities"
+  ],
+  "previous_names": [
+    {
+      "name": "LIVE PETERBOROUGH LIMITED",
+      "condate": "04/10/2018"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "TOWN HALL",
+    "address_line_2": "BRIDGE STREET",
+    "post_town": "PETERBOROUGH",
+    "county": "CAMBRIDGESHIRE",
+    "country": "ENGLAND",
+    "postal_code": "PE1 1HF"
+  },
+  "accounts": {
+    "category": "GROUP",
+    "last_made_up": "31/03/2025",
+    "next_due": "31/12/2026",
+    "ref_day": "31",
+    "ref_month": "3"
+  },
+  "mortgages": {
+    "num_charges": 0,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 75000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 52.571478,
+    "lng": -0.241994,
+    "lad24_cd": "E06000031",
+    "lad24_nm": "Peterborough",
+    "region": "East of England"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/11493249"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": false,
+    "ch_api_officers": false,
+    "ch_api_pscs": false,
+    "ch_api_accounts_pdf": false
+  }
+}

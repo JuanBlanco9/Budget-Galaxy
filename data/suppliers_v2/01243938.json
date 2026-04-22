@@ -1,0 +1,76 @@
+{
+  "schema_version": "v2",
+  "company_number": "01243938",
+  "display_name": "Movianto Uk Limited",
+  "official_name": "MOVIANTO UK LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "11/02/1976",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "46460",
+    "49410",
+    "52103"
+  ],
+  "sic_labels": [
+    "Wholesale of pharmaceutical goods",
+    "Freight transport by road",
+    "Operation of warehousing and storage facilities for land transport activities"
+  ],
+  "previous_names": [
+    {
+      "name": "HEALTHCARE LOGISTICS LIMITED",
+      "condate": "27/09/2007"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "UNIT 1 BEDFORD LINK LOGISTICS PARK",
+    "address_line_2": "BELL FARM WAY",
+    "post_town": "KEMPSTON",
+    "county": "BEDFORD",
+    "country": "UNITED KINGDOM",
+    "postal_code": "MK43 9SS"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 8,
+    "num_outstanding": 2,
+    "num_part_satisfied": 0,
+    "num_satisfied": 6
+  },
+  "spend_profile": {
+    "total_gbp_2024": 50002.0,
+    "n_contracts": 3,
+    "n_buyers": 2
+  },
+  "geo": {
+    "lat": 52.104426,
+    "lng": -0.512873,
+    "lad24_cd": "E06000055",
+    "lad24_nm": "Bedford",
+    "region": "East of England"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/01243938"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": false,
+    "ch_api_officers": false,
+    "ch_api_pscs": false,
+    "ch_api_accounts_pdf": false
+  }
+}

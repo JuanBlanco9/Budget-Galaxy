@@ -1,0 +1,119 @@
+{
+  "schema_version": "v2",
+  "company_number": "17087873",
+  "display_name": "Ra&Am Construction Ltd",
+  "official_name": "RA&AM CONSTRUCTION LTD",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "12/03/2026",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "41202"
+  ],
+  "sic_labels": [
+    "Construction of domestic buildings"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "76 EDWARD ROAD",
+    "address_line_2": "",
+    "post_town": "BEDWORTH",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "CV12 8PR"
+  },
+  "accounts": {
+    "category": "NO ACCOUNTS FILED",
+    "last_made_up": null,
+    "next_due": "12/12/2027",
+    "ref_day": "31",
+    "ref_month": "3"
+  },
+  "mortgages": {
+    "num_charges": 0,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 820000000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 52.479719,
+    "lng": -1.469971,
+    "lad24_cd": "E07000219",
+    "lad24_nm": "Nuneaton and Bedworth",
+    "region": "West Midlands"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/17087873"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": false
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T02:31:47Z",
+    "company_name": "RA&AM CONSTRUCTION LTD",
+    "company_status": "active",
+    "date_of_creation": "2026-03-12",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-12-12",
+    "accounts_last_made_up": null,
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-25"
+  },
+  "governance": {
+    "api_date": "2026-04-22T02:31:49Z",
+    "total_officers": 1,
+    "active_count": 1,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "IVAN, Ion-Renato",
+        "role": "director",
+        "appointed_on": "2026-03-12",
+        "country_of_residence": "England",
+        "nationality": "Romanian"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T02:31:51Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Ion-Renato Ivan",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Romanian",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2026-03-12",
+        "identification": null
+      }
+    ]
+  }
+}

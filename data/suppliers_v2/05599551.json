@@ -1,0 +1,72 @@
+{
+  "schema_version": "v2",
+  "company_number": "05599551",
+  "display_name": "05599551 Limited",
+  "official_name": "05599551 LIMITED",
+  "status": "in_administration",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "21/10/2005",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "63990"
+  ],
+  "sic_labels": [
+    "Other information service activities n.e.c."
+  ],
+  "previous_names": [
+    {
+      "name": "INFORM CPI LIMITED",
+      "condate": "17/02/2025"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "5TH FLOOR SHIP CANAL HOUSE",
+    "address_line_2": "98 KING STREET",
+    "post_town": "MANCHESTER",
+    "county": "",
+    "country": "",
+    "postal_code": "M2 4WU"
+  },
+  "accounts": {
+    "category": "SMALL",
+    "last_made_up": "29/09/2022",
+    "next_due": "29/06/2024",
+    "ref_day": "29",
+    "ref_month": "9"
+  },
+  "mortgages": {
+    "num_charges": 5,
+    "num_outstanding": 1,
+    "num_part_satisfied": 0,
+    "num_satisfied": 4
+  },
+  "spend_profile": {
+    "total_gbp_2024": 22500.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 53.480597,
+    "lng": -2.242935,
+    "lad24_cd": "E08000003",
+    "lad24_nm": "Manchester",
+    "region": "North West"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/05599551"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": false,
+    "ch_api_officers": false,
+    "ch_api_pscs": false,
+    "ch_api_accounts_pdf": false
+  }
+}

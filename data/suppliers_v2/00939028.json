@@ -1,0 +1,72 @@
+{
+  "schema_version": "v2",
+  "company_number": "00939028",
+  "display_name": "Werner Uk Sales & Distribution Ltd.",
+  "official_name": "WERNER UK SALES & DISTRIBUTION LTD.",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "19/09/1968",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "25990"
+  ],
+  "sic_labels": [
+    "Manufacture of other fabricated metal products n.e.c."
+  ],
+  "previous_names": [
+    {
+      "name": "ABRU LIMITED",
+      "condate": "10/09/2015"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "THE CAUSEWAY",
+    "address_line_2": "THE CAUSEWAY",
+    "post_town": "MALDON",
+    "county": "ESSEX",
+    "country": "ENGLAND",
+    "postal_code": "CM9 4LJ"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/12/2023",
+    "next_due": "30/09/2025",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 24,
+    "num_outstanding": 6,
+    "num_part_satisfied": 0,
+    "num_satisfied": 18
+  },
+  "spend_profile": {
+    "total_gbp_2024": 39831.5,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.737705,
+    "lng": 0.681661,
+    "lad24_cd": "E07000074",
+    "lad24_nm": "Maldon",
+    "region": "East of England"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/00939028"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": false,
+    "ch_api_officers": false,
+    "ch_api_pscs": false,
+    "ch_api_accounts_pdf": false
+  }
+}

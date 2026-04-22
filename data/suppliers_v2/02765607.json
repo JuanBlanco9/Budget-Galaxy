@@ -1,0 +1,67 @@
+{
+  "schema_version": "v2",
+  "company_number": "02765607",
+  "display_name": "Controlaccount Ltd",
+  "official_name": "CONTROLACCOUNT LTD",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "18/11/1992",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "82911"
+  ],
+  "sic_labels": [
+    "Activities of collection agencies"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "COMPASS HOUSE WATERSIDE",
+    "address_line_2": "HANBURY ROAD",
+    "post_town": "BROMSGROVE",
+    "county": "WORCESTERSHIRE",
+    "country": "",
+    "postal_code": "B60 4FD"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 5,
+    "num_outstanding": 3,
+    "num_part_satisfied": 0,
+    "num_satisfied": 2
+  },
+  "spend_profile": {
+    "total_gbp_2024": 3435000.0,
+    "n_contracts": 3,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 52.300915,
+    "lng": -2.073654,
+    "lad24_cd": "E07000234",
+    "lad24_nm": "Bromsgrove",
+    "region": "West Midlands"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/02765607"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": false,
+    "ch_api_officers": false,
+    "ch_api_pscs": false,
+    "ch_api_accounts_pdf": false
+  }
+}

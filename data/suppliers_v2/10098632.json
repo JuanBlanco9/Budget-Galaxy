@@ -1,0 +1,72 @@
+{
+  "schema_version": "v2",
+  "company_number": "10098632",
+  "display_name": "Pekg Ltd",
+  "official_name": "PEKG LTD",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "01/04/2016",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "70100"
+  ],
+  "sic_labels": [
+    "Activities of head offices"
+  ],
+  "previous_names": [
+    {
+      "name": "PICK EVERARD (2016) LIMITED",
+      "condate": "28/05/2016"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "HALFORD HOUSE",
+    "address_line_2": "CHARLES STREET",
+    "post_town": "LEICESTER",
+    "county": "",
+    "country": "UNITED KINGDOM",
+    "postal_code": "LE1 1HA"
+  },
+  "accounts": {
+    "category": "DORMANT",
+    "last_made_up": "30/04/2024",
+    "next_due": "30/04/2026",
+    "ref_day": "30",
+    "ref_month": "4"
+  },
+  "mortgages": {
+    "num_charges": 0,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 1203754.81,
+    "n_contracts": 5,
+    "n_buyers": 4
+  },
+  "geo": {
+    "lat": 52.635217,
+    "lng": -1.130098,
+    "lad24_cd": "E06000016",
+    "lad24_nm": "Leicester",
+    "region": "East Midlands"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/10098632"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": false,
+    "ch_api_officers": false,
+    "ch_api_pscs": false,
+    "ch_api_accounts_pdf": false
+  }
+}

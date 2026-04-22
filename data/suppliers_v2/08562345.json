@@ -1,0 +1,72 @@
+{
+  "schema_version": "v2",
+  "company_number": "08562345",
+  "display_name": "Eleanor Hospital Logistics Ltd",
+  "official_name": "ELEANOR HOSPITAL LOGISTICS LTD",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "10/06/2013",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "52103"
+  ],
+  "sic_labels": [
+    "Operation of warehousing and storage facilities for land transport activities"
+  ],
+  "previous_names": [
+    {
+      "name": "ELEANOR HEALTHCARE LOGISTICS LTD",
+      "condate": "03/12/2013"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "THIRD FLOOR",
+    "address_line_2": "17 LONDON ROAD",
+    "post_town": "BROMLEY",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "BR1 1DE"
+  },
+  "accounts": {
+    "category": "MEDIUM",
+    "last_made_up": "31/03/2025",
+    "next_due": "31/12/2026",
+    "ref_day": "31",
+    "ref_month": "3"
+  },
+  "mortgages": {
+    "num_charges": 3,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 3
+  },
+  "spend_profile": {
+    "total_gbp_2024": 6000000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.408561,
+    "lng": 0.010616,
+    "lad24_cd": "E09000006",
+    "lad24_nm": "Bromley",
+    "region": "London"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/08562345"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": false,
+    "ch_api_officers": false,
+    "ch_api_pscs": false,
+    "ch_api_accounts_pdf": false
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "schema_version": "v2",
+  "company_number": "FC016691",
+  "display_name": "Landauer, Inc.",
+  "official_name": "LANDAUER, INC.",
+  "status": "active",
+  "type": "other_company_type",
+  "category_raw": "Other company type",
+  "jurisdiction": "united-states",
+  "incorporated": "01/06/1992",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [],
+  "sic_labels": [],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "UNIT 28 BANKSIDE",
+    "address_line_2": "STATION APPROACH",
+    "post_town": "KIDLINGTON",
+    "county": "OXFORD",
+    "country": "",
+    "postal_code": "OX5 1JE"
+  },
+  "accounts": {
+    "category": "GROUP",
+    "last_made_up": "30/09/2001",
+    "next_due": null,
+    "ref_day": "30",
+    "ref_month": "9"
+  },
+  "mortgages": {
+    "num_charges": 0,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 50700.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.83,
+    "lng": -1.301624,
+    "lad24_cd": "E07000177",
+    "lad24_nm": "Cherwell",
+    "region": "South East"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/FC016691"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": false,
+    "ch_api_officers": false,
+    "ch_api_pscs": false,
+    "ch_api_accounts_pdf": false
+  }
+}

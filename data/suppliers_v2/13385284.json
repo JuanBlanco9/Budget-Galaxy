@@ -1,0 +1,147 @@
+{
+  "schema_version": "v2",
+  "company_number": "13385284",
+  "display_name": "A&A Projects Limited",
+  "official_name": "A&A PROJECTS LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "10/05/2021",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "68100"
+  ],
+  "sic_labels": [
+    "Buying and selling of own real estate"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "117 HIGH STREET",
+    "address_line_2": "",
+    "post_town": "HORNCHURCH",
+    "county": "",
+    "country": "UNITED KINGDOM",
+    "postal_code": "RM11 1TX"
+  },
+  "accounts": {
+    "category": "MICRO ENTITY",
+    "last_made_up": "31/05/2024",
+    "next_due": "31/05/2026",
+    "ref_day": "31",
+    "ref_month": "5"
+  },
+  "mortgages": {
+    "num_charges": 3,
+    "num_outstanding": 2,
+    "num_part_satisfied": 0,
+    "num_satisfied": 1
+  },
+  "spend_profile": {
+    "total_gbp_2024": 1500032083.05,
+    "n_contracts": 2,
+    "n_buyers": 2
+  },
+  "geo": {
+    "lat": 51.56269,
+    "lng": 0.219605,
+    "lad24_cd": "E09000016",
+    "lad24_nm": "Havering",
+    "region": "London"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/13385284"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T02:06:57Z",
+    "company_name": "A&A PROJECTS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2021-05-10",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-05-31",
+    "accounts_last_made_up": "2024-05-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-28"
+  },
+  "governance": {
+    "api_date": "2026-04-22T02:06:59Z",
+    "total_officers": 2,
+    "active_count": 2,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "GLOVER, Alexander George",
+        "role": "director",
+        "appointed_on": "2021-05-10",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MURPHY, Aislinn Jessica",
+        "role": "director",
+        "appointed_on": "2021-05-10",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T02:07:01Z",
+    "total_results": 2,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Mr Alexander Glover",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2021-05-10",
+        "identification": null
+      },
+      {
+        "name": "Miss Aislinn Jessica Murphy",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2021-05-10",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2ODQ1ODc5NmFkaXF6a2N4",
+    "date": "2025-05-30",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-micro-entity",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/g7Q3oLz5xtNj3vg9tEisnsFrdrg8NdQ7Ioh1OQMqWgc/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/13385284/filing-history/MzQ2ODQ1ODc5NmFkaXF6a2N4"
+  }
+}

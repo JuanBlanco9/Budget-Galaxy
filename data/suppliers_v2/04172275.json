@@ -1,0 +1,69 @@
+{
+  "schema_version": "v2",
+  "company_number": "04172275",
+  "display_name": "Ben Burgess & Co Limited",
+  "official_name": "BEN BURGESS & CO LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "05/03/2001",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "46610",
+    "47990"
+  ],
+  "sic_labels": [
+    "Wholesale of agricultural machinery, equipment and supplies",
+    "Other retail sale not in stores, stalls or markets"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "24 KING WILLIAM STREET",
+    "address_line_2": "",
+    "post_town": "LONDON",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "EC4R 9AT"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/01/2025",
+    "next_due": "31/10/2026",
+    "ref_day": "31",
+    "ref_month": "1"
+  },
+  "mortgages": {
+    "num_charges": 5,
+    "num_outstanding": 4,
+    "num_part_satisfied": 0,
+    "num_satisfied": 1
+  },
+  "spend_profile": {
+    "total_gbp_2024": 72035.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.5106,
+    "lng": -0.086985,
+    "lad24_cd": "E09000001",
+    "lad24_nm": "City of London",
+    "region": "London"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/04172275"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": false,
+    "ch_api_officers": false,
+    "ch_api_pscs": false,
+    "ch_api_accounts_pdf": false
+  }
+}

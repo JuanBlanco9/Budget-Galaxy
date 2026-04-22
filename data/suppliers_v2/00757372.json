@@ -1,0 +1,67 @@
+{
+  "schema_version": "v2",
+  "company_number": "00757372",
+  "display_name": "Samaritans",
+  "official_name": "SAMARITANS",
+  "status": "active",
+  "type": "pri/ltd_by_guar/nsc_(private,_limited_by_guarantee,_no_share_capital)",
+  "category_raw": "PRI/LTD BY GUAR/NSC (Private, limited by guarantee, no share capital)",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "11/04/1963",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "94990"
+  ],
+  "sic_labels": [
+    "Activities of other membership organizations n.e.c."
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "THE UPPER MILL",
+    "address_line_2": "KINGSTON ROAD",
+    "post_town": "EWELL",
+    "county": "SURREY",
+    "country": "",
+    "postal_code": "KT17 2AF"
+  },
+  "accounts": {
+    "category": "GROUP",
+    "last_made_up": "31/03/2025",
+    "next_due": "31/12/2026",
+    "ref_day": "31",
+    "ref_month": "3"
+  },
+  "mortgages": {
+    "num_charges": 22,
+    "num_outstanding": 19,
+    "num_part_satisfied": 0,
+    "num_satisfied": 3
+  },
+  "spend_profile": {
+    "total_gbp_2024": 10000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.352524,
+    "lng": -0.251554,
+    "lad24_cd": "E07000208",
+    "lad24_nm": "Epsom and Ewell",
+    "region": "South East"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/00757372"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": false,
+    "ch_api_officers": false,
+    "ch_api_pscs": false,
+    "ch_api_accounts_pdf": false
+  }
+}

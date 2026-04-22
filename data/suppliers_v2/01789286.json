@@ -1,0 +1,73 @@
+{
+  "schema_version": "v2",
+  "company_number": "01789286",
+  "display_name": "Breeze Limited",
+  "official_name": "BREEZE LIMITED",
+  "status": "liquidation",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "06/02/1984",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "18129",
+    "53100",
+    "63110",
+    "82920"
+  ],
+  "sic_labels": [
+    "Printing n.e.c.",
+    "Postal activities under universal service obligation",
+    "Data processing, hosting and related activities",
+    "Packaging activities"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "THE COPPER ROOM",
+    "address_line_2": "DEVA CITY OFFICE PARK, TRINITY WAY",
+    "post_town": "MANCHESTER",
+    "county": "",
+    "country": "",
+    "postal_code": "M3 7BG"
+  },
+  "accounts": {
+    "category": "UNAUDITED ABRIDGED",
+    "last_made_up": "10/03/2025",
+    "next_due": "10/12/2026",
+    "ref_day": "10",
+    "ref_month": "3"
+  },
+  "mortgages": {
+    "num_charges": 1,
+    "num_outstanding": 1,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 62420.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 53.484305,
+    "lng": -2.253504,
+    "lad24_cd": "E08000006",
+    "lad24_nm": "Salford",
+    "region": "North West"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/01789286"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": false,
+    "ch_api_officers": false,
+    "ch_api_pscs": false,
+    "ch_api_accounts_pdf": false
+  }
+}

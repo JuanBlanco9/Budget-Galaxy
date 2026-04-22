@@ -1,0 +1,63 @@
+{
+  "schema_version": "v2",
+  "company_number": "OC301149",
+  "display_name": "Withers Llp",
+  "official_name": "WITHERS LLP",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Limited Liability Partnership",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "13/12/2001",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [],
+  "sic_labels": [],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "THIRD FLOOR",
+    "address_line_2": "20 OLD BAILEY",
+    "post_town": "LONDON",
+    "county": "",
+    "country": "UNITED KINGDOM",
+    "postal_code": "EC4M 7AN"
+  },
+  "accounts": {
+    "category": "GROUP",
+    "last_made_up": "30/06/2024",
+    "next_due": "31/03/2026",
+    "ref_day": "30",
+    "ref_month": "6"
+  },
+  "mortgages": {
+    "num_charges": 5,
+    "num_outstanding": 2,
+    "num_part_satisfied": 0,
+    "num_satisfied": 3
+  },
+  "spend_profile": {
+    "total_gbp_2024": 24186.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.515715,
+    "lng": -0.10238,
+    "lad24_cd": "E09000001",
+    "lad24_nm": "City of London",
+    "region": "London"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/OC301149"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": false,
+    "ch_api_officers": false,
+    "ch_api_pscs": false,
+    "ch_api_accounts_pdf": false
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": "v2",
+  "company_number": "07263923",
+  "display_name": "Alpha Rod Ltd",
+  "official_name": "ALPHA ROD LTD",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "25/05/2010",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "43120",
+    "71200"
+  ],
+  "sic_labels": [
+    "Site preparation",
+    "Technical testing and analysis"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "UNIT 5 FARADAY PARK PEGASUS WAY",
+    "address_line_2": "BOWERHILL",
+    "post_town": "MELKSHAM",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "SN12 6TR"
+  },
+  "accounts": {
+    "category": "UNAUDITED ABRIDGED",
+    "last_made_up": "31/05/2025",
+    "next_due": "28/02/2027",
+    "ref_day": "31",
+    "ref_month": "5"
+  },
+  "mortgages": {
+    "num_charges": 1,
+    "num_outstanding": 1,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 26800.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.356772,
+    "lng": -2.129972,
+    "lad24_cd": "E06000054",
+    "lad24_nm": "Wiltshire",
+    "region": "South West"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/07263923"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": false,
+    "ch_api_officers": false,
+    "ch_api_pscs": false,
+    "ch_api_accounts_pdf": false
+  }
+}

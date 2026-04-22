@@ -1,0 +1,67 @@
+{
+  "schema_version": "v2",
+  "company_number": "10203539",
+  "display_name": "Centrus Financial Advisors Limited",
+  "official_name": "CENTRUS FINANCIAL ADVISORS LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "27/05/2016",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "70221"
+  ],
+  "sic_labels": [
+    "Financial management"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "3 LOMBARD STREET",
+    "address_line_2": "",
+    "post_town": "LONDON",
+    "county": "",
+    "country": "UNITED KINGDOM",
+    "postal_code": "EC3V 9AA"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "30/11/2024",
+    "next_due": "31/08/2026",
+    "ref_day": "30",
+    "ref_month": "11"
+  },
+  "mortgages": {
+    "num_charges": 0,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 75000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.512908,
+    "lng": -0.088993,
+    "lad24_cd": "E09000001",
+    "lad24_nm": "City of London",
+    "region": "London"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/10203539"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": false,
+    "ch_api_officers": false,
+    "ch_api_pscs": false,
+    "ch_api_accounts_pdf": false
+  }
+}

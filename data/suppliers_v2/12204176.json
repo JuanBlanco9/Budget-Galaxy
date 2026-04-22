@@ -1,0 +1,131 @@
+{
+  "schema_version": "v2",
+  "company_number": "12204176",
+  "display_name": "Fischer Carlsen Limited",
+  "official_name": "FISCHER CARLSEN LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "12/09/2019",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "62012",
+    "62020",
+    "70229"
+  ],
+  "sic_labels": [
+    "Business and domestic software development",
+    "Information technology consultancy activities",
+    "Management consultancy activities other than financial management"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "77 HOLYHEAD ROAD",
+    "address_line_2": "",
+    "post_town": "BIRMINGHAM",
+    "county": "",
+    "country": "UNITED KINGDOM",
+    "postal_code": "B21 0LG"
+  },
+  "accounts": {
+    "category": "MICRO ENTITY",
+    "last_made_up": "30/09/2024",
+    "next_due": "30/06/2026",
+    "ref_day": "30",
+    "ref_month": "9"
+  },
+  "mortgages": {
+    "num_charges": 0,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 600000000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 52.506217,
+    "lng": -1.948356,
+    "lad24_cd": "E08000025",
+    "lad24_nm": "Birmingham",
+    "region": "West Midlands"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/12204176"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T02:55:31Z",
+    "company_name": "FISCHER CARLSEN LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2019-09-12",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-06-30",
+    "accounts_last_made_up": "2024-09-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-09-25"
+  },
+  "governance": {
+    "api_date": "2026-04-22T02:55:32Z",
+    "total_officers": 1,
+    "active_count": 1,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "GILL, Kulvinder",
+        "role": "director",
+        "appointed_on": "2019-09-12",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T02:55:34Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Kulvinder Gill",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2019-09-12",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4Mjk5NDU2OWFkaXF6a2N4",
+    "date": "2025-09-29",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-micro-entity",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/v5yZZXm3TNNKThzfQHqJA6hKjgqvIbmvs_tniGyDHbY/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/12204176/filing-history/MzQ4Mjk5NDU2OWFkaXF6a2N4"
+  }
+}

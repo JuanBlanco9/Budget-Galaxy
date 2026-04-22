@@ -1,0 +1,72 @@
+{
+  "schema_version": "v2",
+  "company_number": "00359611",
+  "display_name": "Chas Berger Limited",
+  "official_name": "CHAS BERGER LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "01/03/1940",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "43390"
+  ],
+  "sic_labels": [
+    "Other building completion and finishing"
+  ],
+  "previous_names": [
+    {
+      "name": "CHAS. BERGER & SON LIMITED",
+      "condate": "04/04/2022"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "4TH FLOOR",
+    "address_line_2": "4 TABERNACLE STREET",
+    "post_town": "LONDON",
+    "county": "",
+    "country": "UNITED KINGDOM",
+    "postal_code": "EC2A 4LU"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "30/06/2025",
+    "next_due": "31/03/2027",
+    "ref_day": "30",
+    "ref_month": "6"
+  },
+  "mortgages": {
+    "num_charges": 6,
+    "num_outstanding": 5,
+    "num_part_satisfied": 0,
+    "num_satisfied": 1
+  },
+  "spend_profile": {
+    "total_gbp_2024": 3500000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.52255,
+    "lng": -0.08634,
+    "lad24_cd": "E09000019",
+    "lad24_nm": "Islington",
+    "region": "London"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/00359611"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": false,
+    "ch_api_officers": false,
+    "ch_api_pscs": false,
+    "ch_api_accounts_pdf": false
+  }
+}

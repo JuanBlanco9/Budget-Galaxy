@@ -1,0 +1,76 @@
+{
+  "schema_version": "v2",
+  "company_number": "OC369631",
+  "display_name": "S&W Partners Llp",
+  "official_name": "S&W PARTNERS LLP",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Limited Liability Partnership",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "09/11/2011",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [],
+  "sic_labels": [],
+  "previous_names": [
+    {
+      "name": "EVELYN PARTNERS LLP",
+      "condate": "31/03/2025"
+    },
+    {
+      "name": "SMITH & WILLIAMSON LLP",
+      "condate": "27/06/2022"
+    },
+    {
+      "name": "SWL NEWCO LLP",
+      "condate": "30/04/2012"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "45 GRESHAM STREET",
+    "address_line_2": "",
+    "post_town": "LONDON",
+    "county": "",
+    "country": "UNITED KINGDOM",
+    "postal_code": "EC2V 7BG"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 1,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 1
+  },
+  "spend_profile": {
+    "total_gbp_2024": 20000000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.515954,
+    "lng": -0.094933,
+    "lad24_cd": "E09000001",
+    "lad24_nm": "City of London",
+    "region": "London"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/OC369631"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": false,
+    "ch_api_officers": false,
+    "ch_api_pscs": false,
+    "ch_api_accounts_pdf": false
+  }
+}

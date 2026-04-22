@@ -1,0 +1,71 @@
+{
+  "schema_version": "v2",
+  "company_number": "02063682",
+  "display_name": "Sinclair Finance And Leasing Company Limited",
+  "official_name": "SINCLAIR FINANCE AND LEASING COMPANY LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "13/10/1986",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "45111",
+    "64910",
+    "64999"
+  ],
+  "sic_labels": [
+    "Sale of new cars and light motor vehicles",
+    "Financial leasing",
+    "Financial intermediation not elsewhere classified"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "SINCLAIR GROUP OLD FIELD ROAD",
+    "address_line_2": "PENCOED",
+    "post_town": "BRIDGEND",
+    "county": "",
+    "country": "WALES",
+    "postal_code": "CF35 5LJ"
+  },
+  "accounts": {
+    "category": "MEDIUM",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 36,
+    "num_outstanding": 23,
+    "num_part_satisfied": 0,
+    "num_satisfied": 13
+  },
+  "spend_profile": {
+    "total_gbp_2024": 146802.2,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.512505,
+    "lng": -3.504634,
+    "lad24_cd": "W06000013",
+    "lad24_nm": "Bridgend",
+    "region": null
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/02063682"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": false,
+    "ch_api_officers": false,
+    "ch_api_pscs": false,
+    "ch_api_accounts_pdf": false
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "schema_version": "v2",
+  "company_number": "03425414",
+  "display_name": "Letting International Limited",
+  "official_name": "LETTING INTERNATIONAL LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "27/08/1997",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "68209",
+    "68310",
+    "68320"
+  ],
+  "sic_labels": [
+    "Other letting and operating of own or leased real estate",
+    "Real estate agencies",
+    "Management of real estate on a fee or contract basis"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "GABRIELLE HOUSE",
+    "address_line_2": "332-336 PERTH ROAD",
+    "post_town": "ILFORD",
+    "county": "ESSEX",
+    "country": "ENGLAND",
+    "postal_code": "IG2 6FF"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "30/09/2024",
+    "next_due": "28/06/2026",
+    "ref_day": "28",
+    "ref_month": "9"
+  },
+  "mortgages": {
+    "num_charges": 8,
+    "num_outstanding": 6,
+    "num_part_satisfied": 0,
+    "num_satisfied": 2
+  },
+  "spend_profile": {
+    "total_gbp_2024": 82000000.0,
+    "n_contracts": 2,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.575961,
+    "lng": 0.068147,
+    "lad24_cd": "E09000026",
+    "lad24_nm": "Redbridge",
+    "region": "London"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/03425414"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": false,
+    "ch_api_officers": false,
+    "ch_api_pscs": false,
+    "ch_api_accounts_pdf": false
+  }
+}

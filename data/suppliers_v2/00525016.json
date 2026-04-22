@@ -1,0 +1,76 @@
+{
+  "schema_version": "v2",
+  "company_number": "00525016",
+  "display_name": "Valmy Sas Ltd",
+  "official_name": "VALMY SAS LTD",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "26/10/1953",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "45310",
+    "46620",
+    "46900"
+  ],
+  "sic_labels": [
+    "Wholesale trade of motor vehicle parts and accessories",
+    "Wholesale of machine tools",
+    "Non-specialised wholesale trade"
+  ],
+  "previous_names": [
+    {
+      "name": "ALGIN AIR LIMITED",
+      "condate": "21/01/2013"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "9 BERNERS PLACE",
+    "address_line_2": "",
+    "post_town": "LONDON",
+    "county": "",
+    "country": "UNITED KINGDOM",
+    "postal_code": "W1T 3AD"
+  },
+  "accounts": {
+    "category": "SMALL",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 8,
+    "num_outstanding": 5,
+    "num_part_satisfied": 0,
+    "num_satisfied": 3
+  },
+  "spend_profile": {
+    "total_gbp_2024": 6000000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.516475,
+    "lng": -0.135701,
+    "lad24_cd": "E09000033",
+    "lad24_nm": "Westminster",
+    "region": "London"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/00525016"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": false,
+    "ch_api_officers": false,
+    "ch_api_pscs": false,
+    "ch_api_accounts_pdf": false
+  }
+}

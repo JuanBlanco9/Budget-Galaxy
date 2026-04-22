@@ -1,0 +1,163 @@
+{
+  "schema_version": "v2",
+  "company_number": "03847202",
+  "display_name": "Reply Limited",
+  "official_name": "REPLY LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "23/09/1999",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "62020"
+  ],
+  "sic_labels": [
+    "Information technology consultancy activities"
+  ],
+  "previous_names": [
+    {
+      "name": "GLUE REPLY LIMITED",
+      "condate": "17/01/2011"
+    },
+    {
+      "name": "GLUE LIMITED",
+      "condate": "31/10/2008"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "38 GROSVENOR GARDENS",
+    "address_line_2": "",
+    "post_town": "LONDON",
+    "county": "",
+    "country": "",
+    "postal_code": "SW1W 0EB"
+  },
+  "accounts": {
+    "category": "GROUP",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 5,
+    "num_outstanding": 1,
+    "num_part_satisfied": 0,
+    "num_satisfied": 4
+  },
+  "spend_profile": {
+    "total_gbp_2024": 520420000.0,
+    "n_contracts": 3,
+    "n_buyers": 3
+  },
+  "geo": {
+    "lat": 51.49641,
+    "lng": -0.146346,
+    "lad24_cd": "E09000033",
+    "lad24_nm": "Westminster",
+    "region": "London"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/03847202"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T03:02:08Z",
+    "company_name": "REPLY LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1999-09-23",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-12"
+  },
+  "governance": {
+    "api_date": "2026-04-22T03:02:10Z",
+    "total_officers": 17,
+    "active_count": 4,
+    "resigned_count": 13,
+    "active_officers": [
+      {
+        "name": "CUSINATO, Marco",
+        "role": "director",
+        "appointed_on": "2024-05-07",
+        "country_of_residence": "Italy",
+        "nationality": "Italian"
+      },
+      {
+        "name": "HILL, Jason Simon",
+        "role": "director",
+        "appointed_on": "2022-07-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "RIZZANTE, Filippo",
+        "role": "director",
+        "appointed_on": "2008-07-15",
+        "country_of_residence": "Italy",
+        "nationality": "Italian"
+      },
+      {
+        "name": "RIZZANTE, Tatiana",
+        "role": "director",
+        "appointed_on": "2008-07-15",
+        "country_of_residence": "Italy",
+        "nationality": "Italian"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T03:02:12Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Reply Spa",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Corporate",
+          "legal_authority": "Italian",
+          "country_registered": "Italy",
+          "place_registered": "Turin, Italy",
+          "registration_number": "97579210010"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NzI0MjY2NGFkaXF6a2N4",
+    "date": "2025-08-14",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/5dV4eFMIQEs2I8ePMj89G_sJDG-zApkv3RlWv2Og0EY/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03847202/filing-history/MzQ3NzI0MjY2NGFkaXF6a2N4"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "schema_version": "v2",
+  "company_number": "00434724",
+  "display_name": "Rexel Uk Limited",
+  "official_name": "REXEL UK LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "08/05/1947",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "46900"
+  ],
+  "sic_labels": [
+    "Non-specialised wholesale trade"
+  ],
+  "previous_names": [
+    {
+      "name": "HAGEMEYER (UK) LIMITED",
+      "condate": "30/01/2009"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "GROUND FLOOR, EAGLE COURT 2 HATCHFORD BROOK",
+    "address_line_2": "HATCHFORD WAY",
+    "post_town": "SHELDON",
+    "county": "BIRMINGHAM",
+    "country": "ENGLAND",
+    "postal_code": "B26 3RZ"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 7,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 7
+  },
+  "spend_profile": {
+    "total_gbp_2024": 3917737.0,
+    "n_contracts": 8,
+    "n_buyers": 7
+  },
+  "geo": {
+    "lat": 52.451891,
+    "lng": -1.763984,
+    "lad24_cd": "E08000025",
+    "lad24_nm": "Birmingham",
+    "region": "West Midlands"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/00434724"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": false,
+    "ch_api_officers": false,
+    "ch_api_pscs": false,
+    "ch_api_accounts_pdf": false
+  }
+}

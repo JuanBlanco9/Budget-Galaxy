@@ -1,0 +1,72 @@
+{
+  "schema_version": "v2",
+  "company_number": "09570783",
+  "display_name": "247 Alliance Ltd",
+  "official_name": "247 ALLIANCE LTD",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "01/05/2015",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "80100"
+  ],
+  "sic_labels": [
+    "Private security activities"
+  ],
+  "previous_names": [
+    {
+      "name": "3 STAR SECURITY LTD",
+      "condate": "20/09/2016"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "262A MOSELEY ROAD",
+    "address_line_2": "HIGHGATE",
+    "post_town": "BIRMINGHAM",
+    "county": "WEST MIDLANDS",
+    "country": "ENGLAND",
+    "postal_code": "B12 0BX"
+  },
+  "accounts": {
+    "category": "UNAUDITED ABRIDGED",
+    "last_made_up": "31/05/2025",
+    "next_due": "28/02/2027",
+    "ref_day": "29",
+    "ref_month": "5"
+  },
+  "mortgages": {
+    "num_charges": 0,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 200000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 52.464456,
+    "lng": -1.882921,
+    "lad24_cd": "E08000025",
+    "lad24_nm": "Birmingham",
+    "region": "West Midlands"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/09570783"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": false,
+    "ch_api_officers": false,
+    "ch_api_pscs": false,
+    "ch_api_accounts_pdf": false
+  }
+}

@@ -1,0 +1,213 @@
+{
+  "schema_version": "v2",
+  "company_number": "02352923",
+  "display_name": "Rodgers Leask Limited",
+  "official_name": "RODGERS LEASK LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "27/02/1989",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "70100"
+  ],
+  "sic_labels": [
+    "Activities of head offices"
+  ],
+  "previous_names": [
+    {
+      "name": "RODGERS,LEASK LIMITED",
+      "condate": "15/07/2021"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "ST JAMES HOUSE ST MARY'S WHARF",
+    "address_line_2": "MANSFIELD ROAD",
+    "post_town": "DERBY",
+    "county": "",
+    "country": "",
+    "postal_code": "DE1 3TQ"
+  },
+  "accounts": {
+    "category": "TOTAL EXEMPTION FULL",
+    "last_made_up": "31/07/2025",
+    "next_due": "30/04/2027",
+    "ref_day": "31",
+    "ref_month": "7"
+  },
+  "mortgages": {
+    "num_charges": 2,
+    "num_outstanding": 1,
+    "num_part_satisfied": 0,
+    "num_satisfied": 1
+  },
+  "spend_profile": {
+    "total_gbp_2024": 1500000000.0,
+    "n_contracts": 2,
+    "n_buyers": 2
+  },
+  "geo": {
+    "lat": 52.928239,
+    "lng": -1.472861,
+    "lad24_cd": "E06000015",
+    "lad24_nm": "Derby",
+    "region": "East Midlands"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/02352923"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T02:08:52Z",
+    "company_name": "RODGERS LEASK LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1989-02-27",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-04-30",
+    "accounts_last_made_up": "2025-07-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-13"
+  },
+  "governance": {
+    "api_date": "2026-04-22T02:08:54Z",
+    "total_officers": 22,
+    "active_count": 6,
+    "resigned_count": 16,
+    "active_officers": [
+      {
+        "name": "FRIEL, Stewart John",
+        "role": "director",
+        "appointed_on": "2016-12-20",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HARVEY, Kriston",
+        "role": "director",
+        "appointed_on": "2014-10-13",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LEASK, Andrew William",
+        "role": "director",
+        "appointed_on": "2012-08-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "MORRIS, Howel",
+        "role": "director",
+        "appointed_on": "2023-04-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "SPENCER, Paul John",
+        "role": "director",
+        "appointed_on": "2010-10-21",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "TOOR, Kulwinder Singh",
+        "role": "director",
+        "appointed_on": "2018-07-31",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T02:08:56Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Fhst Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2023-03-29",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "14231750"
+        }
+      },
+      {
+        "name": "Lskpk Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2021-07-09",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "England",
+          "registration_number": "11417682"
+        }
+      },
+      {
+        "name": "Rodgers Leask Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "05513004"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxMDEyODg0NmFkaXF6a2N4",
+    "date": "2026-03-13",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/dWpTwwSCUP81IZVZEpcgYAo20WJxejioKVKtyjhU19s/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02352923/filing-history/MzUxMDEyODg0NmFkaXF6a2N4"
+  }
+}

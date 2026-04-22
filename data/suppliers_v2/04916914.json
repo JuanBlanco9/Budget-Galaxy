@@ -1,0 +1,145 @@
+{
+  "schema_version": "v2",
+  "company_number": "04916914",
+  "display_name": "Drugsrus Limited",
+  "official_name": "DRUGSRUS LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "30/09/2003",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "46460"
+  ],
+  "sic_labels": [
+    "Wholesale of pharmaceutical goods"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "5 SANDRIDGE CLOSE",
+    "address_line_2": "",
+    "post_town": "HARROW",
+    "county": "MIDDLESEX",
+    "country": "ENGLAND",
+    "postal_code": "HA1 1XD"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/03/2025",
+    "next_due": "30/12/2026",
+    "ref_day": "30",
+    "ref_month": "3"
+  },
+  "mortgages": {
+    "num_charges": 4,
+    "num_outstanding": 3,
+    "num_part_satisfied": 0,
+    "num_satisfied": 1
+  },
+  "spend_profile": {
+    "total_gbp_2024": 1009500001.0,
+    "n_contracts": 2,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.591727,
+    "lng": -0.335734,
+    "lad24_cd": "E09000015",
+    "lad24_nm": "Harrow",
+    "region": "London"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/04916914"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T02:17:16Z",
+    "company_name": "DRUGSRUS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2003-09-30",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-30",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-14"
+  },
+  "governance": {
+    "api_date": "2026-04-22T02:17:18Z",
+    "total_officers": 6,
+    "active_count": 1,
+    "resigned_count": 5,
+    "active_officers": [
+      {
+        "name": "SHAH, Anuj Somchand Bhagwanji",
+        "role": "director",
+        "appointed_on": "2003-09-30",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T02:17:19Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "3vs Uk Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2025-12-19",
+        "identification": {
+          "legal_form": "Limited",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "05090163"
+        }
+      },
+      {
+        "name": "Mr Anuj Somchand Bhagwanji Shah",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxMzExMjk5N2FkaXF6a2N4",
+    "date": "2026-03-28",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/MFearak9x7lo-aP7n5DrmD046vGIKEtazM4MziUXzZg/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04916914/filing-history/MzUxMzExMjk5N2FkaXF6a2N4"
+  }
+}

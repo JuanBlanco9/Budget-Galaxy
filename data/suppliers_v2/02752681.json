@@ -1,0 +1,72 @@
+{
+  "schema_version": "v2",
+  "company_number": "02752681",
+  "display_name": "Southerns Broadstock Limited",
+  "official_name": "SOUTHERNS BROADSTOCK LIMITED",
+  "status": "in_administration/administrative_receiver",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "02/10/1992",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "31010"
+  ],
+  "sic_labels": [
+    "Manufacture of office and shop furniture"
+  ],
+  "previous_names": [
+    {
+      "name": "BROADSTOCK OFFICE FURNITURE LIMITED",
+      "condate": "02/05/2019"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "SUITE 3, AVERY HOUSE",
+    "address_line_2": "69 NORTH STREET",
+    "post_town": "BRIGHTON",
+    "county": "",
+    "country": "",
+    "postal_code": "BN41 1DH"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "30/06/2023",
+    "next_due": "31/03/2025",
+    "ref_day": "30",
+    "ref_month": "6"
+  },
+  "mortgages": {
+    "num_charges": 25,
+    "num_outstanding": 11,
+    "num_part_satisfied": 0,
+    "num_satisfied": 14
+  },
+  "spend_profile": {
+    "total_gbp_2024": 110706.8,
+    "n_contracts": 4,
+    "n_buyers": 4
+  },
+  "geo": {
+    "lat": 50.830791,
+    "lng": -0.211176,
+    "lad24_cd": "E06000043",
+    "lad24_nm": "Brighton and Hove",
+    "region": "South East"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/02752681"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": false,
+    "ch_api_officers": false,
+    "ch_api_pscs": false,
+    "ch_api_accounts_pdf": false
+  }
+}

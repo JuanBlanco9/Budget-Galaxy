@@ -1,0 +1,74 @@
+{
+  "schema_version": "v2",
+  "company_number": "01653116",
+  "display_name": "Newable Limited",
+  "official_name": "NEWABLE LIMITED",
+  "status": "active",
+  "type": "pri/ltd_by_guar/nsc_(private,_limited_by_guarantee,_no_share_capital)",
+  "category_raw": "PRI/LTD BY GUAR/NSC (Private, limited by guarantee, no share capital)",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "21/07/1982",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "64999",
+    "70100"
+  ],
+  "sic_labels": [
+    "Financial intermediation not elsewhere classified",
+    "Activities of head offices"
+  ],
+  "previous_names": [
+    {
+      "name": "GREATER LONDON ENTERPRISE LIMITED",
+      "condate": "07/10/2016"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "140 ALDERSGATE STREET",
+    "address_line_2": "",
+    "post_town": "LONDON",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "EC1A 4HY"
+  },
+  "accounts": {
+    "category": "SMALL",
+    "last_made_up": "31/03/2025",
+    "next_due": "31/12/2026",
+    "ref_day": "31",
+    "ref_month": "3"
+  },
+  "mortgages": {
+    "num_charges": 2,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 2
+  },
+  "spend_profile": {
+    "total_gbp_2024": 703038.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.519648,
+    "lng": -0.097518,
+    "lad24_cd": "E09000001",
+    "lad24_nm": "City of London",
+    "region": "London"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/01653116"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": false,
+    "ch_api_officers": false,
+    "ch_api_pscs": false,
+    "ch_api_accounts_pdf": false
+  }
+}

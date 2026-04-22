@@ -1,0 +1,67 @@
+{
+  "schema_version": "v2",
+  "company_number": "09897346",
+  "display_name": "Rigford Ltd",
+  "official_name": "RIGFORD LTD",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "01/12/2015",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "43390"
+  ],
+  "sic_labels": [
+    "Other building completion and finishing"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "255 GREEN LANES",
+    "address_line_2": "",
+    "post_town": "LONDON",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "N13 4XE"
+  },
+  "accounts": {
+    "category": "TOTAL EXEMPTION FULL",
+    "last_made_up": "30/04/2025",
+    "next_due": "25/01/2027",
+    "ref_day": "25",
+    "ref_month": "4"
+  },
+  "mortgages": {
+    "num_charges": 2,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 2
+  },
+  "spend_profile": {
+    "total_gbp_2024": 200975000.0,
+    "n_contracts": 2,
+    "n_buyers": 2
+  },
+  "geo": {
+    "lat": 51.616318,
+    "lng": -0.109787,
+    "lad24_cd": "E09000010",
+    "lad24_nm": "Enfield",
+    "region": "London"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/09897346"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": false,
+    "ch_api_officers": false,
+    "ch_api_pscs": false,
+    "ch_api_accounts_pdf": false
+  }
+}

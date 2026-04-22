@@ -1,0 +1,71 @@
+{
+  "schema_version": "v2",
+  "company_number": "00235446",
+  "display_name": "Ford Motor Company Limited",
+  "official_name": "FORD MOTOR COMPANY LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "07/12/1928",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "29100",
+    "29320",
+    "45111"
+  ],
+  "sic_labels": [
+    "Manufacture of motor vehicles",
+    "Manufacture of other parts and accessories for motor vehicles",
+    "Sale of new cars and light motor vehicles"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "ARTERIAL ROAD",
+    "address_line_2": "",
+    "post_town": "LAINDON",
+    "county": "ESSEX",
+    "country": "ENGLAND",
+    "postal_code": "SS15 6EE"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 12,
+    "num_outstanding": 1,
+    "num_part_satisfied": 0,
+    "num_satisfied": 11
+  },
+  "spend_profile": {
+    "total_gbp_2024": 3153417.64,
+    "n_contracts": 12,
+    "n_buyers": 10
+  },
+  "geo": {
+    "lat": 51.581361,
+    "lng": 0.405309,
+    "lad24_cd": "E07000066",
+    "lad24_nm": "Basildon",
+    "region": "East of England"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/00235446"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": false,
+    "ch_api_officers": false,
+    "ch_api_pscs": false,
+    "ch_api_accounts_pdf": false
+  }
+}

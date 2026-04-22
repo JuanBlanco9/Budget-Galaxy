@@ -1,0 +1,71 @@
+{
+  "schema_version": "v2",
+  "company_number": "00399387",
+  "display_name": "F.R. Scott Limited",
+  "official_name": "F.R. SCOTT LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "13/10/1945",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "43220",
+    "47520",
+    "74100"
+  ],
+  "sic_labels": [
+    "Plumbing, heat and air-conditioning installation",
+    "Retail sale of hardware, paints and glass in specialised stores",
+    "specialised design activities"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "32/34 CANNING ST",
+    "address_line_2": "HULL",
+    "post_town": "NORTH HUMBERSIDE",
+    "county": "",
+    "country": "",
+    "postal_code": "HU2 8QS"
+  },
+  "accounts": {
+    "category": "UNAUDITED ABRIDGED",
+    "last_made_up": "30/09/2025",
+    "next_due": "30/06/2027",
+    "ref_day": "30",
+    "ref_month": "9"
+  },
+  "mortgages": {
+    "num_charges": 3,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 3
+  },
+  "spend_profile": {
+    "total_gbp_2024": 341557.0,
+    "n_contracts": 6,
+    "n_buyers": 2
+  },
+  "geo": {
+    "lat": 53.74659,
+    "lng": -0.348488,
+    "lad24_cd": "E06000010",
+    "lad24_nm": "Kingston upon Hull, City of",
+    "region": "Yorkshire and The Humber"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/00399387"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": false,
+    "ch_api_officers": false,
+    "ch_api_pscs": false,
+    "ch_api_accounts_pdf": false
+  }
+}

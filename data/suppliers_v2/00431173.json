@@ -1,0 +1,78 @@
+{
+  "schema_version": "v2",
+  "company_number": "00431173",
+  "display_name": "Ernest Doe & Sons Limited",
+  "official_name": "ERNEST DOE & SONS LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "15/03/1947",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "45190",
+    "45200",
+    "46140",
+    "46610"
+  ],
+  "sic_labels": [
+    "Sale of other motor vehicles",
+    "Maintenance and repair of motor vehicles",
+    "Agents involved in the sale of machinery, industrial equipment, ships and aircraft",
+    "Wholesale of agricultural machinery, equipment and supplies"
+  ],
+  "previous_names": [
+    {
+      "name": "ERNEST DOE & SONS,LIMITED",
+      "condate": "21/07/2015"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "ULTING",
+    "address_line_2": "NR MALDON",
+    "post_town": "ESSEX",
+    "county": "",
+    "country": "",
+    "postal_code": "CM9 6QH"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 1,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 1
+  },
+  "spend_profile": {
+    "total_gbp_2024": 36386.9,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.761348,
+    "lng": 0.629597,
+    "lad24_cd": "E07000074",
+    "lad24_nm": "Maldon",
+    "region": "East of England"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/00431173"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": false,
+    "ch_api_officers": false,
+    "ch_api_pscs": false,
+    "ch_api_accounts_pdf": false
+  }
+}

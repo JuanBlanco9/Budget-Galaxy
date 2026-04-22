@@ -1,0 +1,146 @@
+{
+  "schema_version": "v2",
+  "company_number": "07688305",
+  "display_name": "Waymark Ltd",
+  "official_name": "WAYMARK LTD",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "30/06/2011",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "62012"
+  ],
+  "sic_labels": [
+    "Business and domestic software development"
+  ],
+  "previous_names": [
+    {
+      "name": "WAYMARK IT LIMITED",
+      "condate": "28/01/2022"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "2 BANKSIDE 2 BANKSIDE",
+    "address_line_2": "THE WATERMARK",
+    "post_town": "GATESHEAD",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "NE11 9SY"
+  },
+  "accounts": {
+    "category": "TOTAL EXEMPTION FULL",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 1,
+    "num_outstanding": 1,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 500000000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 54.962139,
+    "lng": -1.671279,
+    "lad24_cd": "E08000037",
+    "lad24_nm": "Gateshead",
+    "region": "North East"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/07688305"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T03:17:33Z",
+    "company_name": "WAYMARK LTD",
+    "company_status": "active",
+    "date_of_creation": "2011-06-30",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-03"
+  },
+  "governance": {
+    "api_date": "2026-04-22T03:17:35Z",
+    "total_officers": 5,
+    "active_count": 3,
+    "resigned_count": 2,
+    "active_officers": [
+      {
+        "name": "BLACKLOCK, Andrew",
+        "role": "director",
+        "appointed_on": "2020-03-09",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "BROPHY, David John",
+        "role": "director",
+        "appointed_on": "2011-06-30",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "JONES, Jason Thomas",
+        "role": "director",
+        "appointed_on": "2011-06-30",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T03:17:37Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr David John Brophy",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent",
+          "voting-rights-50-to-75-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-06-30",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MzIwOTk1M2FkaXF6a2N4",
+    "date": "2025-09-30",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/_G8OHWMpoJFuv3fW_G8_F61ZCR_AbRL3nnRWvGLjmkU/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/07688305/filing-history/MzQ4MzIwOTk1M2FkaXF6a2N4"
+  }
+}

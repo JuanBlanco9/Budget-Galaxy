@@ -1,0 +1,63 @@
+{
+  "schema_version": "v2",
+  "company_number": "OE023860",
+  "display_name": "Peterborough Limited",
+  "official_name": "PETERBOROUGH LIMITED",
+  "status": "active",
+  "type": "overseas_entity",
+  "category_raw": "Overseas Entity",
+  "jurisdiction": "mauritius",
+  "incorporated": "07/02/2023",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [],
+  "sic_labels": [],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "7TH FLOOR NEW CAUDAN DIAS PIER CORPORATE AND CHANCERY CHAMBERS",
+    "address_line_2": "LE CAUDAN WATERFRONT",
+    "post_town": "PORT LOUIS",
+    "county": "",
+    "country": "MAURITIUS",
+    "postal_code": null
+  },
+  "accounts": {
+    "category": "NO ACCOUNTS FILED",
+    "last_made_up": null,
+    "next_due": null,
+    "ref_day": null,
+    "ref_month": null
+  },
+  "mortgages": {
+    "num_charges": 0,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 1440000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 52.571478,
+    "lng": -0.241994,
+    "lad24_cd": "E06000031",
+    "lad24_nm": "Peterborough",
+    "region": "East of England"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/OE023860"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": false,
+    "ch_api_officers": false,
+    "ch_api_pscs": false,
+    "ch_api_accounts_pdf": false
+  }
+}

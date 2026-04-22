@@ -1,0 +1,74 @@
+{
+  "schema_version": "v2",
+  "company_number": "00583818",
+  "display_name": "Dukes Limited",
+  "official_name": "DUKES LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "13/05/1957",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "68209",
+    "96090"
+  ],
+  "sic_labels": [
+    "Other letting and operating of own or leased real estate",
+    "Other service activities n.e.c."
+  ],
+  "previous_names": [
+    {
+      "name": "STADIUM DISPOSABLES LIMITED",
+      "condate": "30/03/2007"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "COURTLANDS MAIN ROAD",
+    "address_line_2": "ITCHEN-ABBAS",
+    "post_town": "WINCHESTER",
+    "county": "HAMPSHIRE",
+    "country": "",
+    "postal_code": "SO21 1AT"
+  },
+  "accounts": {
+    "category": "TOTAL EXEMPTION FULL",
+    "last_made_up": "27/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 3,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 3
+  },
+  "spend_profile": {
+    "total_gbp_2024": 7632000.0,
+    "n_contracts": 2,
+    "n_buyers": 2
+  },
+  "geo": {
+    "lat": 51.093151,
+    "lng": -1.248364,
+    "lad24_cd": "E07000094",
+    "lad24_nm": "Winchester",
+    "region": "South East"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/00583818"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": false,
+    "ch_api_officers": false,
+    "ch_api_pscs": false,
+    "ch_api_accounts_pdf": false
+  }
+}

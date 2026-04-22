@@ -1,0 +1,72 @@
+{
+  "schema_version": "v2",
+  "company_number": "00984275",
+  "display_name": "Mercer Limited",
+  "official_name": "MERCER LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "10/07/1970",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "82990"
+  ],
+  "sic_labels": [
+    "Other business support service activities n.e.c."
+  ],
+  "previous_names": [
+    {
+      "name": "MERCER HUMAN RESOURCE CONSULTING LIMITED",
+      "condate": "12/09/2007"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "1 TOWER PLACE WEST",
+    "address_line_2": "TOWER PLACE",
+    "post_town": "LONDON",
+    "county": "",
+    "country": "",
+    "postal_code": "EC3R 5BU"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 2,
+    "num_outstanding": 1,
+    "num_part_satisfied": 0,
+    "num_satisfied": 1
+  },
+  "spend_profile": {
+    "total_gbp_2024": 468000.0,
+    "n_contracts": 5,
+    "n_buyers": 3
+  },
+  "geo": {
+    "lat": 51.508997,
+    "lng": -0.080222,
+    "lad24_cd": "E09000001",
+    "lad24_nm": "City of London",
+    "region": "London"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/00984275"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": false,
+    "ch_api_officers": false,
+    "ch_api_pscs": false,
+    "ch_api_accounts_pdf": false
+  }
+}

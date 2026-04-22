@@ -108,10 +108,62 @@ NOT a rewrite. Keep vanilla stack. Keep 5 pestañas as power-user views. Just bu
 
 ## Commit discipline
 
-- Branch `claude/mystifying-ardinghelli-f4e66f` is 66+ commits ahead of `origin/main`. We've been pushing to it freely; main is the public mirror.
+- Branch `claude/mystifying-ardinghelli-f4e66f` is 67+ commits ahead of `origin/main`. We've been pushing to it freely; main is the public mirror.
 - `.env` (with CH_API_KEY) is gitignored and chmod 600.
 - `_ch_api_progress.json` and `_ch_api_state.json` are now gitignored (added this session) — they're rewritten during batch runs.
 - Co-author tag: `Co-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>`
+
+## Git state at session handoff (2026-04-22 end-of-day)
+
+**Commit 1 made successfully** (`fb89a3d`):
+- `.gitignore` (added progress-file excludes)
+- `CLAUDE.md` (this file)
+- `scripts/enrich_bulk_01_bcd_skeletons.py`, `enrich_bulk_02_ch_api_batch.py`, `enrich_bulk_03_refresh_index.py`
+- `frontend/index.html` (renderer v2 + index merge)
+
+**Commit 2 NOT made — ~19,000 data files still uncommitted in working tree**:
+- All `data/suppliers_v2/*.json` files (the 19,068 BCD skeletons + 500+ CH-API-enriched files from Day 1, plus growing additions from Day 2)
+- `data/map/_aggregate_stats.json`
+- These files **exist on disk** — they are not lost. Only the git commit of them is incomplete.
+
+**What happened**: `git add data/suppliers_v2/` on Windows with 19k files is very slow and the shell wrapper timed out, leaving a stale `index.lock`. The lock has since been removed. A fresh `git add` can proceed in a new session.
+
+**NOT pushed to remote**: The branch has `fb89a3d` locally but `origin/claude/mystifying-ardinghelli-f4e66f` is still at `b08a628`. No `git push` ran this session.
+
+### To finish the handoff cleanly (first thing in next session):
+
+```bash
+cd D:/germany-ngo-map/.claude/worktrees/mystifying-ardinghelli-f4e66f
+
+# 1. Verify no stale lock (if present, remove):
+ls D:/germany-ngo-map/.git/worktrees/mystifying-ardinghelli-f4e66f/index.lock 2>/dev/null \
+  && rm -f D:/germany-ngo-map/.git/worktrees/mystifying-ardinghelli-f4e66f/index.lock
+
+# 2. If Day 2 batch still running, pause git until it finishes to avoid racing:
+python -c "import json; p=json.load(open(r'data/suppliers_v2/_ch_api_progress.json')); print(f'{len(p[\"completed\"])}/1500')"
+
+# 3. Stage data in one go (slow on Windows — can take 5-10 min with 19k files):
+git add data/suppliers_v2/ data/map/_aggregate_stats.json
+
+# 4. Commit
+git commit -m "data(suppliers_v2): 19,068 BCD skeletons + 500+ CH-API-enriched profiles"
+
+# 5. Push both commits (code + data)
+git push origin claude/mystifying-ardinghelli-f4e66f
+```
+
+**Why this is NOT blocking for next session work**: The CLAUDE.md context doc loads automatically, and the data files exist on disk — the next session can read any supplier JSON, run Day 3 batch, deploy to prod, etc. without the commit being complete. Only concern is if someone else needs to clone fresh — they won't get the 19k files until commit+push happens.
+
+**Day 2 batch status at handoff**: Running in background (last seen 840/1500 at session end, ~2h remaining). PID was owned by the session shell, so **it may have been killed when session ended** — next session MUST verify and potentially re-run with `--resume`:
+
+```bash
+# Check if still running
+tasklist //FI "IMAGENAME eq py.exe" 2>/dev/null | head
+# Check progress
+python -c "import json; p=json.load(open(r'data/suppliers_v2/_ch_api_progress.json')); print(f'{len(p[\"completed\"])} done, {len(p[\"failed\"])} failed')"
+# Resume if needed
+py scripts/enrich_bulk_02_ch_api_batch.py --rank-from 500 --rank-to 1500 --resume
+```
 
 ## Production endpoints that must stay healthy
 
