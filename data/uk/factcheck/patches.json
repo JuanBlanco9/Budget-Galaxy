@@ -1,0 +1,503 @@
+{
+  "patches": [
+    {
+      "entry_key": "DEPARTMENT FOR WORK AND PENSIONS",
+      "field": "key_stats",
+      "kstat_index": 7,
+      "kstat_subfield": "value",
+      "find": "Liz Kendall (Labour, from 5 July 2024) · predecessor Mel Stride (Nov 2023-Jul 2024)",
+      "replace": "Liz Kendall (Labour, from 5 July 2024) · predecessor Mel Stride (25 Oct 2022 – 4 Jul 2024)",
+      "severity": "high",
+      "drift_ref": "DWP #1 (Mel Stride tenure — 'Secretary of State' key_stat)"
+    },
+    {
+      "entry_key": "DEPARTMENT FOR WORK AND PENSIONS",
+      "field": "key_stats",
+      "kstat_index": 29,
+      "kstat_subfield": "value",
+      "find": "Mel Stride (Con, Nov 2023 – 4 Jul 2024) · Liz Kendall (Lab, from 5 Jul 2024)",
+      "replace": "Mel Stride (Con, 25 Oct 2022 – 4 Jul 2024) · Liz Kendall (Lab, from 5 Jul 2024)",
+      "severity": "high",
+      "drift_ref": "DWP #1 (Mel Stride tenure — 'Secretary of State 2024-25' key_stat)"
+    },
+    {
+      "entry_key": "10.2 Old age; of which: pensions",
+      "field": "key_stats",
+      "kstat_index": 20,
+      "kstat_subfield": "value",
+      "find": "Labour REJECTED PHSO March 2024 compensation recommendation (£1,000-£2,950 per woman for ~3.8M 1950s-born) — judicial review launched 2025",
+      "replace": "Labour REJECTED PHSO March 2024 compensation recommendation (£1,000-£2,950 per woman for ~3.6M 1950s-born) — judicial review launched 2025",
+      "severity": "low",
+      "drift_ref": "10.2 #4 (WASPI cohort 3.8M → 3.6M)"
+    },
+    {
+      "entry_key": "Local Government (England)",
+      "field": "key_stats",
+      "kstat_index": 11,
+      "kstat_subfield": "value",
+      "find": "Sarah Healey CB (MHCLG, since April 2023)",
+      "replace": "Sarah Healey CB (MHCLG, since 7 February 2023)",
+      "severity": "low",
+      "drift_ref": "Local Gov (England) #2 (Healey start date)"
+    },
+    {
+      "entry_key": "Local Government (England)",
+      "field": "key_stats",
+      "kstat_index": 23,
+      "kstat_subfield": "value",
+      "find": "Sarah Healey CB CVO (continuing since Apr 2023)",
+      "replace": "Sarah Healey CB CVO (continuing since 7 Feb 2023)",
+      "severity": "low",
+      "drift_ref": "Local Gov (England) #2 (Healey start date — 2024-25 key_stat)"
+    },
+    {
+      "entry_key": "Local Government (England)",
+      "field": "key_stats",
+      "kstat_index": 16,
+      "kstat_subfield": "value",
+      "find": "8 (Northamptonshire 2018, Croydon ×3, Slough 2021, Thurrock 2022, Woking 2023, Birmingham 2023, Nottingham 2023)",
+      "replace": "9 (Northamptonshire 2018, Croydon ×3, Slough 2021, Thurrock 2022, Woking 2023, Birmingham ×2 2023, Nottingham 2023)",
+      "severity": "low",
+      "drift_ref": "Local Gov (England) #6 (s114 count inconsistency — Birmingham issued 2 s.114s 2023)"
+    },
+    {
+      "entry_key": "Local Government (England)",
+      "field": "notes",
+      "find": "Eight s114 notices issued 2018-2024.",
+      "replace": "Nine s114 notices issued 2018-2024 (including Birmingham's two in 2023).",
+      "severity": "low",
+      "drift_ref": "Local Gov (England) #6 (s114 count — notes)"
+    },
+    {
+      "entry_key": "DEPARTMENT FOR EDUCATION",
+      "field": "key_stats",
+      "kstat_index": 22,
+      "kstat_subfield": "value",
+      "find": "Susan Acland-Hood (since September 2020)",
+      "replace": "Susan Acland-Hood (Acting from 1 Sept 2020; formally appointed 7 Dec 2020)",
+      "severity": "low",
+      "drift_ref": "DfE #3 (Acland-Hood acting vs formal)"
+    },
+    {
+      "entry_key": "DEPARTMENT FOR EDUCATION",
+      "field": "key_stats",
+      "kstat_index": 35,
+      "kstat_subfield": "value",
+      "find": "Susan Acland-Hood (continuing since Sept 2020; tenure continued under Labour)",
+      "replace": "Susan Acland-Hood (Acting from 1 Sept 2020, formally appointed 7 Dec 2020; tenure continued under Labour)",
+      "severity": "low",
+      "drift_ref": "DfE #3 (Acland-Hood — 2024-25 key_stat)"
+    },
+    {
+      "entry_key": "DEPARTMENT FOR EDUCATION",
+      "field": "notes",
+      "find": "Susan Acland-Hood has been Permanent Secretary since September 2020.",
+      "replace": "Susan Acland-Hood has been Permanent Secretary since December 2020 (Acting from 1 September 2020, formally appointed 7 December 2020).",
+      "severity": "low",
+      "drift_ref": "DfE #3 (Acland-Hood — notes)"
+    },
+    {
+      "entry_key": "DEPARTMENT FOR EDUCATION",
+      "field": "notes",
+      "find": "**Ruth Perry Prevention of Future Deaths report (7 December 2023)** by the Senior Coroner for Berkshire",
+      "replace": "**Ruth Perry Prevention of Future Deaths report (12 December 2023)** by Heidi Connor, Senior Coroner for Berkshire (inquest verdict 7 Dec 2023)",
+      "severity": "low",
+      "drift_ref": "DfE #4 (Ruth Perry PFD report date + coroner name)"
+    },
+    {
+      "entry_key": "NHS Provider Sector",
+      "field": "key_stats",
+      "kstat_index": 10,
+      "kstat_subfield": "value",
+      "find": "Dr Penny Dash (from Oct 2024, replacing Richard Meddings)",
+      "replace": "Dr Penny Dash (confirmed Nov 2024, term starts 1 Apr 2025, replacing Richard Meddings)",
+      "severity": "high",
+      "drift_ref": "NHS Provider Sector #4 (Dash start date)"
+    },
+    {
+      "entry_key": "NHS Provider Sector",
+      "field": "key_stats",
+      "kstat_index": 22,
+      "kstat_subfield": "value",
+      "find": "Dr Penny Dash (Chair from 1 Apr 2025; previously DHSC ICB Review author Jul 2024)",
+      "replace": "Dr Penny Dash (confirmed Nov 2024, Chair from 1 Apr 2025; previously DHSC ICB Review author Jul 2024)",
+      "severity": "high",
+      "drift_ref": "NHS Provider Sector #4 (Dash appointment timing — 2024-25 key_stat)"
+    },
+    {
+      "entry_key": "NHS Provider Sector",
+      "field": "notes",
+      "find": "Dr Penny Dash replaced Richard Meddings as NHS Chair in October 2024.",
+      "replace": "Dr Penny Dash was confirmed as incoming NHS Chair in November 2024 (pre-appointment hearing) and succeeded Richard Meddings on 1 April 2025.",
+      "severity": "high",
+      "drift_ref": "NHS Provider Sector #4 (Dash — notes)"
+    },
+    {
+      "entry_key": "DEPARTMENT OF HEALTH",
+      "field": "key_stats",
+      "kstat_index": 16,
+      "kstat_subfield": "value",
+      "find": "Ashley Dalton (from Jan 2025, replacing Andrew Gwynne)",
+      "replace": "Ashley Dalton (from c.9 Feb 2025, replacing Andrew Gwynne sacked 8 Feb 2025)",
+      "severity": "medium",
+      "drift_ref": "DoH #2 (Gwynne/Dalton Feb not Jan 2025)"
+    },
+    {
+      "entry_key": "DEPARTMENT OF HEALTH",
+      "field": "key_stats",
+      "kstat_index": 30,
+      "kstat_subfield": "value",
+      "find": "Andrew Gwynne (Public Health, sacked Feb 2025 over WhatsApp scandal) → Ashley Dalton (Public Health & Prevention, from Feb 2025)",
+      "replace": "Andrew Gwynne (Public Health, sacked 8 Feb 2025 over Trigger Me Timbers WhatsApp scandal) → Ashley Dalton (Public Health & Prevention, from c.9 Feb 2025)",
+      "severity": "medium",
+      "drift_ref": "DoH #2 (Gwynne/Dalton — 2024-25 key_stat)"
+    },
+    {
+      "entry_key": "DEPARTMENT OF HEALTH",
+      "field": "notes",
+      "find": "Ashley Dalton (Public Health, from January 2025 after Andrew Gwynne was removed over WhatsApp controversy)",
+      "replace": "Ashley Dalton (Public Health, from c.9 February 2025 after Andrew Gwynne was sacked on 8 Feb 2025 over the Trigger Me Timbers WhatsApp controversy)",
+      "severity": "medium",
+      "drift_ref": "DoH #2 (Gwynne/Dalton — notes)"
+    },
+    {
+      "entry_key": "MINISTRY OF DEFENCE",
+      "field": "key_stats",
+      "kstat_index": 15,
+      "kstat_subfield": "value",
+      "find": "Created 1964 by merger of Admiralty (est. 1628) + War Office (1857) + Air Ministry (1918) + Ministry of Defence (1946). No significant MoG change since; Defence Nuclear Organisation (DNO) internal restructure 2016; UK Strategic Command (formerly Joint Forces Command) established 2019",
+      "replace": "Created 1964 by merger of the Admiralty (modern board dated 1707/09) + War Office (1857) + Air Ministry (1918) + Ministry of Defence (1946). No significant MoG change since; Defence Nuclear Organisation (DNO) internal restructure 2016; UK Strategic Command renamed from Joint Forces Command 1 Dec 2019 (JFC established 2012)",
+      "severity": "low",
+      "drift_ref": "MoD #4 + 2.1 Military #4 (Admiralty founding date; Strategic Command 2019 is rename date not establishment)"
+    },
+    {
+      "entry_key": "MINISTRY OF DEFENCE",
+      "field": "key_stats",
+      "kstat_index": 3,
+      "kstat_subfield": "value",
+      "find": "138,120",
+      "replace": "136,861 (HoC Library CBP-7930; note older 138,120 figure includes Gurkhas/others)",
+      "severity": "low",
+      "drift_ref": "MoD #6 (UK Regulars 1 Oct 2024 headline)"
+    },
+    {
+      "entry_key": "MINISTRY OF DEFENCE",
+      "field": "key_stats",
+      "kstat_index": 23,
+      "kstat_subfield": "value",
+      "find": "138,120 Oct 2024 vs 82,000 target (SDR June 2025 recommended restore to 73,000+ deployable)",
+      "replace": "136,861 trained strength 1 Oct 2024 (HoC Library CBP-7930) vs 82,000 target (SDR June 2025 recommended restore to 73,000+ deployable)",
+      "severity": "low",
+      "drift_ref": "MoD #6 (Army regular strength trend key_stat)"
+    },
+    {
+      "entry_key": "2.1 Military defence",
+      "field": "key_stats",
+      "kstat_index": 10,
+      "kstat_subfield": "value",
+      "find": "Regular 138,100 = Army 73,050 + RN/RM 32,460 + RAF 31,450",
+      "replace": "Regular 136,861 (HoC Library CBP-7930) = ~Army 73,050 + RN/RM 32,460 + RAF 31,450 (headline UK Regular Forces; older 138,120 figure includes Gurkhas/others)",
+      "severity": "low",
+      "drift_ref": "MoD #6 (Service headcount 1 Oct 2024)"
+    },
+    {
+      "entry_key": "2.1 Military defence",
+      "field": "key_stats",
+      "kstat_index": 24,
+      "kstat_subfield": "value",
+      "find": "~138,100 trained strength 2024 — Army 73k target breached (under 73k from 2023); SDR 2025 (Robertson review) published June 2025",
+      "replace": "~136,861 trained strength 1 Oct 2024 (HoC Library CBP-7930) — Army 73k target breached (under 73k from 2023); SDR 2025 (Robertson review) published June 2025",
+      "severity": "low",
+      "drift_ref": "MoD #6 (Regular Forces trajectory — 2.1 Military defence key_stat)"
+    },
+    {
+      "entry_key": "HM TREASURY",
+      "field": "key_stats",
+      "kstat_index": 15,
+      "kstat_subfield": "value",
+      "find": "Cat Little (Chief Operating Officer, HMT + Head of Government Finance Function, from Dec 2023)",
+      "replace": "Cat Little (2nd Perm Sec HMT + Head of Government Finance Function from Oct 2022; moved to Cabinet Office Perm Sec / Civil Service COO in 2024)",
+      "severity": "medium",
+      "drift_ref": "HMT #2 (Cat Little start date & subsequent move)"
+    },
+    {
+      "entry_key": "HM TREASURY",
+      "field": "key_stats",
+      "kstat_index": 30,
+      "kstat_subfield": "value",
+      "find": "James Bowler CB (from Oct 2022 to Sept 2024) · Cat Little (Perm Sec + Head of GovFinance from Sept 2024, succeeding Bowler)",
+      "replace": "James Bowler CB (HMT Perm Sec since Oct 2022, continuing through 2024-25) · Cat Little (2nd Perm Sec HMT to 2024, then moved to Cabinet Office Perm Sec / Civil Service COO — NOT HMT Perm Sec)",
+      "severity": "high",
+      "drift_ref": "HMT #1 (Bowler/Little succession — factual error)"
+    },
+    {
+      "entry_key": "HM TREASURY",
+      "field": "notes",
+      "find": "Sir James Bowler has been Permanent Secretary since October 2022, with Cat Little as 2nd Perm Sec and Head of Government Finance Function.",
+      "replace": "Sir James Bowler has been Permanent Secretary since October 2022 and continues in post through 2024-25. Cat Little served as 2nd Perm Sec HMT + Head of Government Finance Function from October 2022 before moving in 2024 to become Permanent Secretary at the Cabinet Office / Civil Service Chief Operating Officer.",
+      "severity": "high",
+      "drift_ref": "HMT #1 + #2 (Bowler/Little — notes)"
+    },
+    {
+      "entry_key": "Debt Interest Payments (National Debt Servicing)",
+      "field": "key_stats",
+      "kstat_index": 15,
+      "kstat_subfield": "value",
+      "find": "~23% of gilt portfolio is index-linked — CPI/RPI surges in 2022-23 drove debt interest spike from £55B (2021-22) to £113B (2022-23)",
+      "replace": "~23% of gilt portfolio is index-linked — CPI/RPI surges in 2022-23 drove debt interest spike from ~£49-50B (2021-22) to ~£111.6B (2022-23, post-war high)",
+      "severity": "low",
+      "drift_ref": "Debt Interest #2 (2022-23 peak £113B→£111.6B; 2021-22 £55B→£49-50B)"
+    },
+    {
+      "entry_key": "Debt Interest Payments (National Debt Servicing)",
+      "field": "key_stats",
+      "kstat_index": 18,
+      "kstat_subfield": "value",
+      "find": "£27B (2019-20) → £50B (2021-22) → £116B peak (2022-23) → ~£105B (2024-25) — index-linked gilt revaluation as CPI ran hot",
+      "replace": "£27B (2019-20) → ~£50B (2021-22) → ~£111.6B peak (2022-23) → ~£105B (2024-25) — index-linked gilt revaluation as CPI ran hot",
+      "severity": "low",
+      "drift_ref": "Debt Interest #2 (internal inconsistency — £116B figure reconciled to £111.6B)"
+    },
+    {
+      "entry_key": "Debt Interest Payments (National Debt Servicing)",
+      "field": "notes",
+      "find": "2022-23 index-linked uplift alone contributed ~£50B of that year's record £111B debt-interest bill",
+      "replace": "2022-23 index-linked uplift alone contributed ~£50B of that year's record ~£111.6B debt-interest bill",
+      "severity": "low",
+      "drift_ref": "Debt Interest #2 (notes — £111B precision)"
+    },
+    {
+      "entry_key": "Debt Interest Payments (National Debt Servicing)",
+      "field": "notes",
+      "find": "tripled from £27B in 2019-20 to a £116B peak in 2022-23 before moderating",
+      "replace": "tripled from £27B in 2019-20 to a ~£111.6B peak in 2022-23 before moderating",
+      "severity": "low",
+      "drift_ref": "Debt Interest #2 (notes — internal inconsistency £116B)"
+    },
+    {
+      "entry_key": "State Pension",
+      "field": "key_stats",
+      "kstat_index": 14,
+      "kstat_subfield": "value",
+      "find": "NONE — State Pension is RESERVED across UK (not devolved). Scottish/Welsh/NI pensioners receive identical DWP State Pension. NI has parallel legislation via Department for Communities but parity-maintained. Devolved governments run top-ups: Winter Heating Payment (Scot, replaced WFP £58.75/£58.75 from winter 2023-24)",
+      "replace": "NONE — State Pension is RESERVED across UK (not devolved). Scottish/Welsh/NI pensioners receive identical DWP State Pension. NI has parallel legislation via Department for Communities but parity-maintained. Devolved Scottish benefits: Pension Age Winter Heating Payment (launched winter 2024-25, WFP replacement for pension-age Scots); Winter Heating Payment (working-age low-income replacement for Cold Weather Payment, from winter 2023-24) — these are two separate schemes",
+      "severity": "medium",
+      "drift_ref": "State Pension #5 (WFP/WHP conflation)"
+    },
+    {
+      "entry_key": "State Pension",
+      "field": "notes",
+      "find": "Scotland's Winter Heating Payment replaced WFP from winter 2023-24",
+      "replace": "Scotland's Pension Age Winter Heating Payment replaced WFP from winter 2024-25 (distinct from the separate Winter Heating Payment which replaced Cold Weather Payment from winter 2023-24)",
+      "severity": "medium",
+      "drift_ref": "State Pension #5 (notes — WFP/WHP conflation)"
+    },
+    {
+      "entry_key": "Financial Assistance To Other Institutions",
+      "field": "key_stats",
+      "kstat_index": 6,
+      "kstat_subfield": "label",
+      "find": "Bulb Energy SoLR cost (NAO Jan 2023)",
+      "replace": "Bulb Energy Special Administration Regime (SAR) cost (NAO Jan 2023)",
+      "severity": "low",
+      "drift_ref": "Financial Assistance #2 (SoLR→SAR label fix)"
+    },
+    {
+      "entry_key": "Financial Assistance To Other Institutions",
+      "field": "notes",
+      "find": "**Bulb SoLR**:",
+      "replace": "**Bulb SAR (Special Administration Regime — not SoLR, which was inapplicable given Bulb's size)**:",
+      "severity": "low",
+      "drift_ref": "Financial Assistance #2 (notes — SoLR/SAR)"
+    },
+    {
+      "entry_key": "Universal Credit",
+      "field": "key_stats",
+      "kstat_index": 15,
+      "kstat_subfield": "value",
+      "find": "Completion by March 2026 (accelerated from 2028 in 2024 Spring Budget)",
+      "replace": "Completion by March 2026 (acceleration crystallised in Autumn Budget 2024; Spring Budget 2024 funded earlier phase)",
+      "severity": "low",
+      "drift_ref": "UC #5 (migration acceleration: Autumn Budget 2024, not Spring)"
+    },
+    {
+      "entry_key": "Universal Credit",
+      "field": "key_stats",
+      "kstat_index": 21,
+      "kstat_subfield": "value",
+      "find": "65% (2013) → 63% (Apr 2017) → 55% (Dec 2021 Budget); work allowance £404/month (rent) / £673 (no rent) for 2024-25",
+      "replace": "65% (2013) → 63% (Apr 2017) → 55% (Autumn Budget 27 Oct 2021, implemented 24 Nov 2021); work allowance £404/month (rent) / £673 (no rent) for 2024-25",
+      "severity": "low",
+      "drift_ref": "UC #4 (taper rate cut — Autumn Budget 2021, not December)"
+    },
+    {
+      "entry_key": "SCOTLAND OFFICE AND OFFICE OF THE ADVOCATE GENERAL",
+      "field": "key_stats",
+      "kstat_index": 13,
+      "kstat_subfield": "value",
+      "find": "Lady (Katy) Clark KC (Labour, appointed Jul 2024)",
+      "replace": "Baroness Smith of Cluny KC (Catherine Smith; Labour, appointed 29 August 2024)",
+      "severity": "high",
+      "drift_ref": "Scotland Office #3 (Advocate General — Clark not appointed; correct is Smith of Cluny)"
+    },
+    {
+      "entry_key": "SCOTLAND OFFICE AND OFFICE OF THE ADVOCATE GENERAL",
+      "field": "key_stats",
+      "kstat_index": 19,
+      "kstat_subfield": "value",
+      "find": "Lord Stewart of Dirleton KC (Scottish law officer; advises UK Government on Scots law)",
+      "replace": "Baroness Smith of Cluny KC (Labour, from 29 Aug 2024; Lord Stewart of Dirleton KC served until 5 Jul 2024)",
+      "severity": "high",
+      "drift_ref": "Scotland Office #3 (Advocate General — duplicate key_stat)"
+    },
+    {
+      "entry_key": "SCOTLAND OFFICE AND OFFICE OF THE ADVOCATE GENERAL",
+      "field": "key_stats",
+      "kstat_index": 27,
+      "kstat_subfield": "value",
+      "find": "~5-10 devolution-competence Acts of Sederunt/references/yr; Lord Keen 2015-20; Lord Stewart of Dirleton 2020-2024; Lord Murray from Jul 2024",
+      "replace": "~5-10 devolution-competence Acts of Sederunt/references/yr; Lord Keen 2015-20; Lord Stewart of Dirleton 2020 – 5 Jul 2024; Baroness Smith of Cluny KC from 29 Aug 2024",
+      "severity": "high",
+      "drift_ref": "Scotland Office #3 (Advocate General litigation role — 'Lord Murray' wrong)"
+    },
+    {
+      "entry_key": "SCOTLAND OFFICE AND OFFICE OF THE ADVOCATE GENERAL",
+      "field": "key_stats",
+      "kstat_index": 29,
+      "kstat_subfield": "value",
+      "find": "Lord Keen of Elie KC (Con, to Jul 2024) -> Baroness Clark of Kilwinning KC (Lab, from Jul 2024)",
+      "replace": "Lord Stewart of Dirleton KC (Con, to 5 Jul 2024) -> Baroness Smith of Cluny KC (Lab, from 29 Aug 2024)",
+      "severity": "high",
+      "drift_ref": "Scotland Office #3 (Advocate General 2024-25 — Clark/Keen both wrong)"
+    },
+    {
+      "entry_key": "SCOTLAND OFFICE AND OFFICE OF THE ADVOCATE GENERAL",
+      "field": "notes",
+      "find": "Advocate General Lord Stewart of Dirleton KC advising on Scots law",
+      "replace": "Advocate General Baroness Smith of Cluny KC (from 29 Aug 2024; Lord Stewart of Dirleton KC served until 5 Jul 2024) advising on Scots law",
+      "severity": "high",
+      "drift_ref": "Scotland Office #3 (notes — Advocate General)"
+    },
+    {
+      "entry_key": "MINISTRY OF HOUSING, COMMUNITIES AND LOCAL GOVERNMENT",
+      "field": "key_stats",
+      "kstat_index": 0,
+      "kstat_subfield": "value",
+      "find": "£64.7B (+6.5% cash)",
+      "replace": "£64.7B (+7.5% cash, up to £4.5B on 2023-24)",
+      "severity": "low",
+      "drift_ref": "MHCLG #3 (CSP cash increase +6.5%→+7.5%)"
+    },
+    {
+      "entry_key": "MINISTRY OF HOUSING, COMMUNITIES AND LOCAL GOVERNMENT",
+      "field": "key_stats",
+      "kstat_index": 19,
+      "kstat_subfield": "value",
+      "find": "Sarah Healey CB CVO (in post since Apr 2023)",
+      "replace": "Sarah Healey CB CVO (in post since 7 Feb 2023)",
+      "severity": "low",
+      "drift_ref": "MHCLG #5 (Healey start date)"
+    },
+    {
+      "entry_key": "MINISTRY OF HOUSING, COMMUNITIES AND LOCAL GOVERNMENT",
+      "field": "key_stats",
+      "kstat_index": 29,
+      "kstat_subfield": "value",
+      "find": "Sarah Healey CB CVO (continuing since Apr 2023; tenure maintained under Labour)",
+      "replace": "Sarah Healey CB CVO (continuing since 7 Feb 2023; tenure maintained under Labour)",
+      "severity": "low",
+      "drift_ref": "MHCLG #5 (Healey — 2024-25 key_stat)"
+    },
+    {
+      "entry_key": "MHCLG Local Government",
+      "field": "key_stats",
+      "kstat_index": 0,
+      "kstat_subfield": "value",
+      "find": "£64.7B (+6.5% on 2023-24)",
+      "replace": "£64.7B (+7.5% cash, up to £4.5B on 2023-24 £60.2B)",
+      "severity": "low",
+      "drift_ref": "MHCLG Local Gov #1 (CSP cash increase +6.5%→+7.5%)"
+    },
+    {
+      "entry_key": "MHCLG Local Government",
+      "field": "key_stats",
+      "kstat_index": 20,
+      "kstat_subfield": "value",
+      "find": "2024-25 total £64.7B (+6.5%): Metropolitan districts ~£14B; London boroughs ~£13B; Unitaries ~£18B; County councils ~£14B; District councils ~£2.8B; GLA + fire/combined ~£2.9B",
+      "replace": "2024-25 total £64.7B (+7.5% cash): Metropolitan districts ~£14B; London boroughs ~£13B; Unitaries ~£18B; County councils ~£14B; District councils ~£2.8B; GLA + fire/combined ~£2.9B",
+      "severity": "low",
+      "drift_ref": "MHCLG Local Gov #1 (CSP by authority type)"
+    },
+    {
+      "entry_key": "NHS Commissioning Board (NHS England)",
+      "field": "key_stats",
+      "kstat_index": 11,
+      "kstat_subfield": "value",
+      "find": "Dr Penny Dash (from October 2024 — previously independent reviewer of NHS regulation)",
+      "replace": "Dr Penny Dash (confirmed Nov 2024, term starts 1 April 2025 — previously independent reviewer of NHS regulation)",
+      "severity": "high",
+      "drift_ref": "NHS Commissioning Board #4 (Dash start date)"
+    },
+    {
+      "entry_key": "NHS Commissioning Board (NHS England)",
+      "field": "key_stats",
+      "kstat_index": 14,
+      "kstat_subfield": "value",
+      "find": "Chair: Dr Penny Dash (from Oct 2024, replacing Richard Meddings)",
+      "replace": "Chair: Dr Penny Dash (confirmed Nov 2024, term starts 1 Apr 2025, succeeding Richard Meddings)",
+      "severity": "high",
+      "drift_ref": "NHS Commissioning Board #4 (Dash — CEO + Chair key_stat)"
+    },
+    {
+      "entry_key": "NHS Commissioning Board (NHS England)",
+      "field": "notes",
+      "find": "Dr Penny Dash became Chair in October 2024.",
+      "replace": "Dr Penny Dash was confirmed as incoming Chair in November 2024 (pre-appointment hearing) with a four-year term starting 1 April 2025.",
+      "severity": "high",
+      "drift_ref": "NHS Commissioning Board #4 (Dash — notes)"
+    },
+    {
+      "entry_key": "HM REVENUE AND CUSTOMS",
+      "field": "key_stats",
+      "kstat_index": 25,
+      "kstat_subfield": "value",
+      "find": "Dame Amanda Spielman (Chair of HMRC Board from Apr 2024, ex-Chief Inspector of Ofsted) · Bill Dodwell / Paul Morton as lay tax advisers",
+      "replace": "Dame Jayne-Anne Gadhia (Chair Nov 2020 – Sept 2024) → James Murray MP (Exchequer Secretary, first minister-Chair from Sept 2024) · Bill Dodwell / Paul Morton as lay tax advisers",
+      "severity": "high",
+      "drift_ref": "HMRC #4 (Chair — Spielman was never HMRC Chair; Gadhia→Murray)"
+    },
+    {
+      "entry_key": "NORTHERN IRELAND EXECUTIVE",
+      "field": "key_stats",
+      "kstat_index": 2,
+      "kstat_subfield": "value",
+      "find": "24% (agreed Feb 2024 on restoration)",
+      "replace": "24% needs-based factor (applied when NI per-head funding falls below 124% of equivalent English per-head; framework interim Feb 2024, formalised May 2024 Joint Communique)",
+      "severity": "low",
+      "drift_ref": "NI Exec #7 (Barnett 24% — factor, not flat uplift)"
+    }
+  ],
+  "unresolved": [
+    {
+      "drift_ref": "DfE #2 (Academies primary share 42.4% — possibly stale vs Jan 2025)",
+      "reason": "finding describes the 42.4% as either stale (Jan 2024) or drifted for 2024-25; entry is explicitly dated to 2023-24/Jan 2024 in multiple key_stats and remains internally consistent. Not a clear verbatim drift to patch without changing the reference year.",
+      "suggestion": "If repositioning to Jan 2025 snapshot, update 'Academies — primary share 42.4%' → '47.3% (Jan 2025)' and the duplicate 'Academies — secondary share 82.4%' → '82.7% (Jan 2025)'; otherwise leave as Jan 2024 snapshot."
+    },
+    {
+      "drift_ref": "DoH #3 (Samantha Jones Interim from Dec 2024 — formal permanent appointment Apr 2025)",
+      "reason": "finding grades as 'low' and 'broadly defensible'; the entry's 'Interim Perm Sec, from Dec 2024' is defensible phrasing. No clear verbatim error to patch.",
+      "suggestion": "Optionally append ' (formally confirmed as permanent DHSC Perm Sec April 2025)' to the Permanent Secretary key_stat for fuller precision."
+    },
+    {
+      "drift_ref": "Financial Assistance #1 (HMT → BEAPFF cumulative £85.9B — COULDNT_VERIFY)",
+      "reason": "finding graded low and COULDNT_VERIFY; no definitive correct value provided. No patch possible without authoritative figure.",
+      "suggestion": "Leave pending authoritative BoE cash-transfers schedule date reconciliation."
+    },
+    {
+      "drift_ref": "NHS Acute Trusts #3 (Darzi ~11% productivity below pre-pandemic — COULDNT_VERIFY)",
+      "reason": "Finding graded COULDNT_VERIFY; no correct value given.",
+      "suggestion": "Leave pending direct quote from Darzi Investigation."
+    }
+  ],
+  "url_patches": []
+}
