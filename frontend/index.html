@@ -1048,6 +1048,74 @@ mark{background:rgba(255,200,0,.25);color:inherit;border-radius:2px;padding:0 2p
   margin-left:auto;font-size:10.5px;color:var(--dim,#8892a8);
 }
 
+/* ===== Ranking view (third mode in Budget Recipients) ===== */
+.suprank-layout{
+  display:flex;flex-direction:column;height:calc(100vh - 140px);
+  background:var(--bg,#0a0a14);
+}
+.suprank-pillrow{
+  display:flex;gap:6px;flex-wrap:wrap;padding:10px 16px;
+  background:rgba(18,18,30,.6);border-bottom:1px solid rgba(255,255,255,.06);
+}
+.suprank-pill{
+  padding:4px 10px;font-size:11px;font-family:inherit;
+  background:transparent;color:var(--dim,#8892a8);
+  border:1px solid rgba(255,255,255,.1);border-radius:4px;cursor:pointer;
+}
+.suprank-pill.active{
+  background:rgba(79,195,247,.12);color:#dbe7fa;border-color:rgba(79,195,247,.3);
+}
+.suprank-count{
+  margin-left:auto;font-size:10.5px;color:var(--dim,#8892a8);align-self:center;
+}
+.suprank-tablewrap{
+  flex:1;overflow:auto;padding:0 16px;
+}
+.suprank-table{
+  width:100%;border-collapse:separate;border-spacing:0;
+  font-size:12px;font-family:inherit;
+}
+.suprank-table thead th{
+  position:sticky;top:0;z-index:2;
+  background:rgba(12,12,22,.95);backdrop-filter:blur(6px);
+  padding:10px 10px;text-align:left;
+  font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.04em;
+  color:var(--dim,#8892a8);
+  border-bottom:1px solid rgba(255,255,255,.1);
+  cursor:pointer;user-select:none;
+}
+.suprank-table thead th:hover{color:#dbe7fa;}
+.suprank-table thead th.sorted-asc::after{content:' ▲';font-size:9px;color:var(--accent,#4fc3f7);}
+.suprank-table thead th.sorted-desc::after{content:' ▼';font-size:9px;color:var(--accent,#4fc3f7);}
+.suprank-table th.col-num,.suprank-table td.col-num{text-align:right;font-variant-numeric:tabular-nums;}
+.suprank-table tbody tr{cursor:pointer;transition:background .1s;}
+.suprank-table tbody tr:hover{background:rgba(79,195,247,.05);}
+.suprank-table tbody tr.active{background:rgba(79,195,247,.12);}
+.suprank-table tbody td{
+  padding:9px 10px;border-bottom:1px solid rgba(255,255,255,.04);
+  color:var(--text,#dbe7fa);vertical-align:middle;
+}
+.suprank-rank{
+  display:inline-block;min-width:32px;text-align:right;
+  font-weight:600;color:var(--dim,#8892a8);font-variant-numeric:tabular-nums;
+}
+.suprank-name{
+  color:#dbe7fa;font-weight:500;max-width:380px;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+}
+.suprank-gbp{font-variant-numeric:tabular-nums;color:#dbe7fa;font-weight:500;}
+.suprank-badges{display:flex;gap:4px;flex-wrap:nowrap;}
+.suprank-footer{
+  padding:14px 20px;font-size:10.5px;color:var(--dim,#8892a8);line-height:1.55;
+  background:rgba(12,12,22,.6);border-top:1px solid rgba(255,255,255,.06);
+}
+.suprank-footer strong{color:#b0bcd0;font-weight:500;}
+.suprank-arrow{color:var(--accent,#4fc3f7);font-weight:600;opacity:.5;}
+tr:hover .suprank-arrow{opacity:1;}
+@media(max-width:900px){
+  .suprank-table .hide-sm{display:none;}
+}
+
 .supmap-layout{
   display:grid;grid-template-columns:340px 1fr;height:calc(100vh - 140px);
 }
@@ -3398,7 +3466,8 @@ mark{background:rgba(79,195,247,.3);color:var(--text,#e8ebf5);padding:0 2px;bord
   <div class="sup-modebar">
     <button class="sup-modebtn active" data-sup-mode="list" onclick="_supSwitchMode('list',this)">📋 List</button>
     <button class="sup-modebtn" data-sup-mode="map" onclick="_supSwitchMode('map',this)">🗺️ Map</button>
-    <span class="sup-modebar-info" id="sup-modebar-info">19,568 UK suppliers · 400 curated + bulk Companies House enrichment · 85k contracts 2024</span>
+    <button class="sup-modebtn" data-sup-mode="ranking" onclick="_supSwitchMode('ranking',this)">📊 Ranking</button>
+    <span class="sup-modebar-info" id="sup-modebar-info">19,238 UK suppliers · 400 curated + 2,994 Companies House enrichment · 85k contracts 2024</span>
   </div>
 
   <!-- LIST MODE (default) -->
@@ -3462,6 +3531,44 @@ mark{background:rgba(79,195,247,.3);color:var(--text,#e8ebf5);padding:0 2px;bord
     <!-- Right side: Leaflet map canvas -->
     <div class="supmap-canvas" id="supmap-canvas">
       <div class="supmap-loading" id="supmap-loading">Loading map & data…</div>
+    </div>
+  </div>
+
+  <!-- RANKING MODE -->
+  <div id="sup-mode-ranking" class="suprank-layout" style="display:none">
+    <div class="suprank-pillrow" id="suprank-pillrow">
+      <button class="suprank-pill active" data-supfilter="all" onclick="_supSetTypeFilter('all',this)">All</button>
+      <button class="suprank-pill" data-supfilter="council" onclick="_supSetTypeFilter('council',this)">Council</button>
+      <button class="suprank-pill" data-supfilter="nhs" onclick="_supSetTypeFilter('nhs',this)">NHS</button>
+      <button class="suprank-pill" data-supfilter="central_govt" onclick="_supSetTypeFilter('central_govt',this)">Depts</button>
+      <button class="suprank-pill" data-supfilter="police_fire" onclick="_supSetTypeFilter('police_fire',this)">Police/Fire</button>
+      <button class="suprank-pill" data-supfilter="education" onclick="_supSetTypeFilter('education',this)">Education</button>
+      <button class="suprank-pill" data-supfilter="agency" onclick="_supSetTypeFilter('agency',this)">Agency</button>
+      <button class="suprank-pill" data-supfilter="other" onclick="_supSetTypeFilter('other',this)">Other</button>
+      <span class="suprank-count" id="suprank-count">—</span>
+    </div>
+    <div class="suprank-tablewrap">
+      <table class="suprank-table" id="suprank-table">
+        <thead>
+          <tr>
+            <th class="col-num" data-sortkey="rank">#</th>
+            <th data-sortkey="name">Supplier</th>
+            <th class="col-num" data-sortkey="gbp">£ 2024</th>
+            <th class="col-num hide-sm" data-sortkey="n_contracts">Contracts</th>
+            <th class="col-num hide-sm" data-sortkey="n_buyers">Buyers</th>
+            <th class="hide-sm">Status</th>
+            <th class="hide-sm">UBO</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="suprank-tbody"></tbody>
+      </table>
+    </div>
+    <div class="suprank-footer">
+      <strong>Methodology:</strong> Suppliers ranked by total 2024 £ of UK public-sector contracts (Contracts Finder + OCDS).
+      Company data from Companies House. Curated profiles are hand-verified; bulk-enriched profiles come from the BCD monthly dump plus Companies House API.
+      Data refreshed with each batch; last full deploy visible in repo commit history.
+      <span id="suprank-refresh-date"></span>
     </div>
   </div>
 </div>
@@ -17307,6 +17414,13 @@ async function loadSuppliersTab(){
   if(m){
     _supSelectSupplier(m[1]);
   }
+  // Auto-switch to ranking or map view if URL asks: /#recipients/ranking or /#recipients/map
+  const rm = hash.match(/^#recipients\/(ranking|map)$/i);
+  if (rm){
+    const target = rm[1].toLowerCase();
+    const btn = document.querySelector(`.sup-modebtn[data-sup-mode="${target}"]`);
+    if (btn) _supSwitchMode(target, btn);
+  }
 }
 
 // Set type-filter for the list mode (parallel with search)
@@ -17316,8 +17430,12 @@ function _supSetTypeFilter(t, btn){
   window._supTypeFilter = t;
   window._supExpandedBuyers = new Set();  // reset expansions on filter change
   document.querySelectorAll('.sup-filter-pill').forEach(b => b.classList.toggle('active', b.dataset.supfilter === t));
+  document.querySelectorAll('#suprank-pillrow .suprank-pill').forEach(b => b.classList.toggle('active', b.dataset.supfilter === t));
   const input = document.getElementById('suppliers-search');
   _supRenderList(input ? input.value : '');
+  // Also refresh ranking view if visible
+  const rank = document.getElementById('sup-mode-ranking');
+  if (rank && rank.style.display !== 'none') _supRenderRanking();
 }
 
 // Lazy-load map data for hierarchical view (reuses the same files as map mode)
@@ -17924,10 +18042,129 @@ function _supSwitchMode(mode, btn){
   document.querySelectorAll('.sup-modebtn').forEach(b => b.classList.toggle('active', b === btn));
   const list = document.getElementById('sup-mode-list');
   const map  = document.getElementById('sup-mode-map');
+  const rank = document.getElementById('sup-mode-ranking');
   if (list) list.style.display = mode === 'list' ? '' : 'none';
   if (map)  map.style.display  = mode === 'map'  ? '' : 'none';
+  if (rank) rank.style.display = mode === 'ranking' ? '' : 'none';
   if (mode === 'map') _supmapInit();
+  if (mode === 'ranking') _supRenderRanking();
+  // Persist chosen mode in URL hash (#recipients/ranking) without clobbering #suppliers/<ch>
+  try{
+    const h = location.hash || '';
+    if (!h.startsWith('#suppliers/')) {
+      if (mode === 'ranking') history.replaceState({}, '', '#recipients/ranking');
+      else if (mode === 'map') history.replaceState({}, '', '#recipients/map');
+      else history.replaceState({}, '', '#recipients');
+    }
+  } catch(e){}
 }
+
+// Ranking view — sortable table
+window._suprankSort = window._suprankSort || { key: 'gbp', dir: 'desc' };
+function _supRenderRanking(){
+  const tbody = document.getElementById('suprank-tbody');
+  if (!tbody) return;
+  const list = window._suppliersIndex || [];
+  const type = window._supTypeFilter || 'all';
+
+  // Filter pills mirror state from list mode
+  document.querySelectorAll('#suprank-pillrow .suprank-pill').forEach(b => b.classList.toggle('active', b.dataset.supfilter === type));
+
+  // Base set: for type filter other than 'all', we need to know each supplier's top buyer type.
+  // The curated profiles carry `top_buyer_type`; v2 profiles may not. For v2 without it, drop from typed filters.
+  let filtered = list;
+  if (type !== 'all') {
+    filtered = list.filter(s => {
+      const bt = s.top_buyer_type || s.primary_buyer_type;
+      return bt === type;
+    });
+  }
+
+  // Sort
+  const { key, dir } = window._suprankSort;
+  const mul = dir === 'asc' ? 1 : -1;
+  const cmp = (a, b) => {
+    let av, bv;
+    switch(key){
+      case 'rank': av = a.rank||999999; bv = b.rank||999999; break;
+      case 'name': av = (a.display_name||'').toLowerCase(); bv = (b.display_name||'').toLowerCase(); break;
+      case 'gbp':  av = a.total_gbp_2024||0; bv = b.total_gbp_2024||0; break;
+      case 'n_contracts': av = a.n_contracts||0; bv = b.n_contracts||0; break;
+      case 'n_buyers': av = a.n_buyers||a.n_departments||0; bv = b.n_buyers||b.n_departments||0; break;
+      default: av = a.total_gbp_2024||0; bv = b.total_gbp_2024||0;
+    }
+    if (av < bv) return -1 * mul;
+    if (av > bv) return  1 * mul;
+    return 0;
+  };
+  const sorted = filtered.slice().sort(cmp);
+
+  // Update header sort indicators
+  document.querySelectorAll('#suprank-table thead th').forEach(th => {
+    th.classList.remove('sorted-asc','sorted-desc');
+    if (th.dataset.sortkey === key) th.classList.add(dir === 'asc' ? 'sorted-asc' : 'sorted-desc');
+  });
+
+  // Count line
+  const count = document.getElementById('suprank-count');
+  if (count){
+    const TYPE_LABEL = {all:'all', council:'Council-led', nhs:'NHS-led', central_govt:'Dept-led', police_fire:'Police/Fire-led', education:'Education-led', agency:'Agency-led', other:'Other'};
+    count.textContent = type === 'all'
+      ? `${sorted.length.toLocaleString()} suppliers · sorted by £ 2024`
+      : `${sorted.length.toLocaleString()} ${TYPE_LABEL[type]} suppliers`;
+  }
+
+  // Render rows (cap at 500 for perf; users can search in list mode for more)
+  const CAP = 500;
+  const out = sorted.slice(0, CAP).map((s, i) => {
+    const displayRank = key === 'gbp' && dir === 'desc' ? (s.rank || (i+1)) : (i+1);
+    const ubo = _supUboBadge(s.ubo_resolution, s.ubo_ultimate_countries);
+    let sourceBadge = '';
+    if (s._source === 'curated') {
+      sourceBadge = `<span class="sup-badge" style="background:rgba(79,195,247,.15);color:var(--accent);border-color:rgba(79,195,247,.3)">CURATED</span>`;
+    } else if (s._source === 'v2') {
+      const st = s.enrichment_stages || {};
+      if (st.ch_api_profile) sourceBadge = `<span class="sup-badge" style="background:rgba(34,197,94,.15);color:#4ade80;border-color:rgba(34,197,94,.3)">ENRICHED</span>`;
+      else if (st.bcd_skeleton) sourceBadge = `<span class="sup-badge" style="background:rgba(148,163,184,.1);color:var(--dim);border-color:rgba(148,163,184,.2)">BASIC</span>`;
+    }
+    const statusBadge = s.status && s.status!=='active' ? `<span class="sup-badge dissolved">${_supEscapeHtml(s.status.toUpperCase())}</span>` : '';
+    const uboHtml = ubo ? `<span class="sup-badge ${ubo.cls}">${_supEscapeHtml(ubo.label)}</span>` : '';
+    const ch = _supEscapeHtml(s.company_number || '');
+    return `<tr data-ch="${ch}" onclick="_suprankClickRow('${ch}')">
+      <td class="col-num"><span class="suprank-rank">${displayRank}</span></td>
+      <td><span class="suprank-name">${_supEscapeHtml(s.display_name||s.official_name||s.company_number)}</span></td>
+      <td class="col-num suprank-gbp">${_supFmtGBP(s.total_gbp_2024)}</td>
+      <td class="col-num hide-sm">${(s.n_contracts||0).toLocaleString()}</td>
+      <td class="col-num hide-sm">${(s.n_buyers||s.n_departments||0).toLocaleString()}</td>
+      <td class="hide-sm"><div class="suprank-badges">${sourceBadge}${statusBadge}</div></td>
+      <td class="hide-sm">${uboHtml}</td>
+      <td><span class="suprank-arrow">→</span></td>
+    </tr>`;
+  }).join('');
+  tbody.innerHTML = out || `<tr><td colspan="8" style="padding:40px;text-align:center;color:var(--dim);font-size:12px">No suppliers match this filter.</td></tr>`;
+  if (sorted.length > CAP){
+    tbody.insertAdjacentHTML('beforeend', `<tr><td colspan="8" style="padding:12px;text-align:center;color:var(--dim);font-size:11px;font-style:italic">Showing top ${CAP.toLocaleString()} of ${sorted.length.toLocaleString()}. Switch to List mode to search the full set.</td></tr>`);
+  }
+}
+
+function _suprankClickRow(ch){
+  if (!ch) return;
+  // Switch to list mode and select — reuses the existing detail panel
+  const listBtn = document.querySelector('.sup-modebtn[data-sup-mode="list"]');
+  if (listBtn) _supSwitchMode('list', listBtn);
+  if (typeof _supSelectSupplier === 'function') _supSelectSupplier(ch);
+}
+
+// Wire header sort clicks (delegated once)
+document.addEventListener('click', function(e){
+  const th = e.target.closest('#suprank-table thead th[data-sortkey]');
+  if (!th) return;
+  const key = th.dataset.sortkey;
+  const cur = window._suprankSort;
+  if (cur.key === key) cur.dir = cur.dir === 'asc' ? 'desc' : 'asc';
+  else { cur.key = key; cur.dir = (key === 'name' || key === 'rank') ? 'asc' : 'desc'; }
+  _supRenderRanking();
+});
 
 async function _supmapLoadLeaflet(){
   if (window.L) return window.L;
