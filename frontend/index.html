@@ -17651,8 +17651,43 @@ function _supmapBuyerPopup(b){
     <div class="supmap-popup-meta">${SUPMAP_TYPE_LABEL[b.type] || b.type} · ${b.lad24_nm || b.region || ''}</div>
     <div class="supmap-popup-stat"><b>${fmt(b.total_gbp_2024)}</b> in ${b.n_contracts.toLocaleString()} contracts</div>
     <div class="supmap-popup-stat">${b.n_suppliers.toLocaleString()} unique suppliers</div>
-    <button class="supmap-popup-btn" onclick="_supmapSelectBuyer('${b.id}')">View suppliers →</button>
+    <button class="supmap-popup-btn" onclick="_supmapZoomToSuppliers('${b.id}')">📍 Show supplier locations →</button>
   </div>`;
+}
+
+// Click handler for "Show supplier locations" popup button:
+// closes popup, ensures suppliers pinned, and fit-bounds the map to
+// cover buyer + all supplier pins with geo.
+function _supmapZoomToSuppliers(buyerId){
+  if (!_supmapLeaflet || !_supmapData) return;
+  const L = window.L;
+  _supmapLeaflet.closePopup();
+  // Ensure selection is current (this also repopulates sidebar + draws pins)
+  if (_supmapSelectedBuyer !== buyerId) _supmapSelectBuyer(buyerId);
+  const buyer = _supmapData.buyers[buyerId];
+  const flows = _supmapData.b2s[buyerId] || [];
+  const pts = [];
+  if (buyer && buyer.lat && buyer.lng) pts.push([buyer.lat, buyer.lng]);
+  for (const f of flows) {
+    const s = _supmapData.suppliers[f.supplier_id];
+    if (s && s.lat && s.lng) pts.push([s.lat, s.lng]);
+  }
+  if (pts.length >= 2) {
+    _supmapLeaflet.fitBounds(pts, { padding: [40, 40], maxZoom: 11 });
+  } else if (pts.length === 1) {
+    _supmapLeaflet.setView(pts[0], 10, { animate: true });
+  }
+  // Brief flash on supplier pins to draw the eye
+  if (_supmapSuppliersLayer) {
+    const layers = _supmapSuppliersLayer.getLayers();
+    layers.forEach(lyr => {
+      if (lyr.setStyle) {
+        const orig = { fillOpacity: lyr.options.fillOpacity, color: lyr.options.color };
+        lyr.setStyle({ fillOpacity: 1, color: '#fff' });
+        setTimeout(() => lyr.setStyle(orig), 1200);
+      }
+    });
+  }
 }
 
 function _supmapSupplierPopup(s, flow){
