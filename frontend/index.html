@@ -3498,6 +3498,21 @@ mark{background:rgba(79,195,247,.3);color:var(--text,#e8ebf5);padding:0 2px;bord
   flex:1;overflow-y:auto;min-height:0;
 }
 
+/* Curated section at top of hierarchical list */
+.sup-curated-section{
+  background:rgba(79,195,247,.03);
+  border-bottom:1px solid rgba(79,195,247,.15);
+}
+.sup-curated-header{
+  padding:8px 14px;font-size:10px;font-weight:700;letter-spacing:.08em;
+  color:#8ec8ff;background:rgba(79,195,247,.08);
+}
+.sup-curated-divider{
+  padding:10px 14px;font-size:9.5px;letter-spacing:.05em;text-transform:uppercase;
+  color:var(--dim);font-style:italic;
+  border-top:1px solid rgba(255,255,255,.04);
+}
+
 /* Hierarchical buyer→supplier list */
 .sup-buyer-group{border-bottom:1px solid rgba(255,255,255,.05);}
 .sup-buyer-row{
@@ -17291,6 +17306,10 @@ async function _supRenderHierarchical(type, query){
   }
   const curated = window._suppliersIndex || [];
   const curatedByCh = new Map(curated.filter(s => s.company_number).map(s => [s.company_number, s]));
+  // Curated suppliers whose dominant buyer-type matches this filter
+  const curatedForType = curated
+    .filter(s => (s.primary_buyer_type || 'other') === type)
+    .sort((a, b) => (b.total_gbp_2024 || 0) - (a.total_gbp_2024 || 0));
 
   const q = (query || '').trim().toLowerCase();
   const buyers = Object.values(data.buyers)
@@ -17307,16 +17326,36 @@ async function _supRenderHierarchical(type, query){
     police_fire:'Police/Fire-led', education:'Education-led', agency:'Agency-led', other:'Other',
   };
   const count = document.getElementById('suppliers-count');
-  if (count) count.textContent = `${buyers.length.toLocaleString()} ${TYPE_LABEL[type] || type} buyers · click to expand suppliers`;
+  if (count) count.textContent = `${curatedForType.length} curated profiles · ${buyers.length.toLocaleString()} ${TYPE_LABEL[type] || type} buyers`;
 
-  if (!buyers.length) {
-    rows.innerHTML = `<div style="padding:40px;text-align:center;color:var(--dim);font-size:12px">No ${type} buyers match${q ? ` "${query}"` : ''}.</div>`;
+  if (!buyers.length && !curatedForType.length) {
+    rows.innerHTML = `<div style="padding:40px;text-align:center;color:var(--dim);font-size:12px">No ${type} buyers or curated suppliers match${q ? ` "${query}"` : ''}.</div>`;
     return;
+  }
+
+  // Curated-first section (rich profiles available)
+  let curatedHtml = '';
+  if (curatedForType.length && !q) {
+    curatedHtml = `<div class="sup-curated-section">
+      <div class="sup-curated-header">★ ${curatedForType.length} CURATED ${TYPE_LABEL[type].toUpperCase()} SUPPLIERS · RICH PROFILES</div>
+      ${curatedForType.map(s => {
+        const isActive = s.company_number === window._suppliersCurrentCh;
+        return `<div class="sup-row${isActive ? ' active' : ''}" data-ch="${_cmpEsc(s.company_number)}" onclick="_supSelectSupplier('${_cmpEsc(s.company_number)}')">
+          <div class="sup-row-name">★ ${_cmpEsc(s.display_name || s.official_name)}</div>
+          <div class="sup-row-meta">
+            <span class="sup-row-rank">#${s.rank || '—'}</span>
+            <span>${fmt(s.total_gbp_2024)}</span>
+            <span>· ${s.n_departments || 0} dept${s.n_departments === 1 ? '' : 's'}</span>
+          </div>
+        </div>`;
+      }).join('')}
+      <div class="sup-curated-divider">— ${TYPE_LABEL[type]} BUYERS (${buyers.length.toLocaleString()}) · expand to see their suppliers —</div>
+    </div>`;
   }
 
   // Cap at 200 buyers for perf
   const visible = buyers.slice(0, 200);
-  rows.innerHTML = visible.map(b => {
+  rows.innerHTML = curatedHtml + visible.map(b => {
     const isExpanded = window._supExpandedBuyers.has(b.id);
     const flows = data.b2s[b.id] || [];
     const childHtml = !isExpanded ? '' : `<div class="sup-buyer-children">
