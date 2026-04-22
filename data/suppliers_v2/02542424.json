@@ -59,9 +59,123 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T15:48:12Z",
+    "company_name": "J R M GODDEN ASSOCIATES LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1990-09-24",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-27"
+  },
+  "governance": {
+    "api_date": "2026-04-22T15:48:14Z",
+    "total_officers": 9,
+    "active_count": 7,
+    "resigned_count": 2,
+    "active_officers": [
+      {
+        "name": "GODDEN, Sara Jane",
+        "role": "secretary",
+        "appointed_on": "1999-02-01",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "GODDEN, Duncan James",
+        "role": "director",
+        "appointed_on": "1995-03-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GODDEN, John Robert Martin",
+        "role": "director",
+        "appointed_on": "2004-01-26",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GODDEN, Richard Mackenzie",
+        "role": "director",
+        "appointed_on": "1995-03-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GODDEN, Sara Jane",
+        "role": "director",
+        "appointed_on": "2004-01-26",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GODDEN, Sheila",
+        "role": "director",
+        "appointed_on": "1993-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GODDEN, Stuart David",
+        "role": "director",
+        "appointed_on": "1995-03-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T15:48:16Z",
+    "total_results": 2,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Mr John Robert Martin Godden",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2024-05-31",
+        "identification": null
+      },
+      {
+        "name": "Mr Richard Mackenzie Godden",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent",
+          "voting-rights-50-to-75-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NTEzMDM1OWFkaXF6a2N4",
+    "date": "2025-12-18",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/a_ahiu8YPX-h_ehtRoaCS5VbzW-lP64MaH7u3CKtc6g/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02542424/filing-history/MzQ5NTEzMDM1OWFkaXF6a2N4"
   }
 }

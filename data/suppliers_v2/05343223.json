@@ -68,9 +68,94 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T18:00:13Z",
+    "company_name": "EPIQ SYSTEMS, LTD.",
+    "company_status": "active",
+    "date_of_creation": "2005-01-26",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-30"
+  },
+  "governance": {
+    "api_date": "2026-04-22T18:00:14Z",
+    "total_officers": 18,
+    "active_count": 1,
+    "resigned_count": 17,
+    "active_officers": [
+      {
+        "name": "WOODMAN, Caroline",
+        "role": "director",
+        "appointed_on": "2021-03-15",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T18:00:16Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Dti Of Uk, Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2017-09-28",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "England And Wales",
+          "country_registered": "England",
+          "place_registered": "Registrar Of Companies (England)",
+          "registration_number": "09557484"
+        }
+      },
+      {
+        "name": "Epiq Systems, Inc.",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-09-27",
+        "identification": {
+          "legal_form": "Corporation",
+          "legal_authority": "Missouri Revised Statutes Chapter 351 General And Business Corporations",
+          "country_registered": "Missouri",
+          "place_registered": "Missouri Secretary Of State",
+          "registration_number": "48-1056429"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3ODA1NjUxNGFkaXF6a2N4",
+    "date": "2025-09-04",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/es5VxfHYfzy9fDV21Xre8jHXB7tMkt0_eOaknvYBAco/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/05343223/filing-history/MzQ3ODA1NjUxNGFkaXF6a2N4"
   }
 }

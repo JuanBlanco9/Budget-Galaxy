@@ -77,57 +77,19 @@
     "overdue": false
   },
   "governance": {
-    "officers_active_count": 1,
-    "officers_resigned_count": 0,
-    "board_turnover_ratio": 0.0,
-    "board_turnover_signal": "low",
-    "active_directors": [
+    "api_date": "2026-04-22T17:58:38Z",
+    "total_officers": 1,
+    "active_count": 1,
+    "resigned_count": 0,
+    "active_officers": [
       {
         "name": "HESS, David Lance",
         "role": "director",
         "appointed_on": "2023-09-22",
-        "resigned_on": null,
-        "nationality": "British,Australian",
-        "occupation": null,
         "country_of_residence": "United Kingdom",
-        "date_of_birth": {
-          "month": 3,
-          "year": 1978
-        },
-        "address": {
-          "locality": "Brentford",
-          "postal_code": "TW8 9ES",
-          "country": "United Kingdom"
-        }
+        "nationality": "British,Australian"
       }
-    ],
-    "secretaries": [],
-    "all_active_officers": [
-      {
-        "name": "HESS, David Lance",
-        "role": "director",
-        "appointed_on": "2023-09-22",
-        "resigned_on": null,
-        "nationality": "British,Australian",
-        "occupation": null,
-        "country_of_residence": "United Kingdom",
-        "date_of_birth": {
-          "month": 3,
-          "year": 1978
-        },
-        "address": {
-          "locality": "Brentford",
-          "postal_code": "TW8 9ES",
-          "country": "United Kingdom"
-        }
-      }
-    ],
-    "resigned_officers_summary": {
-      "count": 0,
-      "recent": []
-    },
-    "direct_psc_count": 1,
-    "direct_psc_statements": []
+    ]
   },
   "ownership_chain": {
     "resolution": "individual",
@@ -821,5 +783,56 @@
       "note": "Awarded 4.0× current payments — major pipeline for 2025+.",
       "ratio": 3.99
     }
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T17:58:36Z",
+    "company_name": "6POINT626 CONSULTANCY SERVICES LTD",
+    "company_status": "active",
+    "date_of_creation": "2023-09-22",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-06-30",
+    "accounts_last_made_up": "2025-09-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-05"
+  },
+  "pscs": {
+    "api_date": "2026-04-22T17:58:40Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr David Lance Hess",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British,Australian",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2023-09-22",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxNDc3NDM1N2FkaXF6a2N4",
+    "date": "2026-04-07",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-micro-entity",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/Kj5B6l9Ouy1W1PCMGdGDOhYbD8yTO7EBiz5jWOVcr6k/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/15155969/filing-history/MzUxNDc3NDM1N2FkaXF6a2N4"
+  },
+  "enrichment_stages": {
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   }
 }

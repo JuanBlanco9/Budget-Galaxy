@@ -64,9 +64,100 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T18:13:26Z",
+    "company_name": "OVERDRIVE GLOBAL LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2020-03-06",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": true,
+    "confirmation_statement_next_due": "2026-03-19"
+  },
+  "governance": {
+    "api_date": "2026-04-22T18:13:28Z",
+    "total_officers": 6,
+    "active_count": 2,
+    "resigned_count": 4,
+    "active_officers": [
+      {
+        "name": "FARMER, Greg",
+        "role": "director",
+        "appointed_on": "2020-09-07",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      },
+      {
+        "name": "POTASH, Steve",
+        "role": "director",
+        "appointed_on": "2020-09-07",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T18:13:30Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Kkr & Co. Inc",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2020-07-31",
+        "identification": {
+          "legal_form": "Company",
+          "legal_authority": "Delaware",
+          "country_registered": "Delaware, United States",
+          "place_registered": "Delaware Company Registry",
+          "registration_number": "4378294"
+        }
+      },
+      {
+        "name": "W F Howes Limited (Crn: 03662159)",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2020-03-06",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "Uk Register Of Companies",
+          "registration_number": "03662159"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3Mzk0NjY5N2FkaXF6a2N4",
+    "date": "2025-07-16",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/wQ9K_FWo_ozDNGMkGdqFkK02bQXIu0QkZ201DJPgeMA/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/12501978/filing-history/MzQ3Mzk0NjY5N2FkaXF6a2N4"
   }
 }

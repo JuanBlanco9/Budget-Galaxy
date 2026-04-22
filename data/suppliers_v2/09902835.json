@@ -59,9 +59,96 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T16:26:03Z",
+    "company_name": "PENNON WATER SERVICES LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2015-12-04",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-30"
+  },
+  "governance": {
+    "api_date": "2026-04-22T16:26:04Z",
+    "total_officers": 22,
+    "active_count": 4,
+    "resigned_count": 18,
+    "active_officers": [
+      {
+        "name": "CAIN, Ian Paul",
+        "role": "director",
+        "appointed_on": "2026-01-29",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "FLOWERDEW, Laura",
+        "role": "director",
+        "appointed_on": "2024-01-29",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "HAYWARD, Barry Philip",
+        "role": "director",
+        "appointed_on": "2025-10-10",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "MAHER, Charlotte Tamsyn",
+        "role": "director",
+        "appointed_on": "2023-10-19",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T16:26:06Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Pennon Group Plc",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Public Limited Company (Listed)",
+          "legal_authority": "United Kingdom (England)",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "2366640"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MTA1MDY4OGFkaXF6a2N4",
+    "date": "2025-11-27",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/W6p9dazS7UkN9VaTuIoNSzPv-pXv-FD4k6bkJHKLKsI/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/09902835/filing-history/MzQ5MTA1MDY4OGFkaXF6a2N4"
   }
 }

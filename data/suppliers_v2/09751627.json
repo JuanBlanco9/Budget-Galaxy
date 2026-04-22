@@ -63,57 +63,19 @@
     "overdue": false
   },
   "governance": {
-    "officers_active_count": 1,
-    "officers_resigned_count": 0,
-    "board_turnover_ratio": 0.0,
-    "board_turnover_signal": "low",
-    "active_directors": [
+    "api_date": "2026-04-22T17:30:20Z",
+    "total_officers": 1,
+    "active_count": 1,
+    "resigned_count": 0,
+    "active_officers": [
       {
         "name": "KHAN, Zahid Ejaz",
         "role": "director",
         "appointed_on": "2015-08-27",
-        "resigned_on": null,
-        "nationality": "British",
-        "occupation": null,
         "country_of_residence": "England",
-        "date_of_birth": {
-          "month": 1,
-          "year": 1977
-        },
-        "address": {
-          "locality": "Peterborough",
-          "postal_code": "PE1 3QF",
-          "country": "England"
-        }
+        "nationality": "British"
       }
-    ],
-    "secretaries": [],
-    "all_active_officers": [
-      {
-        "name": "KHAN, Zahid Ejaz",
-        "role": "director",
-        "appointed_on": "2015-08-27",
-        "resigned_on": null,
-        "nationality": "British",
-        "occupation": null,
-        "country_of_residence": "England",
-        "date_of_birth": {
-          "month": 1,
-          "year": 1977
-        },
-        "address": {
-          "locality": "Peterborough",
-          "postal_code": "PE1 3QF",
-          "country": "England"
-        }
-      }
-    ],
-    "resigned_officers_summary": {
-      "count": 0,
-      "recent": []
-    },
-    "direct_psc_count": 1,
-    "direct_psc_statements": []
+    ]
   },
   "ownership_chain": {
     "resolution": "individual",
@@ -412,5 +374,55 @@
       "note": "Paid 4.3× awarded — payments on existing contracts, scope changes, or framework draw-downs not in new notices.",
       "ratio": 0.23
     }
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T17:30:18Z",
+    "company_name": "UK MAIL LTD",
+    "company_status": "active",
+    "date_of_creation": "2015-08-27",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-05-31",
+    "accounts_last_made_up": "2025-08-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-13"
+  },
+  "pscs": {
+    "api_date": "2026-04-22T17:30:22Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Zahid Ejaz Khan",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "voting-rights-75-to-100-percent-as-trust",
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-08-01",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwMjE4MDEyM2FkaXF6a2N4",
+    "date": "2026-01-29",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-micro-entity",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/6-u6nN-MTpMCSzjmkNPKp-MG7qphhDSjoJ1QeX_C5iw/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/09751627/filing-history/MzUwMjE4MDEyM2FkaXF6a2N4"
+  },
+  "enrichment_stages": {
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   }
 }

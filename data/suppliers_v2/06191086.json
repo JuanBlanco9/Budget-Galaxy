@@ -59,9 +59,134 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T15:49:19Z",
+    "company_name": "EQUAL EXPERTS UK LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2007-03-29",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-23"
+  },
+  "governance": {
+    "api_date": "2026-04-22T15:49:20Z",
+    "total_officers": 8,
+    "active_count": 6,
+    "resigned_count": 2,
+    "active_officers": [
+      {
+        "name": "COLLIER, Kathleen",
+        "role": "secretary",
+        "appointed_on": "2007-03-29",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "BLIGNAUT, Brian Mauritius",
+        "role": "director",
+        "appointed_on": "2024-07-01",
+        "country_of_residence": "South Africa",
+        "nationality": "British,South African"
+      },
+      {
+        "name": "DICKINSON, Jon",
+        "role": "director",
+        "appointed_on": "2024-07-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "GRANIER, Thomas Charles Gabriel",
+        "role": "director",
+        "appointed_on": "2007-03-29",
+        "country_of_residence": "United Kingdom",
+        "nationality": "French"
+      },
+      {
+        "name": "MCGREGOR, Samuel Lawson Shaw",
+        "role": "director",
+        "appointed_on": "2018-10-09",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SIKORSKY, Ryan",
+        "role": "director",
+        "appointed_on": "2010-01-18",
+        "country_of_residence": "United Kingdom",
+        "nationality": "Canadian"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T15:49:22Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Equal Experts Network (Eot) Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent-as-trust",
+          "voting-rights-75-to-100-percent-as-trust",
+          "right-to-appoint-and-remove-directors-as-trust"
+        ],
+        "notified_on": "2025-10-06",
+        "identification": {
+          "legal_form": "Company Limited By Guarantee",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Registrar Of Companies In England And Wales",
+          "registration_number": "16377644"
+        }
+      },
+      {
+        "name": "Mr Thomas Charles Gabriel Granier",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "French",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Ryan Sikorsky",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Canadian",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NTIwMDEwNWFkaXF6a2N4",
+    "date": "2025-12-18",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/SKzmtaA5y15s2BEpYou64FZqR7Bb6lll111Fd-TTVB8/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/06191086/filing-history/MzQ5NTIwMDEwNWFkaXF6a2N4"
   }
 }

@@ -59,9 +59,61 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T17:39:59Z",
+    "company_name": "ALIVECOR LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2013-04-05",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-04-19"
+  },
+  "governance": {
+    "api_date": "2026-04-22T17:40:00Z",
+    "total_officers": 10,
+    "active_count": 2,
+    "resigned_count": 8,
+    "active_officers": [
+      {
+        "name": "AVANESIAN, Rojeh",
+        "role": "director",
+        "appointed_on": "2025-12-31",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      },
+      {
+        "name": "JACOBS, William",
+        "role": "director",
+        "appointed_on": "2023-02-01",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T17:40:02Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MzQxODMzNGFkaXF6a2N4",
+    "date": "2025-10-02",
+    "type": "AAMD",
+    "description": "accounts-amended-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/0OK-l3PfvQPapv-kMK2jKWan7ipo7HY2xSk1MDAjc1Q/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/08476285/filing-history/MzQ4MzQxODMzNGFkaXF6a2N4"
   }
 }

@@ -63,107 +63,11 @@
     "overdue": false
   },
   "governance": {
-    "officers_active_count": 0,
-    "officers_resigned_count": 9,
-    "board_turnover_ratio": 9.0,
-    "board_turnover_signal": "high",
-    "active_directors": [],
-    "secretaries": [],
-    "all_active_officers": [],
-    "resigned_officers_summary": {
-      "count": 9,
-      "recent": [
-        {
-          "name": "KIM, Gyeun Bai",
-          "role": "director",
-          "appointed_on": "2022-05-26",
-          "resigned_on": "2024-07-01",
-          "nationality": "South Korean",
-          "occupation": null,
-          "country_of_residence": "Hong Kong",
-          "date_of_birth": {
-            "month": 7,
-            "year": 1944
-          },
-          "address": {
-            "locality": "Kowloon",
-            "postal_code": "00000",
-            "country": "Hong Kong"
-          }
-        },
-        {
-          "name": "KUM, Kit Ching Catherine",
-          "role": "director",
-          "appointed_on": "2022-05-26",
-          "resigned_on": "2024-07-01",
-          "nationality": "Hong Konger",
-          "occupation": null,
-          "country_of_residence": "Hong Kong",
-          "date_of_birth": {
-            "month": 7,
-            "year": 1968
-          },
-          "address": {
-            "locality": "Kowloon",
-            "postal_code": "00000",
-            "country": "Hong Kong"
-          }
-        },
-        {
-          "name": "MUDOLO, Willah",
-          "role": "director",
-          "appointed_on": "2020-05-04",
-          "resigned_on": "2024-07-01",
-          "nationality": "Zambian",
-          "occupation": null,
-          "country_of_residence": "England",
-          "date_of_birth": {
-            "month": 8,
-            "year": 1980
-          },
-          "address": {
-            "locality": "London",
-            "postal_code": "NW2 2HN",
-            "country": "England"
-          }
-        },
-        {
-          "name": "OTIENO, Duncan Oduor",
-          "role": "director",
-          "appointed_on": "2022-05-26",
-          "resigned_on": "2024-07-01",
-          "nationality": "Kenyan",
-          "occupation": null,
-          "country_of_residence": "Hong Kong",
-          "date_of_birth": {
-            "month": 8,
-            "year": 1976
-          },
-          "address": {
-            "locality": "Kowloon",
-            "postal_code": "00000",
-            "country": "Hong Kong"
-          }
-        },
-        {
-          "name": "MARGARETTA CORPORATE SECRETARIES LIMITED",
-          "role": "corporate-nominee-secretary",
-          "appointed_on": "2020-05-04",
-          "resigned_on": "2024-05-23",
-          "nationality": null,
-          "occupation": null,
-          "country_of_residence": null,
-          "date_of_birth": null,
-          "address": {
-            "locality": "London",
-            "postal_code": "NW2 2HN",
-            "country": "England"
-          }
-        }
-      ]
-    },
-    "direct_psc_count": 0,
-    "direct_psc_statements": []
+    "api_date": "2026-04-22T17:55:26Z",
+    "total_officers": 9,
+    "active_count": 0,
+    "resigned_count": 9,
+    "active_officers": []
   },
   "ownership_chain": {
     "resolution": "data_gap",
@@ -247,5 +151,74 @@
   "procurement": {
     "status": "no_contracts_found",
     "note": "No Contracts Finder matches for this supplier in 2020-2024."
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T17:55:24Z",
+    "company_name": "AFRICAN DEVELOPMENT FUNDING GROUP LTD",
+    "company_status": "dissolved",
+    "date_of_creation": "2020-05-04",
+    "date_of_cessation": "2024-10-29",
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": null,
+    "accounts_next_due": null,
+    "accounts_last_made_up": "2023-05-31",
+    "confirmation_statement_overdue": null,
+    "confirmation_statement_next_due": null
+  },
+  "pscs": {
+    "api_date": "2026-04-22T17:55:28Z",
+    "total_results": 2,
+    "active_count": 0,
+    "items": [
+      {
+        "name": "Adf Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2020-05-04",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act",
+          "country_registered": "Hong Kong",
+          "place_registered": "Company Registration Office",
+          "registration_number": "2394156"
+        }
+      },
+      {
+        "name": "Mr Willah Mudolo",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Zambian",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2020-05-04",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzM4MTgyMjI4NGFkaXF6a2N4",
+    "date": "2023-06-03",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-dormant",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/4aFSlBK_hGCrOzP3nVnLrPpoLlMi0HKVbGzyS8NSWLc/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/12584542/filing-history/MzM4MTgyMjI4NGFkaXF6a2N4"
+  },
+  "enrichment_stages": {
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   }
 }

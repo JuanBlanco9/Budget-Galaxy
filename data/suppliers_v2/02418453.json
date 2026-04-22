@@ -68,9 +68,129 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T17:47:27Z",
+    "company_name": "CULLIGAN (UK) LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1989-08-31",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-09-02"
+  },
+  "governance": {
+    "api_date": "2026-04-22T17:47:29Z",
+    "total_officers": 28,
+    "active_count": 3,
+    "resigned_count": 25,
+    "active_officers": [
+      {
+        "name": "BOURTON, Michael",
+        "role": "director",
+        "appointed_on": "2023-06-12",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CAMPBELL, Shaun Edward",
+        "role": "director",
+        "appointed_on": "2025-03-07",
+        "country_of_residence": "United Kingdom",
+        "nationality": "Australian"
+      },
+      {
+        "name": "LEEK, Marcus",
+        "role": "director",
+        "appointed_on": "2026-01-28",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T17:47:31Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Osmosis Buyer Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2025-06-25",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "United Kingdom (England And Wales)",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "13404693"
+        }
+      },
+      {
+        "name": "Waterlogic Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2025-06-24",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "United Kingdom (England And Wales)",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "9297346"
+        }
+      },
+      {
+        "name": "Waterlogic Uk Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "English Law",
+          "country_registered": "United Kingdom",
+          "place_registered": "England And Wales",
+          "registration_number": "04832980"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwODU4ODIwMWFkaXF6a2N4",
+    "date": "2026-03-09",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/kUaGt4FfZFLUC9G5ctvlt4dVcMc5-SFSst1j-wyQGvY/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02418453/filing-history/MzUwODU4ODIwMWFkaXF6a2N4"
   }
 }

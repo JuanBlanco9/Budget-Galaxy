@@ -68,9 +68,130 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T17:33:21Z",
+    "company_name": "HBC CONSTRUCTION LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1993-12-14",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-13"
+  },
+  "governance": {
+    "api_date": "2026-04-22T17:33:23Z",
+    "total_officers": 27,
+    "active_count": 6,
+    "resigned_count": 21,
+    "active_officers": [
+      {
+        "name": "CULLEN, John Christopher",
+        "role": "director",
+        "appointed_on": "2026-01-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "LITTLEWOOD, Darren Louis",
+        "role": "director",
+        "appointed_on": "2016-01-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "O'LOUGHLIN, Ryan",
+        "role": "director",
+        "appointed_on": "2019-05-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "POWELL, Lee",
+        "role": "director",
+        "appointed_on": "2025-01-16",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "SMITH, James Lee",
+        "role": "director",
+        "appointed_on": "2025-01-08",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "WEATHERS, Christopher John",
+        "role": "director",
+        "appointed_on": "2024-09-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "English"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T17:33:25Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Pws Construction Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2025-12-31",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "Incorporated In England And Wales",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "15061808"
+        }
+      },
+      {
+        "name": "Henry Boot Plc",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Public Limited Company",
+          "legal_authority": "England And Wales",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "160996"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3Mjg3MjEzOGFkaXF6a2N4",
+    "date": "2025-07-08",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/CqO2KjUTH3VeUlR5tfe0TebW7Acyx5U6GcpOqLYzEE0/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02880202/filing-history/MzQ3Mjg3MjEzOGFkaXF6a2N4"
   }
 }

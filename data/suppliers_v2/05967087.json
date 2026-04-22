@@ -70,9 +70,131 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T16:59:36Z",
+    "company_name": "LIVABILITY",
+    "company_status": "active",
+    "date_of_creation": "2006-10-16",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-30"
+  },
+  "governance": {
+    "api_date": "2026-04-22T16:59:38Z",
+    "total_officers": 53,
+    "active_count": 12,
+    "resigned_count": 41,
+    "active_officers": [
+      {
+        "name": "FRITH, Richard Michael Cokayne, The Rt Revd",
+        "role": "director",
+        "appointed_on": "2022-04-15",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GRIFFITHS, Marianne Elizabeth, Dame",
+        "role": "director",
+        "appointed_on": "2025-12-08",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "INGRAM, Duncan George",
+        "role": "director",
+        "appointed_on": "2022-04-15",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "JOHNS, Susan Margaret",
+        "role": "director",
+        "appointed_on": "2020-01-16",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "NUTT, Jennifer Lucy Alison",
+        "role": "director",
+        "appointed_on": "2025-12-08",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "O'CONNOR, Thomas Joseph",
+        "role": "director",
+        "appointed_on": "2022-04-15",
+        "country_of_residence": "England",
+        "nationality": "British,Irish"
+      },
+      {
+        "name": "QUINLAN-RAHMAN, Lisa Michelle",
+        "role": "director",
+        "appointed_on": "2022-06-22",
+        "country_of_residence": "England",
+        "nationality": "Irish"
+      },
+      {
+        "name": "SHARPE, Samuel John",
+        "role": "director",
+        "appointed_on": "2025-12-08",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "VILLIERS, Theresa, Dame",
+        "role": "director",
+        "appointed_on": "2025-12-08",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WEAVING, John Martin",
+        "role": "director",
+        "appointed_on": "2020-01-16",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WILSON, Andrew",
+        "role": "director",
+        "appointed_on": "2018-03-21",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WOODALL, Peter Malcolm",
+        "role": "director",
+        "appointed_on": "2020-01-16",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T16:59:39Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NjI2MTk0N2FkaXF6a2N4",
+    "date": "2026-01-02",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/UQnXLo7SBMXrnfOj1OHcd_rQ1P-yShEBwHvI0n90KCQ/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/05967087/filing-history/MzQ5NjI2MTk0N2FkaXF6a2N4"
   }
 }

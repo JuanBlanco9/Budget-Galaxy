@@ -59,9 +59,102 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T17:27:17Z",
+    "company_name": "PRESCRIBING SERVICES LTD",
+    "company_status": "active",
+    "date_of_creation": "2006-08-22",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-05-31",
+    "accounts_last_made_up": "2024-08-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-09-03"
+  },
+  "governance": {
+    "api_date": "2026-04-22T17:27:18Z",
+    "total_officers": 9,
+    "active_count": 4,
+    "resigned_count": 5,
+    "active_officers": [
+      {
+        "name": "PEREIRA, Tiago",
+        "role": "secretary",
+        "appointed_on": "2023-07-21",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BROWN, Julian David, Dr",
+        "role": "director",
+        "appointed_on": "2006-08-22",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BROWN, Sebastian, Dr",
+        "role": "director",
+        "appointed_on": "2024-04-26",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PLATT, Steven",
+        "role": "director",
+        "appointed_on": "2006-09-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T17:27:20Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Steven Platt",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2017-08-21",
+        "identification": null
+      },
+      {
+        "name": "Dr Julian David Brown",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-08-21",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ1OTQ5MjAwMWFkaXF6a2N4",
+    "date": "2025-03-20",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-unaudited-abridged",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/uGYIs-oIQy5PFgOcYmpXyLGYV8TNOajnPHfEpCEPsCQ/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/05913240/filing-history/MzQ1OTQ5MjAwMWFkaXF6a2N4"
   }
 }

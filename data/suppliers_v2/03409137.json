@@ -64,9 +64,88 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T17:33:42Z",
+    "company_name": "PATHWAYS CARE GROUP LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1997-07-24",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-30",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-27"
+  },
+  "governance": {
+    "api_date": "2026-04-22T17:33:43Z",
+    "total_officers": 18,
+    "active_count": 3,
+    "resigned_count": 15,
+    "active_officers": [
+      {
+        "name": "GODDEN, John Steven",
+        "role": "director",
+        "appointed_on": "2017-04-21",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "HILLEN, Kenneth James Gribben",
+        "role": "director",
+        "appointed_on": "2019-01-11",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "LAWES, Paul Raymond",
+        "role": "director",
+        "appointed_on": "2018-01-04",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T17:33:45Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Salutem Ld Bidco Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2017-04-21",
+        "identification": {
+          "legal_form": "Company Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "England And Wales Company Registry",
+          "registration_number": "10634342"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NDkyODczOGFkaXF6a2N4",
+    "date": "2025-12-17",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-audit-exemption-subsiduary",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/0wRaywHZ_uf5PVDl4_ZeaQAS6cJFdEisCXb6T4pomUw/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03409137/filing-history/MzQ5NDkyODczOGFkaXF6a2N4"
   }
 }

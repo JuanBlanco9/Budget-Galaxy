@@ -64,9 +64,108 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T15:41:48Z",
+    "company_name": "DAVID BROWN SANTASALO UK LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2008-06-19",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-03"
+  },
+  "governance": {
+    "api_date": "2026-04-22T15:41:50Z",
+    "total_officers": 21,
+    "active_count": 6,
+    "resigned_count": 15,
+    "active_officers": [
+      {
+        "name": "GODDING, Elliot",
+        "role": "secretary",
+        "appointed_on": "2025-05-02",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "ARMITT, David",
+        "role": "director",
+        "appointed_on": "2011-02-22",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "BONE, Norman James",
+        "role": "director",
+        "appointed_on": "2025-11-07",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      },
+      {
+        "name": "FINGER, Daniel",
+        "role": "director",
+        "appointed_on": "2024-10-21",
+        "country_of_residence": "England",
+        "nationality": "German"
+      },
+      {
+        "name": "HELME, Michael",
+        "role": "director",
+        "appointed_on": "2024-05-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "MACINTOSH, Stewart Robert",
+        "role": "director",
+        "appointed_on": "2012-03-20",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T15:41:51Z",
+    "total_results": 1,
+    "active_count": 0,
+    "items": [
+      {
+        "name": "David Brown Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "English Law",
+          "country_registered": "England",
+          "place_registered": "Uk Register Of Companies",
+          "registration_number": "02432631"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NDA4NTk5NGFkaXF6a2N4",
+    "date": "2025-12-21",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/1TPRzgwPxdIoXO_GTLxUKLDe4F2HkjyFGy3E0V7mThs/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/06624684/filing-history/MzQ5NDA4NTk5NGFkaXF6a2N4"
   }
 }

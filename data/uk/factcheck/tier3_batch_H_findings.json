@@ -1,0 +1,766 @@
+[
+  {
+    "key": "Northern Care Alliance NHS Foundation Trust",
+    "claims_checked": 5,
+    "findings": [
+      {
+        "claim": "NCA FT formed 1 October 2021 (Salford Royal legal acquisition of Pennine Acute)",
+        "status": "CONFIRMED",
+        "correct_value": "NCA NHS Foundation Trust formally established 1 Oct 2021 via Salford Royal acquiring Pennine Acute (partnership ran from 2017)",
+        "source": "https://en.wikipedia.org/wiki/Northern_Care_Alliance_NHS_Foundation_Trust",
+        "severity": "low"
+      },
+      {
+        "claim": "CEO 2024-25: Jacqui Burrow (Chief Executive from Jul 2024)",
+        "status": "DRIFTED",
+        "correct_value": "CEO throughout 2024-25 was Dr Owen Williams; he announced departure in 2025 (leaving Sep 2025). No 'Jacqui Burrow' as CEO per NCA sources.",
+        "source": "https://www.northerncarealliance.nhs.uk/about-us/board-directors",
+        "severity": "high"
+      },
+      {
+        "claim": "Chair 2024-25: Dr Lesley Mort (from 2024); Sir David Dalton listed as Chair in key_stats",
+        "status": "DRIFTED",
+        "correct_value": "Current Chair is Sheena McDonnell (ex-Barnsley Hospital FT Chair). Sir David Dalton was a former Salford Royal CEO, not a recent NCA Chair; 'Lesley Mort' not corroborated as substantive Chair.",
+        "source": "https://www.northerncarealliance.nhs.uk/about-us/board-directors",
+        "severity": "high"
+      },
+      {
+        "claim": "CQC rating 'Good overall, inspection January 2024' (vs 'Requires Improvement 2023' elsewhere in entry)",
+        "status": "DRIFTED",
+        "correct_value": "Entry contains internal contradiction: 'Good (Jan 2024)' vs 'Requires Improvement (2023)' for same trust-level rating",
+        "source": "https://www.cqc.org.uk/provider/RM3/inspection-summary",
+        "severity": "medium"
+      },
+      {
+        "claim": "CQC provider code R0A for Northern Care Alliance",
+        "status": "DRIFTED",
+        "correct_value": "NCA CQC provider code is RM3 (not R0A, which is Manchester University NHS FT)",
+        "source": "https://www.cqc.org.uk/provider/RM3/inspection-summary",
+        "severity": "medium"
+      }
+    ]
+  },
+  {
+    "key": "The Leeds Teaching Hospitals NHS Trust",
+    "claims_checked": 4,
+    "findings": [
+      {
+        "claim": "CEO Professor Phil Wood, Chief Executive since Nov 2022",
+        "status": "DRIFTED",
+        "correct_value": "Phil Wood appointed CEO February 2023 (previously CMO/deputy CE). Substantive from Feb 2023, not Nov 2022.",
+        "source": "https://www.nationalhealthexecutive.com/articles/leeds-teaching-hospitals-settles-new-chief-executive",
+        "severity": "low"
+      },
+      {
+        "claim": "Chair Dame Linda Pollard DBE (since 2013)",
+        "status": "CONFIRMED",
+        "correct_value": "Dame Linda Pollard Chair since February 2013; DBE awarded October 2020",
+        "source": "https://www.leedsth.nhs.uk/about/board/agm/",
+        "severity": "low"
+      },
+      {
+        "claim": "Hospitals of the Future £900M+ rebuild, FBC approved 2024; construction phasing 2025-30",
+        "status": "DRIFTED",
+        "correct_value": "Cost estimate has risen from original ~£600M (2021) to ~£1.42B (Sep 2024); NHP review put it at £1.5-2B. Construction delayed — not to start until ~2032, completion c.2040.",
+        "source": "https://www.constructionnews.co.uk/buildings/hospital-rebuild-cost-doubles-to-1-42bn-30-09-2024/",
+        "severity": "high"
+      },
+      {
+        "claim": "NIHR Leeds BRC £60M 2022-27",
+        "status": "COULDNT_VERIFY",
+        "correct_value": "NIHR BRC 2022-27 award to Leeds exists but exact £60M figure not confirmed in this search",
+        "source": "https://www.nihr.ac.uk/",
+        "severity": "low"
+      }
+    ]
+  },
+  {
+    "key": "King's College Hospital NHS Foundation Trust",
+    "claims_checked": 5,
+    "findings": [
+      {
+        "claim": "FT status: Authorised 1 Dec 2006",
+        "status": "CONFIRMED",
+        "correct_value": "King's College Hospital gained FT status on 1 December 2006",
+        "source": "https://en.wikipedia.org/wiki/King's_College_Hospital_NHS_Foundation_Trust",
+        "severity": "low"
+      },
+      {
+        "claim": "Largest liver transplant programme in Europe (~200+/year; 277 in record year)",
+        "status": "CONFIRMED",
+        "correct_value": "King's runs largest liver transplant programme in Europe; recent record 277 transplants in a calendar year",
+        "source": "https://www.kch.nhs.uk/news/record-breaking-year-for-liver-transplants-at-kings/",
+        "severity": "low"
+      },
+      {
+        "claim": "One of London's four Level 1 major trauma centres",
+        "status": "CONFIRMED",
+        "correct_value": "King's is one of four London major trauma centres (serving ~4.5M population)",
+        "source": "https://www.kch.nhs.uk/about/the-kings-story/",
+        "severity": "low"
+      },
+      {
+        "claim": "Princess Royal PFI ~£28M/yr unitary charge through 2033",
+        "status": "COULDNT_VERIFY",
+        "correct_value": "PRUH PFI 30-yr term from 2003 opening (runs to ~2033); annual unitary charges historically >£10M, lifecycle cost ~£420M-£1.2B range cited in different sources; exact ~£28M/yr 2024 value not directly confirmed",
+        "source": "https://en.wikipedia.org/wiki/Princess_Royal_University_Hospital",
+        "severity": "low"
+      },
+      {
+        "claim": "Chair Sir Hugh Taylor to Sep 2024 -> Sian Bates from Oct 2024",
+        "status": "COULDNT_VERIFY",
+        "correct_value": "Chair succession in 2024 plausible (Taylor long-serving) but Sian Bates appointment date/details not confirmed in this search",
+        "source": "https://www.kch.nhs.uk/",
+        "severity": "low"
+      }
+    ]
+  },
+  {
+    "key": "Police Pensions",
+    "claims_checked": 5,
+    "findings": [
+      {
+        "claim": "Employer contribution rose 31.0% -> 35.3% from 1 April 2024",
+        "status": "CONFIRMED",
+        "correct_value": "Police Pensions (Employer Contributions) (Amendment) Regulations 2024 (SI 2024/920): rate 31% -> 35.3% effective 1 Apr 2024 (E&W)",
+        "source": "https://www.legislation.gov.uk/uksi/2024/920/made",
+        "severity": "low"
+      },
+      {
+        "claim": "McCloud/Sargeant judgment 2018 ruled 2015 reforms unlawfully age-discriminatory",
+        "status": "CONFIRMED",
+        "correct_value": "Court of Appeal McCloud/Sargeant (2018) ruled transitional protections were unlawful age discrimination",
+        "source": "https://commonslibrary.parliament.uk/research-briefings/cbp-9177/",
+        "severity": "low"
+      },
+      {
+        "claim": "PSPJOA 2022 provides framework for McCloud remedy; Police Pensions (Remediable Service) Regs 2023",
+        "status": "CONFIRMED",
+        "correct_value": "Public Service Pensions and Judicial Offices Act 2022 is the remedy framework; Police Pensions (Remediable Service) Regulations 2023 implement it",
+        "source": "https://www.gov.uk/government/consultations/police-pension-scheme-retrospective-remedy",
+        "severity": "low"
+      },
+      {
+        "claim": "Three coexisting schemes: PPS 1987 (final salary), NPPS 2006 (final salary), CARE 2015",
+        "status": "CONFIRMED",
+        "correct_value": "PPS 1987, NPPS 2006, and 2015 CARE scheme are the three schemes",
+        "source": "https://www.polfed.org/support/pensions-updates/remedy/",
+        "severity": "low"
+      },
+      {
+        "claim": "43 police forces in England and Wales",
+        "status": "CONFIRMED",
+        "correct_value": "43 territorial police forces in England and Wales (Home Office)",
+        "source": "https://www.gov.uk/government/publications/police-grant-report-england-and-wales-2024-to-2025",
+        "severity": "low"
+      }
+    ]
+  },
+  {
+    "key": "4.2 of which: other agriculture, food and fisheries policy",
+    "claims_checked": 4,
+    "findings": [
+      {
+        "claim": "Windsor Framework UK-EU agreement Feb 2023 maintaining NI SPS alignment",
+        "status": "CONFIRMED",
+        "correct_value": "Windsor Framework announced 27 February 2023; maintains NI in EU single market for goods incl. agri-food SPS",
+        "source": "https://commission.europa.eu/strategy-and-policy/relations-united-kingdom/eu-uk-withdrawal-agreement/windsor-framework_en",
+        "severity": "low"
+      },
+      {
+        "claim": "COFOG 4.2 definition: Agriculture, forestry, fishing and hunting (UN SNA 2008)",
+        "status": "CONFIRMED",
+        "correct_value": "COFOG code 04.2 covers Agriculture, forestry, fishing and hunting per UN SNA 2008",
+        "source": "https://unstats.un.org/unsd/classifications/Family/Detail/4",
+        "severity": "low"
+      },
+      {
+        "claim": "Windsor Framework SPS green-lane operational Oct 2024",
+        "status": "DRIFTED",
+        "correct_value": "Major WF SPS / NIRMS arrangements came into operation 1 October 2023, not Oct 2024",
+        "source": "https://www.daera-ni.gov.uk/topics/windsor-framework-implementation",
+        "severity": "medium"
+      },
+      {
+        "claim": "Sustainable Agriculture Programme launched 2025 replacing BPS in NI",
+        "status": "COULDNT_VERIFY",
+        "correct_value": "NI Sustainable Farming/Agriculture framework is DAERA's post-CAP design; exact 2025 launch date not confirmed in this search",
+        "source": "https://www.daera-ni.gov.uk/topics/farming",
+        "severity": "low"
+      }
+    ]
+  },
+  {
+    "key": "Provision Of Defence Capability Civilian Personnel",
+    "claims_checked": 5,
+    "findings": [
+      {
+        "claim": "MoD civilian headcount 1 April 2024 ~57,000 FTE",
+        "status": "DRIFTED",
+        "correct_value": "MOD civilian strength at 1 Apr 2024 was 63,702 (headcount); 62,631 at 1 Oct 2024 (MoD Biannual Civilian Personnel Report)",
+        "source": "https://www.gov.uk/government/statistics/mod-biannual-civilian-personnel-report-april-2024/mod-biannual-civilian-personnel-report-april-2024",
+        "severity": "high"
+      },
+      {
+        "claim": "MoD direct employer 63,000 civilian FTE Jul 2024 (in 'Prime contractor' stat)",
+        "status": "CONFIRMED",
+        "correct_value": "MOD civilian headcount ~63,700 at 1 Apr 2024 aligns with '63,000 FTE Jul 2024' ballpark",
+        "source": "https://www.gov.uk/government/statistics/mod-biannual-civilian-personnel-report-april-2024/mod-biannual-civilian-personnel-report-april-2024",
+        "severity": "low"
+      },
+      {
+        "claim": "Dstl is an Executive Agency established Jul 2001 with Porton Down/Portsdown West/Fort Halstead presence",
+        "status": "CONFIRMED",
+        "correct_value": "Dstl set up July 2001 as MoD Executive Agency; main sites include Porton Down and Portsdown West",
+        "source": "https://www.gov.uk/government/organisations/defence-science-and-technology-laboratory",
+        "severity": "low"
+      },
+      {
+        "claim": "DIO established 1 April 2011 as MoD TLB",
+        "status": "CONFIRMED",
+        "correct_value": "Defence Infrastructure Organisation formed 1 April 2011 as MoD Main TLB",
+        "source": "https://www.gov.uk/government/statistics/mod-biannual-civilian-personnel-report-background-notes-and-glossary",
+        "severity": "low"
+      },
+      {
+        "claim": "Civil Service pay remit 2024-25 up to 5% average award",
+        "status": "CONFIRMED",
+        "correct_value": "Civil Service pay remit guidance 2024-25 allowed average awards up to 5%",
+        "source": "https://www.gov.uk/government/publications/civil-service-pay-remit-guidance-2024-to-2025",
+        "severity": "low"
+      }
+    ]
+  },
+  {
+    "key": "5.3 Pollution abatement",
+    "claims_checked": 4,
+    "findings": [
+      {
+        "claim": "8 Clean Air Zones operational 2024: Birmingham, Bradford, Bristol, Portsmouth, Sheffield, Tyneside, Manchester, Oxford",
+        "status": "DRIFTED",
+        "correct_value": "7 CAZs charging in England (plus Bath, omitted from list); Manchester CAZ not charging — GM Bee Network replaced it. Bath CAZ is one of the earliest and should be included.",
+        "source": "https://commonslibrary.parliament.uk/research-briefings/cbp-9816/",
+        "severity": "medium"
+      },
+      {
+        "claim": "UK ETS cap reset for 2021-2030 on 30 Jul 2023 aligned with Net Zero",
+        "status": "CONFIRMED",
+        "correct_value": "July 2023 Authority response reset cap to 936 MtCO2e for 2021-30 — a 30% reduction in cumulative allowances (DESNZ)",
+        "source": "https://www.gov.uk/government/publications/uk-emissions-trading-scheme-uk-ets-policy-overview/uk-emissions-trading-scheme-uk-ets-a-policy-overview",
+        "severity": "low"
+      },
+      {
+        "claim": "UK ETS domestic maritime added 2026; aviation free allocation phased out 2026-30",
+        "status": "CONFIRMED",
+        "correct_value": "Domestic maritime (>=5,000 GT) added from 2026; aviation free allocation phased out for 2026-30 period",
+        "source": "https://www.gov.uk/government/publications/uk-emissions-trading-scheme-uk-ets-policy-overview/uk-emissions-trading-scheme-uk-ets-a-policy-overview",
+        "severity": "low"
+      },
+      {
+        "claim": "CBAM UK from 1 Jan 2027",
+        "status": "CONFIRMED",
+        "correct_value": "UK CBAM implementation date 1 January 2027 announced by HMT (Oct 2024 response)",
+        "source": "https://www.gov.uk/government/consultations/introduction-of-a-uk-carbon-border-adjustment-mechanism-from-january-2027",
+        "severity": "low"
+      }
+    ]
+  },
+  {
+    "key": "4.5 of which: local public transport",
+    "claims_checked": 5,
+    "findings": [
+      {
+        "claim": "£2 bus fare cap Jan 2023-Dec 2024, raised to £3 from Jan 2025 (+50%)",
+        "status": "CONFIRMED",
+        "correct_value": "£2 cap ran from Jan 2023 through end-2024; raised to £3 on 1 Jan 2025 (extension announced at Autumn Budget 2024)",
+        "source": "https://www.bbc.co.uk/news/articles/cq5kz0nne31o",
+        "severity": "low"
+      },
+      {
+        "claim": "October 2024 Budget £925M for bus services 2025-26",
+        "status": "CONFIRMED",
+        "correct_value": "Autumn Budget 2024: ~£925M for buses 2025-26; £151M of £2 -> £3 fare cap cost; £285M BSOG",
+        "source": "https://www.route-one.net/news/england-bus-fare-cap-will-move-to-3-in-2025-starmer-reveals/",
+        "severity": "low"
+      },
+      {
+        "claim": "Greater Manchester Bee Network franchising Phase 3 complete Jan 2025",
+        "status": "CONFIRMED",
+        "correct_value": "Third (final) tranche of GM bus franchising launched 5 January 2025 — re-regulation complete",
+        "source": "https://www.route-one.net/news/greater-manchester-bus-franchising-completed-with-third-tranche/",
+        "severity": "low"
+      },
+      {
+        "claim": "West Yorkshire Mayor Tracy Brabin re-elected May 2024",
+        "status": "CONFIRMED",
+        "correct_value": "Tracy Brabin re-elected 2 May 2024 (first term from 2021)",
+        "source": "https://en.wikipedia.org/wiki/2024_West_Yorkshire_mayoral_election",
+        "severity": "low"
+      },
+      {
+        "claim": "England bus journeys 2023-24 ~3.4B (recovered to ~80% of pre-pandemic)",
+        "status": "COULDNT_VERIFY",
+        "correct_value": "DfT annual bus statistics YE Mar 2024 show recovery pattern; exact 3.4B figure plausible but not directly verified in this batch",
+        "source": "https://www.gov.uk/government/statistics/annual-bus-statistics-year-ending-march-2024",
+        "severity": "low"
+      }
+    ]
+  },
+  {
+    "key": "Nottingham University Hospitals NHS Trust",
+    "claims_checked": 5,
+    "findings": [
+      {
+        "claim": "CEO Anthony May OBE since Nov 2022",
+        "status": "DRIFTED",
+        "correct_value": "Entry also states CEO since Apr 2023; Anthony May formally took up CEO role at NUH in early 2023 after being named late 2022. 'Since Nov 2022' vs 'Apr 2023' inconsistency in entry.",
+        "source": "https://www.themj.co.uk/former-council-ceo-joins-northern-care-alliance",
+        "severity": "low"
+      },
+      {
+        "claim": "Ockenden Nottingham maternity review independent; established May 2022 by NHSE; final report 2026",
+        "status": "CONFIRMED",
+        "correct_value": "NHSE established review May 2022; Ockenden took over September 2022; final report to be delivered on or before 30 June 2026",
+        "source": "https://www.england.nhs.uk/long-read/terms-of-reference-independent-maternity-review-nottingham-university-hospitals-nhs-trust/",
+        "severity": "low"
+      },
+      {
+        "claim": "Review covers over 2,000 families (largest ever NHS maternity inquiry)",
+        "status": "CONFIRMED",
+        "correct_value": "Ockenden Nottingham review scope expanded to over 2,000 families — largest such review",
+        "source": "https://www.donnaockenden.com/the-nottingham-university-hospitals-nhs-trust/",
+        "severity": "low"
+      },
+      {
+        "claim": "Latest CQC rating Requires Improvement (out of NOF4 May 2024)",
+        "status": "CONFIRMED",
+        "correct_value": "CQC upgraded maternity from Inadequate to Requires Improvement in 2023; trust exited NOF segment 4 / Recovery Support Programme in 2024",
+        "source": "https://www.cqc.org.uk/provider/RX1",
+        "severity": "low"
+      },
+      {
+        "claim": "Nottinghamshire Police Operation Perth — corporate manslaughter investigation into maternity deaths",
+        "status": "CONFIRMED",
+        "correct_value": "Operation Perth is Nottinghamshire Police's investigation into potential corporate manslaughter at NUH maternity",
+        "source": "https://www.nottinghamshire.police.uk/",
+        "severity": "low"
+      }
+    ]
+  },
+  {
+    "key": "Imperial College Healthcare NHS Trust",
+    "claims_checked": 5,
+    "findings": [
+      {
+        "claim": "Trust formed 1 October 2007 from Hammersmith Hospitals + St Mary's merger",
+        "status": "CONFIRMED",
+        "correct_value": "Imperial College Healthcare NHS Trust formed October 2007 from Hammersmith Hospitals NHS Trust and St Mary's NHS Trust merger with Imperial College",
+        "source": "https://en.wikipedia.org/wiki/Imperial_College_Healthcare_NHS_Trust",
+        "severity": "low"
+      },
+      {
+        "claim": "UK's first academic health science centre (AHSC), designated 2007",
+        "status": "CONFIRMED",
+        "correct_value": "Imperial was UK's first AHSC on designation in 2007",
+        "source": "https://www.imperial.ac.uk/news/200973/top-london-nhs-hospital-trust-joins/",
+        "severity": "low"
+      },
+      {
+        "claim": "NIHR Imperial BRC £95M 2022-27",
+        "status": "CONFIRMED",
+        "correct_value": "£95.3M NIHR BRC award Dec 2022 - Nov 2027 (5-year)",
+        "source": "https://www.imperial.ac.uk/news/240571/95-million-investment-imperial-biomedical-research/",
+        "severity": "low"
+      },
+      {
+        "claim": "CEO Prof Tim Orchard since Jan 2018",
+        "status": "CONFIRMED",
+        "correct_value": "Tim Orchard Chief Executive since January 2018; now Group CEO across NW London Acute Provider Group",
+        "source": "https://www.imperial.nhs.uk/about-us/news/apg-announcement",
+        "severity": "low"
+      },
+      {
+        "claim": "July 2025 Imperial + Chelsea & Westminster formal merger talks announced",
+        "status": "DRIFTED",
+        "correct_value": "The four NW London acute trusts (Imperial, Chelsea & Westminster, Hillingdon, London NW) formally established a 'North West London Acute Provider Group' in 2025 — a collaborative/group CEO model, NOT a legal merger. Each trust retains own leadership.",
+        "source": "https://www.imperial.nhs.uk/about-us/news/apg-announcement",
+        "severity": "medium"
+      }
+    ]
+  },
+  {
+    "key": "University Hospitals Sussex NHS Foundation Trust",
+    "claims_checked": 4,
+    "findings": [
+      {
+        "claim": "UHSussex formed 1 April 2021 from Brighton & Sussex UH + Western Sussex Hospitals FT merger",
+        "status": "CONFIRMED",
+        "correct_value": "UHSussex NHS FT formed 1 April 2021 from merger of BSUH NHS Trust and Western Sussex Hospitals NHS FT",
+        "source": "https://www.uhsussex.nhs.uk/news/change-of-leadership-at-uhsussex/",
+        "severity": "low"
+      },
+      {
+        "claim": "CEO George Findlay since Nov 2022",
+        "status": "DRIFTED",
+        "correct_value": "Dr George Findlay took up CEO role at UHSussex 1 June 2022, not Nov 2022. Dame Marianne Griffiths retired Sep 2022.",
+        "source": "https://www.uhsussex.nhs.uk/news/university-hospitals-sussex-welcomes-new-chief-executive/",
+        "severity": "medium"
+      },
+      {
+        "claim": "Operation Bramber: Sussex Police investigation into ~200 surgical deaths 2015-21",
+        "status": "CONFIRMED",
+        "correct_value": "Operation Bramber covers neurosurgery + general surgery 2015-21; 105 initial cases rising to 200+ after BBC investigation",
+        "source": "https://www.alsterskelley.com/police-investigate-allegations-of-preventable-deaths-and-injuries-at-university-hospitals-sussex-nhs-trust/",
+        "severity": "low"
+      },
+      {
+        "claim": "CQC rating Requires Improvement (inspection November 2023)",
+        "status": "COULDNT_VERIFY",
+        "correct_value": "UHSussex rated RI — exact Nov 2023 inspection date not directly confirmed in this search (CQC provider RYR)",
+        "source": "https://www.cqc.org.uk/provider/RYR",
+        "severity": "low"
+      }
+    ]
+  },
+  {
+    "key": "Academies And Free Schools",
+    "claims_checked": 5,
+    "findings": [
+      {
+        "claim": "Primary pupils in academies ~60% (2024)",
+        "status": "DRIFTED",
+        "correct_value": "By 2024 about 40% of primary schools are academies; secondaries ~80%. The 60% figure overstates primary share.",
+        "source": "https://en.wikipedia.org/wiki/Academy_(English_school)",
+        "severity": "medium"
+      },
+      {
+        "claim": "Secondary pupils in academies ~82% (2024)",
+        "status": "CONFIRMED",
+        "correct_value": "About 80% of state-funded secondaries are academies/free schools by 2024",
+        "source": "https://en.wikipedia.org/wiki/Academy_(English_school)",
+        "severity": "low"
+      },
+      {
+        "claim": "UTCs operational 48 (2024)",
+        "status": "COULDNT_VERIFY",
+        "correct_value": "UTC sector has contracted; exact 48 operational in 2024 not directly confirmed here (Baker Dearing Trust lists current UTCs)",
+        "source": "https://www.utcolleges.org/",
+        "severity": "low"
+      },
+      {
+        "claim": "Children's Wellbeing and Schools Bill 2024 (Labour) reverses some academy freedoms",
+        "status": "CONFIRMED",
+        "correct_value": "Children's Wellbeing and Schools Bill (Bill 3909, introduced Dec 2024) includes QTS requirement and limits on academy freedoms",
+        "source": "https://bills.parliament.uk/bills/3909",
+        "severity": "low"
+      },
+      {
+        "claim": "Open Free Schools Sept 2024: 713",
+        "status": "COULDNT_VERIFY",
+        "correct_value": "DfE maintains a list of open academies + Free Schools; 713 Free Schools as of Sept 2024 is a plausible figure per DfE collections (not directly verified here)",
+        "source": "https://www.gov.uk/government/publications/open-academies-and-academy-projects-in-development",
+        "severity": "low"
+      }
+    ]
+  },
+  {
+    "key": "4.5 of which: other transport",
+    "claims_checked": 4,
+    "findings": [
+      {
+        "claim": "P&O Ferries sacked 786 seafarers March 2022 without consultation",
+        "status": "CONFIRMED",
+        "correct_value": "P&O Ferries dismissed 786 seafarers 17 March 2022 without notice or consultation",
+        "source": "https://commonslibrary.parliament.uk/research-briefings/cbp-9529/",
+        "severity": "low"
+      },
+      {
+        "claim": "Seafarers' Wages Act 2023 requires NMW-equivalent for services calling UK ports >=120 times/yr",
+        "status": "CONFIRMED",
+        "correct_value": "Seafarers' Wages Act 2023 (royal assent 23 Mar 2023) requires declarations for operators whose service enters UK harbour >=120 times/yr",
+        "source": "https://www.legislation.gov.uk/ukpga/2023/8",
+        "severity": "low"
+      },
+      {
+        "claim": "8 English freeports designated: Teesside, Humber, Felixstowe, Liverpool, Plymouth, Solent, Thames, East Midlands",
+        "status": "CONFIRMED",
+        "correct_value": "Eight English freeports announced in 2021 Budget: Teesside, Humber, Felixstowe & Harwich, Liverpool City Region, Plymouth, Solent, Thames, East Midlands Airport",
+        "source": "https://en.wikipedia.org/wiki/Free_ports_in_the_United_Kingdom",
+        "severity": "low"
+      },
+      {
+        "claim": "Seafarers' Wages Regulations in force late 2024",
+        "status": "CONFIRMED",
+        "correct_value": "Seafarers' Wages Regulations / Harbour-authority regulations came into force in 2024 implementing 2023 Act",
+        "source": "https://www.gov.uk/government/consultations/the-seafarers-wages-act-2023-part-1-draft-regulations-and-guidance/the-seafarers-wages-act-2023-draft-regulations-and-guidance-part-1-consultation-document",
+        "severity": "low"
+      }
+    ]
+  },
+  {
+    "key": "Pupil Premium",
+    "claims_checked": 5,
+    "findings": [
+      {
+        "claim": "PP 2024-25 rates: primary £1,480, secondary £1,050, LAC £2,570, service £340",
+        "status": "CONFIRMED",
+        "correct_value": "DfE 2024-25 PP rates: £1,480 primary, £1,050 secondary, £2,570 LAC/post-LAC, £340 service",
+        "source": "https://www.gov.uk/government/publications/pupil-premium-allocations-and-conditions-of-grant-2024-to-2025/pupil-premium-2024-to-2025-technical-note",
+        "severity": "low"
+      },
+      {
+        "claim": "PP has lost ~20% real value since 2015",
+        "status": "CONFIRMED",
+        "correct_value": "Sutton Trust (May 2024): Pupil Premium has fallen 20% in real terms since 2014/15",
+        "source": "https://www.suttontrust.com/wp-content/uploads/2024/05/Fair-opportunity-for-all-1.pdf",
+        "severity": "low"
+      },
+      {
+        "claim": "Scotland Pupil Equity Funding £130M, £1,320/pupil",
+        "status": "COULDNT_VERIFY",
+        "correct_value": "Scottish PEF amounts vary — 2024-25 allocation reported around £130M; per-pupil rate close to £1,200-£1,300 but varies",
+        "source": "https://www.gov.scot/policies/schools/pupil-equity-funding/",
+        "severity": "low"
+      },
+      {
+        "claim": "Total 2024-25 (whole England) ~£2.9 billion",
+        "status": "COULDNT_VERIFY",
+        "correct_value": "DfE PP envelope 2024-25 in ~£2.9B range consistent with published allocations but exact total not directly checked",
+        "source": "https://www.gov.uk/government/publications/pupil-premium-allocations-and-conditions-of-grant-2024-to-2025/pupil-premium-2024-to-2025-technical-note",
+        "severity": "low"
+      },
+      {
+        "claim": "KS4 disadvantage gap 3.95 months (2023) vs 3.2 (2019) — widest in decade",
+        "status": "COULDNT_VERIFY",
+        "correct_value": "EPI/Sutton Trust confirm gap widened post-pandemic to highest in a decade; exact months-of-progress figures vary by report",
+        "source": "https://epi.org.uk/wp-content/uploads/2024/11/EPI_persistent_disadvantage_funding.pdf",
+        "severity": "low"
+      }
+    ]
+  },
+  {
+    "key": "Eysg Pupil Premium Acads",
+    "claims_checked": 4,
+    "findings": [
+      {
+        "claim": "PP 2024-25 rates identical to Pupil Premium entry (primary £1,480 / secondary £1,050 / LAC £2,570 / service £340)",
+        "status": "CONFIRMED",
+        "correct_value": "DfE 2024-25 rates match; identical for academy and LA-maintained routes",
+        "source": "https://www.gov.uk/government/publications/pupil-premium-allocations-and-conditions-of-grant-2024-to-2025/pupil-premium-2024-to-2025-technical-note",
+        "severity": "low"
+      },
+      {
+        "claim": "~82% secondary + ~40% primary state pupils now academy-run",
+        "status": "CONFIRMED",
+        "correct_value": "Academies: ~80% of secondary state schools and ~40% of primaries by 2024",
+        "source": "https://en.wikipedia.org/wiki/Academy_(English_school)",
+        "severity": "low"
+      },
+      {
+        "claim": "PP real-terms fall ~13% since 2015 (per this entry) vs ~20% in main PP entry",
+        "status": "DRIFTED",
+        "correct_value": "Entries 53 and 54 give different real-terms erosion figures (~20% vs ~13%) for same metric — internally inconsistent. Sutton Trust 2024 estimate is ~20%.",
+        "source": "https://www.suttontrust.com/wp-content/uploads/2024/05/Fair-opportunity-for-all-1.pdf",
+        "severity": "medium"
+      },
+      {
+        "claim": "Academy-sector PP ~£1.66B of ~£2.9B national (~57%)",
+        "status": "COULDNT_VERIFY",
+        "correct_value": "Proportion plausible given academy share of pupils, but exact £1.66B split not directly verified",
+        "source": "https://www.gov.uk/government/publications/pupil-premium-allocations-and-conditions-of-grant-2024-to-2025/pupil-premium-2024-to-2025-technical-note",
+        "severity": "low"
+      }
+    ]
+  },
+  {
+    "key": "Leeds",
+    "claims_checked": 5,
+    "findings": [
+      {
+        "claim": "Population mid-2023 822,500 — 2nd-largest English council after Birmingham",
+        "status": "CONFIRMED",
+        "correct_value": "ONS mid-2022 estimate 822,483; Leeds is 2nd-largest English local authority by population after Birmingham",
+        "source": "https://observatory.leeds.gov.uk/population/",
+        "severity": "low"
+      },
+      {
+        "claim": "WYCA Mayor Tracy Brabin re-elected May 2024 with 64%",
+        "status": "DRIFTED",
+        "correct_value": "Brabin won 50.4% (275,430 votes) in May 2024 — not 64%. Turnout 32.71%.",
+        "source": "https://en.wikipedia.org/wiki/2024_West_Yorkshire_mayoral_election",
+        "severity": "high"
+      },
+      {
+        "claim": "CE Tom Riordan CBE since 2010 (15-year tenure)",
+        "status": "CONFIRMED",
+        "correct_value": "Tom Riordan CE since 2010; announced departure end-2024 after 14 years (left for DHSC role)",
+        "source": "https://news.leeds.gov.uk/news/leeds-city-council-chief-executive-to-leave-at-the-end-of-2024",
+        "severity": "low"
+      },
+      {
+        "claim": "CE 2024-25: Mariana Pexton interim/permanent from 2024",
+        "status": "CONFIRMED",
+        "correct_value": "Mariana Pexton confirmed as interim CE after Riordan's departure — first female CE of Leeds City Council",
+        "source": "https://news.leeds.gov.uk/news/leeds-city-council-confirms-new-interim-chief-executive",
+        "severity": "low"
+      },
+      {
+        "claim": "Children's services Ofsted Outstanding (2022)",
+        "status": "CONFIRMED",
+        "correct_value": "Leeds children's services rated Outstanding by Ofsted in 2022 (re-affirmation of prior rating)",
+        "source": "https://reports.ofsted.gov.uk/",
+        "severity": "low"
+      }
+    ]
+  },
+  {
+    "key": "Oxford University Hospitals NHS Foundation Trust",
+    "claims_checked": 5,
+    "findings": [
+      {
+        "claim": "FT status: Authorised 1 Oct 2015",
+        "status": "CONFIRMED",
+        "correct_value": "OUH became NHS FT effective 1 October 2015 (authorised by Monitor)",
+        "source": "https://www.gov.uk/government/news/oxford-university-hospitals-awarded-foundation-trust-status-by-regulator",
+        "severity": "low"
+      },
+      {
+        "claim": "CEO 2024-25: Eileen Walsh (Acting CEO from 2024 after Montgomery interim)",
+        "status": "DRIFTED",
+        "correct_value": "OUH CEO for 2024-25 was Prof Meghana Pandit (substantive from March 2023). Simon Crowther Acting CEO from March 2025 when Pandit moved to NHSE. 'Eileen Walsh' not the CEO in this period.",
+        "source": "https://www.gtc.ox.ac.uk/news-and-events/news/meghana-pandit-appointed-oxford-university-hospitals-ceo/",
+        "severity": "high"
+      },
+      {
+        "claim": "NIHR Oxford BRC £118M 2022-27 — largest single NIHR BRC award",
+        "status": "DRIFTED",
+        "correct_value": "NIHR Oxford BRC 2022-27 award is £86.6M (not £118M). The £122M figure cited elsewhere is Oxford's two BRCs combined (£86.6M Oxford BRC + £35.4M Oxford Health BRC). Later figures cite £95.9m (Dec 2022-Mar 2028).",
+        "source": "https://www.ox.ac.uk/news/2022-10-14-oxford-gets-122m-funding-healthcare-research",
+        "severity": "high"
+      },
+      {
+        "claim": "Chair Sir Jonathan Montgomery since 2018",
+        "status": "DRIFTED",
+        "correct_value": "Montgomery's initial Chair term began Jan 2019 (appointed Dec 2018); re-appointed for a further term from 1 Sep 2024 to end-March 2026 — not continuous since 2018.",
+        "source": "https://www.ouh.nhs.uk/working-for-us/fabulous-staff/person.aspx?id=913",
+        "severity": "medium"
+      },
+      {
+        "claim": "CQC rating Good, inspection 2022",
+        "status": "CONFIRMED",
+        "correct_value": "OUH last CQC comprehensive inspection rated Good; provider code RTH",
+        "source": "https://www.cqc.org.uk/provider/RTH",
+        "severity": "low"
+      }
+    ]
+  },
+  {
+    "key": "University Hospitals of Leicester NHS Trust",
+    "claims_checked": 4,
+    "findings": [
+      {
+        "claim": "CEO Richard Mitchell since Jan 2022",
+        "status": "CONFIRMED",
+        "correct_value": "Richard Mitchell took CEO role at UHL from ~Jan 2022 (announced late 2021, following John Adler's retirement Oct 2021)",
+        "source": "https://www.leicestershospitals.nhs.uk/aboutus/our-news/press-release-centre/2021/university-hospitals-of-leicester-nhs-trust-announces-new-chief-executive/",
+        "severity": "low"
+      },
+      {
+        "claim": "Glenfield Hospital is one of only 5 adult ECMO centres in England",
+        "status": "CONFIRMED",
+        "correct_value": "5 English adult ECMO centres: Glenfield (Leicester), Wythenshawe (Manchester), Papworth (Cambridge), Royal Brompton & Harefield (London), Guy's & St Thomas' (London)",
+        "source": "https://en.wikipedia.org/wiki/Glenfield_Hospital",
+        "severity": "low"
+      },
+      {
+        "claim": "Reconfiguring Leicester's Hospitals ~£450M FBC approved 2024",
+        "status": "COULDNT_VERIFY",
+        "correct_value": "£450M envelope was not confirmed by Treasury per UHL governance papers; final FBC status in 2024 was still pending Treasury sign-off per committee discussion",
+        "source": "https://cabinet.leicester.gov.uk/mgAi.aspx?ID=100606",
+        "severity": "medium"
+      },
+      {
+        "claim": "CQC rating Requires Improvement, inspection December 2023",
+        "status": "COULDNT_VERIFY",
+        "correct_value": "UHL rated Requires Improvement (provider RWE); exact Dec 2023 inspection date not verified here",
+        "source": "https://www.cqc.org.uk/provider/RWE",
+        "severity": "low"
+      }
+    ]
+  },
+  {
+    "key": "Sawdg Arms Length Bodies - Ea (Flood)",
+    "claims_checked": 5,
+    "findings": [
+      {
+        "claim": "6-year capital programme 2021-27: £5.2B",
+        "status": "CONFIRMED",
+        "correct_value": "£5.2B capital programme 2021-27 for flood and coastal erosion risk management (Defra/EA)",
+        "source": "https://www.nao.org.uk/wp-content/uploads/2023/11/Resilience-to-flooding-.pdf",
+        "severity": "low"
+      },
+      {
+        "claim": "Properties better protected target 336,000 by March 2027",
+        "status": "CONFIRMED",
+        "correct_value": "Original target: better protect 336,000 properties by 2027 with £5.2B / ~2,000 projects; NAO Nov 2023 said EA now forecasts 200,000 (a >40% reduction)",
+        "source": "https://www.nao.org.uk/press-releases/managing-flood-risk/",
+        "severity": "low"
+      },
+      {
+        "claim": "Flood Re levy ~£135M/yr on household insurers",
+        "status": "CONFIRMED",
+        "correct_value": "Flood Re annual levy £135M for years ending March 2023-2025; proposed to rise to £160M from Apr 2025",
+        "source": "https://www.floodre.co.uk/wp-content/uploads/Flood-Re-Limited-ARA-2025-FINAL-EY-signed.pdf",
+        "severity": "low"
+      },
+      {
+        "claim": "Autumn Budget 2024 added ~£2.4B over 2 years to FCERM",
+        "status": "CONFIRMED",
+        "correct_value": "Autumn Budget 2024: Defra £2.4B over 2024-25 and 2025-26 for flood defences (Labour government)",
+        "source": "https://www.ada.org.uk/2024/10/key-messages-for-flood-and-water-management-from-the-budget/",
+        "severity": "low"
+      },
+      {
+        "claim": "Storm Babet Oct 2023: 2,100+ properties flooded; Storm Henk Jan 2024: 2,800+ flooded",
+        "status": "DRIFTED",
+        "correct_value": "Storm Babet caused ~1,260 properties flooded (late Oct 2023 per FloodList / Met Office summary). 'Hundreds' for Henk (Jan 2024). The 2,100+ / 2,800+ figures appear overstated vs published estimates.",
+        "source": "https://www.gov.uk/government/publications/flood-forecasting-centre-annual-review-2023-to-2024/flood-forecasting-centre-annual-review-2023-to-2024",
+        "severity": "medium"
+      }
+    ]
+  },
+  {
+    "key": "West Sussex CC",
+    "claims_checked": 4,
+    "findings": [
+      {
+        "claim": "Population ~890,000 (ONS 2023)",
+        "status": "CONFIRMED",
+        "correct_value": "ONS mid-2022 pop 892,336; mid-2024 ~915k — ~890k 2023 ballpark correct",
+        "source": "https://jsna.westsussex.gov.uk/core/population-data/estimates/",
+        "severity": "low"
+      },
+      {
+        "claim": "Leader Cllr Paul Marshall (Conservative, since 2020)",
+        "status": "CONFIRMED",
+        "correct_value": "Paul Marshall is Conservative Leader of WSCC",
+        "source": "https://www.westsussex.gov.uk/about-the-council/policies-and-reports/finance-and-performance-policy-and-reports/budget-and-performance/",
+        "severity": "low"
+      },
+      {
+        "claim": "CE Becky Shaw since Feb 2022",
+        "status": "DRIFTED",
+        "correct_value": "Becky Shaw took reins of both West Sussex and East Sussex as joint CE from January 2020 — not Feb 2022",
+        "source": "https://www.sussexexpress.co.uk/news/politics/east-and-west-sussex-county-councils-to-share-chief-executive-1342271",
+        "severity": "medium"
+      },
+      {
+        "claim": "Children's services rated 'Good' by Ofsted (2023) after improvement from 'Inadequate' (2019)",
+        "status": "DRIFTED",
+        "correct_value": "Per Ofsted/Sussex Express, West Sussex children's services improved from Inadequate (2019) to Requires Improvement (not Good) at the subsequent ILACS; later focused visits 2024 praised progress on care leavers but overall rating not confirmed as Good in 2023.",
+        "source": "https://www.sussexexpress.co.uk/news/politics/west-sussex-childrens-services-improves-from-inadequate-to-requires-improvement-after-ofsted-inspection-4138602",
+        "severity": "medium"
+      }
+    ]
+  }
+]

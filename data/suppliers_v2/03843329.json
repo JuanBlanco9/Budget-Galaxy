@@ -59,9 +59,115 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T17:41:48Z",
+    "company_name": "H W MARTIN WASTE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1999-09-17",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-04-30",
+    "accounts_last_made_up": "2025-07-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-15"
+  },
+  "governance": {
+    "api_date": "2026-04-22T17:41:50Z",
+    "total_officers": 15,
+    "active_count": 7,
+    "resigned_count": 8,
+    "active_officers": [
+      {
+        "name": "AKERS, Robin Roy",
+        "role": "director",
+        "appointed_on": "2020-09-24",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CLEGG, James",
+        "role": "director",
+        "appointed_on": "2025-08-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "DARWIN, Philip Nigel",
+        "role": "director",
+        "appointed_on": "2023-06-28",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "NORTCLIFFE, Declan",
+        "role": "director",
+        "appointed_on": "2022-02-15",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PEACE, Gavin Edward",
+        "role": "director",
+        "appointed_on": "2025-08-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "SHAW, David Mark",
+        "role": "director",
+        "appointed_on": "2025-08-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "WALTERS, Marie Claire",
+        "role": "director",
+        "appointed_on": "2022-10-13",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T17:41:51Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "H W Martin Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act",
+          "country_registered": "England",
+          "place_registered": "England And Wales",
+          "registration_number": "02941889"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwODQ1ODMwM2FkaXF6a2N4",
+    "date": "2026-03-06",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/QrRQu3bZMMhpML_ptY8apyCmcGJL1nUSssignPUrenk/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03843329/filing-history/MzUwODQ1ODMwM2FkaXF6a2N4"
   }
 }

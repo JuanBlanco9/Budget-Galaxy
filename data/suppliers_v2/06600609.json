@@ -59,9 +59,96 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T17:06:36Z",
+    "company_name": "AMEY HIGHWAYS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2008-05-22",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-29"
+  },
+  "governance": {
+    "api_date": "2026-04-22T17:06:37Z",
+    "total_officers": 14,
+    "active_count": 4,
+    "resigned_count": 10,
+    "active_officers": [
+      {
+        "name": "SHERARD SECRETARIAT SERVICES LIMITED",
+        "role": "corporate-secretary",
+        "appointed_on": "2008-05-22",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "ANDERSON, Peter Stuart",
+        "role": "director",
+        "appointed_on": "2020-08-06",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CLOUGH, Kyle",
+        "role": "director",
+        "appointed_on": "2025-03-25",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "NELSON, Andrew Latham",
+        "role": "director",
+        "appointed_on": "2008-05-22",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T17:06:39Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Amey Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "United Kingdom (England And Wales)",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "2379479"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MTM3MjI0MGFkaXF6a2N4",
+    "date": "2025-09-17",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/GSifd5tdPM_TmNtJlikqLtYZDK4cXHjSx_GIzvEqezY/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/06600609/filing-history/MzQ4MTM3MjI0MGFkaXF6a2N4"
   }
 }

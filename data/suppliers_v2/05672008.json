@@ -59,9 +59,82 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T16:06:13Z",
+    "company_name": "NORTHCLIFFE ENVIRONMENTAL ENTERPRISES TEAM (N.E.E.T)",
+    "company_status": "active",
+    "date_of_creation": "2006-01-11",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-10-31",
+    "accounts_last_made_up": "2025-01-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-25"
+  },
+  "governance": {
+    "api_date": "2026-04-22T16:06:15Z",
+    "total_officers": 18,
+    "active_count": 5,
+    "resigned_count": 13,
+    "active_officers": [
+      {
+        "name": "VAREY, Helen Jane",
+        "role": "secretary",
+        "appointed_on": "2026-01-21",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BRUZZESE, Steven",
+        "role": "director",
+        "appointed_on": "2017-08-09",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "DRAKE, Barbara",
+        "role": "director",
+        "appointed_on": "2006-03-09",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "TIMMS, Fiona Margaret Anne",
+        "role": "director",
+        "appointed_on": "2020-12-10",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "VAREY, Helen Jane",
+        "role": "director",
+        "appointed_on": "2017-08-09",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T16:06:16Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4Mjc4MDI3M2FkaXF6a2N4",
+    "date": "2025-09-29",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/cmfIJh2dGzQtDc1BJtlhQFe-rHL9FSFdhYXkp5VkhX4/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/05672008/filing-history/MzQ4Mjc4MDI3M2FkaXF6a2N4"
   }
 }

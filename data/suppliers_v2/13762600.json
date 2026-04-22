@@ -59,9 +59,90 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T15:29:44Z",
+    "company_name": "NJ DEVICES LTD",
+    "company_status": "active",
+    "date_of_creation": "2021-11-24",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-04"
+  },
+  "governance": {
+    "api_date": "2026-04-22T15:29:45Z",
+    "total_officers": 2,
+    "active_count": 2,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "HAIGH, Jason Duncan",
+        "role": "director",
+        "appointed_on": "2021-11-24",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LEVEY, Nikolai Jacques Milton",
+        "role": "director",
+        "appointed_on": "2021-11-24",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T15:29:47Z",
+    "total_results": 2,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Mr Nikolai Jacques Milton Levey",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2021-11-24",
+        "identification": null
+      },
+      {
+        "name": "Mr Jason Duncan Haigh",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2021-11-24",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NjM4NDU3MWFkaXF6a2N4",
+    "date": "2025-08-06",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/fbwqn0vF1LLFQzsXCqL163_f2k-ejGnndRAIe1Ao8cw/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/13762600/filing-history/MzQ3NjM4NDU3MWFkaXF6a2N4"
   }
 }

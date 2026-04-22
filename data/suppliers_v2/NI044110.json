@@ -65,9 +65,185 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T17:38:58Z",
+    "company_name": "REGEN WASTE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2002-09-16",
+    "date_of_cessation": null,
+    "jurisdiction": "northern-ireland",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-31"
+  },
+  "governance": {
+    "api_date": "2026-04-22T17:39:00Z",
+    "total_officers": 7,
+    "active_count": 6,
+    "resigned_count": 1,
+    "active_officers": [
+      {
+        "name": "DOHERTY, Aidan Joseph",
+        "role": "secretary",
+        "appointed_on": "2002-09-16",
+        "country_of_residence": null,
+        "nationality": "Northern Irish"
+      },
+      {
+        "name": "DOHERTY, Aidan Joseph",
+        "role": "director",
+        "appointed_on": "2002-09-16",
+        "country_of_residence": "Northern Ireland",
+        "nationality": "Irish"
+      },
+      {
+        "name": "DOHERTY, Colin Patrick",
+        "role": "director",
+        "appointed_on": "2002-09-16",
+        "country_of_residence": "Northern Ireland",
+        "nationality": "Northern Irish"
+      },
+      {
+        "name": "DOHERTY, Joseph Paul",
+        "role": "director",
+        "appointed_on": "2002-09-16",
+        "country_of_residence": "Northern Ireland",
+        "nationality": "Irish"
+      },
+      {
+        "name": "GRANT, Celine",
+        "role": "director",
+        "appointed_on": "2023-06-20",
+        "country_of_residence": "Northern Ireland",
+        "nationality": "Irish"
+      },
+      {
+        "name": "O'PREY, Neil",
+        "role": "director",
+        "appointed_on": "2020-05-19",
+        "country_of_residence": "Northern Ireland",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T17:39:02Z",
+    "total_results": 6,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Regen Waste Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2022-10-01",
+        "identification": {
+          "legal_form": "Ltd",
+          "legal_authority": "The Companies Act 2006",
+          "country_registered": "Northern Ireland",
+          "place_registered": "Companies House",
+          "registration_number": "Ni664032"
+        }
+      },
+      {
+        "name": "Cfr 84 Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2021-12-30",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "Northern Ireland",
+          "place_registered": "Northern Ireland",
+          "registration_number": "Ni664032"
+        }
+      },
+      {
+        "name": "Regen Waste Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2021-10-04",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act",
+          "country_registered": "Northern Ireland",
+          "place_registered": "Northern Ireland Company Register",
+          "registration_number": "Ni064817"
+        }
+      },
+      {
+        "name": "Mr Joseph Paul Doherty",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Irish",
+        "country_of_residence": "Northern Ireland",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Colin Patrick Doherty",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Northern Irish",
+        "country_of_residence": "Northern Ireland",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Aidan Joseph Doherty",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "Northern Ireland",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MzA3OTg0M2FkaXF6a2N4",
+    "date": "2025-09-29",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/UHqbKByw0qLRDZv0XWHkKsKmsBbBVzmLabHkSUez-jU/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/NI044110/filing-history/MzQ4MzA3OTg0M2FkaXF6a2N4"
   }
 }

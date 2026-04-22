@@ -64,9 +64,94 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T15:42:49Z",
+    "company_name": "COMPASS MINERALS UK LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1991-10-16",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-06-30",
+    "accounts_last_made_up": "2025-09-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-19"
+  },
+  "governance": {
+    "api_date": "2026-04-22T15:42:51Z",
+    "total_officers": 38,
+    "active_count": 4,
+    "resigned_count": 34,
+    "active_officers": [
+      {
+        "name": "BRADSHAW, Matthew Robert",
+        "role": "secretary",
+        "appointed_on": "2025-06-01",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BRADSHAW, Matthew Robert",
+        "role": "director",
+        "appointed_on": "2026-02-02",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HEYWOOD, Christopher James",
+        "role": "director",
+        "appointed_on": "2018-09-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SINCLAIR, Gary",
+        "role": "director",
+        "appointed_on": "2018-09-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T15:42:53Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Compass Minerals Uk Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "English Law",
+          "country_registered": "England",
+          "place_registered": "England And Wales",
+          "registration_number": "02654680"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwOTMwNjc5N2FkaXF6a2N4",
+    "date": "2026-03-12",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/F7H9hU3wOeqrIP3EuxbnuAXhAuuI7MN-HkLKvQk_ucw/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02654529/filing-history/MzUwOTMwNjc5N2FkaXF6a2N4"
   }
 }

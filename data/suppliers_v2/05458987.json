@@ -59,9 +59,96 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T17:38:45Z",
+    "company_name": "ERNST & YOUNG LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2005-05-20",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-03-31",
+    "accounts_last_made_up": "2025-06-27",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-14"
+  },
+  "governance": {
+    "api_date": "2026-04-22T17:38:46Z",
+    "total_officers": 19,
+    "active_count": 4,
+    "resigned_count": 15,
+    "active_officers": [
+      {
+        "name": "ABEL, Lynda Julia",
+        "role": "director",
+        "appointed_on": "2013-06-17",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CAMERON, Lisa Gwen",
+        "role": "director",
+        "appointed_on": "2014-01-20",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "COWLING, Christabel Helen",
+        "role": "director",
+        "appointed_on": "2025-03-31",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "MOORE, Simon Dominic",
+        "role": "director",
+        "appointed_on": "2022-01-01",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T17:38:48Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Ernst & Young Llp",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Liability Partnership",
+          "legal_authority": "Limited Liability Partnership Act 2000",
+          "country_registered": "England",
+          "place_registered": "England & Wales",
+          "registration_number": "Oc300001"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwNjA3NTA2MmFkaXF6a2N4",
+    "date": "2026-02-19",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-audit-exemption-subsiduary",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/fPXUgRb2ArW4MSVkGIUWEEzwaeaZxiR4moq1nTi25gg/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/05458987/filing-history/MzUwNjA3NTA2MmFkaXF6a2N4"
   }
 }

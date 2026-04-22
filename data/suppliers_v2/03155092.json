@@ -59,9 +59,96 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T17:23:33Z",
+    "company_name": "POLAR SPEED DISTRIBUTION LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1996-02-05",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-19"
+  },
+  "governance": {
+    "api_date": "2026-04-22T17:23:35Z",
+    "total_officers": 24,
+    "active_count": 4,
+    "resigned_count": 20,
+    "active_officers": [
+      {
+        "name": "COURT, James Mark",
+        "role": "director",
+        "appointed_on": "2023-09-19",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "FATHALLAH, Doaa Abdel",
+        "role": "director",
+        "appointed_on": "2019-03-05",
+        "country_of_residence": "Switzerland",
+        "nationality": "American"
+      },
+      {
+        "name": "JACQUES, William Michael",
+        "role": "director",
+        "appointed_on": "2023-09-19",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      },
+      {
+        "name": "SLEIMAN, Andrew",
+        "role": "director",
+        "appointed_on": "2025-11-01",
+        "country_of_residence": "United Arab Emirates",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T17:23:37Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Ups (Uk Holding) Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "United Kingdom (England And Wales)",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "04958150"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4NzgzNTAyNWFkaXF6a2N4",
+    "date": "2025-11-10",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/nChwIXr07GkCnlMf25cpQqe80v18j0PHVtIQ86EgY9g/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03155092/filing-history/MzQ4NzgzNTAyNWFkaXF6a2N4"
   }
 }

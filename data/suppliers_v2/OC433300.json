@@ -55,9 +55,249 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T16:12:47Z",
+    "company_name": "FORBES SOLICITORS LLP",
+    "company_status": "active",
+    "date_of_creation": "2020-09-10",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-01-31",
+    "accounts_last_made_up": "2025-04-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-09-23"
+  },
+  "governance": {
+    "api_date": "2026-04-22T16:12:48Z",
+    "total_officers": 46,
+    "active_count": 35,
+    "resigned_count": 11,
+    "active_officers": [
+      {
+        "name": "HOLDEN, Jonathan Joseph",
+        "role": "llp-designated-member",
+        "appointed_on": "2021-04-28",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "PENSWICK, Stuart",
+        "role": "llp-designated-member",
+        "appointed_on": "2020-09-10",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "WILD, Pauline",
+        "role": "llp-designated-member",
+        "appointed_on": "2020-09-10",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "BENNETT, John",
+        "role": "llp-member",
+        "appointed_on": "2021-04-28",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "BICKERSTAFFE, Daniel Paul",
+        "role": "llp-member",
+        "appointed_on": "2026-02-28",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "BOOTH, Chris",
+        "role": "llp-member",
+        "appointed_on": "2021-04-28",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "BOWER, Elizabeth",
+        "role": "llp-member",
+        "appointed_on": "2021-04-28",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "BOWER, Robin Murray",
+        "role": "llp-member",
+        "appointed_on": "2021-04-28",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "BOWERS, Kella",
+        "role": "llp-member",
+        "appointed_on": "2021-04-28",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "BROMLEY, Adam James",
+        "role": "llp-member",
+        "appointed_on": "2021-04-28",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "BURBIDGE, Jane Wendy Abigail",
+        "role": "llp-member",
+        "appointed_on": "2021-04-28",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "BURKE, Jenny",
+        "role": "llp-member",
+        "appointed_on": "2024-06-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "CARR, Gill",
+        "role": "llp-member",
+        "appointed_on": "2021-06-18",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "CLITHERO, Richard",
+        "role": "llp-member",
+        "appointed_on": "2021-04-28",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "DAWSON, Steven",
+        "role": "llp-member",
+        "appointed_on": "2021-04-28",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "FARAGHER, Shirley",
+        "role": "llp-member",
+        "appointed_on": "2021-04-28",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "FILMER, David",
+        "role": "llp-member",
+        "appointed_on": "2021-04-28",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "GILGUN, Carrie",
+        "role": "llp-member",
+        "appointed_on": "2023-05-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "GILLESPIE, Alastair John",
+        "role": "llp-member",
+        "appointed_on": "2024-04-22",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "LIVERSIDGE, Craig",
+        "role": "llp-member",
+        "appointed_on": "2021-04-28",
+        "country_of_residence": "England",
+        "nationality": null
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T16:12:50Z",
+    "total_results": 5,
+    "active_count": 3,
+    "items": [
+      {
+        "name": "Mrs Pauline Wild",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control-limited-liability-partnership"
+        ],
+        "notified_on": "2022-06-01",
+        "identification": null
+      },
+      {
+        "name": "Mr Jonathan Joseph Holden",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control-limited-liability-partnership"
+        ],
+        "notified_on": "2022-06-01",
+        "identification": null
+      },
+      {
+        "name": "Mr Daniel King",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control-limited-liability-partnership"
+        ],
+        "notified_on": "2021-04-28",
+        "identification": null
+      },
+      {
+        "name": "Ms Pauline Rigby",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "voting-rights-25-to-50-percent-limited-liability-partnership",
+          "right-to-share-surplus-assets-25-to-50-percent-limited-liability-partnership"
+        ],
+        "notified_on": "2020-09-10",
+        "identification": null
+      },
+      {
+        "name": "Mr Stuart Penswick",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control-limited-liability-partnership"
+        ],
+        "notified_on": "2020-09-10",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5ODEwNzU1OWFkaXF6a2N4",
+    "date": "2026-01-07",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/sFA_lgRylpVuZZtQtLLTeHlwT1R5wFV59tZ_ZRjwK5A/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/OC433300/filing-history/MzQ5ODEwNzU1OWFkaXF6a2N4"
   }
 }

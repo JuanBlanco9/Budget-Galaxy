@@ -59,9 +59,131 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T17:51:40Z",
+    "company_name": "NOTTINGHAM WOMEN'S CENTRE",
+    "company_status": "active",
+    "date_of_creation": "2004-04-27",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-05-11"
+  },
+  "governance": {
+    "api_date": "2026-04-22T17:51:42Z",
+    "total_officers": 74,
+    "active_count": 12,
+    "resigned_count": 62,
+    "active_officers": [
+      {
+        "name": "ALI, Diana",
+        "role": "director",
+        "appointed_on": "2018-06-26",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BLACK, Paula",
+        "role": "director",
+        "appointed_on": "2024-01-10",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BREACH, Laura",
+        "role": "director",
+        "appointed_on": "2021-10-13",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BROOKS, Niamh Elizabeth",
+        "role": "director",
+        "appointed_on": "2025-08-21",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CARPENTER, Kay",
+        "role": "director",
+        "appointed_on": "2025-08-21",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CAULFIELD, Sian Kirsten",
+        "role": "director",
+        "appointed_on": "2024-01-10",
+        "country_of_residence": "England",
+        "nationality": "British,Irish"
+      },
+      {
+        "name": "EDEN, Claire Lucy",
+        "role": "director",
+        "appointed_on": "2024-01-10",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GORDON BROWN, Deborah",
+        "role": "director",
+        "appointed_on": "2018-06-26",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MBGORI, Jean Kanana",
+        "role": "director",
+        "appointed_on": "2025-08-21",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "NAZIR, Shazia",
+        "role": "director",
+        "appointed_on": "2022-10-11",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SOHAL, Davina Kaur",
+        "role": "director",
+        "appointed_on": "2025-08-21",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WESTON, Justine",
+        "role": "director",
+        "appointed_on": "2022-10-11",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T17:51:44Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MzY2NDcyNGFkaXF6a2N4",
+    "date": "2025-07-15",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/CxNN6G45NvkHngP3O0cz6e-9GA4uylgkewdy2msJHbI/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/05113835/filing-history/MzQ3MzY2NDcyNGFkaXF6a2N4"
   }
 }

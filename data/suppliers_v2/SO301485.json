@@ -55,9 +55,187 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T17:56:33Z",
+    "company_name": "ANDERSON STRATHERN LLP",
+    "company_status": "active",
+    "date_of_creation": "2007-08-07",
+    "date_of_cessation": null,
+    "jurisdiction": "scotland",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-08-21"
+  },
+  "governance": {
+    "api_date": "2026-04-22T17:56:36Z",
+    "total_officers": 130,
+    "active_count": 58,
+    "resigned_count": 72,
+    "active_officers": [
+      {
+        "name": "ANDERSON, Gillian Anne",
+        "role": "llp-designated-member",
+        "appointed_on": "2008-04-01",
+        "country_of_residence": "Scotland",
+        "nationality": null
+      },
+      {
+        "name": "BAIRD, Iain Alastair",
+        "role": "llp-designated-member",
+        "appointed_on": "2025-09-01",
+        "country_of_residence": "Scotland",
+        "nationality": null
+      },
+      {
+        "name": "BARCLAY-SMITH, Linsey Jane",
+        "role": "llp-designated-member",
+        "appointed_on": "2021-04-06",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "BROWN, Andrew James William",
+        "role": "llp-designated-member",
+        "appointed_on": "2015-09-01",
+        "country_of_residence": "Scotland",
+        "nationality": null
+      },
+      {
+        "name": "BURTON, Gary John",
+        "role": "llp-designated-member",
+        "appointed_on": "2022-09-01",
+        "country_of_residence": "Scotland",
+        "nationality": null
+      },
+      {
+        "name": "CAMERON, Audrey Clare",
+        "role": "llp-designated-member",
+        "appointed_on": "2011-03-01",
+        "country_of_residence": "Scotland",
+        "nationality": null
+      },
+      {
+        "name": "CAMPBELL, David Haddow",
+        "role": "llp-designated-member",
+        "appointed_on": "2017-05-02",
+        "country_of_residence": "Scotland",
+        "nationality": null
+      },
+      {
+        "name": "CAMPBELL, Martin Stuart",
+        "role": "llp-designated-member",
+        "appointed_on": "2016-09-01",
+        "country_of_residence": "Scotland",
+        "nationality": null
+      },
+      {
+        "name": "CHAPMAN, Anne Margaret",
+        "role": "llp-designated-member",
+        "appointed_on": "2015-09-01",
+        "country_of_residence": "Scotland",
+        "nationality": null
+      },
+      {
+        "name": "COLLINS, Michael",
+        "role": "llp-designated-member",
+        "appointed_on": "2024-03-11",
+        "country_of_residence": "Scotland",
+        "nationality": null
+      },
+      {
+        "name": "CRAIG, Karen Yvonne",
+        "role": "llp-designated-member",
+        "appointed_on": "2024-09-01",
+        "country_of_residence": "Scotland",
+        "nationality": null
+      },
+      {
+        "name": "DEVLIN, Christopher",
+        "role": "llp-designated-member",
+        "appointed_on": "2023-09-01",
+        "country_of_residence": "Scotland",
+        "nationality": null
+      },
+      {
+        "name": "DICKSON, Dawn",
+        "role": "llp-designated-member",
+        "appointed_on": "2023-08-01",
+        "country_of_residence": "Scotland",
+        "nationality": null
+      },
+      {
+        "name": "EDGAR, Claire Danielle",
+        "role": "llp-designated-member",
+        "appointed_on": "2023-09-01",
+        "country_of_residence": "Scotland",
+        "nationality": null
+      },
+      {
+        "name": "EUNSON, Ellen Catherine",
+        "role": "llp-designated-member",
+        "appointed_on": "2026-04-01",
+        "country_of_residence": "Scotland",
+        "nationality": null
+      },
+      {
+        "name": "FARQUHAR, Bruce",
+        "role": "llp-designated-member",
+        "appointed_on": "2007-08-07",
+        "country_of_residence": "Scotland",
+        "nationality": null
+      },
+      {
+        "name": "FLANNIGAN, Scott Charles",
+        "role": "llp-designated-member",
+        "appointed_on": "2025-09-01",
+        "country_of_residence": "Scotland",
+        "nationality": null
+      },
+      {
+        "name": "FRASER, Neil Duncan",
+        "role": "llp-designated-member",
+        "appointed_on": "2023-09-01",
+        "country_of_residence": "Scotland",
+        "nationality": null
+      },
+      {
+        "name": "GEDDES, Fraser Alexander John",
+        "role": "llp-designated-member",
+        "appointed_on": "2010-12-01",
+        "country_of_residence": "Scotland",
+        "nationality": null
+      },
+      {
+        "name": "GRATWICK, Edward Stuart",
+        "role": "llp-designated-member",
+        "appointed_on": "2025-03-03",
+        "country_of_residence": "Scotland",
+        "nationality": null
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T17:56:37Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5Njg4NjI1N2FkaXF6a2N4",
+    "date": "2026-01-07",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/TEYyT4R61eyyinn_bNdTUfnglBz1FTvdi-Fkkt1nTYM/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/SO301485/filing-history/MzQ5Njg4NjI1N2FkaXF6a2N4"
   }
 }

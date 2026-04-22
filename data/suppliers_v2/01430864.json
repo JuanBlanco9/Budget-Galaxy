@@ -59,9 +59,87 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T17:39:32Z",
+    "company_name": "SECA LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1979-06-19",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-09-30",
+    "accounts_last_made_up": "2025-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-20"
+  },
+  "governance": {
+    "api_date": "2026-04-22T17:39:34Z",
+    "total_officers": 7,
+    "active_count": 3,
+    "resigned_count": 4,
+    "active_officers": [
+      {
+        "name": "FORD, Simon",
+        "role": "director",
+        "appointed_on": "2019-07-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "VOGEL, Frederik, Herr",
+        "role": "director",
+        "appointed_on": "2015-12-31",
+        "country_of_residence": "Germany",
+        "nationality": "German"
+      },
+      {
+        "name": "VOGEL, Robert, Herr",
+        "role": "director",
+        "appointed_on": "2015-12-31",
+        "country_of_residence": "Germany",
+        "nationality": "German"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T17:39:35Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Seca Gmbh",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-07-01",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "The Company Act In Germany",
+          "country_registered": "Germany",
+          "place_registered": "Handelsregister",
+          "registration_number": "Hrb26836 Hamburg"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxNDMyNDYwM2FkaXF6a2N4",
+    "date": "2026-04-13",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/By76Ny3S3BK9CnX3b2ZRYnUC_PZ7rcLwMgJGqZAol_E/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01430864/filing-history/MzUxNDMyNDYwM2FkaXF6a2N4"
   }
 }

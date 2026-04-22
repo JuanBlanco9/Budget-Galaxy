@@ -59,9 +59,101 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T16:20:27Z",
+    "company_name": "ORANKA FRUIT JUICES  LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2002-09-30",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-09-30",
+    "accounts_last_made_up": "2025-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-14"
+  },
+  "governance": {
+    "api_date": "2026-04-22T16:20:28Z",
+    "total_officers": 7,
+    "active_count": 3,
+    "resigned_count": 4,
+    "active_officers": [
+      {
+        "name": "BRANDRIET LEMMEN, Bea",
+        "role": "secretary",
+        "appointed_on": "2003-12-01",
+        "country_of_residence": null,
+        "nationality": "Dutch"
+      },
+      {
+        "name": "BRANDRIET, Marco Johan Jakobus",
+        "role": "director",
+        "appointed_on": "2003-12-01",
+        "country_of_residence": "Netherlands",
+        "nationality": "Dutch"
+      },
+      {
+        "name": "SMITH, Troy",
+        "role": "director",
+        "appointed_on": "2010-11-26",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T16:20:30Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Marco Johan Jakobus Brandriet",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Dutch",
+        "country_of_residence": "Netherlands",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2024-06-12",
+        "identification": null
+      },
+      {
+        "name": "Mjj Brandriet Holding Bv",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Bv",
+          "legal_authority": "Dutch Law",
+          "country_registered": "Netherlands",
+          "place_registered": "Kamer Van Koophandel Voor Veluwe En Twente",
+          "registration_number": "08120523"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwNzMxNTg4NGFkaXF6a2N4",
+    "date": "2026-02-26",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/lIL2RlSX3vVNnhUwd74jhXT1Cyzs3NXqh3UU9oGmkF8/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04549022/filing-history/MzUwNzMxNTg4NGFkaXF6a2N4"
   }
 }

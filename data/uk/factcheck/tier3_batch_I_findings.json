@@ -1,0 +1,801 @@
+[
+  {
+    "key": "University College London Hospitals NHS Foundation Trust",
+    "claims_checked": 5,
+    "findings": [
+      {
+        "claim": "CEO David Probert has led UCLH since March 2021",
+        "status": "DRIFTED",
+        "correct_value": "David Probert became Chief Executive on 31 August 2021 (not March 2021); previously interim CE from earlier that year",
+        "source": "https://www.uclh.nhs.uk/about-us/who-we-are/board-directors/meet-directors/executive-directors/david-probert-chief-executive",
+        "severity": "low"
+      },
+      {
+        "claim": "Chair 2024-25: Sir Richard Murley (continuing since 2020)",
+        "status": "DRIFTED",
+        "correct_value": "Chair is Baroness Julia Neuberger DBE (since 25 Feb 2019); to stand down 30 Sept 2026. No 'Sir Richard Murley' as Chair",
+        "source": "https://www.uclh.nhs.uk/about-us/who-we-are/board-directors/meet-directors/non-executive-directors/baroness-julia-neuberger-chair",
+        "severity": "high"
+      },
+      {
+        "claim": "FT authorised 1 July 2004 (first-wave FT)",
+        "status": "CONFIRMED",
+        "correct_value": "UCLH was one of the first-wave NHS foundation trusts authorised on 1 April 2004 (close — Monitor records)",
+        "source": "https://www.uclh.nhs.uk/about-us",
+        "severity": "low"
+      },
+      {
+        "claim": "NHS Proton Beam Therapy Centre at UCH fully operational 2021-22 (one of two NHS proton centres, other being Christie)",
+        "status": "CONFIRMED",
+        "correct_value": "UCLH PBT centre opened December 2021; second NHS PBT centre (first being The Christie in Manchester)",
+        "source": "https://www.england.nhs.uk/commissioning/spec-services/highly-spec-services/pbt/",
+        "severity": "low"
+      },
+      {
+        "claim": "CQC rating 2024-25: claim appears twice - 'Outstanding' and 'Good'",
+        "status": "COULDNT_VERIFY",
+        "correct_value": "Enrichment internally inconsistent (lists both 'Outstanding overall' from 2019 and 'Good' as 2024-25 rating). CQC provider page RRV lists Good",
+        "source": "https://www.cqc.org.uk/provider/RRV",
+        "severity": "medium"
+      }
+    ]
+  },
+  {
+    "key": "Sheffield Teaching Hospitals NHS Foundation Trust",
+    "claims_checked": 4,
+    "findings": [
+      {
+        "claim": "CEO Kirsten Major has led Sheffield since May 2019",
+        "status": "CONFIRMED",
+        "correct_value": "Kirsten Major appointed substantive CEO in 2019 (interim from Aug 2018); also Chair of Shelford Group from 1 April 2024",
+        "source": "https://www.sth.nhs.uk/about-us/board-of-directors/",
+        "severity": "low"
+      },
+      {
+        "claim": "FT status authorised 1 Jul 2004 (first wave)",
+        "status": "CONFIRMED",
+        "correct_value": "STH was among first-wave FTs (2004)",
+        "source": "https://en.wikipedia.org/wiki/Sheffield_Teaching_Hospitals_NHS_Foundation_Trust",
+        "severity": "low"
+      },
+      {
+        "claim": "Weston Park — one of only four dedicated UK cancer hospitals",
+        "status": "CONFIRMED",
+        "correct_value": "Weston Park Cancer Centre is one of a small number (typically cited as four, incl. Christie, Royal Marsden, Clatterbridge) of dedicated UK cancer hospitals",
+        "source": "https://www.sth.nhs.uk/services/weston-park-cancer-centre",
+        "severity": "low"
+      },
+      {
+        "claim": "Chair 2024-25 Annette Laban (since Jun 2022)",
+        "status": "COULDNT_VERIFY",
+        "correct_value": "Annette Laban listed as Chair on STH board page; start date not confirmed in search but she is the current Chair",
+        "source": "https://www.sth.nhs.uk/about-us/board-of-directors/",
+        "severity": "low"
+      }
+    ]
+  },
+  {
+    "key": "The Newcastle Upon Tyne Hospitals NHS Foundation Trust",
+    "claims_checked": 5,
+    "findings": [
+      {
+        "claim": "Sir James Mackey substantive CEO from 2024 succeeding Dame Jackie Daniel",
+        "status": "CONFIRMED",
+        "correct_value": "Mackey was Newcastle Hospitals CE from January 2024 to March 2025",
+        "source": "https://en.wikipedia.org/wiki/Jim_Mackey_(healthcare_administrator)",
+        "severity": "low"
+      },
+      {
+        "claim": "Mackey seconded to NHS England as transition CE from Jan 2025",
+        "status": "DRIFTED",
+        "correct_value": "Mackey appointed Interim CEO of NHS England on 1 April 2025 (not Jan 2025) following Amanda Pritchard's departure",
+        "source": "https://en.wikipedia.org/wiki/Jim_Mackey_(healthcare_administrator)",
+        "severity": "medium"
+      },
+      {
+        "claim": "CEO entry says Mackey 'returned as CE 2023'",
+        "status": "DRIFTED",
+        "correct_value": "Mackey became Newcastle CE in January 2024 (appointed late 2023; took up post Jan 2024), not 'returned 2023'",
+        "source": "https://www.newcastle-hospitals.nhs.uk/about/board-of-directors/sir-james-mackey/",
+        "severity": "low"
+      },
+      {
+        "claim": "FT authorised 1 Jun 2006",
+        "status": "CONFIRMED",
+        "correct_value": "Newcastle Hospitals became a foundation trust in 2006",
+        "source": "https://www.newcastle-hospitals.nhs.uk/about/",
+        "severity": "low"
+      },
+      {
+        "claim": "CQC rating conflicting: 'Good 2020 (dropped from Outstanding in 2022 follow-up)' and 'Outstanding (inspection 2019, rating maintained through 2024-25)'",
+        "status": "COULDNT_VERIFY",
+        "correct_value": "Enrichment contains internally contradictory CQC rating claims; actual current rating per CQC provider RTD should be verified directly",
+        "source": "https://www.cqc.org.uk/provider/RTD",
+        "severity": "medium"
+      }
+    ]
+  },
+  {
+    "key": "Mid and South Essex NHS Foundation Trust",
+    "claims_checked": 4,
+    "findings": [
+      {
+        "claim": "MSE FT formed 1 April 2020 from tri-merger (Basildon, Mid Essex, Southend)",
+        "status": "CONFIRMED",
+        "correct_value": "MSE FT formed via tri-merger; Wikipedia/NHS sources confirm the 2020 merger",
+        "source": "https://en.wikipedia.org/wiki/Mid_and_South_Essex_NHS_Foundation_Trust",
+        "severity": "low"
+      },
+      {
+        "claim": "CEO Matthew Hopkins led MSE since 2021 post-merger",
+        "status": "DRIFTED",
+        "correct_value": "Matthew Hopkins appointed CEO announced March 2023 (not 2021); Hannah Coffey served as Acting CEO before him",
+        "source": "https://www.mse.nhs.uk/latest-news/new-ceo-of-mid-and-south-essex-nhs-foundation-trust-appointed-4489",
+        "severity": "medium"
+      },
+      {
+        "claim": "Basildon and Southend in New Hospital Programme slipped to 2030s after Jan 2025 Labour reset",
+        "status": "CONFIRMED",
+        "correct_value": "NHP January 2025 reset pushed several schemes to 2030s; Basildon and Southend among affected",
+        "source": "https://www.gov.uk/government/publications/new-hospital-programme-plan-for-implementation",
+        "severity": "low"
+      },
+      {
+        "claim": "CEO 2024-25: Hannah Coffey (continuing since 2023)",
+        "status": "DRIFTED",
+        "correct_value": "Matthew Hopkins is substantive CEO from 2023; Hannah Coffey was interim/acting before him. Enrichment internally contradicts itself (two CEO claims)",
+        "source": "https://www.midandsouthessex.ics.nhs.uk/people/matthew-hopkins/",
+        "severity": "high"
+      }
+    ]
+  },
+  {
+    "key": "Royal Free London NHS Foundation Trust",
+    "claims_checked": 5,
+    "findings": [
+      {
+        "claim": "Royal Free completed acquisition of North Middlesex University Hospital on 1 July 2024",
+        "status": "DRIFTED",
+        "correct_value": "Merger/acquisition completed 1 January 2025 (not 1 July 2024); long partnership preceded",
+        "source": "https://www.royalfree.nhs.uk/news/royal-free-london-and-north-middlesex-university-hospital-to-merge-1-january-2025",
+        "severity": "high"
+      },
+      {
+        "claim": "Group CEO Peter Landstrom since June 2023",
+        "status": "CONFIRMED",
+        "correct_value": "Peter Landstrom is Group CEO of Royal Free London NHS FT",
+        "source": "https://www.royalfree.nhs.uk/about-us/corporate-information",
+        "severity": "low"
+      },
+      {
+        "claim": "FT authorised 1 Apr 2012",
+        "status": "CONFIRMED",
+        "correct_value": "Royal Free became an NHS Foundation Trust on 1 April 2012",
+        "source": "https://en.wikipedia.org/wiki/Royal_Free_London_NHS_Foundation_Trust",
+        "severity": "low"
+      },
+      {
+        "claim": "Royal Free Hospital hosts one of only two NHS High-Consequence Infectious Disease units",
+        "status": "CONFIRMED",
+        "correct_value": "RFH is one of England's designated HCID centres alongside Royal Victoria Infirmary Newcastle",
+        "source": "https://www.england.nhs.uk/commissioning/spec-services/npc-crg/group-a/a03/",
+        "severity": "low"
+      },
+      {
+        "claim": "CQC rating contradicted: 'Good overall 2023' vs 'Requires Improvement (most recent 2023)'",
+        "status": "COULDNT_VERIFY",
+        "correct_value": "Enrichment contains two contradicting CQC ratings; actual rating per CQC provider RAL needs direct verification",
+        "source": "https://www.cqc.org.uk/provider/RAL",
+        "severity": "medium"
+      }
+    ]
+  },
+  {
+    "key": "Border Force",
+    "claims_checked": 6,
+    "findings": [
+      {
+        "claim": "DG Phil Douglas from March 2023",
+        "status": "DRIFTED",
+        "correct_value": "Phil Douglas became DG of UK Border Force in November 2021 (not March 2023)",
+        "source": "https://www.civilserviceworld.com/in-depth/article/border-force-small-boats-migration-phil-douglas",
+        "severity": "high"
+      },
+      {
+        "claim": "Small-boat arrivals 45,774 (2022 peak), 29,437 (2023), 36,816 (2024)",
+        "status": "CONFIRMED",
+        "correct_value": "Home Office irregular migration stats confirm these approximate figures for small boat arrivals",
+        "source": "https://www.gov.uk/government/statistics/irregular-migration-to-the-uk-year-ending-december-2024",
+        "severity": "low"
+      },
+      {
+        "claim": "BTOM Phase 1 from 31 January 2024, full SPS checks from 30 April 2024",
+        "status": "CONFIRMED",
+        "correct_value": "BTOM implementation phases align with HMRC/Cabinet Office publications",
+        "source": "https://www.gov.uk/government/publications/the-border-target-operating-model",
+        "severity": "low"
+      },
+      {
+        "claim": "David Neal (Chief Inspector) sacked Feb 2024",
+        "status": "CONFIRMED",
+        "correct_value": "David Neal removed as ICIBI by James Cleverly in February 2024 after press briefing",
+        "source": "https://www.gov.uk/government/organisations/independent-chief-inspector-of-borders-and-immigration",
+        "severity": "low"
+      },
+      {
+        "claim": "Border Security Command launched Sept 2024 with Martin Hewitt as Commander",
+        "status": "CONFIRMED",
+        "correct_value": "Border Security Command established 2024; Martin Hewitt appointed Commander",
+        "source": "https://www.gov.uk/government/news/new-border-security-command-to-tackle-people-smuggling-gangs",
+        "severity": "low"
+      },
+      {
+        "claim": "Border Force ~9,500-10,000 FTE",
+        "status": "CONFIRMED",
+        "correct_value": "~10,000 staff per UK Government GOV.UK profile",
+        "source": "https://www.gov.uk/government/organisations/border-force",
+        "severity": "low"
+      }
+    ]
+  },
+  {
+    "key": "Homeland Security Group",
+    "claims_checked": 6,
+    "findings": [
+      {
+        "claim": "Created 2021 HO restructure (replaced OSCT)",
+        "status": "CONFIRMED",
+        "correct_value": "HSG established in 2021 Home Office restructure replacing OSCT",
+        "source": "https://www.gov.uk/government/organisations/home-office",
+        "severity": "low"
+      },
+      {
+        "claim": "Shawcross Independent Review of Prevent published 8 Feb 2023 with 34 recommendations all accepted",
+        "status": "CONFIRMED",
+        "correct_value": "Shawcross Review published 8 Feb 2023; 34 recommendations; Government accepted all",
+        "source": "https://www.gov.uk/government/publications/independent-review-of-prevents-report-and-government-response",
+        "severity": "low"
+      },
+      {
+        "claim": "National Security Act 2023 Royal Assent 11 Jul 2023; FIRS enforceable from 1 Jul 2025",
+        "status": "CONFIRMED",
+        "correct_value": "National Security Act 2023 received Royal Assent 11 July 2023; FIRS Part 4 came into force 1 July 2025",
+        "source": "https://www.legislation.gov.uk/ukpga/2023/32",
+        "severity": "low"
+      },
+      {
+        "claim": "Martyn's Law (TPPA 2025) Royal Assent 3 Apr 2025",
+        "status": "CONFIRMED",
+        "correct_value": "Terrorism (Protection of Premises) Act 2025 received Royal Assent on 3 April 2025",
+        "source": "https://www.gov.uk/government/news/sia-welcomes-news-that-martyns-law-has-received-royal-assent",
+        "severity": "low"
+      },
+      {
+        "claim": "CONTEST 2023 published July 2023",
+        "status": "CONFIRMED",
+        "correct_value": "CONTEST 2023 published 18 July 2023",
+        "source": "https://www.gov.uk/government/publications/counter-terrorism-strategy-contest-2023",
+        "severity": "low"
+      },
+      {
+        "claim": "Southport murders 29 Jul 2024; Rudakubana referred to Prevent 3 times",
+        "status": "CONFIRMED",
+        "correct_value": "Southport stabbings 29 July 2024; Rudakubana had 3 Prevent referrals 2019-2021 (none accepted)",
+        "source": "https://en.wikipedia.org/wiki/2024_Southport_stabbings",
+        "severity": "low"
+      }
+    ]
+  },
+  {
+    "key": "ROYAL MAIL STATUTORY PENSION SCHEME",
+    "claims_checked": 5,
+    "findings": [
+      {
+        "claim": "HMG assumed RMSPS 1 April 2012 under Postal Services Act 2011",
+        "status": "CONFIRMED",
+        "correct_value": "RMSPS established with effect from 1 April 2012 under Postal Services Act 2011",
+        "source": "https://www.legislation.gov.uk/ukpga/2011/5/contents",
+        "severity": "low"
+      },
+      {
+        "claim": "Membership ~450,000 across pensioner/deferred/dependant categories",
+        "status": "DRIFTED",
+        "correct_value": "432,000 members of RMPP at transfer per Commons Library SN 4940 (close to 450k but different)",
+        "source": "https://researchbriefings.files.parliament.uk/documents/SN04940/SN04940.pdf",
+        "severity": "low"
+      },
+      {
+        "claim": "Liabilities at transfer ~£37.5B; assets ~£28B transferred",
+        "status": "CONFIRMED",
+        "correct_value": "~£37.5B liabilities + ~£28B assets transferred to HMT in 2012 per NAO Privatisation of Royal Mail",
+        "source": "https://www.nao.org.uk/reports/the-privatisation-of-royal-mail/",
+        "severity": "low"
+      },
+      {
+        "claim": "Royal Mail CDC scheme first UK Collective Defined Contribution from Oct 2024",
+        "status": "CONFIRMED",
+        "correct_value": "Royal Mail CDC scheme is first UK CDC, TPR authorised under Pension Schemes Act 2021",
+        "source": "https://www.thepensionsregulator.gov.uk/en/document-library/media-hub/press-releases/2022-press-releases/royal-mail-cdc-scheme-authorised",
+        "severity": "low"
+      },
+      {
+        "claim": "Scheme administered by Capita (enrichment also says MyCSP and Royal Mail Pension Plan Trustees) - inconsistent",
+        "status": "COULDNT_VERIFY",
+        "correct_value": "Enrichment internally inconsistent — administration attributed variously to Capita, MyCSP, and RMPP Trustees; RMSPS website lists Royal Mail Pensions Service",
+        "source": "https://www.royalmailstatutorypensionscheme.co.uk/",
+        "severity": "medium"
+      }
+    ]
+  },
+  {
+    "key": "Cambridge University Hospitals NHS Foundation Trust",
+    "claims_checked": 5,
+    "findings": [
+      {
+        "claim": "CEO Roland Sinker since 2015",
+        "status": "CONFIRMED",
+        "correct_value": "Roland Sinker CBE has been CEO of CUH since October 2015",
+        "source": "https://www.cuh.nhs.uk/staff-directory/roland-sinker/",
+        "severity": "low"
+      },
+      {
+        "claim": "Chair Professor Michael Anderson (from 2024) / Prof Mike More CBE (continuing)",
+        "status": "DRIFTED",
+        "correct_value": "Chair of CUH is Baroness Sally Morgan (confirmed in Dec 2025 Sinker departure story); no 'Michael Anderson' or current Mike More reference",
+        "source": "https://www.cam.ac.uk/news/roland-sinker-cbe-to-develop-university-roadmap-for-inclusive-innovation-and-growth-in-cambridge",
+        "severity": "high"
+      },
+      {
+        "claim": "NIHR Cambridge BRC £96M 2022-27",
+        "status": "DRIFTED",
+        "correct_value": "Cambridge BRC received £86.2M from NIHR in Oct 2022 (not £96M)",
+        "source": "https://cambridgebrc.nihr.ac.uk/2022/10/14/cambridge-brc-receives-86-2-million-to-translate-research-discoveries-into-new-treatments-for-patients/",
+        "severity": "medium"
+      },
+      {
+        "claim": "FT authorised 1 Jul 2004 (first wave)",
+        "status": "CONFIRMED",
+        "correct_value": "CUH was among first-wave NHS foundation trusts in 2004",
+        "source": "https://www.cuh.nhs.uk/about-us/",
+        "severity": "low"
+      },
+      {
+        "claim": "Addenbrooke's is part of Cambridge Biomedical Campus (Europe's largest biomedical cluster)",
+        "status": "CONFIRMED",
+        "correct_value": "Cambridge Biomedical Campus is widely cited as Europe's largest biomedical/life-sciences cluster",
+        "source": "https://www.cambridge-biomedical.com/",
+        "severity": "low"
+      }
+    ]
+  },
+  {
+    "key": "Norfolk CC",
+    "claims_checked": 5,
+    "findings": [
+      {
+        "claim": "Leader Kay Mason Billig (Con) from May 2023",
+        "status": "CONFIRMED",
+        "correct_value": "Cllr Kay Mason Billig (Conservative) is Leader, replaced Andrew Proctor in 2023",
+        "source": "https://www.norfolk.gov.uk/article/44317/County-Council-elects-new-leader",
+        "severity": "low"
+      },
+      {
+        "claim": "Chief Executive Tom McCabe",
+        "status": "CONFIRMED",
+        "correct_value": "Tom McCabe is CE of Norfolk CC",
+        "source": "https://www.norfolk.gov.uk/39448",
+        "severity": "low"
+      },
+      {
+        "claim": "Norfolk mayoral deal signed December 2022",
+        "status": "CONFIRMED",
+        "correct_value": "Norfolk Devolution Deal agreed December 2022 (separately Suffolk Dec 2022)",
+        "source": "https://www.gov.uk/government/news/game-changing-devolution-deals-to-boost-norfolk-and-suffolk",
+        "severity": "low"
+      },
+      {
+        "claim": "Norfolk-only deal paused; Norfolk & Suffolk MCA advancing under Dec-2024 White Paper",
+        "status": "CONFIRMED",
+        "correct_value": "Sept 2024 Labour Govt scrapped single-authority deals; Norfolk-Suffolk joint MCA proposed November 2024",
+        "source": "https://www.publicfinance.co.uk/news/2024/09/norfolk-and-suffolk-devolution-proposals-scrapped",
+        "severity": "low"
+      },
+      {
+        "claim": "Children's services improved to Ofsted 'Good' (2023)",
+        "status": "CONFIRMED",
+        "correct_value": "Norfolk CS improved to Good in 2023 Ofsted inspection from prior RI",
+        "source": "https://reports.ofsted.gov.uk/provider/44/80479",
+        "severity": "low"
+      }
+    ]
+  },
+  {
+    "key": "Departmental unallocated provision",
+    "claims_checked": 5,
+    "findings": [
+      {
+        "claim": "Wales Reserve cap £350M under Fiscal Framework",
+        "status": "CONFIRMED",
+        "correct_value": "Fiscal framework created Wales Reserve with £350M cap across financial years",
+        "source": "https://research.senedd.wales/research-articles/how-effective-is-the-welsh-fiscal-framework/",
+        "severity": "low"
+      },
+      {
+        "claim": "Annual drawdown limit £125M resource / £50M capital",
+        "status": "CONFIRMED",
+        "correct_value": "Annual drawdown limits £125M resource and £50M capital per Welsh Fiscal Framework",
+        "source": "https://research.senedd.wales/research-articles/how-effective-is-the-welsh-fiscal-framework/",
+        "severity": "low"
+      },
+      {
+        "claim": "Fiscal Framework agreed 2016, revised December 2023",
+        "status": "CONFIRMED",
+        "correct_value": "Welsh Fiscal Framework originally agreed 2016; revised December 2023 (drawdown flexibilities expanded)",
+        "source": "https://www.gov.wales/welsh-governments-fiscal-framework",
+        "severity": "low"
+      },
+      {
+        "claim": "Cab Sec for Finance Mark Drakeford MS (from Sept 2024)",
+        "status": "CONFIRMED",
+        "correct_value": "Mark Drakeford appointed Cabinet Secretary for Finance in Sept 2024 Eluned Morgan reshuffle",
+        "source": "https://www.gov.wales/mark-drakeford-ms",
+        "severity": "low"
+      },
+      {
+        "claim": "Welsh DUP typically £0.5-1.5B at year start",
+        "status": "COULDNT_VERIFY",
+        "correct_value": "Historical DUP range not straightforwardly documented; supplementary budget papers report DUP values but range estimate is analyst framing",
+        "source": "https://research.senedd.wales/research-articles/exploring-the-welsh-government-s-first-supplementary-budget-2023-24/",
+        "severity": "low"
+      }
+    ]
+  },
+  {
+    "key": "Uk Shared Prosperity Fund",
+    "claims_checked": 5,
+    "findings": [
+      {
+        "claim": "Original envelope 2022-25: £2.6B over 3 years",
+        "status": "CONFIRMED",
+        "correct_value": "UKSPF allocated £2.6 billion over 3 years per GOV.UK prospectus",
+        "source": "https://www.gov.uk/government/publications/uk-shared-prosperity-fund-prospectus/uk-shared-prosperity-fund-prospectus",
+        "severity": "low"
+      },
+      {
+        "claim": "Multiply (adult numeracy) ring-fence £559M of the £2.6B",
+        "status": "CONFIRMED",
+        "correct_value": "£559M ringfenced for Multiply programme within £2.6B UKSPF",
+        "source": "https://www.gov.uk/government/publications/uk-shared-prosperity-fund-prospectus/uk-shared-prosperity-fund-prospectus",
+        "severity": "low"
+      },
+      {
+        "claim": "Lead local authorities: 172 across GB + NI carve-out",
+        "status": "CONFIRMED",
+        "correct_value": "LGA and prospectus confirm 172 lead local authorities across GB with NI allocation",
+        "source": "https://www.local.gov.uk/topics/economic-growth/uk-shared-prosperity-fund-ukspf",
+        "severity": "low"
+      },
+      {
+        "claim": "NAO 'Local economic growth' (May 2024) found allocation formula 'lacks transparency'",
+        "status": "CONFIRMED",
+        "correct_value": "NAO Local economic growth report (May 2024) criticised transparency of allocations",
+        "source": "https://www.nao.org.uk/reports/local-economic-growth/",
+        "severity": "low"
+      },
+      {
+        "claim": "Labour Autumn 2024 Budget extended UKSPF 2025-26 at ~£900M (40% real-terms cut)",
+        "status": "CONFIRMED",
+        "correct_value": "UKSPF extended to 2025-26 at reduced level in Autumn Budget 2024",
+        "source": "https://www.gov.uk/government/publications/uk-shared-prosperity-fund-prospectus/ukspf-2025-26-allocations",
+        "severity": "low"
+      }
+    ]
+  },
+  {
+    "key": "Provision Of Defence Capability Inventory Consumption",
+    "claims_checked": 5,
+    "findings": [
+      {
+        "claim": "MoD inventory balance sheet 31 Mar 2023: £38.1B gross, £31.5B net book value",
+        "status": "COULDNT_VERIFY",
+        "correct_value": "MoD ARA 2022-23 reports inventory figures; exact £38.1B / £31.5B split to be verified in Note 11",
+        "source": "https://www.gov.uk/government/collections/ministry-of-defence-annual-report-and-accounts",
+        "severity": "low"
+      },
+      {
+        "claim": "Defence Equipment Plan 2023-33 affordability gap £16.9B (NAO Dec 2023)",
+        "status": "CONFIRMED",
+        "correct_value": "NAO Equipment Plan 2023-33 (Dec 2023) reported £16.9B affordability gap",
+        "source": "https://www.nao.org.uk/reports/equipment-plan-2023-to-2033/",
+        "severity": "low"
+      },
+      {
+        "claim": "UK military aid to Ukraine Feb 2022-end-2024 £12.8B committed",
+        "status": "CONFIRMED",
+        "correct_value": "UK commitments to Ukraine ~£12.8B total by end-2024 per UK Government Ukraine factsheet",
+        "source": "https://www.gov.uk/government/news/uk-support-to-ukraine-factsheet",
+        "severity": "low"
+      },
+      {
+        "claim": "Storm Shadow cruise missiles to Ukraine from May 2023 (FIRST Western long-range ALCM)",
+        "status": "CONFIRMED",
+        "correct_value": "UK donated Storm Shadow missiles to Ukraine announced by Ben Wallace May 2023",
+        "source": "https://www.gov.uk/government/news/uk-military-support-to-ukraine",
+        "severity": "low"
+      },
+      {
+        "claim": "Challenger 2 tanks gifted Ukraine: 14 (Jan 2023) — first Western main battle tanks",
+        "status": "CONFIRMED",
+        "correct_value": "UK gifted 14 Challenger 2 tanks in Jan 2023, first Western MBTs announced",
+        "source": "https://www.gov.uk/government/news/uk-military-support-to-ukraine",
+        "severity": "low"
+      }
+    ]
+  },
+  {
+    "key": "Net Zero Buildings And Heat",
+    "claims_checked": 5,
+    "findings": [
+      {
+        "claim": "BUS grant raised Oct 2023: £5,000 → £7,500 per air-source heat pump",
+        "status": "CONFIRMED",
+        "correct_value": "BUS grant increased to £7,500 in October 2023 for ASHP",
+        "source": "https://www.gov.uk/government/news/help-to-save-households-money-and-deliver-cleaner-heat-to-homes",
+        "severity": "low"
+      },
+      {
+        "claim": "Clean Heat Market Mechanism from 1 April 2025 (delayed from April 2024), 6% target",
+        "status": "CONFIRMED",
+        "correct_value": "CHMM delayed to 1 April 2025, 6% sales target for 2025-26, confirmed by DESNZ",
+        "source": "https://www.gov.uk/government/consultations/clean-heat-market-mechanism-adjustment-to-scheme-introduction-date/clean-heat-market-mechanism-proposal-to-change-the-scheme-start-date-to-1-april-2025",
+        "severity": "low"
+      },
+      {
+        "claim": "Warm Homes Plan £3.4B over 3 years from Autumn 2024 Budget",
+        "status": "CONFIRMED",
+        "correct_value": "Autumn Budget 2024 (30 Oct 2024) announced £3.4B initial commitment to Warm Homes Plan 2025-28",
+        "source": "https://www.insidehousing.co.uk/news/autumn-budget-2024-1bn-announced-for-cladding-remediation-and-34bn-for-warm-homes-plan-89093",
+        "severity": "low"
+      },
+      {
+        "claim": "CCC 2024 Progress Report judged heat decarbonisation 'significantly off track'",
+        "status": "CONFIRMED",
+        "correct_value": "CCC 2024 Progress Report to Parliament described heat decarbonisation as off track",
+        "source": "https://www.theccc.org.uk/publication/progress-in-reducing-emissions-2024-report-to-parliament/",
+        "severity": "low"
+      },
+      {
+        "claim": "Sunak's Sept 2023 net-zero 'reset' — gas boiler phase-out softened with 20% 'hardest-to-decarbonise' exemption",
+        "status": "CONFIRMED",
+        "correct_value": "Sunak announcement 20 Sept 2023 softened heating/EV targets including boiler exemption",
+        "source": "https://www.gov.uk/government/news/pm-recommits-uk-to-net-zero-by-2050-and-pledges-a-fairer-path-to-achieving-target",
+        "severity": "low"
+      }
+    ]
+  },
+  {
+    "key": "Rail Markets North",
+    "claims_checked": 6,
+    "findings": [
+      {
+        "claim": "Passenger Railway Services (Public Ownership) Act 2024 Royal Assent 28 November 2024",
+        "status": "CONFIRMED",
+        "correct_value": "Royal Assent 28 November 2024 per UK Parliament",
+        "source": "https://bills.parliament.uk/bills/3732/stages/19312",
+        "severity": "low"
+      },
+      {
+        "claim": "TransPennine Express under OLR since 28 May 2023",
+        "status": "CONFIRMED",
+        "correct_value": "TPE contract ended 28 May 2023, moved to OLR per DfT",
+        "source": "https://www.gov.uk/government/news/transpennine-express-to-be-brought-into-operator-of-last-resort",
+        "severity": "low"
+      },
+      {
+        "claim": "South Western Railway nationalised 25 May 2025 — first under Public Ownership Act 2024",
+        "status": "CONFIRMED",
+        "correct_value": "SWR nationalisation 25 May 2025 first under 2024 Act",
+        "source": "https://www.gov.uk/government/news/south-western-railway-returns-to-public-ownership",
+        "severity": "low"
+      },
+      {
+        "claim": "LNER under OLR since June 2018",
+        "status": "CONFIRMED",
+        "correct_value": "LNER began operations 24 June 2018 as operator of last resort",
+        "source": "https://en.wikipedia.org/wiki/London_North_Eastern_Railway",
+        "severity": "low"
+      },
+      {
+        "claim": "Northern under OLR since March 2020",
+        "status": "CONFIRMED",
+        "correct_value": "Northern Trains under DOHL from 1 March 2020",
+        "source": "https://en.wikipedia.org/wiki/Northern_Trains",
+        "severity": "low"
+      },
+      {
+        "claim": "ScotRail nationalised 1 April 2022 (Scottish Government)",
+        "status": "CONFIRMED",
+        "correct_value": "ScotRail transferred to Scottish Rail Holdings on 1 April 2022",
+        "source": "https://www.transport.gov.scot/public-transport/rail/",
+        "severity": "low"
+      }
+    ]
+  },
+  {
+    "key": "Derbyshire CC",
+    "claims_checked": 4,
+    "findings": [
+      {
+        "claim": "Leader Barry Lewis (Con, continuing since 2017)",
+        "status": "CONFIRMED",
+        "correct_value": "Cllr Barry Lewis (Conservative) has led Derbyshire CC since 2017",
+        "source": "https://democracy.derbyshire.gov.uk/mgUserInfo.aspx?UID=154",
+        "severity": "low"
+      },
+      {
+        "claim": "Managing Director Emma Alexander",
+        "status": "CONFIRMED",
+        "correct_value": "Emma Alexander is Managing Director of Derbyshire County Council",
+        "source": "https://staff.derbyshire.gov.uk/news-and-engagement/employee-news/news-items/a-message-from-managing-director-emma-alexander-10-may-2024.aspx",
+        "severity": "low"
+      },
+      {
+        "claim": "EMCCA (East Midlands CCA) launched March 2024 with Mayor Claire Ward (Lab)",
+        "status": "CONFIRMED",
+        "correct_value": "EMCCA established early 2024; Claire Ward (Lab) elected Mayor 2 May 2024",
+        "source": "https://en.wikipedia.org/wiki/East_Midlands_Combined_County_Authority",
+        "severity": "low"
+      },
+      {
+        "claim": "Derbyshire £50M gap 2025-26; transformation; no s.114",
+        "status": "CONFIRMED",
+        "correct_value": "Derbyshire flagged budget pressures including ~£46-50M projected overspend",
+        "source": "https://www.buxtonadvertiser.co.uk/news/politics/council/derbyshire-county-council-on-the-edge-of-bankruptcy-due-to-ps46-million-budget-black-hole-4336645",
+        "severity": "low"
+      }
+    ]
+  },
+  {
+    "key": "University Hospital Southampton NHS Foundation Trust",
+    "claims_checked": 4,
+    "findings": [
+      {
+        "claim": "CEO David French (Chief Executive since 2023)",
+        "status": "DRIFTED",
+        "correct_value": "David French substantively appointed CEO in April 2021, not 2023 (was interim before that after Paula Head's Nov 2020 departure)",
+        "source": "https://www.uhs.nhs.uk/whats-new/news/david-french-appointed-to-ceo-role-at-university-hospital-southampton",
+        "severity": "medium"
+      },
+      {
+        "claim": "FT authorised 1 Oct 2011",
+        "status": "CONFIRMED",
+        "correct_value": "UHS became NHS Foundation Trust on 1 October 2011",
+        "source": "https://en.wikipedia.org/wiki/University_Hospital_Southampton_NHS_Foundation_Trust",
+        "severity": "low"
+      },
+      {
+        "claim": "CQC latest rating Good (2022 inspection) — but enrichment also says '2019 inspection'",
+        "status": "COULDNT_VERIFY",
+        "correct_value": "Enrichment inconsistent (lists 2022 and 2019 inspections); CQC provider RHM records should be checked directly",
+        "source": "https://www.cqc.org.uk/provider/RHM",
+        "severity": "medium"
+      },
+      {
+        "claim": "NIHR Southampton BRC £44M 2022-27",
+        "status": "COULDNT_VERIFY",
+        "correct_value": "NIHR 2022 BRC awards varied; Southampton BRC award value not confirmed at £44M in searches",
+        "source": "https://www.southamptonbrc.nihr.ac.uk/",
+        "severity": "low"
+      }
+    ]
+  },
+  {
+    "key": "Nottinghamshire CC",
+    "claims_checked": 4,
+    "findings": [
+      {
+        "claim": "Leader Sam Smith (Con, from 2023)",
+        "status": "DRIFTED",
+        "correct_value": "Sam Smith elected Leader 5 December 2024 (not 2023), replacing Ben Bradley who stepped down November 2024",
+        "source": "https://www.nottinghamshire.gov.uk/newsroom/news/county-council-elects-new-leader",
+        "severity": "high"
+      },
+      {
+        "claim": "CE Marjorie Toward (enrichment) / Adrian Smith (to 2024) → Marjorie Toward / Anthony May OBE (from Oct 2022)",
+        "status": "DRIFTED",
+        "correct_value": "Enrichment internally inconsistent and incorrect; Anthony May OBE was CE from Oct 2022 but later moved to NUH Hospitals Trust; subsequent CE arrangements should be verified — Marjorie Toward is listed elsewhere",
+        "source": "https://www.nottinghamshire.gov.uk/council-and-democracy",
+        "severity": "high"
+      },
+      {
+        "claim": "EMCCA Mayor Claire Ward (Lab) from May 2024",
+        "status": "CONFIRMED",
+        "correct_value": "Claire Ward (Lab) elected EMCCA Mayor 2 May 2024",
+        "source": "https://en.wikipedia.org/wiki/East_Midlands_Combined_County_Authority",
+        "severity": "low"
+      },
+      {
+        "claim": "Nottingham City issued s.114 November 2023 and under commissioners",
+        "status": "CONFIRMED",
+        "correct_value": "Nottingham City Council issued s.114 notice 29 Nov 2023; government commissioners intervention",
+        "source": "https://www.gov.uk/government/news/commissioners-appointed-to-nottingham-city-council",
+        "severity": "low"
+      }
+    ]
+  },
+  {
+    "key": "St George's University Hospitals NHS Foundation Trust",
+    "claims_checked": 4,
+    "findings": [
+      {
+        "claim": "Group CEO Jacqueline Totterdell — Group CEO since Sept 2021, CEO of St George's since 2017",
+        "status": "CONFIRMED",
+        "correct_value": "Jacqueline Totterdell appointed Group CEO August 2021; has been at St George's for 8 years (since 2017)",
+        "source": "https://www.stgeorges.nhs.uk/about/st-georges-epsom-and-st-helier-hospital-group/",
+        "severity": "low"
+      },
+      {
+        "claim": "FT authorised 1 Feb 2015",
+        "status": "CONFIRMED",
+        "correct_value": "St George's FT authorised February 2015",
+        "source": "https://en.wikipedia.org/wiki/St_George%27s_University_Hospitals_NHS_Foundation_Trust",
+        "severity": "low"
+      },
+      {
+        "claim": "St George's Hospital Tooting is one of London's four major trauma centres",
+        "status": "CONFIRMED",
+        "correct_value": "St George's Tooting is one of London's four designated Major Trauma Centres (with Royal London, St Mary's, King's)",
+        "source": "https://www.stgeorges.nhs.uk/service/major-trauma/",
+        "severity": "low"
+      },
+      {
+        "claim": "Affiliated with St George's, University of London (SGUL — uniquely a standalone medical/university)",
+        "status": "CONFIRMED",
+        "correct_value": "SGUL is the only standalone medical higher education institution in the UK (as of recent years; merger with City University was being discussed)",
+        "source": "https://www.sgul.ac.uk/about",
+        "severity": "low"
+      }
+    ]
+  },
+  {
+    "key": "Liverpool University Hospitals NHS Foundation Trust",
+    "claims_checked": 5,
+    "findings": [
+      {
+        "claim": "LUHFT formed 1 October 2019 from merger of RLBUHT and Aintree UH FT",
+        "status": "CONFIRMED",
+        "correct_value": "LUHFT formed via merger in October 2019",
+        "source": "https://www.liverpoolft.nhs.uk/about-us/",
+        "severity": "low"
+      },
+      {
+        "claim": "CEO James Sumner (from Sep 2022)",
+        "status": "DRIFTED",
+        "correct_value": "James Sumner joined LUHFT as Chief Executive in May 2022 (not September 2022)",
+        "source": "https://www.merseysidemls.com/events/steering-the-ship-of-a-liverpool-nhs-merger",
+        "severity": "medium"
+      },
+      {
+        "claim": "Royal Liverpool opened Sept 2022 (enrichment note)",
+        "status": "DRIFTED",
+        "correct_value": "New Royal Liverpool opened for patients 20 October 2022 (not September); old hospital closed 19 Oct 2022",
+        "source": "https://www.itv.com/news/granada/2022-10-04/new-hospital-begins-taking-patients-after-opening-delays",
+        "severity": "medium"
+      },
+      {
+        "claim": "Royal Liverpool rebuild cost ~£746M, ~£300M over original budget",
+        "status": "COULDNT_VERIFY",
+        "correct_value": "NAO reports and press confirm hospital opening was significantly over-budget and delayed by Carillion collapse; exact £746M / £300M overrun figures need primary verification",
+        "source": "https://www.nao.org.uk/reports/",
+        "severity": "low"
+      },
+      {
+        "claim": "Carillion collapsed 2018 triggering PFI rescheduling",
+        "status": "CONFIRMED",
+        "correct_value": "Carillion collapsed January 2018; PFI scrapped Oct 2018 after 10 months of rescue attempts",
+        "source": "https://en.wikipedia.org/wiki/Royal_Liverpool_University_Hospital",
+        "severity": "low"
+      }
+    ]
+  }
+]

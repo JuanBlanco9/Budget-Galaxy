@@ -61,9 +61,82 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T16:48:59Z",
+    "company_name": "CARE4U (LEICESTERSHIRE) LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2010-08-12",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-05-31",
+    "accounts_last_made_up": "2024-08-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-03"
+  },
+  "governance": {
+    "api_date": "2026-04-22T16:49:01Z",
+    "total_officers": 3,
+    "active_count": 3,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "SINGH, Lalita",
+        "role": "secretary",
+        "appointed_on": "2010-08-12",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "SINGH, Lalita",
+        "role": "director",
+        "appointed_on": "2010-08-12",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "SINGH, Rathneshwar",
+        "role": "director",
+        "appointed_on": "2014-05-01",
+        "country_of_residence": "England",
+        "nationality": "English"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T16:49:03Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mrs Lalita Devi Singh",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent",
+          "voting-rights-50-to-75-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2ODk3MTgxMGFkaXF6a2N4",
+    "date": "2025-06-05",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/U6zB0OXXmU1RIcE6tx0aMN5WZ0puj50BHcmG0-NiOUw/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/07344228/filing-history/MzQ2ODk3MTgxMGFkaXF6a2N4"
   }
 }

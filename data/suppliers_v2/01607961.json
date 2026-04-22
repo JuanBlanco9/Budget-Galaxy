@@ -59,9 +59,89 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T18:13:19Z",
+    "company_name": "A.T. LITTLE & SONS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1982-01-14",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-11-30",
+    "accounts_last_made_up": "2025-02-28",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-29"
+  },
+  "governance": {
+    "api_date": "2026-04-22T18:13:21Z",
+    "total_officers": 9,
+    "active_count": 3,
+    "resigned_count": 6,
+    "active_officers": [
+      {
+        "name": "HALES, Ashley Elizabeth",
+        "role": "director",
+        "appointed_on": "2025-11-07",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "LITTLE, Jonathan James",
+        "role": "director",
+        "appointed_on": null,
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "LITTLE, Nicola Gail",
+        "role": "director",
+        "appointed_on": "2025-11-07",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T18:13:23Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "The Little Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited",
+          "legal_authority": "English Law",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "03246086"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4Nzk2MjExMGFkaXF6a2N4",
+    "date": "2025-11-10",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/rRYLNaDa59G24jcV454UVmIr3lTcuFtAJ7_txCUrkkk/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01607961/filing-history/MzQ4Nzk2MjExMGFkaXF6a2N4"
   }
 }

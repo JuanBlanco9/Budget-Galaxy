@@ -64,9 +64,110 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T16:42:23Z",
+    "company_name": "ASHI GROUP LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1990-09-17",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-29",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-20"
+  },
+  "governance": {
+    "api_date": "2026-04-22T16:42:25Z",
+    "total_officers": 42,
+    "active_count": 6,
+    "resigned_count": 36,
+    "active_officers": [
+      {
+        "name": "DACK, Benjamin",
+        "role": "secretary",
+        "appointed_on": "2021-06-01",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "DACK, Benjamin William",
+        "role": "director",
+        "appointed_on": "2023-03-07",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "MUNBY, Rachael Emma",
+        "role": "director",
+        "appointed_on": "2020-09-08",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "OKES-VOYSEY, Sandra Christine Nora",
+        "role": "director",
+        "appointed_on": "2021-07-27",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "RUTTER, Martin James",
+        "role": "director",
+        "appointed_on": "2015-07-31",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "TWEEDIE, Philip Stanley",
+        "role": "director",
+        "appointed_on": "2020-09-30",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T16:42:27Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Anglian Group Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "England & Wales",
+          "country_registered": "England & Wales",
+          "place_registered": "Companies House",
+          "registration_number": "2585581"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NjU2MTYxOWFkaXF6a2N4",
+    "date": "2026-01-05",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/YVdj5vaFFuYrvP5_-3cQYhroP4mQ77MeA1LtQYHpi0M/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02540020/filing-history/MzQ5NjU2MTYxOWFkaXF6a2N4"
   }
 }

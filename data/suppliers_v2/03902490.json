@@ -59,9 +59,75 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T16:50:40Z",
+    "company_name": "COLOURS DECORATING LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2000-01-05",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-01-31",
+    "accounts_last_made_up": "2025-04-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-19"
+  },
+  "governance": {
+    "api_date": "2026-04-22T16:50:41Z",
+    "total_officers": 6,
+    "active_count": 2,
+    "resigned_count": 4,
+    "active_officers": [
+      {
+        "name": "EDMUNDS, Sean",
+        "role": "director",
+        "appointed_on": "2017-02-07",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "FERGUSON, Paul Charles",
+        "role": "director",
+        "appointed_on": "2000-01-05",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T16:50:43Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Paul Charles Ferguson",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NDUyNjkyM2FkaXF6a2N4",
+    "date": "2025-12-16",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/KtDVdwBUBA3UC2MiGCuDVsDXyFrXL6e9cUJkPil2KlM/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03902490/filing-history/MzQ5NDUyNjkyM2FkaXF6a2N4"
   }
 }

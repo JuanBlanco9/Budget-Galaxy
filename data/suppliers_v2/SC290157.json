@@ -59,9 +59,112 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T16:31:39Z",
+    "company_name": "GTG TRAINING LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2005-09-12",
+    "date_of_cessation": null,
+    "jurisdiction": "scotland",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-09-19"
+  },
+  "governance": {
+    "api_date": "2026-04-22T16:31:41Z",
+    "total_officers": 12,
+    "active_count": 3,
+    "resigned_count": 9,
+    "active_officers": [
+      {
+        "name": "THORPE, Stuart Kenneth",
+        "role": "secretary",
+        "appointed_on": "2013-11-19",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "GRAHAM, James Turner",
+        "role": "director",
+        "appointed_on": "2021-12-01",
+        "country_of_residence": "Scotland",
+        "nationality": "Scottish"
+      },
+      {
+        "name": "HAWTHORNE, Edward",
+        "role": "director",
+        "appointed_on": "2005-09-14",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T16:31:42Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Arnold Clark Automobiles Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2021-09-04",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "Scotland",
+          "place_registered": "Scotland",
+          "registration_number": "Sc036386"
+        }
+      },
+      {
+        "name": "Lady Philomena Butler Clark",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-07-01",
+        "identification": null
+      },
+      {
+        "name": "Sir John Arnold Clark",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "Scotland",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-07-01",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MjY2MTI5MWFkaXF6a2N4",
+    "date": "2025-09-29",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-audit-exemption-subsiduary",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/wlBw22WfW4f1GzyX0k7e1T55lu5d3whX_G-4b8l_Tek/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/SC290157/filing-history/MzQ4MjY2MTI5MWFkaXF6a2N4"
   }
 }

@@ -70,9 +70,117 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T16:52:49Z",
+    "company_name": "YMCA EAST SURREY",
+    "company_status": "active",
+    "date_of_creation": "1999-02-19",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-29"
+  },
+  "governance": {
+    "api_date": "2026-04-22T16:52:52Z",
+    "total_officers": 47,
+    "active_count": 10,
+    "resigned_count": 37,
+    "active_officers": [
+      {
+        "name": "BURKS, Ian William",
+        "role": "secretary",
+        "appointed_on": "1999-11-15",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "ANDERSON, Ross Oliver",
+        "role": "director",
+        "appointed_on": "2022-11-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BYRNE, Paul Christopher",
+        "role": "director",
+        "appointed_on": "2014-10-21",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "ELLIOTT, Louise Marion",
+        "role": "director",
+        "appointed_on": "2022-11-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GENT, Mike John",
+        "role": "director",
+        "appointed_on": "2024-09-25",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "GUY, John Andrew",
+        "role": "director",
+        "appointed_on": "2021-11-02",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LOXLEY, Heather Anne",
+        "role": "director",
+        "appointed_on": "2018-10-16",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ODUNSI, Omolola Adefolabomi Khadijat",
+        "role": "director",
+        "appointed_on": "2022-11-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PASCOE, Jane Elizabeth",
+        "role": "director",
+        "appointed_on": "2024-09-25",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SCHENDEL-WILSON, Chloe Elizabeth",
+        "role": "director",
+        "appointed_on": "2022-11-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T16:52:53Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4NDIwMDU1MWFkaXF6a2N4",
+    "date": "2025-10-09",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/kFCoaUgL8GewLaZc9WiFKA3LbzzF5V-e47IYxTysF9o/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03716594/filing-history/MzQ4NDIwMDU1MWFkaXF6a2N4"
   }
 }

@@ -61,9 +61,89 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T15:32:11Z",
+    "company_name": "MEDDX 650 LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2020-11-15",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-28"
+  },
+  "governance": {
+    "api_date": "2026-04-22T15:32:13Z",
+    "total_officers": 6,
+    "active_count": 3,
+    "resigned_count": 3,
+    "active_officers": [
+      {
+        "name": "CAHILL, David Gerard James",
+        "role": "director",
+        "appointed_on": "2024-06-27",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "TAGG, Christopher John",
+        "role": "director",
+        "appointed_on": "2023-05-18",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "VALLANCE, Ian",
+        "role": "director",
+        "appointed_on": "2022-11-03",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T15:32:15Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Meddx Solutions Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2020-11-15",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "Uk Register Of Companies",
+          "registration_number": "08688185"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3OTk2Njg3N2FkaXF6a2N4",
+    "date": "2025-09-05",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-audit-exemption-subsiduary",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/HaSs4MVTM31MSVOKRXIqgDjk6gGKgCMW6L1_9g6hKmY/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/13020081/filing-history/MzQ3OTk2Njg3N2FkaXF6a2N4"
   }
 }

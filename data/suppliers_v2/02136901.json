@@ -68,9 +68,98 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T16:51:54Z",
+    "company_name": "SHARP BUSINESS SYSTEMS UK PLC",
+    "company_status": "active",
+    "date_of_creation": "1987-06-03",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-14"
+  },
+  "governance": {
+    "api_date": "2026-04-22T16:51:56Z",
+    "total_officers": 41,
+    "active_count": 5,
+    "resigned_count": 36,
+    "active_officers": [
+      {
+        "name": "SIDLE, Gary Douglas",
+        "role": "secretary",
+        "appointed_on": "2022-11-01",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "NAGAO, Shigenobu",
+        "role": "director",
+        "appointed_on": "2024-10-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "Japanese"
+      },
+      {
+        "name": "SIDLE, Gary Douglas",
+        "role": "director",
+        "appointed_on": "2022-11-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SYKES, Stuart Raymond",
+        "role": "director",
+        "appointed_on": "2003-05-27",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "TOMOTA, Yoichi",
+        "role": "director",
+        "appointed_on": "2023-05-01",
+        "country_of_residence": "England",
+        "nationality": "Japanese"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T16:51:58Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Sharp Electronics Europe Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 1985"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MjcyODg3OGFkaXF6a2N4",
+    "date": "2025-07-08",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/nq1x3PXos9X8yPr72uFxQNgsB9JF3E_95cfBdgoSYWU/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02136901/filing-history/MzQ3MjcyODg3OGFkaXF6a2N4"
   }
 }

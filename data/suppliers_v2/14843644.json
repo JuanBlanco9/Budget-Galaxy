@@ -63,9 +63,103 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T16:11:27Z",
+    "company_name": "SURESERVE ASSET SERVICES LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2023-05-03",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-06-30",
+    "accounts_last_made_up": "2024-09-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-05-16"
+  },
+  "governance": {
+    "api_date": "2026-04-22T16:11:28Z",
+    "total_officers": 11,
+    "active_count": 5,
+    "resigned_count": 6,
+    "active_officers": [
+      {
+        "name": "MAYHILL, Geoffrey Ronald",
+        "role": "secretary",
+        "appointed_on": "2024-05-01",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "EDWARDS, John Paul",
+        "role": "director",
+        "appointed_on": "2024-06-06",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HAWTREY, Nicholas Ralph Leo",
+        "role": "director",
+        "appointed_on": "2026-04-15",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "STIRLING, Robert",
+        "role": "director",
+        "appointed_on": "2023-05-03",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      },
+      {
+        "name": "TYDEMAN, Justin Antony James",
+        "role": "director",
+        "appointed_on": "2026-03-16",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T16:11:30Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Sureserve Energy Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2023-05-03",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "Uk Register Of Companies",
+          "registration_number": "09790912"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2MzA5MTY2MWFkaXF6a2N4",
+    "date": "2025-04-17",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-audit-exemption-subsiduary",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/JGkS1Rbqj2BL9l2D0-z2s5R40Vnps7pYAAkKh9SRnXw/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/14843644/filing-history/MzQ2MzA5MTY2MWFkaXF6a2N4"
   }
 }

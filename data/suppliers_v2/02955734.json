@@ -59,9 +59,105 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T15:37:54Z",
+    "company_name": "REYNOLDS CATERING SUPPLIES LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1994-08-04",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-08-15"
+  },
+  "governance": {
+    "api_date": "2026-04-22T15:37:56Z",
+    "total_officers": 16,
+    "active_count": 4,
+    "resigned_count": 12,
+    "active_officers": [
+      {
+        "name": "AUSTIN, Andrew David",
+        "role": "director",
+        "appointed_on": "2014-04-09",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CALDER, Richard Alexander",
+        "role": "director",
+        "appointed_on": "2014-04-09",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "COLLINS, Glenn Robert",
+        "role": "director",
+        "appointed_on": "2024-12-16",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "REYNOLDS, Antony William",
+        "role": "director",
+        "appointed_on": "1994-08-04",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T15:37:57Z",
+    "total_results": 2,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Reyhold Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006"
+        }
+      },
+      {
+        "name": "Mr Antony William Reynolds",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MTc0NDAwOGFkaXF6a2N4",
+    "date": "2025-09-19",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/Cz7HsDl-Z91Ylh6hc2pBUn4zhfELdFhzJz0zlsUa9dw/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02955734/filing-history/MzQ4MTc0NDAwOGFkaXF6a2N4"
   }
 }

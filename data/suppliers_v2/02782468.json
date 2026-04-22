@@ -59,9 +59,114 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T17:24:35Z",
+    "company_name": "TECHNOGYM U.K. LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1993-01-22",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-16"
+  },
+  "governance": {
+    "api_date": "2026-04-22T17:24:36Z",
+    "total_officers": 40,
+    "active_count": 6,
+    "resigned_count": 34,
+    "active_officers": [
+      {
+        "name": "KENNY, Michele",
+        "role": "secretary",
+        "appointed_on": "1997-05-21",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "ANNESE, Alessandro",
+        "role": "director",
+        "appointed_on": "2025-05-14",
+        "country_of_residence": "Italy",
+        "nationality": "Italian"
+      },
+      {
+        "name": "MARABINI, William",
+        "role": "director",
+        "appointed_on": "2023-02-15",
+        "country_of_residence": "Italy",
+        "nationality": "Italian"
+      },
+      {
+        "name": "NAVA, Mauro Enrico",
+        "role": "director",
+        "appointed_on": "2024-10-21",
+        "country_of_residence": "Italy",
+        "nationality": "Italian"
+      },
+      {
+        "name": "SANDHAM, Benjamin Louis",
+        "role": "director",
+        "appointed_on": "2025-01-29",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "SIMONI, Giovanni",
+        "role": "director",
+        "appointed_on": "2021-07-01",
+        "country_of_residence": "Italy",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T17:24:38Z",
+    "total_results": 2,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Mr Nerio Alessandri",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Italian",
+        "country_of_residence": "Italy",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Pierluigi Alessandri",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Italian",
+        "country_of_residence": "Italy",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3OTMzMjAyMGFkaXF6a2N4",
+    "date": "2025-09-01",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/g1mgL_VUDx5Xl658jAKBw_98jpIEimGXIe7e7V2qxlY/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02782468/filing-history/MzQ3OTMzMjAyMGFkaXF6a2N4"
   }
 }

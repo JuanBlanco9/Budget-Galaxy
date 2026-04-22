@@ -40,19 +40,11 @@
   },
   "financial_health": null,
   "governance": {
-    "officers_active_count": 0,
-    "officers_resigned_count": 0,
-    "board_turnover_ratio": 0.0,
-    "board_turnover_signal": "low",
-    "active_directors": [],
-    "secretaries": [],
-    "all_active_officers": [],
-    "resigned_officers_summary": {
-      "count": 0,
-      "recent": []
-    },
-    "direct_psc_count": 0,
-    "direct_psc_statements": []
+    "api_date": "2026-04-22T17:49:26Z",
+    "total_officers": 0,
+    "active_count": 0,
+    "resigned_count": 0,
+    "active_officers": []
   },
   "ownership_chain": {
     "resolution": "data_gap",
@@ -308,5 +300,32 @@
       "note": "Paid 601.9× awarded — payments on existing contracts, scope changes, or framework draw-downs not in new notices.",
       "ratio": 0.0
     }
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T17:49:24Z",
+    "company_name": "THE BRITISH FILM INSTITUTE",
+    "company_status": null,
+    "date_of_creation": null,
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": null,
+    "accounts_overdue": null,
+    "accounts_next_due": null,
+    "accounts_last_made_up": null,
+    "confirmation_statement_overdue": null,
+    "confirmation_statement_next_due": null
+  },
+  "pscs": {
+    "api_date": "2026-04-22T17:49:28Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "enrichment_stages": {
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true
   }
 }

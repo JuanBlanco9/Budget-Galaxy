@@ -64,9 +64,212 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T16:51:47Z",
+    "company_name": "PENNINGTONS MANCHES COOPER LLP",
+    "company_status": "active",
+    "date_of_creation": "2005-02-15",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-01"
+  },
+  "governance": {
+    "api_date": "2026-04-22T16:51:49Z",
+    "total_officers": 305,
+    "active_count": 139,
+    "resigned_count": 166,
+    "active_officers": [
+      {
+        "name": "DRAYTON, Helen Mary",
+        "role": "llp-designated-member",
+        "appointed_on": "2012-06-27",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "KENDALL, David Christopher",
+        "role": "llp-designated-member",
+        "appointed_on": "2011-10-10",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "O'BRIEN, David Joseph",
+        "role": "llp-designated-member",
+        "appointed_on": "2019-04-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "ALDRED, Hilary Joan",
+        "role": "llp-member",
+        "appointed_on": "2012-03-17",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "ALEGRE CLIMENT, Juan Rafael",
+        "role": "llp-member",
+        "appointed_on": "2019-07-01",
+        "country_of_residence": "Spain",
+        "nationality": null
+      },
+      {
+        "name": "ALLAN, Sarah Louise",
+        "role": "llp-member",
+        "appointed_on": "2019-07-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "ALVAR, Gonzalo",
+        "role": "llp-member",
+        "appointed_on": "2023-01-01",
+        "country_of_residence": "Spain",
+        "nationality": null
+      },
+      {
+        "name": "AMLOT, Thomas Andrew",
+        "role": "llp-member",
+        "appointed_on": "2024-10-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "ANDREWS, Amanda Rosemary",
+        "role": "llp-member",
+        "appointed_on": "2020-04-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "ANDREWS-WALKER, Rebecca Ruth",
+        "role": "llp-member",
+        "appointed_on": "2021-04-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "APPELBOAM-MEADOWS, Alison Margaret",
+        "role": "llp-member",
+        "appointed_on": "2005-05-01",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "ARCHER, Clare Elizabeth",
+        "role": "llp-member",
+        "appointed_on": "2011-02-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "ARTHURS, Clare Patricia",
+        "role": "llp-member",
+        "appointed_on": "2021-04-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "ASHTON, Adele Ruth",
+        "role": "llp-member",
+        "appointed_on": "2022-04-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "AXTELL, William Peter",
+        "role": "llp-member",
+        "appointed_on": "2014-12-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "BANSEL, Gurbinderpal Singh",
+        "role": "llp-member",
+        "appointed_on": "2017-03-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "BATES, Christopher Michael",
+        "role": "llp-member",
+        "appointed_on": "2023-04-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "BERRY, Daniel",
+        "role": "llp-member",
+        "appointed_on": "2022-04-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "BICKERDIKE, Simon Anthony",
+        "role": "llp-member",
+        "appointed_on": "2005-04-06",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "BINNINGTON, Emma Elizabeth Anne",
+        "role": "llp-member",
+        "appointed_on": "2022-09-12",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T16:51:51Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Helen Mary Drayton",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-members-limited-liability-partnership"
+        ],
+        "notified_on": "2022-10-01",
+        "identification": null
+      },
+      {
+        "name": "David John Raine",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-members-limited-liability-partnership"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NDExMTE1M2FkaXF6a2N4",
+    "date": "2025-12-21",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/hfaeRUJCOu7JVpX6DwNr0Q8qnG58RykqXsfkTKyjHEo/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/OC311575/filing-history/MzQ5NDExMTE1M2FkaXF6a2N4"
   }
 }

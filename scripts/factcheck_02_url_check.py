@@ -9,7 +9,9 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 sys.stdout.reconfigure(encoding='utf-8')
 socket.setdefaulttimeout(15)
 
-data = json.load(open('data/uk/factcheck/top_entries.json', encoding='utf-8'))
+INPUT = sys.argv[1] if len(sys.argv) > 1 else 'data/uk/factcheck/top_entries.json'
+OUTPUT = sys.argv[2] if len(sys.argv) > 2 else 'data/uk/factcheck/url_results.json'
+data = json.load(open(INPUT, encoding='utf-8'))
 all_urls = []
 for e in data:
     for u in e['urls']:
@@ -59,7 +61,7 @@ for key, url, code, err in sorted(bad, key=lambda x: (x[0], x[1])):
 
 json.dump(
     [{'key': k, 'url': u, 'status': s, 'error': e} for k, u, s, e in results],
-    open('data/uk/factcheck/url_results.json', 'w', encoding='utf-8'),
+    open(OUTPUT, 'w', encoding='utf-8'),
     indent=2, ensure_ascii=False
 )
-print('\nWrote data/uk/factcheck/url_results.json')
+print(f'\nWrote {OUTPUT}')

@@ -59,9 +59,116 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T18:18:02Z",
+    "company_name": "TOTAL SECURITY PROTECTION LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1988-12-20",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-07-31",
+    "accounts_last_made_up": "2024-10-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-05-03"
+  },
+  "governance": {
+    "api_date": "2026-04-22T18:18:04Z",
+    "total_officers": 17,
+    "active_count": 8,
+    "resigned_count": 9,
+    "active_officers": [
+      {
+        "name": "LANGDON, Richard Andrew",
+        "role": "secretary",
+        "appointed_on": "2009-05-01",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "BRADLEY, Ian",
+        "role": "director",
+        "appointed_on": "2020-11-02",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LANGDON, Richard Andrew",
+        "role": "director",
+        "appointed_on": "2019-09-01",
+        "country_of_residence": "Wales",
+        "nationality": "British"
+      },
+      {
+        "name": "PARNELL, Katherine Elizabeth, Dr",
+        "role": "director",
+        "appointed_on": "2017-06-29",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PARNELL, Mark",
+        "role": "director",
+        "appointed_on": "2016-12-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "PARNELL, Richard William",
+        "role": "director",
+        "appointed_on": null,
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "TEW-CRAGG, Wayne",
+        "role": "director",
+        "appointed_on": "2020-09-25",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WORRALL, Christopher Michael",
+        "role": "director",
+        "appointed_on": "2019-09-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T18:18:05Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Richard William Parnell",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MjE3ODg4MGFkaXF6a2N4",
+    "date": "2025-07-01",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/feddlkZGLDzMTiZfCRaaxj4G_iaA8hpwmVQyzxnzeSk/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02330115/filing-history/MzQ3MjE3ODg4MGFkaXF6a2N4"
   }
 }

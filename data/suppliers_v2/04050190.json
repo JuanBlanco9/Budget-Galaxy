@@ -65,9 +65,142 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T16:40:29Z",
+    "company_name": "VITAL ENERGI UTILITIES LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2000-08-09",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-03-31",
+    "accounts_last_made_up": "2025-06-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-29"
+  },
+  "governance": {
+    "api_date": "2026-04-22T16:40:30Z",
+    "total_officers": 21,
+    "active_count": 8,
+    "resigned_count": 13,
+    "active_officers": [
+      {
+        "name": "MCKECHNIE, Stewart",
+        "role": "secretary",
+        "appointed_on": "2022-03-04",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "COOKE, Michael Ian",
+        "role": "director",
+        "appointed_on": "2020-12-22",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "FIELDING, Gary John",
+        "role": "director",
+        "appointed_on": "2000-08-09",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PARKER, Cecile",
+        "role": "director",
+        "appointed_on": "2022-03-04",
+        "country_of_residence": "United Kingdom",
+        "nationality": "French"
+      },
+      {
+        "name": "SMITH, Paul Andrew",
+        "role": "director",
+        "appointed_on": "2020-12-22",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WALSH, Ashley Jan",
+        "role": "director",
+        "appointed_on": "2022-05-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WHITELOCK, Andrew Jonathan",
+        "role": "director",
+        "appointed_on": "2020-12-22",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WHITELOCK, Ian Michael",
+        "role": "director",
+        "appointed_on": "2001-08-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T16:40:32Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Vital Energi Midco Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2025-08-01",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "England And Wales Companies House Register",
+          "registration_number": "16444525"
+        }
+      },
+      {
+        "name": "Vital Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Acts",
+          "country_registered": "England",
+          "place_registered": "Companies House Cardiff",
+          "registration_number": "06395526"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NjU1NTkxNmFkaXF6a2N4",
+    "date": "2026-01-05",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/tE01ZO65KB_gsjEK9m78cfdZmGSlDPZPx9hGUHsUWZ8/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04050190/filing-history/MzQ5NjU1NTkxNmFkaXF6a2N4"
   }
 }

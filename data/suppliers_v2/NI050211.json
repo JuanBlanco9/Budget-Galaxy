@@ -64,9 +64,88 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T17:21:39Z",
+    "company_name": "EXTRASPACE SOLUTIONS (UK) LIMITED",
+    "company_status": "administration",
+    "date_of_creation": "2004-04-05",
+    "date_of_cessation": null,
+    "jurisdiction": "northern-ireland",
+    "has_charges": false,
+    "has_insolvency_history": true,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": true,
+    "accounts_next_due": "2024-09-30",
+    "accounts_last_made_up": "2022-12-31",
+    "confirmation_statement_overdue": true,
+    "confirmation_statement_next_due": "2025-04-16"
+  },
+  "governance": {
+    "api_date": "2026-04-22T17:21:41Z",
+    "total_officers": 14,
+    "active_count": 3,
+    "resigned_count": 11,
+    "active_officers": [
+      {
+        "name": "PINSENT MASONS SECRETARIAL LIMITED",
+        "role": "corporate-secretary",
+        "appointed_on": "2023-03-29",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "III, Joseph Rinando",
+        "role": "director",
+        "appointed_on": "2023-03-29",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      },
+      {
+        "name": "ROCHE, Matthew John Raymond",
+        "role": "director",
+        "appointed_on": "2023-03-29",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T17:21:42Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Extraspace Holdings Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act",
+          "country_registered": "Republic Of Ireland",
+          "place_registered": "Companies Registration Office",
+          "registration_number": "Ie378815"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQwMjI5NjIxNmFkaXF6a2N4",
+    "date": "2023-12-08",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/9XQbjV1iQ1gIiB9Qz5CKzF8ycxiE1AfWfTqezyb7jTY/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/NI050211/filing-history/MzQwMjI5NjIxNmFkaXF6a2N4"
   }
 }

@@ -1,0 +1,228 @@
+[
+  {
+    "key": "Guy's & St Thomas' NHS Foundation Trust",
+    "claims_checked": 6,
+    "findings": [
+      {"claim": "FT status: Authorised 1 July 2004 (first-wave FT)", "status": "CONFIRMED", "correct_value": "Guy's & St Thomas' was in first wave of NHS foundation trusts authorised 1 April 2004 by Monitor; listed as first-wave FT", "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC387507/", "severity": "low"},
+      {"claim": "CEO Ian Abbs Chief Executive since 2020 / since Jan 2021", "status": "DRIFTED", "correct_value": "Ian Abbs was appointed Chief Executive in August 2019 (not 2020/2021); he became substantive CEO after serving as Medical Director", "source": "https://www.guysandstthomas.nhs.uk/news/guys-and-st-thomas-appoints-ian-abbs-chief-executive", "severity": "medium"},
+      {"claim": "Sir Hugh Taylor Chair; Charles Alexander CBE succeeded from Jan 2025", "status": "DRIFTED", "correct_value": "Charles Alexander became Joint Chairman of Guy's & St Thomas' and King's College Hospital from December 2022 (not Jan 2025), succeeding Sir Hugh Taylor", "source": "https://www.guysandstthomas.nhs.uk/news/new-chairman-takes-joint-role", "severity": "high"},
+      {"claim": "Synnovis ransomware attack June 2024 severely disrupted pathology across GSTT/KCH", "status": "CONFIRMED", "correct_value": "Synnovis ransomware attack 3 June 2024 by Qilin group; GSTT+KCH pathology disrupted; 1,134 operations & 2,194 outpatient appts cancelled in first 13 days", "source": "https://www.england.nhs.uk/london/synnovis-ransomware-cyber-attack/", "severity": "low"},
+      {"claim": "March 2023 CQC inspection confirmed Good overall with Outstanding for caring", "status": "COULDNT_VERIFY", "correct_value": "CQC provider page confirms GSTT rated Good; inconsistency within entry itself cites 'most recent inspection Mar 2020' in one stat vs 'March 2023 inspection' in another", "source": "https://www.cqc.org.uk/provider/RJ1", "severity": "low"},
+      {"claim": "Royal Brompton and Harefield acquired Feb 2021", "status": "CONFIRMED", "correct_value": "Royal Brompton and Harefield joined GSTT on 1 February 2021", "source": "https://www.rbht.nhs.uk/news/new-joint-chairman-appointed-for-guys-and-st-thomas-and-kings-college-hospital", "severity": "low"}
+    ]
+  },
+  {
+    "key": "2.4 R&D defence",
+    "claims_checked": 5,
+    "findings": [
+      {"claim": "Dstl ~6,000 staff, Porton Down HQ Wiltshire", "status": "CONFIRMED", "correct_value": "Dstl is MoD executive agency headquartered at Porton Down, Salisbury Wiltshire; staff approx 6,000", "source": "https://www.gov.uk/government/organisations/defence-science-and-technology-laboratory", "severity": "low"},
+      {"claim": "GCAP UK-Italy-Japan 6th-gen fighter international treaty signed Dec 2023", "status": "CONFIRMED", "correct_value": "GCAP Treaty signed in Tokyo on 14 December 2023 by UK, Italy and Japan", "source": "https://www.gov.uk/government/publications/convention-on-the-establishment-of-the-global-combat-air-programme-gcap-international-government-organisation", "severity": "low"},
+      {"claim": "AUKUS treaty signed Sept 2021", "status": "DRIFTED", "correct_value": "AUKUS is a trilateral security partnership announced 15 September 2021 by UK/US/Australia; the formal AUKUS 'treaty' specifically covering nuclear propulsion was signed 13 Aug 2024 in Washington. The 2021 announcement was a partnership, not a treaty", "source": "https://www.gov.uk/government/news/uk-us-and-australia-launch-new-security-partnership", "severity": "medium"},
+      {"claim": "Dstl annual expenditure ~£1B", "status": "CONFIRMED", "correct_value": "Dstl Annual Report 2024/25 confirms expenditure in the range of approximately £1B; historically £587M income in 2016/17 with 91% from MOD", "source": "https://www.gov.uk/government/publications/defence-science-and-technology-laboratory-annual-report-and-accounts-2024-to-2025", "severity": "low"},
+      {"claim": "Ajax programme scrutinised in NAO 'Improving Performance of Major Defence Equipment Contracts' (2021)", "status": "DRIFTED", "correct_value": "NAO Ajax Programme report published 11 March 2022 (not 2021). 'Improving the performance of major defence equipment contracts' PAC report is a separate report", "source": "https://www.nao.org.uk/reports/the-ajax-programme/", "severity": "medium"}
+    ]
+  },
+  {
+    "key": "Manchester University NHS Foundation Trust",
+    "claims_checked": 5,
+    "findings": [
+      {"claim": "Formed 1 October 2017 from merger of CMFT and UHSM", "status": "CONFIRMED", "correct_value": "MFT formed 1 October 2017 merging Central Manchester University Hospitals NHS FT and University Hospital of South Manchester NHS FT", "source": "https://mft.nhs.uk/2017/10/01/new-city-wide-hospital-trust-launches/", "severity": "low"},
+      {"claim": "Mark Cubbon Group Chief Executive since Aug 2023", "status": "DRIFTED", "correct_value": "Mark Cubbon was appointed CEO in November 2022 and took up the role as Group Chief Executive in April 2023 (not August 2023)", "source": "https://en.wikipedia.org/wiki/Manchester_University_NHS_Foundation_Trust", "severity": "medium"},
+      {"claim": "CEO Mark Cubbon took over Aug 2023 from interim Mark Lloyd", "status": "DRIFTED", "correct_value": "Predecessor was Sir Mike Deegan; Cubbon joined from NHS England, not via 'interim Mark Lloyd'. Entry also contradicts itself stating Cubbon 'continuing since Nov 2023'", "source": "https://en.wikipedia.org/wiki/Manchester_University_NHS_Foundation_Trust", "severity": "medium"},
+      {"claim": "North Manchester General assumed April 2021", "status": "CONFIRMED", "correct_value": "North Manchester General transferred to MFT on 1 April 2021 from Pennine Acute Hospitals", "source": "https://mft.nhs.uk/", "severity": "low"},
+      {"claim": "CQC July 2023 inspection Requires Improvement overall", "status": "COULDNT_VERIFY", "correct_value": "MFT CQC page shows overall rating is Requires Improvement following 2023 inspection; inner inconsistency: entry also states 'turnaround plan active after 2022 intervention' implying earlier date", "source": "https://www.cqc.org.uk/provider/R0A", "severity": "low"}
+    ]
+  },
+  {
+    "key": "Kent CC",
+    "claims_checked": 5,
+    "findings": [
+      {"claim": "Reform UK swept Kent CC May 2025 with 57 of 81 seats, ending 28 years Conservative control since 1997", "status": "CONFIRMED", "correct_value": "2025 Kent CC election 1 May 2025: Reform UK won 57 of 81 seats; Conservatives lost majority held since 1997", "source": "https://en.wikipedia.org/wiki/2025_Kent_County_Council_election", "severity": "low"},
+      {"claim": "Leader Linden Kemkaran (Reform UK) post-May 2025", "status": "CONFIRMED", "correct_value": "Linden Kemkaran chosen as Leader by Reform UK group after 2025 election; represents Maidstone South East division", "source": "https://www.itv.com/news/meridian/2025-05-06/when-does-reform-uk-take-charge-of-kent-and-who-will-be-their-leader", "severity": "low"},
+      {"claim": "Gross service spend 2024-25 £2,710.8M", "status": "COULDNT_VERIFY", "correct_value": "Kent CC published 2024-25 budget figures; exact gross service spend total could not be independently verified via public web", "source": "https://www.kent.gov.uk/about-the-council/finance-and-budget", "severity": "low"},
+      {"claim": "Population ~1,590,000 (ONS 2023)", "status": "CONFIRMED", "correct_value": "Kent CC area population ~1.59M (ONS mid-2023 estimate)", "source": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates", "severity": "low"},
+      {"claim": "Leader 2024-25 Roger Gough continued; Gough lost his seat in 2025", "status": "CONFIRMED", "correct_value": "Cllr Roger Gough (Con) was Leader through 2024-25; he lost his council seat in May 2025 election", "source": "https://en.wikipedia.org/wiki/2025_Kent_County_Council_election", "severity": "low"}
+    ]
+  },
+  {
+    "key": "Tax Credits (Residual)",
+    "claims_checked": 5,
+    "findings": [
+      {"claim": "Tax Credits officially closed 5 April 2025 — system ended after 23 years (Tax Credits Act 2002)", "status": "DRIFTED", "correct_value": "Tax Credits ended 5 April 2025 after 22 years (not 23), per multiple sources; WTC/CTC came into effect from April 2003 under Tax Credits Act 2002", "source": "https://www.taxadvisermagazine.com/article/closure-tax-credits", "severity": "low"},
+      {"claim": "Tax Credits Act 2002 effective April 2003", "status": "CONFIRMED", "correct_value": "Tax Credits Act 2002 brought WTC/CTC into effect from April 2003", "source": "https://www.legislation.gov.uk/ukpga/2002/21", "severity": "low"},
+      {"claim": "Closed to new claims most areas from 1 Feb 2019", "status": "CONFIRMED", "correct_value": "Universal Credit full service rolled out to all areas by December 2018; Tax Credits effectively closed to most new claims from Feb 2019", "source": "https://commonslibrary.parliament.uk/research-briefings/cbp-9984/", "severity": "low"},
+      {"claim": "Migration Notices sent to 1.23M individuals to July 2024", "status": "COULDNT_VERIFY", "correct_value": "DWP publishes Move to UC statistics but exact 1.23M figure through July 2024 couldn't be independently verified", "source": "https://www.gov.uk/government/collections/move-to-universal-credit-statistics", "severity": "low"},
+      {"claim": "Tax Credit claimants April 2024: 729,800 (HMRC Personal Tax Credits Statistics)", "status": "COULDNT_VERIFY", "correct_value": "HMRC Personal Tax Credits statistics publish quarterly claimant figures; this specific April 2024 number couldn't be directly confirmed", "source": "https://www.gov.uk/government/collections/personal-tax-credits-statistics", "severity": "low"}
+    ]
+  },
+  {
+    "key": "6.1 of which: other social housing",
+    "claims_checked": 5,
+    "findings": [
+      {"claim": "AHSP allocation 2025-26 £0.487B", "status": "DRIFTED", "correct_value": "AHSP budget for 2025-26 is £768M (not £487M) — a real terms increase of 32% from 2024-25; £487M refers to lower 2024-25 figure after cut", "source": "https://spice-spotlight.scot/2024/12/05/scottish-budget-2025-26-affordable-housing-supply/", "severity": "high"},
+      {"claim": "110,000 affordable homes target 2022-2032", "status": "CONFIRMED", "correct_value": "Scottish Government committed to deliver 110,000 affordable homes by 2032, 70% for social rent, 10% in rural/island areas", "source": "https://www.gov.scot/policies/more-homes/affordable-housing-supply/", "severity": "low"},
+      {"claim": "Social rent target share ~70%", "status": "CONFIRMED", "correct_value": "Target: 70% (77,000 homes) for social rent within 110k total", "source": "https://www.gov.scot/policies/more-homes/affordable-housing-supply/", "severity": "low"},
+      {"claim": "Scottish Government housing emergency declared 15 May 2024", "status": "CONFIRMED", "correct_value": "Scottish Government declared national housing emergency on 15 May 2024 following ~26% real-terms AHSP cut in 2024 budget", "source": "https://www.scottishhousingnews.com/articles/scottish-government-set-to-declare-a-national-housing-emergency", "severity": "low"},
+      {"claim": "Scottish Right to Buy abolition 1 Aug 2016 (Housing (Scotland) Act 2014)", "status": "CONFIRMED", "correct_value": "Right to Buy in Scotland abolished 1 August 2016 for all social housing tenancies under Housing (Scotland) Act 2014", "source": "https://www.legislation.gov.uk/asp/2014/14/contents", "severity": "low"}
+    ]
+  },
+  {
+    "key": "Hampshire CC",
+    "claims_checked": 5,
+    "findings": [
+      {"claim": "Leader Nick Adams-King (Con) from May 2023 / from Nov 2023 following Rob Humby resignation", "status": "DRIFTED", "correct_value": "Nick Adams-King became Leader in May 2024 after Rob Humby stepped down in 2024 (not 2023). Entry self-contradicts between 'from 2023' and 'from Nov 2023'", "source": "https://www.insidermedia.com/news/south-east/cllr-nick-adams-king-steps-up-as-leader-of-hampshire-county-council", "severity": "high"},
+      {"claim": "Rob Humby was Leader before Adams-King", "status": "CONFIRMED", "correct_value": "Rob Humby was Leader elected May 2022 after Keith Mans resignation; stepped down in 2024", "source": "https://hampshirebiznews.co.uk/news/change-of-the-guard-at-hampshire-county-council-as-former-leader-rob-humby-bids-a-fond-farewell/", "severity": "low"},
+      {"claim": "Carolyn Williamson (Interim CE); Rob Carr permanent from Sept 2024", "status": "COULDNT_VERIFY", "correct_value": "Carolyn Williamson was Interim/Acting CE in 2024; Rob Carr permanent appointment dates couldn't be precisely verified via open web", "source": "https://www.hants.gov.uk/aboutthecouncil/budgetspendingandperformance", "severity": "low"},
+      {"claim": "£97M 2025-26 gap; EFS dialogue initiated", "status": "COULDNT_VERIFY", "correct_value": "Hampshire CC has publicly flagged multi-tens-of-millions budget gap and dialogue with MHCLG; exact £97M figure not independently confirmed", "source": "https://www.lgcplus.com/", "severity": "low"},
+      {"claim": "Population ~1,410,000 (ONS 2023)", "status": "CONFIRMED", "correct_value": "Hampshire CC area population ~1.41M (ONS mid-2023)", "source": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates", "severity": "low"}
+    ]
+  },
+  {
+    "key": "9.1 of which: primary education",
+    "claims_checked": 6,
+    "findings": [
+      {"claim": "State-funded primary pupils 4.44M (Jan 2024) down from 4.73M peak 2018-19", "status": "CONFIRMED", "correct_value": "Jan 2024 DfE school census ~4.5M state-funded primary pupils (~4.44M core primary); pupil numbers declining from 2018-19 peak", "source": "https://explore-education-statistics.service.gov.uk/find-statistics/school-pupils-and-their-characteristics", "severity": "low"},
+      {"claim": "Ruth Perry inquest Dec 2023 found Ofsted 'likely contributed' at Caversham Primary", "status": "CONFIRMED", "correct_value": "Ruth Perry inquest concluded 7 December 2023; coroner found suicide contributed to by Ofsted inspection at Caversham Primary, November 2022", "source": "https://www.itv.com/news/meridian/2023-12-07/ofsted-inspection-likely-contributed-to-death-of-headteacher-ruth-perry", "severity": "low"},
+      {"claim": "Ofsted REMOVED single-word judgements 2 September 2024", "status": "CONFIRMED", "correct_value": "Single headline Ofsted grades for schools scrapped 2 September 2024 as first step toward School Report Cards from September 2025", "source": "https://www.gov.uk/government/news/single-headline-ofsted-grades-scrapped-in-landmark-school-reform", "severity": "low"},
+      {"claim": "Curriculum and Assessment Review launched by Labour July 2024 (Prof Becky Francis chair)", "status": "CONFIRMED", "correct_value": "Labour launched the Curriculum and Assessment Review in July 2024 chaired by Prof Becky Francis CBE", "source": "https://www.gov.uk/government/news/independent-review-to-drive-high-and-rising-standards-in-schools", "severity": "low"},
+      {"claim": "Primary academisation 58.6% of pupils in academies Jul 2024; passed 50% in 2023", "status": "COULDNT_VERIFY", "correct_value": "DfE academy statistics show primary academisation rising past 50% in recent years; exact 58.6% figure for Jul 2024 not independently verified", "source": "https://explore-education-statistics.service.gov.uk/find-statistics/school-pupils-and-their-characteristics", "severity": "low"},
+      {"claim": "PE + Sport Premium £320M/yr primary-only", "status": "CONFIRMED", "correct_value": "PE and Sport Premium for primary schools is £320M/year ring-fenced; no secondary equivalent", "source": "https://www.gov.uk/government/publications/pe-and-sport-premium-conditions-of-grant", "severity": "low"}
+    ]
+  },
+  {
+    "key": "Low Carbon Contracts Company",
+    "claims_checked": 6,
+    "findings": [
+      {"claim": "AR6 (Sept 2024) results: 131 projects, ~9.6GW capacity", "status": "CONFIRMED", "correct_value": "CfD AR6 results announced 3 September 2024: 131 projects totalling 9.58GW awarded contracts including 6GW offshore wind + 400MW floating", "source": "https://www.gov.uk/government/publications/contracts-for-difference-cfd-allocation-round-6-results", "severity": "low"},
+      {"claim": "AR5 (2023) FAILED: ZERO offshore wind bids", "status": "CONFIRMED", "correct_value": "AR5 (Sept 2023) received zero offshore wind bids due to admin strike price (£44/MWh at 2012 prices) being too low given inflation/cost pressure", "source": "https://www.carbonbrief.org/", "severity": "low"},
+      {"claim": "Hinkley Point C CfD £92.50/MWh (2012 prices) 35-year term, ~£133/MWh in 2024 money", "status": "CONFIRMED", "correct_value": "HPC CfD strike price £92.50/MWh (2012 prices) for 35-year term from commissioning, indexed to ~£133/MWh in 2025", "source": "https://en.wikipedia.org/wiki/Hinkley_Point_C_nuclear_power_station", "severity": "low"},
+      {"claim": "LCCC single counterparty for CfDs; created 2014 under Electricity Market Reform", "status": "CONFIRMED", "correct_value": "LCCC Ltd is DESNZ-owned single counterparty for CfDs, established under Energy Act 2013/EMR; also administers DPAs and HPBM", "source": "https://www.lowcarboncontracts.uk/", "severity": "low"},
+      {"claim": "Energy Act 2023 extended LCCC to administer Dispatchable Power Agreements and Hydrogen Production Business Model", "status": "CONFIRMED", "correct_value": "Energy Act 2023 expanded LCCC role for DPAs (CCUS) and Hydrogen Production Business Model", "source": "https://www.legislation.gov.uk/ukpga/2023/52", "severity": "low"},
+      {"claim": "Offshore wind fixed-bottom strike price AR6 £58.87/MWh (Permitted Reduction)", "status": "COULDNT_VERIFY", "correct_value": "AR6 offshore wind clearing prices reported at ranges around £54-59/MWh (2012 prices) for Permitted Reduction slots; exact £58.87/MWh figure not uniquely verified", "source": "https://www.hsfkramer.com/notes/energy/2024-posts/AR6-CfD-Results", "severity": "low"}
+    ]
+  },
+  {
+    "key": "Lancashire CC",
+    "claims_checked": 4,
+    "findings": [
+      {"claim": "Lancashire Combined County Authority launched Feb 2024 as non-mayoral CCA — first in England under Levelling-up and Regeneration Act 2023", "status": "DRIFTED", "correct_value": "Lancashire CCA approval by Labour government was 19 Sept 2024; Statutory Instrument laid 26 Nov 2024; officially came into being in 2025 (not Feb 2024). East Midlands CCA was the first CCA to be established, not Lancashire", "source": "https://lancashire-cca.gov.uk/news/2025/launch-new-lancashire-combined-county-authority", "severity": "high"},
+      {"claim": "Leader Phillippa Williamson (Conservative, continuing since 2021)", "status": "CONFIRMED", "correct_value": "Phillippa Williamson led Conservative administration at Lancashire CC from May 2021 after Con regained control", "source": "https://www.lancashire.gov.uk/", "severity": "low"},
+      {"claim": "Angie Ridgwell continuing CE since 2018; also Section 151 Officer combined role", "status": "COULDNT_VERIFY", "correct_value": "Angie Ridgwell has been CE of Lancashire CC in recent years; exact tenure start 2018 and combined s151 status couldn't be precisely verified", "source": "https://www.lancashire.gov.uk/", "severity": "low"},
+      {"claim": "Population ~1,250,000 (ONS 2023)", "status": "CONFIRMED", "correct_value": "Lancashire CC area population ~1.25M (ONS mid-2023)", "source": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates", "severity": "low"}
+    ]
+  },
+  {
+    "key": "University Hospitals Birmingham NHS Foundation Trust",
+    "claims_checked": 5,
+    "findings": [
+      {"claim": "Jonathan Brotherton substantive CEO from Apr 2024, prior interim", "status": "DRIFTED", "correct_value": "Jonathan Brotherton appointed substantive Group CEO on 17 July 2023 (not April 2024), after serving as interim CEO. Entry self-contradicts ('substantive from Apr 2023' in another stat)", "source": "https://www.uhb.nhs.uk/news-and-events/news/university-hospitals-birmingham-nhs-foundation-trust-announces-group-chief-executive/629994", "severity": "high"},
+      {"claim": "Absorbed Heart of England FT in April 2018", "status": "CONFIRMED", "correct_value": "UHB and Heart of England NHS FT merged on 1 April 2018", "source": "https://en.wikipedia.org/wiki/University_Hospitals_Birmingham_NHS_Foundation_Trust", "severity": "low"},
+      {"claim": "CQC Nov 2023 rated trust Requires Improvement overall; another stat says Good (post-Bewick 2023)", "status": "DRIFTED", "correct_value": "Internal contradiction — entry cites both 'Requires Improvement overall Nov 2023' and 'Good (post-Bewick/Mannion reviews; inspection 2023)'. CQC provider page should be authoritative source", "source": "https://www.cqc.org.uk/provider/RRK", "severity": "medium"},
+      {"claim": "Bewick cultural review found 'toxic' bullying culture", "status": "CONFIRMED", "correct_value": "Bewick review commissioned by ICB confirmed 'disturbing reports of bullying' and 'toxic atmosphere' at UHB; Prof Bewick said Trust was safe place for care", "source": "https://www.birminghamsolihull.icb.nhs.uk/news-and-events/news/patient-safety-review-university-hospitals-birmingham-published", "severity": "low"},
+      {"claim": "FT status authorised 1 July 2004 (first-wave FT)", "status": "CONFIRMED", "correct_value": "UHB NHS FT was authorised in first wave of NHS foundation trusts in 2004", "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC387507/", "severity": "low"}
+    ]
+  },
+  {
+    "key": "Barts Health NHS Trust",
+    "claims_checked": 5,
+    "findings": [
+      {"claim": "Formed 1 April 2012 from merger of Barts and the London, Newham University and Whipps Cross", "status": "CONFIRMED", "correct_value": "Barts Health NHS Trust established 1 April 2012 via merger of Barts and The London NHS Trust + Newham University Hospital NHS Trust + Whipps Cross University Hospital NHS Trust", "source": "https://en.wikipedia.org/wiki/Barts_Health_NHS_Trust", "severity": "low"},
+      {"claim": "CEO Shane DeGaris Group CEO since Jan 2023 / Oct 2020", "status": "DRIFTED", "correct_value": "Entry self-contradicts — says 'since Jan 2023' in one stat and 'since Oct 2020' in another. DeGaris formally appointed first Group CEO when Dame Alwen Williams stepped down in August 2022/2023 period per Barts Health press release", "source": "https://www.bartshealth.nhs.uk/news/shane-degaris-appointed-as-group-chief-executive-officer-13168", "severity": "medium"},
+      {"claim": "Jacqui Smith Chair from 2022; stepped down Oct 2024 on appointment as Skills Minister", "status": "DRIFTED", "correct_value": "Jacqui Smith stepped down as Chair after being appointed to ministerial role in July 2024 (not Oct 2024); Charlie Chan became interim chair", "source": "https://www.bhrhospitals.nhs.uk/news/new-chairs-to-be-appointed-to-barts-health-and-bhrut-4766/", "severity": "medium"},
+      {"claim": "Royal London / Barts PFI (Skanska Innisfree) ~£150M/yr to 2048 — largest in NHS", "status": "COULDNT_VERIFY", "correct_value": "Royal London/St Barts PFI is among largest NHS PFIs; exact £150M/yr unitary charge and 2048 end date from public records need direct confirmation", "source": "https://www.gov.uk/government/publications/private-finance-initiative-and-private-finance-2-projects-2019-21-summary-data", "severity": "low"},
+      {"claim": "Jacqui Smith former Labour Home Secretary 2007-09 under Brown", "status": "CONFIRMED", "correct_value": "Jacqui Smith served as Home Secretary from 2007 to 2009 under PM Gordon Brown", "source": "https://en.wikipedia.org/wiki/Jacqui_Smith", "severity": "low"}
+    ]
+  },
+  {
+    "key": "Food Biosecurity And Trade Dg Sponsored Albs Directorate - Apha",
+    "claims_checked": 6,
+    "findings": [
+      {"claim": "APHA Weybridge redevelopment — £1.2B originally, NAO 2024 revised to ~£2.8B+", "status": "CONFIRMED", "correct_value": "HMT approved £1.2B for Weybridge redevelopment including £200M to 2024-25; Department's current cost estimate is £2.8B over 15 years ending 2036", "source": "https://committees.parliament.uk/publications/31598/documents/177448/default/", "severity": "low"},
+      {"claim": "BTOM phased 31 January 2024 (health certificates) + 30 April 2024 (physical checks)", "status": "CONFIRMED", "correct_value": "BTOM Phase 1: 31 Jan 2024 requiring phytosanitary certificates; Phase 2 from 30 April 2024 introducing documentary, identity and physical checks at borders", "source": "https://planthealthportal.defra.gov.uk/trade/imports/target-operating-model-tom/what-does-the-border-target-operating-model-mean-for-plants/", "severity": "low"},
+      {"claim": "APHA formed 2014 by merger of AHVLA + Fera parts", "status": "CONFIRMED", "correct_value": "APHA formed 1 October 2014 merging Animal Health and Veterinary Laboratories Agency (AHVLA) with parts of Food and Environment Research Agency", "source": "https://www.gov.uk/government/organisations/animal-and-plant-health-agency", "severity": "low"},
+      {"claim": "APR/BPR inheritance-tax reform Oct 2024 Autumn Budget capped 100% APR/BPR at £1M", "status": "CONFIRMED", "correct_value": "Autumn Budget 30 October 2024 announced reform — 100% APR/BPR relief capped at £1M combined from April 2026, triggering farmer protests", "source": "https://www.gov.uk/government/publications/autumn-budget-2024", "severity": "low"},
+      {"claim": "SAPRA (Science Capability in Animal and Plant Health) programme", "status": "COULDNT_VERIFY", "correct_value": "DEFRA's Weybridge programme is commonly referred to as 'Science Capability in Animal Health' (SCAH); the 'SAPRA' acronym not confirmed in public NAO/PAC documents", "source": "https://www.nao.org.uk/reports/improving-the-uks-science-capability-for-managing-animal-diseases/", "severity": "medium"},
+      {"claim": "APHA CE David Holdsworth until Aug 2024; Jenny Stewart interim then permanent 2025", "status": "COULDNT_VERIFY", "correct_value": "David Holdsworth served as APHA CEO; exact transition dates and successor Jenny Stewart not verifiable in open sources", "source": "https://www.gov.uk/government/organisations/animal-and-plant-health-agency", "severity": "low"}
+    ]
+  },
+  {
+    "key": "Essex CC",
+    "claims_checked": 5,
+    "findings": [
+      {"claim": "Gavin Jones CBE to Mar 2024; Nicole Wood permanent CE from Apr 2024", "status": "DRIFTED", "correct_value": "Gavin Jones retired in January 2025 (not March 2024); Nicole Wood appointed new CE in 2025 subject to full council approval. Entry materially wrong on dates", "source": "https://www.essex.gov.uk/news/2025/new-chief-executive-appointed", "severity": "high"},
+      {"claim": "Leader Kevin Bentley (Conservative, continuing since 2021)", "status": "CONFIRMED", "correct_value": "Cllr Kevin Bentley Leader of Essex CC since 2021", "source": "https://www.essex.gov.uk/", "severity": "low"},
+      {"claim": "Gavin Jones 14 years as CE", "status": "CONFIRMED", "correct_value": "Gavin Jones retired from Essex CC after serving approximately 14 years including CE role; he joined ECC in 2011", "source": "https://www.essex.gov.uk/news/2024/gavin-jones-announces-retirement", "severity": "low"},
+      {"claim": "Thurrock under s.114 commissioners since 2023", "status": "CONFIRMED", "correct_value": "Thurrock Council issued s.114 notice December 2022; commissioners appointed September 2022; ongoing through 2023+", "source": "https://www.gov.uk/government/publications/thurrock-council-intervention", "severity": "low"},
+      {"claim": "Population ~1,500,000 (ONS 2023)", "status": "CONFIRMED", "correct_value": "Essex CC area population ~1.5M (ONS mid-2023 estimate)", "source": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates", "severity": "low"}
+    ]
+  },
+  {
+    "key": "Birmingham",
+    "claims_checked": 6,
+    "findings": [
+      {"claim": "s.114 notice issued 5 September 2023 — largest UK council bankruptcy", "status": "CONFIRMED", "correct_value": "Birmingham City Council issued s.114 Notice on 5 September 2023; in-year gap ~£87M at time of notice; equal-pay liability £650M-£760M", "source": "https://www.birmingham.gov.uk/news/article/1381/statement_regarding_section_114_notice", "severity": "low"},
+      {"claim": "6 Commissioners appointed 5 Oct 2023 — Max Caller CBE lead until Aug 2024; John Coughlan from Sept 2024", "status": "CONFIRMED", "correct_value": "Commissioners appointed 5 Oct 2023 by DLUHC; Max Caller lead commissioner; John Coughlan CBE joined team", "source": "https://www.gov.uk/government/publications/birmingham-city-council-commissioner-appointment-letters-5-october-2023", "severity": "low"},
+      {"claim": "Joanne Roney CBE interim CE from Jul 2024 — recruited from Manchester", "status": "DRIFTED", "correct_value": "Joanne Roney was appointed as 'Managing Director' (not 'interim CE') at Birmingham; took up position in June 2024 (not Jul 2024); previously Manchester CE", "source": "https://www.birmingham.gov.uk/news/article/1453/birmingham_city_council_appoints_new_managing_director", "severity": "medium"},
+      {"claim": "Deborah Cadman OBE to 2024", "status": "CONFIRMED", "correct_value": "Deborah Cadman stood down as Chief Executive on 22 March 2024 after almost three years", "source": "https://www.birmingham.gov.uk/news/article/1438/", "severity": "low"},
+      {"claim": "Richard Parker (Lab) elected WMCA Mayor May 2024 ousting Andy Street by 1,508 votes", "status": "CONFIRMED", "correct_value": "Richard Parker (Lab) won 2024 West Midlands mayoral election 2 May 2024 defeating Andy Street by 1,508 votes", "source": "https://en.wikipedia.org/wiki/2024_West_Midlands_mayoral_election", "severity": "low"},
+      {"claim": "Population 1,157,600 — largest single LA in Europe (ONS mid-2023)", "status": "CONFIRMED", "correct_value": "Birmingham population ~1,157,603 (ONS mid-2022) — largest local authority by population in UK; commonly cited as largest in Europe", "source": "https://www.ons.gov.uk/explore-local-statistics/areas/E08000025-birmingham", "severity": "low"}
+    ]
+  },
+  {
+    "key": "Hertfordshire CC",
+    "claims_checked": 5,
+    "findings": [
+      {"claim": "Conservative lost overall control in 2022 to a Liberal Democrat/Labour/Green coalition", "status": "DRIFTED", "correct_value": "Hertfordshire CC remained Conservative-majority from May 2021 (won 46 of 78 seats) through 2024-25; Conservatives only lost control at the May 2025 election", "source": "https://en.wikipedia.org/wiki/2021_Hertfordshire_County_Council_election", "severity": "high"},
+      {"claim": "Leader Steve Jarvis (Lib Dem) since 2023", "status": "DRIFTED", "correct_value": "Steve Jarvis became Lib Dem group leader in May 2023, but only became Leader of Council on 20 May 2025 after Lib Dems formed minority administration post-May 2025 election", "source": "https://en.wikipedia.org/wiki/2025_Hertfordshire_County_Council_election", "severity": "high"},
+      {"claim": "Political control 2024-25: No Overall Control — Lib Dem-led minority/coalition (37 of 78 seats elected May 2021)", "status": "DRIFTED", "correct_value": "2021 Herts CC election saw Con win 46 of 78 seats; Lib Dems 23 seats. No NOC in 2024-25 — Conservatives had majority until May 2025", "source": "https://en.wikipedia.org/wiki/2021_Hertfordshire_County_Council_election", "severity": "high"},
+      {"claim": "Population ~1,200,000 (ONS 2023)", "status": "CONFIRMED", "correct_value": "Hertfordshire CC area population ~1.2M (ONS mid-2023)", "source": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates", "severity": "low"},
+      {"claim": "CE Scott Crudgington continuing since Apr 2023", "status": "COULDNT_VERIFY", "correct_value": "Scott Crudgington has been CE of Hertfordshire CC in recent years; exact Apr 2023 appointment date couldn't be verified", "source": "https://www.hertfordshire.gov.uk/", "severity": "low"}
+    ]
+  },
+  {
+    "key": "Sizewell C (Holding) Limited",
+    "claims_checked": 6,
+    "findings": [
+      {"claim": "CGN exit Nov 2022 — HMG bought CGN's 20% development-phase stake for ~£700M", "status": "DRIFTED", "correct_value": "UK Govt invested £679M-£700M on 29 November 2022 to allow CGN's exit. Reports vary — some sources cite £100M for CGN buy-out plus HMG investment totalling £700M matched by EDF", "source": "https://www.france24.com/en/live-news/20221129-uk-removes-china-from-sizewell-nuclear-project-takes-joint-stake", "severity": "medium"},
+      {"claim": "Hinkley Point C cost escalated £18B (2012 estimate) → £46B (2024 estimate); commissioning slipped to 2029-2031", "status": "CONFIRMED", "correct_value": "Jan 2024 EDF announced HPC cost could rise to £46B (2024 prices); operational scenarios 2029/2030/2031 depending on delays", "source": "https://www.edf.fr/en/the-edf-group/dedicated-sections/journalists/all-press-releases/hinkley-point-c-update-1", "severity": "low"},
+      {"claim": "Labour July 2024 announcement: £5.5B public investment commitment", "status": "CONFIRMED", "correct_value": "Labour Chancellor Rachel Reeves Oct 2024 Autumn Budget confirmed £2.7bn for Sizewell C in 2025-26 (within previously committed £5.5B Devex envelope)", "source": "https://www.newcivilengineer.com/latest/autumn-budget-government-commits-additional-2-7bn-to-sizewell-c-30-10-2024/", "severity": "low"},
+      {"claim": "Capital cost estimate £35-40B (2024 prices) — up from £20-24B", "status": "CONFIRMED", "correct_value": "Sizewell C FID ultimately confirmed in July 2025 at ~£38B (2024 prices); prior estimates in £20-35B range", "source": "https://sustainabilitymag.com/news/go-ahead-for-sizewell-c-but-why-has-cost-soared-to-38bn", "severity": "low"},
+      {"claim": "Enabled by Nuclear Energy (Financing) Act 2022 RAB model", "status": "CONFIRMED", "correct_value": "Nuclear Energy (Financing) Act 2022 established Regulated Asset Base model for new nuclear, replacing CfD used for Hinkley", "source": "https://www.legislation.gov.uk/ukpga/2022/15/contents", "severity": "low"},
+      {"claim": "2 × EPR reactors (Framatome); ~3.2GW net; same design as Hinkley Point C + Flamanville 3", "status": "CONFIRMED", "correct_value": "Sizewell C design: 2× EPR reactors (Framatome), net ~3.2GW, same design as HPC and Flamanville 3", "source": "https://www.sizewellc.com/", "severity": "low"}
+    ]
+  },
+  {
+    "key": "Surrey CC",
+    "claims_checked": 5,
+    "findings": [
+      {"claim": "CE Terence Herbert continuing since Mar 2021", "status": "DRIFTED", "correct_value": "Terence Herbert was appointed CE of Surrey CC and officially started in August 2024 (not since March 2021); he replaced Joanna Killian. Previously CE at Wiltshire Council since June 2020", "source": "https://news.surreycc.gov.uk/2024/08/19/new-chief-executive-starts-at-surrey-county-council-2/", "severity": "high"},
+      {"claim": "Leader Tim Oliver (Conservative, continuing since 2018)", "status": "CONFIRMED", "correct_value": "Cllr Tim Oliver OBE has been Leader of Surrey CC since 2018", "source": "https://mycouncil.surreycc.gov.uk/mgUserInfo.aspx?UID=2190", "severity": "low"},
+      {"claim": "Woking BC under s.114 with commissioners since 2023", "status": "CONFIRMED", "correct_value": "Woking Borough Council issued s.114 notice on 7 June 2023; commissioners appointed by DLUHC", "source": "https://www.gov.uk/government/publications/woking-borough-council-intervention", "severity": "low"},
+      {"claim": "May 2025 SCC election cancelled pending LGR", "status": "CONFIRMED", "correct_value": "Surrey's May 2025 elections postponed (cancelled) as part of Local Government Reorganisation submission under English Devolution White Paper", "source": "https://www.gov.uk/government/publications/english-devolution-white-paper", "severity": "low"},
+      {"claim": "Population ~1,210,000 (ONS 2023)", "status": "CONFIRMED", "correct_value": "Surrey CC area population ~1.21M (ONS mid-2023)", "source": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates", "severity": "low"}
+    ]
+  },
+  {
+    "key": "5.6 Environment protection n.e.c.",
+    "claims_checked": 5,
+    "findings": [
+      {"claim": "Office for Environmental Protection established Environment Act 2021, launched November 2021", "status": "CONFIRMED", "correct_value": "OEP legally formed 17 November 2021 under Environment Act 2021 (Royal Assent 9 Nov 2021); interim capacity from July 2021", "source": "https://www.legislation.gov.uk/ukpga/2021/30", "severity": "low"},
+      {"claim": "Environmental Improvement Plan 2023 sets 262 targets across 10 goal areas — statutory under Environment Act 2021", "status": "CONFIRMED", "correct_value": "EIP23 published 31 January 2023 under Environment Act 2021 sets out targets across 10 goal areas including 262 commitments", "source": "https://www.gov.uk/government/publications/environmental-improvement-plan", "severity": "low"},
+      {"claim": "UK committed to protecting 30% of land + sea by 2030 (Kunming-Montreal CBD COP15)", "status": "CONFIRMED", "correct_value": "UK is signatory to Kunming-Montreal Global Biodiversity Framework (Dec 2022, COP15) committing to 30 by 30 protection target", "source": "https://www.gov.uk/government/news/30-by-30-on-land-in-england-confirmed", "severity": "low"},
+      {"claim": "UKRI-NERC ~£410M grant-in-aid", "status": "COULDNT_VERIFY", "correct_value": "NERC budget via UKRI is in the ~£400M range; exact £410M annual figure not independently confirmed for 2024-25", "source": "https://www.ukri.org/councils/nerc/", "severity": "low"},
+      {"claim": "Marine Management Organisation ~£38M DEL, NDPB of DEFRA", "status": "COULDNT_VERIFY", "correct_value": "MMO is an NDPB sponsored by DEFRA; annual budget in £30-40M range; exact £38M DEL figure not independently verified", "source": "https://www.gov.uk/government/organisations/marine-management-organisation", "severity": "low"}
+    ]
+  },
+  {
+    "key": "7.B Medical research",
+    "claims_checked": 6,
+    "findings": [
+      {"claim": "NIHR budget 2024-25 ~£1.4B", "status": "DRIFTED", "correct_value": "NIHR total spend 2024-25 was £1,637.76M (~£1.64B) excluding ODA — approximately 17% higher than the £1.4B claimed", "source": "https://www.nihr.ac.uk/about-us/who-we-are/reports-and-performance/annual-report-202425/financial-summary", "severity": "medium"},
+      {"claim": "NIHR BRCs — 20 centres, 5-year awards total £790M from Dec 2022", "status": "CONFIRMED", "correct_value": "NIHR awarded nearly £800M to 20 Biomedical Research Centres; 5-year funding from December 2022 to November 2027", "source": "https://www.nihr.ac.uk/news/nihr-announces-nearly-ps800m-turn-research-new-treatments", "severity": "low"},
+      {"claim": "Commercial clinical trials UK decline 44% 2017-21 (O'Shaughnessy Review 2023)", "status": "CONFIRMED", "correct_value": "ABPI reported 44% decline in UK commercial clinical trials initiated 2017-2021, dropping UK from 4th to 10th globally for phase 3 industry trials", "source": "https://www.gov.uk/government/publications/commercial-clinical-trials-in-the-uk-the-lord-oshaughnessy-review", "severity": "low"},
+      {"claim": "Lord O'Shaughnessy Commercial Clinical Trials Review May 2023", "status": "CONFIRMED", "correct_value": "Review commissioned February 2023 and published May 2023 with 27 recommendations; government committed £121M initially", "source": "https://www.gov.uk/government/publications/commercial-clinical-trials-in-the-uk-the-lord-oshaughnessy-review", "severity": "low"},
+      {"claim": "UK Biobank 500,000 participants", "status": "CONFIRMED", "correct_value": "UK Biobank recruited 500,000 participants aged 40-69 between 2006-2010", "source": "https://www.ukbiobank.ac.uk/", "severity": "low"},
+      {"claim": "Our Future Health recruiting 5M volunteers", "status": "CONFIRMED", "correct_value": "Our Future Health aims to recruit up to 5 million adults; launched 2022; over 3 million registered as of mid-2024", "source": "https://ourfuturehealth.org.uk/", "severity": "low"}
+    ]
+  }
+]

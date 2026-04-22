@@ -59,9 +59,199 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T17:43:29Z",
+    "company_name": "HEADLAND ARCHAEOLOGY (UK) LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2008-05-15",
+    "date_of_cessation": null,
+    "jurisdiction": "scotland",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-03"
+  },
+  "governance": {
+    "api_date": "2026-04-22T17:43:31Z",
+    "total_officers": 21,
+    "active_count": 11,
+    "resigned_count": 10,
+    "active_officers": [
+      {
+        "name": "EVANS, Sally",
+        "role": "secretary",
+        "appointed_on": "2019-03-08",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BOARD, Nigel Paul",
+        "role": "director",
+        "appointed_on": "2019-11-12",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "BOUCHER, Andrew Robert",
+        "role": "director",
+        "appointed_on": "2010-11-16",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HERLIHY, Francis",
+        "role": "director",
+        "appointed_on": "2025-04-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MOGFORD, Sarah Anne Louise",
+        "role": "director",
+        "appointed_on": "2019-03-08",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MOONEY, George",
+        "role": "director",
+        "appointed_on": "2025-01-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "NORTON, Andrew Peter",
+        "role": "director",
+        "appointed_on": "2024-07-12",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "PIERRI, Marilily",
+        "role": "director",
+        "appointed_on": "2019-11-12",
+        "country_of_residence": "Scotland",
+        "nationality": "Greek"
+      },
+      {
+        "name": "RYDER, Alasdair Alan",
+        "role": "director",
+        "appointed_on": "2019-03-08",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "TOWLE, Andrew Charles",
+        "role": "director",
+        "appointed_on": "2020-05-06",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "WHITE, Duncan Ian",
+        "role": "director",
+        "appointed_on": "2025-01-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T17:43:33Z",
+    "total_results": 4,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Rsk Environment Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2023-10-26",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "United Kingdom (Scotland)",
+          "country_registered": "Scotland",
+          "place_registered": "Edinburgh",
+          "registration_number": "Sc115530"
+        }
+      },
+      {
+        "name": "Ares Management Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2023-10-26",
+        "identification": {
+          "legal_form": "Corporate",
+          "legal_authority": "United Kingdom (England)",
+          "country_registered": "England",
+          "place_registered": "London",
+          "registration_number": "05837428"
+        }
+      },
+      {
+        "name": "Ares Management Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2019-10-18",
+        "identification": {
+          "legal_form": "Corporate",
+          "legal_authority": "United Kingdom (England)",
+          "country_registered": "England",
+          "place_registered": "London",
+          "registration_number": "05837428"
+        }
+      },
+      {
+        "name": "Headland Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Scottish Law",
+          "country_registered": "Scotland",
+          "place_registered": "Scotland",
+          "registration_number": "Sc162974"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MzcyMzg3NWFkaXF6a2N4",
+    "date": "2025-10-03",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/TLIqnJuv1-NaMQNXWyRuNyaU3rsvoMWPH_p08XaCE2c/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/SC342945/filing-history/MzQ4MzcyMzg3NWFkaXF6a2N4"
   }
 }

@@ -59,9 +59,87 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T17:32:47Z",
+    "company_name": "LOUGHBOROUGH UNIVERSITY ENTERPRISES LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1995-12-20",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-04-30",
+    "accounts_last_made_up": "2025-07-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-24"
+  },
+  "governance": {
+    "api_date": "2026-04-22T17:32:48Z",
+    "total_officers": 29,
+    "active_count": 3,
+    "resigned_count": 26,
+    "active_officers": [
+      {
+        "name": "CONWAY, Paul, Prof.",
+        "role": "director",
+        "appointed_on": "2021-02-12",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HENRY, James Michael Matthew",
+        "role": "director",
+        "appointed_on": "2021-12-15",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PARSONS, Daniel Roy, Prof",
+        "role": "director",
+        "appointed_on": "2024-08-01",
+        "country_of_residence": "England",
+        "nationality": "English"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T17:32:50Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Loughborough University",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-12-13",
+        "identification": {
+          "legal_form": "Royal Charter Company",
+          "legal_authority": "Governed By Royal Charter",
+          "country_registered": "United Kingdom",
+          "place_registered": "England And Wales",
+          "registration_number": "Rc000332"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5OTMxMDE3NWFkaXF6a2N4",
+    "date": "2026-01-19",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/UR4tsgN7XdQwvjh_GmLI1XmiKnWKKdx1QQdNBwuuwy0/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03139948/filing-history/MzQ5OTMxMDE3NWFkaXF6a2N4"
   }
 }

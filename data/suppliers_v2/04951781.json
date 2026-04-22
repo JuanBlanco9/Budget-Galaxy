@@ -68,9 +68,81 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T18:04:20Z",
+    "company_name": "THE PERK-COMPANY LTD",
+    "company_status": "active",
+    "date_of_creation": "2003-11-03",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-08-31",
+    "accounts_last_made_up": "2024-11-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-17"
+  },
+  "governance": {
+    "api_date": "2026-04-22T18:04:21Z",
+    "total_officers": 5,
+    "active_count": 3,
+    "resigned_count": 2,
+    "active_officers": [
+      {
+        "name": "BAILLIE, Julia Elizabeth",
+        "role": "secretary",
+        "appointed_on": "2003-11-03",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "BAILLIE, Max Anthony",
+        "role": "director",
+        "appointed_on": "2003-11-03",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BAILLIE, Sara Louise",
+        "role": "director",
+        "appointed_on": "2024-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T18:04:23Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Max Anthony Baillie",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3OTEzOTc0M2FkaXF6a2N4",
+    "date": "2025-08-29",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/rqLWeRjmUJcigtMSj1yblFOPQhIl97So62DNeLF14C8/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04951781/filing-history/MzQ3OTEzOTc0M2FkaXF6a2N4"
   }
 }

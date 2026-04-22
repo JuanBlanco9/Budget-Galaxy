@@ -64,9 +64,201 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T16:32:12Z",
+    "company_name": "THOMAS GRAHAM & SONS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1960-04-20",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-02-28",
+    "accounts_last_made_up": "2025-05-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-03"
+  },
+  "governance": {
+    "api_date": "2026-04-22T16:32:14Z",
+    "total_officers": 14,
+    "active_count": 7,
+    "resigned_count": 7,
+    "active_officers": [
+      {
+        "name": "BARNES, Phillip Sydney",
+        "role": "director",
+        "appointed_on": "2009-12-07",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "RAE, Ian William John",
+        "role": "director",
+        "appointed_on": "2019-02-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "SMITH, Garry Mark",
+        "role": "director",
+        "appointed_on": "2009-12-07",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "SMITH, Ian Davidson",
+        "role": "director",
+        "appointed_on": null,
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "SMITH, Roger Duncan",
+        "role": "director",
+        "appointed_on": "1996-09-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SMITH, Russell Mark",
+        "role": "director",
+        "appointed_on": "2011-09-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "WARD, Amanda Jane",
+        "role": "director",
+        "appointed_on": "2012-10-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T16:32:16Z",
+    "total_results": 8,
+    "active_count": 3,
+    "items": [
+      {
+        "name": "Mr Ian Davidson Smith",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2024-07-15",
+        "identification": null
+      },
+      {
+        "name": "Mr Ian Davidson Smith",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent",
+          "voting-rights-50-to-75-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2020-12-09",
+        "identification": null
+      },
+      {
+        "name": "Mrs Pat Smith",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control-as-trust"
+        ],
+        "notified_on": "2020-12-09",
+        "identification": null
+      },
+      {
+        "name": "Mr Roger Duncan Smith",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control-as-trust"
+        ],
+        "notified_on": "2020-12-09",
+        "identification": null
+      },
+      {
+        "name": "Mrs Amanda Jane Ward",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control-as-trust"
+        ],
+        "notified_on": "2020-12-09",
+        "identification": null
+      },
+      {
+        "name": "Thomas Graham & Sons Ltd Directors Retirement Benefits Scheme",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2018-03-01",
+        "identification": {
+          "legal_form": "Pension Scheme",
+          "legal_authority": "Pensions Act 1995"
+        }
+      },
+      {
+        "name": "The Ian Davidson Smith 2018 Discretionary Settlement",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2018-03-01",
+        "identification": {
+          "legal_form": "Discretionary Trust",
+          "legal_authority": "Trustee Act 2000"
+        }
+      },
+      {
+        "name": "Mr Ian Davidson Smith",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwNzM1MjIyNGFkaXF6a2N4",
+    "date": "2026-02-27",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/uJL2u2QVBOns6sEejIaOxJG7U1G3P0D-m5CjvzSmuj4/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/00656879/filing-history/MzUwNzM1MjIyNGFkaXF6a2N4"
   }
 }

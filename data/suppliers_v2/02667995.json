@@ -64,9 +64,89 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T17:37:43Z",
+    "company_name": "DATA AND MARKETING ASSOCIATION LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1991-12-03",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-20"
+  },
+  "governance": {
+    "api_date": "2026-04-22T17:37:45Z",
+    "total_officers": 166,
+    "active_count": 6,
+    "resigned_count": 160,
+    "active_officers": [
+      {
+        "name": "ALDIGHIERI, Rachel Helen",
+        "role": "director",
+        "appointed_on": "2015-06-29",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ATKINSON-TOAL, Richard Alan",
+        "role": "director",
+        "appointed_on": "2025-04-24",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "COMBEMALE, Christopher Porte",
+        "role": "director",
+        "appointed_on": "2007-01-18",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "DAVDA, Bhavik",
+        "role": "director",
+        "appointed_on": "2025-04-24",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "HASSAN, Leila",
+        "role": "director",
+        "appointed_on": "2025-04-24",
+        "country_of_residence": "United Kingdom",
+        "nationality": "Australian"
+      },
+      {
+        "name": "MILLER, Tony",
+        "role": "director",
+        "appointed_on": "2021-01-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T17:37:47Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4OTc5OTQ1M2FkaXF6a2N4",
+    "date": "2025-11-19",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/DyrXxNRMS7H9UIDWy69b5G6NbNZFypka349Iyg3wQ3U/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02667995/filing-history/MzQ4OTc5OTQ1M2FkaXF6a2N4"
   }
 }

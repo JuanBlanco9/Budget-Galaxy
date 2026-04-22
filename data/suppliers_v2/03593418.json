@@ -59,9 +59,138 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T18:00:19Z",
+    "company_name": "THERA TRUST",
+    "company_status": "active",
+    "date_of_creation": "1998-07-06",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-20"
+  },
+  "governance": {
+    "api_date": "2026-04-22T18:00:21Z",
+    "total_officers": 48,
+    "active_count": 13,
+    "resigned_count": 35,
+    "active_officers": [
+      {
+        "name": "PILKINGTON, Martin Clifford",
+        "role": "secretary",
+        "appointed_on": "2023-12-31",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BERRYMAN, Marc",
+        "role": "director",
+        "appointed_on": "2025-03-25",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "COOTE, Nicola Catherine",
+        "role": "director",
+        "appointed_on": "2022-06-13",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "FOLKARD, Steven James",
+        "role": "director",
+        "appointed_on": "2024-07-19",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LENNON, Ceri Louise",
+        "role": "director",
+        "appointed_on": "2023-12-31",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LICHTEN, Elizabeth Laura",
+        "role": "director",
+        "appointed_on": "2020-05-04",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      },
+      {
+        "name": "MCDERMOTT, Michelle Claire",
+        "role": "director",
+        "appointed_on": "2020-09-28",
+        "country_of_residence": "England",
+        "nationality": "British,American"
+      },
+      {
+        "name": "PLATTS, Kathryn Elizabeth, Dr",
+        "role": "director",
+        "appointed_on": "2024-05-02",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SMITH, Matthew James",
+        "role": "director",
+        "appointed_on": "2007-03-16",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WARREN, Sally Anne",
+        "role": "director",
+        "appointed_on": "2020-04-27",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WESTON, Lorna Havard",
+        "role": "director",
+        "appointed_on": "2023-12-31",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WHALLEY, Steven",
+        "role": "director",
+        "appointed_on": "2024-07-23",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      },
+      {
+        "name": "WINN, Katie",
+        "role": "director",
+        "appointed_on": "2023-12-31",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T18:00:23Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NjU0OTkzNmFkaXF6a2N4",
+    "date": "2026-01-04",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/mQF_AXs4sYaDdoUriPQiamYGyucAN_oxIu0w5blgUao/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03593418/filing-history/MzQ5NjU0OTkzNmFkaXF6a2N4"
   }
 }

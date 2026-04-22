@@ -59,9 +59,115 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T18:08:42Z",
+    "company_name": "GASWAY SERVICES LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2001-02-12",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-23"
+  },
+  "governance": {
+    "api_date": "2026-04-22T18:08:45Z",
+    "total_officers": 34,
+    "active_count": 7,
+    "resigned_count": 27,
+    "active_officers": [
+      {
+        "name": "BROWN, Katherine Alexandra",
+        "role": "secretary",
+        "appointed_on": "2019-07-30",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BALDWINSON, Russell Jon",
+        "role": "director",
+        "appointed_on": "2026-01-29",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "BARFORD, Steven Michael",
+        "role": "director",
+        "appointed_on": "2024-02-26",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BARTRAM, Nicholas Mark",
+        "role": "director",
+        "appointed_on": "2013-09-04",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BULL, Kevin John",
+        "role": "director",
+        "appointed_on": "2022-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MCMANUS, Jonathan Paul",
+        "role": "director",
+        "appointed_on": "2023-09-28",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SEALE, Ann-Marie",
+        "role": "director",
+        "appointed_on": "2019-09-25",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T18:09:23Z",
+    "total_results": 1,
+    "active_count": 0,
+    "items": [
+      {
+        "name": "Flagship Housing Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-12-09",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Co-Operative & Comunity Benefit Societies Act 2014",
+          "country_registered": "United Kingdom",
+          "place_registered": "Mutuals Public Register (Fca)",
+          "registration_number": "Ip031211"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NjUxMDgwNmFkaXF6a2N4",
+    "date": "2025-08-07",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/6ceezwXVFqVxdyU5e-tTLXJMVbGGNX_gQcgs4SzUql4/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04158628/filing-history/MzQ3NjUxMDgwNmFkaXF6a2N4"
   }
 }

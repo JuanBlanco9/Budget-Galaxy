@@ -51,57 +51,19 @@
   },
   "financial_health": null,
   "governance": {
-    "officers_active_count": 1,
-    "officers_resigned_count": 0,
-    "board_turnover_ratio": 0.0,
-    "board_turnover_signal": "low",
-    "active_directors": [
+    "api_date": "2026-04-22T18:09:43Z",
+    "total_officers": 1,
+    "active_count": 1,
+    "resigned_count": 0,
+    "active_officers": [
       {
         "name": "PEARSON, Frank, Mr.",
         "role": "director",
         "appointed_on": "2025-12-24",
-        "resigned_on": null,
-        "nationality": "British",
-        "occupation": null,
         "country_of_residence": "United Kingdom",
-        "date_of_birth": {
-          "month": 10,
-          "year": 1959
-        },
-        "address": {
-          "locality": "Grimsby",
-          "postal_code": "DN36 5UP",
-          "country": "United Kingdom"
-        }
+        "nationality": "British"
       }
-    ],
-    "secretaries": [],
-    "all_active_officers": [
-      {
-        "name": "PEARSON, Frank, Mr.",
-        "role": "director",
-        "appointed_on": "2025-12-24",
-        "resigned_on": null,
-        "nationality": "British",
-        "occupation": null,
-        "country_of_residence": "United Kingdom",
-        "date_of_birth": {
-          "month": 10,
-          "year": 1959
-        },
-        "address": {
-          "locality": "Grimsby",
-          "postal_code": "DN36 5UP",
-          "country": "United Kingdom"
-        }
-      }
-    ],
-    "resigned_officers_summary": {
-      "count": 0,
-      "recent": []
-    },
-    "direct_psc_count": 1,
-    "direct_psc_statements": []
+    ]
   },
   "ownership_chain": {
     "resolution": "individual",
@@ -196,5 +158,47 @@
   "procurement": {
     "status": "no_contracts_found",
     "note": "No Contracts Finder matches for this supplier in 2020-2024."
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T18:09:41Z",
+    "company_name": "PEARSON PROFESSIONAL LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2025-12-24",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-09-24",
+    "accounts_last_made_up": null,
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-06"
+  },
+  "pscs": {
+    "api_date": "2026-04-22T18:09:44Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr. Frank Pearson",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2025-12-24",
+        "identification": null
+      }
+    ]
+  },
+  "enrichment_stages": {
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true
   }
 }

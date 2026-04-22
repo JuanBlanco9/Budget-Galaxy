@@ -68,9 +68,88 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T18:11:57Z",
+    "company_name": "BOLINDA UK LTD",
+    "company_status": "active",
+    "date_of_creation": "2004-03-29",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-03-31",
+    "accounts_last_made_up": "2025-06-30",
+    "confirmation_statement_overdue": true,
+    "confirmation_statement_next_due": "2026-04-12"
+  },
+  "governance": {
+    "api_date": "2026-04-22T18:11:59Z",
+    "total_officers": 7,
+    "active_count": 2,
+    "resigned_count": 5,
+    "active_officers": [
+      {
+        "name": "HERRMANN, Jan",
+        "role": "director",
+        "appointed_on": "2010-03-29",
+        "country_of_residence": "Australia",
+        "nationality": "German"
+      },
+      {
+        "name": "HERRMANN, Rebecca Ines",
+        "role": "director",
+        "appointed_on": "2004-03-29",
+        "country_of_residence": "Australia",
+        "nationality": "Australian"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T18:12:00Z",
+    "total_results": 2,
+    "active_count": 0,
+    "items": [
+      {
+        "name": "Mr Jan Herrmann",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "German",
+        "country_of_residence": "Australia",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2019-08-19",
+        "identification": null
+      },
+      {
+        "name": "Ms Rebecca Ines Herrmann",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Australian",
+        "country_of_residence": "Australia",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2019-08-19",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NTc0Nzk4OWFkaXF6a2N4",
+    "date": "2025-12-22",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/zAIAUJGSQz5Sa9tdpx_uVksQ_A6270wS4-mCdBwZgDE/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/05086231/filing-history/MzQ5NTc0Nzk4OWFkaXF6a2N4"
   }
 }

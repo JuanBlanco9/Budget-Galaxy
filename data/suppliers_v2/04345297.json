@@ -64,9 +64,123 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T17:43:36Z",
+    "company_name": "CASTLE OWEN CONSTRUCTION AND PROPERTY CONSULTANTS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2001-12-24",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-01-31",
+    "accounts_last_made_up": "2025-04-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-25"
+  },
+  "governance": {
+    "api_date": "2026-04-22T17:43:38Z",
+    "total_officers": 10,
+    "active_count": 5,
+    "resigned_count": 5,
+    "active_officers": [
+      {
+        "name": "OWEN, Sherelle Sylvia",
+        "role": "secretary",
+        "appointed_on": "2022-08-05",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "CLARKE, Neil Daniel",
+        "role": "director",
+        "appointed_on": "2022-10-19",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "OWEN, Richard Adrian",
+        "role": "director",
+        "appointed_on": "2002-05-29",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "OWEN, Sherelle Sylvia",
+        "role": "director",
+        "appointed_on": "2022-08-05",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "SMITH, Melissa",
+        "role": "director",
+        "appointed_on": "2022-10-19",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T17:43:39Z",
+    "total_results": 3,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Mrs Sherelle Sylvia Owen",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2022-08-05",
+        "identification": null
+      },
+      {
+        "name": "Mr Timothy John Castle",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Richard Adrian Owen",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent",
+          "voting-rights-50-to-75-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3Nzg3MTIzOWFkaXF6a2N4",
+    "date": "2025-08-19",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/t2ZVI4ppX6uH9n3Pk9wG-w485-YC4FHo4SPEiGTlkQg/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04345297/filing-history/MzQ3Nzg3MTIzOWFkaXF6a2N4"
   }
 }

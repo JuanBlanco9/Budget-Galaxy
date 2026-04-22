@@ -64,9 +64,88 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T15:48:05Z",
+    "company_name": "DEL MONTE (UK) LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1989-08-23",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-27",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-15"
+  },
+  "governance": {
+    "api_date": "2026-04-22T15:48:07Z",
+    "total_officers": 27,
+    "active_count": 3,
+    "resigned_count": 24,
+    "active_officers": [
+      {
+        "name": "RENINO, Gianpaolo",
+        "role": "secretary",
+        "appointed_on": "2020-12-02",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "RENINO, Gianpaolo",
+        "role": "director",
+        "appointed_on": "2020-12-02",
+        "country_of_residence": "Monaco",
+        "nationality": "Italian"
+      },
+      {
+        "name": "SELLEY, Martin John",
+        "role": "director",
+        "appointed_on": "2012-02-07",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T15:48:09Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Del Monte Fresh Produce Sarl",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "ownership-of-shares-75-to-100-percent-as-firm",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Sarl",
+          "legal_authority": "Luxembourg",
+          "country_registered": "Luxembourg",
+          "place_registered": "Luxembourg"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwMjMxMjc0MWFkaXF6a2N4",
+    "date": "2026-02-02",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/AbkVQPRXFsYsZZHBVh0M8as_H4K5Z_Q5tBbvJjeiJ-4/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02416083/filing-history/MzUwMjMxMjc0MWFkaXF6a2N4"
   }
 }

@@ -66,9 +66,106 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T17:40:26Z",
+    "company_name": "INBODY UK LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2020-12-16",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-12"
+  },
+  "governance": {
+    "api_date": "2026-04-22T17:40:27Z",
+    "total_officers": 3,
+    "active_count": 2,
+    "resigned_count": 1,
+    "active_officers": [
+      {
+        "name": "CHA, Injoon",
+        "role": "director",
+        "appointed_on": "2024-08-01",
+        "country_of_residence": "South Korea",
+        "nationality": "South Korean"
+      },
+      {
+        "name": "COOPER-BODEN, Francesca Victoria",
+        "role": "director",
+        "appointed_on": "2020-12-16",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T17:40:29Z",
+    "total_results": 3,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Miss Ra Mi Lee",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "South Korean",
+        "country_of_residence": "South Korea",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2020-12-16",
+        "identification": null
+      },
+      {
+        "name": "Mrs Francesca Victoria Cooper-Boden",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2020-12-16",
+        "identification": null
+      },
+      {
+        "name": "Inbody  Europe B.V.",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent-as-firm",
+          "voting-rights-75-to-100-percent-as-firm",
+          "right-to-appoint-and-remove-directors-as-firm"
+        ],
+        "notified_on": "2020-12-16",
+        "identification": {
+          "legal_form": "Private Limited Liability Company",
+          "legal_authority": "Netherlands",
+          "country_registered": "Netherlands",
+          "place_registered": "Netherlands",
+          "registration_number": "67478921"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4Mjg0NzkyNGFkaXF6a2N4",
+    "date": "2025-09-26",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/7wZIKRGoXni3s3OE3k5WUT8uLps0Agg_vKbE03Vk3TU/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/13085012/filing-history/MzQ4Mjg0NzkyNGFkaXF6a2N4"
   }
 }

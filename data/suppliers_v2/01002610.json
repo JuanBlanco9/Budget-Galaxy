@@ -59,9 +59,156 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T15:58:26Z",
+    "company_name": "GE HEALTHCARE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1971-02-16",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-14"
+  },
+  "governance": {
+    "api_date": "2026-04-22T15:58:28Z",
+    "total_officers": 67,
+    "active_count": 4,
+    "resigned_count": 63,
+    "active_officers": [
+      {
+        "name": "CLARK, Tricia Ann",
+        "role": "director",
+        "appointed_on": "2017-03-29",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      },
+      {
+        "name": "CONCI, Federica",
+        "role": "director",
+        "appointed_on": "2023-04-12",
+        "country_of_residence": "United Kingdom",
+        "nationality": "Italian"
+      },
+      {
+        "name": "MOUNTJOY, Darran",
+        "role": "director",
+        "appointed_on": "2023-10-10",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "O'NEILL, Kevin Michael",
+        "role": "director",
+        "appointed_on": "2008-01-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T15:58:30Z",
+    "total_results": 4,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Ge Healthcare Pharmaceutical Diagnostics Holding Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2025-11-24",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "United Kingdom (England And Wales)",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "16555904"
+        }
+      },
+      {
+        "name": "Ge Healthcare Technologies Holding Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2025-11-18",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "United Kingdom (England And Wales)",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "4600380"
+        }
+      },
+      {
+        "name": "One Ge Healthcare Uk",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2022-06-10",
+        "identification": {
+          "legal_form": "Unlimited With Shares",
+          "legal_authority": "United Kingdom (England And Wales)",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "7475142"
+        }
+      },
+      {
+        "name": "Ge Industrial Consolidation Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-12-08",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "United Kingdom (England And Wales)",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "4320679"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3Njc4ODc2MmFkaXF6a2N4",
+    "date": "2025-08-13",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/gG2fNWSxwfhG4nj_SHZP288__rWDVHgtsjdTcg3PZUU/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01002610/filing-history/MzQ3Njc4ODc2MmFkaXF6a2N4"
   }
 }

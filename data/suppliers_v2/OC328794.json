@@ -55,9 +55,206 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T15:58:53Z",
+    "company_name": "DWF LLP",
+    "company_status": "active",
+    "date_of_creation": "2007-06-04",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-01-31",
+    "accounts_last_made_up": "2025-04-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-18"
+  },
+  "governance": {
+    "api_date": "2026-04-22T15:58:55Z",
+    "total_officers": 822,
+    "active_count": 339,
+    "resigned_count": 483,
+    "active_officers": [
+      {
+        "name": "DOUGHTY, Matthew Ian",
+        "role": "llp-designated-member",
+        "appointed_on": "2016-06-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "RIMMER, Paul Robert",
+        "role": "llp-designated-member",
+        "appointed_on": "2013-04-08",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "ABBOTT, David Michael",
+        "role": "llp-member",
+        "appointed_on": "2019-01-02",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "ALI, Iftikhar",
+        "role": "llp-member",
+        "appointed_on": "2018-05-29",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "ANDERSON, Stewart Brian",
+        "role": "llp-member",
+        "appointed_on": "2020-05-04",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "ANJOMSHOAA, Poupak",
+        "role": "llp-member",
+        "appointed_on": "2024-10-14",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "ANTONIAK, Maciej",
+        "role": "llp-member",
+        "appointed_on": "2023-01-01",
+        "country_of_residence": "Poland",
+        "nationality": null
+      },
+      {
+        "name": "APPLEGATE, Laurence Hames",
+        "role": "llp-member",
+        "appointed_on": "2018-01-11",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "ARCHER, Deborah Lisa",
+        "role": "llp-member",
+        "appointed_on": "2025-09-15",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "ARMSTRONG, Thomas",
+        "role": "llp-member",
+        "appointed_on": "2024-02-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "ARNOLD, Rachael Kim",
+        "role": "llp-member",
+        "appointed_on": "2025-02-03",
+        "country_of_residence": "Australia",
+        "nationality": null
+      },
+      {
+        "name": "ARRIBES-DAMERVAL, Carole",
+        "role": "llp-member",
+        "appointed_on": "2018-01-15",
+        "country_of_residence": "France",
+        "nationality": null
+      },
+      {
+        "name": "ASHMORE, Charles Robert James",
+        "role": "llp-member",
+        "appointed_on": "2013-10-28",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "ASKIN, Toby Jeremy James",
+        "role": "llp-member",
+        "appointed_on": "2013-07-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "BALAS-NOSZCZYK, Beata",
+        "role": "llp-member",
+        "appointed_on": "2025-01-01",
+        "country_of_residence": "Poland",
+        "nationality": null
+      },
+      {
+        "name": "BALDASSARE, Jean-Pierre",
+        "role": "llp-member",
+        "appointed_on": "2025-01-01",
+        "country_of_residence": "Canada",
+        "nationality": null
+      },
+      {
+        "name": "BARNETT, Alan Mark",
+        "role": "llp-member",
+        "appointed_on": "2023-01-03",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "BARRE, Francois",
+        "role": "llp-member",
+        "appointed_on": "2025-01-01",
+        "country_of_residence": "Canada",
+        "nationality": null
+      },
+      {
+        "name": "BATTERTON, Andrew James",
+        "role": "llp-member",
+        "appointed_on": "2021-05-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "BAUTOVICH, Andrew Robert Mackenzie",
+        "role": "llp-member",
+        "appointed_on": "2018-04-16",
+        "country_of_residence": "Australia",
+        "nationality": null
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T15:58:57Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Dwf Law Llp",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-members-limited-liability-partnership"
+        ],
+        "notified_on": "2019-03-11",
+        "identification": {
+          "legal_form": "Limited Liability Partnership",
+          "legal_authority": "England And Wales",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "Oc423384"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwMjQ5NDE5OGFkaXF6a2N4",
+    "date": "2026-02-04",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/YyLQMhxH-SoWInaxPOScsKHW3At3xCbvv28MRbpO7WQ/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/OC328794/filing-history/MzUwMjQ5NDE5OGFkaXF6a2N4"
   }
 }

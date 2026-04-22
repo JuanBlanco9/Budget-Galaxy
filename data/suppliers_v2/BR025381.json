@@ -108,19 +108,11 @@
   },
   "financial_health": null,
   "governance": {
-    "officers_active_count": 0,
-    "officers_resigned_count": 0,
-    "board_turnover_ratio": 0.0,
-    "board_turnover_signal": "low",
-    "active_directors": [],
-    "secretaries": [],
-    "all_active_officers": [],
-    "resigned_officers_summary": {
-      "count": 0,
-      "recent": []
-    },
-    "direct_psc_count": 0,
-    "direct_psc_statements": []
+    "api_date": "2026-04-22T17:18:44Z",
+    "total_officers": 0,
+    "active_count": 0,
+    "resigned_count": 0,
+    "active_officers": []
   },
   "ownership_chain": {
     "resolution": "data_gap",
@@ -618,5 +610,32 @@
       "note": "Paid 3.4× awarded — payments on existing contracts, scope changes, or framework draw-downs not in new notices.",
       "ratio": 0.3
     }
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T17:18:42Z",
+    "company_name": "EVIDEN TECHNOLOGY SERVICES LIMITED",
+    "company_status": "open",
+    "date_of_creation": "2022-12-28",
+    "date_of_cessation": null,
+    "jurisdiction": null,
+    "has_charges": null,
+    "has_insolvency_history": null,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": null,
+    "accounts_next_due": null,
+    "accounts_last_made_up": null,
+    "confirmation_statement_overdue": null,
+    "confirmation_statement_next_due": null
+  },
+  "pscs": {
+    "api_date": "2026-04-22T17:18:46Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "enrichment_stages": {
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true
   }
 }

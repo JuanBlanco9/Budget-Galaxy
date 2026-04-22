@@ -64,9 +64,88 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T16:22:27Z",
+    "company_name": "ACKLAM'S COACHES LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2007-06-25",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-06-30",
+    "accounts_last_made_up": "2024-09-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-13"
+  },
+  "governance": {
+    "api_date": "2026-04-22T16:22:29Z",
+    "total_officers": 7,
+    "active_count": 3,
+    "resigned_count": 4,
+    "active_officers": [
+      {
+        "name": "VENTRESS, Julie",
+        "role": "secretary",
+        "appointed_on": "2023-10-01",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "ACKLAM, Alan",
+        "role": "director",
+        "appointed_on": "2007-10-04",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ACKLAM, Natalie Marie",
+        "role": "director",
+        "appointed_on": "2023-10-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T16:22:31Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Acklams Properties Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Liability Company",
+          "legal_authority": "Companies Act",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "06166907"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2MzY5NjIyM2FkaXF6a2N4",
+    "date": "2025-04-23",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-medium",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/ceZNZwGCY-X18_cUOIOXSU3z6R52a5mp-eom_yI43tk/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/06291076/filing-history/MzQ2MzY5NjIyM2FkaXF6a2N4"
   }
 }

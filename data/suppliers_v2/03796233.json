@@ -63,9 +63,110 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T17:23:47Z",
+    "company_name": "QINETIQ LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1999-06-25",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-09-21"
+  },
+  "governance": {
+    "api_date": "2026-04-22T17:23:49Z",
+    "total_officers": 43,
+    "active_count": 6,
+    "resigned_count": 37,
+    "active_officers": [
+      {
+        "name": "FIELD, James Stephen",
+        "role": "secretary",
+        "appointed_on": "2022-07-28",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "CASHIN, Heather Anne",
+        "role": "director",
+        "appointed_on": "2022-09-06",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "COOPER, Martin Stephen",
+        "role": "director",
+        "appointed_on": "2024-10-25",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "FIELD, James Stephen",
+        "role": "director",
+        "appointed_on": "2022-07-28",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MINNICAN, Grant Clark",
+        "role": "director",
+        "appointed_on": "2022-09-06",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MONTAGUE-FULLER, Peter Malcolm",
+        "role": "director",
+        "appointed_on": "2021-03-23",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T17:23:51Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Qinetiq Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "England And Wales",
+          "country_registered": "Uk",
+          "place_registered": "England And Wales",
+          "registration_number": "4154556"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4Nzk1MDYzNmFkaXF6a2N4",
+    "date": "2025-11-10",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/5wQx7eTGyE7T-h_oE5-JeLi2QlOFH_1Ez0lzmBAKb48/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03796233/filing-history/MzQ4Nzk1MDYzNmFkaXF6a2N4"
   }
 }

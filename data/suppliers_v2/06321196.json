@@ -72,9 +72,116 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T18:19:03Z",
+    "company_name": "MERIDIAN HEALTH & SOCIAL CARE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2007-07-23",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-08-06"
+  },
+  "governance": {
+    "api_date": "2026-04-22T18:19:05Z",
+    "total_officers": 15,
+    "active_count": 5,
+    "resigned_count": 10,
+    "active_officers": [
+      {
+        "name": "PEACH, Lee",
+        "role": "secretary",
+        "appointed_on": "2019-02-19",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "JOLLY, David Michael Bourdeau",
+        "role": "director",
+        "appointed_on": "2021-12-03",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "ROBERTS, Sharon Mary",
+        "role": "director",
+        "appointed_on": "2021-06-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "STAPELBERG, Darren",
+        "role": "director",
+        "appointed_on": "2017-12-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WEIGHT, James Dominic",
+        "role": "director",
+        "appointed_on": "2021-12-03",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T18:19:06Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Ravinder Singh Bains",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent-as-firm",
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Sevacare (Uk) Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Registrar Of Companies Of England And Wales",
+          "registration_number": "03615347"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MDQwNTQ0OWFkaXF6a2N4",
+    "date": "2025-09-11",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/V4YrIrKiNjGu_scHAaQ1Ism47ZceS-cP2Tzs8L6NbZU/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/06321196/filing-history/MzQ4MDQwNTQ0OWFkaXF6a2N4"
   }
 }

@@ -64,9 +64,135 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T17:21:18Z",
+    "company_name": "WITTEVEEN+BOS UK LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2015-03-11",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-23"
+  },
+  "governance": {
+    "api_date": "2026-04-22T17:21:20Z",
+    "total_officers": 5,
+    "active_count": 3,
+    "resigned_count": 2,
+    "active_officers": [
+      {
+        "name": "PITSEC LIMITED",
+        "role": "corporate-secretary",
+        "appointed_on": "2015-03-11",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "AKKERMAN, Johannes Martijn Wijnand",
+        "role": "director",
+        "appointed_on": "2017-02-22",
+        "country_of_residence": "Netherlands",
+        "nationality": "Dutch"
+      },
+      {
+        "name": "LABOYRIE, Hypolite Pierre",
+        "role": "director",
+        "appointed_on": "2015-03-11",
+        "country_of_residence": "Netherlands",
+        "nationality": "Dutch"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T17:21:22Z",
+    "total_results": 5,
+    "active_count": 0,
+    "items": [
+      {
+        "name": "Ms Eveline Buter",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Dutch",
+        "country_of_residence": "Netherlands",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2020-10-27",
+        "identification": null
+      },
+      {
+        "name": "Mr Wouter Bernardus Gerardus Bijman",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Dutch",
+        "country_of_residence": "Netherlands",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2020-10-27",
+        "identification": null
+      },
+      {
+        "name": "Witteveen & Bos International B.V.",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2019-03-26",
+        "identification": {
+          "legal_form": "Private Company",
+          "legal_authority": "Dutch Law",
+          "country_registered": "Netherlands",
+          "place_registered": "Netherlands",
+          "registration_number": "0"
+        }
+      },
+      {
+        "name": "Mr Stephan Cornelis Van Der Biezen",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Dutch",
+        "country_of_residence": "Netherlands",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2017-04-06",
+        "identification": null
+      },
+      {
+        "name": "Ms Catherina Maria Sluis",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Dutch",
+        "country_of_residence": "Netherlands",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MzY4ODMyMmFkaXF6a2N4",
+    "date": "2025-10-03",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/hZ-zHi2voAl1Z2ey8R0eyE_vGtpQVNz6IWFficiJBY8/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/09484635/filing-history/MzQ4MzY4ODMyMmFkaXF6a2N4"
   }
 }

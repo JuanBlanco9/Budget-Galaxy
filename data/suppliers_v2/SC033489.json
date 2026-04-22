@@ -82,9 +82,118 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T17:47:34Z",
+    "company_name": "OCS M&E SERVICES LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1958-12-02",
+    "date_of_cessation": null,
+    "jurisdiction": "scotland",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-08-17"
+  },
+  "governance": {
+    "api_date": "2026-04-22T17:47:36Z",
+    "total_officers": 36,
+    "active_count": 4,
+    "resigned_count": 32,
+    "active_officers": [
+      {
+        "name": "RYAN, Laura Clare",
+        "role": "secretary",
+        "appointed_on": "2018-05-14",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "EVANS, Thomas Edward",
+        "role": "director",
+        "appointed_on": "2018-09-28",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MAGGS, Nicholas David",
+        "role": "director",
+        "appointed_on": "2023-10-09",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "RYAN, Laura Clare",
+        "role": "director",
+        "appointed_on": "2024-11-02",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T17:47:38Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Ocs Uk&I Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-10-18",
+        "identification": {
+          "legal_form": "Limited Liability Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "06355228"
+        }
+      },
+      {
+        "name": "Mr Paul Arthur Mckay",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Callum Herd",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Uk",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4NDE5MDE3NGFkaXF6a2N4",
+    "date": "2025-10-08",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-audit-exemption-subsiduary",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/RGQXJYRF_oL10ylrWomUti8Jq0vPpbZ9nzWo0ppheHM/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/SC033489/filing-history/MzQ4NDE5MDE3NGFkaXF6a2N4"
   }
 }

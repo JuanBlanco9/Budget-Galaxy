@@ -55,9 +55,187 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T17:56:25Z",
+    "company_name": "THORNTONS LAW LLP",
+    "company_status": "active",
+    "date_of_creation": "2004-05-25",
+    "date_of_cessation": null,
+    "jurisdiction": "scotland",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-02-28",
+    "accounts_last_made_up": "2025-05-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-21"
+  },
+  "governance": {
+    "api_date": "2026-04-22T17:56:27Z",
+    "total_officers": 138,
+    "active_count": 79,
+    "resigned_count": 59,
+    "active_officers": [
+      {
+        "name": "ALLAN, Christopher David",
+        "role": "llp-designated-member",
+        "appointed_on": "2008-06-01",
+        "country_of_residence": "Scotland",
+        "nationality": null
+      },
+      {
+        "name": "BUCHANAN, Gillian Coutts",
+        "role": "llp-designated-member",
+        "appointed_on": "2004-05-25",
+        "country_of_residence": "Scotland",
+        "nationality": null
+      },
+      {
+        "name": "COUTTS, Morna Jane",
+        "role": "llp-designated-member",
+        "appointed_on": "2017-06-01",
+        "country_of_residence": "Scotland",
+        "nationality": null
+      },
+      {
+        "name": "CROMAN, Ruth Catriona",
+        "role": "llp-designated-member",
+        "appointed_on": "2025-04-01",
+        "country_of_residence": "Scotland",
+        "nationality": null
+      },
+      {
+        "name": "DISHINGTON, Audrey Anne",
+        "role": "llp-designated-member",
+        "appointed_on": "2017-04-17",
+        "country_of_residence": "Scotland",
+        "nationality": null
+      },
+      {
+        "name": "HAMILTON, Ronald Grant",
+        "role": "llp-designated-member",
+        "appointed_on": "2016-06-02",
+        "country_of_residence": "Scotland",
+        "nationality": null
+      },
+      {
+        "name": "KINNEAR, Douglas Nelson",
+        "role": "llp-designated-member",
+        "appointed_on": "2014-11-01",
+        "country_of_residence": "Scotland",
+        "nationality": null
+      },
+      {
+        "name": "LANG, Alistair James",
+        "role": "llp-designated-member",
+        "appointed_on": "2014-11-01",
+        "country_of_residence": "Scotland",
+        "nationality": null
+      },
+      {
+        "name": "LARG, Lesley Ann",
+        "role": "llp-designated-member",
+        "appointed_on": "2006-06-01",
+        "country_of_residence": "Scotland",
+        "nationality": null
+      },
+      {
+        "name": "MACPHERSON, Clare Susan",
+        "role": "llp-designated-member",
+        "appointed_on": "2005-06-01",
+        "country_of_residence": "Scotland",
+        "nationality": null
+      },
+      {
+        "name": "MCBEAN, Gordon Graham",
+        "role": "llp-designated-member",
+        "appointed_on": "2005-06-01",
+        "country_of_residence": "Scotland",
+        "nationality": null
+      },
+      {
+        "name": "MCCLELLAND, Noele Gillian",
+        "role": "llp-designated-member",
+        "appointed_on": "2005-06-01",
+        "country_of_residence": "Scotland",
+        "nationality": null
+      },
+      {
+        "name": "MCINTYRE, Janet Helen",
+        "role": "llp-designated-member",
+        "appointed_on": "2008-06-01",
+        "country_of_residence": "Scotland",
+        "nationality": null
+      },
+      {
+        "name": "MCMONAGLE, Liam James",
+        "role": "llp-designated-member",
+        "appointed_on": "2011-06-01",
+        "country_of_residence": "Scotland",
+        "nationality": null
+      },
+      {
+        "name": "MILLER, Ewan Kenneth",
+        "role": "llp-designated-member",
+        "appointed_on": "2007-04-02",
+        "country_of_residence": "Scotland",
+        "nationality": null
+      },
+      {
+        "name": "MILNE, David John",
+        "role": "llp-designated-member",
+        "appointed_on": "2022-02-01",
+        "country_of_residence": "Scotland",
+        "nationality": null
+      },
+      {
+        "name": "MILNE, Scott Charles",
+        "role": "llp-designated-member",
+        "appointed_on": "2004-05-25",
+        "country_of_residence": "Scotland",
+        "nationality": null
+      },
+      {
+        "name": "RENFREW, Bruce Norman",
+        "role": "llp-designated-member",
+        "appointed_on": "2004-05-25",
+        "country_of_residence": "Scotland",
+        "nationality": null
+      },
+      {
+        "name": "ROYDEN, Michael",
+        "role": "llp-designated-member",
+        "appointed_on": "2004-05-25",
+        "country_of_residence": "Scotland",
+        "nationality": null
+      },
+      {
+        "name": "SUTHERLAND, Sandra Mary",
+        "role": "llp-designated-member",
+        "appointed_on": "2004-05-25",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T17:56:30Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwNjA2NDI0NWFkaXF6a2N4",
+    "date": "2026-02-19",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/w8zeeKe-oiOO5gARci-WgR-42PWgL7cDN-P1FTjz4as/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/SO300381/filing-history/MzUwNjA2NDI0NWFkaXF6a2N4"
   }
 }

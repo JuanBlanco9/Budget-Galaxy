@@ -63,93 +63,26 @@
     "overdue": false
   },
   "governance": {
-    "officers_active_count": 2,
-    "officers_resigned_count": 0,
-    "board_turnover_ratio": 0.0,
-    "board_turnover_signal": "low",
-    "active_directors": [
+    "api_date": "2026-04-22T17:47:22Z",
+    "total_officers": 2,
+    "active_count": 2,
+    "resigned_count": 0,
+    "active_officers": [
       {
         "name": "EDWARDS, Phoebe Ann",
         "role": "director",
         "appointed_on": "2024-03-25",
-        "resigned_on": null,
-        "nationality": "British",
-        "occupation": null,
         "country_of_residence": "England",
-        "date_of_birth": {
-          "month": 5,
-          "year": 1968
-        },
-        "address": {
-          "locality": "Leicester",
-          "postal_code": "LE19 1RJ",
-          "country": "England"
-        }
+        "nationality": "British"
       },
       {
         "name": "GILLETT, Danielle Amanda",
         "role": "director",
         "appointed_on": "2023-05-25",
-        "resigned_on": null,
-        "nationality": "British",
-        "occupation": null,
         "country_of_residence": "England",
-        "date_of_birth": {
-          "month": 10,
-          "year": 1968
-        },
-        "address": {
-          "locality": "Leicester",
-          "postal_code": "LE19 1RJ",
-          "country": "England"
-        }
+        "nationality": "British"
       }
-    ],
-    "secretaries": [],
-    "all_active_officers": [
-      {
-        "name": "EDWARDS, Phoebe Ann",
-        "role": "director",
-        "appointed_on": "2024-03-25",
-        "resigned_on": null,
-        "nationality": "British",
-        "occupation": null,
-        "country_of_residence": "England",
-        "date_of_birth": {
-          "month": 5,
-          "year": 1968
-        },
-        "address": {
-          "locality": "Leicester",
-          "postal_code": "LE19 1RJ",
-          "country": "England"
-        }
-      },
-      {
-        "name": "GILLETT, Danielle Amanda",
-        "role": "director",
-        "appointed_on": "2023-05-25",
-        "resigned_on": null,
-        "nationality": "British",
-        "occupation": null,
-        "country_of_residence": "England",
-        "date_of_birth": {
-          "month": 10,
-          "year": 1968
-        },
-        "address": {
-          "locality": "Leicester",
-          "postal_code": "LE19 1RJ",
-          "country": "England"
-        }
-      }
-    ],
-    "resigned_officers_summary": {
-      "count": 0,
-      "recent": []
-    },
-    "direct_psc_count": 1,
-    "direct_psc_statements": []
+    ]
   },
   "ownership_chain": {
     "resolution": "listed_dispersed",
@@ -475,5 +408,62 @@
       "note": "Paid 287.6× awarded — payments on existing contracts, scope changes, or framework draw-downs not in new notices.",
       "ratio": 0.0
     }
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T17:47:21Z",
+    "company_name": "EAST MIDLANDS BUSINESS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2023-05-25",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-07"
+  },
+  "pscs": {
+    "api_date": "2026-04-22T17:47:24Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Emb-Group Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2023-05-25",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "Uk Register Of Companies",
+          "registration_number": "07087597"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3OTQ5NjA4MmFkaXF6a2N4",
+    "date": "2025-09-02",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-dormant",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/3E02PcqXENcwra_lKQk0zCqDZSW058lN1E6R_k3lnMQ/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/14893225/filing-history/MzQ3OTQ5NjA4MmFkaXF6a2N4"
+  },
+  "enrichment_stages": {
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   }
 }

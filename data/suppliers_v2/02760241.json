@@ -61,9 +61,100 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T16:40:01Z",
+    "company_name": "CRANFIELD MANAGEMENT DEVELOPMENT LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1992-10-29",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-04-30",
+    "accounts_last_made_up": "2025-07-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-14"
+  },
+  "governance": {
+    "api_date": "2026-04-22T16:40:03Z",
+    "total_officers": 31,
+    "active_count": 5,
+    "resigned_count": 26,
+    "active_officers": [
+      {
+        "name": "TOSE, Sarah Ann",
+        "role": "secretary",
+        "appointed_on": "2025-03-05",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "DENYER, David, Professor",
+        "role": "director",
+        "appointed_on": "2019-06-17",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "RYALS, Lynette Joy, Professor",
+        "role": "director",
+        "appointed_on": "2025-03-06",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "THRELFALL, Mark Stuart",
+        "role": "director",
+        "appointed_on": "2017-07-07",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "TOSE, Sarah Ann",
+        "role": "director",
+        "appointed_on": "2025-03-05",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T16:40:05Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Cranfield University",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Exempt Charity",
+          "legal_authority": "Charities Act 2011"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxNzExNTAwMWFkaXF6a2N4",
+    "date": "2026-04-20",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/19qhlbopeVCRMMYjrQ_eHZTSYjhIWR3eltMk5gcUwR4/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02760241/filing-history/MzUxNzExNTAwMWFkaXF6a2N4"
   }
 }

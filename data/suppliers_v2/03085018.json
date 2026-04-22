@@ -68,9 +68,114 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T16:58:08Z",
+    "company_name": "NTT DATA UK LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1995-07-28",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-18"
+  },
+  "governance": {
+    "api_date": "2026-04-22T16:58:10Z",
+    "total_officers": 31,
+    "active_count": 4,
+    "resigned_count": 27,
+    "active_officers": [
+      {
+        "name": "IDE, Miyuki",
+        "role": "director",
+        "appointed_on": "2022-06-16",
+        "country_of_residence": "Spain",
+        "nationality": "Japanese"
+      },
+      {
+        "name": "MAROO, Jayesh",
+        "role": "director",
+        "appointed_on": "2025-09-10",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MODI, Rajul Kishore",
+        "role": "director",
+        "appointed_on": "2023-01-09",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SPATARO, Niccolo",
+        "role": "director",
+        "appointed_on": "2025-09-10",
+        "country_of_residence": "England",
+        "nationality": "Italian"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T16:58:12Z",
+    "total_results": 2,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Ntt Data Corporation",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Public Traded Company Listed And Trading On The First Section Of The Tokyo Stock Exchange (Code 96130)",
+          "legal_authority": "Japanese Law",
+          "country_registered": "Japan",
+          "place_registered": "Japan",
+          "registration_number": "0106-01-021385"
+        }
+      },
+      {
+        "name": "Ntt Data Emea Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Laws Of England And Wales",
+          "country_registered": "England",
+          "place_registered": "England",
+          "registration_number": "07994522"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MTk2NjUwMmFkaXF6a2N4",
+    "date": "2025-09-22",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/XrEzIQZUThETptL7JPCi6s1Qklclz4I-tEfcNpMRKPE/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03085018/filing-history/MzQ4MTk2NjUwMmFkaXF6a2N4"
   }
 }

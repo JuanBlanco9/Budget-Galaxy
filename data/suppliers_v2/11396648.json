@@ -70,9 +70,134 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T15:40:34Z",
+    "company_name": "BASKETDROP LTD.",
+    "company_status": "active",
+    "date_of_creation": "2018-06-04",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-10-31",
+    "accounts_last_made_up": "2025-01-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-14"
+  },
+  "governance": {
+    "api_date": "2026-04-22T15:40:36Z",
+    "total_officers": 3,
+    "active_count": 2,
+    "resigned_count": 1,
+    "active_officers": [
+      {
+        "name": "LUNGU, Slydon",
+        "role": "director",
+        "appointed_on": "2018-06-04",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MAYER, Marion",
+        "role": "director",
+        "appointed_on": "2025-07-21",
+        "country_of_residence": "Germany",
+        "nationality": "German"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T15:40:38Z",
+    "total_results": 6,
+    "active_count": 4,
+    "items": [
+      {
+        "name": "Mr Bongani Muchemwa",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2025-07-22",
+        "identification": null
+      },
+      {
+        "name": "Ms Marion Mayer",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "German",
+        "country_of_residence": "Germany",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2025-07-21",
+        "identification": null
+      },
+      {
+        "name": "Dr. Yirui Jiang",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British,Chinese",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2025-07-21",
+        "identification": null
+      },
+      {
+        "name": "Mrs Bridget Lungu",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2022-03-03",
+        "identification": null
+      },
+      {
+        "name": "Mr Hamududu Oscar Simooya",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Zambian",
+        "country_of_residence": "Zambia",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2021-07-30",
+        "identification": null
+      },
+      {
+        "name": "Mr Slydon Lungu",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2018-06-04",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MjUyNjgyNWFkaXF6a2N4",
+    "date": "2025-09-24",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-micro-entity",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/9YC461kGSguXkDZOt0Z7HNPj1m3jIsvKpQMhV5SBy4E/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/11396648/filing-history/MzQ4MjUyNjgyNWFkaXF6a2N4"
   }
 }

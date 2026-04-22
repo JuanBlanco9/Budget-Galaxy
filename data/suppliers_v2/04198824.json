@@ -59,9 +59,129 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T16:14:34Z",
+    "company_name": "MEDEQUIP ASSISTIVE TECHNOLOGY LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2001-04-11",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-04-25"
+  },
+  "governance": {
+    "api_date": "2026-04-22T16:14:36Z",
+    "total_officers": 36,
+    "active_count": 9,
+    "resigned_count": 27,
+    "active_officers": [
+      {
+        "name": "COCKROFT, Jonathan Paul",
+        "role": "director",
+        "appointed_on": "2015-05-07",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "COOK, Nigel Stewart Paul",
+        "role": "director",
+        "appointed_on": "2015-01-20",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "FIRTH, Andrew Paul",
+        "role": "director",
+        "appointed_on": "2011-05-03",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GRIFFITHS, David",
+        "role": "director",
+        "appointed_on": "2008-09-29",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HARVEY, Sarah Lesley",
+        "role": "director",
+        "appointed_on": "2024-09-30",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "IBBOTSON, James",
+        "role": "director",
+        "appointed_on": "2015-05-07",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MARSHALL, Samantha",
+        "role": "director",
+        "appointed_on": "2025-07-11",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "RYAN, Eamonn Michael",
+        "role": "director",
+        "appointed_on": "2024-11-30",
+        "country_of_residence": "England",
+        "nationality": "Irish"
+      },
+      {
+        "name": "UMINSKA, Justyna",
+        "role": "director",
+        "appointed_on": "2023-02-09",
+        "country_of_residence": "England",
+        "nationality": "Polish"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T16:14:38Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Siddall Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-26",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "English Law",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "04048974"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NzYyMzQyMmFkaXF6a2N4",
+    "date": "2025-08-18",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-audit-exemption-subsiduary",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/kK8D-LQfQ9hIGSjkhSufWDEAGzeTYYEGMVxyFsIHP78/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04198824/filing-history/MzQ3NzYyMzQyMmFkaXF6a2N4"
   }
 }

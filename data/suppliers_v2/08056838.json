@@ -68,9 +68,83 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T15:56:51Z",
+    "company_name": "EVOLUTION CONSTRUCTION GROUP LTD",
+    "company_status": "active",
+    "date_of_creation": "2012-05-03",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-07-31",
+    "accounts_last_made_up": "2024-10-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-05-15"
+  },
+  "governance": {
+    "api_date": "2026-04-22T15:56:53Z",
+    "total_officers": 3,
+    "active_count": 3,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "COYNE, Dean James",
+        "role": "director",
+        "appointed_on": "2019-06-28",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "FITZGERALD, Jennifer Susan",
+        "role": "director",
+        "appointed_on": "2019-06-28",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "FITZGERALD, John Joseph",
+        "role": "director",
+        "appointed_on": "2012-05-03",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T15:56:55Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr John Joseph Fitzgerald",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NTY4MTU0NmFkaXF6a2N4",
+    "date": "2025-07-30",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/smQ7tfxQdG7ifILrPLFtQZjKRxXvt3uEg6qli3EHQKM/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/08056838/filing-history/MzQ3NTY4MTU0NmFkaXF6a2N4"
   }
 }

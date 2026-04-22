@@ -64,9 +64,96 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T17:04:54Z",
+    "company_name": "CGI CORPORATE HOLDINGS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2003-10-27",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-06-30",
+    "accounts_last_made_up": "2024-09-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-28"
+  },
+  "governance": {
+    "api_date": "2026-04-22T17:04:56Z",
+    "total_officers": 22,
+    "active_count": 4,
+    "resigned_count": 18,
+    "active_officers": [
+      {
+        "name": "MORIOKA, Akiko",
+        "role": "secretary",
+        "appointed_on": "2025-07-07",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "EADES, Darryl",
+        "role": "director",
+        "appointed_on": "2020-10-23",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "MCGEEHAN, Tara, Ms.",
+        "role": "director",
+        "appointed_on": "2018-01-19",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "PERRON, Steve",
+        "role": "director",
+        "appointed_on": "2023-01-16",
+        "country_of_residence": "Canada",
+        "nationality": "Canadian"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T17:04:58Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Logica Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Registrar Of Companies For England And Wales",
+          "registration_number": "01631639"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MDc1NTMxM2FkaXF6a2N4",
+    "date": "2025-06-19",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/MA2o8SukYjCDnLD27FRaTSUvwuiO6aV9R846UpzVoQE/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04944297/filing-history/MzQ3MDc1NTMxM2FkaXF6a2N4"
   }
 }

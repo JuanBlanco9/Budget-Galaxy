@@ -59,9 +59,92 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T15:57:39Z",
+    "company_name": "STRONG LIFE CARE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2010-01-26",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-30",
+    "accounts_last_made_up": "2025-03-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-08-13"
+  },
+  "governance": {
+    "api_date": "2026-04-22T15:57:41Z",
+    "total_officers": 4,
+    "active_count": 2,
+    "resigned_count": 2,
+    "active_officers": [
+      {
+        "name": "BANWAIT, Harpreet Singh",
+        "role": "secretary",
+        "appointed_on": "2010-01-26",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BANWAIT, Harpreet Singh",
+        "role": "director",
+        "appointed_on": "2010-01-26",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T15:57:43Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Banwait Group Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2018-08-02",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "England & Wales",
+          "registration_number": "11464709"
+        }
+      },
+      {
+        "name": "Mr Harpreet Singh Banwait",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2017-01-26",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NzgzNDEwOWFkaXF6a2N4",
+    "date": "2026-01-06",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-audit-exemption-subsiduary",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/wg4jEPLzE9EYAsNBSHLVLcDZAT4ah23nmfx29610rqk/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/07137339/filing-history/MzQ5NzgzNDEwOWFkaXF6a2N4"
   }
 }

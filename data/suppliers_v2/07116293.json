@@ -84,94 +84,19 @@
   },
   "financial_health": null,
   "governance": {
-    "officers_active_count": 1,
-    "officers_resigned_count": 2,
-    "board_turnover_ratio": 2.0,
-    "board_turnover_signal": "medium",
-    "active_directors": [
+    "api_date": "2026-04-22T18:11:44Z",
+    "total_officers": 3,
+    "active_count": 0,
+    "resigned_count": 2,
+    "active_officers": [
       {
         "name": "BILAL, Hassan",
         "role": "director",
         "appointed_on": "2010-02-15",
-        "resigned_on": null,
-        "nationality": "Pakistani",
-        "occupation": null,
         "country_of_residence": "United Kingdom",
-        "date_of_birth": {
-          "month": 10,
-          "year": 1985
-        },
-        "address": {
-          "locality": "Leicester",
-          "postal_code": "LE3 0LE",
-          "country": null
-        }
+        "nationality": "Pakistani"
       }
-    ],
-    "secretaries": [],
-    "all_active_officers": [
-      {
-        "name": "BILAL, Hassan",
-        "role": "director",
-        "appointed_on": "2010-02-15",
-        "resigned_on": null,
-        "nationality": "Pakistani",
-        "occupation": null,
-        "country_of_residence": "United Kingdom",
-        "date_of_birth": {
-          "month": 10,
-          "year": 1985
-        },
-        "address": {
-          "locality": "Leicester",
-          "postal_code": "LE3 0LE",
-          "country": null
-        }
-      }
-    ],
-    "resigned_officers_summary": {
-      "count": 2,
-      "recent": [
-        {
-          "name": "KHAN, Ahmed",
-          "role": "director",
-          "appointed_on": "2010-04-12",
-          "resigned_on": "2010-04-13",
-          "nationality": "British",
-          "occupation": null,
-          "country_of_residence": "United Kingdom",
-          "date_of_birth": {
-            "month": 1,
-            "year": 1980
-          },
-          "address": {
-            "locality": "London",
-            "postal_code": "E11 2JE",
-            "country": null
-          }
-        },
-        {
-          "name": "SHAH, Muhammad Azhar",
-          "role": "director",
-          "appointed_on": "2010-01-05",
-          "resigned_on": "2010-01-06",
-          "nationality": "Pakistani",
-          "occupation": null,
-          "country_of_residence": "United Kingdom",
-          "date_of_birth": {
-            "month": 12,
-            "year": 1976
-          },
-          "address": {
-            "locality": "London",
-            "postal_code": "E6 1HS",
-            "country": "United Kingdom"
-          }
-        }
-      ]
-    },
-    "direct_psc_count": 0,
-    "direct_psc_statements": []
+    ]
   },
   "ownership_chain": {
     "resolution": "data_gap",
@@ -377,5 +302,32 @@
       "note": "Paid 2.1× awarded — payments on existing contracts, scope changes, or framework draw-downs not in new notices.",
       "ratio": 0.47
     }
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T18:11:42Z",
+    "company_name": "HMRCO LIMITED",
+    "company_status": "dissolved",
+    "date_of_creation": "2010-01-05",
+    "date_of_cessation": "2011-11-22",
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": null,
+    "accounts_overdue": null,
+    "accounts_next_due": null,
+    "accounts_last_made_up": null,
+    "confirmation_statement_overdue": null,
+    "confirmation_statement_next_due": null
+  },
+  "pscs": {
+    "api_date": "2026-04-22T18:11:45Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "enrichment_stages": {
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true
   }
 }

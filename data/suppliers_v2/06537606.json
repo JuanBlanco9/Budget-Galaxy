@@ -59,9 +59,130 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T16:24:56Z",
+    "company_name": "LCG LIFT CONSULTANCY LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2008-03-18",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-02"
+  },
+  "governance": {
+    "api_date": "2026-04-22T16:24:58Z",
+    "total_officers": 5,
+    "active_count": 3,
+    "resigned_count": 2,
+    "active_officers": [
+      {
+        "name": "ELLIOTT, David John",
+        "role": "director",
+        "appointed_on": "2020-04-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GUEST, Leslie Charles",
+        "role": "director",
+        "appointed_on": "2008-03-18",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "O'DRISCOLL, Gavin Liam",
+        "role": "director",
+        "appointed_on": "2020-04-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T16:24:59Z",
+    "total_results": 5,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mrs Lindsey O'Driscoll",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2024-12-18",
+        "identification": null
+      },
+      {
+        "name": "Mr Gavin Liam O'Driscoll",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2024-12-18",
+        "identification": null
+      },
+      {
+        "name": "Mrs Emma Elliott",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2024-12-18",
+        "identification": null
+      },
+      {
+        "name": "Mr David John Elliott",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2024-12-18",
+        "identification": null
+      },
+      {
+        "name": "Mr Leslie Charles Guest",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2016-06-30",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4ODAyNDQyMmFkaXF6a2N4",
+    "date": "2025-11-10",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-micro-entity",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/syVXL6wE_fbiuoszeXZxT0_X2P2EcaYkH-oAZJi8UUs/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/06537606/filing-history/MzQ4ODAyNDQyMmFkaXF6a2N4"
   }
 }

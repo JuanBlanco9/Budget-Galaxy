@@ -64,9 +64,100 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T18:05:20Z",
+    "company_name": "QE FACILITIES LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2014-04-30",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-05-09"
+  },
+  "governance": {
+    "api_date": "2026-04-22T18:05:22Z",
+    "total_officers": 15,
+    "active_count": 5,
+    "resigned_count": 10,
+    "active_officers": [
+      {
+        "name": "BELLWOOD, Carl",
+        "role": "secretary",
+        "appointed_on": "2025-04-01",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "EVANS, Gavin Charles",
+        "role": "director",
+        "appointed_on": "2024-03-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GLASGOW, Philip",
+        "role": "director",
+        "appointed_on": "2023-04-07",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PAVLOU, Maggie",
+        "role": "director",
+        "appointed_on": "2022-10-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WARNEFORD, Darren",
+        "role": "director",
+        "appointed_on": "2024-06-18",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T18:05:24Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Gateshead Health Nhs Foundation Trust",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Public Benefit Corporation",
+          "legal_authority": "Health & Social Care Act"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NDA4Nzc2NGFkaXF6a2N4",
+    "date": "2025-12-22",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/9G6VMuy0g3On-HpV6PPLxvcCKlL83IQRkxV8mqsvgh4/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/09019497/filing-history/MzQ5NDA4Nzc2NGFkaXF6a2N4"
   }
 }

@@ -59,9 +59,83 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T16:41:56Z",
+    "company_name": "URBAN GROUP (YORK) LIMITED",
+    "company_status": "liquidation",
+    "date_of_creation": "2020-11-26",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": true,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": true,
+    "accounts_next_due": "2025-01-31",
+    "accounts_last_made_up": "2023-04-30",
+    "confirmation_statement_overdue": true,
+    "confirmation_statement_next_due": "2025-04-29"
+  },
+  "governance": {
+    "api_date": "2026-04-22T16:41:57Z",
+    "total_officers": 3,
+    "active_count": 3,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "BROSENITZ, Richard Alan",
+        "role": "director",
+        "appointed_on": "2020-11-26",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GREEN, Andrew Richard",
+        "role": "director",
+        "appointed_on": "2022-04-25",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "HUTCHINSON, Brendon",
+        "role": "director",
+        "appointed_on": "2020-12-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T16:41:59Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Richard Alan Brosenitz",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2020-11-26",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQwOTM1MDMzMWFkaXF6a2N4",
+    "date": "2024-01-30",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/2kdp_SpxdikCIhnvvmuPAjM_dcaMBhCJRtfY3oZG-wo/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/13046287/filing-history/MzQwOTM1MDMzMWFkaXF6a2N4"
   }
 }

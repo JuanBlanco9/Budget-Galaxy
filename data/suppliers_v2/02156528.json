@@ -68,9 +68,103 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T18:03:18Z",
+    "company_name": "AHR BUILDING CONSULTANCY LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1987-08-20",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-05-31"
+  },
+  "governance": {
+    "api_date": "2026-04-22T18:03:20Z",
+    "total_officers": 13,
+    "active_count": 5,
+    "resigned_count": 8,
+    "active_officers": [
+      {
+        "name": "WIELAND, Michael Douglas",
+        "role": "secretary",
+        "appointed_on": "2017-01-25",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "FRANCE, Andrew",
+        "role": "director",
+        "appointed_on": "2003-10-02",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GRAYSON, Samantha Jane",
+        "role": "director",
+        "appointed_on": "1998-06-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HUNT, Allan",
+        "role": "director",
+        "appointed_on": "2003-04-25",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MURPHY, Thomas Patrick",
+        "role": "director",
+        "appointed_on": "2024-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T18:03:21Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Ahr Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2025-11-17",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "United Kingdom",
+          "registration_number": "04364250"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NTk5NjA5OGFkaXF6a2N4",
+    "date": "2025-12-31",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-medium",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/S-tuRSoxkBRyCgWQ0Hz9KA55Mw_dyOoGsaMTPPZQxww/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02156528/filing-history/MzQ5NTk5NjA5OGFkaXF6a2N4"
   }
 }

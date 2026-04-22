@@ -51,89 +51,11 @@
   },
   "financial_health": null,
   "governance": {
-    "officers_active_count": 0,
-    "officers_resigned_count": 4,
-    "board_turnover_ratio": 4.0,
-    "board_turnover_signal": "medium",
-    "active_directors": [],
-    "secretaries": [],
-    "all_active_officers": [],
-    "resigned_officers_summary": {
-      "count": 4,
-      "recent": [
-        {
-          "name": "POLYVITA LIMITED",
-          "role": "corporate-director",
-          "appointed_on": "2022-06-08",
-          "resigned_on": "2022-06-08",
-          "nationality": null,
-          "occupation": null,
-          "country_of_residence": null,
-          "date_of_birth": null,
-          "address": {
-            "locality": "Waterlooville",
-            "postal_code": "PO8 0BT",
-            "country": "England"
-          }
-        },
-        {
-          "name": "BAYBUTT, Shane",
-          "role": "director",
-          "appointed_on": "2022-02-10",
-          "resigned_on": "2022-02-10",
-          "nationality": "British",
-          "occupation": null,
-          "country_of_residence": "United Kingdom",
-          "date_of_birth": {
-            "month": 5,
-            "year": 1997
-          },
-          "address": {
-            "locality": "London",
-            "postal_code": "WC1N 3AX",
-            "country": "United Kingdom"
-          }
-        },
-        {
-          "name": "BAYBUTT, Shane Joseph",
-          "role": "director",
-          "appointed_on": "2021-08-06",
-          "resigned_on": "2022-01-18",
-          "nationality": "Irish",
-          "occupation": null,
-          "country_of_residence": "England",
-          "date_of_birth": {
-            "month": 5,
-            "year": 1997
-          },
-          "address": {
-            "locality": "London",
-            "postal_code": "WC1N 3AX",
-            "country": "United Kingdom"
-          }
-        },
-        {
-          "name": "LEE, Brandon Lee",
-          "role": "director",
-          "appointed_on": "2021-08-06",
-          "resigned_on": "2021-10-21",
-          "nationality": "British",
-          "occupation": null,
-          "country_of_residence": "United Kingdom",
-          "date_of_birth": {
-            "month": 12,
-            "year": 1996
-          },
-          "address": {
-            "locality": "London",
-            "postal_code": "WC1N 3AX",
-            "country": "United Kingdom"
-          }
-        }
-      ]
-    },
-    "direct_psc_count": 0,
-    "direct_psc_statements": []
+    "api_date": "2026-04-22T18:06:44Z",
+    "total_officers": 4,
+    "active_count": 0,
+    "resigned_count": 4,
+    "active_officers": []
   },
   "ownership_chain": {
     "resolution": "data_gap",
@@ -504,5 +426,74 @@
       "note": "Paid 21.7× awarded — payments on existing contracts, scope changes, or framework draw-downs not in new notices.",
       "ratio": 0.05
     }
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T18:06:42Z",
+    "company_name": "ANIMAL & PLANT HEALTH SOLUTIONS LTD",
+    "company_status": "dissolved",
+    "date_of_creation": "2021-08-06",
+    "date_of_cessation": "2023-01-31",
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": null,
+    "accounts_next_due": null,
+    "accounts_last_made_up": null,
+    "confirmation_statement_overdue": null,
+    "confirmation_statement_next_due": null
+  },
+  "pscs": {
+    "api_date": "2026-04-22T18:06:45Z",
+    "total_results": 3,
+    "active_count": 0,
+    "items": [
+      {
+        "name": "Shane Baybutt",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2022-02-10",
+        "identification": null
+      },
+      {
+        "name": "Shane Joseph Baybutt",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Irish",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2021-10-21",
+        "identification": null
+      },
+      {
+        "name": "Mr Brandon Lee Lee",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent",
+          "voting-rights-50-to-75-percent"
+        ],
+        "notified_on": "2021-08-06",
+        "identification": null
+      }
+    ]
+  },
+  "enrichment_stages": {
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true
   }
 }

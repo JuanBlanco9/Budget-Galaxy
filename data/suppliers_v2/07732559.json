@@ -64,9 +64,184 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T16:15:49Z",
+    "company_name": "LYDIATE LEARNING TRUST",
+    "company_status": "active",
+    "date_of_creation": "2011-08-08",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-05-31",
+    "accounts_last_made_up": "2025-08-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-05-08"
+  },
+  "governance": {
+    "api_date": "2026-04-22T16:15:51Z",
+    "total_officers": 48,
+    "active_count": 9,
+    "resigned_count": 39,
+    "active_officers": [
+      {
+        "name": "MOSS, Deborah Jayne",
+        "role": "secretary",
+        "appointed_on": "2015-01-01",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "ALSTON, Peter Owen, Dr",
+        "role": "director",
+        "appointed_on": "2023-12-11",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GRAHAM, John",
+        "role": "director",
+        "appointed_on": "2011-08-08",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HEWER, Graham",
+        "role": "director",
+        "appointed_on": "2015-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LIVESLEY, Paul William",
+        "role": "director",
+        "appointed_on": "2026-01-26",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "RAHMANI, Hooshang",
+        "role": "director",
+        "appointed_on": "2019-05-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "STAHLER, Ann Springford",
+        "role": "director",
+        "appointed_on": "2011-08-08",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "STOBIE, Craig",
+        "role": "director",
+        "appointed_on": "2023-10-16",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "THORNTON-REID, William Edward",
+        "role": "director",
+        "appointed_on": "2023-04-05",
+        "country_of_residence": "Wales",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T16:15:53Z",
+    "total_results": 6,
+    "active_count": 0,
+    "items": [
+      {
+        "name": "Jane Morris",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control",
+          "significant-influence-or-control-as-firm"
+        ],
+        "notified_on": "2020-09-07",
+        "identification": null
+      },
+      {
+        "name": "Mr Marc Andrew Whitmore",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2019-11-25",
+        "identification": null
+      },
+      {
+        "name": "Mrs Annette Cunningham",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2018-11-13",
+        "identification": null
+      },
+      {
+        "name": "Mr Stephen John Moss",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2018-11-13",
+        "identification": null
+      },
+      {
+        "name": "Mr John Graham",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Graham Hewer",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5OTIzNzI5N2FkaXF6a2N4",
+    "date": "2026-01-15",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/VGgBf_X7BkmN9aw7DSauDq7awTN3ODMbw-4OtHy8vl0/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/07732559/filing-history/MzQ5OTIzNzI5N2FkaXF6a2N4"
   }
 }

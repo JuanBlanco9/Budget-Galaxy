@@ -59,9 +59,105 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T15:34:52Z",
+    "company_name": "AGILE MEDICAL LTD",
+    "company_status": "active",
+    "date_of_creation": "2017-09-27",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-10"
+  },
+  "governance": {
+    "api_date": "2026-04-22T15:34:54Z",
+    "total_officers": 5,
+    "active_count": 2,
+    "resigned_count": 3,
+    "active_officers": [
+      {
+        "name": "GLASS, Christopher",
+        "role": "director",
+        "appointed_on": "2017-09-27",
+        "country_of_residence": "England",
+        "nationality": "English"
+      },
+      {
+        "name": "GLASS, Conran",
+        "role": "director",
+        "appointed_on": "2017-09-27",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T15:34:55Z",
+    "total_results": 3,
+    "active_count": 3,
+    "items": [
+      {
+        "name": "Agile Group Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2022-03-30",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Uk",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House England And Wales",
+          "registration_number": "13157472"
+        }
+      },
+      {
+        "name": "Mr Christopher Glass",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "English",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2018-09-27",
+        "identification": null
+      },
+      {
+        "name": "Mrs Anita Glass",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2018-09-27",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4Mjc4Mjg3MWFkaXF6a2N4",
+    "date": "2025-09-26",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/AOFtgJMnmJmRZU7pPENGJyNe610fEopeyt-O9Z2fMLM/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/10983766/filing-history/MzQ4Mjc4Mjg3MWFkaXF6a2N4"
   }
 }

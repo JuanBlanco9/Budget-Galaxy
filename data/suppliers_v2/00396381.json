@@ -65,9 +65,103 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T15:36:40Z",
+    "company_name": "CREAMLINE DAIRIES LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1945-06-21",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-06-30",
+    "accounts_last_made_up": "2024-09-28",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-14"
+  },
+  "governance": {
+    "api_date": "2026-04-22T15:36:42Z",
+    "total_officers": 11,
+    "active_count": 5,
+    "resigned_count": 6,
+    "active_officers": [
+      {
+        "name": "SWALLOW, Christopher David",
+        "role": "secretary",
+        "appointed_on": "1994-12-19",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "PURVIS, Robert Kenneth Berry",
+        "role": "director",
+        "appointed_on": "1995-10-12",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SWALLOW, Anthony David",
+        "role": "director",
+        "appointed_on": "2001-11-21",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "SWALLOW, Christopher David",
+        "role": "director",
+        "appointed_on": "1994-12-19",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "SWALLOW, Helga Hildegard Gertrud",
+        "role": "director",
+        "appointed_on": "1994-12-19",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T15:36:43Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Swallow Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-05-31",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act",
+          "country_registered": "England",
+          "place_registered": "England & Wales",
+          "registration_number": "2979029"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2NDkzNDYxNGFkaXF6a2N4",
+    "date": "2025-05-02",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/STxmDkWtmCeNFW-EnCBLBnrXutxF7FKI4rRsM-B1TJ4/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/00396381/filing-history/MzQ2NDkzNDYxNGFkaXF6a2N4"
   }
 }

@@ -63,9 +63,145 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T15:49:39Z",
+    "company_name": "THE MAYFIELD TRUST",
+    "company_status": "active",
+    "date_of_creation": "1990-11-26",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-18"
+  },
+  "governance": {
+    "api_date": "2026-04-22T15:49:41Z",
+    "total_officers": 57,
+    "active_count": 7,
+    "resigned_count": 50,
+    "active_officers": [
+      {
+        "name": "ANDERSON, Susan Lesley",
+        "role": "secretary",
+        "appointed_on": "2019-10-17",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "ANDERSON, Susan Lesley",
+        "role": "director",
+        "appointed_on": "2018-10-30",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BYWATER, David Martin",
+        "role": "director",
+        "appointed_on": "2024-09-04",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "DOUGHERTY, Raymond Peter",
+        "role": "director",
+        "appointed_on": "2022-03-24",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GIBSON, Lynda Ann",
+        "role": "director",
+        "appointed_on": "2022-03-24",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PORTEUS, Sharon Linda",
+        "role": "director",
+        "appointed_on": "2025-09-03",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SCOTT, Richard Charles",
+        "role": "director",
+        "appointed_on": "2018-02-16",
+        "country_of_residence": "England",
+        "nationality": "English"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T15:49:43Z",
+    "total_results": 4,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Richard Charles Scott",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "English",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2022-03-24",
+        "identification": null
+      },
+      {
+        "name": "Mrs Louise Ann Shute",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2020-06-17",
+        "identification": null
+      },
+      {
+        "name": "Mr Adam Thomas Milner",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "voting-rights-25-to-50-percent-as-trust"
+        ],
+        "notified_on": "2018-11-15",
+        "identification": null
+      },
+      {
+        "name": "Mrs Jennifer Crossland",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors-as-trust"
+        ],
+        "notified_on": "2016-11-24",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NjU1MTkxNGFkaXF6a2N4",
+    "date": "2026-01-04",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/R_0dJV8mZAxT3n4dugznk0Z6cjd8BPqhBXk3nAZe2nI/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02562377/filing-history/MzQ5NjU1MTkxNGFkaXF6a2N4"
   }
 }

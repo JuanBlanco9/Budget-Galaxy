@@ -64,9 +64,94 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T17:00:43Z",
+    "company_name": "HARVEST ENERGY LIMITED",
+    "company_status": "administration",
+    "date_of_creation": "1994-12-07",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": true,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": true,
+    "accounts_next_due": "2025-11-30",
+    "accounts_last_made_up": "2024-02-29",
+    "confirmation_statement_overdue": true,
+    "confirmation_statement_next_due": "2025-12-18"
+  },
+  "governance": {
+    "api_date": "2026-04-22T17:00:45Z",
+    "total_officers": 47,
+    "active_count": 2,
+    "resigned_count": 45,
+    "active_officers": [
+      {
+        "name": "ELEMENTAL COMPANY SECRETARY LIMITED",
+        "role": "corporate-secretary",
+        "appointed_on": "2020-04-21",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "SOOSAIPILLAI, Winston Sanjeevkumar",
+        "role": "director",
+        "appointed_on": "2015-06-26",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T17:00:47Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Winston Sanjeev Kumar Soosaipillai",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Harvest Energy Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "United Kingdom (England And Wales)",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "05293930"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ0MjY3MjkzOGFkaXF6a2N4",
+    "date": "2024-11-13",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/g6WsEiPOBlbki4twEKlck8-B23vno6wBqV2Lo7ClSwM/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02999020/filing-history/MzQ0MjY3MjkzOGFkaXF6a2N4"
   }
 }

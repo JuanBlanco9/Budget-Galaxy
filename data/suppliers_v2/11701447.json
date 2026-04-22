@@ -64,9 +64,145 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T15:53:22Z",
+    "company_name": "MELDRUM CONSTRUCTION SERVICES GROUP LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2018-11-28",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-11"
+  },
+  "governance": {
+    "api_date": "2026-04-22T15:53:24Z",
+    "total_officers": 18,
+    "active_count": 9,
+    "resigned_count": 9,
+    "active_officers": [
+      {
+        "name": "FINNIGAN, David Thomas",
+        "role": "secretary",
+        "appointed_on": "2026-01-30",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BRANNIGHAN, Cheryl Lea",
+        "role": "director",
+        "appointed_on": "2020-08-20",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CUTHBERTSON, Tracy Marie",
+        "role": "director",
+        "appointed_on": "2023-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "FINNIGAN, David Thomas",
+        "role": "director",
+        "appointed_on": "2026-01-08",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "JOHNSTON, Giles Gavin",
+        "role": "director",
+        "appointed_on": "2023-01-05",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MELDRUM, David Martin",
+        "role": "director",
+        "appointed_on": "2018-11-28",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "MELDRUM, John Patrick",
+        "role": "director",
+        "appointed_on": "2020-08-21",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      },
+      {
+        "name": "SMITH, Stephen Kevin",
+        "role": "director",
+        "appointed_on": "2023-01-17",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WAGGETT, Steven",
+        "role": "director",
+        "appointed_on": "2024-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T15:53:26Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Meldrum Construction Services Group Eot Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2024-09-30",
+        "identification": {
+          "legal_form": "Private Company Limited By Guarantee Without Share Capital",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "Registrar Of England And Wales",
+          "registration_number": "15499775"
+        }
+      },
+      {
+        "name": "Mr David Martin Meldrum",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2018-11-28",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2ODQzNzM5MWFkaXF6a2N4",
+    "date": "2025-05-30",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/EdWbsAyBty9Q1rwZNqPBh5xT6BMbUOYbgbcrG_LZLkQ/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/11701447/filing-history/MzQ2ODQzNzM5MWFkaXF6a2N4"
   }
 }

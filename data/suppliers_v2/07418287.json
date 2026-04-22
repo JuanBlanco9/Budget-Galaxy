@@ -68,9 +68,102 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T15:56:45Z",
+    "company_name": "SAFARILAND UK LTD.",
+    "company_status": "active",
+    "date_of_creation": "2010-10-25",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-08"
+  },
+  "governance": {
+    "api_date": "2026-04-22T15:56:46Z",
+    "total_officers": 17,
+    "active_count": 5,
+    "resigned_count": 12,
+    "active_officers": [
+      {
+        "name": "APPLEBY, Chad",
+        "role": "director",
+        "appointed_on": "2018-11-01",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      },
+      {
+        "name": "BROWERS, Blaine",
+        "role": "director",
+        "appointed_on": "2018-11-01",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      },
+      {
+        "name": "GROCOTT, Antony",
+        "role": "director",
+        "appointed_on": "2025-07-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HAMPSON, Andrew William",
+        "role": "director",
+        "appointed_on": "2023-09-15",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WILLIAMS, Brad Elliot",
+        "role": "director",
+        "appointed_on": "2019-07-01",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T15:56:48Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Safariland Uk Holding Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act",
+          "country_registered": "England And Wales",
+          "place_registered": "England And Wales",
+          "registration_number": "07664085"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4OTM2OTk2OWFkaXF6a2N4",
+    "date": "2025-11-18",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/P8ZhCssJju_P8avWPKG9ILu-8EReMoXEw9Zt8yrBs8s/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/07418287/filing-history/MzQ4OTM2OTk2OWFkaXF6a2N4"
   }
 }

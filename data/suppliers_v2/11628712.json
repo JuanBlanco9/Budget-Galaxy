@@ -76,9 +76,113 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T16:10:13Z",
+    "company_name": "UPLYFTED SERVICES LTD",
+    "company_status": "active",
+    "date_of_creation": "2018-10-17",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-11-30",
+    "accounts_last_made_up": "2025-02-28",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-08-27"
+  },
+  "governance": {
+    "api_date": "2026-04-22T16:10:15Z",
+    "total_officers": 4,
+    "active_count": 2,
+    "resigned_count": 2,
+    "active_officers": [
+      {
+        "name": "CATTON, David William",
+        "role": "director",
+        "appointed_on": "2019-02-07",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MEMOLI, Maria Agustina",
+        "role": "director",
+        "appointed_on": "2022-12-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T16:10:16Z",
+    "total_results": 4,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Miss Maria Agustina Memoli",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2022-12-01",
+        "identification": null
+      },
+      {
+        "name": "Mr Neil Barry French",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2019-02-07",
+        "identification": null
+      },
+      {
+        "name": "Mr David William Catton",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2019-02-07",
+        "identification": null
+      },
+      {
+        "name": "Mr James Patrick Byrne",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2018-10-17",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2NjQ4OTEwNmFkaXF6a2N4",
+    "date": "2025-05-15",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-micro-entity",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/uGfGZ56nb0C4djMQq6m1WszBj30s3Kb__etecqfCWXs/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/11628712/filing-history/MzQ2NjQ4OTEwNmFkaXF6a2N4"
   }
 }

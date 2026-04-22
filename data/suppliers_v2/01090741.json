@@ -66,9 +66,130 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T17:24:28Z",
+    "company_name": "LEX AUTOLEASE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1973-01-12",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-13"
+  },
+  "governance": {
+    "api_date": "2026-04-22T17:24:30Z",
+    "total_officers": 50,
+    "active_count": 6,
+    "resigned_count": 44,
+    "active_officers": [
+      {
+        "name": "HENNESSEY, David Dermot",
+        "role": "secretary",
+        "appointed_on": "2026-03-09",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "AMBANI, Anish Bipin",
+        "role": "director",
+        "appointed_on": "2023-03-08",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "GOULD, Gregory David",
+        "role": "director",
+        "appointed_on": "2022-02-10",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HYNE, Paul Lawrence",
+        "role": "director",
+        "appointed_on": "2024-10-31",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "MCCAFFREY, James Patrick",
+        "role": "director",
+        "appointed_on": "2019-12-09",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      },
+      {
+        "name": "WILLIAMS, Nicholas Andrew",
+        "role": "director",
+        "appointed_on": "2022-10-29",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T17:24:31Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Lloyds Bank Asset Finance Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2025-09-26",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "England And Wales",
+          "country_registered": "England",
+          "place_registered": "England And Wales",
+          "registration_number": "00615235"
+        }
+      },
+      {
+        "name": "Acl Autolease Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "United Kingdom (England And Wales)",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "03674114"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MzE0ODc0MGFkaXF6a2N4",
+    "date": "2025-07-14",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/ceL1qBKJqKzaOpQvgA7dZz8NIQHbG42gWD73EdTtqvk/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01090741/filing-history/MzQ3MzE0ODc0MGFkaXF6a2N4"
   }
 }

@@ -65,9 +65,109 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T16:46:10Z",
+    "company_name": "BIFFA WASTE SERVICES LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1969-01-16",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-28",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-09-04"
+  },
+  "governance": {
+    "api_date": "2026-04-22T16:46:12Z",
+    "total_officers": 55,
+    "active_count": 6,
+    "resigned_count": 49,
+    "active_officers": [
+      {
+        "name": "PARSONS, Sarah",
+        "role": "secretary",
+        "appointed_on": "2019-07-11",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "ANGELL, Marc Anthony",
+        "role": "director",
+        "appointed_on": "2024-11-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "COLE, Stephen John",
+        "role": "director",
+        "appointed_on": "2026-03-05",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "COULTON, Paul Michael",
+        "role": "director",
+        "appointed_on": "2026-03-05",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "KIRIAKOPOULOS, Kostantinos Jim",
+        "role": "director",
+        "appointed_on": "2026-02-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "Canadian,British"
+      },
+      {
+        "name": "TOPHAM, Michael Robert Mason",
+        "role": "director",
+        "appointed_on": "2013-10-08",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T16:46:14Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Biffa Holdings Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "United Kingdom",
+          "registration_number": "01032104"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NjgzMDYxMmFkaXF6a2N4",
+    "date": "2026-01-02",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/qs1G0REHAQm4kreUYr-U3a1_JkTe15t4YcNmrdPnN-s/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/00946107/filing-history/MzQ5NjgzMDYxMmFkaXF6a2N4"
   }
 }

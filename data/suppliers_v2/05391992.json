@@ -59,9 +59,118 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T16:05:46Z",
+    "company_name": "BURNGREAVE BUILDING COMPANY LTD",
+    "company_status": "active",
+    "date_of_creation": "2005-03-14",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-02-28",
+    "accounts_last_made_up": "2025-05-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-09-24"
+  },
+  "governance": {
+    "api_date": "2026-04-22T16:05:48Z",
+    "total_officers": 6,
+    "active_count": 4,
+    "resigned_count": 2,
+    "active_officers": [
+      {
+        "name": "SUTTON MCGRATH LIMITED",
+        "role": "corporate-secretary",
+        "appointed_on": "2005-03-14",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "KHAN, Naseer Ahmed",
+        "role": "director",
+        "appointed_on": "2005-03-14",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "KHAN, Nazakit",
+        "role": "director",
+        "appointed_on": "2006-07-07",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "KHAN, Tayeeb",
+        "role": "director",
+        "appointed_on": "2019-09-10",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T16:05:49Z",
+    "total_results": 3,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Mr Nazakat Khan",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2019-05-01",
+        "identification": null
+      },
+      {
+        "name": "Mr Mohammed Ismaeel",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-06-30",
+        "identification": null
+      },
+      {
+        "name": "Mr Naseer Ahmed Khan",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-06-30",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwNTU5NjcyMWFkaXF6a2N4",
+    "date": "2026-02-17",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/F37h6gPAM8i2AJuqcPFgIUVdy734z_2dkRjHJSdlwc8/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/05391992/filing-history/MzUwNTU5NjcyMWFkaXF6a2N4"
   }
 }
