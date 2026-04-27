@@ -16253,10 +16253,54 @@ function _cmplistSetCountry(col, country){
 window._suppliersIndex = null;
 window._suppliersCurrentCh = null;
 
-const SUPPLIERS_INDEX_URL = '/data/suppliers/_index.json?v=2';
-const SUPPLIERS_INDEX_V2_URL = '/data/suppliers_v2/_index.json?v=1';
-const SUPPLIER_PROFILE_URL = (ch) => `/data/suppliers/${ch}.json`;
-const SUPPLIER_PROFILE_V2_URL = (ch) => `/data/suppliers_v2/${ch}.json`;
+// Year-toggle state. Default = live year (the one being actively enriched).
+// When a fiscal year is closed, run scripts/snapshot_freeze_year.py <year> to
+// freeze it under data/suppliers_snapshots/<year>/, then bump _liveYear so
+// past years are read from the immutable snapshot dir (officers/PSCs/accounts
+// stay frozen at the as_of_date) while live keeps moving.
+window._liveYear = window._liveYear || 2024;
+window._budgetYear = window._budgetYear || window._liveYear;
+
+function _supIsLiveYear(year){ return (year || window._budgetYear) === window._liveYear; }
+
+function _supIndexUrl(kind){
+  // kind: 'curated' | 'v2'
+  const y = window._budgetYear;
+  if (_supIsLiveYear(y)) {
+    return kind === 'curated' ? '/data/suppliers/_index.json?v=2'
+                              : '/data/suppliers_v2/_index.json?v=1';
+  }
+  return kind === 'curated'
+    ? `/data/suppliers_snapshots/${y}/suppliers_index.json`
+    : `/data/suppliers_snapshots/${y}/suppliers_v2_index.json`;
+}
+
+function _supProfileUrl(ch, kind){
+  // kind: 'curated' | 'v2'
+  const y = window._budgetYear;
+  if (_supIsLiveYear(y)) {
+    return kind === 'curated' ? `/data/suppliers/${ch}.json`
+                              : `/data/suppliers_v2/${ch}.json`;
+  }
+  return kind === 'curated'
+    ? `/data/suppliers_snapshots/${y}/suppliers_curated/${ch}.json`
+    : `/data/suppliers_snapshots/${y}/suppliers/${ch}.json`;
+}
+
+// Setter — call to switch year. Invalidates cached index so next loadSuppliersTab() refetches.
+function setBudgetYear(year){
+  if (year === window._budgetYear) return;
+  window._budgetYear = year;
+  window._suppliersIndex = null;
+  window._suppliersCurrentCh = null;
+  if (typeof loadSuppliersTab === 'function') loadSuppliersTab();
+}
+
+// Backwards-compat shims (keep existing call-sites alive)
+const SUPPLIERS_INDEX_URL = _supIndexUrl('curated');
+const SUPPLIERS_INDEX_V2_URL = _supIndexUrl('v2');
+const SUPPLIER_PROFILE_URL = (ch) => _supProfileUrl(ch, 'curated');
+const SUPPLIER_PROFILE_V2_URL = (ch) => _supProfileUrl(ch, 'v2');
 
 function _supEscapeHtml(s){return String(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))}
 
@@ -17375,8 +17419,8 @@ async function loadSuppliersTab(){
     try{
       // Fetch curated (400 hand-made) + v2 (19k bulk-enriched) indexes in parallel
       const [rCur, rV2] = await Promise.all([
-        fetch(SUPPLIERS_INDEX_URL),
-        fetch(SUPPLIERS_INDEX_V2_URL),
+        fetch(_supIndexUrl('curated')),
+        fetch(_supIndexUrl('v2')),
       ]);
       if(!rCur.ok)throw new Error('curated fetch failed '+rCur.status);
       const curated = await rCur.json();
