@@ -41,10 +41,18 @@ def main():
             "incorporated": p.get("incorporated"),
             "age_years": p.get("age_years"),
             "enrichment_stages": p.get("enrichment_stages") or {},
+            "top_buyer_type": p.get("top_buyer_type"),
+            "buyer_type_breakdown": p.get("buyer_type_breakdown") or {},
         }
     OUT_INDEX.write_text(json.dumps(index, ensure_ascii=False), encoding="utf-8")
     n_enriched = sum(1 for e in index.values() if e["enrichment_stages"].get("ch_api_profile"))
-    print(f"Wrote {OUT_INDEX} · {len(index):,} entries · {n_enriched:,} enriched with CH API")
+    n_typed = sum(1 for e in index.values() if e.get("top_buyer_type") and e["top_buyer_type"] != "other")
+    print(f"Wrote {OUT_INDEX} · {len(index):,} entries · {n_enriched:,} enriched with CH API · {n_typed:,} with non-other top_buyer_type")
+    # Buyer type distribution
+    from collections import Counter
+    bt = Counter(e.get("top_buyer_type") or "(none)" for e in index.values())
+    for t, n in sorted(bt.items(), key=lambda kv: -kv[1]):
+        print(f"  {t:15s} {n:>6,}")
 
 
 if __name__ == "__main__":

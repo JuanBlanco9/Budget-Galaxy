@@ -17405,6 +17405,8 @@ async function loadSuppliersTab(){
           incorporated: v.incorporated,
           age_years: v.age_years,
           enrichment_stages: v.enrichment_stages || {},
+          top_buyer_type: v.top_buyer_type || null,
+          buyer_type_breakdown: v.buyer_type_breakdown || {},
           _source: 'v2',
         });
       }
