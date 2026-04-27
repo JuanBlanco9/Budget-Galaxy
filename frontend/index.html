@@ -4045,7 +4045,7 @@ mark{background:rgba(79,195,247,.3);color:var(--text,#e8ebf5);padding:0 2px;bord
 
         <div class="about-acc-item" id="acc-enrichment">
           <div class="about-acc-header" onclick="toggleAboutAcc('acc-enrichment')">
-            Enrichment coverage &amp; quality (audit 2026-04-20)
+            Enrichment coverage &amp; quality (audit 2026-04-27)
             <span class="about-acc-chevron"></span>
           </div>
           <div class="about-acc-body">
@@ -4053,8 +4053,8 @@ mark{background:rgba(79,195,247,.3);color:var(--text,#e8ebf5);padding:0 2px;bord
 
             <div class="about-country">The four tiers</div>
             <ul>
-              <li><b>Tier A &mdash; Hand-curated</b> (36 programmes).
-                Written from six batches of research against official publishers &mdash; DWP Stat-Xplore, HMRC Annual Report, NHS England TAC, ONS, IFS, OBR, NAO, House of Commons Library briefings. Each entry has a description, beneficiary count, legal basis, 7&ndash;11 key stats, recent-change notes, and source citations. <b>Caveat:</b> the underlying research was prepared by LLM agents using their training data (through early 2026). Numbers are cross-checked against our own tree JSON by <code>scripts/verify_enrichment.py</code> &mdash; the 2026-04-20 audit caught ten stat labels where scope wasn't clear (e.g. "total DSG" nationally vs the specific sub-line a user might be clicking). Those labels now include scope clarifiers. Not every source has a URL yet (31 of 36 entries cite the publisher + title but not a clickable link); URL enrichment is on the post-launch list.</li>
+              <li><b>Tier A &mdash; Hand-curated</b> (4,199 entries · 15,245 source citations).
+                Written across multiple sprints of research against official publishers &mdash; DWP Stat-Xplore, HMRC Annual Report, NHS England TAC, ONS, IFS, OBR, NAO, House of Commons Library briefings, NHS provider Trust ARAs, council ARAs, COFOG aggregates. Each entry has a description, beneficiary count, legal basis, 8&ndash;12 key stats, recent-change notes, and 4&ndash;6 source citations as <code>{publisher, title, url}</code> dicts. <b>Caveat:</b> the underlying research was prepared by LLM agents using their training data (through early 2026). Numbers are cross-checked against our own tree JSON by <code>scripts/verify_enrichment.py</code>. Coverage of the 8&ndash;12 stats / 4&ndash;6 sources / 3&ndash;6 related-links contract floor: 86% / 41% / 71% as of 2026-04-27 &mdash; the 59% below source floor are early-sprint entries pending re-audit.</li>
               <li><b>Tier B &mdash; Imported</b> (2,225 nodes).
                 Pre-existing enrichment content in the repo: <code>program_enrichment.json</code> (779 compact entries, schema <i>year / description / beneficiaries</i>) and <code>enrichment_top50.json</code> (651 rich entries, adding <i>legal basis / notes / OSCAR category</i>). These cover 25% of the tree. <b>Caveat:</b> most of this content was LLM-drafted at an earlier stage and not re-audited. The 2026-04-20 audit flagged 11 top-level departments with incorrect founding years (Home Office listed as founded in 2024 vs actual 1782, MoJ as 2024 vs 2007, etc.). The frontend now suppresses any <i>Established: 2024</i> field coming from this layer as a sentinel for "unknown" &mdash; but other factual details in these 2,225 entries are not individually verified.</li>
               <li><b>Tier C &mdash; Procedural</b> (~1,500 council + council-service nodes).
@@ -4072,6 +4072,16 @@ mark{background:rgba(79,195,247,.3);color:var(--text,#e8ebf5);padding:0 2px;bord
             </ul>
 
             <p>The verifier is reproducible: <code>py scripts/verify_enrichment.py</code> writes <code>data/uk/_enrichment_audit.json</code> with per-entry flags for tree-match, scope discrepancy, missing URLs, and suspicious founding years. It runs in under a second.</p>
+
+            <div class="about-country" style="margin-top:18px">Audit trail &mdash; the 4-layer verifiability model</div>
+            <p>Whenever Budget Galaxy cites a number, we want you to be able to prove it came from where we claim it came from &mdash; even if the publisher reorganises their site or pulls the page down. Four redundant layers per citation:</p>
+            <ol>
+              <li><b>Live source URL</b> &mdash; the publisher's own page (<code>gov.uk</code>, <code>nhs.uk</code>, ONS, etc). Fragile: UK government reorganises URLs constantly (DWP routes changed in 2024, BEIS split into DESNZ/DSIT/DBT in Feb 2023).</li>
+              <li><b>Wayback Machine snapshot</b> &mdash; <code>web.archive.org/web/&lt;ts&gt;/&lt;url&gt;</code>. Permanent HTML capture taken when we cited the page. Click "archive ↗" next to any source.</li>
+              <li><b>Archive.org file mirror</b> &mdash; for raw data files (CSVs, PDFs, ZIPs), we upload a permanent copy to the Internet Archive collection <a href="https://archive.org/details/budget-galaxy-uk-councils-2024" target="_blank" rel="noopener">budget-galaxy-uk-councils-2024</a> via their S3 API. Currently used for the 161 council spend datasets (~2.1 GB).</li>
+              <li><b>Captured-at timestamp</b> &mdash; ISO 8601 timestamp on every archived citation, so the audit is dated and reproducible.</li>
+            </ol>
+            <p><b>Coverage 2026-04-27:</b> council spend lookup 161/166 (97%) all four layers. Budget tree enrichment 4,199 entries / 15,245 citations &mdash; layer 2 (Wayback) being archived now via <code>scripts/archive_enrichment_sources.js</code> (~1 hour run with authenticated IA S3 keys, ~100 req/min). Layers 1 + 4 already at 100% in the JSON. Layer 3 only relevant for raw data files (not URL-based publisher pages).</p>
           </div>
         </div>
 
@@ -15416,8 +15426,14 @@ function _cmplistEnrichmentCard(rawName, parentName, ancestorNames){
           const pub = _cmpEsc(src.publisher || '');
           const title = _cmpEsc(src.title || '');
           const year = src.year ? ` (${_cmpEsc(src.year)})` : '';
-          const link = src.url ? `<a href="${_cmpEsc(src.url)}" target="_blank" rel="noopener">↗</a>` : '';
-          return `<div class="detail-enrich-src"><b>${pub}</b> · ${title}${year} ${link}</div>`;
+          // Audit trail: live link + Wayback archive link (when available)
+          const liveLink = src.url
+            ? `<a href="${_cmpEsc(src.url)}" target="_blank" rel="noopener" title="Live source — may break if publisher reorganises">↗ live</a>`
+            : '';
+          const archiveLink = src.archive_url
+            ? ` <a href="${_cmpEsc(src.archive_url)}" target="_blank" rel="noopener" title="Permanent Wayback Machine snapshot${src.captured_at ? ' captured ' + src.captured_at.slice(0, 10) : ''}" style="color:var(--dim,#8892a8);font-size:10.5px">archive ↗</a>`
+            : '';
+          return `<div class="detail-enrich-src"><b>${pub}</b> · ${title}${year} ${liveLink}${archiveLink}</div>`;
         }).join('')}
       </div>
     </div>`;
