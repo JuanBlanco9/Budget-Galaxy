@@ -17634,6 +17634,28 @@ function _supSetTypeFilter(t, btn){
 }
 
 // Lazy-load map data for hierarchical view (reuses the same files as map mode)
+// CH normalization: procurement data sometimes drops leading zeros
+// (2485577 vs 02485577 — same company). Build lookup variants per ch
+// so flows with non-padded CH still hit profiles.
+function _supChVariants(ch){
+  if (!ch) return [];
+  const s = String(ch).trim().toUpperCase();
+  const out = new Set([s]);
+  if (/^\d+$/.test(s)) {
+    out.add(s.padStart(8, '0'));
+    out.add(s.replace(/^0+/, ''));
+  }
+  return [...out];
+}
+
+// Normalize company name for fuzzy lookup (drops legal-form suffixes + non-alnum)
+function _supNormName(n){
+  if (!n) return '';
+  return n.toLowerCase()
+          .replace(/\b(limited|ltd|plc|llp|public limited company|company)\b\.?/g, '')
+          .replace(/[^a-z0-9]+/g, '');
+}
+
 async function _supListEnsureMapData(){
   if (window._supListMapData) return window._supListMapData;
   try {
@@ -17680,27 +17702,6 @@ async function _supRenderHierarchical(type, query){
   // V2 ENRICHED = full CH API ficha (officers, PSCs, accounts, geo).
   // Both are clickable; only V2 BASIC (BCD-only) is not.
   const curated = full.filter(s => s._source === 'curated');
-
-  // CH normalization: procurement data sometimes drops leading zeros
-  // (2485577 vs 02485577 — same company). Build lookup variants per ch
-  // so flows with non-padded CH still hit profiles.
-  const _supChVariants = (ch) => {
-    if (!ch) return [];
-    const s = String(ch).trim().toUpperCase();
-    const out = new Set([s]);
-    // numeric: try 8-digit zero-pad and stripped
-    if (/^\d+$/.test(s)) {
-      out.add(s.padStart(8, '0'));
-      out.add(s.replace(/^0+/, ''));
-    }
-    return [...out];
-  };
-  const _supNormName = (n) => {
-    if (!n) return '';
-    return n.toLowerCase()
-            .replace(/\b(limited|ltd|plc|llp|public limited company|company)\b\.?/g, '')
-            .replace(/[^a-z0-9]+/g, '');
-  };
 
   const _supAddVariants = (map, ch, value) => {
     for (const v of _supChVariants(ch)) map.set(v, value);
