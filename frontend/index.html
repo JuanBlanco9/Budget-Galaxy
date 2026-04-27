@@ -3654,6 +3654,66 @@ mark{background:rgba(79,195,247,.3);color:var(--text,#e8ebf5);padding:0 2px;bord
   border-top:1px solid rgba(255,255,255,.04);
 }
 
+/* Buyer composition: tag on the row + breakdown panel when expanded */
+.sup-comp-badge{
+  display:inline-block; margin-left:6px; padding:1px 6px; border-radius:3px;
+  font-size:9.5px; font-weight:600; letter-spacing:.04em; vertical-align:1px;
+  border:1px solid transparent;
+}
+.sup-comp-transfer{ background:rgba(251,146,60,.12); color:#fbbf24; border-color:rgba(251,146,60,.25); }
+.sup-comp-grant{    background:rgba(168,85,247,.12); color:#c084fc; border-color:rgba(168,85,247,.25); }
+.sup-comp-mixed{    background:rgba(148,163,184,.12); color:#cbd5e1; border-color:rgba(148,163,184,.25); }
+
+.sup-buyer-comp{
+  background:rgba(15,23,42,.55);
+  border:1px solid rgba(255,255,255,.06);
+  border-radius:6px;
+  margin:8px 14px 12px 28px;
+  padding:12px 14px;
+  font-size:11px;
+}
+.sup-buyer-comp-header{
+  font-size:10.5px; color:var(--dim); margin-bottom:8px;
+  text-transform:uppercase; letter-spacing:.05em;
+}
+.sup-buyer-comp-header strong{ color:var(--text); font-weight:600; text-transform:none; letter-spacing:0; }
+.sup-buyer-comp-bars{
+  display:flex; height:18px; border-radius:3px; overflow:hidden; margin-bottom:6px;
+  background:rgba(255,255,255,.04);
+}
+.sup-buyer-comp-bar{
+  display:flex; align-items:center; justify-content:center;
+  font-size:10px; font-weight:600; color:#0a0e1a;
+  white-space:nowrap; overflow:hidden;
+}
+.sup-buyer-comp-transfer{ background:#fbbf24; }
+.sup-buyer-comp-grant{    background:#c084fc; }
+.sup-buyer-comp-procurement{ background:#4ade80; }
+.sup-buyer-comp-legend{
+  display:flex; flex-wrap:wrap; gap:14px; font-size:10.5px; color:var(--dim);
+  padding-bottom:8px; margin-bottom:8px;
+  border-bottom:1px solid rgba(255,255,255,.05);
+}
+.sup-buyer-comp-legend .dot{
+  display:inline-block; width:8px; height:8px; border-radius:50%; margin-right:5px; vertical-align:0;
+}
+.dot-transfer{ background:#fbbf24; }
+.dot-grant{    background:#c084fc; }
+.dot-procurement{ background:#4ade80; }
+.sup-buyer-comp-lines{ display:flex; flex-direction:column; gap:3px; margin-top:4px; }
+.sup-buyer-comp-line{
+  display:grid; grid-template-columns:18px 1fr auto; gap:8px; align-items:center;
+  padding:3px 0; font-size:10.5px; color:var(--dim);
+}
+.sup-buyer-comp-line .line-name{ color:var(--text); font-size:10.5px; }
+.sup-buyer-comp-line .line-amt{ font-variant-numeric:tabular-nums; font-weight:500; }
+.sup-buyer-comp-line-transfer    .kind-tag{ filter:hue-rotate(0deg); }
+.sup-buyer-comp-line-procurement .line-name{ color:#86efac; }
+.sup-buyer-comp-note{
+  margin-top:10px; padding-top:8px; font-size:10.5px; color:var(--dim);
+  border-top:1px dashed rgba(255,255,255,.07); font-style:italic;
+}
+
 /* Hierarchical buyer→supplier list */
 .sup-buyer-group{border-bottom:1px solid rgba(255,255,255,.05);}
 .sup-buyer-row{
@@ -17524,17 +17584,33 @@ function _supSetTypeFilter(t, btn){
 async function _supListEnsureMapData(){
   if (window._supListMapData) return window._supListMapData;
   try {
-    const [buyers, b2s, suppliers] = await Promise.all([
+    const [buyers, b2s, suppliers, breakdowns] = await Promise.all([
       fetch('/data/map/buyers.json').then(r => r.json()),
       fetch('/data/map/buyer_to_suppliers.json').then(r => r.json()),
       fetch('/data/map/suppliers.json').then(r => r.json()),
+      fetch('/data/uk/buyer_breakdowns_2024.json').then(r => r.ok ? r.json() : {}).catch(() => ({})),
     ]);
-    window._supListMapData = { buyers, b2s, suppliers };
+    window._supListMapData = { buyers, b2s, suppliers, breakdowns };
   } catch (e) {
     console.warn('Failed to load map data for hierarchical list:', e);
     window._supListMapData = null;
   }
   return window._supListMapData;
+}
+
+// Match a buyer slug (e.g. "department-for-work-and-pensions__s12fd") against
+// the department-level breakdown index keyed by short slug.
+function _supBuyerBreakdown(buyerId, breakdowns){
+  if (!buyerId || !breakdowns) return null;
+  // buyer_id is typically <slug>__<postcode>; try the prefix first, then full
+  const beforePc = buyerId.split('__')[0];
+  if (breakdowns[beforePc]) return breakdowns[beforePc];
+  // Fallback: scan keys, pick longest prefix that matches
+  let best = null, bestLen = 0;
+  for (const k of Object.keys(breakdowns)) {
+    if (beforePc.startsWith(k) && k.length > bestLen) { best = breakdowns[k]; bestLen = k.length; }
+  }
+  return best;
 }
 
 // Hierarchical render: filter pill (non-all) → list buyers of that type → click buyer = expand to suppliers
@@ -17652,7 +17728,51 @@ async function _supRenderHierarchical(type, query){
   rows.innerHTML = curatedHtml + visible.map(b => {
     const isExpanded = window._supExpandedBuyers.has(b.id);
     const flows = data.b2s[b.id] || [];
+    const breakdown = _supBuyerBreakdown(b.id, data.breakdowns);
+
+    // Composition badge on the buyer row (transfer-heavy / grant-heavy / low-procurement)
+    let compBadge = '';
+    if (breakdown) {
+      if (breakdown.is_transfer_dominant) {
+        compBadge = `<span class="sup-comp-badge sup-comp-transfer" title="${breakdown.transfer_pct}% of this £ flows to citizens (pensions, benefits, credits)">📤 Transfer-heavy</span>`;
+      } else if (breakdown.is_grant_dominant) {
+        compBadge = `<span class="sup-comp-badge sup-comp-grant" title="${breakdown.grant_pct}% of this £ is grants to public bodies (NHS trusts, schools, councils)">🤝 Grants public bodies</span>`;
+      } else if (breakdown.is_low_procurement) {
+        compBadge = `<span class="sup-comp-badge sup-comp-mixed" title="Only ${breakdown.procurement_pct}% of this £ is commercial procurement; rest is transfers/grants">⚠ Limited procurement</span>`;
+      }
+    }
+
+    // Composition panel shown when buyer is expanded (only for the parent dept buyer
+    // — buyer postcodes share the dept-level breakdown so we render once per group)
+    let compPanel = '';
+    if (isExpanded && breakdown) {
+      const fmtPct = (p) => p > 0 ? `${p}%` : '';
+      const lines = (breakdown.top_lines || []).slice(0, 8);
+      compPanel = `<div class="sup-buyer-comp">
+        <div class="sup-buyer-comp-header">What this £ really is — <strong>${_cmpEsc(breakdown.name)}</strong> total FY 2024-25</div>
+        <div class="sup-buyer-comp-bars">
+          ${breakdown.transfer_pct > 0 ? `<div class="sup-buyer-comp-bar sup-buyer-comp-transfer" style="width:${breakdown.transfer_pct}%" title="Transfers to citizens">📤 ${fmtPct(breakdown.transfer_pct)}</div>` : ''}
+          ${breakdown.grant_pct > 0 ? `<div class="sup-buyer-comp-bar sup-buyer-comp-grant" style="width:${breakdown.grant_pct}%" title="Grants to public bodies">🤝 ${fmtPct(breakdown.grant_pct)}</div>` : ''}
+          ${breakdown.procurement_pct > 0 ? `<div class="sup-buyer-comp-bar sup-buyer-comp-procurement" style="width:${breakdown.procurement_pct}%" title="Commercial procurement">🏢 ${fmtPct(breakdown.procurement_pct)}</div>` : ''}
+        </div>
+        <div class="sup-buyer-comp-legend">
+          ${breakdown.transfer_pct > 0 ? `<span><span class="dot dot-transfer"></span> ${fmt(breakdown.transfer_total)} transfers to citizens</span>` : ''}
+          ${breakdown.grant_pct > 0 ? `<span><span class="dot dot-grant"></span> ${fmt(breakdown.grant_total)} grants to public bodies</span>` : ''}
+          ${breakdown.procurement_pct > 0 ? `<span><span class="dot dot-procurement"></span> ${fmt(breakdown.procurement_total)} commercial procurement</span>` : ''}
+        </div>
+        ${lines.length ? `<div class="sup-buyer-comp-lines">
+          ${lines.map(l => `<div class="sup-buyer-comp-line sup-buyer-comp-line-${l.kind}">
+            <span class="kind-tag">${l.kind === 'transfer' ? '📤' : l.kind === 'grant' ? '🤝' : '🏢'}</span>
+            <span class="line-name">${_cmpEsc(l.name)}</span>
+            <span class="line-amt">${fmt(l.value)}</span>
+          </div>`).join('')}
+        </div>` : ''}
+        ${(breakdown.transfer_pct + breakdown.grant_pct) >= 50 ? `<div class="sup-buyer-comp-note">↓ The contracts below are the commercial procurement portion only. Transfers and grants are tracked in the Budget Tree under their own programme lines.</div>` : ''}
+      </div>`;
+    }
+
     const childHtml = !isExpanded ? '' : `<div class="sup-buyer-children">
+      ${compPanel}
       ${flows.map(f => {
         const s = data.suppliers[f.supplier_id];
         if (!s) return '';
@@ -17689,7 +17809,7 @@ async function _supRenderHierarchical(type, query){
       <div class="sup-buyer-row${isExpanded ? ' expanded' : ''}" onclick="_supToggleBuyer('${b.id}')">
         <span class="sup-buyer-chev">▶</span>
         <div class="sup-buyer-info">
-          <div class="sup-buyer-name">${_cmpEsc(b.name)}</div>
+          <div class="sup-buyer-name">${_cmpEsc(b.name)} ${compBadge}</div>
           <div class="sup-buyer-meta">${_cmpEsc(b.lad24_nm || b.region || '')} · ${b.n_suppliers.toLocaleString()} suppliers · ${b.n_contracts.toLocaleString()} contracts</div>
         </div>
         <div class="sup-buyer-amt">${fmt(b.total_gbp_2024)}</div>
