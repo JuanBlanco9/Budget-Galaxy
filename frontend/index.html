@@ -17861,6 +17861,44 @@ function _supRenderDetail(p){
   return h;
 }
 
+// Map Companies House filing description codes to human-readable labels
+function _supPrettyAccountsLabel(ap){
+  if (!ap) return 'Latest accounts';
+  const raw = (ap.description || ap.type || '').toLowerCase();
+  // Companies House description codes (most common for company accounts filings)
+  const map = {
+    'accounts-with-accounts-type-full':         'Full annual accounts',
+    'accounts-with-accounts-type-small':        'Small company accounts',
+    'accounts-with-accounts-type-micro-entity': 'Micro-entity accounts',
+    'accounts-with-accounts-type-medium':       'Medium-sized accounts',
+    'accounts-with-accounts-type-dormant':      'Dormant company accounts',
+    'accounts-with-accounts-type-group':        'Group consolidated accounts',
+    'accounts-with-accounts-type-abridged':     'Abridged accounts',
+    'accounts-with-accounts-type-initial':      'Initial accounts',
+    'accounts-with-accounts-type-total-exemption-full':  'Total-exemption full accounts',
+    'accounts-with-accounts-type-total-exemption-small': 'Total-exemption small accounts',
+    'accounts-with-accounts-type-partial-exemption':     'Partial-exemption accounts',
+    'accounts-with-accounts-type-filing-exemption-subsidiary': 'Filing-exemption subsidiary accounts',
+    'accounts-with-accounts-type-audit-exemption-subsidiary':  'Audit-exemption subsidiary accounts',
+    'accounts-with-accounts-type-unaudited-abridged':    'Unaudited abridged accounts',
+    'accounts-with-accounts-type-no-accounts-type':      'Annual accounts',
+  };
+  if (map[raw]) return map[raw];
+  // Fallback: prettify any "accounts-with-accounts-type-X" → "X accounts"
+  const m = raw.match(/^accounts-with-accounts-type-(.+)$/);
+  if (m) {
+    const kind = m[1].replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+    return `${kind} accounts`;
+  }
+  // Other generic CH filing types
+  if (raw.startsWith('accounts')) return 'Latest accounts';
+  if (raw.startsWith('confirmation-statement')) return 'Confirmation statement';
+  if (raw.startsWith('annual-return')) return 'Annual return';
+  // Title-case anything else
+  if (raw) return raw.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+  return 'Latest accounts';
+}
+
 // Renderer for v2 schema (bulk-enriched 40k suppliers from BCD + CH API)
 function _supRenderDetailV2(p){
   const cp = p.ch_profile || {};
@@ -17928,7 +17966,7 @@ function _supRenderDetailV2(p){
     ${cp.has_insolvency_history?'<div class="k">Insolvency</div><div class="v"><span class="sup-badge suspicious">HAS HISTORY</span></div>':''}
     ${cp.has_charges?'<div class="k">Charges</div><div class="v"><span class="sup-badge gap">HAS CHARGES</span></div>':''}
     ${p.mortgages?`<div class="k">Mortgages</div><div class="v">${p.mortgages.num_outstanding||0} outstanding / ${p.mortgages.num_charges||0} total</div>`:''}
-    ${accPdf&&accPdf.pdf_url?`<div class="k">Latest accounts</div><div class="v"><a href="${_supEscapeHtml(accPdf.pdf_url)}" target="_blank" rel="noopener">↗ ${_supEscapeHtml(accPdf.description||accPdf.type||'PDF')} (${_supEscapeHtml(accPdf.date||'')})</a></div>`:''}
+    ${accPdf&&accPdf.pdf_url?`<div class="k">Latest accounts</div><div class="v"><a href="${_supEscapeHtml(accPdf.pdf_url)}" target="_blank" rel="noopener">↗ ${_supEscapeHtml(_supPrettyAccountsLabel(accPdf))}${accPdf.date?` <span style="color:var(--dim)">(${_supEscapeHtml(accPdf.date)})</span>`:''}</a>${accPdf.view_url?` <a href="${_supEscapeHtml(accPdf.view_url)}" target="_blank" rel="noopener" style="color:var(--dim);font-size:11px;margin-left:6px">filing history ↗</a>`:''}</div>`:''}
   </div></div>`;
   h += `</div>`;
 
@@ -18003,7 +18041,7 @@ function _supRenderDetailV2(p){
 
   // Sources
   const sources = p.sources || [];
-  if (accPdf && accPdf.view_url) sources.push({publisher:'Companies House Filing History', title:accPdf.description||accPdf.type, url: accPdf.view_url});
+  if (accPdf && accPdf.view_url) sources.push({publisher:'Companies House Filing History', title:_supPrettyAccountsLabel(accPdf), url: accPdf.view_url});
   if (sources.length) {
     h += `<div class="sd-card full"><h3>Sources</h3><div class="sd-sources">`;
     for (const s of sources) {
