@@ -3633,10 +3633,21 @@ mark{background:rgba(79,195,247,.3);color:var(--text,#e8ebf5);padding:0 2px;bord
   background:rgba(79,195,247,.03);
   border-bottom:1px solid rgba(79,195,247,.15);
 }
-.sup-curated-header{
-  padding:8px 14px;font-size:10px;font-weight:700;letter-spacing:.08em;
-  color:#8ec8ff;background:rgba(79,195,247,.08);
+.sup-curated-section[open] > summary{
+  border-bottom:1px solid rgba(79,195,247,.15);
 }
+.sup-curated-section > summary{
+  list-style:none; cursor:pointer; user-select:none;
+  display:flex; align-items:center; justify-content:space-between;
+  padding:9px 14px; font-size:10px; font-weight:700; letter-spacing:.08em;
+  color:#8ec8ff; background:rgba(79,195,247,.08);
+}
+.sup-curated-section > summary::-webkit-details-marker{ display:none; }
+.sup-curated-section > summary .chev{
+  font-size:9px; transition:transform .15s ease; opacity:.7;
+}
+.sup-curated-section[open] > summary .chev{ transform:rotate(90deg); }
+.sup-curated-section > summary:hover{ background:rgba(79,195,247,.13); }
 .sup-curated-divider{
   padding:10px 14px;font-size:9.5px;letter-spacing:.05em;text-transform:uppercase;
   color:var(--dim);font-style:italic;
@@ -17540,13 +17551,48 @@ async function _supRenderHierarchical(type, query){
   // V2 ENRICHED = full CH API ficha (officers, PSCs, accounts, geo).
   // Both are clickable; only V2 BASIC (BCD-only) is not.
   const curated = full.filter(s => s._source === 'curated');
-  const curatedByCh = new Map(curated.filter(s => s.company_number).map(s => [s.company_number, s]));
-  const v2EnrichedByCh = new Map(
-    full
-      .filter(s => s._source === 'v2' && (s.enrichment_stages || {}).ch_api_profile)
-      .filter(s => s.company_number)
-      .map(s => [s.company_number, s])
-  );
+
+  // CH normalization: procurement data sometimes drops leading zeros
+  // (2485577 vs 02485577 — same company). Build lookup variants per ch
+  // so flows with non-padded CH still hit profiles.
+  const _supChVariants = (ch) => {
+    if (!ch) return [];
+    const s = String(ch).trim().toUpperCase();
+    const out = new Set([s]);
+    // numeric: try 8-digit zero-pad and stripped
+    if (/^\d+$/.test(s)) {
+      out.add(s.padStart(8, '0'));
+      out.add(s.replace(/^0+/, ''));
+    }
+    return [...out];
+  };
+  const _supNormName = (n) => {
+    if (!n) return '';
+    return n.toLowerCase()
+            .replace(/\b(limited|ltd|plc|llp|public limited company|company)\b\.?/g, '')
+            .replace(/[^a-z0-9]+/g, '');
+  };
+
+  const _supAddVariants = (map, ch, value) => {
+    for (const v of _supChVariants(ch)) map.set(v, value);
+  };
+
+  const curatedByCh = new Map();
+  const curatedByName = new Map();
+  for (const s of curated) {
+    if (s.company_number) _supAddVariants(curatedByCh, s.company_number, s);
+    const norm = _supNormName(s.display_name || s.official_name);
+    if (norm.length >= 4 && !curatedByName.has(norm)) curatedByName.set(norm, s);
+  }
+  const v2EnrichedByCh = new Map();
+  const v2EnrichedByName = new Map();
+  for (const s of full) {
+    if (s._source !== 'v2') continue;
+    if (!(s.enrichment_stages || {}).ch_api_profile) continue;
+    if (s.company_number) _supAddVariants(v2EnrichedByCh, s.company_number, s);
+    const norm = _supNormName(s.display_name || s.official_name);
+    if (norm.length >= 4 && !v2EnrichedByName.has(norm)) v2EnrichedByName.set(norm, s);
+  }
   // Curated suppliers whose dominant buyer-type matches this filter
   const curatedForType = curated
     .filter(s => (s.primary_buyer_type || 'other') === type)
@@ -17574,11 +17620,18 @@ async function _supRenderHierarchical(type, query){
     return;
   }
 
-  // Curated-first section (rich profiles available)
+  // Curated-first section (rich profiles). Collapsible <details> so the list
+  // doesn't push buyers below the fold. Per-type open-state remembered in
+  // window._supCuratedOpen so toggling pills doesn't lose user's preference.
+  window._supCuratedOpen = window._supCuratedOpen || {};
   let curatedHtml = '';
   if (curatedForType.length && !q) {
-    curatedHtml = `<div class="sup-curated-section">
-      <div class="sup-curated-header">★ ${curatedForType.length} CURATED ${TYPE_LABEL[type].toUpperCase()} SUPPLIERS · RICH PROFILES</div>
+    const openAttr = window._supCuratedOpen[type] ? ' open' : '';
+    curatedHtml = `<details class="sup-curated-section"${openAttr} ontoggle="window._supCuratedOpen['${_cmpEsc(type)}']=this.open">
+      <summary>
+        <span>★ ${curatedForType.length} CURATED ${TYPE_LABEL[type].toUpperCase()} SUPPLIERS · RICH PROFILES</span>
+        <span class="chev">▶</span>
+      </summary>
       ${curatedForType.map(s => {
         const isActive = s.company_number === window._suppliersCurrentCh;
         return `<div class="sup-row${isActive ? ' active' : ''}" data-ch="${_cmpEsc(s.company_number)}" onclick="_supSelectSupplier('${_cmpEsc(s.company_number)}')">
@@ -17591,7 +17644,7 @@ async function _supRenderHierarchical(type, query){
         </div>`;
       }).join('')}
       <div class="sup-curated-divider">— ${TYPE_LABEL[type]} BUYERS (${buyers.length.toLocaleString()}) · expand to see their suppliers —</div>
-    </div>`;
+    </details>`;
   }
 
   // Cap at 200 buyers for perf
@@ -17605,9 +17658,23 @@ async function _supRenderHierarchical(type, query){
         if (!s) return '';
         const name = s.name || '(unknown)';
         const ch = s.ch_number;
-        const curated = ch && curatedByCh.has(ch) ? curatedByCh.get(ch) : null;
-        const v2enr = !curated && ch && v2EnrichedByCh.has(ch) ? v2EnrichedByCh.get(ch) : null;
-        const profile = curated || v2enr;
+        // Look up profile via three paths in priority order:
+        //   1. CH match (with zero-padding variants) against curated
+        //   2. CH match against v2 ENRICHED
+        //   3. Normalized-name match (fallback for flows where CH was lost in ingest)
+        let profile = null;
+        if (ch) {
+          for (const v of _supChVariants(ch)) {
+            if (curatedByCh.has(v)) { profile = curatedByCh.get(v); break; }
+            if (v2EnrichedByCh.has(v)) { profile = v2EnrichedByCh.get(v); break; }
+          }
+        }
+        if (!profile && name) {
+          const norm = _supNormName(name);
+          if (norm.length >= 4) {
+            profile = curatedByName.get(norm) || v2EnrichedByName.get(norm) || null;
+          }
+        }
         const clickable = !!profile;
         const activeCls = (profile && profile.company_number === window._suppliersCurrentCh) ? ' active' : '';
         const onClick = clickable ? `onclick="_supSelectSupplier('${_cmpEsc(profile.company_number)}')"` : '';
@@ -18030,7 +18097,15 @@ function _supRenderDetailV2(p){
     ${cp.has_insolvency_history?'<div class="k">Insolvency</div><div class="v"><span class="sup-badge suspicious">HAS HISTORY</span></div>':''}
     ${cp.has_charges?'<div class="k">Charges</div><div class="v"><span class="sup-badge gap">HAS CHARGES</span></div>':''}
     ${p.mortgages?`<div class="k">Mortgages</div><div class="v">${p.mortgages.num_outstanding||0} outstanding / ${p.mortgages.num_charges||0} total</div>`:''}
-    ${accPdf&&accPdf.pdf_url?`<div class="k">Latest accounts</div><div class="v"><a href="${_supEscapeHtml(accPdf.pdf_url)}" target="_blank" rel="noopener">↗ ${_supEscapeHtml(_supPrettyAccountsLabel(accPdf))}${accPdf.date?` <span style="color:var(--dim)">(${_supEscapeHtml(accPdf.date)})</span>`:''}</a>${accPdf.view_url?` <a href="${_supEscapeHtml(accPdf.view_url)}" target="_blank" rel="noopener" style="color:var(--dim);font-size:11px;margin-left:6px">filing history ↗</a>`:''}</div>`:''}
+    ${accPdf&&accPdf.pdf_url?(()=>{
+      // Always offer a "browse all filings" fallback link — sometimes the
+      // most recent CH accounts filing is listed in filing-history but the
+      // PDF document is not yet downloadable (e.g. JJ Medical SC132162
+      // 2025-12-16 returned 404 on document-api). The all-filings URL is
+      // always valid and lets the user pick a previous year's accounts.
+      const allFilings = `https://find-and-update.company-information.service.gov.uk/company/${_supEscapeHtml(p.company_number||'')}/filing-history`;
+      return `<div class="k">Latest accounts</div><div class="v"><a href="${_supEscapeHtml(accPdf.pdf_url)}" target="_blank" rel="noopener">↗ ${_supEscapeHtml(_supPrettyAccountsLabel(accPdf))}${accPdf.date?` <span style="color:var(--dim)">(${_supEscapeHtml(accPdf.date)})</span>`:''}</a> <a href="${allFilings}" target="_blank" rel="noopener" style="color:var(--dim);font-size:11px;margin-left:6px">all filings ↗</a></div>`;
+    })():''}
   </div></div>`;
   h += `</div>`;
 
