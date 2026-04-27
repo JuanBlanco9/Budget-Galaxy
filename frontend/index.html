@@ -15504,15 +15504,25 @@ function _cmplistToggleExpand(pathStr, event){
   _cmplistRender();
 }
 
+// Click on a tree row: select + always force-expand (if it has children).
+// The chevron (▶/▼) still toggles independently for collapse.
+function _cmplistSelectAndExpand(pathArr, pathKey){
+  const st = window._cmplistState._expanded = window._cmplistState._expanded || new Set();
+  st.add(pathKey);
+  _cmplistSelectPath(pathArr);
+}
+
 function _cmplistSelectPath(pathArr){
   window._cmplistState.a.path = pathArr;
   window._cmplistState._selected = _cmplistPathKey(pathArr);
+  // Ensure the expanded set exists
+  window._cmplistState._expanded = window._cmplistState._expanded || new Set();
   // Auto-expand the selected node if it has children
   const node = _cmplistCurrentNode('a');
   if (node && (node.children||[]).length > 0) {
     window._cmplistState._expanded.add(_cmplistPathKey(pathArr));
   }
-  // Also ensure all ancestors are expanded
+  // Also ensure all ancestors are expanded so the user sees the path
   for (let i = 0; i <= pathArr.length; i++) {
     window._cmplistState._expanded.add(_cmplistPathKey(pathArr.slice(0, i)));
   }
@@ -15554,9 +15564,13 @@ function _cmplistRenderTree(){
       : _cmplistFmtLens(_cmplistTransform(node.value, ctx), ctx);
 
     const treePretty = _cmplistPrettyName(node.name);
+    // Row click selects + force-expands (if has children). Chevron click only toggles.
+    const rowClick = hasChildren
+      ? `_cmplistSelectAndExpand([${pathArr.join(',')}], '${pathKey}')`
+      : `_cmplistSelectPath([${pathArr.join(',')}])`;
     let html = `<div class="tree-node ${selected?'selected':''}" data-path="${pathKey}"
          style="padding-left:${8 + depth*14}px"
-         onclick="_cmplistSelectPath([${pathArr.join(',')}])">
+         onclick="${rowClick}">
       <span class="tree-chev ${hasChildren?(expanded?'open':''):'leaf'}"
             onclick="_cmplistToggleExpand('${pathKey}', event)">${hasChildren ? (expanded ? '▼' : '▶') : '·'}</span>
       <span class="tree-name" title="${_cmpEsc(node.name)}">${_cmpEsc(treePretty)}</span>
