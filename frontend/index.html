@@ -3775,11 +3775,18 @@ mark{background:rgba(79,195,247,.3);color:var(--text,#e8ebf5);padding:0 2px;bord
 }
 .sup-buyer-row:hover{background:rgba(79,195,247,.06);}
 .sup-buyer-row.expanded{background:rgba(79,195,247,.08);}
+.sup-buyer-row.active{
+  background:rgba(79,195,247,.14);
+  border-left:3px solid var(--accent);
+  padding-left:11px;  /* compensate left border */
+}
+.sup-buyer-row.active .sup-buyer-name{color:var(--accent);font-weight:600;}
 .sup-buyer-chev{
   display:inline-block;width:10px;text-align:center;font-size:9px;color:var(--dim);
   transition:transform .15s;
 }
-.sup-buyer-row.expanded .sup-buyer-chev{transform:rotate(90deg);}
+.sup-buyer-row.expanded .sup-buyer-chev,
+.sup-buyer-row.active .sup-buyer-chev{transform:rotate(90deg);color:var(--accent);}
 .sup-buyer-info{flex:1;min-width:0;}
 .sup-buyer-name{font-size:11.5px;color:var(--text);font-weight:500;line-height:1.3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
 .sup-buyer-meta{font-size:10px;color:var(--dim);margin-top:2px;}
