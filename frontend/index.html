@@ -3663,6 +3663,28 @@ mark{background:rgba(79,195,247,.3);color:var(--text,#e8ebf5);padding:0 2px;bord
 .sup-comp-transfer{ background:rgba(251,146,60,.12); color:#fbbf24; border-color:rgba(251,146,60,.25); }
 .sup-comp-grant{    background:rgba(168,85,247,.12); color:#c084fc; border-color:rgba(168,85,247,.25); }
 .sup-comp-mixed{    background:rgba(148,163,184,.12); color:#cbd5e1; border-color:rgba(148,163,184,.25); }
+.sup-comp-procurement-solid{ background:rgba(74,222,128,.12); color:#4ade80; border-color:rgba(74,222,128,.25); }
+
+/* Procurement profile fallback (councils, sub-departments) */
+.sup-buyer-profile{}
+.sup-profile-stats{
+  display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:12px;
+  margin:8px 0 12px;
+}
+.sup-profile-stat{
+  background:rgba(255,255,255,.03);
+  border:1px solid rgba(255,255,255,.06);
+  border-radius:6px;
+  padding:12px 14px;
+}
+.sup-profile-stat-val{
+  font-size:22px; font-weight:700; color:var(--accent);
+  font-variant-numeric:tabular-nums; line-height:1.1;
+}
+.sup-profile-stat-lbl{
+  font-size:10.5px; color:var(--dim); margin-top:4px; line-height:1.4;
+}
 
 .sup-buyer-comp{
   background:rgba(15,23,42,.55);
@@ -17885,6 +17907,10 @@ async function _supSelectBuyer(buyerId){
     if (breakdown.is_transfer_dominant) badge = `<span class="sup-comp-badge sup-comp-transfer">Transfer-heavy</span>`;
     else if (breakdown.is_grant_dominant) badge = `<span class="sup-comp-badge sup-comp-grant">Grants public bodies</span>`;
     else if (breakdown.is_low_procurement) badge = `<span class="sup-comp-badge sup-comp-mixed">Limited procurement</span>`;
+  } else {
+    // No structural breakdown available (mostly councils + sub-departments).
+    // Their flows in the procurement dataset are commercial procurement.
+    badge = `<span class="sup-comp-badge sup-comp-procurement-solid">Commercial procurement</span>`;
   }
   h += `<div class="sd-header">
     <div>
@@ -17925,6 +17951,44 @@ async function _supSelectBuyer(buyerId){
         </div>`).join('')}
       </div>` : ''}
       ${(breakdown.transfer_pct + breakdown.grant_pct) >= 50 ? `<div class="sup-buyer-comp-note">The supplier list below is the commercial procurement portion only. Transfers (citizens) and grants (public bodies) are tracked in the Budget Tree under their own programme lines.</div>` : ''}
+    </div></div>`;
+  } else {
+    // ── Procurement profile (fallback) ─────────────────────────
+    // For councils + sub-departments without a structural breakdown in the
+    // budget tree, derive useful metrics directly from the flows.
+    const totalFlowGbp = flows.reduce((s, f) => s + (f.gbp || 0), 0);
+    const totalFlowContracts = flows.reduce((s, f) => s + (f.n_contracts || 0), 0);
+    const topFlow = flows[0];
+    const topPct = totalFlowGbp > 0 && topFlow ? Math.round(topFlow.gbp / totalFlowGbp * 100) : 0;
+    const top5Sum = flows.slice(0, 5).reduce((s, f) => s + (f.gbp || 0), 0);
+    const top5Pct = totalFlowGbp > 0 ? Math.round(top5Sum / totalFlowGbp * 100) : 0;
+    const topName = topFlow && data.suppliers[topFlow.supplier_id]
+                  ? (data.suppliers[topFlow.supplier_id].name || '?')
+                  : '?';
+
+    h += `<div class="sd-cards"><div class="sd-card full sup-buyer-profile">
+      <h3>Procurement profile</h3>
+      <div class="sup-profile-stats">
+        <div class="sup-profile-stat">
+          <div class="sup-profile-stat-val">${flows.length.toLocaleString()}</div>
+          <div class="sup-profile-stat-lbl">distinct suppliers (top-50 flows)</div>
+        </div>
+        <div class="sup-profile-stat">
+          <div class="sup-profile-stat-val">${(buyer.n_contracts || totalFlowContracts).toLocaleString()}</div>
+          <div class="sup-profile-stat-lbl">total contracts FY 2024</div>
+        </div>
+        <div class="sup-profile-stat">
+          <div class="sup-profile-stat-val">${topPct}%</div>
+          <div class="sup-profile-stat-lbl">to top supplier (${_supEscapeHtml((topName).slice(0, 30))})</div>
+        </div>
+        <div class="sup-profile-stat">
+          <div class="sup-profile-stat-val">${top5Pct}%</div>
+          <div class="sup-profile-stat-lbl">to top 5 suppliers (concentration)</div>
+        </div>
+      </div>
+      <div class="sup-buyer-comp-note" style="margin-top:0;">
+        This is a council / sub-department buyer. The full £ shown is commercial procurement (no transfer or grant data in the budget tree at this level — those flows aggregate up to the parent department).
+      </div>
     </div></div>`;
   }
 
