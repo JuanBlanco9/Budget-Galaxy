@@ -18282,7 +18282,7 @@ function _supRenderDetail(p){
       <div class="k">Period end</div><div class="v">${_supEscapeHtml(fin.period_end||'—')}</div>
       <div class="k">Accounts type</div><div class="v">${_supEscapeHtml(fin.accounts_type_description||'—')}</div>
       <div class="k">Next due</div><div class="v">${_supEscapeHtml(fin.next_accounts_due||'—')}${fin.overdue?' <span class="sup-badge suspicious">OVERDUE</span>':''}</div>
-      ${fin.pdf&&fin.pdf.path?`<div class="k">Accounts PDF</div><div class="v"><a href="/${_supEscapeHtml(fin.pdf.path)}" target="_blank" rel="noopener">↗ Download (${fin.pdf.size_mb||'?'} MB)</a></div>`:''}
+      ${id.ch_number ? `<div class="k">Accounts</div><div class="v"><a href="https://find-and-update.company-information.service.gov.uk/company/${_supEscapeHtml(id.ch_number)}/filing-history${fin.last_filing_date ? '?filter=accounts-filing' : ''}" target="_blank" rel="noopener">↗ Companies House filing history${fin.last_filing_date ? ` <span style="color:var(--dim);font-size:11px">(latest ${_supEscapeHtml(fin.last_filing_date)})</span>` : ''}</a></div>` : ''}
     </div>`;
   }else{
     h+=`<div style="color:var(--dim);font-size:12px;font-style:italic">No financial data available</div>`;
