@@ -18282,7 +18282,22 @@ function _supRenderDetail(p){
       <div class="k">Period end</div><div class="v">${_supEscapeHtml(fin.period_end||'—')}</div>
       <div class="k">Accounts type</div><div class="v">${_supEscapeHtml(fin.accounts_type_description||'—')}</div>
       <div class="k">Next due</div><div class="v">${_supEscapeHtml(fin.next_accounts_due||'—')}${fin.overdue?' <span class="sup-badge suspicious">OVERDUE</span>':''}</div>
-      ${id.ch_number ? `<div class="k">Accounts</div><div class="v"><a href="https://find-and-update.company-information.service.gov.uk/company/${_supEscapeHtml(id.ch_number)}/filing-history${fin.last_filing_date ? '?filter=accounts-filing' : ''}" target="_blank" rel="noopener">↗ Companies House filing history${fin.last_filing_date ? ` <span style="color:var(--dim);font-size:11px">(latest ${_supEscapeHtml(fin.last_filing_date)})</span>` : ''}</a></div>` : ''}
+      ${(() => {
+        // Show two links when both are available:
+        //   1. Local cached PDF — fast, frozen at FY-snapshot date
+        //   2. Companies House filing history — live, latest filings
+        // The cached PDF is part of the year-snapshot model: each fiscal
+        // year is a frozen state, not a continuously-updated mirror.
+        const hasLocal = fin.pdf && fin.pdf.path;
+        const localLink = hasLocal
+          ? `<a href="/${_supEscapeHtml(fin.pdf.path)}" target="_blank" rel="noopener">↗ Cached PDF (${fin.pdf.size_mb || '?'} MB${fin.last_filing_date ? ', ' + _supEscapeHtml(fin.last_filing_date) : ''})</a>`
+          : '';
+        const chLink = id.ch_number
+          ? `<a href="https://find-and-update.company-information.service.gov.uk/company/${_supEscapeHtml(id.ch_number)}/filing-history" target="_blank" rel="noopener" style="color:var(--dim);font-size:11px;margin-left:6px">all filings ↗</a>`
+          : '';
+        if (!hasLocal && !chLink) return '';
+        return `<div class="k">Accounts</div><div class="v">${localLink}${chLink}</div>`;
+      })()}
     </div>`;
   }else{
     h+=`<div style="color:var(--dim);font-size:12px;font-style:italic">No financial data available</div>`;

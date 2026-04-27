@@ -62,6 +62,19 @@ deploy_suppliers_full() {
   ok "suppliers_v2/ full deployed"
 }
 
+deploy_pdfs() {
+  echo "→ Deploying cached supplier accounts PDFs (~1.6GB, ~3-5 min)"
+  echo "  These are the FY-snapshot frozen PDFs for the curated 400. They are"
+  echo "  point-in-time copies — not maintained as suppliers refile. Each"
+  echo "  fiscal-year snapshot will have its own set."
+  cd "$LOCAL_ROOT/data"
+  tar -czf /tmp/sup_pdfs.tgz recipients/uk/supplier_financials
+  scp -i "$SSH_KEY" /tmp/sup_pdfs.tgz "$REMOTE:/tmp/"
+  ssh -i "$SSH_KEY" "$REMOTE" "mkdir -p $PROD_ROOT/data/recipients/uk && cd $PROD_ROOT/data && tar xzf /tmp/sup_pdfs.tgz && rm /tmp/sup_pdfs.tgz && ls recipients/uk/supplier_financials | wc -l && du -sh recipients/uk/supplier_financials"
+  rm /tmp/sup_pdfs.tgz
+  ok "supplier PDFs deployed"
+}
+
 smoke_test() {
   echo "→ Smoke test"
   local ts=$(date +%s)
@@ -85,6 +98,7 @@ case "${1:-help}" in
   enrichment)       deploy_enrichment ;;
   suppliers-index)  deploy_suppliers_index; deploy_suppliers_curated_index ;;
   suppliers-full)   deploy_suppliers_full ;;
+  pdfs)             deploy_pdfs ;;
   all)
     deploy_frontend
     deploy_enrichment
@@ -103,6 +117,7 @@ Targets:
   enrichment        data/uk/node_enrichment_extended.json only
   suppliers-index   data/suppliers/_index.json + suppliers_v2/_index.json (fast)
   suppliers-full    everything under data/suppliers_v2/ (slow, ~150MB)
+  pdfs              cached supplier accounts PDFs (~1.6GB, one-time per FY)
   all               full deploy in safe order + smoke test
   smoke             smoke test only (curl + verify)
 
