@@ -18,6 +18,14 @@ import urllib.request
 import urllib.error
 from pathlib import Path
 
+# Force UTF-8 stdout: supplier names contain en-dashes, em-dashes, accented
+# chars, etc. Default Windows cp1252 crashes on those mid-pipeline.
+try:
+    sys.stdout.reconfigure(encoding='utf-8', errors='replace')
+    sys.stderr.reconfigure(encoding='utf-8', errors='replace')
+except Exception:
+    pass
+
 ROOT = Path(__file__).resolve().parent.parent
 SUPPLIERS_V2 = ROOT / "data/suppliers_v2"
 INDEX_FILE = SUPPLIERS_V2 / "_index.json"
