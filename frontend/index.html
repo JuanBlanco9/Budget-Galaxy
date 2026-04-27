@@ -3714,6 +3714,59 @@ mark{background:rgba(79,195,247,.3);color:var(--text,#e8ebf5);padding:0 2px;bord
   border-top:1px dashed rgba(255,255,255,.07); font-style:italic;
 }
 
+/* Buyer detail panel — full-size composition breakdown */
+.sup-buyer-comp-large{
+  margin:0 !important;
+  padding:0 !important;
+  background:transparent !important;
+  border:none !important;
+}
+.sup-buyer-comp-bars-large{
+  height:32px !important;
+  border-radius:4px;
+  margin-bottom:10px;
+}
+.sup-buyer-comp-bars-large .sup-buyer-comp-bar{
+  font-size:13px;
+  font-weight:700;
+}
+.sup-buyer-comp-large .sup-buyer-comp-legend{
+  font-size:12px;
+  gap:18px;
+  padding-bottom:12px;
+  margin-bottom:12px;
+}
+.sup-buyer-comp-large .sup-buyer-comp-lines{ gap:5px; margin-top:6px; }
+.sup-buyer-comp-large .sup-buyer-comp-line{
+  padding:6px 10px;
+  font-size:12px;
+  background:rgba(255,255,255,.02);
+  border-radius:4px;
+}
+.sup-buyer-comp-large .sup-buyer-comp-line .line-name{ font-size:12px; }
+.sup-buyer-comp-large .sup-buyer-comp-line .line-amt{ font-size:12px; font-weight:600; }
+.sup-buyer-comp-large .sup-buyer-comp-note{
+  margin-top:14px; padding:10px 12px; font-size:11.5px; line-height:1.5;
+  background:rgba(251,146,60,.06);
+  border:1px solid rgba(251,146,60,.15);
+  border-radius:4px; font-style:normal;
+}
+
+/* Supplier list inside buyer detail */
+.sup-buyer-supplier-list{
+  display:flex; flex-direction:column; gap:0;
+  border:1px solid rgba(255,255,255,.05);
+  border-radius:4px;
+  overflow:hidden;
+}
+.sup-buyer-supplier-list .sup-child-row{
+  padding:8px 12px;
+  border-bottom:1px solid rgba(255,255,255,.04);
+  transition:background .1s ease;
+}
+.sup-buyer-supplier-list .sup-child-row:last-child{ border-bottom:none; }
+.sup-buyer-supplier-list .sup-child-row:hover{ background:rgba(79,195,247,.05); }
+
 /* Hierarchical buyer→supplier list */
 .sup-buyer-group{border-bottom:1px solid rgba(255,255,255,.05);}
 .sup-buyer-row{
@@ -17723,14 +17776,13 @@ async function _supRenderHierarchical(type, query){
     </details>`;
   }
 
-  // Cap at 200 buyers for perf
+  // Cap at 200 buyers for perf. Each row opens a full buyer-detail panel
+  // on the right (composition breakdown + commercial supplier list).
   const visible = buyers.slice(0, 200);
   rows.innerHTML = curatedHtml + visible.map(b => {
-    const isExpanded = window._supExpandedBuyers.has(b.id);
-    const flows = data.b2s[b.id] || [];
     const breakdown = _supBuyerBreakdown(b.id, data.breakdowns);
 
-    // Composition badge on the buyer row (transfer-heavy / grant-heavy / low-procurement)
+    // Composition badge on the buyer row
     let compBadge = '';
     if (breakdown) {
       if (breakdown.is_transfer_dominant) {
@@ -17742,71 +17794,9 @@ async function _supRenderHierarchical(type, query){
       }
     }
 
-    // Composition panel shown when buyer is expanded (only for the parent dept buyer
-    // — buyer postcodes share the dept-level breakdown so we render once per group)
-    let compPanel = '';
-    if (isExpanded && breakdown) {
-      const fmtPct = (p) => p > 0 ? `${p}%` : '';
-      const lines = (breakdown.top_lines || []).slice(0, 8);
-      compPanel = `<div class="sup-buyer-comp">
-        <div class="sup-buyer-comp-header">What this £ really is — <strong>${_cmpEsc(breakdown.name)}</strong> total FY 2024-25</div>
-        <div class="sup-buyer-comp-bars">
-          ${breakdown.transfer_pct > 0 ? `<div class="sup-buyer-comp-bar sup-buyer-comp-transfer" style="width:${breakdown.transfer_pct}%" title="Transfers to citizens">📤 ${fmtPct(breakdown.transfer_pct)}</div>` : ''}
-          ${breakdown.grant_pct > 0 ? `<div class="sup-buyer-comp-bar sup-buyer-comp-grant" style="width:${breakdown.grant_pct}%" title="Grants to public bodies">🤝 ${fmtPct(breakdown.grant_pct)}</div>` : ''}
-          ${breakdown.procurement_pct > 0 ? `<div class="sup-buyer-comp-bar sup-buyer-comp-procurement" style="width:${breakdown.procurement_pct}%" title="Commercial procurement">🏢 ${fmtPct(breakdown.procurement_pct)}</div>` : ''}
-        </div>
-        <div class="sup-buyer-comp-legend">
-          ${breakdown.transfer_pct > 0 ? `<span><span class="dot dot-transfer"></span> ${fmt(breakdown.transfer_total)} transfers to citizens</span>` : ''}
-          ${breakdown.grant_pct > 0 ? `<span><span class="dot dot-grant"></span> ${fmt(breakdown.grant_total)} grants to public bodies</span>` : ''}
-          ${breakdown.procurement_pct > 0 ? `<span><span class="dot dot-procurement"></span> ${fmt(breakdown.procurement_total)} commercial procurement</span>` : ''}
-        </div>
-        ${lines.length ? `<div class="sup-buyer-comp-lines">
-          ${lines.map(l => `<div class="sup-buyer-comp-line sup-buyer-comp-line-${l.kind}">
-            <span class="kind-tag">${l.kind === 'transfer' ? '📤' : l.kind === 'grant' ? '🤝' : '🏢'}</span>
-            <span class="line-name">${_cmpEsc(l.name)}</span>
-            <span class="line-amt">${fmt(l.value)}</span>
-          </div>`).join('')}
-        </div>` : ''}
-        ${(breakdown.transfer_pct + breakdown.grant_pct) >= 50 ? `<div class="sup-buyer-comp-note">↓ The contracts below are the commercial procurement portion only. Transfers and grants are tracked in the Budget Tree under their own programme lines.</div>` : ''}
-      </div>`;
-    }
-
-    const childHtml = !isExpanded ? '' : `<div class="sup-buyer-children">
-      ${compPanel}
-      ${flows.map(f => {
-        const s = data.suppliers[f.supplier_id];
-        if (!s) return '';
-        const name = s.name || '(unknown)';
-        const ch = s.ch_number;
-        // Look up profile via three paths in priority order:
-        //   1. CH match (with zero-padding variants) against curated
-        //   2. CH match against v2 ENRICHED
-        //   3. Normalized-name match (fallback for flows where CH was lost in ingest)
-        let profile = null;
-        if (ch) {
-          for (const v of _supChVariants(ch)) {
-            if (curatedByCh.has(v)) { profile = curatedByCh.get(v); break; }
-            if (v2EnrichedByCh.has(v)) { profile = v2EnrichedByCh.get(v); break; }
-          }
-        }
-        if (!profile && name) {
-          const norm = _supNormName(name);
-          if (norm.length >= 4) {
-            profile = curatedByName.get(norm) || v2EnrichedByName.get(norm) || null;
-          }
-        }
-        const clickable = !!profile;
-        const activeCls = (profile && profile.company_number === window._suppliersCurrentCh) ? ' active' : '';
-        const onClick = clickable ? `onclick="_supSelectSupplier('${_cmpEsc(profile.company_number)}')"` : '';
-        const noprofile = clickable ? '' : '<span class="sup-child-noprofile">no profile</span>';
-        return `<div class="sup-child-row${activeCls}" ${onClick} style="${clickable ? 'cursor:pointer' : 'cursor:default;opacity:0.65'}">
-          <div class="sup-child-name">${_cmpEsc(name)}${noprofile}</div>
-          <div class="sup-child-meta">${fmt(f.gbp)} · ${f.n_contracts} contract${f.n_contracts>1?'s':''}</div>
-        </div>`;
-      }).join('')}
-    </div>`;
+    const isActive = (window._supCurrentBuyerId === b.id);
     return `<div class="sup-buyer-group">
-      <div class="sup-buyer-row${isExpanded ? ' expanded' : ''}" onclick="_supToggleBuyer('${b.id}')">
+      <div class="sup-buyer-row${isActive ? ' active' : ''}" onclick="_supSelectBuyer('${_cmpEsc(b.id)}')">
         <span class="sup-buyer-chev">▶</span>
         <div class="sup-buyer-info">
           <div class="sup-buyer-name">${_cmpEsc(b.name)} ${compBadge}</div>
@@ -17814,18 +17804,144 @@ async function _supRenderHierarchical(type, query){
         </div>
         <div class="sup-buyer-amt">${fmt(b.total_gbp_2024)}</div>
       </div>
-      ${childHtml}
     </div>`;
   }).join('') + (buyers.length > 200 ? `<div style="padding:10px 14px;font-size:10px;color:var(--dim);text-align:center">Showing top 200 of ${buyers.length.toLocaleString()} · refine search to narrow</div>` : '');
 }
 
-// Toggle a buyer row's expansion
-function _supToggleBuyer(buyerId){
-  const s = window._supExpandedBuyers = window._supExpandedBuyers || new Set();
-  if (s.has(buyerId)) s.delete(buyerId);
-  else s.add(buyerId);
-  const input = document.getElementById('suppliers-search');
-  _supRenderList(input ? input.value : '');
+// Open a buyer in the detail panel — composition breakdown + commercial supplier list
+async function _supSelectBuyer(buyerId){
+  if (!buyerId) {
+    // Reset state — used by "back to list"
+    window._supCurrentBuyerId = null;
+    window._supLastBuyerId = null;
+    document.querySelectorAll('.sup-buyer-row.active, .sup-row.active').forEach(el => el.classList.remove('active'));
+    try { history.replaceState({}, '', '/#recipients'); } catch(e) {}
+    return;
+  }
+  window._supCurrentBuyerId = buyerId;
+  window._supLastBuyerId = buyerId;
+  window._suppliersCurrentCh = null;
+  try { history.replaceState({}, '', '/#buyers/' + buyerId); } catch(e) {}
+  // Highlight row in list
+  document.querySelectorAll('.sup-buyer-row').forEach(el =>
+    el.classList.toggle('active', el.getAttribute('onclick')?.includes(`'${buyerId}'`))
+  );
+  document.querySelectorAll('.sup-row').forEach(el => el.classList.remove('active'));
+
+  const detail = document.getElementById('suppliers-detail');
+  if (!detail) return;
+  detail.innerHTML = `<div style="padding:40px;text-align:center;color:var(--dim);font-size:12px">Loading buyer breakdown...</div>`;
+
+  const data = await _supListEnsureMapData();
+  if (!data) { detail.innerHTML = `<div style="padding:40px;color:#f87171">Failed to load buyer data</div>`; return; }
+  const buyer = data.buyers[buyerId];
+  if (!buyer) { detail.innerHTML = `<div style="padding:40px;color:#f87171">Buyer not found</div>`; return; }
+  const breakdown = _supBuyerBreakdown(buyerId, data.breakdowns);
+  const flows = data.b2s[buyerId] || [];
+  const fmt = v => v >= 1e9 ? '£' + (v/1e9).toFixed(2) + 'B'
+                 : v >= 1e6 ? '£' + (v/1e6).toFixed(1) + 'M'
+                 : v >= 1e3 ? '£' + (v/1e3).toFixed(0) + 'k' : '£' + Math.round(v);
+
+  // ── Header ─────────────────────────────────────────────────
+  let h = `<button class="sd-back" onclick="_supSelectBuyer(null);_supClearDetail()">← Back to list</button>`;
+  let badge = '';
+  if (breakdown) {
+    if (breakdown.is_transfer_dominant) badge = `<span class="sup-comp-badge sup-comp-transfer">📤 Transfer-heavy</span>`;
+    else if (breakdown.is_grant_dominant) badge = `<span class="sup-comp-badge sup-comp-grant">🤝 Grants public bodies</span>`;
+    else if (breakdown.is_low_procurement) badge = `<span class="sup-comp-badge sup-comp-mixed">⚠ Limited procurement</span>`;
+  }
+  h += `<div class="sd-header">
+    <div>
+      <h1 class="sd-title">${_supEscapeHtml(buyer.name || '?')}</h1>
+      <div class="sd-subtitle">
+        <span style="font-size:11px;color:var(--dim)">${_supEscapeHtml(buyer.lad24_nm || buyer.region || '')}${buyer.country ? ' · ' + _supEscapeHtml(buyer.country) : ''}</span>
+        ${badge}
+      </div>
+    </div>
+    <div>
+      <div class="sd-big-label">Total FY 2024-25</div>
+      <div class="sd-big-num">${fmt(buyer.total_gbp_2024 || 0)}</div>
+    </div>
+  </div>`;
+
+  // ── Composition panel (full size) ──────────────────────────
+  if (breakdown) {
+    const fmtPct = (p) => p > 0 ? `${p}%` : '';
+    const lines = breakdown.top_lines || [];
+    h += `<div class="sd-cards"><div class="sd-card full sup-buyer-comp sup-buyer-comp-large">
+      <h3>What this £ really is</h3>
+      <div class="sup-buyer-comp-bars sup-buyer-comp-bars-large">
+        ${breakdown.transfer_pct > 0 ? `<div class="sup-buyer-comp-bar sup-buyer-comp-transfer" style="width:${breakdown.transfer_pct}%" title="Transfers to citizens">📤 ${fmtPct(breakdown.transfer_pct)}</div>` : ''}
+        ${breakdown.grant_pct > 0 ? `<div class="sup-buyer-comp-bar sup-buyer-comp-grant" style="width:${breakdown.grant_pct}%" title="Grants to public bodies">🤝 ${fmtPct(breakdown.grant_pct)}</div>` : ''}
+        ${breakdown.procurement_pct > 0 ? `<div class="sup-buyer-comp-bar sup-buyer-comp-procurement" style="width:${breakdown.procurement_pct}%" title="Commercial procurement">🏢 ${fmtPct(breakdown.procurement_pct)}</div>` : ''}
+      </div>
+      <div class="sup-buyer-comp-legend">
+        ${breakdown.transfer_pct > 0 ? `<span><span class="dot dot-transfer"></span> ${fmt(breakdown.transfer_total)} transfers to citizens</span>` : ''}
+        ${breakdown.grant_pct > 0 ? `<span><span class="dot dot-grant"></span> ${fmt(breakdown.grant_total)} grants to public bodies</span>` : ''}
+        ${breakdown.procurement_pct > 0 ? `<span><span class="dot dot-procurement"></span> ${fmt(breakdown.procurement_total)} commercial procurement</span>` : ''}
+      </div>
+      ${lines.length ? `<div class="sup-buyer-comp-lines">
+        ${lines.map(l => `<div class="sup-buyer-comp-line sup-buyer-comp-line-${l.kind}">
+          <span class="kind-tag">${l.kind === 'transfer' ? '📤' : l.kind === 'grant' ? '🤝' : '🏢'}</span>
+          <span class="line-name">${_supEscapeHtml(l.name)}</span>
+          <span class="line-amt">${fmt(l.value)}</span>
+        </div>`).join('')}
+      </div>` : ''}
+      ${(breakdown.transfer_pct + breakdown.grant_pct) >= 50 ? `<div class="sup-buyer-comp-note">The supplier list below is the commercial procurement portion only. Transfers (citizens) and grants (public bodies) are tracked in the Budget Tree under their own programme lines.</div>` : ''}
+    </div></div>`;
+  }
+
+  // ── Commercial supplier list ───────────────────────────────
+  if (flows.length) {
+    const full = window._suppliersIndex || [];
+    const curated = full.filter(s => s._source === 'curated');
+    const _addV = (m, ch, v) => { for (const x of _supChVariants(ch)) m.set(x, v); };
+    const curByCh = new Map(); const curByName = new Map();
+    for (const s of curated) {
+      if (s.company_number) _addV(curByCh, s.company_number, s);
+      const n = _supNormName(s.display_name || s.official_name);
+      if (n.length >= 4 && !curByName.has(n)) curByName.set(n, s);
+    }
+    const v2ByCh = new Map(); const v2ByName = new Map();
+    for (const s of full) {
+      if (s._source !== 'v2' || !(s.enrichment_stages || {}).ch_api_profile) continue;
+      if (s.company_number) _addV(v2ByCh, s.company_number, s);
+      const n = _supNormName(s.display_name || s.official_name);
+      if (n.length >= 4 && !v2ByName.has(n)) v2ByName.set(n, s);
+    }
+    h += `<div class="sd-cards"><div class="sd-card full">
+      <h3>Top suppliers (commercial procurement) · ${flows.length}</h3>
+      <div class="sup-buyer-supplier-list">
+        ${flows.map(f => {
+          const s = data.suppliers[f.supplier_id];
+          if (!s) return '';
+          const name = s.name || '(unknown)';
+          const ch = s.ch_number;
+          let profile = null;
+          if (ch) {
+            for (const v of _supChVariants(ch)) {
+              if (curByCh.has(v)) { profile = curByCh.get(v); break; }
+              if (v2ByCh.has(v)) { profile = v2ByCh.get(v); break; }
+            }
+          }
+          if (!profile && name) {
+            const norm = _supNormName(name);
+            if (norm.length >= 4) profile = curByName.get(norm) || v2ByName.get(norm) || null;
+          }
+          const clickable = !!profile;
+          const onClick = clickable ? `onclick="_supSelectSupplier('${_cmpEsc(profile.company_number)}', '${_cmpEsc(buyerId)}')"` : '';
+          const noprofile = clickable ? '' : '<span class="sup-child-noprofile">no profile</span>';
+          return `<div class="sup-child-row" ${onClick} style="${clickable ? 'cursor:pointer' : 'cursor:default;opacity:0.65'}">
+            <div class="sup-child-name">${_supEscapeHtml(name)}${noprofile}</div>
+            <div class="sup-child-meta">${fmt(f.gbp)} · ${f.n_contracts} contract${f.n_contracts>1?'s':''}</div>
+          </div>`;
+        }).join('')}
+      </div>
+    </div></div>`;
+  }
+
+  detail.innerHTML = h;
+  detail.scrollTop = 0;
 }
 
 function _supRenderList(query){
@@ -17900,8 +18016,10 @@ function _supRenderList(query){
   }
 }
 
-async function _supSelectSupplier(chNumber){
+async function _supSelectSupplier(chNumber, fromBuyerId){
   window._suppliersCurrentCh=chNumber;
+  // Remember the buyer we came from so we can render a "back to buyer" link
+  window._supLastBuyerId = fromBuyerId || window._supLastBuyerId || null;
   // Update URL
   try{ history.replaceState({},'','/#suppliers/'+chNumber); }catch(e){}
   // Highlight row
@@ -17947,7 +18065,7 @@ function _supRenderDetail(p){
   const maxSpend=Math.max(...((spend.by_department||[]).map(d=>d.amount_gbp)),1);
   const statusClass=['active','open'].includes(id.status)?'active':id.status||'';
 
-  let h=`<button class="sd-back" onclick="_supSelectSupplier(null);_supClearDetail()">← Back to list</button>`;
+  let h=_supBackButton();
 
   // Header
   h+=`<div class="sd-header">
@@ -18112,6 +18230,20 @@ function _supRenderDetail(p){
   return h;
 }
 
+// Render the back button. If we navigated here from a buyer, go back to that
+// buyer; otherwise back to the list.
+function _supBackButton(){
+  const buyerId = window._supLastBuyerId;
+  if (buyerId && window._supListMapData && window._supListMapData.buyers) {
+    const buyer = window._supListMapData.buyers[buyerId];
+    if (buyer) {
+      const name = (buyer.name || 'buyer').slice(0, 60);
+      return `<button class="sd-back" onclick="_supSelectBuyer('${_supEscapeHtml(buyerId)}')">← Back to ${_supEscapeHtml(name)}</button>`;
+    }
+  }
+  return `<button class="sd-back" onclick="_supSelectSupplier(null);_supClearDetail()">← Back to list</button>`;
+}
+
 // Map Companies House filing description codes to human-readable labels
 function _supPrettyAccountsLabel(ap){
   if (!ap) return 'Latest accounts';
@@ -18174,7 +18306,7 @@ function _supRenderDetailV2(p){
   const statusClass = ['active','open'].includes(status) ? 'active' : status;
   const chUrl = `https://find-and-update.company-information.service.gov.uk/company/${p.company_number}`;
 
-  let h = `<button class="sd-back" onclick="_supSelectSupplier(null);_supClearDetail()">← Back to list</button>`;
+  let h = _supBackButton();
 
   // Header
   h += `<div class="sd-header">
