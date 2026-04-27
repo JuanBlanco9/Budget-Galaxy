@@ -16267,8 +16267,10 @@ function _supIndexUrl(kind){
   // kind: 'curated' | 'v2'
   const y = window._budgetYear;
   if (_supIsLiveYear(y)) {
-    return kind === 'curated' ? '/data/suppliers/_index.json?v=2'
-                              : '/data/suppliers_v2/_index.json?v=1';
+    // Bump version when index schema/content changes meaningfully — forces
+    // browser + CDN to refetch instead of serving stale JSON.
+    return kind === 'curated' ? '/data/suppliers/_index.json?v=3'
+                              : '/data/suppliers_v2/_index.json?v=2';
   }
   return kind === 'curated'
     ? `/data/suppliers_snapshots/${y}/suppliers_index.json`
@@ -17534,9 +17536,17 @@ async function _supRenderHierarchical(type, query){
     return;
   }
   const full = window._suppliersIndex || [];
-  // Only the 400 hand-curated have primary_buyer_type + rich profiles
+  // Curated 400 = richest profiles (hand-made narrative + UBO + cross-links).
+  // V2 ENRICHED = full CH API ficha (officers, PSCs, accounts, geo).
+  // Both are clickable; only V2 BASIC (BCD-only) is not.
   const curated = full.filter(s => s._source === 'curated');
   const curatedByCh = new Map(curated.filter(s => s.company_number).map(s => [s.company_number, s]));
+  const v2EnrichedByCh = new Map(
+    full
+      .filter(s => s._source === 'v2' && (s.enrichment_stages || {}).ch_api_profile)
+      .filter(s => s.company_number)
+      .map(s => [s.company_number, s])
+  );
   // Curated suppliers whose dominant buyer-type matches this filter
   const curatedForType = curated
     .filter(s => (s.primary_buyer_type || 'other') === type)
@@ -17596,9 +17606,11 @@ async function _supRenderHierarchical(type, query){
         const name = s.name || '(unknown)';
         const ch = s.ch_number;
         const curated = ch && curatedByCh.has(ch) ? curatedByCh.get(ch) : null;
-        const clickable = !!curated;
-        const activeCls = (curated && curated.company_number === window._suppliersCurrentCh) ? ' active' : '';
-        const onClick = clickable ? `onclick="_supSelectSupplier('${_cmpEsc(curated.company_number)}')"` : '';
+        const v2enr = !curated && ch && v2EnrichedByCh.has(ch) ? v2EnrichedByCh.get(ch) : null;
+        const profile = curated || v2enr;
+        const clickable = !!profile;
+        const activeCls = (profile && profile.company_number === window._suppliersCurrentCh) ? ' active' : '';
+        const onClick = clickable ? `onclick="_supSelectSupplier('${_cmpEsc(profile.company_number)}')"` : '';
         const noprofile = clickable ? '' : '<span class="sup-child-noprofile">no profile</span>';
         return `<div class="sup-child-row${activeCls}" ${onClick} style="${clickable ? 'cursor:pointer' : 'cursor:default;opacity:0.65'}">
           <div class="sup-child-name">${_cmpEsc(name)}${noprofile}</div>
@@ -17720,7 +17732,15 @@ async function _supSelectSupplier(chNumber){
       if(r.ok){ profile=await r.json(); }
     }
     if(!profile)throw new Error('profile not found');
-    if(profile.schema_version==='v2'){
+    // Pick renderer:
+    //   - schema_version === 'v2' OR has new-schema fields (ch_profile / enrichment_stages
+    //     / accounts_pdf populated) → V2 renderer (rich CH ficha).
+    //   - Otherwise → legacy renderer (uses identity/financial_health/ownership_chain).
+    const hasV2Shape = profile.schema_version === 'v2'
+                    || profile.ch_profile
+                    || (profile.enrichment_stages && profile.enrichment_stages.ch_api_profile)
+                    || profile.accounts_pdf;
+    if(hasV2Shape){
       detail.innerHTML=_supRenderDetailV2(profile);
     } else {
       detail.innerHTML=_supRenderDetail(profile);
