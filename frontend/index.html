@@ -1386,9 +1386,11 @@ tr:hover .suprank-arrow{opacity:1;}
   width:14px;height:10px;display:inline-block;border:1px solid rgba(0,0,0,.3);
 }
 
-/* Persistent supplier info card (top-right of map canvas after clicking a supplier marker) */
+/* Persistent supplier info card (right side of map canvas after clicking a supplier marker)
+   Top-right area is shared with the Leaflet layer control (collapsed by default)
+   and zoom controls; we offset down to clear them. */
 .supmap-supplier-card{
-  display:none;position:absolute;top:14px;right:14px;
+  display:none;position:absolute;top:60px;right:14px;
   z-index:523;
   width:280px;max-width:calc(100vw - 28px);
   background:rgba(18,18,30,.96);border:1px solid rgba(255,184,79,.4);
@@ -20248,7 +20250,9 @@ async function _supmapInitBoundaries(){
     placeholder._supBoundKey = key;
     overlays[meta.label] = placeholder;
   }
-  const ctl = L.control.layers(null, overlays, { position: 'topright', collapsed: false });
+  // Boundaries layer toggle — collapsed by default (icon only) so it doesn't
+  // crowd the right edge with the supplier card. Click the layers icon to expand.
+  const ctl = L.control.layers(null, overlays, { position: 'topright', collapsed: true });
   ctl.addTo(_supmapLeaflet);
   // Intercept add/remove events to lazy-load/unload
   _supmapLeaflet.on('overlayadd', async (e) => {
