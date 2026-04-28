@@ -1386,6 +1386,26 @@ tr:hover .suprank-arrow{opacity:1;}
   width:14px;height:10px;display:inline-block;border:1px solid rgba(0,0,0,.3);
 }
 
+/* Floating "← Back to all buyers" button (shown in focus mode) */
+.supmap-floating-back{
+  display:none;position:absolute;top:14px;left:50%;transform:translateX(-50%);
+  z-index:522;
+  align-items:center;gap:8px;padding:9px 16px;
+  background:rgba(18,18,30,.95);border:1px solid var(--accent);
+  border-radius:24px;color:var(--text);font-size:12.5px;font-weight:500;
+  cursor:pointer;font-family:inherit;
+  box-shadow:0 4px 16px rgba(79,195,247,.25), 0 2px 6px rgba(0,0,0,.5);
+  transition:all .12s ease;
+}
+.supmap-floating-back:hover{
+  background:rgba(79,195,247,.18);transform:translateX(-50%) translateY(-1px);
+  box-shadow:0 6px 20px rgba(79,195,247,.35);
+}
+.supmap-floating-back-arrow{
+  font-size:16px;color:var(--accent);font-weight:700;
+}
+.supmap-floating-back-label{letter-spacing:.02em;}
+
 /* Marker cluster custom styling — match dark theme */
 .supmap-cluster{ background:none !important; border:none !important; }
 .supmap-cluster-icon{
@@ -20538,6 +20558,8 @@ function _supmapSelectBuyer(buyerId){
 
   // Re-render buyers in focus mode (hides all except selected)
   _supmapRenderBuyers();
+  // Show floating back button so user can always return without hunting the sidebar
+  _supmapShowFloatingBack(b.name);
   // Pan map to buyer + render suppliers (mode-aware)
   if (b.lat && b.lng) {
     _supmapLeaflet.setView([b.lat, b.lng], 9, { animate: true });
@@ -20913,12 +20935,41 @@ function _supmapBackToList(){
     _supmapSuppliersLayer = null;
   }
   _supmapClearFlow();
-  // Re-render buyer pins (focus mode off → all visible again)
-  _supmapRenderBuyers();
-  _supmapRenderBuyerList();
-  _supmapRenderModeHint();
-  // Fit bounds back to whole UK
+  // Unspiderfy if cluster was expanded; clear any leftover layer state
+  if (_supmapBuyersLayer && typeof _supmapBuyersLayer.unspiderfy === 'function') {
+    try { _supmapBuyersLayer.unspiderfy(); } catch(e){}
+  }
+  // Zoom out FIRST so when we re-render with clustering, we're at a zoom
+  // level (< disableClusteringAtZoom=11) that triggers cluster grouping.
   _supmapLeaflet.setView([54.5, -3.0], 6, { animate: true });
+  // Re-render after the zoom animation starts (giving time for state reset)
+  setTimeout(() => {
+    _supmapRenderBuyers();   // focus mode off → all visible + clustered
+    _supmapRenderBuyerList();
+    _supmapRenderModeHint();
+    _supmapHideFloatingBack();
+  }, 50);
+}
+
+// Floating "← Back to all buyers" button shown over the map when focused
+function _supmapShowFloatingBack(buyerName){
+  let btn = document.getElementById('supmap-floating-back');
+  if (!btn) {
+    btn = document.createElement('button');
+    btn.id = 'supmap-floating-back';
+    btn.className = 'supmap-floating-back';
+    btn.onclick = _supmapBackToList;
+    const canvas = document.getElementById('supmap-canvas');
+    if (canvas) canvas.appendChild(btn);
+  }
+  const label = (buyerName || '').slice(0, 50);
+  btn.innerHTML = `<span class="supmap-floating-back-arrow">←</span><span class="supmap-floating-back-label">Back to all buyers${label ? ` <span style="opacity:.6">· leaving ${_cmpEsc(label)}</span>` : ''}</span>`;
+  btn.style.display = 'flex';
+}
+
+function _supmapHideFloatingBack(){
+  const btn = document.getElementById('supmap-floating-back');
+  if (btn) btn.style.display = 'none';
 }
 
 function _supmapRenderLegend(){
