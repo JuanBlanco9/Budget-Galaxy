@@ -1376,25 +1376,114 @@ tr:hover .suprank-arrow{opacity:1;}
       </div>
     </div>
 
-    <!-- Secondary CTA row: analytical tools that support the galaxy but don't compete for protagonism. -->
-    <div class="lp-secondary-row" style="display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:0 auto 24px;max-width:720px">
-      <button onclick="lpGoToTab('explore')" class="lp-secondary-btn" style="background:rgba(18,18,30,.6);border:1px solid var(--border);border-radius:10px;padding:10px 18px;cursor:pointer;color:var(--text);font-size:13px;font-family:inherit;display:flex;align-items:center;gap:8px">
-        <span style="font-size:16px">&#128269;</span> <b>Explore &amp; Compare</b> &middot; year-on-year
+    <!-- 5-step story walkthrough — the moat: salary → tax → programme → recipient → UBO -->
+    <div class="lp-story-divider">
+      <span class="lp-story-divider-line"></span>
+      <span class="lp-story-divider-text">Or follow the money — 5 steps from your salary to who owns the supplier</span>
+      <span class="lp-story-divider-line"></span>
+    </div>
+
+    <div class="lp-story-grid">
+      <button onclick="lpGoToTab('taxpayer')" class="lp-story-step lp-story-step-1">
+        <div class="lp-story-num">1</div>
+        <div class="lp-story-icon">💰</div>
+        <div class="lp-story-title">Type your salary</div>
+        <div class="lp-story-desc">Exact HMRC bands · per-council tax · VAT pro-rata</div>
       </button>
-      <button onclick="lpGoToTab('suppliers')" class="lp-secondary-btn" style="background:rgba(18,18,30,.6);border:1px solid var(--border);border-radius:10px;padding:10px 18px;cursor:pointer;color:var(--text);font-size:13px;font-family:inherit;display:flex;align-items:center;gap:8px">
-        <span style="font-size:16px">&#127970;</span> <b>Budget Recipients</b> &middot; 400 UK suppliers
+      <button onclick="lpGoToTab('explore')" class="lp-story-step lp-story-step-2">
+        <div class="lp-story-num">2</div>
+        <div class="lp-story-icon">📊</div>
+        <div class="lp-story-title">See where it goes</div>
+        <div class="lp-story-desc">4,872 hand-curated programmes · sourced + Wayback-archived</div>
       </button>
-      <button onclick="lpGoToTab('taxpayer')" class="lp-secondary-btn lp-secondary-btn-tax" style="background:rgba(255,112,67,.08);border:1px solid rgba(255,112,67,.35);border-radius:10px;padding:10px 18px;cursor:pointer;color:var(--text);font-size:13px;font-family:inherit;display:flex;align-items:center;gap:8px">
-        <span style="font-size:16px">&#128176;</span> <b>Your Taxes</b> &middot; personal trace
+      <button onclick="lpGoToTab('suppliers')" class="lp-story-step lp-story-step-3">
+        <div class="lp-story-num">3</div>
+        <div class="lp-story-icon">🏢</div>
+        <div class="lp-story-title">Meet the recipients</div>
+        <div class="lp-story-desc">19,238 companies paid in FY 2024 · contracts + buyers</div>
+      </button>
+      <button onclick="lpGoToTab('suppliers')" class="lp-story-step lp-story-step-4">
+        <div class="lp-story-num">4</div>
+        <div class="lp-story-icon">🔗</div>
+        <div class="lp-story-title">Trace ownership</div>
+        <div class="lp-story-desc">Officers · PSCs · UBO chain (Companies House)</div>
+      </button>
+      <button onclick="lpGoToTab('insights')" class="lp-story-step lp-story-step-5">
+        <div class="lp-story-num">5</div>
+        <div class="lp-story-icon">💡</div>
+        <div class="lp-story-title">Read the patterns</div>
+        <div class="lp-story-desc">Curated insights · single-source contracts · concentration</div>
       </button>
     </div>
 
+    <!-- Trust signals row -->
+    <div class="lp-trust-row">
+      <div class="lp-trust-item"><b>4,872</b> hand-curated programmes</div>
+      <div class="lp-trust-dot">·</div>
+      <div class="lp-trust-item"><b>19,225</b> ENRICHED suppliers</div>
+      <div class="lp-trust-dot">·</div>
+      <div class="lp-trust-item"><b>18,753</b> citations Wayback-archived (100%)</div>
+      <div class="lp-trust-dot">·</div>
+      <div class="lp-trust-item"><b>FY 2024</b> snapshot frozen</div>
+    </div>
+
     <style>
+      .lp-story-divider{
+        display:flex;align-items:center;gap:12px;
+        max-width:760px;margin:0 auto 18px;color:rgba(255,255,255,.65);
+        font-size:11px;letter-spacing:.04em;text-transform:uppercase;
+      }
+      .lp-story-divider-line{flex:1;height:1px;background:rgba(255,255,255,.18)}
+      .lp-story-divider-text{white-space:nowrap;font-style:italic}
+      .lp-story-grid{
+        display:grid;grid-template-columns:repeat(5, 1fr);gap:12px;
+        max-width:1080px;margin:0 auto 22px;padding:0 12px;
+      }
+      .lp-story-step{
+        display:flex;flex-direction:column;align-items:center;gap:6px;
+        padding:18px 14px 16px;background:rgba(18,18,30,.78);
+        border:1px solid var(--border);border-radius:10px;
+        cursor:pointer;color:var(--text);text-align:center;
+        font-family:inherit;transition:all .15s;position:relative;
+      }
+      .lp-story-step:hover{
+        border-color:var(--accent);background:rgba(79,195,247,.08);
+        transform:translateY(-3px);
+        box-shadow:0 8px 20px rgba(79,195,247,.18);
+      }
+      .lp-story-num{
+        position:absolute;top:8px;left:10px;
+        width:20px;height:20px;border-radius:50%;
+        background:var(--accent);color:#0a0e1a;
+        font-size:11px;font-weight:700;
+        display:flex;align-items:center;justify-content:center;
+      }
+      .lp-story-icon{font-size:28px;margin-top:6px}
+      .lp-story-title{
+        font-size:13.5px;font-weight:600;color:var(--text);
+        line-height:1.25;
+      }
+      .lp-story-desc{
+        font-size:10.5px;color:rgba(255,255,255,.7);
+        line-height:1.4;
+      }
+      .lp-trust-row{
+        display:flex;flex-wrap:wrap;justify-content:center;align-items:center;
+        gap:10px 14px;max-width:840px;margin:0 auto 18px;
+        padding:10px 16px;background:rgba(0,0,0,.4);border-radius:6px;
+        font-size:11.5px;color:rgba(255,255,255,.85);
+      }
+      .lp-trust-item b{color:var(--accent)}
+      .lp-trust-dot{color:rgba(255,255,255,.3)}
       .lp-secondary-btn:hover{border-color:var(--accent)!important;background:rgba(79,195,247,.08)!important}
       .lp-secondary-btn-tax:hover{border-color:var(--accent2)!important;background:rgba(255,112,67,.15)!important}
-      @media (max-width:640px){
+      @media (max-width:900px){
+        .lp-story-grid{grid-template-columns:repeat(2,1fr);max-width:520px}
+      }
+      @media (max-width:540px){
+        .lp-story-grid{grid-template-columns:1fr;max-width:380px}
         .lp-hero-card{min-width:0!important;padding:22px 22px!important}
-        .lp-secondary-row{flex-direction:column;max-width:360px}
+        .lp-trust-row{font-size:10.5px;gap:6px 10px}
       }
     </style>
 
