@@ -1386,6 +1386,23 @@ tr:hover .suprank-arrow{opacity:1;}
   width:14px;height:10px;display:inline-block;border:1px solid rgba(0,0,0,.3);
 }
 
+/* Marker cluster custom styling — match dark theme */
+.supmap-cluster{ background:none !important; border:none !important; }
+.supmap-cluster-icon{
+  width:40px;height:40px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-weight:700;font-size:13px;color:#0a0e1a;
+  border:2px solid rgba(255,255,255,.85);
+  box-shadow:0 0 0 6px rgba(79,195,247,.18), 0 4px 10px rgba(0,0,0,.4);
+  transition:transform .12s ease;
+}
+.supmap-cluster-icon:hover{transform:scale(1.1)}
+.supmap-cluster-sm{ background:#7ec0ff; }
+.supmap-cluster-md{ background:#ffb84f; font-size:14px;
+  box-shadow:0 0 0 7px rgba(255,184,79,.22), 0 4px 12px rgba(0,0,0,.5); }
+.supmap-cluster-lg{ background:#ff7a6b; font-size:15px; width:48px; height:48px;
+  box-shadow:0 0 0 8px rgba(255,122,107,.25), 0 5px 14px rgba(0,0,0,.5); }
+
 /* Cross-nav button in selection panel */
 .supmap-sel-actions{
   margin:10px 0 12px;
@@ -19971,6 +19988,26 @@ document.addEventListener('click', function(e){
   _supRenderRanking();
 });
 
+async function _supmapLoadMarkerCluster(){
+  if (window.L && window.L.markerClusterGroup) return;
+  // Load Leaflet.markercluster (CSS + JS)
+  await new Promise((resolve, reject) => {
+    const css1 = document.createElement('link');
+    css1.rel = 'stylesheet';
+    css1.href = 'https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css';
+    document.head.appendChild(css1);
+    const css2 = document.createElement('link');
+    css2.rel = 'stylesheet';
+    css2.href = 'https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css';
+    document.head.appendChild(css2);
+    const js = document.createElement('script');
+    js.src = 'https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js';
+    js.onload = () => resolve();
+    js.onerror = () => reject(new Error('markercluster fetch failed'));
+    document.head.appendChild(js);
+  });
+}
+
 async function _supmapLoadLeaflet(){
   if (window.L) return window.L;
   if (_supmapLeafletReady) return _supmapLeafletReady;
@@ -20185,6 +20222,7 @@ async function _supmapInit(){
   if (loadingEl) loadingEl.textContent = 'Loading map library & data…';
   try {
     const L = await _supmapLoadLeaflet();
+    await _supmapLoadMarkerCluster();
     const data = await _supmapLoadData();
     const canvas = document.getElementById('supmap-canvas');
     if (!canvas) return;
@@ -20293,7 +20331,6 @@ function _supmapRenderBuyers(){
   const markers = [];
   const searchQ = (document.getElementById('supmap-search')?.value || '').trim().toLowerCase();
   // Focus mode: when a buyer is selected, only show that one (others hidden).
-  // This keeps the map readable when drilled in.
   const focusMode = !!_supmapSelectedBuyer;
   for (const b of Object.values(_supmapData.buyers)) {
     if (!b.lat || !b.lng) continue;
@@ -20316,15 +20353,36 @@ function _supmapRenderBuyers(){
       fillOpacity: isSelected ? 0.85 : 0.55,
     });
     m._supBuyerId = b.id;
-    // Tooltip on hover (lightweight) — popups removed (they cover the map data).
-    // Click switches to focus mode (selects + hides others) via _supmapSelectBuyer.
     m.bindTooltip(`<b>${_cmpEsc(b.name)}</b><br><span style="color:#8892a8;font-size:10px">${SUPMAP_TYPE_LABEL[b.type] || b.type}</span>`, {
       sticky: true, direction: 'top', offset: [0, -4],
     });
     m.on('click', () => _supmapSelectBuyer(b.id));
     markers.push(m);
   }
-  _supmapBuyersLayer = L.layerGroup(markers).addTo(_supmapLeaflet);
+  // Use clustering when NOT in focus mode and we have many markers
+  // (markercluster auto-loaded in init). Without clustering the map becomes
+  // a sea of overlapping pins in dense areas like Greater London.
+  if (!focusMode && markers.length > 30 && L.markerClusterGroup) {
+    _supmapBuyersLayer = L.markerClusterGroup({
+      showCoverageOnHover: false,
+      spiderfyOnMaxZoom: true,
+      disableClusteringAtZoom: 11,
+      maxClusterRadius: 50,
+      iconCreateFunction: (cluster) => {
+        const count = cluster.getChildCount();
+        const size = count > 100 ? 'lg' : count > 30 ? 'md' : 'sm';
+        return L.divIcon({
+          html: `<div class="supmap-cluster-icon supmap-cluster-${size}">${count}</div>`,
+          className: 'supmap-cluster',
+          iconSize: L.point(40, 40),
+        });
+      },
+    });
+    for (const m of markers) _supmapBuyersLayer.addLayer(m);
+    _supmapBuyersLayer.addTo(_supmapLeaflet);
+  } else {
+    _supmapBuyersLayer = L.layerGroup(markers).addTo(_supmapLeaflet);
+  }
 
   // Refresh info count
   const info = document.getElementById('sup-modebar-info');
@@ -20581,16 +20639,23 @@ function _supmapSetMode(mode){
   _supmapClearChoropleth();
   _supmapClearFlow();
   if (_supmapBuyersLayer) _supmapLeaflet.removeLayer(_supmapBuyersLayer);
+  if (_supmapSuppliersLayer) {
+    _supmapLeaflet.removeLayer(_supmapSuppliersLayer);
+    _supmapSuppliersLayer = null;
+  }
 
   if (mode === 'pins') {
+    // Pins-only view (with clustering for readability)
     _supmapRenderBuyers();
-    if (_supmapSelectedBuyer) _supmapRenderFlowFor(_supmapSelectedBuyer, /*subtle=*/true);
+    // If a buyer was selected, show its suppliers
+    if (_supmapSelectedBuyer) _supmapRenderSuppliersFor(_supmapSelectedBuyer);
   } else if (mode === 'choropleth') {
+    // Choropleth-only view: NO pins on top (the colour fill IS the data).
+    // Click a LAD polygon to drill into that council's buyers (sidebar list).
     _supmapRenderChoropleth();
-    // Keep pins on top so user can still click them
-    _supmapRenderBuyers();
   } else if (mode === 'flow') {
-    // Show pins (faded) and instruct user to click one
+    // Flow view: only show pins until user picks one. Once selected, show
+    // ONLY that buyer + its flow lines (others hidden via focus mode).
     _supmapRenderBuyers();
     if (_supmapSelectedBuyer) _supmapRenderFlowFor(_supmapSelectedBuyer, /*subtle=*/false);
   }
@@ -20666,11 +20731,18 @@ async function _supmapRenderChoropleth(){
       const fmt = (val) => val >= 1e9 ? '£' + (val/1e9).toFixed(2) + 'B'
                        : val >= 1e6 ? '£' + (val/1e6).toFixed(1) + 'M'
                        : val >= 1e3 ? '£' + (val/1e3).toFixed(0) + 'k' : '£' + Math.round(val);
-      layer.bindTooltip(`<b>${name}</b><br>${v ? fmt(v) + ' procurement FY 2024' : 'No mapped procurement'}`, {
+      layer.bindTooltip(`<b>${name}</b><br>${v ? fmt(v) + ' procurement FY 2024' : 'No mapped procurement'}${v ? '<br><span style="color:#8ec8ff;font-size:10px">click to see buyers in this council →</span>' : ''}`, {
         sticky: true, direction: 'auto', offset: [10, 0],
       });
       layer.on('mouseover', () => layer.setStyle({ weight: 2.5, color: '#ffffff' }));
       layer.on('mouseout', () => layer.setStyle({ weight: 1.0, color: 'rgba(255,255,255,.35)' }));
+      // Click an LAD → drill into that council's buyers (sidebar list)
+      if (v > 0) {
+        layer.on('click', (e) => {
+          window.L.DomEvent.stopPropagation(e);
+          _supmapShowBuyersInLad(code, name);
+        });
+      }
     },
   });
   _supmapChoroplethLayer.addTo(_supmapLeaflet);
@@ -20687,6 +20759,45 @@ function _supmapClearChoropleth(){
   }
   const lg = document.querySelector('.supmap-choropleth-legend');
   if (lg) lg.remove();
+}
+
+// When user clicks an LAD polygon in choropleth mode, show only that
+// council's buyers in the sidebar list (drill-down via choropleth).
+function _supmapShowBuyersInLad(ladCode, ladName){
+  if (!_supmapData) return;
+  const matched = Object.values(_supmapData.buyers).filter(b => b.lad24_cd === ladCode);
+  if (!matched.length) return;
+  const fmt = v => v >= 1e9 ? '£' + (v/1e9).toFixed(2) + 'B'
+                : v >= 1e6 ? '£' + (v/1e6).toFixed(1) + 'M'
+                : v >= 1e3 ? '£' + (v/1e3).toFixed(0) + 'k' : '£' + Math.round(v);
+  matched.sort((a, b) => (b.total_gbp_2024 || 0) - (a.total_gbp_2024 || 0));
+  const total = matched.reduce((s, b) => s + (b.total_gbp_2024 || 0), 0);
+
+  // Make sidebar visible if collapsed
+  const layout = document.querySelector('.supmap-layout');
+  if (layout && layout.classList.contains('sidebar-collapsed')) {
+    layout.classList.remove('sidebar-collapsed');
+    try { localStorage.setItem('_supmapSidebarCollapsed', '0'); } catch(e){}
+    setTimeout(() => { if (_supmapLeaflet) _supmapLeaflet.invalidateSize(); }, 280);
+  }
+
+  const header = document.getElementById('supmap-buyerlist-header');
+  if (header) {
+    header.innerHTML = `<span style="cursor:pointer;color:#8ec8ff" onclick="_supmapBackToList()">← Back to all buyers</span> · <b>${_cmpEsc(ladName)}</b> · ${matched.length} buyer${matched.length>1?'s':''} · ${fmt(total)}`;
+  }
+  const sel = document.getElementById('supmap-selection');
+  if (sel) {
+    sel.innerHTML = matched.map(b => {
+      const color = SUPMAP_TYPE_COLOR[b.type] || SUPMAP_TYPE_COLOR.other;
+      return `<div class="supmap-buyer-row" onclick="_supmapSelectBuyer('${b.id}')">
+        <div class="supmap-buyer-row-main">
+          <div class="supmap-buyer-row-name"><span class="supmap-buyer-row-type" style="background:${color}"></span>${_cmpEsc(b.name)}</div>
+          <div class="supmap-buyer-row-loc">${SUPMAP_TYPE_LABEL[b.type] || b.type} · ${b.n_contracts.toLocaleString()} contracts</div>
+        </div>
+        <div class="supmap-buyer-row-amt">${fmt(b.total_gbp_2024)}</div>
+      </div>`;
+    }).join('');
+  }
 }
 
 function _supmapRenderChoroplethLegend(breaks, colors){
