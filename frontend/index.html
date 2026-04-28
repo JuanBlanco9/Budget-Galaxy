@@ -1829,6 +1829,22 @@ mark{background:rgba(79,195,247,.3);color:var(--text,#e8ebf5);padding:0 2px;bord
   color:var(--accent);font-weight:600;font-variant-numeric:tabular-nums;
 }
 
+/* Cross-nav: breadcrumb chip after switching tabs via cross-nav */
+.cross-breadcrumb{
+  display:inline-flex; align-items:center; gap:6px;
+  margin:0 0 12px 12px; padding:5px 10px 5px 8px;
+  background:rgba(168,85,247,.10); color:#c084fc;
+  border:1px solid rgba(168,85,247,.25);
+  border-radius:14px; font-size:11px; font-weight:500;
+  cursor:pointer; transition:all .12s ease;
+  vertical-align:middle;
+}
+.cross-breadcrumb:hover{
+  background:rgba(168,85,247,.16); border-color:rgba(168,85,247,.4);
+}
+.cross-breadcrumb-arrow{ font-size:13px; line-height:1; }
+.cross-breadcrumb-label{ letter-spacing:.02em; }
+
 /* Cross-nav: clickeable composition lines in Recipients buyer detail */
 .sup-buyer-comp-line.cross-clickeable{
   cursor:pointer;transition:background .1s;
@@ -2508,6 +2524,33 @@ mark{background:rgba(79,195,247,.3);color:var(--text,#e8ebf5);padding:0 2px;bord
 .insight-action-target{
   font-size:10.5px;color:var(--dim);font-family:ui-monospace,monospace;
 }
+
+/* Auto-drill: footer with auto-detected cross-nav buttons */
+.insight-auto-drill{
+  margin:18px 0 14px;padding:14px 16px;
+  background:linear-gradient(180deg,rgba(168,85,247,.04),rgba(0,0,0,.12));
+  border:1px solid rgba(168,85,247,.2);border-radius:8px;
+}
+.insight-auto-drill-title{
+  font-size:11px;color:#c084fc;text-transform:uppercase;letter-spacing:.06em;
+  font-weight:600;margin-bottom:10px;
+}
+.insight-auto-drill-cards{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:8px;
+}
+.insight-auto-drill-card{
+  display:flex;align-items:center;gap:10px;padding:9px 12px;
+  background:rgba(168,85,247,.06);border:1px solid rgba(168,85,247,.18);
+  border-radius:6px;cursor:pointer;transition:all .12s;
+  text-align:left;font-family:inherit;color:var(--text);font-size:12px;
+}
+.insight-auto-drill-card:hover{
+  background:rgba(168,85,247,.13);border-color:#c084fc;
+  transform:translateX(3px);
+}
+.insight-auto-drill-icon{font-size:15px;flex:0 0 auto}
+.insight-auto-drill-label{flex:1;line-height:1.3;}
+.insight-auto-drill-arrow{color:#c084fc;font-size:13px;flex:0 0 auto}
 
 .insight-sources{display:flex;flex-direction:column;gap:6px;margin-bottom:14px}
 .insight-source{
@@ -16113,7 +16156,11 @@ function _cmplistRenderDetail(){
             <span class="cross-recip-count">${s.n} contract${s.n>1?'s':''}</span>
           </div>`;
         }).join('');
-        const openHandler = `_crossOpenRecipients('${_cmpEsc(dep.primary_buyer_id)}')`;
+        // Capture origin so Recipients shows "← from <programme>" breadcrumb
+        const programmeNodeName = node.name || rawName || 'programme';
+        const originLabel = _cmplistPrettyName(programmeNodeName).slice(0, 50).replace(/['"]/g, '');
+        const originHandlerKey = `explore-path:${path.join(',')}`;
+        const openHandler = `_crossOpenRecipients('${_cmpEsc(dep.primary_buyer_id)}','','${_cmpEsc(originLabel)}','${originHandlerKey}')`;
         recipientsHtml = `<div class="detail-cross-recipients">
           <div class="detail-cross-header">
             <span class="detail-cross-title">Recipients of this £ <span class="detail-cross-sub">commercial procurement only</span></span>
@@ -16134,6 +16181,7 @@ function _cmplistRenderDetail(){
   const sourceFooter = attrib ? _cmplistSourceFooter(attrib) : '';
 
   container.innerHTML = `
+    ${typeof _crossBreadcrumb === 'function' ? _crossBreadcrumb('explore') : ''}
     ${ancHtml}
     <div class="detail-hero">
       <div class="detail-name" title="${_cmpEsc(rawName)}">${_cmpEsc(prettyName)}</div>
@@ -16842,6 +16890,8 @@ function _insRenderCard(ins){
       <div class="insight-section-header">What now?</div>
       <div class="insight-actions">${actions}</div>
 
+      ${_insAutoDrillCards(ins)}
+
       <div class="insight-section-header">Sources</div>
       <div class="insight-sources">${sources}</div>
 
@@ -16868,19 +16918,137 @@ function _insActionClick(target){
   // Deep-link pattern like /#taxpayer or /#insights/tax/...
   if (target.startsWith('#') || target.startsWith('/#')) {
     window.location.hash = target.replace(/^\//, '');
-    // Force activation
     const t = target.replace(/^\/?#/, '');
     const [tab] = t.split('/');
     if (typeof showTab === 'function') showTab(tab === 'insights' ? 'insights' : tab, null);
     return;
   }
-  // Backtick-labelled tab names inside the label — best-effort match
   const lower = target.toLowerCase();
+
+  // Smart keyword routing: detect dept/supplier/council names in target string
+  // and resolve to specific node, not just tab landing.
+  if (typeof _insResolveTarget === 'function') {
+    const resolved = _insResolveTarget(target);
+    if (resolved) return resolved();
+  }
+
+  // Tab landing fallbacks
   if (lower.includes('your taxes') || lower.includes('taxpayer')) return showTab('taxpayer', null);
   if (lower.includes('budget galaxy') || lower.includes('galaxy')) return showTab('galaxy', null);
-  if (lower.includes('budget recipients') || lower.includes('supplier')) return showTab('suppliers', null);
-  if (lower.includes('explore')) return showTab('explore', null);
-  if (lower.includes('insight')) return; // already here
+  if (lower.includes('budget recipients') || lower.includes('supplier') || lower.includes('recipient')) return showTab('suppliers', null);
+  if (lower.includes('explore') || lower.includes('programme')) return showTab('explore', null);
+  if (lower.includes('insight')) return;
+}
+
+// Best-effort keyword → action resolver. Tries to match department names,
+// supplier names, and council names against loaded data and returns a
+// callable that performs the appropriate cross-nav (or null if no match).
+function _insResolveTarget(target){
+  if (!target || typeof target !== 'string') return null;
+  const lower = target.toLowerCase();
+  // 1) Department / programme top-level match (uses loaded budget tree)
+  if (window._uk_tree_root && window._uk_tree_root.children) {
+    const deptHits = [];
+    for (let i = 0; i < window._uk_tree_root.children.length; i++) {
+      const c = window._uk_tree_root.children[i];
+      const cn = (c.name || '').toLowerCase();
+      if (!cn) continue;
+      // Common dept aliases → match
+      const aliases = [
+        cn,
+        cn.replace(/^department for /, '').replace(/^ministry of /, '').replace(/^hm /, ''),
+      ];
+      for (const a of aliases) {
+        if (a.length >= 3 && lower.includes(a)) { deptHits.push({ idx: i, len: a.length }); break; }
+      }
+    }
+    if (deptHits.length) {
+      // Pick the longest alias match (most specific)
+      deptHits.sort((a, b) => b.len - a.len);
+      const idx = deptHits[0].idx;
+      return () => _crossOpenExplore(String(idx), 'insight', `insights-current`);
+    }
+  }
+  // 2) Curated supplier name match
+  const idx = window._suppliersIndex || [];
+  if (idx.length) {
+    let best = null, bestLen = 0;
+    for (const s of idx) {
+      if (!s.display_name) continue;
+      const dn = s.display_name.toLowerCase();
+      if (dn.length >= 5 && lower.includes(dn) && dn.length > bestLen) {
+        best = s; bestLen = dn.length;
+      }
+    }
+    if (best && best.company_number) {
+      return () => _crossOpenSupplier(best.company_number);
+    }
+  }
+  return null;
+}
+
+// Auto-generate "Drill down deeper" footer cards from insight narrative.
+// Scans narrative_md for keyword mentions and offers cross-nav links.
+function _insAutoDrillCards(insight){
+  if (!insight || !insight.narrative_md) return '';
+  const text = insight.narrative_md.toLowerCase();
+  const cards = [];
+  const seen = new Set();
+
+  // Departments via tree root
+  if (window._uk_tree_root && window._uk_tree_root.children) {
+    for (let i = 0; i < window._uk_tree_root.children.length; i++) {
+      const c = window._uk_tree_root.children[i];
+      const cn = (c.name || '').toLowerCase();
+      if (!cn || cn.length < 8) continue;
+      // Try a couple of common forms
+      const probe = [cn, cn.replace(/^department for /, '').replace(/^ministry of /, '').replace(/^hm /, '')];
+      let hit = null;
+      for (const p of probe) {
+        if (p.length >= 6 && text.includes(p)) { hit = p; break; }
+      }
+      if (hit && !seen.has('dept:' + i)) {
+        seen.add('dept:' + i);
+        cards.push({
+          icon: '📊',
+          label: `Open ${_cmplistPrettyName ? _cmplistPrettyName(c.name) : c.name} in Programmes`,
+          handler: `_crossOpenExplore('${i}','insight','insights-current')`,
+        });
+        if (cards.length >= 4) break;
+      }
+    }
+  }
+
+  // Curated suppliers — only obvious mentions (>=3 occurrences or in quotes)
+  const idx = window._suppliersIndex || [];
+  for (const s of idx) {
+    if (cards.length >= 4) break;
+    if (!s.display_name || !s.company_number) continue;
+    const dn = s.display_name.toLowerCase();
+    if (dn.length < 6) continue;
+    // Only count if mentioned distinctly (avoids false-pos on common words)
+    const occurrences = text.split(dn).length - 1;
+    if (occurrences >= 1 && !seen.has('sup:' + s.company_number)) {
+      seen.add('sup:' + s.company_number);
+      cards.push({
+        icon: '🏢',
+        label: `View ${s.display_name} in Recipients`,
+        handler: `_crossOpenSupplier('${s.company_number}')`,
+      });
+    }
+  }
+
+  if (cards.length === 0) return '';
+  return `<div class="insight-auto-drill">
+    <div class="insight-auto-drill-title">Explore the data behind this insight</div>
+    <div class="insight-auto-drill-cards">
+      ${cards.map(c => `<button class="insight-auto-drill-card" onclick="${c.handler}">
+        <span class="insight-auto-drill-icon">${c.icon}</span>
+        <span class="insight-auto-drill-label">${_insEsc(c.label)}</span>
+        <span class="insight-auto-drill-arrow">→</span>
+      </button>`).join('')}
+    </div>
+  </div>`;
 }
 
 // --- Very small markdown subset renderer (tables + bold + code + paragraphs) ---
@@ -17959,14 +18127,57 @@ function _crossProgrammeForBuyerId(buyerId){
   return null;
 }
 
+// Cross-nav origin tracking — when user jumps tab via cross-nav, remember
+// where they came from so the destination tab can show a "← from X" chip.
+window._crossOrigin = null;
+
 // Switch to Explore tab and select a node by its top-level child index path.
-// (Wraps location.hash + showTab + _cmplistSelectPath in a single click handler.)
-function _crossOpenExplore(treePathStr){
+// originLabel + originHandlerKey enable the "← from X" breadcrumb chip on
+// the destination. handlerKey is one of:
+//   'recipients-buyer:<buyerId>'      — return to a buyer detail
+//   'recipients-supplier:<chNumber>'  — return to a supplier detail
+//   'recipients-list'                  — return to recipients list view
+function _crossOpenExplore(treePathStr, originLabel, originHandlerKey){
+  if (originLabel && originHandlerKey) {
+    window._crossOrigin = { tab: 'explore', label: originLabel, handlerKey: originHandlerKey };
+  } else {
+    window._crossOrigin = null;
+  }
   const path = treePathStr.split(',').filter(s => s !== '').map(Number);
   if (typeof showTab === 'function') showTab('explore', null);
   setTimeout(() => {
     if (typeof _cmplistSelectPath === 'function') _cmplistSelectPath(path);
   }, 100);
+}
+
+// Render the breadcrumb chip if we just arrived via cross-nav. Returns HTML
+// (or empty string). The chip's onclick fires the handler that returns to origin.
+function _crossBreadcrumb(currentTab){
+  const o = window._crossOrigin;
+  if (!o || o.tab !== currentTab) return '';
+  // Map the handlerKey to an inline JS handler that re-opens the origin
+  let handler = '_crossClearOrigin()';
+  const m = o.handlerKey ? o.handlerKey.match(/^([\w-]+):(.+)$/) : null;
+  if (m) {
+    const kind = m[1], val = m[2].replace(/'/g, "\\'");
+    if (kind === 'recipients-buyer')         handler = `_crossClearOrigin();_crossOpenRecipients('${val}')`;
+    else if (kind === 'recipients-supplier') handler = `_crossClearOrigin();_crossOpenSupplier('${val}')`;
+    else if (kind === 'explore-path')        handler = `_crossClearOrigin();_crossOpenExplore('${val}')`;
+  }
+  return `<div class="cross-breadcrumb" onclick="${handler}">
+    <span class="cross-breadcrumb-arrow">←</span>
+    <span class="cross-breadcrumb-label">from ${_supEscapeHtml(o.label)}</span>
+  </div>`;
+}
+
+function _crossClearOrigin(){ window._crossOrigin = null; }
+
+// Helper: open a supplier in Recipients tab (used as breadcrumb return target)
+function _crossOpenSupplier(chNumber){
+  if (typeof showTab === 'function') showTab('suppliers', null);
+  setTimeout(() => {
+    if (typeof _supSelectSupplier === 'function') _supSelectSupplier(chNumber);
+  }, 200);
 }
 
 // Find a programme sub-line in the budget tree by dept name + sub-line name.
@@ -17999,10 +18210,15 @@ function _crossFindProgrammeNode(deptDisplay, subLineName){
 }
 
 // Switch to Recipients tab + open a buyer in detail panel.
-function _crossOpenRecipients(buyerId, type){
+function _crossOpenRecipients(buyerId, type, originLabel, originHandlerKey){
+  if (originLabel && originHandlerKey) {
+    window._crossOrigin = { tab: 'suppliers', label: originLabel, handlerKey: originHandlerKey };
+  } else if (!originLabel) {
+    // explicit no-origin (call from breadcrumb itself or fresh nav)
+    window._crossOrigin = null;
+  }
   if (typeof showTab === 'function') showTab('suppliers', null);
   setTimeout(() => {
-    // Set type filter if provided (so the buyer list shows the right pill active)
     if (type && typeof _supSetTypeFilter === 'function') _supSetTypeFilter(type);
     if (typeof _supSelectBuyer === 'function') _supSelectBuyer(buyerId);
   }, 200);
@@ -18237,7 +18453,7 @@ async function _supSelectBuyer(buyerId){
                  : v >= 1e3 ? '£' + (v/1e3).toFixed(0) + 'k' : '£' + Math.round(v);
 
   // ── Header ─────────────────────────────────────────────────
-  let h = `<button class="sd-back" onclick="_supSelectBuyer(null);_supClearDetail()">← Back to list</button>`;
+  let h = `<button class="sd-back" onclick="_supSelectBuyer(null);_supClearDetail()">← Back to list</button>${_crossBreadcrumb('suppliers')}`;
   let badge = '';
   if (breakdown) {
     if (breakdown.is_transfer_dominant) badge = `<span class="sup-comp-badge sup-comp-transfer">Transfer-heavy</span>`;
@@ -18285,7 +18501,9 @@ async function _supSelectBuyer(buyerId){
           // matched dept. If found, the line is clickeable and switches to
           // Programmes (Explore) tab focused on that node.
           const treePath = _crossFindProgrammeNode(breakdown.name || breakdown.slug, l.name);
-          const click = treePath ? `onclick="_crossOpenExplore('${treePath.join(',')}')"` : '';
+          const fromLbl = (buyer.name || '?').slice(0, 40).replace(/['"]/g, '');
+          const fromKey = `recipients-buyer:${buyerId}`;
+          const click = treePath ? `onclick="_crossOpenExplore('${treePath.join(',')}','${_supEscapeHtml(fromLbl)}','${fromKey}')"` : '';
           const cls = treePath ? 'cross-clickeable' : '';
           const arrow = treePath ? '<span class="line-arrow">→</span>' : '';
           return `<div class="sup-buyer-comp-line sup-buyer-comp-line-${l.kind} ${cls}" ${click} title="${treePath ? 'Click to open in Programmes tab' : ''}">
@@ -18693,17 +18911,20 @@ function _supRenderDetail(p){
 }
 
 // Render the back button. If we navigated here from a buyer, go back to that
-// buyer; otherwise back to the list.
+// buyer; otherwise back to the list. Also renders the cross-tab breadcrumb
+// when the user just arrived from another tab via _crossOpen*.
 function _supBackButton(){
   const buyerId = window._supLastBuyerId;
+  let backBtn;
   if (buyerId && window._supListMapData && window._supListMapData.buyers) {
     const buyer = window._supListMapData.buyers[buyerId];
     if (buyer) {
       const name = (buyer.name || 'buyer').slice(0, 60);
-      return `<button class="sd-back" onclick="_supSelectBuyer('${_supEscapeHtml(buyerId)}')">← Back to ${_supEscapeHtml(name)}</button>`;
+      backBtn = `<button class="sd-back" onclick="_supSelectBuyer('${_supEscapeHtml(buyerId)}')">← Back to ${_supEscapeHtml(name)}</button>`;
     }
   }
-  return `<button class="sd-back" onclick="_supSelectSupplier(null);_supClearDetail()">← Back to list</button>`;
+  if (!backBtn) backBtn = `<button class="sd-back" onclick="_supSelectSupplier(null);_supClearDetail()">← Back to list</button>`;
+  return backBtn + (typeof _crossBreadcrumb === 'function' ? _crossBreadcrumb('suppliers') : '');
 }
 
 // Map Companies House filing description codes to human-readable labels
@@ -18926,7 +19147,9 @@ function _supRenderDetailV2(p){
           <div style="display:flex;flex-direction:column;gap:4px">`;
         for (const d of topDepts) {
           const treePath = _crossProgrammeForBuyerId(d.buyer_id);
-          const click = treePath ? `onclick="_crossOpenExplore('${treePath.treePath.join(',')}')"` : '';
+          const fromLbl = (p.display_name || p.official_name || p.company_number || 'supplier').slice(0,40).replace(/['"]/g,'');
+          const fromKey = `recipients-supplier:${p.company_number}`;
+          const click = treePath ? `onclick="_crossOpenExplore('${treePath.treePath.join(',')}','${_supEscapeHtml(fromLbl)}','${fromKey}')"` : '';
           h += `<div class="sd-cross-prog-line" ${click}>
             <span class="sd-cross-prog-icon">${treePath ? '↗' : '·'}</span>
             <span class="sd-cross-prog-name">${_supEscapeHtml(d.dept_name)}</span>
