@@ -1298,6 +1298,74 @@ tr:hover .suprank-arrow{opacity:1;}
 }
 .supmap-legend-row{display:flex;align-items:center;gap:6px;margin-top:3px;}
 .supmap-legend-dot{width:10px;height:10px;border-radius:50%;display:inline-block;}
+
+/* Mode toggle bar (top-left of map canvas) */
+.supmap-modebar{
+  position:absolute;top:14px;left:14px;z-index:520;
+  display:flex;gap:1px;background:rgba(18,18,30,.92);
+  border:1px solid rgba(255,255,255,.1);border-radius:6px;
+  overflow:hidden;box-shadow:0 4px 14px rgba(0,0,0,.3);
+}
+.supmap-modebtn{
+  display:flex;align-items:center;gap:6px;
+  padding:7px 11px;background:transparent;
+  border:none;color:rgba(232,235,245,.7);font-size:11.5px;
+  font-family:inherit;cursor:pointer;transition:all .12s;
+  border-right:1px solid rgba(255,255,255,.06);
+}
+.supmap-modebtn:last-child{border-right:none}
+.supmap-modebtn:hover{background:rgba(79,195,247,.08);color:var(--text)}
+.supmap-modebtn.active{
+  background:rgba(79,195,247,.18);color:var(--accent);
+  font-weight:600;
+}
+.supmap-modebtn-icon{font-size:13px}
+@media(max-width:600px){
+  .supmap-modebtn-label{display:none}
+  .supmap-modebtn{padding:8px 10px}
+}
+
+/* Mode hint banner (below mode bar) */
+.supmap-mode-hint{
+  position:absolute;top:60px;left:14px;z-index:519;
+  max-width:340px;
+  padding:8px 12px;background:rgba(18,18,30,.92);
+  border:1px solid rgba(79,195,247,.25);border-radius:5px;
+  font-size:11px;color:var(--text);line-height:1.5;
+  pointer-events:none;
+  animation:supmapHintFade .25s ease;
+}
+@keyframes supmapHintFade{from{opacity:0;transform:translateY(-4px)}to{opacity:1}}
+
+/* Choropleth legend (bottom-right) */
+.supmap-choropleth-legend{
+  position:absolute;bottom:14px;right:14px;z-index:500;
+  background:rgba(18,18,30,.92);border:1px solid rgba(255,255,255,.1);
+  padding:10px 12px;border-radius:5px;font-size:10.5px;color:var(--text);
+  max-width:220px;
+}
+.supmap-choropleth-legend-row{
+  display:flex;align-items:center;gap:6px;margin-top:3px;
+  font-variant-numeric:tabular-nums;
+}
+.supmap-choropleth-legend-swatch{
+  width:14px;height:10px;display:inline-block;border:1px solid rgba(0,0,0,.3);
+}
+
+/* Cross-nav button in selection panel */
+.supmap-sel-actions{
+  margin:10px 0 12px;
+}
+.supmap-sel-action{
+  display:inline-flex;align-items:center;justify-content:center;gap:6px;
+  padding:7px 12px;background:rgba(74,222,128,.1);
+  border:1px solid rgba(74,222,128,.25);border-radius:5px;
+  color:#86efac;font-size:11.5px;font-weight:500;cursor:pointer;
+  font-family:inherit;transition:all .12s;width:100%;
+}
+.supmap-sel-action:hover{
+  background:rgba(74,222,128,.18);border-color:#4ade80;
+}
 </style>
 </head>
 <body>
@@ -3883,6 +3951,26 @@ mark{background:rgba(79,195,247,.3);color:var(--text,#e8ebf5);padding:0 2px;bord
     <div class="supmap-canvas" id="supmap-canvas">
       <div class="supmap-loading" id="supmap-loading">Loading map & data…</div>
       <div class="supmap-boundlegend" id="supmap-boundlegend"></div>
+      <div class="supmap-modebar" id="supmap-modebar">
+        <button class="supmap-modebtn" data-mode="pins"
+                onclick="_supmapSetMode('pins')"
+                title="Show buyers as pins (default)">
+          <span class="supmap-modebtn-icon">📍</span>
+          <span class="supmap-modebtn-label">Pins</span>
+        </button>
+        <button class="supmap-modebtn" data-mode="choropleth"
+                onclick="_supmapSetMode('choropleth')"
+                title="Color each council area by £ received">
+          <span class="supmap-modebtn-icon">🎨</span>
+          <span class="supmap-modebtn-label">Choropleth</span>
+        </button>
+        <button class="supmap-modebtn" data-mode="flow"
+                onclick="_supmapSetMode('flow')"
+                title="Click a buyer → see flow lines to its top suppliers">
+          <span class="supmap-modebtn-icon">🔗</span>
+          <span class="supmap-modebtn-label">Flow lines</span>
+        </button>
+      </div>
     </div>
   </div>
 
@@ -19641,8 +19729,12 @@ let _supmapLeafletReady = null;
 let _supmapData = null;
 let _supmapBuyersLayer = null;
 let _supmapSuppliersLayer = null;
+let _supmapFlowLayer = null;       // Mode C: flow lines from selected buyer
+let _supmapChoroplethLayer = null; // Mode B: choropleth fill on LAD24
 let _supmapActiveType = 'all';
 let _supmapSelectedBuyer = null;
+let _supmapMode = (typeof localStorage !== 'undefined' && localStorage.getItem('_supmapMode')) || 'pins';
+const SUPMAP_MODES = ['pins', 'choropleth', 'flow'];
 
 const SUPMAP_TYPE_COLOR = {
   council: '#5fa8ff',
@@ -20052,6 +20144,8 @@ async function _supmapInit(){
     _supmapRenderBuyers();
     _supmapRenderLegend();
     _supmapRenderBuyerList();
+    // Apply persisted mode (Pins / Choropleth / Flow lines)
+    _supmapSetMode(_supmapMode);
   } catch (e) {
     console.error('Map init failed:', e);
     if (loadingEl) loadingEl.textContent = 'Failed to load map: ' + e.message;
@@ -20263,6 +20357,11 @@ function _supmapSelectBuyer(buyerId){
         <div class="supmap-sel-meta">${fmt(b.total_gbp_2024)} in ${b.n_contracts.toLocaleString()} contracts · ${b.n_suppliers} suppliers</div>
         <span class="supmap-sel-pill">${SUPMAP_TYPE_LABEL[b.type] || b.type}</span>
       </div>
+      <div class="supmap-sel-actions">
+        <button class="supmap-sel-action" onclick="_crossOpenRecipients('${_cmpEsc(buyerId)}','','from map','recipients-buyer:${_cmpEsc(buyerId)}')">
+          <span>Open in Recipients →</span>
+        </button>
+      </div>
       <div style="font-size:11px;color:var(--dim);margin-bottom:8px;">Top ${flows.length} suppliers (by £)</div>
       ${flows.map(f => {
         const s = _supmapData.suppliers[f.supplier_id];
@@ -20276,11 +20375,16 @@ function _supmapSelectBuyer(buyerId){
     </div>`;
   }
 
-  // Pan map to buyer + render suppliers
+  // Pan map to buyer + render suppliers (mode-aware)
   if (b.lat && b.lng) {
     _supmapLeaflet.setView([b.lat, b.lng], 9, { animate: true });
   }
-  _supmapRenderSuppliersFor(buyerId);
+  if (_supmapMode === 'flow') {
+    _supmapRenderFlowFor(buyerId, /*subtle=*/false);
+  } else {
+    _supmapRenderSuppliersFor(buyerId);
+  }
+  _supmapRenderModeHint();
 }
 
 function _supmapRenderSuppliersFor(buyerId){
@@ -20319,6 +20423,226 @@ function _supmapFocusSupplier(supplierId){
   _supmapLeaflet.setView([s.lat, s.lng], 11, { animate: true });
 }
 
+// ─────────────────────────────────────────────────────────────────────
+// MAP MODES — Pins (default) · Choropleth (LAD24 fill) · Flow lines
+// ─────────────────────────────────────────────────────────────────────
+
+function _supmapSetMode(mode){
+  if (!SUPMAP_MODES.includes(mode)) mode = 'pins';
+  _supmapMode = mode;
+  try { localStorage.setItem('_supmapMode', mode); } catch(e){}
+  document.querySelectorAll('.supmap-modebtn').forEach(b =>
+    b.classList.toggle('active', b.dataset.mode === mode));
+
+  if (!_supmapLeaflet || !_supmapData) return;
+
+  // Clear all mode-specific layers first
+  _supmapClearChoropleth();
+  _supmapClearFlow();
+  if (_supmapBuyersLayer) _supmapLeaflet.removeLayer(_supmapBuyersLayer);
+
+  if (mode === 'pins') {
+    _supmapRenderBuyers();
+    if (_supmapSelectedBuyer) _supmapRenderFlowFor(_supmapSelectedBuyer, /*subtle=*/true);
+  } else if (mode === 'choropleth') {
+    _supmapRenderChoropleth();
+    // Keep pins on top so user can still click them
+    _supmapRenderBuyers();
+  } else if (mode === 'flow') {
+    // Show pins (faded) and instruct user to click one
+    _supmapRenderBuyers();
+    if (_supmapSelectedBuyer) _supmapRenderFlowFor(_supmapSelectedBuyer, /*subtle=*/false);
+  }
+  _supmapRenderModeHint();
+}
+
+function _supmapRenderModeHint(){
+  let hint = document.querySelector('.supmap-mode-hint');
+  if (hint) hint.remove();
+  const canvas = document.getElementById('supmap-canvas');
+  if (!canvas) return;
+  let txt = '';
+  if (_supmapMode === 'choropleth') txt = '🎨 Each council area shaded by £ procurement received in FY 2024';
+  else if (_supmapMode === 'flow') txt = _supmapSelectedBuyer
+    ? '🔗 Flow lines from selected buyer to its top suppliers'
+    : '🔗 Click any buyer (sidebar or pin) to see its flow lines to suppliers';
+  if (!txt) return;
+  hint = document.createElement('div');
+  hint.className = 'supmap-mode-hint';
+  hint.textContent = txt;
+  canvas.appendChild(hint);
+}
+
+// ── Mode B: Choropleth ──────────────────────────────────────────────
+async function _supmapRenderChoropleth(){
+  const L = window.L;
+  if (!L || !_supmapData || !_supmapLeaflet) return;
+  const fc = await _supmapLoadBoundary('lad');
+  if (!fc) return;
+
+  // Sum £ per LAD24 code (using buyer.lad24_cd)
+  const gbpByLad = new Map();
+  for (const b of Object.values(_supmapData.buyers)) {
+    if (!b.lad24_cd || !b.total_gbp_2024) continue;
+    gbpByLad.set(b.lad24_cd, (gbpByLad.get(b.lad24_cd) || 0) + b.total_gbp_2024);
+  }
+  if (!gbpByLad.size) return;
+
+  // Quantile breaks (jenks would be better but expensive; use log-quantiles)
+  const values = [...gbpByLad.values()].sort((a, b) => a - b);
+  const breaks = [];
+  for (let i = 1; i <= 6; i++) {
+    breaks.push(values[Math.floor(values.length * i / 7)]);
+  }
+  // Color scale (sequential, low→high): pale yellow → orange → deep red
+  const colors = ['#1a1f2e', '#3d2a3a', '#693640', '#a3413f', '#d44e3e', '#f0703a', '#ffa726'];
+  const colorFor = (v) => {
+    if (!v) return colors[0];
+    for (let i = 0; i < breaks.length; i++) {
+      if (v < breaks[i]) return colors[i];
+    }
+    return colors[colors.length - 1];
+  };
+
+  if (_supmapChoroplethLayer) _supmapLeaflet.removeLayer(_supmapChoroplethLayer);
+  _supmapChoroplethLayer = L.geoJSON(fc, {
+    style: (feature) => {
+      const code = feature.properties && (feature.properties.LAD24CD || feature.properties.code || feature.properties.id);
+      const v = gbpByLad.get(code) || 0;
+      return {
+        color: '#0a0e1a',
+        weight: 0.5,
+        fillColor: colorFor(v),
+        fillOpacity: v ? 0.65 : 0.25,
+      };
+    },
+    onEachFeature: (feature, layer) => {
+      const props = feature.properties || {};
+      const code = props.LAD24CD || props.code || props.id;
+      const name = props.LAD24NM || props.name || code || '?';
+      const v = gbpByLad.get(code) || 0;
+      const fmt = (val) => val >= 1e9 ? '£' + (val/1e9).toFixed(2) + 'B'
+                       : val >= 1e6 ? '£' + (val/1e6).toFixed(1) + 'M'
+                       : val >= 1e3 ? '£' + (val/1e3).toFixed(0) + 'k' : '£' + Math.round(val);
+      layer.bindTooltip(`<b>${name}</b><br>${v ? fmt(v) + ' procurement FY 2024' : 'No mapped procurement'}`, {
+        sticky: true, direction: 'auto',
+      });
+      layer.on('mouseover', () => layer.setStyle({ weight: 1.5, color: '#fff' }));
+      layer.on('mouseout', () => layer.setStyle({ weight: 0.5, color: '#0a0e1a' }));
+    },
+  });
+  _supmapChoroplethLayer.addTo(_supmapLeaflet);
+  _supmapChoroplethLayer.bringToBack();
+
+  // Render legend
+  _supmapRenderChoroplethLegend(breaks, colors);
+}
+
+function _supmapClearChoropleth(){
+  if (_supmapChoroplethLayer && _supmapLeaflet) {
+    _supmapLeaflet.removeLayer(_supmapChoroplethLayer);
+    _supmapChoroplethLayer = null;
+  }
+  const lg = document.querySelector('.supmap-choropleth-legend');
+  if (lg) lg.remove();
+}
+
+function _supmapRenderChoroplethLegend(breaks, colors){
+  const canvas = document.getElementById('supmap-canvas');
+  if (!canvas) return;
+  const fmt = (v) => v >= 1e9 ? '£' + (v/1e9).toFixed(1) + 'B'
+                  : v >= 1e6 ? '£' + (v/1e6).toFixed(0) + 'M'
+                  : v >= 1e3 ? '£' + (v/1e3).toFixed(0) + 'k' : '£' + Math.round(v);
+  const old = canvas.querySelector('.supmap-choropleth-legend');
+  if (old) old.remove();
+  const el = document.createElement('div');
+  el.className = 'supmap-choropleth-legend';
+  let html = '<div style="font-weight:600;font-size:11px;margin-bottom:5px">£ procurement FY 2024 by council area</div>';
+  for (let i = colors.length - 1; i >= 0; i--) {
+    const lo = i === 0 ? 0 : breaks[i-1];
+    const hi = i === colors.length - 1 ? '∞' : fmt(breaks[i]);
+    html += `<div class="supmap-choropleth-legend-row"><span class="supmap-choropleth-legend-swatch" style="background:${colors[i]}"></span>${i === 0 ? '< ' + fmt(breaks[0]) : (i === colors.length - 1 ? '> ' + fmt(breaks[i-1]) : fmt(lo) + ' – ' + hi)}</div>`;
+  }
+  el.innerHTML = html;
+  canvas.appendChild(el);
+}
+
+// ── Mode C: Flow lines ──────────────────────────────────────────────
+function _supmapRenderFlowFor(buyerId, subtle){
+  const L = window.L;
+  if (!L || !_supmapData || !_supmapLeaflet) return;
+  _supmapClearFlow();
+  const buyer = _supmapData.buyers[buyerId];
+  const flows = _supmapData.b2s[buyerId] || [];
+  if (!buyer || !buyer.lat || !buyer.lng || !flows.length) return;
+
+  // Top 10 by £
+  const topFlows = flows.slice().sort((a, b) => b.gbp - a.gbp).slice(0, 10);
+  const maxGbp = topFlows[0].gbp || 1;
+
+  const lines = [];
+  for (const f of topFlows) {
+    const s = _supmapData.suppliers[f.supplier_id];
+    if (!s || !s.lat || !s.lng) continue;
+    // Curved line via midpoint offset
+    const points = _supmapCurvedLine([buyer.lat, buyer.lng], [s.lat, s.lng]);
+    const ratio = f.gbp / maxGbp;
+    const weight = subtle ? Math.max(0.5, 0.5 + ratio * 1.5) : Math.max(1.5, 2 + ratio * 5);
+    const opacity = subtle ? 0.3 : 0.85;
+    const line = L.polyline(points, {
+      color: '#ffb84f',
+      weight,
+      opacity,
+      smoothFactor: 1.0,
+      lineCap: 'round',
+    });
+    line.bindTooltip(`<b>${_cmpEsc(s.name)}</b><br>£${(f.gbp/1e6).toFixed(1)}M · ${f.n_contracts} contract${f.n_contracts>1?'s':''}`, { sticky: true });
+    line.on('click', (e) => {
+      window.L.DomEvent.stopPropagation(e);
+      _supmapFocusSupplier(f.supplier_id);
+    });
+    lines.push(line);
+    // Endpoint marker
+    const m = L.circleMarker([s.lat, s.lng], {
+      radius: subtle ? 3 : 5 + ratio * 5,
+      fillColor: '#ffb84f', color: '#fff', weight: 0.8, fillOpacity: 0.9,
+    });
+    m.bindTooltip(_cmpEsc(s.name), { permanent: false, direction: 'top' });
+    lines.push(m);
+  }
+  _supmapFlowLayer = L.layerGroup(lines).addTo(_supmapLeaflet);
+}
+
+// Quadratic-bezier-ish curve: pull midpoint perpendicular by a fraction of distance
+function _supmapCurvedLine(a, b, segments = 32) {
+  const [lat1, lng1] = a, [lat2, lng2] = b;
+  const dx = lng2 - lng1, dy = lat2 - lat1;
+  const dist = Math.sqrt(dx*dx + dy*dy);
+  if (dist === 0) return [a, b];
+  // Offset perpendicular: rotate (dx,dy) by 90° → (-dy, dx); scale by 0.18
+  const offX = -dy * 0.18;
+  const offY = dx * 0.18;
+  const cx = (lng1 + lng2) / 2 + offX;
+  const cy = (lat1 + lat2) / 2 + offY;
+  const out = [];
+  for (let i = 0; i <= segments; i++) {
+    const t = i / segments;
+    // Quadratic Bezier: (1-t)²·P0 + 2(1-t)t·C + t²·P1
+    const omt = 1 - t;
+    const lat = omt*omt*lat1 + 2*omt*t*cy + t*t*lat2;
+    const lng = omt*omt*lng1 + 2*omt*t*cx + t*t*lng2;
+    out.push([lat, lng]);
+  }
+  return out;
+}
+
+function _supmapClearFlow(){
+  if (_supmapFlowLayer && _supmapLeaflet) {
+    _supmapLeaflet.removeLayer(_supmapFlowLayer);
+    _supmapFlowLayer = null;
+  }
+}
+
 // Back from "selected buyer" view to the filtered buyer list
 function _supmapBackToList(){
   _supmapSelectedBuyer = null;
@@ -20326,7 +20650,9 @@ function _supmapBackToList(){
     _supmapLeaflet.removeLayer(_supmapSuppliersLayer);
     _supmapSuppliersLayer = null;
   }
+  _supmapClearFlow();
   _supmapRenderBuyerList();
+  _supmapRenderModeHint();
   // Fit bounds back to whole UK
   _supmapLeaflet.setView([54.0, -2.3], 6, { animate: true });
 }
