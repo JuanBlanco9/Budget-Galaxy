@@ -1377,8 +1377,8 @@ tr:hover .suprank-arrow{opacity:1;}
   <div class="tab" data-tab="insights" onclick="showTab('insights',this)">💡 Insights</div>
   <div class="tab" data-tab="taxpayer" onclick="showTab('taxpayer',this)">💰 Your Taxes</div>
   <div class="tab active" data-tab="galaxy" onclick="showTab('galaxy',this)">🌌 Budget Galaxy</div>
-  <div class="tab" data-tab="explore" onclick="showTab('explore',this)">📊 Explore &amp; Compare</div>
-  <div class="tab" data-tab="suppliers" onclick="showTab('suppliers',this)">🏢 Budget Recipients</div>
+  <div class="tab" data-tab="explore" onclick="showTab('explore',this)" title="What UK gov spends on, line by line">📊 Programmes</div>
+  <div class="tab" data-tab="suppliers" onclick="showTab('suppliers',this)" title="Who receives every £ — buyers, suppliers, UBO">🏢 Recipients</div>
   <div class="tab" data-tab="about" onclick="showTab('about',this)">About</div>
   <!-- 'Multiverse' view is reachable via the 🌐 ALL button in the country switcher.
        Kept here (hidden) so internal showTab routing and deep-links still work. -->
@@ -1760,6 +1760,84 @@ mark{background:rgba(79,195,247,.3);color:var(--text,#e8ebf5);padding:0 2px;bord
   margin:14px 0;padding:14px 16px;
   background:linear-gradient(180deg,rgba(79,195,247,.04),rgba(0,0,0,.12));
   border:1px solid rgba(79,195,247,.18);border-radius:7px;
+}
+
+/* Cross-nav: Recipients card inside Explore detail panel */
+.detail-cross-recipients{
+  margin:14px 0;padding:14px 16px;
+  background:linear-gradient(180deg,rgba(74,222,128,.04),rgba(0,0,0,.12));
+  border:1px solid rgba(74,222,128,.18);border-radius:7px;
+}
+.detail-cross-header{
+  display:flex;justify-content:space-between;align-items:center;
+  margin-bottom:6px;
+}
+.detail-cross-title{
+  font-size:10.5px;color:#86efac;text-transform:uppercase;letter-spacing:.06em;
+  font-weight:600;
+}
+.detail-cross-sub{
+  text-transform:none;letter-spacing:0;color:var(--dim);font-weight:400;
+  font-size:10px;margin-left:4px;
+}
+.detail-cross-link{
+  font-size:11px;color:var(--accent);text-decoration:none;font-weight:500;
+}
+.detail-cross-link:hover{ text-decoration:underline; }
+.detail-cross-meta{
+  font-size:11px;color:var(--dim);margin-bottom:10px;line-height:1.5;
+}
+.detail-cross-list{
+  display:flex;flex-direction:column;gap:3px;margin-bottom:10px;
+}
+.cross-recip-line{
+  display:grid;grid-template-columns:1fr auto auto;gap:12px;align-items:center;
+  padding:6px 8px;background:rgba(0,0,0,.18);border-radius:4px;
+  font-size:11.5px;
+}
+.cross-recip-name{
+  color:var(--text);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+}
+.cross-recip-amt{
+  color:#86efac;font-weight:600;font-variant-numeric:tabular-nums;
+}
+.cross-recip-count{
+  color:var(--dim);font-size:10.5px;font-variant-numeric:tabular-nums;
+  white-space:nowrap;
+}
+.detail-cross-note{
+  font-size:10.5px;color:var(--dim);font-style:italic;line-height:1.5;
+  padding-top:8px;border-top:1px dashed rgba(255,255,255,.06);
+}
+
+/* Cross-nav: Programmes feeding card inside Recipients supplier detail */
+.sd-cross-programmes{
+  background:linear-gradient(180deg,rgba(79,195,247,.04),rgba(0,0,0,.12));
+  border:1px solid rgba(79,195,247,.18);
+}
+.sd-cross-prog-line{
+  display:grid;grid-template-columns:auto 1fr auto;gap:10px;align-items:center;
+  padding:7px 10px;background:rgba(0,0,0,.18);border-radius:4px;font-size:11.5px;
+  cursor:pointer;transition:background .1s;
+}
+.sd-cross-prog-line:hover{ background:rgba(79,195,247,.08); }
+.sd-cross-prog-icon{ color:var(--accent);font-size:12px; }
+.sd-cross-prog-name{
+  color:var(--text);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+}
+.sd-cross-prog-amt{
+  color:var(--accent);font-weight:600;font-variant-numeric:tabular-nums;
+}
+
+/* Cross-nav: clickeable composition lines in Recipients buyer detail */
+.sup-buyer-comp-line.cross-clickeable{
+  cursor:pointer;transition:background .1s;
+}
+.sup-buyer-comp-line.cross-clickeable:hover{
+  background:rgba(79,195,247,.08) !important;
+}
+.sup-buyer-comp-line.cross-clickeable .line-arrow{
+  color:var(--accent);font-size:11px;margin-left:4px;
 }
 .detail-enrich-title{
   font-size:10.5px;color:var(--accent);text-transform:uppercase;letter-spacing:.06em;
@@ -14342,6 +14420,8 @@ async function _cmplistLoadTree(col){
     const r = await fetch(url);
     s.root = await r.json();
     window._cmplistCache[cacheKey] = s.root;
+    // Expose UK tree globally so cross-nav (Recipients → Programmes) can use it
+    if (s.country === 'uk') window._uk_tree_root = s.root;
   } catch(e) {
     console.warn('cmplist fetch failed', col, e);
     s.root = null;
@@ -16008,6 +16088,45 @@ function _cmplistRenderDetail(){
     }
   }
 
+  // Cross-nav: Recipients of this £ — link from Programmes (Explore) to
+  // Recipients tab. Shows top commercial suppliers receiving £ from this
+  // programme's parent department, with a deep link.
+  let recipientsHtml = '';
+  if (s.country === 'uk' && path.length > 0) {
+    // Use the L1 dept ancestor (top-level child under root) as the buyer key
+    const topLevelName = (s.root.children||[])[path[0]]?.name;
+    if (topLevelName) {
+      // Lazy-load map data if not present (the user might be on Explore without
+      // having visited Recipients yet). Render skeleton synchronously; if data
+      // arrives after, a re-render will fill it in.
+      if (typeof _supListEnsureMapData === 'function') _supListEnsureMapData();
+      const dep = _crossBuyersForDeptName(topLevelName);
+      if (dep && dep.top_suppliers.length > 0) {
+        const fmt = (v) => v >= 1e9 ? '£' + (v/1e9).toFixed(2) + 'B'
+                       : v >= 1e6 ? '£' + (v/1e6).toFixed(1) + 'M'
+                       : v >= 1e3 ? '£' + (v/1e3).toFixed(0) + 'k' : '£' + Math.round(v);
+        const supLines = dep.top_suppliers.slice(0, 6).map(s => {
+          const name = (s.supplier.name || '?').slice(0, 60);
+          return `<div class="cross-recip-line">
+            <span class="cross-recip-name">${_cmpEsc(name)}</span>
+            <span class="cross-recip-amt">${fmt(s.gbp)}</span>
+            <span class="cross-recip-count">${s.n} contract${s.n>1?'s':''}</span>
+          </div>`;
+        }).join('');
+        const openHandler = `_crossOpenRecipients('${_cmpEsc(dep.primary_buyer_id)}')`;
+        recipientsHtml = `<div class="detail-cross-recipients">
+          <div class="detail-cross-header">
+            <span class="detail-cross-title">Recipients of this £ <span class="detail-cross-sub">commercial procurement only</span></span>
+            <a class="detail-cross-link" href="#" onclick="event.preventDefault();${openHandler}">Open in Recipients →</a>
+          </div>
+          <div class="detail-cross-meta">${_cmpEsc(_cmplistPrettyName(topLevelName))} · ${dep.n_buyers_in_dept} buyer${dep.n_buyers_in_dept>1?'s':''} · ${fmt(dep.total_gbp_2024)} total spend · ${dep.total_contracts.toLocaleString()} contracts FY 2024</div>
+          <div class="detail-cross-list">${supLines}</div>
+          <div class="detail-cross-note">↑ These are the top commercial suppliers paid by ${_cmpEsc(_cmplistPrettyName(topLevelName))} (any line). To see the procurement breakdown for this specific programme line, click "Open in Recipients →" above.</div>
+        </div>`;
+      }
+    }
+  }
+
   // Source attribution — always on, every depth
   const attrib = s.country === 'uk'
     ? _cmplistResolveSource(node, path, s.root)
@@ -16028,6 +16147,7 @@ function _cmplistRenderDetail(){
     </div>
     ${explainerHtml}
     ${enrichmentHtml}
+    ${recipientsHtml}
     ${compareHtml}
     ${trustHtml}
     ${sparkHtml}
@@ -17765,6 +17885,129 @@ function _supBuyerBreakdown(buyerId, breakdowns){
   return best;
 }
 
+// ── Cross-nav helpers (Programmes ↔ Recipients bidirectional links) ──
+
+// Slugify a department name to match buyer_id prefixes
+//   "DEPARTMENT FOR WORK AND PENSIONS" → "department-for-work-and-pensions"
+function _crossSlug(name){
+  if (!name) return '';
+  return String(name).toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-|-$/g, '');
+}
+
+// Given a department-level name (e.g. ancestor of a programme node in Explore),
+// find all buyer_ids in the procurement data that start with that slug. Returns
+// aggregated info: total £, n_buyers (postcode-distinct), top suppliers.
+function _crossBuyersForDeptName(deptName){
+  if (!deptName || !window._supListMapData) return null;
+  const slug = _crossSlug(deptName);
+  if (!slug) return null;
+  const { buyers, b2s, suppliers } = window._supListMapData;
+  const matchedBuyerIds = [];
+  for (const bid of Object.keys(buyers)) {
+    if (bid === slug || bid.startsWith(slug + '__')) {
+      matchedBuyerIds.push(bid);
+    }
+  }
+  if (!matchedBuyerIds.length) return null;
+  // Aggregate
+  let totalGbp = 0, totalContracts = 0;
+  const supplierFlows = new Map(); // supplier_id → {gbp, n}
+  for (const bid of matchedBuyerIds) {
+    const b = buyers[bid];
+    totalGbp += b.total_gbp_2024 || 0;
+    totalContracts += b.n_contracts || 0;
+    for (const f of (b2s[bid] || [])) {
+      const cur = supplierFlows.get(f.supplier_id) || { gbp: 0, n: 0 };
+      cur.gbp += f.gbp || 0;
+      cur.n += f.n_contracts || 0;
+      supplierFlows.set(f.supplier_id, cur);
+    }
+  }
+  // Top suppliers across all dept buyers
+  const topSuppliers = [...supplierFlows.entries()]
+    .map(([sid, v]) => ({ supplier_id: sid, ...v, supplier: suppliers[sid] }))
+    .filter(s => s.supplier)
+    .sort((a, b) => b.gbp - a.gbp)
+    .slice(0, 8);
+  return {
+    deptName,
+    deptSlug: slug,
+    n_buyers_in_dept: matchedBuyerIds.length,
+    primary_buyer_id: matchedBuyerIds[0],  // for "open in Recipients" deep link
+    total_gbp_2024: totalGbp,
+    total_contracts: totalContracts,
+    top_suppliers: topSuppliers,
+  };
+}
+
+// Given a buyer_id (Recipients side), find the matching programme node in
+// Explore tree. Walks the budget tree and matches by name slug.
+// Returns: { topLevelName, treePath } or null.
+function _crossProgrammeForBuyerId(buyerId){
+  if (!buyerId || !window._uk_tree_root) return null;
+  const slug = buyerId.split('__')[0];
+  // Walk top-level dept children for a slug match
+  const root = window._uk_tree_root;
+  for (let i = 0; i < (root.children || []).length; i++) {
+    const child = root.children[i];
+    if (_crossSlug(child.name) === slug || _crossSlug(child.name).startsWith(slug)) {
+      return { topLevelName: child.name, treePath: [i] };
+    }
+  }
+  return null;
+}
+
+// Switch to Explore tab and select a node by its top-level child index path.
+// (Wraps location.hash + showTab + _cmplistSelectPath in a single click handler.)
+function _crossOpenExplore(treePathStr){
+  const path = treePathStr.split(',').filter(s => s !== '').map(Number);
+  if (typeof showTab === 'function') showTab('explore', null);
+  setTimeout(() => {
+    if (typeof _cmplistSelectPath === 'function') _cmplistSelectPath(path);
+  }, 100);
+}
+
+// Find a programme sub-line in the budget tree by dept name + sub-line name.
+// Returns a treePath array (indices into root.children → child.children → ...)
+// that _cmplistSelectPath can consume, or null if not found.
+function _crossFindProgrammeNode(deptDisplay, subLineName){
+  if (!deptDisplay || !subLineName || !window._uk_tree_root) return null;
+  const root = window._uk_tree_root;
+  const deptSlug = _crossSlug(deptDisplay);
+  // Find dept index
+  let deptIdx = -1, deptNode = null;
+  for (let i = 0; i < (root.children || []).length; i++) {
+    const c = root.children[i];
+    if (_crossSlug(c.name).startsWith(deptSlug) || deptSlug.startsWith(_crossSlug(c.name))) {
+      deptIdx = i; deptNode = c; break;
+    }
+  }
+  if (deptIdx < 0) return null;
+  // Walk dept children for sub-line name match
+  const norm = (s) => String(s||'').toLowerCase().trim();
+  const target = norm(subLineName);
+  for (let i = 0; i < (deptNode.children || []).length; i++) {
+    const c = deptNode.children[i];
+    if (norm(c.name) === target || norm(c.name).startsWith(target.slice(0, 30))) {
+      return [deptIdx, i];
+    }
+  }
+  // No match — return path to dept itself (so user lands somewhere relevant)
+  return [deptIdx];
+}
+
+// Switch to Recipients tab + open a buyer in detail panel.
+function _crossOpenRecipients(buyerId, type){
+  if (typeof showTab === 'function') showTab('suppliers', null);
+  setTimeout(() => {
+    // Set type filter if provided (so the buyer list shows the right pill active)
+    if (type && typeof _supSetTypeFilter === 'function') _supSetTypeFilter(type);
+    if (typeof _supSelectBuyer === 'function') _supSelectBuyer(buyerId);
+  }, 200);
+}
+
 // Hierarchical render: filter pill (non-all) → list buyers of that type → click buyer = expand to suppliers
 async function _supRenderHierarchical(type, query){
   const rows = document.getElementById('suppliers-rows');
@@ -18037,11 +18280,21 @@ async function _supSelectBuyer(buyerId){
         ${breakdown.procurement_pct > 0 ? `<span><span class="dot dot-procurement"></span> ${fmt(breakdown.procurement_total)} commercial procurement</span>` : ''}
       </div>
       ${lines.length ? `<div class="sup-buyer-comp-lines">
-        ${lines.map(l => `<div class="sup-buyer-comp-line sup-buyer-comp-line-${l.kind}">
-          <span class="kind-tag kind-tag-${l.kind}">${kindLabel(l.kind)}</span>
-          <span class="line-name">${_supEscapeHtml(l.name)}</span>
-          <span class="line-amt">${fmt(l.value)}</span>
-        </div>`).join('')}
+        ${lines.map(l => {
+          // Cross-nav: try to find this sub-line in the budget tree under the
+          // matched dept. If found, the line is clickeable and switches to
+          // Programmes (Explore) tab focused on that node.
+          const treePath = _crossFindProgrammeNode(breakdown.name || breakdown.slug, l.name);
+          const click = treePath ? `onclick="_crossOpenExplore('${treePath.join(',')}')"` : '';
+          const cls = treePath ? 'cross-clickeable' : '';
+          const arrow = treePath ? '<span class="line-arrow">→</span>' : '';
+          return `<div class="sup-buyer-comp-line sup-buyer-comp-line-${l.kind} ${cls}" ${click} title="${treePath ? 'Click to open in Programmes tab' : ''}">
+            <span class="kind-tag kind-tag-${l.kind}">${kindLabel(l.kind)}</span>
+            <span class="line-name">${_supEscapeHtml(l.name)}</span>
+            <span class="line-amt">${fmt(l.value)}</span>
+            ${arrow}
+          </div>`;
+        }).join('')}
       </div>` : ''}
       ${(breakdown.transfer_pct + breakdown.grant_pct) >= 50 ? `<div class="sup-buyer-comp-note">The supplier list below is the commercial procurement portion only. Transfers (citizens) and grants (public bodies) are tracked in the Budget Tree under their own programme lines.</div>` : ''}
     </div></div>`;
@@ -18637,6 +18890,52 @@ function _supRenderDetailV2(p){
       </div>
       <div style="color:var(--dim);font-size:11px;margin-top:8px">${done}/${tot} stages complete · v2 bulk schema from Companies House BCD${cp.api_date?' + CH API ('+_supEscapeHtml(cp.api_date.substring(0,10))+')':''}</div>
     </div>`;
+  }
+
+  // Cross-nav: Programmes feeding this supplier — top buyer departments
+  // mapped back to programme nodes in the budget tree.
+  if (window._supListMapData && p.company_number) {
+    const flows = window._supListMapData.s2b ? window._supListMapData.s2b[p.company_number] : null;
+    if (flows && flows.length > 0) {
+      const buyers = window._supListMapData.buyers || {};
+      // Aggregate flows by dept-prefix slug
+      const byDept = new Map();
+      for (const f of flows) {
+        const b = buyers[f.buyer_id];
+        if (!b) continue;
+        const deptSlug = (f.buyer_id.split('__')[0]) || 'unknown';
+        const cur = byDept.get(deptSlug) || { gbp: 0, buyer_id: f.buyer_id, dept_name: b.name, n: 0 };
+        cur.gbp += f.gbp || 0;
+        cur.n += f.n_contracts || 0;
+        // Prefer the cleanest (shortest) buyer name for display
+        if ((b.name || '').length < (cur.dept_name || '').length) {
+          cur.dept_name = b.name;
+          cur.buyer_id = f.buyer_id;
+        }
+        byDept.set(deptSlug, cur);
+      }
+      const topDepts = [...byDept.values()].sort((a,b) => b.gbp - a.gbp).slice(0, 6);
+      if (topDepts.length > 0) {
+        const fmt = v => v >= 1e9 ? '£' + (v/1e9).toFixed(2) + 'B'
+                     : v >= 1e6 ? '£' + (v/1e6).toFixed(1) + 'M'
+                     : v >= 1e3 ? '£' + (v/1e3).toFixed(0) + 'k' : '£' + Math.round(v);
+        h += `<div class="sd-card full sd-cross-programmes"><h3>Programmes feeding this supplier</h3>
+          <div style="font-size:11px;color:var(--dim);margin-bottom:10px;line-height:1.5">
+            Top departments paying ${_supEscapeHtml(p.display_name || p.company_number)} in FY 2024. Click any line to see the programme tree on the Programmes tab.
+          </div>
+          <div style="display:flex;flex-direction:column;gap:4px">`;
+        for (const d of topDepts) {
+          const treePath = _crossProgrammeForBuyerId(d.buyer_id);
+          const click = treePath ? `onclick="_crossOpenExplore('${treePath.treePath.join(',')}')"` : '';
+          h += `<div class="sd-cross-prog-line" ${click}>
+            <span class="sd-cross-prog-icon">${treePath ? '↗' : '·'}</span>
+            <span class="sd-cross-prog-name">${_supEscapeHtml(d.dept_name)}</span>
+            <span class="sd-cross-prog-amt">${fmt(d.gbp)} · ${d.n} contract${d.n>1?'s':''}</span>
+          </div>`;
+        }
+        h += `</div></div>`;
+      }
+    }
   }
 
   // Sources
