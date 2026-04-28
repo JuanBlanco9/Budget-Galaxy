@@ -55,13 +55,148 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T08:48:21Z",
+    "company_name": "STRAT-EDGY LLP",
+    "company_status": "active",
+    "date_of_creation": "2023-02-15",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-11-30",
+    "accounts_last_made_up": "2025-02-28",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-06"
+  },
+  "governance": {
+    "api_date": "2026-04-28T08:48:22Z",
+    "total_officers": 7,
+    "active_count": 6,
+    "resigned_count": 1,
+    "active_officers": [
+      {
+        "name": "ADDEDMILE LTD",
+        "role": "corporate-llp-designated-member",
+        "appointed_on": "2024-02-21",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "ANCAREY CONSULTING LIMITED",
+        "role": "corporate-llp-designated-member",
+        "appointed_on": "2023-02-15",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "ASXK LIMITED",
+        "role": "corporate-llp-designated-member",
+        "appointed_on": "2023-02-15",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "CLAIRE PENNY CONSULTING LTD",
+        "role": "corporate-llp-designated-member",
+        "appointed_on": "2025-03-19",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "FINSEN CONSULTING LTD",
+        "role": "corporate-llp-designated-member",
+        "appointed_on": "2024-04-22",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "RALL LTD",
+        "role": "corporate-llp-designated-member",
+        "appointed_on": "2023-09-14",
+        "country_of_residence": null,
+        "nationality": null
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T08:48:23Z",
+    "total_results": 3,
+    "active_count": 3,
+    "items": [
+      {
+        "name": "Rall Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control-limited-liability-partnership"
+        ],
+        "notified_on": "2023-09-14",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "United Kingdom",
+          "country_registered": "United Kingdom",
+          "place_registered": "United Kingdom",
+          "registration_number": "12511697"
+        }
+      },
+      {
+        "name": "Ancarey Consulting Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control-limited-liability-partnership"
+        ],
+        "notified_on": "2023-02-15",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "United Kingdom",
+          "country_registered": "United Kingdom",
+          "place_registered": "United Kingdom",
+          "registration_number": "14601347"
+        }
+      },
+      {
+        "name": "Asxk Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control-limited-liability-partnership"
+        ],
+        "notified_on": "2023-02-15",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "United Kingdom",
+          "country_registered": "United Kingdom",
+          "place_registered": "United Kingdom",
+          "registration_number": "10933075"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4NzY5NDg1MWFkaXF6a2N4",
+    "date": "2025-11-07",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/v85tlQgOA95BMWagNbPUD5BFTjx3eQEyDGWphEsj4GU/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/OC445838/filing-history/MzQ4NzY5NDg1MWFkaXF6a2N4"
   }
 }

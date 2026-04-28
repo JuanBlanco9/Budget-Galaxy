@@ -63,13 +63,135 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T21:20:00Z",
+    "company_name": "DRIVE",
+    "company_status": "active",
+    "date_of_creation": "1990-05-29",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-20"
+  },
+  "governance": {
+    "api_date": "2026-04-27T21:20:02Z",
+    "total_officers": 37,
+    "active_count": 12,
+    "resigned_count": 25,
+    "active_officers": [
+      {
+        "name": "JONES, Rhian",
+        "role": "secretary",
+        "appointed_on": "2018-09-03",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "CHAPMAN, Elizabeth",
+        "role": "director",
+        "appointed_on": "2025-10-15",
+        "country_of_residence": "Wales",
+        "nationality": "British"
+      },
+      {
+        "name": "CHERRETT, Karen Elizabeth",
+        "role": "director",
+        "appointed_on": "2021-05-18",
+        "country_of_residence": "Wales",
+        "nationality": "British"
+      },
+      {
+        "name": "JONES, Hannah Desanka",
+        "role": "director",
+        "appointed_on": "2026-03-24",
+        "country_of_residence": "Wales",
+        "nationality": "British"
+      },
+      {
+        "name": "KUROWSKI, Katrina",
+        "role": "director",
+        "appointed_on": "2016-10-04",
+        "country_of_residence": "Wales",
+        "nationality": "British"
+      },
+      {
+        "name": "NICHOLLS, Lisa",
+        "role": "director",
+        "appointed_on": "2025-10-15",
+        "country_of_residence": "Wales",
+        "nationality": "British"
+      },
+      {
+        "name": "ROBINSON, Rhian",
+        "role": "director",
+        "appointed_on": "2023-11-28",
+        "country_of_residence": "Wales",
+        "nationality": "British"
+      },
+      {
+        "name": "SNEDDON, Stuart",
+        "role": "director",
+        "appointed_on": "2025-10-15",
+        "country_of_residence": "Wales",
+        "nationality": "British"
+      },
+      {
+        "name": "TEE, Maria Frances",
+        "role": "director",
+        "appointed_on": "2026-03-24",
+        "country_of_residence": "Wales",
+        "nationality": "British"
+      },
+      {
+        "name": "TROOTE, Richard John",
+        "role": "director",
+        "appointed_on": "2019-10-15",
+        "country_of_residence": "Wales",
+        "nationality": "British"
+      },
+      {
+        "name": "WU, Tzu-Hsin",
+        "role": "director",
+        "appointed_on": "2025-10-15",
+        "country_of_residence": "Wales",
+        "nationality": "Chinese"
+      },
+      {
+        "name": "WYATT, Paul",
+        "role": "director",
+        "appointed_on": "2023-11-28",
+        "country_of_residence": "Wales",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T21:20:04Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MzU2NzMxOWFkaXF6a2N4",
+    "date": "2025-12-12",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/vRUV5m3K4wErsZEdVSr7RT41YMKpcVgSBCC1hJQJoM8/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02506147/filing-history/MzQ5MzU2NzMxOWFkaXF6a2N4"
   }
 }

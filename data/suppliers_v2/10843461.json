@@ -68,14 +68,101 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.5256,
     "council": 0.4744
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T15:06:46Z",
+    "company_name": "MY HOLDINGS GROUP LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2017-06-30",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-06-28",
+    "accounts_last_made_up": "2024-09-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-18"
+  },
+  "governance": {
+    "api_date": "2026-04-28T15:06:47Z",
+    "total_officers": 3,
+    "active_count": 2,
+    "resigned_count": 1,
+    "active_officers": [
+      {
+        "name": "PAK, Yasin",
+        "role": "director",
+        "appointed_on": "2025-03-28",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "TAL, Yoav",
+        "role": "director",
+        "appointed_on": "2017-06-30",
+        "country_of_residence": "United Kingdom",
+        "nationality": "Israeli"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T15:06:48Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Emwhy Int Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2023-12-22",
+        "identification": {
+          "legal_form": "Limited",
+          "legal_authority": "English",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "15301682"
+        }
+      },
+      {
+        "name": "Mr Yoav Tal",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Israeli",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2017-06-30",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NDMzODkyMWFkaXF6a2N4",
+    "date": "2025-07-18",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/FdHuFC4yTQb6QkZ114yaph_VLB0f0JuHBnunJiAi2LY/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/10843461/filing-history/MzQ3NDMzODkyMWFkaXF6a2N4"
   }
 }

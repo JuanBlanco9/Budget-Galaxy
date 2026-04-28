@@ -64,13 +64,107 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T11:37:45Z",
+    "company_name": "THE AGENCY OF SOMEONE LTD",
+    "company_status": "active",
+    "date_of_creation": "2006-01-31",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-21"
+  },
+  "governance": {
+    "api_date": "2026-04-28T11:37:46Z",
+    "total_officers": 11,
+    "active_count": 5,
+    "resigned_count": 6,
+    "active_officers": [
+      {
+        "name": "COLEMAN, Adrian Michael",
+        "role": "director",
+        "appointed_on": "2008-08-27",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HOLT, Gary Stephen",
+        "role": "director",
+        "appointed_on": "2008-08-27",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LAW, David Andrew",
+        "role": "director",
+        "appointed_on": "2006-04-18",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MANCHIPP, Simon Benjamin",
+        "role": "director",
+        "appointed_on": "2006-04-18",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "VALLANCE, Charles Alexander Bester",
+        "role": "director",
+        "appointed_on": "2020-02-27",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T11:37:47Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Vccp Overseas Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2020-02-27",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "The Law Of England And Wales",
+          "country_registered": "United Kingdom",
+          "place_registered": "Register Of Companies For England And Wales",
+          "registration_number": "08268313"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MjY4MTgyMWFkaXF6a2N4",
+    "date": "2025-09-25",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-audit-exemption-subsiduary",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/PahILKNWxroHPwlIaOVcT_aV--MNilq9m3Ql7R_99f8/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/05692107/filing-history/MzQ4MjY4MTgyMWFkaXF6a2N4"
   }
 }

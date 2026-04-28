@@ -59,13 +59,50 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
     "central_govt": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T20:23:44Z",
+    "company_name": "REACTION ENGINES LIMITED",
+    "company_status": "administration",
+    "date_of_creation": "1989-08-15",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": true,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": true,
+    "accounts_next_due": "2024-12-31",
+    "accounts_last_made_up": "2022-12-31",
+    "confirmation_statement_overdue": true,
+    "confirmation_statement_next_due": "2025-01-14"
+  },
+  "governance": {
+    "api_date": "2026-04-27T20:23:45Z",
+    "total_officers": 31,
+    "active_count": 0,
+    "resigned_count": 31,
+    "active_officers": []
+  },
+  "pscs": {
+    "api_date": "2026-04-27T20:23:47Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQwMzMxMzk0OWFkaXF6a2N4",
+    "date": "2023-12-17",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/_kIB29mnsoez4zXSPpo52xMVFqV9hMMsiSSuCY3G2yk/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02413577/filing-history/MzQwMzMxMzk0OWFkaXF6a2N4"
   }
 }

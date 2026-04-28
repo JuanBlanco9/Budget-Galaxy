@@ -60,13 +60,288 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T00:39:44Z",
+    "company_name": "FEILDEN CLEGG BRADLEY STUDIOS LLP",
+    "company_status": "active",
+    "date_of_creation": "2001-12-17",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-30",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-24"
+  },
+  "governance": {
+    "api_date": "2026-04-28T00:39:46Z",
+    "total_officers": 52,
+    "active_count": 20,
+    "resigned_count": 32,
+    "active_officers": [
+      {
+        "name": "BRADLEY, Keith John",
+        "role": "llp-designated-member",
+        "appointed_on": "2001-12-17",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "GROHMANN, Sara",
+        "role": "llp-designated-member",
+        "appointed_on": "2008-04-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "STANSFIELD, David John",
+        "role": "llp-designated-member",
+        "appointed_on": "2002-01-14",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "THEOBALD, Andrew Michael",
+        "role": "llp-designated-member",
+        "appointed_on": "2002-01-14",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "WHITBREAD, Alexander Maurice Henry",
+        "role": "llp-designated-member",
+        "appointed_on": "2007-04-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "ALLEN, Christopher Sean",
+        "role": "llp-member",
+        "appointed_on": "2023-05-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "APPEL, David",
+        "role": "llp-member",
+        "appointed_on": "2005-01-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "CHILDS, Felicia Ruth Suzanna",
+        "role": "llp-member",
+        "appointed_on": "2019-04-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "CLEGG, Peter Alexander",
+        "role": "llp-member",
+        "appointed_on": "2001-12-17",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "COBB, Colin John",
+        "role": "llp-member",
+        "appointed_on": "2022-04-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "COLLIS, Richard Graham",
+        "role": "llp-member",
+        "appointed_on": "2007-04-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "KEYS, Michael David",
+        "role": "llp-member",
+        "appointed_on": "2002-01-14",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "LAWS, Alice Ruth",
+        "role": "llp-member",
+        "appointed_on": "2023-05-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "MARRACK, Hugo William Tregarthen",
+        "role": "llp-member",
+        "appointed_on": "2013-04-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "NNACHETTA, Nkonyelu Chiamaka",
+        "role": "llp-member",
+        "appointed_on": "2023-05-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "RICH, Geoffrey John",
+        "role": "llp-member",
+        "appointed_on": "2002-01-14",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "ROTHNIE, Marcus Angus",
+        "role": "llp-member",
+        "appointed_on": "2023-05-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "SAYERS, Rachel Elizabeth",
+        "role": "llp-member",
+        "appointed_on": "2008-04-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "WHITE, Alina Jane",
+        "role": "llp-member",
+        "appointed_on": "2023-05-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "WILSON, Nicholas George",
+        "role": "llp-member",
+        "appointed_on": "2022-04-01",
+        "country_of_residence": "England",
+        "nationality": null
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T00:39:47Z",
+    "total_results": 8,
+    "active_count": 5,
+    "items": [
+      {
+        "name": "Mr Alexander Maurice Henry Whitbread",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control-limited-liability-partnership"
+        ],
+        "notified_on": "2026-01-01",
+        "identification": null
+      },
+      {
+        "name": "Mr Andrew Michael Theobald",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control-limited-liability-partnership"
+        ],
+        "notified_on": "2025-12-01",
+        "identification": null
+      },
+      {
+        "name": "Mr Geoffrey John Rich",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control-limited-liability-partnership"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Ian Edwards Taylor",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control-limited-liability-partnership"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Ms Marigold Jane Webster",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control-limited-liability-partnership"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Peter Alexander Clegg",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control-limited-liability-partnership"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Keith John Bradley",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control-limited-liability-partnership"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr David John Stansfield",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control-limited-liability-partnership"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4NzM2NzE4N2FkaXF6a2N4",
+    "date": "2025-11-04",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/73_vQc97tTXh5kH5gpBKbwVwifGz9iQX7UlS0bEZFSM/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/OC301169/filing-history/MzQ4NzM2NzE4N2FkaXF6a2N4"
   }
 }

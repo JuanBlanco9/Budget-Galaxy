@@ -59,13 +59,130 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T00:59:23Z",
+    "company_name": "ICF CONSULTING LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2000-05-16",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-05-21"
+  },
+  "governance": {
+    "api_date": "2026-04-28T00:59:25Z",
+    "total_officers": 20,
+    "active_count": 6,
+    "resigned_count": 14,
+    "active_officers": [
+      {
+        "name": "MARSHALL, Warren Charles",
+        "role": "secretary",
+        "appointed_on": "2019-10-01",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BROUGHTON SECRETARIES LIMITED",
+        "role": "corporate-secretary",
+        "appointed_on": "2021-04-23",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "JARVIS, Andrew",
+        "role": "director",
+        "appointed_on": "2019-10-15",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MARSHALL, Warren Charles",
+        "role": "director",
+        "appointed_on": "2015-09-23",
+        "country_of_residence": "United Kingdom",
+        "nationality": "Irish"
+      },
+      {
+        "name": "MORGAN, James Christopher Maxwell",
+        "role": "director",
+        "appointed_on": "2021-06-28",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      },
+      {
+        "name": "SCHAEFER, Tobias",
+        "role": "director",
+        "appointed_on": "2021-06-28",
+        "country_of_residence": "Germany",
+        "nationality": "German"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T00:59:26Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Icf International, Inc.",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2022-05-17",
+        "identification": {
+          "legal_form": "Incorporated Company",
+          "legal_authority": "Delaware"
+        }
+      },
+      {
+        "name": "Icf Consulting Group Inc.",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "ownership-of-shares-75-to-100-percent-as-firm",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Incororated",
+          "legal_authority": "Delaware, U.S.A.",
+          "country_registered": "Delaware, Usa",
+          "place_registered": "Delaware Division Of Corporations",
+          "registration_number": "Ein 95-2565362"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MjkzNTMxOWFkaXF6a2N4",
+    "date": "2025-10-01",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/wI-hsZw6thzwkxoU51lqHavGzczwTEAoX_Fjx6m8H68/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03998136/filing-history/MzQ4MjkzNTMxOWFkaXF6a2N4"
   }
 }

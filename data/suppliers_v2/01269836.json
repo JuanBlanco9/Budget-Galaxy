@@ -64,14 +64,107 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.5954,
     "council": 0.4046
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T19:47:20Z",
+    "company_name": "WESSEX LIFT CO LTD",
+    "company_status": "active",
+    "date_of_creation": "1976-07-21",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-05-30"
+  },
+  "governance": {
+    "api_date": "2026-04-27T19:47:22Z",
+    "total_officers": 24,
+    "active_count": 4,
+    "resigned_count": 20,
+    "active_officers": [
+      {
+        "name": "IVINSON, Mark Christopher David",
+        "role": "secretary",
+        "appointed_on": "1998-10-26",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "BRENCHLEY, Christopher",
+        "role": "director",
+        "appointed_on": "2024-02-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CROMPTON, Sharon",
+        "role": "director",
+        "appointed_on": "2024-11-18",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "RATCLIFF, John Edward",
+        "role": "director",
+        "appointed_on": null,
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T19:47:24Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr John Ratcliff",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2016-06-01",
+        "identification": null
+      },
+      {
+        "name": "Mr John Edward Ratcliff",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors",
+          "right-to-appoint-and-remove-directors-as-trust",
+          "right-to-appoint-and-remove-directors-as-firm"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MzA0Nzc5OGFkaXF6a2N4",
+    "date": "2025-09-29",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-medium",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/ds4fsDpmIc5kGokmrwG3U3Az0xnluEoCv2ikRVTFgvQ/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01269836/filing-history/MzQ4MzA0Nzc5OGFkaXF6a2N4"
   }
 }

@@ -68,13 +68,143 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T14:27:26Z",
+    "company_name": "UK FARMCARE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2011-03-02",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-11-30",
+    "accounts_last_made_up": "2025-02-28",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-14"
+  },
+  "governance": {
+    "api_date": "2026-04-27T14:27:27Z",
+    "total_officers": 6,
+    "active_count": 4,
+    "resigned_count": 2,
+    "active_officers": [
+      {
+        "name": "BACCARI, Abdel Kerim",
+        "role": "director",
+        "appointed_on": "2023-12-07",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "BOWEN, Kate Elizabeth, Dr",
+        "role": "director",
+        "appointed_on": "2020-09-30",
+        "country_of_residence": "Wales",
+        "nationality": "British"
+      },
+      {
+        "name": "COLANTUONI, Francesca Marie Amelia",
+        "role": "director",
+        "appointed_on": "2023-12-07",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "STEWART, Victoria Leanne",
+        "role": "director",
+        "appointed_on": "2020-09-30",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T14:27:29Z",
+    "total_results": 4,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Uk Farmcare Bidco Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2023-12-07",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Companies House (England And Wales)",
+          "registration_number": "15317538"
+        }
+      },
+      {
+        "name": "Plant Group Investments Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2022-09-07",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "England And Wales",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "07537157"
+        }
+      },
+      {
+        "name": "Peter James Plant",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr James Gerard Allcock",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MTY4MjgxNWFkaXF6a2N4",
+    "date": "2025-12-02",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/VYaOR4IQDerTlLG696mrKq3H02fGprB5cSm-HGciU8U/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/07548570/filing-history/MzQ5MTY4MjgxNWFkaXF6a2N4"
   }
 }

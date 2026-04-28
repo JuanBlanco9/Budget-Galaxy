@@ -61,13 +61,154 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T23:02:02Z",
+    "company_name": "SELDEN RESEARCH LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1970-07-10",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-06-30",
+    "accounts_last_made_up": "2024-09-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-24"
+  },
+  "governance": {
+    "api_date": "2026-04-27T23:02:04Z",
+    "total_officers": 6,
+    "active_count": 5,
+    "resigned_count": 1,
+    "active_officers": [
+      {
+        "name": "WOODHEAD, Sandra Buchanan",
+        "role": "secretary",
+        "appointed_on": null,
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "WOODHEAD, David Alexander",
+        "role": "director",
+        "appointed_on": "1995-03-31",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "WOODHEAD, Mark Andrew",
+        "role": "director",
+        "appointed_on": "1995-03-31",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WOODHEAD, Peter Philip",
+        "role": "director",
+        "appointed_on": "1999-03-19",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "WOODHEAD, Sandra Buchanan",
+        "role": "director",
+        "appointed_on": null,
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T23:02:06Z",
+    "total_results": 5,
+    "active_count": 4,
+    "items": [
+      {
+        "name": "Mr Denis Edwin Woodhead",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Mark Andrew Woodhead",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors",
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Sandra Buchanan Woodhead",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Peter Philip Woodhead",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors",
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr David Alexander Woodhead",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors",
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MDc2NDgzMGFkaXF6a2N4",
+    "date": "2025-06-19",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/daLPs4YulFcV2K1bWOtP6HICPJqiXzzvoqv8IJjV08k/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/00984285/filing-history/MzQ3MDc2NDgzMGFkaXF6a2N4"
   }
 }

@@ -64,14 +64,123 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "nhs",
   "buyer_type_breakdown": {
     "nhs": 0.764,
     "other": 0.236
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T03:05:56Z",
+    "company_name": "DIXON MECHANICAL SERVICES LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2007-12-21",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-28"
+  },
+  "governance": {
+    "api_date": "2026-04-28T03:05:58Z",
+    "total_officers": 9,
+    "active_count": 4,
+    "resigned_count": 5,
+    "active_officers": [
+      {
+        "name": "DIXON, Charlotte",
+        "role": "secretary",
+        "appointed_on": "2014-12-31",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "DIXON, Charlotte",
+        "role": "director",
+        "appointed_on": "2014-12-31",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "DIXON, Christine",
+        "role": "director",
+        "appointed_on": "2017-10-18",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "NOTLEY, Darren",
+        "role": "director",
+        "appointed_on": "2014-12-31",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T03:05:59Z",
+    "total_results": 3,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Mrs Christine Dixon",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2017-10-01",
+        "identification": null
+      },
+      {
+        "name": "Miss Charlotte Dixon",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2017-10-01",
+        "identification": null
+      },
+      {
+        "name": "Mr David Dixon",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MzE2NDcwOWFkaXF6a2N4",
+    "date": "2025-09-30",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/z5bWg18-HBQ92Dd9aFdFq956vbHmkFpL8-vmQPD7L28/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/06459486/filing-history/MzQ4MzE2NDcwOWFkaXF6a2N4"
   }
 }

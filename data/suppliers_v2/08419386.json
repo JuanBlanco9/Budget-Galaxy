@@ -61,11 +61,70 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
-  "buyer_type_breakdown": {}
+  "buyer_type_breakdown": {},
+  "ch_profile": {
+    "api_date": "2026-04-28T14:41:16Z",
+    "company_name": "AMY'S HOUSE",
+    "company_status": "active",
+    "date_of_creation": "2013-02-26",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-22"
+  },
+  "governance": {
+    "api_date": "2026-04-28T14:41:17Z",
+    "total_officers": 13,
+    "active_count": 3,
+    "resigned_count": 10,
+    "active_officers": [
+      {
+        "name": "CRELLIN, Sophie Olivia Romane Poppy",
+        "role": "director",
+        "appointed_on": "2025-01-27",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SWIFT, Sharon",
+        "role": "director",
+        "appointed_on": "2025-01-27",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "VYSE, Richard Eric",
+        "role": "director",
+        "appointed_on": "2018-10-05",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T14:41:18Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5Njg1MTIxMGFkaXF6a2N4",
+    "date": "2026-01-05",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/bnLyPVBfzpIKDu-clt60wdhU-7aGqSo6GWhO48fNK60/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/08419386/filing-history/MzQ5Njg1MTIxMGFkaXF6a2N4"
+  }
 }

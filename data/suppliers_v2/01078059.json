@@ -65,13 +65,94 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T12:26:46Z",
+    "company_name": "LEMO (U.K.) LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1972-10-23",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-09-30",
+    "accounts_last_made_up": "2025-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-01"
+  },
+  "governance": {
+    "api_date": "2026-04-28T12:26:47Z",
+    "total_officers": 15,
+    "active_count": 4,
+    "resigned_count": 11,
+    "active_officers": [
+      {
+        "name": "DENT, Peter William",
+        "role": "director",
+        "appointed_on": "2015-08-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "FUCHS, Michael Andre",
+        "role": "director",
+        "appointed_on": "2025-02-24",
+        "country_of_residence": "England",
+        "nationality": "Swiss"
+      },
+      {
+        "name": "KASHANI, Farhad",
+        "role": "director",
+        "appointed_on": "2025-02-24",
+        "country_of_residence": "England",
+        "nationality": "Canadian"
+      },
+      {
+        "name": "PESCI, Alexandre Luigi Antonio",
+        "role": "director",
+        "appointed_on": "1992-10-22",
+        "country_of_residence": "Switzerland",
+        "nationality": "Swiss"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T12:26:48Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Alexandre Pesci",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Swiss",
+        "country_of_residence": "Switzerland",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent-as-firm",
+          "voting-rights-75-to-100-percent-as-firm",
+          "right-to-appoint-and-remove-directors-as-firm"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxNDk1OTc1N2FkaXF6a2N4",
+    "date": "2026-04-15",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/IOUmpHAlajkLWDfswxqzMav_sz1zk8CKxcGSmXFs-jg/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01078059/filing-history/MzUxNDk1OTc1N2FkaXF6a2N4"
   }
 }

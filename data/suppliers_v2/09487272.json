@@ -59,10 +59,10 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
@@ -70,5 +70,64 @@
     "agency": 0.1037,
     "central_govt": 0.0606,
     "council": 0.0387
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T20:49:19Z",
+    "company_name": "IMPERIAL COLLEGE PROJECTS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2015-03-12",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-04-30",
+    "accounts_last_made_up": "2025-07-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-21"
+  },
+  "governance": {
+    "api_date": "2026-04-27T20:49:20Z",
+    "total_officers": 10,
+    "active_count": 3,
+    "resigned_count": 7,
+    "active_officers": [
+      {
+        "name": "KAUR, Rajneet",
+        "role": "secretary",
+        "appointed_on": "2015-07-31",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "COPEMAN, James Robert",
+        "role": "director",
+        "appointed_on": "2024-05-09",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ELKINS, Alexander Paul James",
+        "role": "director",
+        "appointed_on": "2025-02-24",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T20:49:22Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5OTI2NDk4M2FkaXF6a2N4",
+    "date": "2026-01-19",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/e-4cu6PMJUaH86-hb9mWBhTjDUVgGg-05KDxJBs0oQs/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/09487272/filing-history/MzQ5OTI2NDk4M2FkaXF6a2N4"
   }
 }

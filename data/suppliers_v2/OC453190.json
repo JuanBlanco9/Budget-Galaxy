@@ -55,13 +55,96 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
     "ch_api_accounts_pdf": false
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T12:56:48Z",
+    "company_name": "AKC RURAL LLP",
+    "company_status": "active",
+    "date_of_creation": "2024-07-30",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-04-30",
+    "accounts_last_made_up": null,
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-08-12"
+  },
+  "governance": {
+    "api_date": "2026-04-28T12:56:49Z",
+    "total_officers": 4,
+    "active_count": 4,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "BENNETT, Simon",
+        "role": "llp-designated-member",
+        "appointed_on": "2024-07-30",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "COPP, Jenna Louise",
+        "role": "llp-designated-member",
+        "appointed_on": "2024-07-30",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "BERRY, James Thomas",
+        "role": "llp-member",
+        "appointed_on": "2024-07-30",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "LOXTON, Robert Brian",
+        "role": "llp-member",
+        "appointed_on": "2024-07-30",
+        "country_of_residence": "England",
+        "nationality": null
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T12:56:50Z",
+    "total_results": 2,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Simon Bennett",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "right-to-share-surplus-assets-25-to-50-percent-limited-liability-partnership"
+        ],
+        "notified_on": "2024-07-30",
+        "identification": null
+      },
+      {
+        "name": "Jenna Louise Copp",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "right-to-share-surplus-assets-25-to-50-percent-limited-liability-partnership"
+        ],
+        "notified_on": "2024-07-30",
+        "identification": null
+      }
+    ]
   }
 }

@@ -59,13 +59,125 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T13:11:47Z",
+    "company_name": "SCOTVET ANIMAL HEALTH LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2010-11-18",
+    "date_of_cessation": null,
+    "jurisdiction": "scotland",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-06-30",
+    "accounts_last_made_up": "2025-09-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-17"
+  },
+  "governance": {
+    "api_date": "2026-04-28T13:11:48Z",
+    "total_officers": 8,
+    "active_count": 7,
+    "resigned_count": 1,
+    "active_officers": [
+      {
+        "name": "CANT, Alice Rachel",
+        "role": "director",
+        "appointed_on": "2023-09-01",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      },
+      {
+        "name": "CANT, Andy John",
+        "role": "director",
+        "appointed_on": "2010-11-18",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      },
+      {
+        "name": "MACKIE, Elizabeth Marion",
+        "role": "director",
+        "appointed_on": "2025-10-01",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      },
+      {
+        "name": "MOONEY, Louise Mary",
+        "role": "director",
+        "appointed_on": "2025-10-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "NORQUAY, Robert",
+        "role": "director",
+        "appointed_on": "2010-11-18",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      },
+      {
+        "name": "NORQUAY, Susan Spence",
+        "role": "director",
+        "appointed_on": "2023-09-01",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      },
+      {
+        "name": "WRIGHT, Callum Alexander",
+        "role": "director",
+        "appointed_on": "2025-10-01",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T13:11:50Z",
+    "total_results": 2,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Mr Robert Norquay",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "Scotland",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-11-18",
+        "identification": null
+      },
+      {
+        "name": "Mr Andy John Cant",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "Scotland",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-11-18",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxNzAzMzQxOGFkaXF6a2N4",
+    "date": "2026-04-20",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/mgDXZvDeaitWwcFE3Bn8CltHZWCftjuEOW67eegcs3k/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/SC389121/filing-history/MzUxNzAzMzQxOGFkaXF6a2N4"
   }
 }

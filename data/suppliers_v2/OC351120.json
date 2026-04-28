@@ -60,13 +60,134 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T05:46:44Z",
+    "company_name": "MCRW GATWICK (UK) LLP",
+    "company_status": "liquidation",
+    "date_of_creation": "2009-12-24",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": true,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-03-31",
+    "accounts_last_made_up": "2025-06-30",
+    "confirmation_statement_overdue": true,
+    "confirmation_statement_next_due": "2025-12-31"
+  },
+  "governance": {
+    "api_date": "2026-04-28T05:46:45Z",
+    "total_officers": 8,
+    "active_count": 4,
+    "resigned_count": 4,
+    "active_officers": [
+      {
+        "name": "CARTER, Andrew George",
+        "role": "llp-designated-member",
+        "appointed_on": "2009-12-24",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "ROBINSON, Mark Ian",
+        "role": "llp-designated-member",
+        "appointed_on": "2010-01-02",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "WORT, Anthony Bruce",
+        "role": "llp-designated-member",
+        "appointed_on": "2010-01-02",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "KC CONTROLS LTD",
+        "role": "corporate-llp-designated-member",
+        "appointed_on": "2009-12-24",
+        "country_of_residence": null,
+        "nationality": null
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T05:46:46Z",
+    "total_results": 4,
+    "active_count": 4,
+    "items": [
+      {
+        "name": "Mr Andrew George Carter",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "right-to-share-surplus-assets-25-to-50-percent-limited-liability-partnership"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Kc Control Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "right-to-share-surplus-assets-25-to-50-percent-limited-liability-partnership"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "Engalnd",
+          "place_registered": "England",
+          "registration_number": "2022236"
+        }
+      },
+      {
+        "name": "Mr Mark Ian Robinson",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "right-to-share-surplus-assets-25-to-50-percent-limited-liability-partnership"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Anthony Bruce Wort",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "right-to-share-surplus-assets-25-to-50-percent-limited-liability-partnership"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwMTMzNzg0NGFkaXF6a2N4",
+    "date": "2026-01-26",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/wpx5K_oE574kel_Vpgw2nP1lkqI65pPaKBi9EE_oqBs/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/OC351120/filing-history/MzUwMTMzNzg0NGFkaXF6a2N4"
   }
 }

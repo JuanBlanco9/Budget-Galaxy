@@ -60,13 +60,204 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "police_fire",
   "buyer_type_breakdown": {
     "police_fire": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T11:36:16Z",
+    "company_name": "GORDONS LLP",
+    "company_status": "active",
+    "date_of_creation": "2006-04-25",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-05-09"
+  },
+  "governance": {
+    "api_date": "2026-04-28T11:36:17Z",
+    "total_officers": 78,
+    "active_count": 28,
+    "resigned_count": 50,
+    "active_officers": [
+      {
+        "name": "AYRE, Paul Hugh",
+        "role": "llp-designated-member",
+        "appointed_on": "2006-05-17",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "CHAMBERLAIN, Nicholas James",
+        "role": "llp-designated-member",
+        "appointed_on": "2009-04-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "DAVEY, Victoria Louise",
+        "role": "llp-designated-member",
+        "appointed_on": "2006-05-17",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "FAWCETT, James Anthony",
+        "role": "llp-designated-member",
+        "appointed_on": "2009-04-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "ASQUEZ, Jonathan",
+        "role": "llp-member",
+        "appointed_on": "2012-11-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "BRIAN, Andrew",
+        "role": "llp-member",
+        "appointed_on": "2014-01-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "DAVY, Graeme Edward",
+        "role": "llp-member",
+        "appointed_on": "2016-04-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "DIXON, Gregory James",
+        "role": "llp-member",
+        "appointed_on": "2017-04-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "FEARNLEY, Joanne Marie",
+        "role": "llp-member",
+        "appointed_on": "2014-01-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "FINNETT, Michael Andrew",
+        "role": "llp-member",
+        "appointed_on": "2016-04-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "FIRMAN, Duncan Mark Edward",
+        "role": "llp-member",
+        "appointed_on": "2016-04-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "GRACEY, Ryan",
+        "role": "llp-member",
+        "appointed_on": "2022-04-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "HUDSON, Rachel",
+        "role": "llp-member",
+        "appointed_on": "2006-05-17",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "JACKSON, Jonathan Richard",
+        "role": "llp-member",
+        "appointed_on": "2022-04-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "JONES, Mark Francois",
+        "role": "llp-member",
+        "appointed_on": "2018-04-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "JOYCE, Paul Andrew",
+        "role": "llp-member",
+        "appointed_on": "2025-04-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "KIMBERLEY, James Peter",
+        "role": "llp-member",
+        "appointed_on": "2022-04-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "MCVEY, Stephen Andrew",
+        "role": "llp-member",
+        "appointed_on": "2016-09-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "OWEN, John Edward",
+        "role": "llp-member",
+        "appointed_on": "2009-04-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "PAGET, Phillip John",
+        "role": "llp-member",
+        "appointed_on": "2006-05-17",
+        "country_of_residence": "England",
+        "nationality": null
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T11:36:19Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Paul Hugh Ayre",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "right-to-share-surplus-assets-25-to-50-percent-limited-liability-partnership"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MDgxNjk4MmFkaXF6a2N4",
+    "date": "2025-11-26",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/tZN4N4X3lgieKSXS8qSs5cWeLqle1o9S9B5WeGSOmiY/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/OC319292/filing-history/MzQ5MDgxNjk4MmFkaXF6a2N4"
   }
 }

@@ -59,13 +59,150 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T05:57:30Z",
+    "company_name": "SMARTGATE SOLUTIONS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2012-12-18",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-07-31",
+    "accounts_last_made_up": "2024-10-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-01"
+  },
+  "governance": {
+    "api_date": "2026-04-28T05:57:31Z",
+    "total_officers": 12,
+    "active_count": 2,
+    "resigned_count": 10,
+    "active_officers": [
+      {
+        "name": "BELLAMY, Edward Carlyle",
+        "role": "director",
+        "appointed_on": "2025-12-16",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "WILLIAMS, Lee David",
+        "role": "director",
+        "appointed_on": "2012-12-18",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T05:57:32Z",
+    "total_results": 5,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Sonar Bidco Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2024-10-25",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "16027881"
+        }
+      },
+      {
+        "name": "24 Haymarket Nominees Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent",
+          "voting-rights-50-to-75-percent"
+        ],
+        "notified_on": "2017-10-11",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Uk Company Law",
+          "country_registered": "England",
+          "place_registered": "Uk Company Register",
+          "registration_number": "09897603"
+        }
+      },
+      {
+        "name": "Mr Lee David Williams",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2016-12-18",
+        "identification": null
+      },
+      {
+        "name": "Mr Paul Alan Johnson",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2016-12-18",
+        "identification": null
+      },
+      {
+        "name": "Enterprise Ventures (Gp Fy Seedcorn) Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Uk Company Law",
+          "country_registered": "England And Wales",
+          "place_registered": "Uk Company Register",
+          "registration_number": "07227779"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NTkzNjgyNWFkaXF6a2N4",
+    "date": "2025-08-01",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/4f-9FkZj7D-M9V13msjV_Xuy5FGbULWOatmftXb7AEo/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/08335617/filing-history/MzQ3NTkzNjgyNWFkaXF6a2N4"
   }
 }

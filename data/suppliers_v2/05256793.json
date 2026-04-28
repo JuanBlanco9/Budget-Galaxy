@@ -66,11 +66,126 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
-  "buyer_type_breakdown": {}
+  "buyer_type_breakdown": {},
+  "ch_profile": {
+    "api_date": "2026-04-28T14:28:43Z",
+    "company_name": "THURROCK AND BRENTWOOD MIND",
+    "company_status": "active",
+    "date_of_creation": "2004-10-12",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-26"
+  },
+  "governance": {
+    "api_date": "2026-04-28T14:28:44Z",
+    "total_officers": 30,
+    "active_count": 11,
+    "resigned_count": 19,
+    "active_officers": [
+      {
+        "name": "LYONS, Susan Ann",
+        "role": "secretary",
+        "appointed_on": "2014-10-23",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "COUCHMAN, Paul Dennis",
+        "role": "director",
+        "appointed_on": "2025-10-22",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "EMANUEL, Andrew Graham",
+        "role": "director",
+        "appointed_on": "2025-09-24",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HENDERSON, Sofia Caroline",
+        "role": "director",
+        "appointed_on": "2024-11-27",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HUNTER, Karen Constance",
+        "role": "director",
+        "appointed_on": "2018-11-21",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ITANGATA, Jane Lydia Karite",
+        "role": "director",
+        "appointed_on": "2024-11-27",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "KAUR, Dalee",
+        "role": "director",
+        "appointed_on": "2025-03-26",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LYONS, John",
+        "role": "director",
+        "appointed_on": "2010-10-21",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LYONS, Susan Margaret",
+        "role": "director",
+        "appointed_on": "2023-01-25",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LYONS, Susan Ann",
+        "role": "director",
+        "appointed_on": "2010-10-21",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "TURVILL, Chloe Christina",
+        "role": "director",
+        "appointed_on": "2024-11-27",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T14:28:45Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NzA1ODY1NGFkaXF6a2N4",
+    "date": "2026-01-06",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/96-mbBFfAgqGHr6IM1b-mo_m48smJTu7_4i0I8xEcmY/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/05256793/filing-history/MzQ5NzA1ODY1NGFkaXF6a2N4"
+  }
 }

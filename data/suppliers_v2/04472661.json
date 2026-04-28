@@ -59,14 +59,94 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
     "central_govt": 0.9954,
     "council": 0.0046
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T13:57:12Z",
+    "company_name": "BEST PRACTICE NETWORK LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2002-06-28",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-08-31",
+    "accounts_last_made_up": "2024-11-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-27"
+  },
+  "governance": {
+    "api_date": "2026-04-27T13:57:14Z",
+    "total_officers": 32,
+    "active_count": 3,
+    "resigned_count": 29,
+    "active_officers": [
+      {
+        "name": "OAKWOOD CORPORATE SECRETARY LIMITED",
+        "role": "corporate-secretary",
+        "appointed_on": "2025-07-09",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "CHEALE, Caroline Ann",
+        "role": "director",
+        "appointed_on": "2024-11-13",
+        "country_of_residence": "England",
+        "nationality": "Irish"
+      },
+      {
+        "name": "LITTLE, Simon James",
+        "role": "director",
+        "appointed_on": "2022-01-13",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T13:57:15Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Best Practice Network Holdings Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "Companies Act",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "07134079"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NjUwNDk1MmFkaXF6a2N4",
+    "date": "2025-08-07",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/eHY71LbBVubPbJp9TMEL_FUeTJ3uXujGoUhIUGPktik/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04472661/filing-history/MzQ3NjUwNDk1MmFkaXF6a2N4"
   }
 }

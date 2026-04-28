@@ -55,14 +55,66 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "education",
   "buyer_type_breakdown": {
     "education": 0.8427,
     "other": 0.1573
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T05:44:10Z",
+    "company_name": "PHC EUROPE B.V.",
+    "company_status": "active",
+    "date_of_creation": "2004-10-20",
+    "date_of_cessation": null,
+    "jurisdiction": "united-kingdom",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": null,
+    "accounts_next_due": null,
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": null,
+    "confirmation_statement_next_due": null
+  },
+  "governance": {
+    "api_date": "2026-04-28T05:44:11Z",
+    "total_officers": 14,
+    "active_count": 2,
+    "resigned_count": 12,
+    "active_officers": [
+      {
+        "name": "FABA, Alain Gabriel, Managing Director",
+        "role": "director",
+        "appointed_on": "2019-05-01",
+        "country_of_residence": "France",
+        "nationality": "French"
+      },
+      {
+        "name": "VAN GELDEREN, Marinus",
+        "role": "director",
+        "appointed_on": "2015-04-01",
+        "country_of_residence": "Netherlands",
+        "nationality": "Dutch"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T05:44:13Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MTY3NjQzN2FkaXF6a2N4",
+    "date": "2025-12-03",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/qKc1eyJWHuFrVPluBkOJCciZL8hmo0AoTQ9EJSh9D5g/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/FC026490/filing-history/MzQ5MTY3NjQzN2FkaXF6a2N4"
   }
 }

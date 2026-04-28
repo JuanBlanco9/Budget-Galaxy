@@ -64,15 +64,172 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "agency",
   "buyer_type_breakdown": {
     "agency": 0.4847,
     "central_govt": 0.2646,
     "other": 0.2507
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T23:39:56Z",
+    "company_name": "INCENDIUM CONSULTING LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2012-09-17",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-29"
+  },
+  "governance": {
+    "api_date": "2026-04-27T23:39:58Z",
+    "total_officers": 14,
+    "active_count": 3,
+    "resigned_count": 11,
+    "active_officers": [
+      {
+        "name": "DUNCAN, William",
+        "role": "secretary",
+        "appointed_on": "2019-05-01",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BRATTLE, Jeremy",
+        "role": "director",
+        "appointed_on": "2012-09-17",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PICKERING, Charles, Sam, Cary",
+        "role": "director",
+        "appointed_on": "2017-11-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T23:40:00Z",
+    "total_results": 7,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Green (Newco) Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2019-05-01",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "England And Wales",
+          "registration_number": "11967329"
+        }
+      },
+      {
+        "name": "Mr Simon Johnson",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Michael Edward Perkis",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Andrew David Sergeant",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Steven Norris",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Jonathan Scott Cameron",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Jeremy Brattle",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwMDA2ODEyMWFkaXF6a2N4",
+    "date": "2026-01-23",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/Z165p-iql9uk98tAp4PXAUl9OOn-qq7xDTUb4oBkaB0/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/08216440/filing-history/MzUwMDA2ODEyMWFkaXF6a2N4"
   }
 }

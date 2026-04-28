@@ -70,13 +70,199 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "nhs",
   "buyer_type_breakdown": {
     "nhs": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T22:38:35Z",
+    "company_name": "ENCOMPASS CONSULTANCY LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2009-12-16",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-06-30",
+    "accounts_last_made_up": "2024-09-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-08-04"
+  },
+  "governance": {
+    "api_date": "2026-04-27T22:38:36Z",
+    "total_officers": 21,
+    "active_count": 3,
+    "resigned_count": 18,
+    "active_officers": [
+      {
+        "name": "OHS SECRETARIES LIMITED",
+        "role": "corporate-secretary",
+        "appointed_on": "2023-07-06",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "ALAMGIR, Furqan",
+        "role": "director",
+        "appointed_on": "2023-07-06",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "YEUNG, Ka Yiu",
+        "role": "director",
+        "appointed_on": "2023-07-06",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T22:38:38Z",
+    "total_results": 8,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Encompass Training Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2023-07-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Ca 2006",
+          "country_registered": "England",
+          "place_registered": "England And Wales",
+          "registration_number": "14432020"
+        }
+      },
+      {
+        "name": "Connexin Digital Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2023-07-06",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "14539924"
+        }
+      },
+      {
+        "name": "Jsj Partnership Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent"
+        ],
+        "notified_on": "2021-12-31",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Ca 2006",
+          "country_registered": "England",
+          "place_registered": "England And Wales",
+          "registration_number": "06677847"
+        }
+      },
+      {
+        "name": "Mr Adam William Rhodes",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-10-10",
+        "identification": null
+      },
+      {
+        "name": "Mrs Lisa Gabrielle Stevenson",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-05-26",
+        "identification": null
+      },
+      {
+        "name": "Encompass Development Group",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Ca 2006",
+          "country_registered": "England",
+          "place_registered": "England And Wales",
+          "registration_number": "09092116"
+        }
+      },
+      {
+        "name": "Mr James William White",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Lucus Patterson Elliott",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NDg5MDQzOGFkaXF6a2N4",
+    "date": "2025-07-24",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-audit-exemption-subsiduary",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/HUDKQWmiKE4ZLkAe5chOd31qb0utxcU53qj6miAhF7o/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/07106744/filing-history/MzQ3NDg5MDQzOGFkaXF6a2N4"
   }
 }

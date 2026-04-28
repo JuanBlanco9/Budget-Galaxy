@@ -68,15 +68,95 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.8029,
     "council": 0.1437,
     "agency": 0.0534
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T06:16:40Z",
+    "company_name": "LEYBOLD UK LTD",
+    "company_status": "active",
+    "date_of_creation": "1960-08-26",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-09-30",
+    "accounts_last_made_up": "2025-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-02"
+  },
+  "governance": {
+    "api_date": "2026-04-28T06:16:41Z",
+    "total_officers": 32,
+    "active_count": 3,
+    "resigned_count": 29,
+    "active_officers": [
+      {
+        "name": "BRYCHTA, Jan",
+        "role": "secretary",
+        "appointed_on": "2025-05-01",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "DORMAN, Ian Keith",
+        "role": "director",
+        "appointed_on": "2018-03-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SAHIN KOCAS, Handan",
+        "role": "director",
+        "appointed_on": "2026-03-16",
+        "country_of_residence": "Turkey",
+        "nationality": "Turkish"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T06:16:43Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Atlas Copco Atkiebolag",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-06-06",
+        "identification": {
+          "legal_form": "Aktiebolag",
+          "legal_authority": "Swedish",
+          "country_registered": "Sweden",
+          "place_registered": "Bolagsverket (Swedish Companies Registration Office)",
+          "registration_number": "556014-2720"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxMjgwMzczN2FkaXF6a2N4",
+    "date": "2026-03-26",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/qe0JUp_fMYJ5UsxDs7yRk-88w82W6wHxLHIO5e9khuY/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/00668677/filing-history/MzUxMjgwMzczN2FkaXF6a2N4"
   }
 }

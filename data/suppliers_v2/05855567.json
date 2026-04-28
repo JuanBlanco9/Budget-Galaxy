@@ -68,13 +68,79 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T05:20:58Z",
+    "company_name": "ORSIS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2006-06-22",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-25"
+  },
+  "governance": {
+    "api_date": "2026-04-28T05:20:59Z",
+    "total_officers": 12,
+    "active_count": 4,
+    "resigned_count": 8,
+    "active_officers": [
+      {
+        "name": "HARROP, Ian Wylie",
+        "role": "director",
+        "appointed_on": "2022-03-18",
+        "country_of_residence": "Hong Kong",
+        "nationality": "Canadian"
+      },
+      {
+        "name": "KRISTIANSEN, Hans Einar",
+        "role": "director",
+        "appointed_on": "2023-07-20",
+        "country_of_residence": "England",
+        "nationality": "Norwegian"
+      },
+      {
+        "name": "SO, Wai Kei Godwin",
+        "role": "director",
+        "appointed_on": "2023-06-14",
+        "country_of_residence": "Hong Kong",
+        "nationality": "Chinese"
+      },
+      {
+        "name": "WONG, Charles Hing Chi",
+        "role": "director",
+        "appointed_on": "2021-07-05",
+        "country_of_residence": "Hong Kong",
+        "nationality": "Chinese"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T05:21:00Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MzAzNzk1MGFkaXF6a2N4",
+    "date": "2025-10-03",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/NTKcZLvp_687mQbDfYk7rZbzNbyAe3jsBPuvC-6suhA/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/05855567/filing-history/MzQ4MzAzNzk1MGFkaXF6a2N4"
   }
 }

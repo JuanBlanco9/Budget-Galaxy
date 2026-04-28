@@ -64,13 +64,233 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T20:31:24Z",
+    "company_name": "CITIZENS ADVICE HILLINGDON LTD",
+    "company_status": "active",
+    "date_of_creation": "1995-03-03",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-08-14"
+  },
+  "governance": {
+    "api_date": "2026-04-27T20:31:26Z",
+    "total_officers": 77,
+    "active_count": 7,
+    "resigned_count": 70,
+    "active_officers": [
+      {
+        "name": "ASHAYE, Olusoyi Olatokunbo Richard, Dr",
+        "role": "director",
+        "appointed_on": "2008-02-20",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BIRD, Douglas Ian",
+        "role": "director",
+        "appointed_on": "1995-03-03",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "BURLES, Anthony",
+        "role": "director",
+        "appointed_on": "2022-10-28",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "KAMRAN, Fatima",
+        "role": "director",
+        "appointed_on": "2024-09-10",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LARBI-ODAM, Ernestina",
+        "role": "director",
+        "appointed_on": "2024-09-19",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PATEL, Hemali",
+        "role": "director",
+        "appointed_on": "2022-04-22",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "TAHIM, Kirpal Singh",
+        "role": "director",
+        "appointed_on": "2018-09-28",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T20:31:27Z",
+    "total_results": 11,
+    "active_count": 0,
+    "items": [
+      {
+        "name": "Mr Paul Jon Lewis",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-09-16",
+        "identification": null
+      },
+      {
+        "name": "Mr Doug Bird",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-07-31",
+        "identification": null
+      },
+      {
+        "name": "Ms Felicity Alexandra Cooper",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-07-31",
+        "identification": null
+      },
+      {
+        "name": "Mr James Michelson",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-07-31",
+        "identification": null
+      },
+      {
+        "name": "Mr Norman Beazant",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-07-31",
+        "identification": null
+      },
+      {
+        "name": "Mr Richard Ashaye",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-07-31",
+        "identification": null
+      },
+      {
+        "name": "Mr Peter Michael Slavid",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-07-31",
+        "identification": null
+      },
+      {
+        "name": "Ms Ruth Adella Evans",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-07-31",
+        "identification": null
+      },
+      {
+        "name": "Mr David Long",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-07-31",
+        "identification": null
+      },
+      {
+        "name": "Mr Duncan Brown",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-07-31",
+        "identification": null
+      },
+      {
+        "name": "Mr Robert Deba",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-07-31",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwOTMzNzEyOGFkaXF6a2N4",
+    "date": "2026-03-13",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/xW5pA86EMVhHMK7wXLt4FjJuUqWc15C57MlT1XkmB40/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03028957/filing-history/MzUwOTMzNzEyOGFkaXF6a2N4"
   }
 }

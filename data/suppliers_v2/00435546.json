@@ -59,14 +59,103 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.9418,
     "council": 0.0582
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T04:59:30Z",
+    "company_name": "SUTCLIFFE PLAY LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1947-05-20",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-06-30",
+    "accounts_last_made_up": "2025-09-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-12"
+  },
+  "governance": {
+    "api_date": "2026-04-28T04:59:32Z",
+    "total_officers": 19,
+    "active_count": 5,
+    "resigned_count": 14,
+    "active_officers": [
+      {
+        "name": "MELLOR, Kevin Richard",
+        "role": "secretary",
+        "appointed_on": "2019-04-18",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "LOVE, Andrew Roger",
+        "role": "director",
+        "appointed_on": "2015-09-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PREECE, Timothy John",
+        "role": "director",
+        "appointed_on": "2014-06-01",
+        "country_of_residence": "England",
+        "nationality": "English"
+      },
+      {
+        "name": "SPEIRS, Robert William",
+        "role": "director",
+        "appointed_on": "2025-03-27",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SUTCLIFFE, Desmond Richard Robin",
+        "role": "director",
+        "appointed_on": null,
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T04:59:33Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Sutcliffe Group Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxNTYyOTMxM2FkaXF6a2N4",
+    "date": "2026-04-13",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/7YYTDn3MjKHw5Sv5ySg3rDFJBZO3bVBEEHoOPybgUhI/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/00435546/filing-history/MzUxNTYyOTMxM2FkaXF6a2N4"
   }
 }

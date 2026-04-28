@@ -59,15 +59,86 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.7989,
     "central_govt": 0.1533,
     "agency": 0.0478
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T14:51:17Z",
+    "company_name": "M&C SAATCHI (UK) LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1994-12-20",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-05-30"
+  },
+  "governance": {
+    "api_date": "2026-04-27T14:51:19Z",
+    "total_officers": 25,
+    "active_count": 2,
+    "resigned_count": 23,
+    "active_officers": [
+      {
+        "name": "BLACKSTONE, Andrew Simon",
+        "role": "director",
+        "appointed_on": "2026-03-31",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "FULLER, Simon Jeremy Ian",
+        "role": "director",
+        "appointed_on": "2024-07-10",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T14:51:20Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "M&C Saatchi Worldwide Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "Register Of Companies England And Wales",
+          "registration_number": "02999983"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MTQzNjMwM2FkaXF6a2N4",
+    "date": "2025-09-16",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-audit-exemption-subsiduary",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/2aPde6lEZcPv5eZpHr-RtBZ9mt_QK0sBtNd6XShV4mQ/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03003693/filing-history/MzQ4MTQzNjMwM2FkaXF6a2N4"
   }
 }

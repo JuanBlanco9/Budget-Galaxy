@@ -59,13 +59,99 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T10:26:32Z",
+    "company_name": "ELEVEN-I LTD",
+    "company_status": "active",
+    "date_of_creation": "2019-09-11",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-09-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-05-09"
+  },
+  "governance": {
+    "api_date": "2026-04-28T10:26:33Z",
+    "total_officers": 8,
+    "active_count": 2,
+    "resigned_count": 6,
+    "active_officers": [
+      {
+        "name": "ELEMENTAL COMPANY SECRETARY LIMITED",
+        "role": "corporate-secretary",
+        "appointed_on": "2025-09-19",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "ALLAN, Brian Robert",
+        "role": "director",
+        "appointed_on": "2025-09-08",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T10:26:34Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Insight Analytics Solutions Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2025-09-08",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "10511025"
+        }
+      },
+      {
+        "name": "Mr William Michael Slatter",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent",
+          "voting-rights-50-to-75-percent"
+        ],
+        "notified_on": "2019-09-11",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxMjAxMTk0OWFkaXF6a2N4",
+    "date": "2026-03-23",
+    "type": "AA01",
+    "description": "change-account-reference-date-company-current-shortened",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/WwhUs7nczJlCBXtN3lj99Sirn_2S5P7mRABVc6I8SqA/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/12201098/filing-history/MzUxMjAxMTk0OWFkaXF6a2N4"
   }
 }

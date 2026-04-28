@@ -59,14 +59,141 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.9413,
     "nhs": 0.0587
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T00:47:15Z",
+    "company_name": "SIEMENS HEALTHCARE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2015-04-29",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-06-30",
+    "accounts_last_made_up": "2024-09-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-04-01"
+  },
+  "governance": {
+    "api_date": "2026-04-28T00:47:16Z",
+    "total_officers": 8,
+    "active_count": 4,
+    "resigned_count": 4,
+    "active_officers": [
+      {
+        "name": "ATHWAL, Mahan",
+        "role": "secretary",
+        "appointed_on": "2016-08-02",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "ENNIS, Carl Christopher",
+        "role": "director",
+        "appointed_on": "2020-05-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "KREUZER, Eric",
+        "role": "director",
+        "appointed_on": "2020-10-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "German"
+      },
+      {
+        "name": "TROTABAS, Ghada",
+        "role": "director",
+        "appointed_on": "2022-05-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "American"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T00:47:18Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Siemens Healthineers Ag",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2018-03-16",
+        "identification": {
+          "legal_form": "Stock Company",
+          "legal_authority": "German Law",
+          "country_registered": "Munich",
+          "place_registered": "Registergericht Munich",
+          "registration_number": "Hrb 237558"
+        }
+      },
+      {
+        "name": "Siemens Aktiengesellschaft",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2018-01-01",
+        "identification": {
+          "legal_form": "Stock Company",
+          "legal_authority": "German Law",
+          "country_registered": "Germany",
+          "place_registered": "Registergericht Berlin And Munich",
+          "registration_number": "Hrb 12300 And Hrb 6684"
+        }
+      },
+      {
+        "name": "Siemens Holdings Plc",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Public Limited Company",
+          "legal_authority": "United Kingdom",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "2465263"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2MjEwNzY4NmFkaXF6a2N4",
+    "date": "2025-04-14",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/v32FXgHxPIZMVxh_GRKcJFYjZlr0DeBMu-AG9zlqnCU/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/09567186/filing-history/MzQ2MjEwNzY4NmFkaXF6a2N4"
   }
 }

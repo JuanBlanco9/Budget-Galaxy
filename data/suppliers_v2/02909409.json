@@ -64,13 +64,84 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T12:55:46Z",
+    "company_name": "JOCKEY CLUB RACECOURSES LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1994-03-17",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-08-02"
+  },
+  "governance": {
+    "api_date": "2026-04-28T12:55:47Z",
+    "total_officers": 56,
+    "active_count": 2,
+    "resigned_count": 54,
+    "active_officers": [
+      {
+        "name": "CLARK, Stuart John",
+        "role": "director",
+        "appointed_on": "2020-12-31",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MULLEN, James Joseph",
+        "role": "director",
+        "appointed_on": "2025-06-02",
+        "country_of_residence": "England",
+        "nationality": "Scottish"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T12:55:48Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Jockey Club Racecourses (Holdings) Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Uk",
+          "country_registered": "Uk",
+          "place_registered": "Uk",
+          "registration_number": "00806698"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4NTcxMTM5MWFkaXF6a2N4",
+    "date": "2025-10-21",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/8xyUrt4mFg-GCPm7x9_XnssL2JcdGyEhq76bRsIL0hs/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02909409/filing-history/MzQ4NTcxMTM5MWFkaXF6a2N4"
   }
 }

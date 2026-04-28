@@ -63,13 +63,92 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T21:09:58Z",
+    "company_name": "HAZELL AND JEFFERIES LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1971-11-02",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-07-31",
+    "accounts_last_made_up": "2024-10-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-04"
+  },
+  "governance": {
+    "api_date": "2026-04-27T21:10:00Z",
+    "total_officers": 6,
+    "active_count": 3,
+    "resigned_count": 3,
+    "active_officers": [
+      {
+        "name": "HAZELL, Fiona Jean",
+        "role": "secretary",
+        "appointed_on": "2002-09-25",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "HAZELL, Fiona Jean",
+        "role": "director",
+        "appointed_on": "2016-04-18",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "HAZELL, Richard Edward John",
+        "role": "director",
+        "appointed_on": null,
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T21:10:01Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Hazell And Jefferies (Tarmac) Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited",
+          "legal_authority": "Limited",
+          "country_registered": "England",
+          "place_registered": "England And Wales",
+          "registration_number": "04480588"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NDEzOTM1NGFkaXF6a2N4",
+    "date": "2025-07-17",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/JBSWCPYdH9_thBOA4P2kCK1HgdNKVgPZ31IvNkHPbKs/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01029519/filing-history/MzQ3NDEzOTM1NGFkaXF6a2N4"
   }
 }

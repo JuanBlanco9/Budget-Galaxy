@@ -59,13 +59,107 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T14:16:52Z",
+    "company_name": "HATTON TRAFFIC MANAGEMENT LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1976-08-12",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-31"
+  },
+  "governance": {
+    "api_date": "2026-04-27T14:16:54Z",
+    "total_officers": 9,
+    "active_count": 3,
+    "resigned_count": 6,
+    "active_officers": [
+      {
+        "name": "BAILEY, Lara Juliette Louise",
+        "role": "secretary",
+        "appointed_on": "2014-11-25",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BAILEY, Marshall Graham",
+        "role": "director",
+        "appointed_on": "1999-04-01",
+        "country_of_residence": "Isle Of Man",
+        "nationality": "British"
+      },
+      {
+        "name": "BAILEY, Thomas Robert",
+        "role": "director",
+        "appointed_on": "2017-02-09",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T14:16:55Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "B3i Limited ",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2025-12-22",
+        "identification": {
+          "legal_form": "Corporate",
+          "legal_authority": "United Kingdom (England And Wales)",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "10456659"
+        }
+      },
+      {
+        "name": "Mr Marshall Graham Bailey",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "Isle Of Man",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MDYxNDk5MmFkaXF6a2N4",
+    "date": "2025-11-25",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/KDzMSKjbclmIJxOtDcIQmjUGhK-QWY23-0gPS6DfiWU/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01272806/filing-history/MzQ5MDYxNDk5MmFkaXF6a2N4"
   }
 }

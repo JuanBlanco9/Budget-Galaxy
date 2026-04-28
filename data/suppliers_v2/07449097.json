@@ -65,14 +65,159 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
     "central_govt": 0.733,
     "council": 0.267
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T02:57:27Z",
+    "company_name": "TRAIN TOGETHER LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2010-11-24",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-04-30",
+    "accounts_last_made_up": "2025-07-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-12"
+  },
+  "governance": {
+    "api_date": "2026-04-28T02:57:28Z",
+    "total_officers": 9,
+    "active_count": 4,
+    "resigned_count": 5,
+    "active_officers": [
+      {
+        "name": "SLOANE, Michael Francis",
+        "role": "secretary",
+        "appointed_on": "2020-03-10",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "DALL'OMO, Charles Edward",
+        "role": "director",
+        "appointed_on": "2011-01-18",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "RIMMER, Isobel Anne",
+        "role": "director",
+        "appointed_on": "2020-03-10",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "RIMMER, Martin Edward",
+        "role": "director",
+        "appointed_on": "2020-03-10",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T02:57:29Z",
+    "total_results": 6,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Mr Martin Edward Rimmer",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2020-03-10",
+        "identification": null
+      },
+      {
+        "name": "Mrs Isobel Anne Rimmer",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2020-03-10",
+        "identification": null
+      },
+      {
+        "name": "Mrs Grace Evelyn Dall'Omo",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Qualitycourse Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Section 1122 Corporation Taxes Act 2010",
+          "country_registered": "England",
+          "place_registered": "England",
+          "registration_number": "03055907"
+        }
+      },
+      {
+        "name": "Mr Jonathan Mark Taylor",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Paul Martin Beasley",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4Mjg0NTMwOGFkaXF6a2N4",
+    "date": "2025-09-26",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/1M6elzdFdqxBRvRYeYax5G34QpSfK29sraVfp76eyg0/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/07449097/filing-history/MzQ4Mjg0NTMwOGFkaXF6a2N4"
   }
 }

@@ -61,11 +61,76 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
-  "buyer_type_breakdown": {}
+  "buyer_type_breakdown": {},
+  "ch_profile": {
+    "api_date": "2026-04-28T14:35:40Z",
+    "company_name": "DCAS DIRECT PERSONNEL LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2010-03-22",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-08-01"
+  },
+  "governance": {
+    "api_date": "2026-04-28T14:35:41Z",
+    "total_officers": 6,
+    "active_count": 2,
+    "resigned_count": 4,
+    "active_officers": [
+      {
+        "name": "MCGHAN, Donya Annie-Marie",
+        "role": "secretary",
+        "appointed_on": "2011-07-26",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "MEGUILLE, Daniel",
+        "role": "director",
+        "appointed_on": "2011-07-26",
+        "country_of_residence": "England",
+        "nationality": "Cameroonian"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T14:35:42Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Daniel Meguille",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Cameroonian",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NTc5NjQ2OWFkaXF6a2N4",
+    "date": "2025-12-22",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-micro-entity",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/VsUU2bWyWpKAL6YqPFECQrEsu_8tDewwGehikFDXrkY/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/07197120/filing-history/MzQ5NTc5NjQ2OWFkaXF6a2N4"
+  }
 }

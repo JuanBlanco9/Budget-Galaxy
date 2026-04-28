@@ -59,13 +59,79 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T09:58:07Z",
+    "company_name": "WICKSTEED LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1988-04-06",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-28"
+  },
+  "governance": {
+    "api_date": "2026-04-28T09:58:08Z",
+    "total_officers": 6,
+    "active_count": 1,
+    "resigned_count": 5,
+    "active_officers": [
+      {
+        "name": "HOWARD, Charles Edward John, Hon",
+        "role": "director",
+        "appointed_on": "2021-04-06",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T09:58:09Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Castle Rising Holdings Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors-as-firm"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "England And Wales Company Registry",
+          "registration_number": "1370124"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3ODYwMTY0MWFkaXF6a2N4",
+    "date": "2025-08-26",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-dormant",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/pI15u8JY0NGADNrO9ylN5c_xJJM0sMUWDBFUUNS9Mhs/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02240750/filing-history/MzQ3ODYwMTY0MWFkaXF6a2N4"
   }
 }

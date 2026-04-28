@@ -59,15 +59,92 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 0.6985,
     "central_govt": 0.2837,
     "other": 0.0177
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T19:48:22Z",
+    "company_name": "BABINGTON BUSINESS COLLEGE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1991-12-20",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-10-31",
+    "accounts_last_made_up": "2024-07-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-17"
+  },
+  "governance": {
+    "api_date": "2026-04-27T19:48:24Z",
+    "total_officers": 27,
+    "active_count": 3,
+    "resigned_count": 24,
+    "active_officers": [
+      {
+        "name": "BOTHA, Mark David",
+        "role": "director",
+        "appointed_on": "2025-04-16",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "BRAMLEY, Jennifer Ellen",
+        "role": "director",
+        "appointed_on": "2023-05-16",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HILLS, David Richard",
+        "role": "director",
+        "appointed_on": "2025-04-16",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T19:48:25Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Babington Business Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2022-12-09",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3OTE0MDkxMmFkaXF6a2N4",
+    "date": "2025-08-29",
+    "type": "AA01",
+    "description": "change-account-reference-date-company-current-extended",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/L4RyCNJcx-vGgLB45qwVMMWnuNUm_uytc-juACAO9NY/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02673518/filing-history/MzQ3OTE0MDkxMmFkaXF6a2N4"
   }
 }

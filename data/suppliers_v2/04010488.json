@@ -72,13 +72,91 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "education",
   "buyer_type_breakdown": {
     "education": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T12:12:23Z",
+    "company_name": "OCS PEST CONTROL LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2000-06-08",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": true,
+    "accounts_next_due": "2025-09-30",
+    "accounts_last_made_up": "2023-12-31",
+    "confirmation_statement_overdue": true,
+    "confirmation_statement_next_due": "2025-09-06"
+  },
+  "governance": {
+    "api_date": "2026-04-28T12:12:24Z",
+    "total_officers": 19,
+    "active_count": 3,
+    "resigned_count": 16,
+    "active_officers": [
+      {
+        "name": "RYAN, Laura Clare",
+        "role": "secretary",
+        "appointed_on": "2018-05-14",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "EVANS, Thomas Edward",
+        "role": "director",
+        "appointed_on": "2018-09-17",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "FISHER, Sean",
+        "role": "director",
+        "appointed_on": "2018-10-02",
+        "country_of_residence": "England",
+        "nationality": "British,South African"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T12:12:25Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Ocs Uk&I Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "England And Wales",
+          "registration_number": "06355228"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ0MDgxMjE1M2FkaXF6a2N4",
+    "date": "2024-10-24",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/sUWrPIWePtnuAKZTpNFXYexs-tURx8PYCu38f1gjUFY/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04010488/filing-history/MzQ0MDgxMjE1M2FkaXF6a2N4"
   }
 }

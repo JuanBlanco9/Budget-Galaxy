@@ -59,14 +59,126 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
     "central_govt": 0.9097,
     "council": 0.0903
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T00:04:38Z",
+    "company_name": "HAWK MANAGEMENT (UK) LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1998-01-29",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-04-30",
+    "accounts_last_made_up": "2025-07-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-12"
+  },
+  "governance": {
+    "api_date": "2026-04-28T00:04:39Z",
+    "total_officers": 13,
+    "active_count": 6,
+    "resigned_count": 7,
+    "active_officers": [
+      {
+        "name": "FORBES, Joanna Ramona",
+        "role": "secretary",
+        "appointed_on": "2015-03-27",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BARNETT-KNOTT, Joanne",
+        "role": "director",
+        "appointed_on": "2023-02-21",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BARNETT-KNOTT, Terry",
+        "role": "director",
+        "appointed_on": "2023-02-21",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "FORBES, Joanna Ramona",
+        "role": "director",
+        "appointed_on": "2001-06-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "JONES, Vanessa Eleanor",
+        "role": "director",
+        "appointed_on": "2008-02-29",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "KNOTT, Crawford Alexander",
+        "role": "director",
+        "appointed_on": "2006-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T00:04:41Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Crawford Alexander Knott",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-08-12",
+        "identification": null
+      },
+      {
+        "name": "Hawk Management Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2016-08-12",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "England",
+          "registration_number": "10174752"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwOTA3MjU4OWFkaXF6a2N4",
+    "date": "2026-03-09",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/NwEzrTKv3NnTBPbTiSzajRdSLCP22nXn-jV-_VsKCj0/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03501389/filing-history/MzUwOTA3MjU4OWFkaXF6a2N4"
   }
 }

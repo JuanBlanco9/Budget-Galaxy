@@ -68,13 +68,107 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T22:41:31Z",
+    "company_name": "FORD RETAIL GROUP LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1969-03-20",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-11"
+  },
+  "governance": {
+    "api_date": "2026-04-27T22:41:33Z",
+    "total_officers": 39,
+    "active_count": 5,
+    "resigned_count": 34,
+    "active_officers": [
+      {
+        "name": "DARNELL, Michael Peter",
+        "role": "secretary",
+        "appointed_on": "2016-07-26",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "RANSOME, Mary Lucy",
+        "role": "secretary",
+        "appointed_on": "2015-05-26",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "GLANVILLE, Shaun",
+        "role": "director",
+        "appointed_on": "2019-09-26",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MUSTOE, Stuart David",
+        "role": "director",
+        "appointed_on": "2014-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WILLIAMS, Jonathan Paul",
+        "role": "director",
+        "appointed_on": "2023-03-27",
+        "country_of_residence": "Germany",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T22:41:35Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Ford Motor Company Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Ltd Company",
+          "legal_authority": "Uk",
+          "country_registered": "Uk",
+          "place_registered": "Uk",
+          "registration_number": "235446"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NjUwNzM1OWFkaXF6a2N4",
+    "date": "2025-08-07",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/6tuS_QlkHmyke2OIJelNg7S7CYVzZITT96ZkEikVdVs/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/00950395/filing-history/MzQ3NjUwNzM1OWFkaXF6a2N4"
   }
 }

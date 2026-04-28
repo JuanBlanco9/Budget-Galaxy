@@ -77,88 +77,26 @@
   },
   "financial_health": null,
   "governance": {
-    "officers_active_count": 2,
-    "officers_resigned_count": 0,
-    "board_turnover_ratio": 0.0,
-    "board_turnover_signal": "low",
-    "active_directors": [
-      {
-        "name": "JEGAJEEVAN, Thanureka",
-        "role": "director",
-        "appointed_on": "2018-08-15",
-        "resigned_on": null,
-        "nationality": "British",
-        "occupation": null,
-        "country_of_residence": "United Kingdom",
-        "date_of_birth": {
-          "month": 10,
-          "year": 1986
-        },
-        "address": {
-          "locality": "Milton Keynes",
-          "postal_code": "MK8 8LU",
-          "country": "England"
-        }
-      }
-    ],
-    "secretaries": [
+    "api_date": "2026-04-27T14:25:05Z",
+    "total_officers": 2,
+    "active_count": 0,
+    "resigned_count": 0,
+    "active_officers": [
       {
         "name": "JEGAJEEVAN, Thanureka",
         "role": "secretary",
         "appointed_on": "2018-08-15",
-        "resigned_on": null,
-        "nationality": null,
-        "occupation": null,
         "country_of_residence": null,
-        "date_of_birth": null,
-        "address": {
-          "locality": "Milton Keynes",
-          "postal_code": "MK8 8LU",
-          "country": "England"
-        }
-      }
-    ],
-    "all_active_officers": [
-      {
-        "name": "JEGAJEEVAN, Thanureka",
-        "role": "secretary",
-        "appointed_on": "2018-08-15",
-        "resigned_on": null,
-        "nationality": null,
-        "occupation": null,
-        "country_of_residence": null,
-        "date_of_birth": null,
-        "address": {
-          "locality": "Milton Keynes",
-          "postal_code": "MK8 8LU",
-          "country": "England"
-        }
+        "nationality": null
       },
       {
         "name": "JEGAJEEVAN, Thanureka",
         "role": "director",
         "appointed_on": "2018-08-15",
-        "resigned_on": null,
-        "nationality": "British",
-        "occupation": null,
         "country_of_residence": "United Kingdom",
-        "date_of_birth": {
-          "month": 10,
-          "year": 1986
-        },
-        "address": {
-          "locality": "Milton Keynes",
-          "postal_code": "MK8 8LU",
-          "country": "England"
-        }
+        "nationality": "British"
       }
-    ],
-    "resigned_officers_summary": {
-      "count": 0,
-      "recent": []
-    },
-    "direct_psc_count": 1,
-    "direct_psc_statements": []
+    ]
   },
   "ownership_chain": {
     "resolution": "individual",
@@ -249,5 +187,45 @@
     "note": "No Contracts Finder matches for this supplier in 2020-2024."
   },
   "top_buyer_type": "other",
-  "buyer_type_breakdown": {}
+  "buyer_type_breakdown": {},
+  "ch_profile": {
+    "api_date": "2026-04-27T14:25:04Z",
+    "company_name": "OFSTED LIMITED",
+    "company_status": "dissolved",
+    "date_of_creation": "2018-08-15",
+    "date_of_cessation": "2019-12-17",
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": null,
+    "accounts_overdue": null,
+    "accounts_next_due": null,
+    "accounts_last_made_up": null,
+    "confirmation_statement_overdue": null,
+    "confirmation_statement_next_due": null
+  },
+  "pscs": {
+    "api_date": "2026-04-27T14:25:07Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Miss Thanureka Jegajeevan",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2018-08-15",
+        "identification": null
+      }
+    ]
+  },
+  "enrichment_stages": {
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true
+  }
 }

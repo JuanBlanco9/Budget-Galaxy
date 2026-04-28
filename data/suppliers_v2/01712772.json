@@ -59,13 +59,114 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
     "central_govt": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T07:12:27Z",
+    "company_name": "WESSEX ARCHAEOLOGY LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1983-04-06",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-09-04"
+  },
+  "governance": {
+    "api_date": "2026-04-28T07:12:28Z",
+    "total_officers": 44,
+    "active_count": 9,
+    "resigned_count": 35,
+    "active_officers": [
+      {
+        "name": "LEWIS, Kirsty Lydia",
+        "role": "secretary",
+        "appointed_on": "2026-01-13",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "CULLEY, Kathryn Louise",
+        "role": "director",
+        "appointed_on": "2025-05-22",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GIBSON, Natasha Elena, Dr",
+        "role": "director",
+        "appointed_on": "2025-02-27",
+        "country_of_residence": "England",
+        "nationality": "British,American,South African"
+      },
+      {
+        "name": "LADDLE, Robert William",
+        "role": "director",
+        "appointed_on": "2025-05-27",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MAITLAND, John Benjamin Gladwin",
+        "role": "director",
+        "appointed_on": "2026-03-26",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MILLER, Simon Jonathan",
+        "role": "director",
+        "appointed_on": "2026-03-26",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SCHULTZ, Alexander Paul",
+        "role": "director",
+        "appointed_on": "2024-05-24",
+        "country_of_residence": "England",
+        "nationality": "British,American"
+      },
+      {
+        "name": "SEK, Sarah Marie",
+        "role": "director",
+        "appointed_on": "2026-01-26",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SKEATES, Robin Gerald, Professor",
+        "role": "director",
+        "appointed_on": "2024-02-13",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T07:12:29Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5Mjc5NzkwMmFkaXF6a2N4",
+    "date": "2025-12-08",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/1cvah90dRLgT9XnL3mhuqk3xNdLvMRrLRfDbG2jZt3g/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01712772/filing-history/MzQ5Mjc5NzkwMmFkaXF6a2N4"
   }
 }

@@ -59,14 +59,85 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "education",
   "buyer_type_breakdown": {
     "education": 0.9221,
     "other": 0.0779
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T00:59:16Z",
+    "company_name": "WINDOWMASTER CONTROL SYSTEMS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1999-04-28",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-05-12"
+  },
+  "governance": {
+    "api_date": "2026-04-28T00:59:18Z",
+    "total_officers": 7,
+    "active_count": 2,
+    "resigned_count": 5,
+    "active_officers": [
+      {
+        "name": "BOYTER, Erik Koch",
+        "role": "director",
+        "appointed_on": "2015-04-30",
+        "country_of_residence": "Denmark",
+        "nationality": "Danish"
+      },
+      {
+        "name": "SØRENSEN, Steen Overgaard",
+        "role": "director",
+        "appointed_on": "2017-01-01",
+        "country_of_residence": "Denmark",
+        "nationality": "Danish"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T00:59:20Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Windowmaster International A/S",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Limited Compnay",
+          "legal_authority": "The Danish Compnanies Act",
+          "country_registered": "Denmark",
+          "place_registered": "Denmark",
+          "registration_number": "Dk 13827532"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MjY0ODkwNWFkaXF6a2N4",
+    "date": "2025-09-25",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/DhXXkSpzUb4albcP9EFeFD8MaBN8UMhGTHdiv1v7hHQ/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03760389/filing-history/MzQ4MjY0ODkwNWFkaXF6a2N4"
   }
 }

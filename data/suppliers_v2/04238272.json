@@ -76,15 +76,105 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.6875,
     "agency": 0.1673,
     "central_govt": 0.1452
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T03:07:38Z",
+    "company_name": "MERKLE UK ONE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2001-06-20",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-04"
+  },
+  "governance": {
+    "api_date": "2026-04-28T03:07:39Z",
+    "total_officers": 31,
+    "active_count": 3,
+    "resigned_count": 28,
+    "active_officers": [
+      {
+        "name": "HOGG, Stuart",
+        "role": "director",
+        "appointed_on": "2025-08-29",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "MALE, Annette June",
+        "role": "director",
+        "appointed_on": "2025-01-31",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "STOREY, Nick",
+        "role": "director",
+        "appointed_on": "2023-03-13",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T03:07:40Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Merkle Marketing Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent"
+        ],
+        "notified_on": "2016-09-01",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England & Wales",
+          "place_registered": "Companies House",
+          "registration_number": "08528114"
+        }
+      },
+      {
+        "name": "Mr David Williams",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "American",
+        "country_of_residence": "United States",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3Njc5MzY1NWFkaXF6a2N4",
+    "date": "2025-08-13",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/7X8Z5tOoZ7eb-Xzce278DoAVMkg2jmEf35hr6XEe-2s/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04238272/filing-history/MzQ3Njc5MzY1NWFkaXF6a2N4"
   }
 }

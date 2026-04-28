@@ -59,13 +59,92 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T00:46:14Z",
+    "company_name": "CRIMSON LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2000-10-27",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-10-31",
+    "accounts_last_made_up": "2025-01-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-10"
+  },
+  "governance": {
+    "api_date": "2026-04-28T00:46:16Z",
+    "total_officers": 18,
+    "active_count": 3,
+    "resigned_count": 15,
+    "active_officers": [
+      {
+        "name": "MORETON, Natalie",
+        "role": "secretary",
+        "appointed_on": "2024-07-31",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "MALLABAND, Robert William",
+        "role": "director",
+        "appointed_on": "2001-04-24",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "WHITE, Beverley Marie",
+        "role": "director",
+        "appointed_on": "2020-02-03",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T00:46:17Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Harvey Nash Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent-as-firm",
+          "voting-rights-75-to-100-percent-as-firm"
+        ],
+        "notified_on": "2017-09-11",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "2006 Companies Act",
+          "country_registered": "United Kingdom",
+          "place_registered": "England & Wales",
+          "registration_number": "02202476"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4Mzk4MTkyMGFkaXF6a2N4",
+    "date": "2025-10-07",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/sDfU8ENFBQVgfIbTVaS8-fFawoRS0cCbdsbPdWkpu_Q/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04097664/filing-history/MzQ4Mzk4MTkyMGFkaXF6a2N4"
   }
 }

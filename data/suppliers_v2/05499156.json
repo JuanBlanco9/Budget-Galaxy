@@ -59,13 +59,152 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T06:48:02Z",
+    "company_name": "ARCHITECTURE 00 LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2005-07-05",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-04-30",
+    "accounts_last_made_up": "2025-07-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-06"
+  },
+  "governance": {
+    "api_date": "2026-04-28T06:48:03Z",
+    "total_officers": 13,
+    "active_count": 8,
+    "resigned_count": 5,
+    "active_officers": [
+      {
+        "name": "SAXBY, David Charles",
+        "role": "secretary",
+        "appointed_on": "2005-07-05",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "BRADY, James William",
+        "role": "director",
+        "appointed_on": "2023-06-21",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HELLSTEN, Anna Filippa Larsdotter",
+        "role": "director",
+        "appointed_on": "2024-05-08",
+        "country_of_residence": "England",
+        "nationality": "Swedish"
+      },
+      {
+        "name": "HOLLINGWORTH, Sarah Louise",
+        "role": "director",
+        "appointed_on": "2014-03-04",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "NOLAN, Andrea Louise",
+        "role": "director",
+        "appointed_on": "2023-06-21",
+        "country_of_residence": "England",
+        "nationality": "Irish"
+      },
+      {
+        "name": "PEPPER, Lynton",
+        "role": "director",
+        "appointed_on": "2012-05-30",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SAXBY, David Charles",
+        "role": "director",
+        "appointed_on": "2005-07-05",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WRIGHT, Thomas Joseph",
+        "role": "director",
+        "appointed_on": "2024-05-08",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T06:48:04Z",
+    "total_results": 3,
+    "active_count": 3,
+    "items": [
+      {
+        "name": "Project00 Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent-as-firm",
+          "voting-rights-75-to-100-percent-as-firm",
+          "right-to-appoint-and-remove-directors-as-firm"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "07688919"
+        }
+      },
+      {
+        "name": "Mr Inderpaul Singh Johar",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr David Charles Saxby",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxNjgyNTUzOGFkaXF6a2N4",
+    "date": "2026-04-17",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/p1g3FCx82nO8vwrlciwQ2LaFk-bItHXJrImdJqD94SE/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/05499156/filing-history/MzUxNjgyNTUzOGFkaXF6a2N4"
   }
 }

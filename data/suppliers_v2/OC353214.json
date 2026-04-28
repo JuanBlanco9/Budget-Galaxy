@@ -55,15 +55,193 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.7727,
     "council": 0.2147,
     "nhs": 0.0126
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T02:36:16Z",
+    "company_name": "KENNEDYS LAW LLP",
+    "company_status": "active",
+    "date_of_creation": "2010-03-15",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-01-31",
+    "accounts_last_made_up": "2025-04-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-29"
+  },
+  "governance": {
+    "api_date": "2026-04-28T02:36:17Z",
+    "total_officers": 494,
+    "active_count": 258,
+    "resigned_count": 236,
+    "active_officers": [
+      {
+        "name": "ARAM, Ben",
+        "role": "llp-designated-member",
+        "appointed_on": "2016-05-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "BRUCE, John David",
+        "role": "llp-designated-member",
+        "appointed_on": "2010-04-30",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "MALLA, Christopher",
+        "role": "llp-designated-member",
+        "appointed_on": "2010-04-30",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "WILLIAMS, Nicholas David",
+        "role": "llp-designated-member",
+        "appointed_on": "2010-03-15",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "AGER, Helen Louise",
+        "role": "llp-member",
+        "appointed_on": "2019-09-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "ALLAN, Lesley",
+        "role": "llp-member",
+        "appointed_on": "2022-05-24",
+        "country_of_residence": "Scotland",
+        "nationality": null
+      },
+      {
+        "name": "ANDERSON, Iain Massey",
+        "role": "llp-member",
+        "appointed_on": "2025-10-17",
+        "country_of_residence": "Singapore",
+        "nationality": null
+      },
+      {
+        "name": "ANDREWS, Matt James",
+        "role": "llp-member",
+        "appointed_on": "2010-04-30",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "APPLETON, Benjamin Mark John",
+        "role": "llp-member",
+        "appointed_on": "2023-07-11",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "ARANGO, Catalina Botero",
+        "role": "llp-member",
+        "appointed_on": "2023-12-13",
+        "country_of_residence": "Colombia",
+        "nationality": null
+      },
+      {
+        "name": "ARMSTRONG, Thomas Peter",
+        "role": "llp-member",
+        "appointed_on": "2021-05-18",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "ASHBY, Tobin Massey Charles",
+        "role": "llp-member",
+        "appointed_on": "2021-11-26",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "ATIAS-MAZOR, Inbal",
+        "role": "llp-member",
+        "appointed_on": "2021-05-18",
+        "country_of_residence": "Israel",
+        "nationality": null
+      },
+      {
+        "name": "ATTARD, Mark John",
+        "role": "llp-member",
+        "appointed_on": "2024-11-27",
+        "country_of_residence": "Australia",
+        "nationality": null
+      },
+      {
+        "name": "BAIRD, Graeme William",
+        "role": "llp-member",
+        "appointed_on": "2013-03-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "BALLS, Simon Christopher",
+        "role": "llp-member",
+        "appointed_on": "2013-06-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "BANGINA, Reem Hala, Ms.",
+        "role": "llp-member",
+        "appointed_on": "2024-10-28",
+        "country_of_residence": "United Arab Emirates",
+        "nationality": null
+      },
+      {
+        "name": "BARTLETT, Alexandra Elizabeth",
+        "role": "llp-member",
+        "appointed_on": "2021-12-21",
+        "country_of_residence": "Australia",
+        "nationality": null
+      },
+      {
+        "name": "BATES, Richard Anthony",
+        "role": "llp-member",
+        "appointed_on": "2010-04-30",
+        "country_of_residence": "Hong Kong",
+        "nationality": null
+      },
+      {
+        "name": "BEATY, Catherine Wendy",
+        "role": "llp-member",
+        "appointed_on": "2010-04-30",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T02:36:18Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwMjMxOTIwMGFkaXF6a2N4",
+    "date": "2026-02-02",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/TJnOvzqrsbVAZY0Evzp8JuiEtYxnlZzLTDkvtfEt4es/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/OC353214/filing-history/MzUwMjMxOTIwMGFkaXF6a2N4"
   }
 }

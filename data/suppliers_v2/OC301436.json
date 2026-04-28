@@ -55,13 +55,210 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T00:58:01Z",
+    "company_name": "LANE CLARK & PEACOCK LLP",
+    "company_status": "active",
+    "date_of_creation": "2002-02-06",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-19"
+  },
+  "governance": {
+    "api_date": "2026-04-28T00:58:03Z",
+    "total_officers": 299,
+    "active_count": 212,
+    "resigned_count": 87,
+    "active_officers": [
+      {
+        "name": "PEARSON-STUTTARD, Jonathan Andrew",
+        "role": "llp-designated-member",
+        "appointed_on": "2021-04-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "PORTER, Thomas William John",
+        "role": "llp-designated-member",
+        "appointed_on": "2014-04-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "PUNWANI, Aaron Romeil",
+        "role": "llp-designated-member",
+        "appointed_on": "2002-02-06",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "ABBOTT, Helen Elizabeth",
+        "role": "llp-member",
+        "appointed_on": "2021-04-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "ADAIR, Emma Louise Fairgrieve",
+        "role": "llp-member",
+        "appointed_on": "2020-10-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "ADAMS, Benjamin",
+        "role": "llp-member",
+        "appointed_on": "2019-10-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "ALWARD, David James",
+        "role": "llp-member",
+        "appointed_on": "2020-04-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "AMIN, Laura",
+        "role": "llp-member",
+        "appointed_on": "2022-04-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "AMPLEFORD, Jillian Fiona Henderson",
+        "role": "llp-member",
+        "appointed_on": "2003-04-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "AYRISS, Nicola Jayne",
+        "role": "llp-member",
+        "appointed_on": "2018-04-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "BAILEY, Francesca",
+        "role": "llp-member",
+        "appointed_on": "2021-04-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "BALKWILL, Jonathan Peter",
+        "role": "llp-member",
+        "appointed_on": "2019-04-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "BANHAM, Rachel Anne",
+        "role": "llp-member",
+        "appointed_on": "2010-10-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "BAYLISS, Joanna Dawn",
+        "role": "llp-member",
+        "appointed_on": "2020-04-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "BELL, Rowena Frances",
+        "role": "llp-member",
+        "appointed_on": "2023-04-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "BELTRAMI, Erica Ann",
+        "role": "llp-member",
+        "appointed_on": "2017-04-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "BERRIDGE, Katherine",
+        "role": "llp-member",
+        "appointed_on": "2020-04-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "BRADLEY, Andrew Christopher",
+        "role": "llp-member",
+        "appointed_on": "2023-01-01",
+        "country_of_residence": "Scotland",
+        "nationality": null
+      },
+      {
+        "name": "BRAIN, Natalie",
+        "role": "llp-member",
+        "appointed_on": "2022-04-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "BRAY, Benjamin",
+        "role": "llp-member",
+        "appointed_on": "2023-04-01",
+        "country_of_residence": "England",
+        "nationality": null
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T00:58:05Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Lcp Morgan Holdco Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "right-to-share-surplus-assets-25-to-50-percent-limited-liability-partnership"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "England & Wales",
+          "country_registered": "England & Wales",
+          "place_registered": "England",
+          "registration_number": "4336416"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NTg1MzExMWFkaXF6a2N4",
+    "date": "2025-08-04",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/nd_2yOKNa1mJM_vZMEqRr91JJBgH0kFyKCiWwDZG_cI/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/OC301436/filing-history/MzQ3NTg1MzExMWFkaXF6a2N4"
   }
 }

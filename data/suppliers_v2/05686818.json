@@ -64,13 +64,233 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T11:31:55Z",
+    "company_name": "BRIGHTON BID LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2006-01-25",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-03-31",
+    "accounts_last_made_up": "2025-06-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-08"
+  },
+  "governance": {
+    "api_date": "2026-04-28T11:31:56Z",
+    "total_officers": 52,
+    "active_count": 7,
+    "resigned_count": 45,
+    "active_officers": [
+      {
+        "name": "MERNAGH, Anthony",
+        "role": "secretary",
+        "appointed_on": "2006-06-30",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "AMOS, Paul James",
+        "role": "director",
+        "appointed_on": "2021-05-05",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BUCHANAN-SMITH, Mark Jason",
+        "role": "director",
+        "appointed_on": "2017-07-11",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "FITZHARRIS, Gary",
+        "role": "director",
+        "appointed_on": "2017-05-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MICHAELIDES, Maxine",
+        "role": "director",
+        "appointed_on": "2025-02-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "TAYLOR-SALES, Luke Francis",
+        "role": "director",
+        "appointed_on": "2022-06-20",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WEBSTER, Sophie Louise",
+        "role": "director",
+        "appointed_on": "2023-10-18",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T11:31:58Z",
+    "total_results": 11,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Anthony Mernagh",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2023-10-18",
+        "identification": null
+      },
+      {
+        "name": "Mr Matthew Edward Bristow",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2017-01-25",
+        "identification": null
+      },
+      {
+        "name": "Mrs Caroline Charlotte Clifton",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2017-01-25",
+        "identification": null
+      },
+      {
+        "name": "Mr Patrick Hugh Daniel Warner",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2017-01-25",
+        "identification": null
+      },
+      {
+        "name": "Mr Tim Richardson",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2017-01-25",
+        "identification": null
+      },
+      {
+        "name": "Mr Peter Andrew John Turner",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2017-01-25",
+        "identification": null
+      },
+      {
+        "name": "Mr Damian Bevington Turnbul",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2017-01-25",
+        "identification": null
+      },
+      {
+        "name": "Mr Simon Peter Howe",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2017-01-25",
+        "identification": null
+      },
+      {
+        "name": "Mr James Joseph Willoughby",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2017-01-25",
+        "identification": null
+      },
+      {
+        "name": "Ms Claudia Chantelle Meynell Fisher",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2017-01-25",
+        "identification": null
+      },
+      {
+        "name": "Mr Leon King",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2017-01-25",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxMDQ0ODA4N2FkaXF6a2N4",
+    "date": "2026-03-16",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/xqDays4sBR8TO1MeiqlivLh0yLeio_8DM8ahgdD3PKw/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/05686818/filing-history/MzUxMDQ0ODA4N2FkaXF6a2N4"
   }
 }

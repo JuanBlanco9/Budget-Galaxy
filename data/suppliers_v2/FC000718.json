@@ -55,14 +55,136 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.6799,
     "council": 0.3201
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T07:45:19Z",
+    "company_name": "BUREAU VERITAS",
+    "company_status": "active",
+    "date_of_creation": "1993-01-01",
+    "date_of_cessation": null,
+    "jurisdiction": "united-kingdom",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": null,
+    "accounts_last_made_up": "2018-12-31",
+    "confirmation_statement_overdue": null,
+    "confirmation_statement_next_due": null
+  },
+  "governance": {
+    "api_date": "2026-04-28T07:45:20Z",
+    "total_officers": 12,
+    "active_count": 12,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "MONTOYA, Jesus",
+        "role": "secretary",
+        "appointed_on": "1993-06-24",
+        "country_of_residence": null,
+        "nationality": "French"
+      },
+      {
+        "name": "ARMAND, Richard",
+        "role": "director",
+        "appointed_on": "1993-06-23",
+        "country_of_residence": null,
+        "nationality": "French"
+      },
+      {
+        "name": "BOUTHILLIER, Gilles Francois Gabriel",
+        "role": "director",
+        "appointed_on": "1993-06-23",
+        "country_of_residence": null,
+        "nationality": "French"
+      },
+      {
+        "name": "CHARRUAU, Lucien",
+        "role": "director",
+        "appointed_on": "1993-06-23",
+        "country_of_residence": null,
+        "nationality": "French"
+      },
+      {
+        "name": "FREYCHE, Michel",
+        "role": "director",
+        "appointed_on": "1993-06-23",
+        "country_of_residence": null,
+        "nationality": "French"
+      },
+      {
+        "name": "GABRIEL, Joseph",
+        "role": "director",
+        "appointed_on": "1993-06-23",
+        "country_of_residence": null,
+        "nationality": "French"
+      },
+      {
+        "name": "KERGALL, Alain",
+        "role": "director",
+        "appointed_on": "1993-06-23",
+        "country_of_residence": null,
+        "nationality": "French"
+      },
+      {
+        "name": "LARPENT, Jacques",
+        "role": "director",
+        "appointed_on": "1993-06-23",
+        "country_of_residence": null,
+        "nationality": "French"
+      },
+      {
+        "name": "LAURIN, Hugues",
+        "role": "director",
+        "appointed_on": "1993-06-23",
+        "country_of_residence": null,
+        "nationality": "French"
+      },
+      {
+        "name": "MEUNIER, Henri",
+        "role": "director",
+        "appointed_on": "1993-06-23",
+        "country_of_residence": null,
+        "nationality": "French"
+      },
+      {
+        "name": "VAN DEN BROEK D'OBRENAN, Edouard",
+        "role": "director",
+        "appointed_on": "1993-06-23",
+        "country_of_residence": null,
+        "nationality": "French"
+      },
+      {
+        "name": "SCOR REASSURANCE SA",
+        "role": "corporate-director",
+        "appointed_on": "1993-06-23",
+        "country_of_residence": null,
+        "nationality": null
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T07:45:21Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzMyODc0MDgzM2FkaXF6a2N4",
+    "date": "2022-02-07",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/vfsExygC_rF0Ez9LxmAlGrWB5wNyWPlUhCqd_6NFHQo/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/FC000718/filing-history/MzMyODc0MDgzM2FkaXF6a2N4"
   }
 }

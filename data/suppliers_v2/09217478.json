@@ -66,14 +66,73 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
     "central_govt": 0.8,
     "other": 0.2
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T03:14:58Z",
+    "company_name": "ZK ANALYTICS LTD",
+    "company_status": "active",
+    "date_of_creation": "2014-09-15",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-09-29"
+  },
+  "governance": {
+    "api_date": "2026-04-28T03:15:00Z",
+    "total_officers": 1,
+    "active_count": 1,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "KISS, Csaba Zsolt",
+        "role": "director",
+        "appointed_on": "2014-09-15",
+        "country_of_residence": "United Kingdom",
+        "nationality": "Romanian"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T03:15:01Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Csaba Zsolt Kiss",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Romanian",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MzI1MDcwMWFkaXF6a2N4",
+    "date": "2025-09-30",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/IA8RIAwrqG1iqm5bXDdEQzjsievhAhxo0RXcZJZszx8/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/09217478/filing-history/MzQ4MzI1MDcwMWFkaXF6a2N4"
   }
 }

@@ -68,14 +68,130 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.9478,
     "central_govt": 0.0522
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T20:04:42Z",
+    "company_name": "ONE TWO AGENCY LTD",
+    "company_status": "active",
+    "date_of_creation": "1988-05-12",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-03-31",
+    "accounts_last_made_up": "2025-06-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-30"
+  },
+  "governance": {
+    "api_date": "2026-04-27T20:04:44Z",
+    "total_officers": 10,
+    "active_count": 3,
+    "resigned_count": 7,
+    "active_officers": [
+      {
+        "name": "GORRELL, Bernadette",
+        "role": "director",
+        "appointed_on": "2017-07-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HINDLE, Elisabeth Dorothy",
+        "role": "director",
+        "appointed_on": "2016-07-26",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LOWELL, Timothy Russell",
+        "role": "director",
+        "appointed_on": "2016-07-26",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T20:04:46Z",
+    "total_results": 4,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Glasgows Holdings Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2020-08-20",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "England And Wales",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "12110393"
+        }
+      },
+      {
+        "name": "Mr Ronald Glasgow",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control-as-trust"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Paul Joseph Morey",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control-as-trust"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Paul Raymond Leeks",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control-as-trust"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NTE2MjAwMmFkaXF6a2N4",
+    "date": "2025-12-18",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/xgdGIsKmDSA5RtLGWFQAMrDEqOB9MPuQ3cQcAWKhhI4/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02257022/filing-history/MzQ5NTE2MjAwMmFkaXF6a2N4"
   }
 }

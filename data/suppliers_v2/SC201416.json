@@ -68,13 +68,86 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T23:31:40Z",
+    "company_name": "ROUTEWARE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1999-11-09",
+    "date_of_cessation": null,
+    "jurisdiction": "scotland",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-01"
+  },
+  "governance": {
+    "api_date": "2026-04-27T23:31:42Z",
+    "total_officers": 21,
+    "active_count": 2,
+    "resigned_count": 19,
+    "active_officers": [
+      {
+        "name": "COLLINS, Jeremy",
+        "role": "director",
+        "appointed_on": "2026-04-13",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      },
+      {
+        "name": "DAHLTORP, Timothy John",
+        "role": "director",
+        "appointed_on": "2023-07-12",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T23:31:43Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Routeware Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Scotland",
+          "country_registered": "Scotland",
+          "place_registered": "Companies House Cardiff",
+          "registration_number": "Sc395396"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NjA0NTkwM2FkaXF6a2N4",
+    "date": "2025-09-30",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/L5e3I1zqBXNPrl8RWf2YFLoL-w9uUYHnVLM8jGHcyY4/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/SC201416/filing-history/MzQ5NjA0NTkwM2FkaXF6a2N4"
   }
 }

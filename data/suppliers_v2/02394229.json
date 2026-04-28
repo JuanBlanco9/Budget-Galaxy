@@ -64,13 +64,117 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
     "central_govt": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T14:44:58Z",
+    "company_name": "PALLADIUM INTERNATIONAL LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1989-06-12",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-26"
+  },
+  "governance": {
+    "api_date": "2026-04-27T14:45:00Z",
+    "total_officers": 29,
+    "active_count": 4,
+    "resigned_count": 25,
+    "active_officers": [
+      {
+        "name": "STOCKLEY, Elizabeth Margaret",
+        "role": "secretary",
+        "appointed_on": "2014-03-10",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BEELEY, Amelia Jane Eloise",
+        "role": "director",
+        "appointed_on": "2025-02-04",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MAGILL, Sinead Mary",
+        "role": "director",
+        "appointed_on": "2016-02-25",
+        "country_of_residence": "England",
+        "nationality": "Irish"
+      },
+      {
+        "name": "MURUGANANDAN, Linda",
+        "role": "director",
+        "appointed_on": "2025-02-04",
+        "country_of_residence": "England",
+        "nationality": "Norwegian"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T14:45:02Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Global Infrastructure Solutions Inc",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2022-05-31",
+        "identification": {
+          "legal_form": "Corporation",
+          "legal_authority": "Delaware, United States Of Ameria"
+        }
+      },
+      {
+        "name": "Palladium Group Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Company, Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "02068575"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MTA3MTQ2MWFkaXF6a2N4",
+    "date": "2025-11-28",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/LkqbBkY38LNYnnDN6O4htNongwlKxFb5Ewg7JAPix0I/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02394229/filing-history/MzQ5MTA3MTQ2MWFkaXF6a2N4"
   }
 }

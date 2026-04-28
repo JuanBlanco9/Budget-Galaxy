@@ -65,14 +65,129 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 0.9873,
     "other": 0.0127
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T16:48:35Z",
+    "company_name": "ST MUNGO COMMUNITY HOUSING ASSOCIATION",
+    "company_status": "active",
+    "date_of_creation": "2012-09-24",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-06"
+  },
+  "governance": {
+    "api_date": "2026-04-27T16:48:37Z",
+    "total_officers": 50,
+    "active_count": 11,
+    "resigned_count": 39,
+    "active_officers": [
+      {
+        "name": "HOWORTH, Mark",
+        "role": "secretary",
+        "appointed_on": "2025-09-25",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "ADAMSON, Michael John",
+        "role": "director",
+        "appointed_on": "2024-09-02",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BRADSHAW, Robert James",
+        "role": "director",
+        "appointed_on": "2023-02-08",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CUNLIFFE, Jane Heather",
+        "role": "director",
+        "appointed_on": "2025-01-22",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "DALY, Sean Patrick",
+        "role": "director",
+        "appointed_on": "2026-03-11",
+        "country_of_residence": "United Kingdom",
+        "nationality": "Irish"
+      },
+      {
+        "name": "JOHNSON, Darren Michael",
+        "role": "director",
+        "appointed_on": "2021-05-25",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MEALINGS, Lorraine Ann Rose",
+        "role": "director",
+        "appointed_on": "2023-07-26",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MOORE, Philip Wynford",
+        "role": "director",
+        "appointed_on": "2023-07-26",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "NDLOVU, Edwin",
+        "role": "director",
+        "appointed_on": "2025-01-22",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "NYAHASHA, Shingirai Thaddeus",
+        "role": "director",
+        "appointed_on": "2021-05-25",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "REED, Michael Gregory",
+        "role": "director",
+        "appointed_on": "2026-01-07",
+        "country_of_residence": "Scotland",
+        "nationality": "American"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T16:48:39Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5OTc1NjI2OWFkaXF6a2N4",
+    "date": "2026-01-21",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/TCAU-crNgIlENc0767uA3vwjfuhyjWWaDe2_1UjHqFw/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/08225808/filing-history/MzQ5OTc1NjI2OWFkaXF6a2N4"
   }
 }

@@ -59,13 +59,72 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "police_fire",
   "buyer_type_breakdown": {
     "police_fire": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T05:05:37Z",
+    "company_name": "NEXTHINK LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2014-10-17",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-31"
+  },
+  "governance": {
+    "api_date": "2026-04-28T05:05:38Z",
+    "total_officers": 7,
+    "active_count": 3,
+    "resigned_count": 4,
+    "active_officers": [
+      {
+        "name": "BADOS, Pedro, Mr.",
+        "role": "director",
+        "appointed_on": "2015-01-08",
+        "country_of_residence": "United States",
+        "nationality": "Spanish"
+      },
+      {
+        "name": "BENAMAR, Hamza, Mr.",
+        "role": "director",
+        "appointed_on": "2023-01-26",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      },
+      {
+        "name": "DONOVAN, Maegan",
+        "role": "director",
+        "appointed_on": "2020-12-01",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T05:05:39Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxMTI2NTUwM2FkaXF6a2N4",
+    "date": "2026-03-18",
+    "type": "AAMD",
+    "description": "accounts-amended-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/3euvYGgqxap2Bki3lCgnGURVLY3qb8oS0pnV6Bb6gDc/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/09268999/filing-history/MzUxMTI2NTUwM2FkaXF6a2N4"
   }
 }

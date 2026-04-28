@@ -64,13 +64,114 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
     "central_govt": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T09:57:58Z",
+    "company_name": "SOCIAL ENTERPRISE COALITION CIC",
+    "company_status": "active",
+    "date_of_creation": "2002-04-29",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-05-20"
+  },
+  "governance": {
+    "api_date": "2026-04-28T09:57:59Z",
+    "total_officers": 89,
+    "active_count": 9,
+    "resigned_count": 80,
+    "active_officers": [
+      {
+        "name": "KANJI, Sabira",
+        "role": "secretary",
+        "appointed_on": "2015-07-01",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "ADEBOWALE, Victor Olufemi, Lord",
+        "role": "director",
+        "appointed_on": "2017-01-17",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CLARK DEARDEN, Deviyani",
+        "role": "director",
+        "appointed_on": "2022-05-12",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CROFT, Andrew John",
+        "role": "director",
+        "appointed_on": "2009-11-03",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HOLBROOK, Peter",
+        "role": "director",
+        "appointed_on": "2010-01-04",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "KANJI, Sabira Mohamed",
+        "role": "director",
+        "appointed_on": "2019-10-08",
+        "country_of_residence": "England",
+        "nationality": "British,Kenyan"
+      },
+      {
+        "name": "MCINTOSH, Sarah Frances Ann",
+        "role": "director",
+        "appointed_on": "2022-05-12",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "NIXON, William",
+        "role": "director",
+        "appointed_on": "2015-05-15",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PRITCHARD, Joanna Margaret, Professor",
+        "role": "director",
+        "appointed_on": "2020-04-29",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T09:58:00Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4NTUyMTg1NGFkaXF6a2N4",
+    "date": "2025-10-21",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/3aW--TKYmGY1HaYvvnYsoN_92HMx6vTOfpjI7uR53JY/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04426564/filing-history/MzQ4NTUyMTg1NGFkaXF6a2N4"
   }
 }

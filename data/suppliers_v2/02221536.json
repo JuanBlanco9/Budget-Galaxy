@@ -64,13 +64,93 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T13:40:05Z",
+    "company_name": "EQUALITY TOGETHER",
+    "company_status": "active",
+    "date_of_creation": "1988-02-16",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-09-25"
+  },
+  "governance": {
+    "api_date": "2026-04-28T13:40:06Z",
+    "total_officers": 71,
+    "active_count": 6,
+    "resigned_count": 65,
+    "active_officers": [
+      {
+        "name": "NICHOLSON, Mark Peter",
+        "role": "secretary",
+        "appointed_on": "2022-08-25",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "ADEY, Alvin",
+        "role": "director",
+        "appointed_on": "2013-04-18",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ASQUITH, Lynn",
+        "role": "director",
+        "appointed_on": "2015-05-04",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CHANA, Mohinder Singh",
+        "role": "director",
+        "appointed_on": "2020-11-05",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CROWE, Susan Anne",
+        "role": "director",
+        "appointed_on": "2022-10-26",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SCOTT, Jennifer",
+        "role": "director",
+        "appointed_on": "2019-01-24",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T13:40:07Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NjI0NTkzOWFkaXF6a2N4",
+    "date": "2025-12-24",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/GnrVsVmj6gXO9cRvqgSMgwnZ6tRcGtVWWa_AFhKMgdw/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02221536/filing-history/MzQ5NjI0NTkzOWFkaXF6a2N4"
   }
 }

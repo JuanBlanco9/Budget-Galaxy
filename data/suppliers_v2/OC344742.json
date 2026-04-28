@@ -60,14 +60,198 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0,
     "education": 0.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T03:48:13Z",
+    "company_name": "CLUTTONS LLP",
+    "company_status": "active",
+    "date_of_creation": "2009-04-07",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-12"
+  },
+  "governance": {
+    "api_date": "2026-04-28T03:48:14Z",
+    "total_officers": 52,
+    "active_count": 15,
+    "resigned_count": 37,
+    "active_officers": [
+      {
+        "name": "GRAVETT, John Robert",
+        "role": "llp-designated-member",
+        "appointed_on": "2017-05-03",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "POTTER, Nicholas",
+        "role": "llp-designated-member",
+        "appointed_on": "2017-05-03",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "PAISLEY NEWCO LIMITED",
+        "role": "corporate-llp-designated-member",
+        "appointed_on": "2018-05-31",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "CAZENOVE, Philip David De Lerisson",
+        "role": "llp-member",
+        "appointed_on": "2020-02-17",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "DAM VILLENA, Laura Jane",
+        "role": "llp-member",
+        "appointed_on": "2024-10-15",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "DUFFY, Neil",
+        "role": "llp-member",
+        "appointed_on": "2019-06-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "HAMPTON-RIDDINGTON, Michael",
+        "role": "llp-member",
+        "appointed_on": "2017-05-03",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "HARDING, Simon",
+        "role": "llp-member",
+        "appointed_on": "2019-06-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "HYMAN, James Richard",
+        "role": "llp-member",
+        "appointed_on": "2017-05-03",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "LEVERETT, Joanna",
+        "role": "llp-member",
+        "appointed_on": "2017-05-03",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "MORRIS, Christopher",
+        "role": "llp-member",
+        "appointed_on": "2017-05-03",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "ROBERTS, Harald Einar Gils",
+        "role": "llp-member",
+        "appointed_on": "2017-05-03",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "SAMBRIDGE, Mark",
+        "role": "llp-member",
+        "appointed_on": "2017-05-03",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "STEEDEN, Tracy",
+        "role": "llp-member",
+        "appointed_on": "2017-05-03",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "ZITREN, Darren",
+        "role": "llp-member",
+        "appointed_on": "2017-05-03",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T03:48:15Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Paisley Newco Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "voting-rights-75-to-100-percent-limited-liability-partnership",
+          "right-to-share-surplus-assets-50-to-75-percent-limited-liability-partnership",
+          "right-to-appoint-and-remove-members-limited-liability-partnership"
+        ],
+        "notified_on": "2018-05-31",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "United Kingdom (England And Wales)",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "11340972"
+        }
+      },
+      {
+        "name": "Cluttons Management Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "voting-rights-75-to-100-percent-limited-liability-partnership",
+          "right-to-share-surplus-assets-50-to-75-percent-limited-liability-partnership",
+          "right-to-appoint-and-remove-members-limited-liability-partnership"
+        ],
+        "notified_on": "2017-05-03",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "United Kingdom (England And Wales)",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "10725875"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NjIyMjA5M2FkaXF6a2N4",
+    "date": "2025-12-24",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/wwD506BXeT9y8iBiAJ8IBV-MRKk5sSc2mJwDhRLbUFQ/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/OC344742/filing-history/MzQ5NjIyMjA5M2FkaXF6a2N4"
   }
 }

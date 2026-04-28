@@ -63,10 +63,10 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
@@ -77,5 +77,77 @@
     "central_govt": 0.0723,
     "agency": 0.0092,
     "nhs": 0.0001
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T03:02:52Z",
+    "company_name": "PROBRAND LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1991-10-11",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-12"
+  },
+  "governance": {
+    "api_date": "2026-04-28T03:02:53Z",
+    "total_officers": 8,
+    "active_count": 3,
+    "resigned_count": 5,
+    "active_officers": [
+      {
+        "name": "GRIESBACH, Christopher Paul",
+        "role": "secretary",
+        "appointed_on": "1998-01-22",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "GRIESBACH, Christopher Paul",
+        "role": "director",
+        "appointed_on": "1992-05-07",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ROBBINS, Peter Michael",
+        "role": "director",
+        "appointed_on": "1991-10-17",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T03:02:54Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Peter Michael Robbins",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MTQwNjY2NWFkaXF6a2N4",
+    "date": "2025-09-16",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-medium",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/mMtHLEpPxZw13ulzDJ48lgMDabQgG_wDJG6sBEQgSFg/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02653446/filing-history/MzQ4MTQwNjY2NWFkaXF6a2N4"
   }
 }

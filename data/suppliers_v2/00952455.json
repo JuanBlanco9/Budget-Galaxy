@@ -61,15 +61,107 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.6354,
     "council": 0.3271,
     "nhs": 0.0375
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T19:22:33Z",
+    "company_name": "WYBONE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1969-04-18",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-01-31",
+    "accounts_last_made_up": "2025-04-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-15"
+  },
+  "governance": {
+    "api_date": "2026-04-27T19:22:35Z",
+    "total_officers": 7,
+    "active_count": 2,
+    "resigned_count": 5,
+    "active_officers": [
+      {
+        "name": "COOPER, Shaun Richard",
+        "role": "director",
+        "appointed_on": "1996-11-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MILES, Helen",
+        "role": "director",
+        "appointed_on": "2017-09-22",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T19:22:36Z",
+    "total_results": 3,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Trustees Of C E Wyatt Deceased",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent-as-trust"
+        ],
+        "notified_on": "2017-09-22",
+        "identification": {
+          "legal_form": "Board Of Trustees",
+          "legal_authority": "Uk Law"
+        }
+      },
+      {
+        "name": "Mr Shaun Richard Cooper",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2017-09-22",
+        "identification": null
+      },
+      {
+        "name": "Mr Charles Ernest Wyatt",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-18",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwMDc4MDQ2M2FkaXF6a2N4",
+    "date": "2026-01-21",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/Gt0bmjkMRSMRv_OpnvxlRszfeUp_1SOQSYf0fmEKx4c/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/00952455/filing-history/MzUwMDc4MDQ2M2FkaXF6a2N4"
   }
 }

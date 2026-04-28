@@ -55,15 +55,130 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "agency",
   "buyer_type_breakdown": {
     "agency": 0.7594,
     "education": 0.172,
     "council": 0.0686
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T03:14:36Z",
+    "company_name": "HARTNELL TAYLOR COOK LLP",
+    "company_status": "active",
+    "date_of_creation": "2005-05-13",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-01-31",
+    "accounts_last_made_up": "2025-04-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-05-27"
+  },
+  "governance": {
+    "api_date": "2026-04-28T03:14:38Z",
+    "total_officers": 28,
+    "active_count": 11,
+    "resigned_count": 17,
+    "active_officers": [
+      {
+        "name": "CASTLE, Robinson Charles",
+        "role": "llp-designated-member",
+        "appointed_on": "2021-05-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "FUNICIELLO, Stuart Marc Alessandro",
+        "role": "llp-designated-member",
+        "appointed_on": "2022-05-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "GRAZIER, Christopher Edward Wynn",
+        "role": "llp-designated-member",
+        "appointed_on": "2014-07-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "HARVEY, Simon Wentworth",
+        "role": "llp-designated-member",
+        "appointed_on": "2005-07-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "HOWELL, Stuart Frederick",
+        "role": "llp-designated-member",
+        "appointed_on": "2005-07-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "LAMBERT, Ian Michael",
+        "role": "llp-designated-member",
+        "appointed_on": "2007-04-11",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "MARWOOD, Jonathan Richard",
+        "role": "llp-designated-member",
+        "appointed_on": "2017-05-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "MOAT, Alex Fletcher",
+        "role": "llp-designated-member",
+        "appointed_on": "2013-08-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "NORTH, David Howard Gregory",
+        "role": "llp-designated-member",
+        "appointed_on": "2018-05-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "SAUNDERS, Richard Christopher",
+        "role": "llp-designated-member",
+        "appointed_on": "2023-05-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "SHARKEY, Matthew Paul",
+        "role": "llp-designated-member",
+        "appointed_on": "2023-05-01",
+        "country_of_residence": "England",
+        "nationality": null
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T03:14:39Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwMTY0NDY0OGFkaXF6a2N4",
+    "date": "2026-01-27",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/VSM6yOYVIi7b2L92f9GmeNnHzfVB1QA0agRNO1x6Ock/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/OC313211/filing-history/MzUwMTY0NDY0OGFkaXF6a2N4"
   }
 }

@@ -59,14 +59,122 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "agency",
   "buyer_type_breakdown": {
     "agency": 0.6243,
     "other": 0.3757
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T03:51:54Z",
+    "company_name": "RAYTHEON SYSTEMS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1946-03-23",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-04-04"
+  },
+  "governance": {
+    "api_date": "2026-04-28T03:51:55Z",
+    "total_officers": 74,
+    "active_count": 7,
+    "resigned_count": 67,
+    "active_officers": [
+      {
+        "name": "EDWIN COE SECRETARIES LIMITED",
+        "role": "corporate-secretary",
+        "appointed_on": "2025-09-11",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "FINLAYSON, Julie Anne",
+        "role": "director",
+        "appointed_on": "2025-07-14",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      },
+      {
+        "name": "GAUTHIER, Jennifer",
+        "role": "director",
+        "appointed_on": "2025-02-04",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      },
+      {
+        "name": "GRAY, Christophe James",
+        "role": "director",
+        "appointed_on": "2024-05-31",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "NIJHON, Chander",
+        "role": "director",
+        "appointed_on": "2023-06-01",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      },
+      {
+        "name": "O'DONNELL, Sinead Teresa",
+        "role": "director",
+        "appointed_on": "2022-01-01",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      },
+      {
+        "name": "ROSSELLI, Bryan Dean",
+        "role": "director",
+        "appointed_on": "2019-05-30",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T03:51:56Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Raytheon United Kingdom Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company Incorporated In England And Wales",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Companies House Register Of England And Wales",
+          "registration_number": "00337167"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MzQyMDE3NGFkaXF6a2N4",
+    "date": "2025-10-03",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/l0PSoG-WsVtTp8KGZ8veQieIbYQku2LQ4xvNn53UTss/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/00406809/filing-history/MzQ4MzQyMDE3NGFkaXF6a2N4"
   }
 }

@@ -70,14 +70,115 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "agency",
   "buyer_type_breakdown": {
     "agency": 0.9906,
     "other": 0.0094
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T04:49:34Z",
+    "company_name": "UNITED KINGDOM NATIONAL NUCLEAR LABORATORY LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1999-10-07",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-06-30",
+    "accounts_last_made_up": "2024-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-21"
+  },
+  "governance": {
+    "api_date": "2026-04-28T04:49:35Z",
+    "total_officers": 47,
+    "active_count": 6,
+    "resigned_count": 41,
+    "active_officers": [
+      {
+        "name": "WHEELER, Samantha",
+        "role": "secretary",
+        "appointed_on": "2023-09-18",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "ANTROBUS, Julianne",
+        "role": "director",
+        "appointed_on": "2025-04-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CLARKSON, Iain Geoffrey",
+        "role": "director",
+        "appointed_on": "2019-10-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GRAY, Hannah Brewer",
+        "role": "director",
+        "appointed_on": "2025-10-21",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "SCOTT, David Douglas",
+        "role": "director",
+        "appointed_on": "2026-01-23",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SMART, Neil Graham, Professor",
+        "role": "director",
+        "appointed_on": "2025-04-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T04:49:36Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Nnl Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "06859180"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3OTgyMjk2NWFkaXF6a2N4",
+    "date": "2025-09-04",
+    "type": "AA01",
+    "description": "change-account-reference-date-company-current-extended",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/fKc-KbwP-hJ6oYAHZ4YSOJOfdE1Y5ijd4sFhBF8lzPc/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03857752/filing-history/MzQ3OTgyMjk2NWFkaXF6a2N4"
   }
 }

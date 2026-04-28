@@ -70,13 +70,93 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T20:29:07Z",
+    "company_name": "SUSSEX COMMUNITY DEVELOPMENT ASSOCIATION LTD",
+    "company_status": "active",
+    "date_of_creation": "1997-06-17",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-08-07"
+  },
+  "governance": {
+    "api_date": "2026-04-27T20:29:09Z",
+    "total_officers": 61,
+    "active_count": 6,
+    "resigned_count": 55,
+    "active_officers": [
+      {
+        "name": "CORNISH, John William",
+        "role": "director",
+        "appointed_on": "2011-01-29",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MACAULAY, Helen Marion",
+        "role": "director",
+        "appointed_on": "2010-12-16",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SHIELDS, Andrew Jonathan",
+        "role": "director",
+        "appointed_on": "2020-11-07",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "STEWART-ROBERTS, Daniel James Bamfield",
+        "role": "director",
+        "appointed_on": "2024-12-04",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SULLIVAN, Ioni Anne",
+        "role": "director",
+        "appointed_on": "2018-03-17",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WAGSTAFF, Edward John",
+        "role": "director",
+        "appointed_on": "2022-12-07",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T20:29:11Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NDAyMDgyOWFkaXF6a2N4",
+    "date": "2025-12-19",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/zUFRNGVHWI4s7UWT6w8Q69ZSpFLckMyLNrRuJmgC6hw/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03387617/filing-history/MzQ5NDAyMDgyOWFkaXF6a2N4"
   }
 }

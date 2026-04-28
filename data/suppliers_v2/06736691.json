@@ -68,14 +68,112 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
     "central_govt": 0.8798,
     "other": 0.1202
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T05:31:55Z",
+    "company_name": "BSI PROFESSIONAL SERVICES (UK) LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2008-10-29",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-23"
+  },
+  "governance": {
+    "api_date": "2026-04-28T05:31:56Z",
+    "total_officers": 13,
+    "active_count": 3,
+    "resigned_count": 10,
+    "active_officers": [
+      {
+        "name": "BSI SERVICES HOLDINGS LIMITED",
+        "role": "corporate-secretary",
+        "appointed_on": "2016-10-01",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "QUESTED, Paul David",
+        "role": "director",
+        "appointed_on": "2026-04-09",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "TAYLOR, Susan Charlotte",
+        "role": "director",
+        "appointed_on": "2021-01-20",
+        "country_of_residence": "England",
+        "nationality": "American,British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T05:31:57Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Bsi Professional Services Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "ownership-of-shares-75-to-100-percent-as-firm",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2017-09-18",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Companies House England And Wales",
+          "registration_number": "05901123"
+        }
+      },
+      {
+        "name": "The British Standards Institution",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-10-01",
+        "identification": {
+          "legal_form": "Royal Charter",
+          "legal_authority": "United Kingdom (England And Wales)",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "Zc202"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MDgyMzkwMWFkaXF6a2N4",
+    "date": "2025-09-15",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/wzsNAXA7A92PaZn3KyYbtRgfW8j8vgXOeqFj9OymEjQ/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/06736691/filing-history/MzQ4MDgyMzkwMWFkaXF6a2N4"
   }
 }

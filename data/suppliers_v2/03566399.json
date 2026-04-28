@@ -59,13 +59,119 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T09:45:46Z",
+    "company_name": "HILLS COACHES LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1998-05-19",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-06-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-02"
+  },
+  "governance": {
+    "api_date": "2026-04-28T09:45:48Z",
+    "total_officers": 12,
+    "active_count": 5,
+    "resigned_count": 7,
+    "active_officers": [
+      {
+        "name": "DAVIES, Gareth John",
+        "role": "director",
+        "appointed_on": "2026-01-26",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "HALL, Neal Nicholas",
+        "role": "director",
+        "appointed_on": "2026-01-27",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "HILL, Daniel Steven",
+        "role": "director",
+        "appointed_on": "2022-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "JARVIS, Andrew Simon",
+        "role": "director",
+        "appointed_on": "2026-01-26",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "MCINNES, James Robert",
+        "role": "director",
+        "appointed_on": "2026-01-26",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T09:45:49Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "First Bus Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2026-01-26",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "England And Wales",
+          "registration_number": "03261587"
+        }
+      },
+      {
+        "name": "Mr Darran Lee Hill",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-07-01",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwMjA4OTI1N2FkaXF6a2N4",
+    "date": "2026-01-29",
+    "type": "AA01",
+    "description": "change-account-reference-date-company-current-shortened",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/KhQdPZ9tU5oWWH4HCOUmxNd-4vLbyM_rwp2ZY6Rn4l0/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03566399/filing-history/MzUwMjA4OTI1N2FkaXF6a2N4"
   }
 }

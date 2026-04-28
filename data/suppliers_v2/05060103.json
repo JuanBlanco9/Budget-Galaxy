@@ -64,13 +64,252 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T22:39:09Z",
+    "company_name": "PAYBYPHONE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2004-03-02",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-16"
+  },
+  "governance": {
+    "api_date": "2026-04-27T22:39:11Z",
+    "total_officers": 28,
+    "active_count": 2,
+    "resigned_count": 26,
+    "active_officers": [
+      {
+        "name": "CASHEL, Anthony Daniel Shaw",
+        "role": "director",
+        "appointed_on": "2025-06-30",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HAMILL, Nicholas",
+        "role": "director",
+        "appointed_on": "2025-06-30",
+        "country_of_residence": "Canada",
+        "nationality": "Canadian"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T22:39:12Z",
+    "total_results": 19,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Corpay, Inc.",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2023-09-15",
+        "identification": {
+          "legal_form": "Corporation",
+          "legal_authority": "General Corporation Law",
+          "country_registered": "United States",
+          "place_registered": "Delaware",
+          "registration_number": "72-1074903"
+        }
+      },
+      {
+        "name": "Mr. Josef Ahorner",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Austrian",
+        "country_of_residence": "Austria",
+        "ceased": true,
+        "natures_of_control": [
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2022-05-02",
+        "identification": null
+      },
+      {
+        "name": "Ms. Diana Porsche",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Austrian",
+        "country_of_residence": "Austria",
+        "ceased": true,
+        "natures_of_control": [
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2022-05-02",
+        "identification": null
+      },
+      {
+        "name": "Dr. Ferdinand Oliver Porsche",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Austrian",
+        "country_of_residence": "Austria",
+        "ceased": true,
+        "natures_of_control": [
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2022-05-02",
+        "identification": null
+      },
+      {
+        "name": "Mr. Kai Alexander Porsche",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Austrian",
+        "country_of_residence": "Austria",
+        "ceased": true,
+        "natures_of_control": [
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2022-05-02",
+        "identification": null
+      },
+      {
+        "name": "Mr. Mark Philipp Porsche",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Austrian",
+        "country_of_residence": "Austria",
+        "ceased": true,
+        "natures_of_control": [
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2022-05-02",
+        "identification": null
+      },
+      {
+        "name": "Dr. Hans Michel Piech",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Austrian",
+        "country_of_residence": "Austria",
+        "ceased": true,
+        "natures_of_control": [
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2022-05-02",
+        "identification": null
+      },
+      {
+        "name": "Dr. Wolfgang Porsche",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Austrian",
+        "country_of_residence": "Austria",
+        "ceased": true,
+        "natures_of_control": [
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2022-05-02",
+        "identification": null
+      },
+      {
+        "name": "Mr. Hans-Peter Porsche",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Austrian",
+        "country_of_residence": "Austria",
+        "ceased": true,
+        "natures_of_control": [
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2022-05-02",
+        "identification": null
+      },
+      {
+        "name": "Mr. Gerhard Anton Porsche",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Austrian",
+        "country_of_residence": "Austria",
+        "ceased": true,
+        "natures_of_control": [
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2022-05-02",
+        "identification": null
+      },
+      {
+        "name": "Dr. Christian Porsche",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Austrian",
+        "country_of_residence": "Austria",
+        "ceased": true,
+        "natures_of_control": [
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2022-05-02",
+        "identification": null
+      },
+      {
+        "name": "Mrs. Stephanie Porsche-Schroder",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Austrian",
+        "country_of_residence": "Austria",
+        "ceased": true,
+        "natures_of_control": [
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2022-05-02",
+        "identification": null
+      },
+      {
+        "name": "Mr. Ferdinand Rudolph Wolfgang Porsche",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Austrian",
+        "country_of_residence": "Austria",
+        "ceased": true,
+        "natures_of_control": [
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2022-05-02",
+        "identification": null
+      },
+      {
+        "name": "Mr. Felix Alexander Porsche",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Austrian",
+        "country_of_residence": "Austria",
+        "ceased": true,
+        "natures_of_control": [
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2022-05-02",
+        "identification": null
+      },
+      {
+        "name": "Dr. Geraldine Porsche",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Austrian",
+        "country_of_residence": "Austria",
+        "ceased": true,
+        "natures_of_control": [
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2022-05-02",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MjgxMDY2OWFkaXF6a2N4",
+    "date": "2025-09-26",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/0BZvvQSCZJ_Cvry9AHmrn4rp8Uw6DXYdK8nj5fjkKas/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/05060103/filing-history/MzQ4MjgxMDY2OWFkaXF6a2N4"
   }
 }

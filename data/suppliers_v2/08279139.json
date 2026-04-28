@@ -74,13 +74,142 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T01:12:30Z",
+    "company_name": "XPS PENSIONS GROUP PLC",
+    "company_status": "active",
+    "date_of_creation": "2012-11-02",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-27"
+  },
+  "governance": {
+    "api_date": "2026-04-28T01:12:32Z",
+    "total_officers": 26,
+    "active_count": 10,
+    "resigned_count": 16,
+    "active_officers": [
+      {
+        "name": "RIXON, Sarah",
+        "role": "secretary",
+        "appointed_on": "2024-04-01",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BRAMHALL, Benjamin Oliver",
+        "role": "director",
+        "appointed_on": "2014-04-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CRACKNELL, Michelle Ann",
+        "role": "director",
+        "appointed_on": "2026-03-05",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "CUFF, Paul Gareth",
+        "role": "director",
+        "appointed_on": "2016-10-03",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ING, Sarah Lucy",
+        "role": "director",
+        "appointed_on": "2019-05-17",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "JOSS, Imogen Melissa",
+        "role": "director",
+        "appointed_on": "2023-12-07",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "KENNEDY, Aisling",
+        "role": "director",
+        "appointed_on": "2023-02-22",
+        "country_of_residence": "Ireland",
+        "nationality": "Irish"
+      },
+      {
+        "name": "SHAH, Snehal",
+        "role": "director",
+        "appointed_on": "2019-07-09",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SUTHERLAND, Martin Conrad",
+        "role": "director",
+        "appointed_on": "2023-12-07",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "TALINTYRE, April Carolyn",
+        "role": "director",
+        "appointed_on": "2026-03-05",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T01:12:34Z",
+    "total_results": 1,
+    "active_count": 0,
+    "items": [
+      {
+        "name": "Cbpe Capital Llp",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent-as-trust",
+          "voting-rights-50-to-75-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Liability Partnership",
+          "legal_authority": "Limited Liability Partnership Act 2000",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House (England And Wales)",
+          "registration_number": "Oc305899"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwMDA4NjU1NGFkaXF6a2N4",
+    "date": "2026-01-21",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-interim",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/l2KHKozKvUqTF6sIDNENCdRpmS8a23d5SBbG55-4E24/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/08279139/filing-history/MzUwMDA4NjU1NGFkaXF6a2N4"
   }
 }

@@ -64,13 +64,128 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T20:31:31Z",
+    "company_name": "AGE UK HILLINGDON, HARROW AND BRENT",
+    "company_status": "active",
+    "date_of_creation": "1995-12-08",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-19"
+  },
+  "governance": {
+    "api_date": "2026-04-27T20:31:33Z",
+    "total_officers": 47,
+    "active_count": 11,
+    "resigned_count": 36,
+    "active_officers": [
+      {
+        "name": "LLOYD, Julian Francis",
+        "role": "secretary",
+        "appointed_on": "2017-02-06",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BEATTY, Christine",
+        "role": "director",
+        "appointed_on": "1995-12-08",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CALVERLEY, Roger",
+        "role": "director",
+        "appointed_on": "2007-10-18",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CASTILLO, Carolina",
+        "role": "director",
+        "appointed_on": "2021-05-26",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "DHALABHOY, Sadaf Zehra",
+        "role": "director",
+        "appointed_on": "2025-04-23",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "DHILLON, Ekanjali, Dr.",
+        "role": "director",
+        "appointed_on": "2025-02-26",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "FRANKLIN, Neil William",
+        "role": "director",
+        "appointed_on": "2013-10-24",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "JENNER, Christopher Stanley, Dr",
+        "role": "director",
+        "appointed_on": "2023-01-15",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "KHARICHA, Kalpa, Dr",
+        "role": "director",
+        "appointed_on": "2022-11-22",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SLAVID, Peter Michael",
+        "role": "director",
+        "appointed_on": "2021-03-10",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SPENCE, Natasha",
+        "role": "director",
+        "appointed_on": "2021-05-26",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T20:31:35Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NjUzMzc5NGFkaXF6a2N4",
+    "date": "2026-01-03",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/qtmOCouwIw5rBBmD97NhknFYs7eVB2Zoyees-C_7p_c/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03136052/filing-history/MzQ5NjUzMzc5NGFkaXF6a2N4"
   }
 }

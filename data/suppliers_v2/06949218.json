@@ -76,15 +76,113 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "agency",
   "buyer_type_breakdown": {
     "agency": 0.6019,
     "central_govt": 0.3514,
     "nhs": 0.0467
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T01:53:37Z",
+    "company_name": "FM:SYSTEMS EUROPE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2009-07-01",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-06-30",
+    "accounts_last_made_up": "2024-09-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-05-14"
+  },
+  "governance": {
+    "api_date": "2026-04-28T01:53:39Z",
+    "total_officers": 16,
+    "active_count": 1,
+    "resigned_count": 15,
+    "active_officers": [
+      {
+        "name": "HILL, Mark Albert",
+        "role": "director",
+        "appointed_on": "2024-11-07",
+        "country_of_residence": "Switzerland",
+        "nationality": "American"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T01:53:40Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Fms Europe Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2019-12-02",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "12246471"
+        }
+      },
+      {
+        "name": "Asure Software, Inc.",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2018-04-09",
+        "identification": {
+          "legal_form": "Public Limited Company",
+          "legal_authority": "United States",
+          "country_registered": "United States",
+          "place_registered": "Texas Secretary Of State",
+          "registration_number": "0000884144"
+        }
+      },
+      {
+        "name": "Mr Simon Robert Watts",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NTY4NDMyMGFkaXF6a2N4",
+    "date": "2025-07-31",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/eHljYzYq5xzTdfsI6MLuthDsF3I9b-UD05GX7pPlpmw/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/06949218/filing-history/MzQ3NTY4NDMyMGFkaXF6a2N4"
   }
 }

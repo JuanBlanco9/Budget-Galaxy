@@ -63,13 +63,111 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T01:01:59Z",
+    "company_name": "CROSSLING LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1910-01-27",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-09"
+  },
+  "governance": {
+    "api_date": "2026-04-28T01:02:00Z",
+    "total_officers": 22,
+    "active_count": 6,
+    "resigned_count": 16,
+    "active_officers": [
+      {
+        "name": "WOOF, William Sones",
+        "role": "secretary",
+        "appointed_on": "2024-01-03",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "FALCONER, Angus Kenneth",
+        "role": "director",
+        "appointed_on": "2024-01-03",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LOVE, Gordon Alexander",
+        "role": "director",
+        "appointed_on": "2024-01-03",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MCKERRACHER, John James",
+        "role": "director",
+        "appointed_on": "2024-09-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WIMBLEDON, Steven John",
+        "role": "director",
+        "appointed_on": "2024-01-03",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "WOOF, William Sones",
+        "role": "director",
+        "appointed_on": "2024-01-03",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T01:02:02Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "T Crossling & Co Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4Mzk5OTc5NGFkaXF6a2N4",
+    "date": "2025-10-07",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-audit-exemption-subsiduary",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/sTl3a4R8PX4jUfb0bahBq8zUQZrhX7GOqdnduE52VsU/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/00107189/filing-history/MzQ4Mzk5OTc5NGFkaXF6a2N4"
   }
 }

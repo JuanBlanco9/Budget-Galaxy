@@ -65,13 +65,114 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T01:42:33Z",
+    "company_name": "YORK ARCHAEOLOGICAL TRUST FOR EXCAVATION AND RESEARCH LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1979-06-19",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-09-20"
+  },
+  "governance": {
+    "api_date": "2026-04-28T01:42:35Z",
+    "total_officers": 55,
+    "active_count": 9,
+    "resigned_count": 46,
+    "active_officers": [
+      {
+        "name": "DAVIES, Paul",
+        "role": "secretary",
+        "appointed_on": "2025-03-18",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "HOGGETT, Sian",
+        "role": "director",
+        "appointed_on": "2022-12-09",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MELIA, Ian Charles",
+        "role": "director",
+        "appointed_on": "2018-11-09",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MILLETT, Martin John, Professor",
+        "role": "director",
+        "appointed_on": "2019-05-24",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "MOL, Eva, Dr",
+        "role": "director",
+        "appointed_on": "2023-02-10",
+        "country_of_residence": "England",
+        "nationality": "Dutch"
+      },
+      {
+        "name": "ROBERTS, Ellen, Professor",
+        "role": "director",
+        "appointed_on": "2018-05-18",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SOUTHWORTH, Edmund",
+        "role": "director",
+        "appointed_on": "2019-08-16",
+        "country_of_residence": "Isle Of Man",
+        "nationality": "British"
+      },
+      {
+        "name": "VAVALIOU, Aikaterini",
+        "role": "director",
+        "appointed_on": "2022-12-09",
+        "country_of_residence": "England",
+        "nationality": "Greek"
+      },
+      {
+        "name": "WATSON, Michael Richard",
+        "role": "director",
+        "appointed_on": "2011-12-09",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T01:42:36Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4NDMxMDkxNmFkaXF6a2N4",
+    "date": "2025-10-09",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/C5XO98RazLbOhtxItJCcO-htiBxZQwFDjjv5bGJBp_g/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01430801/filing-history/MzQ4NDMxMDkxNmFkaXF6a2N4"
   }
 }

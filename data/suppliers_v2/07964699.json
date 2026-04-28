@@ -64,13 +64,135 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
     "central_govt": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T00:17:29Z",
+    "company_name": "DIGITAL CATAPULT",
+    "company_status": "active",
+    "date_of_creation": "2012-02-24",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-04-14"
+  },
+  "governance": {
+    "api_date": "2026-04-28T00:17:31Z",
+    "total_officers": 36,
+    "active_count": 12,
+    "resigned_count": 24,
+    "active_officers": [
+      {
+        "name": "STAIT, Christopher",
+        "role": "secretary",
+        "appointed_on": "2018-09-14",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BLETSO, David Roy",
+        "role": "director",
+        "appointed_on": "2023-02-08",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BUIE, Damien Charles William, Dr",
+        "role": "director",
+        "appointed_on": "2023-10-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "English"
+      },
+      {
+        "name": "CECIL, Jessica Mary",
+        "role": "director",
+        "appointed_on": "2022-11-02",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "FRASER, Perdita Rachel Josephine",
+        "role": "director",
+        "appointed_on": "2023-10-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GUHA, Priya",
+        "role": "director",
+        "appointed_on": "2020-04-11",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "HOWELL, Belinda Katharine, Dr",
+        "role": "director",
+        "appointed_on": "2022-11-02",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PRIEST, William James Alexander",
+        "role": "director",
+        "appointed_on": "2020-05-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ROGERS, Yvonne Ruth, Professor",
+        "role": "director",
+        "appointed_on": "2022-11-02",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "STORY, Benjamin Robert",
+        "role": "director",
+        "appointed_on": "2026-01-05",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "TODD, Valerie",
+        "role": "director",
+        "appointed_on": "2023-10-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "UNDERWOOD, Keith Robert",
+        "role": "director",
+        "appointed_on": "2020-04-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T00:17:32Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NTYzNDE5M2FkaXF6a2N4",
+    "date": "2025-12-29",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/rgifKlptuYi7a23ECqApvUltMCnAhzd1blPrsZoSYW0/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/07964699/filing-history/MzQ5NTYzNDE5M2FkaXF6a2N4"
   }
 }

@@ -59,11 +59,96 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
-  "buyer_type_breakdown": {}
+  "buyer_type_breakdown": {},
+  "ch_profile": {
+    "api_date": "2026-04-28T14:12:59Z",
+    "company_name": "T.M.C. (MARINE CONSULTANTS) LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1979-02-09",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": true,
+    "confirmation_statement_next_due": "2026-03-27"
+  },
+  "governance": {
+    "api_date": "2026-04-28T14:13:00Z",
+    "total_officers": 24,
+    "active_count": 4,
+    "resigned_count": 20,
+    "active_officers": [
+      {
+        "name": "PINSENT MASONS SECRETARIAL LIMITED",
+        "role": "corporate-secretary",
+        "appointed_on": "2019-07-02",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BURTHEM, Simon",
+        "role": "director",
+        "appointed_on": "2019-01-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "RUTLER, Jerome Clifford",
+        "role": "director",
+        "appointed_on": "2025-04-04",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "SAAD, Ziad",
+        "role": "director",
+        "appointed_on": "2022-11-25",
+        "country_of_residence": "United Kingdom",
+        "nationality": "French"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T14:13:01Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Bureau Veritas Sas",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-05-03",
+        "identification": {
+          "legal_form": "Listed Company",
+          "legal_authority": "France",
+          "country_registered": "France",
+          "place_registered": "France",
+          "registration_number": "."
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NjIzNDU1NmFkaXF6a2N4",
+    "date": "2026-01-02",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/YE2sspgNoJLBTj8VL-v2O_UpS7V9t6YKopg5BPMcPgM/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01414292/filing-history/MzQ5NjIzNDU1NmFkaXF6a2N4"
+  }
 }

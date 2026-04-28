@@ -66,11 +66,96 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
-  "buyer_type_breakdown": {}
+  "buyer_type_breakdown": {},
+  "ch_profile": {
+    "api_date": "2026-04-27T15:21:20Z",
+    "company_name": "JG&A LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2020-07-08",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-07-31",
+    "accounts_last_made_up": "2024-07-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-29"
+  },
+  "governance": {
+    "api_date": "2026-04-27T15:21:22Z",
+    "total_officers": 3,
+    "active_count": 2,
+    "resigned_count": 1,
+    "active_officers": [
+      {
+        "name": "OLEKA, Glory Ekanem",
+        "role": "director",
+        "appointed_on": "2022-06-03",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "OLEKA, James Ogechukwu",
+        "role": "director",
+        "appointed_on": "2020-07-08",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T15:21:24Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr James Ogechukwu Oleka",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2020-07-13",
+        "identification": null
+      },
+      {
+        "name": "Utility Finance Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2020-07-08",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "Uk Register Of Companies",
+          "registration_number": "07431426"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NTkwMjY3M2FkaXF6a2N4",
+    "date": "2025-07-31",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-micro-entity",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/cepg-OMqURMc-bT4Z2wrEg3l1-7fdLX8ICmZq63D-bE/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/12728988/filing-history/MzQ3NTkwMjY3M2FkaXF6a2N4"
+  }
 }

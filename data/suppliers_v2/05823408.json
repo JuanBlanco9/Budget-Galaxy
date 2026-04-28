@@ -61,14 +61,140 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.9918,
     "council": 0.0082
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T01:01:45Z",
+    "company_name": "CONNEXIN LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2006-05-19",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-06-30",
+    "accounts_last_made_up": "2024-09-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-02"
+  },
+  "governance": {
+    "api_date": "2026-04-28T01:01:47Z",
+    "total_officers": 19,
+    "active_count": 6,
+    "resigned_count": 13,
+    "active_officers": [
+      {
+        "name": "OHS SECRETARIES LIMITED",
+        "role": "corporate-secretary",
+        "appointed_on": "2017-08-25",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "ALAMGIR, Furqan",
+        "role": "director",
+        "appointed_on": "2006-05-19",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "DYSON, David Richard",
+        "role": "director",
+        "appointed_on": "2025-08-13",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "PRIEST, William James Alexander",
+        "role": "director",
+        "appointed_on": "2014-07-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SMITH, Phoebe Madeleine",
+        "role": "director",
+        "appointed_on": "2020-09-14",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "YEUNG, Ka Yiu",
+        "role": "director",
+        "appointed_on": "2010-01-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T01:01:49Z",
+    "total_results": 3,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Connect Iot Bidco Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2023-11-30",
+        "identification": {
+          "legal_form": "Corporate",
+          "legal_authority": "United Kingdom (England And Wales)",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "12847244"
+        }
+      },
+      {
+        "name": "Dr Furqan Alamgir",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2020-09-18",
+        "identification": null
+      },
+      {
+        "name": "Dr Furqan Alamgir",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MTkzNzA0OGFkaXF6a2N4",
+    "date": "2025-06-30",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/7fju7HOnl3f-GzfxbIR3j5OO57RDR5vrFgI5Qu_VFKo/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/05823408/filing-history/MzQ3MTkzNzA0OGFkaXF6a2N4"
   }
 }

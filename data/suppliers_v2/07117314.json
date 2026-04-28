@@ -59,10 +59,10 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
@@ -70,5 +70,120 @@
     "agency": 0.0802,
     "other": 0.0563,
     "police_fire": 0.0062
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T01:31:23Z",
+    "company_name": "WAVEHILL LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2010-01-06",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-03-31",
+    "accounts_last_made_up": "2025-06-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-20"
+  },
+  "governance": {
+    "api_date": "2026-04-28T01:31:24Z",
+    "total_officers": 6,
+    "active_count": 3,
+    "resigned_count": 3,
+    "active_officers": [
+      {
+        "name": "ALLIES, Oliver John",
+        "role": "director",
+        "appointed_on": "2015-05-07",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "GRIFFITHS, Endaf Huw",
+        "role": "director",
+        "appointed_on": "2010-01-06",
+        "country_of_residence": "Wales",
+        "nationality": "British"
+      },
+      {
+        "name": "PARKINSON, Andrew",
+        "role": "director",
+        "appointed_on": "2018-05-22",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T01:31:26Z",
+    "total_results": 4,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Wavehill Eot Trustee Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent",
+          "voting-rights-50-to-75-percent"
+        ],
+        "notified_on": "2020-10-21",
+        "identification": {
+          "legal_form": "Private Company Limited By Guarantee Without Share Capital",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House (England And Wales)",
+          "registration_number": "12909762"
+        }
+      },
+      {
+        "name": "Mr Oliver John Allies",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2018-01-01",
+        "identification": null
+      },
+      {
+        "name": "Mr Mark Andrew Rex Willis",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "Wales",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Endaf Huw Griffiths",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "Wales",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MzM3NzU2MGFkaXF6a2N4",
+    "date": "2025-12-10",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/pw7IvUgEFp3XzKjlan8u2Izev0Z_rXk_tYaehSfPW7Y/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/07117314/filing-history/MzQ5MzM3NzU2MGFkaXF6a2N4"
   }
 }

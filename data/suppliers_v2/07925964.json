@@ -80,13 +80,173 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
     "central_govt": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T12:14:09Z",
+    "company_name": "HYVE UK EVENTS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2012-01-26",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-04-14"
+  },
+  "governance": {
+    "api_date": "2026-04-28T12:14:10Z",
+    "total_officers": 23,
+    "active_count": 3,
+    "resigned_count": 20,
+    "active_officers": [
+      {
+        "name": "CHILLMAN, Robert William Edward",
+        "role": "director",
+        "appointed_on": "2025-03-19",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HUDSON, William David",
+        "role": "director",
+        "appointed_on": "2019-04-23",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WARSOP, James Richard",
+        "role": "director",
+        "appointed_on": "2019-04-23",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T12:14:11Z",
+    "total_results": 5,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Hyve Enterprises Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2022-06-16",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "England And Wales",
+          "country_registered": "England United Kingdom",
+          "place_registered": "Registrar Of Companies",
+          "registration_number": "14028707"
+        }
+      },
+      {
+        "name": "Hyve Enterprises 2 Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2022-06-16",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "England And Wales",
+          "country_registered": "England, United Kingdom",
+          "place_registered": "Registrar Of Companies",
+          "registration_number": "14060823"
+        }
+      },
+      {
+        "name": "Hyve Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2022-05-13",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "England And Wales",
+          "country_registered": "England",
+          "place_registered": "Registrar Of Companies",
+          "registration_number": "06975153"
+        }
+      },
+      {
+        "name": "Ite Enterprises Limited ",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2018-07-17",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House (England And Wales)",
+          "registration_number": "03372928"
+        }
+      },
+      {
+        "name": "Ascential Uk Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "United Kingdom (England)",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "537204"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MzEyMTc1OWFkaXF6a2N4",
+    "date": "2025-12-09",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-audit-exemption-subsiduary",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/3zaEFH29Rl8TQNtlJYFdxSw7dL15P5wiJR3HNOhvwgg/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/07925964/filing-history/MzQ5MzEyMTc1OWFkaXF6a2N4"
   }
 }

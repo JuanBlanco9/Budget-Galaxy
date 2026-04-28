@@ -59,11 +59,116 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
-  "buyer_type_breakdown": {}
+  "buyer_type_breakdown": {},
+  "ch_profile": {
+    "api_date": "2026-04-28T14:24:48Z",
+    "company_name": "TAYLORS COACH TRAVEL LTD",
+    "company_status": "active",
+    "date_of_creation": "2001-06-08",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-05-31",
+    "accounts_last_made_up": "2025-08-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-22"
+  },
+  "governance": {
+    "api_date": "2026-04-28T14:24:49Z",
+    "total_officers": 10,
+    "active_count": 2,
+    "resigned_count": 8,
+    "active_officers": [
+      {
+        "name": "ELLIOTT, Adam David Stewart",
+        "role": "director",
+        "appointed_on": "2010-06-17",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ELLIOTT, Amy Louise",
+        "role": "director",
+        "appointed_on": "2023-06-22",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T14:24:50Z",
+    "total_results": 4,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Mrs Amy Louise Elliott",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2023-07-31",
+        "identification": null
+      },
+      {
+        "name": "Mr Adam David Stewart Elliott",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2023-06-01",
+        "identification": null
+      },
+      {
+        "name": "Mrs Tamzin Ruth Elliott",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Dennis David James Elliott",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5Mzc4MzE1M2FkaXF6a2N4",
+    "date": "2025-12-12",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/4fG0tuGjcJeeLtDzNBtHvTtkRkE4pZS18CSwkB7RH40/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04231062/filing-history/MzQ5Mzc4MzE1M2FkaXF6a2N4"
+  }
 }

@@ -59,13 +59,98 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T04:42:32Z",
+    "company_name": "EULOGY! LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1997-08-21",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-16"
+  },
+  "governance": {
+    "api_date": "2026-04-28T04:42:33Z",
+    "total_officers": 6,
+    "active_count": 2,
+    "resigned_count": 4,
+    "active_officers": [
+      {
+        "name": "LYONS, Teresa Mary",
+        "role": "secretary",
+        "appointed_on": "2004-01-19",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "BRADY, Adrian Kenneth",
+        "role": "director",
+        "appointed_on": "1997-08-21",
+        "country_of_residence": "England",
+        "nationality": "Irish"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T04:42:34Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Eulogy! Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2019-04-02",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "11920775"
+        }
+      },
+      {
+        "name": "Mr Adrian Kenneth Brady",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Irish",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MzQzOTUyMGFkaXF6a2N4",
+    "date": "2025-12-10",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/1gRLwRoDTstRiv9m6FaCd6m6FDtjnHPW9zjQsM7rW58/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03423525/filing-history/MzQ5MzQzOTUyMGFkaXF6a2N4"
   }
 }

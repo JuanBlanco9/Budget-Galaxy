@@ -68,13 +68,107 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
     "central_govt": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T10:32:52Z",
+    "company_name": "ODGERS INTERMEDIATE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2009-12-04",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-01-31",
+    "accounts_last_made_up": "2025-04-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-18"
+  },
+  "governance": {
+    "api_date": "2026-04-28T10:32:53Z",
+    "total_officers": 12,
+    "active_count": 5,
+    "resigned_count": 7,
+    "active_officers": [
+      {
+        "name": "BUCHANAN, Dianne Elizabeth",
+        "role": "secretary",
+        "appointed_on": "2025-08-01",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BOTTOMLEY, Virginia Hilda Brunette Maxwell, Baroness",
+        "role": "director",
+        "appointed_on": "2009-12-16",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "BUCHANAN, Dianne Elizabeth",
+        "role": "director",
+        "appointed_on": "2025-06-09",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MURPHY, Simon James",
+        "role": "director",
+        "appointed_on": "2010-09-21",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SCROPE, Christopher Richard Adrian",
+        "role": "director",
+        "appointed_on": "2009-12-16",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T10:32:54Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Odgers Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "Uk",
+          "place_registered": "Companies House",
+          "registration_number": "10040961"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MjM1NDEyNmFkaXF6a2N4",
+    "date": "2025-09-25",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/JlZeOgc6RDSDkJGbi3AW4rsiwBGtpl5SrpbAN10Sj8o/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/07096041/filing-history/MzQ4MjM1NDEyNmFkaXF6a2N4"
   }
 }

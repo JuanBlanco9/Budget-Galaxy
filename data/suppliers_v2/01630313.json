@@ -59,11 +59,136 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
-  "buyer_type_breakdown": {}
+  "buyer_type_breakdown": {},
+  "ch_profile": {
+    "api_date": "2026-04-28T14:13:30Z",
+    "company_name": "F.I.C. (UK) LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1982-04-20",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-08-21"
+  },
+  "governance": {
+    "api_date": "2026-04-28T14:13:31Z",
+    "total_officers": 29,
+    "active_count": 6,
+    "resigned_count": 23,
+    "active_officers": [
+      {
+        "name": "KEEN, Richard",
+        "role": "secretary",
+        "appointed_on": "2024-04-02",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "CAMMACK, Nicholas James",
+        "role": "director",
+        "appointed_on": "2024-04-02",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "FORWOOD, Hayley",
+        "role": "director",
+        "appointed_on": "2026-01-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "MARSTON, Neil",
+        "role": "director",
+        "appointed_on": "2024-04-02",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "O’SULLIVAN, Dean",
+        "role": "director",
+        "appointed_on": "2025-10-08",
+        "country_of_residence": "United Kingdom",
+        "nationality": "Irish"
+      },
+      {
+        "name": "PEYRUDE, Antoine Louis Jean-Pierre",
+        "role": "director",
+        "appointed_on": "2025-10-06",
+        "country_of_residence": "France",
+        "nationality": "French"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T14:13:32Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Compagnie De Saint-Gobain",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2024-04-02",
+        "identification": {
+          "legal_form": "Corporate",
+          "legal_authority": "France",
+          "country_registered": "France",
+          "place_registered": "France Companies Registry",
+          "registration_number": "Nanterre B 542 039 532"
+        }
+      },
+      {
+        "name": "Mr Josef Chmelar",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Czech",
+        "country_of_residence": "Czech Republic",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Petr Chmelar",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Czech",
+        "country_of_residence": "Czech Republic",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwMjUzMzc4OGFkaXF6a2N4",
+    "date": "2026-02-03",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/FcMfi5SnYNum9_uuWayR5nsZv339MfryaQy85MqaM0w/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01630313/filing-history/MzUwMjUzMzc4OGFkaXF6a2N4"
+  }
 }

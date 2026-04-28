@@ -59,11 +59,104 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
-  "buyer_type_breakdown": {}
+  "buyer_type_breakdown": {},
+  "ch_profile": {
+    "api_date": "2026-04-28T14:27:05Z",
+    "company_name": "CG LEE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2003-03-28",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-24"
+  },
+  "governance": {
+    "api_date": "2026-04-28T14:27:07Z",
+    "total_officers": 8,
+    "active_count": 5,
+    "resigned_count": 3,
+    "active_officers": [
+      {
+        "name": "CLAYTON, Iain Russell",
+        "role": "secretary",
+        "appointed_on": "2003-03-28",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "BIDGOOD, Christopher Glen",
+        "role": "director",
+        "appointed_on": "2010-04-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CLAYTON, Iain Russell",
+        "role": "director",
+        "appointed_on": "2003-03-28",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HYDE, Jeremy Laurence",
+        "role": "director",
+        "appointed_on": "2006-07-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "LYON, Graham David",
+        "role": "director",
+        "appointed_on": "2003-03-28",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T14:27:08Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Magata Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Company Limited By Shares",
+          "legal_authority": "Uk Company Law",
+          "country_registered": "England And Wales",
+          "place_registered": "Uk Register Of Companies",
+          "registration_number": "06050511"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NjAyMTY5M2FkaXF6a2N4",
+    "date": "2025-12-23",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/GDv4-eop8vvXoH3SKH99zSsbIgSH900MSdKGO7aJJEc/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04715326/filing-history/MzQ5NjAyMTY5M2FkaXF6a2N4"
+  }
 }

@@ -64,13 +64,101 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "police_fire",
   "buyer_type_breakdown": {
     "police_fire": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T10:48:28Z",
+    "company_name": "GOODYEAR TYRES UK LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1927-07-06",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-04-11"
+  },
+  "governance": {
+    "api_date": "2026-04-28T10:48:29Z",
+    "total_officers": 82,
+    "active_count": 2,
+    "resigned_count": 80,
+    "active_officers": [
+      {
+        "name": "DUDLEY, Lyndon James",
+        "role": "director",
+        "appointed_on": "2022-04-13",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GEYER, Carl Aubrey",
+        "role": "director",
+        "appointed_on": "2025-08-01",
+        "country_of_residence": "England",
+        "nationality": "Luxembourger"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T10:48:30Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Goodyear Dunlop Tires Europe Bv",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Limited Liability Company",
+          "legal_authority": "Netherlands"
+        }
+      },
+      {
+        "name": "The Goodyear Tire & Rubber Company",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Publicly Traded Us Company",
+          "legal_authority": "Ohio",
+          "country_registered": "Ohio",
+          "place_registered": "The Records Of The Secretary Of State Of Ohio",
+          "registration_number": "12127"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NjM5MzY4M2FkaXF6a2N4",
+    "date": "2025-08-07",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/z5nidwPomrSt8JFCkaBiojOog1laQqgymOwoJi8TX28/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/00223064/filing-history/MzQ3NjM5MzY4M2FkaXF6a2N4"
   }
 }

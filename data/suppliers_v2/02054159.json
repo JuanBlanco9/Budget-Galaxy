@@ -61,15 +61,290 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.9996,
     "education": 0.0002,
     "nhs": 0.0002
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T03:53:09Z",
+    "company_name": "CURTINS CONSULTING LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1986-09-10",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-22"
+  },
+  "governance": {
+    "api_date": "2026-04-28T03:53:10Z",
+    "total_officers": 49,
+    "active_count": 14,
+    "resigned_count": 35,
+    "active_officers": [
+      {
+        "name": "BRUFORD, Philip Alan",
+        "role": "secretary",
+        "appointed_on": "2024-05-16",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BRUFORD, Philip Alan",
+        "role": "director",
+        "appointed_on": "2022-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CARSS, Rhiannon",
+        "role": "director",
+        "appointed_on": "2022-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "DELUCIA-CROOK, Oliver John",
+        "role": "director",
+        "appointed_on": "2022-01-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "EVANS, Daniel Robert",
+        "role": "director",
+        "appointed_on": "2008-01-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "HUGHES, Philip Michael",
+        "role": "director",
+        "appointed_on": "2022-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "KING, Rebecca",
+        "role": "director",
+        "appointed_on": "2022-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MACFARLANE, Andrew, Mr.",
+        "role": "director",
+        "appointed_on": "2023-01-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "MENZIES, Paul Kevin",
+        "role": "director",
+        "appointed_on": "2013-01-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "PARKINSON, Neil",
+        "role": "director",
+        "appointed_on": "2012-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PRICE, David Richard",
+        "role": "director",
+        "appointed_on": "2022-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ROBERTS, Andrew John",
+        "role": "director",
+        "appointed_on": "2025-06-18",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SALT, Helen",
+        "role": "director",
+        "appointed_on": "2022-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "VOGT, Alex",
+        "role": "director",
+        "appointed_on": "2022-01-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T03:53:11Z",
+    "total_results": 11,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Curtins Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2024-12-31",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "03371580"
+        }
+      },
+      {
+        "name": "Mr Robert James Melling",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Daniel Robert Evans",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Jonathan Richard Moister",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Paul Kevin Menzies",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Philip Paul Richardson",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "Scotland",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Anthony Edward Dolan",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr David Strong",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Christopher Mark Fennell",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr John Gerard Caine",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Neil Parkinson",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MTc1NDg2MmFkaXF6a2N4",
+    "date": "2025-06-27",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-medium",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/Teg1_2VDGnJrc-00bjxKZ-CoK3IG00in9ELWW3MlaUg/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02054159/filing-history/MzQ3MTc1NDg2MmFkaXF6a2N4"
   }
 }

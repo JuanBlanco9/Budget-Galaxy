@@ -59,13 +59,167 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "agency",
   "buyer_type_breakdown": {
     "agency": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T06:50:37Z",
+    "company_name": "BPP HOLDINGS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1976-02-20",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-05-31",
+    "accounts_last_made_up": "2024-08-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-12"
+  },
+  "governance": {
+    "api_date": "2026-04-28T06:50:38Z",
+    "total_officers": 53,
+    "active_count": 5,
+    "resigned_count": 48,
+    "active_officers": [
+      {
+        "name": "GADDES, Graham Stuart Mark",
+        "role": "director",
+        "appointed_on": "2017-10-04",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PAYNE, Andrew Matthew",
+        "role": "director",
+        "appointed_on": "2021-07-06",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PRESTON-TAYLOR, Joanna Clare",
+        "role": "director",
+        "appointed_on": "2023-01-13",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SIMMONS, Richard John",
+        "role": "director",
+        "appointed_on": "2018-08-07",
+        "country_of_residence": "Jersey",
+        "nationality": "British"
+      },
+      {
+        "name": "STEWART, Timothy, Professor",
+        "role": "director",
+        "appointed_on": "2017-10-04",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T06:50:39Z",
+    "total_results": 4,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Bpph2 Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2021-03-16",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "13133914"
+        }
+      },
+      {
+        "name": "Bpph1 Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2021-02-25",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "13130025"
+        }
+      },
+      {
+        "name": "Bpph1 Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2021-01-25",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "13130025"
+        }
+      },
+      {
+        "name": "Vanta Education Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England & Wales",
+          "place_registered": "England & Wales",
+          "registration_number": "06920380"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MDM1Mjg3OGFkaXF6a2N4",
+    "date": "2025-06-17",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/JKMG85t2Ck3QUtz_ncaE_77FLPIpaI9AJBfP0uccrIA/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01245304/filing-history/MzQ3MDM1Mjg3OGFkaXF6a2N4"
   }
 }

@@ -59,13 +59,71 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T13:22:46Z",
+    "company_name": "ENHANCED CARE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2012-08-24",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-05-31",
+    "accounts_last_made_up": "2025-08-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-09-27"
+  },
+  "governance": {
+    "api_date": "2026-04-27T13:22:48Z",
+    "total_officers": 4,
+    "active_count": 1,
+    "resigned_count": 3,
+    "active_officers": [
+      {
+        "name": "LEWIS, Joanne Lynn",
+        "role": "director",
+        "appointed_on": "2017-11-15",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T13:22:49Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Gary Owen Lewis",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "Gibraltar",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-10-16",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MjM2NTYyNGFkaXF6a2N4",
+    "date": "2025-12-04",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-dormant",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/O6csBQFdj_qh2Ll8Qx12LWq81wWvjsMRzXytxL42uss/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/08191582/filing-history/MzQ5MjM2NTYyNGFkaXF6a2N4"
   }
 }

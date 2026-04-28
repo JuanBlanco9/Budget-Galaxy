@@ -59,13 +59,71 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T20:05:16Z",
+    "company_name": "TRIDENT CONSTRUCTION LTD",
+    "company_status": "active",
+    "date_of_creation": "2017-09-20",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": true,
+    "accounts_next_due": "2025-06-30",
+    "accounts_last_made_up": "2023-09-30",
+    "confirmation_statement_overdue": true,
+    "confirmation_statement_next_due": "2024-10-03"
+  },
+  "governance": {
+    "api_date": "2026-04-27T20:05:18Z",
+    "total_officers": 1,
+    "active_count": 1,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "CLIFTON, Kevin",
+        "role": "director",
+        "appointed_on": "2017-09-20",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T20:05:20Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Kevin Clifton",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2017-09-20",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQxNzAyMzM5MGFkaXF6a2N4",
+    "date": "2024-04-03",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-micro-entity",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/6HPGqy-UUx1FKqYXwwrLOgRhzB8BSJ1_JD9LO9adE7c/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/10972476/filing-history/MzQxNzAyMzM5MGFkaXF6a2N4"
   }
 }

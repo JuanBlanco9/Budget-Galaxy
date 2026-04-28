@@ -59,13 +59,114 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T04:39:22Z",
+    "company_name": "WESTFIELD CONTRIBUTORY HEALTH SCHEME LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1935-07-27",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-14"
+  },
+  "governance": {
+    "api_date": "2026-04-28T04:39:23Z",
+    "total_officers": 48,
+    "active_count": 9,
+    "resigned_count": 39,
+    "active_officers": [
+      {
+        "name": "CAPPER, David Andrew",
+        "role": "director",
+        "appointed_on": "2015-11-10",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "COPELAND, Robert James",
+        "role": "director",
+        "appointed_on": "2022-04-14",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HOGAN, Jason Sidney",
+        "role": "director",
+        "appointed_on": "2015-11-10",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "NAWAZ, Mahmud",
+        "role": "director",
+        "appointed_on": "2025-04-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "NICHOLLS, Trevor",
+        "role": "director",
+        "appointed_on": "2021-06-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PURDHAM, Stephen",
+        "role": "director",
+        "appointed_on": "2020-04-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "STUBBS, Richard David",
+        "role": "director",
+        "appointed_on": "2022-04-20",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "WALKER, Vicky Emma",
+        "role": "director",
+        "appointed_on": "2025-04-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WEBBER, Nicola Jayne",
+        "role": "director",
+        "appointed_on": "2021-11-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T04:39:24Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MzU0NzIxM2FkaXF6a2N4",
+    "date": "2025-12-11",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/9yzuMWm-u0hNuPu_Vg4nJQek4uyLkoyGataLGrpiTmM/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/00303523/filing-history/MzQ5MzU0NzIxM2FkaXF6a2N4"
   }
 }

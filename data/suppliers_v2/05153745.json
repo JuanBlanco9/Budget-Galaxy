@@ -64,13 +64,106 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "agency",
   "buyer_type_breakdown": {
     "agency": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T07:25:01Z",
+    "company_name": "CELLNEX UK LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2004-06-15",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-29"
+  },
+  "governance": {
+    "api_date": "2026-04-28T07:25:02Z",
+    "total_officers": 32,
+    "active_count": 5,
+    "resigned_count": 27,
+    "active_officers": [
+      {
+        "name": "WHITAKER, Rachael",
+        "role": "secretary",
+        "appointed_on": "2023-11-10",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BATTIFERRI, Simone",
+        "role": "director",
+        "appointed_on": "2023-11-14",
+        "country_of_residence": "Italy",
+        "nationality": "Italian"
+      },
+      {
+        "name": "GONZALEZ, Oscar Cabezuela",
+        "role": "director",
+        "appointed_on": "2025-06-30",
+        "country_of_residence": "Spain",
+        "nationality": "Spanish"
+      },
+      {
+        "name": "LANDOLINA, Gianluca",
+        "role": "director",
+        "appointed_on": "2023-11-14",
+        "country_of_residence": "Italy",
+        "nationality": "Italian"
+      },
+      {
+        "name": "MONTEIRO, Caio Vaz",
+        "role": "director",
+        "appointed_on": "2025-06-30",
+        "country_of_residence": "England",
+        "nationality": "Brazilian"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T07:25:04Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Cellnex Telecom S.A.",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2016-10-11",
+        "identification": {
+          "legal_form": "Public Company",
+          "legal_authority": "Spain",
+          "country_registered": "Spain",
+          "place_registered": "Mercantile Registry Of Barcelona, Spain",
+          "registration_number": "A64907306"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2OTA5NjEzMWFkaXF6a2N4",
+    "date": "2025-06-05",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/ojJNCmciDGtm0wHyFH0JZJDCwvjRrFedtOUK9KHi-II/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/05153745/filing-history/MzQ2OTA5NjEzMWFkaXF6a2N4"
   }
 }

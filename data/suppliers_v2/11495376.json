@@ -65,13 +65,140 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T13:04:00Z",
+    "company_name": "SOUTH BANK COLLEGES",
+    "company_status": "active",
+    "date_of_creation": "2018-08-01",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-04-30",
+    "accounts_last_made_up": "2025-07-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-08-14"
+  },
+  "governance": {
+    "api_date": "2026-04-28T13:04:02Z",
+    "total_officers": 28,
+    "active_count": 10,
+    "resigned_count": 18,
+    "active_officers": [
+      {
+        "name": "CURTIS, Samuel",
+        "role": "secretary",
+        "appointed_on": "2024-03-04",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BALMONT, Stephen John",
+        "role": "director",
+        "appointed_on": "2019-02-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "DARE, Susan Janet",
+        "role": "director",
+        "appointed_on": "2018-10-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "FARWELL, Ruth Sarah, Professor",
+        "role": "director",
+        "appointed_on": "2019-05-07",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "FRENCH, Christopher David",
+        "role": "director",
+        "appointed_on": "2025-10-08",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ISSA, Issa",
+        "role": "director",
+        "appointed_on": "2024-05-06",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "KETT, Paul Michael",
+        "role": "director",
+        "appointed_on": "2025-09-08",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MORRISON-BRISCOE, Karlene Joan",
+        "role": "director",
+        "appointed_on": "2025-11-05",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "OKOSUN, Sophia",
+        "role": "director",
+        "appointed_on": "2025-10-18",
+        "country_of_residence": "England",
+        "nationality": "Nigerian"
+      },
+      {
+        "name": "SONG, Wen-Jia",
+        "role": "director",
+        "appointed_on": "2025-07-15",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T13:04:03Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "London South Bank University",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2018-08-01",
+        "identification": {
+          "legal_form": "Private Company Limited By Guarantee",
+          "legal_authority": "England And Wales",
+          "country_registered": "United Kingdom",
+          "place_registered": "United Kingdom",
+          "registration_number": "00986761"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwNDkxNTg3M2FkaXF6a2N4",
+    "date": "2026-02-17",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/oFMUMKlWZwCAm8Z8Rm8OfdEdwPKGaWC-48K5n9igwwQ/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/11495376/filing-history/MzUwNDkxNTg3M2FkaXF6a2N4"
   }
 }

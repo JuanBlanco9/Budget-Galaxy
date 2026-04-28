@@ -59,13 +59,114 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T22:25:36Z",
+    "company_name": "BEESWIFT LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1981-06-19",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-06-30",
+    "accounts_last_made_up": "2024-09-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-21"
+  },
+  "governance": {
+    "api_date": "2026-04-27T22:25:37Z",
+    "total_officers": 22,
+    "active_count": 6,
+    "resigned_count": 16,
+    "active_officers": [
+      {
+        "name": "BEALE, Matthew Terence",
+        "role": "secretary",
+        "appointed_on": "2025-10-01",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BEALE, Matthew Terence",
+        "role": "director",
+        "appointed_on": "2025-10-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ELLMAN, Daniel",
+        "role": "director",
+        "appointed_on": "2012-07-02",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      },
+      {
+        "name": "ROTH, David Leslie",
+        "role": "director",
+        "appointed_on": "2020-01-27",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      },
+      {
+        "name": "TEPERSON, Mark",
+        "role": "director",
+        "appointed_on": "2012-07-02",
+        "country_of_residence": "United States",
+        "nationality": "British"
+      },
+      {
+        "name": "WASHBOURNE, Darren Roy",
+        "role": "director",
+        "appointed_on": "2017-10-24",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T22:25:39Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Gerber Goldschmidt Group (Uk) Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "English Law",
+          "country_registered": "England",
+          "place_registered": "England And Wales",
+          "registration_number": "02853557"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2ODA5MDA0OGFkaXF6a2N4",
+    "date": "2025-05-28",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/dm6wRRlDVHV5T6T-nJxynXc_nApaBy8Nf1yeDwILi3I/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01569085/filing-history/MzQ2ODA5MDA0OGFkaXF6a2N4"
   }
 }

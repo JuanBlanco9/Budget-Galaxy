@@ -59,14 +59,112 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 0.6865,
     "other": 0.3135
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T13:08:55Z",
+    "company_name": "DOTTED EYES LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2002-06-27",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-01-31",
+    "accounts_last_made_up": "2025-04-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-08"
+  },
+  "governance": {
+    "api_date": "2026-04-28T13:08:56Z",
+    "total_officers": 13,
+    "active_count": 4,
+    "resigned_count": 9,
+    "active_officers": [
+      {
+        "name": "WILLIAMS, Laura Alison",
+        "role": "secretary",
+        "appointed_on": "2010-11-29",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "ALLAN, Benjamin John Maxwell",
+        "role": "director",
+        "appointed_on": "2008-04-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ALLAN, Kirsten Brigitte",
+        "role": "director",
+        "appointed_on": "2025-01-10",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WILLIAMS, Laura Alison",
+        "role": "director",
+        "appointed_on": "2025-01-10",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T13:08:57Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Benjamin John, Maxwell Allan",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Dotted Eyes Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 1985",
+          "country_registered": "England",
+          "place_registered": "England And Wales",
+          "registration_number": "06543990"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5Nzc4NzA3OWFkaXF6a2N4",
+    "date": "2026-01-06",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/usuAqdusPojkzyxSDeK-EK0SmrQ1Z3uK2A8DSDYspu0/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04471760/filing-history/MzQ5Nzc4NzA3OWFkaXF6a2N4"
   }
 }

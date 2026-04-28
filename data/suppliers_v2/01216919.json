@@ -64,13 +64,195 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T06:08:48Z",
+    "company_name": "P.J. HARTE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1975-06-23",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-03-31",
+    "accounts_last_made_up": "2025-06-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-14"
+  },
+  "governance": {
+    "api_date": "2026-04-28T06:08:49Z",
+    "total_officers": 5,
+    "active_count": 5,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "HARTE, Elizabeth",
+        "role": "secretary",
+        "appointed_on": null,
+        "country_of_residence": null,
+        "nationality": "Irish"
+      },
+      {
+        "name": "HARTE, Damian Paul",
+        "role": "director",
+        "appointed_on": "2002-06-11",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HARTE, Elizabeth",
+        "role": "director",
+        "appointed_on": null,
+        "country_of_residence": "United Kingdom",
+        "nationality": "Irish"
+      },
+      {
+        "name": "HARTE, Gerald Terrence",
+        "role": "director",
+        "appointed_on": "1996-07-01",
+        "country_of_residence": "England",
+        "nationality": "Irish,British"
+      },
+      {
+        "name": "HARTE, Patrick Joseph",
+        "role": "director",
+        "appointed_on": null,
+        "country_of_residence": "England",
+        "nationality": "Irish"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T06:08:50Z",
+    "total_results": 7,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Macanta Investments Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2024-05-14",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England And Wales",
+          "place_registered": "England And Wales",
+          "registration_number": "15675756"
+        }
+      },
+      {
+        "name": "Stakhanovite Investments Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2023-06-30",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England And Wales",
+          "place_registered": "England And Wales",
+          "registration_number": "14572750"
+        }
+      },
+      {
+        "name": "Hiraeth Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2023-06-30",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England And Wales",
+          "place_registered": "England And Wales",
+          "registration_number": "14944122"
+        }
+      },
+      {
+        "name": "Mr Gerald Terrence Harte",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Irish,British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Damian Paul Harte",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Patrick Joseph Harte",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Irish",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mrs Elizabeth Harte",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Irish",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxMzU0NzYxNWFkaXF6a2N4",
+    "date": "2026-03-31",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/S_KGsNlZAieUpxdMOmKFCTrBfRXOmBJdEcOVDN4kFi8/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01216919/filing-history/MzUxMzU0NzYxNWFkaXF6a2N4"
   }
 }

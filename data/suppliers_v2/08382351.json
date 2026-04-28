@@ -64,13 +64,121 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T22:10:08Z",
+    "company_name": "HEALTHWATCH RICHMOND LTD.",
+    "company_status": "active",
+    "date_of_creation": "2013-01-30",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-13"
+  },
+  "governance": {
+    "api_date": "2026-04-27T22:10:10Z",
+    "total_officers": 33,
+    "active_count": 10,
+    "resigned_count": 23,
+    "active_officers": [
+      {
+        "name": "ARNOLD, Annette Kay",
+        "role": "director",
+        "appointed_on": "2024-04-17",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BUNNELL, Philip Harvey",
+        "role": "director",
+        "appointed_on": "2023-03-10",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CARRARO, Anthony",
+        "role": "director",
+        "appointed_on": "2025-02-17",
+        "country_of_residence": "England",
+        "nationality": "British,Italian"
+      },
+      {
+        "name": "CRELLIN, Lynda Elizabeth",
+        "role": "director",
+        "appointed_on": "2022-04-14",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GREEN, Bonita",
+        "role": "director",
+        "appointed_on": "2025-12-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HAINSWORTH, Paul Reuben",
+        "role": "director",
+        "appointed_on": "2025-02-20",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HUNT, James Robert",
+        "role": "director",
+        "appointed_on": "2019-11-21",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MARIMUTHU, Anne",
+        "role": "director",
+        "appointed_on": "2017-04-17",
+        "country_of_residence": "United Kingdom",
+        "nationality": "Malaysian"
+      },
+      {
+        "name": "MCNAB, Alan Fraser",
+        "role": "director",
+        "appointed_on": "2022-11-24",
+        "country_of_residence": "England",
+        "nationality": "British,Scottish"
+      },
+      {
+        "name": "MILLAR, Thomas Dugald Geoffrey",
+        "role": "director",
+        "appointed_on": "2019-11-21",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T22:10:11Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MDU3ODk0N2FkaXF6a2N4",
+    "date": "2025-11-24",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/tQyZWmcSBCxhtSHhE-QMoEXvVbAWHlIrzDj9Tqv4K5g/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/08382351/filing-history/MzQ5MDU3ODk0N2FkaXF6a2N4"
   }
 }

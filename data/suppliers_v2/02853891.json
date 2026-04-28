@@ -59,13 +59,163 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "agency",
   "buyer_type_breakdown": {
     "agency": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T22:11:43Z",
+    "company_name": "CMT FLEXIBLES LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1993-09-10",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-06-30",
+    "accounts_last_made_up": "2025-09-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-09-20"
+  },
+  "governance": {
+    "api_date": "2026-04-27T22:11:45Z",
+    "total_officers": 9,
+    "active_count": 3,
+    "resigned_count": 6,
+    "active_officers": [
+      {
+        "name": "JACK, Gordon William",
+        "role": "director",
+        "appointed_on": "1993-10-05",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "JONES, Andrew Brian",
+        "role": "director",
+        "appointed_on": "2017-03-24",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "WOODALL, Lee Clive",
+        "role": "director",
+        "appointed_on": "2017-03-24",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T22:11:46Z",
+    "total_results": 5,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Tryst57 Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent",
+          "voting-rights-50-to-75-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2023-09-30",
+        "identification": {
+          "legal_form": "Limited",
+          "legal_authority": "English",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "13040819"
+        }
+      },
+      {
+        "name": "Cmt Advantage Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2023-01-17",
+        "identification": {
+          "legal_form": "Limited",
+          "legal_authority": "English",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "10411135"
+        }
+      },
+      {
+        "name": "Cmt Flexibles (Holdings) Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent",
+          "voting-rights-50-to-75-percent"
+        ],
+        "notified_on": "2016-08-17",
+        "identification": {
+          "legal_form": "Company",
+          "legal_authority": "Compnaies Act",
+          "country_registered": "United Kingdom",
+          "place_registered": "Uk Register Of Companies",
+          "registration_number": "07114833"
+        }
+      },
+      {
+        "name": "Mr Gordon William Jack",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-08-17",
+        "identification": null
+      },
+      {
+        "name": "Cmt Flexibles (Holdings) Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-50-to-75-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited",
+          "legal_authority": "English",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "07114833"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxMzg4NzY3MWFkaXF6a2N4",
+    "date": "2026-04-01",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/dpqv7zSkfGEEMTZfnC6krsCgO2yuPV2r7zXUi_RwV94/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02853891/filing-history/MzUxMzg4NzY3MWFkaXF6a2N4"
   }
 }

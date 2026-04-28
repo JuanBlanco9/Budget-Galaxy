@@ -60,11 +60,147 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
-  "buyer_type_breakdown": {}
+  "buyer_type_breakdown": {},
+  "ch_profile": {
+    "api_date": "2026-04-28T15:04:32Z",
+    "company_name": "SYNERGY CONSTRUCTION AND PROPERTY CONSULTANTS LLP",
+    "company_status": "active",
+    "date_of_creation": "2006-03-10",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-11"
+  },
+  "governance": {
+    "api_date": "2026-04-28T15:04:34Z",
+    "total_officers": 43,
+    "active_count": 14,
+    "resigned_count": 29,
+    "active_officers": [
+      {
+        "name": "BALL, Duncan",
+        "role": "llp-designated-member",
+        "appointed_on": "2008-04-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "GINGER, Paul James",
+        "role": "llp-designated-member",
+        "appointed_on": "2022-04-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "GLEESON, Declan Vincent",
+        "role": "llp-designated-member",
+        "appointed_on": "2014-10-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "WOODHOUSE, Anne-Marie",
+        "role": "llp-designated-member",
+        "appointed_on": "2008-07-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "BUCKLEY, Robert Neil",
+        "role": "llp-member",
+        "appointed_on": "2018-04-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "COOK, Jon Anthony",
+        "role": "llp-member",
+        "appointed_on": "2006-04-06",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "COTTLE, James",
+        "role": "llp-member",
+        "appointed_on": "2021-04-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "GRINHAM, Paul",
+        "role": "llp-member",
+        "appointed_on": "2008-04-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "HAWTIN, David",
+        "role": "llp-member",
+        "appointed_on": "2008-04-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "KHOO, Wui Bung",
+        "role": "llp-member",
+        "appointed_on": "2008-04-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "LUFF, Anthony Patrick",
+        "role": "llp-member",
+        "appointed_on": "2006-04-06",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "THOMPSON, Thomas James",
+        "role": "llp-member",
+        "appointed_on": "2024-04-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "WALTERS, Robert Neil",
+        "role": "llp-member",
+        "appointed_on": "2008-04-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "WHYTE, Matthew",
+        "role": "llp-member",
+        "appointed_on": "2021-04-01",
+        "country_of_residence": "England",
+        "nationality": null
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T15:04:35Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4NjU0NTY2OWFkaXF6a2N4",
+    "date": "2025-10-28",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/0hkxhFMapIESq1ewBce8OUQHubr44Se8QVQz6l_7KY0/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/OC318352/filing-history/MzQ4NjU0NTY2OWFkaXF6a2N4"
+  }
 }

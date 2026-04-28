@@ -59,10 +59,10 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
@@ -70,5 +70,113 @@
     "other": 0.0217,
     "agency": 0.0095,
     "education": 0.0017
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T21:20:53Z",
+    "company_name": "TURNER & TOWNSEND COST MANAGEMENT LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2007-12-20",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-24"
+  },
+  "governance": {
+    "api_date": "2026-04-27T21:20:55Z",
+    "total_officers": 25,
+    "active_count": 7,
+    "resigned_count": 18,
+    "active_officers": [
+      {
+        "name": "QUALTROUGH, Jonathan William",
+        "role": "secretary",
+        "appointed_on": "2023-11-01",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "CLANCY, Vincent Patrick",
+        "role": "director",
+        "appointed_on": "2007-12-20",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "MARSHALL, Stephanie Jayne",
+        "role": "director",
+        "appointed_on": "2026-01-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "MOORE, Patricia",
+        "role": "director",
+        "appointed_on": "2018-05-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "QUALTROUGH, Jonathan William",
+        "role": "director",
+        "appointed_on": "2023-11-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "SARGENT, Christopher James",
+        "role": "director",
+        "appointed_on": "2023-05-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "WHYSALL, David Scott",
+        "role": "director",
+        "appointed_on": "2026-04-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T21:20:57Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Turner & Townsend Uk Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "United Kingdom (England And Wales)",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "03512868"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MjU2MDQwM2FkaXF6a2N4",
+    "date": "2025-09-25",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/XzMC5k_Brhb_Nar5O7S9yVhw1kLW19ZiNQYtso4obQ4/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/06458527/filing-history/MzQ4MjU2MDQwM2FkaXF6a2N4"
   }
 }

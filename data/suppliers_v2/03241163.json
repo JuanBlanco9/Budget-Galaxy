@@ -59,13 +59,100 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T19:01:49Z",
+    "company_name": "STABILISED PAVEMENTS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1996-08-23",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-11"
+  },
+  "governance": {
+    "api_date": "2026-04-27T19:01:51Z",
+    "total_officers": 11,
+    "active_count": 4,
+    "resigned_count": 7,
+    "active_officers": [
+      {
+        "name": "HOWE, Gerald Thaddius Robinson",
+        "role": "secretary",
+        "appointed_on": "2012-08-17",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "HOWE, Gerald Thaddius Robinson",
+        "role": "director",
+        "appointed_on": "2007-04-30",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "SMITH, Warren Gregory",
+        "role": "director",
+        "appointed_on": "2000-02-07",
+        "country_of_residence": "Australia",
+        "nationality": "Australian"
+      },
+      {
+        "name": "WILMOT, Thomas Dorrien",
+        "role": "director",
+        "appointed_on": "1996-08-23",
+        "country_of_residence": "Australia",
+        "nationality": "Australian"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T19:01:52Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Stabilised Pavements Uk Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England And Wales",
+          "place_registered": "England And Wales",
+          "registration_number": "03039538"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MzIyNzgwNGFkaXF6a2N4",
+    "date": "2025-09-30",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/ETUcNxLNbhrk9Jul4uQQ_gqXRNR_k7aJCw7N0utgIpk/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03241163/filing-history/MzQ4MzIyNzgwNGFkaXF6a2N4"
   }
 }

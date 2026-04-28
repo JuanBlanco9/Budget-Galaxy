@@ -59,13 +59,98 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T21:21:07Z",
+    "company_name": "JJ FOOD SERVICE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1988-12-23",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-22"
+  },
+  "governance": {
+    "api_date": "2026-04-27T21:21:09Z",
+    "total_officers": 7,
+    "active_count": 4,
+    "resigned_count": 3,
+    "active_officers": [
+      {
+        "name": "KIAMIL, Mustafa Hussein",
+        "role": "secretary",
+        "appointed_on": "1988-12-31",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "AHMED, Mushtaque",
+        "role": "director",
+        "appointed_on": "2019-12-18",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "KIAMIL, Mustafa Hussein",
+        "role": "director",
+        "appointed_on": "1988-12-31",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "KIAMIL, Ozlem",
+        "role": "director",
+        "appointed_on": "2023-04-19",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T21:21:10Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "J J Food Service Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-06-30",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "England And Wales",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "04086685"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MzQzNzA5N2FkaXF6a2N4",
+    "date": "2025-12-10",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/gsY4UVozfy9Toga79J6eAhX2tgriN5Zf8I8pjltfO6Q/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02330996/filing-history/MzQ5MzQzNzA5N2FkaXF6a2N4"
   }
 }

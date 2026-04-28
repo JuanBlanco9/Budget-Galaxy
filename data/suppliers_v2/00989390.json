@@ -59,13 +59,154 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T06:17:38Z",
+    "company_name": "BASSON & CO. LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1970-09-15",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-01-31",
+    "accounts_last_made_up": "2025-04-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-09-13"
+  },
+  "governance": {
+    "api_date": "2026-04-28T06:17:39Z",
+    "total_officers": 8,
+    "active_count": 6,
+    "resigned_count": 2,
+    "active_officers": [
+      {
+        "name": "MCCORMICK, Pamela",
+        "role": "secretary",
+        "appointed_on": null,
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "BLACKMORE, Darel",
+        "role": "director",
+        "appointed_on": "2005-10-07",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "BLACKMORE, Keith",
+        "role": "director",
+        "appointed_on": "1994-06-17",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "MCCORMICK, Geraldine Ann",
+        "role": "director",
+        "appointed_on": "2005-10-07",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "MCCORMICK, Martin",
+        "role": "director",
+        "appointed_on": null,
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "MCCORMICK, Pamela",
+        "role": "director",
+        "appointed_on": "2005-10-07",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T06:17:40Z",
+    "total_results": 5,
+    "active_count": 4,
+    "items": [
+      {
+        "name": "Mr Harry Mccormick",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mrs Darel Blackmore",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mrs Geraldine Ann Mccormick",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Martin Mccormick",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mrs Pamela Mccormick",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4NDE2NzQwNmFkaXF6a2N4",
+    "date": "2025-10-08",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/2-keYTVkU73d-kfiAU9GdJ5q84X78Ysaz7qzkN4is9I/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/00989390/filing-history/MzQ4NDE2NzQwNmFkaXF6a2N4"
   }
 }

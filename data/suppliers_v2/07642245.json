@@ -64,13 +64,124 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "education",
   "buyer_type_breakdown": {
     "education": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T06:45:45Z",
+    "company_name": "ABERLINK LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2011-05-20",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-03-31",
+    "accounts_last_made_up": "2025-06-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-03"
+  },
+  "governance": {
+    "api_date": "2026-04-28T06:45:46Z",
+    "total_officers": 5,
+    "active_count": 4,
+    "resigned_count": 1,
+    "active_officers": [
+      {
+        "name": "COOK, Rachel",
+        "role": "director",
+        "appointed_on": "2022-01-17",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "DAVIES, Christopher",
+        "role": "director",
+        "appointed_on": "2022-01-17",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "EALES, Marcus James",
+        "role": "director",
+        "appointed_on": "2011-05-20",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "RHODES, Ian",
+        "role": "director",
+        "appointed_on": "2022-01-17",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T06:45:47Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Aberlink Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2020-03-10",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "England And Wales",
+          "country_registered": "Uk",
+          "place_registered": "Uk Register Of Companies",
+          "registration_number": "12482324"
+        }
+      },
+      {
+        "name": "Mr Gavin Richard Bailey",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Marcus James Eales",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxMjI1MjczNGFkaXF6a2N4",
+    "date": "2026-03-24",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/PqTnDh1DVpvkKXNsnH-53Y9rgYh7tFYU9JUyZnSaZLQ/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/07642245/filing-history/MzUxMjI1MjczNGFkaXF6a2N4"
   }
 }

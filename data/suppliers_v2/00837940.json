@@ -68,10 +68,10 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
@@ -80,5 +80,143 @@
     "central_govt": 0.0123,
     "agency": 0.0031,
     "nhs": 0.001
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T07:37:53Z",
+    "company_name": "KINTO UK LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1965-02-17",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-18"
+  },
+  "governance": {
+    "api_date": "2026-04-28T07:37:55Z",
+    "total_officers": 42,
+    "active_count": 6,
+    "resigned_count": 36,
+    "active_officers": [
+      {
+        "name": "BUTTERWORTH, Charlotte Louise",
+        "role": "secretary",
+        "appointed_on": "2024-01-24",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "CHOPRA, Ramesh Kumar",
+        "role": "director",
+        "appointed_on": "2019-12-31",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GAMBART, Didier Robert Maurice",
+        "role": "director",
+        "appointed_on": "2024-01-01",
+        "country_of_residence": "Belgium",
+        "nationality": "French"
+      },
+      {
+        "name": "LUCA, Luigi Ksawery",
+        "role": "director",
+        "appointed_on": "2026-01-12",
+        "country_of_residence": "United Kingdom",
+        "nationality": "Italian"
+      },
+      {
+        "name": "RUMBLE, Matthew",
+        "role": "director",
+        "appointed_on": "2019-12-31",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "TWYDELL, Edward John",
+        "role": "director",
+        "appointed_on": "2025-07-12",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T07:37:56Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Kinto Europe Gmbh",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2019-12-31",
+        "identification": {
+          "legal_form": "Company Limited By Shares",
+          "legal_authority": "German",
+          "country_registered": "Germany",
+          "place_registered": "Germany",
+          "registration_number": "Hrb 95859"
+        }
+      },
+      {
+        "name": "Toyota Motor Corporation",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2019-12-31",
+        "identification": {
+          "legal_form": "Company Limited By Shares",
+          "legal_authority": "Companies Act (Japan)",
+          "country_registered": "Japan",
+          "place_registered": "Japan",
+          "registration_number": "N/A"
+        }
+      },
+      {
+        "name": "Inchcape International Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "United Kingdom (England)",
+          "country_registered": "England And Wales",
+          "place_registered": "United Kingdom (England) Companies House",
+          "registration_number": "3580629"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MzExODQ2NGFkaXF6a2N4",
+    "date": "2025-12-09",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/Ee-xXsoKKgiJ7XHPypc1D8PGMKCRAL4fOujqKm5O9ho/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/00837940/filing-history/MzQ5MzExODQ2NGFkaXF6a2N4"
   }
 }

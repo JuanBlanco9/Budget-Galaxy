@@ -59,13 +59,189 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T02:32:04Z",
+    "company_name": "MARWOOD ELECTRICAL COMPANY LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1977-12-12",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-05-29"
+  },
+  "governance": {
+    "api_date": "2026-04-28T02:32:05Z",
+    "total_officers": 17,
+    "active_count": 3,
+    "resigned_count": 14,
+    "active_officers": [
+      {
+        "name": "YU, Leo",
+        "role": "secretary",
+        "appointed_on": "2025-05-01",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "WESTBROOK, Steven",
+        "role": "director",
+        "appointed_on": "2025-05-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "YU, Leo",
+        "role": "director",
+        "appointed_on": "2025-05-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T02:32:06Z",
+    "total_results": 8,
+    "active_count": 3,
+    "items": [
+      {
+        "name": "Mr Steven Westbrook",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2025-05-01",
+        "identification": null
+      },
+      {
+        "name": "Mr Leo Yu",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2025-05-01",
+        "identification": null
+      },
+      {
+        "name": "Newbury Investments (Uk) Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2025-05-01",
+        "identification": {
+          "legal_form": "Private Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Companies House Uk",
+          "registration_number": "02533036"
+        }
+      },
+      {
+        "name": "Faralero Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent",
+          "voting-rights-50-to-75-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2025-03-27",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "16206492"
+        }
+      },
+      {
+        "name": "Mr Nicholas Gavin Woodcock",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2022-07-27",
+        "identification": null
+      },
+      {
+        "name": "Mr Roger Alistair Woodcock",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2022-07-27",
+        "identification": null
+      },
+      {
+        "name": "Mrs Marian Elaine Woodcock",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr William George Woodcock",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent",
+          "significant-influence-or-control-as-trust"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MTk0NDkyNGFkaXF6a2N4",
+    "date": "2025-09-22",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/I-xyLeEeI2X5Jx_AuF-thYrt3_qPOmkICFjS3POjZ-0/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01343397/filing-history/MzQ4MTk0NDkyNGFkaXF6a2N4"
   }
 }

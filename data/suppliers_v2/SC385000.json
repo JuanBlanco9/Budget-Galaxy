@@ -59,14 +59,210 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.5523,
     "agency": 0.4477
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T07:13:15Z",
+    "company_name": "CBEC ECO ENGINEERING UK LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2010-09-08",
+    "date_of_cessation": null,
+    "jurisdiction": "scotland",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-04-06",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-27"
+  },
+  "governance": {
+    "api_date": "2026-04-28T07:13:17Z",
+    "total_officers": 21,
+    "active_count": 14,
+    "resigned_count": 7,
+    "active_officers": [
+      {
+        "name": "EVANS, Sally",
+        "role": "secretary",
+        "appointed_on": "2021-09-18",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BOWLES, Christopher Branson, Dr",
+        "role": "director",
+        "appointed_on": "2010-09-08",
+        "country_of_residence": "United States",
+        "nationality": "British"
+      },
+      {
+        "name": "FALCONER, Gordon",
+        "role": "director",
+        "appointed_on": "2025-01-14",
+        "country_of_residence": "United Kingdom",
+        "nationality": "Scottish"
+      },
+      {
+        "name": "GILLIES, Eric Augustine, Dr",
+        "role": "director",
+        "appointed_on": "2023-12-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "HERLIHY, Francis",
+        "role": "director",
+        "appointed_on": "2025-04-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HODGES, Elliott Samuel",
+        "role": "director",
+        "appointed_on": "2022-08-03",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "HOLLAND, David Peter",
+        "role": "director",
+        "appointed_on": "2018-01-05",
+        "country_of_residence": "Wales",
+        "nationality": "British"
+      },
+      {
+        "name": "LOWE, Sam",
+        "role": "director",
+        "appointed_on": "2021-04-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MOIR, Hamish John, Dr",
+        "role": "director",
+        "appointed_on": "2010-09-08",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      },
+      {
+        "name": "O'HARE, Matthew",
+        "role": "director",
+        "appointed_on": "2022-08-03",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      },
+      {
+        "name": "RYDER, Alasdair Alan",
+        "role": "director",
+        "appointed_on": "2021-04-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "STRUDWICK, Ian Harry",
+        "role": "director",
+        "appointed_on": "2021-04-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "THOMAS, Daniel",
+        "role": "director",
+        "appointed_on": "2025-01-14",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "WILSON, Alison",
+        "role": "director",
+        "appointed_on": "2023-12-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T07:13:18Z",
+    "total_results": 4,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Salix River & Wetland Services Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent",
+          "voting-rights-50-to-75-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2018-01-05",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "English",
+          "country_registered": "England And Wales",
+          "place_registered": "England And Wales Company Registers",
+          "registration_number": "04944506"
+        }
+      },
+      {
+        "name": "Dr Christopher Branson Bowles",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United States",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2016-09-08",
+        "identification": null
+      },
+      {
+        "name": "Dr Christopher Ryan Campbell",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "American",
+        "country_of_residence": "United States",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2016-09-08",
+        "identification": null
+      },
+      {
+        "name": "Dr Hamish John Moir",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "Scotland",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2016-09-08",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4NzM3MzgyMmFkaXF6a2N4",
+    "date": "2025-11-04",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-audit-exemption-subsiduary",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/1Fz0lblZDlC_CRIjNj6oJtWb-JupaN0C3_n2G0UGD_o/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/SC385000/filing-history/MzQ4NzM3MzgyMmFkaXF6a2N4"
   }
 }

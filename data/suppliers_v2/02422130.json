@@ -59,13 +59,121 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T02:56:56Z",
+    "company_name": "ACTION HOMELESS (LEICESTER) LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1989-09-12",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-09-10"
+  },
+  "governance": {
+    "api_date": "2026-04-28T02:56:57Z",
+    "total_officers": 72,
+    "active_count": 10,
+    "resigned_count": 62,
+    "active_officers": [
+      {
+        "name": "MAWDSLEY, Reginald",
+        "role": "secretary",
+        "appointed_on": "2013-05-30",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "ASPEY, Mark",
+        "role": "director",
+        "appointed_on": "2024-11-28",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BILLINGTON, Susan",
+        "role": "director",
+        "appointed_on": "2023-11-30",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CHAKRAVORTY, Ian Christopher",
+        "role": "director",
+        "appointed_on": "2025-11-27",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GALLIMORE, Timothy",
+        "role": "director",
+        "appointed_on": "2024-11-28",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HURST, Claire",
+        "role": "director",
+        "appointed_on": "2017-11-30",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PARMAR, Pravin Babubhai",
+        "role": "director",
+        "appointed_on": "2022-03-31",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PEASGOOD, Allison Jane",
+        "role": "director",
+        "appointed_on": "2019-09-03",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PLEYDELL, Felicity Jain Rhianna",
+        "role": "director",
+        "appointed_on": "2025-11-27",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WILKINSON, Neville John",
+        "role": "director",
+        "appointed_on": "2024-11-28",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T02:56:58Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NTMzNDM3NWFkaXF6a2N4",
+    "date": "2025-12-19",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/Wvj27PWfhTuzYtUb5ihjHTtjVlI4-lCAXLBFjBAJ0kI/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02422130/filing-history/MzQ5NTMzNDM3NWFkaXF6a2N4"
   }
 }

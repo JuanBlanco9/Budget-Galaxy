@@ -55,10 +55,10 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
@@ -66,5 +66,202 @@
     "agency": 0.2803,
     "council": 0.2589,
     "trust": 0.1225
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T16:52:18Z",
+    "company_name": "GARDINER & THEOBALD LLP",
+    "company_status": "active",
+    "date_of_creation": "2004-03-03",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": true,
+    "confirmation_statement_next_due": "2026-03-17"
+  },
+  "governance": {
+    "api_date": "2026-04-27T16:52:20Z",
+    "total_officers": 595,
+    "active_count": 289,
+    "resigned_count": 306,
+    "active_officers": [
+      {
+        "name": "ANGUS, Philip James",
+        "role": "llp-designated-member",
+        "appointed_on": "2019-01-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "BENNETT, Steven John",
+        "role": "llp-designated-member",
+        "appointed_on": "2018-09-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "GLOVER, Adam Andrew",
+        "role": "llp-designated-member",
+        "appointed_on": "2004-03-08",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "ABBOTT, Christopher John",
+        "role": "llp-member",
+        "appointed_on": "2017-01-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "ABDOUS-PARKER, Nawale",
+        "role": "llp-member",
+        "appointed_on": "2024-07-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "ABI-KHALIL, Jacqueline Wendy",
+        "role": "llp-member",
+        "appointed_on": "2025-05-06",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "ACHILLEOS, Spyros Christopher",
+        "role": "llp-member",
+        "appointed_on": "2019-01-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "AHMET, Hasan",
+        "role": "llp-member",
+        "appointed_on": "2010-05-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "ALDERSON, John Phillip Cosmo",
+        "role": "llp-member",
+        "appointed_on": "2007-05-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "ALLEN, David St John",
+        "role": "llp-member",
+        "appointed_on": "2004-05-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "APPLIN, Richard Charles",
+        "role": "llp-member",
+        "appointed_on": "2015-07-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "ARNOLD, Kevin",
+        "role": "llp-member",
+        "appointed_on": "2018-09-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "BARNETT, Craig",
+        "role": "llp-member",
+        "appointed_on": "2018-05-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "BARTLETT, Lauren Keeley",
+        "role": "llp-member",
+        "appointed_on": "2017-09-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "BARTLETT, Matthew James",
+        "role": "llp-member",
+        "appointed_on": "2023-01-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "BARTLEY, Jason John",
+        "role": "llp-member",
+        "appointed_on": "2020-01-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "BASTERFIELD, Edward John",
+        "role": "llp-member",
+        "appointed_on": "2025-01-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "BATES, Timothy Mark",
+        "role": "llp-member",
+        "appointed_on": "2016-07-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "BEARNE, Colin Damond",
+        "role": "llp-member",
+        "appointed_on": "2014-07-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "BENN, Christopher Steven",
+        "role": "llp-member",
+        "appointed_on": "2015-07-01",
+        "country_of_residence": "England",
+        "nationality": null
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T16:52:21Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Gt Holdco Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "right-to-share-surplus-assets-25-to-50-percent-limited-liability-partnership"
+        ],
+        "notified_on": "2024-08-02",
+        "identification": {
+          "legal_form": "Corporate",
+          "legal_authority": "United Kingdom (England And Wales)",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "15689975"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MzU0MzAyNmFkaXF6a2N4",
+    "date": "2025-12-11",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/aOz09_-NoM3j7bqjtYOKYIJKGS3qGXOdM9Dd0zVh78s/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/OC307124/filing-history/MzQ5MzU0MzAyNmFkaXF6a2N4"
   }
 }

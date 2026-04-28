@@ -64,13 +64,65 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T23:32:21Z",
+    "company_name": "BCB TRADING LIMITED",
+    "company_status": "liquidation",
+    "date_of_creation": "2001-04-03",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": true,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": true,
+    "accounts_next_due": "2026-01-28",
+    "accounts_last_made_up": "2024-04-30",
+    "confirmation_statement_overdue": true,
+    "confirmation_statement_next_due": "2026-03-14"
+  },
+  "governance": {
+    "api_date": "2026-04-27T23:32:22Z",
+    "total_officers": 6,
+    "active_count": 2,
+    "resigned_count": 4,
+    "active_officers": [
+      {
+        "name": "CLARK, John Reavley",
+        "role": "secretary",
+        "appointed_on": "2001-12-10",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "HAYWARD, Joseph William",
+        "role": "director",
+        "appointed_on": "2018-09-17",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T23:32:24Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2ODYzMTkwN2FkaXF6a2N4",
+    "date": "2025-06-02",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/kQNwoKJ5wEFH00aBPXkfUhS-uyWFYJ4WcPqYnxj1y3g/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04193297/filing-history/MzQ2ODYzMTkwN2FkaXF6a2N4"
   }
 }

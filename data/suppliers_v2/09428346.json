@@ -64,11 +64,118 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
-  "buyer_type_breakdown": {}
+  "buyer_type_breakdown": {},
+  "ch_profile": {
+    "api_date": "2026-04-28T14:45:01Z",
+    "company_name": "XPS ADMINISTRATION LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2015-02-09",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-27"
+  },
+  "governance": {
+    "api_date": "2026-04-28T14:45:02Z",
+    "total_officers": 12,
+    "active_count": 4,
+    "resigned_count": 8,
+    "active_officers": [
+      {
+        "name": "BRAMHALL, Benjamin Oliver",
+        "role": "director",
+        "appointed_on": "2018-01-11",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CUFF, Paul Gareth",
+        "role": "director",
+        "appointed_on": "2018-01-11",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SHAH, Snehal",
+        "role": "director",
+        "appointed_on": "2019-07-15",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WATKINS, David Richard",
+        "role": "director",
+        "appointed_on": "2015-06-22",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T14:45:04Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Xps Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2025-11-04",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "England And Wales",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "04807951"
+        }
+      },
+      {
+        "name": "Xps Administration Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "United Kingdom",
+          "country_registered": "England",
+          "place_registered": "United Kingdom Companies House",
+          "registration_number": "9655671"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4Mzk4Njc1NGFkaXF6a2N4",
+    "date": "2025-10-07",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/X2joXVtMhaUtGFcT4Vbb-xO2jgV2eut8gikZrw4s9dM/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/09428346/filing-history/MzQ4Mzk4Njc1NGFkaXF6a2N4"
+  }
 }

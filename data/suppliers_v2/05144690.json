@@ -76,13 +76,65 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T02:58:41Z",
+    "company_name": "AHR BUILDING SURVEYING LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2004-06-03",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-17"
+  },
+  "governance": {
+    "api_date": "2026-04-28T02:58:43Z",
+    "total_officers": 10,
+    "active_count": 2,
+    "resigned_count": 8,
+    "active_officers": [
+      {
+        "name": "WIELAND, Michael Douglas",
+        "role": "secretary",
+        "appointed_on": "2017-01-25",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "HUNT, Allan",
+        "role": "director",
+        "appointed_on": "2023-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T02:58:44Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NTgyNzEyNGFkaXF6a2N4",
+    "date": "2025-12-22",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-dormant",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/JSQQ1EgY-Aot03GsbPyxEaar1_tpqNAHSLl7jvFhy30/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/05144690/filing-history/MzQ5NTgyNzEyNGFkaXF6a2N4"
   }
 }

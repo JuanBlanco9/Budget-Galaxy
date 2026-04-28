@@ -68,13 +68,89 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
     "central_govt": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T01:24:46Z",
+    "company_name": "LEEDS BECKETT UNIVERSITY ENTERPRISES LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1989-04-07",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-04-30",
+    "accounts_last_made_up": "2025-07-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-27"
+  },
+  "governance": {
+    "api_date": "2026-04-28T01:24:48Z",
+    "total_officers": 31,
+    "active_count": 3,
+    "resigned_count": 28,
+    "active_officers": [
+      {
+        "name": "GAY, Alan Trevor",
+        "role": "director",
+        "appointed_on": "2020-10-20",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SEMPLE, Clare Louise",
+        "role": "director",
+        "appointed_on": "2023-08-02",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SLEE, Peter Robert, Professor",
+        "role": "director",
+        "appointed_on": "2015-09-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T01:24:50Z",
+    "total_results": 1,
+    "active_count": 0,
+    "items": [
+      {
+        "name": "Leeds Beckett University Higher Education Corporation",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-07-14",
+        "identification": {
+          "legal_form": "Higher Education Corporation",
+          "legal_authority": "Education Reform Act 1988"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxMzUzODU1N2FkaXF6a2N4",
+    "date": "2026-04-04",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/RoXgpFs5Y01abiH0s2SiVwJBkjS__-mIaubaE5jiZss/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02369724/filing-history/MzUxMzUzODU1N2FkaXF6a2N4"
   }
 }

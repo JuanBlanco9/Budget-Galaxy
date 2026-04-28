@@ -59,11 +59,173 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
-  "buyer_type_breakdown": {}
+  "buyer_type_breakdown": {},
+  "ch_profile": {
+    "api_date": "2026-04-28T15:04:15Z",
+    "company_name": "CAUSEWAY GEOTECH LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2012-01-18",
+    "date_of_cessation": null,
+    "jurisdiction": "northern-ireland",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-01"
+  },
+  "governance": {
+    "api_date": "2026-04-28T15:04:16Z",
+    "total_officers": 11,
+    "active_count": 7,
+    "resigned_count": 4,
+    "active_officers": [
+      {
+        "name": "DOHERTY, Ciaran",
+        "role": "director",
+        "appointed_on": "2012-01-18",
+        "country_of_residence": "Northern Ireland",
+        "nationality": "British"
+      },
+      {
+        "name": "DUNLOP, Paul",
+        "role": "director",
+        "appointed_on": "2014-06-01",
+        "country_of_residence": "Northern Ireland",
+        "nationality": "Northern Irish"
+      },
+      {
+        "name": "O'MAHONY, Darren",
+        "role": "director",
+        "appointed_on": "2017-01-18",
+        "country_of_residence": "Northern Ireland",
+        "nationality": "Northern Irish"
+      },
+      {
+        "name": "RASMUSSEN, Kent Douglas",
+        "role": "director",
+        "appointed_on": "2022-06-25",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      },
+      {
+        "name": "ROREM, Carrie Goltry",
+        "role": "director",
+        "appointed_on": "2022-06-25",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      },
+      {
+        "name": "YEGLIC, John",
+        "role": "director",
+        "appointed_on": "2024-12-19",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      },
+      {
+        "name": "SEALASKA COMMERCIAL SERVICES, LLC",
+        "role": "corporate-director",
+        "appointed_on": "2025-06-06",
+        "country_of_residence": null,
+        "nationality": null
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T15:04:17Z",
+    "total_results": 5,
+    "active_count": 0,
+    "items": [
+      {
+        "name": "Sealaska Services International Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent",
+          "voting-rights-50-to-75-percent-as-firm",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2022-06-25",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "14123777"
+        }
+      },
+      {
+        "name": "Birch Tree Company No 6 Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2021-02-01",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2016",
+          "country_registered": "Northern Ireland",
+          "place_registered": "Companies House, Belfast",
+          "registration_number": "Ni627973"
+        }
+      },
+      {
+        "name": "Mr Ciaran Doherty",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "Northern Ireland",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Paul Dunlop",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Northern Irish",
+        "country_of_residence": "Northern Ireland",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr John Campbell",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "Northern Ireland",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MTQ3Mjc4OWFkaXF6a2N4",
+    "date": "2025-06-25",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/z-aUiUnJB-nMo_5wxjOSo0b-mJ8dUy3Q7eM31ZNj7oo/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/NI610766/filing-history/MzQ3MTQ3Mjc4OWFkaXF6a2N4"
+  }
 }

@@ -68,13 +68,104 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T00:09:37Z",
+    "company_name": "CAVENDISH CONSULTING GROUP LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2003-09-01",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-25"
+  },
+  "governance": {
+    "api_date": "2026-04-28T00:09:38Z",
+    "total_officers": 10,
+    "active_count": 3,
+    "resigned_count": 7,
+    "active_officers": [
+      {
+        "name": "DARUVALLA, Carl Nigel",
+        "role": "director",
+        "appointed_on": "2022-08-24",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GEORGE, Richard Mark",
+        "role": "director",
+        "appointed_on": "2022-08-24",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "POMEROY, Stephen Paul",
+        "role": "director",
+        "appointed_on": "2003-09-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T00:09:40Z",
+    "total_results": 2,
+    "active_count": 0,
+    "items": [
+      {
+        "name": "Mr Carl Nigel Daruvalla",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2022-09-28",
+        "identification": null
+      },
+      {
+        "name": "Built Environment Communications Group Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companys Act",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House Cardiff",
+          "registration_number": "03096503"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4NDYzNDcyMGFkaXF6a2N4",
+    "date": "2025-10-13",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/6X_hlj9dCRWdJX76dx43yxJttxi1a5nRm1yo8yajNQ8/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04883755/filing-history/MzQ4NDYzNDcyMGFkaXF6a2N4"
   }
 }

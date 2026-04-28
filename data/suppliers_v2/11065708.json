@@ -59,13 +59,65 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "education",
   "buyer_type_breakdown": {
     "education": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T06:07:29Z",
+    "company_name": "STUDIOSITY LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2017-11-15",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-28"
+  },
+  "governance": {
+    "api_date": "2026-04-28T06:07:30Z",
+    "total_officers": 5,
+    "active_count": 2,
+    "resigned_count": 3,
+    "active_officers": [
+      {
+        "name": "TAYLOR WESSING SECRETARIES LIMITED",
+        "role": "corporate-secretary",
+        "appointed_on": "2017-11-15",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "MCINTYRE, Lisa Margaret",
+        "role": "director",
+        "appointed_on": "2017-11-15",
+        "country_of_residence": "Australia",
+        "nationality": "Australian"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T06:07:31Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MjMyMTA0N2FkaXF6a2N4",
+    "date": "2025-09-23",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/EPEYwQjmlwIW2t0WyYza2MGuci24gIHuMcrIG0SOSmM/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/11065708/filing-history/MzQ4MjMyMTA0N2FkaXF6a2N4"
   }
 }

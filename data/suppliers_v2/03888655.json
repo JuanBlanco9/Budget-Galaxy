@@ -68,14 +68,136 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
     "central_govt": 0.9942,
     "council": 0.0058
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T11:15:28Z",
+    "company_name": "LANCASHIRE MIND LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1999-12-06",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-18"
+  },
+  "governance": {
+    "api_date": "2026-04-28T11:15:30Z",
+    "total_officers": 96,
+    "active_count": 12,
+    "resigned_count": 84,
+    "active_officers": [
+      {
+        "name": "DUNWELL, David Geraint",
+        "role": "secretary",
+        "appointed_on": "2023-02-06",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BILLINGTON, Faye",
+        "role": "director",
+        "appointed_on": "2023-11-29",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "JAMESON, Michael Peter",
+        "role": "director",
+        "appointed_on": "2019-10-30",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MOORE, Alison Dawn",
+        "role": "director",
+        "appointed_on": "2020-11-18",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MUSA, Faheem",
+        "role": "director",
+        "appointed_on": "2020-11-18",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "NOBLETT, Caroline Michelle",
+        "role": "director",
+        "appointed_on": "2024-11-27",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "RAINE, Simon George",
+        "role": "director",
+        "appointed_on": "2020-11-18",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "REED, Ian",
+        "role": "director",
+        "appointed_on": "2019-10-30",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SMITH, Victoria",
+        "role": "director",
+        "appointed_on": "2020-11-18",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "STEWART, Ian",
+        "role": "director",
+        "appointed_on": "2024-11-27",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "TARRY, Lisa",
+        "role": "director",
+        "appointed_on": "2025-09-24",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WEARDEN, Michael James",
+        "role": "director",
+        "appointed_on": "2023-11-29",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T11:15:31Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NTY0ODU3NWFkaXF6a2N4",
+    "date": "2025-12-29",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/nx8AWCoFHbzkwEaS6Mj2Kq1E9I_EPHCGxpLDR_gQfJg/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03888655/filing-history/MzQ5NTY0ODU3NWFkaXF6a2N4"
   }
 }

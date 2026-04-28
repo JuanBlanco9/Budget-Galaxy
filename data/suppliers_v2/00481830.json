@@ -59,14 +59,83 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "nhs",
   "buyer_type_breakdown": {
     "nhs": 0.9939,
     "council": 0.0061
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T05:46:13Z",
+    "company_name": "SCOT YOUNG RESEARCH LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1950-05-05",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-05-31",
+    "accounts_last_made_up": "2024-08-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-03"
+  },
+  "governance": {
+    "api_date": "2026-04-28T05:46:14Z",
+    "total_officers": 18,
+    "active_count": 2,
+    "resigned_count": 16,
+    "active_officers": [
+      {
+        "name": "STOKES, Sally",
+        "role": "director",
+        "appointed_on": "2024-01-02",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "YOUNG, Lee Ann",
+        "role": "director",
+        "appointed_on": "2018-02-09",
+        "country_of_residence": "Canada",
+        "nationality": "Canadian"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T05:46:15Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Scot Young Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2016-10-20",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Corporations Act"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2NzU0NjA0OGFkaXF6a2N4",
+    "date": "2025-05-22",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/YOV61AAQAAQ20963hytdPhO4O6IyDiJ4gbp-kNkvTCA/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/00481830/filing-history/MzQ2NzU0NjA0OGFkaXF6a2N4"
   }
 }

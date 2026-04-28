@@ -60,14 +60,127 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.5099,
     "council": 0.4901
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T19:54:06Z",
+    "company_name": "PRP ARCHITECTS LLP",
+    "company_status": "active",
+    "date_of_creation": "2011-01-25",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-08"
+  },
+  "governance": {
+    "api_date": "2026-04-27T19:54:08Z",
+    "total_officers": 104,
+    "active_count": 8,
+    "resigned_count": 96,
+    "active_officers": [
+      {
+        "name": "BUTERCHI, Jennifer Anne",
+        "role": "llp-designated-member",
+        "appointed_on": "2011-04-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "GRIFFITHS, Neil Timothy",
+        "role": "llp-designated-member",
+        "appointed_on": "2014-04-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "HARVEY, Richard",
+        "role": "llp-designated-member",
+        "appointed_on": "2011-04-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "MELLOR, Andrew James",
+        "role": "llp-designated-member",
+        "appointed_on": "2020-01-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "SANDERSON, Scott",
+        "role": "llp-designated-member",
+        "appointed_on": "2011-10-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "SHEACH, Craig",
+        "role": "llp-designated-member",
+        "appointed_on": "2014-11-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "WEIR, Alistair James",
+        "role": "llp-designated-member",
+        "appointed_on": "2014-04-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "PRP GROUP LLP",
+        "role": "corporate-llp-designated-member",
+        "appointed_on": "2020-04-01",
+        "country_of_residence": null,
+        "nationality": null
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T19:54:10Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Prp Group Llp",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control-limited-liability-partnership"
+        ],
+        "notified_on": "2020-04-01",
+        "identification": {
+          "legal_form": "Limited Liability Partnership",
+          "legal_authority": "Laws Of England And Wales",
+          "country_registered": "England And Wales",
+          "place_registered": "Registrar Of Companies For England And Wales",
+          "registration_number": "Oc429993"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MjYyMjMyM2FkaXF6a2N4",
+    "date": "2025-12-05",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/rkASZKEjEQxzuX8lWiKQ0UrgicmtQ-w-EFUIjtSlU2s/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/OC361169/filing-history/MzQ5MjYyMjMyM2FkaXF6a2N4"
   }
 }

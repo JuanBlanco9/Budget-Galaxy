@@ -59,13 +59,91 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
     "central_govt": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T10:54:42Z",
+    "company_name": "SAATEN-UNION (UK) LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1997-02-21",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-03-31",
+    "accounts_last_made_up": "2025-06-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-07"
+  },
+  "governance": {
+    "api_date": "2026-04-28T10:54:43Z",
+    "total_officers": 12,
+    "active_count": 2,
+    "resigned_count": 10,
+    "active_officers": [
+      {
+        "name": "GOWARD, Stephen George",
+        "role": "director",
+        "appointed_on": "2020-08-24",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WENIGER, Stephan",
+        "role": "director",
+        "appointed_on": "2023-07-01",
+        "country_of_residence": "Germany",
+        "nationality": "German"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T10:54:45Z",
+    "total_results": 2,
+    "active_count": 0,
+    "items": [
+      {
+        "name": "Mr Stephen George Goward",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2020-09-01",
+        "identification": null
+      },
+      {
+        "name": "Technical Director Richard William Jennaway",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control",
+          "significant-influence-or-control-as-firm"
+        ],
+        "notified_on": "2017-02-21",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MzQyMTMzNmFkaXF6a2N4",
+    "date": "2025-12-10",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/sDKWNqdDHnhD8RvArVtg00oiHwJUJsAvSBdy3nD75Gk/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03322560/filing-history/MzQ5MzQyMTMzNmFkaXF6a2N4"
   }
 }

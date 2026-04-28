@@ -59,13 +59,135 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T08:14:34Z",
+    "company_name": "CUMBRIA WILDLIFE TRUST LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1962-05-16",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-08"
+  },
+  "governance": {
+    "api_date": "2026-04-28T08:14:36Z",
+    "total_officers": 127,
+    "active_count": 12,
+    "resigned_count": 115,
+    "active_officers": [
+      {
+        "name": "WILSON, Jane",
+        "role": "secretary",
+        "appointed_on": "2020-07-02",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BRAY, Amy",
+        "role": "director",
+        "appointed_on": "2023-01-19",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "BYLE, Philip Andrew Frank, Dr.",
+        "role": "director",
+        "appointed_on": "2018-07-05",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "DEECKE, Volker, Dr.",
+        "role": "director",
+        "appointed_on": "2019-10-31",
+        "country_of_residence": "England",
+        "nationality": "German"
+      },
+      {
+        "name": "GREGORY, Sheila",
+        "role": "director",
+        "appointed_on": "2023-01-19",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "HOLLIDAY, Elizabeth Rachel",
+        "role": "director",
+        "appointed_on": "2026-03-26",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "NEWTON, Elizabeth Mary",
+        "role": "director",
+        "appointed_on": "2025-07-31",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "POHL, Amelie Rose",
+        "role": "director",
+        "appointed_on": "2026-03-26",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SHARROD, David John",
+        "role": "director",
+        "appointed_on": "2018-10-12",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "TEW, Judith Anne",
+        "role": "director",
+        "appointed_on": "2025-07-31",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WILSON, Jane Louisa",
+        "role": "director",
+        "appointed_on": "2019-10-31",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "YOUNG, Peter, Dr",
+        "role": "director",
+        "appointed_on": "2023-01-19",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T08:14:37Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MzM4MTEyMGFkaXF6a2N4",
+    "date": "2025-12-10",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/b4s9PsMJcr7CTQUyDPUkqm3_Qlj8BlL5FAfhniGc9sE/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/00724133/filing-history/MzQ5MzM4MTEyMGFkaXF6a2N4"
   }
 }

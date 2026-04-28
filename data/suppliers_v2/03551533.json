@@ -64,13 +64,114 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T12:10:45Z",
+    "company_name": "AALCO METALS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1998-04-23",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-03"
+  },
+  "governance": {
+    "api_date": "2026-04-28T12:10:46Z",
+    "total_officers": 18,
+    "active_count": 6,
+    "resigned_count": 12,
+    "active_officers": [
+      {
+        "name": "CHALK, James Charles",
+        "role": "director",
+        "appointed_on": "2026-04-02",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "COLBURN, Richard Whiting",
+        "role": "director",
+        "appointed_on": "2004-03-22",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      },
+      {
+        "name": "HOWITT, Andrew James",
+        "role": "director",
+        "appointed_on": "2019-07-12",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HUSSEY, Shaun Anthony",
+        "role": "director",
+        "appointed_on": "2004-09-13",
+        "country_of_residence": "United States",
+        "nationality": "British"
+      },
+      {
+        "name": "MEREDITH, Christopher Roger",
+        "role": "director",
+        "appointed_on": "2017-03-06",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ROBERTS, Andrew",
+        "role": "director",
+        "appointed_on": "2016-02-22",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T12:10:47Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Amari Metals Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Limited Company By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "England And Wales",
+          "registration_number": "2023155"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MTYxNTg0NWFkaXF6a2N4",
+    "date": "2025-09-18",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/ktye6-TS3Oh1UKiG4s6wafcsevYUm8jybCo41Lv1MWc/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03551533/filing-history/MzQ4MTYxNTg0NWFkaXF6a2N4"
   }
 }

@@ -64,15 +64,123 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "nhs",
   "buyer_type_breakdown": {
     "nhs": 0.9739,
     "agency": 0.0183,
     "other": 0.0077
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T16:01:22Z",
+    "company_name": "OXFORD NANOPORE TECHNOLOGIES PLC",
+    "company_status": "active",
+    "date_of_creation": "2005-03-09",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-06-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-22"
+  },
+  "governance": {
+    "api_date": "2026-04-27T16:01:23Z",
+    "total_officers": 32,
+    "active_count": 10,
+    "resigned_count": 22,
+    "active_officers": [
+      {
+        "name": "COOTE, Hannah Laura",
+        "role": "secretary",
+        "appointed_on": "2021-04-12",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "FORTUNE, Sarah Merritt, Dr",
+        "role": "director",
+        "appointed_on": "2023-12-19",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      },
+      {
+        "name": "HENNAH, Adrian Nevil",
+        "role": "director",
+        "appointed_on": "2021-06-24",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "KEHER, Nicholas Patrick",
+        "role": "director",
+        "appointed_on": "2024-01-22",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "MAHONY, Daniel, Dr",
+        "role": "director",
+        "appointed_on": "2024-10-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "O'HIGGINS, John Edward",
+        "role": "director",
+        "appointed_on": "2019-09-19",
+        "country_of_residence": "England",
+        "nationality": "Irish"
+      },
+      {
+        "name": "PRESTON, Heather Elizabeth, Dr",
+        "role": "director",
+        "appointed_on": "2023-12-19",
+        "country_of_residence": "United States",
+        "nationality": "British,Canadian"
+      },
+      {
+        "name": "PRIESTMAN, Katherine Sophie",
+        "role": "director",
+        "appointed_on": "2023-07-13",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "TATTON-BROWN, Duncan Eden",
+        "role": "director",
+        "appointed_on": "2022-08-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "VAN PARYS, Francis Albert Luc",
+        "role": "director",
+        "appointed_on": "2026-03-02",
+        "country_of_residence": "United Kingdom",
+        "nationality": "Belgian"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T16:01:25Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MTExMDQ3MmFkaXF6a2N4",
+    "date": "2025-06-23",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/I26niVuBa4_oMFPnVRGKWQ1ZYZzVfuHi8d5sTRn2MyI/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/05386273/filing-history/MzQ3MTExMDQ3MmFkaXF6a2N4"
   }
 }

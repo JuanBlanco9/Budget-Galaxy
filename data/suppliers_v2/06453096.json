@@ -64,13 +64,114 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T22:19:54Z",
+    "company_name": "ANAPLAN LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2007-12-13",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-10-31",
+    "accounts_last_made_up": "2025-01-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-14"
+  },
+  "governance": {
+    "api_date": "2026-04-27T22:19:55Z",
+    "total_officers": 18,
+    "active_count": 6,
+    "resigned_count": 12,
+    "active_officers": [
+      {
+        "name": "MORIARTY, Daniel John",
+        "role": "secretary",
+        "appointed_on": "2019-10-31",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "GIANGIORDANO, Gregory Michael",
+        "role": "director",
+        "appointed_on": "2022-12-06",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      },
+      {
+        "name": "KAPADIA, Hemant D",
+        "role": "director",
+        "appointed_on": "2022-12-06",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      },
+      {
+        "name": "KASPER, Jochen Berthold",
+        "role": "director",
+        "appointed_on": "2023-08-01",
+        "country_of_residence": "Germany",
+        "nationality": "German"
+      },
+      {
+        "name": "MORIARTY, Daniel John",
+        "role": "director",
+        "appointed_on": "2023-08-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "RIVERA, Tony",
+        "role": "director",
+        "appointed_on": "2022-11-01",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T22:19:57Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Anaplan Uk Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2023-05-01",
+        "identification": {
+          "legal_form": "Corporate",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "14531688"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4NzAxMjM1M2FkaXF6a2N4",
+    "date": "2025-10-31",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/UHNwa9Z9VPbCA0DF-Ie-d2OguvedZq10tbZeYih-LPc/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/06453096/filing-history/MzQ4NzAxMjM1M2FkaXF6a2N4"
   }
 }

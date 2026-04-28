@@ -59,13 +59,86 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T22:51:05Z",
+    "company_name": "ENVAIR TECHNOLOGY LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2023-07-14",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-27"
+  },
+  "governance": {
+    "api_date": "2026-04-27T22:51:07Z",
+    "total_officers": 5,
+    "active_count": 2,
+    "resigned_count": 3,
+    "active_officers": [
+      {
+        "name": "ELLISON, Andrew Stephen",
+        "role": "director",
+        "appointed_on": "2023-07-14",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "STAPLES, Harry",
+        "role": "director",
+        "appointed_on": "2025-06-17",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T22:51:09Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Foresight Regional Investment General Partner Llp",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2023-07-14",
+        "identification": {
+          "legal_form": "Corporate",
+          "legal_authority": "United Kingdom (Scotland)",
+          "country_registered": "Scotland",
+          "place_registered": "Companies House",
+          "registration_number": "So305514"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2MjM4MjgwNWFkaXF6a2N4",
+    "date": "2025-04-14",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/ILXbAwAvt2X1xafXAJiptg5g6Yz59qhlB1rFx9-Q4Yk/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/15004270/filing-history/MzQ2MjM4MjgwNWFkaXF6a2N4"
   }
 }

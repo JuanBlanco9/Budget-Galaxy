@@ -60,15 +60,193 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.8485,
     "central_govt": 0.1515,
     "agency": 0.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T15:30:30Z",
+    "company_name": "MORTON FRASER MACROBERTS LLP",
+    "company_status": "active",
+    "date_of_creation": "2004-10-19",
+    "date_of_cessation": null,
+    "jurisdiction": "scotland",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-04-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-16"
+  },
+  "governance": {
+    "api_date": "2026-04-27T15:30:32Z",
+    "total_officers": 138,
+    "active_count": 72,
+    "resigned_count": 66,
+    "active_officers": [
+      {
+        "name": "BEVERIDGE, Carryl Mairi Anna",
+        "role": "llp-designated-member",
+        "appointed_on": "2013-07-01",
+        "country_of_residence": "Scotland",
+        "nationality": null
+      },
+      {
+        "name": "CLARK, James Innes",
+        "role": "llp-designated-member",
+        "appointed_on": "2005-02-14",
+        "country_of_residence": "Scotland",
+        "nationality": null
+      },
+      {
+        "name": "DICKSON, Jennifer Alison",
+        "role": "llp-designated-member",
+        "appointed_on": "2011-05-01",
+        "country_of_residence": "Scotland",
+        "nationality": null
+      },
+      {
+        "name": "HARTE, Christopher Joseph",
+        "role": "llp-designated-member",
+        "appointed_on": "2005-02-14",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "KELLY, Alan Andrew",
+        "role": "llp-designated-member",
+        "appointed_on": "2023-11-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "KENNEDY, Neil Andrew Findlay",
+        "role": "llp-designated-member",
+        "appointed_on": "2023-11-01",
+        "country_of_residence": "Scotland",
+        "nationality": null
+      },
+      {
+        "name": "MCKAY, Jennifer Reid",
+        "role": "llp-designated-member",
+        "appointed_on": "2023-11-01",
+        "country_of_residence": "Scotland",
+        "nationality": null
+      },
+      {
+        "name": "RAMSAY, Michael John",
+        "role": "llp-designated-member",
+        "appointed_on": "2007-08-06",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "BAINES, Gary Alexander",
+        "role": "llp-member",
+        "appointed_on": "2023-11-01",
+        "country_of_residence": "Scotland",
+        "nationality": null
+      },
+      {
+        "name": "BARCLAY, Matthew Alexander",
+        "role": "llp-member",
+        "appointed_on": "2021-07-01",
+        "country_of_residence": "Scotland",
+        "nationality": null
+      },
+      {
+        "name": "BARLOW, Michael John",
+        "role": "llp-member",
+        "appointed_on": "2023-11-01",
+        "country_of_residence": "Scotland",
+        "nationality": null
+      },
+      {
+        "name": "BELL, Adrian Edward Robert",
+        "role": "llp-member",
+        "appointed_on": "2004-10-19",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "BREAKEY, Leon",
+        "role": "llp-member",
+        "appointed_on": "2023-11-01",
+        "country_of_residence": "Scotland",
+        "nationality": null
+      },
+      {
+        "name": "CALDWELL, Ross Graham",
+        "role": "llp-member",
+        "appointed_on": "2017-05-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "CAMPBELL, Gillian Aida",
+        "role": "llp-member",
+        "appointed_on": "2023-11-01",
+        "country_of_residence": "Scotland",
+        "nationality": null
+      },
+      {
+        "name": "CARGILL, Lynsay",
+        "role": "llp-member",
+        "appointed_on": "2026-04-01",
+        "country_of_residence": "Scotland",
+        "nationality": null
+      },
+      {
+        "name": "CARMICHAEL-STEWART, Emma",
+        "role": "llp-member",
+        "appointed_on": "2026-04-01",
+        "country_of_residence": "Scotland",
+        "nationality": null
+      },
+      {
+        "name": "CARTWRIGHT, Lindsey Jane",
+        "role": "llp-member",
+        "appointed_on": "2010-01-01",
+        "country_of_residence": "Scotland",
+        "nationality": null
+      },
+      {
+        "name": "CLARK, Lucia Elaine",
+        "role": "llp-member",
+        "appointed_on": "2015-05-01",
+        "country_of_residence": "Scotland",
+        "nationality": null
+      },
+      {
+        "name": "COOK, Nicole Louise",
+        "role": "llp-member",
+        "appointed_on": "2023-11-01",
+        "country_of_residence": "Scotland",
+        "nationality": null
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T15:30:33Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4ODE2ODUxN2FkaXF6a2N4",
+    "date": "2025-11-11",
+    "type": "LLAA01",
+    "description": "change-account-reference-date-limited-liability-partnership-current-shortened",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/8PlnjrFBYkOmMJ1uoaOxeMwZutiauKR5_ecpg1EP4Go/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/SO300472/filing-history/MzQ4ODE2ODUxN2FkaXF6a2N4"
   }
 }

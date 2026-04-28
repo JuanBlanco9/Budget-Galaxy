@@ -61,15 +61,116 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.9998,
     "education": 0.0002,
     "council": 0.0001
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T04:14:52Z",
+    "company_name": "KONE PUBLIC LIMITED COMPANY",
+    "company_status": "active",
+    "date_of_creation": "1978-06-13",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-06-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-09"
+  },
+  "governance": {
+    "api_date": "2026-04-28T04:14:54Z",
+    "total_officers": 41,
+    "active_count": 6,
+    "resigned_count": 35,
+    "active_officers": [
+      {
+        "name": "ALBERT, Tebogo Brenda",
+        "role": "secretary",
+        "appointed_on": "2018-10-01",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "ALBERT, Tebogo Brenda",
+        "role": "director",
+        "appointed_on": "2023-10-10",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HORN, Kurt",
+        "role": "director",
+        "appointed_on": "2023-09-20",
+        "country_of_residence": "Germany",
+        "nationality": "German"
+      },
+      {
+        "name": "TODD, Andrew James",
+        "role": "director",
+        "appointed_on": "2015-10-20",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WEIL, Patrick",
+        "role": "director",
+        "appointed_on": "2015-10-20",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "YELCHENKO, Tetyana",
+        "role": "director",
+        "appointed_on": "2024-01-11",
+        "country_of_residence": "Netherlands",
+        "nationality": "Ukrainian"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T04:14:55Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Kone Corporation",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-06-01",
+        "identification": {
+          "legal_form": "Plc",
+          "legal_authority": "Finland",
+          "country_registered": "Finland",
+          "place_registered": "Finnish Trade Register",
+          "registration_number": "1927400-1"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NzI3MjQ2MGFkaXF6a2N4",
+    "date": "2025-08-18",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/3W5PFWHAXoeFQIq8qCtR5n9Ik5K6ZA6n2vI2Wodg0AE/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01372978/filing-history/MzQ3NzI3MjQ2MGFkaXF6a2N4"
   }
 }

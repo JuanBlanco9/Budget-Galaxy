@@ -59,13 +59,216 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T21:09:17Z",
+    "company_name": "C.BREWER & SONS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1925-02-16",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-24"
+  },
+  "governance": {
+    "api_date": "2026-04-27T21:09:19Z",
+    "total_officers": 28,
+    "active_count": 8,
+    "resigned_count": 20,
+    "active_officers": [
+      {
+        "name": "SHOESMITH, Adam Charles",
+        "role": "secretary",
+        "appointed_on": "2012-10-01",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BREWER, Charles Thomas",
+        "role": "director",
+        "appointed_on": "2013-07-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BREWER, Mark Adrian",
+        "role": "director",
+        "appointed_on": "1994-04-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "BREWER, Neal Michael",
+        "role": "director",
+        "appointed_on": "1993-01-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "BREWER, Nicholas Andrew",
+        "role": "director",
+        "appointed_on": "1993-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BREWER, Robert Christopher",
+        "role": "director",
+        "appointed_on": null,
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BREWER, Simon Robert",
+        "role": "director",
+        "appointed_on": "2012-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LAWFIELD, Alison Rachel",
+        "role": "director",
+        "appointed_on": "2003-04-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T21:09:21Z",
+    "total_results": 9,
+    "active_count": 0,
+    "items": [
+      {
+        "name": "Mrs Emma Louise Spence",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United States",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control-as-trust"
+        ],
+        "notified_on": "2017-01-23",
+        "identification": null
+      },
+      {
+        "name": "Mr Nicholas Francis Mcdowell",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control-as-trust"
+        ],
+        "notified_on": "2017-01-23",
+        "identification": null
+      },
+      {
+        "name": "Mr Simon Robert Brewer",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control-as-trust"
+        ],
+        "notified_on": "2017-01-23",
+        "identification": null
+      },
+      {
+        "name": "Mrs Alison Rachel Lawfield",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent-as-trust"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Neal Michael Brewer",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent-as-trust"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Miss Jennifer Marion Brewer",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "Italy",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent-as-trust"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr David Kenneth Brewer",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent-as-trust"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Robert Christopher Brewer",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent-as-trust"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Francis Christopher Mcdowell",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent-as-trust"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4NjU0NTUyNWFkaXF6a2N4",
+    "date": "2025-10-28",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/1MykkGv0xI5xOcB_jvLrf_rwV9GJkpHni73zRc2YDY4/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/00203852/filing-history/MzQ4NjU0NTUyNWFkaXF6a2N4"
   }
 }

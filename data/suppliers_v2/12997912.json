@@ -64,13 +64,117 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T17:06:28Z",
+    "company_name": "COMPOST UK (WINGATE) LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2020-11-04",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-07-31",
+    "accounts_last_made_up": "2024-10-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-17"
+  },
+  "governance": {
+    "api_date": "2026-04-27T17:06:30Z",
+    "total_officers": 3,
+    "active_count": 3,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "BRAMHALL, Peter Stephen",
+        "role": "director",
+        "appointed_on": "2020-11-04",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HILLYARD, Jonathan Anthony",
+        "role": "director",
+        "appointed_on": "2021-07-14",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "JARRATT, Thomas Christian",
+        "role": "director",
+        "appointed_on": "2020-11-04",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T17:06:31Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Compost Uk (Management) Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2021-04-23",
+        "identification": {
+          "legal_form": "Limited Liability Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Compost Uk (Management) Limited",
+          "registration_number": "13338853"
+        }
+      },
+      {
+        "name": "Mr Thomas Christian Jarratt",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2020-11-04",
+        "identification": null
+      },
+      {
+        "name": "Mr Peter Stephen Bramhall",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2020-11-04",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NTQzNTU2NWFkaXF6a2N4",
+    "date": "2025-07-29",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/_mmWmtQq373RiojJO8RLQzzaZ2wH71izb-yJiulhvHo/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/12997912/filing-history/MzQ3NTQzNTU2NWFkaXF6a2N4"
   }
 }

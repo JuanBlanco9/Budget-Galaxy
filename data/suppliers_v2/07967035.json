@@ -68,11 +68,118 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
-  "buyer_type_breakdown": {}
+  "buyer_type_breakdown": {},
+  "ch_profile": {
+    "api_date": "2026-04-28T00:04:18Z",
+    "company_name": "ST&R LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2012-02-28",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-01-31",
+    "accounts_last_made_up": "2025-04-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-29"
+  },
+  "governance": {
+    "api_date": "2026-04-28T00:04:19Z",
+    "total_officers": 5,
+    "active_count": 3,
+    "resigned_count": 2,
+    "active_officers": [
+      {
+        "name": "SLATER, Natasha",
+        "role": "secretary",
+        "appointed_on": "2013-10-30",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "SLATER, James",
+        "role": "director",
+        "appointed_on": "2013-10-30",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SLATER, Natasha",
+        "role": "director",
+        "appointed_on": "2014-10-06",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T00:04:21Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Jst Group Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2018-06-20",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act",
+          "country_registered": "England And Wales",
+          "place_registered": "Incorporated In England And Wales",
+          "registration_number": "11156466"
+        }
+      },
+      {
+        "name": "Mr James Slater",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-50-to-75-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mrs Natasha Slater",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwMjEwOTQzOWFkaXF6a2N4",
+    "date": "2026-01-29",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/j73fs0Lq4QbhmEwQ2ud1abdSPlPXwcCtSZku3-jZ6BA/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/07967035/filing-history/MzUwMjEwOTQzOWFkaXF6a2N4"
+  }
 }

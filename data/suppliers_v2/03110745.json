@@ -59,14 +59,139 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "education",
   "buyer_type_breakdown": {
     "education": 0.8838,
     "agency": 0.1162
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T23:32:41Z",
+    "company_name": "KPMG AUDIT LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1995-10-02",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-06-30",
+    "accounts_last_made_up": "2024-09-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-22"
+  },
+  "governance": {
+    "api_date": "2026-04-27T23:32:43Z",
+    "total_officers": 41,
+    "active_count": 2,
+    "resigned_count": 39,
+    "active_officers": [
+      {
+        "name": "BURNET, Catherine Emma",
+        "role": "director",
+        "appointed_on": "2022-02-14",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "HEARLD, Christopher Robert",
+        "role": "director",
+        "appointed_on": "2022-02-14",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T23:32:45Z",
+    "total_results": 4,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Kpmg Holding Llp",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2024-10-01",
+        "identification": {
+          "legal_form": "Limited Liability Partnership",
+          "legal_authority": "Limited Liability Partnerships Act 2000",
+          "country_registered": "United Kingdom",
+          "place_registered": "United Kingdom",
+          "registration_number": "Oc450748"
+        }
+      },
+      {
+        "name": "Kpmg Uk Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2021-06-07",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 1985",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House Cardiff",
+          "registration_number": "3512757"
+        }
+      },
+      {
+        "name": "Kpmg Llp",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-06-12",
+        "identification": {
+          "legal_form": "Limited Liability Partnership",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "Oc301540"
+        }
+      },
+      {
+        "name": "Kpmg Audit Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-06-12",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "05417700"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2MjY2MTI1OGFkaXF6a2N4",
+    "date": "2025-04-15",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/qWMQ9Eu1CzNG2zOOfCMBhOqbqliPULLWYA0MUgoZlkU/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03110745/filing-history/MzQ2MjY2MTI1OGFkaXF6a2N4"
   }
 }

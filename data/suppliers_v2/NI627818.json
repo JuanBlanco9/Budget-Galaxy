@@ -72,13 +72,121 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
     "central_govt": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T23:48:53Z",
+    "company_name": "LAGAN AVIATION & INFRASTRUCTURE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2014-11-14",
+    "date_of_cessation": null,
+    "jurisdiction": "northern-ireland",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-04-03"
+  },
+  "governance": {
+    "api_date": "2026-04-27T23:48:54Z",
+    "total_officers": 10,
+    "active_count": 5,
+    "resigned_count": 5,
+    "active_officers": [
+      {
+        "name": "AGNEW, Dermott",
+        "role": "secretary",
+        "appointed_on": "2021-04-01",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "AIKMAN, James Andrew",
+        "role": "director",
+        "appointed_on": "2018-09-21",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "MCALERNON, David Jonathan",
+        "role": "director",
+        "appointed_on": "2023-02-07",
+        "country_of_residence": "Northern Ireland",
+        "nationality": "Irish"
+      },
+      {
+        "name": "RAMSEY, David",
+        "role": "director",
+        "appointed_on": "2019-10-01",
+        "country_of_residence": "Northern Ireland",
+        "nationality": "British"
+      },
+      {
+        "name": "TURNER, Steven George",
+        "role": "director",
+        "appointed_on": "2016-03-24",
+        "country_of_residence": "Northern Ireland",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T23:48:56Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Lagan Aviation & Infrastructure Group Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2023-03-31",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "Northern Ireland",
+          "place_registered": "Northern Ireland",
+          "registration_number": "Ni646852"
+        }
+      },
+      {
+        "name": "Charles Brand Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2017-11-15",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "Companies Act 2006"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NTM3MDMxMmFkaXF6a2N4",
+    "date": "2025-12-19",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/5xAuEibQ70bn5ReYuiRcdg1gb3M7JsugUvAH9nSyAA0/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/NI627818/filing-history/MzQ5NTM3MDMxMmFkaXF6a2N4"
   }
 }

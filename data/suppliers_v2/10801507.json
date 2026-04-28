@@ -59,13 +59,106 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T20:07:38Z",
+    "company_name": "COLOURS BUILDING LTD",
+    "company_status": "active",
+    "date_of_creation": "2017-06-05",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-07"
+  },
+  "governance": {
+    "api_date": "2026-04-27T20:07:39Z",
+    "total_officers": 6,
+    "active_count": 4,
+    "resigned_count": 2,
+    "active_officers": [
+      {
+        "name": "HUTCHINGS, Tobias Michael Jed",
+        "role": "director",
+        "appointed_on": "2022-09-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "OLIVANT, Dean Paul",
+        "role": "director",
+        "appointed_on": "2019-05-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "OLIVANT, Hollie-Mae",
+        "role": "director",
+        "appointed_on": "2025-01-16",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "TATE, Kelvin",
+        "role": "director",
+        "appointed_on": "2022-04-15",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T20:07:41Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Dean Paul Olivant",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2022-06-28",
+        "identification": null
+      },
+      {
+        "name": "Ms Caroline Sarah Louise Mouran",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2017-06-05",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5ODA2ODA3NmFkaXF6a2N4",
+    "date": "2026-01-07",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/W673_zp9UlA0K1jdwDwvoWig1cdVEb2-6WZt4YtV3b4/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/10801507/filing-history/MzQ5ODA2ODA3NmFkaXF6a2N4"
   }
 }

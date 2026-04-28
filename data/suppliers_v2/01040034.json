@@ -70,13 +70,111 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "nhs",
   "buyer_type_breakdown": {
     "nhs": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T13:38:49Z",
+    "company_name": "WERFEN LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1972-01-27",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-28"
+  },
+  "governance": {
+    "api_date": "2026-04-28T13:38:50Z",
+    "total_officers": 16,
+    "active_count": 3,
+    "resigned_count": 13,
+    "active_officers": [
+      {
+        "name": "CALDERBANK, Stephen Martin",
+        "role": "secretary",
+        "appointed_on": "2006-08-03",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "HAMES, Richard Ian",
+        "role": "director",
+        "appointed_on": "2017-12-21",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "KALFHAUS, Lars",
+        "role": "director",
+        "appointed_on": "2022-12-16",
+        "country_of_residence": "Spain",
+        "nationality": "German"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T13:38:51Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Werfen, S.A.",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2019-12-30",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Spanish Law",
+          "country_registered": "Spain",
+          "place_registered": "Spain",
+          "registration_number": "N/A"
+        }
+      },
+      {
+        "name": "Werfen Holding Sl",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Spanish Law",
+          "country_registered": "Spain",
+          "place_registered": "Spanish Register Of Companies",
+          "registration_number": "B66674912"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2OTc5OTg2OGFkaXF6a2N4",
+    "date": "2025-06-12",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/qF7Xf2GRJjzkPZLTBJAe__iJoflN6pmcdnfHg3El5i0/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01040034/filing-history/MzQ2OTc5OTg2OGFkaXF6a2N4"
   }
 }

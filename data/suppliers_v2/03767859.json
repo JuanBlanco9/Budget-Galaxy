@@ -65,13 +65,93 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T06:11:10Z",
+    "company_name": "MARINE AND RISK CONSULTANTS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1999-05-11",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-19"
+  },
+  "governance": {
+    "api_date": "2026-04-28T06:11:11Z",
+    "total_officers": 12,
+    "active_count": 3,
+    "resigned_count": 9,
+    "active_officers": [
+      {
+        "name": "RIDING, Gillian Elsie",
+        "role": "secretary",
+        "appointed_on": "2002-02-22",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "RIDING, Gillian Elsie",
+        "role": "director",
+        "appointed_on": "2002-02-22",
+        "country_of_residence": "New Zealand",
+        "nationality": "British"
+      },
+      {
+        "name": "RIDING, John Francis",
+        "role": "director",
+        "appointed_on": "1999-05-11",
+        "country_of_residence": "New Zealand",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T06:11:12Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Marico Marine Group Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act",
+          "country_registered": "England",
+          "place_registered": "Uk Companies House",
+          "registration_number": "03852657"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MTQzNzE1OWFkaXF6a2N4",
+    "date": "2025-11-28",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-unaudited-abridged",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/41UmAe6vl_c7GyC9CyRAZxYxCD_9CExqhq70akOnP6c/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03767859/filing-history/MzQ5MTQzNzE1OWFkaXF6a2N4"
   }
 }

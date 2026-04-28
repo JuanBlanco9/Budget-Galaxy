@@ -68,14 +68,130 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.6722,
     "nhs": 0.3278
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T04:22:49Z",
+    "company_name": "GENIUS WITHIN C.I.C.",
+    "company_status": "active",
+    "date_of_creation": "2011-04-13",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-01-31",
+    "accounts_last_made_up": "2025-04-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-21"
+  },
+  "governance": {
+    "api_date": "2026-04-28T04:22:50Z",
+    "total_officers": 30,
+    "active_count": 9,
+    "resigned_count": 21,
+    "active_officers": [
+      {
+        "name": "BARRETT, Fiona Jane Maria",
+        "role": "director",
+        "appointed_on": "2018-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CHARNOCK, Helen Camilla",
+        "role": "director",
+        "appointed_on": "2023-07-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CLIFF, Simon Richard",
+        "role": "director",
+        "appointed_on": "2018-06-28",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "COLLINS, Royston",
+        "role": "director",
+        "appointed_on": "2023-05-11",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "DOYLE, Nancy Elizabeth",
+        "role": "director",
+        "appointed_on": "2011-04-13",
+        "country_of_residence": "United Kingdom",
+        "nationality": "United Kingdom"
+      },
+      {
+        "name": "HAYES, Alexandra",
+        "role": "director",
+        "appointed_on": "2025-06-26",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HOLMES, Gillian",
+        "role": "director",
+        "appointed_on": "2023-11-28",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MILLIKEN, Neil",
+        "role": "director",
+        "appointed_on": "2019-08-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WALLIS, Jacqui",
+        "role": "director",
+        "appointed_on": "2020-07-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T04:22:51Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Ms Nancy Elizabeth Doyle",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent",
+          "voting-rights-50-to-75-percent",
+          "voting-rights-50-to-75-percent-as-firm"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwMjUzNDYxN2FkaXF6a2N4",
+    "date": "2026-02-05",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/mtiUtZkFyEH75SklNbfwI5UIeKmGR4ebXtGps_EOU7E/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/07602446/filing-history/MzUwMjUzNDYxN2FkaXF6a2N4"
   }
 }

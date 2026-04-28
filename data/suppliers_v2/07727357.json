@@ -59,14 +59,112 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.7064,
     "nhs": 0.2936
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T02:52:36Z",
+    "company_name": "HEIDELBERG ENGINEERING LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2011-08-03",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-08-18"
+  },
+  "governance": {
+    "api_date": "2026-04-28T02:52:37Z",
+    "total_officers": 5,
+    "active_count": 2,
+    "resigned_count": 3,
+    "active_officers": [
+      {
+        "name": "BECKER, Hartmut",
+        "role": "director",
+        "appointed_on": "2025-02-14",
+        "country_of_residence": "Germany",
+        "nationality": "German"
+      },
+      {
+        "name": "VADHIA, Toshi",
+        "role": "director",
+        "appointed_on": "2022-01-28",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T02:52:38Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Essilorluxottica Sa",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2024-10-02",
+        "identification": {
+          "legal_form": "Corporate",
+          "legal_authority": "French Law",
+          "country_registered": "France",
+          "place_registered": "Register Of The Commercial Courts",
+          "registration_number": "712049618"
+        }
+      },
+      {
+        "name": "Arianna Schoess Vargas",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "German",
+        "country_of_residence": "Germany",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Christoph Heinrich Maria Schoess",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "German",
+        "country_of_residence": "Germany",
+        "ceased": true,
+        "natures_of_control": [
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NjQyNTk2M2FkaXF6a2N4",
+    "date": "2025-08-07",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/BBdadxrqKxClESISj-LtDXqaTzUsOeL2eloLGcSKB8I/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/07727357/filing-history/MzQ3NjQyNTk2M2FkaXF6a2N4"
   }
 }

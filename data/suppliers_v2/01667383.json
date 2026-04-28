@@ -59,13 +59,116 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T06:57:41Z",
+    "company_name": "RIPON FARM SERVICES LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1982-09-27",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-10-31",
+    "accounts_last_made_up": "2025-01-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-06"
+  },
+  "governance": {
+    "api_date": "2026-04-28T06:57:42Z",
+    "total_officers": 13,
+    "active_count": 4,
+    "resigned_count": 9,
+    "active_officers": [
+      {
+        "name": "BROWN, Geoffrey",
+        "role": "director",
+        "appointed_on": null,
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "HYMAS, Stewart Alan",
+        "role": "director",
+        "appointed_on": "2010-07-20",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "NORTHWAY, Christopher John",
+        "role": "director",
+        "appointed_on": "2026-01-20",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SIMPSON, Richard Henry",
+        "role": "director",
+        "appointed_on": "2026-01-20",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T06:57:44Z",
+    "total_results": 3,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Mr Nicholas David Riley",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Geoffrey Brown",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Stewart Alan Hymas",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4Njg0MjMzNGFkaXF6a2N4",
+    "date": "2025-10-30",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/Rveqy4Z_iKoKzlCN_jWTytB4aXTimoMr_o4HpT057o8/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01667383/filing-history/MzQ4Njg0MjMzNGFkaXF6a2N4"
   }
 }

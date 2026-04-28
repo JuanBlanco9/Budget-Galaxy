@@ -55,13 +55,191 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T12:23:04Z",
+    "company_name": "WITHERS LLP",
+    "company_status": "active",
+    "date_of_creation": "2001-12-13",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-03-31",
+    "accounts_last_made_up": "2025-06-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-27"
+  },
+  "governance": {
+    "api_date": "2026-04-28T12:23:06Z",
+    "total_officers": 450,
+    "active_count": 184,
+    "resigned_count": 266,
+    "active_officers": [
+      {
+        "name": "AARONS, Elaine Felicity",
+        "role": "llp-designated-member",
+        "appointed_on": "2006-05-02",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "AHMED, Pervaze",
+        "role": "llp-designated-member",
+        "appointed_on": "2022-01-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "AUGHWANE, Sarah Jane",
+        "role": "llp-designated-member",
+        "appointed_on": "2024-07-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "BALTZ, Christina Maria",
+        "role": "llp-designated-member",
+        "appointed_on": "2016-01-19",
+        "country_of_residence": "United States",
+        "nationality": null
+      },
+      {
+        "name": "BARKER, Deborah Evaline",
+        "role": "llp-designated-member",
+        "appointed_on": "2015-04-06",
+        "country_of_residence": "Singapore",
+        "nationality": null
+      },
+      {
+        "name": "BARKER, Sarah Anne",
+        "role": "llp-designated-member",
+        "appointed_on": "2021-12-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "BAWDEN, Elizabeth Ann",
+        "role": "llp-designated-member",
+        "appointed_on": "2015-05-18",
+        "country_of_residence": "United States",
+        "nationality": null
+      },
+      {
+        "name": "BEH, Sze Yuen Gary",
+        "role": "llp-designated-member",
+        "appointed_on": "2025-03-14",
+        "country_of_residence": "Singapore",
+        "nationality": null
+      },
+      {
+        "name": "BIBBY, Gina",
+        "role": "llp-designated-member",
+        "appointed_on": "2020-01-13",
+        "country_of_residence": "United States",
+        "nationality": null
+      },
+      {
+        "name": "BLAKEMORE, Claire Anne",
+        "role": "llp-designated-member",
+        "appointed_on": "2010-07-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "BOND, Jon-Wesley",
+        "role": "llp-designated-member",
+        "appointed_on": "2023-08-26",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "BOSTOCK, Nicolette Clare",
+        "role": "llp-designated-member",
+        "appointed_on": "2022-11-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "BREEDON, Alexander James",
+        "role": "llp-designated-member",
+        "appointed_on": "2024-07-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "BROPHY, Michael Scott",
+        "role": "llp-designated-member",
+        "appointed_on": "2015-06-12",
+        "country_of_residence": "Singapore",
+        "nationality": null
+      },
+      {
+        "name": "BROTHERS, Joseph Philip",
+        "role": "llp-designated-member",
+        "appointed_on": "2024-07-31",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "BUCKLAND, Maya Lidia",
+        "role": "llp-designated-member",
+        "appointed_on": "2024-07-17",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "CACCHIO, Christina",
+        "role": "llp-designated-member",
+        "appointed_on": "2024-05-15",
+        "country_of_residence": "United States",
+        "nationality": null
+      },
+      {
+        "name": "CANAVAN, Jennifer",
+        "role": "llp-designated-member",
+        "appointed_on": "2019-09-04",
+        "country_of_residence": "United States",
+        "nationality": null
+      },
+      {
+        "name": "CHAE, Chang Hoon",
+        "role": "llp-designated-member",
+        "appointed_on": "2025-02-26",
+        "country_of_residence": "United States",
+        "nationality": null
+      },
+      {
+        "name": "CHANG, Joy Cheng-I",
+        "role": "llp-designated-member",
+        "appointed_on": "2018-08-16",
+        "country_of_residence": "United States",
+        "nationality": null
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T12:23:07Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxMzI1Nzk2MGFkaXF6a2N4",
+    "date": "2026-04-10",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/owZvwOq_eAqGgzy5Dzb3TP32Eu4ZTb6JRIatAFxBrjc/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/OC301149/filing-history/MzUxMzI1Nzk2MGFkaXF6a2N4"
   }
 }

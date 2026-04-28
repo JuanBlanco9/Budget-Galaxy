@@ -59,15 +59,127 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "nhs",
   "buyer_type_breakdown": {
     "nhs": 0.6197,
     "police_fire": 0.3389,
     "council": 0.0415
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T23:02:42Z",
+    "company_name": "EDC SYSTEMS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2007-08-21",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-12"
+  },
+  "governance": {
+    "api_date": "2026-04-27T23:02:44Z",
+    "total_officers": 8,
+    "active_count": 4,
+    "resigned_count": 4,
+    "active_officers": [
+      {
+        "name": "COPITCH, Liat",
+        "role": "secretary",
+        "appointed_on": "2007-08-21",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "MANDELBOUM, Vered Josef",
+        "role": "director",
+        "appointed_on": "2025-04-15",
+        "country_of_residence": "Israel",
+        "nationality": "Israeli"
+      },
+      {
+        "name": "TAL, Yaron",
+        "role": "director",
+        "appointed_on": "2015-09-20",
+        "country_of_residence": "United Kingdom",
+        "nationality": "Israeli"
+      },
+      {
+        "name": "YOUNG, Howard Reginald",
+        "role": "director",
+        "appointed_on": "2019-12-01",
+        "country_of_residence": "Scotland",
+        "nationality": "English"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T23:02:46Z",
+    "total_results": 3,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Mrs Liat Copitch",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "Israel",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent",
+          "voting-rights-50-to-75-percent"
+        ],
+        "notified_on": "2019-09-10",
+        "identification": null
+      },
+      {
+        "name": "Mr Yonathan Yisrael Copitch",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent",
+          "voting-rights-50-to-75-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Traffilog Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Company Limited By Shares",
+          "legal_authority": "Companies Law 5759-1999",
+          "country_registered": "Israel",
+          "place_registered": "State Of Israel",
+          "registration_number": "513367797"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MjI3OTYwNGFkaXF6a2N4",
+    "date": "2025-09-23",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/ZdRf3uSjbxkCO4I-9z2IT1Rip4z0KVe-6g6cjB_1TEI/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/06348501/filing-history/MzQ4MjI3OTYwNGFkaXF6a2N4"
   }
 }

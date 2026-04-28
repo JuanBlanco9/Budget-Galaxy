@@ -64,13 +64,164 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T11:53:10Z",
+    "company_name": "MARSHALL LAND SYSTEMS LTD",
+    "company_status": "active",
+    "date_of_creation": "1991-11-08",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-11"
+  },
+  "governance": {
+    "api_date": "2026-04-28T11:53:11Z",
+    "total_officers": 45,
+    "active_count": 4,
+    "resigned_count": 41,
+    "active_officers": [
+      {
+        "name": "BRENNAN, Zoe Anne",
+        "role": "director",
+        "appointed_on": "2025-10-02",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CLARK, Eric Graham",
+        "role": "director",
+        "appointed_on": "2025-11-21",
+        "country_of_residence": "Canada",
+        "nationality": "Canadian"
+      },
+      {
+        "name": "WILLIAMS, Gareth",
+        "role": "director",
+        "appointed_on": "2024-02-13",
+        "country_of_residence": "Wales",
+        "nationality": "British"
+      },
+      {
+        "name": "WILLOX, Tyler James",
+        "role": "director",
+        "appointed_on": "2025-11-21",
+        "country_of_residence": "Canada",
+        "nationality": "Canadian"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T11:53:12Z",
+    "total_results": 5,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "17289600 Canada Ltd.",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2025-11-21",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Canada Business Corporations Act",
+          "country_registered": "Canada",
+          "place_registered": "Corporations Canada",
+          "registration_number": "1728960-0"
+        }
+      },
+      {
+        "name": "Mr Thomas Francis Benjoe",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Canadian",
+        "country_of_residence": "Canada",
+        "ceased": false,
+        "natures_of_control": [
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2025-11-21",
+        "identification": null
+      },
+      {
+        "name": "Mr Cadmus Delorme",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Canadian",
+        "country_of_residence": "Canada",
+        "ceased": false,
+        "natures_of_control": [
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2025-11-21",
+        "identification": null
+      },
+      {
+        "name": "Marshall Adg Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2019-02-05",
+        "identification": {
+          "legal_form": "A Private Company Limited By Shares Incorporated Under The Laws Of England And Wales",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "England And Wales",
+          "registration_number": "10567163"
+        }
+      },
+      {
+        "name": "Marshall  Adg Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "A Private Company Limited By Shares, Incorporated Under The Laws Of England And Wales",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House Crown Way Cardiff Cf14 3uz",
+          "registration_number": "02051460"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxNTY5Nzc0MGFkaXF6a2N4",
+    "date": "2026-04-13",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/wjbX4RhyN_2Gqsg6k0op4yAadgTiTTe_xlZ_06OwVDA/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02661432/filing-history/MzUxNTY5Nzc0MGFkaXF6a2N4"
   }
 }

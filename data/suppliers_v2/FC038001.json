@@ -55,14 +55,129 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "education",
   "buyer_type_breakdown": {
     "education": 0.9388,
     "council": 0.0612
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T20:11:00Z",
+    "company_name": "CHUBB EUROPEAN GROUP SE",
+    "company_status": "active",
+    "date_of_creation": "2021-01-01",
+    "date_of_cessation": null,
+    "jurisdiction": "united-kingdom",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": null,
+    "accounts_next_due": null,
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": null,
+    "confirmation_statement_next_due": null
+  },
+  "governance": {
+    "api_date": "2026-04-27T20:11:02Z",
+    "total_officers": 17,
+    "active_count": 11,
+    "resigned_count": 6,
+    "active_officers": [
+      {
+        "name": "CHUBB LONDON SERVICES LIMITED",
+        "role": "corporate-secretary",
+        "appointed_on": "2021-01-01",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BRIGGS, Karen",
+        "role": "director",
+        "appointed_on": "2024-09-26",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "CHASSEGUET, Benoit Fernand Marie Marcel",
+        "role": "director",
+        "appointed_on": "2023-05-10",
+        "country_of_residence": "France",
+        "nationality": "French"
+      },
+      {
+        "name": "FURBY, David Michael Alan",
+        "role": "director",
+        "appointed_on": "2021-02-08",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "KELAHER, Peter",
+        "role": "director",
+        "appointed_on": "2024-12-19",
+        "country_of_residence": "France",
+        "nationality": "Australian"
+      },
+      {
+        "name": "KOREYVA, Ken",
+        "role": "director",
+        "appointed_on": "2021-02-08",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      },
+      {
+        "name": "RICHARDS, Sian Katharine",
+        "role": "director",
+        "appointed_on": "2021-02-08",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "ROBERTS, David Mark Windsor",
+        "role": "director",
+        "appointed_on": "2021-07-09",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "ROBIC, Ana",
+        "role": "director",
+        "appointed_on": "2025-05-20",
+        "country_of_residence": "United Kingdom",
+        "nationality": "Canadian"
+      },
+      {
+        "name": "TOH, Hilda",
+        "role": "director",
+        "appointed_on": "2023-05-10",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British,Canadian"
+      },
+      {
+        "name": "TURNER, Jonathan Adair",
+        "role": "director",
+        "appointed_on": "2021-02-08",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T20:11:04Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NjUxNTIzMWFkaXF6a2N4",
+    "date": "2025-08-18",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/AYzqMz679JBnF_W-Si3oFPWYX5oHPp1Xdie54-7wtws/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/FC038001/filing-history/MzQ3NjUxNTIzMWFkaXF6a2N4"
   }
 }

@@ -63,13 +63,113 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "education",
   "buyer_type_breakdown": {
     "education": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T10:21:22Z",
+    "company_name": "SCREWFIX DIRECT LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1995-01-05",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-10-31",
+    "accounts_last_made_up": "2025-01-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-28"
+  },
+  "governance": {
+    "api_date": "2026-04-28T10:21:24Z",
+    "total_officers": 53,
+    "active_count": 3,
+    "resigned_count": 50,
+    "active_officers": [
+      {
+        "name": "ALTOFT, Robert Derek",
+        "role": "director",
+        "appointed_on": "2025-11-10",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BRITTEN, Max Nicholas",
+        "role": "director",
+        "appointed_on": "2018-04-16",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MEWETT, Jonathan Mark",
+        "role": "director",
+        "appointed_on": "2008-03-03",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T10:21:25Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Kingfisher International Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2021-07-23",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "02558762"
+        }
+      },
+      {
+        "name": "Screwfix Investments Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "06466412"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MjkwODA4NWFkaXF6a2N4",
+    "date": "2025-07-09",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/aku0RZA7kWh8lo9jyGMsF8aWYhiZybsFHLxlZEOqUR4/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03006378/filing-history/MzQ3MjkwODA4NWFkaXF6a2N4"
   }
 }

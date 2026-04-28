@@ -65,14 +65,99 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.9978,
     "council": 0.0022
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T16:28:50Z",
+    "company_name": "WRIGHT BUILD LTD.",
+    "company_status": "active",
+    "date_of_creation": "1978-11-22",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-05-23"
+  },
+  "governance": {
+    "api_date": "2026-04-27T16:28:52Z",
+    "total_officers": 19,
+    "active_count": 4,
+    "resigned_count": 15,
+    "active_officers": [
+      {
+        "name": "JAMES, Ian",
+        "role": "secretary",
+        "appointed_on": "2025-11-21",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "ATKINSON, Joss Kirkwood, Dr",
+        "role": "director",
+        "appointed_on": "2023-07-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CLARKE, John Joseph",
+        "role": "director",
+        "appointed_on": "2009-04-21",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "MCKENZIE, Lee Darren",
+        "role": "director",
+        "appointed_on": "2006-05-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T16:28:53Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Wright Build Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "England & Wales",
+          "country_registered": "England",
+          "place_registered": "England & Wales",
+          "registration_number": "04182022"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NTEzMjgyNGFkaXF6a2N4",
+    "date": "2025-12-18",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/S8SOZhevDRtDiH7KABrNiLfIaGLya9ADg9BoAxIkR1A/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01401191/filing-history/MzQ5NTEzMjgyNGFkaXF6a2N4"
   }
 }

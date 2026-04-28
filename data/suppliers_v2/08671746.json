@@ -59,13 +59,97 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T04:24:09Z",
+    "company_name": "MERCER TREE SERVICES LTD",
+    "company_status": "active",
+    "date_of_creation": "2013-09-02",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-06-30",
+    "accounts_last_made_up": "2025-09-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-09-07"
+  },
+  "governance": {
+    "api_date": "2026-04-28T04:24:10Z",
+    "total_officers": 3,
+    "active_count": 3,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "MERCER, Benjamin",
+        "role": "secretary",
+        "appointed_on": "2013-09-02",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "MERCER, Benjamin",
+        "role": "director",
+        "appointed_on": "2013-09-02",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "MERCER, Joseph",
+        "role": "director",
+        "appointed_on": "2013-09-02",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T04:24:11Z",
+    "total_results": 2,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Mr Benjamin Mercer",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-09-02",
+        "identification": null
+      },
+      {
+        "name": "Mr Joeseph Mercer",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-09-02",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwNDk0NDAwNGFkaXF6a2N4",
+    "date": "2026-02-13",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-micro-entity",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/qWGtyXr2SVIbOLhNuvzTjWIOY6RADtUDv62_HjXdRtQ/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/08671746/filing-history/MzUwNDk0NDAwNGFkaXF6a2N4"
   }
 }

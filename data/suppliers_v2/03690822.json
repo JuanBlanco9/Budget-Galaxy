@@ -59,13 +59,133 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T05:59:33Z",
+    "company_name": "IWA PUBLISHING LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1998-12-31",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-08-04"
+  },
+  "governance": {
+    "api_date": "2026-04-28T05:59:34Z",
+    "total_officers": 30,
+    "active_count": 9,
+    "resigned_count": 21,
+    "active_officers": [
+      {
+        "name": "KNOTT, Christopher David",
+        "role": "secretary",
+        "appointed_on": "2024-08-07",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "COOK, Heather, Dr",
+        "role": "director",
+        "appointed_on": "2024-08-07",
+        "country_of_residence": "England",
+        "nationality": "Canadian"
+      },
+      {
+        "name": "D ARRAS, Diane",
+        "role": "director",
+        "appointed_on": "2023-02-16",
+        "country_of_residence": "France",
+        "nationality": "French"
+      },
+      {
+        "name": "HALL, Steven Richard",
+        "role": "director",
+        "appointed_on": "2023-10-09",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HEJAZI DEHAGHANI, Arash",
+        "role": "director",
+        "appointed_on": "2024-05-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "POPA, Teodor",
+        "role": "director",
+        "appointed_on": "2022-12-08",
+        "country_of_residence": "Romania",
+        "nationality": "Romanian"
+      },
+      {
+        "name": "VAIRAVAMOORTHY, Kalanithy, Professor",
+        "role": "director",
+        "appointed_on": "2017-09-25",
+        "country_of_residence": "Netherlands",
+        "nationality": "British"
+      },
+      {
+        "name": "VANROLLEGHEM, Peter, Professor",
+        "role": "director",
+        "appointed_on": "2021-04-24",
+        "country_of_residence": "Canada",
+        "nationality": "Canadian"
+      },
+      {
+        "name": "WANG, Xiaochang, Professor",
+        "role": "director",
+        "appointed_on": "2024-08-07",
+        "country_of_residence": "England",
+        "nationality": "Chinese"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T05:59:35Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "International Water Association",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "A Charity Limited By Gurantee",
+          "legal_authority": "Companies Act Act And Charities Act",
+          "country_registered": "Uk",
+          "place_registered": "Companies House",
+          "registration_number": "03597005"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MzU2MDQyMWFkaXF6a2N4",
+    "date": "2025-10-03",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/IB_7ZnRo4I2EaBsl0uKbJPzNbIUqHVQ6Wex8jc6XfyQ/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03690822/filing-history/MzQ4MzU2MDQyMWFkaXF6a2N4"
   }
 }

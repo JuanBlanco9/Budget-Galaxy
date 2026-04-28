@@ -68,13 +68,86 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T11:42:55Z",
+    "company_name": "MARCHES ENERGY ADVICE",
+    "company_status": "active",
+    "date_of_creation": "1997-10-02",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-16"
+  },
+  "governance": {
+    "api_date": "2026-04-28T11:42:56Z",
+    "total_officers": 39,
+    "active_count": 5,
+    "resigned_count": 34,
+    "active_officers": [
+      {
+        "name": "BROWN, David",
+        "role": "director",
+        "appointed_on": "2025-05-21",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CATTERMOLE, Angela Joy",
+        "role": "director",
+        "appointed_on": "2024-02-29",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "DEAVES, Christopher",
+        "role": "director",
+        "appointed_on": "2023-05-16",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "JONES, Elliot Allan",
+        "role": "director",
+        "appointed_on": "2023-05-16",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "PRIME, John Matthew",
+        "role": "director",
+        "appointed_on": "2025-05-21",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T11:42:57Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MzQ0MDc3MWFkaXF6a2N4",
+    "date": "2025-12-11",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/PQ_2gF6D_vAe0iZCmqhTS_ZeWjZXk5M3xCkNYlE-juo/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03443349/filing-history/MzQ5MzQ0MDc3MWFkaXF6a2N4"
   }
 }

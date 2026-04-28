@@ -61,13 +61,94 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T13:46:12Z",
+    "company_name": "A.W.R. PICKERSGILL LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1982-02-05",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-02-28",
+    "accounts_last_made_up": "2025-05-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-13"
+  },
+  "governance": {
+    "api_date": "2026-04-28T13:46:13Z",
+    "total_officers": 5,
+    "active_count": 2,
+    "resigned_count": 3,
+    "active_officers": [
+      {
+        "name": "PICKERSGILL, Julia Ann",
+        "role": "secretary",
+        "appointed_on": "2005-04-28",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "PICKERSGILL, Alroy Mark",
+        "role": "director",
+        "appointed_on": "2005-04-28",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T13:46:14Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Alroy Mark Pickersgill",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Alroy Mark Pickersgill",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MTg3NzkxNGFkaXF6a2N4",
+    "date": "2025-12-03",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/x4kHFxWcp2F_CgSutETVvPdx_MYMCBCOa4mUHbd42Bc/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01611740/filing-history/MzQ5MTg3NzkxNGFkaXF6a2N4"
   }
 }

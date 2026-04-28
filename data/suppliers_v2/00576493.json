@@ -59,15 +59,132 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
     "central_govt": 0.6302,
     "police_fire": 0.3484,
     "council": 0.0214
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T20:34:00Z",
+    "company_name": "IAN EDGAR(LIVERPOOL)LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1957-01-02",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-12"
+  },
+  "governance": {
+    "api_date": "2026-04-27T20:34:02Z",
+    "total_officers": 15,
+    "active_count": 6,
+    "resigned_count": 9,
+    "active_officers": [
+      {
+        "name": "EDGAR, Chloe Jolene",
+        "role": "director",
+        "appointed_on": "2020-07-20",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "EDGAR, Sophie Alicia Helen",
+        "role": "director",
+        "appointed_on": "2023-09-21",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "EDGAR, Thea Susan",
+        "role": "director",
+        "appointed_on": "2017-03-23",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GORDON, Ian Peter",
+        "role": "director",
+        "appointed_on": "2017-03-22",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HEAPY, Thomas Jacob Timothy",
+        "role": "director",
+        "appointed_on": "2017-03-23",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "NEWMAN, Michael James",
+        "role": "director",
+        "appointed_on": "2017-03-22",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T20:34:03Z",
+    "total_results": 3,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Mr Derek Winston Edgar",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Ian Edgar",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Allan Derek Edgar",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MzIyNTM4OWFkaXF6a2N4",
+    "date": "2025-09-30",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/w2BRXft2X0_0QkqJyMvtEeIZ3V5DRXAlBd9E754u3ZU/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/00576493/filing-history/MzQ4MzIyNTM4OWFkaXF6a2N4"
   }
 }

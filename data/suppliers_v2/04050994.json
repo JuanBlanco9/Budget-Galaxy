@@ -68,13 +68,121 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T01:55:58Z",
+    "company_name": "DISABILITY POSITIVE",
+    "company_status": "active",
+    "date_of_creation": "2000-08-10",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-08-24"
+  },
+  "governance": {
+    "api_date": "2026-04-28T01:56:00Z",
+    "total_officers": 58,
+    "active_count": 10,
+    "resigned_count": 48,
+    "active_officers": [
+      {
+        "name": "TURNBULL, Lynne",
+        "role": "secretary",
+        "appointed_on": "2024-12-12",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BRIDSON, Amie",
+        "role": "director",
+        "appointed_on": "2022-06-29",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "FORD, Judith Margaret, Dr",
+        "role": "director",
+        "appointed_on": "2019-10-17",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GALBRAITH, Andrew James",
+        "role": "director",
+        "appointed_on": "2022-01-04",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GRETTON, Sara",
+        "role": "director",
+        "appointed_on": "2024-12-12",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MARTIN, Clare Helen Elizabeth",
+        "role": "director",
+        "appointed_on": "2024-12-12",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MILLS, Jackson Harvey James",
+        "role": "director",
+        "appointed_on": "2024-12-12",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MORRISON, Michael",
+        "role": "director",
+        "appointed_on": "2022-07-19",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "TOONE, Anne Elizabeth",
+        "role": "director",
+        "appointed_on": "2022-05-05",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WARREN, Christopher James",
+        "role": "director",
+        "appointed_on": "2020-02-28",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T01:56:02Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NjA2OTcyNWFkaXF6a2N4",
+    "date": "2025-12-31",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/DOpP7LprsXbXHblOZGk_MWZV5OIH8cfRqT_m6thh2-Q/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04050994/filing-history/MzQ5NjA2OTcyNWFkaXF6a2N4"
   }
 }

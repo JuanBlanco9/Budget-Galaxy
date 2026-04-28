@@ -55,11 +55,112 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
-  "buyer_type_breakdown": {}
+  "buyer_type_breakdown": {},
+  "ch_profile": {
+    "api_date": "2026-04-27T15:09:55Z",
+    "company_name": "TATA CONSULTANCY SERVICES LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2004-04-01",
+    "date_of_cessation": null,
+    "jurisdiction": "united-kingdom",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": null,
+    "accounts_next_due": null,
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": null,
+    "confirmation_statement_next_due": null
+  },
+  "governance": {
+    "api_date": "2026-04-27T15:09:57Z",
+    "total_officers": 30,
+    "active_count": 9,
+    "resigned_count": 21,
+    "active_officers": [
+      {
+        "name": "SHETH, Yashaswin",
+        "role": "secretary",
+        "appointed_on": "2024-11-01",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BHANDARKAR, Sanjay Vijay",
+        "role": "director",
+        "appointed_on": "2025-03-04",
+        "country_of_residence": "India",
+        "nationality": "Indian"
+      },
+      {
+        "name": "CHANDRASEKARAN, Natarajan",
+        "role": "director",
+        "appointed_on": "2007-09-06",
+        "country_of_residence": "India",
+        "nationality": "Indian"
+      },
+      {
+        "name": "KHOSLA, Pradeep Kumar, Dr.",
+        "role": "director",
+        "appointed_on": "2018-01-11",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      },
+      {
+        "name": "KUNCHITHAM, Krithivasan",
+        "role": "director",
+        "appointed_on": "2023-06-01",
+        "country_of_residence": "India",
+        "nationality": "Indian"
+      },
+      {
+        "name": "MISTRY, Keki Minoo",
+        "role": "director",
+        "appointed_on": "2018-12-18",
+        "country_of_residence": "India",
+        "nationality": "Indian"
+      },
+      {
+        "name": "RAMJI, Al-Noor Gulamali, Abdulla",
+        "role": "director",
+        "appointed_on": "2023-10-12",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "SORENSEN, Hanne Brigitte Breinbjerg",
+        "role": "director",
+        "appointed_on": "2018-12-18",
+        "country_of_residence": "Denmark",
+        "nationality": "Danish"
+      },
+      {
+        "name": "SUBRAMANIAN, Aarthi",
+        "role": "director",
+        "appointed_on": "2015-03-12",
+        "country_of_residence": "India",
+        "nationality": "Indian"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T15:09:58Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NTk0ODU1OWFkaXF6a2N4",
+    "date": "2025-08-08",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/4zsWsHYUHxsg930mNjwhIPWwW7e84M5I0_BEXmNIP_I/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/FC025271/filing-history/MzQ3NTk0ODU1OWFkaXF6a2N4"
+  }
 }

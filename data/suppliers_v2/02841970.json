@@ -66,10 +66,10 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
@@ -78,5 +78,149 @@
     "agency": 0.0089,
     "education": 0.002,
     "council": 0.0006
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T13:29:57Z",
+    "company_name": "BMG RESEARCH LTD",
+    "company_status": "active",
+    "date_of_creation": "1993-08-03",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-04-06",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-09"
+  },
+  "governance": {
+    "api_date": "2026-04-27T13:29:59Z",
+    "total_officers": 27,
+    "active_count": 6,
+    "resigned_count": 21,
+    "active_officers": [
+      {
+        "name": "EVANS, Sally",
+        "role": "secretary",
+        "appointed_on": "2023-01-25",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "HERLIHY, Francis",
+        "role": "director",
+        "appointed_on": "2025-04-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ROWE, Thomas James Wharton",
+        "role": "director",
+        "appointed_on": "2023-01-25",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "RYDER, Alasdair Alan",
+        "role": "director",
+        "appointed_on": "2023-01-25",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "WOOD, Simon",
+        "role": "director",
+        "appointed_on": "2023-01-25",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "YOUNG, Gary Donald",
+        "role": "director",
+        "appointed_on": "2023-01-25",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T13:30:01Z",
+    "total_results": 4,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Rsk Environment Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2024-11-15",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "United Kingdom (Scotland)",
+          "country_registered": "Scotland",
+          "place_registered": "Edinburgh",
+          "registration_number": "Sc115530"
+        }
+      },
+      {
+        "name": "Bmg Research Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2016-07-18",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act",
+          "country_registered": "England",
+          "place_registered": "Companies House Register",
+          "registration_number": "10236510"
+        }
+      },
+      {
+        "name": "Mrs Dawn Amanda Hands",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Jonathan Bostock",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4NjcwODI3M2FkaXF6a2N4",
+    "date": "2025-10-29",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/FbgHiOMtHTB8Orpk7CkZMxMDSgUGtowK1D0N13deUE4/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02841970/filing-history/MzQ4NjcwODI3M2FkaXF6a2N4"
   }
 }

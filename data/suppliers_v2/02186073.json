@@ -65,13 +65,79 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T11:41:39Z",
+    "company_name": "SCIENCE PROJECTS",
+    "company_status": "active",
+    "date_of_creation": "1987-10-30",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-27"
+  },
+  "governance": {
+    "api_date": "2026-04-28T11:41:40Z",
+    "total_officers": 15,
+    "active_count": 4,
+    "resigned_count": 11,
+    "active_officers": [
+      {
+        "name": "FEATHERSTONE, Helen Clare, Dr",
+        "role": "director",
+        "appointed_on": "2020-01-31",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HUARD, James Timothy",
+        "role": "director",
+        "appointed_on": "2025-10-10",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "PIZZEY, Stephen",
+        "role": "director",
+        "appointed_on": null,
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WILKINS, Stephen Matthew, Dr",
+        "role": "director",
+        "appointed_on": "2021-04-23",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T11:41:41Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4Mzc5MjkzMGFkaXF6a2N4",
+    "date": "2025-10-07",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/Qh7qu8kA6T-x6hlQs04dnDVCduV8-w1lNXfUBu3UxBg/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02186073/filing-history/MzQ4Mzc5MjkzMGFkaXF6a2N4"
   }
 }

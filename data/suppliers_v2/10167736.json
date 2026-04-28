@@ -64,13 +64,109 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T10:29:24Z",
+    "company_name": "SIRM UK MARINE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2016-05-06",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-28"
+  },
+  "governance": {
+    "api_date": "2026-04-28T10:29:25Z",
+    "total_officers": 2,
+    "active_count": 1,
+    "resigned_count": 1,
+    "active_officers": [
+      {
+        "name": "DE CESARE, Luca",
+        "role": "director",
+        "appointed_on": "2016-05-06",
+        "country_of_residence": "Italy",
+        "nationality": "Italian"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T10:29:26Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Sirm Italia S.R.L.",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2025-12-05",
+        "identification": {
+          "legal_form": "Corporate",
+          "legal_authority": "The Italian Civil Code Legislative Decree 58/1998",
+          "country_registered": "Italy",
+          "place_registered": "Naples",
+          "registration_number": "09227111219"
+        }
+      },
+      {
+        "name": "Sirm- Societa Italiana Radio Marittima Spa Limited ",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2019-04-03",
+        "identification": {
+          "legal_form": "Corporate",
+          "legal_authority": "The Italian Civil Code Legislative Decree 58/1998",
+          "country_registered": "Italy",
+          "place_registered": "Italy",
+          "registration_number": "Fc033395"
+        }
+      },
+      {
+        "name": "Maria Rosaria Torrese",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Italian",
+        "country_of_residence": "Italy",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-05-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NzA2NjYzNmFkaXF6a2N4",
+    "date": "2025-12-31",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-unaudited-abridged",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/Q5Mi2vwoihr8VnziXhqzP_hJcX_lztXoPXLDXgxw4pI/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/10167736/filing-history/MzQ5NzA2NjYzNmFkaXF6a2N4"
   }
 }

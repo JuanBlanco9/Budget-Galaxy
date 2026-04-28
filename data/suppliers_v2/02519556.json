@@ -68,13 +68,127 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
     "central_govt": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T02:37:09Z",
+    "company_name": "TOSHIBA EUROPE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1990-07-06",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-15"
+  },
+  "governance": {
+    "api_date": "2026-04-28T02:37:10Z",
+    "total_officers": 71,
+    "active_count": 5,
+    "resigned_count": 66,
+    "active_officers": [
+      {
+        "name": "WHELAN, Patrick",
+        "role": "secretary",
+        "appointed_on": "2023-08-01",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "HIRATA, Kei",
+        "role": "director",
+        "appointed_on": "2025-10-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "Japanese"
+      },
+      {
+        "name": "MOKOSCH, Dirk",
+        "role": "director",
+        "appointed_on": "2023-08-01",
+        "country_of_residence": "Germany",
+        "nationality": "German"
+      },
+      {
+        "name": "OCHIAI, Makoto",
+        "role": "director",
+        "appointed_on": "2025-05-01",
+        "country_of_residence": "Japan",
+        "nationality": "Japanese"
+      },
+      {
+        "name": "OKADA, Fumihiro",
+        "role": "director",
+        "appointed_on": "2022-10-01",
+        "country_of_residence": "Japan",
+        "nationality": "Japanese"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T02:37:11Z",
+    "total_results": 2,
+    "active_count": 0,
+    "items": [
+      {
+        "name": "Toshiba Corporation",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2020-03-24",
+        "identification": {
+          "legal_form": "Plc",
+          "legal_authority": "Japan",
+          "country_registered": "Japan",
+          "place_registered": "Japan",
+          "registration_number": "0104-01-044997"
+        }
+      },
+      {
+        "name": "Toshiba Of Europe Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Limited Liability Partnerships Act 2000",
+          "country_registered": "Uk",
+          "place_registered": "Companies House Uk",
+          "registration_number": "03468211"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MTA4ODE5MGFkaXF6a2N4",
+    "date": "2025-11-28",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/1bEdGzGMzzRcNYlpVa0pqjjJXY_KQjBCBVqSDdibhnU/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02519556/filing-history/MzQ5MTA4ODE5MGFkaXF6a2N4"
   }
 }

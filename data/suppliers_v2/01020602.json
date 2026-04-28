@@ -66,15 +66,88 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "agency",
   "buyer_type_breakdown": {
     "agency": 0.4509,
     "education": 0.3946,
     "other": 0.1545
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T06:56:48Z",
+    "company_name": "MALVERN PANALYTICAL LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1971-08-11",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-04-14"
+  },
+  "governance": {
+    "api_date": "2026-04-28T06:56:49Z",
+    "total_officers": 42,
+    "active_count": 2,
+    "resigned_count": 40,
+    "active_officers": [
+      {
+        "name": "FERRIS, Neil",
+        "role": "director",
+        "appointed_on": "2025-04-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MULDER, Tom Alexander",
+        "role": "director",
+        "appointed_on": "2017-06-05",
+        "country_of_residence": "Netherlands",
+        "nationality": "Dutch"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T06:56:50Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Spectris Group Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "1104312"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MjkwOTUwMGFkaXF6a2N4",
+    "date": "2025-09-30",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/TEWHTfsh11y6lDYH4rN89WehI7SNUxsEyy8N2-c7G7k/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01020602/filing-history/MzQ4MjkwOTUwMGFkaXF6a2N4"
   }
 }

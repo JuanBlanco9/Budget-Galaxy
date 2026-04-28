@@ -64,13 +64,86 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "agency",
   "buyer_type_breakdown": {
     "agency": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T10:49:56Z",
+    "company_name": "GLOBALCAPITAL INTERNATIONAL LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2023-10-25",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-06-30",
+    "accounts_last_made_up": "2025-09-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-26"
+  },
+  "governance": {
+    "api_date": "2026-04-28T10:49:57Z",
+    "total_officers": 3,
+    "active_count": 2,
+    "resigned_count": 1,
+    "active_officers": [
+      {
+        "name": "BEST, Nina Caroline",
+        "role": "director",
+        "appointed_on": "2023-10-25",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "KERR, Richard James",
+        "role": "director",
+        "appointed_on": "2023-10-25",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T10:49:58Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Eii (Ventures) Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2023-10-25",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "Uk Register Of Companies",
+          "registration_number": "05885797"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxMjU4MTczOWFkaXF6a2N4",
+    "date": "2026-03-25",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-audit-exemption-subsiduary",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/zLIuLEF2_WTI_aNy7o5q4iwmM6_kYP1xONcGbPuufN4/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/15236213/filing-history/MzUxMjU4MTczOWFkaXF6a2N4"
   }
 }

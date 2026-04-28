@@ -59,13 +59,86 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T04:04:12Z",
+    "company_name": "BUILDING ENGINEERING SERVICES TRAINING LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1993-02-22",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-11-30",
+    "accounts_last_made_up": "2025-02-28",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-08"
+  },
+  "governance": {
+    "api_date": "2026-04-28T04:04:13Z",
+    "total_officers": 45,
+    "active_count": 2,
+    "resigned_count": 43,
+    "active_officers": [
+      {
+        "name": "FRISE, David William",
+        "role": "director",
+        "appointed_on": "2024-03-05",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HARDY, Skye Anne",
+        "role": "director",
+        "appointed_on": "2018-04-02",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T04:04:14Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "B&Esa Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Company Limited By Shares",
+          "legal_authority": "English",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "00852809"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NTAxNzI4OWFkaXF6a2N4",
+    "date": "2025-07-24",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/y0dGBuHK-QK1p642cJyIc2G11h7QCnQGA7CYL_kYUpE/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02793967/filing-history/MzQ3NTAxNzI4OWFkaXF6a2N4"
   }
 }

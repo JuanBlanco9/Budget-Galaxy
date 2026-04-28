@@ -59,13 +59,86 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T06:01:50Z",
+    "company_name": "SELECT WINDOWS (HOME IMPROVEMENTS) LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1991-06-01",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-15"
+  },
+  "governance": {
+    "api_date": "2026-04-28T06:01:51Z",
+    "total_officers": 5,
+    "active_count": 2,
+    "resigned_count": 3,
+    "active_officers": [
+      {
+        "name": "WOOD, Anthony Vincent Charles",
+        "role": "director",
+        "appointed_on": null,
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "WYLDE, Gary Ramon",
+        "role": "director",
+        "appointed_on": "2010-10-14",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T06:01:52Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Select Group Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Uk Limited Company",
+          "legal_authority": "Uk Company Law",
+          "country_registered": "England And Wales",
+          "place_registered": "Uk Register",
+          "registration_number": "01609690"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2NzM3NzE3MGFkaXF6a2N4",
+    "date": "2025-05-21",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/9EoVg-3MWqZVKlsr2OoEVGwRx14obAtVLdaU1AVskXs/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02616087/filing-history/MzQ2NzM3NzE3MGFkaXF6a2N4"
   }
 }

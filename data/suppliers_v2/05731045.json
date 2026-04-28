@@ -68,14 +68,141 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "police_fire",
   "buyer_type_breakdown": {
     "police_fire": 0.9969,
     "trust": 0.0031
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T20:23:16Z",
+    "company_name": "WEST HAM UNITED FOUNDATION",
+    "company_status": "active",
+    "date_of_creation": "2006-03-06",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-02-28",
+    "accounts_last_made_up": "2025-05-31",
+    "confirmation_statement_overdue": true,
+    "confirmation_statement_next_due": "2026-03-18"
+  },
+  "governance": {
+    "api_date": "2026-04-27T20:23:18Z",
+    "total_officers": 27,
+    "active_count": 10,
+    "resigned_count": 17,
+    "active_officers": [
+      {
+        "name": "MOLLETT, Andrew John",
+        "role": "secretary",
+        "appointed_on": "2013-01-23",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BORQUAYE, Isaac Charles Bortey",
+        "role": "director",
+        "appointed_on": "2025-05-23",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BRANDMAN, Henri",
+        "role": "director",
+        "appointed_on": "2015-12-14",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CROOK, Jeremy",
+        "role": "director",
+        "appointed_on": "2014-03-05",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "FERDINAND, Jackie",
+        "role": "director",
+        "appointed_on": "2018-03-16",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GABRIEL, Marie Sylvia, Dame",
+        "role": "director",
+        "appointed_on": "2013-01-23",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HAYES, Jeffrey Christopher",
+        "role": "director",
+        "appointed_on": "2019-12-19",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "JALLOH, Fatima",
+        "role": "director",
+        "appointed_on": "2024-11-28",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MOLLETT, Andrew John",
+        "role": "director",
+        "appointed_on": "2013-01-23",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "ZIA, Emaan",
+        "role": "director",
+        "appointed_on": "2024-11-28",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T20:23:20Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "West Ham United Football Club Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control-as-trust"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Law",
+          "country_registered": "Uk",
+          "place_registered": "Companies House",
+          "registration_number": "066516"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxMzEzODU1MGFkaXF6a2N4",
+    "date": "2026-04-04",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/815QFayuMI-fm_0J58RrXFdjPZPzyiQYYx_b42OtezQ/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/05731045/filing-history/MzUxMzEzODU1MGFkaXF6a2N4"
   }
 }

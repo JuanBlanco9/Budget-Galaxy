@@ -59,13 +59,303 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "agency",
   "buyer_type_breakdown": {
     "agency": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T08:35:08Z",
+    "company_name": "LEARN SHEFFIELD",
+    "company_status": "active",
+    "date_of_creation": "2015-08-14",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-05-31",
+    "accounts_last_made_up": "2025-08-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-08-27"
+  },
+  "governance": {
+    "api_date": "2026-04-28T08:35:09Z",
+    "total_officers": 29,
+    "active_count": 10,
+    "resigned_count": 19,
+    "active_officers": [
+      {
+        "name": "BETTS, Stephen David",
+        "role": "director",
+        "appointed_on": "2015-08-27",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "GILLESPIE, Laura Ann",
+        "role": "director",
+        "appointed_on": "2023-02-09",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HUGHES, Antony Paul",
+        "role": "director",
+        "appointed_on": "2017-02-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LANT, Angela",
+        "role": "director",
+        "appointed_on": "2016-12-06",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LEISHMAN, Joanne Susan",
+        "role": "director",
+        "appointed_on": "2026-02-05",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MATTHEWS, Beverley Ann",
+        "role": "director",
+        "appointed_on": "2021-02-04",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SHEIKH, Amer Mark",
+        "role": "director",
+        "appointed_on": "2024-02-08",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SHIPMAN, Nicola Anne",
+        "role": "director",
+        "appointed_on": "2022-02-03",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SIMPSON, Paul Daniel",
+        "role": "director",
+        "appointed_on": "2022-02-03",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WESTERDALE, Mike",
+        "role": "director",
+        "appointed_on": "2019-02-27",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T08:35:11Z",
+    "total_results": 17,
+    "active_count": 4,
+    "items": [
+      {
+        "name": "Mr Dean Verne Linkhorn",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control",
+          "significant-influence-or-control-as-firm"
+        ],
+        "notified_on": "2020-01-30",
+        "identification": null
+      },
+      {
+        "name": "Mr Mike Westerdale",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2019-01-30",
+        "identification": null
+      },
+      {
+        "name": "Mr James Maxwell Gardner Henderson",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2018-10-11",
+        "identification": null
+      },
+      {
+        "name": "Mr Andrew Mellodew Hartley",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2018-03-22",
+        "identification": null
+      },
+      {
+        "name": "Mr Andrew Denis Bainbridge",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2017-09-18",
+        "identification": null
+      },
+      {
+        "name": "Mr Christopher Derek Holder",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-12-06",
+        "identification": null
+      },
+      {
+        "name": "Ms Judith Anne Smith",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-12-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Christopher French",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-12-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Joel Matthew Wirth",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-12-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Antony Paul Hughes",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-12-06",
+        "identification": null
+      },
+      {
+        "name": "Mrs Angela Lant",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-12-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Michael Daniel Allen",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-06-30",
+        "identification": null
+      },
+      {
+        "name": "Mr Darren Tidmarsh",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-06-30",
+        "identification": null
+      },
+      {
+        "name": "Mr David Bowes",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-06-30",
+        "identification": null
+      },
+      {
+        "name": "Mr Dean Verne Linkhorn",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-06-30",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5ODYwNTcyMmFkaXF6a2N4",
+    "date": "2026-01-12",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/gTpXfpIckcoyccWd9j8Y6To9dBCYCIrEKj6cncw3n9s/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/09734238/filing-history/MzQ5ODYwNTcyMmFkaXF6a2N4"
   }
 }

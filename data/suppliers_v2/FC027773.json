@@ -55,13 +55,65 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T14:08:26Z",
+    "company_name": "STABILO INTERNATIONAL GMBH",
+    "company_status": "active",
+    "date_of_creation": "2007-07-26",
+    "date_of_cessation": null,
+    "jurisdiction": "united-kingdom",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": null,
+    "accounts_next_due": null,
+    "accounts_last_made_up": "2024-06-30",
+    "confirmation_statement_overdue": null,
+    "confirmation_statement_next_due": null
+  },
+  "governance": {
+    "api_date": "2026-04-27T14:08:28Z",
+    "total_officers": 5,
+    "active_count": 2,
+    "resigned_count": 3,
+    "active_officers": [
+      {
+        "name": "BRINKMANN, Horst",
+        "role": "director",
+        "appointed_on": "2021-03-11",
+        "country_of_residence": "Germany",
+        "nationality": "German"
+      },
+      {
+        "name": "KHAN, Shehbaz Ahmed",
+        "role": "director",
+        "appointed_on": "2022-03-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T14:08:29Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2MzEwNTY1OWFkaXF6a2N4",
+    "date": "2025-04-28",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/uahm1VWSqfokIbx9WY_hxJyykxTryLqcqT9slFeXSIU/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/FC027773/filing-history/MzQ2MzEwNTY1OWFkaXF6a2N4"
   }
 }

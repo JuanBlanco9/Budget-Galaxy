@@ -59,13 +59,100 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T06:51:08Z",
+    "company_name": "ELDAPOINT LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1973-02-15",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-20"
+  },
+  "governance": {
+    "api_date": "2026-04-28T06:51:09Z",
+    "total_officers": 19,
+    "active_count": 4,
+    "resigned_count": 15,
+    "active_officers": [
+      {
+        "name": "COLLIER, James Jack",
+        "role": "director",
+        "appointed_on": "2019-10-31",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "KEARNS, Lynn",
+        "role": "director",
+        "appointed_on": "2019-02-15",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "RAWKINS, William Robert John",
+        "role": "director",
+        "appointed_on": "2019-02-15",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "SMITH, Paul Gareth",
+        "role": "director",
+        "appointed_on": "2023-06-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T06:51:10Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Eldapoint Holdings Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "United Kingdom (England And Wales)",
+          "country_registered": "United Kingdom (England And Wales)",
+          "place_registered": "Companies House",
+          "registration_number": "06200755"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NTcwMDQxNmFkaXF6a2N4",
+    "date": "2025-12-22",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/q9nJ8Houc7W0HLD27RfHq65kTV14aNAa2Q9_EetwnTo/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01096344/filing-history/MzQ5NTcwMDQxNmFkaXF6a2N4"
   }
 }

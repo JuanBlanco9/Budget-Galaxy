@@ -59,13 +59,85 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T15:59:08Z",
+    "company_name": "TRITON SECURITY & FACILITIES MANAGEMENT LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2003-01-03",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-01"
+  },
+  "governance": {
+    "api_date": "2026-04-27T15:59:10Z",
+    "total_officers": 12,
+    "active_count": 2,
+    "resigned_count": 10,
+    "active_officers": [
+      {
+        "name": "GIBSON, Lauren",
+        "role": "director",
+        "appointed_on": "2015-03-02",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PAVER, Lauren Kate",
+        "role": "director",
+        "appointed_on": "2017-06-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T15:59:11Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Triton Group Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "England And Wales",
+          "country_registered": "England",
+          "place_registered": "England And Wales",
+          "registration_number": "08501041"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MjQ5NjQwMmFkaXF6a2N4",
+    "date": "2025-07-03",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/ZqhCN70D12GsKcWj612Esn6kIb0bt0WayfMn6R95T1E/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04628386/filing-history/MzQ3MjQ5NjQwMmFkaXF6a2N4"
   }
 }

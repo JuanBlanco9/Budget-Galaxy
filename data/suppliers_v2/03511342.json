@@ -70,13 +70,114 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T03:08:43Z",
+    "company_name": "MIND BLMK",
+    "company_status": "active",
+    "date_of_creation": "1998-02-16",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-17"
+  },
+  "governance": {
+    "api_date": "2026-04-28T03:08:45Z",
+    "total_officers": 54,
+    "active_count": 9,
+    "resigned_count": 45,
+    "active_officers": [
+      {
+        "name": "LEWIS, Caroline Frances",
+        "role": "secretary",
+        "appointed_on": "2017-06-21",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BROUGHTON, Lesley",
+        "role": "director",
+        "appointed_on": "2018-10-19",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CLARKE, Simon Francis",
+        "role": "director",
+        "appointed_on": "2019-06-03",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "DE ARAUJO, Alex",
+        "role": "director",
+        "appointed_on": "2021-04-07",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "DONOVAN, Helen, Dr",
+        "role": "director",
+        "appointed_on": "2018-10-19",
+        "country_of_residence": "England",
+        "nationality": "Australian"
+      },
+      {
+        "name": "FAVVA, Eva",
+        "role": "director",
+        "appointed_on": "2024-12-03",
+        "country_of_residence": "England",
+        "nationality": "Greek"
+      },
+      {
+        "name": "JENKINS, Sara",
+        "role": "director",
+        "appointed_on": "2021-09-06",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PARRISH, Hannah",
+        "role": "director",
+        "appointed_on": "2021-09-06",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "QUINN, Kevin",
+        "role": "director",
+        "appointed_on": "2022-12-05",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T03:08:46Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4NTQ3NDY2NmFkaXF6a2N4",
+    "date": "2025-10-20",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/AJnQLWzn2F5ZO9E1oSmJjNgOYpwc79upRlPf6UF9j_U/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03511342/filing-history/MzQ4NTQ3NDY2NmFkaXF6a2N4"
   }
 }

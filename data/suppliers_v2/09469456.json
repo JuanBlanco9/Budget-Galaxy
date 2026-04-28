@@ -68,13 +68,84 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T16:24:54Z",
+    "company_name": "EXECUTIVE CARE PERSONNEL LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2015-03-04",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-14"
+  },
+  "governance": {
+    "api_date": "2026-04-27T16:24:56Z",
+    "total_officers": 2,
+    "active_count": 1,
+    "resigned_count": 1,
+    "active_officers": [
+      {
+        "name": "BOSSMAN, Jocelyn Cheryl",
+        "role": "director",
+        "appointed_on": "2015-03-04",
+        "country_of_residence": "England",
+        "nationality": "Ghanaian"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T16:24:57Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Ms Rosemond Anning",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Ghanaian",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2018-03-31",
+        "identification": null
+      },
+      {
+        "name": "Ms Jocelyn Cheryl Bossman",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Ghanaian",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-07",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MzI4MDY5N2FkaXF6a2N4",
+    "date": "2025-07-11",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/Mzbv9y-_jfPq2t0i5oEc80mnersdks6dcQnwBXQ7nf0/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/09469456/filing-history/MzQ3MzI4MDY5N2FkaXF6a2N4"
   }
 }

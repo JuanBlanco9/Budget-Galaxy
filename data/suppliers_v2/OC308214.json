@@ -55,13 +55,94 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
     "central_govt": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T04:21:21Z",
+    "company_name": "ARCHITON LLP",
+    "company_status": "active",
+    "date_of_creation": "2004-06-03",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-10-31",
+    "accounts_last_made_up": "2025-01-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-14"
+  },
+  "governance": {
+    "api_date": "2026-04-28T04:21:22Z",
+    "total_officers": 6,
+    "active_count": 2,
+    "resigned_count": 4,
+    "active_officers": [
+      {
+        "name": "DAVIS, Calum",
+        "role": "llp-designated-member",
+        "appointed_on": "2004-06-03",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "HUTCHINGS, Dawn",
+        "role": "llp-designated-member",
+        "appointed_on": "2015-06-01",
+        "country_of_residence": "England",
+        "nationality": null
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T04:21:23Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Greg Long",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "voting-rights-25-to-50-percent-limited-liability-partnership",
+          "right-to-share-surplus-assets-25-to-50-percent-limited-liability-partnership",
+          "right-to-appoint-and-remove-members-limited-liability-partnership"
+        ],
+        "notified_on": "2016-06-04",
+        "identification": null
+      },
+      {
+        "name": "Mr Calum Davis",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "voting-rights-50-to-75-percent-limited-liability-partnership",
+          "right-to-share-surplus-assets-50-to-75-percent-limited-liability-partnership",
+          "right-to-appoint-and-remove-members-limited-liability-partnership"
+        ],
+        "notified_on": "2016-06-04",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2NzM1MjI0NmFkaXF6a2N4",
+    "date": "2025-05-21",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/-uKWQbAUMkUl5Fq3SEp97q_FPbftxBuY4zrABkcmoU4/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/OC308214/filing-history/MzQ2NzM1MjI0NmFkaXF6a2N4"
   }
 }

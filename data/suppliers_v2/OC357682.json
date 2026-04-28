@@ -55,13 +55,125 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T21:48:11Z",
+    "company_name": "SMITH SQUARE PARTNERS LLP",
+    "company_status": "active",
+    "date_of_creation": "2010-09-06",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-09-20"
+  },
+  "governance": {
+    "api_date": "2026-04-27T21:48:13Z",
+    "total_officers": 24,
+    "active_count": 7,
+    "resigned_count": 17,
+    "active_officers": [
+      {
+        "name": "CRAVEN, William John",
+        "role": "llp-designated-member",
+        "appointed_on": "2010-09-06",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "MINGAY, Benjamin Edward",
+        "role": "llp-designated-member",
+        "appointed_on": "2010-09-06",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "BANHAM, Richard Anton",
+        "role": "llp-member",
+        "appointed_on": "2023-09-04",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "GILMOUR, Douglas Ross",
+        "role": "llp-member",
+        "appointed_on": "2020-10-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "SCOTT, Rory Michael",
+        "role": "llp-member",
+        "appointed_on": "2025-02-12",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "STAPLES, Paul Jonathan Kensit",
+        "role": "llp-member",
+        "appointed_on": "2020-08-19",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "TYRRELL, David",
+        "role": "llp-member",
+        "appointed_on": "2023-06-26",
+        "country_of_residence": "England",
+        "nationality": null
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T21:48:15Z",
+    "total_results": 2,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Mr William John Craven",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "voting-rights-25-to-50-percent-limited-liability-partnership"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Benjamin Edward Mingay",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "voting-rights-25-to-50-percent-limited-liability-partnership"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NTY3MDI4NGFkaXF6a2N4",
+    "date": "2025-07-31",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/BMMzJ-HrDu73GFIaeAT_M8mrQ1HvkWvZibfoW86FoGI/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/OC357682/filing-history/MzQ3NTY3MDI4NGFkaXF6a2N4"
   }
 }

@@ -61,13 +61,128 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T09:29:21Z",
+    "company_name": "INSTITUTE OF DEVELOPMENT STUDIES(THE)",
+    "company_status": "active",
+    "date_of_creation": "1966-04-20",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-09-15"
+  },
+  "governance": {
+    "api_date": "2026-04-28T09:29:22Z",
+    "total_officers": 124,
+    "active_count": 11,
+    "resigned_count": 113,
+    "active_officers": [
+      {
+        "name": "CATHERALL, Timothy",
+        "role": "secretary",
+        "appointed_on": "2017-11-10",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "ABLO, Awo",
+        "role": "director",
+        "appointed_on": "2019-12-04",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ARYEETEY, Ernest",
+        "role": "director",
+        "appointed_on": "2021-08-01",
+        "country_of_residence": "Ghana",
+        "nationality": "Ghanaian"
+      },
+      {
+        "name": "BARTON, Tamsyn Sherlle, Dr",
+        "role": "director",
+        "appointed_on": "2021-08-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BELLAMY, Michael Charles",
+        "role": "director",
+        "appointed_on": "2025-02-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CLAYTON, Jenny Natasha",
+        "role": "director",
+        "appointed_on": "2019-11-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LIND, Jeremy",
+        "role": "director",
+        "appointed_on": "2025-08-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "NAYYAR, Deepak, Professor",
+        "role": "director",
+        "appointed_on": "2020-07-31",
+        "country_of_residence": "India",
+        "nationality": "Indian"
+      },
+      {
+        "name": "OCAMPO GAVIRIA, Jose Antonio",
+        "role": "director",
+        "appointed_on": "2021-08-01",
+        "country_of_residence": "United States",
+        "nationality": "Colombian"
+      },
+      {
+        "name": "ROSENEIL, Sasha, Dr",
+        "role": "director",
+        "appointed_on": "2022-09-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ZABAKHIDZE, Mariam",
+        "role": "director",
+        "appointed_on": "2025-08-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "Georgian"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T09:29:23Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MjE2NzEyMGFkaXF6a2N4",
+    "date": "2025-09-23",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/1MR5dJ7lmCzsu42pnkj1EX2MsmRiVBGXfW0CMQjKdyA/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/00877338/filing-history/MzQ4MjE2NzEyMGFkaXF6a2N4"
   }
 }

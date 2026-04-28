@@ -59,11 +59,89 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
-  "buyer_type_breakdown": {}
+  "buyer_type_breakdown": {},
+  "ch_profile": {
+    "api_date": "2026-04-28T14:29:36Z",
+    "company_name": "GANYMEDE CARE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2005-06-24",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-30",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-21"
+  },
+  "governance": {
+    "api_date": "2026-04-28T14:29:37Z",
+    "total_officers": 17,
+    "active_count": 3,
+    "resigned_count": 14,
+    "active_officers": [
+      {
+        "name": "DHANDSA, Narinder, Dr",
+        "role": "director",
+        "appointed_on": "2005-06-24",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LATINCIC, Vuk",
+        "role": "director",
+        "appointed_on": "2019-05-14",
+        "country_of_residence": "United Kingdom",
+        "nationality": "Serbian"
+      },
+      {
+        "name": "PATEL, Anoop Kumar Nandubhai",
+        "role": "director",
+        "appointed_on": "2005-06-24",
+        "country_of_residence": "Switzerland",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T14:29:38Z",
+    "total_results": 1,
+    "active_count": 0,
+    "items": [
+      {
+        "name": "Zedra Holdings (Cayman)Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-07-23",
+        "identification": {
+          "legal_form": "Company",
+          "legal_authority": "Cayman Islands",
+          "country_registered": "Cayman Islands",
+          "place_registered": "Cayman Islands",
+          "registration_number": "30247"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5Njg2MjgzNWFkaXF6a2N4",
+    "date": "2025-12-30",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-medium",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/TX13yxtdEz0ILRgjJZ5hGnueoNC-AA5UPXW9r_NHmu4/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/05490377/filing-history/MzQ5Njg2MjgzNWFkaXF6a2N4"
+  }
 }

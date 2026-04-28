@@ -63,13 +63,72 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T13:22:09Z",
+    "company_name": "ST JOHN'S ENTERPRISES LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1994-06-03",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-03-31",
+    "accounts_last_made_up": "2025-06-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-15"
+  },
+  "governance": {
+    "api_date": "2026-04-28T13:22:10Z",
+    "total_officers": 17,
+    "active_count": 3,
+    "resigned_count": 14,
+    "active_officers": [
+      {
+        "name": "SWANNELL, Kerry",
+        "role": "secretary",
+        "appointed_on": "2022-03-17",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "COX, Alison Lucia",
+        "role": "director",
+        "appointed_on": "2023-06-20",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HARVEY, Katherine Alice",
+        "role": "director",
+        "appointed_on": "2018-03-21",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T13:22:11Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MjYxODgzMGFkaXF6a2N4",
+    "date": "2025-12-08",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/tzyJs-4XKSvwC9FPmBKkMirA_lAUb1rWiOAKrjHq_EI/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02935485/filing-history/MzQ5MjYxODgzMGFkaXF6a2N4"
   }
 }

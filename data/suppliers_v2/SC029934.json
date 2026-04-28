@@ -59,11 +59,130 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
-  "buyer_type_breakdown": {}
+  "buyer_type_breakdown": {},
+  "ch_profile": {
+    "api_date": "2026-04-28T15:05:21Z",
+    "company_name": "ASCO UK LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1954-03-15",
+    "date_of_cessation": null,
+    "jurisdiction": "scotland",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-24"
+  },
+  "governance": {
+    "api_date": "2026-04-28T15:05:23Z",
+    "total_officers": 49,
+    "active_count": 6,
+    "resigned_count": 43,
+    "active_officers": [
+      {
+        "name": "MCINTYRE, Fraser Nicol",
+        "role": "secretary",
+        "appointed_on": "2012-05-28",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "MITCHELL, Stephen",
+        "role": "director",
+        "appointed_on": "2018-09-10",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      },
+      {
+        "name": "PETTIGREW, Timothy Michael Robert",
+        "role": "director",
+        "appointed_on": "2023-08-29",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      },
+      {
+        "name": "SCOTT, Allan Douglas",
+        "role": "director",
+        "appointed_on": "2025-07-23",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      },
+      {
+        "name": "STEWART, Fraser Gordon",
+        "role": "director",
+        "appointed_on": "2025-07-23",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      },
+      {
+        "name": "WRIGHT, Antony Robert William",
+        "role": "director",
+        "appointed_on": "2023-07-03",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T15:05:24Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Hsbc Corporate Trustee Company (Uk) Limited ",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Corporate",
+          "legal_authority": "United Kingdom (England And Wales)",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "06447555"
+        }
+      },
+      {
+        "name": "Asco Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "United Kingdom (Scotland)",
+          "country_registered": "Scotland",
+          "place_registered": "Companies House",
+          "registration_number": "Sc300658"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MjUwOTIwNGFkaXF6a2N4",
+    "date": "2025-07-04",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/kAnx1YklKN2Hvzvt8VNXPX6v2jy-DSBeHgt4HbbE8Sc/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/SC029934/filing-history/MzQ3MjUwOTIwNGFkaXF6a2N4"
+  }
 }

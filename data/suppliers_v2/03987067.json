@@ -59,13 +59,218 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T11:21:21Z",
+    "company_name": "ASSOCIATION OF CONVENIENCE STORES LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2000-05-08",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-29"
+  },
+  "governance": {
+    "api_date": "2026-04-28T11:21:23Z",
+    "total_officers": 111,
+    "active_count": 20,
+    "resigned_count": 91,
+    "active_officers": [
+      {
+        "name": "WOODALL, Edward James",
+        "role": "secretary",
+        "appointed_on": "2026-03-01",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "ALLEN, Andrew Edward",
+        "role": "director",
+        "appointed_on": "2025-03-25",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BRIGGS, Tessa Kim",
+        "role": "director",
+        "appointed_on": "2022-09-21",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CONNOLLY, Susan Teresa",
+        "role": "director",
+        "appointed_on": "2022-06-23",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "DAVISON, Jamie Roy",
+        "role": "director",
+        "appointed_on": "2017-09-25",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "DOBSON, Paul Anthony",
+        "role": "director",
+        "appointed_on": "2024-03-12",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "EATON, Maria Janina",
+        "role": "director",
+        "appointed_on": "2022-11-21",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "FLETCHER, Michael Thomas Neil",
+        "role": "director",
+        "appointed_on": "2025-01-17",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "GARCHA, Ravinda Singh",
+        "role": "director",
+        "appointed_on": "2025-03-25",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HENDLE, Lorraine Denise",
+        "role": "director",
+        "appointed_on": "2025-11-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HOOD, Matthew James",
+        "role": "director",
+        "appointed_on": "2025-12-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "JAMES, Jonathan Martin",
+        "role": "director",
+        "appointed_on": "2006-08-07",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "JOHNSON, Colm",
+        "role": "director",
+        "appointed_on": "2020-06-15",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "KHERA, Kashmir Singh",
+        "role": "director",
+        "appointed_on": "2022-03-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "NICKELS, Darren",
+        "role": "director",
+        "appointed_on": "2022-05-25",
+        "country_of_residence": "Northern Ireland",
+        "nationality": "British"
+      },
+      {
+        "name": "PONSONBY, Philip Ian",
+        "role": "director",
+        "appointed_on": "2016-09-24",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "SECRETAN, Katie",
+        "role": "director",
+        "appointed_on": "2025-02-05",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "SEWELL, Patrick Allan",
+        "role": "director",
+        "appointed_on": "2011-07-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SHINGADIA, Ramesh Jetha",
+        "role": "director",
+        "appointed_on": "2017-06-06",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "WOODALL, Edward James",
+        "role": "director",
+        "appointed_on": "2026-03-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T11:21:24Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Edward James Woodall",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control",
+          "significant-influence-or-control-as-trust",
+          "significant-influence-or-control-as-firm"
+        ],
+        "notified_on": "2026-03-01",
+        "identification": null
+      },
+      {
+        "name": "Mr James Michael Lowman",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2017-06-15",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MjgxMzQ2OWFkaXF6a2N4",
+    "date": "2025-09-26",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/O5lUCZbgM1n67T6OUsyCUp3dWGa6NyZMXW3HLBDp1Tk/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03987067/filing-history/MzQ4MjgxMzQ2OWFkaXF6a2N4"
   }
 }

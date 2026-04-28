@@ -59,13 +59,110 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T15:15:49Z",
+    "company_name": "HOOBER URBAN PARTNERSHIPS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2020-08-04",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-08-17"
+  },
+  "governance": {
+    "api_date": "2026-04-27T15:15:50Z",
+    "total_officers": 3,
+    "active_count": 3,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "BLUNT, James Arthur",
+        "role": "director",
+        "appointed_on": "2020-09-08",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BLUNT, Philip Thomas",
+        "role": "director",
+        "appointed_on": "2020-09-08",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WROE, David Ian",
+        "role": "director",
+        "appointed_on": "2020-08-04",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T15:15:52Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Hoober Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2020-09-08",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "England And Wales",
+          "registration_number": "10106775"
+        }
+      },
+      {
+        "name": "Urban Partnerships Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2020-08-04",
+        "identification": {
+          "legal_form": "Ltd",
+          "legal_authority": "Companies Act",
+          "country_registered": "England And Wales",
+          "place_registered": "England Company Registry",
+          "registration_number": "12226956"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NjQ5ODExOWFkaXF6a2N4",
+    "date": "2025-08-07",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/0t25NtoWVYns0agqbvsXYtQqyFBSnA43E41GOk8ncGU/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/12791115/filing-history/MzQ3NjQ5ODExOWFkaXF6a2N4"
   }
 }

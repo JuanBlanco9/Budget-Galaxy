@@ -59,14 +59,93 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 0.98,
     "education": 0.02
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T05:49:40Z",
+    "company_name": "BETTERWELD GROUP LTD",
+    "company_status": "active",
+    "date_of_creation": "2019-02-14",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-11-30",
+    "accounts_last_made_up": "2025-02-28",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-15"
+  },
+  "governance": {
+    "api_date": "2026-04-28T05:49:41Z",
+    "total_officers": 4,
+    "active_count": 4,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "GWYNNE, Elliott",
+        "role": "director",
+        "appointed_on": "2026-03-16",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "GWYNNE, Gary Llewellyn",
+        "role": "director",
+        "appointed_on": "2019-02-14",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "HAWKINS, Gareth Peter George",
+        "role": "director",
+        "appointed_on": "2022-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "YAU, Sai Wing",
+        "role": "director",
+        "appointed_on": "2023-06-23",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T05:49:42Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Gary Llewellyn Gwynne",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2019-02-14",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MTYyNzcyMWFkaXF6a2N4",
+    "date": "2025-11-29",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-unaudited-abridged",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/4EYXzcwKpVRZQ1dk9pQeyiXFkcZKCb467ymRE4jHDgk/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/11826810/filing-history/MzQ5MTYyNzcyMWFkaXF6a2N4"
   }
 }

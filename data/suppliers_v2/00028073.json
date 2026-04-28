@@ -59,13 +59,112 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T13:39:46Z",
+    "company_name": "CALDER INDUSTRIAL MATERIALS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1889-01-21",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-02-28",
+    "accounts_last_made_up": "2025-05-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-20"
+  },
+  "governance": {
+    "api_date": "2026-04-28T13:39:48Z",
+    "total_officers": 51,
+    "active_count": 6,
+    "resigned_count": 45,
+    "active_officers": [
+      {
+        "name": "CARROLL, Andrew",
+        "role": "director",
+        "appointed_on": "2026-01-05",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GRIFFITHS, Rebecca Jane",
+        "role": "director",
+        "appointed_on": "2022-05-23",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "IRVINE, Andrew William",
+        "role": "director",
+        "appointed_on": "2023-06-19",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "MCKEON, Paul Kenneth",
+        "role": "director",
+        "appointed_on": "2022-09-05",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PHILLISKIRK, Claire",
+        "role": "director",
+        "appointed_on": "2024-07-30",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "PRICE, Christian Lee",
+        "role": "director",
+        "appointed_on": "2025-10-29",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T13:39:49Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Calder Group Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Uk Company Law",
+          "country_registered": "England",
+          "place_registered": "Registrar Of Companies (England And Wales)",
+          "registration_number": "3491249"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4Njg0OTE2M2FkaXF6a2N4",
+    "date": "2025-10-30",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/03nTLVOnFWkkk19PeavOWwWGBWBNjDqiCwTbznqvqg8/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/00028073/filing-history/MzQ4Njg0OTE2M2FkaXF6a2N4"
   }
 }

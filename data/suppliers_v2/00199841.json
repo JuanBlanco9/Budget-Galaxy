@@ -64,14 +64,143 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.9862,
     "council": 0.0138
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T02:49:13Z",
+    "company_name": "BUCHER MUNICIPAL LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1924-08-11",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-05-27"
+  },
+  "governance": {
+    "api_date": "2026-04-28T02:49:14Z",
+    "total_officers": 36,
+    "active_count": 10,
+    "resigned_count": 26,
+    "active_officers": [
+      {
+        "name": "BRUNNING, Nigel Cannon",
+        "role": "secretary",
+        "appointed_on": "2005-03-31",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "BRUNNING, Nigel Cannon, Mr.",
+        "role": "director",
+        "appointed_on": "2014-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CONNOR, Andrew James",
+        "role": "director",
+        "appointed_on": "2020-04-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "FERGUSON, Ryan Joeseph",
+        "role": "director",
+        "appointed_on": "2026-04-07",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "FLANNERY, Terry Patrick",
+        "role": "director",
+        "appointed_on": "2026-04-07",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HURST, Steven Richard",
+        "role": "director",
+        "appointed_on": "2020-04-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "JOHNSON, Angela",
+        "role": "director",
+        "appointed_on": "2026-04-07",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "STARKEY, Martin James",
+        "role": "director",
+        "appointed_on": "2023-09-05",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SUTER, Manuela",
+        "role": "director",
+        "appointed_on": "2017-12-11",
+        "country_of_residence": "Switzerland",
+        "nationality": "Swiss"
+      },
+      {
+        "name": "TAYLOR, Samantha Eve",
+        "role": "director",
+        "appointed_on": "2026-02-03",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T02:49:15Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Bucher Industries Ag",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Switzerland",
+          "country_registered": "Zurich",
+          "place_registered": "Handelsraster Des Kantons",
+          "registration_number": "Switzerland"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MTI4ODgzMmFkaXF6a2N4",
+    "date": "2025-11-28",
+    "type": "AAMD",
+    "description": "accounts-amended-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/NQryvEUMXwITlpEMQ-Y2ODpxuHSXBDL81DYVgOKPjHU/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/00199841/filing-history/MzQ5MTI4ODgzMmFkaXF6a2N4"
   }
 }

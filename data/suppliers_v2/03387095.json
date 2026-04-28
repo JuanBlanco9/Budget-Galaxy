@@ -59,13 +59,101 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T03:01:15Z",
+    "company_name": "ABACUS SOFTWARE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1997-06-16",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-17"
+  },
+  "governance": {
+    "api_date": "2026-04-28T03:01:16Z",
+    "total_officers": 33,
+    "active_count": 2,
+    "resigned_count": 31,
+    "active_officers": [
+      {
+        "name": "MOORE, Michael David",
+        "role": "director",
+        "appointed_on": "2024-11-06",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ROESSLER, Scott Edward",
+        "role": "director",
+        "appointed_on": "2022-03-02",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T03:01:17Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Urdgrup Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2022-03-02",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "England And Wales"
+        }
+      },
+      {
+        "name": "Bgf Gp Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2017-04-21",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "England And Wales",
+          "registration_number": "10657217"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MzgyMDY5N2FkaXF6a2N4",
+    "date": "2025-10-06",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/bv3lppNyRmr33py0F-e4IqcGe3-EEMFXSKMCZ0FTBz0/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03387095/filing-history/MzQ4MzgyMDY5N2FkaXF6a2N4"
   }
 }

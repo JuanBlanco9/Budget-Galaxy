@@ -59,13 +59,124 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T08:55:54Z",
+    "company_name": "LOGIC ALARMS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2000-09-22",
+    "date_of_cessation": null,
+    "jurisdiction": "scotland",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-06-30",
+    "accounts_last_made_up": "2025-09-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-06"
+  },
+  "governance": {
+    "api_date": "2026-04-28T08:55:55Z",
+    "total_officers": 14,
+    "active_count": 6,
+    "resigned_count": 8,
+    "active_officers": [
+      {
+        "name": "MACKENZIE, Hazel Janette",
+        "role": "secretary",
+        "appointed_on": "2025-02-03",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "MACDONALD, Alan James",
+        "role": "director",
+        "appointed_on": "2021-11-03",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      },
+      {
+        "name": "MACKENZIE, David John",
+        "role": "director",
+        "appointed_on": "2015-04-24",
+        "country_of_residence": "Scotland",
+        "nationality": "United Kingdom"
+      },
+      {
+        "name": "MACKENZIE, Gary Michael",
+        "role": "director",
+        "appointed_on": "2015-04-24",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      },
+      {
+        "name": "MACKENZIE, Hazel Janette",
+        "role": "director",
+        "appointed_on": "2025-02-03",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "MACKENZIE, Ian",
+        "role": "director",
+        "appointed_on": "2000-09-22",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T08:55:57Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Logic Alarms (Holdings) Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2018-09-22",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "Scotland",
+          "place_registered": "Scotland",
+          "registration_number": "Sc576158"
+        }
+      },
+      {
+        "name": "Mr Ian Mackenzie",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent"
+        ],
+        "notified_on": "2016-09-22",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxNjA0MDE2OGFkaXF6a2N4",
+    "date": "2026-04-14",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-unaudited-abridged",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/6sC7jn2BN967lXqd7RORehqqLJmigyyMzt3aD3llBC4/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/SC211267/filing-history/MzUxNjA0MDE2OGFkaXF6a2N4"
   }
 }

@@ -70,13 +70,135 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
     "central_govt": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T06:57:37Z",
+    "company_name": "BFBS",
+    "company_status": "active",
+    "date_of_creation": "1946-03-29",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-11"
+  },
+  "governance": {
+    "api_date": "2026-04-28T06:57:38Z",
+    "total_officers": 75,
+    "active_count": 12,
+    "resigned_count": 63,
+    "active_officers": [
+      {
+        "name": "MCMENAMIN, Pamela Anne",
+        "role": "secretary",
+        "appointed_on": "2025-02-03",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "DEPREE, Helen Louise",
+        "role": "director",
+        "appointed_on": "2018-09-04",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "FOGDEN, Richard, Air Cdre",
+        "role": "director",
+        "appointed_on": "2024-03-18",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "HALES, Antony John",
+        "role": "director",
+        "appointed_on": "2009-09-15",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "JACKSON, Vanella Jane",
+        "role": "director",
+        "appointed_on": "2019-10-03",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "LONG, Darren Raymond",
+        "role": "director",
+        "appointed_on": "2019-10-03",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "MACGINNIS, Niall",
+        "role": "director",
+        "appointed_on": "2022-12-07",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MOODY, David Charles",
+        "role": "director",
+        "appointed_on": "2019-10-03",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "PERLIN, Howard Stephen",
+        "role": "director",
+        "appointed_on": "1994-12-09",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "RIX, Anthony John",
+        "role": "director",
+        "appointed_on": "2016-02-11",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WHEALS, Julie Anne",
+        "role": "director",
+        "appointed_on": "2025-06-10",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WILSON, Christopher Colin, Major General",
+        "role": "director",
+        "appointed_on": "2010-02-23",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T06:57:39Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MzM5MDg5MGFkaXF6a2N4",
+    "date": "2025-12-12",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/lO_USDHR9ysCn-9FNgehpjliRaB-n3uF8SXDuqjgTUA/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/00407270/filing-history/MzQ5MzM5MDg5MGFkaXF6a2N4"
   }
 }

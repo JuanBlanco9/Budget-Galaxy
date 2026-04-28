@@ -59,13 +59,121 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
     "central_govt": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T22:06:04Z",
+    "company_name": "MODULE-AR LIMITED",
+    "company_status": "administration",
+    "date_of_creation": "2007-12-11",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": true,
+    "has_insolvency_history": true,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": true,
+    "accounts_next_due": "2023-12-31",
+    "accounts_last_made_up": "2022-03-31",
+    "confirmation_statement_overdue": true,
+    "confirmation_statement_next_due": "2023-12-09"
+  },
+  "governance": {
+    "api_date": "2026-04-27T22:06:05Z",
+    "total_officers": 11,
+    "active_count": 4,
+    "resigned_count": 7,
+    "active_officers": [
+      {
+        "name": "GRIMBLEBY, Robert",
+        "role": "secretary",
+        "appointed_on": "2008-01-02",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "FOX, Mark David",
+        "role": "director",
+        "appointed_on": "2021-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GRIMBLEBY, Amanda",
+        "role": "director",
+        "appointed_on": "2008-01-02",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GRIMBLEBY, Robert",
+        "role": "director",
+        "appointed_on": "2008-01-02",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T22:06:07Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mercol Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2021-04-22",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Uk"
+        }
+      },
+      {
+        "name": "Mr Robert Craig Grimbleby",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mrs Amanda Jane Grimbleby",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzM1MDI3NDEwMWFkaXF6a2N4",
+    "date": "2022-08-31",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/NAD7yXkjpkA00_aY_Tp5Yd-VYAn5ERgiRf4gdNuFvKc/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/06450820/filing-history/MzM1MDI3NDEwMWFkaXF6a2N4"
   }
 }

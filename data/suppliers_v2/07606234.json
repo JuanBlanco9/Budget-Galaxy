@@ -64,13 +64,135 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "education",
   "buyer_type_breakdown": {
     "education": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T09:55:16Z",
+    "company_name": "SOUTH BRISTOL CONSORTIUM FOR YOUNG PEOPLE",
+    "company_status": "active",
+    "date_of_creation": "2011-04-15",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-05-31",
+    "accounts_last_made_up": "2025-08-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-04-03"
+  },
+  "governance": {
+    "api_date": "2026-04-28T09:55:17Z",
+    "total_officers": 41,
+    "active_count": 12,
+    "resigned_count": 29,
+    "active_officers": [
+      {
+        "name": "VELOCITY COMPANY SECRETARIAL SERVICES LIMITED",
+        "role": "corporate-secretary",
+        "appointed_on": "2013-01-24",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BEESLEY, Sharon",
+        "role": "director",
+        "appointed_on": "2024-05-13",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BENSON, James Peter",
+        "role": "director",
+        "appointed_on": "2018-09-27",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CHESHAM, Laura Marie",
+        "role": "director",
+        "appointed_on": "2017-06-21",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "COLLINS, Lucy",
+        "role": "director",
+        "appointed_on": "2023-11-20",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "DAVIES, Katherine Ann",
+        "role": "director",
+        "appointed_on": "2024-03-20",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GOLDBERG, Ina, Dr",
+        "role": "director",
+        "appointed_on": "2017-04-06",
+        "country_of_residence": "England",
+        "nationality": "German"
+      },
+      {
+        "name": "GRAY, Julia Suzanne",
+        "role": "director",
+        "appointed_on": "2023-12-15",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HACKLING, Elizabeth",
+        "role": "director",
+        "appointed_on": "2022-03-17",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SHEPHEARD, Thomas Vaughan",
+        "role": "director",
+        "appointed_on": "2021-01-14",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "TUCKER, Karl John",
+        "role": "director",
+        "appointed_on": "2021-03-10",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "VAN EKER, Jonathan",
+        "role": "director",
+        "appointed_on": "2020-09-07",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T09:55:18Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5OTI3OTI1MmFkaXF6a2N4",
+    "date": "2026-01-19",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/hnjkCKsXY_jHowGF1tP-2h-_E3JlWDMm-mlIbKdN-_I/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/07606234/filing-history/MzQ5OTI3OTI1MmFkaXF6a2N4"
   }
 }

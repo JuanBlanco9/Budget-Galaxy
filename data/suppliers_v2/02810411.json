@@ -59,13 +59,100 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T04:35:55Z",
+    "company_name": "STRUCTURAL RENOVATIONS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1993-04-19",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-04-14"
+  },
+  "governance": {
+    "api_date": "2026-04-28T04:35:56Z",
+    "total_officers": 14,
+    "active_count": 4,
+    "resigned_count": 10,
+    "active_officers": [
+      {
+        "name": "WEST, Elizabeth Jane",
+        "role": "secretary",
+        "appointed_on": "2000-09-20",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "FARRAND, Craig Innes",
+        "role": "director",
+        "appointed_on": "2002-12-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "FARRAND, Vicky",
+        "role": "director",
+        "appointed_on": "2019-06-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HAYNES, Thomas",
+        "role": "director",
+        "appointed_on": "2017-05-19",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T04:35:57Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Manshaw Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company Incorporated In England & Wales",
+          "legal_authority": "Uk Law",
+          "country_registered": "United Kingdom",
+          "place_registered": "England & Wales",
+          "registration_number": "07984207"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2NzY4ODY5NmFkaXF6a2N4",
+    "date": "2025-05-23",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/553Z_6k0RCk3BNkyISMihFkCWjIA2TCitEB8XdQA3C0/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02810411/filing-history/MzQ2NzY4ODY5NmFkaXF6a2N4"
   }
 }

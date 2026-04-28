@@ -59,13 +59,172 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T13:30:47Z",
+    "company_name": "SALT SEPARATION SERVICES LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1990-01-10",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-01-31",
+    "accounts_last_made_up": "2025-04-29",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-22"
+  },
+  "governance": {
+    "api_date": "2026-04-28T13:30:48Z",
+    "total_officers": 7,
+    "active_count": 4,
+    "resigned_count": 3,
+    "active_officers": [
+      {
+        "name": "ASHWORTH, Sarah Louise",
+        "role": "director",
+        "appointed_on": "2019-11-25",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GRINDROD, Laura Marie",
+        "role": "director",
+        "appointed_on": "2023-10-17",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GRINDROD, Michael Robert",
+        "role": "director",
+        "appointed_on": "2023-10-17",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "SHACKLETON, Daniel William",
+        "role": "director",
+        "appointed_on": "2007-10-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T13:30:49Z",
+    "total_results": 7,
+    "active_count": 5,
+    "items": [
+      {
+        "name": "Mrs Sarah Louise Ashworth",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2025-07-30",
+        "identification": null
+      },
+      {
+        "name": "Ms Janine Lynn Grinrod",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2025-07-30",
+        "identification": null
+      },
+      {
+        "name": "Miss Laura Marie Grinrod",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2025-07-30",
+        "identification": null
+      },
+      {
+        "name": "Mr Michael Robert Grinrod",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2025-07-30",
+        "identification": null
+      },
+      {
+        "name": "The Trustees Of The Stephen Grindrod Discretionary Trust",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent-as-trust"
+        ],
+        "notified_on": "2019-10-31",
+        "identification": {
+          "legal_form": "Trust",
+          "legal_authority": "Companies Act"
+        }
+      },
+      {
+        "name": "Trustees Of Stephen Grindrod",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2017-01-01",
+        "identification": null
+      },
+      {
+        "name": "Mr Daniel William Shackleton",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2017-01-01",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MDAzMTAyM2FkaXF6a2N4",
+    "date": "2025-11-20",
+    "type": "AA01",
+    "description": "change-account-reference-date-company-current-extended",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/B_Np4Z-fvb33mT1PnefmwIq6JjSiXlKHk3_SrQunzs0/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02457981/filing-history/MzQ5MDAzMTAyM2FkaXF6a2N4"
   }
 }

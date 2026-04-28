@@ -64,13 +64,200 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
     "central_govt": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T19:28:47Z",
+    "company_name": "KYNDRYL UK LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2021-01-18",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-31"
+  },
+  "governance": {
+    "api_date": "2026-04-27T19:28:48Z",
+    "total_officers": 12,
+    "active_count": 4,
+    "resigned_count": 8,
+    "active_officers": [
+      {
+        "name": "GRAVES, Martin William",
+        "role": "secretary",
+        "appointed_on": "2021-11-02",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "HUGHES, Edward Andrew",
+        "role": "director",
+        "appointed_on": "2026-02-25",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "INGRAM, Jonathan Mark",
+        "role": "director",
+        "appointed_on": "2021-11-02",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "METCALF, Kelly Louise",
+        "role": "director",
+        "appointed_on": "2025-02-13",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T19:28:50Z",
+    "total_results": 6,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Kyndryl, Inc",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2024-03-19",
+        "identification": {
+          "legal_form": "Corporate",
+          "legal_authority": "United States (Delaware)",
+          "country_registered": "Delaware",
+          "place_registered": "The Delaware Division Of Corporations",
+          "registration_number": "4340346"
+        }
+      },
+      {
+        "name": "Kyndryl Holdings, Inc.",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2024-03-19",
+        "identification": {
+          "legal_form": "Corporation",
+          "legal_authority": "The Delaware General Corporation Law",
+          "country_registered": "United States",
+          "place_registered": "Delaware (Division Of Corporations)",
+          "registration_number": "4340692"
+        }
+      },
+      {
+        "name": "Kyndryl Uk Clg Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2021-11-03",
+        "identification": {
+          "legal_form": "Limited By Guarantee",
+          "legal_authority": "United Kingdom (England And Wales)",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "13303096"
+        }
+      },
+      {
+        "name": "Kyndryl, Inc",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2021-11-03",
+        "identification": {
+          "legal_form": "Corporate",
+          "legal_authority": "United States (Delaware)",
+          "country_registered": "Delaware",
+          "place_registered": "The Delaware Division Of Corporations",
+          "registration_number": "4340346"
+        }
+      },
+      {
+        "name": "Kyndryl Uk Clg Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2021-09-20",
+        "identification": {
+          "legal_form": "Limited By Guarantee",
+          "legal_authority": "United Kingdom (England And Wales)",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "13303096"
+        }
+      },
+      {
+        "name": "Ibm International Group B.V. (Iig)",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2021-01-18",
+        "identification": {
+          "legal_form": "Private Limited Liability Company",
+          "legal_authority": "Laws Of The Netherlands",
+          "country_registered": "The Netherlands",
+          "place_registered": "The Netherlands",
+          "registration_number": "34125313"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NjIyNTI5MmFkaXF6a2N4",
+    "date": "2026-01-02",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/6PJdnO0j1k80NZUSxuHJe1nbg2vydLZ5ETQweRXKR4c/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/13141201/filing-history/MzQ5NjIyNTI5MmFkaXF6a2N4"
   }
 }

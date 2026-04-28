@@ -61,15 +61,151 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 0.5293,
     "agency": 0.2481,
     "central_govt": 0.2225
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T13:20:10Z",
+    "company_name": "CIFAS",
+    "company_status": "active",
+    "date_of_creation": "1991-02-22",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-22"
+  },
+  "governance": {
+    "api_date": "2026-04-28T13:20:12Z",
+    "total_officers": 80,
+    "active_count": 7,
+    "resigned_count": 73,
+    "active_officers": [
+      {
+        "name": "FREEDMAN, Richard",
+        "role": "secretary",
+        "appointed_on": "2025-05-06",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BAILES, Alex",
+        "role": "director",
+        "appointed_on": "2025-10-22",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BENNETT, Judy",
+        "role": "director",
+        "appointed_on": "2025-10-22",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BROWETT, John Julian",
+        "role": "director",
+        "appointed_on": "2020-09-22",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HALEY, Michael Douglas",
+        "role": "director",
+        "appointed_on": "2017-03-09",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LENNARD, Sarah-Jill",
+        "role": "director",
+        "appointed_on": "2022-01-25",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WIMBORNE, Zoe Victoria",
+        "role": "director",
+        "appointed_on": "2020-12-08",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T13:20:13Z",
+    "total_results": 4,
+    "active_count": 0,
+    "items": [
+      {
+        "name": "Mr John Julian Browett",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2020-09-22",
+        "identification": null
+      },
+      {
+        "name": "Mr Michael Douglas Haley",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Lady Barbara Singer Judge",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "American",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Simon Austin Dukes",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MzgwNzc4MWFkaXF6a2N4",
+    "date": "2025-10-08",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/93KloRi48gJxIMLAr3YcKqKBnXf19npJaTOdMXeBFXs/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02584687/filing-history/MzQ4MzgwNzc4MWFkaXF6a2N4"
   }
 }

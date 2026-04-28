@@ -64,13 +64,319 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "agency",
   "buyer_type_breakdown": {
     "agency": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T10:13:09Z",
+    "company_name": "OIL SPILL RESPONSE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1984-04-13",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-19"
+  },
+  "governance": {
+    "api_date": "2026-04-28T10:13:11Z",
+    "total_officers": 216,
+    "active_count": 14,
+    "resigned_count": 202,
+    "active_officers": [
+      {
+        "name": "DOWLING, Denis John",
+        "role": "secretary",
+        "appointed_on": "2017-06-07",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BAIRSTOW, Grant Warren",
+        "role": "director",
+        "appointed_on": "2025-12-04",
+        "country_of_residence": "South Africa",
+        "nationality": "South African"
+      },
+      {
+        "name": "BEVERLEY, Zoe",
+        "role": "director",
+        "appointed_on": "2023-12-07",
+        "country_of_residence": "Australia",
+        "nationality": "Australian"
+      },
+      {
+        "name": "BRUCE, Alan Alexander",
+        "role": "director",
+        "appointed_on": "2026-04-16",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "CHOO, Benjamin Choon Bon",
+        "role": "director",
+        "appointed_on": "2025-12-04",
+        "country_of_residence": "Thailand",
+        "nationality": "Malaysian"
+      },
+      {
+        "name": "DE STEFANI, Vania, Dr",
+        "role": "director",
+        "appointed_on": "2023-04-03",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "DEPADOVA, Tracy Ann",
+        "role": "director",
+        "appointed_on": "2023-12-07",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      },
+      {
+        "name": "HENLEY, Graham Charles",
+        "role": "director",
+        "appointed_on": "2023-12-07",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HUSAIN, Ismaeel Mohamed Ahmed Mohamed",
+        "role": "director",
+        "appointed_on": "2023-06-08",
+        "country_of_residence": "England",
+        "nationality": "Bahraini"
+      },
+      {
+        "name": "MORRISH, Richard John",
+        "role": "director",
+        "appointed_on": "2019-06-13",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MYERS, Andrew Roderick",
+        "role": "director",
+        "appointed_on": "2023-09-28",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "O'LEARY, James Joseph",
+        "role": "director",
+        "appointed_on": "2024-06-06",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PAGANO, Francesco",
+        "role": "director",
+        "appointed_on": "2022-12-08",
+        "country_of_residence": "United Kingdom",
+        "nationality": "Italian"
+      },
+      {
+        "name": "SARTORI NETO, Angelo",
+        "role": "director",
+        "appointed_on": "2024-12-05",
+        "country_of_residence": "Brazil",
+        "nationality": "Brazilian"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T10:13:12Z",
+    "total_results": 13,
+    "active_count": 0,
+    "items": [
+      {
+        "name": "Mr Joshua Shane Dubach",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "United States Of America",
+        "country_of_residence": "Usa",
+        "ceased": true,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors",
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-07-09",
+        "identification": null
+      },
+      {
+        "name": "Mr Robert Martin Limb",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors",
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-06-09",
+        "identification": null
+      },
+      {
+        "name": "Mr Manindra Chandra Das",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Indian",
+        "country_of_residence": "India",
+        "ceased": true,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors",
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-06-09",
+        "identification": null
+      },
+      {
+        "name": "Mr Roland Festor",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "French",
+        "country_of_residence": "Belgium",
+        "ceased": true,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors",
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-06-09",
+        "identification": null
+      },
+      {
+        "name": "Mr Roderick Guy Mason",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors",
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-06-09",
+        "identification": null
+      },
+      {
+        "name": "Mr Terry Wymer Moore",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "United States Of America",
+        "country_of_residence": "Usa",
+        "ceased": true,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors",
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-06-09",
+        "identification": null
+      },
+      {
+        "name": "Mr Khalid Mutlaq Al-Dossary",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Saudi Arabian",
+        "country_of_residence": "Saudi Arabia",
+        "ceased": true,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors",
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-06-09",
+        "identification": null
+      },
+      {
+        "name": "Mr Brian Robert Horsburgh",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors",
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-06-09",
+        "identification": null
+      },
+      {
+        "name": "Mr Declan O'Driscoll",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Irish",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors",
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-06-09",
+        "identification": null
+      },
+      {
+        "name": "Mr Jeffrey John Patry",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "American",
+        "country_of_residence": "United States",
+        "ceased": true,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors",
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-06-09",
+        "identification": null
+      },
+      {
+        "name": "Ms Astrid Sorensen",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Norwegian",
+        "country_of_residence": "Norway",
+        "ceased": true,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors",
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-06-09",
+        "identification": null
+      },
+      {
+        "name": "Mr Anthony Richard Prest",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors",
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-06-09",
+        "identification": null
+      },
+      {
+        "name": "Mr Josh Soybel",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "United States Of America",
+        "country_of_residence": "Usa",
+        "ceased": true,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors",
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-06-09",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3ODEwNTg3OGFkaXF6a2N4",
+    "date": "2025-08-21",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/ywQbtQ1qAWIUk9bgTfbcaSd9BK9XFGAVktk4Tujg1gM/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01808594/filing-history/MzQ3ODEwNTg3OGFkaXF6a2N4"
   }
 }

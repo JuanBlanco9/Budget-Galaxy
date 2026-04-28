@@ -55,14 +55,150 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.9709,
     "agency": 0.0291
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T21:34:20Z",
+    "company_name": "TOWN LEGAL LLP",
+    "company_status": "active",
+    "date_of_creation": "2016-07-28",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-01-05",
+    "accounts_last_made_up": "2025-04-05",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-08-10"
+  },
+  "governance": {
+    "api_date": "2026-04-27T21:34:22Z",
+    "total_officers": 18,
+    "active_count": 14,
+    "resigned_count": 4,
+    "active_officers": [
+      {
+        "name": "CHRISTIE, Elizabeth Mary",
+        "role": "llp-designated-member",
+        "appointed_on": "2017-01-03",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "FIELD, Duncan",
+        "role": "llp-designated-member",
+        "appointed_on": "2019-04-23",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "ARNETT, Paul",
+        "role": "llp-member",
+        "appointed_on": "2024-04-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "COURTNEY, Lisa Jane",
+        "role": "llp-member",
+        "appointed_on": "2026-04-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "GUPTA, Rajinder Andrew",
+        "role": "llp-member",
+        "appointed_on": "2018-06-11",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "JARVIS, Martyn Oliver",
+        "role": "llp-member",
+        "appointed_on": "2025-01-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "JUMP, Kathryn Louise",
+        "role": "llp-member",
+        "appointed_on": "2026-04-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "KAUR, Meeta",
+        "role": "llp-member",
+        "appointed_on": "2017-01-03",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "MATHIAS, David",
+        "role": "llp-member",
+        "appointed_on": "2026-04-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "MCKEEGAN, Victoria Anne",
+        "role": "llp-member",
+        "appointed_on": "2023-04-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "MUNN, Juliet",
+        "role": "llp-member",
+        "appointed_on": "2026-04-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "RICKETTS, Simon",
+        "role": "llp-member",
+        "appointed_on": "2016-07-28",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "SAMUEL, Louise Sarah",
+        "role": "llp-member",
+        "appointed_on": "2019-10-07",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "TEWIS-ALLEN, Spencer",
+        "role": "llp-member",
+        "appointed_on": "2022-10-01",
+        "country_of_residence": "England",
+        "nationality": null
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T21:34:24Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MzM5NjQxM2FkaXF6a2N4",
+    "date": "2025-12-10",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/-vSJ1J8j9aNU-n2GGBP3hS9rDpPZ8XqFVdA2N8ErqZs/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/OC413003/filing-history/MzQ5MzM5NjQxM2FkaXF6a2N4"
   }
 }

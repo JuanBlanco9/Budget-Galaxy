@@ -59,10 +59,10 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
@@ -72,5 +72,97 @@
     "police_fire": 0.0014,
     "nhs": 0.001,
     "trust": 0.001
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T16:09:04Z",
+    "company_name": "KONICA MINOLTA BUSINESS SOLUTIONS (UK) LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1973-09-06",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-24"
+  },
+  "governance": {
+    "api_date": "2026-04-27T16:09:06Z",
+    "total_officers": 48,
+    "active_count": 5,
+    "resigned_count": 43,
+    "active_officers": [
+      {
+        "name": "BRADLEY, Charlotte",
+        "role": "secretary",
+        "appointed_on": "2026-04-01",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "FERRIS, Robert",
+        "role": "director",
+        "appointed_on": "2020-06-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ITAMOTO, Kentaro",
+        "role": "director",
+        "appointed_on": "2025-04-01",
+        "country_of_residence": "Japan",
+        "nationality": "Japanese"
+      },
+      {
+        "name": "LEE, Gemma Elizabeth",
+        "role": "director",
+        "appointed_on": "2025-04-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "TAKAYANAGI, Kazumasa",
+        "role": "director",
+        "appointed_on": "2022-04-01",
+        "country_of_residence": "England",
+        "nationality": "Japanese"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T16:09:07Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Konica Minolta Incorporated",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Company Listed On Japanese Stock Exchange",
+          "legal_authority": "Japan Companies Act",
+          "country_registered": "Japan",
+          "place_registered": "Tokyo Stock Exchange, First Section",
+          "registration_number": "4902"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5OTIzODI2OGFkaXF6a2N4",
+    "date": "2026-01-15",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/HG2cXUfsZ8fO9lVweYttLySrBObHszSB7a7inDWio_8/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01132885/filing-history/MzQ5OTIzODI2OGFkaXF6a2N4"
   }
 }

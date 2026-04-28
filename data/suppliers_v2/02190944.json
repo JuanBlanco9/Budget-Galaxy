@@ -64,13 +64,114 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "police_fire",
   "buyer_type_breakdown": {
     "police_fire": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T07:38:16Z",
+    "company_name": "VOLVO GROUP UK LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1987-11-10",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-05-02"
+  },
+  "governance": {
+    "api_date": "2026-04-28T07:38:17Z",
+    "total_officers": 60,
+    "active_count": 6,
+    "resigned_count": 54,
+    "active_officers": [
+      {
+        "name": "VILLANUEVA, Simon",
+        "role": "secretary",
+        "appointed_on": "2011-07-21",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "ADAMS, Naomi Davinia Joanne",
+        "role": "director",
+        "appointed_on": "2024-07-08",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "COOLSAET, Christian Joseph Robert Aristide",
+        "role": "director",
+        "appointed_on": "2020-07-10",
+        "country_of_residence": "Germany",
+        "nationality": "Belgian"
+      },
+      {
+        "name": "OLIVEIRA RODRIGUES, Carlos",
+        "role": "director",
+        "appointed_on": "2016-03-18",
+        "country_of_residence": "United Kingdom",
+        "nationality": "Portuguese"
+      },
+      {
+        "name": "SJÖSTEDT, Bo Jörgen",
+        "role": "director",
+        "appointed_on": "2020-07-10",
+        "country_of_residence": "Sweden",
+        "nationality": "Swedish"
+      },
+      {
+        "name": "VILLANUEVA, Simon Derek",
+        "role": "director",
+        "appointed_on": "2012-12-11",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T07:38:18Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Ab Volvo",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Aktiebolaget",
+          "legal_authority": "Sweden",
+          "country_registered": "Sweden",
+          "place_registered": "Swedish Companies Registration Office",
+          "registration_number": "556012-5790"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NTE3MjIyOGFkaXF6a2N4",
+    "date": "2025-07-25",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/CxIRn7xeU1vd1DdH8Zflz4eetXAsCEr2LZONChXZleU/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02190944/filing-history/MzQ3NTE3MjIyOGFkaXF6a2N4"
   }
 }

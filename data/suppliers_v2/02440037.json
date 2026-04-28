@@ -59,13 +59,72 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T02:36:38Z",
+    "company_name": "BARCLAY SIMPSON ASSOCIATES LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1989-11-03",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-26"
+  },
+  "governance": {
+    "api_date": "2026-04-28T02:36:39Z",
+    "total_officers": 14,
+    "active_count": 3,
+    "resigned_count": 11,
+    "active_officers": [
+      {
+        "name": "COYLE, Ian James",
+        "role": "director",
+        "appointed_on": "2004-04-06",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SAVILL, Paul Douglas",
+        "role": "director",
+        "appointed_on": "2019-11-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SPENCER, Dean",
+        "role": "director",
+        "appointed_on": "2018-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T02:36:40Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MzI3MzQ5OWFkaXF6a2N4",
+    "date": "2025-07-11",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/pQKJemb_5zpudUBlDousMhNGrZ2FGyx-97fOAJJ1bqI/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02440037/filing-history/MzQ3MzI3MzQ5OWFkaXF6a2N4"
   }
 }

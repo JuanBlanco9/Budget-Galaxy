@@ -63,14 +63,101 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 0.7204,
     "police_fire": 0.2796
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T00:24:57Z",
+    "company_name": "CRANSTOUN SERVICES LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2019-11-13",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-26"
+  },
+  "governance": {
+    "api_date": "2026-04-28T00:24:59Z",
+    "total_officers": 10,
+    "active_count": 4,
+    "resigned_count": 6,
+    "active_officers": [
+      {
+        "name": "HEAD, Lisa",
+        "role": "secretary",
+        "appointed_on": "2025-12-22",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "JONES, Megan Anne",
+        "role": "director",
+        "appointed_on": "2022-04-27",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "O'NEIL, Luke",
+        "role": "director",
+        "appointed_on": "2025-12-22",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WARRINER, Jason",
+        "role": "director",
+        "appointed_on": "2022-04-27",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T00:25:01Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Cranstoun",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2019-11-13",
+        "identification": {
+          "legal_form": "Corporate",
+          "legal_authority": "United Kingdom (England And Wales)",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "3306337"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MzczODEzMGFkaXF6a2N4",
+    "date": "2025-12-12",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/sfNFtt7NiwlPUzHevXh408LXJsLuDsXWazu7JdbOahU/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/12313944/filing-history/MzQ5MzczODEzMGFkaXF6a2N4"
   }
 }

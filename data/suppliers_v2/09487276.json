@@ -65,13 +65,121 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T01:14:54Z",
+    "company_name": "ENABLE LEISURE AND CULTURE",
+    "company_status": "active",
+    "date_of_creation": "2015-03-12",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-25"
+  },
+  "governance": {
+    "api_date": "2026-04-28T01:14:56Z",
+    "total_officers": 23,
+    "active_count": 10,
+    "resigned_count": 13,
+    "active_officers": [
+      {
+        "name": "TRIFONOS, Aksana",
+        "role": "secretary",
+        "appointed_on": "2023-11-27",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "ADAMS, Gordon Laurence Wilson",
+        "role": "director",
+        "appointed_on": "2024-06-25",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BAILLIEU, Christopher Latham",
+        "role": "director",
+        "appointed_on": "2015-07-23",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "COHEN, Emma Ann Sophie",
+        "role": "director",
+        "appointed_on": "2015-07-23",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "FRANKL BERTRAM, Clare Lindsay Hough",
+        "role": "director",
+        "appointed_on": "2015-07-23",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "MARSHALL, Norman Hannath",
+        "role": "director",
+        "appointed_on": "2024-06-25",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MILLS, Peter Shane",
+        "role": "director",
+        "appointed_on": "2025-06-10",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PERCY, Michael Hugh",
+        "role": "director",
+        "appointed_on": "2019-05-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "PRESTON, Anthony John",
+        "role": "director",
+        "appointed_on": "2024-06-25",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "STONE, Ivan Robert",
+        "role": "director",
+        "appointed_on": "2022-05-20",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T01:14:57Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwMjQ5ODc5MGFkaXF6a2N4",
+    "date": "2026-02-05",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/jAcugwMK5Ox46kGUa3DaMyIVnHBckUDky7tKLE3DvGo/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/09487276/filing-history/MzUwMjQ5ODc5MGFkaXF6a2N4"
   }
 }

@@ -59,11 +59,103 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
-  "buyer_type_breakdown": {}
+  "buyer_type_breakdown": {},
+  "ch_profile": {
+    "api_date": "2026-04-28T14:20:03Z",
+    "company_name": "A K SHEET METAL FABRICATIONS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1997-01-15",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-18"
+  },
+  "governance": {
+    "api_date": "2026-04-28T14:20:04Z",
+    "total_officers": 7,
+    "active_count": 5,
+    "resigned_count": 2,
+    "active_officers": [
+      {
+        "name": "GOODARE, Keith Ronald",
+        "role": "secretary",
+        "appointed_on": "1997-01-16",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "DODSON, Allan",
+        "role": "director",
+        "appointed_on": "1997-01-16",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "DODSON, Andrew Robin",
+        "role": "director",
+        "appointed_on": "2000-08-04",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GOODARE, Keith Ronald",
+        "role": "director",
+        "appointed_on": "1997-01-16",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "GOODARE, Mark David",
+        "role": "director",
+        "appointed_on": "2016-03-24",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T14:20:05Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Ak Building Services Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House, Cardiff",
+          "registration_number": "04931678"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4Mjc5OTU1N2FkaXF6a2N4",
+    "date": "2025-09-26",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/VH4dNqXTRES9MTeeJoc3tj5arK7HfsWOJmQh0kTid88/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03302519/filing-history/MzQ4Mjc5OTU1N2FkaXF6a2N4"
+  }
 }

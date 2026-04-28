@@ -59,14 +59,105 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.7405,
     "education": 0.2595
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T11:46:27Z",
+    "company_name": "NATIONAL INSTRUMENTS CORPORATION (UK) LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1994-12-08",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-06-30",
+    "accounts_last_made_up": "2024-09-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-22"
+  },
+  "governance": {
+    "api_date": "2026-04-28T11:46:28Z",
+    "total_officers": 17,
+    "active_count": 2,
+    "resigned_count": 15,
+    "active_officers": [
+      {
+        "name": "SCHUMACHER, Carl Brian",
+        "role": "director",
+        "appointed_on": "2024-02-08",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      },
+      {
+        "name": "SPURCK, Kathleen Heard",
+        "role": "director",
+        "appointed_on": "2023-08-15",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T11:46:29Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Emerson Electric Co.",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2026-02-19",
+        "identification": {
+          "legal_form": "Public Listed Corporation",
+          "legal_authority": "Laws Of The State Of Missouri, Usa",
+          "country_registered": "United States",
+          "place_registered": "Secretary Of State Of Missouri",
+          "registration_number": "00005170"
+        }
+      },
+      {
+        "name": "National Instruments Corp",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2020-12-23",
+        "identification": {
+          "legal_form": "Corporate",
+          "legal_authority": "United States Of America",
+          "country_registered": "Texas",
+          "place_registered": "Nasdaq",
+          "registration_number": "0000935494"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NjY2NjM0M2FkaXF6a2N4",
+    "date": "2025-08-11",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/0_fI18JnLCfzQVSW72Q15hfIG4Xv_qgxSyeGDtsv5C8/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02999356/filing-history/MzQ3NjY2NjM0M2FkaXF6a2N4"
   }
 }

@@ -59,13 +59,138 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T09:05:22Z",
+    "company_name": "MOUNTBATTEN SCHOOL SERVICES LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2011-12-21",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-05-31",
+    "accounts_last_made_up": "2025-08-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-30"
+  },
+  "governance": {
+    "api_date": "2026-04-28T09:05:23Z",
+    "total_officers": 17,
+    "active_count": 8,
+    "resigned_count": 9,
+    "active_officers": [
+      {
+        "name": "GOODRICH, Christopher John",
+        "role": "secretary",
+        "appointed_on": "2019-07-21",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BYFIELD, Blair Matthew",
+        "role": "director",
+        "appointed_on": "2019-11-04",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "CUMMINS, Neil",
+        "role": "director",
+        "appointed_on": "2025-10-02",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "JONES, Andrew Mark",
+        "role": "director",
+        "appointed_on": "2022-09-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MCAULIFFE, Stuart Christopher",
+        "role": "director",
+        "appointed_on": "2022-04-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MCILROY, Margaret Heather",
+        "role": "director",
+        "appointed_on": "2011-12-21",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SWAIN, Terese",
+        "role": "director",
+        "appointed_on": "2021-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "URBEN, Paul",
+        "role": "director",
+        "appointed_on": "2015-01-26",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T09:05:25Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "The Mountbatten School",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2022-08-01",
+        "identification": {
+          "legal_form": "Private Limited Company By Guarantee Without Share Capital Use Of 'Limited' Exemption",
+          "legal_authority": "Private Limited Company",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "07560175"
+        }
+      },
+      {
+        "name": "Mrs Margaret Heather Mcilroy",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control-as-trust"
+        ],
+        "notified_on": "2018-07-09",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MzQyNTE5OWFkaXF6a2N4",
+    "date": "2025-12-10",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/Vm6TRJP-1hZIAUOMiYDI0ABwzLB_kZyNrqGMqeYjuM0/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/07889300/filing-history/MzQ5MzQyNTE5OWFkaXF6a2N4"
   }
 }

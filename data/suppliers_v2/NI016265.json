@@ -59,13 +59,212 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T19:37:36Z",
+    "company_name": "GEDA CONSTRUCTION COMPANY LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1982-11-19",
+    "date_of_cessation": null,
+    "jurisdiction": "northern-ireland",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-06"
+  },
+  "governance": {
+    "api_date": "2026-04-27T19:37:37Z",
+    "total_officers": 13,
+    "active_count": 8,
+    "resigned_count": 5,
+    "active_officers": [
+      {
+        "name": "MCFEELY, Stuart",
+        "role": "secretary",
+        "appointed_on": "2024-04-23",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "DONAGHY, Seamus Francis",
+        "role": "director",
+        "appointed_on": "2025-01-03",
+        "country_of_residence": "Northern Ireland",
+        "nationality": "Irish"
+      },
+      {
+        "name": "HUGHES, Aaron",
+        "role": "director",
+        "appointed_on": "2018-12-14",
+        "country_of_residence": "Northern Ireland",
+        "nationality": "Northern Irish"
+      },
+      {
+        "name": "MCCARTAN, Tania",
+        "role": "director",
+        "appointed_on": "2018-12-14",
+        "country_of_residence": "Northern Ireland",
+        "nationality": "Irish"
+      },
+      {
+        "name": "MCFEELY, Stuart Paul",
+        "role": "director",
+        "appointed_on": "2018-12-14",
+        "country_of_residence": "Northern Ireland",
+        "nationality": "Northern Irish"
+      },
+      {
+        "name": "MCVEIGH, Colm John",
+        "role": "director",
+        "appointed_on": "2025-01-03",
+        "country_of_residence": "Northern Ireland",
+        "nationality": "Irish"
+      },
+      {
+        "name": "MURRAY, Damian",
+        "role": "director",
+        "appointed_on": "2018-12-14",
+        "country_of_residence": "Northern Ireland",
+        "nationality": "Northern Irish"
+      },
+      {
+        "name": "STINSON, Christopher Raymond",
+        "role": "director",
+        "appointed_on": "2025-01-03",
+        "country_of_residence": "Northern Ireland",
+        "nationality": "Northern Irish"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T19:37:39Z",
+    "total_results": 8,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Geda Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2021-02-20",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "Northern Ireland",
+          "place_registered": "Northern Ireland Companies Registry",
+          "registration_number": "Ni665023"
+        }
+      },
+      {
+        "name": "Mr Aaron Hughes",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Northern Irish",
+        "country_of_residence": "Northern Ireland",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2021-01-01",
+        "identification": null
+      },
+      {
+        "name": "Miss Tania Mccartan",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Irish",
+        "country_of_residence": "Northern Ireland",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2018-12-14",
+        "identification": null
+      },
+      {
+        "name": "Mr Stuart Paul Mcfeely",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Northern Irish",
+        "country_of_residence": "Northern Ireland",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2018-12-14",
+        "identification": null
+      },
+      {
+        "name": "Mr Damian Murray",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Northern Irish",
+        "country_of_residence": "Northern Ireland",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2018-12-14",
+        "identification": null
+      },
+      {
+        "name": "Mr John James Coalter",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "Northern Ireland",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2018-12-14",
+        "identification": null
+      },
+      {
+        "name": "Mr Eugene Oliver Mckenna",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "Northern Ireland",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Peadar Quinn",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Irish",
+        "country_of_residence": "Northern Ireland",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MzE2NjM0M2FkaXF6a2N4",
+    "date": "2025-09-30",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/hwG8_7rfLdNrnwjlTE-fXGUnSndL13yIR2lCAzoXneI/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/NI016265/filing-history/MzQ4MzE2NjM0M2FkaXF6a2N4"
   }
 }

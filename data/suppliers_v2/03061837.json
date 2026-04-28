@@ -65,13 +65,149 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T10:07:20Z",
+    "company_name": "YMCA DERBYSHIRE.",
+    "company_status": "active",
+    "date_of_creation": "1995-05-26",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-07-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-07"
+  },
+  "governance": {
+    "api_date": "2026-04-28T10:07:21Z",
+    "total_officers": 76,
+    "active_count": 14,
+    "resigned_count": 62,
+    "active_officers": [
+      {
+        "name": "BRADLEY, Susan Jayne",
+        "role": "director",
+        "appointed_on": "2018-12-13",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "BRIERLEY, Karen",
+        "role": "director",
+        "appointed_on": "2019-10-16",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BROOKS, Kim Joyce",
+        "role": "director",
+        "appointed_on": "2025-12-19",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BROWN, Andrew Roy",
+        "role": "director",
+        "appointed_on": "2026-03-24",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CROFT, Jo",
+        "role": "director",
+        "appointed_on": "2025-06-19",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HENSHAW, Katherine",
+        "role": "director",
+        "appointed_on": "2022-08-04",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "NORTH, Rachel Mary",
+        "role": "director",
+        "appointed_on": "2024-03-27",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "RYAN, Paul Anthony, Professor",
+        "role": "director",
+        "appointed_on": "2025-01-11",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SMITH, Helen",
+        "role": "director",
+        "appointed_on": "2025-01-11",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SMITH, Julian Paul",
+        "role": "director",
+        "appointed_on": "2020-03-26",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SUMMERS, Josephine Margaret",
+        "role": "director",
+        "appointed_on": "2022-06-23",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "TRICK, Matthew, Venerable",
+        "role": "director",
+        "appointed_on": "2022-12-15",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "TUDOR, Andreea",
+        "role": "director",
+        "appointed_on": "2023-07-17",
+        "country_of_residence": "England",
+        "nationality": "Romanian"
+      },
+      {
+        "name": "UPTON, Danielle Toni",
+        "role": "director",
+        "appointed_on": "2024-03-27",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T10:07:22Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2NTUxMjc1NWFkaXF6a2N4",
+    "date": "2025-05-09",
+    "type": "AA01",
+    "description": "change-account-reference-date-company-current-extended",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/_i5Y_lQtqcqMr3przRbEJdunNi9mij3ezgSarCwEZsc/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03061837/filing-history/MzQ2NTUxMjc1NWFkaXF6a2N4"
   }
 }

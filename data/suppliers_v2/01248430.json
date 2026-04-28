@@ -64,10 +64,10 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "education",
   "buyer_type_breakdown": {
@@ -75,5 +75,118 @@
     "agency": 0.3421,
     "other": 0.134,
     "council": 0.0289
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T01:30:01Z",
+    "company_name": "KAYS MEDICAL LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1976-03-11",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-05-16"
+  },
+  "governance": {
+    "api_date": "2026-04-28T01:30:03Z",
+    "total_officers": 5,
+    "active_count": 2,
+    "resigned_count": 3,
+    "active_officers": [
+      {
+        "name": "LUDZKER, Benjamin Mathew",
+        "role": "director",
+        "appointed_on": "2004-04-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LUDZKER, David Henry",
+        "role": "director",
+        "appointed_on": null,
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T01:30:04Z",
+    "total_results": 4,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Kays Group Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2025-10-31",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "Law Of England And Wales",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "16049702"
+        }
+      },
+      {
+        "name": "Mr Benjamin Mathew Ludzker",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2025-06-06",
+        "identification": null
+      },
+      {
+        "name": "Mr David Henry Ludzker",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mrs Joyce Ludzker",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NTk1ODc0MWFkaXF6a2N4",
+    "date": "2025-12-23",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/r6hVxCkwK-r-ECs0X3gleFCdkiE4RN350b5PqE-4h48/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01248430/filing-history/MzQ5NTk1ODc0MWFkaXF6a2N4"
   }
 }

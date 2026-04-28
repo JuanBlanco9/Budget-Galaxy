@@ -59,13 +59,170 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T11:26:05Z",
+    "company_name": "SERVE",
+    "company_status": "active",
+    "date_of_creation": "1994-07-25",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": true,
+    "accounts_next_due": "2026-03-31",
+    "accounts_last_made_up": "2024-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-04-01"
+  },
+  "governance": {
+    "api_date": "2026-04-28T11:26:06Z",
+    "total_officers": 40,
+    "active_count": 5,
+    "resigned_count": 35,
+    "active_officers": [
+      {
+        "name": "GIBBS, Anthony William",
+        "role": "secretary",
+        "appointed_on": "2024-11-01",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "CUNLIFFE, Zara Elizabeth",
+        "role": "director",
+        "appointed_on": "2016-04-27",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HARVEY, Anita Alison",
+        "role": "director",
+        "appointed_on": "2024-01-15",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "JAMES, Timothy David Richard",
+        "role": "director",
+        "appointed_on": "2019-07-17",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WILSON, Rachel Ann",
+        "role": "director",
+        "appointed_on": "2024-01-15",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T11:26:07Z",
+    "total_results": 6,
+    "active_count": 0,
+    "items": [
+      {
+        "name": "Mr Alan Armson",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control",
+          "significant-influence-or-control-as-trust",
+          "significant-influence-or-control-as-firm"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Bernard Coker",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control",
+          "significant-influence-or-control-as-trust",
+          "significant-influence-or-control-as-firm"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mrs Peggy Louise Hooton",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control",
+          "significant-influence-or-control-as-firm"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Lesley Howard Meakings",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control",
+          "significant-influence-or-control-as-trust",
+          "significant-influence-or-control-as-firm"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mrs Zara Elizabeth Cunliffe",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control",
+          "significant-influence-or-control-as-trust",
+          "significant-influence-or-control-as-firm"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Martin Coles",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control",
+          "significant-influence-or-control-as-trust",
+          "significant-influence-or-control-as-firm"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ1Mzg2NjQ5NGFkaXF6a2N4",
+    "date": "2025-02-05",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/CD7rozIjInN6yGwZIjm8QBMxjpfywClyX4s7afI7BQ0/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02951827/filing-history/MzQ1Mzg2NjQ5NGFkaXF6a2N4"
   }
 }

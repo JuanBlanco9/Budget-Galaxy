@@ -59,13 +59,104 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "nhs",
   "buyer_type_breakdown": {
     "nhs": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T10:30:53Z",
+    "company_name": "HALLMARK KITCHENS LIMITED",
+    "company_status": "liquidation",
+    "date_of_creation": "1983-06-17",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": true,
+    "has_insolvency_history": true,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": true,
+    "accounts_next_due": "2024-06-30",
+    "accounts_last_made_up": "2022-09-30",
+    "confirmation_statement_overdue": true,
+    "confirmation_statement_next_due": "2025-02-14"
+  },
+  "governance": {
+    "api_date": "2026-04-28T10:30:54Z",
+    "total_officers": 12,
+    "active_count": 4,
+    "resigned_count": 8,
+    "active_officers": [
+      {
+        "name": "CARLTON, John Leslie",
+        "role": "secretary",
+        "appointed_on": "2007-05-24",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "CARLTON, John Leslie, Mr.",
+        "role": "director",
+        "appointed_on": "2007-05-24",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "DOUGLAS, Christopher John",
+        "role": "director",
+        "appointed_on": "2001-10-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "JENNINGS, Kevin",
+        "role": "director",
+        "appointed_on": null,
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T10:30:55Z",
+    "total_results": 2,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Mr Kevin Jennings",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Chris Douglas",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzM4ODQ2NDM0OGFkaXF6a2N4",
+    "date": "2023-08-02",
+    "type": "AAMD",
+    "description": "accounts-amended-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/VnDpYdqGFz8mbpSZR_fM4TKpOkQR2tfWajCVAUOF5L4/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01732505/filing-history/MzM4ODQ2NDM0OGFkaXF6a2N4"
   }
 }

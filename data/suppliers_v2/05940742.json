@@ -68,14 +68,183 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 0.7223,
     "nhs": 0.2777
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T00:10:10Z",
+    "company_name": "FRESHWAVE SERVICES LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2006-09-20",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-23"
+  },
+  "governance": {
+    "api_date": "2026-04-28T00:10:12Z",
+    "total_officers": 16,
+    "active_count": 4,
+    "resigned_count": 12,
+    "active_officers": [
+      {
+        "name": "BENNETT, Thomas Lesley",
+        "role": "director",
+        "appointed_on": "2023-11-14",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "FRUMKIN, Simon Leslie Elliot",
+        "role": "director",
+        "appointed_on": "2020-11-01",
+        "country_of_residence": "England",
+        "nationality": "English"
+      },
+      {
+        "name": "JACKSON, Mark Adam",
+        "role": "director",
+        "appointed_on": "2026-01-26",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PAYNE, Graham",
+        "role": "director",
+        "appointed_on": "2019-04-11",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T00:10:14Z",
+    "total_results": 7,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Digitalbridge Group, Inc.",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2022-06-08",
+        "identification": {
+          "legal_form": "Corporate",
+          "legal_authority": "Maryland General Corporation Law",
+          "country_registered": "United States",
+          "place_registered": "Maryland Department Of Assessments And Taxation",
+          "registration_number": "D17285487"
+        }
+      },
+      {
+        "name": "Mr. Jeffrey Ginsberg",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "American",
+        "country_of_residence": "United States",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2019-04-11",
+        "identification": null
+      },
+      {
+        "name": "Jeffrey Ginsberg",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "American",
+        "country_of_residence": "United States",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2019-04-11",
+        "identification": null
+      },
+      {
+        "name": "Freshwaves Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2019-04-11",
+        "identification": {
+          "legal_form": "Limited",
+          "legal_authority": "Jersey",
+          "country_registered": "Jersey",
+          "place_registered": "Jersey",
+          "registration_number": "127123"
+        }
+      },
+      {
+        "name": "Miss Tiana Aimee Mondair",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent"
+        ],
+        "notified_on": "2017-03-09",
+        "identification": null
+      },
+      {
+        "name": "Mrs Angela Rita Mondair",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Ravinder Paul Mondair",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2OTgyOTEwNWFkaXF6a2N4",
+    "date": "2025-06-12",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/Ac7969KQJAIqX_di-I3UqTu3VvPkS4HY1qzYoeNVv_4/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/05940742/filing-history/MzQ2OTgyOTEwNWFkaXF6a2N4"
   }
 }

@@ -68,15 +68,130 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.9709,
     "nhs": 0.0242,
     "central_govt": 0.0049
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T11:00:55Z",
+    "company_name": "CAMBRIDGE ENTERPRISE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1972-09-05",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-04-30",
+    "accounts_last_made_up": "2025-07-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-20"
+  },
+  "governance": {
+    "api_date": "2026-04-28T11:00:57Z",
+    "total_officers": 64,
+    "active_count": 11,
+    "resigned_count": 53,
+    "active_officers": [
+      {
+        "name": "PRINGLE, Sam",
+        "role": "secretary",
+        "appointed_on": "2023-06-29",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "ALEXANDER, Benjamin Charles",
+        "role": "director",
+        "appointed_on": "2025-03-10",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "CHOWDHURY, Ajay",
+        "role": "director",
+        "appointed_on": "2020-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "DIAZ ANADON, Laura, Professor",
+        "role": "director",
+        "appointed_on": "2021-06-21",
+        "country_of_residence": "England",
+        "nationality": "Spanish,American"
+      },
+      {
+        "name": "GIGANTE, Annalisa",
+        "role": "director",
+        "appointed_on": "2020-04-02",
+        "country_of_residence": "Switzerland",
+        "nationality": "Italian"
+      },
+      {
+        "name": "GLASHEEN, James Walter, Dr",
+        "role": "director",
+        "appointed_on": "2024-11-15",
+        "country_of_residence": "England",
+        "nationality": "American"
+      },
+      {
+        "name": "MAXWELL, Patrick Henry, Professor",
+        "role": "director",
+        "appointed_on": "2019-03-21",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ODGERS, Anthony Louis",
+        "role": "director",
+        "appointed_on": "2017-07-20",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "OWENS, Roisin Meabh, Prof",
+        "role": "director",
+        "appointed_on": "2024-01-08",
+        "country_of_residence": "United Kingdom",
+        "nationality": "Irish"
+      },
+      {
+        "name": "PURKAYASTHA, Debapriya",
+        "role": "director",
+        "appointed_on": "2015-09-25",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "SEABRIGHT, Paul James, Dr",
+        "role": "director",
+        "appointed_on": "2015-04-20",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T11:00:58Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NjU2ODU5OWFkaXF6a2N4",
+    "date": "2026-01-05",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/Hf6bKzcfVfCxlInTmB6IgQLKwGJ-4iwy7sEl1BB4dGY/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01069886/filing-history/MzQ5NjU2ODU5OWFkaXF6a2N4"
   }
 }

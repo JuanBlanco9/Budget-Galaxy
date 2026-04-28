@@ -66,13 +66,112 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T06:17:42Z",
+    "company_name": "WORLDSPAN LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1972-06-21",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-03-31",
+    "accounts_last_made_up": "2025-06-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-04"
+  },
+  "governance": {
+    "api_date": "2026-04-28T06:17:43Z",
+    "total_officers": 19,
+    "active_count": 4,
+    "resigned_count": 15,
+    "active_officers": [
+      {
+        "name": "MORRIS, Sophie Louise",
+        "role": "director",
+        "appointed_on": "2007-08-06",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "MOSS, Craig",
+        "role": "director",
+        "appointed_on": "2022-11-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "WILCOCK, Jason Thomas",
+        "role": "director",
+        "appointed_on": "2006-07-05",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WILCOCK, Pauline",
+        "role": "director",
+        "appointed_on": null,
+        "country_of_residence": "Wales",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T06:17:44Z",
+    "total_results": 2,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Mr Jason Thomas Wilcock",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control",
+          "significant-influence-or-control-as-trust",
+          "significant-influence-or-control-as-firm"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Insightion Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "Wales",
+          "place_registered": "England & Wales",
+          "registration_number": "09849395"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5ODQ2NjQxMWFkaXF6a2N4",
+    "date": "2026-01-09",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/8rcImYZTe4oy7fVN4KoyH5c91aKRO_D1N8O3iSC99ZQ/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01058932/filing-history/MzQ5ODQ2NjQxMWFkaXF6a2N4"
   }
 }

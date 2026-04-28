@@ -55,10 +55,10 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
@@ -66,5 +66,183 @@
     "council": 0.0001,
     "nhs": 0.0,
     "central_govt": 0.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T02:09:56Z",
+    "company_name": "KNIGHT FRANK LLP",
+    "company_status": "active",
+    "date_of_creation": "2003-11-03",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-26"
+  },
+  "governance": {
+    "api_date": "2026-04-28T02:09:58Z",
+    "total_officers": 1396,
+    "active_count": 591,
+    "resigned_count": 805,
+    "active_officers": [
+      {
+        "name": "BEARDMORE-GRAY, William",
+        "role": "llp-designated-member",
+        "appointed_on": "2006-05-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "BOWES, Karen Elizabeth",
+        "role": "llp-designated-member",
+        "appointed_on": "2023-04-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "CLIFTON, Stephen James",
+        "role": "llp-designated-member",
+        "appointed_on": "2006-05-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "HYATT, Timothy Christopher Sinclair",
+        "role": "llp-designated-member",
+        "appointed_on": "2020-04-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "ROBINSON, Timothy Edward",
+        "role": "llp-designated-member",
+        "appointed_on": "2008-05-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "ABRAM, Roderick Charles",
+        "role": "llp-member",
+        "appointed_on": "2013-11-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "ACKERLEY, James Francis Charles",
+        "role": "llp-member",
+        "appointed_on": "2017-07-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "ADAMSON, Thomas Marc",
+        "role": "llp-member",
+        "appointed_on": "2025-07-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "ADLER, Edward Thomas",
+        "role": "llp-member",
+        "appointed_on": "2024-07-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "AITCHISON, Matthew Edward Donald",
+        "role": "llp-member",
+        "appointed_on": "2024-07-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "ALDERMAN, Nicholas Samuel",
+        "role": "llp-member",
+        "appointed_on": "2011-11-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "ALSOP, Fiona Dorothy",
+        "role": "llp-member",
+        "appointed_on": "2024-07-01",
+        "country_of_residence": "Scotland",
+        "nationality": null
+      },
+      {
+        "name": "ANDREWS, Stuart Jon",
+        "role": "llp-member",
+        "appointed_on": "2016-06-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "ARCHER, Poppy Victoria Margaret",
+        "role": "llp-member",
+        "appointed_on": "2021-07-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "ARIS, Roderick John Namgyal",
+        "role": "llp-member",
+        "appointed_on": "2019-07-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "ARMSTRONG, Matthew",
+        "role": "llp-member",
+        "appointed_on": "2016-07-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "ARMSTRONG, Neil Gordon",
+        "role": "llp-member",
+        "appointed_on": "2011-02-07",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "ARMSTRONG, Timothy Morris",
+        "role": "llp-member",
+        "appointed_on": "2023-04-01",
+        "country_of_residence": "Singapore",
+        "nationality": null
+      },
+      {
+        "name": "ARTES, Grace Victoria",
+        "role": "llp-member",
+        "appointed_on": "2024-07-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "ATTENBOROUGH, Lisa Anne",
+        "role": "llp-member",
+        "appointed_on": "2023-04-01",
+        "country_of_residence": "England",
+        "nationality": null
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T02:09:59Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NjAzMTUxOGFkaXF6a2N4",
+    "date": "2025-12-31",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/Sgb-avA9J3fQYiNZSAJ2WBFNi5mJoH64GMh-F1ZSMyc/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/OC305934/filing-history/MzQ5NjAzMTUxOGFkaXF6a2N4"
   }
 }

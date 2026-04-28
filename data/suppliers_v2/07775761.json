@@ -64,14 +64,124 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0,
     "council": 0.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T12:31:29Z",
+    "company_name": "CLARKEBOND (UK) LIMITED",
+    "company_status": "liquidation",
+    "date_of_creation": "2011-09-15",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": true,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": true,
+    "accounts_next_due": "2025-09-30",
+    "accounts_last_made_up": "2023-12-31",
+    "confirmation_statement_overdue": true,
+    "confirmation_statement_next_due": "2025-09-29"
+  },
+  "governance": {
+    "api_date": "2026-04-28T12:31:30Z",
+    "total_officers": 7,
+    "active_count": 3,
+    "resigned_count": 4,
+    "active_officers": [
+      {
+        "name": "BURT, Timothy Paul",
+        "role": "director",
+        "appointed_on": "2024-09-09",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "FERNANDES-JOHNSON, Ian",
+        "role": "director",
+        "appointed_on": "2024-09-11",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WISNIOWSKI, Wojciech Tomasz",
+        "role": "director",
+        "appointed_on": "2024-09-09",
+        "country_of_residence": "England",
+        "nationality": "Polish"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T12:31:31Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Independent Design House Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2024-09-09",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "England",
+          "registration_number": "14505397"
+        }
+      },
+      {
+        "name": "Cb Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2016-09-15",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "Isle Of Man",
+          "place_registered": "Isle Of Man Companies Registry",
+          "registration_number": "007421v"
+        }
+      },
+      {
+        "name": "Mr Justin Charles Ribbons",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQyNzA0NzQ5NmFkaXF6a2N4",
+    "date": "2024-06-28",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/gbG1cQeGU6Wb9ycEuQq0g0BCEZ6NC8ga8sZEI_mNeIs/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/07775761/filing-history/MzQyNzA0NzQ5NmFkaXF6a2N4"
   }
 }

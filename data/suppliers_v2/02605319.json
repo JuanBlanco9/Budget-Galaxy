@@ -59,13 +59,134 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T06:18:22Z",
+    "company_name": "FICHTNER CONSULTING ENGINEERS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1991-04-25",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-09-30",
+    "accounts_last_made_up": "2025-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-05-09"
+  },
+  "governance": {
+    "api_date": "2026-04-28T06:18:23Z",
+    "total_officers": 32,
+    "active_count": 9,
+    "resigned_count": 23,
+    "active_officers": [
+      {
+        "name": "EDGLEY, Elizabeth",
+        "role": "secretary",
+        "appointed_on": "2008-10-07",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "ABERNETHY, Duncan Stuart",
+        "role": "director",
+        "appointed_on": "2009-03-20",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "AGNEW, Jonathan, Dr",
+        "role": "director",
+        "appointed_on": "2023-07-19",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "EDGLEY, Elizabeth Louise",
+        "role": "director",
+        "appointed_on": "2017-02-08",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "FICHTNER, Eric Alexander",
+        "role": "director",
+        "appointed_on": "2024-10-16",
+        "country_of_residence": "Germany",
+        "nationality": "German"
+      },
+      {
+        "name": "HAWCUTT, Robert John",
+        "role": "director",
+        "appointed_on": "2011-02-03",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "HERZIG, Tilman",
+        "role": "director",
+        "appointed_on": "2018-08-23",
+        "country_of_residence": "Germany",
+        "nationality": "German"
+      },
+      {
+        "name": "OTHEN, Stephen Mark",
+        "role": "director",
+        "appointed_on": "2005-07-19",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "WEATHERBY, Edmund John, Dr",
+        "role": "director",
+        "appointed_on": "1999-10-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T06:18:24Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Fichtner Gmbh & Co Kg",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent",
+          "voting-rights-50-to-75-percent"
+        ],
+        "notified_on": "2016-04-25",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Germany",
+          "country_registered": "Germany",
+          "place_registered": "German Resgistry",
+          "registration_number": "Unknown"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwODQ1ODQwNWFkaXF6a2N4",
+    "date": "2026-03-04",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/86VDncT4Yk1Z_FAIkJr0OwY0C8IIzynMpXt-Q2EaaGM/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02605319/filing-history/MzUwODQ1ODQwNWFkaXF6a2N4"
   }
 }

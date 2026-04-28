@@ -59,10 +59,10 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
@@ -70,5 +70,110 @@
     "central_govt": 0.1512,
     "council": 0.1386,
     "agency": 0.1188
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T00:59:02Z",
+    "company_name": "BSI ASSURANCE UK LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2011-10-11",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-17"
+  },
+  "governance": {
+    "api_date": "2026-04-28T00:59:04Z",
+    "total_officers": 8,
+    "active_count": 4,
+    "resigned_count": 4,
+    "active_officers": [
+      {
+        "name": "BSI SERVICES HOLDINGS LIMITED",
+        "role": "corporate-secretary",
+        "appointed_on": "2011-10-11",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "PAGE, Matthew James",
+        "role": "director",
+        "appointed_on": "2026-04-09",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "QUESTED, Paul David",
+        "role": "director",
+        "appointed_on": "2026-01-30",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "TAYLOR, Susan Charlotte",
+        "role": "director",
+        "appointed_on": "2021-01-20",
+        "country_of_residence": "England",
+        "nationality": "American,British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T00:59:06Z",
+    "total_results": 2,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Bsi Group Assurance Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2017-09-15",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Companies House England And Wales",
+          "registration_number": "05435540"
+        }
+      },
+      {
+        "name": "The British Standards Institution",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Royal Charter",
+          "legal_authority": "United Kingdom (England And Wales)",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "Zc202"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MDgyMzg4MGFkaXF6a2N4",
+    "date": "2025-09-16",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/oWRyA9SD2BWKU2BpdsVG95MAbpGMVvcuilAL6Kctg9A/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/07805321/filing-history/MzQ4MDgyMzg4MGFkaXF6a2N4"
   }
 }

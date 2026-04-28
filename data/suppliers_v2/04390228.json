@@ -64,13 +64,100 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "education",
   "buyer_type_breakdown": {
     "education": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T23:17:04Z",
+    "company_name": "HALLMARK CONNECTIONS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2002-03-08",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-11-30",
+    "accounts_last_made_up": "2025-02-28",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-05-10"
+  },
+  "governance": {
+    "api_date": "2026-04-27T23:17:06Z",
+    "total_officers": 24,
+    "active_count": 4,
+    "resigned_count": 20,
+    "active_officers": [
+      {
+        "name": "CREBA, Andrew Ian",
+        "role": "director",
+        "appointed_on": "2019-09-09",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "DUNN, Jack Anthony Scott",
+        "role": "director",
+        "appointed_on": "2019-09-30",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "DUNN, Simon Lee",
+        "role": "director",
+        "appointed_on": "2005-10-27",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "TAYLOR, Kim",
+        "role": "director",
+        "appointed_on": "2005-08-30",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T23:17:07Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Rotala Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Company",
+          "legal_authority": "Companies Act",
+          "country_registered": "England",
+          "place_registered": "England And Wales",
+          "registration_number": "5338907"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4ODIxNDA3NGFkaXF6a2N4",
+    "date": "2025-11-11",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-audit-exemption-subsiduary",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/ChEiRVtENjPV1n_SvU6-PV12huZ8b9hLkyDmYZVpxTw/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04390228/filing-history/MzQ4ODIxNDA3NGFkaXF6a2N4"
   }
 }

@@ -59,13 +59,90 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T14:19:00Z",
+    "company_name": "HICKS FLOORING LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2006-03-23",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-04-06"
+  },
+  "governance": {
+    "api_date": "2026-04-27T14:19:01Z",
+    "total_officers": 7,
+    "active_count": 1,
+    "resigned_count": 6,
+    "active_officers": [
+      {
+        "name": "BROCKETT, Neil Antony Russell",
+        "role": "director",
+        "appointed_on": "2016-04-13",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T14:19:03Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Brockett Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2022-03-22",
+        "identification": {
+          "legal_form": "Limited",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England And Wales",
+          "place_registered": "Uk Register Of Companies",
+          "registration_number": "09959102"
+        }
+      },
+      {
+        "name": "Mr Neil Antony Russell Brockett",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-14",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NTc5NzUyNmFkaXF6a2N4",
+    "date": "2025-12-22",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/MvW0fxlmqpKCObM92mh9noDP_lw91YBjnrwyR3rMz4A/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/05754431/filing-history/MzQ5NTc5NzUyNmFkaXF6a2N4"
   }
 }

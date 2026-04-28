@@ -59,13 +59,72 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T10:05:29Z",
+    "company_name": "PEDAL READY CO-OPERATIVE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2005-08-04",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-08-18"
+  },
+  "governance": {
+    "api_date": "2026-04-28T10:05:31Z",
+    "total_officers": 32,
+    "active_count": 3,
+    "resigned_count": 29,
+    "active_officers": [
+      {
+        "name": "FYNE, Jon, Dr",
+        "role": "secretary",
+        "appointed_on": "2024-07-19",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "CARROLL, Jeffrey Richard",
+        "role": "director",
+        "appointed_on": "2014-04-07",
+        "country_of_residence": "England",
+        "nationality": "English"
+      },
+      {
+        "name": "RAYNOR, Barry",
+        "role": "director",
+        "appointed_on": "2013-03-18",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T10:05:32Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MjIzMjAyMWFkaXF6a2N4",
+    "date": "2025-12-03",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-micro-entity",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/Qdp7PR3WFQv0iMV0LgI0JQ0zu5L4_OTM8QgBFVuFlu4/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/05527951/filing-history/MzQ5MjIzMjAyMWFkaXF6a2N4"
   }
 }

@@ -59,13 +59,150 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T09:08:14Z",
+    "company_name": "INTERDOOR LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1985-06-11",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-17"
+  },
+  "governance": {
+    "api_date": "2026-04-28T09:08:15Z",
+    "total_officers": 15,
+    "active_count": 4,
+    "resigned_count": 11,
+    "active_officers": [
+      {
+        "name": "PERCY, Andrew James",
+        "role": "director",
+        "appointed_on": "2025-06-24",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "RAI, Amit, Mr.",
+        "role": "director",
+        "appointed_on": "2024-09-25",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "SUSHENTSEV, Sergey",
+        "role": "director",
+        "appointed_on": "2024-09-25",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "TOALSTER, Gary Martin",
+        "role": "director",
+        "appointed_on": "2020-10-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T09:08:17Z",
+    "total_results": 4,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Astra Sirius Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2024-09-25",
+        "identification": {
+          "legal_form": "Private Limited Company Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "Registrar Of Companies For England And Wales",
+          "registration_number": "15896699"
+        }
+      },
+      {
+        "name": "Interdoor Holdings Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2023-05-14",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "Uk Companies Registry",
+          "registration_number": "14780804"
+        }
+      },
+      {
+        "name": "Finance Yorkshire Equity G.P. Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2017-01-01",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "England",
+          "registration_number": "07075478"
+        }
+      },
+      {
+        "name": "Mr Mark De-Villamar Roberts",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3OTUzOTI1N2FkaXF6a2N4",
+    "date": "2025-09-02",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/hpC4FWywL4eF739owYZCstYi0XAxwFDvLQtW655iDdc/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01921289/filing-history/MzQ3OTUzOTI1N2FkaXF6a2N4"
   }
 }

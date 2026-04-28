@@ -59,13 +59,181 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T10:01:52Z",
+    "company_name": "THE MANUFACTURING TECHNOLOGY CENTRE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2009-02-10",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-19"
+  },
+  "governance": {
+    "api_date": "2026-04-28T10:01:54Z",
+    "total_officers": 52,
+    "active_count": 12,
+    "resigned_count": 40,
+    "active_officers": [
+      {
+        "name": "THOMPSON, Nicole Dominique",
+        "role": "secretary",
+        "appointed_on": "2025-11-27",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "CONWAY, Paul, Prof.",
+        "role": "director",
+        "appointed_on": "2023-02-22",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ENGEL, Natascha",
+        "role": "director",
+        "appointed_on": "2025-11-27",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ENGLISH, Rachel June",
+        "role": "director",
+        "appointed_on": "2023-05-24",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "EVANS, Jonathan",
+        "role": "director",
+        "appointed_on": "2024-05-16",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HICKMAN, Clive, Dr",
+        "role": "director",
+        "appointed_on": "2012-05-28",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HOARE, Graham Russel, Dr",
+        "role": "director",
+        "appointed_on": "2023-03-31",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "JOESBURY, Ian",
+        "role": "director",
+        "appointed_on": "2022-08-16",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MONKS, Paul Steven, Professor",
+        "role": "director",
+        "appointed_on": "2025-11-27",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "O'REILLY, Rachel Kerry",
+        "role": "director",
+        "appointed_on": "2025-11-27",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "RATCHEV, Svetan Marin, Prof",
+        "role": "director",
+        "appointed_on": "2018-11-22",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SMITH, Gregg Edward, Mr.",
+        "role": "director",
+        "appointed_on": "2024-05-16",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T10:01:55Z",
+    "total_results": 3,
+    "active_count": 3,
+    "items": [
+      {
+        "name": "The University Of Birmingham",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2019-05-19",
+        "identification": {
+          "legal_form": "Royal Charter Company",
+          "legal_authority": "Royal Charter"
+        }
+      },
+      {
+        "name": "Loughborough University",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2019-05-19",
+        "identification": {
+          "legal_form": "Royal Charter Company",
+          "legal_authority": "Royal Charter"
+        }
+      },
+      {
+        "name": "The University Of Nottingham",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2019-05-19",
+        "identification": {
+          "legal_form": "Royal Charter Company",
+          "legal_authority": "Royal Charter"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MDQyNjExOGFkaXF6a2N4",
+    "date": "2025-09-11",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/0Kf-gnzzOOAkQSDl5atXISl-BrKqJ-GqdfEpJWjIpaI/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/06815480/filing-history/MzQ4MDQyNjExOGFkaXF6a2N4"
   }
 }

@@ -64,13 +64,116 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "nhs",
   "buyer_type_breakdown": {
     "nhs": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T08:53:29Z",
+    "company_name": "SP SERVICES (UK) LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1997-08-26",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-03"
+  },
+  "governance": {
+    "api_date": "2026-04-28T08:53:30Z",
+    "total_officers": 16,
+    "active_count": 2,
+    "resigned_count": 14,
+    "active_officers": [
+      {
+        "name": "BAKER, Louise Michelle",
+        "role": "director",
+        "appointed_on": "2026-03-31",
+        "country_of_residence": "Wales",
+        "nationality": "British"
+      },
+      {
+        "name": "STAPLES, Rhian Mary",
+        "role": "director",
+        "appointed_on": "2026-03-31",
+        "country_of_residence": "Wales",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T08:53:31Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Healthco Investment Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2025-09-08",
+        "identification": {
+          "legal_form": "Limited Liability Company",
+          "legal_authority": "United Kingdom",
+          "country_registered": "United Kingdom",
+          "place_registered": "United Kingdom",
+          "registration_number": "16384404"
+        }
+      },
+      {
+        "name": "Williams Medical Supplies Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2019-09-30",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "04240054"
+        }
+      },
+      {
+        "name": "Mr Steven John Bray",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MDgyODE5MWFkaXF6a2N4",
+    "date": "2025-09-12",
+    "type": "AA01",
+    "description": "change-account-reference-date-company-current-shortened",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/5g89OTv0l3X0-CuQMgTxkWLDj2iaS0UtIh84z3dCeKE/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03424705/filing-history/MzQ4MDgyODE5MWFkaXF6a2N4"
   }
 }

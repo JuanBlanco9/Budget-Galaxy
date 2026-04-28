@@ -59,14 +59,135 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 0.5247,
     "other": 0.4753
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T00:07:01Z",
+    "company_name": "TAVISTOCK COMMUNICATIONS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1991-06-25",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-05-31",
+    "accounts_last_made_up": "2024-08-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-09"
+  },
+  "governance": {
+    "api_date": "2026-04-28T00:07:03Z",
+    "total_officers": 35,
+    "active_count": 7,
+    "resigned_count": 28,
+    "active_officers": [
+      {
+        "name": "HUDSON, Simon",
+        "role": "director",
+        "appointed_on": "2007-07-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LAING, James David Athole",
+        "role": "director",
+        "appointed_on": "2022-11-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MOSS, Emily Victoria",
+        "role": "director",
+        "appointed_on": "2021-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SIMSON, Jocelyn Laurie Litton",
+        "role": "director",
+        "appointed_on": "2010-12-23",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "TAN, Axel Frazer Morschel",
+        "role": "director",
+        "appointed_on": "2008-06-26",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "VERSTRINGHE, James",
+        "role": "director",
+        "appointed_on": "2021-01-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "VIVIAN, Charles Crespigny Hussey, Lord",
+        "role": "director",
+        "appointed_on": "2017-10-23",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T00:07:05Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "T20 Communications Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2021-03-02",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "13213944"
+        }
+      },
+      {
+        "name": "Mr Jeremy Charles Carey",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2NjcxNTIxMmFkaXF6a2N4",
+    "date": "2025-05-19",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/4Fsl-_wVSFsNhjbZF4wyYncDmx6oqkfzWc504gIcmDU/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02623799/filing-history/MzQ2NjcxNTIxMmFkaXF6a2N4"
   }
 }

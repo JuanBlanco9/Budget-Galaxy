@@ -59,13 +59,100 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T07:08:22Z",
+    "company_name": "AGILE COLLECTIVE LTD",
+    "company_status": "active",
+    "date_of_creation": "2011-12-21",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-04-14"
+  },
+  "governance": {
+    "api_date": "2026-04-28T07:08:23Z",
+    "total_officers": 18,
+    "active_count": 7,
+    "resigned_count": 11,
+    "active_officers": [
+      {
+        "name": "CHAPMAN, Simon Paul",
+        "role": "director",
+        "appointed_on": "2026-01-14",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "COX, Stephen",
+        "role": "director",
+        "appointed_on": "2016-12-15",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GEANEY, Luke David",
+        "role": "director",
+        "appointed_on": "2020-09-29",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HALL, James Clayton",
+        "role": "director",
+        "appointed_on": "2022-07-13",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MITCHELL, Linda Margaret",
+        "role": "director",
+        "appointed_on": "2022-07-13",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ROWLEY, Richard Stephen",
+        "role": "director",
+        "appointed_on": "2011-12-21",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "YOUNG, Maria Sophia Adliyya",
+        "role": "director",
+        "appointed_on": "2022-07-13",
+        "country_of_residence": "Scotland",
+        "nationality": "British,Scottish"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T07:08:24Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3ODM5MzczNmFkaXF6a2N4",
+    "date": "2025-08-22",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/FV7gnnoTuaQBgJ54PRhBbrrwFaYbL2Ub34PgNH9mc04/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/07889401/filing-history/MzQ3ODM5MzczNmFkaXF6a2N4"
   }
 }

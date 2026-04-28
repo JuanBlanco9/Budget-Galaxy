@@ -59,11 +59,126 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
-  "buyer_type_breakdown": {}
+  "buyer_type_breakdown": {},
+  "ch_profile": {
+    "api_date": "2026-04-28T14:25:41Z",
+    "company_name": "CONCERN WORLDWIDE (UK)",
+    "company_status": "active",
+    "date_of_creation": "2001-11-15",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-29"
+  },
+  "governance": {
+    "api_date": "2026-04-28T14:25:42Z",
+    "total_officers": 74,
+    "active_count": 11,
+    "resigned_count": 63,
+    "active_officers": [
+      {
+        "name": "O'CONNOR, Stephen Anthony",
+        "role": "secretary",
+        "appointed_on": "2021-06-23",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "AKINBORO, Victoria Olufunke",
+        "role": "director",
+        "appointed_on": "2021-06-26",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CANNON, Dylan",
+        "role": "director",
+        "appointed_on": "2024-09-28",
+        "country_of_residence": "England",
+        "nationality": "Irish"
+      },
+      {
+        "name": "DUNFORD, John Patrick",
+        "role": "director",
+        "appointed_on": "2018-06-23",
+        "country_of_residence": "England",
+        "nationality": "Irish"
+      },
+      {
+        "name": "FERRIER, Catherine",
+        "role": "director",
+        "appointed_on": "2025-06-25",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LANE, Stephen John Roger",
+        "role": "director",
+        "appointed_on": "2025-06-18",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MCEVOY, Roisin",
+        "role": "director",
+        "appointed_on": "2023-09-30",
+        "country_of_residence": "United Kingdom",
+        "nationality": "Irish"
+      },
+      {
+        "name": "RITCHIE, Hugh David",
+        "role": "director",
+        "appointed_on": "2023-06-23",
+        "country_of_residence": "Ireland",
+        "nationality": "Irish"
+      },
+      {
+        "name": "ROBA, Hassan, Dr",
+        "role": "director",
+        "appointed_on": "2023-12-07",
+        "country_of_residence": "Kenya",
+        "nationality": "Kenyan"
+      },
+      {
+        "name": "SLOAN, Patricia Margaret",
+        "role": "director",
+        "appointed_on": "2023-11-10",
+        "country_of_residence": "Northern Ireland",
+        "nationality": "Irish"
+      },
+      {
+        "name": "VAN RIJN, Wilhelmina Teuna",
+        "role": "director",
+        "appointed_on": "2024-09-28",
+        "country_of_residence": "England",
+        "nationality": "Dutch"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T14:25:43Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4Mjg1NzY3MWFkaXF6a2N4",
+    "date": "2025-09-29",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/ie1vztKUVDRyC17-Wc5LX4YI1g8FOOJtIpG-eOozGB0/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04323646/filing-history/MzQ4Mjg1NzY3MWFkaXF6a2N4"
+  }
 }

@@ -59,14 +59,94 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.7543,
     "agency": 0.2457
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T09:46:57Z",
+    "company_name": "BRIGGS EQUIPMENT UK LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2006-08-03",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-11"
+  },
+  "governance": {
+    "api_date": "2026-04-28T09:46:58Z",
+    "total_officers": 17,
+    "active_count": 4,
+    "resigned_count": 13,
+    "active_officers": [
+      {
+        "name": "BROWN, Yolanda",
+        "role": "secretary",
+        "appointed_on": "2011-09-01",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "WILTON, Iain Robert",
+        "role": "secretary",
+        "appointed_on": "2020-04-06",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "JONES, Peter Brian",
+        "role": "director",
+        "appointed_on": "2016-04-04",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LISTER, James Daniel",
+        "role": "director",
+        "appointed_on": "2024-03-28",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T09:46:59Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Roger Lance Weston",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "American",
+        "country_of_residence": "United States",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2019-12-30",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3ODM4MzUxM2FkaXF6a2N4",
+    "date": "2025-08-26",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/Ym83n1sHVNyiGb0UGQYyXtg3YKXLQKBBKpQqb6H9754/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/05895588/filing-history/MzQ3ODM4MzUxM2FkaXF6a2N4"
   }
 }

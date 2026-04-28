@@ -61,14 +61,143 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
     "central_govt": 0.9807,
     "other": 0.0193
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T23:02:49Z",
+    "company_name": "THE FRONTLINE ORGANISATION",
+    "company_status": "active",
+    "date_of_creation": "2015-05-22",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-05-31",
+    "accounts_last_made_up": "2025-08-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-02"
+  },
+  "governance": {
+    "api_date": "2026-04-27T23:02:51Z",
+    "total_officers": 37,
+    "active_count": 13,
+    "resigned_count": 24,
+    "active_officers": [
+      {
+        "name": "ALDRIDGE, Timothy John",
+        "role": "director",
+        "appointed_on": "2019-03-07",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GAYLE, Oliver",
+        "role": "director",
+        "appointed_on": "2015-05-22",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "JORDAAN, Brigitte Jean",
+        "role": "director",
+        "appointed_on": "2024-06-05",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "KELLY, Christopher William, Sir",
+        "role": "director",
+        "appointed_on": "2025-09-29",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "KHAN, Faiza",
+        "role": "director",
+        "appointed_on": "2024-04-04",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MACMILLAN, Susan",
+        "role": "director",
+        "appointed_on": "2019-09-24",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "OWINGS, Christin Kure",
+        "role": "director",
+        "appointed_on": "2024-06-17",
+        "country_of_residence": "England",
+        "nationality": "Norwegian"
+      },
+      {
+        "name": "ROSENZWEIG, Jacob",
+        "role": "director",
+        "appointed_on": "2017-12-07",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British,American"
+      },
+      {
+        "name": "SANDERSON- GILLARD, Niketa",
+        "role": "director",
+        "appointed_on": "2025-01-16",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SCHMID, Clare Alison",
+        "role": "director",
+        "appointed_on": "2025-09-29",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SHIELD, John",
+        "role": "director",
+        "appointed_on": "2023-10-24",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "TIMPSON, Anthony Edward",
+        "role": "director",
+        "appointed_on": "2025-09-29",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WEDGE-BULL, Eric Joseph",
+        "role": "director",
+        "appointed_on": "2024-11-13",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T23:02:53Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxNjY1NTc3MWFkaXF6a2N4",
+    "date": "2026-04-18",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/ou2GnzrTa5TfmeTCEDZ6_4FeEiyVlsXxZvxdJy3N4Uc/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/09605966/filing-history/MzUxNjY1NTc3MWFkaXF6a2N4"
   }
 }

@@ -64,13 +64,107 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T05:47:58Z",
+    "company_name": "COMMUNITY ADVICE AND LAW SERVICE LTD",
+    "company_status": "active",
+    "date_of_creation": "2000-10-25",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-08"
+  },
+  "governance": {
+    "api_date": "2026-04-28T05:47:59Z",
+    "total_officers": 26,
+    "active_count": 8,
+    "resigned_count": 18,
+    "active_officers": [
+      {
+        "name": "BACH, William Stephen Goulden, Lord",
+        "role": "director",
+        "appointed_on": "2023-11-22",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "COLLIER, Mary Elizabeth",
+        "role": "director",
+        "appointed_on": "2022-02-07",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "FOUNTAIN, Hannah Louise",
+        "role": "director",
+        "appointed_on": "2020-05-27",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "KOENIG, Brett Bernard",
+        "role": "director",
+        "appointed_on": "2023-11-22",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MUNTON, Alexander James",
+        "role": "director",
+        "appointed_on": "2008-05-14",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "NIXON, Rebecca Jane",
+        "role": "director",
+        "appointed_on": "2021-02-24",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "OLNER, Matthew",
+        "role": "director",
+        "appointed_on": "2024-11-20",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WILLIAMS, Vera",
+        "role": "director",
+        "appointed_on": "2025-02-19",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T05:48:00Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NTEyOTcxMGFkaXF6a2N4",
+    "date": "2025-12-23",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/cNaG1govwQinSfYGmKnJzIpntTFkMUE1NdRHc7zHW4M/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04096574/filing-history/MzQ5NTEyOTcxMGFkaXF6a2N4"
   }
 }

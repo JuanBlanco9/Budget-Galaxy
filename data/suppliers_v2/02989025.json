@@ -59,10 +59,10 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
@@ -71,5 +71,92 @@
     "police_fire": 0.0545,
     "education": 0.003,
     "trust": 0.0029
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T14:55:08Z",
+    "company_name": "RISK MANAGEMENT PARTNERS LTD.",
+    "company_status": "active",
+    "date_of_creation": "1994-11-10",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-20"
+  },
+  "governance": {
+    "api_date": "2026-04-27T14:55:10Z",
+    "total_officers": 60,
+    "active_count": 4,
+    "resigned_count": 56,
+    "active_officers": [
+      {
+        "name": "DOWNEY, Tom",
+        "role": "director",
+        "appointed_on": "2020-12-16",
+        "country_of_residence": "England",
+        "nationality": "Irish"
+      },
+      {
+        "name": "HALSALL, Stephen Philip",
+        "role": "director",
+        "appointed_on": "2022-09-15",
+        "country_of_residence": "Wales",
+        "nationality": "British"
+      },
+      {
+        "name": "SIMMONDS, Sebastian Adam Crawford",
+        "role": "director",
+        "appointed_on": "2023-04-21",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "THOMSON, Catriona Anne",
+        "role": "director",
+        "appointed_on": "2023-07-12",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T14:55:12Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Arthur J. Gallagher (Uk) Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "England And Wales",
+          "registration_number": "1193013"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MzA0NDIzMGFkaXF6a2N4",
+    "date": "2025-07-09",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/HDy76mU8VooD6_JTaVEjg6eVpsitB7JksfYRuM00EVg/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02989025/filing-history/MzQ3MzA0NDIzMGFkaXF6a2N4"
   }
 }

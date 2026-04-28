@@ -59,11 +59,63 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
     "ch_api_accounts_pdf": false
   },
   "top_buyer_type": "other",
-  "buyer_type_breakdown": {}
+  "buyer_type_breakdown": {},
+  "ch_profile": {
+    "api_date": "2026-04-28T12:35:18Z",
+    "company_name": "B&T LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2026-02-11",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-11-11",
+    "accounts_last_made_up": null,
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-24"
+  },
+  "governance": {
+    "api_date": "2026-04-28T12:35:19Z",
+    "total_officers": 1,
+    "active_count": 1,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "TESFAYESUS, Bereket Amanuel",
+        "role": "director",
+        "appointed_on": "2026-02-11",
+        "country_of_residence": "United Kingdom",
+        "nationality": "Eritrean"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T12:35:20Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Bereket Amanuel Tesfayesus",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Eritrean",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2026-02-11",
+        "identification": null
+      }
+    ]
+  }
 }

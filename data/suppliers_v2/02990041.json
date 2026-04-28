@@ -59,13 +59,129 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T05:39:02Z",
+    "company_name": "JOINT RADIO COMPANY LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1994-11-14",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-28"
+  },
+  "governance": {
+    "api_date": "2026-04-28T05:39:03Z",
+    "total_officers": 45,
+    "active_count": 3,
+    "resigned_count": 42,
+    "active_officers": [
+      {
+        "name": "LAD, Anita",
+        "role": "secretary",
+        "appointed_on": "2008-07-01",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "DUNK, Mark",
+        "role": "director",
+        "appointed_on": "2019-05-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MURPHY, Richard Stephen",
+        "role": "director",
+        "appointed_on": "2022-06-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T05:39:04Z",
+    "total_results": 4,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mrs Cristina Data",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Italian",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2025-11-11",
+        "identification": null
+      },
+      {
+        "name": "Dr Peter David Couch",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2017-08-14",
+        "identification": null
+      },
+      {
+        "name": "Mr Adrian Anthony Grilli",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control",
+          "significant-influence-or-control-as-firm"
+        ],
+        "notified_on": "2016-11-14",
+        "identification": null
+      },
+      {
+        "name": "Energy Networks Association Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited",
+          "legal_authority": "Companies House",
+          "country_registered": "United Kingdom",
+          "place_registered": "England And Wales",
+          "registration_number": "04832301"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NDYyNTAzM2FkaXF6a2N4",
+    "date": "2025-07-22",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/Vt6SICOtP53YkoR7U8V3ufwhZrmOoYP_Ees2qqa7BZs/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02990041/filing-history/MzQ3NDYyNTAzM2FkaXF6a2N4"
   }
 }

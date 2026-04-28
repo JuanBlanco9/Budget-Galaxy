@@ -59,13 +59,110 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T06:29:40Z",
+    "company_name": "HARCO LIMITED",
+    "company_status": "liquidation",
+    "date_of_creation": "2016-06-24",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": true,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": true,
+    "accounts_next_due": "2025-12-31",
+    "accounts_last_made_up": "2024-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-09"
+  },
+  "governance": {
+    "api_date": "2026-04-28T06:29:41Z",
+    "total_officers": 2,
+    "active_count": 2,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "PALEJWALA, Mohamed Arif",
+        "role": "director",
+        "appointed_on": "2016-06-24",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SULEMAN, Mohammed Hussein",
+        "role": "director",
+        "appointed_on": "2016-06-24",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T06:29:42Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Fairway Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2021-02-23",
+        "identification": {
+          "legal_form": "Company Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "12148348"
+        }
+      },
+      {
+        "name": "Mr Mohammed Hussein Suleman",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2017-01-01",
+        "identification": null
+      },
+      {
+        "name": "Mr Osman Abdul Bawa",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2017-01-01",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2MDg1MTY5OWFkaXF6a2N4",
+    "date": "2025-03-31",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/aPQoerMjm7BtWnS6xJkjhMV_QiY7xWcyhrC--R6Vw5M/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/10250050/filing-history/MzQ2MDg1MTY5OWFkaXF6a2N4"
   }
 }

@@ -55,13 +55,100 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
     "ch_api_accounts_pdf": false
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T08:45:29Z",
+    "company_name": "VICTORIA QUARTER TRUSTEE NO 2 LIMITED",
+    "company_status": "registered",
+    "date_of_creation": "2023-02-10",
+    "date_of_cessation": null,
+    "jurisdiction": "united-kingdom",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": null,
+    "accounts_next_due": null,
+    "accounts_last_made_up": null,
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-23"
+  },
+  "governance": {
+    "api_date": "2026-04-28T08:45:31Z",
+    "total_officers": 0,
+    "active_count": 0,
+    "resigned_count": 0,
+    "active_officers": []
+  },
+  "pscs": {
+    "api_date": "2026-04-28T08:45:32Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mourant Corporate Trustee (Jersey) Limited",
+        "kind": "corporate-entity-beneficial-owner",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-more-than-25-percent-as-trust-registered-overseas-entity",
+          "voting-rights-more-than-25-percent-as-trust-registered-overseas-entity",
+          "right-to-appoint-and-remove-directors-as-trust-registered-overseas-entity"
+        ],
+        "notified_on": "2024-10-28",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies (Jersey) Law 1991",
+          "place_registered": "Jersey Financial Services Commission",
+          "registration_number": "103231"
+        }
+      },
+      {
+        "name": "Belasko Jersey Limited",
+        "kind": "corporate-entity-beneficial-owner",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-more-than-25-percent-as-trust-registered-overseas-entity",
+          "voting-rights-more-than-25-percent-as-trust-registered-overseas-entity",
+          "right-to-appoint-and-remove-directors-as-trust-registered-overseas-entity"
+        ],
+        "notified_on": "2022-02-25",
+        "identification": {
+          "legal_form": "Registered Company Private",
+          "legal_authority": "Jersey",
+          "place_registered": "Jersey - Jersey Financial Services Commission",
+          "registration_number": "123988"
+        }
+      },
+      {
+        "name": "Belasko Trustees Jersey Limited",
+        "kind": "corporate-entity-beneficial-owner",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-more-than-25-percent-as-trust-registered-overseas-entity",
+          "voting-rights-more-than-25-percent-as-trust-registered-overseas-entity",
+          "right-to-appoint-and-remove-directors-as-trust-registered-overseas-entity"
+        ],
+        "notified_on": "2022-02-25",
+        "identification": {
+          "legal_form": "Registered Company Private",
+          "legal_authority": "Jersey",
+          "place_registered": "Jersey - Jersey Financial Services Commission",
+          "registration_number": "124738"
+        }
+      }
+    ]
   }
 }

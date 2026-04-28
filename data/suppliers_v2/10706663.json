@@ -64,14 +64,127 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.9098,
     "nhs": 0.0902
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T20:44:22Z",
+    "company_name": "ALTODIGITAL NETWORKS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2017-04-04",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-04"
+  },
+  "governance": {
+    "api_date": "2026-04-27T20:44:23Z",
+    "total_officers": 10,
+    "active_count": 3,
+    "resigned_count": 7,
+    "active_officers": [
+      {
+        "name": "WALSH, Cheryl Sandra Sarah",
+        "role": "secretary",
+        "appointed_on": "2023-01-09",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "DYAS, David Brian",
+        "role": "director",
+        "appointed_on": "2020-03-12",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ROSSETTI, Paolo",
+        "role": "director",
+        "appointed_on": "2022-10-07",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T20:44:25Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Arena Group Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2021-04-30",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "Cardiff, England And Wales",
+          "registration_number": "03735943"
+        }
+      },
+      {
+        "name": "Xerox (Uk) Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2020-03-12",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "00330754"
+        }
+      },
+      {
+        "name": "Mr James Henry Abrahart",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2017-04-04",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MzIwNzk5MmFkaXF6a2N4",
+    "date": "2025-09-30",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-audit-exemption-subsiduary",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/cDjFOZThqKxB_kIOofwGX4QxNR1KIPnBdCphGldSDyQ/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/10706663/filing-history/MzQ4MzIwNzk5MmFkaXF6a2N4"
   }
 }

@@ -59,14 +59,96 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.9692,
     "council": 0.0308
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T19:47:00Z",
+    "company_name": "CAPRICORN MEDIA PROTECTION LTD",
+    "company_status": "active",
+    "date_of_creation": "2019-03-19",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": true,
+    "confirmation_statement_next_due": "2026-04-01"
+  },
+  "governance": {
+    "api_date": "2026-04-27T19:47:02Z",
+    "total_officers": 6,
+    "active_count": 4,
+    "resigned_count": 2,
+    "active_officers": [
+      {
+        "name": "ADAMS, Dolton Joseph",
+        "role": "director",
+        "appointed_on": "2019-08-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ROBINSON, Laura Elizabeth",
+        "role": "director",
+        "appointed_on": "2023-09-14",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ROBINSON, William",
+        "role": "director",
+        "appointed_on": "2019-03-19",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "WEBB, Scott",
+        "role": "director",
+        "appointed_on": "2023-05-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T19:47:04Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Capricorn Security Group Holdings Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2019-03-19",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "England And Wales Governing Law"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MzEyNDUyNWFkaXF6a2N4",
+    "date": "2025-12-09",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/uHoODNklhT-qK0uAxvSJR9-AfaELjUGuT-cRm4cRhA8/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/11891204/filing-history/MzQ5MzEyNDUyNWFkaXF6a2N4"
   }
 }

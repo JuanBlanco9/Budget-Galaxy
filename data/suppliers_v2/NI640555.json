@@ -59,13 +59,104 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T02:09:35Z",
+    "company_name": "TOTALIS CONSTRUCTION LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2016-09-01",
+    "date_of_cessation": null,
+    "jurisdiction": "northern-ireland",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-07-31",
+    "accounts_last_made_up": "2024-10-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-05-06"
+  },
+  "governance": {
+    "api_date": "2026-04-28T02:09:37Z",
+    "total_officers": 5,
+    "active_count": 2,
+    "resigned_count": 3,
+    "active_officers": [
+      {
+        "name": "GIVEN, Linda",
+        "role": "director",
+        "appointed_on": "2019-02-05",
+        "country_of_residence": "Northern Ireland",
+        "nationality": "British"
+      },
+      {
+        "name": "HAYES, Steven",
+        "role": "director",
+        "appointed_on": "2024-04-22",
+        "country_of_residence": "Northern Ireland",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T02:09:39Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Totalis Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2023-11-02",
+        "identification": {
+          "legal_form": "Totalis Group Limited",
+          "legal_authority": "Uk",
+          "country_registered": "Northern Ireland",
+          "place_registered": "Totalis Group Limited",
+          "registration_number": "Ni654523"
+        }
+      },
+      {
+        "name": "Totalis Solutions Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-09-01",
+        "identification": {
+          "legal_form": "Northern Ireland",
+          "legal_authority": "Private Limited Company",
+          "country_registered": "United Kingdom",
+          "place_registered": "United Kingdom",
+          "registration_number": "Ni608299"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MzM5MzYwMWFkaXF6a2N4",
+    "date": "2025-07-14",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/_iCEmJPeHr7zAab71ogyqTgxwDYwmwQ9M7OXn3qK9c4/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/NI640555/filing-history/MzQ3MzM5MzYwMWFkaXF6a2N4"
   }
 }

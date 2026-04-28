@@ -59,14 +59,135 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "education",
   "buyer_type_breakdown": {
     "education": 0.5012,
     "council": 0.4988
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T00:10:51Z",
+    "company_name": "PLYMOUTH ARGYLE FOOTBALL IN THE COMMUNITY TRUST",
+    "company_status": "active",
+    "date_of_creation": "2009-01-21",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-03-31",
+    "accounts_last_made_up": "2025-06-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-04"
+  },
+  "governance": {
+    "api_date": "2026-04-28T00:10:53Z",
+    "total_officers": 33,
+    "active_count": 10,
+    "resigned_count": 23,
+    "active_officers": [
+      {
+        "name": "YORKE, Joanne",
+        "role": "secretary",
+        "appointed_on": "2011-05-27",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BENEY, Claire Lesley",
+        "role": "director",
+        "appointed_on": "2022-10-06",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "BERNE, Paul Michael",
+        "role": "director",
+        "appointed_on": "2017-07-10",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BROWNLOW, Steven John",
+        "role": "director",
+        "appointed_on": "2015-02-27",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "DENNERLY, Cindy Alpona",
+        "role": "director",
+        "appointed_on": "2015-12-11",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "EVANS OBE, John",
+        "role": "director",
+        "appointed_on": "2022-04-20",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HOWELL, Victoria Harland",
+        "role": "director",
+        "appointed_on": "2022-04-29",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LOVEGROVE, Miles Alan",
+        "role": "director",
+        "appointed_on": "2025-09-18",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MORGAN, John",
+        "role": "director",
+        "appointed_on": "2017-10-05",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "VOSPER, Ingrid Colette",
+        "role": "director",
+        "appointed_on": "2022-04-20",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T00:10:55Z",
+    "total_results": 1,
+    "active_count": 0,
+    "items": [
+      {
+        "name": "Captain David Michael Tall",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control-as-trust"
+        ],
+        "notified_on": "2016-06-30",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxNDk1Njk5M2FkaXF6a2N4",
+    "date": "2026-04-08",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/eXErz-sLmMGASZ86owk_aMGq07ah6u9TObNvk8Wfcvg/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/06797988/filing-history/MzUxNDk1Njk5M2FkaXF6a2N4"
   }
 }

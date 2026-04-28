@@ -68,13 +68,80 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T10:49:16Z",
+    "company_name": "SYNCHRONY DEVELOPMENT CONSULTING LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2013-03-18",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-14"
+  },
+  "governance": {
+    "api_date": "2026-04-28T10:49:18Z",
+    "total_officers": 2,
+    "active_count": 2,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "HOFMANN, Hans Markus",
+        "role": "director",
+        "appointed_on": "2026-03-16",
+        "country_of_residence": "Wales",
+        "nationality": "German"
+      },
+      {
+        "name": "HOFMANN, Yetunde Yewande",
+        "role": "director",
+        "appointed_on": "2013-03-18",
+        "country_of_residence": "Wales",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T10:49:19Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mrs Yetunde Yewande Hofmann",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "Wales",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-13",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MzE1MzExM2FkaXF6a2N4",
+    "date": "2025-09-30",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/QsmXzzUXe_Es5rwePC8TO92HgZVKxG0c6oU_0pQK9Rg/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/08448898/filing-history/MzQ4MzE1MzExM2FkaXF6a2N4"
   }
 }

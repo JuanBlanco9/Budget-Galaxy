@@ -61,15 +61,92 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "agency",
   "buyer_type_breakdown": {
     "agency": 0.521,
     "education": 0.479,
     "other": 0.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T14:10:44Z",
+    "company_name": "EDINBURGH GENETICS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2019-12-31",
+    "date_of_cessation": null,
+    "jurisdiction": "scotland",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-09"
+  },
+  "governance": {
+    "api_date": "2026-04-28T14:10:45Z",
+    "total_officers": 3,
+    "active_count": 2,
+    "resigned_count": 1,
+    "active_officers": [
+      {
+        "name": "CHAN, Yun Hei",
+        "role": "director",
+        "appointed_on": "2019-12-31",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      },
+      {
+        "name": "YOUNG, Alasdair",
+        "role": "director",
+        "appointed_on": "2020-03-16",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T14:10:46Z",
+    "total_results": 2,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Mr Alasdair Young",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "Scotland",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2020-03-16",
+        "identification": null
+      },
+      {
+        "name": "Mr Yun Hei Chan",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "Scotland",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2019-12-31",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NjIxOTgwN2FkaXF6a2N4",
+    "date": "2025-12-24",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/LrNPFzJO1VM2liuV9X5HgOyd1BKuOPF1e-gbeGW7K4E/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/SC650426/filing-history/MzQ5NjIxOTgwN2FkaXF6a2N4"
   }
 }

@@ -59,14 +59,111 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.6778,
     "nhs": 0.3222
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T00:33:38Z",
+    "company_name": "IT WORKS HEALTH LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2013-07-24",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-08-07"
+  },
+  "governance": {
+    "api_date": "2026-04-28T00:33:39Z",
+    "total_officers": 5,
+    "active_count": 3,
+    "resigned_count": 2,
+    "active_officers": [
+      {
+        "name": "BASHALL, Sophie Louise",
+        "role": "secretary",
+        "appointed_on": "2013-09-11",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BASHALL, Tim",
+        "role": "director",
+        "appointed_on": "2013-07-24",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "MILLS, Darren Paul Marsland",
+        "role": "director",
+        "appointed_on": "2013-07-24",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T00:33:41Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "It Works Resource Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2018-08-31",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "England And Wales",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "11416882"
+        }
+      },
+      {
+        "name": "It Works Resource Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "Companies Act 2006"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NDQ2MzAwMGFkaXF6a2N4",
+    "date": "2025-07-21",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/FzpWGOHs5V1lcbHxO80QI82pql93ntM1BDIDld03PBk/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/08622591/filing-history/MzQ3NDQ2MzAwMGFkaXF6a2N4"
   }
 }

@@ -59,14 +59,153 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 0.6697,
     "central_govt": 0.3303
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T16:57:57Z",
+    "company_name": "QUALCO (UK) LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2012-06-08",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-20"
+  },
+  "governance": {
+    "api_date": "2026-04-27T16:57:58Z",
+    "total_officers": 7,
+    "active_count": 6,
+    "resigned_count": 1,
+    "active_officers": [
+      {
+        "name": "JACOB, Charles Christian",
+        "role": "secretary",
+        "appointed_on": "2012-06-08",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "DAVIES, Richard Llewellyn",
+        "role": "director",
+        "appointed_on": "2020-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GEORGANTZIS, Miltiadis",
+        "role": "director",
+        "appointed_on": "2012-06-08",
+        "country_of_residence": "Greece",
+        "nationality": "Greek"
+      },
+      {
+        "name": "JACOB, Charles Christian",
+        "role": "director",
+        "appointed_on": "2012-06-08",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "RETZEKAS, Spyridon",
+        "role": "director",
+        "appointed_on": "2012-06-08",
+        "country_of_residence": "Greece",
+        "nationality": "Greek"
+      },
+      {
+        "name": "TSAKALOTOS, Orestis",
+        "role": "director",
+        "appointed_on": "2012-06-08",
+        "country_of_residence": "Greece",
+        "nationality": "Greek"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T16:58:00Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Qualco Group S.A.",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2025-05-15",
+        "identification": {
+          "legal_form": "Societe Anonyme",
+          "legal_authority": "Greece",
+          "country_registered": "Greece",
+          "place_registered": "General Commercial Registry (G.E.M.I)",
+          "registration_number": "182289601000"
+        }
+      },
+      {
+        "name": "Qualco Holdco Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2018-02-09",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Uk",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "10878966"
+        }
+      },
+      {
+        "name": "Qualco Sa",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Society Anonyme",
+          "legal_authority": "Codified Law 2190 / 1920",
+          "country_registered": "Greece",
+          "place_registered": "General Commercial Registry",
+          "registration_number": "2916401000"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4Mzc3MjA5M2FkaXF6a2N4",
+    "date": "2025-10-04",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/KoPTS4U4IDIE6yOC7GX1ACW_9mLh6Q5XRhOOnl23X9c/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/08098859/filing-history/MzQ4Mzc3MjA5M2FkaXF6a2N4"
   }
 }

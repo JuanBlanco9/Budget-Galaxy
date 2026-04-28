@@ -68,13 +68,93 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T23:54:53Z",
+    "company_name": "PAYCOMPLETE UK LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1953-04-14",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-08-22"
+  },
+  "governance": {
+    "api_date": "2026-04-27T23:54:55Z",
+    "total_officers": 36,
+    "active_count": 3,
+    "resigned_count": 33,
+    "active_officers": [
+      {
+        "name": "BROWN, Luke",
+        "role": "secretary",
+        "appointed_on": "2024-10-17",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "JAMES, Simon",
+        "role": "director",
+        "appointed_on": "2024-02-29",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ZIAJA, Mauritius Philipp",
+        "role": "director",
+        "appointed_on": "2020-12-18",
+        "country_of_residence": "Germany",
+        "nationality": "German"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T23:54:56Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Suzo International (Uk) Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "England",
+          "registration_number": "5301641"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwMzIxODAwNWFkaXF6a2N4",
+    "date": "2026-02-07",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/vmn5rIsocDMNoR8ogeAomS_U7ga3VFob19Et0_u1NTs/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/00518608/filing-history/MzUwMzIxODAwNWFkaXF6a2N4"
   }
 }

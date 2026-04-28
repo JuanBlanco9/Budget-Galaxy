@@ -59,11 +59,168 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
-  "buyer_type_breakdown": {}
+  "buyer_type_breakdown": {},
+  "ch_profile": {
+    "api_date": "2026-04-28T14:28:34Z",
+    "company_name": "CHRISTIAN AID",
+    "company_status": "active",
+    "date_of_creation": "2004-07-06",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-03"
+  },
+  "governance": {
+    "api_date": "2026-04-28T14:28:35Z",
+    "total_officers": 78,
+    "active_count": 17,
+    "resigned_count": 61,
+    "active_officers": [
+      {
+        "name": "WALKER, Elizabeth Ann",
+        "role": "secretary",
+        "appointed_on": "2024-06-25",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BICKERSTETH, John Samuel",
+        "role": "director",
+        "appointed_on": "2022-11-29",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CLIFFORD, Andrew James",
+        "role": "director",
+        "appointed_on": "2024-11-26",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CONWAY, Pauline Edel",
+        "role": "director",
+        "appointed_on": "2024-11-26",
+        "country_of_residence": "Ireland",
+        "nationality": "Irish"
+      },
+      {
+        "name": "CURRIE, Mark Andrew",
+        "role": "director",
+        "appointed_on": "2018-10-30",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ETTEN, Johannes",
+        "role": "director",
+        "appointed_on": "2022-07-19",
+        "country_of_residence": "England",
+        "nationality": "German"
+      },
+      {
+        "name": "HADEBE, Nontando Margaret, Dr",
+        "role": "director",
+        "appointed_on": "2021-11-23",
+        "country_of_residence": "South Africa",
+        "nationality": "Zimbabwean"
+      },
+      {
+        "name": "HUGHES, Sarah Elizabeth, Rev Dr",
+        "role": "director",
+        "appointed_on": "2018-10-30",
+        "country_of_residence": "Northern Ireland",
+        "nationality": "British"
+      },
+      {
+        "name": "HUI, Carol Wai Wing",
+        "role": "director",
+        "appointed_on": "2021-11-23",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "JOHNSTONE, Harry Martin John",
+        "role": "director",
+        "appointed_on": "2019-10-29",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      },
+      {
+        "name": "KOBZEVA, Marina",
+        "role": "director",
+        "appointed_on": "2024-11-26",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MAKGOBA, Thabo Cecil, Archbishop Dr",
+        "role": "director",
+        "appointed_on": "2026-03-17",
+        "country_of_residence": "South Africa",
+        "nationality": "South African"
+      },
+      {
+        "name": "MCDONALD, Chinemerem Sharon Onyinyechi",
+        "role": "director",
+        "appointed_on": "2022-11-29",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "POULTER, James Michael",
+        "role": "director",
+        "appointed_on": "2024-11-26",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "REDDIE, Richard Stuart",
+        "role": "director",
+        "appointed_on": "2025-12-02",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SULLY, Andrew Charles, Revd",
+        "role": "director",
+        "appointed_on": "2024-04-19",
+        "country_of_residence": "Wales",
+        "nationality": "British"
+      },
+      {
+        "name": "TANG, Hok Yau",
+        "role": "director",
+        "appointed_on": "2024-11-26",
+        "country_of_residence": "England",
+        "nationality": "British,Hong Konger"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T14:28:36Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MDU3NjQzMWFkaXF6a2N4",
+    "date": "2025-11-24",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/-Na1rKcTDU0Y8WYNcYS16jkbeM_WfVtEklgEMB7Na4k/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/05171525/filing-history/MzQ5MDU3NjQzMWFkaXF6a2N4"
+  }
 }

@@ -59,13 +59,65 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T19:57:55Z",
+    "company_name": "TRAFI LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2014-11-25",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-07-31",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-24"
+  },
+  "governance": {
+    "api_date": "2026-04-27T19:57:57Z",
+    "total_officers": 10,
+    "active_count": 2,
+    "resigned_count": 8,
+    "active_officers": [
+      {
+        "name": "CORNES, Ian Richard",
+        "role": "secretary",
+        "appointed_on": "2025-06-10",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "MEDVED, Robert",
+        "role": "director",
+        "appointed_on": "2025-06-10",
+        "country_of_residence": "Canada",
+        "nationality": "Canadian"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T19:57:59Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4NDU5MDczNWFkaXF6a2N4",
+    "date": "2025-10-13",
+    "type": "AA01",
+    "description": "change-account-reference-date-company-current-shortened",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/hVBsJSliKkyV1bUuWilHwCJHaLO5RVDASgMlfgpJ0Yw/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/09326640/filing-history/MzQ4NDU5MDczNWFkaXF6a2N4"
   }
 }

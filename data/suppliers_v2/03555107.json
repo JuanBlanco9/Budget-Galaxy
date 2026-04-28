@@ -59,13 +59,91 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
     "central_govt": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T05:37:12Z",
+    "company_name": "BSI LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1998-04-23",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-23"
+  },
+  "governance": {
+    "api_date": "2026-04-28T05:37:13Z",
+    "total_officers": 19,
+    "active_count": 3,
+    "resigned_count": 16,
+    "active_officers": [
+      {
+        "name": "BSI SERVICES HOLDINGS LIMITED",
+        "role": "corporate-secretary",
+        "appointed_on": "2000-10-03",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "CAMPBELL, Alexander William",
+        "role": "director",
+        "appointed_on": "2026-04-09",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "QUESTED, Paul David",
+        "role": "director",
+        "appointed_on": "2026-01-30",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T05:37:14Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "The British Standards Institution",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Royal Charter",
+          "legal_authority": "United Kingdom (England And Wales)",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "Zc202"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MTU2NTA4M2FkaXF6a2N4",
+    "date": "2025-09-18",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/cMwm-RJDkQp3JHWc9TidIDk5WvxVeqBYXB0fyTqeV7M/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03555107/filing-history/MzQ4MTU2NTA4M2FkaXF6a2N4"
   }
 }

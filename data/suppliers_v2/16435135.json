@@ -64,13 +64,99 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
     "ch_api_accounts_pdf": false
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T13:21:25Z",
+    "company_name": "RARE RECRUITMENT LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2025-05-07",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-02-07",
+    "accounts_last_made_up": null,
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-05-20"
+  },
+  "governance": {
+    "api_date": "2026-04-28T13:21:26Z",
+    "total_officers": 6,
+    "active_count": 6,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "BELL, David, Sir",
+        "role": "director",
+        "appointed_on": "2025-05-07",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BURGESS, Anna Louise",
+        "role": "director",
+        "appointed_on": "2025-05-07",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GILBERG, Carly",
+        "role": "director",
+        "appointed_on": "2025-07-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "LEE, Sarah Tien Mee",
+        "role": "director",
+        "appointed_on": "2025-05-07",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MOKADES, Raphael Alexander Stern",
+        "role": "director",
+        "appointed_on": "2025-05-07",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WHITE, Graham Peter",
+        "role": "director",
+        "appointed_on": "2025-05-07",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T13:21:27Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Raphael Alexander Stern Mokades",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent",
+          "voting-rights-50-to-75-percent"
+        ],
+        "notified_on": "2025-05-07",
+        "identification": null
+      }
+    ]
   }
 }

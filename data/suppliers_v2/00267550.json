@@ -63,14 +63,135 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "agency",
   "buyer_type_breakdown": {
     "agency": 0.7493,
     "other": 0.2507
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T20:51:02Z",
+    "company_name": "ROKE MANOR RESEARCH LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1932-08-06",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-07-31",
+    "accounts_last_made_up": "2025-10-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-15"
+  },
+  "governance": {
+    "api_date": "2026-04-27T20:51:04Z",
+    "total_officers": 36,
+    "active_count": 6,
+    "resigned_count": 30,
+    "active_officers": [
+      {
+        "name": "ELLARD, Sarah Louise",
+        "role": "secretary",
+        "appointed_on": "2010-09-30",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "COOPER, Ian Charles",
+        "role": "director",
+        "appointed_on": "2015-03-12",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ELLARD, Sarah Louise",
+        "role": "director",
+        "appointed_on": "2014-07-24",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MORTENSEN, James Stephen Mccready",
+        "role": "director",
+        "appointed_on": "2024-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ORD, Michael",
+        "role": "director",
+        "appointed_on": "2018-07-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "OVERTON, Marc Anthony John Mchardy",
+        "role": "director",
+        "appointed_on": "2025-11-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T20:51:05Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Chemring Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2023-09-01",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "United Kingdom",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "2731691"
+        }
+      },
+      {
+        "name": "Chemring Group Plc",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-06-30",
+        "identification": {
+          "legal_form": "Public Limited Company",
+          "legal_authority": "United Kingdom",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "86662"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxMDA3MzU0M2FkaXF6a2N4",
+    "date": "2026-03-15",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/Mo5lfJFYWaObcLQdb73-CQlHCiTpqxYNc6n5B6ws6Oc/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/00267550/filing-history/MzUxMDA3MzU0M2FkaXF6a2N4"
   }
 }

@@ -59,13 +59,128 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
     "central_govt": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T03:26:34Z",
+    "company_name": "NEPACS",
+    "company_status": "active",
+    "date_of_creation": "2001-05-15",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-04"
+  },
+  "governance": {
+    "api_date": "2026-04-28T03:26:35Z",
+    "total_officers": 52,
+    "active_count": 11,
+    "resigned_count": 41,
+    "active_officers": [
+      {
+        "name": "LACEY, Amanda Jane",
+        "role": "secretary",
+        "appointed_on": "2024-08-29",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "ABRAHAMS, David",
+        "role": "director",
+        "appointed_on": "2010-10-14",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "BLACK, James",
+        "role": "director",
+        "appointed_on": "2001-05-15",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BROOKE, Katherine Margaret, Reverend",
+        "role": "director",
+        "appointed_on": "2012-11-08",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HORNER, Camila",
+        "role": "director",
+        "appointed_on": "2025-07-14",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MOONEY, Jennifer Louise",
+        "role": "director",
+        "appointed_on": "2020-10-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PHELAN, Richard",
+        "role": "director",
+        "appointed_on": "2024-01-25",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "STOCKDALE, Margaret",
+        "role": "director",
+        "appointed_on": "2005-10-13",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "TAGUE, Christopher Stuart",
+        "role": "director",
+        "appointed_on": "2024-01-25",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "THOMPSON, Elizabeth",
+        "role": "director",
+        "appointed_on": "2020-03-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WEEDING, Mark Christopher",
+        "role": "director",
+        "appointed_on": "2005-10-13",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T03:26:37Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NDA3MDAyN2FkaXF6a2N4",
+    "date": "2025-12-20",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/A1GnhxTF21vHGbZnVYbmTGh9DtaiCfa9oIZdy6m9tVY/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04216908/filing-history/MzQ5NDA3MDAyN2FkaXF6a2N4"
   }
 }

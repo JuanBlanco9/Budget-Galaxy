@@ -64,13 +64,131 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T12:42:11Z",
+    "company_name": "AMBRELL LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2004-11-04",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-05"
+  },
+  "governance": {
+    "api_date": "2026-04-28T12:42:13Z",
+    "total_officers": 21,
+    "active_count": 4,
+    "resigned_count": 17,
+    "active_officers": [
+      {
+        "name": "COLADONATO, Frank, Mr.",
+        "role": "director",
+        "appointed_on": "2020-11-04",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      },
+      {
+        "name": "GILMOUR, Duncan Paul, Mr.",
+        "role": "director",
+        "appointed_on": "2021-06-14",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      },
+      {
+        "name": "GOODRICH, Michael Frederick",
+        "role": "director",
+        "appointed_on": "2024-01-16",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      },
+      {
+        "name": "LUDWIG, Lisa Ann",
+        "role": "director",
+        "appointed_on": "2019-07-16",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T12:42:14Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Vice President And General Manager Scott Eric Nolen",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "American",
+        "country_of_residence": "United States",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control",
+          "significant-influence-or-control-as-firm"
+        ],
+        "notified_on": "2019-07-16",
+        "identification": null
+      },
+      {
+        "name": "Intest Corporation",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2017-05-24",
+        "identification": {
+          "legal_form": "United Stated C Corporation",
+          "legal_authority": "State Of Delaware",
+          "country_registered": "Delaware, Usa",
+          "place_registered": "State Of Delaware Registry",
+          "registration_number": "2726308"
+        }
+      },
+      {
+        "name": "Ambrell Corporation",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Llc",
+          "legal_authority": "Usa",
+          "country_registered": "Usa",
+          "place_registered": "N/A",
+          "registration_number": "N/A"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2NTcyMDQ4NGFkaXF6a2N4",
+    "date": "2025-05-12",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/BfrnecPnc8f0diJyKbZPkppPwPDsJiGbwJBZ8PeMrCA/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/05277750/filing-history/MzQ2NTcyMDQ4NGFkaXF6a2N4"
   }
 }

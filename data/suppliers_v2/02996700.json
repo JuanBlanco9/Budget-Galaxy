@@ -59,13 +59,162 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "agency",
   "buyer_type_breakdown": {
     "agency": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T08:31:37Z",
+    "company_name": "LOVETTS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1994-11-30",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-04-30",
+    "accounts_last_made_up": "2025-07-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-15"
+  },
+  "governance": {
+    "api_date": "2026-04-28T08:31:38Z",
+    "total_officers": 13,
+    "active_count": 6,
+    "resigned_count": 7,
+    "active_officers": [
+      {
+        "name": "WILSON, Charles Henry",
+        "role": "secretary",
+        "appointed_on": "1994-11-30",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "DANCY, Andrew Benjamin",
+        "role": "director",
+        "appointed_on": "2019-07-18",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "EARL-ANDERSON, Christopher David",
+        "role": "director",
+        "appointed_on": "2024-08-14",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HIGGINS, Michael James",
+        "role": "director",
+        "appointed_on": "2014-08-03",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MCCULLOCH, Geoffrey Paul",
+        "role": "director",
+        "appointed_on": "1994-11-30",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WILSON, Charles Henry",
+        "role": "director",
+        "appointed_on": "1994-11-30",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T08:31:39Z",
+    "total_results": 5,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Higgins Uk Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2021-04-09",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England And Wales",
+          "place_registered": "The Registrar At Companies House",
+          "registration_number": "11372873"
+        }
+      },
+      {
+        "name": "Mr Michael James Higgins",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2019-06-18",
+        "identification": null
+      },
+      {
+        "name": "Mrs Mary Julia Wilson",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2017-07-25",
+        "identification": null
+      },
+      {
+        "name": "Mr Charles Henry Wilson",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Geoffrey Paul Mcculloch",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NTk5MDY2NmFkaXF6a2N4",
+    "date": "2025-12-23",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/sqbDMVoqASJmnN6CKjEx5uBauyceccmNJmAeg87WAaA/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02996700/filing-history/MzQ5NTk5MDY2NmFkaXF6a2N4"
   }
 }

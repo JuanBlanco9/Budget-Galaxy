@@ -64,13 +64,143 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "education",
   "buyer_type_breakdown": {
     "education": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T21:43:48Z",
+    "company_name": "ANTS GROUP LIMITED",
+    "company_status": "administration",
+    "date_of_creation": "2008-01-17",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": true,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": true,
+    "accounts_next_due": "2025-12-31",
+    "accounts_last_made_up": "2024-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-14"
+  },
+  "governance": {
+    "api_date": "2026-04-27T21:43:50Z",
+    "total_officers": 9,
+    "active_count": 6,
+    "resigned_count": 3,
+    "active_officers": [
+      {
+        "name": "PARKER, Liam Anthony",
+        "role": "secretary",
+        "appointed_on": "2008-01-17",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "KELLY, Luke Anthony",
+        "role": "director",
+        "appointed_on": "2008-01-17",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PARKER, Aaron",
+        "role": "director",
+        "appointed_on": "2015-06-25",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PARKER, David",
+        "role": "director",
+        "appointed_on": "2015-06-25",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "PARKER, Liam Anthony",
+        "role": "director",
+        "appointed_on": "2008-01-17",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "RAFFLE, Gary William",
+        "role": "director",
+        "appointed_on": "2022-12-22",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T21:43:52Z",
+    "total_results": 4,
+    "active_count": 3,
+    "items": [
+      {
+        "name": "Mr Luke Anthony Kelly",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2023-08-01",
+        "identification": null
+      },
+      {
+        "name": "Mr Aaron Parker",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2023-08-01",
+        "identification": null
+      },
+      {
+        "name": "Mr Luke Anthony Kelly",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Liam Anthony Parker",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2MDg2NzM1MGFkaXF6a2N4",
+    "date": "2025-03-31",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/8nHnKqe20-_2gQuanCpx37ABiS1t7JFy6mi3X7LeB1c/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/06476483/filing-history/MzQ2MDg2NzM1MGFkaXF6a2N4"
   }
 }

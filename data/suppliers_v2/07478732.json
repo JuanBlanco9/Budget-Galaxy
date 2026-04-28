@@ -64,13 +64,92 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T11:49:01Z",
+    "company_name": "STAR CARS (GATWICK) LTD",
+    "company_status": "active",
+    "date_of_creation": "2010-12-29",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-12"
+  },
+  "governance": {
+    "api_date": "2026-04-28T11:49:02Z",
+    "total_officers": 2,
+    "active_count": 2,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "MOHAMED MARZOOK, Mohamed Zahran",
+        "role": "director",
+        "appointed_on": "2015-12-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "NIZAM MOHAMED, Nazmil Mohamed",
+        "role": "director",
+        "appointed_on": "2010-12-29",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T11:49:03Z",
+    "total_results": 2,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Mr Mohamed Zahran Mohamed Marzook",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "ownership-of-shares-25-to-50-percent-as-firm"
+        ],
+        "notified_on": "2024-05-10",
+        "identification": null
+      },
+      {
+        "name": "Mr Nazmil Mohamed Nizam Mohamed",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Sri Lankan",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "ownership-of-shares-25-to-50-percent-as-firm"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MTk3NDY4OWFkaXF6a2N4",
+    "date": "2025-09-19",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/SPXDB6heSja6A3UWCT7BRIsHHo5seLHsw-4eh0Cwgyk/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/07478732/filing-history/MzQ4MTk3NDY4OWFkaXF6a2N4"
   }
 }

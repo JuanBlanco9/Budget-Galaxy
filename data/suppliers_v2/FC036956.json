@@ -55,13 +55,71 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
     "ch_api_accounts_pdf": false
   },
   "top_buyer_type": "education",
   "buyer_type_breakdown": {
     "education": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T04:20:28Z",
+    "company_name": "EAB UK, LLC",
+    "company_status": "active",
+    "date_of_creation": "2019-07-01",
+    "date_of_cessation": null,
+    "jurisdiction": "united-kingdom",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": null,
+    "accounts_overdue": false,
+    "accounts_next_due": null,
+    "accounts_last_made_up": null,
+    "confirmation_statement_overdue": null,
+    "confirmation_statement_next_due": null
+  },
+  "governance": {
+    "api_date": "2026-04-28T04:20:29Z",
+    "total_officers": 4,
+    "active_count": 4,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "HARRIS, Jessica",
+        "role": "secretary",
+        "appointed_on": "2019-12-19",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "EAB GLOBAL, INC",
+        "role": "corporate-secretary",
+        "appointed_on": "2019-12-19",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "KIRSHBAUM, Michael",
+        "role": "director",
+        "appointed_on": "2019-12-19",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      },
+      {
+        "name": "EAB GLOBAL, INC.",
+        "role": "corporate-director",
+        "appointed_on": "2019-12-19",
+        "country_of_residence": null,
+        "nationality": null
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T04:20:30Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
   }
 }

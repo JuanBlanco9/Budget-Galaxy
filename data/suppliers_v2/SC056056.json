@@ -59,11 +59,91 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
-  "buyer_type_breakdown": {}
+  "buyer_type_breakdown": {},
+  "ch_profile": {
+    "api_date": "2026-04-28T15:05:26Z",
+    "company_name": "BOYTON - BRJ SYSTEM BUILDINGS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1974-07-24",
+    "date_of_cessation": null,
+    "jurisdiction": "scotland",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-03-31",
+    "accounts_last_made_up": "2025-06-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-14"
+  },
+  "governance": {
+    "api_date": "2026-04-28T15:05:27Z",
+    "total_officers": 11,
+    "active_count": 3,
+    "resigned_count": 8,
+    "active_officers": [
+      {
+        "name": "JOYCE, Paul Antony",
+        "role": "secretary",
+        "appointed_on": "1999-07-09",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "JOYCE, Paul Antony",
+        "role": "director",
+        "appointed_on": "1996-10-28",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "JOYCE, Tina Margaret",
+        "role": "director",
+        "appointed_on": "1996-09-02",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T15:05:28Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Brj Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "01564247"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MzU4MjA5MmFkaXF6a2N4",
+    "date": "2025-12-11",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-unaudited-abridged",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/-VA7s00WbVrcbA6Wuzkq8DE189ZeAY6ZF94xqbFp2Nw/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/SC056056/filing-history/MzQ5MzU4MjA5MmFkaXF6a2N4"
+  }
 }

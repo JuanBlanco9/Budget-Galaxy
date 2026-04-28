@@ -59,13 +59,73 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T07:58:31Z",
+    "company_name": "THE GOOD WORK LIFE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2020-05-29",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-02-28",
+    "accounts_last_made_up": "2025-05-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-11"
+  },
+  "governance": {
+    "api_date": "2026-04-28T07:58:32Z",
+    "total_officers": 1,
+    "active_count": 1,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "PAUL, Nicola Mary",
+        "role": "director",
+        "appointed_on": "2020-05-29",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T07:58:33Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Nicola Mary Paul",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2020-05-29",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MzQ1OTA4MmFkaXF6a2N4",
+    "date": "2025-07-14",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-micro-entity",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/1tI28DaUhW_qp1lU8uoNPq_Z3ofnITD7xNdii-oEvik/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/12632902/filing-history/MzQ3MzQ1OTA4MmFkaXF6a2N4"
   }
 }

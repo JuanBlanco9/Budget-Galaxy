@@ -63,15 +63,108 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.9252,
     "council": 0.073,
     "central_govt": 0.0018
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T13:17:11Z",
+    "company_name": "CORPORATE DOCUMENT SERVICES LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1994-05-04",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-05-18"
+  },
+  "governance": {
+    "api_date": "2026-04-27T13:17:12Z",
+    "total_officers": 30,
+    "active_count": 3,
+    "resigned_count": 27,
+    "active_officers": [
+      {
+        "name": "BAILIE, Fergus Robert Edward",
+        "role": "director",
+        "appointed_on": "2008-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "COATES, Alexander Richard",
+        "role": "director",
+        "appointed_on": "2022-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "EBLETT, Kieran",
+        "role": "director",
+        "appointed_on": "2024-01-08",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T13:17:14Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Graphic Plates Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2024-10-01",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act"
+        }
+      },
+      {
+        "name": "Bailie Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act",
+          "country_registered": "N Ireland",
+          "place_registered": "Companies House",
+          "registration_number": "Ni05822"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2MTMyNjQxNGFkaXF6a2N4",
+    "date": "2025-04-03",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/AEM3xg838DdbmeU9bvtwdcVxJvNirfrECwW7LNkf78M/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02925653/filing-history/MzQ2MTMyNjQxNGFkaXF6a2N4"
   }
 }

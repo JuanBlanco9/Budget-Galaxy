@@ -59,13 +59,50 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
     "ch_api_accounts_pdf": false
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T01:46:10Z",
+    "company_name": "EQUIBUILD LIMITED",
+    "company_status": "liquidation",
+    "date_of_creation": "2003-07-25",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": true,
+    "has_super_secure_pscs": null,
+    "accounts_overdue": true,
+    "accounts_next_due": "2005-05-25",
+    "accounts_last_made_up": null,
+    "confirmation_statement_overdue": true,
+    "confirmation_statement_next_due": "2016-08-08"
+  },
+  "governance": {
+    "api_date": "2026-04-28T01:46:11Z",
+    "total_officers": 5,
+    "active_count": 1,
+    "resigned_count": 4,
+    "active_officers": [
+      {
+        "name": "WHITLEY, Christopher John",
+        "role": "director",
+        "appointed_on": "2003-07-25",
+        "country_of_residence": null,
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T01:46:13Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
   }
 }

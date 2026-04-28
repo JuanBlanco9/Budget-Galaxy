@@ -61,14 +61,107 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.9034,
     "central_govt": 0.0966
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T04:13:45Z",
+    "company_name": "THE DIGITAL ACCESSIBILITY CENTRE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2010-10-20",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-03"
+  },
+  "governance": {
+    "api_date": "2026-04-28T04:13:47Z",
+    "total_officers": 5,
+    "active_count": 4,
+    "resigned_count": 1,
+    "active_officers": [
+      {
+        "name": "BECKINGHAM, Neil Alfred",
+        "role": "director",
+        "appointed_on": "2013-10-11",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "BRISTOW, Paul",
+        "role": "director",
+        "appointed_on": "2012-03-23",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "EVANS, Gavin Adrian",
+        "role": "director",
+        "appointed_on": "2011-01-14",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "NICHOLL, Camilla Mary",
+        "role": "director",
+        "appointed_on": "2011-03-17",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T04:13:48Z",
+    "total_results": 2,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Mr Gavin Adrian Evans",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "Wales",
+        "ceased": false,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors-as-firm",
+          "significant-influence-or-control-as-firm"
+        ],
+        "notified_on": "2016-10-20",
+        "identification": null
+      },
+      {
+        "name": "Ms Camilla Mary Nicholl",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors-as-firm",
+          "significant-influence-or-control-as-firm"
+        ],
+        "notified_on": "2016-10-20",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4Mjk2MjE4MWFkaXF6a2N4",
+    "date": "2025-09-29",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/QLPUjc69ZZULMfJL6rUrOY-wgN5YZguPc9CiUDMFBj8/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/07413852/filing-history/MzQ4Mjk2MjE4MWFkaXF6a2N4"
   }
 }

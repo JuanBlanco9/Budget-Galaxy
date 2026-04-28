@@ -64,13 +64,90 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "nhs",
   "buyer_type_breakdown": {
     "nhs": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T21:57:25Z",
+    "company_name": "HITACHI VANTARA LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1989-01-03",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": true,
+    "confirmation_statement_next_due": "2026-04-25"
+  },
+  "governance": {
+    "api_date": "2026-04-27T21:57:26Z",
+    "total_officers": 41,
+    "active_count": 3,
+    "resigned_count": 38,
+    "active_officers": [
+      {
+        "name": "COULTER, Darryl Hector",
+        "role": "secretary",
+        "appointed_on": "2020-11-12",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "MAERKI, Patric",
+        "role": "director",
+        "appointed_on": "2021-09-06",
+        "country_of_residence": "Switzerland",
+        "nationality": "Swiss"
+      },
+      {
+        "name": "MALESZEWSKA, Agnieszka Bozena",
+        "role": "director",
+        "appointed_on": "2022-01-19",
+        "country_of_residence": "Poland",
+        "nationality": "Polish"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T21:57:28Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Hitachi Ltd.",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Public Limited Company",
+          "legal_authority": "Japanese Law"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NTYyMDQ2MGFkaXF6a2N4",
+    "date": "2025-12-27",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/-9dnf7cx7wTwd5jpFB0mZnw2apqZzjQcjcvYa7OenaI/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02332239/filing-history/MzQ5NTYyMDQ2MGFkaXF6a2N4"
   }
 }

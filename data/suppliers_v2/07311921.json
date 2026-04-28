@@ -59,13 +59,117 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "education",
   "buyer_type_breakdown": {
     "education": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T12:29:16Z",
+    "company_name": "STRATEGIC BLUE SERVICES LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2010-07-12",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-26"
+  },
+  "governance": {
+    "api_date": "2026-04-28T12:29:17Z",
+    "total_officers": 9,
+    "active_count": 4,
+    "resigned_count": 5,
+    "active_officers": [
+      {
+        "name": "BAIN, Carolyn Elizabeth",
+        "role": "secretary",
+        "appointed_on": "2017-08-24",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BRAHAM, Darren Spencer",
+        "role": "director",
+        "appointed_on": "2020-02-12",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MITCHELL, James Christopher, Dr",
+        "role": "director",
+        "appointed_on": "2010-07-12",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "SMITH, Michael Timothy",
+        "role": "director",
+        "appointed_on": "2011-04-19",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T12:29:18Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Fox Investments Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2018-06-20",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 1985",
+          "country_registered": "England And Wales",
+          "place_registered": "Registrar Of Companies For England And Wales",
+          "registration_number": "04029261"
+        }
+      },
+      {
+        "name": "Tinnony Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England And Wales",
+          "place_registered": "England And Wales",
+          "registration_number": "07074698"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MTUyNDk3M2FkaXF6a2N4",
+    "date": "2025-12-03",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/8XrpeM_Y97hT7IFhDEXX9zMnEJcLzQfMadLreomCLKI/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/07311921/filing-history/MzQ5MTUyNDk3M2FkaXF6a2N4"
   }
 }

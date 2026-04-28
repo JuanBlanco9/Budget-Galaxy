@@ -65,15 +65,172 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "agency",
   "buyer_type_breakdown": {
     "agency": 0.7854,
     "central_govt": 0.1975,
     "council": 0.0171
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T13:57:53Z",
+    "company_name": "POST OFFICE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1987-08-13",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-11"
+  },
+  "governance": {
+    "api_date": "2026-04-27T13:57:55Z",
+    "total_officers": 93,
+    "active_count": 12,
+    "resigned_count": 81,
+    "active_officers": [
+      {
+        "name": "DILLON, John Edward Michael",
+        "role": "secretary",
+        "appointed_on": "2025-04-14",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BARLOW, Sarah Jane",
+        "role": "director",
+        "appointed_on": "2025-01-28",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "BRANCH, Emma Louise",
+        "role": "director",
+        "appointed_on": "2025-01-28",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "BROCKLEHURST, Neil James",
+        "role": "director",
+        "appointed_on": "2024-12-20",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "BURTON, Amanda Jane",
+        "role": "director",
+        "appointed_on": "2023-04-27",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "DARFOOR, Andrew Atta",
+        "role": "director",
+        "appointed_on": "2023-06-20",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "GRATTON, Lorna Rachel",
+        "role": "director",
+        "appointed_on": "2023-05-12",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HAWKINS, Richard James",
+        "role": "director",
+        "appointed_on": "2025-03-04",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "JEFFREYS, Simon John Lewis",
+        "role": "director",
+        "appointed_on": "2023-03-23",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "RAILTON, Nigel",
+        "role": "director",
+        "appointed_on": "2024-05-24",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SLATER, Jonathan",
+        "role": "director",
+        "appointed_on": "2025-05-21",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "SMITH, Brian Alan",
+        "role": "director",
+        "appointed_on": "2024-12-04",
+        "country_of_residence": "Scotland",
+        "nationality": "Scottish"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T13:57:57Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Postal Services Holding Company Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Corporate",
+          "legal_authority": "United Kingdom (England)",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "04074919"
+        }
+      },
+      {
+        "name": "Secretary Of State For Business And Trade",
+        "kind": "legal-person-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Corporation Sole",
+          "legal_authority": "United Kingdom (England And Wales)"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NTk3ODU3N2FkaXF6a2N4",
+    "date": "2025-12-30",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/-0uQtfmeVeukM18WrhVq5UBbhMgcUEsUIsPho_9FKtE/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02154540/filing-history/MzQ5NTk3ODU3N2FkaXF6a2N4"
   }
 }

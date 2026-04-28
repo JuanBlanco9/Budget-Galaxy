@@ -76,13 +76,78 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T12:13:25Z",
+    "company_name": "JAYTAIL LIMITED",
+    "company_status": "liquidation",
+    "date_of_creation": "2006-09-14",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": true,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": true,
+    "accounts_next_due": "2025-12-31",
+    "accounts_last_made_up": "2024-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-09-16"
+  },
+  "governance": {
+    "api_date": "2026-04-28T12:13:26Z",
+    "total_officers": 36,
+    "active_count": 2,
+    "resigned_count": 34,
+    "active_officers": [
+      {
+        "name": "BECK, David Clive",
+        "role": "director",
+        "appointed_on": "2024-04-03",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CARRINGTON, Mark Robert",
+        "role": "director",
+        "appointed_on": "2018-02-27",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T12:13:28Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Michael Ashcroft",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British,Belizean",
+        "country_of_residence": "Belize",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2018-03-15",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQzNjQwNDI5MGFkaXF6a2N4",
+    "date": "2024-09-22",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/M-dvG3mY_A8mZFqFyffyPRnh5_A2C9p9a_mp9iG95M4/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/05935923/filing-history/MzQzNjQwNDI5MGFkaXF6a2N4"
   }
 }

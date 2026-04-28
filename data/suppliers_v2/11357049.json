@@ -59,13 +59,134 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T03:52:51Z",
+    "company_name": "EDISON EDUCATION LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2018-05-11",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-05-31",
+    "accounts_last_made_up": "2025-08-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-05-24"
+  },
+  "governance": {
+    "api_date": "2026-04-28T03:52:52Z",
+    "total_officers": 12,
+    "active_count": 7,
+    "resigned_count": 5,
+    "active_officers": [
+      {
+        "name": "ANDERSON, John",
+        "role": "director",
+        "appointed_on": "2025-01-08",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "BADEN-THOMAS, Noel",
+        "role": "director",
+        "appointed_on": "2019-04-24",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CRANER, Richard",
+        "role": "director",
+        "appointed_on": "2020-03-02",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "JONES, Hilary",
+        "role": "director",
+        "appointed_on": "2022-12-01",
+        "country_of_residence": "Wales",
+        "nationality": "British"
+      },
+      {
+        "name": "MACDONALD-MILNER, Thomas Charles",
+        "role": "director",
+        "appointed_on": "2020-11-20",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "OWSTON, Gavin Anthony Wyndham",
+        "role": "director",
+        "appointed_on": "2019-04-24",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "WHITTAKER, George Anthony David",
+        "role": "director",
+        "appointed_on": "2019-04-24",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T03:52:53Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Foundation Investment Partners Ii (Gp) Llp",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2019-04-24",
+        "identification": {
+          "legal_form": "Limited Liability Partnership",
+          "legal_authority": "England And Wales",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "Oc422780"
+        }
+      },
+      {
+        "name": "Mr Andrew Warner Brookes",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2018-05-11",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwOTA0ODMyOGFkaXF6a2N4",
+    "date": "2026-03-13",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/AQEB5yq920lGltVNWFA7l684c_l5fwM2uhHDPWgstfM/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/11357049/filing-history/MzUwOTA0ODMyOGFkaXF6a2N4"
   }
 }

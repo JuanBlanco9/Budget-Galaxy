@@ -59,14 +59,94 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 0.9935,
     "other": 0.0065
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T03:51:10Z",
+    "company_name": "RTC NORTH",
+    "company_status": "active",
+    "date_of_creation": "1989-04-19",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": null,
+    "accounts_next_due": null,
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-04-21"
+  },
+  "governance": {
+    "api_date": "2026-04-28T03:51:11Z",
+    "total_officers": 86,
+    "active_count": 6,
+    "resigned_count": 80,
+    "active_officers": [
+      {
+        "name": "ADAM, Maxine Terasa",
+        "role": "director",
+        "appointed_on": "2024-06-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "DELANGE, Thierry",
+        "role": "director",
+        "appointed_on": "2019-10-18",
+        "country_of_residence": "England",
+        "nationality": "French"
+      },
+      {
+        "name": "HART, Sarah",
+        "role": "director",
+        "appointed_on": "2014-06-18",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "MOORBY, Andrew John",
+        "role": "director",
+        "appointed_on": "2026-04-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "OLLIVERE, James",
+        "role": "director",
+        "appointed_on": "2016-02-17",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SMITH, Michael Alan",
+        "role": "director",
+        "appointed_on": "2014-09-08",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T03:51:12Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NTE5MDIxM2FkaXF6a2N4",
+    "date": "2025-12-18",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/RNcOYzBgO6p0ISlaExeBGNFdhV4no_UQlq-nzuX7lFY/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02373630/filing-history/MzQ5NTE5MDIxM2FkaXF6a2N4"
   }
 }

@@ -59,14 +59,72 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
     "ch_api_accounts_pdf": false
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 0.8928,
     "nhs": 0.1072
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T12:58:42Z",
+    "company_name": "OBJECTIVE LTD",
+    "company_status": "active",
+    "date_of_creation": "2025-02-25",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-11-25",
+    "accounts_last_made_up": null,
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-10"
+  },
+  "governance": {
+    "api_date": "2026-04-28T12:58:43Z",
+    "total_officers": 2,
+    "active_count": 1,
+    "resigned_count": 1,
+    "active_officers": [
+      {
+        "name": "GASANOV, Elvin",
+        "role": "director",
+        "appointed_on": "2025-02-25",
+        "country_of_residence": "Georgia",
+        "nationality": "Georgian"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T12:58:44Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Ff Holdings Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2025-02-25",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "Register Of Companies",
+          "registration_number": "11860180"
+        }
+      }
+    ]
   }
 }

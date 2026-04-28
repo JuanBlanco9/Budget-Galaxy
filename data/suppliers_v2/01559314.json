@@ -64,13 +64,178 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "police_fire",
   "buyer_type_breakdown": {
     "police_fire": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T02:02:38Z",
+    "company_name": "TLC: TALK, LISTEN, CHANGE.",
+    "company_status": "active",
+    "date_of_creation": "1981-05-01",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-30",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-23"
+  },
+  "governance": {
+    "api_date": "2026-04-28T02:02:41Z",
+    "total_officers": 58,
+    "active_count": 11,
+    "resigned_count": 47,
+    "active_officers": [
+      {
+        "name": "HILL, Michelle",
+        "role": "secretary",
+        "appointed_on": "2014-01-02",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "AHSAN, Sabreen",
+        "role": "director",
+        "appointed_on": "2025-08-06",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "BREARLEY, Jennifer",
+        "role": "director",
+        "appointed_on": "2025-08-06",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "DRUGAN, Gerard Anthony, Dr",
+        "role": "director",
+        "appointed_on": "2015-07-29",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "INGLEBY, Sarah Elizabeth",
+        "role": "director",
+        "appointed_on": "2023-01-18",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "JOWITT, Catherine Anne",
+        "role": "director",
+        "appointed_on": "2025-08-06",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "LIU, Chong",
+        "role": "director",
+        "appointed_on": "2023-01-18",
+        "country_of_residence": "United Kingdom",
+        "nationality": "Chinese"
+      },
+      {
+        "name": "LOWE, Grant Nicholas",
+        "role": "director",
+        "appointed_on": "2023-01-18",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "RAYMODE, Alvin",
+        "role": "director",
+        "appointed_on": "2020-05-13",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "SHUTTLEWORTH, Barbara Mary",
+        "role": "director",
+        "appointed_on": "2002-01-22",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SULTAN, Adiba",
+        "role": "director",
+        "appointed_on": "2020-04-15",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T02:02:42Z",
+    "total_results": 4,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Christopher Michael Gaskell",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control",
+          "significant-influence-or-control-as-trust"
+        ],
+        "notified_on": "2018-01-10",
+        "identification": null
+      },
+      {
+        "name": "Ms Michelle Hill",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2017-02-09",
+        "identification": null
+      },
+      {
+        "name": "Ms Margaret Alison Shannon",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2017-02-08",
+        "identification": null
+      },
+      {
+        "name": "Mr Keith William Marsland",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2017-02-08",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwNTg2NDA5NmFkaXF6a2N4",
+    "date": "2026-02-18",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/J1Bah8HRq6zvXRwB8VEIEsVdOPtZ1z-NnaqTVw_WLbI/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01559314/filing-history/MzUwNTg2NDA5NmFkaXF6a2N4"
   }
 }

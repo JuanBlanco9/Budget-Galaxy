@@ -61,11 +61,126 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
-  "buyer_type_breakdown": {}
+  "buyer_type_breakdown": {},
+  "ch_profile": {
+    "api_date": "2026-04-28T14:38:58Z",
+    "company_name": "NIGHTINGALE HAMMERSON TRUSTEE COMPANY LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2012-03-14",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-06-30",
+    "accounts_last_made_up": "2024-09-30",
+    "confirmation_statement_overdue": true,
+    "confirmation_statement_next_due": "2026-03-28"
+  },
+  "governance": {
+    "api_date": "2026-04-28T14:38:59Z",
+    "total_officers": 31,
+    "active_count": 11,
+    "resigned_count": 20,
+    "active_officers": [
+      {
+        "name": "PATTINSON, Jenny",
+        "role": "secretary",
+        "appointed_on": "2022-11-21",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "ALTHASEN, Paul Simon",
+        "role": "director",
+        "appointed_on": "2021-07-28",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "BALCOMBE, Carolyn",
+        "role": "director",
+        "appointed_on": "2020-09-24",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "BARNETT, Keith",
+        "role": "director",
+        "appointed_on": "2018-06-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "EL-BAZ, Kim Ruth",
+        "role": "director",
+        "appointed_on": "2026-02-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GRABINER, Ian Michael",
+        "role": "director",
+        "appointed_on": "2023-07-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LAWSON, Melvin Anthony",
+        "role": "director",
+        "appointed_on": "2012-04-02",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LIVINGSTON, Gill Avril",
+        "role": "director",
+        "appointed_on": "2022-02-17",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "NATHAN, Russell",
+        "role": "director",
+        "appointed_on": "2023-07-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SHARPE, Steven",
+        "role": "director",
+        "appointed_on": "2022-07-28",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "TAYLOR, Rosalind Ann, Dr",
+        "role": "director",
+        "appointed_on": "2019-06-16",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T14:39:00Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MjAxNjYyMGFkaXF6a2N4",
+    "date": "2025-06-30",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-dormant",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/0ETyNVgmS6pQPJ28GPl7DnhYhhGjLpI_7sixaNm41U4/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/07990530/filing-history/MzQ3MjAxNjYyMGFkaXF6a2N4"
+  }
 }

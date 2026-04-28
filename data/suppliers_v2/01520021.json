@@ -64,10 +64,10 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
@@ -75,5 +75,127 @@
     "police_fire": 0.304,
     "nhs": 0.0358,
     "education": 0.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T04:32:10Z",
+    "company_name": "BORRAS CONSTRUCTION LTD.",
+    "company_status": "active",
+    "date_of_creation": "1980-10-02",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-26"
+  },
+  "governance": {
+    "api_date": "2026-04-28T04:32:11Z",
+    "total_officers": 19,
+    "active_count": 9,
+    "resigned_count": 10,
+    "active_officers": [
+      {
+        "name": "BORRAS, Carol Ann",
+        "role": "secretary",
+        "appointed_on": null,
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "BLATCHFORD, Kane George",
+        "role": "director",
+        "appointed_on": "2024-03-28",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BORRAS, Carol Ann",
+        "role": "director",
+        "appointed_on": null,
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "BORRAS, Raymond Duncan",
+        "role": "director",
+        "appointed_on": null,
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BROADFIELD, Robert Owen",
+        "role": "director",
+        "appointed_on": "2017-08-03",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HARRISON, James Patrick",
+        "role": "director",
+        "appointed_on": "2026-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LENNARD, Mark Edwin",
+        "role": "director",
+        "appointed_on": "2007-07-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "MCLAREN, Matthew Andrew",
+        "role": "director",
+        "appointed_on": "2025-07-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WAKE, Adrian Colin",
+        "role": "director",
+        "appointed_on": "2019-07-05",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T04:32:12Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Borras Group Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "England & Wales",
+          "country_registered": "England",
+          "place_registered": "England & Wales",
+          "registration_number": "04228407"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2NTM1NDI0NGFkaXF6a2N4",
+    "date": "2025-05-07",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/hOYodhRCN5OswuQhJL8Uq6kjQ-fRlHDd05EYa9ys8L8/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01520021/filing-history/MzQ2NTM1NDI0NGFkaXF6a2N4"
   }
 }

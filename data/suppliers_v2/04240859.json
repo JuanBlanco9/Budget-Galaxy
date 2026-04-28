@@ -64,14 +64,107 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 0.9884,
     "other": 0.0116
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T13:56:45Z",
+    "company_name": "PINNACLE GROUP LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2001-06-25",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-09"
+  },
+  "governance": {
+    "api_date": "2026-04-27T13:56:47Z",
+    "total_officers": 44,
+    "active_count": 5,
+    "resigned_count": 39,
+    "active_officers": [
+      {
+        "name": "CLARK, Philip John",
+        "role": "director",
+        "appointed_on": "2024-01-25",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "HODSON, Christopher Mark",
+        "role": "director",
+        "appointed_on": "2018-09-30",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HOLDSWORTH, Roderick Antony",
+        "role": "director",
+        "appointed_on": "2025-01-31",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LLOYD, Peregrine Murray Addison",
+        "role": "director",
+        "appointed_on": "2002-03-25",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "WARDLAW, James Christian",
+        "role": "director",
+        "appointed_on": "2025-01-31",
+        "country_of_residence": "England",
+        "nationality": "British,Irish"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T13:56:48Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Hyde Pinnacle Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2017-09-05",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act",
+          "country_registered": "England & Wales",
+          "place_registered": "Companies House",
+          "registration_number": "10757654"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MTEwNjU3NmFkaXF6a2N4",
+    "date": "2025-11-28",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/3XNY2R984Z5nHJyAaKPOfMVRyA_iF1EfdDz03cwWq1k/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04240859/filing-history/MzQ5MTEwNjU3NmFkaXF6a2N4"
   }
 }

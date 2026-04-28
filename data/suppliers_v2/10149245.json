@@ -59,14 +59,81 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "nhs",
   "buyer_type_breakdown": {
     "nhs": 0.5371,
     "other": 0.4629
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T06:56:35Z",
+    "company_name": "SPECTRUM GROUPE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2016-04-27",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-12"
+  },
+  "governance": {
+    "api_date": "2026-04-28T06:56:36Z",
+    "total_officers": 3,
+    "active_count": 2,
+    "resigned_count": 1,
+    "active_officers": [
+      {
+        "name": "MCGUIRE, Kevin James",
+        "role": "director",
+        "appointed_on": "2022-05-09",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "OUNI, Ali",
+        "role": "director",
+        "appointed_on": "2016-06-28",
+        "country_of_residence": "United Arab Emirates",
+        "nationality": "French"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T06:56:37Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Ali Ouni",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "French",
+        "country_of_residence": "United Arab Emirates",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-06-28",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3ODM5NjU4N2FkaXF6a2N4",
+    "date": "2025-08-22",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/PnwbRnYI7n-n6rHervW51qhXnFRBxh-7_2pt0_hw6Bs/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/10149245/filing-history/MzQ3ODM5NjU4N2FkaXF6a2N4"
   }
 }

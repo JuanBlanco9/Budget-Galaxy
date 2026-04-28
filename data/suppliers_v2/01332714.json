@@ -59,13 +59,127 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "education",
   "buyer_type_breakdown": {
     "education": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T09:17:18Z",
+    "company_name": "OXFORD LASERS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1977-10-05",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-11"
+  },
+  "governance": {
+    "api_date": "2026-04-28T09:17:19Z",
+    "total_officers": 33,
+    "active_count": 6,
+    "resigned_count": 27,
+    "active_officers": [
+      {
+        "name": "KEARSLEY, Andrew John, Dr",
+        "role": "director",
+        "appointed_on": null,
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "KNOWLES, Martyn Richard Huw, Dr",
+        "role": "director",
+        "appointed_on": "2001-10-31",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "RICHARDSON, Steven",
+        "role": "director",
+        "appointed_on": "2022-05-26",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "STOKES, Christopher John",
+        "role": "director",
+        "appointed_on": "2024-07-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WEBB, Colin Edward, Professor",
+        "role": "director",
+        "appointed_on": null,
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SURTEK LTD",
+        "role": "corporate-director",
+        "appointed_on": "2012-06-22",
+        "country_of_residence": null,
+        "nationality": null
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T09:17:20Z",
+    "total_results": 2,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Oxford Lasers Micromachining Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Liability Company",
+          "legal_authority": "English",
+          "country_registered": "England",
+          "place_registered": "England",
+          "registration_number": "03574423"
+        }
+      },
+      {
+        "name": "Oxford Lasers Micromachining Ltd",
+        "kind": "legal-person-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Liability Company",
+          "legal_authority": "English"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MjgzMTY0MGFkaXF6a2N4",
+    "date": "2025-09-26",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/ymBuyTvZv7sYWJoURDdNJ4O3pHNsyx7i9tSLqKSpHnY/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01332714/filing-history/MzQ4MjgzMTY0MGFkaXF6a2N4"
   }
 }

@@ -59,13 +59,142 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T13:43:50Z",
+    "company_name": "BARNSLEY HOSPICE APPEAL",
+    "company_status": "active",
+    "date_of_creation": "1988-07-06",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-09"
+  },
+  "governance": {
+    "api_date": "2026-04-28T13:43:51Z",
+    "total_officers": 78,
+    "active_count": 13,
+    "resigned_count": 65,
+    "active_officers": [
+      {
+        "name": "FLETCHER, Ross Stewart",
+        "role": "secretary",
+        "appointed_on": "2025-10-30",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "HARRISON, Christopher John James",
+        "role": "secretary",
+        "appointed_on": "2025-09-24",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "ARMITAGE, Thomas",
+        "role": "director",
+        "appointed_on": "2023-09-13",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CLIFT, Martin",
+        "role": "director",
+        "appointed_on": "2025-12-17",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "COSTELLO-TORDOFF, Joshua",
+        "role": "director",
+        "appointed_on": "2025-12-17",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "DODSON, Louise",
+        "role": "director",
+        "appointed_on": "2025-09-24",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HINCHLIFFE, Paul",
+        "role": "director",
+        "appointed_on": "2024-07-10",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "JEWITT, Sarah Beth",
+        "role": "director",
+        "appointed_on": "2024-07-10",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LOVETT, June",
+        "role": "director",
+        "appointed_on": "2022-11-09",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MEADE, Ian David",
+        "role": "director",
+        "appointed_on": "2022-09-14",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ROEBUCK, Katie Elizabeth",
+        "role": "director",
+        "appointed_on": "2024-11-13",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SALT, Alison Jane",
+        "role": "director",
+        "appointed_on": "2017-11-23",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WILKINSON, Nigel",
+        "role": "director",
+        "appointed_on": "2025-12-17",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T13:43:52Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4NDU5MTI4OWFkaXF6a2N4",
+    "date": "2025-10-14",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/guu56taVG8J14p4mR03mna-7qLmqHkMlr7ZFmH-weqI/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02274925/filing-history/MzQ4NDU5MTI4OWFkaXF6a2N4"
   }
 }

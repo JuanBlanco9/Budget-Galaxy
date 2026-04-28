@@ -64,11 +64,143 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
-  "buyer_type_breakdown": {}
+  "buyer_type_breakdown": {},
+  "ch_profile": {
+    "api_date": "2026-04-28T14:46:22Z",
+    "company_name": "ELLIOTT WOOD PARTNERSHIP LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2015-11-18",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-01-31",
+    "accounts_last_made_up": "2025-04-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-01"
+  },
+  "governance": {
+    "api_date": "2026-04-28T14:46:23Z",
+    "total_officers": 9,
+    "active_count": 8,
+    "resigned_count": 1,
+    "active_officers": [
+      {
+        "name": "DOWNEY, Andrew John",
+        "role": "director",
+        "appointed_on": "2015-11-18",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "DRAKE, Lisa",
+        "role": "director",
+        "appointed_on": "2016-02-11",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "ELLIOTT, Gary James",
+        "role": "director",
+        "appointed_on": "2015-11-18",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GEORGIOU, George",
+        "role": "director",
+        "appointed_on": "2022-03-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GOODBRAND, Mark",
+        "role": "director",
+        "appointed_on": "2022-03-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MILLAR, Pamela Jane",
+        "role": "director",
+        "appointed_on": "2023-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MORGAN, David Nicholas",
+        "role": "director",
+        "appointed_on": "2015-11-18",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "READ, Stephen Hildred",
+        "role": "director",
+        "appointed_on": "2023-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T14:46:24Z",
+    "total_results": 2,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Elliott Wood Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-05-01",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act",
+          "country_registered": "Wales",
+          "place_registered": "Companies House",
+          "registration_number": "09876975"
+        }
+      },
+      {
+        "name": "Elliott Wood Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2016-05-01",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England And Wales",
+          "place_registered": "England And Wales",
+          "registration_number": "09876975"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwMjEyNzk5N2FkaXF6a2N4",
+    "date": "2026-01-29",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-medium",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/9_IpkRZiCQJunbc4SfCFZcG73ORnDoAUR43cZ2YCJPg/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/09877061/filing-history/MzUwMjEyNzk5N2FkaXF6a2N4"
+  }
 }

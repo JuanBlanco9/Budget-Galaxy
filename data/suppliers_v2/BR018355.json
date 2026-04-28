@@ -44,19 +44,11 @@
   },
   "financial_health": null,
   "governance": {
-    "officers_active_count": 0,
-    "officers_resigned_count": 0,
-    "board_turnover_ratio": 0.0,
-    "board_turnover_signal": "low",
-    "active_directors": [],
-    "secretaries": [],
-    "all_active_officers": [],
-    "resigned_officers_summary": {
-      "count": 0,
-      "recent": []
-    },
-    "direct_psc_count": 0,
-    "direct_psc_statements": []
+    "api_date": "2026-04-27T13:53:18Z",
+    "total_officers": 0,
+    "active_count": 0,
+    "resigned_count": 0,
+    "active_officers": []
   },
   "ownership_chain": {
     "resolution": "data_gap",
@@ -136,5 +128,32 @@
     "note": "No Contracts Finder matches for this supplier in 2020-2024."
   },
   "top_buyer_type": "other",
-  "buyer_type_breakdown": {}
+  "buyer_type_breakdown": {},
+  "ch_profile": {
+    "api_date": "2026-04-27T13:53:16Z",
+    "company_name": "CONTINENTAL LIASON OFFICE UNITED KINGDOM",
+    "company_status": "open",
+    "date_of_creation": "2015-07-18",
+    "date_of_cessation": null,
+    "jurisdiction": null,
+    "has_charges": null,
+    "has_insolvency_history": null,
+    "has_super_secure_pscs": null,
+    "accounts_overdue": null,
+    "accounts_next_due": null,
+    "accounts_last_made_up": null,
+    "confirmation_statement_overdue": null,
+    "confirmation_statement_next_due": null
+  },
+  "pscs": {
+    "api_date": "2026-04-27T13:53:20Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "enrichment_stages": {
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true
+  }
 }

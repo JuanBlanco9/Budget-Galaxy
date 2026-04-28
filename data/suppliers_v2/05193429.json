@@ -59,13 +59,88 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T01:22:17Z",
+    "company_name": "COMSERV (UK) LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2004-07-30",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-08-13"
+  },
+  "governance": {
+    "api_date": "2026-04-28T01:22:19Z",
+    "total_officers": 5,
+    "active_count": 3,
+    "resigned_count": 2,
+    "active_officers": [
+      {
+        "name": "RALLS, William Ralph",
+        "role": "secretary",
+        "appointed_on": "2004-07-30",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "JACOBS, Trevor Brian",
+        "role": "director",
+        "appointed_on": "2004-07-30",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "RALLS, Nicholas Lee",
+        "role": "director",
+        "appointed_on": "2004-07-30",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T01:22:20Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Multi Serv (Group) Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MTk1MDY4N2FkaXF6a2N4",
+    "date": "2025-09-19",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-medium",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/0-JFlT5ciUDXd9vfGbT3xSrKPNMAscl-PNj0Jw5RAG0/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/05193429/filing-history/MzQ4MTk1MDY4N2FkaXF6a2N4"
   }
 }

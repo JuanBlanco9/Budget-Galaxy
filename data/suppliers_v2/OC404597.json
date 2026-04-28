@@ -60,15 +60,172 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 0.4946,
     "other": 0.2875,
     "nhs": 0.218
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T04:12:13Z",
+    "company_name": "ALLIES AND MORRISON LLP",
+    "company_status": "active",
+    "date_of_creation": "2016-02-29",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-10"
+  },
+  "governance": {
+    "api_date": "2026-04-28T04:12:14Z",
+    "total_officers": 21,
+    "active_count": 17,
+    "resigned_count": 4,
+    "active_officers": [
+      {
+        "name": "BACON, Joanna Hermione Seager",
+        "role": "llp-designated-member",
+        "appointed_on": "2016-02-29",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "CARABALLO HERNANDEZ, Alfredo Jose",
+        "role": "llp-designated-member",
+        "appointed_on": "2016-08-17",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "CARULLA, Artur",
+        "role": "llp-designated-member",
+        "appointed_on": "2016-08-17",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "EATON, Paul",
+        "role": "llp-designated-member",
+        "appointed_on": "2016-08-18",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "RIFKIN, Antony Saul",
+        "role": "llp-designated-member",
+        "appointed_on": "2016-02-29",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "WRAIGHT, Alexander John",
+        "role": "llp-designated-member",
+        "appointed_on": "2016-08-17",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "APPLETON, Paul Adrian",
+        "role": "llp-member",
+        "appointed_on": "2016-02-29",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "BEARMAN, Christopher James",
+        "role": "llp-member",
+        "appointed_on": "2016-02-29",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "ELSEA, Daniel",
+        "role": "llp-member",
+        "appointed_on": "2022-10-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "FRASER, Simon",
+        "role": "llp-member",
+        "appointed_on": "2016-02-29",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "GATHERCOLE, Simon Alexander",
+        "role": "llp-member",
+        "appointed_on": "2016-08-17",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "HEYNS, Hendrik",
+        "role": "llp-member",
+        "appointed_on": "2016-08-17",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "JIM, Angie",
+        "role": "llp-member",
+        "appointed_on": "2023-01-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "LEIGH, Miles John William",
+        "role": "llp-member",
+        "appointed_on": "2016-08-17",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "MANSFIELD, Louise",
+        "role": "llp-member",
+        "appointed_on": "2025-07-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "MAXWELL, Robert Yves",
+        "role": "llp-member",
+        "appointed_on": "2016-02-29",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "SYRETT, Jason Lionel",
+        "role": "llp-member",
+        "appointed_on": "2016-08-17",
+        "country_of_residence": "England",
+        "nationality": null
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T04:12:15Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4NjUyNTI0NmFkaXF6a2N4",
+    "date": "2025-10-28",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/QYYAndYs8-SFmfdGyVycSgc4EbvMzNQO10M9GBYDCFg/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/OC404597/filing-history/MzQ4NjUyNTI0NmFkaXF6a2N4"
   }
 }

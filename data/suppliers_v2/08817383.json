@@ -59,14 +59,148 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "nhs",
   "buyer_type_breakdown": {
     "nhs": 1.0,
     "education": 0.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T14:42:40Z",
+    "company_name": "MEDICAL SCHOOLS COUNCIL",
+    "company_status": "active",
+    "date_of_creation": "2013-12-17",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-04-30",
+    "accounts_last_made_up": "2025-07-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-27"
+  },
+  "governance": {
+    "api_date": "2026-04-28T14:42:41Z",
+    "total_officers": 29,
+    "active_count": 11,
+    "resigned_count": 18,
+    "active_officers": [
+      {
+        "name": "PETTY-SAPHON, Kathleen Margaret, Dr",
+        "role": "secretary",
+        "appointed_on": "2014-02-01",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "AHLUWALIA, Sanjiv, Professor",
+        "role": "director",
+        "appointed_on": "2024-08-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "ANDERSON, Marina, Professor",
+        "role": "director",
+        "appointed_on": "2025-08-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BANERJEE, Sube Sekhar, Professor",
+        "role": "director",
+        "appointed_on": "2020-11-10",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ECCLES, Diana, Professor",
+        "role": "director",
+        "appointed_on": "2021-08-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GISHEN, Faye, Professor",
+        "role": "director",
+        "appointed_on": "2024-08-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "KINGSTON, Margaret Alice, Professor",
+        "role": "director",
+        "appointed_on": "2025-08-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MCCRIMMON, Rory, Professor",
+        "role": "director",
+        "appointed_on": "2025-03-01",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      },
+      {
+        "name": "RILEY, Stephen George, Professor",
+        "role": "director",
+        "appointed_on": "2022-05-01",
+        "country_of_residence": "Wales",
+        "nationality": "British"
+      },
+      {
+        "name": "THIRLWELL, Christine, Dr",
+        "role": "director",
+        "appointed_on": "2023-12-21",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "WILKES, Scott, Professor",
+        "role": "director",
+        "appointed_on": "2025-08-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T14:42:42Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Universities Uk",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Company Limited By Guarantee",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "England & Wales",
+          "registration_number": "1001127"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwNTgzODI3MGFkaXF6a2N4",
+    "date": "2026-02-20",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/1GEeCdmc5P1moDNge32Lf1SYzgApjeRh7ATnVDpMi3Y/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/08817383/filing-history/MzUwNTgzODI3MGFkaXF6a2N4"
   }
 }

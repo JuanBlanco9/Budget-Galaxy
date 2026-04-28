@@ -72,15 +72,122 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
     "central_govt": 0.431,
     "agency": 0.3319,
     "other": 0.2371
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T16:46:33Z",
+    "company_name": "AIRWALK CONSULTING REPLY LTD",
+    "company_status": "active",
+    "date_of_creation": "2013-08-01",
+    "date_of_cessation": null,
+    "jurisdiction": "scotland",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-08-15"
+  },
+  "governance": {
+    "api_date": "2026-04-27T16:46:34Z",
+    "total_officers": 9,
+    "active_count": 4,
+    "resigned_count": 5,
+    "active_officers": [
+      {
+        "name": "CUSINATO, Marco",
+        "role": "director",
+        "appointed_on": "2020-11-02",
+        "country_of_residence": "Italy",
+        "nationality": "Italian"
+      },
+      {
+        "name": "HILL, Jason Simon",
+        "role": "director",
+        "appointed_on": "2024-05-02",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "RIZZANTE, Tatiana",
+        "role": "director",
+        "appointed_on": "2020-11-02",
+        "country_of_residence": "Italy",
+        "nationality": "Italian"
+      },
+      {
+        "name": "WALKER, Benjamin James",
+        "role": "director",
+        "appointed_on": "2013-08-01",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T16:46:36Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Reply Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2024-10-10",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "England And Wales",
+          "registration_number": "03847202"
+        }
+      },
+      {
+        "name": "Airwalk Holdings Reply Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2017-05-31",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England And Wales",
+          "place_registered": "England And Wales",
+          "registration_number": "10635870"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NzIyODAyMGFkaXF6a2N4",
+    "date": "2025-08-14",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-audit-exemption-subsiduary",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/lVBmWk5ntiF85A1fnnZvAoG4ff0kTl_4hpZ6SwWk3xQ/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/SC455829/filing-history/MzQ3NzIyODAyMGFkaXF6a2N4"
   }
 }

@@ -61,13 +61,86 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T06:35:33Z",
+    "company_name": "METER MANAGER LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2001-06-18",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-06-30",
+    "accounts_last_made_up": "2024-09-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-02"
+  },
+  "governance": {
+    "api_date": "2026-04-28T06:35:35Z",
+    "total_officers": 12,
+    "active_count": 3,
+    "resigned_count": 9,
+    "active_officers": [
+      {
+        "name": "LINDLEY, Florence Grace",
+        "role": "director",
+        "appointed_on": "2025-06-04",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "LINDLEY, John",
+        "role": "director",
+        "appointed_on": "2001-06-18",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "LINDLEY, Susanne Jane",
+        "role": "director",
+        "appointed_on": "2017-06-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T06:35:36Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr John Lindley",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2016-07-01",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MTkyMjgwOWFkaXF6a2N4",
+    "date": "2025-06-30",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/f50_KNDAztV3Yx3iZ9ZbEP-R2oRiouXo-HCXIVH4Liw/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04236493/filing-history/MzQ3MTkyMjgwOWFkaXF6a2N4"
   }
 }

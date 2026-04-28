@@ -65,13 +65,144 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "agency",
   "buyer_type_breakdown": {
     "agency": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T18:51:34Z",
+    "company_name": "COGNITION LAND AND WATER LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2005-06-22",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-26"
+  },
+  "governance": {
+    "api_date": "2026-04-27T18:51:35Z",
+    "total_officers": 11,
+    "active_count": 3,
+    "resigned_count": 8,
+    "active_officers": [
+      {
+        "name": "FOX, Robert Ian",
+        "role": "director",
+        "appointed_on": "2020-10-30",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GODDARD, Jonathan Peter",
+        "role": "director",
+        "appointed_on": "2014-04-06",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "HOSKING, Richard Andrew",
+        "role": "director",
+        "appointed_on": "2008-06-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T18:51:37Z",
+    "total_results": 5,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Cognition Land And Water Trustee Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2021-10-13",
+        "identification": {
+          "legal_form": "Private Company Limited By Guarantee Without Share Capital",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Registrar Of Companies For England And Wales",
+          "registration_number": "13671810"
+        }
+      },
+      {
+        "name": "Mr Jonathan Peter Goddard",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2019-10-09",
+        "identification": null
+      },
+      {
+        "name": "Mr Richard Andrew Hosking",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent",
+          "voting-rights-50-to-75-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Richard William Ashwell",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Mark John Ashwell",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MzM3NDY2OGFkaXF6a2N4",
+    "date": "2025-12-10",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/y2qBsT9j9RwvJ7anY1p05XGUt_p9DXm_rSy5qQ9I9XA/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/05487694/filing-history/MzQ5MzM3NDY2OGFkaXF6a2N4"
   }
 }

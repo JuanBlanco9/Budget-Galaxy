@@ -59,13 +59,112 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T19:28:34Z",
+    "company_name": "XCO2 ENERGY LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2008-02-07",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-11-30",
+    "accounts_last_made_up": "2025-02-28",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-21"
+  },
+  "governance": {
+    "api_date": "2026-04-27T19:28:35Z",
+    "total_officers": 7,
+    "active_count": 3,
+    "resigned_count": 4,
+    "active_officers": [
+      {
+        "name": "FARRELL, John",
+        "role": "director",
+        "appointed_on": "2008-02-07",
+        "country_of_residence": "United Kingdom",
+        "nationality": "Irish"
+      },
+      {
+        "name": "KORDEL, Thomas Michael",
+        "role": "director",
+        "appointed_on": "2016-11-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MUNIZ MOREIRA, Ricardo",
+        "role": "director",
+        "appointed_on": "2008-02-07",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T19:28:37Z",
+    "total_results": 3,
+    "active_count": 3,
+    "items": [
+      {
+        "name": "Mr John Farrell",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Irish",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Thomas Kordel",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Ricardo Muniz Moreira",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MDYwNzQ0NGFkaXF6a2N4",
+    "date": "2025-11-24",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/D-xjw7styMRQYYAOnh4NfQXYaY9058GCSak3jYEAvvI/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/06496460/filing-history/MzQ5MDYwNzQ0NGFkaXF6a2N4"
   }
 }

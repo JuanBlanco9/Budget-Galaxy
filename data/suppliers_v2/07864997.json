@@ -59,15 +59,127 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.7518,
     "agency": 0.1349,
     "central_govt": 0.1132
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T15:55:44Z",
+    "company_name": "BSI STANDARDS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2011-11-29",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-23"
+  },
+  "governance": {
+    "api_date": "2026-04-27T15:55:46Z",
+    "total_officers": 9,
+    "active_count": 5,
+    "resigned_count": 4,
+    "active_officers": [
+      {
+        "name": "BSI SECRETARIES HOLDINGS LTD",
+        "role": "corporate-secretary",
+        "appointed_on": "2011-11-29",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "MUSK, Neil Jeremy",
+        "role": "director",
+        "appointed_on": "2023-05-17",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "QUESTED, Paul David",
+        "role": "director",
+        "appointed_on": "2026-01-30",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "STEEDMAN, Robert Scott",
+        "role": "director",
+        "appointed_on": "2023-05-17",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "TAYLOR, Susan Charlotte",
+        "role": "director",
+        "appointed_on": "2021-01-20",
+        "country_of_residence": "England",
+        "nationality": "American,British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T15:55:47Z",
+    "total_results": 2,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Bsi Standards Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2017-09-15",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Companies House England And Wales",
+          "registration_number": "05901209"
+        }
+      },
+      {
+        "name": "The British Standards Institution",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Royal Charter",
+          "legal_authority": "United Kingdom (England And Wales)",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "Zc202"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MjM1NDExN2FkaXF6a2N4",
+    "date": "2025-09-24",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/nTlLdWHMuginsFzxyGKKFdd9D7zbD52iciJzwwOAFy8/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/07864997/filing-history/MzQ4MjM1NDExN2FkaXF6a2N4"
   }
 }

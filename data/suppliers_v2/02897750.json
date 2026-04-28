@@ -64,13 +64,107 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T04:13:55Z",
+    "company_name": "SISTER CIRCLE LTD.",
+    "company_status": "active",
+    "date_of_creation": "1994-02-14",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-27"
+  },
+  "governance": {
+    "api_date": "2026-04-28T04:13:56Z",
+    "total_officers": 66,
+    "active_count": 8,
+    "resigned_count": 58,
+    "active_officers": [
+      {
+        "name": "BRINTWORTH, Kathryn",
+        "role": "director",
+        "appointed_on": "2019-04-19",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CHEN, Dong",
+        "role": "director",
+        "appointed_on": "2018-05-19",
+        "country_of_residence": "England",
+        "nationality": "Chinese"
+      },
+      {
+        "name": "DAVDA, Supriya",
+        "role": "director",
+        "appointed_on": "2025-11-10",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "FOWLER, Joanna",
+        "role": "director",
+        "appointed_on": "2018-05-31",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "HAMPTON, Camilla Olivia Alexander",
+        "role": "director",
+        "appointed_on": "2019-04-29",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "KAUR, Kamaljit",
+        "role": "director",
+        "appointed_on": "2021-07-02",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "OLAYIWOLA, Wendy Yewande",
+        "role": "director",
+        "appointed_on": "2021-06-03",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "TOMAR, Sakshi",
+        "role": "director",
+        "appointed_on": "2023-11-23",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T04:13:57Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NjU0MTIzOGFkaXF6a2N4",
+    "date": "2026-01-04",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/Glk8Un3l2VAEL3jNCDUD1bz25a-0xt279Kc9hhx49AQ/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02897750/filing-history/MzQ5NjU0MTIzOGFkaXF6a2N4"
   }
 }

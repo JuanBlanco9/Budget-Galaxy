@@ -64,15 +64,151 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.9768,
     "agency": 0.0213,
     "council": 0.0019
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T14:46:06Z",
+    "company_name": "BRIDEWELL CONSULTING LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2017-12-07",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-27"
+  },
+  "governance": {
+    "api_date": "2026-04-27T14:46:08Z",
+    "total_officers": 8,
+    "active_count": 5,
+    "resigned_count": 3,
+    "active_officers": [
+      {
+        "name": "BILLEN, Ruth",
+        "role": "director",
+        "appointed_on": "2022-09-22",
+        "country_of_residence": "Wales",
+        "nationality": "British"
+      },
+      {
+        "name": "RILEY, Martin Andrew",
+        "role": "director",
+        "appointed_on": "2022-09-22",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "THORNTON, Samuel Peter",
+        "role": "director",
+        "appointed_on": "2025-10-27",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "VAUGHAN, Ben",
+        "role": "director",
+        "appointed_on": "2024-04-25",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "YOUNG, Anthony Edward",
+        "role": "director",
+        "appointed_on": "2017-12-14",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T14:46:10Z",
+    "total_results": 4,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Bridewell Bidco Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2021-03-23",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "England And Wales",
+          "country_registered": "England",
+          "place_registered": "England And Wales",
+          "registration_number": "13262400"
+        }
+      },
+      {
+        "name": "Mr Anthony Edward Young",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2017-12-19",
+        "identification": null
+      },
+      {
+        "name": "Mr Scott Colin Nicholson",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2017-12-19",
+        "identification": null
+      },
+      {
+        "name": "Barclay Simpson Associates Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2017-12-07",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "02440037"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MjcwOTI5NWFkaXF6a2N4",
+    "date": "2025-07-08",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/CPgVQJVbSglFMDtN9wp-qGOfBqnmsGc1qwXi4EV9iRE/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/11101195/filing-history/MzQ3MjcwOTI5NWFkaXF6a2N4"
   }
 }

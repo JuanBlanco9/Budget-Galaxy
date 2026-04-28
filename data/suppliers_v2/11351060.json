@@ -59,13 +59,100 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "education",
   "buyer_type_breakdown": {
     "education": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T00:24:03Z",
+    "company_name": "DOVETAIL AND SLATE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2018-05-09",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-02-28",
+    "accounts_last_made_up": "2025-05-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-05-22"
+  },
+  "governance": {
+    "api_date": "2026-04-28T00:24:04Z",
+    "total_officers": 2,
+    "active_count": 2,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "REDMOND, Elliott Anthony Mark",
+        "role": "director",
+        "appointed_on": "2019-02-27",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WALKER, Guy Alexander",
+        "role": "director",
+        "appointed_on": "2018-05-09",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T00:24:06Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Talentia Group Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2019-03-26",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "England And Wales Companies Register",
+          "registration_number": "11864017"
+        }
+      },
+      {
+        "name": "Mr Guy Alexander Walker",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2018-05-09",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwODE0NTI0M2FkaXF6a2N4",
+    "date": "2026-03-03",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-audit-exemption-subsiduary",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/bC7D3f6IZwaTDQcX3YD8C5hhTWISbqOVBDalrNybU7g/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/11351060/filing-history/MzUwODE0NTI0M2FkaXF6a2N4"
   }
 }

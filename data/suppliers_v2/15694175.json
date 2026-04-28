@@ -61,13 +61,63 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
     "ch_api_accounts_pdf": false
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T09:05:53Z",
+    "company_name": "CX SOUTHAMPTON LTD",
+    "company_status": "active",
+    "date_of_creation": "2024-04-30",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": true,
+    "accounts_next_due": "2026-01-31",
+    "accounts_last_made_up": null,
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-05-13"
+  },
+  "governance": {
+    "api_date": "2026-04-28T09:05:54Z",
+    "total_officers": 1,
+    "active_count": 1,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "MOSS, Andrew David",
+        "role": "director",
+        "appointed_on": "2024-04-30",
+        "country_of_residence": "England",
+        "nationality": "English"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T09:05:55Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Andrew David Moss",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "English",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2024-04-30",
+        "identification": null
+      }
+    ]
   }
 }

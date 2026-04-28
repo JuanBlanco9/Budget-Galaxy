@@ -59,15 +59,121 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 0.7176,
     "central_govt": 0.2808,
     "other": 0.0016
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T19:58:09Z",
+    "company_name": "AXIA SOLUTIONS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1999-03-22",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-04-30",
+    "accounts_last_made_up": "2025-07-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-04-05"
+  },
+  "governance": {
+    "api_date": "2026-04-27T19:58:10Z",
+    "total_officers": 14,
+    "active_count": 4,
+    "resigned_count": 10,
+    "active_officers": [
+      {
+        "name": "TORJUSSEN, Deborah Jane",
+        "role": "secretary",
+        "appointed_on": "2023-03-22",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "HODGSON, Craig William",
+        "role": "director",
+        "appointed_on": "2014-05-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "JONES, Evan Gareth Rowland, Councillor",
+        "role": "director",
+        "appointed_on": "2014-05-29",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "TORJUSSEN, Deborah Jane",
+        "role": "director",
+        "appointed_on": "2023-03-22",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T19:58:12Z",
+    "total_results": 3,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Mrs Deborah Jane Torjussen",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors-as-firm",
+          "significant-influence-or-control-as-firm"
+        ],
+        "notified_on": "2016-05-01",
+        "identification": null
+      },
+      {
+        "name": "Mr Craig William Hodgson",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control",
+          "significant-influence-or-control-as-firm"
+        ],
+        "notified_on": "2016-05-01",
+        "identification": null
+      },
+      {
+        "name": "Ms Karen Grace Dobson",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control",
+          "significant-influence-or-control-as-firm"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwMTYxNTk2MmFkaXF6a2N4",
+    "date": "2026-01-28",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/FoV2nBh9mLxMLEjqP9IeXFoykmpAFxX_1z6-HX5Yt_k/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03737341/filing-history/MzUwMTYxNTk2MmFkaXF6a2N4"
   }
 }

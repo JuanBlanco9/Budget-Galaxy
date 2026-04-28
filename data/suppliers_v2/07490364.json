@@ -61,15 +61,145 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
     "central_govt": 0.7995,
     "other": 0.1861,
     "council": 0.0144
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T19:12:33Z",
+    "company_name": "MUTUAL VENTURES LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2011-01-12",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-10-31",
+    "accounts_last_made_up": "2025-01-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-12"
+  },
+  "governance": {
+    "api_date": "2026-04-27T19:12:35Z",
+    "total_officers": 6,
+    "active_count": 5,
+    "resigned_count": 1,
+    "active_officers": [
+      {
+        "name": "BERWICK, Catharine Louise",
+        "role": "director",
+        "appointed_on": "2023-06-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "FAIRHURST, David William",
+        "role": "director",
+        "appointed_on": "2011-01-13",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HALL, Donna Marie",
+        "role": "director",
+        "appointed_on": "2023-06-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "LAIRD, Andrew Gordon",
+        "role": "director",
+        "appointed_on": "2011-01-13",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "REGAN, Emmet",
+        "role": "director",
+        "appointed_on": "2023-02-01",
+        "country_of_residence": "England",
+        "nationality": "Irish"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T19:12:36Z",
+    "total_results": 4,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mv Group Holdings Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2022-03-25",
+        "identification": {
+          "legal_form": "Company Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "Uk Companies House",
+          "registration_number": "13950530"
+        }
+      },
+      {
+        "name": "Mr Andrew Gordon Laird",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2017-01-12",
+        "identification": null
+      },
+      {
+        "name": "Mr Oliver Leigh Cappleman",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2017-01-12",
+        "identification": null
+      },
+      {
+        "name": "Mr David William Fairhurst",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2017-01-12",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2OTM4MjAzMGFkaXF6a2N4",
+    "date": "2025-06-09",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/CtmdAcsT06gabyFuPJWboNfCR1sNOLfGvRzkpHjjdc4/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/07490364/filing-history/MzQ2OTM4MjAzMGFkaXF6a2N4"
   }
 }

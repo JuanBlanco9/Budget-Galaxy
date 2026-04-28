@@ -59,13 +59,94 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T21:00:17Z",
+    "company_name": "FACTORY SETTINGS LIMITED",
+    "company_status": "liquidation",
+    "date_of_creation": "2005-10-27",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": true,
+    "has_insolvency_history": true,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": true,
+    "accounts_next_due": "2024-07-31",
+    "accounts_last_made_up": "2022-10-31",
+    "confirmation_statement_overdue": true,
+    "confirmation_statement_next_due": "2023-11-10"
+  },
+  "governance": {
+    "api_date": "2026-04-27T21:00:18Z",
+    "total_officers": 3,
+    "active_count": 2,
+    "resigned_count": 1,
+    "active_officers": [
+      {
+        "name": "JACKSON, William Spencer",
+        "role": "director",
+        "appointed_on": "2005-10-27",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "MANSELL, Lucien David",
+        "role": "director",
+        "appointed_on": "2005-10-27",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T21:00:20Z",
+    "total_results": 2,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Mr Lucien David Mansell",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr William Spencer Jackson",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzM4NDEzOTQyOWFkaXF6a2N4",
+    "date": "2023-06-26",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-unaudited-abridged",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/Rs-r63hj82DUyKTUPo6Y4w6Jp_crH_bIFAbvlYuKsWw/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/05605257/filing-history/MzM4NDEzOTQyOWFkaXF6a2N4"
   }
 }

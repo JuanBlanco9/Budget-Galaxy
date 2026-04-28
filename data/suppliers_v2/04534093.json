@@ -59,13 +59,110 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
     "central_govt": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T08:50:07Z",
+    "company_name": "SECURE SYSTEMS & TECHNOLOGIES LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2002-09-12",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-09-26"
+  },
+  "governance": {
+    "api_date": "2026-04-28T08:50:08Z",
+    "total_officers": 31,
+    "active_count": 3,
+    "resigned_count": 28,
+    "active_officers": [
+      {
+        "name": "SAWYER, Mark David",
+        "role": "director",
+        "appointed_on": "2020-04-10",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SNOWDON, Neil",
+        "role": "director",
+        "appointed_on": "2022-11-28",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SORELLE, Richard Dennis",
+        "role": "director",
+        "appointed_on": "2021-11-29",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T08:50:09Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Api Technologies (Uk) Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2017-10-23",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Copmpanies Act 2006",
+          "country_registered": "Uk",
+          "place_registered": "Companies House",
+          "registration_number": "07924210"
+        }
+      },
+      {
+        "name": "Cryptec Holdco Uk Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-07-01",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "England & Wales",
+          "country_registered": "England",
+          "place_registered": "Cardiff",
+          "registration_number": "06426627"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NzUxNzk2NmFkaXF6a2N4",
+    "date": "2026-01-08",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/V0CY9K-1xJILQQnTguH01xVH3WbNjdznpDKtjy8K0hs/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04534093/filing-history/MzQ5NzUxNzk2NmFkaXF6a2N4"
   }
 }

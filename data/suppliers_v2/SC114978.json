@@ -63,15 +63,109 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
     "central_govt": 0.6534,
     "other": 0.3466,
     "agency": 0.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T15:05:35Z",
+    "company_name": "BRIGGS MARINE CONTRACTORS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1988-12-05",
+    "date_of_cessation": null,
+    "jurisdiction": "scotland",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-14"
+  },
+  "governance": {
+    "api_date": "2026-04-28T15:05:36Z",
+    "total_officers": 15,
+    "active_count": 5,
+    "resigned_count": 10,
+    "active_officers": [
+      {
+        "name": "BRIGGS, Robert Collieson",
+        "role": "director",
+        "appointed_on": "2001-04-01",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      },
+      {
+        "name": "BRIGGS, Robert",
+        "role": "director",
+        "appointed_on": null,
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      },
+      {
+        "name": "DIAMOND, Patrick Thomas",
+        "role": "director",
+        "appointed_on": "2011-08-15",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      },
+      {
+        "name": "ENGLISH, Craig",
+        "role": "director",
+        "appointed_on": "2011-08-15",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "ROSS, Iain Orr Smith",
+        "role": "director",
+        "appointed_on": "2009-05-01",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T15:05:37Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Briggs Commercial Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors-as-firm"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act",
+          "country_registered": "Scotland",
+          "place_registered": "Scotland Registered",
+          "registration_number": "Sc51566"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NTc0NzI5NmFkaXF6a2N4",
+    "date": "2025-12-22",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/0NDX2QTiAqticF-MeUwsxo6jupqf6__N0k8UpDLSQ74/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/SC114978/filing-history/MzQ5NTc0NzI5NmFkaXF6a2N4"
   }
 }

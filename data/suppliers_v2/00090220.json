@@ -59,14 +59,114 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 0.996,
     "other": 0.004
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T02:31:46Z",
+    "company_name": "GOODALL BATES & TODD LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1906-09-21",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-04-30",
+    "accounts_last_made_up": "2025-07-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-12"
+  },
+  "governance": {
+    "api_date": "2026-04-28T02:31:47Z",
+    "total_officers": 19,
+    "active_count": 6,
+    "resigned_count": 13,
+    "active_officers": [
+      {
+        "name": "SHELTON, Jane Linda",
+        "role": "secretary",
+        "appointed_on": "2015-03-18",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BOOTH, Paul",
+        "role": "director",
+        "appointed_on": "2025-02-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GODDARD, Andrew James",
+        "role": "director",
+        "appointed_on": "2015-03-18",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GODDARD, Diana Mary",
+        "role": "director",
+        "appointed_on": "2015-05-22",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "GODDARD, Edward Wyatt",
+        "role": "director",
+        "appointed_on": "2015-03-18",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "SHELTON, Jane Linda",
+        "role": "director",
+        "appointed_on": "2024-03-25",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T02:31:48Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Paterson Enterprises Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "England & Wales",
+          "registration_number": "04930959"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwMDkwOTE3OGFkaXF6a2N4",
+    "date": "2026-01-26",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-medium",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/B5EkhYQhgCbf_HsCF0Gsil0GWwiT_j-XHiZVuVArKIM/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/00090220/filing-history/MzUwMDkwOTE3OGFkaXF6a2N4"
   }
 }

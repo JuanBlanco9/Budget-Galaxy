@@ -59,13 +59,72 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "nhs",
   "buyer_type_breakdown": {
     "nhs": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T03:54:15Z",
+    "company_name": "TELEMEDICINE CLINIC LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2009-07-10",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": true,
+    "confirmation_statement_next_due": "2026-03-18"
+  },
+  "governance": {
+    "api_date": "2026-04-28T03:54:16Z",
+    "total_officers": 5,
+    "active_count": 3,
+    "resigned_count": 2,
+    "active_officers": [
+      {
+        "name": "AGRELL, Henrik",
+        "role": "director",
+        "appointed_on": "2019-12-31",
+        "country_of_residence": "Sweden",
+        "nationality": "Swedish"
+      },
+      {
+        "name": "GINDER, Matthew",
+        "role": "director",
+        "appointed_on": "2019-12-31",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "TURMO, Francesc",
+        "role": "director",
+        "appointed_on": "2019-12-31",
+        "country_of_residence": "Spain",
+        "nationality": "Spanish"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T03:54:17Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MjkwODgxOWFkaXF6a2N4",
+    "date": "2025-09-30",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/F2nXCi0V4iiwaN8lRTmcC5v1bq5b2SsBzLViqQ-Wa60/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/06958314/filing-history/MzQ4MjkwODgxOWFkaXF6a2N4"
   }
 }

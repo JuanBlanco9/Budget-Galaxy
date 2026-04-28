@@ -59,13 +59,169 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T10:40:48Z",
+    "company_name": "DEFIBSTORE LTD",
+    "company_status": "active",
+    "date_of_creation": "2015-03-24",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": true,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-20"
+  },
+  "governance": {
+    "api_date": "2026-04-28T10:40:49Z",
+    "total_officers": 6,
+    "active_count": 2,
+    "resigned_count": 4,
+    "active_officers": [
+      {
+        "name": "ERIKSSON, Jimmy",
+        "role": "director",
+        "appointed_on": "2024-07-05",
+        "country_of_residence": "Sweden",
+        "nationality": "Swedish"
+      },
+      {
+        "name": "VAN CROMBRUGGE, Benny",
+        "role": "director",
+        "appointed_on": "2024-07-05",
+        "country_of_residence": "Belgium",
+        "nationality": "Belgian"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T10:40:50Z",
+    "total_results": 7,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Bridgepoint Europe Vii Nominees Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "voting-rights-50-to-75-percent"
+        ],
+        "notified_on": "2025-08-28",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "13793519"
+        }
+      },
+      {
+        "name": "Safe Life Ab",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2024-07-05",
+        "identification": {
+          "legal_form": "Swedish Aktiebolag",
+          "legal_authority": "Swedish Companies Act",
+          "country_registered": "Sweden",
+          "place_registered": "Swedish Companies Registration Office",
+          "registration_number": "559208-0963"
+        }
+      },
+      {
+        "name": "Safe Life Ab",
+        "kind": "legal-person-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2024-07-05",
+        "identification": {
+          "legal_form": "Swedish Aktiebolag",
+          "legal_authority": "Swedish Company Law"
+        }
+      },
+      {
+        "name": "Mr Shaun Ingram",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2023-09-12",
+        "identification": null
+      },
+      {
+        "name": "Mr Paul Martyn Bennett",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Alexander Paul Bennett",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Mark Christofferson",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "Wales",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3OTUxMzk1M2FkaXF6a2N4",
+    "date": "2025-09-02",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/jnvvMzczetAAsM-Fn3bBInKIc3cXdvkN9dFEerSGEgI/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/09507188/filing-history/MzQ3OTUxMzk1M2FkaXF6a2N4"
   }
 }

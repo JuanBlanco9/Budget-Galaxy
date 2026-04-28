@@ -64,13 +64,100 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
     "central_govt": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T08:23:18Z",
+    "company_name": "TWITTER UK LTD",
+    "company_status": "active",
+    "date_of_creation": "2011-06-01",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-03"
+  },
+  "governance": {
+    "api_date": "2026-04-28T08:23:19Z",
+    "total_officers": 15,
+    "active_count": 2,
+    "resigned_count": 13,
+    "active_officers": [
+      {
+        "name": "CHEUNG, Kin Fai",
+        "role": "director",
+        "appointed_on": "2023-02-06",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      },
+      {
+        "name": "SAHAR, Adeeb",
+        "role": "director",
+        "appointed_on": "2023-04-14",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T08:23:20Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Elon Reeve Musk",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "American",
+        "country_of_residence": "United States",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2022-11-08",
+        "identification": null
+      },
+      {
+        "name": "Twitter, Inc.",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Corporate",
+          "legal_authority": "United States",
+          "country_registered": "United States",
+          "place_registered": "Delaware Department Of State",
+          "registration_number": "4337446"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NzQ4ODE1OGFkaXF6a2N4",
+    "date": "2026-01-08",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/gdjc5MOq-kFQpJUAUcdPBsWgpCtqfr1fu5OvUr3r4_k/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/07653064/filing-history/MzQ5NzQ4ODE1OGFkaXF6a2N4"
   }
 }

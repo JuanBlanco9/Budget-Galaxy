@@ -66,13 +66,157 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "education",
   "buyer_type_breakdown": {
     "education": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T03:45:17Z",
+    "company_name": "GUARDIAN ELECTRICAL COMPLIANCE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2010-09-27",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-28",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-12"
+  },
+  "governance": {
+    "api_date": "2026-04-28T03:45:18Z",
+    "total_officers": 14,
+    "active_count": 7,
+    "resigned_count": 7,
+    "active_officers": [
+      {
+        "name": "COATES, Adam John",
+        "role": "secretary",
+        "appointed_on": "2018-10-18",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "CARNALL, Ian Vincent",
+        "role": "director",
+        "appointed_on": "2010-11-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "IRVINE, John Alexander",
+        "role": "director",
+        "appointed_on": "2024-08-12",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      },
+      {
+        "name": "MITCHELL, Mark Peter",
+        "role": "director",
+        "appointed_on": "2026-01-26",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ROEBUCK, Richard Paul",
+        "role": "director",
+        "appointed_on": "2010-11-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "TEASDALE, Paul William",
+        "role": "director",
+        "appointed_on": "2018-10-18",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WARD, Gregory",
+        "role": "director",
+        "appointed_on": "2025-06-11",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T03:45:19Z",
+    "total_results": 4,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Ptsg Electrical Services Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2018-10-18",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "02811979"
+        }
+      },
+      {
+        "name": "Mr Ian Vincent Carnall",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-09-27",
+        "identification": null
+      },
+      {
+        "name": "Mr Richard Paul Roebuck",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-09-27",
+        "identification": null
+      },
+      {
+        "name": "Mr John Stephen Quick",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-09-27",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MzkyNTgwMGFkaXF6a2N4",
+    "date": "2025-07-16",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-audit-exemption-subsiduary",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/6AxffU0vWbKXvM-vlRZWeXr1-IcGczLDIEufoAvVHzc/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/07388602/filing-history/MzQ3MzkyNTgwMGFkaXF6a2N4"
   }
 }

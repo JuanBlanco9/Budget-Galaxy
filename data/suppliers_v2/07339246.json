@@ -59,13 +59,113 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T04:35:02Z",
+    "company_name": "CHILDREN'S THERAPY SOLUTIONS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2010-08-09",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-05-31",
+    "accounts_last_made_up": "2025-08-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-08-23"
+  },
+  "governance": {
+    "api_date": "2026-04-28T04:35:03Z",
+    "total_officers": 3,
+    "active_count": 3,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "BRADLEY, Rowan",
+        "role": "secretary",
+        "appointed_on": "2010-08-09",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BRADLEY, Adrian",
+        "role": "director",
+        "appointed_on": "2021-08-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "BRADLEY, Rowan",
+        "role": "director",
+        "appointed_on": "2010-08-09",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T04:35:04Z",
+    "total_results": 3,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Mr Adrian Bradley",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2021-08-01",
+        "identification": null
+      },
+      {
+        "name": "Mrs Rowan Bradley",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent",
+          "voting-rights-50-to-75-percent"
+        ],
+        "notified_on": "2016-08-09",
+        "identification": null
+      },
+      {
+        "name": "Mrs Rowan Bradley",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwNDk0NDA2N2FkaXF6a2N4",
+    "date": "2026-02-13",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/O65PD5EyFzQUkzKL53A8_EGM9tK4twY7CK_XIxWueb8/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/07339246/filing-history/MzUwNDk0NDA2N2FkaXF6a2N4"
   }
 }

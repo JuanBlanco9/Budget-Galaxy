@@ -59,10 +59,10 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
@@ -72,5 +72,92 @@
     "council": 0.0349,
     "education": 0.0285,
     "nhs": 0.0178
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T23:39:35Z",
+    "company_name": "ADDLESHAW GODDARD LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2003-02-20",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-11-30",
+    "accounts_last_made_up": "2025-02-28",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-06"
+  },
+  "governance": {
+    "api_date": "2026-04-27T23:39:37Z",
+    "total_officers": 5,
+    "active_count": 4,
+    "resigned_count": 1,
+    "active_officers": [
+      {
+        "name": "A G SECRETARIAL LIMITED",
+        "role": "corporate-secretary",
+        "appointed_on": "2003-02-20",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "HART, Roger",
+        "role": "director",
+        "appointed_on": "2010-04-30",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "JOHNSTON, Andrew John",
+        "role": "director",
+        "appointed_on": "2024-05-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "INHOCO FORMATIONS LIMITED",
+        "role": "corporate-nominee-director",
+        "appointed_on": "2003-02-20",
+        "country_of_residence": null,
+        "nationality": null
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T23:39:39Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Inhoco Formations Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "United Kingdom (England)",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "2598228"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4OTgxMzMzN2FkaXF6a2N4",
+    "date": "2025-11-19",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-dormant",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/PUWqbEnqWZDvmlXKne384--gLoEpZYk2L9_ZZplrWrc/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04673315/filing-history/MzQ4OTgxMzMzN2FkaXF6a2N4"
   }
 }

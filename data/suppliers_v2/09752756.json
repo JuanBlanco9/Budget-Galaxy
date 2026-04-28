@@ -61,15 +61,80 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 0.8505,
     "central_govt": 0.1315,
     "education": 0.018
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T00:56:05Z",
+    "company_name": "NORTHERN REGENERATION CIC",
+    "company_status": "liquidation",
+    "date_of_creation": "2015-08-27",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": true,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-06-30",
+    "accounts_last_made_up": "2024-08-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-09-09"
+  },
+  "governance": {
+    "api_date": "2026-04-28T00:56:07Z",
+    "total_officers": 7,
+    "active_count": 2,
+    "resigned_count": 5,
+    "active_officers": [
+      {
+        "name": "RATCLIFFE, Fiona Jayne",
+        "role": "director",
+        "appointed_on": "2026-02-05",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "RATCLIFFE, Graham",
+        "role": "director",
+        "appointed_on": "2015-08-27",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T00:56:09Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Graham Ratcliffe",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4NTA5MzI3N2FkaXF6a2N4",
+    "date": "2025-10-15",
+    "type": "AA01",
+    "description": "change-account-reference-date-company-previous-extended",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/PQPAVQ-zZvF0nFSeDBEwGqIAb-Pb-VPW0l0z0UO3m10/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/09752756/filing-history/MzQ4NTA5MzI3N2FkaXF6a2N4"
   }
 }

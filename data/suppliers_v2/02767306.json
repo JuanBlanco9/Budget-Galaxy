@@ -59,13 +59,140 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T21:59:51Z",
+    "company_name": "INSULATION CONTRACTING SERVICES LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1992-11-24",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-25"
+  },
+  "governance": {
+    "api_date": "2026-04-27T21:59:52Z",
+    "total_officers": 11,
+    "active_count": 4,
+    "resigned_count": 7,
+    "active_officers": [
+      {
+        "name": "WHITEHEAD, Colin William",
+        "role": "secretary",
+        "appointed_on": "2009-03-27",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "HARDY, Robin Mark",
+        "role": "director",
+        "appointed_on": "2022-07-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "O'BRIEN, Antony Paul",
+        "role": "director",
+        "appointed_on": "2022-07-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "WHITEHEAD, Colin William",
+        "role": "director",
+        "appointed_on": "2004-11-08",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T21:59:54Z",
+    "total_results": 4,
+    "active_count": 3,
+    "items": [
+      {
+        "name": "Greenash Investments Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2024-05-10",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England And Wales",
+          "place_registered": "England And Wales",
+          "registration_number": "15663468"
+        }
+      },
+      {
+        "name": "Mr Alan Raymond Green",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-07-01",
+        "identification": null
+      },
+      {
+        "name": "Mr Colin William Whitehead",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-07-01",
+        "identification": null
+      },
+      {
+        "name": "Lovedays Investments Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-07-01",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England & Wales",
+          "place_registered": "Companies House",
+          "registration_number": "06779676"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2OTY1ODgwOGFkaXF6a2N4",
+    "date": "2025-06-11",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-unaudited-abridged",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/HjZvh9aPUBWhh5elauO3Okidjmo6y0uekdGCmIqySQA/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02767306/filing-history/MzQ2OTY1ODgwOGFkaXF6a2N4"
   }
 }

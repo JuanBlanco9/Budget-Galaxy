@@ -74,14 +74,86 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.9293,
     "education": 0.0707
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T16:56:49Z",
+    "company_name": "MAGNIT GLOBAL GRI LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2003-05-16",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-29",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-24"
+  },
+  "governance": {
+    "api_date": "2026-04-27T16:56:51Z",
+    "total_officers": 28,
+    "active_count": 2,
+    "resigned_count": 26,
+    "active_officers": [
+      {
+        "name": "COLES, Catherine, Mrs.",
+        "role": "director",
+        "appointed_on": "2023-04-26",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "QUELLER, Penny Lea, Ms.",
+        "role": "director",
+        "appointed_on": "2025-01-14",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T16:56:53Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Geometric Results Holdngs Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2018-01-31",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "05456862"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwMTk1MTkxOWFkaXF6a2N4",
+    "date": "2026-01-30",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/FBSkbwnkNFm-CYkQDZunWTLcSKMcxDKYnjJe92FdANQ/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04766716/filing-history/MzUwMTk1MTkxOWFkaXF6a2N4"
   }
 }

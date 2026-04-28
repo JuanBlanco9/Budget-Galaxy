@@ -59,13 +59,114 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T06:43:45Z",
+    "company_name": "AGM BISHOPS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2020-07-10",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-05-20",
+    "accounts_last_made_up": "2024-06-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-05-03"
+  },
+  "governance": {
+    "api_date": "2026-04-28T06:43:46Z",
+    "total_officers": 10,
+    "active_count": 6,
+    "resigned_count": 4,
+    "active_officers": [
+      {
+        "name": "COMLEY, James",
+        "role": "director",
+        "appointed_on": "2024-04-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "COSTA-RISING, Mark",
+        "role": "director",
+        "appointed_on": "2022-01-19",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "DUGARD, Kirk, Mr.",
+        "role": "director",
+        "appointed_on": "2022-02-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SAMPSON, Stephen Samuel",
+        "role": "director",
+        "appointed_on": "2020-07-10",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "SARGENT, Colin Trevor",
+        "role": "director",
+        "appointed_on": "2023-11-23",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "START, Russell James",
+        "role": "director",
+        "appointed_on": "2020-07-10",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T06:43:47Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Agm Relocation Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2020-07-10",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act",
+          "country_registered": "England & Wales",
+          "place_registered": "Companies House",
+          "registration_number": "08940340"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwNjM1Mjg5MGFkaXF6a2N4",
+    "date": "2026-02-20",
+    "type": "AA01",
+    "description": "change-account-reference-date-company-previous-shortened",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/0bkqGsC0gf4L0QdXOdApEmcMzIuke5lCkzj4u7JM0oY/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/12733035/filing-history/MzUwNjM1Mjg5MGFkaXF6a2N4"
   }
 }

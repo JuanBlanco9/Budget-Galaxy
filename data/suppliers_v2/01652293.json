@@ -64,14 +64,108 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.9998,
     "nhs": 0.0002
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T11:28:44Z",
+    "company_name": "STAMFORD PRODUCTS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1982-07-19",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-06-30",
+    "accounts_last_made_up": "2024-09-30",
+    "confirmation_statement_overdue": true,
+    "confirmation_statement_next_due": "2026-04-14"
+  },
+  "governance": {
+    "api_date": "2026-04-28T11:28:45Z",
+    "total_officers": 27,
+    "active_count": 5,
+    "resigned_count": 22,
+    "active_officers": [
+      {
+        "name": "DUBYL, Stephen",
+        "role": "director",
+        "appointed_on": "1997-09-30",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MONK, Alexander James",
+        "role": "director",
+        "appointed_on": "2026-02-04",
+        "country_of_residence": "England",
+        "nationality": "British,Irish"
+      },
+      {
+        "name": "SEABOURNE, Allison Kay",
+        "role": "director",
+        "appointed_on": "2005-07-25",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SERGEANT, David Robert",
+        "role": "director",
+        "appointed_on": "2009-09-21",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "WILSON, Simon Robert",
+        "role": "director",
+        "appointed_on": "2026-02-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T11:28:46Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "The Stamford Group Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Liability Company",
+          "legal_authority": "Companies Act",
+          "country_registered": "England",
+          "place_registered": "Cardiff",
+          "registration_number": "1647353"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2MjM4MDMxMmFkaXF6a2N4",
+    "date": "2025-04-14",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-medium",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/cwWsAQUViQCQMPeEflya91Ch5BvNc4Jjy0oPku10eWA/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01652293/filing-history/MzQ2MjM4MDMxMmFkaXF6a2N4"
   }
 }

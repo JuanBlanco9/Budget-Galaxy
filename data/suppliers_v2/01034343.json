@@ -64,15 +64,126 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 0.6708,
     "other": 0.2842,
     "police_fire": 0.045
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T19:35:00Z",
+    "company_name": "TRAVELERS INSURANCE COMPANY LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1971-12-10",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-09-30",
+    "accounts_last_made_up": "2025-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-22"
+  },
+  "governance": {
+    "api_date": "2026-04-27T19:35:02Z",
+    "total_officers": 49,
+    "active_count": 8,
+    "resigned_count": 41,
+    "active_officers": [
+      {
+        "name": "FOLEY, Jennifer Anne",
+        "role": "secretary",
+        "appointed_on": "2023-10-11",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "COUGHLAN, Anthony Gerrard",
+        "role": "director",
+        "appointed_on": "2014-11-04",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      },
+      {
+        "name": "MCCONNELL, Peter Richard",
+        "role": "director",
+        "appointed_on": "2023-05-12",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MCKEE, William Andrew",
+        "role": "director",
+        "appointed_on": "2022-07-12",
+        "country_of_residence": "United Kingdom",
+        "nationality": "Irish"
+      },
+      {
+        "name": "OLIVO, Maria",
+        "role": "director",
+        "appointed_on": "2019-03-07",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      },
+      {
+        "name": "SOMERVILLE, Gregory Dean",
+        "role": "director",
+        "appointed_on": "2022-04-26",
+        "country_of_residence": "Canada",
+        "nationality": "Canadian"
+      },
+      {
+        "name": "WILSON, Matthew Liam",
+        "role": "director",
+        "appointed_on": "2015-06-05",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "WOODS, Mary Margaret",
+        "role": "director",
+        "appointed_on": "2022-03-04",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T19:35:04Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "The Travelers Companies, Inc",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Company Listed On New York Stock Exchange",
+          "legal_authority": "Minnesota"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxNjY5NTUyNmFkaXF6a2N4",
+    "date": "2026-04-19",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/x4MCiInmzNFIgqMWnbmSKOJoZQHub26OejDK6bJWB_w/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01034343/filing-history/MzUxNjY5NTUyNmFkaXF6a2N4"
   }
 }

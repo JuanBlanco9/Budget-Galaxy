@@ -64,14 +64,87 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
     "central_govt": 0.6952,
     "council": 0.3048
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T02:59:21Z",
+    "company_name": "TOTALKARE LTD",
+    "company_status": "active",
+    "date_of_creation": "2023-09-27",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": true,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-10"
+  },
+  "governance": {
+    "api_date": "2026-04-28T02:59:22Z",
+    "total_officers": 3,
+    "active_count": 2,
+    "resigned_count": 1,
+    "active_officers": [
+      {
+        "name": "HALL, David",
+        "role": "director",
+        "appointed_on": "2023-09-27",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LORD, Michael Richard",
+        "role": "director",
+        "appointed_on": "2026-02-23",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T02:59:23Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Peritum Group Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2023-09-27",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "Uk Register Of Companies",
+          "registration_number": "11104192"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MDQwMjEyN2FkaXF6a2N4",
+    "date": "2025-06-18",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-dormant",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/T593TFotlpoDf3nk7z2_ZwBOzP0qJiGEPfdnjk9DOKY/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/15169594/filing-history/MzQ3MDQwMjEyN2FkaXF6a2N4"
   }
 }

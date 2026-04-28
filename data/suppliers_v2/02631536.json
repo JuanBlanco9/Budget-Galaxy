@@ -64,14 +64,123 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 0.6118,
     "central_govt": 0.3882
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T12:51:30Z",
+    "company_name": "LOOP1 UK LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1991-07-23",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-08-06"
+  },
+  "governance": {
+    "api_date": "2026-04-28T12:51:31Z",
+    "total_officers": 16,
+    "active_count": 2,
+    "resigned_count": 14,
+    "active_officers": [
+      {
+        "name": "BAILEY, Denise Marion",
+        "role": "secretary",
+        "appointed_on": "2020-06-01",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "FITZPATRICK, William",
+        "role": "director",
+        "appointed_on": "2019-07-31",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T12:51:32Z",
+    "total_results": 4,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr William Fitzpatrick",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "American",
+        "country_of_residence": "United States",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2019-07-31",
+        "identification": null
+      },
+      {
+        "name": "Mr Stuart Alan Robins",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr John Gilman Woolfrod",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Nu Holdings Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act",
+          "country_registered": "England",
+          "place_registered": "England And Wales",
+          "registration_number": "04245639"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MjcxNTA3MmFkaXF6a2N4",
+    "date": "2025-09-25",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/yTfV_y65hz_QbE8FvMjPuFOCir4UJ1mUEvtX_4I9Wcc/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02631536/filing-history/MzQ4MjcxNTA3MmFkaXF6a2N4"
   }
 }

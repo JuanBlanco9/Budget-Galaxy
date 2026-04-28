@@ -55,13 +55,86 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T14:48:15Z",
+    "company_name": "ARTHUR J GALLAGHER NORDIC AB",
+    "company_status": "active",
+    "date_of_creation": "2019-01-29",
+    "date_of_cessation": null,
+    "jurisdiction": "united-kingdom",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": null,
+    "accounts_next_due": null,
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": null,
+    "confirmation_statement_next_due": null
+  },
+  "governance": {
+    "api_date": "2026-04-27T14:48:16Z",
+    "total_officers": 9,
+    "active_count": 5,
+    "resigned_count": 4,
+    "active_officers": [
+      {
+        "name": "BERGFELDT, Lars Jonas",
+        "role": "director",
+        "appointed_on": "2019-01-29",
+        "country_of_residence": "Sweden",
+        "nationality": "Swedish"
+      },
+      {
+        "name": "COUSINS, David Michael Edwin",
+        "role": "director",
+        "appointed_on": "2023-09-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "CRAWFORD, Charles Robertson",
+        "role": "director",
+        "appointed_on": "2019-05-13",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GALLE, Otto Niclas",
+        "role": "director",
+        "appointed_on": "2022-05-25",
+        "country_of_residence": "Sweden",
+        "nationality": "Swedish"
+      },
+      {
+        "name": "NAGLER, Alexander Leopold",
+        "role": "director",
+        "appointed_on": "2024-08-28",
+        "country_of_residence": "Germany",
+        "nationality": "German"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T14:48:18Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4NzQyNjQ3NmFkaXF6a2N4",
+    "date": "2025-11-07",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/SwgrNKECVV0IkhR3ksF0a9GyiumzcwIydYiSCHexwMw/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/FC035917/filing-history/MzQ4NzQyNjQ3NmFkaXF6a2N4"
   }
 }

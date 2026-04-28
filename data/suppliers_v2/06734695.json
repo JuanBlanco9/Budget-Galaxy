@@ -59,13 +59,147 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T00:24:10Z",
+    "company_name": "SUTTLE PROJECTS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2008-10-28",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-11"
+  },
+  "governance": {
+    "api_date": "2026-04-28T00:24:11Z",
+    "total_officers": 9,
+    "active_count": 5,
+    "resigned_count": 4,
+    "active_officers": [
+      {
+        "name": "HARLEY, John Keith",
+        "role": "director",
+        "appointed_on": "2019-04-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MAIDMAN, Alistair",
+        "role": "director",
+        "appointed_on": "2015-04-28",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PAINE, Joseph Martin",
+        "role": "director",
+        "appointed_on": "2008-10-28",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SUTTLE, Christopher John",
+        "role": "director",
+        "appointed_on": "2008-10-28",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "SUTTLE, Matthew Robert",
+        "role": "director",
+        "appointed_on": "2023-03-07",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T00:24:13Z",
+    "total_results": 4,
+    "active_count": 3,
+    "items": [
+      {
+        "name": "J Suttle Transport Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent-as-firm",
+          "voting-rights-25-to-50-percent-as-firm",
+          "right-to-appoint-and-remove-directors-as-firm"
+        ],
+        "notified_on": "2020-09-23",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England And Wales",
+          "place_registered": "England And Wales",
+          "registration_number": "02794353"
+        }
+      },
+      {
+        "name": "Mr Roger Alan Funnell",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Joseph Martin Paine",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Christopher John Suttle",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NTczNjYzM2FkaXF6a2N4",
+    "date": "2025-12-22",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/BlyapvhmN0-4mEer8NXqBpLvNZVj-M7_sNRw0BCwdj4/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/06734695/filing-history/MzQ5NTczNjYzM2FkaXF6a2N4"
   }
 }

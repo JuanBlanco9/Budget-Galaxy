@@ -78,14 +78,157 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.8045,
     "council": 0.1955
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T19:28:27Z",
+    "company_name": "SWARCO UK & IRELAND LTD",
+    "company_status": "active",
+    "date_of_creation": "1980-04-11",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-04-11"
+  },
+  "governance": {
+    "api_date": "2026-04-27T19:28:29Z",
+    "total_officers": 40,
+    "active_count": 5,
+    "resigned_count": 35,
+    "active_officers": [
+      {
+        "name": "ROGERS, Maria Louise",
+        "role": "secretary",
+        "appointed_on": "2026-02-12",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "COWLING, Jeremy Peter",
+        "role": "director",
+        "appointed_on": "2023-01-31",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MOUSLEY, Thomas",
+        "role": "director",
+        "appointed_on": "2022-03-14",
+        "country_of_residence": "Ireland",
+        "nationality": "Irish"
+      },
+      {
+        "name": "PICKWORTH, John James",
+        "role": "director",
+        "appointed_on": "2022-02-07",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "ROGERS, Maria Louise",
+        "role": "director",
+        "appointed_on": "2025-05-13",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T19:28:30Z",
+    "total_results": 4,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Swarco Uk Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2022-07-13",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "13649527"
+        }
+      },
+      {
+        "name": "Mrs Elisabeth Swarovski",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Austrian",
+        "country_of_residence": "Austria",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2021-09-30",
+        "identification": null
+      },
+      {
+        "name": "Dynniq Mobility Holding B.V.",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2021-07-16",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "Netherlands",
+          "country_registered": "Netherlands",
+          "place_registered": "Trade Register Of The Chamber Of Commerce",
+          "registration_number": "82829659"
+        }
+      },
+      {
+        "name": "Dynniq Group Bv",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Limited Liability Company",
+          "legal_authority": "The Law Of The Netherlands"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MDc0OTU0NWFkaXF6a2N4",
+    "date": "2025-06-19",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/61uvV_bFZb3jXCP2NMLRDINJ54EEU98RkWCiwmi2xYE/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01490333/filing-history/MzQ3MDc0OTU0NWFkaXF6a2N4"
   }
 }

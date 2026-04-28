@@ -65,13 +65,115 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T05:53:46Z",
+    "company_name": "S J WALCHESTER LTD",
+    "company_status": "active",
+    "date_of_creation": "2007-10-05",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-07-31",
+    "accounts_last_made_up": "2025-10-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-08-25"
+  },
+  "governance": {
+    "api_date": "2026-04-28T05:53:47Z",
+    "total_officers": 4,
+    "active_count": 3,
+    "resigned_count": 1,
+    "active_officers": [
+      {
+        "name": "WALCHESTER, Kirsty",
+        "role": "secretary",
+        "appointed_on": "2007-10-05",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "WALCHESTER, Kirsty",
+        "role": "director",
+        "appointed_on": "2019-01-29",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "WALCHESTER, Steven John",
+        "role": "director",
+        "appointed_on": "2007-10-05",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T05:53:48Z",
+    "total_results": 3,
+    "active_count": 3,
+    "items": [
+      {
+        "name": "S J Walchester Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2022-01-27",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Companies House England",
+          "registration_number": "11947639"
+        }
+      },
+      {
+        "name": "Mr Steven John Walchester",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-10-05",
+        "identification": null
+      },
+      {
+        "name": "Mrs Kirsty Walchester",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-10-05",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5OTc1MzAyNmFkaXF6a2N4",
+    "date": "2026-01-21",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/XthReVkoz5TOiBSDWylQi5yoiQeWmopum0MLj5dSR9Y/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/06391299/filing-history/MzQ5OTc1MzAyNmFkaXF6a2N4"
   }
 }

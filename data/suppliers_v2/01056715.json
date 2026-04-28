@@ -59,13 +59,128 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "agency",
   "buyer_type_breakdown": {
     "agency": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T13:32:46Z",
+    "company_name": "MARINA DEVELOPMENTS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1972-06-02",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-13"
+  },
+  "governance": {
+    "api_date": "2026-04-28T13:32:47Z",
+    "total_officers": 44,
+    "active_count": 8,
+    "resigned_count": 36,
+    "active_officers": [
+      {
+        "name": "FLEMING, Catherine Elinor",
+        "role": "secretary",
+        "appointed_on": "2015-05-21",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BARNES, James Winston",
+        "role": "director",
+        "appointed_on": "2025-04-24",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "CHOWN, Daniel Jack",
+        "role": "director",
+        "appointed_on": "2026-02-05",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "HORSLEY, Daniel Peter",
+        "role": "director",
+        "appointed_on": "2024-05-17",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "ILIFFE, Edward Richard, The Honourable",
+        "role": "director",
+        "appointed_on": "2004-05-18",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "KING, Jonathan Andrew",
+        "role": "director",
+        "appointed_on": "2024-11-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SPENCER, Michael Gerald",
+        "role": "director",
+        "appointed_on": "2018-04-04",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WILLIAMS, David Grey",
+        "role": "director",
+        "appointed_on": "2013-05-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T13:32:48Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mdl Marinas Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Company Limited By Shares",
+          "legal_authority": "English",
+          "country_registered": "England",
+          "place_registered": "England",
+          "registration_number": "1949111"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4NzgyNDIzMWFkaXF6a2N4",
+    "date": "2025-11-07",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/k9gna_ISIP5yA0fF1NGTXkNtcTh-40lRHIZ4LeY0jAs/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01056715/filing-history/MzQ4NzgyNDIzMWFkaXF6a2N4"
   }
 }

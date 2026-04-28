@@ -59,13 +59,97 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T20:54:05Z",
+    "company_name": "KIELY BROS. LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1998-01-02",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-09-27"
+  },
+  "governance": {
+    "api_date": "2026-04-27T20:54:06Z",
+    "total_officers": 3,
+    "active_count": 2,
+    "resigned_count": 1,
+    "active_officers": [
+      {
+        "name": "MC STAY, Kathleen Mary",
+        "role": "secretary",
+        "appointed_on": "1998-01-02",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "KIELY, Michael Joseph",
+        "role": "director",
+        "appointed_on": "1998-01-02",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T20:54:08Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Michael Joseph Kiely",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Kiely Bros Holdings Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act, 2006",
+          "country_registered": "England",
+          "place_registered": "United Kingdom",
+          "registration_number": "03538859"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MTM5NjkzNWFkaXF6a2N4",
+    "date": "2025-09-17",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/TuY4NLUFx6EaN-PNFl53EPJMzVgVYYlVegckGMlbUXc/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03487871/filing-history/MzQ4MTM5NjkzNWFkaXF6a2N4"
   }
 }

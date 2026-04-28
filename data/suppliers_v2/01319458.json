@@ -59,13 +59,100 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T03:58:40Z",
+    "company_name": "PAGE, WHITE & FARRER LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1977-06-29",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-12"
+  },
+  "governance": {
+    "api_date": "2026-04-28T03:58:41Z",
+    "total_officers": 21,
+    "active_count": 7,
+    "resigned_count": 14,
+    "active_officers": [
+      {
+        "name": "BYRNE, Taryn",
+        "role": "director",
+        "appointed_on": "2024-04-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CORNISH, James Philip",
+        "role": "director",
+        "appointed_on": "2002-06-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "MAHON, Thomas",
+        "role": "director",
+        "appointed_on": "2023-06-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "MCKINLAY, Andrew",
+        "role": "director",
+        "appointed_on": "2024-10-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ROBERTS, David",
+        "role": "director",
+        "appointed_on": "2018-06-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "STYLE, Kelda Camilla Karen",
+        "role": "director",
+        "appointed_on": "1999-06-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WILLIAMS, David John",
+        "role": "director",
+        "appointed_on": "2002-06-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T03:58:42Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxMzY4MzI3M2FkaXF6a2N4",
+    "date": "2026-03-31",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/ncPVn4-mrVSqJKmN66paguxJUUOb_TTUf3L9HUbjrpA/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01319458/filing-history/MzUxMzY4MzI3M2FkaXF6a2N4"
   }
 }

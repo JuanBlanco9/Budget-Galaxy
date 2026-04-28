@@ -55,13 +55,147 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T12:18:20Z",
+    "company_name": "TRANSPORT INITIATIVES LLP",
+    "company_status": "active",
+    "date_of_creation": "2005-01-04",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-18"
+  },
+  "governance": {
+    "api_date": "2026-04-28T12:18:22Z",
+    "total_officers": 13,
+    "active_count": 5,
+    "resigned_count": 8,
+    "active_officers": [
+      {
+        "name": "ESSEX, Stephen Michael Hudson",
+        "role": "llp-designated-member",
+        "appointed_on": "2005-01-04",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "JACOBS, Toby Elliot",
+        "role": "llp-designated-member",
+        "appointed_on": "2021-04-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "SPENCE, Richard Kenneth",
+        "role": "llp-designated-member",
+        "appointed_on": "2005-01-04",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "STRONG, Mark Simon",
+        "role": "llp-designated-member",
+        "appointed_on": "2005-01-04",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "MARSHALL, Robert Francis",
+        "role": "llp-member",
+        "appointed_on": "2005-01-04",
+        "country_of_residence": "England",
+        "nationality": null
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T12:18:23Z",
+    "total_results": 5,
+    "active_count": 4,
+    "items": [
+      {
+        "name": "Mr Toby Elliot Jacobs",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control-limited-liability-partnership"
+        ],
+        "notified_on": "2024-03-18",
+        "identification": null
+      },
+      {
+        "name": "Mr Robert Francis Marshall",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control-limited-liability-partnership"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Stephen Michael Hudson Essex",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control-limited-liability-partnership"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Mark Simon Strong",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control-limited-liability-partnership"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Richard Kenneth Spence",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control-limited-liability-partnership"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NTgwMDU4NWFkaXF6a2N4",
+    "date": "2025-12-22",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/E-4hFFtss_SnfZlO86Q9yoSY149bsQbg1lOqcYF9CiA/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/OC310831/filing-history/MzQ5NTgwMDU4NWFkaXF6a2N4"
   }
 }

@@ -63,13 +63,84 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T22:32:29Z",
+    "company_name": "HITEC POWER PROTECTION LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1995-12-04",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-18"
+  },
+  "governance": {
+    "api_date": "2026-04-27T22:32:31Z",
+    "total_officers": 19,
+    "active_count": 2,
+    "resigned_count": 17,
+    "active_officers": [
+      {
+        "name": "SCHOUTEN, Pieter Gloudius, Mr.",
+        "role": "director",
+        "appointed_on": "2022-06-14",
+        "country_of_residence": "Netherlands",
+        "nationality": "Dutch"
+      },
+      {
+        "name": "HITEC POWER PROTECTION INTERNATIONAL BV",
+        "role": "corporate-director",
+        "appointed_on": "2013-06-07",
+        "country_of_residence": null,
+        "nationality": null
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T22:32:32Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Air Water Inc.",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2019-07-17",
+        "identification": {
+          "legal_form": "Incorporated",
+          "legal_authority": "Japanese",
+          "country_registered": "Japan",
+          "place_registered": "Legal Affairs Bureau, Osaka",
+          "registration_number": "4300-01-009475"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxMzYwMTk0M2FkaXF6a2N4",
+    "date": "2026-04-11",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/s6UdtU3M-KxbOESPCVeHxdqsUMINGVQWOLGmoUSg9VQ/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03133828/filing-history/MzUxMzYwMTk0M2FkaXF6a2N4"
   }
 }

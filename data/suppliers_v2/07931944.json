@@ -61,11 +61,77 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
-  "buyer_type_breakdown": {}
+  "buyer_type_breakdown": {},
+  "ch_profile": {
+    "api_date": "2026-04-28T14:38:45Z",
+    "company_name": "PEACEFUL CHANGE INITIATIVE",
+    "company_status": "active",
+    "date_of_creation": "2012-02-01",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-06-29",
+    "accounts_last_made_up": "2024-03-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-26"
+  },
+  "governance": {
+    "api_date": "2026-04-28T14:38:46Z",
+    "total_officers": 13,
+    "active_count": 4,
+    "resigned_count": 9,
+    "active_officers": [
+      {
+        "name": "BROWN, Russell Allan",
+        "role": "director",
+        "appointed_on": "2024-06-03",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "FREEMAN, James David",
+        "role": "director",
+        "appointed_on": "2016-12-05",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PEACE, William Henry",
+        "role": "director",
+        "appointed_on": "2020-01-17",
+        "country_of_residence": "England",
+        "nationality": "American"
+      },
+      {
+        "name": "SHIHOFF, Anton Victor, Mr.",
+        "role": "director",
+        "appointed_on": "2015-05-29",
+        "country_of_residence": "England",
+        "nationality": "Irish"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T14:38:47Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4NzY4NDYyMWFkaXF6a2N4",
+    "date": "2025-11-06",
+    "type": "AA01",
+    "description": "change-account-reference-date-company-previous-extended",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/zGSfPJZBhYaMGd5WqvUlXsc1I3RxQr1CtkPQAhHOeF8/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/07931944/filing-history/MzQ4NzY4NDYyMWFkaXF6a2N4"
+  }
 }

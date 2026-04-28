@@ -59,13 +59,153 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T20:34:41Z",
+    "company_name": "FABRIKAT (NOTTINGHAM) LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1985-05-02",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-30"
+  },
+  "governance": {
+    "api_date": "2026-04-27T20:34:43Z",
+    "total_officers": 19,
+    "active_count": 5,
+    "resigned_count": 14,
+    "active_officers": [
+      {
+        "name": "BATTY, Melvin",
+        "role": "director",
+        "appointed_on": "2021-02-15",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CAETANO, Margarida Maria Da Silva",
+        "role": "director",
+        "appointed_on": "2024-03-06",
+        "country_of_residence": "Portugal",
+        "nationality": "Portuguese"
+      },
+      {
+        "name": "MOTA, Bruno Oliveira Teixeira Da",
+        "role": "director",
+        "appointed_on": "2024-03-06",
+        "country_of_residence": "Portugal",
+        "nationality": "Portuguese"
+      },
+      {
+        "name": "ROCHA BRITO MARTINHO ANTUNES, António Pedro",
+        "role": "director",
+        "appointed_on": "2024-03-06",
+        "country_of_residence": "Portugal",
+        "nationality": "Portuguese"
+      },
+      {
+        "name": "VIEIRA, Tiago",
+        "role": "director",
+        "appointed_on": "2024-03-06",
+        "country_of_residence": "Portugal",
+        "nationality": "Portuguese"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T20:34:44Z",
+    "total_results": 4,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Hollinwell Investments Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2018-03-28",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "09767230"
+        }
+      },
+      {
+        "name": "Hollinwell Investments Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "08602861"
+        }
+      },
+      {
+        "name": "Mr Martin Hopkins",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Matthew Housley Wass",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2ODkyOTgxMWFkaXF6a2N4",
+    "date": "2025-06-04",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-medium",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/dJU_pLq1dariz6425_UOQLtV3HqJRZyOMtLDC0byM2o/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01910661/filing-history/MzQ2ODkyOTgxMWFkaXF6a2N4"
   }
 }

@@ -68,13 +68,88 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T10:41:23Z",
+    "company_name": "ARMCON RENTALS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2016-01-08",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-10-31",
+    "accounts_last_made_up": "2025-01-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-21"
+  },
+  "governance": {
+    "api_date": "2026-04-28T10:41:24Z",
+    "total_officers": 4,
+    "active_count": 1,
+    "resigned_count": 3,
+    "active_officers": [
+      {
+        "name": "ARMSTRONG, Gina",
+        "role": "director",
+        "appointed_on": "2024-04-09",
+        "country_of_residence": "Wales",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T10:41:25Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Executors Of Mr R Armstrong Deceased",
+        "kind": "legal-person-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2025-07-25",
+        "identification": {
+          "legal_form": "Estate In Administration",
+          "legal_authority": "Uk"
+        }
+      },
+      {
+        "name": "Robert Armstrong",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2NTQ4NTY2MGFkaXF6a2N4",
+    "date": "2025-05-08",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/Qmv_uImOEcKll5rQu8p9eTOFDib_UuWXOiiJDZMsnkY/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/09943126/filing-history/MzQ2NTQ4NTY2MGFkaXF6a2N4"
   }
 }

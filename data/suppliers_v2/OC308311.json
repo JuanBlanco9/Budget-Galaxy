@@ -55,14 +55,253 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.5763,
     "council": 0.4237
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T19:43:54Z",
+    "company_name": "RAPLEYS LIMITED LIABILITY PARTNERSHIP",
+    "company_status": "active",
+    "date_of_creation": "2004-06-15",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-01-31",
+    "accounts_last_made_up": "2025-04-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-01"
+  },
+  "governance": {
+    "api_date": "2026-04-27T19:43:56Z",
+    "total_officers": 121,
+    "active_count": 51,
+    "resigned_count": 70,
+    "active_officers": [
+      {
+        "name": "CLARKE, Ian Robert",
+        "role": "llp-designated-member",
+        "appointed_on": "2004-06-15",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "FELL, Nicholas",
+        "role": "llp-designated-member",
+        "appointed_on": "2015-02-02",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "HARBOUR, Simon James",
+        "role": "llp-designated-member",
+        "appointed_on": "2013-05-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "IRVINE, Angus Bell Hamilton, Mr.",
+        "role": "llp-designated-member",
+        "appointed_on": "2005-11-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "TUCKWELL, Justin Scott",
+        "role": "llp-designated-member",
+        "appointed_on": "2008-05-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "ANKERS, Phillip",
+        "role": "llp-member",
+        "appointed_on": "2024-05-07",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "BEES, Chris",
+        "role": "llp-member",
+        "appointed_on": "2024-08-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "BERNSTEIN, Jonathan Ben",
+        "role": "llp-member",
+        "appointed_on": "2024-01-03",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "BRAY, Natasha Bianca",
+        "role": "llp-member",
+        "appointed_on": "2023-05-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "CONNOR, Gerard Thomas",
+        "role": "llp-member",
+        "appointed_on": "2026-04-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "COOK, Christopher",
+        "role": "llp-member",
+        "appointed_on": "2024-12-16",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "COOK, Daniel John",
+        "role": "llp-member",
+        "appointed_on": "2017-05-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "CROW, Richard Brian",
+        "role": "llp-member",
+        "appointed_on": "2021-07-07",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "DUNNE, Paul Christopher Francis",
+        "role": "llp-member",
+        "appointed_on": "2023-05-09",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "ENSOR, David Lewis",
+        "role": "llp-member",
+        "appointed_on": "2004-06-15",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "FRASER, Robert",
+        "role": "llp-member",
+        "appointed_on": "2025-03-17",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "FROST, Richard Alan",
+        "role": "llp-member",
+        "appointed_on": "2025-12-01",
+        "country_of_residence": "Wales",
+        "nationality": null
+      },
+      {
+        "name": "GILBERT, Michael Benjamin",
+        "role": "llp-member",
+        "appointed_on": "2025-04-16",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "GITTUS, William Angus",
+        "role": "llp-member",
+        "appointed_on": "2023-02-06",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "GLADWIN, Martin",
+        "role": "llp-member",
+        "appointed_on": "2024-05-01",
+        "country_of_residence": "England",
+        "nationality": null
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T19:43:58Z",
+    "total_results": 5,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Mr Angus Bell Hamilton Irvine",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control-limited-liability-partnership"
+        ],
+        "notified_on": "2021-08-26",
+        "identification": null
+      },
+      {
+        "name": "Mr Justin Scott Tuckwell",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control-limited-liability-partnership"
+        ],
+        "notified_on": "2021-05-01",
+        "identification": null
+      },
+      {
+        "name": "Mr Martin Ian Carey",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "English",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control-limited-liability-partnership"
+        ],
+        "notified_on": "2016-05-01",
+        "identification": null
+      },
+      {
+        "name": "Mr Philip Jon Blackford",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control-limited-liability-partnership"
+        ],
+        "notified_on": "2016-05-01",
+        "identification": null
+      },
+      {
+        "name": "Mr Ian Robert Clarke",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control-limited-liability-partnership"
+        ],
+        "notified_on": "2016-05-01",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MTY5MDI2OGFkaXF6a2N4",
+    "date": "2025-12-03",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/jGcM604CSbojMvUN_-HsRtKBHBR_GEjyA9BSsXE76cI/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/OC308311/filing-history/MzQ5MTY5MDI2OGFkaXF6a2N4"
   }
 }

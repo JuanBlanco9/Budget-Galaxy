@@ -59,14 +59,96 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "police_fire",
   "buyer_type_breakdown": {
     "police_fire": 0.6321,
     "nhs": 0.3679
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T01:36:27Z",
+    "company_name": "METHODS ANALYTICS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2013-09-19",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-03"
+  },
+  "governance": {
+    "api_date": "2026-04-28T01:36:28Z",
+    "total_officers": 9,
+    "active_count": 4,
+    "resigned_count": 5,
+    "active_officers": [
+      {
+        "name": "BAILEY, Oliver",
+        "role": "director",
+        "appointed_on": "2020-03-24",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BLOMERLEY, Adam James Alec",
+        "role": "director",
+        "appointed_on": "2023-05-02",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BONHOMME, Pierre Francois Jean",
+        "role": "director",
+        "appointed_on": "2022-04-13",
+        "country_of_residence": "France",
+        "nationality": "French"
+      },
+      {
+        "name": "FLANDE, Arnaud Benoit",
+        "role": "director",
+        "appointed_on": "2022-04-13",
+        "country_of_residence": "France",
+        "nationality": "French"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T01:36:30Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Methods Consulting (Analytics) Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4ODAyODY3NWFkaXF6a2N4",
+    "date": "2025-11-10",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/mP-RtmFLB7O4J-gOi7RhvyPCXq2HIA4sB0EaF8qVbC8/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/08698156/filing-history/MzQ4ODAyODY3NWFkaXF6a2N4"
   }
 }

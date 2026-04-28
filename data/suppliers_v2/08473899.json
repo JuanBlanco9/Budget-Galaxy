@@ -68,13 +68,114 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T02:34:26Z",
+    "company_name": "LIONHEART EDUCATIONAL TRUST",
+    "company_status": "active",
+    "date_of_creation": "2013-04-04",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-05-31",
+    "accounts_last_made_up": "2025-08-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-05-27"
+  },
+  "governance": {
+    "api_date": "2026-04-28T02:34:27Z",
+    "total_officers": 42,
+    "active_count": 9,
+    "resigned_count": 33,
+    "active_officers": [
+      {
+        "name": "HACKETT, Lauren Louise",
+        "role": "secretary",
+        "appointed_on": "2023-09-01",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "CHATBURN, Byron Stephen",
+        "role": "director",
+        "appointed_on": "2021-05-19",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GRANT, Mark David",
+        "role": "director",
+        "appointed_on": "2017-04-05",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HARRIS, Stephen Ian",
+        "role": "director",
+        "appointed_on": "2013-04-04",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "KADODWALA, Dilip Kumar",
+        "role": "director",
+        "appointed_on": "2017-06-07",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "KELLY, Kathryn Leigh",
+        "role": "director",
+        "appointed_on": "2020-11-16",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "RAIKUNDALIA, Sarju",
+        "role": "director",
+        "appointed_on": "2021-06-23",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SALAH, Farah",
+        "role": "director",
+        "appointed_on": "2023-11-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "VASSIE, Luise Helen, Dr",
+        "role": "director",
+        "appointed_on": "2022-09-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T02:34:28Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5ODM5Njc3MWFkaXF6a2N4",
+    "date": "2026-01-12",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/gOMCp9Jq6GnNdYJkDO3Pv4dv4s_KS5E-FXLXSHgr9KQ/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/08473899/filing-history/MzQ5ODM5Njc3MWFkaXF6a2N4"
   }
 }

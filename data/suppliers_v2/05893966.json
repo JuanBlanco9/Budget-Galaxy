@@ -64,11 +64,145 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
-  "buyer_type_breakdown": {}
+  "buyer_type_breakdown": {},
+  "ch_profile": {
+    "api_date": "2026-04-28T15:08:32Z",
+    "company_name": "DRAX ENERGY SOLUTIONS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2006-08-02",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-08-03"
+  },
+  "governance": {
+    "api_date": "2026-04-28T15:08:33Z",
+    "total_officers": 29,
+    "active_count": 5,
+    "resigned_count": 24,
+    "active_officers": [
+      {
+        "name": "DUNN, Rebecca",
+        "role": "secretary",
+        "appointed_on": "2026-03-19",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "GARDINER, Dwight Daniel Willard",
+        "role": "director",
+        "appointed_on": "2016-01-01",
+        "country_of_residence": "England",
+        "nationality": "British,American"
+      },
+      {
+        "name": "LEMMINK, Frank Hendrikus",
+        "role": "director",
+        "appointed_on": "2025-10-03",
+        "country_of_residence": "Netherlands",
+        "nationality": "Dutch"
+      },
+      {
+        "name": "PEACOCK, Daniel Andrew",
+        "role": "director",
+        "appointed_on": "2026-03-19",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SHEFFIELD, Paul Nathan",
+        "role": "director",
+        "appointed_on": "2017-06-12",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T15:08:34Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Drax Corporate Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2017-05-16",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "England And Wales",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "5562058"
+        }
+      },
+      {
+        "name": "Drax Smart Supply Holdco Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2017-05-16",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "England And Wales",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "10664625"
+        }
+      },
+      {
+        "name": "Drax Power Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "English",
+          "country_registered": "England & Wales",
+          "place_registered": "Companies House",
+          "registration_number": "4883589"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MzE2NTM1MmFkaXF6a2N4",
+    "date": "2025-07-10",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/5mu1FaC1gybE-bUyvInSIrD1LxzJog8hBw-nFWJwxXw/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/05893966/filing-history/MzQ3MzE2NTM1MmFkaXF6a2N4"
+  }
 }

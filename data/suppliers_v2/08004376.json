@@ -59,13 +59,134 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "education",
   "buyer_type_breakdown": {
     "education": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T04:02:34Z",
+    "company_name": "FORRESTBROWN LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2012-03-23",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-25"
+  },
+  "governance": {
+    "api_date": "2026-04-28T04:02:35Z",
+    "total_officers": 8,
+    "active_count": 3,
+    "resigned_count": 5,
+    "active_officers": [
+      {
+        "name": "BROWN, Simon",
+        "role": "director",
+        "appointed_on": "2018-03-06",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "FRANK, Shane",
+        "role": "director",
+        "appointed_on": "2018-03-06",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      },
+      {
+        "name": "JADAV, Dhaval",
+        "role": "director",
+        "appointed_on": "2018-03-06",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T04:02:36Z",
+    "total_results": 5,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Mr Jay Michael Grossman",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "American",
+        "country_of_residence": "United States",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2018-03-06",
+        "identification": null
+      },
+      {
+        "name": "Ms Peggy Jean Koenig",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "American",
+        "country_of_residence": "United States",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2018-03-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Dhaval Jadav",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "American",
+        "country_of_residence": "United States",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2018-03-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Shane Frank",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "American",
+        "country_of_residence": "United States",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2018-03-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Simon Finchett Forrest Brown",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MTYwMzg0NWFkaXF6a2N4",
+    "date": "2025-06-26",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/qZC0nvQ3ThR43niQGVCxn9lPIoz48ii8lRhJwdTXiFI/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/08004376/filing-history/MzQ3MTYwMzg0NWFkaXF6a2N4"
   }
 }

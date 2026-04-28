@@ -59,13 +59,127 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T12:10:10Z",
+    "company_name": "OLDHAM ENGINEERING LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1993-04-13",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-06-30",
+    "accounts_last_made_up": "2024-09-30",
+    "confirmation_statement_overdue": true,
+    "confirmation_statement_next_due": "2026-04-23"
+  },
+  "governance": {
+    "api_date": "2026-04-28T12:10:11Z",
+    "total_officers": 37,
+    "active_count": 7,
+    "resigned_count": 30,
+    "active_officers": [
+      {
+        "name": "BOYLE, Geoffrey",
+        "role": "director",
+        "appointed_on": "2020-09-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "JOHNSON, Stephen Dean",
+        "role": "director",
+        "appointed_on": "2024-10-16",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MASON, Darren",
+        "role": "director",
+        "appointed_on": "2018-01-02",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MINSKIP, David Leslie",
+        "role": "director",
+        "appointed_on": "2023-06-28",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "POSTLETHWAITE, Glenn",
+        "role": "director",
+        "appointed_on": "2023-06-28",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "RODGERS, Ian",
+        "role": "director",
+        "appointed_on": "2025-11-25",
+        "country_of_residence": "Australia",
+        "nationality": "British,Australian"
+      },
+      {
+        "name": "STOCKER, Rohan",
+        "role": "director",
+        "appointed_on": "2025-11-25",
+        "country_of_residence": "Australia",
+        "nationality": "Australian"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T12:10:12Z",
+    "total_results": 2,
+    "active_count": 0,
+    "items": [
+      {
+        "name": "Mrs Melanie Dunigan",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent-as-trust",
+          "voting-rights-25-to-50-percent-as-trust"
+        ],
+        "notified_on": "2025-11-12",
+        "identification": null
+      },
+      {
+        "name": "Mr Andrew James Dunigan",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent-as-trust",
+          "voting-rights-25-to-50-percent-as-trust"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4NDI5Nzg2NmFkaXF6a2N4",
+    "date": "2025-10-09",
+    "type": "AAMD",
+    "description": "accounts-amended-with-accounts-type-medium",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/U-3IbZUjRASN1cAOEF7Dc4inHpoXfC1BbZyx3Grkq_g/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02808484/filing-history/MzQ4NDI5Nzg2NmFkaXF6a2N4"
   }
 }

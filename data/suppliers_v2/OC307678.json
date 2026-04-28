@@ -55,15 +55,256 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 0.914,
     "other": 0.0806,
     "police_fire": 0.0054
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T14:58:57Z",
+    "company_name": "BARNETT WADDINGHAM LLP",
+    "company_status": "active",
+    "date_of_creation": "2004-04-16",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2025-05-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-15"
+  },
+  "governance": {
+    "api_date": "2026-04-27T14:58:58Z",
+    "total_officers": 150,
+    "active_count": 2,
+    "resigned_count": 148,
+    "active_officers": [
+      {
+        "name": "HOWDEN UK&I HOLDINGS LIMITED",
+        "role": "corporate-llp-designated-member",
+        "appointed_on": "2025-07-04",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "HOWDEN UK&I JERSEY LIMITED",
+        "role": "corporate-llp-designated-member",
+        "appointed_on": "2025-04-03",
+        "country_of_residence": null,
+        "nationality": null
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T14:59:00Z",
+    "total_results": 23,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Howden Uk&I Holdings Limited ",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control-limited-liability-partnership"
+        ],
+        "notified_on": "2025-04-03",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "United Kingdom (England And Wales)",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "12875660"
+        }
+      },
+      {
+        "name": "Mr Scott David Eason",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control-limited-liability-partnership"
+        ],
+        "notified_on": "2024-06-01",
+        "identification": null
+      },
+      {
+        "name": "Mr Samuel Charles Patrick Meldrum",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control-limited-liability-partnership"
+        ],
+        "notified_on": "2024-06-01",
+        "identification": null
+      },
+      {
+        "name": "Sarah Anne Brown",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control-limited-liability-partnership"
+        ],
+        "notified_on": "2023-06-01",
+        "identification": null
+      },
+      {
+        "name": "Mr Mark William Frank Futcher",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control-limited-liability-partnership"
+        ],
+        "notified_on": "2022-06-01",
+        "identification": null
+      },
+      {
+        "name": "Zoe Frances Smith",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control-limited-liability-partnership"
+        ],
+        "notified_on": "2021-06-01",
+        "identification": null
+      },
+      {
+        "name": "Mr David Antony John Stoddard",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control-limited-liability-partnership"
+        ],
+        "notified_on": "2020-09-01",
+        "identification": null
+      },
+      {
+        "name": "Simon David Rusling",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control-limited-liability-partnership"
+        ],
+        "notified_on": "2020-06-01",
+        "identification": null
+      },
+      {
+        "name": "Andrew John Vaughan",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control-limited-liability-partnership"
+        ],
+        "notified_on": "2020-06-01",
+        "identification": null
+      },
+      {
+        "name": "Mrs Elizabeth Kay Renshaw-Ames",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control-limited-liability-partnership"
+        ],
+        "notified_on": "2019-06-01",
+        "identification": null
+      },
+      {
+        "name": "David Leslie Grimshaw",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control-limited-liability-partnership"
+        ],
+        "notified_on": "2019-06-01",
+        "identification": null
+      },
+      {
+        "name": "Mr Robert Hawkes",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control-limited-liability-partnership"
+        ],
+        "notified_on": "2019-06-01",
+        "identification": null
+      },
+      {
+        "name": "Marcus Ifan Whitehead",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control-limited-liability-partnership"
+        ],
+        "notified_on": "2019-06-01",
+        "identification": null
+      },
+      {
+        "name": "Mr Damian Paul Stancombe",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control-limited-liability-partnership",
+          "significant-influence-or-control-as-trust-limited-liability-partnership",
+          "significant-influence-or-control-as-firm-limited-liability-partnership"
+        ],
+        "notified_on": "2017-06-01",
+        "identification": null
+      },
+      {
+        "name": "Nicholas John Howard Salter",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control-limited-liability-partnership"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NTEzNDUwOWFkaXF6a2N4",
+    "date": "2025-12-18",
+    "type": "LLAA01",
+    "description": "change-account-reference-date-limited-liability-partnership-current-shortened",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/OC102nNpu-DUX3oU-5mZcKwvKfouMyZkPnPGcIk_anw/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/OC307678/filing-history/MzQ5NTEzNDUwOWFkaXF6a2N4"
   }
 }

@@ -64,13 +64,99 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "education",
   "buyer_type_breakdown": {
     "education": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T03:08:13Z",
+    "company_name": "RESEARCHFUL LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2016-02-01",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-10-31",
+    "accounts_last_made_up": "2026-01-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-25"
+  },
+  "governance": {
+    "api_date": "2026-04-28T03:08:14Z",
+    "total_officers": 3,
+    "active_count": 3,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "O'BRIEN, Christopher John",
+        "role": "secretary",
+        "appointed_on": "2023-01-31",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "O'BRIEN, Nina Jane",
+        "role": "secretary",
+        "appointed_on": "2023-12-20",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "O'BRIEN, Christopher John",
+        "role": "director",
+        "appointed_on": "2016-02-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T03:08:15Z",
+    "total_results": 2,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Mrs Nina Jane O'Brien",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2024-03-11",
+        "identification": null
+      },
+      {
+        "name": "Mr Christopher John O'Brien",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxMDEyNjc2NWFkaXF6a2N4",
+    "date": "2026-03-13",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-micro-entity",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/mzr2fSeN7kuh-gX2ZfmF7JGdGVjQmjyUJ0eDg0WnjQI/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/09978596/filing-history/MzUxMDEyNjc2NWFkaXF6a2N4"
   }
 }

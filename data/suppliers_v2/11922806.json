@@ -64,13 +64,146 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T20:37:56Z",
+    "company_name": "SECURESHIELD LTD",
+    "company_status": "active",
+    "date_of_creation": "2019-04-03",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-18"
+  },
+  "governance": {
+    "api_date": "2026-04-27T20:37:58Z",
+    "total_officers": 13,
+    "active_count": 5,
+    "resigned_count": 8,
+    "active_officers": [
+      {
+        "name": "BRIDGES, Mark Anthony",
+        "role": "director",
+        "appointed_on": "2024-10-29",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "HUNTER, John Gerard",
+        "role": "director",
+        "appointed_on": "2020-03-02",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "HUNTER, William Dunlop",
+        "role": "director",
+        "appointed_on": "2023-08-08",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      },
+      {
+        "name": "LEE, David",
+        "role": "director",
+        "appointed_on": "2024-10-29",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "TEADER, Ian James",
+        "role": "director",
+        "appointed_on": "2024-10-29",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T20:37:59Z",
+    "total_results": 4,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Ranger Services Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2024-10-29",
+        "identification": {
+          "legal_form": "Company Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "13695543"
+        }
+      },
+      {
+        "name": "Mr Robert William Walker",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2020-08-03",
+        "identification": null
+      },
+      {
+        "name": "Mr John Gerard Hunter",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent",
+          "voting-rights-50-to-75-percent"
+        ],
+        "notified_on": "2020-08-03",
+        "identification": null
+      },
+      {
+        "name": "Mr Mark Levey",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2020-08-03",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4NDUzOTA5M2FkaXF6a2N4",
+    "date": "2025-10-11",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/gje5SwG7FgjcvYTjybZNnzkjSDMCDgUBS96e7nm_eOA/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/11922806/filing-history/MzQ4NDUzOTA5M2FkaXF6a2N4"
   }
 }

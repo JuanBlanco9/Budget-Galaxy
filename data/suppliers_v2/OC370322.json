@@ -55,13 +55,216 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T07:32:53Z",
+    "company_name": "COUNTERCULTURE PARTNERSHIP LLP",
+    "company_status": "active",
+    "date_of_creation": "2011-11-30",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-14"
+  },
+  "governance": {
+    "api_date": "2026-04-28T07:32:55Z",
+    "total_officers": 63,
+    "active_count": 34,
+    "resigned_count": 29,
+    "active_officers": [
+      {
+        "name": "ESCRITT, Stephen Michael",
+        "role": "llp-designated-member",
+        "appointed_on": "2011-11-30",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "GREANEY, Peter",
+        "role": "llp-designated-member",
+        "appointed_on": "2011-11-30",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "POTTS, Christopher John",
+        "role": "llp-designated-member",
+        "appointed_on": "2013-04-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "WILCOX, Tomas Norman",
+        "role": "llp-designated-member",
+        "appointed_on": "2011-11-30",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "ALDGATE, Christopher James",
+        "role": "llp-member",
+        "appointed_on": "2025-04-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "ARMSTRONG-WILLIAMS, Sharon Elizabeth",
+        "role": "llp-member",
+        "appointed_on": "2022-06-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "BENTON, Philip John",
+        "role": "llp-member",
+        "appointed_on": "2014-06-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "BLADON, Noa Elizabeth",
+        "role": "llp-member",
+        "appointed_on": "2024-03-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "CAVE, Wendy Elizabeth",
+        "role": "llp-member",
+        "appointed_on": "2022-03-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "CHAMBERLAIN, James William",
+        "role": "llp-member",
+        "appointed_on": "2018-11-20",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "CLARKE, Caroline Jean",
+        "role": "llp-member",
+        "appointed_on": "2025-12-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "COE, James Lewis",
+        "role": "llp-member",
+        "appointed_on": "2022-06-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "DUNNETT, Joanna Mary",
+        "role": "llp-member",
+        "appointed_on": "2017-01-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "EASTBURN, Susanna De Martelly",
+        "role": "llp-member",
+        "appointed_on": "2024-03-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "ELLISON, Timothy John",
+        "role": "llp-member",
+        "appointed_on": "2018-03-02",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "ESCRITT, Iyabo Ronke",
+        "role": "llp-member",
+        "appointed_on": "2020-06-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "EVANS, Andrew Richard",
+        "role": "llp-member",
+        "appointed_on": "2025-04-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "HALL, Amanda",
+        "role": "llp-member",
+        "appointed_on": "2019-05-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "HYDE, Steven David",
+        "role": "llp-member",
+        "appointed_on": "2023-03-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "JAFFAR, Mohammed Illiyas",
+        "role": "llp-member",
+        "appointed_on": "2021-06-01",
+        "country_of_residence": "England",
+        "nationality": null
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T07:32:56Z",
+    "total_results": 2,
+    "active_count": 0,
+    "items": [
+      {
+        "name": "Mr Tomas Norman Wilcox",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "voting-rights-25-to-50-percent-limited-liability-partnership"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Stephen Michael Escritt",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "voting-rights-25-to-50-percent-limited-liability-partnership"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MTcyNDQxNGFkaXF6a2N4",
+    "date": "2025-12-01",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/p2hT9KLJnXnT7eZVKNydvGllpNv-O3dzPt0uQmfLS3M/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/OC370322/filing-history/MzQ5MTcyNDQxNGFkaXF6a2N4"
   }
 }

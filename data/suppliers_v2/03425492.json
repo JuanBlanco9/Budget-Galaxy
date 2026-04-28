@@ -68,13 +68,135 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
     "central_govt": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T03:18:50Z",
+    "company_name": "INSTITUTE OF SCHOOL BUSINESS LEADERSHIP",
+    "company_status": "active",
+    "date_of_creation": "1997-08-27",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-29"
+  },
+  "governance": {
+    "api_date": "2026-04-28T03:18:51Z",
+    "total_officers": 89,
+    "active_count": 12,
+    "resigned_count": 77,
+    "active_officers": [
+      {
+        "name": "MORALES, Stephen Paul",
+        "role": "secretary",
+        "appointed_on": "2017-07-06",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BROWN, Gail Samantha",
+        "role": "director",
+        "appointed_on": "2026-04-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BURGE, Helen Elizabeth",
+        "role": "director",
+        "appointed_on": "2021-03-24",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BURRELL, Matthew Charles Steven",
+        "role": "director",
+        "appointed_on": "2015-07-03",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "COATES, Jonathan Leslie",
+        "role": "director",
+        "appointed_on": "2021-03-25",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "DALTON, Russell Gregge",
+        "role": "director",
+        "appointed_on": "2024-03-27",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "EARL, Austin Spencer",
+        "role": "director",
+        "appointed_on": "2026-04-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "FARRIER, Wendy Jane",
+        "role": "director",
+        "appointed_on": "2022-11-07",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "JONES, Luci",
+        "role": "director",
+        "appointed_on": "2022-11-07",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LESTER, Stephen Kingsley",
+        "role": "director",
+        "appointed_on": "2020-07-28",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "STARR, Karen Elizabeth, Emeritus Professor",
+        "role": "director",
+        "appointed_on": "2026-04-01",
+        "country_of_residence": "Australia",
+        "nationality": "Australian,British"
+      },
+      {
+        "name": "WARD, Carl Stewart, Dr",
+        "role": "director",
+        "appointed_on": "2026-04-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T03:18:52Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MzE1Mzk4OWFkaXF6a2N4",
+    "date": "2025-12-11",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/Tk8TQ6aWXXgorf8NwdZw7S3iT2ADe-dA57Byd5fpRVY/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03425492/filing-history/MzQ5MzE1Mzk4OWFkaXF6a2N4"
   }
 }

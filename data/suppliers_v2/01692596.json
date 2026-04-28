@@ -59,13 +59,114 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T13:17:51Z",
+    "company_name": "PAUL S. WINSON (COACHES) LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1983-01-19",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-02-01",
+    "accounts_last_made_up": "2025-05-01",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-14"
+  },
+  "governance": {
+    "api_date": "2026-04-27T13:17:53Z",
+    "total_officers": 7,
+    "active_count": 6,
+    "resigned_count": 1,
+    "active_officers": [
+      {
+        "name": "WINSON, Anthony James",
+        "role": "secretary",
+        "appointed_on": "2003-09-29",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "WINSON, Anthony James",
+        "role": "director",
+        "appointed_on": "2003-09-29",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WINSON, Margaret Audrey",
+        "role": "director",
+        "appointed_on": null,
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "WINSON, Matthew Edward",
+        "role": "director",
+        "appointed_on": "2009-02-26",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "WINSON, Paul Brian",
+        "role": "director",
+        "appointed_on": "2003-09-29",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "WINSON, Paul Samuel",
+        "role": "director",
+        "appointed_on": null,
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T13:17:54Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Paul S Winson Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "England & Wales Registry",
+          "registration_number": "01507550"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4ODUzNjI0OWFkaXF6a2N4",
+    "date": "2025-11-13",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-unaudited-abridged",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/svjLjb5zKt3cghF1qnSI0s1mPwi_wKGlegSKPXRB7rs/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01692596/filing-history/MzQ4ODUzNjI0OWFkaXF6a2N4"
   }
 }

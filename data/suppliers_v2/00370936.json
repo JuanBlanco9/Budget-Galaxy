@@ -59,13 +59,58 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "police_fire",
   "buyer_type_breakdown": {
     "police_fire": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T12:26:41Z",
+    "company_name": "JAMES MERCER (PRESTON) LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1941-11-28",
+    "date_of_cessation": "2016-06-14",
+    "jurisdiction": "england-wales",
+    "has_charges": true,
+    "has_insolvency_history": true,
+    "has_super_secure_pscs": null,
+    "accounts_overdue": true,
+    "accounts_next_due": "2003-05-31",
+    "accounts_last_made_up": null,
+    "confirmation_statement_overdue": true,
+    "confirmation_statement_next_due": "2017-01-13"
+  },
+  "governance": {
+    "api_date": "2026-04-28T12:26:42Z",
+    "total_officers": 11,
+    "active_count": 1,
+    "resigned_count": 10,
+    "active_officers": [
+      {
+        "name": "MOXHAM, John",
+        "role": "director",
+        "appointed_on": null,
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T12:26:43Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MTEzNzE1NzhhZGlxemtjeA",
+    "date": "2001-03-02",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/clQUWkI_CEshKYAt9lr9fRQ5hBuVPiA8pjonJHBkk2I/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/00370936/filing-history/MTEzNzE1NzhhZGlxemtjeA"
   }
 }

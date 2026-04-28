@@ -59,13 +59,107 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T06:16:05Z",
+    "company_name": "SEFAS INNOVATION LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1999-05-13",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-27"
+  },
+  "governance": {
+    "api_date": "2026-04-28T06:16:06Z",
+    "total_officers": 19,
+    "active_count": 5,
+    "resigned_count": 14,
+    "active_officers": [
+      {
+        "name": "ASHWELL, Samantha",
+        "role": "secretary",
+        "appointed_on": "2004-05-04",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "ASHWELL, Samantha",
+        "role": "director",
+        "appointed_on": "2023-02-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "BIANCANIELLO, Steven James",
+        "role": "director",
+        "appointed_on": "2026-02-26",
+        "country_of_residence": "Canada",
+        "nationality": "Canadian"
+      },
+      {
+        "name": "KHRISTY, Jean-Philippe",
+        "role": "director",
+        "appointed_on": "2022-10-06",
+        "country_of_residence": "France",
+        "nationality": "French"
+      },
+      {
+        "name": "SELFE, Daren Gregory",
+        "role": "director",
+        "appointed_on": "2026-02-26",
+        "country_of_residence": "Canada",
+        "nationality": "Canadian"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T06:16:07Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Sefas Innovation Sa",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Societe Anonyme",
+          "legal_authority": "French Company Law",
+          "country_registered": "France",
+          "place_registered": "Creteil",
+          "registration_number": "542 073 176 00076"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2OTgwMDEyNWFkaXF6a2N4",
+    "date": "2025-06-12",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/bbQLlpRqFdf3ylqDlznlrIDg8jK8LwMe-P3C38EG0xw/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03769761/filing-history/MzQ2OTgwMDEyNWFkaXF6a2N4"
   }
 }

@@ -59,11 +59,145 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
-  "buyer_type_breakdown": {}
+  "buyer_type_breakdown": {},
+  "ch_profile": {
+    "api_date": "2026-04-28T14:14:46Z",
+    "company_name": "EDWARD ELGAR PUBLISHING LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1986-07-29",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-09-07"
+  },
+  "governance": {
+    "api_date": "2026-04-28T14:14:47Z",
+    "total_officers": 12,
+    "active_count": 8,
+    "resigned_count": 4,
+    "active_officers": [
+      {
+        "name": "ELGAR, Sandra",
+        "role": "secretary",
+        "appointed_on": "1996-07-01",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "ELGAR, Catherine Jane",
+        "role": "director",
+        "appointed_on": "2009-01-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "ELGAR, Edward James",
+        "role": "director",
+        "appointed_on": null,
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "ELGAR, Emily Claire",
+        "role": "director",
+        "appointed_on": "2018-03-02",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "ELGAR, Sandra",
+        "role": "director",
+        "appointed_on": "1996-07-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "PETTIFER, Alexander James Comely",
+        "role": "director",
+        "appointed_on": "2009-09-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PETTIFER, Laura Mary",
+        "role": "director",
+        "appointed_on": "2010-10-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "WILLIAMS, Timothy Jonathan Leslie",
+        "role": "director",
+        "appointed_on": "2009-01-01",
+        "country_of_residence": "England",
+        "nationality": "United Kingdom"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T14:14:48Z",
+    "total_results": 3,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Mrs Laura Mary Pettifer",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2025-04-22",
+        "identification": null
+      },
+      {
+        "name": "Catherine Williams",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2025-04-22",
+        "identification": null
+      },
+      {
+        "name": "Mr Edward James Elgar",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MjUzNzM4M2FkaXF6a2N4",
+    "date": "2025-09-24",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/40TrfNqrPKB_Ap5Fyhq72PK_sHe9RP-isArpU0umqpM/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02041703/filing-history/MzQ4MjUzNzM4M2FkaXF6a2N4"
+  }
 }

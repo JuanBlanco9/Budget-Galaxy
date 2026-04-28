@@ -59,13 +59,294 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T11:01:18Z",
+    "company_name": "HEADWAY CAMBRIDGE AND PETERBOROUGH LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2023-07-05",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-18"
+  },
+  "governance": {
+    "api_date": "2026-04-28T11:01:19Z",
+    "total_officers": 17,
+    "active_count": 10,
+    "resigned_count": 7,
+    "active_officers": [
+      {
+        "name": "BIRCH, Gavin John",
+        "role": "director",
+        "appointed_on": "2026-04-09",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "BROWN, Keith James",
+        "role": "director",
+        "appointed_on": "2026-04-09",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "BYRNE, Patrick Devane, Dr",
+        "role": "director",
+        "appointed_on": "2026-04-14",
+        "country_of_residence": "United Kingdom",
+        "nationality": "Irish,British"
+      },
+      {
+        "name": "FLAHERTY, Judith, Dr",
+        "role": "director",
+        "appointed_on": "2025-06-05",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "KHUDAYIR, Sarah Yasmin",
+        "role": "director",
+        "appointed_on": "2024-06-18",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LYON, Carol",
+        "role": "director",
+        "appointed_on": "2025-07-21",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "NASH, Helen Sian",
+        "role": "director",
+        "appointed_on": "2025-07-21",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "STANLEY, Christopher John",
+        "role": "director",
+        "appointed_on": "2026-04-09",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "TUNBRIDGE, Jennifer Ann",
+        "role": "director",
+        "appointed_on": "2024-06-18",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WARBURTON, Simon Roger",
+        "role": "director",
+        "appointed_on": "2026-04-09",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T11:01:21Z",
+    "total_results": 14,
+    "active_count": 10,
+    "items": [
+      {
+        "name": "Dr Patrick Devane Byrne",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Irish,British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2026-04-14",
+        "identification": null
+      },
+      {
+        "name": "Mr Simon Roger Warburton",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2026-04-09",
+        "identification": null
+      },
+      {
+        "name": "Mr Gavin John Birch",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2026-04-09",
+        "identification": null
+      },
+      {
+        "name": "Mr Christopher John Stanley",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2026-04-09",
+        "identification": null
+      },
+      {
+        "name": "Mr Keith James Brown",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2026-04-09",
+        "identification": null
+      },
+      {
+        "name": "Ms Helen Sian Nash",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2025-07-21",
+        "identification": null
+      },
+      {
+        "name": "Mrs Carol Lyon",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2025-07-21",
+        "identification": null
+      },
+      {
+        "name": "Dr Judith Flaherty",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2025-06-05",
+        "identification": null
+      },
+      {
+        "name": "Mr Stephen Paul Cheetham",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2025-01-10",
+        "identification": null
+      },
+      {
+        "name": "Dr Sharon Catherine Buckland",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control",
+          "significant-influence-or-control-as-trust"
+        ],
+        "notified_on": "2024-06-18",
+        "identification": null
+      },
+      {
+        "name": "Mrs Jennifer Ann Tunbridge",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control",
+          "significant-influence-or-control-as-trust"
+        ],
+        "notified_on": "2024-06-18",
+        "identification": null
+      },
+      {
+        "name": "Ms Sarah Yasmin Khudayir",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control",
+          "significant-influence-or-control-as-trust"
+        ],
+        "notified_on": "2024-06-18",
+        "identification": null
+      },
+      {
+        "name": "Dr Stephen Paul Langshaw",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control",
+          "significant-influence-or-control-as-trust"
+        ],
+        "notified_on": "2023-07-05",
+        "identification": null
+      },
+      {
+        "name": "Mr Michael William Kitching",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2023-07-05",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5Mzc1OTE0MWFkaXF6a2N4",
+    "date": "2025-12-16",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/p7VENr_HDJHBgxMVety4ffpsiVpkw_rnISoEmgeLeb0/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/14982073/filing-history/MzQ5Mzc1OTE0MWFkaXF6a2N4"
   }
 }

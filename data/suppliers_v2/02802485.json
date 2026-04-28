@@ -59,13 +59,130 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T07:24:43Z",
+    "company_name": "PILLORY BARN DESIGN LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1993-03-23",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-04-05"
+  },
+  "governance": {
+    "api_date": "2026-04-28T07:24:44Z",
+    "total_officers": 8,
+    "active_count": 5,
+    "resigned_count": 3,
+    "active_officers": [
+      {
+        "name": "HIGH, Desmond Charles Fitzpatrick",
+        "role": "secretary",
+        "appointed_on": "1993-04-16",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "CHAPMAN, Miranda Lesley",
+        "role": "director",
+        "appointed_on": "2006-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HARRIS, Lisa Ann",
+        "role": "director",
+        "appointed_on": "2024-10-18",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "O'CONNOR, Julie Anne",
+        "role": "director",
+        "appointed_on": "2024-02-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SMITH, Michael",
+        "role": "director",
+        "appointed_on": "2024-02-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T07:24:45Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Pillory Barn Agency Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2024-10-29",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "Companies Act, 1985",
+          "country_registered": "United Kingdom",
+          "place_registered": "England",
+          "registration_number": "07155272"
+        }
+      },
+      {
+        "name": "Mr Roger Dennis Arthur Hills",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mrs Miranda Lesley Chapman",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NTIwMDA4MGFkaXF6a2N4",
+    "date": "2025-12-18",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/gBC_7X-cG_7D0_tCb9sDXwf09NBowXwdTMHRtNaC9fA/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02802485/filing-history/MzQ5NTIwMDA4MGFkaXF6a2N4"
   }
 }

@@ -68,13 +68,120 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T04:46:42Z",
+    "company_name": "PROPHIX UK LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2006-03-09",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-16"
+  },
+  "governance": {
+    "api_date": "2026-04-28T04:46:43Z",
+    "total_officers": 8,
+    "active_count": 2,
+    "resigned_count": 6,
+    "active_officers": [
+      {
+        "name": "AJMERA, Alok",
+        "role": "director",
+        "appointed_on": "2021-03-02",
+        "country_of_residence": "Canada",
+        "nationality": "Canadian"
+      },
+      {
+        "name": "VAN HATTEN, Ryan",
+        "role": "director",
+        "appointed_on": "2021-03-02",
+        "country_of_residence": "Canada",
+        "nationality": "Canadian"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T04:46:44Z",
+    "total_results": 4,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Hgcapital Llp",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2021-02-01",
+        "identification": {
+          "legal_form": "Limited Liability Partnership",
+          "legal_authority": "Companies Act 2006"
+        }
+      },
+      {
+        "name": "Carol Ann Barber",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British,Canadian",
+        "country_of_residence": "Canada",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Paul Grant Barber",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British,Canadian",
+        "country_of_residence": "Canada",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Frederick Albert Carruthers",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Canadian",
+        "country_of_residence": "Canada",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NzI2ODg4MWFkaXF6a2N4",
+    "date": "2025-08-18",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/ad3pWXPH6AM1ATaqIxow9GXhBbBUoV7pw3Gw0nwG2YQ/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/05737660/filing-history/MzQ3NzI2ODg4MWFkaXF6a2N4"
   }
 }

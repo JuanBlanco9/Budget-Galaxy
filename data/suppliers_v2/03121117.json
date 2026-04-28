@@ -68,11 +68,140 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
-  "buyer_type_breakdown": {}
+  "buyer_type_breakdown": {},
+  "ch_profile": {
+    "api_date": "2026-04-28T14:19:09Z",
+    "company_name": "CUMBRIA HEALTH LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1995-11-02",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-21"
+  },
+  "governance": {
+    "api_date": "2026-04-28T14:19:10Z",
+    "total_officers": 71,
+    "active_count": 13,
+    "resigned_count": 58,
+    "active_officers": [
+      {
+        "name": "LOWERY, Paula",
+        "role": "secretary",
+        "appointed_on": "2012-04-04",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "ALEXANDER, Claire Lesley Paxton",
+        "role": "director",
+        "appointed_on": "2024-07-19",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BENNETT, Timothy",
+        "role": "director",
+        "appointed_on": "2023-03-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BLAKEMORE, Susan Naomi",
+        "role": "director",
+        "appointed_on": "2005-11-29",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CLARK, Fraser Jeremy",
+        "role": "director",
+        "appointed_on": "2016-02-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "EYRE, Juliet Mary",
+        "role": "director",
+        "appointed_on": "2026-02-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "EYRE, Tracey Anne",
+        "role": "director",
+        "appointed_on": "2024-02-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GLOVER, David",
+        "role": "director",
+        "appointed_on": "2022-11-28",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "KING, Andrew John",
+        "role": "director",
+        "appointed_on": "2025-09-19",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "LAKIN, Robert John",
+        "role": "director",
+        "appointed_on": "2025-04-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MARGERISON, Lawrence Neil, Dr",
+        "role": "director",
+        "appointed_on": "2014-06-27",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "TALLIS, Edward James",
+        "role": "director",
+        "appointed_on": "2025-04-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "VANCE, Linda Margaret",
+        "role": "director",
+        "appointed_on": "2018-01-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "English"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T14:19:12Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NjYyNzA5N2FkaXF6a2N4",
+    "date": "2026-01-05",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/p6sAdBTHYzClv5gq45xygDtT9nmFQco4ffa17i_zGH4/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03121117/filing-history/MzQ5NjYyNzA5N2FkaXF6a2N4"
+  }
 }

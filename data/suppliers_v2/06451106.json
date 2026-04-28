@@ -68,11 +68,97 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
-  "buyer_type_breakdown": {}
+  "buyer_type_breakdown": {},
+  "ch_profile": {
+    "api_date": "2026-04-28T14:33:09Z",
+    "company_name": "WONDROUS PEOPLE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2007-12-11",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-05-31",
+    "accounts_last_made_up": "2025-08-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-20"
+  },
+  "governance": {
+    "api_date": "2026-04-28T14:33:10Z",
+    "total_officers": 12,
+    "active_count": 5,
+    "resigned_count": 7,
+    "active_officers": [
+      {
+        "name": "RYAN-DAWES, Trudi Ometha Martini",
+        "role": "secretary",
+        "appointed_on": "2007-12-11",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "KIMBER, Joanne",
+        "role": "director",
+        "appointed_on": "2025-02-24",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "RUTTERFORD-ADAMS, Angela Jane",
+        "role": "director",
+        "appointed_on": "2007-12-11",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "RYAN-DAWES, Trudi Ometha Martini",
+        "role": "director",
+        "appointed_on": "2007-12-11",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "SIMON, Samantha",
+        "role": "director",
+        "appointed_on": "2025-02-24",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T14:33:12Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Ms Trudi Ometha Martini Ryan-Dawes",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent"
+        ],
+        "notified_on": "2016-12-01",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwNzUxOTg4M2FkaXF6a2N4",
+    "date": "2026-02-27",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/CLgtsyGcLMBzKrZIOLZ5n2QYZe9ki-nSe15ILI1nZc4/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/06451106/filing-history/MzUwNzUxOTg4M2FkaXF6a2N4"
+  }
 }

@@ -68,15 +68,118 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
     "central_govt": 0.8062,
     "agency": 0.1682,
     "other": 0.0255
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T19:16:22Z",
+    "company_name": "ENERGUS",
+    "company_status": "active",
+    "date_of_creation": "2005-12-23",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-06"
+  },
+  "governance": {
+    "api_date": "2026-04-27T19:16:26Z",
+    "total_officers": 40,
+    "active_count": 7,
+    "resigned_count": 33,
+    "active_officers": [
+      {
+        "name": "WEBB, Helen",
+        "role": "secretary",
+        "appointed_on": "2022-05-31",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "HERON, Christopher Norman",
+        "role": "director",
+        "appointed_on": "2023-12-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HOOD, Brian James",
+        "role": "director",
+        "appointed_on": "2023-09-20",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      },
+      {
+        "name": "LONGRIGG, Jacqueline",
+        "role": "director",
+        "appointed_on": "2020-04-14",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MCQUEEN, Dale Alexander",
+        "role": "director",
+        "appointed_on": "2026-02-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PECK, Lee Anthony, Dr",
+        "role": "director",
+        "appointed_on": "2018-03-12",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "WHITEHEAD, Marie Elaine",
+        "role": "director",
+        "appointed_on": "2020-09-16",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T19:16:28Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Secratary Of State For Beis",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-06-06",
+        "identification": {
+          "legal_form": "Secretary Of State",
+          "legal_authority": "Companies Act 2006"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MjIwNDczNWFkaXF6a2N4",
+    "date": "2025-12-05",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/LcJyXR1QVfnIAnNIblCQyqRply7rlcBRkB-jlecmGDs/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/05662194/filing-history/MzQ5MjIwNDczNWFkaXF6a2N4"
   }
 }

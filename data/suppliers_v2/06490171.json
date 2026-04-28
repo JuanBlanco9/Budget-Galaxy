@@ -66,14 +66,94 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.6627,
     "central_govt": 0.3373
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T12:42:33Z",
+    "company_name": "UNIVERSITY OF BIRMINGHAM ENTERPRISE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2008-01-31",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-04-30",
+    "accounts_last_made_up": "2025-07-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-14"
+  },
+  "governance": {
+    "api_date": "2026-04-28T12:42:35Z",
+    "total_officers": 27,
+    "active_count": 6,
+    "resigned_count": 21,
+    "active_officers": [
+      {
+        "name": "REYNOLDS, Angie",
+        "role": "secretary",
+        "appointed_on": "2023-07-01",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "COLEMAN, David",
+        "role": "director",
+        "appointed_on": "2023-11-30",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HANLEY, Neil Anthony, Professor",
+        "role": "director",
+        "appointed_on": "2024-01-24",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HARDMAN, David",
+        "role": "director",
+        "appointed_on": "2025-06-18",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MITCHELL, Katherine",
+        "role": "director",
+        "appointed_on": "2024-04-17",
+        "country_of_residence": "England",
+        "nationality": "British,American"
+      },
+      {
+        "name": "O'REILLY, Rachel Kerry",
+        "role": "director",
+        "appointed_on": "2025-11-13",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T12:42:36Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxNDMwOTg4M2FkaXF6a2N4",
+    "date": "2026-04-13",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/lIbb32veHYM7k3C9O1YpO-3hKM3ZxbUOLWwvKY-_3qE/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/06490171/filing-history/MzUxNDMwOTg4M2FkaXF6a2N4"
   }
 }

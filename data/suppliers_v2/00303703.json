@@ -59,13 +59,121 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
     "central_govt": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T02:28:14Z",
+    "company_name": "CALOR GAS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1935-08-02",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-04-09"
+  },
+  "governance": {
+    "api_date": "2026-04-28T02:28:15Z",
+    "total_officers": 52,
+    "active_count": 7,
+    "resigned_count": 45,
+    "active_officers": [
+      {
+        "name": "MARSHALL-ROWAN, Rowan Diane",
+        "role": "secretary",
+        "appointed_on": "2013-09-05",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "BAGDE, Bhushan",
+        "role": "director",
+        "appointed_on": "2025-07-30",
+        "country_of_residence": "England",
+        "nationality": "Indian"
+      },
+      {
+        "name": "LOPES, Rogerio",
+        "role": "director",
+        "appointed_on": "2022-10-17",
+        "country_of_residence": "England",
+        "nationality": "Brazilian"
+      },
+      {
+        "name": "NEMET, Zvonimir",
+        "role": "director",
+        "appointed_on": "2023-10-01",
+        "country_of_residence": "England",
+        "nationality": "Croatian"
+      },
+      {
+        "name": "NOBLE, Charlotte Louise",
+        "role": "director",
+        "appointed_on": "2025-09-05",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "OWEN, Sally",
+        "role": "director",
+        "appointed_on": "2026-04-10",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "REDDING, Tamara",
+        "role": "director",
+        "appointed_on": "2026-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T02:28:17Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Calor Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "England And Wales",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "02099146"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3Njc3MDgyMGFkaXF6a2N4",
+    "date": "2025-08-12",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/hA4AZNAPgztjYdnF82dv5EzcBKRYSrJxkYIbmU81n8A/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/00303703/filing-history/MzQ3Njc3MDgyMGFkaXF6a2N4"
   }
 }

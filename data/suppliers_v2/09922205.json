@@ -59,13 +59,249 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "police_fire",
   "buyer_type_breakdown": {
     "police_fire": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T03:31:38Z",
+    "company_name": "POLICE NOW",
+    "company_status": "active",
+    "date_of_creation": "2015-12-18",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-23"
+  },
+  "governance": {
+    "api_date": "2026-04-28T03:31:39Z",
+    "total_officers": 37,
+    "active_count": 11,
+    "resigned_count": 26,
+    "active_officers": [
+      {
+        "name": "JERRUM, Penelope",
+        "role": "secretary",
+        "appointed_on": "2026-02-16",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BALL, Helen Elizabeth",
+        "role": "director",
+        "appointed_on": "2015-12-18",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BOWLER, James Edward",
+        "role": "director",
+        "appointed_on": "2016-12-15",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "FREEDMAN, Peter Malcolm Lowthian",
+        "role": "director",
+        "appointed_on": "2026-02-16",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "FRY, Dominic Lawrence Charlesworth",
+        "role": "director",
+        "appointed_on": "2016-07-20",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "HOGG, Jason",
+        "role": "director",
+        "appointed_on": "2024-11-28",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "KINSELLA, Caitlin Helen",
+        "role": "director",
+        "appointed_on": "2023-07-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "Australian"
+      },
+      {
+        "name": "ROLFE, Louisa Helen",
+        "role": "director",
+        "appointed_on": "2019-11-28",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "THOMSON, Maia Jane",
+        "role": "director",
+        "appointed_on": "2026-02-23",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "TILLBROOK, Victoria Sarah Hoare",
+        "role": "director",
+        "appointed_on": "2024-01-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "WOOLLEY, Simon Andrew",
+        "role": "director",
+        "appointed_on": "2016-12-15",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T03:31:40Z",
+    "total_results": 10,
+    "active_count": 0,
+    "items": [
+      {
+        "name": "Mr James Edward Bowler",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control-as-trust"
+        ],
+        "notified_on": "2016-12-15",
+        "identification": null
+      },
+      {
+        "name": "Mr Thomas Meaden",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control-as-trust"
+        ],
+        "notified_on": "2016-12-15",
+        "identification": null
+      },
+      {
+        "name": "Mr Ian Clifford Powell",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control-as-trust"
+        ],
+        "notified_on": "2016-09-29",
+        "identification": null
+      },
+      {
+        "name": "Ms Judith Caroline Clegg",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control-as-trust"
+        ],
+        "notified_on": "2016-07-21",
+        "identification": null
+      },
+      {
+        "name": "Mr Martin Andrew Coleman",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control-as-trust"
+        ],
+        "notified_on": "2016-07-21",
+        "identification": null
+      },
+      {
+        "name": "Mr Dominic Lawrence Charlesworth Fry",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control-as-trust"
+        ],
+        "notified_on": "2016-07-21",
+        "identification": null
+      },
+      {
+        "name": "Ms Helen Elizabeth Ball",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control-as-trust"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr James Barrington Huw Darley",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control-as-trust"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Ms Clare Louise Davies",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control-as-trust"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Robert Michael Rothenberg",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control-as-trust"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MTcwOTcwMWFkaXF6a2N4",
+    "date": "2025-12-03",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/5LDKE0yK-o_7CW1IkHxxbCZYVl5KU3YJib_rfaoINkA/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/09922205/filing-history/MzQ5MTcwOTcwMWFkaXF6a2N4"
   }
 }

@@ -64,13 +64,114 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T16:39:41Z",
+    "company_name": "CAUDWELL CHILDREN",
+    "company_status": "active",
+    "date_of_creation": "1999-10-25",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-14"
+  },
+  "governance": {
+    "api_date": "2026-04-27T16:39:43Z",
+    "total_officers": 22,
+    "active_count": 9,
+    "resigned_count": 13,
+    "active_officers": [
+      {
+        "name": "BENNETT, Craig",
+        "role": "secretary",
+        "appointed_on": "1999-10-25",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "BENNETT, Craig",
+        "role": "director",
+        "appointed_on": "1999-10-25",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CANFIELD, David Hodgson",
+        "role": "director",
+        "appointed_on": "2024-01-10",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CAUDWELL, Brian, Mr.",
+        "role": "director",
+        "appointed_on": "2023-10-24",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "FENTON, Michael",
+        "role": "director",
+        "appointed_on": "2023-10-17",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GRAY, Martin",
+        "role": "director",
+        "appointed_on": "2024-03-14",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GRIFFITHS, Jacqueline Donna",
+        "role": "director",
+        "appointed_on": "2010-11-30",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "MCKNIGHT, Maxwell",
+        "role": "director",
+        "appointed_on": "2025-12-18",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "TIMPSON, Johnny",
+        "role": "director",
+        "appointed_on": "2023-10-17",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T16:39:45Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MDIxNjk3MWFkaXF6a2N4",
+    "date": "2025-06-16",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/yX5B6r2fLqv4ZvSbBanwOvEuz2pnZ6iImgJcCMGwhu8/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03864620/filing-history/MzQ3MDIxNjk3MWFkaXF6a2N4"
   }
 }

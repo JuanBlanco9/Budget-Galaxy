@@ -66,13 +66,79 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T13:33:34Z",
+    "company_name": "MØLLER INSTITUTE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1992-09-07",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-03-31",
+    "accounts_last_made_up": "2025-06-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-09-21"
+  },
+  "governance": {
+    "api_date": "2026-04-28T13:33:36Z",
+    "total_officers": 44,
+    "active_count": 4,
+    "resigned_count": 40,
+    "active_officers": [
+      {
+        "name": "FLYNN, Gavin John",
+        "role": "director",
+        "appointed_on": "2025-02-14",
+        "country_of_residence": "England",
+        "nationality": "British,Irish"
+      },
+      {
+        "name": "JAMES, Tamsin Melanie",
+        "role": "director",
+        "appointed_on": "2017-03-13",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MINSHALL, Tim, Professor",
+        "role": "director",
+        "appointed_on": "2020-09-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PEACOCK, Sharon",
+        "role": "director",
+        "appointed_on": "2024-10-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T13:33:37Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MzU0Nzc2M2FkaXF6a2N4",
+    "date": "2025-12-11",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/UAiXGuwmSlor9lryfPqjvLKfC5Lz7jKsSKRDSutL37c/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02746545/filing-history/MzQ5MzU0Nzc2M2FkaXF6a2N4"
   }
 }

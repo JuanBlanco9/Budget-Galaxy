@@ -64,13 +64,79 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
     "central_govt": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T12:58:03Z",
+    "company_name": "KEY TRAINING AND LEARNING LTD",
+    "company_status": "liquidation",
+    "date_of_creation": "1997-06-23",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": true,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": true,
+    "accounts_next_due": "2025-05-31",
+    "accounts_last_made_up": "2023-08-31",
+    "confirmation_statement_overdue": true,
+    "confirmation_statement_next_due": "2025-05-14"
+  },
+  "governance": {
+    "api_date": "2026-04-28T12:58:04Z",
+    "total_officers": 32,
+    "active_count": 2,
+    "resigned_count": 30,
+    "active_officers": [
+      {
+        "name": "HAYMAN, Christopher John",
+        "role": "director",
+        "appointed_on": "2016-05-24",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MARTIN, Tracy Marie",
+        "role": "director",
+        "appointed_on": "2009-04-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T12:58:05Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mrs Tracy Marie Martin",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQxMTU1ODYzMWFkaXF6a2N4",
+    "date": "2024-02-19",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-micro-entity",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/Sqb6ZwsfZbbfFUXNGRBQsoqZxsyVcv3G5Z_MOCzHQ8o/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03390673/filing-history/MzQxMTU1ODYzMWFkaXF6a2N4"
   }
 }

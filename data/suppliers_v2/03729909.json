@@ -64,13 +64,135 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T08:27:38Z",
+    "company_name": "DUDLEY LODGE",
+    "company_status": "active",
+    "date_of_creation": "1999-03-10",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-05-13"
+  },
+  "governance": {
+    "api_date": "2026-04-28T08:27:39Z",
+    "total_officers": 49,
+    "active_count": 12,
+    "resigned_count": 37,
+    "active_officers": [
+      {
+        "name": "ROEBUCK, Helen",
+        "role": "secretary",
+        "appointed_on": "2013-04-29",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "ADEFILA, Arinola Anneke, Dr",
+        "role": "director",
+        "appointed_on": "2021-06-23",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BAILEY, Zara Dione",
+        "role": "director",
+        "appointed_on": "2021-06-23",
+        "country_of_residence": "England",
+        "nationality": "English"
+      },
+      {
+        "name": "BECK, David Antony",
+        "role": "director",
+        "appointed_on": "2023-05-11",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CARNEY-DALTON, April",
+        "role": "director",
+        "appointed_on": "2025-08-07",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "FLYNN, Jane Anne",
+        "role": "director",
+        "appointed_on": "2020-12-10",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MADDOCK, Peter Anthony",
+        "role": "director",
+        "appointed_on": "2019-09-26",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "NUTTALL, Graham",
+        "role": "director",
+        "appointed_on": "2022-11-30",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "RAISTRICK, Sarah Patricia, Dr",
+        "role": "director",
+        "appointed_on": "2022-06-23",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ROACH, Peter David",
+        "role": "director",
+        "appointed_on": "2018-03-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SULLIVAN, Julienne",
+        "role": "director",
+        "appointed_on": "2014-05-22",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "WILSON, Caroline, Dr",
+        "role": "director",
+        "appointed_on": "2020-12-10",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T08:27:41Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4ODE4MjcyMGFkaXF6a2N4",
+    "date": "2025-11-12",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/zVb-gKhUQJFgMsqVDqRYG6VesoQpAWlMfdi5S5ygE0M/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03729909/filing-history/MzQ4ODE4MjcyMGFkaXF6a2N4"
   }
 }

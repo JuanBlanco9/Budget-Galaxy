@@ -59,15 +59,109 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.6943,
     "council": 0.2602,
     "trust": 0.0455
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T19:36:42Z",
+    "company_name": "CONTINUOUS DATAPRINT (U.K.) LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1992-03-13",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-02-28",
+    "accounts_last_made_up": "2025-05-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-06"
+  },
+  "governance": {
+    "api_date": "2026-04-27T19:36:44Z",
+    "total_officers": 16,
+    "active_count": 4,
+    "resigned_count": 12,
+    "active_officers": [
+      {
+        "name": "BRACKEN, Paul",
+        "role": "secretary",
+        "appointed_on": "1998-01-01",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "BRACKEN, Paul",
+        "role": "director",
+        "appointed_on": "2004-07-27",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "DESOUZA, Wilfred Alban",
+        "role": "director",
+        "appointed_on": "2002-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SCANLON, Paul Edward",
+        "role": "director",
+        "appointed_on": "1992-03-13",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T19:36:45Z",
+    "total_results": 2,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Continuous Dataprint Employee Share Ownership Trust",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Trust",
+          "legal_authority": "Uk Trust Law"
+        }
+      },
+      {
+        "name": "Mr Paul Edward Scanlon",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4ODkwNTY5NWFkaXF6a2N4",
+    "date": "2025-11-14",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/m0-XOIAzU5xW95rnfPfaurY35OLz72eSuANl3PwoL9I/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02696956/filing-history/MzQ4ODkwNTY5NWFkaXF6a2N4"
   }
 }

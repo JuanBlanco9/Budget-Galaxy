@@ -59,10 +59,10 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
@@ -70,5 +70,71 @@
     "agency": 0.1439,
     "central_govt": 0.066,
     "council": 0.0095
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T00:42:13Z",
+    "company_name": "EGRESS SOFTWARE TECHNOLOGIES LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2007-10-09",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-08-08"
+  },
+  "governance": {
+    "api_date": "2026-04-28T00:42:14Z",
+    "total_officers": 16,
+    "active_count": 1,
+    "resigned_count": 15,
+    "active_officers": [
+      {
+        "name": "REICH, Robert",
+        "role": "director",
+        "appointed_on": "2024-07-01",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T00:42:16Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Knowbe4 Uk, Ltd.",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2024-07-01",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "England & Wales",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "10885710"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MDU3MzY4NWFkaXF6a2N4",
+    "date": "2025-11-24",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-audit-exemption-subsiduary",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/dllfhGGIPdB8PJYp7q-KH4uYb1rLwPo2I6PO5Wl9a1w/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/06393598/filing-history/MzQ5MDU3MzY4NWFkaXF6a2N4"
   }
 }

@@ -59,14 +59,79 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.9953,
     "council": 0.0047
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T14:37:27Z",
+    "company_name": "D-TECH INTERNATIONAL LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2002-05-10",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-01-31",
+    "accounts_last_made_up": "2025-04-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-05-24"
+  },
+  "governance": {
+    "api_date": "2026-04-27T14:37:29Z",
+    "total_officers": 6,
+    "active_count": 2,
+    "resigned_count": 4,
+    "active_officers": [
+      {
+        "name": "CRISP, Marvin John",
+        "role": "director",
+        "appointed_on": "2002-05-10",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ELBY, James William Michael",
+        "role": "director",
+        "appointed_on": "2024-10-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T14:37:30Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Marvin John Crisp",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NTE1MjIzMmFkaXF6a2N4",
+    "date": "2025-12-18",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/FpgMVB_vIngF1sb03om3e-f4gO5tTxPSOko89zwUFDE/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04436097/filing-history/MzQ5NTE1MjIzMmFkaXF6a2N4"
   }
 }

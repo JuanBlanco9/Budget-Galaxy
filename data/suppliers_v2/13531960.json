@@ -59,13 +59,85 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T13:35:08Z",
+    "company_name": "BLOODY GOOD EMPLOYERS LIMITED",
+    "company_status": "liquidation",
+    "date_of_creation": "2021-07-27",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": true,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": true,
+    "accounts_next_due": "2025-12-31",
+    "accounts_last_made_up": "2023-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-08-09"
+  },
+  "governance": {
+    "api_date": "2026-04-28T13:35:09Z",
+    "total_officers": 5,
+    "active_count": 2,
+    "resigned_count": 3,
+    "active_officers": [
+      {
+        "name": "TYLER, Stevie",
+        "role": "director",
+        "appointed_on": "2025-06-16",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "YEUNG, Fiona Pei Shan",
+        "role": "director",
+        "appointed_on": "2021-07-27",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T13:35:10Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Bloody Good Period Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2021-07-27",
+        "identification": {
+          "legal_form": "Private Limited By Guarantee Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "United Kingdom",
+          "registration_number": "11801410"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQyNzAyNzM5OWFkaXF6a2N4",
+    "date": "2024-06-28",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/br_RsADPXu_OWiyJNQH_0xyfpaOkIqZLIurlbOZMQs8/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/13531960/filing-history/MzQyNzAyNzM5OWFkaXF6a2N4"
   }
 }

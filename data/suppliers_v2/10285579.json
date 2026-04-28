@@ -64,13 +64,119 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T01:49:18Z",
+    "company_name": "COLLETT & SONS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2016-07-19",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-08-01"
+  },
+  "governance": {
+    "api_date": "2026-04-28T01:49:20Z",
+    "total_officers": 7,
+    "active_count": 7,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "COLLETT, Michael",
+        "role": "secretary",
+        "appointed_on": "2016-10-31",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "COLLETT, David",
+        "role": "director",
+        "appointed_on": "2016-07-19",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "COLLETT, Jack William",
+        "role": "director",
+        "appointed_on": "2025-03-25",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "COLLETT, Michael",
+        "role": "director",
+        "appointed_on": "2016-10-31",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "COLLETT, Samuel Nevada",
+        "role": "director",
+        "appointed_on": "2025-03-25",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HARLAND, Michael Sydney",
+        "role": "director",
+        "appointed_on": "2021-09-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "THORNTON, Nigel Andrew",
+        "role": "director",
+        "appointed_on": "2018-04-06",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T01:49:22Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Collett Holdings Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-07-19",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Uk Companies Act",
+          "country_registered": "England",
+          "place_registered": "England & Wales",
+          "registration_number": "10271473"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NTIyMDAxOGFkaXF6a2N4",
+    "date": "2025-12-18",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/NlJLjgRGG7BVSIdSARMEFUl4YgY2kbLlrAD_GZHM54M/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/10285579/filing-history/MzQ5NTIyMDAxOGFkaXF6a2N4"
   }
 }

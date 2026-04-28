@@ -59,13 +59,92 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T15:06:33Z",
+    "company_name": "TALBOT FARM LANDSCAPES LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1998-01-27",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-05-31",
+    "accounts_last_made_up": "2025-08-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-15"
+  },
+  "governance": {
+    "api_date": "2026-04-27T15:06:35Z",
+    "total_officers": 5,
+    "active_count": 3,
+    "resigned_count": 2,
+    "active_officers": [
+      {
+        "name": "GOODWIN, Margaret Joan",
+        "role": "secretary",
+        "appointed_on": "1998-01-28",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "GOODWIN, Mark",
+        "role": "director",
+        "appointed_on": "1998-01-28",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GOODWIN, Sean",
+        "role": "director",
+        "appointed_on": "1998-01-28",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T15:06:36Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "G2 (Holdings) Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "United Kingdom",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "06585045"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxNjgzMTAxN2FkaXF6a2N4",
+    "date": "2026-04-17",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/3FE9eXpO_SRVTrRVmLc8CxVi5ObJ8Nno-xay3CI-oL4/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03499467/filing-history/MzUxNjgzMTAxN2FkaXF6a2N4"
   }
 }

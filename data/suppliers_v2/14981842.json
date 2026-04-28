@@ -68,14 +68,125 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "nhs",
   "buyer_type_breakdown": {
     "nhs": 1.0,
     "central_govt": 0.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T20:55:06Z",
+    "company_name": "VANTIVE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2023-07-05",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-18"
+  },
+  "governance": {
+    "api_date": "2026-04-27T20:55:07Z",
+    "total_officers": 5,
+    "active_count": 2,
+    "resigned_count": 3,
+    "active_officers": [
+      {
+        "name": "BOA, Cassandra",
+        "role": "director",
+        "appointed_on": "2024-10-10",
+        "country_of_residence": "Ireland",
+        "nationality": "Irish"
+      },
+      {
+        "name": "WARBURTON, Andrew John",
+        "role": "director",
+        "appointed_on": "2023-08-31",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T20:55:09Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "The Carlyle Group, Inc.",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2025-01-31",
+        "identification": {
+          "legal_form": "Corporation",
+          "legal_authority": "Delaware Law",
+          "country_registered": "United States",
+          "place_registered": "Nasdaq",
+          "registration_number": "5011921"
+        }
+      },
+      {
+        "name": "Baxter International Incorporated",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2024-12-08",
+        "identification": {
+          "legal_form": "Incorporated Company",
+          "legal_authority": "Delaware Law",
+          "country_registered": "United States",
+          "place_registered": "U.S. Security And Exchange Commission",
+          "registration_number": "36-0781620"
+        }
+      },
+      {
+        "name": "Baxter Healthcare Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2023-07-05",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "461365"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MTUxMTg0MGFkaXF6a2N4",
+    "date": "2025-06-26",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/jre47YJq-0uiCe8kVZDXvPlQrhtdjDBRVx-1CU5h260/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/14981842/filing-history/MzQ3MTUxMTg0MGFkaXF6a2N4"
   }
 }

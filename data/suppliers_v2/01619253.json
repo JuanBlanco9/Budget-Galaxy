@@ -59,14 +59,122 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.7346,
     "central_govt": 0.2654
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T07:54:15Z",
+    "company_name": "BUSINESS IN THE COMMUNITY",
+    "company_status": "active",
+    "date_of_creation": "1982-03-02",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-03-31",
+    "accounts_last_made_up": "2025-06-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-29"
+  },
+  "governance": {
+    "api_date": "2026-04-28T07:54:17Z",
+    "total_officers": 153,
+    "active_count": 10,
+    "resigned_count": 143,
+    "active_officers": [
+      {
+        "name": "WOLFENDEN, Lesley Ann",
+        "role": "secretary",
+        "appointed_on": "1997-04-25",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "BAHROLOLOUMI, Zahra Shiva",
+        "role": "director",
+        "appointed_on": "2023-11-15",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BHATIA, Raman",
+        "role": "director",
+        "appointed_on": "2021-11-04",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CHARLES-JONES, Lucinda Claire",
+        "role": "director",
+        "appointed_on": "2020-04-29",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "DAVIES, Victoria Anne",
+        "role": "director",
+        "appointed_on": "2023-11-15",
+        "country_of_residence": "Northern Ireland",
+        "nationality": "British"
+      },
+      {
+        "name": "HARRISON, Peter",
+        "role": "director",
+        "appointed_on": "2023-12-08",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HUTTON, Richard John",
+        "role": "director",
+        "appointed_on": "2016-07-12",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "LEWIS, Paul Gareth",
+        "role": "director",
+        "appointed_on": "2026-01-12",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ROSE, Alison, Dame",
+        "role": "director",
+        "appointed_on": "2020-02-06",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WEED, Keith Charles Frederick",
+        "role": "director",
+        "appointed_on": "2014-11-17",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T07:54:18Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwMDAyMTUyMGFkaXF6a2N4",
+    "date": "2026-01-22",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/k-IemiktM2ntgaq0SOfXMGu8z-fLWsE_FybnStMqym0/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01619253/filing-history/MzUwMDAyMTUyMGFkaXF6a2N4"
   }
 }

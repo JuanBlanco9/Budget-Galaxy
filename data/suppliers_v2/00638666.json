@@ -59,13 +59,114 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T06:17:33Z",
+    "company_name": "ESSEX WILDLIFE TRUST LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1959-10-02",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-23"
+  },
+  "governance": {
+    "api_date": "2026-04-28T06:17:34Z",
+    "total_officers": 109,
+    "active_count": 9,
+    "resigned_count": 100,
+    "active_officers": [
+      {
+        "name": "BALSER, Sarah Ethel",
+        "role": "director",
+        "appointed_on": "2020-07-30",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HAWKINS, Catherine Jane",
+        "role": "director",
+        "appointed_on": "2020-07-30",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "JOYNSON, Charles Andrew",
+        "role": "director",
+        "appointed_on": "2017-05-16",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MOXLEY, Carl Owen",
+        "role": "director",
+        "appointed_on": "2026-02-12",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ROBERTS, Paul Gerald",
+        "role": "director",
+        "appointed_on": "2025-05-29",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "SIMONSSON, Elin Maria",
+        "role": "director",
+        "appointed_on": "2020-07-30",
+        "country_of_residence": "England",
+        "nationality": "Swedish"
+      },
+      {
+        "name": "WALL, Michelle Josephine",
+        "role": "director",
+        "appointed_on": "2020-03-31",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WREN, James",
+        "role": "director",
+        "appointed_on": "2020-07-30",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "YOUNG, Timothy Stuart Redvers",
+        "role": "director",
+        "appointed_on": "2025-05-29",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T06:17:35Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4NTIzMzUxN2FkaXF6a2N4",
+    "date": "2025-10-16",
+    "type": "AA01",
+    "description": "change-account-reference-date-company-current-extended",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/zqaVRd9xufNWI1C3vQtDnPgVmRcwa-fsvhaOrcPeRPA/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/00638666/filing-history/MzQ4NTIzMzUxN2FkaXF6a2N4"
   }
 }

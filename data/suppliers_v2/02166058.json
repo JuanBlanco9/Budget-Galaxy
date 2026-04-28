@@ -61,14 +61,101 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "nhs",
   "buyer_type_breakdown": {
     "nhs": 0.9999,
     "council": 0.0001
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T09:17:58Z",
+    "company_name": "JOHAL DAIRIES LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1987-09-17",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-07-01",
+    "accounts_last_made_up": "2024-09-28",
+    "confirmation_statement_overdue": true,
+    "confirmation_statement_next_due": "2026-04-26"
+  },
+  "governance": {
+    "api_date": "2026-04-28T09:17:59Z",
+    "total_officers": 6,
+    "active_count": 4,
+    "resigned_count": 2,
+    "active_officers": [
+      {
+        "name": "JOHAL, Manjit Kaur",
+        "role": "secretary",
+        "appointed_on": null,
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "JOHAL, Gurnek Singh",
+        "role": "director",
+        "appointed_on": "1996-05-23",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "JOHAL, Manjit Kaur",
+        "role": "director",
+        "appointed_on": "1989-10-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "JOHAL, Surbjit Singh",
+        "role": "director",
+        "appointed_on": "1987-10-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T09:18:00Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Johal Dairies Holding Co Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-26",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "United Kingdom (England And Wales)",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "02931171"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NTMyMzg5N2FkaXF6a2N4",
+    "date": "2025-07-28",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/l8-v9xDeBqUaQ-wQ4xkuCBrM0LF75OIHBMJ9KZpAUdg/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02166058/filing-history/MzQ3NTMyMzg5N2FkaXF6a2N4"
   }
 }

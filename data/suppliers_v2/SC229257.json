@@ -59,14 +59,138 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 0.8244,
     "other": 0.1756
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T11:36:30Z",
+    "company_name": "EKOS CONSULTING (UK) LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2002-03-18",
+    "date_of_cessation": null,
+    "jurisdiction": "scotland",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-04-23"
+  },
+  "governance": {
+    "api_date": "2026-04-28T11:36:31Z",
+    "total_officers": 12,
+    "active_count": 3,
+    "resigned_count": 9,
+    "active_officers": [
+      {
+        "name": "BOLER, John Mark",
+        "role": "secretary",
+        "appointed_on": "2025-09-04",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "HOOTON, Simon",
+        "role": "director",
+        "appointed_on": "2022-06-28",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HUGHES, Mark Anthony",
+        "role": "director",
+        "appointed_on": "2021-03-02",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T11:36:32Z",
+    "total_results": 4,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Gc Insight Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2024-04-02",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "English Law",
+          "country_registered": "England",
+          "place_registered": "England",
+          "registration_number": "3162288"
+        }
+      },
+      {
+        "name": "The Growth Company Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2021-03-02",
+        "identification": {
+          "legal_form": "Private Company Limited By Guarantee Without Share Capital",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "Registrar Of Companies, England & Wales",
+          "registration_number": "02443911"
+        }
+      },
+      {
+        "name": "Mr John Mccreadie",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mrs Susan Staiano",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5Nzc3MDk2M2FkaXF6a2N4",
+    "date": "2026-01-06",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-audit-exemption-subsiduary",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/TLYANo2S2am30jwLQoFlTU7s28ZGLjHsxsvDI4eKusE/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/SC229257/filing-history/MzQ5Nzc3MDk2M2FkaXF6a2N4"
   }
 }

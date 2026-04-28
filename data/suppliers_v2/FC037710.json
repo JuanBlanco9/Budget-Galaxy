@@ -55,13 +55,121 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "education",
   "buyer_type_breakdown": {
     "education": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T03:37:09Z",
+    "company_name": "NIKON UK, BRANCH OF NIKON EUROPE B.V.",
+    "company_status": "active",
+    "date_of_creation": "2020-09-01",
+    "date_of_cessation": null,
+    "jurisdiction": "united-kingdom",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": null,
+    "accounts_next_due": null,
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": null,
+    "confirmation_statement_next_due": null
+  },
+  "governance": {
+    "api_date": "2026-04-28T03:37:10Z",
+    "total_officers": 17,
+    "active_count": 10,
+    "resigned_count": 7,
+    "active_officers": [
+      {
+        "name": "HOLKAMP, Annemiek Geertruida Maria",
+        "role": "director",
+        "appointed_on": "2025-04-22",
+        "country_of_residence": "Netherlands",
+        "nationality": "Dutch"
+      },
+      {
+        "name": "HORIE, Masahiro",
+        "role": "director",
+        "appointed_on": "2023-01-01",
+        "country_of_residence": "Netherlands",
+        "nationality": "Japanese"
+      },
+      {
+        "name": "IKEGAMI, Hiroyuki",
+        "role": "director",
+        "appointed_on": "2021-04-01",
+        "country_of_residence": "Japan",
+        "nationality": "Japanese"
+      },
+      {
+        "name": "JUFER, Lukas",
+        "role": "director",
+        "appointed_on": "2021-04-01",
+        "country_of_residence": "Switzerland",
+        "nationality": "Swiss"
+      },
+      {
+        "name": "KASSAI, Yoichi",
+        "role": "director",
+        "appointed_on": "2024-04-01",
+        "country_of_residence": "Japan",
+        "nationality": "Japanese"
+      },
+      {
+        "name": "KUPERS, Marcus Anthonius",
+        "role": "director",
+        "appointed_on": "2025-04-22",
+        "country_of_residence": "Netherlands",
+        "nationality": "Dutch"
+      },
+      {
+        "name": "MATSUMOTO, Takeshi",
+        "role": "director",
+        "appointed_on": "2024-04-01",
+        "country_of_residence": "Japan",
+        "nationality": "Japanese"
+      },
+      {
+        "name": "NUMAKO, Masayuki",
+        "role": "director",
+        "appointed_on": "2023-04-01",
+        "country_of_residence": "Netherlands",
+        "nationality": "Japanese"
+      },
+      {
+        "name": "TSUCHIDA, Takami",
+        "role": "director",
+        "appointed_on": "2025-04-01",
+        "country_of_residence": "Japan",
+        "nationality": "Japanese"
+      },
+      {
+        "name": "YAMADA, Yukako",
+        "role": "director",
+        "appointed_on": "2025-04-01",
+        "country_of_residence": "Japan",
+        "nationality": "Japanese"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T03:37:11Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3OTk2MjAwNmFkaXF6a2N4",
+    "date": "2025-09-08",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/JicMKJJ1sSv6G2i6FZa1y1fP3etRPdLweHfNfWtSRE8/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/FC037710/filing-history/MzQ3OTk2MjAwNmFkaXF6a2N4"
   }
 }

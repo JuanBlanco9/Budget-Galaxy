@@ -59,13 +59,93 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T05:31:59Z",
+    "company_name": "LIFE 2009",
+    "company_status": "active",
+    "date_of_creation": "2009-01-09",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-23"
+  },
+  "governance": {
+    "api_date": "2026-04-28T05:32:01Z",
+    "total_officers": 28,
+    "active_count": 6,
+    "resigned_count": 22,
+    "active_officers": [
+      {
+        "name": "AMOAKO-ADOFO, Carol",
+        "role": "director",
+        "appointed_on": "2025-11-19",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BOUVENG, Kerstin Rebecca",
+        "role": "director",
+        "appointed_on": "2025-11-19",
+        "country_of_residence": "England",
+        "nationality": "Swedish"
+      },
+      {
+        "name": "FOLEY, Martin Patrick",
+        "role": "director",
+        "appointed_on": "2023-05-13",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HEYMAN, Godfrey Henry Bernard",
+        "role": "director",
+        "appointed_on": "2025-03-15",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MAHER, Eileen Anne",
+        "role": "director",
+        "appointed_on": "2020-07-02",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "NEEP, Eleftheria Chrysovalantou",
+        "role": "director",
+        "appointed_on": "2023-05-13",
+        "country_of_residence": "England",
+        "nationality": "Greek,British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T05:32:02Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwMjM4ODc3NWFkaXF6a2N4",
+    "date": "2026-01-31",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/frA3z4VK5PuDNX5iqSGJdWCpL2tNAVDNctVc-RiKH4s/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/06786752/filing-history/MzUwMjM4ODc3NWFkaXF6a2N4"
   }
 }

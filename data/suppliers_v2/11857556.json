@@ -64,13 +64,122 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T11:34:35Z",
+    "company_name": "P3OD LTD",
+    "company_status": "active",
+    "date_of_creation": "2019-03-04",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-26"
+  },
+  "governance": {
+    "api_date": "2026-04-28T11:34:36Z",
+    "total_officers": 3,
+    "active_count": 2,
+    "resigned_count": 1,
+    "active_officers": [
+      {
+        "name": "MOFFAT, Pamela Anne",
+        "role": "director",
+        "appointed_on": "2019-03-04",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "O'HAGAN, Marc Oliver Remy",
+        "role": "director",
+        "appointed_on": "2019-03-04",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T11:34:37Z",
+    "total_results": 4,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Potential Holdings Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2024-04-24",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "15616456"
+        }
+      },
+      {
+        "name": "Mr Marc Oliver Remy O'Hagan",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2019-03-04",
+        "identification": null
+      },
+      {
+        "name": "Ms Pamela Anne Moffat",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2019-03-04",
+        "identification": null
+      },
+      {
+        "name": "Ms Catriona Grace Hudson",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2019-03-04",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NDg1MjMyOWFkaXF6a2N4",
+    "date": "2025-07-23",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/AX90LdXfgsferOFh0Jbr65yrO99Md8PEmYLab2B0XRc/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/11857556/filing-history/MzQ3NDg1MjMyOWFkaXF6a2N4"
   }
 }

@@ -63,13 +63,91 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T09:28:06Z",
+    "company_name": "COGENT SSC LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1991-01-16",
+    "date_of_cessation": null,
+    "jurisdiction": "scotland",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-20"
+  },
+  "governance": {
+    "api_date": "2026-04-28T09:28:07Z",
+    "total_officers": 121,
+    "active_count": 3,
+    "resigned_count": 118,
+    "active_officers": [
+      {
+        "name": "FOSH, Justine Sarah",
+        "role": "director",
+        "appointed_on": "2020-05-04",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GORGE, Karl Robert",
+        "role": "director",
+        "appointed_on": "2008-06-20",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MCINTOSH, James Andrew",
+        "role": "director",
+        "appointed_on": "2025-01-20",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T09:28:08Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Cogent Skills Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2017-06-01",
+        "identification": {
+          "legal_form": "Company Limited By Guarantee",
+          "legal_authority": "Company Law",
+          "country_registered": "England",
+          "place_registered": "England And Wales",
+          "registration_number": "9361100"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NTQxOTYxOGFkaXF6a2N4",
+    "date": "2025-12-19",
+    "type": "AA01",
+    "description": "change-account-reference-date-company-current-extended",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/AEZPQhlh1E1CljZeTsb6iMOu4FJWgTAoA8xBBkn7owE/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/SC129351/filing-history/MzQ5NTQxOTYxOGFkaXF6a2N4"
   }
 }

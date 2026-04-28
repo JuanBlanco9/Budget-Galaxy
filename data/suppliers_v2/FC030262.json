@@ -55,13 +55,78 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
     "ch_api_accounts_pdf": false
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T04:26:43Z",
+    "company_name": "POPPULO",
+    "company_status": "active",
+    "date_of_creation": "2011-06-01",
+    "date_of_cessation": null,
+    "jurisdiction": "united-kingdom",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": null,
+    "accounts_overdue": false,
+    "accounts_next_due": null,
+    "accounts_last_made_up": null,
+    "confirmation_statement_overdue": null,
+    "confirmation_statement_next_due": null
+  },
+  "governance": {
+    "api_date": "2026-04-28T04:26:44Z",
+    "total_officers": 5,
+    "active_count": 5,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "O'SHAUGHNESSY, Andrew",
+        "role": "secretary",
+        "appointed_on": "2011-06-15",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "ALLEN, Padraic, Director",
+        "role": "director",
+        "appointed_on": "2011-06-15",
+        "country_of_residence": "Ireland",
+        "nationality": "Irish"
+      },
+      {
+        "name": "MCNAMARA, Patricia, Director",
+        "role": "director",
+        "appointed_on": "2011-06-15",
+        "country_of_residence": "Ireland",
+        "nationality": "Irish"
+      },
+      {
+        "name": "O'MAHONY, Oliver, Director",
+        "role": "director",
+        "appointed_on": "2011-06-15",
+        "country_of_residence": "Ireland",
+        "nationality": "Irish"
+      },
+      {
+        "name": "O'SHAUGHNESSY, Andrew, Director",
+        "role": "director",
+        "appointed_on": "2011-06-15",
+        "country_of_residence": "Ireland",
+        "nationality": "Irish"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T04:26:45Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
   }
 }

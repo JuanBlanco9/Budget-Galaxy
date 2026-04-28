@@ -59,13 +59,100 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T07:18:59Z",
+    "company_name": "PENTAX U.K. LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1979-07-11",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-23"
+  },
+  "governance": {
+    "api_date": "2026-04-28T07:19:00Z",
+    "total_officers": 35,
+    "active_count": 4,
+    "resigned_count": 31,
+    "active_officers": [
+      {
+        "name": "SAEED, Hamid",
+        "role": "secretary",
+        "appointed_on": "2007-04-12",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "ROCHE, Richard",
+        "role": "director",
+        "appointed_on": "2021-07-20",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SAEED, Hamid",
+        "role": "director",
+        "appointed_on": "2012-06-27",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "VINCENT, Dominique",
+        "role": "director",
+        "appointed_on": "2025-01-01",
+        "country_of_residence": "Singapore",
+        "nationality": "French"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T07:19:01Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Hoya Corporation",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Corporate",
+          "legal_authority": "Japan",
+          "country_registered": "Japan",
+          "place_registered": "Ministry Of Economy, Trade And Industry Japan",
+          "registration_number": "Fc017992"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MTA2MTA1MWFkaXF6a2N4",
+    "date": "2025-06-23",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/QYvlJSi5Edr8nzxy39W6zslBy8wC_JOCM40nlLHFn_E/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01436524/filing-history/MzQ3MTA2MTA1MWFkaXF6a2N4"
   }
 }

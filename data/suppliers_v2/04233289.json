@@ -68,14 +68,150 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
     "central_govt": 0.9879,
     "agency": 0.0121
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T13:48:09Z",
+    "company_name": "CAREER CONNECT",
+    "company_status": "active",
+    "date_of_creation": "2001-06-13",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-27"
+  },
+  "governance": {
+    "api_date": "2026-04-27T13:48:11Z",
+    "total_officers": 83,
+    "active_count": 14,
+    "resigned_count": 69,
+    "active_officers": [
+      {
+        "name": "HOLYWELL, Gillian Susan",
+        "role": "secretary",
+        "appointed_on": "2016-06-24",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BELLAERA, Lauren, Dr",
+        "role": "director",
+        "appointed_on": "2021-12-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CLARK, Sheila Patricia",
+        "role": "director",
+        "appointed_on": "2020-04-16",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "DODD, Lorraine Antonia Carrol",
+        "role": "director",
+        "appointed_on": "2014-09-05",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "EVANS, Jessica Ellen",
+        "role": "director",
+        "appointed_on": "2025-07-22",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "LEACH, Steven Paul",
+        "role": "director",
+        "appointed_on": "2021-07-16",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LETTS, Leona",
+        "role": "director",
+        "appointed_on": "2025-07-22",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MCBRIDE, Thomas James",
+        "role": "director",
+        "appointed_on": "2021-12-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "NELL, Moriah Rose",
+        "role": "director",
+        "appointed_on": "2020-07-13",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      },
+      {
+        "name": "PETTIFER, Katie Louise",
+        "role": "director",
+        "appointed_on": "2021-12-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "RANNARD, Andrew David",
+        "role": "director",
+        "appointed_on": "2020-07-13",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "REILLY, Joanne Ellen",
+        "role": "director",
+        "appointed_on": "2025-07-22",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SMITH, Susan Ann",
+        "role": "director",
+        "appointed_on": "2020-07-13",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SWEENEY, Elaine",
+        "role": "director",
+        "appointed_on": "2020-07-27",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T13:48:13Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4NzM5NjAyMmFkaXF6a2N4",
+    "date": "2025-11-05",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/Oa4_6npb1Qp_GB1khFNDk4X4HXKug1K_XrQiVQf5B_4/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04233289/filing-history/MzQ4NzM5NjAyMmFkaXF6a2N4"
   }
 }

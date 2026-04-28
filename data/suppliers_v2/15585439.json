@@ -59,13 +59,96 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
     "ch_api_accounts_pdf": false
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T20:26:59Z",
+    "company_name": "SUPER IPAAS INTEGRATION UK LIMITED",
+    "company_status": "liquidation",
+    "date_of_creation": "2024-03-22",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": true,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": true,
+    "accounts_next_due": "2025-12-22",
+    "accounts_last_made_up": null,
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-14"
+  },
+  "governance": {
+    "api_date": "2026-04-27T20:27:01Z",
+    "total_officers": 6,
+    "active_count": 2,
+    "resigned_count": 4,
+    "active_officers": [
+      {
+        "name": "SULLIVAN, Alison Mary Catherine",
+        "role": "secretary",
+        "appointed_on": "2025-01-01",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "SPENCE, Nicole Ann-Marie",
+        "role": "director",
+        "appointed_on": "2024-07-01",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T20:27:03Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Ibm United Kingdom Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2024-12-20",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "United Kingdom (England And Wales)",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "00741598"
+        }
+      },
+      {
+        "name": "Super Ipaas Integration Holdco Netherland B.V.",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2024-03-22",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Dutch Civil Code",
+          "country_registered": "Netherlands",
+          "place_registered": "The Netherlands",
+          "registration_number": "866315986"
+        }
+      }
+    ]
   }
 }

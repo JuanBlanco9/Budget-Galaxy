@@ -59,14 +59,134 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 0.9971,
     "nhs": 0.0029
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T04:15:10Z",
+    "company_name": "CLARKE ROOFING (SOUTHERN) LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1994-03-07",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-04-28"
+  },
+  "governance": {
+    "api_date": "2026-04-28T04:15:11Z",
+    "total_officers": 13,
+    "active_count": 7,
+    "resigned_count": 6,
+    "active_officers": [
+      {
+        "name": "BEER, David",
+        "role": "director",
+        "appointed_on": "2002-11-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "CLARKE, Frank Michael",
+        "role": "director",
+        "appointed_on": "1994-03-07",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CLARKE, Jacqueline",
+        "role": "director",
+        "appointed_on": "1994-03-07",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "CLARKE, Joshua Frank",
+        "role": "director",
+        "appointed_on": "2022-03-08",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CLARKE, Lloyd Paul",
+        "role": "director",
+        "appointed_on": "2022-03-08",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "STRUDWICK, Karl",
+        "role": "director",
+        "appointed_on": "2019-04-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "STRUDWICK, Paul",
+        "role": "director",
+        "appointed_on": "2002-11-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T04:15:12Z",
+    "total_results": 2,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Mr Paul Strudwick",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Clarke Roofing (Holdings) Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent",
+          "voting-rights-50-to-75-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "England And Wales",
+          "registration_number": "04093560"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NjgyNDM3N2FkaXF6a2N4",
+    "date": "2025-12-30",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/s6m7ChJj2mW0Jlb8d4qmdzgx6aST7nIftueSlN3_ANw/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02905689/filing-history/MzQ5NjgyNDM3N2FkaXF6a2N4"
   }
 }

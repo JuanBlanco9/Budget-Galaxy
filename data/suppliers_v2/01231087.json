@@ -59,14 +59,108 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "nhs",
   "buyer_type_breakdown": {
     "nhs": 0.9414,
     "education": 0.0586
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T20:11:14Z",
+    "company_name": "HAEMONETICS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1975-10-24",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-12"
+  },
+  "governance": {
+    "api_date": "2026-04-27T20:11:16Z",
+    "total_officers": 27,
+    "active_count": 5,
+    "resigned_count": 22,
+    "active_officers": [
+      {
+        "name": "D'ARECCA, James Christopher",
+        "role": "director",
+        "appointed_on": "2022-06-22",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      },
+      {
+        "name": "GALLAY, Floriane",
+        "role": "director",
+        "appointed_on": "2024-07-16",
+        "country_of_residence": "Switzerland",
+        "nationality": "Swiss"
+      },
+      {
+        "name": "GRAHAM, Craig Louis",
+        "role": "director",
+        "appointed_on": "2016-10-24",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "NARDUZZI, Roberto",
+        "role": "director",
+        "appointed_on": "2024-07-16",
+        "country_of_residence": "Switzerland",
+        "nationality": "Italian"
+      },
+      {
+        "name": "WATTIN, Nicolas Sven",
+        "role": "director",
+        "appointed_on": "2025-07-03",
+        "country_of_residence": "France",
+        "nationality": "French"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T20:11:18Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Haemonetics Corporation",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Corporate",
+          "legal_authority": "United States",
+          "country_registered": "United States",
+          "place_registered": "United States",
+          "registration_number": "04-2882273"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NzU0NDgwMmFkaXF6a2N4",
+    "date": "2026-01-05",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/Q9Jb66CoYVn2V4BDg4rQxa2EgDyrVy6IQkSQSrSPV7E/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01231087/filing-history/MzQ5NzU0NDgwMmFkaXF6a2N4"
   }
 }

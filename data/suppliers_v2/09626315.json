@@ -66,13 +66,107 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T22:29:46Z",
+    "company_name": "SHROPSHIRE YOUTH SUPPORT TRUST",
+    "company_status": "active",
+    "date_of_creation": "2015-06-05",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-06-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-05-24"
+  },
+  "governance": {
+    "api_date": "2026-04-27T22:29:48Z",
+    "total_officers": 21,
+    "active_count": 8,
+    "resigned_count": 13,
+    "active_officers": [
+      {
+        "name": "BLAND, Robert John Bowring",
+        "role": "director",
+        "appointed_on": "2015-06-05",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "CLOWES, Richard John",
+        "role": "director",
+        "appointed_on": "2015-06-05",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "DIXON, Alison Jane",
+        "role": "director",
+        "appointed_on": "2016-06-06",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GIDNEY, Jonathan",
+        "role": "director",
+        "appointed_on": "2023-02-10",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "JOHNSON, Christopher John Staley",
+        "role": "director",
+        "appointed_on": "2016-01-20",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "PAUL, Michael Anthony Keyes",
+        "role": "director",
+        "appointed_on": "2017-06-13",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "STODDART, Edward Alexander",
+        "role": "director",
+        "appointed_on": "2024-11-10",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "STRICKLAND, Hugh Eugene Donal",
+        "role": "director",
+        "appointed_on": "2020-06-24",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T22:29:50Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwODk4ODk0MWFkaXF6a2N4",
+    "date": "2026-03-08",
+    "type": "AA01",
+    "description": "change-account-reference-date-company-previous-extended",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/anZaH573i_ZukLq_oF1h-VoBZxShpPx6y5UBcniQHxI/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/09626315/filing-history/MzUwODk4ODk0MWFkaXF6a2N4"
   }
 }

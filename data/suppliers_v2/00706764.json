@@ -59,14 +59,94 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "education",
   "buyer_type_breakdown": {
     "education": 0.9983,
     "police_fire": 0.0017
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T10:20:20Z",
+    "company_name": "BRAKE BROS FOODSERVICE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1961-10-30",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-03-31",
+    "accounts_last_made_up": "2025-06-29",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-26"
+  },
+  "governance": {
+    "api_date": "2026-04-28T10:20:21Z",
+    "total_officers": 50,
+    "active_count": 3,
+    "resigned_count": 47,
+    "active_officers": [
+      {
+        "name": "WHIBLEY, Sarah Leanne",
+        "role": "secretary",
+        "appointed_on": "2015-04-01",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BROWN, David Nicholas",
+        "role": "director",
+        "appointed_on": "2026-01-30",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "WHIBLEY, Sarah Leanne",
+        "role": "director",
+        "appointed_on": "2015-04-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T10:20:22Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Sysco Gb Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "United Kingdom (England)",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "2035315"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwOTA2NzEyMmFkaXF6a2N4",
+    "date": "2026-03-13",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/KpJABfOfM_Opqg7761m2cy3Uj_8P-hMUUcY-CqTNpY4/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/00706764/filing-history/MzUwOTA2NzEyMmFkaXF6a2N4"
   }
 }

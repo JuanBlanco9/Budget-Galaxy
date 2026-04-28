@@ -59,14 +59,79 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.9955,
     "education": 0.0045
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T03:19:38Z",
+    "company_name": "ALLSIGNS INTERNATIONAL LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1999-06-24",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-03-31",
+    "accounts_last_made_up": "2025-06-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-08"
+  },
+  "governance": {
+    "api_date": "2026-04-28T03:19:39Z",
+    "total_officers": 6,
+    "active_count": 2,
+    "resigned_count": 4,
+    "active_officers": [
+      {
+        "name": "KIGGIN, David Eric",
+        "role": "secretary",
+        "appointed_on": "2000-07-10",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "TURNER, Stuart David",
+        "role": "director",
+        "appointed_on": "1999-06-24",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T03:19:41Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Stuart David Turner",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxMzIwMjI3OGFkaXF6a2N4",
+    "date": "2026-03-30",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/pDQmQ9eJjHmnr6PRI2PjQGmUH3c12L7gWnkP-JDwIXI/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03794781/filing-history/MzUxMzIwMjI3OGFkaXF6a2N4"
   }
 }

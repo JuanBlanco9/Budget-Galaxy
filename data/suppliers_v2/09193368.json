@@ -59,13 +59,101 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T16:39:01Z",
+    "company_name": "BAMBRIDGE LEE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2014-08-29",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-05-31",
+    "accounts_last_made_up": "2024-08-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-15"
+  },
+  "governance": {
+    "api_date": "2026-04-27T16:39:03Z",
+    "total_officers": 3,
+    "active_count": 3,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "BAMBRIDGE, Simon",
+        "role": "director",
+        "appointed_on": "2014-08-29",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "FAIRLEY, Ross Joseph",
+        "role": "director",
+        "appointed_on": "2022-05-23",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LEE, Dion",
+        "role": "director",
+        "appointed_on": "2014-08-29",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T16:39:04Z",
+    "total_results": 2,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Mr Simon Bambridge",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-07-01",
+        "identification": null
+      },
+      {
+        "name": "Mr Dion Lee",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-07-01",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2ODEzNzIzMGFkaXF6a2N4",
+    "date": "2025-05-28",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/4C7gtRjYG6CFl3X9cPO5xOnTJAnHnUlBd94sNW9eq6o/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/09193368/filing-history/MzQ2ODEzNzIzMGFkaXF6a2N4"
   }
 }

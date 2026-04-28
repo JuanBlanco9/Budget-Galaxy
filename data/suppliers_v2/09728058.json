@@ -64,13 +64,79 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T00:12:12Z",
+    "company_name": "FOOD WORKS SHEFFIELD LTD.",
+    "company_status": "active",
+    "date_of_creation": "2015-08-11",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-08-24"
+  },
+  "governance": {
+    "api_date": "2026-04-28T00:12:14Z",
+    "total_officers": 11,
+    "active_count": 4,
+    "resigned_count": 7,
+    "active_officers": [
+      {
+        "name": "FITZGERALD, Janet France",
+        "role": "director",
+        "appointed_on": "2020-08-07",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "FLANAGAN, Natalie",
+        "role": "director",
+        "appointed_on": "2022-05-26",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MEIJER, Rene",
+        "role": "director",
+        "appointed_on": "2020-04-01",
+        "country_of_residence": "England",
+        "nationality": "Dutch"
+      },
+      {
+        "name": "SMITH, Heather Jane",
+        "role": "director",
+        "appointed_on": "2020-08-07",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T00:12:15Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MzE0Mzc1MmFkaXF6a2N4",
+    "date": "2025-12-09",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/x5d1P8ThqqlIUfa3mIF5_XzUNU7hW5s0wqUMRpSswns/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/09728058/filing-history/MzQ5MzE0Mzc1MmFkaXF6a2N4"
   }
 }

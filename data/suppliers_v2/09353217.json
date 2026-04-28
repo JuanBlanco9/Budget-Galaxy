@@ -59,14 +59,93 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 0.7041,
     "police_fire": 0.2959
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T11:33:37Z",
+    "company_name": "DIVERSITI UK LEARNING AND DEVELOPMENT C.I.C.",
+    "company_status": "active",
+    "date_of_creation": "2014-12-12",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-06-30",
+    "accounts_last_made_up": "2024-09-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-19"
+  },
+  "governance": {
+    "api_date": "2026-04-28T11:33:38Z",
+    "total_officers": 4,
+    "active_count": 2,
+    "resigned_count": 2,
+    "active_officers": [
+      {
+        "name": "CONNOR, Garry",
+        "role": "director",
+        "appointed_on": "2014-12-12",
+        "country_of_residence": "England",
+        "nationality": "Scottish"
+      },
+      {
+        "name": "CONNOR, Lynn",
+        "role": "director",
+        "appointed_on": "2019-12-30",
+        "country_of_residence": "England",
+        "nationality": "Scottish"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T11:33:40Z",
+    "total_results": 2,
+    "active_count": 0,
+    "items": [
+      {
+        "name": "Mr Garry Connor",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Scottish",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-12-11",
+        "identification": null
+      },
+      {
+        "name": "Mr Zeshan Munawar",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Pakistani",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "voting-rights-50-to-75-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-12-11",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MTc5NjM0MWFkaXF6a2N4",
+    "date": "2025-06-30",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-micro-entity",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/RQoAskcsrR4vst7EVvH9MKECFO0oJ_FiqMbdeU0j0ZM/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/09353217/filing-history/MzQ3MTc5NjM0MWFkaXF6a2N4"
   }
 }

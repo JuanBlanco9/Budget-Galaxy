@@ -59,13 +59,107 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T23:04:52Z",
+    "company_name": "BERKSHIRE WOMEN'S AID",
+    "company_status": "active",
+    "date_of_creation": "1995-07-19",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-25"
+  },
+  "governance": {
+    "api_date": "2026-04-27T23:04:53Z",
+    "total_officers": 57,
+    "active_count": 8,
+    "resigned_count": 49,
+    "active_officers": [
+      {
+        "name": "BADDELEY, Kathryn",
+        "role": "director",
+        "appointed_on": "2015-01-28",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BEDDALL, Minaz",
+        "role": "director",
+        "appointed_on": "2020-01-21",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HOOPER, Gemma",
+        "role": "director",
+        "appointed_on": "2024-01-17",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "HOWARD, Chaya Kumudini",
+        "role": "director",
+        "appointed_on": "2023-04-05",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "JONES, Fiona Patricia",
+        "role": "director",
+        "appointed_on": "2017-03-29",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LAMBOURNE, Vicki Sue",
+        "role": "director",
+        "appointed_on": "2025-07-23",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "STEAD, Elizabeth",
+        "role": "director",
+        "appointed_on": "2025-05-21",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "YOUNG, Emma Louise Victoria",
+        "role": "director",
+        "appointed_on": "2022-11-30",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T23:04:55Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NTQzMzY5M2FkaXF6a2N4",
+    "date": "2025-12-29",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/klo7DO6bceruX7wTDiOckVgIuDpqMYleRtz_JcVijFY/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03081670/filing-history/MzQ5NTQzMzY5M2FkaXF6a2N4"
   }
 }

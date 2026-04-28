@@ -55,10 +55,10 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
@@ -66,5 +66,64 @@
     "education": 0.167,
     "agency": 0.1455,
     "other": 0.0043
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T14:42:43Z",
+    "company_name": "EBSCO INTERNATIONAL INC.",
+    "company_status": "active",
+    "date_of_creation": "1991-06-24",
+    "date_of_cessation": null,
+    "jurisdiction": "united-kingdom",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": null,
+    "accounts_next_due": null,
+    "accounts_last_made_up": "2025-06-30",
+    "confirmation_statement_overdue": null,
+    "confirmation_statement_next_due": null
+  },
+  "governance": {
+    "api_date": "2026-04-27T14:42:45Z",
+    "total_officers": 8,
+    "active_count": 3,
+    "resigned_count": 5,
+    "active_officers": [
+      {
+        "name": "BRUCE, Cary Alan",
+        "role": "director",
+        "appointed_on": "2017-09-16",
+        "country_of_residence": "Germany",
+        "nationality": "German"
+      },
+      {
+        "name": "POWELL, Allen",
+        "role": "director",
+        "appointed_on": "2023-07-01",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      },
+      {
+        "name": "STEPHENS, Bryson David Dudley",
+        "role": "director",
+        "appointed_on": "2019-09-16",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T14:42:46Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5ODI0MTg1OWFkaXF6a2N4",
+    "date": "2026-01-09",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/UXxnysyJpGx5gqxc4F552Kv_IlV9wEuWnUmEfSZLMFI/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/FC016134/filing-history/MzQ5ODI0MTg1OWFkaXF6a2N4"
   }
 }

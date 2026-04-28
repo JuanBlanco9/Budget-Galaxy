@@ -61,15 +61,95 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "police_fire",
   "buyer_type_breakdown": {
     "police_fire": 0.5284,
     "council": 0.3477,
     "other": 0.1239
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T21:24:10Z",
+    "company_name": "TERBERG DTS (UK) LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1998-06-16",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-30"
+  },
+  "governance": {
+    "api_date": "2026-04-27T21:24:11Z",
+    "total_officers": 8,
+    "active_count": 3,
+    "resigned_count": 5,
+    "active_officers": [
+      {
+        "name": "CHUBB, Nigel Edwin",
+        "role": "secretary",
+        "appointed_on": "1998-06-16",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "COUPER, Alisdair Neill Rae",
+        "role": "director",
+        "appointed_on": "1998-06-16",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "TERBERG SPECIAL VEHICLES HOLDING B.V.",
+        "role": "corporate-director",
+        "appointed_on": "2025-04-01",
+        "country_of_residence": null,
+        "nationality": null
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T21:24:13Z",
+    "total_results": 1,
+    "active_count": 0,
+    "items": [
+      {
+        "name": "Terberg Group Bv",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Dutch Law",
+          "country_registered": "Netherlands",
+          "place_registered": "Dutch Company Register",
+          "registration_number": "30045546"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2ODQzMDY4N2FkaXF6a2N4",
+    "date": "2025-05-30",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/R58m6DYHXxIHSh3ifI6csZVOwxeZc4M-Y-f1ERFuLjo/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03582151/filing-history/MzQ2ODQzMDY4N2FkaXF6a2N4"
   }
 }

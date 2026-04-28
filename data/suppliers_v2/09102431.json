@@ -64,13 +64,155 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T05:16:02Z",
+    "company_name": "THE ENVIRONMENTAL DIMENSION PARTNERSHIP LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2014-06-25",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-02-28",
+    "accounts_last_made_up": "2025-05-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-24"
+  },
+  "governance": {
+    "api_date": "2026-04-28T05:16:03Z",
+    "total_officers": 12,
+    "active_count": 11,
+    "resigned_count": 1,
+    "active_officers": [
+      {
+        "name": "KNOWLES, Tim",
+        "role": "secretary",
+        "appointed_on": "2014-06-25",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "CRUTCHLEY, Andrew",
+        "role": "director",
+        "appointed_on": "2014-09-10",
+        "country_of_residence": "Wales",
+        "nationality": "British"
+      },
+      {
+        "name": "DORE, Gerard",
+        "role": "director",
+        "appointed_on": "2018-03-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GARDNER, Peter William Richard Thomas",
+        "role": "director",
+        "appointed_on": "2023-06-28",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HENSON, Katherine Sarah Elaine",
+        "role": "director",
+        "appointed_on": "2023-06-28",
+        "country_of_residence": "Wales",
+        "nationality": "British"
+      },
+      {
+        "name": "KNOWLES, Timothy",
+        "role": "director",
+        "appointed_on": "2016-02-23",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LEWIS, David",
+        "role": "director",
+        "appointed_on": "2014-09-10",
+        "country_of_residence": "Wales",
+        "nationality": "British"
+      },
+      {
+        "name": "MCKENZIE, Fiona",
+        "role": "director",
+        "appointed_on": "2018-03-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MYLCHREEST, Charles",
+        "role": "director",
+        "appointed_on": "2018-03-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ROSEDALE, Benjamin James",
+        "role": "director",
+        "appointed_on": "2014-09-10",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WIGGLESWORTH, Tom",
+        "role": "director",
+        "appointed_on": "2016-02-23",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T05:16:04Z",
+    "total_results": 2,
+    "active_count": 0,
+    "items": [
+      {
+        "name": "Mr Benjamin James Rosedale",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Duncan Peter Mcinerney",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MTQ0ODAyNmFkaXF6a2N4",
+    "date": "2025-11-28",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/ivyEeJzC7w7vOMYe1oB_hBa8w6GZo6G2Gf3oMmBiXAU/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/09102431/filing-history/MzQ5MTQ0ODAyNmFkaXF6a2N4"
   }
 }

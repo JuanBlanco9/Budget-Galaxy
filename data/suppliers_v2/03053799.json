@@ -59,13 +59,134 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
     "central_govt": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T23:33:15Z",
+    "company_name": "THE LONDON COLLEGE OF BEAUTY THERAPY LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1995-05-05",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-04-30",
+    "accounts_last_made_up": "2025-07-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-11"
+  },
+  "governance": {
+    "api_date": "2026-04-27T23:33:17Z",
+    "total_officers": 14,
+    "active_count": 4,
+    "resigned_count": 10,
+    "active_officers": [
+      {
+        "name": "CAMPBELL, Mia",
+        "role": "secretary",
+        "appointed_on": "2025-09-08",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "CHARLES, Laura Michelle",
+        "role": "director",
+        "appointed_on": "2024-02-02",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "LONGMAN, Kim",
+        "role": "director",
+        "appointed_on": "2024-02-02",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "LUCAS, Lee Anthony",
+        "role": "director",
+        "appointed_on": "2024-02-02",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T23:33:18Z",
+    "total_results": 4,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Education For Industry Group",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2024-02-02",
+        "identification": {
+          "legal_form": "Company Limited By Guarantee",
+          "legal_authority": "Companies Act, Charities Act",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House Uk",
+          "registration_number": "05507547"
+        }
+      },
+      {
+        "name": "Mrs Karen Della Rahbary",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2018-02-20",
+        "identification": null
+      },
+      {
+        "name": "Nicola Crawley",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2018-02-20",
+        "identification": null
+      },
+      {
+        "name": "Mrs Christianne Cavaliere De Moncayo",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2018-02-20",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwNzU0MDY2MGFkaXF6a2N4",
+    "date": "2026-03-02",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/o50P8XQSn7jYPz384bOByXhNd8c9JQ33SMcd0xUDs7Y/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03053799/filing-history/MzUwNzU0MDY2MGFkaXF6a2N4"
   }
 }

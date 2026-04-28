@@ -64,13 +64,195 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T21:32:04Z",
+    "company_name": "THE ROYAL BANK OF SCOTLAND PUBLIC LIMITED COMPANY",
+    "company_status": "active",
+    "date_of_creation": "1983-05-09",
+    "date_of_cessation": null,
+    "jurisdiction": "scotland",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-06-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-03"
+  },
+  "governance": {
+    "api_date": "2026-04-27T21:32:06Z",
+    "total_officers": 87,
+    "active_count": 15,
+    "resigned_count": 72,
+    "active_officers": [
+      {
+        "name": "MOORE, Gary",
+        "role": "secretary",
+        "appointed_on": "2025-02-14",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BARNES, Francesca",
+        "role": "director",
+        "appointed_on": "2018-05-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "COOK, Karin Alexandra",
+        "role": "director",
+        "appointed_on": "2025-05-05",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CRITCHLEY, Joshua Charles Macdonald",
+        "role": "director",
+        "appointed_on": "2025-11-03",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "DONNELLY, Roisin Jane Catherine",
+        "role": "director",
+        "appointed_on": "2022-10-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "FLYNN, Patrick Gerard",
+        "role": "director",
+        "appointed_on": "2018-06-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "Irish"
+      },
+      {
+        "name": "GOPALAN, Geeta",
+        "role": "director",
+        "appointed_on": "2024-07-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HAYTHORNTHWAITE, Richard Neil",
+        "role": "director",
+        "appointed_on": "2024-01-08",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "HITCHCOCK, Albert Roger",
+        "role": "director",
+        "appointed_on": "2026-02-23",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LEWIS, Stuart Wilson",
+        "role": "director",
+        "appointed_on": "2023-04-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MURRAY, Katie",
+        "role": "director",
+        "appointed_on": "2019-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "RENNISON, Mark Martin",
+        "role": "director",
+        "appointed_on": "2023-09-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "THWAITE, John-Paul",
+        "role": "director",
+        "appointed_on": "2023-07-25",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WHITEHEAD, Gillian Rosemary",
+        "role": "director",
+        "appointed_on": "2025-01-08",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WILSON, Lena Cooper",
+        "role": "director",
+        "appointed_on": "2018-04-27",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T21:32:08Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Natwest Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2017-10-01",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "10142224"
+        }
+      },
+      {
+        "name": "Adam & Company Group Plc",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Public Limited Company",
+          "legal_authority": "1985/89",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "Sc102470"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2NTczNzYwMmFkaXF6a2N4",
+    "date": "2025-05-13",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/bSypr_5jsg_F_uoC4FFmE0KiI-0uTlIOKM2eju8NlJg/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/SC083026/filing-history/MzQ2NTczNzYwMmFkaXF6a2N4"
   }
 }

@@ -59,15 +59,88 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
     "central_govt": 0.6152,
     "education": 0.26,
     "nhs": 0.1248
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T06:48:33Z",
+    "company_name": "THOMAS FATTORINI LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1919-02-24",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-01"
+  },
+  "governance": {
+    "api_date": "2026-04-28T06:48:34Z",
+    "total_officers": 11,
+    "active_count": 5,
+    "resigned_count": 6,
+    "active_officers": [
+      {
+        "name": "FATTORINI, Gregory Thomas Buhler",
+        "role": "director",
+        "appointed_on": "1999-07-15",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "FATTORINI, Sebastian Thomas Buhler",
+        "role": "director",
+        "appointed_on": "2007-01-29",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "FATTORINI, Thomas Robert Buhler",
+        "role": "director",
+        "appointed_on": "2004-09-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "FATTORINI, Timothy Hugh Thomas",
+        "role": "director",
+        "appointed_on": "2007-01-29",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "SPEAKMAN, Gary",
+        "role": "director",
+        "appointed_on": "2008-04-22",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T06:48:35Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NTUwOTE4N2FkaXF6a2N4",
+    "date": "2025-07-30",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/5LVlVPXJY3UUtvpqWOTsEWju9hLp_FrrfYcSXgRVD3k/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/00153351/filing-history/MzQ3NTUwOTE4N2FkaXF6a2N4"
   }
 }

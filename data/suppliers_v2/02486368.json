@@ -59,14 +59,153 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
     "central_govt": 1.0,
     "council": 0.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T13:57:43Z",
+    "company_name": "THE FINANCIAL REPORTING COUNCIL LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1990-03-23",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-22"
+  },
+  "governance": {
+    "api_date": "2026-04-28T13:57:44Z",
+    "total_officers": 84,
+    "active_count": 10,
+    "resigned_count": 74,
+    "active_officers": [
+      {
+        "name": "SCHIRN, James Alexander",
+        "role": "secretary",
+        "appointed_on": "2022-08-08",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "CHA, Angela Fung Ngor",
+        "role": "director",
+        "appointed_on": "2022-02-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "DU PLESSIS, Jan Petrus, Sir",
+        "role": "director",
+        "appointed_on": "2022-02-03",
+        "country_of_residence": "England",
+        "nationality": "British,South African"
+      },
+      {
+        "name": "LINDHOLM, Eva-Kristiina",
+        "role": "director",
+        "appointed_on": "2024-11-28",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "MORIARTY, Richard",
+        "role": "director",
+        "appointed_on": "2023-10-02",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "NIXON, Hannah",
+        "role": "director",
+        "appointed_on": "2021-06-24",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "O'REGAN, William Simon",
+        "role": "director",
+        "appointed_on": "2024-11-28",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PARKER, Charles Lucian Henry",
+        "role": "director",
+        "appointed_on": "2024-11-28",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "THOMPSON, Clare",
+        "role": "director",
+        "appointed_on": "2022-02-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WILLIS, David Arthur",
+        "role": "director",
+        "appointed_on": "2022-02-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T13:57:46Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Secretary Of State For The Department For Business And Trade",
+        "kind": "legal-person-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2023-06-01",
+        "identification": {
+          "legal_form": "Government Minister",
+          "legal_authority": "England And Wales"
+        }
+      },
+      {
+        "name": "Secretary Of State For Business, Energy And Industrial Strategy",
+        "kind": "legal-person-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2019-04-01",
+        "identification": {
+          "legal_form": "Government Minister",
+          "legal_authority": "Uk"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3Nzg4MjkzN2FkaXF6a2N4",
+    "date": "2025-08-19",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/p8XtN5P76McxAQxZR5WMNHT0vuF3TT1ooF96FOyJz5w/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02486368/filing-history/MzQ3Nzg4MjkzN2FkaXF6a2N4"
   }
 }

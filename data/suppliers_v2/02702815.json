@@ -68,15 +68,152 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "agency",
   "buyer_type_breakdown": {
     "agency": 0.9921,
     "council": 0.0076,
     "other": 0.0003
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T04:34:18Z",
+    "company_name": "GROUNDWORK NORTH EAST",
+    "company_status": "active",
+    "date_of_creation": "1992-03-31",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-04-14"
+  },
+  "governance": {
+    "api_date": "2026-04-28T04:34:19Z",
+    "total_officers": 108,
+    "active_count": 12,
+    "resigned_count": 96,
+    "active_officers": [
+      {
+        "name": "ROBERTS, Steven James",
+        "role": "secretary",
+        "appointed_on": "2024-07-06",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "ANDERSON, Amber Jade Jasmine",
+        "role": "director",
+        "appointed_on": "2020-09-24",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ATHERTON, Joel Peter Kirkham Hayes",
+        "role": "director",
+        "appointed_on": "2025-03-19",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "COLE, Stephen Francis",
+        "role": "director",
+        "appointed_on": "2023-09-27",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CROOKS, Rachael",
+        "role": "director",
+        "appointed_on": "2025-03-19",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "FELLOWS, Alison Anne",
+        "role": "director",
+        "appointed_on": "2026-03-18",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ORDE, Michael William",
+        "role": "director",
+        "appointed_on": "2025-03-19",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "PEARCE, Diana Catherine",
+        "role": "director",
+        "appointed_on": "2013-09-25",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PRITCHARD, John Edward",
+        "role": "director",
+        "appointed_on": "2017-09-19",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "RICHARDSON, Zain",
+        "role": "director",
+        "appointed_on": "2023-09-27",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SCHOOLER, Marion Fiona",
+        "role": "director",
+        "appointed_on": "2019-03-20",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SIMMONS, Helen",
+        "role": "director",
+        "appointed_on": "2021-06-23",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T04:34:20Z",
+    "total_results": 1,
+    "active_count": 0,
+    "items": [
+      {
+        "name": "Ms Catherine Joanna Culverhouse",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control",
+          "significant-influence-or-control-as-trust",
+          "significant-influence-or-control-as-firm"
+        ],
+        "notified_on": "2017-03-31",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MjM4NzIxM2FkaXF6a2N4",
+    "date": "2025-12-05",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/TS78lDnOBQ4pLdKlSOV6wR4fssJzYEWfkh-KCaEUfI4/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02702815/filing-history/MzQ5MjM4NzIxM2FkaXF6a2N4"
   }
 }

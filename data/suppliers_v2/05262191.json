@@ -59,14 +59,79 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.6953,
     "education": 0.3047
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T07:03:04Z",
+    "company_name": "MONA LIFTING LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2004-10-18",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-11"
+  },
+  "governance": {
+    "api_date": "2026-04-28T07:03:05Z",
+    "total_officers": 2,
+    "active_count": 2,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "EVANS, Robin Wyn",
+        "role": "secretary",
+        "appointed_on": "2004-10-18",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "JONES, Steven Richard",
+        "role": "director",
+        "appointed_on": "2004-10-18",
+        "country_of_residence": "Wales",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T07:03:06Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Robin Wyn Evans",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Welsh",
+        "country_of_residence": "Wales",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent"
+        ],
+        "notified_on": "2016-10-26",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2OTQ3MjUxOGFkaXF6a2N4",
+    "date": "2025-06-10",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/Q774BItUHYQ2gvhu78fW3jY-tBOg7Q5KU_0PU5JZBJo/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/05262191/filing-history/MzQ2OTQ3MjUxOGFkaXF6a2N4"
   }
 }

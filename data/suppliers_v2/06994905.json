@@ -68,13 +68,192 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T04:58:42Z",
+    "company_name": "TRU DEMOLITION LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2009-08-19",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-08-16"
+  },
+  "governance": {
+    "api_date": "2026-04-28T04:58:43Z",
+    "total_officers": 11,
+    "active_count": 7,
+    "resigned_count": 4,
+    "active_officers": [
+      {
+        "name": "BIRD, Alexander John",
+        "role": "director",
+        "appointed_on": "2022-04-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "COBB, Kieran Caleb",
+        "role": "director",
+        "appointed_on": "2017-10-11",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MACK, Johnlee",
+        "role": "director",
+        "appointed_on": "2023-04-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MARSHALL, Anthony Derek",
+        "role": "director",
+        "appointed_on": "2017-10-11",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "NICHOLLS, Guy John",
+        "role": "director",
+        "appointed_on": "2017-10-11",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "NICHOLLS, Jake Guy",
+        "role": "director",
+        "appointed_on": "2022-04-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "RENOUF, Gary Sean",
+        "role": "director",
+        "appointed_on": "2022-04-19",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T04:58:44Z",
+    "total_results": 5,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Tru7 Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2023-04-01",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "14618421"
+        }
+      },
+      {
+        "name": "Tru7 Group Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2022-05-31",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "England",
+          "registration_number": "13998339"
+        }
+      },
+      {
+        "name": "Tru7 Group Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2022-03-31",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "England",
+          "registration_number": "10068273"
+        }
+      },
+      {
+        "name": "Prentice Aircraft And Cars Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2017-10-11",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Register Of Companies",
+          "registration_number": "00341968"
+        }
+      },
+      {
+        "name": "Mr David Michael Clarke",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-08-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5Mzc4MzA0NmFkaXF6a2N4",
+    "date": "2025-12-12",
+    "type": "AA01",
+    "description": "change-account-reference-date-company-current-shortened",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/Eokm5G0d4TpkenYVNtQOTrISeGMkETl0PtJGvzlcGiU/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/06994905/filing-history/MzQ5Mzc4MzA0NmFkaXF6a2N4"
   }
 }

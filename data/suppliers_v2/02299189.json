@@ -59,13 +59,193 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T15:25:45Z",
+    "company_name": "OXFORD BROOKES ENTERPRISES LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1988-09-22",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-04-30",
+    "accounts_last_made_up": "2025-07-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-09"
+  },
+  "governance": {
+    "api_date": "2026-04-27T15:25:47Z",
+    "total_officers": 33,
+    "active_count": 4,
+    "resigned_count": 29,
+    "active_officers": [
+      {
+        "name": "PERRY, Anthony",
+        "role": "secretary",
+        "appointed_on": "2025-10-18",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "LAVILLE, Helen Jane, Professor",
+        "role": "director",
+        "appointed_on": "2025-10-21",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MEGHANI, Alykhan Alnoor",
+        "role": "director",
+        "appointed_on": "2026-04-24",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "TAH, Joseph Handibry Mbatu",
+        "role": "director",
+        "appointed_on": "2025-06-11",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T15:25:49Z",
+    "total_results": 9,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Oxford Brookes University",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2024-07-31",
+        "identification": {
+          "legal_form": "Charity",
+          "legal_authority": "Further And Higher Education Act 1992"
+        }
+      },
+      {
+        "name": "Mr John Kenelm Zealley",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2020-11-25",
+        "identification": null
+      },
+      {
+        "name": "Mr Norman Lyn Thomas Williams",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2017-08-01",
+        "identification": null
+      },
+      {
+        "name": "Mr Robert Maurice Kirtland",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Ms Katherine Jane Ryan",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Ms Leslie Ann Morphy",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Martin Graham Howell",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr John James Guy",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Ms Alyson Jo Coates",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwMjE2Nzk2NmFkaXF6a2N4",
+    "date": "2026-01-29",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/btkUmsHnc7YE3NKc3VVn9ZVR3VQLynTg-PohrMKtEtE/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02299189/filing-history/MzUwMjE2Nzk2NmFkaXF6a2N4"
   }
 }

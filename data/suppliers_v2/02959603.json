@@ -59,13 +59,99 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T10:00:28Z",
+    "company_name": "PERSONNEL DYNAMICS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1994-08-17",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-08-24"
+  },
+  "governance": {
+    "api_date": "2026-04-28T10:00:29Z",
+    "total_officers": 8,
+    "active_count": 3,
+    "resigned_count": 5,
+    "active_officers": [
+      {
+        "name": "GIBBONS, Julie Anne",
+        "role": "director",
+        "appointed_on": "2022-06-16",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "STOREY, Anne Mary",
+        "role": "director",
+        "appointed_on": "2008-12-31",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WHITEMORE, Karen Diane",
+        "role": "director",
+        "appointed_on": "2019-07-09",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T10:00:30Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Miss Julie Anne Gibbons",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2025-08-18",
+        "identification": null
+      },
+      {
+        "name": "Miss Anne Mary Storey",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ1OTgyMTk3MmFkaXF6a2N4",
+    "date": "2025-03-24",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/O0SWnj3v2jdVXlZonpL5-rZjzxbPH55AlyXCNvLbElg/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02959603/filing-history/MzQ1OTgyMTk3MmFkaXF6a2N4"
   }
 }

@@ -59,13 +59,99 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T14:07:55Z",
+    "company_name": "WESTLAKE CARERS LTD",
+    "company_status": "voluntary-arrangement",
+    "date_of_creation": "2020-11-13",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": true,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-08-31",
+    "accounts_last_made_up": "2024-11-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-04"
+  },
+  "governance": {
+    "api_date": "2026-04-28T14:07:56Z",
+    "total_officers": 1,
+    "active_count": 1,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "THAPA GHIMIRE, Priti",
+        "role": "director",
+        "appointed_on": "2020-11-13",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T14:07:57Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Ms Marizl Matabilas Laurente",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2021-03-15",
+        "identification": null
+      },
+      {
+        "name": "Ms Marizl Matabilas Laurente",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2020-11-13",
+        "identification": null
+      },
+      {
+        "name": "Mrs Priti Thapa Ghimire",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent",
+          "voting-rights-50-to-75-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2020-11-13",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3ODk4MDEyMGFkaXF6a2N4",
+    "date": "2025-08-28",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/VdcGuHFqmfpkcNn9e2jFhMvc9YIE3CxRkB0YRLvQNZk/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/13017398/filing-history/MzQ3ODk4MDEyMGFkaXF6a2N4"
   }
 }

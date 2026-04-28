@@ -65,13 +65,80 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T13:33:30Z",
+    "company_name": "ACOTA LIMITED",
+    "company_status": "liquidation",
+    "date_of_creation": "2000-12-04",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": true,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-05-26"
+  },
+  "governance": {
+    "api_date": "2026-04-28T13:33:31Z",
+    "total_officers": 7,
+    "active_count": 2,
+    "resigned_count": 5,
+    "active_officers": [
+      {
+        "name": "HENLY, Jennifer Sian",
+        "role": "director",
+        "appointed_on": "2016-05-25",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "HENLY, Stephen Rodger",
+        "role": "director",
+        "appointed_on": "2001-03-20",
+        "country_of_residence": "United Kingdom",
+        "nationality": "Irish,British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T13:33:32Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Stephen Rodger Henly",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Irish,British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MjU1NDM4OGFkaXF6a2N4",
+    "date": "2025-09-24",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/csgQ-zuac6i_mJpeLOfHWp4tb0arvgxG1zh8o7M_Ja8/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04119037/filing-history/MzQ4MjU1NDM4OGFkaXF6a2N4"
   }
 }

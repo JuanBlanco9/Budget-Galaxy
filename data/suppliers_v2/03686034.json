@@ -63,13 +63,86 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T13:12:58Z",
+    "company_name": "KALA, THE ARTS",
+    "company_status": "active",
+    "date_of_creation": "1998-12-18",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-01"
+  },
+  "governance": {
+    "api_date": "2026-04-28T13:12:59Z",
+    "total_officers": 21,
+    "active_count": 5,
+    "resigned_count": 16,
+    "active_officers": [
+      {
+        "name": "LONG, Sushmita",
+        "role": "secretary",
+        "appointed_on": "1998-12-18",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "DOVE, Bharty",
+        "role": "director",
+        "appointed_on": "2025-01-02",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "JINI, Cherian Elizabeth",
+        "role": "director",
+        "appointed_on": "2020-09-09",
+        "country_of_residence": "England",
+        "nationality": "Indian"
+      },
+      {
+        "name": "NANDRA, Raka",
+        "role": "director",
+        "appointed_on": "2004-09-24",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "RAVEN, Emma Jane",
+        "role": "director",
+        "appointed_on": "2023-04-04",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T13:13:00Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MjY2NDUzN2FkaXF6a2N4",
+    "date": "2025-09-25",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/Bb3HyPicEEA9OuBCybYKWwAcoHlm6go4W0zGSZcoY6A/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03686034/filing-history/MzQ4MjY2NDUzN2FkaXF6a2N4"
   }
 }

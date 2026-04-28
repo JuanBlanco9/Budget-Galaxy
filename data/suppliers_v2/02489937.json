@@ -59,13 +59,156 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T13:37:15Z",
+    "company_name": "SUMMIT SYSTEMS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1990-04-06",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-07-31",
+    "confirmation_statement_overdue": true,
+    "confirmation_statement_next_due": "2026-04-20"
+  },
+  "governance": {
+    "api_date": "2026-04-28T13:37:16Z",
+    "total_officers": 15,
+    "active_count": 5,
+    "resigned_count": 10,
+    "active_officers": [
+      {
+        "name": "LOWE, Ian",
+        "role": "secretary",
+        "appointed_on": "2014-05-16",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "CAVILL, Deborah",
+        "role": "director",
+        "appointed_on": "2022-04-05",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "JORDAN, Michael Charles",
+        "role": "director",
+        "appointed_on": null,
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "LOWE, Ian Robert",
+        "role": "director",
+        "appointed_on": "2013-04-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "ROSS, Matthew",
+        "role": "director",
+        "appointed_on": "2020-11-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T13:37:18Z",
+    "total_results": 5,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Christopher Crittenden",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2024-10-29",
+        "identification": null
+      },
+      {
+        "name": "Mr Alexander Fleming Mcnee",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "Isle Of Man",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2024-10-29",
+        "identification": null
+      },
+      {
+        "name": "Mrs Katherine Sarah Ellis",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "Isle Of Man",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2024-10-29",
+        "identification": null
+      },
+      {
+        "name": "Merebeck Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2024-10-29",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Uk Company Law",
+          "country_registered": "Isle Of Man",
+          "place_registered": "Isle Of Man",
+          "registration_number": "05987376"
+        }
+      },
+      {
+        "name": "Mr Michael Charles Jordan",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-50-to-75-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwMTYzMTcwNmFkaXF6a2N4",
+    "date": "2026-01-27",
+    "type": "AA01",
+    "description": "change-account-reference-date-company-previous-extended",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/yo4SKZgvjSAh9siDKF4GWIBMaPM5L-wxsTsezezcjh8/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02489937/filing-history/MzUwMTYzMTcwNmFkaXF6a2N4"
   }
 }

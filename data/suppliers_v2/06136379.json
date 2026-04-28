@@ -59,13 +59,92 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
     "central_govt": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T07:19:08Z",
+    "company_name": "IWEB LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2007-03-05",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-01-31",
+    "accounts_last_made_up": "2025-04-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-18"
+  },
+  "governance": {
+    "api_date": "2026-04-28T07:19:09Z",
+    "total_officers": 3,
+    "active_count": 2,
+    "resigned_count": 1,
+    "active_officers": [
+      {
+        "name": "BEZUIDENHOUT, Sanet",
+        "role": "director",
+        "appointed_on": "2023-04-06",
+        "country_of_residence": "England",
+        "nationality": "South African"
+      },
+      {
+        "name": "BROODRYK, Magiel Jacobus",
+        "role": "director",
+        "appointed_on": "2007-03-05",
+        "country_of_residence": "England",
+        "nationality": "South African"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T07:19:10Z",
+    "total_results": 2,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Ms Sanet Bezuidenhout",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "South African",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2019-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Magiel Jacobus Broodryk",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "South African",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2017-03-05",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5Mzc4MDcxOWFkaXF6a2N4",
+    "date": "2025-12-12",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-micro-entity",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/XOHj-0D-aZf4_x03nWdUMeeVAVF6TUPzjU-XdsxKC6M/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/06136379/filing-history/MzQ5Mzc4MDcxOWFkaXF6a2N4"
   }
 }

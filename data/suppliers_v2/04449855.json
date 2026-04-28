@@ -65,14 +65,144 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0,
     "council": 0.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T13:50:16Z",
+    "company_name": "BUSINESS IMAGE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2002-05-29",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-03-31",
+    "accounts_last_made_up": "2025-06-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-13"
+  },
+  "governance": {
+    "api_date": "2026-04-28T13:50:17Z",
+    "total_officers": 14,
+    "active_count": 5,
+    "resigned_count": 9,
+    "active_officers": [
+      {
+        "name": "JONES, Ryan",
+        "role": "director",
+        "appointed_on": "2023-11-08",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      },
+      {
+        "name": "ROGERS, Adam",
+        "role": "director",
+        "appointed_on": "2023-11-08",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "ROGERS, Derek Robert",
+        "role": "director",
+        "appointed_on": "2011-07-08",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ROGERS, Tracey",
+        "role": "director",
+        "appointed_on": "2022-06-21",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "UNDERWOOD, Sean Anthony",
+        "role": "director",
+        "appointed_on": "2012-10-10",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T13:50:18Z",
+    "total_results": 4,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Business Image Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2023-04-03",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "Uk Register Of Companies",
+          "registration_number": "07685316"
+        }
+      },
+      {
+        "name": "Mr Derek Robert Rogers",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "United Kingdom",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mrs Tracey Rogers",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr William Harold Price",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxNTY2NTAzM2FkaXF6a2N4",
+    "date": "2026-04-13",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/cU_Y4cQvE9AfXZv1lAmbjjsrZcwcedkus-HBJoZs0Y0/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04449855/filing-history/MzUxNTY2NTAzM2FkaXF6a2N4"
   }
 }

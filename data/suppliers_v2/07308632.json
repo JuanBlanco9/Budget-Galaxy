@@ -59,13 +59,150 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "education",
   "buyer_type_breakdown": {
     "education": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T23:36:04Z",
+    "company_name": "QUANTUM IT EUROPE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2010-07-08",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-03-31",
+    "accounts_last_made_up": "2025-06-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-22"
+  },
+  "governance": {
+    "api_date": "2026-04-27T23:36:06Z",
+    "total_officers": 2,
+    "active_count": 2,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "WHITE, Guthrie John Bruce",
+        "role": "secretary",
+        "appointed_on": "2010-07-08",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "WHITE, Guthrie John Bruce",
+        "role": "director",
+        "appointed_on": "2010-07-08",
+        "country_of_residence": "Australia",
+        "nationality": "Australian"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T23:36:07Z",
+    "total_results": 5,
+    "active_count": 4,
+    "items": [
+      {
+        "name": "Quantum It Global Holdings Pty Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent"
+        ],
+        "notified_on": "2021-03-24",
+        "identification": {
+          "legal_form": "Australian Proprietary Company",
+          "legal_authority": "Corporations Act 2001",
+          "country_registered": "Australia",
+          "place_registered": "Australian Securities & Investments Commission",
+          "registration_number": "147381977"
+        }
+      },
+      {
+        "name": "Whiteline Investments Pty Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent"
+        ],
+        "notified_on": "2021-03-24",
+        "identification": {
+          "legal_form": "Australian Proprietary Company",
+          "legal_authority": "Corporations Act 2001",
+          "country_registered": "Australia",
+          "place_registered": "Australian Securities & Investments Commission",
+          "registration_number": "064427532"
+        }
+      },
+      {
+        "name": "Quad Partners V Lp",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2021-03-24",
+        "identification": {
+          "legal_form": "Limited Partnership",
+          "legal_authority": "General Corporation Law",
+          "country_registered": "United States",
+          "place_registered": "United States Securities And Exchange Commission",
+          "registration_number": "0001636297"
+        }
+      },
+      {
+        "name": "Quantum Int Pty Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent"
+        ],
+        "notified_on": "2019-08-01",
+        "identification": {
+          "legal_form": "Australian Proprietary Company",
+          "legal_authority": "Corporations Act 2001",
+          "country_registered": "Australia",
+          "place_registered": "Australian Securities & Investments Commission",
+          "registration_number": "147383784"
+        }
+      },
+      {
+        "name": "Mr Guthrie John Bruce White",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Australian",
+        "country_of_residence": "Australia",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxMzYwNTI1OGFkaXF6a2N4",
+    "date": "2026-03-31",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/HSfW-ZOg82cmG6STOgedYj0prtR0wnem9awnrXiO7s0/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/07308632/filing-history/MzUxMzYwNTI1OGFkaXF6a2N4"
   }
 }

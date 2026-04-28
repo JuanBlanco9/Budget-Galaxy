@@ -64,14 +64,129 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.7037,
     "central_govt": 0.2963
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T06:13:36Z",
+    "company_name": "CARDINUS RISK MANAGEMENT LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1995-11-17",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-01"
+  },
+  "governance": {
+    "api_date": "2026-04-28T06:13:37Z",
+    "total_officers": 40,
+    "active_count": 8,
+    "resigned_count": 32,
+    "active_officers": [
+      {
+        "name": "REAH, Daniel Lee",
+        "role": "secretary",
+        "appointed_on": "2020-08-31",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "ABBOTT, Jonathan",
+        "role": "director",
+        "appointed_on": "2009-11-07",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "BRIMFIELD, Edward James",
+        "role": "director",
+        "appointed_on": "2020-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BRIMFIELD, Stephen Neil",
+        "role": "director",
+        "appointed_on": "2017-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HAWKES, Andrew John",
+        "role": "director",
+        "appointed_on": "2003-09-02",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "NOBLE, Marcus John",
+        "role": "director",
+        "appointed_on": "2007-11-29",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "REAH, Daniel Lee",
+        "role": "director",
+        "appointed_on": "2025-04-03",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "TIBBALS, David Peter",
+        "role": "director",
+        "appointed_on": "2013-09-03",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T06:13:38Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Amwins Global Risks Uk Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House England And Wales",
+          "registration_number": "03244626"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MDE5NjYyMWFkaXF6a2N4",
+    "date": "2025-06-16",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/O9qTKWJwl80ArF751KPHiwH18vEHaE1BUFaXkuf5PCE/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03127254/filing-history/MzQ3MDE5NjYyMWFkaXF6a2N4"
   }
 }

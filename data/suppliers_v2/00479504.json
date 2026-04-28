@@ -70,13 +70,107 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "agency",
   "buyer_type_breakdown": {
     "agency": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T09:47:10Z",
+    "company_name": "XYLEM WATER SOLUTIONS UK LTD",
+    "company_status": "active",
+    "date_of_creation": "1950-03-14",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-08-31"
+  },
+  "governance": {
+    "api_date": "2026-04-28T09:47:12Z",
+    "total_officers": 34,
+    "active_count": 5,
+    "resigned_count": 29,
+    "active_officers": [
+      {
+        "name": "TANCRED, Nicola Anne",
+        "role": "secretary",
+        "appointed_on": "2018-12-28",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BENTLEY, Laurie James",
+        "role": "director",
+        "appointed_on": "2020-11-18",
+        "country_of_residence": "England",
+        "nationality": "English"
+      },
+      {
+        "name": "BOULTON, Bernadette Claire",
+        "role": "director",
+        "appointed_on": "2023-01-11",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "THOMPSON, Ian Lester",
+        "role": "director",
+        "appointed_on": "2019-09-13",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "TURNER, Mark Andrew",
+        "role": "director",
+        "appointed_on": "2023-10-03",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T09:47:13Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Xylem Water Solutions Uk Holdings Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "English",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "4464243"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4NDMxMTE4MWFkaXF6a2N4",
+    "date": "2025-10-09",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-audit-exemption-subsiduary",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/uaW8RHCPL4g_-dSTizMAGhantKr3ssqDtpnuL-9GB2Q/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/00479504/filing-history/MzQ4NDMxMTE4MWFkaXF6a2N4"
   }
 }

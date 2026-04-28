@@ -64,13 +64,84 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "education",
   "buyer_type_breakdown": {
     "education": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T08:55:41Z",
+    "company_name": "AGILITY PR SOLUTIONS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2016-05-07",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-05-20"
+  },
+  "governance": {
+    "api_date": "2026-04-28T08:55:42Z",
+    "total_officers": 4,
+    "active_count": 2,
+    "resigned_count": 2,
+    "active_officers": [
+      {
+        "name": "ABUHOFF, Jack Samuel",
+        "role": "director",
+        "appointed_on": "2016-05-07",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      },
+      {
+        "name": "AGRESS, Amy Rachel",
+        "role": "director",
+        "appointed_on": "2019-05-24",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T08:55:43Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Innodata Book Distribution Service Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-05-07",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "'Companies Ordinance' Cap 32",
+          "country_registered": "Hong Kong",
+          "place_registered": "Hong Kong Company Registry",
+          "registration_number": "1965238"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MjQ4MjUxNGFkaXF6a2N4",
+    "date": "2025-09-24",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/l_KLsm4OwqHzYFTDM3A9uywzOdPySOP9vs5hJuWnqQs/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/10168619/filing-history/MzQ4MjQ4MjUxNGFkaXF6a2N4"
   }
 }

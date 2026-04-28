@@ -59,13 +59,140 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T07:36:47Z",
+    "company_name": "JAKTO TRANSPORT LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1985-09-27",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-08-31",
+    "accounts_last_made_up": "2025-11-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-01"
+  },
+  "governance": {
+    "api_date": "2026-04-28T07:36:49Z",
+    "total_officers": 11,
+    "active_count": 4,
+    "resigned_count": 7,
+    "active_officers": [
+      {
+        "name": "BRISCOE, Sophie Jane",
+        "role": "director",
+        "appointed_on": "2023-12-15",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HELLEWELL, Adrian",
+        "role": "director",
+        "appointed_on": null,
+        "country_of_residence": "United Kingdom",
+        "nationality": "English"
+      },
+      {
+        "name": "HELLEWELL, James Anthony",
+        "role": "director",
+        "appointed_on": "2023-12-15",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MCLACKLAND, Craig",
+        "role": "director",
+        "appointed_on": "2023-02-02",
+        "country_of_residence": "United Kingdom",
+        "nationality": "English"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T07:36:50Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "The Hellewell Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2024-07-31",
+        "identification": {
+          "legal_form": "Private Limited",
+          "legal_authority": "England & Wales",
+          "country_registered": "England",
+          "place_registered": "England & Wales",
+          "registration_number": "15315207"
+        }
+      },
+      {
+        "name": "Jakto Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2017-11-30",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "England & Wales",
+          "registration_number": "11053564"
+        }
+      },
+      {
+        "name": "Jakto Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "England & Wales",
+          "registration_number": "06970939"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxNzQ2NTA0NmFkaXF6a2N4",
+    "date": "2026-04-21",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/4nGfrmxDW5600UapAPQmhk4bZptJfCVV9vk-a9g5T0k/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01950782/filing-history/MzUxNzQ2NTA0NmFkaXF6a2N4"
   }
 }

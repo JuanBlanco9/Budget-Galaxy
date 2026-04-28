@@ -64,13 +64,93 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
     "central_govt": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T11:09:39Z",
+    "company_name": "SAFER PLACES PROFESSIONAL TRAINING AND DEVELOPMENT C.I.C.",
+    "company_status": "active",
+    "date_of_creation": "2021-07-22",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-08-04"
+  },
+  "governance": {
+    "api_date": "2026-04-28T11:09:40Z",
+    "total_officers": 6,
+    "active_count": 3,
+    "resigned_count": 3,
+    "active_officers": [
+      {
+        "name": "ARNOLD, Claire Ruth",
+        "role": "director",
+        "appointed_on": "2022-10-17",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "DALRYMPLE, Janet",
+        "role": "director",
+        "appointed_on": "2021-07-22",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "DAVIES, Greg",
+        "role": "director",
+        "appointed_on": "2026-03-30",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T11:09:41Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Safer Places",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2021-07-22",
+        "identification": {
+          "legal_form": "Private Company Limited By Guarantee",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "Uk Register Of Companies",
+          "registration_number": "02789572"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4Mzc5OTY4NWFkaXF6a2N4",
+    "date": "2025-10-08",
+    "type": "AAMD",
+    "description": "accounts-amended-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/DFTmk-b2nCe3Dvp5OhXce97gX74QZyjJuvED3FApnM0/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/13524749/filing-history/MzQ4Mzc5OTY4NWFkaXF6a2N4"
   }
 }

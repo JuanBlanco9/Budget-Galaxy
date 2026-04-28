@@ -59,13 +59,120 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "education",
   "buyer_type_breakdown": {
     "education": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T11:27:51Z",
+    "company_name": "WATFORD REFRIGERATION AND AIR CONDITIONING LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1948-08-16",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-04-14"
+  },
+  "governance": {
+    "api_date": "2026-04-28T11:27:52Z",
+    "total_officers": 13,
+    "active_count": 4,
+    "resigned_count": 9,
+    "active_officers": [
+      {
+        "name": "HUTCHINSON, Lee",
+        "role": "secretary",
+        "appointed_on": "2016-03-22",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BYWATER, Ian George Thomas",
+        "role": "director",
+        "appointed_on": "2022-02-18",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "HUTCHINSON, Lee",
+        "role": "director",
+        "appointed_on": "2015-05-06",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "KNIGHT, Timothy Peter",
+        "role": "director",
+        "appointed_on": "2025-07-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T11:27:53Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Wat Ref Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2025-03-31",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "United Kingdom (England And Wales)",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "15968402"
+        }
+      },
+      {
+        "name": "K & L Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "United Kingdom (England And Wales)",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "09872342"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NzIzMDA5NGFkaXF6a2N4",
+    "date": "2025-08-14",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/izCxGU2SvdNJpAjbP7beB5KgHvToULminPyMeNDcHI8/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/00457930/filing-history/MzQ3NzIzMDA5NGFkaXF6a2N4"
   }
 }

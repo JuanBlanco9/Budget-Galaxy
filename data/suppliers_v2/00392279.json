@@ -64,13 +64,105 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T21:49:48Z",
+    "company_name": "GL EVENTS UK LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1945-01-04",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-23"
+  },
+  "governance": {
+    "api_date": "2026-04-27T21:49:50Z",
+    "total_officers": 33,
+    "active_count": 5,
+    "resigned_count": 28,
+    "active_officers": [
+      {
+        "name": "BLACK, Dan, Company Secretary",
+        "role": "secretary",
+        "appointed_on": "2012-01-23",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BISHOP, Keith",
+        "role": "director",
+        "appointed_on": "2008-05-31",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "BLACK, Dan",
+        "role": "director",
+        "appointed_on": "2012-01-23",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "GINON, Olivier",
+        "role": "director",
+        "appointed_on": "2001-07-31",
+        "country_of_residence": "France",
+        "nationality": "French"
+      },
+      {
+        "name": "JAMESON, Scott William",
+        "role": "director",
+        "appointed_on": "2015-10-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T21:49:51Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Gl Events Live Sa",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Liability Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "France",
+          "place_registered": "France",
+          "registration_number": "Fr 378932354"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2OTA2OTI4NmFkaXF6a2N4",
+    "date": "2025-06-06",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/aaDHseBAy1C_cdmHkNpaiC6_wz7rCZbk2ytwNAcoV5Y/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/00392279/filing-history/MzQ2OTA2OTI4NmFkaXF6a2N4"
   }
 }

@@ -68,14 +68,129 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.5512,
     "central_govt": 0.4488
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T06:52:06Z",
+    "company_name": "IFM ENGAGE LTD.",
+    "company_status": "active",
+    "date_of_creation": "1997-12-30",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-04-30",
+    "accounts_last_made_up": "2025-07-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-26"
+  },
+  "governance": {
+    "api_date": "2026-04-28T06:52:07Z",
+    "total_officers": 40,
+    "active_count": 11,
+    "resigned_count": 29,
+    "active_officers": [
+      {
+        "name": "CLARK, Glen John",
+        "role": "director",
+        "appointed_on": "2024-11-18",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "DURKAN, Colm, Professor",
+        "role": "director",
+        "appointed_on": "2023-02-28",
+        "country_of_residence": "England",
+        "nationality": "Irish"
+      },
+      {
+        "name": "LOTT, David Andrew, Dr",
+        "role": "director",
+        "appointed_on": "2016-06-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LUMSDEN, Clare",
+        "role": "director",
+        "appointed_on": "2018-10-18",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LYNCH, Valerie Barbara, Dr",
+        "role": "director",
+        "appointed_on": "2019-07-12",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MINSHALL, Timothy Herbert Warren, Prof",
+        "role": "director",
+        "appointed_on": "2017-05-03",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PHAAL, Rob, Dr",
+        "role": "director",
+        "appointed_on": "2018-10-18",
+        "country_of_residence": "England",
+        "nationality": "South African,British"
+      },
+      {
+        "name": "SEABRIGHT, Paul James, Dr",
+        "role": "director",
+        "appointed_on": "2016-02-23",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SRAI, Jagjit Singh, Dr",
+        "role": "director",
+        "appointed_on": "2017-02-03",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "TEMPLETON, Peter William Alan",
+        "role": "director",
+        "appointed_on": "2003-03-19",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "WILLSHER, Kate Elizabeth",
+        "role": "director",
+        "appointed_on": "2018-03-13",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T06:52:08Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NTY0ODUyMmFkaXF6a2N4",
+    "date": "2025-12-29",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/WXeWZE9ATaZB1oQEVqiz4gHGoONQOP05xbX8Vtqe35M/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03486934/filing-history/MzQ5NTY0ODUyMmFkaXF6a2N4"
   }
 }

@@ -59,13 +59,131 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T22:01:12Z",
+    "company_name": "DURADIAMOND HEALTH PARTNERS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2016-07-04",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-04-30",
+    "accounts_last_made_up": "2024-07-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-17"
+  },
+  "governance": {
+    "api_date": "2026-04-27T22:01:14Z",
+    "total_officers": 4,
+    "active_count": 3,
+    "resigned_count": 1,
+    "active_officers": [
+      {
+        "name": "GOLSON, Christopher Michael",
+        "role": "director",
+        "appointed_on": "2018-01-11",
+        "country_of_residence": "United Kingdom",
+        "nationality": "Irish"
+      },
+      {
+        "name": "NOBLE, Andrew Fraser",
+        "role": "director",
+        "appointed_on": "2016-07-17",
+        "country_of_residence": "England",
+        "nationality": "English"
+      },
+      {
+        "name": "WARREN, Derek Philip Charles",
+        "role": "director",
+        "appointed_on": "2018-01-11",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T22:01:15Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Health Partners Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2025-09-30",
+        "identification": {
+          "legal_form": "Company Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "10284664"
+        }
+      },
+      {
+        "name": "Duradiamond Healthcare Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2025-09-30",
+        "identification": {
+          "legal_form": "Companies Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "Scotland",
+          "place_registered": "Companies House",
+          "registration_number": "Sc229346"
+        }
+      },
+      {
+        "name": "Duradiamond Healthcare Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2016-07-04",
+        "identification": {
+          "legal_form": "Companies Act",
+          "legal_authority": "Limited Company",
+          "country_registered": "Scotland",
+          "place_registered": "Scottish Companies Registry",
+          "registration_number": "Sc229346"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ0NTg2MjU5OWFkaXF6a2N4",
+    "date": "2024-12-03",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-audit-exemption-subsiduary",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/VdgfD-sw-t8yoXvc6UEtrrabxI1W_zmYiXS7D0yZt1s/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/10260841/filing-history/MzQ0NTg2MjU5OWFkaXF6a2N4"
   }
 }

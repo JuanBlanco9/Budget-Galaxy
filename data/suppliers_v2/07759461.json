@@ -59,13 +59,79 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T21:53:51Z",
+    "company_name": "AGE UK BARNSLEY",
+    "company_status": "active",
+    "date_of_creation": "2011-09-01",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-09-15"
+  },
+  "governance": {
+    "api_date": "2026-04-27T21:53:53Z",
+    "total_officers": 22,
+    "active_count": 4,
+    "resigned_count": 18,
+    "active_officers": [
+      {
+        "name": "WITHERINGTON, Catherine",
+        "role": "secretary",
+        "appointed_on": "2025-09-09",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "FROST, Robert, Cllr",
+        "role": "director",
+        "appointed_on": "2014-10-15",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "NORTH, Ian Reginald",
+        "role": "director",
+        "appointed_on": "2025-06-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WATTERS, Patricia Mary",
+        "role": "director",
+        "appointed_on": "2020-12-08",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T21:53:55Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NTE4MzQyMmFkaXF6a2N4",
+    "date": "2025-12-18",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/VpBjmOBGiOGkqKpLBVW3zXgwrmuWgEONcT2JPauc2NU/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/07759461/filing-history/MzQ5NTE4MzQyMmFkaXF6a2N4"
   }
 }

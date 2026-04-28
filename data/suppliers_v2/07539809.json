@@ -61,14 +61,81 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "agency",
   "buyer_type_breakdown": {
     "agency": 0.7223,
     "other": 0.2777
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T09:29:16Z",
+    "company_name": "THE FIFTH SECTOR LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2011-02-23",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-25"
+  },
+  "governance": {
+    "api_date": "2026-04-28T09:29:17Z",
+    "total_officers": 3,
+    "active_count": 2,
+    "resigned_count": 1,
+    "active_officers": [
+      {
+        "name": "BENNETT, Iain Charles",
+        "role": "director",
+        "appointed_on": "2011-02-23",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SARTORIUS, Sara Vanessa",
+        "role": "director",
+        "appointed_on": "2012-11-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T09:29:18Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Iain Charles Bennett",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4NjU5MDA5OGFkaXF6a2N4",
+    "date": "2025-10-28",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/ljcqhaJntVCF1m_CETZdFJ2L2vhiS2dZDDUZ1H2vUaQ/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/07539809/filing-history/MzQ4NjU5MDA5OGFkaXF6a2N4"
   }
 }

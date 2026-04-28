@@ -65,14 +65,118 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "education",
   "buyer_type_breakdown": {
     "education": 0.6416,
     "other": 0.3584
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T03:03:00Z",
+    "company_name": "ITW LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1956-01-06",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-22"
+  },
+  "governance": {
+    "api_date": "2026-04-28T03:03:01Z",
+    "total_officers": 22,
+    "active_count": 4,
+    "resigned_count": 18,
+    "active_officers": [
+      {
+        "name": "HUDSON, Giles Matthew",
+        "role": "secretary",
+        "appointed_on": "2004-09-21",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "SMITH, Jonathan",
+        "role": "secretary",
+        "appointed_on": "2023-07-17",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "HUDSON, Giles Matthew",
+        "role": "director",
+        "appointed_on": "2003-02-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "ROWELL, Stephen James",
+        "role": "director",
+        "appointed_on": "2016-04-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T03:03:03Z",
+    "total_results": 2,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Itw Uk Ii Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2018-11-19",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "United Kingdom (England And Wales)",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "11623125"
+        }
+      },
+      {
+        "name": "Berrington Uk",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Unlimited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "Uk",
+          "place_registered": "Companies House",
+          "registration_number": "3179466"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NjY2MjI1NmFkaXF6a2N4",
+    "date": "2025-08-11",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/6DihP9WMMmp1QJDaAoaG-nl6pQaOTtTc4whUKU-JLds/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/00559693/filing-history/MzQ3NjY2MjI1NmFkaXF6a2N4"
   }
 }

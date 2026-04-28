@@ -59,13 +59,100 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "agency",
   "buyer_type_breakdown": {
     "agency": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T12:12:19Z",
+    "company_name": "DESIGN FOR HOMES",
+    "company_status": "active",
+    "date_of_creation": "2000-05-18",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-07-31",
+    "accounts_last_made_up": "2024-10-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-05-31"
+  },
+  "governance": {
+    "api_date": "2026-04-28T12:12:20Z",
+    "total_officers": 28,
+    "active_count": 7,
+    "resigned_count": 21,
+    "active_officers": [
+      {
+        "name": "GRIFFITHS, Neil Timothy",
+        "role": "secretary",
+        "appointed_on": "2000-05-18",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "BIRKBECK, David William",
+        "role": "director",
+        "appointed_on": "2001-05-24",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "JEROME, Gemma Marie",
+        "role": "director",
+        "appointed_on": "2023-12-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LAVINGTON, Richard John",
+        "role": "director",
+        "appointed_on": "2000-05-18",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "LOWNDES, Michael Anthony",
+        "role": "director",
+        "appointed_on": "2010-12-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "PROCTOR, Stephen William",
+        "role": "director",
+        "appointed_on": "2020-02-04",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WILSON, James David",
+        "role": "director",
+        "appointed_on": "2010-12-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T12:12:21Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MzIxNDQ3NWFkaXF6a2N4",
+    "date": "2025-07-10",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/ltbA__gQx_qkOeeFREvC0nyq8sDpSPNyleJ7OKBCLaI/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03996067/filing-history/MzQ3MzIxNDQ3NWFkaXF6a2N4"
   }
 }

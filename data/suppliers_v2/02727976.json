@@ -64,14 +64,119 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "agency",
   "buyer_type_breakdown": {
     "agency": 0.9225,
     "council": 0.0775
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T02:53:33Z",
+    "company_name": "SOIL ENGINEERING GEOSERVICES LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1992-07-01",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-15"
+  },
+  "governance": {
+    "api_date": "2026-04-28T02:53:34Z",
+    "total_officers": 20,
+    "active_count": 4,
+    "resigned_count": 16,
+    "active_officers": [
+      {
+        "name": "TRAFFORD, Graham James",
+        "role": "secretary",
+        "appointed_on": "2009-09-30",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "LLEWELLYN, Tristan Paul",
+        "role": "director",
+        "appointed_on": "2013-11-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PEDLEY, Martin John, Dr",
+        "role": "director",
+        "appointed_on": "2023-09-13",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "TRAFFORD, Graham James",
+        "role": "director",
+        "appointed_on": "2012-03-27",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T02:53:35Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Vinci Sa",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2022-12-13",
+        "identification": {
+          "legal_form": "Societe Anonyme",
+          "legal_authority": "France",
+          "country_registered": "France",
+          "place_registered": "Rcs Nanterre",
+          "registration_number": "552 037 806"
+        }
+      },
+      {
+        "name": "Soletenche Freyssinet Sas",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "voting-rights-75-to-100-percent-as-firm"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Societe Par Actions Simplifiee",
+          "legal_authority": "French Company Law",
+          "country_registered": "France",
+          "place_registered": "Rcs Nanterre",
+          "registration_number": "562 134 544"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NjkyMzMyNWFkaXF6a2N4",
+    "date": "2025-08-12",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-medium",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/sa9e8OQxoquqHzPcRlhjfMJA8fJgn9beAqyigdGqWW4/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02727976/filing-history/MzQ3NjkyMzMyNWFkaXF6a2N4"
   }
 }

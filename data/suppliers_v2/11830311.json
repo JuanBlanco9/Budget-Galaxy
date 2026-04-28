@@ -59,13 +59,104 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T11:59:10Z",
+    "company_name": "BEAUCLAIR LTD",
+    "company_status": "active",
+    "date_of_creation": "2019-02-15",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-03-31",
+    "accounts_last_made_up": "2025-06-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-28"
+  },
+  "governance": {
+    "api_date": "2026-04-28T11:59:11Z",
+    "total_officers": 2,
+    "active_count": 2,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "HARRIS, Juliette, Dr",
+        "role": "secretary",
+        "appointed_on": "2019-08-28",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "RABINOWITZ, Robert Martin",
+        "role": "director",
+        "appointed_on": "2019-02-15",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T11:59:12Z",
+    "total_results": 3,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Adam Rabinowitz",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2025-02-19",
+        "identification": null
+      },
+      {
+        "name": "Dr Juliette Harris",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2021-04-15",
+        "identification": null
+      },
+      {
+        "name": "Mr Robert Martin Rabinowitz",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2019-02-15",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4NTk0NTg0N2FkaXF6a2N4",
+    "date": "2025-10-22",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-micro-entity",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/ZzsffntvYPljPDU0vjpAPWITBRaoDppbSFIWv6KKsqc/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/11830311/filing-history/MzQ4NTk0NTg0N2FkaXF6a2N4"
   }
 }

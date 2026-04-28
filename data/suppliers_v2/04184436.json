@@ -59,13 +59,121 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T12:52:49Z",
+    "company_name": "THAMES TRAVEL (WALLINGFORD) LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2001-03-21",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-15"
+  },
+  "governance": {
+    "api_date": "2026-04-28T12:52:50Z",
+    "total_officers": 26,
+    "active_count": 7,
+    "resigned_count": 19,
+    "active_officers": [
+      {
+        "name": "FERGUSON, Carolyn",
+        "role": "secretary",
+        "appointed_on": "2011-05-25",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BUTLER, Neil David",
+        "role": "director",
+        "appointed_on": "2023-06-26",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "DE SOUSA, Glenn Francisco Estevao",
+        "role": "director",
+        "appointed_on": "2026-01-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "DEAN, Martin Richard",
+        "role": "director",
+        "appointed_on": "2022-06-10",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "LARGE, Thomas",
+        "role": "director",
+        "appointed_on": "2025-01-03",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MARION, Luke Carl",
+        "role": "director",
+        "appointed_on": "2012-12-10",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "RITCHIE, Shaun William",
+        "role": "director",
+        "appointed_on": "2026-01-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T12:52:52Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Go-Ahead Holding Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "United Kingdom (England And Wales)",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "6352308"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4NTM5NDA2MGFkaXF6a2N4",
+    "date": "2025-10-17",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-audit-exemption-subsiduary",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/q8CnemtFDn_plNAW84kVlKA5IOiZGcarTR1FZcmGh8s/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04184436/filing-history/MzQ4NTM5NDA2MGFkaXF6a2N4"
   }
 }

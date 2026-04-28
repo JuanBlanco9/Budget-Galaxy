@@ -64,14 +64,118 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "education",
   "buyer_type_breakdown": {
     "education": 0.7004,
     "other": 0.2996
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T06:32:15Z",
+    "company_name": "CLEAR REVIEW LIMITED",
+    "company_status": "dissolved",
+    "date_of_creation": "2014-01-20",
+    "date_of_cessation": "2026-04-21",
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": true,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": null,
+    "accounts_next_due": null,
+    "accounts_last_made_up": "2023-02-28",
+    "confirmation_statement_overdue": null,
+    "confirmation_statement_next_due": null
+  },
+  "governance": {
+    "api_date": "2026-04-28T06:32:16Z",
+    "total_officers": 14,
+    "active_count": 0,
+    "resigned_count": 11,
+    "active_officers": [
+      {
+        "name": "ASPELL, Jayne Louise",
+        "role": "secretary",
+        "appointed_on": "2022-04-26",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "DEWS, Stephen Eric",
+        "role": "director",
+        "appointed_on": "2023-06-09",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "WALSH, Simon David",
+        "role": "director",
+        "appointed_on": "2023-06-09",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T06:32:17Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Advanced Business Software And Solutions Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2020-10-17",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "United Kingdom (England And Wales)",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "03214465"
+        }
+      },
+      {
+        "name": "Mr Stuart Alexander Hearn",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-12-25",
+        "identification": null
+      },
+      {
+        "name": "Mr Mark Charles Brooks Henwood",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "Wales",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-12-25",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQxMDAzNDk0MGFkaXF6a2N4",
+    "date": "2024-02-06",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-audit-exemption-subsiduary",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/L4vYUisu3vgvuZHPIpLg0oitfiiqSH2mI1sVVEeJVBQ/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/08851632/filing-history/MzQxMDAzNDk0MGFkaXF6a2N4"
   }
 }

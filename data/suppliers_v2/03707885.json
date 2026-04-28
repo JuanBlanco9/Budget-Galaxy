@@ -59,13 +59,79 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T10:02:50Z",
+    "company_name": "EPI-USE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1999-02-04",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-11-27",
+    "accounts_last_made_up": "2025-02-28",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-27"
+  },
+  "governance": {
+    "api_date": "2026-04-28T10:02:51Z",
+    "total_officers": 20,
+    "active_count": 4,
+    "resigned_count": 16,
+    "active_officers": [
+      {
+        "name": "JONES, Evan",
+        "role": "director",
+        "appointed_on": "2011-05-17",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "MCFADZEAN, John Logan",
+        "role": "director",
+        "appointed_on": "2020-06-12",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PATRICK, Robert James",
+        "role": "director",
+        "appointed_on": "2018-06-19",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "VAN DEN HEEVER, Rudolf Johannes",
+        "role": "director",
+        "appointed_on": "2007-09-20",
+        "country_of_residence": "South Africa",
+        "nationality": "South African"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T10:02:52Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwNzM2ODk1M2FkaXF6a2N4",
+    "date": "2026-02-26",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/UR5mYB8r5C2sv1QAS3UeA0E76_PoATWUZX-6fQuI6XE/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03707885/filing-history/MzUwNzM2ODk1M2FkaXF6a2N4"
   }
 }

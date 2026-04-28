@@ -59,10 +59,10 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
@@ -71,5 +71,116 @@
     "nhs": 0.0107,
     "education": 0.0052,
     "central_govt": 0.0022
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T15:04:37Z",
+    "company_name": "BJSS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1993-01-06",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-06-30",
+    "accounts_last_made_up": "2024-04-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-20"
+  },
+  "governance": {
+    "api_date": "2026-04-27T15:04:39Z",
+    "total_officers": 25,
+    "active_count": 4,
+    "resigned_count": 21,
+    "active_officers": [
+      {
+        "name": "MORIOKA, Akiko",
+        "role": "secretary",
+        "appointed_on": "2025-07-07",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "EADES, Darryl",
+        "role": "director",
+        "appointed_on": "2025-02-24",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "MCGEEHAN, Tara, Ms.",
+        "role": "director",
+        "appointed_on": "2025-02-24",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "PERRON, Steve",
+        "role": "director",
+        "appointed_on": "2025-02-24",
+        "country_of_residence": "Canada",
+        "nationality": "Canadian"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T15:04:40Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Cgi Group Holdings Europe Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2025-02-24",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "The Registrar Of Companies For England And Wales",
+          "registration_number": "03290026"
+        }
+      },
+      {
+        "name": "Mr David Mark Hunter",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Andrew Vincent",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MTc1NTQ0MGFkaXF6a2N4",
+    "date": "2025-09-19",
+    "type": "AA01",
+    "description": "change-account-reference-date-company-current-extended",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/qA9ud7_Qch_FDHC0akNigedq3dytr9PZdxx7ddf_jPU/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02777575/filing-history/MzQ4MTc1NTQ0MGFkaXF6a2N4"
   }
 }

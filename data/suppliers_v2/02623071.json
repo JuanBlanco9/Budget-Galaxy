@@ -59,13 +59,128 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T04:10:26Z",
+    "company_name": "THE WHITECHAPEL CENTRE",
+    "company_status": "active",
+    "date_of_creation": "1991-06-21",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-25"
+  },
+  "governance": {
+    "api_date": "2026-04-28T04:10:28Z",
+    "total_officers": 39,
+    "active_count": 11,
+    "resigned_count": 28,
+    "active_officers": [
+      {
+        "name": "CARTER, David, Chief Executive Officer",
+        "role": "secretary",
+        "appointed_on": "2008-11-03",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "BROWN, Alice Annette",
+        "role": "director",
+        "appointed_on": "2017-03-24",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "COLLETT, Stephen James",
+        "role": "director",
+        "appointed_on": "2015-06-16",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MCGUIRE, Collette",
+        "role": "director",
+        "appointed_on": "2025-12-12",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "METCALF MBE, Valerie",
+        "role": "director",
+        "appointed_on": "2001-12-11",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "REED, Ian",
+        "role": "director",
+        "appointed_on": "2025-07-18",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SHEERIN, Katherine",
+        "role": "director",
+        "appointed_on": "2023-06-23",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "THOMAS, Susan Louise",
+        "role": "director",
+        "appointed_on": "2017-07-21",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "VANCE, Ken",
+        "role": "director",
+        "appointed_on": "2023-06-23",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WOODS, Margaret",
+        "role": "director",
+        "appointed_on": "2017-04-27",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "YOUNG, Ryan, Dr",
+        "role": "director",
+        "appointed_on": "2022-05-20",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T04:10:29Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NjI2MjY5N2FkaXF6a2N4",
+    "date": "2026-01-02",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/AHHw2n7k6fqlki5_hEpl4umoLkDvVJfo7pemVlUVFBo/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02623071/filing-history/MzQ5NjI2MjY5N2FkaXF6a2N4"
   }
 }

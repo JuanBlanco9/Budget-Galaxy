@@ -55,13 +55,65 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
     "central_govt": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T23:37:07Z",
+    "company_name": "ARK GROUP DMCC",
+    "company_status": "active",
+    "date_of_creation": "2018-09-12",
+    "date_of_cessation": null,
+    "jurisdiction": "united-kingdom",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": null,
+    "accounts_last_made_up": "2021-12-31",
+    "confirmation_statement_overdue": null,
+    "confirmation_statement_next_due": null
+  },
+  "governance": {
+    "api_date": "2026-04-27T23:37:09Z",
+    "total_officers": 2,
+    "active_count": 2,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "HARRIS, Alistair James",
+        "role": "secretary",
+        "appointed_on": "2018-10-11",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "HARRIS, Alistair James",
+        "role": "director",
+        "appointed_on": "2018-10-11",
+        "country_of_residence": "United Arab Emirates",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T23:37:10Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzM1MTA2MDc3NWFkaXF6a2N4",
+    "date": "2022-09-09",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/C7C0MoBLF9cSbTeKpw-kVqWG7-H1HUE7w1xtflSCO7c/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/FC035638/filing-history/MzM1MTA2MDc3NWFkaXF6a2N4"
   }
 }

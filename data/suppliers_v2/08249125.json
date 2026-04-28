@@ -59,14 +59,118 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "education",
   "buyer_type_breakdown": {
     "education": 1.0,
     "other": 0.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T07:37:23Z",
+    "company_name": "IMMERSIVE INTERACTIVE LTD",
+    "company_status": "active",
+    "date_of_creation": "2012-10-11",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-25"
+  },
+  "governance": {
+    "api_date": "2026-04-28T07:37:24Z",
+    "total_officers": 6,
+    "active_count": 3,
+    "resigned_count": 3,
+    "active_officers": [
+      {
+        "name": "MURRAY, Todd Alan",
+        "role": "director",
+        "appointed_on": "2026-03-09",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      },
+      {
+        "name": "PORTER, Christopher Melvin",
+        "role": "director",
+        "appointed_on": "2022-05-20",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SALT, David Andrew",
+        "role": "director",
+        "appointed_on": "2022-05-20",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T07:37:25Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Echo Healthcare Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2022-05-20",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "United Kingdom (England And Wales)",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "13946537"
+        }
+      },
+      {
+        "name": "Mr David Andrew Salt",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Christopher Melvin Porter",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MjY1MDA5MGFkaXF6a2N4",
+    "date": "2025-09-25",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/hOWJ8DtdBGqv6CXvXqa6m3ymJUd0fEl9fS-neRRxamM/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/08249125/filing-history/MzQ4MjY1MDA5MGFkaXF6a2N4"
   }
 }

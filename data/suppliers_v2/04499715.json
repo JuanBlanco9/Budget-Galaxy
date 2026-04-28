@@ -63,13 +63,112 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T16:22:26Z",
+    "company_name": "MERIT HOLDINGS LIMITED",
+    "company_status": "administration",
+    "date_of_creation": "2002-07-31",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": true,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": true,
+    "accounts_next_due": "2026-03-31",
+    "accounts_last_made_up": "2024-06-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-09-21"
+  },
+  "governance": {
+    "api_date": "2026-04-27T16:22:28Z",
+    "total_officers": 23,
+    "active_count": 6,
+    "resigned_count": 17,
+    "active_officers": [
+      {
+        "name": "HYNES, Kevin",
+        "role": "director",
+        "appointed_on": "2016-11-24",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "MCGRADY, Matthew Robert",
+        "role": "director",
+        "appointed_on": "2010-02-23",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "TOOMEY, Matthew Peter",
+        "role": "director",
+        "appointed_on": "2020-05-15",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      },
+      {
+        "name": "WELLS, Kirsty Jane, Dr",
+        "role": "director",
+        "appointed_on": "2015-07-13",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "WELLS, Tony",
+        "role": "director",
+        "appointed_on": "2002-09-03",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WILKINSON, David Philip",
+        "role": "director",
+        "appointed_on": "2015-07-13",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T16:22:29Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Merit Group Services Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2017-03-30",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "English",
+          "country_registered": "Uk",
+          "place_registered": "England",
+          "registration_number": "10618779"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2MTE5MTIzOWFkaXF6a2N4",
+    "date": "2025-04-04",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/LDs8hYA6MNPvDu5z1jIpqkWiQHgxRklnYk8cND6ajCc/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04499715/filing-history/MzQ2MTE5MTIzOWFkaXF6a2N4"
   }
 }

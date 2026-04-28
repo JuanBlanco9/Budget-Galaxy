@@ -59,13 +59,122 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T19:13:08Z",
+    "company_name": "NAVARRE LONDON LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2017-10-26",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-05"
+  },
+  "governance": {
+    "api_date": "2026-04-27T19:13:33Z",
+    "total_officers": 2,
+    "active_count": 2,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "FOX, Gary",
+        "role": "director",
+        "appointed_on": "2017-10-26",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "FOX, Sarah Louisa",
+        "role": "director",
+        "appointed_on": "2017-10-26",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T19:13:38Z",
+    "total_results": 4,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Navarre Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2020-08-12",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "England & Wales",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "12658421"
+        }
+      },
+      {
+        "name": "Mr Gary Fox",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "voting-rights-50-to-75-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2017-10-26",
+        "identification": null
+      },
+      {
+        "name": "Mrs Sarah Louisa Fox",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2017-10-26",
+        "identification": null
+      },
+      {
+        "name": "Mrs Sandra Welch",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2017-10-26",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MTk0NDAyMWFkaXF6a2N4",
+    "date": "2025-09-19",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/oOQM2ZCTubhMrdyRGYXOTP-qOZkYxRcNhLg5cxBDGGA/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/11034058/filing-history/MzQ4MTk0NDAyMWFkaXF6a2N4"
   }
 }

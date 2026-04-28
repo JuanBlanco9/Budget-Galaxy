@@ -64,13 +64,132 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
     "central_govt": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T10:02:37Z",
+    "company_name": "GLOBAL ATS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2011-04-07",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2025-05-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-05-16"
+  },
+  "governance": {
+    "api_date": "2026-04-28T10:02:38Z",
+    "total_officers": 23,
+    "active_count": 4,
+    "resigned_count": 19,
+    "active_officers": [
+      {
+        "name": "DIEZ MOLINA, Andres",
+        "role": "director",
+        "appointed_on": "2025-02-28",
+        "country_of_residence": "Italy",
+        "nationality": "Spanish"
+      },
+      {
+        "name": "KING, David John, Mr.",
+        "role": "director",
+        "appointed_on": "2025-11-05",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "MARTINEZ GARCIA, Victor Manuel",
+        "role": "director",
+        "appointed_on": "2025-02-28",
+        "country_of_residence": "Spain",
+        "nationality": "Spanish"
+      },
+      {
+        "name": "PILE, Gregory Adrian",
+        "role": "director",
+        "appointed_on": "2025-02-28",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T10:02:39Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Indra Sistemas S.A",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2025-02-28",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Spanish Law",
+          "country_registered": "Spain",
+          "place_registered": "Spain",
+          "registration_number": "A-28599033"
+        }
+      },
+      {
+        "name": "Quadrant Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2019-10-22",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act",
+          "country_registered": "Uk",
+          "place_registered": "Companies House",
+          "registration_number": "04343035"
+        }
+      },
+      {
+        "name": "Mr Murray Charles Cole",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "New Zealander",
+        "country_of_residence": "New Zealand",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent",
+          "voting-rights-50-to-75-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-07",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5ODk1NjU5MGFkaXF6a2N4",
+    "date": "2026-01-15",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/AwgFyjydvM4n71myfCRxCOEmylNweX7N43DyddbSPj4/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/07596473/filing-history/MzQ5ODk1NjU5MGFkaXF6a2N4"
   }
 }

@@ -59,13 +59,108 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T10:38:11Z",
+    "company_name": "MCVICKERS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1975-12-10",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-07-31",
+    "accounts_last_made_up": "2024-10-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-09"
+  },
+  "governance": {
+    "api_date": "2026-04-28T10:38:12Z",
+    "total_officers": 14,
+    "active_count": 6,
+    "resigned_count": 8,
+    "active_officers": [
+      {
+        "name": "STOREY, Anne",
+        "role": "secretary",
+        "appointed_on": "2000-03-31",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "ARMSTRONG, Mark",
+        "role": "director",
+        "appointed_on": "2016-04-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PEACOCK, Steven",
+        "role": "director",
+        "appointed_on": "2016-04-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "RIDLEY, Catherine Anne",
+        "role": "director",
+        "appointed_on": "2007-07-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "STOREY, Aidan",
+        "role": "director",
+        "appointed_on": "1996-07-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WOODS, John",
+        "role": "director",
+        "appointed_on": "2025-07-21",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T10:38:13Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Aidan Storey",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2NzExNzAzNmFkaXF6a2N4",
+    "date": "2025-05-20",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/Zcble_yElgbjXervIQwvyaeR8MG2RpFgZegTx78Kqpg/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01237036/filing-history/MzQ2NzExNzAzNmFkaXF6a2N4"
   }
 }

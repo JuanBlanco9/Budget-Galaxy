@@ -55,13 +55,85 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
     "ch_api_accounts_pdf": false
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T12:25:22Z",
+    "company_name": "QUINTUS TECHNOLOGIES AB",
+    "company_status": "active",
+    "date_of_creation": "2021-05-05",
+    "date_of_cessation": null,
+    "jurisdiction": "united-kingdom",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": null,
+    "accounts_last_made_up": "2019-12-31",
+    "confirmation_statement_overdue": null,
+    "confirmation_statement_next_due": null
+  },
+  "governance": {
+    "api_date": "2026-04-28T12:25:23Z",
+    "total_officers": 6,
+    "active_count": 6,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "GROTH, Karl Fredrik Peter",
+        "role": "director",
+        "appointed_on": "2021-06-07",
+        "country_of_residence": "Sweden",
+        "nationality": "Swedish"
+      },
+      {
+        "name": "KAGEKI, Yoichi",
+        "role": "director",
+        "appointed_on": "2021-06-07",
+        "country_of_residence": "Japan",
+        "nationality": "Japanese"
+      },
+      {
+        "name": "MASUOKA, Itaru",
+        "role": "director",
+        "appointed_on": "2021-06-07",
+        "country_of_residence": "Sweden",
+        "nationality": "Japanese"
+      },
+      {
+        "name": "ROSÉN, Erik Lennart",
+        "role": "director",
+        "appointed_on": "2021-06-07",
+        "country_of_residence": "Sweden",
+        "nationality": "Swedish"
+      },
+      {
+        "name": "SÖDERSTRÖM, Jan Arvid",
+        "role": "director",
+        "appointed_on": "2021-06-07",
+        "country_of_residence": "Sweden",
+        "nationality": "Swedish"
+      },
+      {
+        "name": "TAKEUCHI, Masamichi",
+        "role": "director",
+        "appointed_on": "2021-06-07",
+        "country_of_residence": "Japan",
+        "nationality": "Japanese"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T12:25:24Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
   }
 }

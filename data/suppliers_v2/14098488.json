@@ -59,13 +59,87 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
     "central_govt": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T19:41:59Z",
+    "company_name": "DIRICKX SYSTEMS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2022-05-10",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-05-23"
+  },
+  "governance": {
+    "api_date": "2026-04-27T19:42:01Z",
+    "total_officers": 5,
+    "active_count": 3,
+    "resigned_count": 2,
+    "active_officers": [
+      {
+        "name": "LEPAGE, Gregory",
+        "role": "director",
+        "appointed_on": "2024-05-23",
+        "country_of_residence": "France",
+        "nationality": "French"
+      },
+      {
+        "name": "LYONS, Kevin Arthur",
+        "role": "director",
+        "appointed_on": "2022-05-10",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "RICHTER, Nicolas",
+        "role": "director",
+        "appointed_on": "2022-05-10",
+        "country_of_residence": "Switzerland",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T19:42:02Z",
+    "total_results": 1,
+    "active_count": 0,
+    "items": [
+      {
+        "name": "Wim Deblauwe",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Belgian",
+        "country_of_residence": "Belgium",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2022-05-10",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MDc5NjU2NGFkaXF6a2N4",
+    "date": "2025-09-15",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/N68YYcfH1zt19WNIIfO3ia9f_pC0J3fdg_HpVJAIzWQ/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/14098488/filing-history/MzQ4MDc5NjU2NGFkaXF6a2N4"
   }
 }

@@ -59,13 +59,135 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T09:21:52Z",
+    "company_name": "GAYDIO COMMUNITY INTEREST COMPANY",
+    "company_status": "active",
+    "date_of_creation": "2008-05-19",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-04-01"
+  },
+  "governance": {
+    "api_date": "2026-04-28T09:21:53Z",
+    "total_officers": 24,
+    "active_count": 12,
+    "resigned_count": 12,
+    "active_officers": [
+      {
+        "name": "WALLACE, Ian",
+        "role": "secretary",
+        "appointed_on": "2008-05-19",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "BAILEY-CROSS, Ellis Peter",
+        "role": "director",
+        "appointed_on": "2025-12-10",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "CHAM, Matt",
+        "role": "director",
+        "appointed_on": "2025-12-12",
+        "country_of_residence": "England",
+        "nationality": "Hong Konger"
+      },
+      {
+        "name": "GOSLIN, Kara Colleen",
+        "role": "director",
+        "appointed_on": "2025-12-12",
+        "country_of_residence": "England",
+        "nationality": "American"
+      },
+      {
+        "name": "HERBERT, Kriss Matthew",
+        "role": "director",
+        "appointed_on": "2025-12-10",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HOLLAND, Benjamin Ellijah Richard",
+        "role": "director",
+        "appointed_on": "2025-12-12",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "JACOB, Jonathan",
+        "role": "director",
+        "appointed_on": "2025-12-12",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "JOHNSTONE-WILSON, Ethan Antonio",
+        "role": "director",
+        "appointed_on": "2025-12-12",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "RYAN, John Edward",
+        "role": "director",
+        "appointed_on": "2009-01-31",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "STEVENS, Amber",
+        "role": "director",
+        "appointed_on": "2019-11-15",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WALLACE, Ian",
+        "role": "director",
+        "appointed_on": "2008-05-19",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WHITEHOUSE, Toby",
+        "role": "director",
+        "appointed_on": "2008-05-19",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T09:21:54Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NjAwOTk5NGFkaXF6a2N4",
+    "date": "2025-12-23",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/WT1zwMS94D_BBUUhiaXhYU_bAra2GWbQurnfW1zpUdA/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/06596997/filing-history/MzQ5NjAwOTk5NGFkaXF6a2N4"
   }
 }

@@ -64,13 +64,96 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T11:40:11Z",
+    "company_name": "TRAK SYSTEMS LTD",
+    "company_status": "active",
+    "date_of_creation": "1987-07-31",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-27",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-14"
+  },
+  "governance": {
+    "api_date": "2026-04-28T11:40:12Z",
+    "total_officers": 17,
+    "active_count": 2,
+    "resigned_count": 15,
+    "active_officers": [
+      {
+        "name": "COBURN, David",
+        "role": "director",
+        "appointed_on": "2014-07-07",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SCHUMACHER, Helmut Wilhelm",
+        "role": "director",
+        "appointed_on": "1999-02-01",
+        "country_of_residence": "Germany",
+        "nationality": "German"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T11:40:13Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Helmut Wilhelm Schumacher",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "German",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2024-12-19",
+        "identification": null
+      },
+      {
+        "name": "Hupfer International Gmbh",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Liability Company",
+          "legal_authority": "Limited Liabilities Company Act",
+          "country_registered": "Germany",
+          "place_registered": "Commercial Register B Of The District Court Of Coesfeld",
+          "registration_number": "Hrb 2483"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwOTYwMzQwNWFkaXF6a2N4",
+    "date": "2026-03-11",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/vlrpmaCE9OerROO_MSVHL9y4PYl3s8g6qyxjFl9Eq8E/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02152142/filing-history/MzUwOTYwMzQwNWFkaXF6a2N4"
   }
 }

@@ -72,13 +72,196 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T06:59:53Z",
+    "company_name": "TRIOS FACILITIES MANAGEMENT LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1998-08-17",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": true,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-09-02"
+  },
+  "governance": {
+    "api_date": "2026-04-28T06:59:55Z",
+    "total_officers": 39,
+    "active_count": 4,
+    "resigned_count": 35,
+    "active_officers": [
+      {
+        "name": "KNIGHT, Paul",
+        "role": "secretary",
+        "appointed_on": "2023-08-14",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BELL, Theresa",
+        "role": "director",
+        "appointed_on": "2023-08-14",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GREEN, Christopher Mark",
+        "role": "director",
+        "appointed_on": "2023-08-14",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "KNIGHT, Paul Aaron",
+        "role": "director",
+        "appointed_on": "2023-08-14",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T06:59:56Z",
+    "total_results": 6,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "W6s Directors Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2023-01-30",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "United Kingdom (England And Wales)",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "14621080"
+        }
+      },
+      {
+        "name": "Gold Round Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2020-09-09",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "United Kingdom",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "05687325"
+        }
+      },
+      {
+        "name": "Tgfm Newco Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2020-03-20",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "England Companies House",
+          "registration_number": "12516727"
+        }
+      },
+      {
+        "name": "Triosgroup Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2020-03-20",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "United Kingdom (England And Wales)",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "05231558"
+        }
+      },
+      {
+        "name": "Spie Uk Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-11-07",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "07201157"
+        }
+      },
+      {
+        "name": "Spie Uk Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "07201157"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwNDAyNjAyMGFkaXF6a2N4",
+    "date": "2026-02-10",
+    "type": "AAMD",
+    "description": "accounts-amended-with-accounts-type-audit-exemption-subsiduary",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/P00e5ZN8k4y3evKUpF7kKqvzEU1mymmzXqIDoCO9_RM/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03616663/filing-history/MzUwNDAyNjAyMGFkaXF6a2N4"
   }
 }

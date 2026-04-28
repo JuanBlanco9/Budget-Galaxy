@@ -59,13 +59,134 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T02:33:02Z",
+    "company_name": "GROW ORGANISATION",
+    "company_status": "active",
+    "date_of_creation": "2000-12-15",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-29"
+  },
+  "governance": {
+    "api_date": "2026-04-28T02:33:03Z",
+    "total_officers": 37,
+    "active_count": 8,
+    "resigned_count": 29,
+    "active_officers": [
+      {
+        "name": "JONES, Joanna",
+        "role": "secretary",
+        "appointed_on": "2023-02-02",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BARRATT, Susan Patricia",
+        "role": "director",
+        "appointed_on": "2020-10-19",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BELL, Marie Janet Elizabeth",
+        "role": "director",
+        "appointed_on": "2025-10-28",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "COLEMAN, Kerry Michelle",
+        "role": "director",
+        "appointed_on": "2023-02-02",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GIBBARD, Carole Ann",
+        "role": "director",
+        "appointed_on": "2026-02-04",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "HIGHTON, Nicola",
+        "role": "director",
+        "appointed_on": "2012-06-13",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "KIRBY, Karen",
+        "role": "director",
+        "appointed_on": "2025-10-28",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WALLACE, Louise Marie",
+        "role": "director",
+        "appointed_on": "2025-10-28",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T02:33:04Z",
+    "total_results": 2,
+    "active_count": 0,
+    "items": [
+      {
+        "name": "Mrs Joanna Jones",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control",
+          "significant-influence-or-control-as-trust",
+          "significant-influence-or-control-as-firm"
+        ],
+        "notified_on": "2023-02-02",
+        "identification": null
+      },
+      {
+        "name": "Mrs Katalin Nixon",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-12-01",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MDU4NjYzNWFkaXF6a2N4",
+    "date": "2025-11-24",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/4P9pdAsosTjI5IpfbZ_tOi2MY-iONouPDGEyT5v7DoI/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04126612/filing-history/MzQ5MDU4NjYzNWFkaXF6a2N4"
   }
 }

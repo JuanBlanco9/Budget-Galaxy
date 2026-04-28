@@ -63,13 +63,150 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
     "central_govt": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T09:52:50Z",
+    "company_name": "YORK WARD & ROWLATT LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1912-12-14",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-18"
+  },
+  "governance": {
+    "api_date": "2026-04-28T09:52:51Z",
+    "total_officers": 19,
+    "active_count": 9,
+    "resigned_count": 10,
+    "active_officers": [
+      {
+        "name": "CLARK, James Fleming",
+        "role": "secretary",
+        "appointed_on": "2001-11-16",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "BRAYFIELD, Adrian",
+        "role": "director",
+        "appointed_on": "2022-03-22",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "HUGHES, Clive Nicholas",
+        "role": "director",
+        "appointed_on": "2002-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "JOHNSON, Nicola Margaret",
+        "role": "director",
+        "appointed_on": "2021-07-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "JOHNSON, Peter Sidney",
+        "role": "director",
+        "appointed_on": "1995-05-26",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "JOHNSON, Richard Scott",
+        "role": "director",
+        "appointed_on": "2020-02-19",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "REYNOLDS, Richard",
+        "role": "director",
+        "appointed_on": "2022-03-22",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "ROBINSON, Dan",
+        "role": "director",
+        "appointed_on": "2022-03-22",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "STEVENSON, Lisa Mary",
+        "role": "director",
+        "appointed_on": "2025-07-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T09:52:52Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Hardwater Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2019-07-04",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "11747901"
+        }
+      },
+      {
+        "name": "Grosvenor Contracts Leasing Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-06-30",
+        "identification": {
+          "legal_form": "Limited Liability Company",
+          "legal_authority": "The Companies Act"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MjY4NjI4NmFkaXF6a2N4",
+    "date": "2025-09-25",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/4k4MdlDN_XBvvT0Rc1ZClz0djltBNVmo9MTbc9jvJ_Y/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/00125935/filing-history/MzQ4MjY4NjI4NmFkaXF6a2N4"
   }
 }

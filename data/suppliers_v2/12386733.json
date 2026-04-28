@@ -64,13 +64,118 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T05:18:23Z",
+    "company_name": "THOMSON ENVIRONMENTAL CONSULTANTS HOLDINGS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2020-01-06",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-06-30",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-19"
+  },
+  "governance": {
+    "api_date": "2026-04-28T05:18:24Z",
+    "total_officers": 8,
+    "active_count": 2,
+    "resigned_count": 6,
+    "active_officers": [
+      {
+        "name": "BOYLE, Andrew Iain",
+        "role": "director",
+        "appointed_on": "2025-10-31",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PEDERSEN, Henrik Vorgod",
+        "role": "director",
+        "appointed_on": "2025-10-31",
+        "country_of_residence": "England",
+        "nationality": "Danish"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T05:18:25Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Thistle Environmental Bidco Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2024-10-29",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "England And Wales",
+          "registration_number": "16034152"
+        }
+      },
+      {
+        "name": "Thomson Environmental Consultants Eot Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2020-04-03",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "12532418"
+        }
+      },
+      {
+        "name": "Nancy Thomson",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2020-01-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4Nzk2MDQyOWFkaXF6a2N4",
+    "date": "2025-11-10",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-dormant",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/vnV5cTvIrnVxfVxXLzdfAnzePEBGUSfCmuLJ2r3KbLo/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/12386733/filing-history/MzQ4Nzk2MDQyOWFkaXF6a2N4"
   }
 }

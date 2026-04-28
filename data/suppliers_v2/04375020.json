@@ -59,14 +59,94 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.6192,
     "council": 0.3808
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T00:56:26Z",
+    "company_name": "ANTI-GRAFFITI SYSTEMS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2002-02-15",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-06-30",
+    "accounts_last_made_up": "2024-09-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-06"
+  },
+  "governance": {
+    "api_date": "2026-04-28T00:56:28Z",
+    "total_officers": 10,
+    "active_count": 4,
+    "resigned_count": 6,
+    "active_officers": [
+      {
+        "name": "JAMES, Dawn Wendy",
+        "role": "secretary",
+        "appointed_on": "2003-11-14",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "JAMES, Dawn Wendy",
+        "role": "director",
+        "appointed_on": "2010-10-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SIM, Andrew Ian Alan",
+        "role": "director",
+        "appointed_on": "2002-09-24",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WALLER, James Martin",
+        "role": "director",
+        "appointed_on": "2010-10-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T00:56:29Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Andrew Ian Alan Sim",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MTA3ODU2OWFkaXF6a2N4",
+    "date": "2025-06-23",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/gDW5XLTwLUN1Udrj5wqCOOaR7WI69c01VzUjkKmk3EQ/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04375020/filing-history/MzQ3MTA3ODU2OWFkaXF6a2N4"
   }
 }

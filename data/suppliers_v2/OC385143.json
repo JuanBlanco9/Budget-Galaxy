@@ -55,14 +55,113 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "agency",
   "buyer_type_breakdown": {
     "agency": 0.8738,
     "council": 0.1262
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T21:34:13Z",
+    "company_name": "COLLIERS INTERNATIONAL PROPERTY ADVISERS UK LLP",
+    "company_status": "active",
+    "date_of_creation": "2013-05-15",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-05-29"
+  },
+  "governance": {
+    "api_date": "2026-04-27T21:34:15Z",
+    "total_officers": 116,
+    "active_count": 4,
+    "resigned_count": 112,
+    "active_officers": [
+      {
+        "name": "COLLIERS INTERNATIONAL PROPERTY CONSULTANTS LIMITED",
+        "role": "corporate-llp-designated-member",
+        "appointed_on": "2025-12-31",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "GLOBESTAR LIMITED",
+        "role": "corporate-llp-designated-member",
+        "appointed_on": "2013-05-23",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "JARRETT, Mark Stephen",
+        "role": "llp-member",
+        "appointed_on": "2014-09-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "KNOWLES, John James",
+        "role": "llp-member",
+        "appointed_on": "2022-01-01",
+        "country_of_residence": "England",
+        "nationality": null
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T21:34:17Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Anthony Michael Horrell",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control-limited-liability-partnership"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Globestar Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "voting-rights-75-to-100-percent-limited-liability-partnership",
+          "right-to-share-surplus-assets-75-to-100-percent-limited-liability-partnership",
+          "right-to-appoint-and-remove-members-limited-liability-partnership"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "England And Wales Companies House",
+          "registration_number": "05159841"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MzU0MjgxNGFkaXF6a2N4",
+    "date": "2025-10-03",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/8jx_dZg9CfjG50_sf8cPhuWJwVWdDQAXnY6qQ1bDl0k/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/OC385143/filing-history/MzQ4MzU0MjgxNGFkaXF6a2N4"
   }
 }

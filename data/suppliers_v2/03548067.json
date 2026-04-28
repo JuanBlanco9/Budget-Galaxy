@@ -61,13 +61,86 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
     "central_govt": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T15:03:50Z",
+    "company_name": "MILLSTREAM PENTHOUSE SYSTEMS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1998-04-17",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-04-19"
+  },
+  "governance": {
+    "api_date": "2026-04-27T15:03:51Z",
+    "total_officers": 8,
+    "active_count": 5,
+    "resigned_count": 3,
+    "active_officers": [
+      {
+        "name": "CLEMENTS, Ben",
+        "role": "secretary",
+        "appointed_on": "2025-04-01",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "CLEMENTS, Benjamin Edward",
+        "role": "director",
+        "appointed_on": "2023-01-01",
+        "country_of_residence": "England",
+        "nationality": "English"
+      },
+      {
+        "name": "CLEMENTS, Martin Dominic Millroy",
+        "role": "director",
+        "appointed_on": "2023-01-01",
+        "country_of_residence": "England",
+        "nationality": "English"
+      },
+      {
+        "name": "CLEMENTS, Sebastian",
+        "role": "director",
+        "appointed_on": "2025-04-01",
+        "country_of_residence": "England",
+        "nationality": "English"
+      },
+      {
+        "name": "HANKIN, Matthew Lawrence",
+        "role": "director",
+        "appointed_on": "2023-01-01",
+        "country_of_residence": "England",
+        "nationality": "English"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T15:03:53Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4NTk4Mzg4NWFkaXF6a2N4",
+    "date": "2025-10-22",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/AY5v6YLLJM3Q1_mL1gTN_60q25bf0WiOL6Gw3jLvYzI/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03548067/filing-history/MzQ4NTk4Mzg4NWFkaXF6a2N4"
   }
 }

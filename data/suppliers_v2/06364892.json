@@ -59,13 +59,99 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T02:56:21Z",
+    "company_name": "BRADFORD CITY FC COMMUNITY FOUNDATION",
+    "company_status": "active",
+    "date_of_creation": "2007-09-07",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-03-31",
+    "accounts_last_made_up": "2025-06-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-09-21"
+  },
+  "governance": {
+    "api_date": "2026-04-28T02:56:22Z",
+    "total_officers": 19,
+    "active_count": 5,
+    "resigned_count": 14,
+    "active_officers": [
+      {
+        "name": "BIGGIN, Alan Keith",
+        "role": "director",
+        "appointed_on": "2008-01-28",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "LAHER, Ridwana Wallace",
+        "role": "director",
+        "appointed_on": "2025-10-23",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LONGBOTTOM, Stephen David",
+        "role": "director",
+        "appointed_on": "2025-10-23",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MITCHELL, Paul Gerard",
+        "role": "director",
+        "appointed_on": "2007-09-07",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WARD, David",
+        "role": "director",
+        "appointed_on": "2013-06-25",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T02:56:23Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Alan Keith Biggin",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-09-07",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5OTc2MjgwM2FkaXF6a2N4",
+    "date": "2026-01-21",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-unaudited-abridged",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/my5l11oGHTC-L2bcYBR_rCZK3hx2cwfBub21yv8KdmY/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/06364892/filing-history/MzQ5OTc2MjgwM2FkaXF6a2N4"
   }
 }

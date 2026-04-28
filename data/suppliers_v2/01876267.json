@@ -59,11 +59,131 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
-  "buyer_type_breakdown": {}
+  "buyer_type_breakdown": {},
+  "ch_profile": {
+    "api_date": "2026-04-28T14:14:19Z",
+    "company_name": "BLACKPOOL PLEASURE BEACH LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1985-01-10",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-06-20",
+    "accounts_last_made_up": "2024-03-24",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-15"
+  },
+  "governance": {
+    "api_date": "2026-04-28T14:14:20Z",
+    "total_officers": 40,
+    "active_count": 9,
+    "resigned_count": 31,
+    "active_officers": [
+      {
+        "name": "COX, James Robert",
+        "role": "director",
+        "appointed_on": "2023-09-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GILJE, Fiona Carolyn",
+        "role": "director",
+        "appointed_on": null,
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GRAY, Jonathan",
+        "role": "director",
+        "appointed_on": "2014-06-09",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HEMMINGS, Craig John",
+        "role": "director",
+        "appointed_on": "2016-03-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HOLDEN, Mark",
+        "role": "director",
+        "appointed_on": "2025-02-04",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HYGATE, Andrew Christopher",
+        "role": "director",
+        "appointed_on": "2023-06-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MURPHY, Karl Michael",
+        "role": "director",
+        "appointed_on": "2023-06-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "THOMPSON, Amanda Jean",
+        "role": "director",
+        "appointed_on": null,
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "THOMPSON, Nicholas William Robert",
+        "role": "director",
+        "appointed_on": "2008-09-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T14:14:21Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Blackpool Pleasure Beach (Holdings) Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-06-30",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "1837026"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxMTY3NjQyMWFkaXF6a2N4",
+    "date": "2026-03-20",
+    "type": "AA01",
+    "description": "change-account-reference-date-company-previous-shortened",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/BTJonyKLLYd49ZNl52CqN-6JVLrLKQRFt958vEg2t_4/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01876267/filing-history/MzUxMTY3NjQyMWFkaXF6a2N4"
+  }
 }

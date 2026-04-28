@@ -63,13 +63,233 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T22:26:03Z",
+    "company_name": "DEAFBLIND U.K.",
+    "company_status": "active",
+    "date_of_creation": "1989-09-26",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": true,
+    "confirmation_statement_next_due": "2026-03-08"
+  },
+  "governance": {
+    "api_date": "2026-04-27T22:26:05Z",
+    "total_officers": 60,
+    "active_count": 7,
+    "resigned_count": 53,
+    "active_officers": [
+      {
+        "name": "CULLEN, Rodney",
+        "role": "secretary",
+        "appointed_on": "2016-02-16",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BEUKES, Eldre, Dr",
+        "role": "director",
+        "appointed_on": "2021-06-23",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CHILDS, David",
+        "role": "director",
+        "appointed_on": "2025-12-10",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "CRITOPH, Stephen Mark Antony",
+        "role": "director",
+        "appointed_on": "2019-03-27",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "FOY, George",
+        "role": "director",
+        "appointed_on": "2018-12-12",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "NOLAN, Robert Jan Michiel",
+        "role": "director",
+        "appointed_on": "2018-01-17",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WILSON-HINDS, Roger",
+        "role": "director",
+        "appointed_on": "2018-12-12",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T22:26:06Z",
+    "total_results": 11,
+    "active_count": 0,
+    "items": [
+      {
+        "name": "Mr Robert Jan Michiel Nolan",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2018-01-17",
+        "identification": null
+      },
+      {
+        "name": "Ms Judie Martin-Jones",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2017-10-18",
+        "identification": null
+      },
+      {
+        "name": "Mr Asif Nasar Hussain",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2017-10-18",
+        "identification": null
+      },
+      {
+        "name": "Ms Ruth Bridgeman",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2017-10-18",
+        "identification": null
+      },
+      {
+        "name": "Mr John Churcher",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2017-10-18",
+        "identification": null
+      },
+      {
+        "name": "Mr Steve Wilson",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2017-10-18",
+        "identification": null
+      },
+      {
+        "name": "Mr John Phillip Greenhalgh",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-06-30",
+        "identification": null
+      },
+      {
+        "name": "Mr David Thomas Evans",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-06-30",
+        "identification": null
+      },
+      {
+        "name": "Mr Peter Skivington",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-06-30",
+        "identification": null
+      },
+      {
+        "name": "Mr Paul Voller",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-06-30",
+        "identification": null
+      },
+      {
+        "name": "Mr Gordon Lister",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-06-30",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NDQ2MTgyMmFkaXF6a2N4",
+    "date": "2025-07-22",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/oHV8q0x7L8CHFIsaslYP8zNhTp2A5lzt2abgxHlhyWw/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02426281/filing-history/MzQ3NDQ2MTgyMmFkaXF6a2N4"
   }
 }

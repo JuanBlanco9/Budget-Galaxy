@@ -55,13 +55,71 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
     "ch_api_accounts_pdf": false
   },
   "top_buyer_type": "nhs",
   "buyer_type_breakdown": {
     "nhs": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T08:19:34Z",
+    "company_name": "V. GULDMANN A/S",
+    "company_status": "active",
+    "date_of_creation": "2007-04-01",
+    "date_of_cessation": null,
+    "jurisdiction": "united-kingdom",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": null,
+    "accounts_last_made_up": null,
+    "confirmation_statement_overdue": null,
+    "confirmation_statement_next_due": null
+  },
+  "governance": {
+    "api_date": "2026-04-28T08:19:35Z",
+    "total_officers": 7,
+    "active_count": 4,
+    "resigned_count": 3,
+    "active_officers": [
+      {
+        "name": "NIELSEN, Michael Gundelund",
+        "role": "secretary",
+        "appointed_on": "2012-09-02",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "GULDMANN, Carsten",
+        "role": "director",
+        "appointed_on": "2023-01-01",
+        "country_of_residence": "Denmark",
+        "nationality": "Danish"
+      },
+      {
+        "name": "GULDMANN, Jorgen",
+        "role": "director",
+        "appointed_on": "2009-11-26",
+        "country_of_residence": "Denmark",
+        "nationality": "Danish"
+      },
+      {
+        "name": "OLESEN, Joergen Flodgaard",
+        "role": "director",
+        "appointed_on": "2018-05-29",
+        "country_of_residence": "Denmark",
+        "nationality": "Danish"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T08:19:36Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
   }
 }

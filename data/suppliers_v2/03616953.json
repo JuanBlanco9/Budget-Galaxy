@@ -64,13 +64,85 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T13:34:20Z",
+    "company_name": "ANALYTIK JENA UK LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1998-08-17",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-01"
+  },
+  "governance": {
+    "api_date": "2026-04-27T13:34:22Z",
+    "total_officers": 17,
+    "active_count": 3,
+    "resigned_count": 14,
+    "active_officers": [
+      {
+        "name": "EDNEY, Kerri Jane",
+        "role": "secretary",
+        "appointed_on": "2009-05-20",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "CONWAY, Debra Jane",
+        "role": "director",
+        "appointed_on": "2010-01-18",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "KLÄFFLING, Oliver Peter",
+        "role": "director",
+        "appointed_on": "2023-06-01",
+        "country_of_residence": "Germany",
+        "nationality": "German"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T13:34:24Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mrs Debra Jane Conway",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4ODU4NjIwOWFkaXF6a2N4",
+    "date": "2025-11-13",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/9FARdwBsOeB7lUL1qrFG-N-T5duBJJZ6MU5nF2JpFFY/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03616953/filing-history/MzQ4ODU4NjIwOWFkaXF6a2N4"
   }
 }

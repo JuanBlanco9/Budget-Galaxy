@@ -59,13 +59,100 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "education",
   "buyer_type_breakdown": {
     "education": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T05:22:52Z",
+    "company_name": "USAF MANAGEMENT LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2006-06-30",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-08-17"
+  },
+  "governance": {
+    "api_date": "2026-04-28T05:22:54Z",
+    "total_officers": 14,
+    "active_count": 4,
+    "resigned_count": 10,
+    "active_officers": [
+      {
+        "name": "SZPOJNAROWICZ, Christopher Robert",
+        "role": "secretary",
+        "appointed_on": "2013-04-16",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "BURT, Michael James",
+        "role": "director",
+        "appointed_on": "2022-09-20",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "LISTER, Joseph Julian",
+        "role": "director",
+        "appointed_on": "2006-06-30",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "SZPOJNAROWICZ, Christopher Robert",
+        "role": "director",
+        "appointed_on": "2013-03-16",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T05:22:55Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Ldc (Holdings) Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "England And Wales",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "02625007"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MzU3NzYyOWFkaXF6a2N4",
+    "date": "2025-10-02",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/uREpcBzRu7rpz-6bEfns0pyPSJ1rSiMf5peQJh6DncM/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/05862721/filing-history/MzQ4MzU3NzYyOWFkaXF6a2N4"
   }
 }

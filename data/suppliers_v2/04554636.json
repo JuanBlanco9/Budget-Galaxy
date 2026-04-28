@@ -59,13 +59,114 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T21:20:25Z",
+    "company_name": "REGEN SW",
+    "company_status": "active",
+    "date_of_creation": "2002-10-07",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-24"
+  },
+  "governance": {
+    "api_date": "2026-04-27T21:20:28Z",
+    "total_officers": 36,
+    "active_count": 9,
+    "resigned_count": 27,
+    "active_officers": [
+      {
+        "name": "BEDFORD, Sonya",
+        "role": "director",
+        "appointed_on": "2013-11-26",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BUTLIN, Joanna Louise",
+        "role": "director",
+        "appointed_on": "2023-09-07",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "EDDIE, Philippa Sian Alexandra",
+        "role": "director",
+        "appointed_on": "2020-09-09",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GOWDY, Jonathan",
+        "role": "director",
+        "appointed_on": "2010-12-20",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HUNTINGFORD, Michael",
+        "role": "director",
+        "appointed_on": "2009-11-11",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HYMAN, Merlin Michael",
+        "role": "director",
+        "appointed_on": "2010-12-20",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "JOHN, Alan Richard",
+        "role": "director",
+        "appointed_on": "2008-11-26",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "OGILVIE, Charles Alexander Howard, Dr",
+        "role": "director",
+        "appointed_on": "2023-01-04",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "VACCARO, James Carmine Antony",
+        "role": "director",
+        "appointed_on": "2014-11-25",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T21:20:30Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NjgwODU4NmFkaXF6a2N4",
+    "date": "2025-08-11",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/9WGQGkch-5jeIuW8BXtRcTYci6HbZnoxge_RjxXY1OE/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04554636/filing-history/MzQ3NjgwODU4NmFkaXF6a2N4"
   }
 }

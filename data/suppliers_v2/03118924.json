@@ -64,11 +64,155 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
-  "buyer_type_breakdown": {}
+  "buyer_type_breakdown": {},
+  "ch_profile": {
+    "api_date": "2026-04-28T04:34:13Z",
+    "company_name": "DBD LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1995-10-27",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-10"
+  },
+  "governance": {
+    "api_date": "2026-04-28T04:34:14Z",
+    "total_officers": 22,
+    "active_count": 7,
+    "resigned_count": 15,
+    "active_officers": [
+      {
+        "name": "CRAVEN, Andrew",
+        "role": "secretary",
+        "appointed_on": "2022-12-01",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "CRAVEN, Andrew",
+        "role": "director",
+        "appointed_on": "2025-06-19",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "CUMING, David Austen",
+        "role": "director",
+        "appointed_on": "2025-06-19",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HURST, John Andrew",
+        "role": "director",
+        "appointed_on": "2025-06-19",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "KEEGAN, Thomas John",
+        "role": "director",
+        "appointed_on": "2019-09-10",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PARR, David Robert",
+        "role": "director",
+        "appointed_on": "2022-09-27",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "TAYLOR, Christian",
+        "role": "director",
+        "appointed_on": "2025-06-19",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T04:34:16Z",
+    "total_results": 4,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Thomas John Keegan",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2019-09-10",
+        "identification": null
+      },
+      {
+        "name": "Mrs Marie Angela Carlick",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "voting-rights-25-to-50-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Andrew David Carlick",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "voting-rights-50-to-75-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Dbd Group Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "England And Wales",
+          "registration_number": "09313122"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NTcyMjU5OWFkaXF6a2N4",
+    "date": "2025-12-22",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/Ywcas1OVkqkGr5saUjI-HNTY825j2_RYLHLeCR7Ze5o/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03118924/filing-history/MzQ5NTcyMjU5OWFkaXF6a2N4"
+  }
 }

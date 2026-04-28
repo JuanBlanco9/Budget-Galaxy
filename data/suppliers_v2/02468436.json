@@ -70,15 +70,87 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.8044,
     "central_govt": 0.1956,
     "council": 0.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T03:29:44Z",
+    "company_name": "AVMI KINLY LTD",
+    "company_status": "active",
+    "date_of_creation": "1990-02-08",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-16"
+  },
+  "governance": {
+    "api_date": "2026-04-28T03:29:45Z",
+    "total_officers": 21,
+    "active_count": 2,
+    "resigned_count": 19,
+    "active_officers": [
+      {
+        "name": "GHERE, Tajinder Singh, Mr.",
+        "role": "director",
+        "appointed_on": "2020-11-27",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MARTIN, Thomas Michael, Mr.",
+        "role": "director",
+        "appointed_on": "2020-08-17",
+        "country_of_residence": "Norway",
+        "nationality": "Irish"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T03:29:46Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Avm Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "English",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "05659631"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4OTA1MjIwM2FkaXF6a2N4",
+    "date": "2025-11-17",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/T_2aMS_4Pfp6MxMzZlEXggcACxv4RplCPWCLv0vLNG8/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02468436/filing-history/MzQ4OTA1MjIwM2FkaXF6a2N4"
   }
 }

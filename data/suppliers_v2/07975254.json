@@ -66,13 +66,93 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T02:50:55Z",
+    "company_name": "SPECTRA C.I.C.",
+    "company_status": "active",
+    "date_of_creation": "2012-03-05",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-16"
+  },
+  "governance": {
+    "api_date": "2026-04-28T02:50:56Z",
+    "total_officers": 15,
+    "active_count": 6,
+    "resigned_count": 9,
+    "active_officers": [
+      {
+        "name": "BYRNE, Elizabeth Jane",
+        "role": "director",
+        "appointed_on": "2025-11-24",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "DA SILVA, Saielle",
+        "role": "director",
+        "appointed_on": "2024-04-08",
+        "country_of_residence": "England",
+        "nationality": "American"
+      },
+      {
+        "name": "DUNN, Susan Jean",
+        "role": "director",
+        "appointed_on": "2024-12-09",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SKIPPER, Karen Margaret",
+        "role": "director",
+        "appointed_on": "2012-03-05",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "TAYLOR, Peter Francis",
+        "role": "director",
+        "appointed_on": "2019-11-05",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WETHERALL, Simone Riviere",
+        "role": "director",
+        "appointed_on": "2024-12-09",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T02:50:57Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4ODUyNTAyN2FkaXF6a2N4",
+    "date": "2025-11-13",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/-dt9USnd_kah4hMcCdbBNF-AoJyjYnbZAaBGlytkCzY/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/07975254/filing-history/MzQ4ODUyNTAyN2FkaXF6a2N4"
   }
 }

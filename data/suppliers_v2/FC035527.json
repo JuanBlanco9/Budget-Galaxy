@@ -55,15 +55,74 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "education",
   "buyer_type_breakdown": {
     "education": 0.8858,
     "other": 0.08,
     "police_fire": 0.0342
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T20:27:33Z",
+    "company_name": "SONY EUROPE B.V.",
+    "company_status": "active",
+    "date_of_creation": "2018-08-20",
+    "date_of_cessation": null,
+    "jurisdiction": "united-kingdom",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": null,
+    "accounts_next_due": null,
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": null,
+    "confirmation_statement_next_due": null
+  },
+  "governance": {
+    "api_date": "2026-04-27T20:27:35Z",
+    "total_officers": 7,
+    "active_count": 3,
+    "resigned_count": 4,
+    "active_officers": [
+      {
+        "name": "EZECHIELS, Barend Herman",
+        "role": "director",
+        "appointed_on": "2024-04-01",
+        "country_of_residence": "Netherlands",
+        "nationality": "Dutch"
+      },
+      {
+        "name": "MATSUZAWA, Atsuki",
+        "role": "director",
+        "appointed_on": "2022-04-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "Japanese"
+      },
+      {
+        "name": "TAKIGUCHI, Masashi",
+        "role": "director",
+        "appointed_on": "2023-04-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "Japanese"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T20:27:36Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5ODI3NjUzOWFkaXF6a2N4",
+    "date": "2026-01-13",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/hoyZvt89XlCE_B5K1m8jHOkyQzrAk7eSx721ISyRXFA/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/FC035527/filing-history/MzQ5ODI3NjUzOWFkaXF6a2N4"
   }
 }

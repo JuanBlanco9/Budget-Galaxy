@@ -59,13 +59,99 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T10:16:03Z",
+    "company_name": "EVERQUIP GARAGE EQUIPMENT LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1995-08-31",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-03-31",
+    "accounts_last_made_up": "2025-06-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-09-14"
+  },
+  "governance": {
+    "api_date": "2026-04-28T10:16:04Z",
+    "total_officers": 9,
+    "active_count": 4,
+    "resigned_count": 5,
+    "active_officers": [
+      {
+        "name": "EVERARD, Stuart Ernest",
+        "role": "secretary",
+        "appointed_on": "1999-05-12",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "COX, Jack Leslie",
+        "role": "director",
+        "appointed_on": "2023-02-21",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "EVERARD, Stuart Ernest",
+        "role": "director",
+        "appointed_on": "1995-08-31",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "HUMPHREYS, Clare",
+        "role": "director",
+        "appointed_on": "2025-01-23",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T10:16:06Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Everquip Garage Equipment Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2023-01-19",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "14540624"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NTM2NDI0N2FkaXF6a2N4",
+    "date": "2025-12-19",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/nVbwxU1L_sA9HBFBk3UmoFv93vmfO9BeFyuAm1YJarU/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03097023/filing-history/MzQ5NTM2NDI0N2FkaXF6a2N4"
   }
 }

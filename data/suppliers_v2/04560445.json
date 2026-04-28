@@ -59,13 +59,100 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T13:34:54Z",
+    "company_name": "ALIXPARTNERS LTD",
+    "company_status": "active",
+    "date_of_creation": "2002-10-11",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-14"
+  },
+  "governance": {
+    "api_date": "2026-04-27T13:34:56Z",
+    "total_officers": 26,
+    "active_count": 5,
+    "resigned_count": 21,
+    "active_officers": [
+      {
+        "name": "AVERSA, Stefano",
+        "role": "director",
+        "appointed_on": "2014-02-26",
+        "country_of_residence": "United Kingdom",
+        "nationality": "Italian"
+      },
+      {
+        "name": "DEEDY, Stephen Michael",
+        "role": "director",
+        "appointed_on": "2014-02-26",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      },
+      {
+        "name": "OKATA, Maritza Uloma Barroso",
+        "role": "director",
+        "appointed_on": "2022-05-09",
+        "country_of_residence": "United States",
+        "nationality": "American,Brazilian"
+      },
+      {
+        "name": "RITTER, Daniel David",
+        "role": "director",
+        "appointed_on": "2022-08-15",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      },
+      {
+        "name": "THOMPSON, Paul Matthew",
+        "role": "director",
+        "appointed_on": "2017-03-23",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T13:34:57Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Jay Alix",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "American",
+        "country_of_residence": "United States",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2017-01-12",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxMDA5MjY2MmFkaXF6a2N4",
+    "date": "2026-03-15",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/XWTx_jxm19hX_qPIKwZNp-qRDBHG-GHrVfaRfdlJF4s/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04560445/filing-history/MzUxMDA5MjY2MmFkaXF6a2N4"
   }
 }

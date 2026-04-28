@@ -68,15 +68,102 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "police_fire",
   "buyer_type_breakdown": {
     "police_fire": 0.8695,
     "nhs": 0.1224,
     "council": 0.0081
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T02:46:38Z",
+    "company_name": "KCOM GROUP LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1987-07-21",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-09"
+  },
+  "governance": {
+    "api_date": "2026-04-28T02:46:40Z",
+    "total_officers": 70,
+    "active_count": 4,
+    "resigned_count": 66,
+    "active_officers": [
+      {
+        "name": "GOLDSMITH, Fiona Claire",
+        "role": "director",
+        "appointed_on": "2022-04-28",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "GREENLEAF, Richard",
+        "role": "director",
+        "appointed_on": "2024-11-28",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "POSTMA, Jaap-Jan Linze",
+        "role": "director",
+        "appointed_on": "2020-01-28",
+        "country_of_residence": "Netherlands",
+        "nationality": "Dutch"
+      },
+      {
+        "name": "SCHAEFER, Richard Wolfgang Henry",
+        "role": "director",
+        "appointed_on": "2025-07-31",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T02:46:41Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Kcom Holdco 3 Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2019-10-22",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "12005063"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxMzI2MjMyM2FkaXF6a2N4",
+    "date": "2026-04-10",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/khRh6_VU7-e-eZIpg2QHnq-nruD0mclBnKKG2xksHgc/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02150618/filing-history/MzUxMzI2MjMyM2FkaXF6a2N4"
   }
 }

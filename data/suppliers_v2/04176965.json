@@ -66,14 +66,118 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 0.7862,
     "other": 0.2138
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T07:26:07Z",
+    "company_name": "BNP PARIBAS REAL ESTATE ADVISORY & PROPERTY MANAGEMENT UK LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2001-03-09",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-05-15"
+  },
+  "governance": {
+    "api_date": "2026-04-28T07:26:09Z",
+    "total_officers": 38,
+    "active_count": 4,
+    "resigned_count": 34,
+    "active_officers": [
+      {
+        "name": "GASSER, Matthew Warwick",
+        "role": "secretary",
+        "appointed_on": "2008-07-29",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "CHOI, Richard Jae",
+        "role": "director",
+        "appointed_on": "2025-06-11",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ENGLAND, Mark Richard",
+        "role": "director",
+        "appointed_on": "2005-06-29",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HIGGINS, Gary",
+        "role": "director",
+        "appointed_on": "2025-06-11",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T07:26:10Z",
+    "total_results": 2,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Bnp Paribas Real Estate Sas",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Société Par Actions Simplifiée",
+          "legal_authority": "France",
+          "country_registered": "France",
+          "place_registered": "Rcs Nanterre",
+          "registration_number": "692 012 180 Rcs Nanterre"
+        }
+      },
+      {
+        "name": "Bnp Paribas Sa",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Public Limited Company",
+          "legal_authority": "French Commercial Code",
+          "country_registered": "France",
+          "place_registered": "Registry At The Commercial Court Of  Paris",
+          "registration_number": "662042449 Rcs Paris"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NzM4NDE2NmFkaXF6a2N4",
+    "date": "2025-08-15",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/fXyAs6eMLw12Prr2E878LYwddtaqnvmEC1Xx8MKJmGA/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04176965/filing-history/MzQ3NzM4NDE2NmFkaXF6a2N4"
   }
 }

@@ -64,13 +64,121 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T17:10:18Z",
+    "company_name": "COGNITIVE GROUP LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2007-08-10",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-30",
+    "accounts_last_made_up": "2025-03-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-05-12"
+  },
+  "governance": {
+    "api_date": "2026-04-27T17:10:20Z",
+    "total_officers": 14,
+    "active_count": 5,
+    "resigned_count": 9,
+    "active_officers": [
+      {
+        "name": "DELDERFIELD, James",
+        "role": "director",
+        "appointed_on": "2022-08-10",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GORDON, Lloyd George",
+        "role": "director",
+        "appointed_on": "2022-08-03",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GORMAN, Sean Patrick",
+        "role": "director",
+        "appointed_on": "2022-08-10",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "KNOX, Paul",
+        "role": "director",
+        "appointed_on": "2022-08-10",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "POTTER, Danielle Louise",
+        "role": "director",
+        "appointed_on": "2023-11-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T17:10:21Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Focus Cloud Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2022-08-03",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "13999551"
+        }
+      },
+      {
+        "name": "Mr Jonathan Gregory Keen",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4ODIxMTUxOWFkaXF6a2N4",
+    "date": "2025-11-11",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/Ju98-QDsHlmybSUr2E9oipGb3S9CJjiWGMBJhaXyJLg/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/06339553/filing-history/MzQ4ODIxMTUxOWFkaXF6a2N4"
   }
 }

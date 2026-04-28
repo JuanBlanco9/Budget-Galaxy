@@ -61,14 +61,113 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "education",
   "buyer_type_breakdown": {
     "education": 0.5589,
     "other": 0.4411
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T02:50:28Z",
+    "company_name": "CAM MANAGEMENT SOLUTIONS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2007-09-04",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-09-18"
+  },
+  "governance": {
+    "api_date": "2026-04-28T02:50:29Z",
+    "total_officers": 9,
+    "active_count": 4,
+    "resigned_count": 5,
+    "active_officers": [
+      {
+        "name": "JONES, Michael",
+        "role": "secretary",
+        "appointed_on": "2024-06-07",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "PINSENT MASONS SECRETARIAL LIMITED",
+        "role": "corporate-secretary",
+        "appointed_on": "2025-06-11",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "VLERICK, Peter Reynolds",
+        "role": "director",
+        "appointed_on": "2024-07-11",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      },
+      {
+        "name": "WETEKAMP, James",
+        "role": "director",
+        "appointed_on": "2024-06-07",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T02:50:31Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Riskonnect Active Risk Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2024-06-07",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Companies House Register",
+          "registration_number": "05424046"
+        }
+      },
+      {
+        "name": "Mr Daniel Joseph Collins",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Australian",
+        "country_of_residence": "Australia",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5ODQzODkzM2FkaXF6a2N4",
+    "date": "2026-01-09",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-audit-exemption-subsiduary",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/nVn00jJKRcUF0pg2i3oAhHHRuF66umkdMqVYEX2xYUA/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/06360806/filing-history/MzQ5ODQzODkzM2FkaXF6a2N4"
   }
 }

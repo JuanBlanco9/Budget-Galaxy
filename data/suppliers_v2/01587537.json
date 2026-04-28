@@ -70,10 +70,10 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
@@ -81,5 +81,108 @@
     "education": 0.0638,
     "other": 0.0586,
     "police_fire": 0.0083
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T21:54:32Z",
+    "company_name": "ZELLIS UK LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1981-09-25",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-01-31",
+    "accounts_last_made_up": "2025-04-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-15"
+  },
+  "governance": {
+    "api_date": "2026-04-27T21:54:34Z",
+    "total_officers": 48,
+    "active_count": 4,
+    "resigned_count": 44,
+    "active_officers": [
+      {
+        "name": "FOX, Chris",
+        "role": "secretary",
+        "appointed_on": "2021-08-16",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "PETTER, John Richard Martin",
+        "role": "director",
+        "appointed_on": "2018-07-18",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "TROY, Joseph James",
+        "role": "director",
+        "appointed_on": "2025-12-10",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      },
+      {
+        "name": "VAUGHAN, Abigail",
+        "role": "director",
+        "appointed_on": "2023-04-28",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T21:54:36Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Zellis Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2018-03-27",
+        "identification": {
+          "legal_form": "Company Limited By Shares",
+          "legal_authority": "England And Wales",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "10975623"
+        }
+      },
+      {
+        "name": "Rebus Human Resources Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2017-06-01",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "Companies Act",
+          "country_registered": "England",
+          "place_registered": "Uk Companies House",
+          "registration_number": "00772321"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwMjUzMzc0OGFkaXF6a2N4",
+    "date": "2026-02-03",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/MBvz7CLjBLRDdSGy9B2uIIFHNdZYiiAjyN4jVMGSkIg/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01587537/filing-history/MzUwMjUzMzc0OGFkaXF6a2N4"
   }
 }

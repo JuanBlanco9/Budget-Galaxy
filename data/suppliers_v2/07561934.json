@@ -64,13 +64,100 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "agency",
   "buyer_type_breakdown": {
     "agency": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T12:26:19Z",
+    "company_name": "ZIFF DAVIS INTERNATIONAL LTD.",
+    "company_status": "active",
+    "date_of_creation": "2011-03-14",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-23"
+  },
+  "governance": {
+    "api_date": "2026-04-28T12:26:20Z",
+    "total_officers": 10,
+    "active_count": 4,
+    "resigned_count": 6,
+    "active_officers": [
+      {
+        "name": "HOROWITZ, Steven Lawrence",
+        "role": "director",
+        "appointed_on": "2013-02-01",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      },
+      {
+        "name": "MASUD, Mazhar, Mr.",
+        "role": "director",
+        "appointed_on": "2026-02-26",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      },
+      {
+        "name": "ORGEL-EATON, Julianna, Mrs.",
+        "role": "director",
+        "appointed_on": "2026-02-26",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      },
+      {
+        "name": "ROSSEN, Jeremy David, Mr.",
+        "role": "director",
+        "appointed_on": "2019-07-31",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T12:26:21Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Ziff Davis, Inc.",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Corporate",
+          "legal_authority": "United States (California)",
+          "country_registered": "United States",
+          "place_registered": "Delaware",
+          "registration_number": "5542070"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MTg4MTAxOWFkaXF6a2N4",
+    "date": "2025-12-03",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/ZI0jxqxdQb6XOcgpeMx32Mx2MlauRVSe-3EKndOFGg8/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/07561934/filing-history/MzQ5MTg4MTAxOWFkaXF6a2N4"
   }
 }

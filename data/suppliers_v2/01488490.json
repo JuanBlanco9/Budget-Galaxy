@@ -68,13 +68,138 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T06:17:11Z",
+    "company_name": "TAKING CARE PERSONAL ALARMS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1980-03-31",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-23"
+  },
+  "governance": {
+    "api_date": "2026-04-28T06:17:12Z",
+    "total_officers": 60,
+    "active_count": 4,
+    "resigned_count": 56,
+    "active_officers": [
+      {
+        "name": "GATES, Stephen John",
+        "role": "director",
+        "appointed_on": "2019-06-14",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "LENNOX, Daniel Graham",
+        "role": "director",
+        "appointed_on": "2025-12-22",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "O'CALLAGHAN, Sarah Elizabeth",
+        "role": "director",
+        "appointed_on": "2025-12-22",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "RIDPATH, Andrew Peter",
+        "role": "director",
+        "appointed_on": "2025-12-22",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T06:17:13Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Project Atlantic Bidco Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2025-12-22",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "England And Wales",
+          "registration_number": "16872174"
+        }
+      },
+      {
+        "name": "Axa Ppp Healthcare Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-11-01",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "United Kingdom (England)",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "3148346"
+        }
+      },
+      {
+        "name": "Age Uk Trading Cic",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent-as-firm"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Other",
+          "legal_authority": "United Kingdom",
+          "country_registered": "United Kingdom",
+          "place_registered": "England",
+          "registration_number": "1102972"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4Mjg5ODEyM2FkaXF6a2N4",
+    "date": "2025-09-30",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/BdJbVBW3IJL92ZDZHlXj7ZfItVFqNxCt026Co92KQ10/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01488490/filing-history/MzQ4Mjg5ODEyM2FkaXF6a2N4"
   }
 }

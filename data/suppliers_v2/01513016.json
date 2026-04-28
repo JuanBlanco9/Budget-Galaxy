@@ -59,13 +59,106 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "education",
   "buyer_type_breakdown": {
     "education": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T22:05:29Z",
+    "company_name": "GSF (LONDON) LTD",
+    "company_status": "active",
+    "date_of_creation": "1980-08-18",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-05"
+  },
+  "governance": {
+    "api_date": "2026-04-27T22:05:31Z",
+    "total_officers": 37,
+    "active_count": 5,
+    "resigned_count": 32,
+    "active_officers": [
+      {
+        "name": "COGNEE, Christophe",
+        "role": "director",
+        "appointed_on": "2018-02-02",
+        "country_of_residence": "France",
+        "nationality": "French"
+      },
+      {
+        "name": "MERCURIN, Jerome",
+        "role": "director",
+        "appointed_on": "2016-03-21",
+        "country_of_residence": "France",
+        "nationality": "French"
+      },
+      {
+        "name": "MOREL, Johann",
+        "role": "director",
+        "appointed_on": "2024-01-01",
+        "country_of_residence": "France",
+        "nationality": "French"
+      },
+      {
+        "name": "NOLEAU, Eric",
+        "role": "director",
+        "appointed_on": "2024-01-01",
+        "country_of_residence": "France",
+        "nationality": "French"
+      },
+      {
+        "name": "SOLIA, Jerome",
+        "role": "director",
+        "appointed_on": "2022-02-03",
+        "country_of_residence": "United Kingdom",
+        "nationality": "French"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T22:05:33Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Gsf Gb Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "United Kingdom (England)",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "04021720"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MDg0ODcwOGFkaXF6a2N4",
+    "date": "2025-09-12",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/N10GTF-peKJ--7mODgPyHxK00YNlDo-G-iXa0elQL4k/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01513016/filing-history/MzQ4MDg0ODcwOGFkaXF6a2N4"
   }
 }

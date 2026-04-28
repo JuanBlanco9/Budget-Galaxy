@@ -59,15 +59,126 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 0.5248,
     "education": 0.3735,
     "other": 0.1017
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T18:48:12Z",
+    "company_name": "ZEELO LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2016-07-12",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-25"
+  },
+  "governance": {
+    "api_date": "2026-04-27T18:48:14Z",
+    "total_officers": 15,
+    "active_count": 5,
+    "resigned_count": 10,
+    "active_officers": [
+      {
+        "name": "GRIFFIN, Liam",
+        "role": "director",
+        "appointed_on": "2017-11-14",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "HOFFMANN, Christopher",
+        "role": "director",
+        "appointed_on": "2023-08-04",
+        "country_of_residence": "Germany",
+        "nationality": "German"
+      },
+      {
+        "name": "KAMGA TEGUIA, Claude Désiré",
+        "role": "director",
+        "appointed_on": "2025-05-30",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "RYAN, Sam Edward",
+        "role": "director",
+        "appointed_on": "2016-10-25",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WILLIAMS, Barnaby",
+        "role": "director",
+        "appointed_on": "2025-02-10",
+        "country_of_residence": "United States",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T18:48:15Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Blueearth Climate Growth Fund I, S.C.A.",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2025-07-18",
+        "identification": {
+          "legal_form": "Societe En Commandite Par Actions (S.C.A.), Sicav-Raif",
+          "legal_authority": "Luxembourg Law",
+          "country_registered": "Luxembourg",
+          "place_registered": "Registre De Commerce Et Des Societes (Rcs), Luxembourg",
+          "registration_number": "B258731"
+        }
+      },
+      {
+        "name": "Environmental Technologies Fund 3 L.P.",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2019-01-16",
+        "identification": {
+          "legal_form": "Limited Partnership",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "Lp019504"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MzExODMyOWFkaXF6a2N4",
+    "date": "2025-12-09",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/NeZjTSzF9TUPwIAr4b_S5fu9s2x0wekfJwj2F0NQZus/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/10274913/filing-history/MzQ5MzExODMyOWFkaXF6a2N4"
   }
 }

@@ -64,13 +64,169 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T04:39:04Z",
+    "company_name": "THE JAMES HUTTON INSTITUTE",
+    "company_status": "active",
+    "date_of_creation": "2010-03-15",
+    "date_of_cessation": null,
+    "jurisdiction": "scotland",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-29"
+  },
+  "governance": {
+    "api_date": "2026-04-28T04:39:06Z",
+    "total_officers": 51,
+    "active_count": 15,
+    "resigned_count": 36,
+    "active_officers": [
+      {
+        "name": "CORBIN, Anne Elizabeth",
+        "role": "secretary",
+        "appointed_on": "2025-08-07",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BOWSHER, Caroline, Professor",
+        "role": "director",
+        "appointed_on": "2023-11-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "COWIE, Sarah Catherine",
+        "role": "director",
+        "appointed_on": "2023-11-01",
+        "country_of_residence": "Scotland",
+        "nationality": "Scottish"
+      },
+      {
+        "name": "DAVIES, Susan Margaret",
+        "role": "director",
+        "appointed_on": "2017-04-03",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      },
+      {
+        "name": "GRICE, Paul Edward, Sir",
+        "role": "director",
+        "appointed_on": "2021-05-01",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      },
+      {
+        "name": "KOZLOVA, Olga Vladimirovna, Dr",
+        "role": "director",
+        "appointed_on": "2023-11-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LAWRIE, George Templeton",
+        "role": "director",
+        "appointed_on": "2017-04-03",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      },
+      {
+        "name": "MACCOLL TURPIN, Anne Josephine",
+        "role": "director",
+        "appointed_on": "2023-11-30",
+        "country_of_residence": "France",
+        "nationality": "British"
+      },
+      {
+        "name": "MCDONALD, Susan Hillen",
+        "role": "director",
+        "appointed_on": "2023-11-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MITCHELL, Susan Victoria",
+        "role": "director",
+        "appointed_on": "2023-09-12",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      },
+      {
+        "name": "SIM, Lindsay Christina",
+        "role": "director",
+        "appointed_on": "2023-09-12",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      },
+      {
+        "name": "STUART, Eileen Mary",
+        "role": "director",
+        "appointed_on": "2023-11-01",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      },
+      {
+        "name": "WALKER, Robin Peter",
+        "role": "director",
+        "appointed_on": "2023-09-12",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WALL, Ian James, Prof",
+        "role": "director",
+        "appointed_on": "2023-04-26",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      },
+      {
+        "name": "WIDDOWFIELD, Rebekah Clare, Dr",
+        "role": "director",
+        "appointed_on": "2023-04-26",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T04:39:07Z",
+    "total_results": 1,
+    "active_count": 0,
+    "items": [
+      {
+        "name": "Mr Derek Cameron Leslie",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "Scotland",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2017-01-01",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MzM1ODM2NWFkaXF6a2N4",
+    "date": "2025-12-10",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/BEara31AYxE_tGI0OhP3NNUVk8zUK0Hv5bIPqm9DA2Q/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/SC374831/filing-history/MzQ5MzM1ODM2NWFkaXF6a2N4"
   }
 }

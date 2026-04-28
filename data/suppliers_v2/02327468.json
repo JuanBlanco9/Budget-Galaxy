@@ -72,14 +72,92 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 0.9385,
     "other": 0.0615
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T09:03:46Z",
+    "company_name": "MICHAEL PAGE INTERNATIONAL LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1988-12-12",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-22"
+  },
+  "governance": {
+    "api_date": "2026-04-28T09:03:47Z",
+    "total_officers": 20,
+    "active_count": 3,
+    "resigned_count": 17,
+    "active_officers": [
+      {
+        "name": "MAGUIRE, Kaye",
+        "role": "secretary",
+        "appointed_on": "2018-12-11",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "MAGUIRE, Kaye Elizabeth",
+        "role": "director",
+        "appointed_on": "2018-12-11",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "STAGG, Kelvin John",
+        "role": "director",
+        "appointed_on": "2012-04-23",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T09:03:48Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Michael Page International Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Company Limited By Shares",
+          "legal_authority": "England And Wales",
+          "country_registered": "Uk",
+          "place_registered": "England And Wales",
+          "registration_number": "2327645"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NjY1MDgwOGFkaXF6a2N4",
+    "date": "2025-08-11",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-dormant",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/GTlb4wVO4xlf9w2ulleMdLBLIB2eTgom01FgX0ke9Rw/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02327468/filing-history/MzQ3NjY1MDgwOGFkaXF6a2N4"
   }
 }

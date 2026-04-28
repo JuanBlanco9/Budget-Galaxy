@@ -59,13 +59,222 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T10:20:33Z",
+    "company_name": "CAMBRIDGE HOUSE AND TALBOT",
+    "company_status": "active",
+    "date_of_creation": "1972-04-14",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-19"
+  },
+  "governance": {
+    "api_date": "2026-04-28T10:20:34Z",
+    "total_officers": 95,
+    "active_count": 10,
+    "resigned_count": 85,
+    "active_officers": [
+      {
+        "name": "WOODLEY, Karin",
+        "role": "secretary",
+        "appointed_on": "2024-06-27",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "ADENAIKE, Felix Aderemi",
+        "role": "director",
+        "appointed_on": "2023-09-14",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "BRAZELL, Shadi Mireskandari",
+        "role": "director",
+        "appointed_on": "2023-09-14",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "DELANY, Ivan Matthew",
+        "role": "director",
+        "appointed_on": "2023-09-14",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "DIAMOND, Patrick",
+        "role": "director",
+        "appointed_on": "2023-09-14",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HALL, Suzanne Karen",
+        "role": "director",
+        "appointed_on": "2023-09-14",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HUSSAIN, Raja Sagheer",
+        "role": "director",
+        "appointed_on": "2023-09-14",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "LATHAM, Simon David",
+        "role": "director",
+        "appointed_on": "2017-05-18",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LYONS, Clarissa Anne Sara",
+        "role": "director",
+        "appointed_on": "2018-03-22",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "TROUSDALE, Tara Leigh Joan",
+        "role": "director",
+        "appointed_on": "2023-09-14",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T10:20:36Z",
+    "total_results": 8,
+    "active_count": 3,
+    "items": [
+      {
+        "name": "Mr Raja Sagheer Hussain",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2024-04-26",
+        "identification": null
+      },
+      {
+        "name": "Mr Simon David Latham",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control",
+          "significant-influence-or-control-as-trust",
+          "significant-influence-or-control-as-firm"
+        ],
+        "notified_on": "2019-12-15",
+        "identification": null
+      },
+      {
+        "name": "Mr David Arthur Goode",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2018-12-17",
+        "identification": null
+      },
+      {
+        "name": "Mr David Ennis Coleman",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control",
+          "significant-influence-or-control-as-trust"
+        ],
+        "notified_on": "2018-05-14",
+        "identification": null
+      },
+      {
+        "name": "Ms Clarissa Anne Sara Lyons",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control",
+          "significant-influence-or-control-as-trust"
+        ],
+        "notified_on": "2018-05-14",
+        "identification": null
+      },
+      {
+        "name": "Ms Francesca Sanderson",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Ms Julie Myers",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Nicholas Guy Ingram Page",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NjUzNDI0N2FkaXF6a2N4",
+    "date": "2026-01-03",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/7etZ59HgVuAOre3D4mcSTSetMZAugBhDcU1UV-tuzn8/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01050006/filing-history/MzQ5NjUzNDI0N2FkaXF6a2N4"
   }
 }

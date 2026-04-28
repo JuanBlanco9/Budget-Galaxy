@@ -68,15 +68,95 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "police_fire",
   "buyer_type_breakdown": {
     "police_fire": 0.8664,
     "agency": 0.1106,
     "central_govt": 0.023
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T16:01:15Z",
+    "company_name": "WA PRODUCTS (UK) LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2000-07-06",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-01-31",
+    "accounts_last_made_up": "2025-04-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-12"
+  },
+  "governance": {
+    "api_date": "2026-04-27T16:01:17Z",
+    "total_officers": 19,
+    "active_count": 3,
+    "resigned_count": 16,
+    "active_officers": [
+      {
+        "name": "SMITH, Julie",
+        "role": "secretary",
+        "appointed_on": "2013-05-20",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "HOPSON, Michael",
+        "role": "director",
+        "appointed_on": "2013-05-20",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WISEMAN, Stuart Richard",
+        "role": "director",
+        "appointed_on": "2013-05-20",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T16:01:18Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Scenesafe Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "05655413"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwMjA4OTQxNmFkaXF6a2N4",
+    "date": "2026-01-29",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-dormant",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/QT1pO7WCycx757Zrb8HlNlTWUdta9xr0yhHDYoCE1z8/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04028076/filing-history/MzUwMjA4OTQxNmFkaXF6a2N4"
   }
 }

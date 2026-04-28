@@ -64,13 +64,98 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T19:01:29Z",
+    "company_name": "LUCIDEON LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1985-11-18",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-12"
+  },
+  "governance": {
+    "api_date": "2026-04-27T19:01:30Z",
+    "total_officers": 16,
+    "active_count": 4,
+    "resigned_count": 12,
+    "active_officers": [
+      {
+        "name": "ALI, Noor Gary",
+        "role": "director",
+        "appointed_on": "2026-03-25",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "EDGELL, Geoffrey John, Dr",
+        "role": "director",
+        "appointed_on": "2007-06-13",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "KINSELLA, Anthony",
+        "role": "director",
+        "appointed_on": "2006-05-12",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MART, Elizabeth Katherine",
+        "role": "director",
+        "appointed_on": "2026-03-25",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T19:01:32Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Lucideon Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "England",
+          "registration_number": "8877014"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MjA5Mjc2N2FkaXF6a2N4",
+    "date": "2025-09-22",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/bX9RFd9AaBmzVVmAU3KKCnlhutK_V1cedxfKqomzUbQ/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01960455/filing-history/MzQ4MjA5Mjc2N2FkaXF6a2N4"
   }
 }

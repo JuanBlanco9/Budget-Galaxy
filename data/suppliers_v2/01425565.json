@@ -59,14 +59,99 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 0.996,
     "police_fire": 0.004
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T06:17:46Z",
+    "company_name": "SCOT GROUP LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1979-06-05",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-25"
+  },
+  "governance": {
+    "api_date": "2026-04-28T06:17:47Z",
+    "total_officers": 21,
+    "active_count": 4,
+    "resigned_count": 17,
+    "active_officers": [
+      {
+        "name": "TOWNSEND, Damien Scott",
+        "role": "secretary",
+        "appointed_on": "2026-04-21",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "HANCOCK, Roger Owen",
+        "role": "director",
+        "appointed_on": "1994-12-05",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "TOWNSEND, Damien Scott",
+        "role": "director",
+        "appointed_on": "2026-04-21",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WILSON, Martin",
+        "role": "director",
+        "appointed_on": "2018-04-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T06:17:49Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Scot Group Southern Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-08",
+        "identification": {
+          "legal_form": "Limited Liability Comany",
+          "legal_authority": "Companies Act",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House Cardiff",
+          "registration_number": "03696813"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MjYzMzcyNmFkaXF6a2N4",
+    "date": "2025-07-08",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/UCmVveQie9rIoRox2Pbp-ws2kgr3UBS6Nd6b4hbV590/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01425565/filing-history/MzQ3MjYzMzcyNmFkaXF6a2N4"
   }
 }

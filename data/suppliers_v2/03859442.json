@@ -65,13 +65,184 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T13:27:14Z",
+    "company_name": "TWI LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1999-10-14",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-20"
+  },
+  "governance": {
+    "api_date": "2026-04-28T13:27:15Z",
+    "total_officers": 26,
+    "active_count": 6,
+    "resigned_count": 20,
+    "active_officers": [
+      {
+        "name": "GREGORY, Jason",
+        "role": "director",
+        "appointed_on": "2025-10-07",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GUMBLE, Caroline Olive Mary, Dr",
+        "role": "director",
+        "appointed_on": "2025-07-07",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LEE, Malcolm Timothy",
+        "role": "director",
+        "appointed_on": "2025-09-29",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "STEWART, Leonie",
+        "role": "director",
+        "appointed_on": "2022-10-21",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WOOLLIN, Paul, Dr",
+        "role": "director",
+        "appointed_on": "2020-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WRATHMALL, David Dowell",
+        "role": "director",
+        "appointed_on": "2024-04-29",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T13:27:17Z",
+    "total_results": 7,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "The Welding Institute",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2019-11-19",
+        "identification": {
+          "legal_form": "Private Company Limited By Guarantee Without Share Capital",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "405555"
+        }
+      },
+      {
+        "name": "Mrs Gillian Astrid Leech",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-10-01",
+        "identification": null
+      },
+      {
+        "name": "Mr Michael Jonathan Russell",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-10-01",
+        "identification": null
+      },
+      {
+        "name": "Mr Paul Woollin",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-10-01",
+        "identification": null
+      },
+      {
+        "name": "Professor Aamir Khalid",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-10-01",
+        "identification": null
+      },
+      {
+        "name": "Mr Christoph Stefan Wiesner",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-10-01",
+        "identification": null
+      },
+      {
+        "name": "Mr Gholamreza Razmjoo",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Iranian",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-10-01",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4NTE5NjI5M2FkaXF6a2N4",
+    "date": "2025-10-16",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/Jlnk4jAgz6LKoNRpVWAks8wk4p2z5WKEV8Zh7uNKrE0/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03859442/filing-history/MzQ4NTE5NjI5M2FkaXF6a2N4"
   }
 }

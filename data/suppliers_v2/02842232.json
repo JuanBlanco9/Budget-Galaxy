@@ -61,14 +61,114 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.9316,
     "council": 0.0684
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T15:58:41Z",
+    "company_name": "DODD GROUP (EASTERN) LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1993-08-04",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-08-29"
+  },
+  "governance": {
+    "api_date": "2026-04-27T15:58:43Z",
+    "total_officers": 11,
+    "active_count": 6,
+    "resigned_count": 5,
+    "active_officers": [
+      {
+        "name": "DODD, Thomas Reginald",
+        "role": "secretary",
+        "appointed_on": "1997-04-01",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "COBB, Adrian Ronald",
+        "role": "director",
+        "appointed_on": "2010-03-31",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "DODD, Thomas Mark",
+        "role": "director",
+        "appointed_on": "2002-04-05",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "DODD, Thomas Reginald",
+        "role": "director",
+        "appointed_on": "1993-08-26",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "KAVANAGH, John Joseph",
+        "role": "director",
+        "appointed_on": "2026-02-23",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "PIDGEON, Damion",
+        "role": "director",
+        "appointed_on": "2010-04-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T15:58:45Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Dodd Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House England And Wales",
+          "registration_number": "01614573"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MzU5MzkzNmFkaXF6a2N4",
+    "date": "2025-12-11",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/sLtzVGhMC3DwNu7bvjyKlySgv8uzd1tj_O9xVQ1szKw/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02842232/filing-history/MzQ5MzU5MzkzNmFkaXF6a2N4"
   }
 }

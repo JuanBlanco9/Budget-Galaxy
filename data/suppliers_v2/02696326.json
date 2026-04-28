@@ -64,13 +64,111 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "agency",
   "buyer_type_breakdown": {
     "agency": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T01:24:53Z",
+    "company_name": "WOODSPEEN TRAINING LIMITED",
+    "company_status": "liquidation",
+    "date_of_creation": "1992-03-12",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": true,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": true,
+    "accounts_next_due": "2026-03-31",
+    "accounts_last_made_up": "2024-06-30",
+    "confirmation_statement_overdue": true,
+    "confirmation_statement_next_due": "2026-02-26"
+  },
+  "governance": {
+    "api_date": "2026-04-28T01:24:55Z",
+    "total_officers": 23,
+    "active_count": 0,
+    "resigned_count": 23,
+    "active_officers": []
+  },
+  "pscs": {
+    "api_date": "2026-04-28T01:24:56Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Alphen Trust Company Ag",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2024-11-13",
+        "identification": {
+          "legal_form": "Corporate",
+          "legal_authority": "Swiss Company Act",
+          "country_registered": "Switzerland",
+          "place_registered": "Swiss Registry",
+          "registration_number": "189386 919"
+        }
+      },
+      {
+        "name": "Dny Investments Holding Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2024-06-13",
+        "identification": {
+          "legal_form": "Company Limited By Shares",
+          "legal_authority": "Bvi",
+          "country_registered": "Bvi",
+          "place_registered": "Bvi",
+          "registration_number": "2097761"
+        }
+      },
+      {
+        "name": "Ilx Group Plc",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Public Limited Company",
+          "legal_authority": "The Law Of England And Wales",
+          "country_registered": "England",
+          "place_registered": "Companie House",
+          "registration_number": "08827824"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2MTMzMzQyNmFkaXF6a2N4",
+    "date": "2025-04-07",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/o4XxXHNtgzHJZ8zztn0MqK5bbkpxkK5picKv8Z0uJQI/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02696326/filing-history/MzQ2MTMzMzQyNmFkaXF6a2N4"
   }
 }

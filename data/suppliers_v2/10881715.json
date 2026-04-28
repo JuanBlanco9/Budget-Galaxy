@@ -64,13 +64,147 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "nhs",
   "buyer_type_breakdown": {
     "nhs": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T06:59:09Z",
+    "company_name": "SUPPLY CHAIN COORDINATION LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2017-07-25",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-23"
+  },
+  "governance": {
+    "api_date": "2026-04-28T06:59:11Z",
+    "total_officers": 24,
+    "active_count": 9,
+    "resigned_count": 15,
+    "active_officers": [
+      {
+        "name": "WEBSTER, Paul Barnaby",
+        "role": "secretary",
+        "appointed_on": "2017-07-25",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "CARTER, Miranda Louise",
+        "role": "director",
+        "appointed_on": "2019-07-26",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "DOYLE, Sheila, Dr",
+        "role": "director",
+        "appointed_on": "2024-01-01",
+        "country_of_residence": "England",
+        "nationality": "Irish"
+      },
+      {
+        "name": "KENDAL, Duncan William",
+        "role": "director",
+        "appointed_on": "2023-09-01",
+        "country_of_residence": "England",
+        "nationality": "English"
+      },
+      {
+        "name": "NEW, Andrew Robert",
+        "role": "director",
+        "appointed_on": "2021-09-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "PEREIRA, Rommel",
+        "role": "director",
+        "appointed_on": "2023-01-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "SWYNY, Mark Joseph Clarence",
+        "role": "director",
+        "appointed_on": "2023-01-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "TIERNEY-MOORE, Heather Louise",
+        "role": "director",
+        "appointed_on": "2018-12-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "VAISHAMPAYAN, Devyani",
+        "role": "director",
+        "appointed_on": "2024-11-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T06:59:12Z",
+    "total_results": 2,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "National Health Service Commissioning Board",
+        "kind": "legal-person-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2021-10-01",
+        "identification": {
+          "legal_form": "Government Department",
+          "legal_authority": "United Kingdom"
+        }
+      },
+      {
+        "name": "Secretary Of State For Health And Social Care.",
+        "kind": "legal-person-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2017-07-25",
+        "identification": {
+          "legal_form": "Government Department",
+          "legal_authority": "United Kingdom"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NzkxMDk0OWFkaXF6a2N4",
+    "date": "2025-08-19",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/ptnxWtKVTw2xUMR7n9jLFOkSv_30cYldUvc-5o1_ZUI/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/10881715/filing-history/MzQ3NzkxMDk0OWFkaXF6a2N4"
   }
 }

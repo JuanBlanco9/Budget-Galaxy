@@ -61,14 +61,178 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.8741,
     "nhs": 0.1259
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T08:20:57Z",
+    "company_name": "BMJ PUBLISHING GROUP LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1995-09-15",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-09-14"
+  },
+  "governance": {
+    "api_date": "2026-04-28T08:20:58Z",
+    "total_officers": 73,
+    "active_count": 15,
+    "resigned_count": 58,
+    "active_officers": [
+      {
+        "name": "PAXFORD, Deborah Wendy",
+        "role": "secretary",
+        "appointed_on": "2020-12-17",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "ABBASI, Kamran Almas",
+        "role": "director",
+        "appointed_on": "2022-01-25",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ACREMAN, Beverley Ann",
+        "role": "director",
+        "appointed_on": "2021-07-20",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "COEBERGH, Pieter Johannas",
+        "role": "director",
+        "appointed_on": "2024-03-05",
+        "country_of_residence": "Netherlands",
+        "nationality": "Dutch"
+      },
+      {
+        "name": "CRAWFORD, Brian David",
+        "role": "director",
+        "appointed_on": "2024-02-14",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      },
+      {
+        "name": "DESAI, Hemal, Dr",
+        "role": "director",
+        "appointed_on": "2021-11-23",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "FOULKES, Iain Walter",
+        "role": "director",
+        "appointed_on": "2023-07-19",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HANIF, Wasim, Professor",
+        "role": "director",
+        "appointed_on": "2021-11-23",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HOLDEN, Peter John Pashley, Dr",
+        "role": "director",
+        "appointed_on": "2025-06-25",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MAJOR, Neeta",
+        "role": "director",
+        "appointed_on": "2022-07-19",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MCCARTHY, Brian Gerard",
+        "role": "director",
+        "appointed_on": "2020-07-21",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "RITCHIE, Alex Charles Smail",
+        "role": "director",
+        "appointed_on": "2017-01-26",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "THOMAS, Niels Peter",
+        "role": "director",
+        "appointed_on": "2026-04-15",
+        "country_of_residence": "Germany",
+        "nationality": "German"
+      },
+      {
+        "name": "VICARY-SMITH, Peter David",
+        "role": "director",
+        "appointed_on": "2022-09-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WILLIAMS, Angela Marion",
+        "role": "director",
+        "appointed_on": "2023-07-19",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T08:20:59Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "British Medical Association",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Company Limited By Guarantee Without Share Capital,",
+          "legal_authority": "English Law",
+          "country_registered": "England",
+          "place_registered": "England And Wales Companies House",
+          "registration_number": "0008848"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MjY1MDA2NWFkaXF6a2N4",
+    "date": "2025-07-07",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/WfQrx96aUchraGIkgXrkWR0mFsTD02uP_IAqVxA_Dnc/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03102371/filing-history/MzQ3MjY1MDA2NWFkaXF6a2N4"
   }
 }

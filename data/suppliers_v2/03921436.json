@@ -64,11 +64,119 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
-  "buyer_type_breakdown": {}
+  "buyer_type_breakdown": {},
+  "ch_profile": {
+    "api_date": "2026-04-28T14:22:57Z",
+    "company_name": "AGE UK CROYDON",
+    "company_status": "active",
+    "date_of_creation": "2000-02-08",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-13"
+  },
+  "governance": {
+    "api_date": "2026-04-28T14:22:58Z",
+    "total_officers": 71,
+    "active_count": 10,
+    "resigned_count": 61,
+    "active_officers": [
+      {
+        "name": "ANANDASUNDARAM, Branavan, Dr",
+        "role": "director",
+        "appointed_on": "2025-09-23",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BRIGGS, Christopher John",
+        "role": "director",
+        "appointed_on": "2023-03-08",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ELGAR, Charlotte",
+        "role": "director",
+        "appointed_on": "2024-09-24",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HAAHR, Michael",
+        "role": "director",
+        "appointed_on": "2024-09-24",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "KHAN, Opama",
+        "role": "director",
+        "appointed_on": "2020-11-17",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "KYEI, Kofi",
+        "role": "director",
+        "appointed_on": "2024-03-05",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MANNAN, Imran",
+        "role": "director",
+        "appointed_on": "2022-09-06",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SAUBA, Oumaduth",
+        "role": "director",
+        "appointed_on": "2017-11-14",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "SCANLAN, Brenda",
+        "role": "director",
+        "appointed_on": "2016-11-15",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "STEELE, Nita Ewrui Adwoa",
+        "role": "director",
+        "appointed_on": "2025-09-23",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T14:22:59Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MjkyMjI1OGFkaXF6a2N4",
+    "date": "2025-10-01",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/_ycsejmt91hRsKzBQ86kNSioLL058mNrojmtHBqAYfc/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03921436/filing-history/MzQ4MjkyMjI1OGFkaXF6a2N4"
+  }
 }

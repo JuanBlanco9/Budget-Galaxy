@@ -59,13 +59,117 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
     "central_govt": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T21:05:48Z",
+    "company_name": "ACORN TRAINING CONSULTANTS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1996-04-03",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-10-31",
+    "accounts_last_made_up": "2025-01-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-04-10"
+  },
+  "governance": {
+    "api_date": "2026-04-27T21:05:50Z",
+    "total_officers": 33,
+    "active_count": 1,
+    "resigned_count": 32,
+    "active_officers": [
+      {
+        "name": "WEIR, Geoffrey Philip",
+        "role": "director",
+        "appointed_on": "2024-03-18",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T21:05:51Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Learning Curve (Ne) Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2020-09-18",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "England And Wales",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "08616453"
+        }
+      },
+      {
+        "name": "Babington Business College Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2017-02-11",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "England And Wales",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "02673518"
+        }
+      },
+      {
+        "name": "Rehab Group Services Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Corporate",
+          "legal_authority": "English Law",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "02989817"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4NzIyNDIxNWFkaXF6a2N4",
+    "date": "2025-11-03",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/q1ihVrHCzQ92KKlXmXL3rQUHnZD6DL9txJfmDa2XX2E/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03182459/filing-history/MzQ4NzIyNDIxNWFkaXF6a2N4"
   }
 }

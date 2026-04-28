@@ -64,13 +64,135 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T12:34:03Z",
+    "company_name": "ENGLISH RIVIERA BID COMPANY LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2016-06-17",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-30"
+  },
+  "governance": {
+    "api_date": "2026-04-28T12:34:04Z",
+    "total_officers": 24,
+    "active_count": 12,
+    "resigned_count": 12,
+    "active_officers": [
+      {
+        "name": "BANNER-PRICE, Andrew David",
+        "role": "director",
+        "appointed_on": "2023-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BROOK, Martin Robert",
+        "role": "director",
+        "appointed_on": "2017-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CUMING, Richard Andrew",
+        "role": "director",
+        "appointed_on": "2017-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CUSTERSON, Carolyn Dawn",
+        "role": "director",
+        "appointed_on": "2016-12-01",
+        "country_of_residence": "England",
+        "nationality": "English"
+      },
+      {
+        "name": "DENBY, Alan",
+        "role": "director",
+        "appointed_on": "2025-12-12",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "FLOWER, Claire Anne-Marie",
+        "role": "director",
+        "appointed_on": "2017-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GARSIDE, Jason Darrell",
+        "role": "director",
+        "appointed_on": "2019-11-28",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GODFREY, Timothy Michael",
+        "role": "director",
+        "appointed_on": "2016-12-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "HART, Christopher Duncan",
+        "role": "director",
+        "appointed_on": "2017-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PARKER, James William",
+        "role": "director",
+        "appointed_on": "2023-01-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "PAYNE-NEALE, Anthony Dean",
+        "role": "director",
+        "appointed_on": "2019-02-21",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WIDLEY, Kelly",
+        "role": "director",
+        "appointed_on": "2017-11-30",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T12:34:05Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2OTA1ODA4NGFkaXF6a2N4",
+    "date": "2025-06-05",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/W2KuMkWJmadiPBRlkQX14wfb1sUDy7HiDhCmlhmakPo/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/10237792/filing-history/MzQ2OTA1ODA4NGFkaXF6a2N4"
   }
 }

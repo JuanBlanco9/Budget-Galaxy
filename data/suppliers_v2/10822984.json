@@ -65,13 +65,149 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T19:26:19Z",
+    "company_name": "SERVICES MACHINERY & TRUCKS LTD",
+    "company_status": "active",
+    "date_of_creation": "2017-06-16",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-29"
+  },
+  "governance": {
+    "api_date": "2026-04-27T19:26:20Z",
+    "total_officers": 5,
+    "active_count": 4,
+    "resigned_count": 1,
+    "active_officers": [
+      {
+        "name": "ALLEN, Nicholas John",
+        "role": "director",
+        "appointed_on": "2017-08-31",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HUMPHREY, Paul David",
+        "role": "director",
+        "appointed_on": "2017-08-31",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "EERO",
+        "role": "corporate-director",
+        "appointed_on": "2021-11-06",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "ODJA",
+        "role": "corporate-director",
+        "appointed_on": "2019-02-07",
+        "country_of_residence": null,
+        "nationality": null
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T19:26:22Z",
+    "total_results": 5,
+    "active_count": 3,
+    "items": [
+      {
+        "name": "Hera Fp",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors-as-firm"
+        ],
+        "notified_on": "2022-12-29",
+        "identification": {
+          "legal_form": "Trust",
+          "legal_authority": "Belgian Code Of Companies And Associations (2019)",
+          "country_registered": "Belgium",
+          "place_registered": "Belgian Register Of Companies",
+          "registration_number": "0797.067.806"
+        }
+      },
+      {
+        "name": "Mr Georges-Albert Dal",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Belgian",
+        "country_of_residence": "Belgium",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control-as-trust"
+        ],
+        "notified_on": "2022-12-29",
+        "identification": null
+      },
+      {
+        "name": "Mr Matthieu Bocquet",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Belgian",
+        "country_of_residence": "Belgium",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control-as-trust"
+        ],
+        "notified_on": "2022-12-29",
+        "identification": null
+      },
+      {
+        "name": "Mr Patrick De Wolf",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Belgian",
+        "country_of_residence": "Belgium",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control-as-trust"
+        ],
+        "notified_on": "2022-12-22",
+        "identification": null
+      },
+      {
+        "name": "Mr Philippe Charles De Moerloose",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Belgian",
+        "country_of_residence": "Congo, Democratic Republi",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2017-06-16",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3ODM2OTA0OGFkaXF6a2N4",
+    "date": "2025-08-22",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/S4VhEpwyMeRKMpxXq5XlUHcsx1vWBOelGHl9x-qQ22U/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/10822984/filing-history/MzQ3ODM2OTA0OGFkaXF6a2N4"
   }
 }

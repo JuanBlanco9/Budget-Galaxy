@@ -64,13 +64,86 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T21:40:53Z",
+    "company_name": "CARLISLE CONSTRUCTION MATERIALS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1978-06-21",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-26"
+  },
+  "governance": {
+    "api_date": "2026-04-27T21:40:55Z",
+    "total_officers": 22,
+    "active_count": 2,
+    "resigned_count": 20,
+    "active_officers": [
+      {
+        "name": "ARMSTRONG, James Ryan",
+        "role": "director",
+        "appointed_on": "2023-12-04",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      },
+      {
+        "name": "WHITE, Russell Martin",
+        "role": "director",
+        "appointed_on": "2024-10-22",
+        "country_of_residence": "Wales",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T21:40:56Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Carlisle Global Ii Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2019-11-06",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "11231736"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NDMzNTk4NWFkaXF6a2N4",
+    "date": "2025-07-18",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/Blg9kM77-iE0lu2cfX8ZJ2oSEslmmgnhA0r5XsOVVnQ/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01374446/filing-history/MzQ3NDMzNTk4NWFkaXF6a2N4"
   }
 }

@@ -59,13 +59,157 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "education",
   "buyer_type_breakdown": {
     "education": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T10:40:56Z",
+    "company_name": "FUTURELEARN LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2012-12-10",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-05-31",
+    "accounts_last_made_up": "2024-05-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-04-22"
+  },
+  "governance": {
+    "api_date": "2026-04-28T10:40:58Z",
+    "total_officers": 40,
+    "active_count": 7,
+    "resigned_count": 33,
+    "active_officers": [
+      {
+        "name": "BUCKINGHAM, Julia Clare, Professor Dame",
+        "role": "director",
+        "appointed_on": "2025-05-28",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GARCIA, Miguel Angel Blazquez",
+        "role": "director",
+        "appointed_on": "2022-12-13",
+        "country_of_residence": "Spain",
+        "nationality": "Spanish"
+      },
+      {
+        "name": "HOWELL, Ian",
+        "role": "director",
+        "appointed_on": "2025-07-15",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "JOHNSON, Joseph Edmund",
+        "role": "director",
+        "appointed_on": "2023-03-14",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "KLOPOT, Vitali",
+        "role": "director",
+        "appointed_on": "2022-12-13",
+        "country_of_residence": "United Kingdom",
+        "nationality": "Czech"
+      },
+      {
+        "name": "MARIN ROMANO, Rafael",
+        "role": "director",
+        "appointed_on": "2025-07-15",
+        "country_of_residence": "England",
+        "nationality": "British,Spanish"
+      },
+      {
+        "name": "RACHEVSKY, Elad",
+        "role": "director",
+        "appointed_on": "2025-07-15",
+        "country_of_residence": "England",
+        "nationality": "British,Israeli"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T10:40:59Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Uk Academic Holdings Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2024-05-31",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "Uk Register Of Companies",
+          "registration_number": "11104387"
+        }
+      },
+      {
+        "name": "Gah Education Holding Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2022-12-19",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Company Law",
+          "country_registered": "United Kingdom",
+          "place_registered": "United Kingdom",
+          "registration_number": "13072420"
+        }
+      },
+      {
+        "name": "Global University Systems B.V.",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2022-11-30",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Netherlands",
+          "country_registered": "Netherlands",
+          "place_registered": "Netherlands",
+          "registration_number": "55367453"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ1NjkyMTU3MGFkaXF6a2N4",
+    "date": "2025-02-28",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/j0ZjRCE1iRsWvUEUMllISdLQO92x_iFeXAnR2ml03ks/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/08324083/filing-history/MzQ1NjkyMTU3MGFkaXF6a2N4"
   }
 }

@@ -59,13 +59,113 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "nhs",
   "buyer_type_breakdown": {
     "nhs": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T12:48:38Z",
+    "company_name": "FLOWSTORE SYSTEMS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1983-06-27",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-06-30",
+    "accounts_last_made_up": "2025-09-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-09-23"
+  },
+  "governance": {
+    "api_date": "2026-04-28T12:48:39Z",
+    "total_officers": 15,
+    "active_count": 6,
+    "resigned_count": 9,
+    "active_officers": [
+      {
+        "name": "DENNIS, Alison Gail",
+        "role": "secretary",
+        "appointed_on": "2016-03-09",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BOLTON, Simon John",
+        "role": "director",
+        "appointed_on": "2021-06-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "DENNIS, Alison Gail",
+        "role": "director",
+        "appointed_on": "2005-05-05",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "DENNIS, Simon James",
+        "role": "director",
+        "appointed_on": null,
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "JONAS, Austen Sinclair",
+        "role": "director",
+        "appointed_on": "2013-11-17",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "MITA, Ewa",
+        "role": "director",
+        "appointed_on": "2021-06-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "Polish"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T12:48:40Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Flowstore Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "Companies Act",
+          "country_registered": "England & Wales",
+          "place_registered": "Companies House",
+          "registration_number": "02269330"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxNjA2MDQzMGFkaXF6a2N4",
+    "date": "2026-04-14",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/xS9HFcrHkrdQFC9DbjnzRy4gtD3QXcoE3LeG6ck7DRw/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01734709/filing-history/MzUxNjA2MDQzMGFkaXF6a2N4"
   }
 }

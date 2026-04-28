@@ -68,14 +68,146 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.6372,
     "agency": 0.3628
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T13:34:23Z",
+    "company_name": "MIRION TECHNOLOGIES (CANBERRA UK) LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1998-09-29",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-13"
+  },
+  "governance": {
+    "api_date": "2026-04-28T13:34:24Z",
+    "total_officers": 30,
+    "active_count": 2,
+    "resigned_count": 28,
+    "active_officers": [
+      {
+        "name": "A G SECRETARIAL LIMITED",
+        "role": "corporate-secretary",
+        "appointed_on": "2016-04-30",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "COCKS, James Francis Charles",
+        "role": "director",
+        "appointed_on": "2016-09-29",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T13:34:25Z",
+    "total_results": 4,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mirion Technologies, Inc.",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2025-03-25",
+        "identification": {
+          "legal_form": "Corporate",
+          "legal_authority": "The State Of Delaware, United States",
+          "country_registered": "Delaware",
+          "place_registered": "United States",
+          "registration_number": "6910716"
+        }
+      },
+      {
+        "name": "Mirion Technologies (Holdingsub2), Ltd.",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2021-10-20",
+        "identification": {
+          "legal_form": "Company Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "09299632"
+        }
+      },
+      {
+        "name": "Mirion Technologies (Global), Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2019-04-04",
+        "identification": {
+          "legal_form": "Company Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "9300420"
+        }
+      },
+      {
+        "name": "Charterhouse General Partners (Ix) Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Liability Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "01724491"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MjUxOTk3NWFkaXF6a2N4",
+    "date": "2025-09-25",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/y8aox4eeAAj7SG_TTN40enUSsIki-embEwvg3d16sKM/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03640077/filing-history/MzQ4MjUxOTk3NWFkaXF6a2N4"
   }
 }

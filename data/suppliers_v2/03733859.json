@@ -59,13 +59,86 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T22:02:40Z",
+    "company_name": "ELLESMERE CHILDREN'S CENTRE",
+    "company_status": "active",
+    "date_of_creation": "1999-03-17",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-31"
+  },
+  "governance": {
+    "api_date": "2026-04-27T22:02:42Z",
+    "total_officers": 13,
+    "active_count": 5,
+    "resigned_count": 8,
+    "active_officers": [
+      {
+        "name": "ALI, Adar Abdi",
+        "role": "director",
+        "appointed_on": "2024-07-29",
+        "country_of_residence": "England",
+        "nationality": "Somali"
+      },
+      {
+        "name": "BURRELL, Yvonne Gene",
+        "role": "director",
+        "appointed_on": "2017-06-30",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CAMPBELL, David Lloyd",
+        "role": "director",
+        "appointed_on": "2015-06-22",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "DANIEL, Valerie Joy Karlene, Dr",
+        "role": "director",
+        "appointed_on": "2024-06-07",
+        "country_of_residence": "England",
+        "nationality": "Jamaican"
+      },
+      {
+        "name": "HODGE, Anthony Joseph",
+        "role": "director",
+        "appointed_on": "2024-07-18",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T22:02:43Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4OTM3NTI1OWFkaXF6a2N4",
+    "date": "2025-11-19",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/p1Y3w-vyCsV4pNqqpnz2oKRwSOuA_OySC37Q7WwIsMI/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03733859/filing-history/MzQ4OTM3NTI1OWFkaXF6a2N4"
   }
 }

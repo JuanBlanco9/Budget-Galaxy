@@ -70,10 +70,10 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "agency",
   "buyer_type_breakdown": {
@@ -81,5 +81,85 @@
     "council": 0.2991,
     "other": 0.2202,
     "central_govt": 0.0169
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T08:53:07Z",
+    "company_name": "BAM NUTTALL LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1935-09-20",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-09-01"
+  },
+  "governance": {
+    "api_date": "2026-04-28T08:53:08Z",
+    "total_officers": 26,
+    "active_count": 3,
+    "resigned_count": 23,
+    "active_officers": [
+      {
+        "name": "DAVEY, Michelle Jane",
+        "role": "secretary",
+        "appointed_on": "2013-01-01",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "JONES, Huw",
+        "role": "director",
+        "appointed_on": "2023-01-16",
+        "country_of_residence": "Wales",
+        "nationality": "British"
+      },
+      {
+        "name": "PHILLPOT, Ian Gerald",
+        "role": "director",
+        "appointed_on": "2020-10-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T08:53:09Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Bam Group (Uk) Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "01391035"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MTQ3NjYzMWFkaXF6a2N4",
+    "date": "2025-06-25",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/Azf5tLoqAMrt7pQMZ2BJzcfsnKD1uJ1nomPOP_tcyQo/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/00305189/filing-history/MzQ3MTQ3NjYzMWFkaXF6a2N4"
   }
 }

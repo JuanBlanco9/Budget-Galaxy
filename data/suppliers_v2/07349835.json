@@ -59,10 +59,10 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
@@ -70,5 +70,96 @@
     "nhs": 0.0242,
     "council": 0.004,
     "other": 0.0016
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T20:05:36Z",
+    "company_name": "MBKB LTD",
+    "company_status": "active",
+    "date_of_creation": "2010-08-18",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-05-31",
+    "accounts_last_made_up": "2024-08-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-22"
+  },
+  "governance": {
+    "api_date": "2026-04-27T20:05:38Z",
+    "total_officers": 5,
+    "active_count": 4,
+    "resigned_count": 1,
+    "active_officers": [
+      {
+        "name": "BREMNER, Kathleen",
+        "role": "secretary",
+        "appointed_on": "2010-08-18",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BREMNER, Kathleen",
+        "role": "director",
+        "appointed_on": "2010-08-18",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BREMNER, Mark",
+        "role": "director",
+        "appointed_on": "2010-08-18",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GUY, David",
+        "role": "director",
+        "appointed_on": "2018-07-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T20:05:40Z",
+    "total_results": 2,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Mr David Guy",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2018-07-01",
+        "identification": null
+      },
+      {
+        "name": "Mr Mark Bremner",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-07-27",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2ODQxMTUyOWFkaXF6a2N4",
+    "date": "2025-05-30",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-unaudited-abridged",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/hHF82rSl1K__BD7yvcwXP8JthWvXVYkU7UowWvbDUfM/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/07349835/filing-history/MzQ2ODQxMTUyOWFkaXF6a2N4"
   }
 }

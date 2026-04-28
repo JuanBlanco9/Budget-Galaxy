@@ -64,14 +64,133 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.702,
     "council": 0.298
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T15:24:58Z",
+    "company_name": "STARK BUILDING MATERIALS UK LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1982-06-29",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-04-30",
+    "accounts_last_made_up": "2025-07-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-09-03"
+  },
+  "governance": {
+    "api_date": "2026-04-27T15:24:59Z",
+    "total_officers": 54,
+    "active_count": 6,
+    "resigned_count": 48,
+    "active_officers": [
+      {
+        "name": "CASSIDY, Nirma",
+        "role": "secretary",
+        "appointed_on": "2023-11-17",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "AHLE, Thomas",
+        "role": "director",
+        "appointed_on": "2024-09-03",
+        "country_of_residence": "Denmark",
+        "nationality": "Danish"
+      },
+      {
+        "name": "CARTER, John Peter",
+        "role": "director",
+        "appointed_on": "2023-03-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "JØRGENSEN, Laurits Anton",
+        "role": "director",
+        "appointed_on": "2023-03-07",
+        "country_of_residence": "Denmark",
+        "nationality": "Danish"
+      },
+      {
+        "name": "MARTIN, James",
+        "role": "director",
+        "appointed_on": "2023-02-28",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "OLESEN, Søren Peschardt",
+        "role": "director",
+        "appointed_on": "2023-02-28",
+        "country_of_residence": "Denmark",
+        "nationality": "Danish"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T15:25:01Z",
+    "total_results": 2,
+    "active_count": 0,
+    "items": [
+      {
+        "name": "Saint-Gobain Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2017-06-01",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "United Kingdom (England)",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "3291592"
+        }
+      },
+      {
+        "name": "Compagnie De Saint-Gobain",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control-as-firm"
+        ],
+        "notified_on": "2017-06-01",
+        "identification": {
+          "legal_form": "Corporate",
+          "legal_authority": "France",
+          "country_registered": "France",
+          "place_registered": "France Companies Registry",
+          "registration_number": "54203953200040 7010z Nanterre"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxMjk5MDE0OGFkaXF6a2N4",
+    "date": "2026-04-04",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/torjfe5AprULD6ZUdhBeXOkqhHgjUqzFgF69fI0I9Cs/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01647362/filing-history/MzUxMjk5MDE0OGFkaXF6a2N4"
   }
 }

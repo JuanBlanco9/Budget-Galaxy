@@ -64,11 +64,130 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
-  "buyer_type_breakdown": {}
+  "buyer_type_breakdown": {},
+  "ch_profile": {
+    "api_date": "2026-04-28T14:14:01Z",
+    "company_name": "RPP MANAGEMENT LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1984-05-09",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-03"
+  },
+  "governance": {
+    "api_date": "2026-04-28T14:14:03Z",
+    "total_officers": 25,
+    "active_count": 6,
+    "resigned_count": 19,
+    "active_officers": [
+      {
+        "name": "BARNICOAT, Simon Richard",
+        "role": "director",
+        "appointed_on": "2023-09-26",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BLENARD, Alex",
+        "role": "director",
+        "appointed_on": "2016-03-09",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "OWEN, Richard Christopher",
+        "role": "director",
+        "appointed_on": "2023-09-26",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PROCTOR, Martin Jack",
+        "role": "director",
+        "appointed_on": "2023-09-26",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "RATHBONE, Marcus Jon",
+        "role": "director",
+        "appointed_on": "2023-09-26",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WILLIAMS, David John",
+        "role": "director",
+        "appointed_on": "2023-09-26",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T14:14:04Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Radium Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2024-06-17",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "11705250"
+        }
+      },
+      {
+        "name": "Rpp Group Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2017-02-26",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "Registrar Of Companies (England And Wales)",
+          "registration_number": "07968623"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NTM5NTg2MWFkaXF6a2N4",
+    "date": "2025-12-19",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/Dx8h-XC3nWIIQOeUuXGmUGuChD_oEwvOcFdSgVwvn6I/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01814890/filing-history/MzQ5NTM5NTg2MWFkaXF6a2N4"
+  }
 }

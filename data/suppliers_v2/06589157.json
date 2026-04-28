@@ -59,13 +59,131 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
     "central_govt": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T11:39:09Z",
+    "company_name": "SYLVA FOUNDATION",
+    "company_status": "active",
+    "date_of_creation": "2008-05-09",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-05-23"
+  },
+  "governance": {
+    "api_date": "2026-04-28T11:39:11Z",
+    "total_officers": 18,
+    "active_count": 9,
+    "resigned_count": 9,
+    "active_officers": [
+      {
+        "name": "BRYAN, Amanda Jayne",
+        "role": "director",
+        "appointed_on": "2025-03-11",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      },
+      {
+        "name": "BUXTON, Robin David, Dr",
+        "role": "director",
+        "appointed_on": "2017-07-10",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CARY, Lucius John Arthur",
+        "role": "director",
+        "appointed_on": "2012-03-26",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "COX, Sebastian Dominic",
+        "role": "director",
+        "appointed_on": "2025-11-11",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MORISON, James Ivo Lindsay, Dr",
+        "role": "director",
+        "appointed_on": "2019-09-17",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "OLDFIELD, Phoebe Tabitha Madison",
+        "role": "director",
+        "appointed_on": "2024-07-18",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "TAYLOR, Sarah Jane",
+        "role": "director",
+        "appointed_on": "2018-09-17",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "TEW, Eleanor Rosemary, Dr",
+        "role": "director",
+        "appointed_on": "2024-11-19",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WATERSON, James",
+        "role": "director",
+        "appointed_on": "2020-11-25",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T11:39:12Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Board Of Trustees",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors-as-trust",
+          "significant-influence-or-control-as-trust"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3ODc4ODc4OWFkaXF6a2N4",
+    "date": "2025-08-27",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/bEBsqC6DqNGE_KlQJT1hIYCMS5XWcpk1n5GMQWziKbY/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/06589157/filing-history/MzQ3ODc4ODc4OWFkaXF6a2N4"
   }
 }

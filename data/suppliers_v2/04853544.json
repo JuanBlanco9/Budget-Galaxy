@@ -59,13 +59,112 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T05:14:16Z",
+    "company_name": "BAYITH REST HOME  LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2003-08-01",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-03-14",
+    "accounts_last_made_up": "2025-06-14",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-20"
+  },
+  "governance": {
+    "api_date": "2026-04-28T05:14:17Z",
+    "total_officers": 7,
+    "active_count": 2,
+    "resigned_count": 5,
+    "active_officers": [
+      {
+        "name": "PARIKH, Amrish",
+        "role": "director",
+        "appointed_on": "2023-06-14",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "PARIKH, Neha",
+        "role": "director",
+        "appointed_on": "2023-06-14",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T05:14:18Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Sure Healthcare Services Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2023-06-14",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Uk",
+          "country_registered": "United Kingdom",
+          "place_registered": "Sure Healthcare Services Ltd",
+          "registration_number": "11158520"
+        }
+      },
+      {
+        "name": "Mrs Carol Ann Giles",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-08-01",
+        "identification": null
+      },
+      {
+        "name": "Ms Jane Catherine Giles",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent"
+        ],
+        "notified_on": "2016-08-01",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxMDIyOTM3NmFkaXF6a2N4",
+    "date": "2026-03-13",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/aPRrK63zbtopoLpQleRJQ9FjMbGay0V2Dy0wrmBix2w/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04853544/filing-history/MzUxMDIyOTM3NmFkaXF6a2N4"
   }
 }

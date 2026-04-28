@@ -66,13 +66,100 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T22:21:04Z",
+    "company_name": "ONE COMMUNITY EASTLEIGH",
+    "company_status": "active",
+    "date_of_creation": "1995-11-30",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-25"
+  },
+  "governance": {
+    "api_date": "2026-04-27T22:21:06Z",
+    "total_officers": 47,
+    "active_count": 7,
+    "resigned_count": 40,
+    "active_officers": [
+      {
+        "name": "MALCOLM, Hayley",
+        "role": "secretary",
+        "appointed_on": "2023-09-11",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BLACK, Andrew Paton",
+        "role": "director",
+        "appointed_on": "2019-09-24",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BLOOMFIELD, Gail Elaine",
+        "role": "director",
+        "appointed_on": "2020-09-25",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CLEWS, Warwick Edgar Lawson",
+        "role": "director",
+        "appointed_on": "2021-09-13",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "DAY, Kim",
+        "role": "director",
+        "appointed_on": "2023-11-16",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ROBINSON, Tahina",
+        "role": "director",
+        "appointed_on": "2023-11-16",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "STATHAM, Patricia Rose",
+        "role": "director",
+        "appointed_on": "2017-09-19",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T22:21:07Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwMjg1NjgzMGFkaXF6a2N4",
+    "date": "2026-02-06",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/KJGA6CPhYz5kA4dxL7qDdNxQPSVVXs4E4x_-Bjea4A4/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03132524/filing-history/MzUwMjg1NjgzMGFkaXF6a2N4"
   }
 }

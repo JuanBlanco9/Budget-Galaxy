@@ -59,14 +59,91 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.7314,
     "central_govt": 0.2686
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T10:15:46Z",
+    "company_name": "FIRST FORENSIC SOLUTIONS LTD",
+    "company_status": "active",
+    "date_of_creation": "2009-07-21",
+    "date_of_cessation": null,
+    "jurisdiction": "northern-ireland",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-08-04"
+  },
+  "governance": {
+    "api_date": "2026-04-28T10:15:47Z",
+    "total_officers": 3,
+    "active_count": 2,
+    "resigned_count": 1,
+    "active_officers": [
+      {
+        "name": "GRILLS, Heather",
+        "role": "director",
+        "appointed_on": "2009-07-21",
+        "country_of_residence": "Northern Ireland",
+        "nationality": "British"
+      },
+      {
+        "name": "GRILLS, Stephen",
+        "role": "director",
+        "appointed_on": "2009-07-21",
+        "country_of_residence": "Northern Ireland",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T10:15:48Z",
+    "total_results": 2,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Mr Stephen William Grills",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "Northern Ireland",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mrs Heather Elizabeth Grills",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "Northern Ireland",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MjYzNjA3NmFkaXF6a2N4",
+    "date": "2025-12-05",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-unaudited-abridged",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/7lWMi6zwncx9CaIIXVhAuJJLqF3m4qi8nInrkJghgvA/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/NI073253/filing-history/MzQ5MjYzNjA3NmFkaXF6a2N4"
   }
 }

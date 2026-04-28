@@ -72,14 +72,129 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 0.5914,
     "other": 0.4086
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T05:59:02Z",
+    "company_name": "MIND TOOLS LTD",
+    "company_status": "active",
+    "date_of_creation": "1999-12-02",
+    "date_of_cessation": null,
+    "jurisdiction": "scotland",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-15"
+  },
+  "governance": {
+    "api_date": "2026-04-28T05:59:03Z",
+    "total_officers": 40,
+    "active_count": 4,
+    "resigned_count": 36,
+    "active_officers": [
+      {
+        "name": "BREHM, Matthew",
+        "role": "director",
+        "appointed_on": "2023-09-12",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      },
+      {
+        "name": "SHAHANI, Shabnam",
+        "role": "director",
+        "appointed_on": "2023-10-03",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SHARMA, Pankaj",
+        "role": "director",
+        "appointed_on": "2023-09-12",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      },
+      {
+        "name": "TRAINOR, Larisa Avner",
+        "role": "director",
+        "appointed_on": "2023-09-12",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T05:59:04Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mind Tools Holdings Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2025-05-02",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "England And Wales",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "16388622"
+        }
+      },
+      {
+        "name": "Andrew Synder",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "American",
+        "country_of_residence": "United States",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2023-08-31",
+        "identification": null
+      },
+      {
+        "name": "Emerald Group Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2016-10-16",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Uk Law"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxNTE4ODE4NGFkaXF6a2N4",
+    "date": "2026-04-10",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/NBT34iVE0ufCumnVfViaiComxyzZkIjUuU6UMhMPmh4/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/SC202102/filing-history/MzUxNTE4ODE4NGFkaXF6a2N4"
   }
 }

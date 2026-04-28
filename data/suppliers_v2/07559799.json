@@ -59,14 +59,136 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
     "central_govt": 0.6707,
     "council": 0.3293
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T13:52:56Z",
+    "company_name": "HOUSING ACTION MANAGEMENT LTD",
+    "company_status": "active",
+    "date_of_creation": "2011-03-10",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-12"
+  },
+  "governance": {
+    "api_date": "2026-04-27T13:52:57Z",
+    "total_officers": 13,
+    "active_count": 3,
+    "resigned_count": 10,
+    "active_officers": [
+      {
+        "name": "CONNORS, Nicky",
+        "role": "director",
+        "appointed_on": "2012-07-17",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "MITCHELL, Kelly Rosemary Glenda, Lady",
+        "role": "director",
+        "appointed_on": "2018-06-11",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "MITCHELL, Warren George, Lord",
+        "role": "director",
+        "appointed_on": "2024-09-23",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T13:52:59Z",
+    "total_results": 4,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Housing Action Holdings Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2024-06-28",
+        "identification": {
+          "legal_form": "Limited",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "England Companies Registry",
+          "registration_number": "15794221"
+        }
+      },
+      {
+        "name": "Lady Kelly Rosemary Glenda Mitchell",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2018-06-11",
+        "identification": null
+      },
+      {
+        "name": "Mr Harold George Mitchell",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2018-03-09",
+        "identification": null
+      },
+      {
+        "name": "Mr Rajbinder Singh Johal",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2017-04-09",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxMzI2NzcwMmFkaXF6a2N4",
+    "date": "2026-03-30",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/Rjv7XJzfxvw4B3C3QWed1pIBs0s9kejT5Q8ITE9GH1E/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/07559799/filing-history/MzUxMzI2NzcwMmFkaXF6a2N4"
   }
 }

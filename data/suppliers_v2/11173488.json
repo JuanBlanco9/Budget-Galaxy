@@ -59,13 +59,107 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T07:23:20Z",
+    "company_name": "HELP2RENT LIMITED",
+    "company_status": "liquidation",
+    "date_of_creation": "2018-01-29",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": true,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-05-31",
+    "accounts_last_made_up": "2024-05-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-04"
+  },
+  "governance": {
+    "api_date": "2026-04-28T07:23:21Z",
+    "total_officers": 7,
+    "active_count": 2,
+    "resigned_count": 5,
+    "active_officers": [
+      {
+        "name": "ACHARYA, Paresh Kieron",
+        "role": "director",
+        "appointed_on": "2024-10-12",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ACHARYA, Paresh",
+        "role": "director",
+        "appointed_on": "2019-02-06",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T07:23:22Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Ms Michelle Louise Rogers",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2019-06-21",
+        "identification": null
+      },
+      {
+        "name": "Mr Paresh Acharya",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent",
+          "voting-rights-50-to-75-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2019-02-06",
+        "identification": null
+      },
+      {
+        "name": "Michelle Louise Rogers",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent",
+          "voting-rights-50-to-75-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2018-04-30",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2ODU0NjgzMWFkaXF6a2N4",
+    "date": "2025-05-31",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-micro-entity",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/56GP-tHRJPuvjuNPkcJgOm37o912UcAij28AjIsdpzo/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/11173488/filing-history/MzQ2ODU0NjgzMWFkaXF6a2N4"
   }
 }

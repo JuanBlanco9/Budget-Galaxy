@@ -64,13 +64,191 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
     "central_govt": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T13:27:50Z",
+    "company_name": "THE SOCIETY OF PENSION PROFESSIONALS",
+    "company_status": "active",
+    "date_of_creation": "1995-08-29",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-09-30",
+    "accounts_last_made_up": "2025-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-09-12"
+  },
+  "governance": {
+    "api_date": "2026-04-28T13:27:51Z",
+    "total_officers": 114,
+    "active_count": 30,
+    "resigned_count": 84,
+    "active_officers": [
+      {
+        "name": "ARENDS, Matthew Lambert",
+        "role": "director",
+        "appointed_on": "2025-03-28",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "BROOK, Laura Jayne",
+        "role": "director",
+        "appointed_on": "2024-10-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BROWN, Edward Quentin Fitzwilliam",
+        "role": "director",
+        "appointed_on": "2017-06-15",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "BROWN, Janet Elizabeth",
+        "role": "director",
+        "appointed_on": "2020-12-18",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "EMDEN, Richard Frederick",
+        "role": "director",
+        "appointed_on": "2020-05-12",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "EVANS, Alice Jane Primrose",
+        "role": "director",
+        "appointed_on": "2021-08-18",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GERRING, Daniel James",
+        "role": "director",
+        "appointed_on": "2020-06-05",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "GILES, Matthew John",
+        "role": "director",
+        "appointed_on": "2024-06-19",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GRAY, Julie Lindsay",
+        "role": "director",
+        "appointed_on": "2022-09-16",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "HITCHINER, Stephen Paul",
+        "role": "director",
+        "appointed_on": "2011-05-25",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "HULL, Steven Edward",
+        "role": "director",
+        "appointed_on": "2022-09-16",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "JARVIS, Faye Carrine",
+        "role": "director",
+        "appointed_on": "2023-08-15",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LORD, Michael Andrew",
+        "role": "director",
+        "appointed_on": "2026-02-17",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MACK, Barry David",
+        "role": "director",
+        "appointed_on": "2021-08-18",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MASTERS, Matthew James",
+        "role": "director",
+        "appointed_on": "2023-02-27",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MATTEUCCI, Donna Chi Nga",
+        "role": "director",
+        "appointed_on": "2021-03-04",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "SLOCOMBE, Arron Leigh",
+        "role": "director",
+        "appointed_on": "2022-08-18",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "SUCKLING, Grant Paul",
+        "role": "director",
+        "appointed_on": "2021-08-18",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "WILSON, John William",
+        "role": "director",
+        "appointed_on": "2025-07-17",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      },
+      {
+        "name": "ABERDEEN GROUP PLC",
+        "role": "corporate-director",
+        "appointed_on": "2021-08-27",
+        "country_of_residence": null,
+        "nationality": null
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T13:27:52Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxNjgyMzQyNWFkaXF6a2N4",
+    "date": "2026-04-21",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/ZPKD-a1tZKOpwIjX6GM139_RuPsNly6K-LpHw4CYG90/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03095982/filing-history/MzUxNjgyMzQyNWFkaXF6a2N4"
   }
 }

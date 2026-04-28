@@ -59,13 +59,93 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "police_fire",
   "buyer_type_breakdown": {
     "police_fire": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T00:14:20Z",
+    "company_name": "MALDON ACCIDENT REPAIR CENTRE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2022-03-18",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-03-31",
+    "accounts_last_made_up": "2025-06-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-31"
+  },
+  "governance": {
+    "api_date": "2026-04-28T00:14:22Z",
+    "total_officers": 3,
+    "active_count": 3,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "JENNINGS, Lisa Joy",
+        "role": "director",
+        "appointed_on": "2022-03-18",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "JENNINGS, Michael Alfred Patrick",
+        "role": "director",
+        "appointed_on": "2022-03-18",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "SURMONT, Stephan Arnold Suzanne Patrick",
+        "role": "director",
+        "appointed_on": "2025-11-01",
+        "country_of_residence": "Spain",
+        "nationality": "Belgian"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T00:14:23Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Nationwide Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2022-03-18",
+        "identification": {
+          "legal_form": "English",
+          "legal_authority": "Limited",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "13340660"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxMzYxNDQ1M2FkaXF6a2N4",
+    "date": "2026-03-31",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/m9tKjOx1xvGHZMwy399qUbCl7Hl014MHo2BF-inJJ4E/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/13986918/filing-history/MzUxMzYxNDQ1M2FkaXF6a2N4"
   }
 }

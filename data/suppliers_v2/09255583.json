@@ -64,11 +64,119 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
-  "buyer_type_breakdown": {}
+  "buyer_type_breakdown": {},
+  "ch_profile": {
+    "api_date": "2026-04-28T14:44:26Z",
+    "company_name": "WILLOW CARE & SUPPORT LTD",
+    "company_status": "liquidation",
+    "date_of_creation": "2014-10-08",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": true,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": true,
+    "accounts_next_due": "2025-07-31",
+    "accounts_last_made_up": "2023-10-31",
+    "confirmation_statement_overdue": true,
+    "confirmation_statement_next_due": "2024-10-20"
+  },
+  "governance": {
+    "api_date": "2026-04-28T14:44:27Z",
+    "total_officers": 10,
+    "active_count": 1,
+    "resigned_count": 9,
+    "active_officers": [
+      {
+        "name": "KAHORO, Peter Kihara",
+        "role": "director",
+        "appointed_on": "2023-05-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T14:44:28Z",
+    "total_results": 5,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Peter Kihara Kahoro",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2023-05-01",
+        "identification": null
+      },
+      {
+        "name": "Mr Peter Kihara Kahoro",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors",
+          "right-to-appoint-and-remove-directors-as-trust",
+          "right-to-appoint-and-remove-directors-as-firm"
+        ],
+        "notified_on": "2023-02-01",
+        "identification": null
+      },
+      {
+        "name": "Mr Peter Kihara Kahoro",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2021-03-01",
+        "identification": null
+      },
+      {
+        "name": "Ms Mary Gathoni Kieru",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2018-07-01",
+        "identification": null
+      },
+      {
+        "name": "Mr Peter Kihara Kahoro",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-10-01",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQxNzMxMzcxN2FkaXF6a2N4",
+    "date": "2024-04-05",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-unaudited-abridged",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/oZWO2rev19yiNsXfS6g8d86q2dC718jhAJs2l1DAL2c/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/09255583/filing-history/MzQxNzMxMzcxN2FkaXF6a2N4"
+  }
 }

@@ -66,13 +66,114 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T11:12:40Z",
+    "company_name": "MATCHSTICK CREATIVE LTD",
+    "company_status": "liquidation",
+    "date_of_creation": "2018-01-29",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": true,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": true,
+    "accounts_next_due": "2025-12-31",
+    "accounts_last_made_up": "2024-03-31",
+    "confirmation_statement_overdue": true,
+    "confirmation_statement_next_due": "2026-02-11"
+  },
+  "governance": {
+    "api_date": "2026-04-28T11:12:41Z",
+    "total_officers": 3,
+    "active_count": 2,
+    "resigned_count": 1,
+    "active_officers": [
+      {
+        "name": "MACOY, Gregory",
+        "role": "director",
+        "appointed_on": "2019-10-29",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WILDHART, Ruth",
+        "role": "director",
+        "appointed_on": "2018-01-29",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T11:12:42Z",
+    "total_results": 4,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Mr Gregory Macoy",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2019-10-01",
+        "identification": null
+      },
+      {
+        "name": "Miss Ruth Hartnoll",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2018-05-25",
+        "identification": null
+      },
+      {
+        "name": "Mr James David Gordon",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2018-01-29",
+        "identification": null
+      },
+      {
+        "name": "Mrs Ruth Wildhart",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2018-01-29",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ0ODgxNDAxMGFkaXF6a2N4",
+    "date": "2024-12-23",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/fvTLQ5hGQz1JSQQnyWmh5lx1YzoEZxWofttTJW0mCuo/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/11175202/filing-history/MzQ0ODgxNDAxMGFkaXF6a2N4"
   }
 }

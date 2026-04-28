@@ -64,13 +64,100 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T13:58:19Z",
+    "company_name": "UK POWER NETWORKS SERVICES (COMMERCIAL) LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1994-09-05",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-05-29"
+  },
+  "governance": {
+    "api_date": "2026-04-28T13:58:20Z",
+    "total_officers": 30,
+    "active_count": 4,
+    "resigned_count": 26,
+    "active_officers": [
+      {
+        "name": "PACE, Andrew Charles",
+        "role": "secretary",
+        "appointed_on": "2018-04-30",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "CHAN, Loi Shun",
+        "role": "director",
+        "appointed_on": "2012-09-10",
+        "country_of_residence": "Hong Kong",
+        "nationality": "Chinese"
+      },
+      {
+        "name": "HUNTER, Andrew John",
+        "role": "director",
+        "appointed_on": "2010-10-29",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "SCARSELLA, Basil",
+        "role": "director",
+        "appointed_on": "2010-10-29",
+        "country_of_residence": "United Kingdom",
+        "nationality": "Australian"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T13:58:21Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Uk Power Networks Services (Asset Management) Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "England And Wales",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "3003570"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NzM4NTI0MGFkaXF6a2N4",
+    "date": "2025-08-15",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/SJfqd4mVQSh75EPJqROTdrq7raqBcGEY-5-A-YdHfyc/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02965182/filing-history/MzQ3NzM4NTI0MGFkaXF6a2N4"
   }
 }

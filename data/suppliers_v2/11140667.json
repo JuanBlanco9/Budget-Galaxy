@@ -70,14 +70,108 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.9023,
     "council": 0.0977
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T08:15:41Z",
+    "company_name": "FIRST-RATE MAINTENANCE LIMITED",
+    "company_status": "administration",
+    "date_of_creation": "2018-01-09",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": true,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-01-31",
+    "accounts_last_made_up": "2025-04-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-06"
+  },
+  "governance": {
+    "api_date": "2026-04-28T08:15:42Z",
+    "total_officers": 6,
+    "active_count": 5,
+    "resigned_count": 1,
+    "active_officers": [
+      {
+        "name": "DUNN, Andrew Robert",
+        "role": "director",
+        "appointed_on": "2024-05-03",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "PONTON, Richard Paul",
+        "role": "director",
+        "appointed_on": "2018-01-09",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "SMITH, Mark Andrew",
+        "role": "director",
+        "appointed_on": "2018-01-09",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "THOMPSON, Sally Joanne",
+        "role": "director",
+        "appointed_on": "2024-05-03",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "WALTON, Mark Adam",
+        "role": "director",
+        "appointed_on": "2018-01-09",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T08:15:43Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Westlands Acquisitions Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2018-01-09",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "04639363"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwMjE0Nzc0M2FkaXF6a2N4",
+    "date": "2026-01-29",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/AYIqOSrLE28Fh4WX4Ac5ToBjDot6I9V4LyStWm3QAz8/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/11140667/filing-history/MzUwMjE0Nzc0M2FkaXF6a2N4"
   }
 }

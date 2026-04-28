@@ -59,13 +59,127 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T19:49:57Z",
+    "company_name": "LANGUARD LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1981-10-26",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-09-15"
+  },
+  "governance": {
+    "api_date": "2026-04-27T19:49:59Z",
+    "total_officers": 13,
+    "active_count": 6,
+    "resigned_count": 7,
+    "active_officers": [
+      {
+        "name": "HALL, Belinda Elaine",
+        "role": "secretary",
+        "appointed_on": "2001-04-25",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "ANDERSON, Kyle",
+        "role": "director",
+        "appointed_on": "2026-04-02",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BLAND, David Christopher",
+        "role": "director",
+        "appointed_on": "2026-04-02",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "KAY, William Stuart",
+        "role": "director",
+        "appointed_on": null,
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "MARLOW, Antony William",
+        "role": "director",
+        "appointed_on": "1998-10-28",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "MASON, Alisdair",
+        "role": "director",
+        "appointed_on": "2006-10-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T19:50:01Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Languard Employees Trustee Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2026-04-02",
+        "identification": {
+          "legal_form": "Private Company Limited By Guarantee Without Share Capital",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "17113894"
+        }
+      },
+      {
+        "name": "Mr William Stuart Kay",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2NzM0ODQ4NGFkaXF6a2N4",
+    "date": "2025-05-21",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/f1HS6fh35-WC5AhbE218p1vD2hR6G6bIJCmaQ1ipkNU/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01593319/filing-history/MzQ2NzM0ODQ4NGFkaXF6a2N4"
   }
 }

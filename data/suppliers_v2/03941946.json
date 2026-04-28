@@ -70,13 +70,93 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "education",
   "buyer_type_breakdown": {
     "education": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T02:56:34Z",
+    "company_name": "THE DYSLEXIA ASSOCIATION",
+    "company_status": "active",
+    "date_of_creation": "2000-03-07",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-04-03"
+  },
+  "governance": {
+    "api_date": "2026-04-28T02:56:35Z",
+    "total_officers": 38,
+    "active_count": 6,
+    "resigned_count": 32,
+    "active_officers": [
+      {
+        "name": "CARTER, Kay Elizabeth",
+        "role": "secretary",
+        "appointed_on": "2022-12-08",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "CAUNT, Denise",
+        "role": "director",
+        "appointed_on": "2023-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HILES, Terence William",
+        "role": "director",
+        "appointed_on": "2015-12-03",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MORLEY, Daniel",
+        "role": "director",
+        "appointed_on": "2023-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PURCELL, Nicola Jayne",
+        "role": "director",
+        "appointed_on": "2023-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SMITH, David Mark-Anthony",
+        "role": "director",
+        "appointed_on": "2024-08-07",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T02:56:36Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MjEwNTAwN2FkaXF6a2N4",
+    "date": "2025-09-22",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/e9cTu3k489zhuErrBbdqd6kDnLnq1arwM65LnSq78-U/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03941946/filing-history/MzQ4MjEwNTAwN2FkaXF6a2N4"
   }
 }

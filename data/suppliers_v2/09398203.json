@@ -59,15 +59,94 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 0.6168,
     "police_fire": 0.1917,
     "other": 0.1915
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T07:11:45Z",
+    "company_name": "PARK PLACE TECHNOLOGIES LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2015-01-20",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-03"
+  },
+  "governance": {
+    "api_date": "2026-04-28T07:11:46Z",
+    "total_officers": 7,
+    "active_count": 3,
+    "resigned_count": 4,
+    "active_officers": [
+      {
+        "name": "DELLINGER, Elizabeth Ann",
+        "role": "director",
+        "appointed_on": "2019-07-24",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      },
+      {
+        "name": "ELLIS, Darren",
+        "role": "director",
+        "appointed_on": "2023-11-18",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "NEFF, David Adam",
+        "role": "director",
+        "appointed_on": "2023-02-01",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T07:11:47Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Park Place Technologies Uk Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2019-07-24",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "12046858"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4NDMxNzYxNmFkaXF6a2N4",
+    "date": "2025-10-09",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-audit-exemption-subsiduary",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/K5IZRSW3rbEpULyXyibmpGUZP2Ci-f9ICzccE3JVQFM/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/09398203/filing-history/MzQ4NDMxNzYxNmFkaXF6a2N4"
   }
 }

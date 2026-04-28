@@ -63,11 +63,119 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
-  "buyer_type_breakdown": {}
+  "buyer_type_breakdown": {},
+  "ch_profile": {
+    "api_date": "2026-04-28T14:16:33Z",
+    "company_name": "HAMELIN TRUST",
+    "company_status": "active",
+    "date_of_creation": "1991-09-30",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-14"
+  },
+  "governance": {
+    "api_date": "2026-04-28T14:16:35Z",
+    "total_officers": 52,
+    "active_count": 10,
+    "resigned_count": 42,
+    "active_officers": [
+      {
+        "name": "WATKINS, Mark Justin Godwin",
+        "role": "secretary",
+        "appointed_on": "2021-10-12",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BISHOP, James",
+        "role": "director",
+        "appointed_on": "2023-09-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BRYANT, Laura",
+        "role": "director",
+        "appointed_on": "2023-10-16",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GAIGER, Jamie Andrew Gerard",
+        "role": "director",
+        "appointed_on": "2025-01-13",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MARSHALL, Laura Louise",
+        "role": "director",
+        "appointed_on": "2025-03-17",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "NIGHTINGALE, Stephen",
+        "role": "director",
+        "appointed_on": "2025-03-17",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "POTTLE, Aaron",
+        "role": "director",
+        "appointed_on": "2024-05-13",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WALDON, Victoria Frances Ann",
+        "role": "director",
+        "appointed_on": "2022-06-23",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WILSON, James",
+        "role": "director",
+        "appointed_on": "2023-10-16",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WOODHAM, Graham Kenneth",
+        "role": "director",
+        "appointed_on": "2019-04-04",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T14:16:36Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MTc0MzQzMWFkaXF6a2N4",
+    "date": "2025-12-03",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/gy1bYN6CdCtZwpxgPPAF6fth0tWFTWcd9nLv6Ce34-Q/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02650043/filing-history/MzQ5MTc0MzQzMWFkaXF6a2N4"
+  }
 }

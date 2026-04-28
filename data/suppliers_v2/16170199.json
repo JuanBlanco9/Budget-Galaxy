@@ -49,57 +49,19 @@
   },
   "financial_health": null,
   "governance": {
-    "officers_active_count": 1,
-    "officers_resigned_count": 0,
-    "board_turnover_ratio": 0.0,
-    "board_turnover_signal": "low",
-    "active_directors": [
+    "api_date": "2026-04-27T14:11:23Z",
+    "total_officers": 1,
+    "active_count": 1,
+    "resigned_count": 0,
+    "active_officers": [
       {
         "name": "AHMAD, Muhammad Usman",
         "role": "director",
         "appointed_on": "2025-01-08",
-        "resigned_on": null,
-        "nationality": "Pakistani",
-        "occupation": null,
         "country_of_residence": "United Kingdom",
-        "date_of_birth": {
-          "month": 8,
-          "year": 2001
-        },
-        "address": {
-          "locality": "London",
-          "postal_code": "N3 1BB",
-          "country": "United Kingdom"
-        }
+        "nationality": "Pakistani"
       }
-    ],
-    "secretaries": [],
-    "all_active_officers": [
-      {
-        "name": "AHMAD, Muhammad Usman",
-        "role": "director",
-        "appointed_on": "2025-01-08",
-        "resigned_on": null,
-        "nationality": "Pakistani",
-        "occupation": null,
-        "country_of_residence": "United Kingdom",
-        "date_of_birth": {
-          "month": 8,
-          "year": 2001
-        },
-        "address": {
-          "locality": "London",
-          "postal_code": "N3 1BB",
-          "country": "United Kingdom"
-        }
-      }
-    ],
-    "resigned_officers_summary": {
-      "count": 0,
-      "recent": []
-    },
-    "direct_psc_count": 1,
-    "direct_psc_statements": []
+    ]
   },
   "ownership_chain": {
     "resolution": "individual",
@@ -196,5 +158,47 @@
     "note": "No Contracts Finder matches for this supplier in 2020-2024."
   },
   "top_buyer_type": "other",
-  "buyer_type_breakdown": {}
+  "buyer_type_breakdown": {},
+  "ch_profile": {
+    "api_date": "2026-04-27T14:11:22Z",
+    "company_name": "DVLACOMMERCE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2025-01-08",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-10-08",
+    "accounts_last_made_up": null,
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-21"
+  },
+  "pscs": {
+    "api_date": "2026-04-27T14:11:25Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Muhammad Usman Ahmad",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Pakistani",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2025-01-08",
+        "identification": null
+      }
+    ]
+  },
+  "enrichment_stages": {
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true
+  }
 }

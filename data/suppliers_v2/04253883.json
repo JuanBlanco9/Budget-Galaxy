@@ -64,14 +64,114 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.8884,
     "council": 0.1116
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T20:27:13Z",
+    "company_name": "E.NOVATION UK LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2001-07-17",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-18"
+  },
+  "governance": {
+    "api_date": "2026-04-27T20:27:15Z",
+    "total_officers": 13,
+    "active_count": 3,
+    "resigned_count": 10,
+    "active_officers": [
+      {
+        "name": "SHEAD, Paul",
+        "role": "secretary",
+        "appointed_on": "2022-04-29",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "SHEAD, Paul",
+        "role": "director",
+        "appointed_on": "2021-10-08",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "VAN DER VELDEN, Marcel",
+        "role": "director",
+        "appointed_on": "2025-01-01",
+        "country_of_residence": "Netherlands",
+        "nationality": "Dutch"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T20:27:16Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Legrand Sa",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2024-04-23",
+        "identification": {
+          "legal_form": "Limited Liability Company",
+          "legal_authority": "French Company Law",
+          "country_registered": "France",
+          "place_registered": "Limoges",
+          "registration_number": "758 501 001"
+        }
+      },
+      {
+        "name": "E.Novation Group Bv",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-07-17",
+        "identification": {
+          "legal_form": "Company",
+          "legal_authority": "Dutch Company Law",
+          "country_registered": "Netherlands",
+          "place_registered": "Netherlands",
+          "registration_number": "24288188"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MDU3MzI5MWFkaXF6a2N4",
+    "date": "2025-09-11",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/m9FMSRQmH97QYohQYF6Ogt9lnsyu4Ltd-9gEfqeqpL8/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04253883/filing-history/MzQ4MDU3MzI5MWFkaXF6a2N4"
   }
 }

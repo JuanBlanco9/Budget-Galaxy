@@ -59,13 +59,114 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "education",
   "buyer_type_breakdown": {
     "education": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T09:24:39Z",
+    "company_name": "UNIVERSITY HOSPITALS COVENTRY AND WARWICKSHIRE CHARITY",
+    "company_status": "active",
+    "date_of_creation": "2016-02-01",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-14"
+  },
+  "governance": {
+    "api_date": "2026-04-28T09:24:41Z",
+    "total_officers": 22,
+    "active_count": 9,
+    "resigned_count": 13,
+    "active_officers": [
+      {
+        "name": "BHABRA, Amrik Singh",
+        "role": "director",
+        "appointed_on": "2016-03-09",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BRIGSTOCK, Tracey",
+        "role": "director",
+        "appointed_on": "2023-01-25",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "DAWKIN, Lincoln Madoc",
+        "role": "director",
+        "appointed_on": "2018-08-07",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "EASTER, Mark",
+        "role": "director",
+        "appointed_on": "2020-05-06",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "EASTWOOD, Nicholas John",
+        "role": "director",
+        "appointed_on": "2016-03-09",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GOULD, Jeremy Charles",
+        "role": "director",
+        "appointed_on": "2025-05-07",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SALMAN, Bilal",
+        "role": "director",
+        "appointed_on": "2024-01-31",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "STAUNTON, Jacquetta",
+        "role": "director",
+        "appointed_on": "2016-03-09",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "THAM, Eleanor Elizabeth Jude",
+        "role": "director",
+        "appointed_on": "2023-01-25",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T09:24:42Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5Njg5MzY1NmFkaXF6a2N4",
+    "date": "2025-12-30",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/UsgnAfDUYjjpQxfMN6WSNBHx3kKQ-0qvrg-nFT95ETM/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/09981080/filing-history/MzQ5Njg5MzY1NmFkaXF6a2N4"
   }
 }

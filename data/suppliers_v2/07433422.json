@@ -64,13 +64,185 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T19:19:27Z",
+    "company_name": "SURESERVE ENERGY SERVICES SOUTH WEST LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2010-11-09",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-06-30",
+    "accounts_last_made_up": "2024-09-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-24"
+  },
+  "governance": {
+    "api_date": "2026-04-27T19:19:28Z",
+    "total_officers": 14,
+    "active_count": 7,
+    "resigned_count": 7,
+    "active_officers": [
+      {
+        "name": "MAYHILL, Geoffrey Ronald",
+        "role": "secretary",
+        "appointed_on": "2024-10-29",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "EDWARDS, John Paul",
+        "role": "director",
+        "appointed_on": "2024-10-29",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HANSELL, Craig Robert",
+        "role": "director",
+        "appointed_on": "2024-11-06",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "HAWTREY, Nicholas Ralph Leo",
+        "role": "director",
+        "appointed_on": "2026-04-15",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "LEVINSOHN, Graham Austen",
+        "role": "director",
+        "appointed_on": "2024-10-29",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "STIRLING, Robert, Mr.",
+        "role": "director",
+        "appointed_on": "2025-07-11",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      },
+      {
+        "name": "TYDEMAN, Justin Antony James",
+        "role": "director",
+        "appointed_on": "2026-03-16",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T19:19:30Z",
+    "total_results": 5,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Sureserve Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2025-07-28",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "04659062"
+        }
+      },
+      {
+        "name": "Sureserve Energy Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2025-07-28",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "09790912"
+        }
+      },
+      {
+        "name": "Sureserve Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2024-10-29",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "United Kingdom (England And Wales)",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "09411297"
+        }
+      },
+      {
+        "name": "Mr Kevin Joseph Childs",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Andrew Robert Milne",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MTUzMTE2NGFkaXF6a2N4",
+    "date": "2025-06-26",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/t4-ZaLVq6XLhLMC5nZkWEpPmGjMwnORTn8ecuCz2o7w/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/07433422/filing-history/MzQ3MTUzMTE2NGFkaXF6a2N4"
   }
 }

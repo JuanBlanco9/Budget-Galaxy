@@ -63,14 +63,143 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "education",
   "buyer_type_breakdown": {
     "education": 0.9888,
     "council": 0.0112
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T20:02:01Z",
+    "company_name": "WARDEN CONSTRUCTION LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1954-05-08",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-08-31",
+    "accounts_last_made_up": "2024-11-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-09-08"
+  },
+  "governance": {
+    "api_date": "2026-04-27T20:02:03Z",
+    "total_officers": 19,
+    "active_count": 6,
+    "resigned_count": 13,
+    "active_officers": [
+      {
+        "name": "ATKINSON, Alan Adrian",
+        "role": "secretary",
+        "appointed_on": "2021-09-01",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "ATKINSON, Alan Adrian",
+        "role": "director",
+        "appointed_on": "2004-12-21",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CULSHAW, Daniel Thomas",
+        "role": "director",
+        "appointed_on": "2021-09-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "FLITCROFT, James Jeffrey",
+        "role": "director",
+        "appointed_on": "2025-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WILLIAMS, Ian Francis",
+        "role": "director",
+        "appointed_on": "2004-12-21",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WILLIAMS, Jill",
+        "role": "director",
+        "appointed_on": "2023-04-28",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T20:02:04Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Warden Construction Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2024-12-03",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006"
+        }
+      },
+      {
+        "name": "Warden Holdings Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2019-12-20",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Uk Law",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "06032054"
+        }
+      },
+      {
+        "name": "Mr Richard David Kenworthy",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-06-30",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NTk4NTQxNWFkaXF6a2N4",
+    "date": "2025-08-01",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/tHemON8KQhzyc2-7J6xA96OCAoaWxhScoU9u9dGhRFo/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/00533082/filing-history/MzQ3NTk4NTQxNWFkaXF6a2N4"
   }
 }

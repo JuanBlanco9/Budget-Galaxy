@@ -64,13 +64,121 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T04:58:07Z",
+    "company_name": "NORFOLK AND WAVENEY MIND",
+    "company_status": "active",
+    "date_of_creation": "2006-03-03",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-14"
+  },
+  "governance": {
+    "api_date": "2026-04-28T04:58:08Z",
+    "total_officers": 57,
+    "active_count": 10,
+    "resigned_count": 47,
+    "active_officers": [
+      {
+        "name": "CUTRESS, Lynn Joyce",
+        "role": "director",
+        "appointed_on": "2025-10-22",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GRAY, Nicola Jayne",
+        "role": "director",
+        "appointed_on": "2025-02-26",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GRIBBLE, Chris, Dr",
+        "role": "director",
+        "appointed_on": "2023-12-13",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MENSAH, Abeku, Dr",
+        "role": "director",
+        "appointed_on": "2025-02-26",
+        "country_of_residence": "England",
+        "nationality": "Ghanaian"
+      },
+      {
+        "name": "MORRIS-GREEN, Ruby",
+        "role": "director",
+        "appointed_on": "2025-10-22",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PORTER, Rosalind",
+        "role": "director",
+        "appointed_on": "2025-10-22",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ROBERTS, Claire",
+        "role": "director",
+        "appointed_on": "2025-10-22",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "STEED, Julian Lloyd",
+        "role": "director",
+        "appointed_on": "2023-02-22",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "TAYLOR, Mark Julian",
+        "role": "director",
+        "appointed_on": "2026-02-25",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WOODRUFF, Benjamin",
+        "role": "director",
+        "appointed_on": "2025-10-22",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T04:58:09Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3OTQ3ODIzMGFkaXF6a2N4",
+    "date": "2025-09-02",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/AwdZVcB9NlvrR2lVJP1llEOfuEYupYEgXbtZQ0E53M8/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/05729028/filing-history/MzQ3OTQ3ODIzMGFkaXF6a2N4"
   }
 }

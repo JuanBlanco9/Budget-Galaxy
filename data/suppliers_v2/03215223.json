@@ -59,13 +59,65 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T06:02:12Z",
+    "company_name": "BEECHWOOD ENGINEERING LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1996-06-21",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-04-30",
+    "accounts_last_made_up": "2025-07-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-05"
+  },
+  "governance": {
+    "api_date": "2026-04-28T06:02:13Z",
+    "total_officers": 7,
+    "active_count": 2,
+    "resigned_count": 5,
+    "active_officers": [
+      {
+        "name": "CHURCHILL, Lisa Dawn",
+        "role": "secretary",
+        "appointed_on": "2025-06-05",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "CHURCHILL, Stewart Peter",
+        "role": "director",
+        "appointed_on": "2010-07-21",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T06:02:14Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxNzEyMzQ4OWFkaXF6a2N4",
+    "date": "2026-04-20",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-unaudited-abridged",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/xveIDFi5NApd_zppU3jEX40fpFJfOVt6sXmJowg5tvg/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03215223/filing-history/MzUxNzEyMzQ4OWFkaXF6a2N4"
   }
 }

@@ -59,15 +59,137 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.9503,
     "central_govt": 0.0299,
     "agency": 0.0198
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T16:31:36Z",
+    "company_name": "NATIONAL CENTRE FOR SOCIAL RESEARCH",
+    "company_status": "active",
+    "date_of_creation": "2002-03-12",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-06-30",
+    "accounts_last_made_up": "2024-06-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-21"
+  },
+  "governance": {
+    "api_date": "2026-04-27T16:31:38Z",
+    "total_officers": 51,
+    "active_count": 12,
+    "resigned_count": 39,
+    "active_officers": [
+      {
+        "name": "ANITHA, Sundari, Professor",
+        "role": "director",
+        "appointed_on": "2023-07-20",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BARNARD, Helen Jane",
+        "role": "director",
+        "appointed_on": "2022-06-21",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BROOKS, James",
+        "role": "director",
+        "appointed_on": "2025-11-13",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "DUKE, Mark",
+        "role": "director",
+        "appointed_on": "2019-11-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ETHERINGTON, Stuart James, Sir",
+        "role": "director",
+        "appointed_on": "2021-02-24",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "FOSTER, Oliver James",
+        "role": "director",
+        "appointed_on": "2022-06-21",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GABBITAS, Saratha Rajeswaran",
+        "role": "director",
+        "appointed_on": "2022-06-21",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GORDON, Bruce Malcolm",
+        "role": "director",
+        "appointed_on": "2022-06-21",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MACFARLANE, Phyllis Joan",
+        "role": "director",
+        "appointed_on": "2019-11-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PARK, Alison Macdonald",
+        "role": "director",
+        "appointed_on": "2025-11-13",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "RIVERS, Ian",
+        "role": "director",
+        "appointed_on": "2025-11-13",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      },
+      {
+        "name": "SKERO, Nina",
+        "role": "director",
+        "appointed_on": "2025-11-13",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T16:31:40Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ0NjI3NjM2OGFkaXF6a2N4",
+    "date": "2024-12-06",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/jZwWy0jrgpRdFl6JlFF06UcTI_CthytXUM3wO643jTs/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04392418/filing-history/MzQ0NjI3NjM2OGFkaXF6a2N4"
   }
 }

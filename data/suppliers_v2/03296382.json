@@ -65,14 +65,135 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.7417,
     "education": 0.2583
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T07:28:37Z",
+    "company_name": "PFEIFFER VACUUM LTD",
+    "company_status": "active",
+    "date_of_creation": "1996-12-24",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-18"
+  },
+  "governance": {
+    "api_date": "2026-04-28T07:28:38Z",
+    "total_officers": 13,
+    "active_count": 4,
+    "resigned_count": 9,
+    "active_officers": [
+      {
+        "name": "BUSCH, Kaya Attila",
+        "role": "secretary",
+        "appointed_on": "2025-10-15",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BUSCH, Attila Kaya",
+        "role": "director",
+        "appointed_on": "2025-02-17",
+        "country_of_residence": "Germany",
+        "nationality": "German"
+      },
+      {
+        "name": "BUSCH, Sami Sinan",
+        "role": "director",
+        "appointed_on": "2025-02-17",
+        "country_of_residence": "Germany",
+        "nationality": "German"
+      },
+      {
+        "name": "HULBERT, Timothy Martin",
+        "role": "director",
+        "appointed_on": "2025-02-14",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T07:28:40Z",
+    "total_results": 4,
+    "active_count": 3,
+    "items": [
+      {
+        "name": "Mr Kaya Attila Busch",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "German",
+        "country_of_residence": "Germany",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2025-09-01",
+        "identification": null
+      },
+      {
+        "name": "Mr Sami Sinan Busch",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "German",
+        "country_of_residence": "Germany",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2025-09-01",
+        "identification": null
+      },
+      {
+        "name": "Mrs Ayla Cevher Busch",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "German",
+        "country_of_residence": "Germany",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2025-09-01",
+        "identification": null
+      },
+      {
+        "name": "Pfeiffer Vacuum Gmbh",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "German Law",
+          "country_registered": "Germany",
+          "place_registered": "District Court Of Wetzlar",
+          "registration_number": "Hrb 1567"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MTU3NDU0MWFkaXF6a2N4",
+    "date": "2025-09-17",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/UJXlPr7RNN9jG6SCc2stSidaH_gH0izR27YqcJTWXk4/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03296382/filing-history/MzQ4MTU3NDU0MWFkaXF6a2N4"
   }
 }

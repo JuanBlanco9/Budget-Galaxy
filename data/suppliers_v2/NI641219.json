@@ -59,13 +59,90 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T07:37:14Z",
+    "company_name": "TS UTILITIES LTD",
+    "company_status": "active",
+    "date_of_creation": "2016-10-03",
+    "date_of_cessation": null,
+    "jurisdiction": "northern-ireland",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-06-30",
+    "accounts_last_made_up": "2025-09-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-16"
+  },
+  "governance": {
+    "api_date": "2026-04-28T07:37:15Z",
+    "total_officers": 2,
+    "active_count": 2,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "LENNON, Sean",
+        "role": "director",
+        "appointed_on": "2016-10-03",
+        "country_of_residence": "Northern Ireland",
+        "nationality": "Irish"
+      },
+      {
+        "name": "SHANAHAN, Thomas",
+        "role": "director",
+        "appointed_on": "2016-10-03",
+        "country_of_residence": "Northern Ireland",
+        "nationality": "Irish"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T07:37:16Z",
+    "total_results": 2,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Mr Sean Lennon",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Irish",
+        "country_of_residence": "Northern Ireland",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent"
+        ],
+        "notified_on": "2016-10-03",
+        "identification": null
+      },
+      {
+        "name": "Mr Thomas Shanahan",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Irish",
+        "country_of_residence": "Northern Ireland",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent"
+        ],
+        "notified_on": "2016-10-03",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxNDMyMzE5NmFkaXF6a2N4",
+    "date": "2026-04-03",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-micro-entity",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/Y9szFDnfa4yAL1HPXVjZGtKyJVQDkxFwpCEj-SUglA8/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/NI641219/filing-history/MzUxNDMyMzE5NmFkaXF6a2N4"
   }
 }

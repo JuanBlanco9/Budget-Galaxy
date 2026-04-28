@@ -59,13 +59,130 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
     "central_govt": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T01:43:07Z",
+    "company_name": "BUTYL PRODUCTS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1995-12-27",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-26"
+  },
+  "governance": {
+    "api_date": "2026-04-28T01:43:09Z",
+    "total_officers": 17,
+    "active_count": 5,
+    "resigned_count": 12,
+    "active_officers": [
+      {
+        "name": "DRUMGOLD, Lindsey Patricia",
+        "role": "secretary",
+        "appointed_on": "2018-07-04",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BALL, Craig Stuart, Mr.",
+        "role": "director",
+        "appointed_on": "2013-07-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "DRUMGOLD, Lindsey Patricia",
+        "role": "director",
+        "appointed_on": "2015-01-27",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MITCHELL, Gavin William",
+        "role": "director",
+        "appointed_on": "2008-07-23",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "YOUNG, John Richard",
+        "role": "director",
+        "appointed_on": "1996-05-29",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T01:43:10Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Allyoung Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2023-05-09",
+        "identification": {
+          "legal_form": "Ltd",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "Uk",
+          "registration_number": "07412528"
+        }
+      },
+      {
+        "name": "Mr John Richard Young",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Robert Arthur Young",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MjUwODU5N2FkaXF6a2N4",
+    "date": "2025-07-03",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-medium",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/DJmmgSdpBvLyN_jJ34VdzRNM1gcVjmQnujLec_RLfK4/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03141465/filing-history/MzQ3MjUwODU5N2FkaXF6a2N4"
   }
 }

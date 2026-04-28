@@ -59,13 +59,130 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "education",
   "buyer_type_breakdown": {
     "education": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T02:28:23Z",
+    "company_name": "MEDICAL AIR TECHNOLOGY LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2001-11-20",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-03-31",
+    "accounts_last_made_up": "2025-06-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-22"
+  },
+  "governance": {
+    "api_date": "2026-04-28T02:28:24Z",
+    "total_officers": 30,
+    "active_count": 6,
+    "resigned_count": 24,
+    "active_officers": [
+      {
+        "name": "MCCURDY, Barry James Joseph",
+        "role": "secretary",
+        "appointed_on": "2013-09-20",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "MCCURDY, Barry James Joseph",
+        "role": "director",
+        "appointed_on": "2022-02-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SMITH, Andrew David",
+        "role": "director",
+        "appointed_on": "2016-12-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "STOTT, Stephen",
+        "role": "director",
+        "appointed_on": "2011-01-28",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "STOTT, Susan Elizabeth",
+        "role": "director",
+        "appointed_on": "2013-08-08",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "TAYLOR, Stephen Ashworth",
+        "role": "director",
+        "appointed_on": "2011-01-28",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T02:28:26Z",
+    "total_results": 2,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Medical Air Technology (Holdings) Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-07-31",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "Not Specified/Other",
+          "place_registered": "United Kingdom",
+          "registration_number": "07391186"
+        }
+      },
+      {
+        "name": "Medical Air Technology (Holdings) Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-07-01",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "Not Specified/Other",
+          "place_registered": "United Kingdom",
+          "registration_number": "07391186"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MjgyMjM3NmFkaXF6a2N4",
+    "date": "2025-09-26",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/QWYxw853Mt8dx3Z_zTog0103C8JZHLXCNVUeznega30/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04325278/filing-history/MzQ4MjgyMjM3NmFkaXF6a2N4"
   }
 }

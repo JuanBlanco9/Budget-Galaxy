@@ -59,13 +59,106 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T05:39:33Z",
+    "company_name": "INSTITUTIONAL PROTECTION SERVICES LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2004-10-01",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-05-07"
+  },
+  "governance": {
+    "api_date": "2026-04-28T05:39:34Z",
+    "total_officers": 13,
+    "active_count": 6,
+    "resigned_count": 7,
+    "active_officers": [
+      {
+        "name": "NAUGHTON, John Stuart",
+        "role": "secretary",
+        "appointed_on": "2016-06-23",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "EASON, William Duncan",
+        "role": "director",
+        "appointed_on": "2016-05-18",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GOODMAN, Caroline Jane",
+        "role": "director",
+        "appointed_on": "2004-10-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "LEIGHTON, Roy",
+        "role": "director",
+        "appointed_on": "2006-03-02",
+        "country_of_residence": "United Kingdom",
+        "nationality": "United Kingdom"
+      },
+      {
+        "name": "NAUGHTON, John Stuart",
+        "role": "director",
+        "appointed_on": "2016-03-22",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "YARROW, Alan Colin Drake, Sir",
+        "role": "director",
+        "appointed_on": "2016-05-18",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T05:39:35Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Ms Caroline Jane Goodman",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3OTk3MDE2NmFkaXF6a2N4",
+    "date": "2025-09-05",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/V6LdY57Gy9GHT1CwQEOU127k7-OIhVDTOkkz35DUUTs/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/05247486/filing-history/MzQ3OTk3MDE2NmFkaXF6a2N4"
   }
 }

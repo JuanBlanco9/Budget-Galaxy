@@ -59,13 +59,121 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
     "central_govt": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T13:21:16Z",
+    "company_name": "LAW BUSINESS RESEARCH LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1996-11-21",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-05"
+  },
+  "governance": {
+    "api_date": "2026-04-28T13:21:17Z",
+    "total_officers": 11,
+    "active_count": 2,
+    "resigned_count": 9,
+    "active_officers": [
+      {
+        "name": "BRAILEY, Nicholas James",
+        "role": "director",
+        "appointed_on": "2019-07-16",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BROOKS, Alastair David",
+        "role": "director",
+        "appointed_on": "2024-12-09",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T13:21:18Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Lbr Uk Bidco Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2020-04-01",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Companies House Cardiff",
+          "registration_number": "11120308"
+        }
+      },
+      {
+        "name": "Lbr3 Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Laws Of England And Wales",
+          "country_registered": "England And Wales",
+          "place_registered": "England And Wales",
+          "registration_number": "8381323"
+        }
+      },
+      {
+        "name": "Bowmark Capital Llp",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Liability Partnership",
+          "legal_authority": "Law Of England And Wales",
+          "country_registered": "England And Wales",
+          "place_registered": "England And Wales",
+          "registration_number": "Oc331233"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MTk3OTI2MGFkaXF6a2N4",
+    "date": "2025-09-22",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/Lv_hv_TU46Fy3krBGYKJ0njbm_Etpo2svGT8GCZT7Vo/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03281866/filing-history/MzQ4MTk3OTI2MGFkaXF6a2N4"
   }
 }

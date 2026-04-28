@@ -64,13 +64,134 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T14:02:07Z",
+    "company_name": "JUST ONE HEALTH & SOCIAL CARE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2004-04-20",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-01-31",
+    "accounts_last_made_up": "2025-04-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-20"
+  },
+  "governance": {
+    "api_date": "2026-04-27T14:02:09Z",
+    "total_officers": 7,
+    "active_count": 6,
+    "resigned_count": 1,
+    "active_officers": [
+      {
+        "name": "TOMLINSON, Paul",
+        "role": "secretary",
+        "appointed_on": "2008-04-21",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "MILLINGTON, Jennifer Ann",
+        "role": "director",
+        "appointed_on": "2020-06-25",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PONTON, Nathan Thomas",
+        "role": "director",
+        "appointed_on": "2025-08-18",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PRICE, Gregory Thomas",
+        "role": "director",
+        "appointed_on": "2018-05-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "ROBERTS, Stephen",
+        "role": "director",
+        "appointed_on": "2004-04-20",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "TOMLINSON, Paul Francis",
+        "role": "director",
+        "appointed_on": "2012-05-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T14:02:10Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Just One Holdings Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2025-10-01",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Limited Companies Act 2006"
+        }
+      },
+      {
+        "name": "Mr Paul Francis Tomlinson",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2017-11-27",
+        "identification": null
+      },
+      {
+        "name": "Mr Stephen Roberts",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2017-05-29",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NDUxMDc3MGFkaXF6a2N4",
+    "date": "2025-12-16",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/AGFWFfIrVsNpZCnX3CvizKZmiO0LO4J8cHARAZ2rxOE/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/05106263/filing-history/MzQ5NDUxMDc3MGFkaXF6a2N4"
   }
 }

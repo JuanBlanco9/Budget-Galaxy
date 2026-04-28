@@ -59,13 +59,79 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "police_fire",
   "buyer_type_breakdown": {
     "police_fire": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T06:04:46Z",
+    "company_name": "CARELINE SECURITY LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2010-11-18",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-02"
+  },
+  "governance": {
+    "api_date": "2026-04-28T06:04:47Z",
+    "total_officers": 8,
+    "active_count": 4,
+    "resigned_count": 4,
+    "active_officers": [
+      {
+        "name": "ADDINALL, Angela Jayne",
+        "role": "director",
+        "appointed_on": "2010-11-18",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ADDINALL, Richard Neil",
+        "role": "director",
+        "appointed_on": "2010-11-18",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "MACKENZIE, Simon Ross",
+        "role": "director",
+        "appointed_on": "2013-03-19",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WATSON, Matthew Charles",
+        "role": "director",
+        "appointed_on": "2013-03-19",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T06:04:48Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NDkzODQyM2FkaXF6a2N4",
+    "date": "2025-12-17",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/A6YyNMrCPVBzlvJ6CbxLnWesC1XU9j2APylJibCUWzc/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/07443823/filing-history/MzQ5NDkzODQyM2FkaXF6a2N4"
   }
 }

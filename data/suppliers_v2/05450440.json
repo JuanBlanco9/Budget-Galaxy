@@ -59,13 +59,127 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "education",
   "buyer_type_breakdown": {
     "education": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T12:04:20Z",
+    "company_name": "ASHTON GATE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2005-05-12",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-03-31",
+    "accounts_last_made_up": "2025-06-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-05-29"
+  },
+  "governance": {
+    "api_date": "2026-04-28T12:04:21Z",
+    "total_officers": 21,
+    "active_count": 5,
+    "resigned_count": 16,
+    "active_officers": [
+      {
+        "name": "LONG, Victoria Louise",
+        "role": "secretary",
+        "appointed_on": "2025-11-01",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "HUME, Lisa Christine Knights",
+        "role": "director",
+        "appointed_on": "2022-06-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "KELLY, Mark Robert",
+        "role": "director",
+        "appointed_on": "2017-07-01",
+        "country_of_residence": "England",
+        "nationality": "Irish"
+      },
+      {
+        "name": "LANSDOWN, Jon Stephen",
+        "role": "director",
+        "appointed_on": "2011-03-09",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WORMALD, Ross Alexander",
+        "role": "director",
+        "appointed_on": "2025-04-09",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T12:04:22Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Bristol City Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2018-06-01",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "United Kingdom (England And Wales)",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "01501663"
+        }
+      },
+      {
+        "name": "Bristol City Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "United Kingdom (England And Wales)",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "01501663"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NzM2ODg1NGFkaXF6a2N4",
+    "date": "2026-01-02",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/W60dSg93-_AsbLixWZtNS7da4AQjUHFgiHjV3GZmMpI/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/05450440/filing-history/MzQ5NzM2ODg1NGFkaXF6a2N4"
   }
 }

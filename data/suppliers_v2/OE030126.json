@@ -55,11 +55,48 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
     "ch_api_accounts_pdf": false
   },
   "top_buyer_type": "other",
-  "buyer_type_breakdown": {}
+  "buyer_type_breakdown": {},
+  "ch_profile": {
+    "api_date": "2026-04-27T16:21:52Z",
+    "company_name": "MCKINSEY & COMPANY, INC. UNITED KINGDOM",
+    "company_status": "registered",
+    "date_of_creation": "2023-06-13",
+    "date_of_cessation": null,
+    "jurisdiction": "united-kingdom",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": null,
+    "accounts_next_due": null,
+    "accounts_last_made_up": null,
+    "confirmation_statement_overdue": true,
+    "confirmation_statement_next_due": "2025-11-29"
+  },
+  "governance": {
+    "api_date": "2026-04-27T16:21:54Z",
+    "total_officers": 3,
+    "active_count": 1,
+    "resigned_count": 2,
+    "active_officers": [
+      {
+        "name": "DEAKIN, Jonathan Neville",
+        "role": "managing-officer",
+        "appointed_on": "2024-10-30",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T16:21:56Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  }
 }

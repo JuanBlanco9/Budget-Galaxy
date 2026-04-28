@@ -64,13 +64,114 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T11:30:17Z",
+    "company_name": "THE BRIDGE (EAST MIDLANDS)",
+    "company_status": "active",
+    "date_of_creation": "1995-10-17",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-09"
+  },
+  "governance": {
+    "api_date": "2026-04-28T11:30:19Z",
+    "total_officers": 61,
+    "active_count": 9,
+    "resigned_count": 52,
+    "active_officers": [
+      {
+        "name": "CHHATRALIA, Naishad",
+        "role": "secretary",
+        "appointed_on": "2023-08-07",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BARLOW, Alison Jane",
+        "role": "director",
+        "appointed_on": "2025-05-14",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BEHARRELL, Gary",
+        "role": "director",
+        "appointed_on": "2023-09-27",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HEPWORTH, Halinka",
+        "role": "director",
+        "appointed_on": "2024-01-31",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "JAY D'SONI, Veena",
+        "role": "director",
+        "appointed_on": "2025-07-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "NAIR, Sajith Raghunadhan",
+        "role": "director",
+        "appointed_on": "2025-11-26",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SEJPAL, Ragesh Dhirajlal",
+        "role": "director",
+        "appointed_on": "2025-11-26",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SIMS, David John",
+        "role": "director",
+        "appointed_on": "2022-05-24",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WHITE, Richard Graham",
+        "role": "director",
+        "appointed_on": "2016-11-23",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T11:30:20Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4NTUzMTY1NmFkaXF6a2N4",
+    "date": "2025-10-22",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/WKgzS_0K-JqezeIP0zoZldRqQZYWuWLI8zzTn4BwP6E/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03114996/filing-history/MzQ4NTUzMTY1NmFkaXF6a2N4"
   }
 }

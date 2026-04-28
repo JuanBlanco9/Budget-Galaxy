@@ -59,13 +59,93 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "police_fire",
   "buyer_type_breakdown": {
     "police_fire": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T01:23:18Z",
+    "company_name": "TRUCTYRE FLEET MANAGEMENT LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2000-05-23",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-06"
+  },
+  "governance": {
+    "api_date": "2026-04-28T01:23:20Z",
+    "total_officers": 18,
+    "active_count": 3,
+    "resigned_count": 15,
+    "active_officers": [
+      {
+        "name": "TOMLINSON, Mark",
+        "role": "secretary",
+        "appointed_on": "2025-08-05",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "HARLEY, Nicholas Paul",
+        "role": "director",
+        "appointed_on": "2020-01-13",
+        "country_of_residence": "United Kingdom",
+        "nationality": "United Kingdom"
+      },
+      {
+        "name": "JEAN, David Laurent",
+        "role": "director",
+        "appointed_on": "2025-10-08",
+        "country_of_residence": "France",
+        "nationality": "French"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T01:23:21Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Tfm Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "England & Wales",
+          "country_registered": "United Kingdom",
+          "place_registered": "England & Wales",
+          "registration_number": "05664592"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4NDQ3OTE5OGFkaXF6a2N4",
+    "date": "2025-10-13",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/qWD50zH7xnzChfuQURQ-c98Vdk7782ct1pKB5H4mzok/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03999449/filing-history/MzQ4NDQ3OTE5OGFkaXF6a2N4"
   }
 }

@@ -59,13 +59,136 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T07:17:13Z",
+    "company_name": "HAMAMATSU PHOTONICS UK LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1988-03-09",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-06-30",
+    "accounts_last_made_up": "2024-09-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-08-14"
+  },
+  "governance": {
+    "api_date": "2026-04-28T07:17:14Z",
+    "total_officers": 22,
+    "active_count": 4,
+    "resigned_count": 18,
+    "active_officers": [
+      {
+        "name": "OXLEY, Gary Alex",
+        "role": "secretary",
+        "appointed_on": "2025-12-15",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "OHASHI, Keiji",
+        "role": "director",
+        "appointed_on": "2024-08-01",
+        "country_of_residence": "Japan",
+        "nationality": "Japanese"
+      },
+      {
+        "name": "PALMER, Craige Lloyd Raymond",
+        "role": "director",
+        "appointed_on": "2026-01-15",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "STOKES, Timothy, Mr.",
+        "role": "director",
+        "appointed_on": "2012-09-30",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T07:17:15Z",
+    "total_results": 3,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Hamamatsu Photonics Kk",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2024-08-01",
+        "identification": {
+          "legal_form": "Corporation",
+          "legal_authority": "Japanese",
+          "country_registered": "Japan",
+          "place_registered": "Japan Corporate Number",
+          "registration_number": "2080401004193"
+        }
+      },
+      {
+        "name": "Hamamatsu Photonics Europe Gmbh",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2020-07-07",
+        "identification": {
+          "legal_form": "Gmbh",
+          "legal_authority": "German",
+          "country_registered": "Germany",
+          "place_registered": "Unternehmensregister",
+          "registration_number": "Hrb 188055"
+        }
+      },
+      {
+        "name": "Hamamatsu Photonics Kk",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Corporation",
+          "legal_authority": "Japanese Corporate Law",
+          "country_registered": "Japan",
+          "place_registered": "Legal Affairs Bureau",
+          "registration_number": "0804-01-004193"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ1MzI4MjUyNWFkaXF6a2N4",
+    "date": "2025-01-31",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/cR7i2WlqWJyZAeiHoGObEAC_4f0c7qTMj22CIVy_vN4/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02228744/filing-history/MzQ1MzI4MjUyNWFkaXF6a2N4"
   }
 }

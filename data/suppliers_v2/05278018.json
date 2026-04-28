@@ -61,13 +61,128 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T12:12:58Z",
+    "company_name": "WOKINGHAM UNITED CHARITIES",
+    "company_status": "active",
+    "date_of_creation": "2004-11-04",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-18"
+  },
+  "governance": {
+    "api_date": "2026-04-28T12:13:00Z",
+    "total_officers": 39,
+    "active_count": 11,
+    "resigned_count": 28,
+    "active_officers": [
+      {
+        "name": "CANNON, Henry Anthony",
+        "role": "director",
+        "appointed_on": "2025-05-20",
+        "country_of_residence": "England",
+        "nationality": "Irish"
+      },
+      {
+        "name": "CURTIS, Simon Robert",
+        "role": "director",
+        "appointed_on": "2025-05-20",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HADFIELD, Katharine Anastasia Mary, Dr",
+        "role": "director",
+        "appointed_on": "2023-09-06",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HARTLEY, Jane Elizabeth, Dr",
+        "role": "director",
+        "appointed_on": "2022-04-26",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HOBBS, Graeme Mark",
+        "role": "director",
+        "appointed_on": "2019-07-08",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "KING, Anne Elizabeth",
+        "role": "director",
+        "appointed_on": "2011-03-14",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MARGETTS, Rebecca",
+        "role": "director",
+        "appointed_on": "2023-09-06",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MCGILL, Kevin Alan",
+        "role": "director",
+        "appointed_on": "2025-05-20",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MORRISON, Debra",
+        "role": "director",
+        "appointed_on": "2024-03-14",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PALLAS, Jonathan",
+        "role": "director",
+        "appointed_on": "2025-05-20",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ROGERS, Janet Frances",
+        "role": "director",
+        "appointed_on": "2015-12-14",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T12:13:01Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NTY0Nzk4MWFkaXF6a2N4",
+    "date": "2025-12-29",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/fhkwPJt5jAdDmLSsktPEHMj6jRtLEORPICwTnSkF4d0/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/05278018/filing-history/MzQ5NTY0Nzk4MWFkaXF6a2N4"
   }
 }

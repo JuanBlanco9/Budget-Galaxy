@@ -64,13 +64,91 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T07:55:35Z",
+    "company_name": "AVERY WEIGH-TRONIX LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1957-12-10",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": true,
+    "accounts_next_due": "2022-09-30",
+    "accounts_last_made_up": "2020-12-31",
+    "confirmation_statement_overdue": true,
+    "confirmation_statement_next_due": "2022-07-08"
+  },
+  "governance": {
+    "api_date": "2026-04-28T07:55:36Z",
+    "total_officers": 36,
+    "active_count": 3,
+    "resigned_count": 33,
+    "active_officers": [
+      {
+        "name": "DALE, Ryan Ronald",
+        "role": "secretary",
+        "appointed_on": "2017-12-18",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "HUDSON, Giles Matthew",
+        "role": "director",
+        "appointed_on": "2008-09-25",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "ROWELL, Stephen James",
+        "role": "director",
+        "appointed_on": "2016-04-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T07:55:37Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Avery Weigh-Tronix International Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "Uk",
+          "place_registered": "Companies House (Uk)",
+          "registration_number": "42732"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzI5NzIxMzI1NmFkaXF6a2N4",
+    "date": "2021-04-12",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/XQu9JKPgYGtbuz715jz5qLM8LYJ33zM-r6bchTQbr-Y/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/00595129/filing-history/MzI5NzIxMzI1NmFkaXF6a2N4"
   }
 }

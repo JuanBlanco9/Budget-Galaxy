@@ -59,13 +59,86 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T04:30:42Z",
+    "company_name": "ECHOSENS UK LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2019-04-13",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-04-26"
+  },
+  "governance": {
+    "api_date": "2026-04-28T04:30:43Z",
+    "total_officers": 3,
+    "active_count": 2,
+    "resigned_count": 1,
+    "active_officers": [
+      {
+        "name": "LEGROS, Dominique Pierre Marie Joseph",
+        "role": "director",
+        "appointed_on": "2019-07-01",
+        "country_of_residence": "France",
+        "nationality": "French"
+      },
+      {
+        "name": "SANDRIN, Laurent Olivier",
+        "role": "director",
+        "appointed_on": "2019-04-13",
+        "country_of_residence": "France",
+        "nationality": "French"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T04:30:44Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Echosens Sa",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2019-04-13",
+        "identification": {
+          "legal_form": "Listed Company",
+          "legal_authority": "France",
+          "country_registered": "France",
+          "place_registered": "France",
+          "registration_number": "438209157"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ1NjE1NzM0MGFkaXF6a2N4",
+    "date": "2025-02-24",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/tO6paLq5m5SlOiPYyHgS4ntvQrnhR2sNeusfQ1MOvLo/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/11945055/filing-history/MzQ1NjE1NzM0MGFkaXF6a2N4"
   }
 }

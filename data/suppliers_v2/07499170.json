@@ -59,13 +59,92 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T23:13:54Z",
+    "company_name": "ALBIES LTD",
+    "company_status": "active",
+    "date_of_creation": "2011-01-19",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-10-31",
+    "accounts_last_made_up": "2025-01-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-09-19"
+  },
+  "governance": {
+    "api_date": "2026-04-27T23:13:55Z",
+    "total_officers": 6,
+    "active_count": 4,
+    "resigned_count": 2,
+    "active_officers": [
+      {
+        "name": "KITCHEN, Simon John",
+        "role": "secretary",
+        "appointed_on": "2022-01-02",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "KITCHEN, Andrew Paul",
+        "role": "director",
+        "appointed_on": "2011-01-19",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "KITCHEN, Nicole",
+        "role": "director",
+        "appointed_on": "2018-01-11",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "KITCHEN, Simon John",
+        "role": "director",
+        "appointed_on": "2018-01-11",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T23:13:57Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Andrew Paul Kitchen",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2017-01-13",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4NjA3MDM1NmFkaXF6a2N4",
+    "date": "2025-10-23",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/WfiX0Jd5WewJkNW75W4dN8RFxfySE7mqm4e_7vXV698/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/07499170/filing-history/MzQ4NjA3MDM1NmFkaXF6a2N4"
   }
 }

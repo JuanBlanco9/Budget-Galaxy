@@ -64,13 +64,111 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T03:10:34Z",
+    "company_name": "ZEP UK LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1979-06-12",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-05-31",
+    "accounts_last_made_up": "2024-08-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-25"
+  },
+  "governance": {
+    "api_date": "2026-04-28T03:10:35Z",
+    "total_officers": 24,
+    "active_count": 3,
+    "resigned_count": 21,
+    "active_officers": [
+      {
+        "name": "POLEGRI, Paolo, Mr.",
+        "role": "director",
+        "appointed_on": "2018-06-14",
+        "country_of_residence": "Italy",
+        "nationality": "Italian"
+      },
+      {
+        "name": "RIQUELME MCLOUGHLIN, Maria Laura",
+        "role": "director",
+        "appointed_on": "2022-02-21",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      },
+      {
+        "name": "THONHAUSER, Philip",
+        "role": "director",
+        "appointed_on": "2023-05-10",
+        "country_of_residence": "Austria",
+        "nationality": "Austrian"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T03:10:36Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Zep Europe B.V",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-10-11",
+        "identification": {
+          "legal_form": "Dutch Company",
+          "legal_authority": "Dutch Tax Laws",
+          "country_registered": "Netherlands",
+          "place_registered": "In The Register Of Companies Of Breda",
+          "registration_number": "20066709"
+        }
+      },
+      {
+        "name": "Hale Group (Widnes) Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-10-11",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "05591737"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3ODk0NTQ4NWFkaXF6a2N4",
+    "date": "2025-08-28",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/oAAr5ggceScud9TLkCgT77_1Mp0Wqn_uTwqZlaGPrs8/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01428569/filing-history/MzQ3ODk0NTQ4NWFkaXF6a2N4"
   }
 }

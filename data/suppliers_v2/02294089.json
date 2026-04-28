@@ -59,13 +59,135 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T18:53:15Z",
+    "company_name": "NORTH STAFFS MIND",
+    "company_status": "active",
+    "date_of_creation": "1988-09-08",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-11"
+  },
+  "governance": {
+    "api_date": "2026-04-27T18:53:17Z",
+    "total_officers": 58,
+    "active_count": 12,
+    "resigned_count": 46,
+    "active_officers": [
+      {
+        "name": "BOUNDY, Kate Willa",
+        "role": "secretary",
+        "appointed_on": "2020-10-01",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "ABERLEY, James",
+        "role": "director",
+        "appointed_on": "2021-11-24",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BURNS, Sarah Irene",
+        "role": "director",
+        "appointed_on": "2022-11-23",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CHANDIRAMANI, Kishore",
+        "role": "director",
+        "appointed_on": "2020-08-24",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "DINGLEY, Neil James",
+        "role": "director",
+        "appointed_on": "2006-07-19",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "JOHNSON, Penny",
+        "role": "director",
+        "appointed_on": "2025-11-07",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MOFFAT, Susan Elizabeth",
+        "role": "director",
+        "appointed_on": "2018-11-28",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "POULSON, Mark Geoffrey, Dr",
+        "role": "director",
+        "appointed_on": "2020-08-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "RAO, Supritha",
+        "role": "director",
+        "appointed_on": "2024-11-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ROE, Mark",
+        "role": "director",
+        "appointed_on": "2024-08-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ROSIAK, Neil",
+        "role": "director",
+        "appointed_on": "2025-10-21",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WEAVER, Jolene",
+        "role": "director",
+        "appointed_on": "2025-11-25",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T18:53:19Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4Nzg2MDY0OWFkaXF6a2N4",
+    "date": "2025-11-10",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/VQsnpxGuJAfCEiK2owsicrgTJybSnuTduVTgneZ4BSI/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02294089/filing-history/MzQ4Nzg2MDY0OWFkaXF6a2N4"
   }
 }

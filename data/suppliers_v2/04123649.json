@@ -59,15 +59,95 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.4785,
     "council": 0.4785,
     "education": 0.0431
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T16:10:18Z",
+    "company_name": "COMMUNITY RESOURCING LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2000-12-12",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-04-04",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-27"
+  },
+  "governance": {
+    "api_date": "2026-04-27T16:10:20Z",
+    "total_officers": 15,
+    "active_count": 3,
+    "resigned_count": 12,
+    "active_officers": [
+      {
+        "name": "DOLAN, Graham John Anthony",
+        "role": "secretary",
+        "appointed_on": "2008-12-01",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "BURCHALL, Andrew Jeremy",
+        "role": "director",
+        "appointed_on": "2015-09-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "HERRON, Adam",
+        "role": "director",
+        "appointed_on": "2012-02-15",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T16:10:21Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Ngage Specialist Recruitment Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "United Kingdom (England And Wales)",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "6189822"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NTMzMDk5NWFkaXF6a2N4",
+    "date": "2025-12-27",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/ByxvBzqJvYKWvxlbO_TbKJ2ySSJedueiHl9wkw4rKf4/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04123649/filing-history/MzQ5NTMzMDk5NWFkaXF6a2N4"
   }
 }

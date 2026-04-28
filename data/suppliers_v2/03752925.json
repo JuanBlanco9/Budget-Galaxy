@@ -59,10 +59,10 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
@@ -70,5 +70,83 @@
     "nhs": 0.1938,
     "other": 0.0512,
     "education": 0.0482
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T03:08:39Z",
+    "company_name": "PLANON LTD",
+    "company_status": "active",
+    "date_of_creation": "1999-04-15",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-04-22"
+  },
+  "governance": {
+    "api_date": "2026-04-28T03:08:40Z",
+    "total_officers": 10,
+    "active_count": 1,
+    "resigned_count": 9,
+    "active_officers": [
+      {
+        "name": "ANKERSTJERNE, Anker Peter",
+        "role": "director",
+        "appointed_on": "2025-01-16",
+        "country_of_residence": "Netherlands",
+        "nationality": "Danish"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T03:08:41Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Schneider Electric Se ",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2024-10-28",
+        "identification": {
+          "legal_form": "Corporate",
+          "legal_authority": "French Law",
+          "country_registered": "France",
+          "place_registered": "The National Register Of Companies",
+          "registration_number": "542 048 574"
+        }
+      },
+      {
+        "name": "Mr Pierre Albertus  Josephus Guelen",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Dutch",
+        "country_of_residence": "Netherlands",
+        "ceased": true,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MjM1Mjk3NGFkaXF6a2N4",
+    "date": "2025-07-02",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-medium",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/t9ewDwRZnKBrinq-2M5yPuPcRidCrJKXeaahmL-_Oac/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03752925/filing-history/MzQ3MjM1Mjk3NGFkaXF6a2N4"
   }
 }

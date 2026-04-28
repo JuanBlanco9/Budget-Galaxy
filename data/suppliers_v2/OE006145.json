@@ -55,14 +55,51 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
     "ch_api_accounts_pdf": false
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.7557,
     "council": 0.2443
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T20:29:34Z",
+    "company_name": "PROTECTOR FORSIKRING ASA",
+    "company_status": "registered",
+    "date_of_creation": "2022-12-01",
+    "date_of_cessation": null,
+    "jurisdiction": "united-kingdom",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": null,
+    "accounts_next_due": null,
+    "accounts_last_made_up": null,
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-14"
+  },
+  "governance": {
+    "api_date": "2026-04-27T20:29:36Z",
+    "total_officers": 1,
+    "active_count": 1,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "WINTER, Stuart Phillip",
+        "role": "managing-officer",
+        "appointed_on": "2022-12-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T20:29:37Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
   }
 }

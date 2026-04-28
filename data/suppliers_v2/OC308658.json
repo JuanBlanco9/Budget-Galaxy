@@ -55,14 +55,229 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.5159,
     "central_govt": 0.4841
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T15:03:56Z",
+    "company_name": "TLT LLP",
+    "company_status": "active",
+    "date_of_creation": "2004-07-16",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-15"
+  },
+  "governance": {
+    "api_date": "2026-04-27T15:03:58Z",
+    "total_officers": 352,
+    "active_count": 194,
+    "resigned_count": 158,
+    "active_officers": [
+      {
+        "name": "BELL, Andrew",
+        "role": "llp-designated-member",
+        "appointed_on": "2013-12-23",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "CARNEY, Peter Michael",
+        "role": "llp-designated-member",
+        "appointed_on": "2007-10-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "CHADWICK, James",
+        "role": "llp-designated-member",
+        "appointed_on": "2016-08-25",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "CLARK, Sarah",
+        "role": "llp-designated-member",
+        "appointed_on": "2025-10-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "CONNOLLY, Maria Louise",
+        "role": "llp-designated-member",
+        "appointed_on": "2007-05-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "COTTON, Edward James",
+        "role": "llp-designated-member",
+        "appointed_on": "2013-12-23",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "CRIGHTON, Christopher Alexander",
+        "role": "llp-designated-member",
+        "appointed_on": "2018-05-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "EVANS, Katherine Rose",
+        "role": "llp-designated-member",
+        "appointed_on": "2004-09-30",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "FORSYTH, James Alexander",
+        "role": "llp-designated-member",
+        "appointed_on": "2006-10-09",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "GARDNER, Alice Louise",
+        "role": "llp-designated-member",
+        "appointed_on": "2015-04-24",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "GOSS, Simon Lance Kevin",
+        "role": "llp-designated-member",
+        "appointed_on": "2004-09-30",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "GRIMWOOD, Matthew Barry",
+        "role": "llp-designated-member",
+        "appointed_on": "2017-05-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "HAYLLAR, Richard Sherwill",
+        "role": "llp-designated-member",
+        "appointed_on": "2011-05-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "HENDERSON, Thomas George",
+        "role": "llp-designated-member",
+        "appointed_on": "2025-10-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "HOBBS, Kay",
+        "role": "llp-designated-member",
+        "appointed_on": "2014-01-20",
+        "country_of_residence": "Wales",
+        "nationality": null
+      },
+      {
+        "name": "HULL, William John",
+        "role": "llp-designated-member",
+        "appointed_on": "2004-09-30",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "JERVIS, Charles Perran",
+        "role": "llp-designated-member",
+        "appointed_on": "2004-12-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "KIMBER, Katharine Anne",
+        "role": "llp-designated-member",
+        "appointed_on": "2012-05-01",
+        "country_of_residence": "Northern Ireland",
+        "nationality": null
+      },
+      {
+        "name": "LUCAS, Julia",
+        "role": "llp-designated-member",
+        "appointed_on": "2004-09-30",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "LYON, Andrew David",
+        "role": "llp-designated-member",
+        "appointed_on": "2007-12-03",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T15:04:00Z",
+    "total_results": 3,
+    "active_count": 0,
+    "items": [
+      {
+        "name": "Mr John Bennett Wood",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control-limited-liability-partnership"
+        ],
+        "notified_on": "2020-04-01",
+        "identification": null
+      },
+      {
+        "name": "Mr Stephen John Willson",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control-limited-liability-partnership"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr David Peter Pester",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control-limited-liability-partnership"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5Mzk0MTA2M2FkaXF6a2N4",
+    "date": "2025-12-17",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/AIxy1fIQl8cz96uS87zeDl9ZXqhGrvIzvdRx3Gcvwms/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/OC308658/filing-history/MzQ5Mzk0MTA2M2FkaXF6a2N4"
   }
 }

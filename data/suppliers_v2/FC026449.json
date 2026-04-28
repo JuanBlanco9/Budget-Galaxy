@@ -55,13 +55,141 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
     "ch_api_accounts_pdf": false
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
     "central_govt": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T19:40:04Z",
+    "company_name": "NETWORK RESEARCH BELGIUM S.A.",
+    "company_status": "active",
+    "date_of_creation": "2006-01-03",
+    "date_of_cessation": null,
+    "jurisdiction": "united-kingdom",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": null,
+    "accounts_overdue": false,
+    "accounts_next_due": null,
+    "accounts_last_made_up": "2004-12-31",
+    "confirmation_statement_overdue": null,
+    "confirmation_statement_next_due": null
+  },
+  "governance": {
+    "api_date": "2026-04-27T19:40:06Z",
+    "total_officers": 34,
+    "active_count": 14,
+    "resigned_count": 20,
+    "active_officers": [
+      {
+        "name": "BOURY, Philippe",
+        "role": "director",
+        "appointed_on": "2010-04-22",
+        "country_of_residence": "Belgium",
+        "nationality": "Belgian"
+      },
+      {
+        "name": "DESCHEEMAECKER, Marc",
+        "role": "director",
+        "appointed_on": "2023-05-22",
+        "country_of_residence": "Belgium",
+        "nationality": "Belgian"
+      },
+      {
+        "name": "HOUGARDY, Carine",
+        "role": "director",
+        "appointed_on": "2016-03-16",
+        "country_of_residence": "Belgium",
+        "nationality": "Belgian"
+      },
+      {
+        "name": "LALLEMAND, Philippe",
+        "role": "director",
+        "appointed_on": "2016-04-28",
+        "country_of_residence": "Belgium",
+        "nationality": "Belgian"
+      },
+      {
+        "name": "SERAFIN, Maryline",
+        "role": "director",
+        "appointed_on": "2021-12-20",
+        "country_of_residence": "Belgium",
+        "nationality": "Belgian"
+      },
+      {
+        "name": "VAN LIERDE, Bruno",
+        "role": "director",
+        "appointed_on": "2022-04-28",
+        "country_of_residence": "Belgium",
+        "nationality": "Belgian"
+      },
+      {
+        "name": "VAN VARENBERGH, Mtriam",
+        "role": "director",
+        "appointed_on": "2022-04-28",
+        "country_of_residence": "Belgium",
+        "nationality": "Belgian"
+      },
+      {
+        "name": "WITMEUR, Renaud",
+        "role": "director",
+        "appointed_on": "2021-06-29",
+        "country_of_residence": "Belgium",
+        "nationality": "Belgian"
+      },
+      {
+        "name": "YERNA, Benoit-Laurent",
+        "role": "director",
+        "appointed_on": "2023-05-22",
+        "country_of_residence": "Belgium",
+        "nationality": "Belgian"
+      },
+      {
+        "name": "A. VANDEN CAMP SRL",
+        "role": "corporate-director",
+        "appointed_on": "2022-03-28",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "EZ FINEANTS SPRL",
+        "role": "corporate-director",
+        "appointed_on": "2017-04-27",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "NETHYS",
+        "role": "corporate-director",
+        "appointed_on": "2023-05-31",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "SPARAXIS SA",
+        "role": "corporate-director",
+        "appointed_on": "2010-04-22",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "STEER&LEADWISE",
+        "role": "corporate-director",
+        "appointed_on": "2024-02-01",
+        "country_of_residence": null,
+        "nationality": null
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T19:40:07Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
   }
 }

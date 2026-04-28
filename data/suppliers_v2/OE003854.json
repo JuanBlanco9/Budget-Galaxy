@@ -55,13 +55,81 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
     "ch_api_accounts_pdf": false
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
     "central_govt": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T13:11:34Z",
+    "company_name": "APHUT LIMITED",
+    "company_status": "registered",
+    "date_of_creation": "2022-11-14",
+    "date_of_cessation": null,
+    "jurisdiction": "united-kingdom",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": null,
+    "accounts_next_due": null,
+    "accounts_last_made_up": null,
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-27"
+  },
+  "governance": {
+    "api_date": "2026-04-28T13:11:35Z",
+    "total_officers": 0,
+    "active_count": 0,
+    "resigned_count": 0,
+    "active_officers": []
+  },
+  "pscs": {
+    "api_date": "2026-04-28T13:11:36Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Jtc Trustees Limited",
+        "kind": "corporate-entity-beneficial-owner",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-more-than-25-percent-as-trust-registered-overseas-entity",
+          "voting-rights-more-than-25-percent-as-trust-registered-overseas-entity",
+          "right-to-appoint-and-remove-directors-as-trust-registered-overseas-entity"
+        ],
+        "notified_on": "2024-10-04",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "The Companies (Jersey) Law 1991",
+          "place_registered": "Jersey Financial Services Commission Registry",
+          "registration_number": "37295"
+        }
+      },
+      {
+        "name": "Apex Financial Services (Trustees) Limited",
+        "kind": "corporate-entity-beneficial-owner",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-more-than-25-percent-as-trust-registered-overseas-entity",
+          "voting-rights-more-than-25-percent-as-trust-registered-overseas-entity",
+          "right-to-appoint-and-remove-directors-as-trust-registered-overseas-entity"
+        ],
+        "notified_on": "2008-04-30",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "The Companies (Jersey) Law 1991",
+          "place_registered": "Jersey Financial Services Commission Registry",
+          "registration_number": "84417"
+        }
+      }
+    ]
   }
 }

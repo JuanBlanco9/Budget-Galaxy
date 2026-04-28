@@ -59,13 +59,93 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "education",
   "buyer_type_breakdown": {
     "education": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T20:44:28Z",
+    "company_name": "JS ELECTRICAL CONSTRUCTION LTD",
+    "company_status": "liquidation",
+    "date_of_creation": "2017-09-07",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": true,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": true,
+    "accounts_next_due": "2025-05-31",
+    "accounts_last_made_up": "2023-08-31",
+    "confirmation_statement_overdue": true,
+    "confirmation_statement_next_due": "2025-12-15"
+  },
+  "governance": {
+    "api_date": "2026-04-27T20:44:30Z",
+    "total_officers": 3,
+    "active_count": 2,
+    "resigned_count": 1,
+    "active_officers": [
+      {
+        "name": "JAGGER, Michael Anthony",
+        "role": "director",
+        "appointed_on": "2017-09-07",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "SCHOFIELD, John",
+        "role": "director",
+        "appointed_on": "2017-09-07",
+        "country_of_residence": "United Kingdom",
+        "nationality": "English"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T20:44:32Z",
+    "total_results": 2,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Mr John Schofield",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "ownership-of-shares-25-to-50-percent-as-trust",
+          "ownership-of-shares-25-to-50-percent-as-firm"
+        ],
+        "notified_on": "2024-09-11",
+        "identification": null
+      },
+      {
+        "name": "Mr Michael Anthony Jagger",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2017-09-07",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQyMzUyNzEzMmFkaXF6a2N4",
+    "date": "2024-05-29",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-micro-entity",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/Iv9n7-VzEtRfPqtGecaZNACuaLIaIBrptmFDUVkN-uE/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/10950468/filing-history/MzQyMzUyNzEzMmFkaXF6a2N4"
   }
 }

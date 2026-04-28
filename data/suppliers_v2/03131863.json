@@ -72,10 +72,10 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "agency",
   "buyer_type_breakdown": {
@@ -83,5 +83,90 @@
     "central_govt": 0.3162,
     "council": 0.2107,
     "nhs": 0.0256
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T14:03:22Z",
+    "company_name": "TEND TRAINING LTD",
+    "company_status": "active",
+    "date_of_creation": "1995-11-29",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-06-30",
+    "accounts_last_made_up": "2025-09-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-13"
+  },
+  "governance": {
+    "api_date": "2026-04-27T14:03:24Z",
+    "total_officers": 20,
+    "active_count": 4,
+    "resigned_count": 16,
+    "active_officers": [
+      {
+        "name": "HARRIS, Kelly Marie",
+        "role": "director",
+        "appointed_on": "2023-10-04",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "JONES-OWEN, David",
+        "role": "director",
+        "appointed_on": "2026-04-20",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ROUSE, Simon Paul",
+        "role": "director",
+        "appointed_on": "2023-10-10",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SMITH, Nicole Marie",
+        "role": "director",
+        "appointed_on": "2023-06-21",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T14:03:25Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "The Child Care Company (Old Windsor) Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-11-29",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "England & Wales",
+          "registration_number": "06507416"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwNzM2MjY1N2FkaXF6a2N4",
+    "date": "2026-02-27",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/ckTY_gZ3O2o-f6zzsGN-lxhUemuBRaT3_7UAI11A-N0/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03131863/filing-history/MzUwNzM2MjY1N2FkaXF6a2N4"
   }
 }

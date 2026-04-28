@@ -68,13 +68,152 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "education",
   "buyer_type_breakdown": {
     "education": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T03:41:26Z",
+    "company_name": "BIBLIU LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2014-12-01",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-07-31",
+    "accounts_last_made_up": "2024-10-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-04-29"
+  },
+  "governance": {
+    "api_date": "2026-04-28T03:41:27Z",
+    "total_officers": 20,
+    "active_count": 7,
+    "resigned_count": 13,
+    "active_officers": [
+      {
+        "name": "OAKWOOD CORPORATE SECRETARY LIMITED",
+        "role": "corporate-secretary",
+        "appointed_on": "2026-03-05",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "CHERNIS, Mark Jay",
+        "role": "director",
+        "appointed_on": "2026-01-25",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      },
+      {
+        "name": "DIXON-CLEGG, Nicholas George",
+        "role": "director",
+        "appointed_on": "2020-08-10",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HILL, Richard Andrew",
+        "role": "director",
+        "appointed_on": "2022-03-31",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MEADOWS, Shannon",
+        "role": "director",
+        "appointed_on": "2023-03-15",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      },
+      {
+        "name": "SHERWOOD, David John Laurence",
+        "role": "director",
+        "appointed_on": "2014-12-01",
+        "country_of_residence": "England",
+        "nationality": "Australian"
+      },
+      {
+        "name": "WHITBY, Mark Hindhaugh",
+        "role": "director",
+        "appointed_on": "2021-02-09",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T03:41:28Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Oxford Science Enterprises Holdings Ii Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2025-03-31",
+        "identification": {
+          "legal_form": "Corporate",
+          "legal_authority": "United Kingdom",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "16279473"
+        }
+      },
+      {
+        "name": "Oxford Sciences Innovation Plc",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2017-08-21",
+        "identification": {
+          "legal_form": "Public Limited Company",
+          "legal_authority": "United Kingdom Company Law",
+          "country_registered": "Uk",
+          "place_registered": "Companies House",
+          "registration_number": "09093331"
+        }
+      },
+      {
+        "name": "Mr David Sherwood",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Australian",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent",
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-07",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4NzAxMjc3NmFkaXF6a2N4",
+    "date": "2025-10-31",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/82_ixqdVxI7NMkpBPe_CVPGeV6nvai2I_j-UCRgWvo8/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/09334024/filing-history/MzQ4NzAxMjc3NmFkaXF6a2N4"
   }
 }

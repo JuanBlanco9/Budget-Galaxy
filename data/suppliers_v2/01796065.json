@@ -64,13 +64,120 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "education",
   "buyer_type_breakdown": {
     "education": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T07:45:41Z",
+    "company_name": "REFINITIV UK HOLDINGS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1984-02-29",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-05-24"
+  },
+  "governance": {
+    "api_date": "2026-04-28T07:45:42Z",
+    "total_officers": 42,
+    "active_count": 4,
+    "resigned_count": 38,
+    "active_officers": [
+      {
+        "name": "O'HANLON, Carla",
+        "role": "secretary",
+        "appointed_on": "2011-07-25",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "CLARKE, Darryl John",
+        "role": "director",
+        "appointed_on": "2013-06-28",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "SLAIDING, William John",
+        "role": "director",
+        "appointed_on": "2023-04-11",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "TURNER, Christopher Myles",
+        "role": "director",
+        "appointed_on": "2025-07-29",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T07:45:43Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Lseg Data And Risk Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2018-10-01",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Registrar Of Companies (England And Wales)",
+          "registration_number": "11273092"
+        }
+      },
+      {
+        "name": "Thomson Reuters Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "United Kingdom",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "3296375"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MDExNTIwM2FkaXF6a2N4",
+    "date": "2025-09-10",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/IAKK6Xtn7mK2iE_JmqyTYU6jbmbzZh0734rMb7cz2ME/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01796065/filing-history/MzQ4MDExNTIwM2FkaXF6a2N4"
   }
 }

@@ -65,13 +65,66 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T12:43:13Z",
+    "company_name": "CLEVELAND FIRE BRIGADE RISK MANAGEMENT SERVICES C.I.C.",
+    "company_status": "liquidation",
+    "date_of_creation": "2011-03-30",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": true,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": true,
+    "accounts_next_due": "2025-12-31",
+    "accounts_last_made_up": "2024-03-31",
+    "confirmation_statement_overdue": true,
+    "confirmation_statement_next_due": "2026-02-11"
+  },
+  "governance": {
+    "api_date": "2026-04-28T12:43:14Z",
+    "total_officers": 13,
+    "active_count": 0,
+    "resigned_count": 13,
+    "active_officers": []
+  },
+  "pscs": {
+    "api_date": "2026-04-28T12:43:15Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Cleveland Fire Authority",
+        "kind": "legal-person-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-07",
+        "identification": {
+          "legal_form": "Fire Authority",
+          "legal_authority": "Fire And Rescue Services Act 2004"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2Mzc4NzY3NWFkaXF6a2N4",
+    "date": "2025-04-24",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/IZGUxcwTqxVoAgML76fgDg0oRVGOBqYZIo49JYeoIWU/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/07583911/filing-history/MzQ2Mzc4NzY3NWFkaXF6a2N4"
   }
 }

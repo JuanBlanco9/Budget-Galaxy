@@ -59,13 +59,100 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
     "central_govt": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T13:10:41Z",
+    "company_name": "ADVANCED PROPULSION CENTRE UK LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2013-11-27",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-11"
+  },
+  "governance": {
+    "api_date": "2026-04-28T13:10:43Z",
+    "total_officers": 16,
+    "active_count": 7,
+    "resigned_count": 9,
+    "active_officers": [
+      {
+        "name": "BRAY, Joanne",
+        "role": "director",
+        "appointed_on": "2023-07-06",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "CONSTANCE, Ian William",
+        "role": "director",
+        "appointed_on": "2015-11-16",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "DOVER, Robert Alan, Prof",
+        "role": "director",
+        "appointed_on": "2016-04-06",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "GARNER, Colin Peter, Professor",
+        "role": "director",
+        "appointed_on": "2014-07-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HASWELL, Charles Chetwynd Douglas",
+        "role": "director",
+        "appointed_on": "2018-05-09",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "JACKSON, Neville Stuart",
+        "role": "director",
+        "appointed_on": "2019-11-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ZEBEDEE, Graham",
+        "role": "director",
+        "appointed_on": "2025-07-15",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T13:10:44Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MzczNTk2OGFkaXF6a2N4",
+    "date": "2025-10-06",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/TYckaAU_Uw5JFngClZn6MigMFeQlNOJ-DPwuAav7SBE/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/08791933/filing-history/MzQ4MzczNTk2OGFkaXF6a2N4"
   }
 }

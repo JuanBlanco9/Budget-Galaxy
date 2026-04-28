@@ -59,11 +59,126 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
-  "buyer_type_breakdown": {}
+  "buyer_type_breakdown": {},
+  "ch_profile": {
+    "api_date": "2026-04-28T04:27:58Z",
+    "company_name": "RENISHAW P L C",
+    "company_status": "active",
+    "date_of_creation": "1973-04-04",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-06-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-14"
+  },
+  "governance": {
+    "api_date": "2026-04-28T04:27:59Z",
+    "total_officers": 30,
+    "active_count": 11,
+    "resigned_count": 19,
+    "active_officers": [
+      {
+        "name": "HUSSAIN, Kasim Ali",
+        "role": "secretary",
+        "appointed_on": "2024-07-29",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "DEER, Camille Eileen",
+        "role": "director",
+        "appointed_on": "2025-09-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British,French"
+      },
+      {
+        "name": "DEER, Daniel John",
+        "role": "director",
+        "appointed_on": null,
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "GLICKMAN, Catherine Janet",
+        "role": "director",
+        "appointed_on": "2018-08-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "GRANT, David, Sir",
+        "role": "director",
+        "appointed_on": "2012-04-25",
+        "country_of_residence": "Wales",
+        "nationality": "British"
+      },
+      {
+        "name": "HOLFORD, Karen Margaret, Professor",
+        "role": "director",
+        "appointed_on": "2023-09-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "LEE, William Ernest",
+        "role": "director",
+        "appointed_on": "2016-08-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "MCMURTRY, Richard Dyke",
+        "role": "director",
+        "appointed_on": "2024-07-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SHIPSEY, John Francis",
+        "role": "director",
+        "appointed_on": "2026-04-13",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British,Irish"
+      },
+      {
+        "name": "STACEY, Juliette Natasha",
+        "role": "director",
+        "appointed_on": "2022-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WILSON, Stephen David",
+        "role": "director",
+        "appointed_on": "2022-06-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T04:28:00Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5Mzk5ODI5M2FkaXF6a2N4",
+    "date": "2025-12-16",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/u9CpB-__UorG2H_1mhUhghs6vuzqfmRUrd8eNFRkbg8/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01106260/filing-history/MzQ5Mzk5ODI5M2FkaXF6a2N4"
+  }
 }

@@ -59,14 +59,104 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
     "central_govt": 0.5131,
     "other": 0.4869
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T05:01:21Z",
+    "company_name": "FENIX MEDIA LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2002-02-20",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-08-31",
+    "accounts_last_made_up": "2024-11-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-18"
+  },
+  "governance": {
+    "api_date": "2026-04-28T05:01:22Z",
+    "total_officers": 24,
+    "active_count": 2,
+    "resigned_count": 22,
+    "active_officers": [
+      {
+        "name": "ARNOLD, Marguarite Joanna",
+        "role": "director",
+        "appointed_on": "2019-10-07",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "FAUTLEY, Mark Stephen",
+        "role": "director",
+        "appointed_on": "2019-10-07",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T05:01:23Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Pulsar Group Plc",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2019-10-07",
+        "identification": {
+          "legal_form": "Public Limited Company",
+          "legal_authority": "Law Of England And Wales",
+          "country_registered": "England",
+          "place_registered": "England And Wales Companies Registry",
+          "registration_number": "04799195"
+        }
+      },
+      {
+        "name": "Cello Health Plc",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2017-01-01",
+        "identification": {
+          "legal_form": "Public Limited Company",
+          "legal_authority": "Companies Act",
+          "country_registered": "England And Wales",
+          "place_registered": "England And Wales",
+          "registration_number": "05120150"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4ODUzOTQyOWFkaXF6a2N4",
+    "date": "2025-11-13",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-audit-exemption-subsiduary",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/h8Pir3wHso4GvmiwXoN-C_l3JE0Hqo6B2KptiWMZ7SM/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04378213/filing-history/MzQ4ODUzOTQyOWFkaXF6a2N4"
   }
 }

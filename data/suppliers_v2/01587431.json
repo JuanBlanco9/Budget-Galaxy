@@ -59,11 +59,96 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
-  "buyer_type_breakdown": {}
+  "buyer_type_breakdown": {},
+  "ch_profile": {
+    "api_date": "2026-04-28T14:13:21Z",
+    "company_name": "SOUTH LONDON NURSING HOMES LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1981-09-24",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-08"
+  },
+  "governance": {
+    "api_date": "2026-04-28T14:13:22Z",
+    "total_officers": 17,
+    "active_count": 2,
+    "resigned_count": 15,
+    "active_officers": [
+      {
+        "name": "HILL, Peter Martin",
+        "role": "director",
+        "appointed_on": "2010-12-16",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "JEFFERY, Paul Anthony Keith",
+        "role": "director",
+        "appointed_on": "2007-09-07",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T14:13:23Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Paul Anthony Keith Jeffery",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mhl Holdco Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "England And Wales",
+          "country_registered": "United Kingdom",
+          "place_registered": "England And Wales",
+          "registration_number": "8585667"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MzcyMjAyOGFkaXF6a2N4",
+    "date": "2025-12-12",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/wdbIC7XuKDkkaGBSzZVPa6FlbHFYzbs3lhDgf9fTZa4/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01587431/filing-history/MzQ5MzcyMjAyOGFkaXF6a2N4"
+  }
 }

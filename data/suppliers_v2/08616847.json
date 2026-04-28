@@ -59,13 +59,149 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T14:23:56Z",
+    "company_name": "SHEFFIELD CITIZENS ADVICE AND LAW CENTRE",
+    "company_status": "active",
+    "date_of_creation": "2013-07-19",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-08-02"
+  },
+  "governance": {
+    "api_date": "2026-04-27T14:23:58Z",
+    "total_officers": 39,
+    "active_count": 14,
+    "resigned_count": 25,
+    "active_officers": [
+      {
+        "name": "DAWSON, Hilary Jane",
+        "role": "director",
+        "appointed_on": "2013-09-04",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ESCOTT, Karen",
+        "role": "director",
+        "appointed_on": "2020-10-07",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GAMSU, Mark Yehudah",
+        "role": "director",
+        "appointed_on": "2013-07-19",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GOLLAND, Lynsey Theresa",
+        "role": "director",
+        "appointed_on": "2022-10-05",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GRIGGS, Alistair Michael Dinham",
+        "role": "director",
+        "appointed_on": "2013-07-19",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HOLLAND, Tracey Marie",
+        "role": "director",
+        "appointed_on": "2025-11-05",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LEWIS, Jessica",
+        "role": "director",
+        "appointed_on": "2025-11-05",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MATHEWS, Deborah Jane",
+        "role": "director",
+        "appointed_on": "2023-09-06",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MOHAMED, Ahmed Rashid Ahmed",
+        "role": "director",
+        "appointed_on": "2025-03-05",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "RAJJAQUE, Mohammad Shadique",
+        "role": "director",
+        "appointed_on": "2023-09-06",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ROBINSON, Sheila",
+        "role": "director",
+        "appointed_on": "2018-09-05",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SOUTHWICK, Neal",
+        "role": "director",
+        "appointed_on": "2022-10-05",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "STEERS, Helen Elizabeth",
+        "role": "director",
+        "appointed_on": "2018-09-05",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "WATTS, Gregory Norman",
+        "role": "director",
+        "appointed_on": "2020-10-07",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T14:24:00Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4NTIzOTcyNWFkaXF6a2N4",
+    "date": "2025-10-17",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/yqul2Wozz1YcwZRgwgD4ggwF4bD2jM3hSlIyuAI5Ggc/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/08616847/filing-history/MzQ4NTIzOTcyNWFkaXF6a2N4"
   }
 }

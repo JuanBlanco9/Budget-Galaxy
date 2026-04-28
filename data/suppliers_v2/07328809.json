@@ -59,13 +59,133 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T05:35:57Z",
+    "company_name": "STAFFORDSHIRE CARE FARMING DEVELOPMENT C.I.C.",
+    "company_status": "active",
+    "date_of_creation": "2010-07-28",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-04-30",
+    "accounts_last_made_up": "2024-07-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-08-11"
+  },
+  "governance": {
+    "api_date": "2026-04-28T05:35:58Z",
+    "total_officers": 6,
+    "active_count": 3,
+    "resigned_count": 3,
+    "active_officers": [
+      {
+        "name": "EDWARDS, Mark Kenneth",
+        "role": "director",
+        "appointed_on": "2025-02-04",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PLATT, Nicholas Edwin",
+        "role": "director",
+        "appointed_on": "2020-07-31",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WHITE, Julie",
+        "role": "director",
+        "appointed_on": "2010-07-28",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T05:35:59Z",
+    "total_results": 5,
+    "active_count": 3,
+    "items": [
+      {
+        "name": "Mr Mark Kenneth Edwards",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2025-02-04",
+        "identification": null
+      },
+      {
+        "name": "Mr Nicholas Edwin Platt",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2020-07-31",
+        "identification": null
+      },
+      {
+        "name": "Ms Joyce Theresa Bullock",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Darren Christopher Platt",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mrs Julie White",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2NDc3NzgzMWFkaXF6a2N4",
+    "date": "2025-05-01",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-micro-entity",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/L0aBjvDvwih1F92mwCotgTLdD0dx1kW9VfDV4Ayk63M/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/07328809/filing-history/MzQ2NDc3NzgzMWFkaXF6a2N4"
   }
 }

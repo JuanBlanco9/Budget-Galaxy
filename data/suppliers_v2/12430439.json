@@ -59,13 +59,90 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T06:24:36Z",
+    "company_name": "LOFTHOUSE ROOFING & SUPPLIES LTD",
+    "company_status": "active",
+    "date_of_creation": "2020-01-28",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-10-31",
+    "accounts_last_made_up": "2025-01-31",
+    "confirmation_statement_overdue": true,
+    "confirmation_statement_next_due": "2026-01-20"
+  },
+  "governance": {
+    "api_date": "2026-04-28T06:24:37Z",
+    "total_officers": 2,
+    "active_count": 2,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "BURGESS, Adell",
+        "role": "director",
+        "appointed_on": "2020-01-28",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "BURGESS, Jason Mark",
+        "role": "director",
+        "appointed_on": "2020-01-28",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T06:24:38Z",
+    "total_results": 2,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Mr Jason Mark Burgess",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2020-01-28",
+        "identification": null
+      },
+      {
+        "name": "Mrs Adell Burgess",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2020-01-28",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4NzE3NjcwM2FkaXF6a2N4",
+    "date": "2025-11-02",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-dormant",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/XyZE_kq0f64fLzE4NPrNEYfE0YyMhUYKnF6oWH8Y410/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/12430439/filing-history/MzQ4NzE3NjcwM2FkaXF6a2N4"
   }
 }

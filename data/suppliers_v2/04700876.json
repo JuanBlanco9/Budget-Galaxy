@@ -59,14 +59,120 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
     "central_govt": 0.9877,
     "agency": 0.0123
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T13:48:23Z",
+    "company_name": "LITTLE FISH (UK) LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2003-03-18",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-14"
+  },
+  "governance": {
+    "api_date": "2026-04-27T13:48:25Z",
+    "total_officers": 26,
+    "active_count": 5,
+    "resigned_count": 21,
+    "active_officers": [
+      {
+        "name": "FELLOWS, Chloe Elizabeth Mary",
+        "role": "director",
+        "appointed_on": "2019-12-13",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GILBERT, Graham Mark",
+        "role": "director",
+        "appointed_on": "2010-09-10",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "KELLER, Leon Benjamin Asher",
+        "role": "director",
+        "appointed_on": "2023-04-17",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "MORGENSTERN, Ursula",
+        "role": "director",
+        "appointed_on": "2025-03-17",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "PELL, Steve",
+        "role": "director",
+        "appointed_on": "2023-04-24",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T13:48:26Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Graham Mark Gilbert",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Source24 Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "England And Wales",
+          "country_registered": "England",
+          "place_registered": "Registrar Of Companies",
+          "registration_number": "07270450"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3ODc5MzAzMWFkaXF6a2N4",
+    "date": "2025-08-28",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/vvjHgWqd_bnrO3wSMDXlS8y2LM9TaFTdHKItBxVORhw/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04700876/filing-history/MzQ3ODc5MzAzMWFkaXF6a2N4"
   }
 }

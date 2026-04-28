@@ -59,13 +59,100 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T08:11:21Z",
+    "company_name": "VAT COMPLIANCE EUROPE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2013-09-24",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-08"
+  },
+  "governance": {
+    "api_date": "2026-04-28T08:11:22Z",
+    "total_officers": 8,
+    "active_count": 2,
+    "resigned_count": 6,
+    "active_officers": [
+      {
+        "name": "ABENDANON, Thomas Robert Henri",
+        "role": "director",
+        "appointed_on": "2025-03-04",
+        "country_of_residence": "England",
+        "nationality": "Dutch"
+      },
+      {
+        "name": "VAN PLETZEN, Justus Lourens",
+        "role": "director",
+        "appointed_on": "2023-01-01",
+        "country_of_residence": "South Africa",
+        "nationality": "South African"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T08:11:23Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Alain Esseiva",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Swiss",
+        "country_of_residence": "Singapore",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2024-04-12",
+        "identification": null
+      },
+      {
+        "name": "Vatit Group S.Ar.L.",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2022-03-01",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Luxembourg Business Registers G.I.E.",
+          "country_registered": "Luxembourg",
+          "place_registered": "Luxembourg Business Registers",
+          "registration_number": "B136564"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NzQ5MTM4N2FkaXF6a2N4",
+    "date": "2026-01-04",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/rrJzxpeXomAw7yMxRw_9vR4jS5zR6Z50nXeRURRAPsQ/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/08703597/filing-history/MzQ5NzQ5MTM4N2FkaXF6a2N4"
   }
 }

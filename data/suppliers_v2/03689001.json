@@ -64,15 +64,123 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.6284,
     "council": 0.2188,
     "education": 0.1528
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T03:43:44Z",
+    "company_name": "NTT DATA BUSINESS SOLUTIONS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1998-12-21",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-04"
+  },
+  "governance": {
+    "api_date": "2026-04-28T03:43:45Z",
+    "total_officers": 22,
+    "active_count": 5,
+    "resigned_count": 17,
+    "active_officers": [
+      {
+        "name": "SERRURIER, Jospeh Victor Michael, Mr.",
+        "role": "secretary",
+        "appointed_on": "2023-02-01",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BRADING, Justin John",
+        "role": "director",
+        "appointed_on": "2010-08-19",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "CZYMEK-LAUER, Nicola Andrea",
+        "role": "director",
+        "appointed_on": "2025-06-10",
+        "country_of_residence": "Germany",
+        "nationality": "German"
+      },
+      {
+        "name": "NEWMAN, Philip James",
+        "role": "director",
+        "appointed_on": "2006-03-29",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "ROTTER, Norbert",
+        "role": "director",
+        "appointed_on": "2010-08-19",
+        "country_of_residence": "Germany",
+        "nationality": "German"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T03:43:46Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Ntt, Inc.",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2025-10-01",
+        "identification": {
+          "legal_form": "Corporation",
+          "legal_authority": "Japan",
+          "country_registered": "Japan",
+          "place_registered": "Japan",
+          "registration_number": "0100-01-065142"
+        }
+      },
+      {
+        "name": "Ntt Data Business Solutions Ag",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "German And Eu Company Law"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxNDMxMjY1NGFkaXF6a2N4",
+    "date": "2026-04-13",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/qI3SiisA8NuxszStpn-ZmaOrBH6oItVZ1-MUFpaxwA8/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03689001/filing-history/MzUxNDMxMjY1NGFkaXF6a2N4"
   }
 }

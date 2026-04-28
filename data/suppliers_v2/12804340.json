@@ -66,13 +66,98 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T08:15:54Z",
+    "company_name": "HARRISON-AI MEDICAL UK LTD",
+    "company_status": "active",
+    "date_of_creation": "2020-08-11",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": true,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-03-31",
+    "accounts_last_made_up": "2025-06-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-08-24"
+  },
+  "governance": {
+    "api_date": "2026-04-28T08:15:55Z",
+    "total_officers": 8,
+    "active_count": 1,
+    "resigned_count": 7,
+    "active_officers": [
+      {
+        "name": "TRAN, Dang Dinh Ang",
+        "role": "director",
+        "appointed_on": "2024-04-10",
+        "country_of_residence": "Australia",
+        "nationality": "Australian"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T08:15:56Z",
+    "total_results": 2,
+    "active_count": 0,
+    "items": [
+      {
+        "name": "Image Uk Holdco Ii Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2020-08-11",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England & Wales",
+          "place_registered": "Companies House",
+          "registration_number": "11077911"
+        }
+      },
+      {
+        "name": "Permira Advisers Llp  ",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent",
+          "voting-rights-50-to-75-percent"
+        ],
+        "notified_on": "2020-08-11",
+        "identification": {
+          "legal_form": "Limited Liability Partnership",
+          "legal_authority": "Limited Liability Partnership Act 2000",
+          "country_registered": "England & Wales",
+          "place_registered": "Companies House, England & Wales",
+          "registration_number": "Oc300172"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwNjEzMDcxMmFkaXF6a2N4",
+    "date": "2026-02-19",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/hHZz3kxAqmNScDEiN3uQcsU9kA_JhpdXAAHTBOBQ4G4/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/12804340/filing-history/MzUwNjEzMDcxMmFkaXF6a2N4"
   }
 }

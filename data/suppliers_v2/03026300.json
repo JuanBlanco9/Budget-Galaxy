@@ -61,13 +61,116 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T13:59:41Z",
+    "company_name": "WIRTGEN LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1995-02-24",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-07-31",
+    "accounts_last_made_up": "2024-10-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-22"
+  },
+  "governance": {
+    "api_date": "2026-04-27T13:59:43Z",
+    "total_officers": 17,
+    "active_count": 4,
+    "resigned_count": 13,
+    "active_officers": [
+      {
+        "name": "WILLIAMS, Samantha Lauren",
+        "role": "secretary",
+        "appointed_on": "2025-07-18",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "ALLSOPP, Richard John",
+        "role": "director",
+        "appointed_on": "2018-03-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HOLMES, Paul Frederek",
+        "role": "director",
+        "appointed_on": "2013-10-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WILLIAMS, Samantha Lauren",
+        "role": "director",
+        "appointed_on": "2025-07-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T13:59:44Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Deere & Company",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2017-12-01",
+        "identification": {
+          "legal_form": "Corporation",
+          "legal_authority": "United States Of America",
+          "country_registered": "United States Of America/Delaware",
+          "place_registered": "Incorporated With The Secretary Of State Of The State Of Delaware",
+          "registration_number": "522909"
+        }
+      },
+      {
+        "name": "Wirtgen Group Holding Gmbh",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-10-01",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "German Law",
+          "country_registered": "Montabaur",
+          "place_registered": "Windhagen",
+          "registration_number": "Hrb10492"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NDg2NjEwN2FkaXF6a2N4",
+    "date": "2025-07-23",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/M0bZgsq89u6oAKzaWAW0FnQThxrHEA4NRxkvEduKujc/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03026300/filing-history/MzQ3NDg2NjEwN2FkaXF6a2N4"
   }
 }

@@ -64,13 +64,128 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T22:24:48Z",
+    "company_name": "SIFA FIRESIDE",
+    "company_status": "active",
+    "date_of_creation": "1995-08-24",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-09-07"
+  },
+  "governance": {
+    "api_date": "2026-04-27T22:24:50Z",
+    "total_officers": 73,
+    "active_count": 11,
+    "resigned_count": 62,
+    "active_officers": [
+      {
+        "name": "MOLLOY, Martin",
+        "role": "secretary",
+        "appointed_on": "2019-12-12",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BARKESS, Steven Malcolm",
+        "role": "director",
+        "appointed_on": "2025-05-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CHIDGEY, Martin Laurence",
+        "role": "director",
+        "appointed_on": "2019-03-07",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "FOY, James Francis",
+        "role": "director",
+        "appointed_on": "2025-05-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "KHAN, Mohammed Awais",
+        "role": "director",
+        "appointed_on": "2025-07-17",
+        "country_of_residence": "England",
+        "nationality": "British,Pakistani"
+      },
+      {
+        "name": "OLLIER, David John",
+        "role": "director",
+        "appointed_on": "2006-09-18",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "PARTRIDGE, Stephen Brian",
+        "role": "director",
+        "appointed_on": "2022-07-21",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PYKE, Holly Ann",
+        "role": "director",
+        "appointed_on": "2022-09-29",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WAKELY, Daniel Robert",
+        "role": "director",
+        "appointed_on": "2025-01-30",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WILDMAN, Carole Deborah",
+        "role": "director",
+        "appointed_on": "2017-07-27",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "YOUNG, Stuart James",
+        "role": "director",
+        "appointed_on": "2023-10-19",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T22:24:52Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MjM2NTUyMGFkaXF6a2N4",
+    "date": "2025-12-05",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/knYXV3eoW0VnG2T1qar9ZrudJvWpAoTNmt2NnjDOooA/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03094905/filing-history/MzQ5MjM2NTUyMGFkaXF6a2N4"
   }
 }

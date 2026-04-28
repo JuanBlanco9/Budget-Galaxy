@@ -52,93 +52,26 @@
   },
   "financial_health": null,
   "governance": {
-    "officers_active_count": 2,
-    "officers_resigned_count": 0,
-    "board_turnover_ratio": 0.0,
-    "board_turnover_signal": "low",
-    "active_directors": [
+    "api_date": "2026-04-27T14:18:08Z",
+    "total_officers": 2,
+    "active_count": 0,
+    "resigned_count": 0,
+    "active_officers": [
       {
         "name": "O'BRIEN, Sara Louise",
         "role": "director",
         "appointed_on": "2017-03-22",
-        "resigned_on": null,
-        "nationality": "British",
-        "occupation": null,
         "country_of_residence": "England",
-        "date_of_birth": {
-          "month": 8,
-          "year": 1974
-        },
-        "address": {
-          "locality": "Stanley",
-          "postal_code": "DH9 6YX",
-          "country": "England"
-        }
+        "nationality": "British"
       },
       {
         "name": "OVERTON, Emma Jo",
         "role": "director",
         "appointed_on": "2017-03-22",
-        "resigned_on": null,
-        "nationality": "British",
-        "occupation": null,
         "country_of_residence": "England",
-        "date_of_birth": {
-          "month": 5,
-          "year": 1977
-        },
-        "address": {
-          "locality": "Stanley",
-          "postal_code": "DH9 6YX",
-          "country": "England"
-        }
+        "nationality": "British"
       }
-    ],
-    "secretaries": [],
-    "all_active_officers": [
-      {
-        "name": "O'BRIEN, Sara Louise",
-        "role": "director",
-        "appointed_on": "2017-03-22",
-        "resigned_on": null,
-        "nationality": "British",
-        "occupation": null,
-        "country_of_residence": "England",
-        "date_of_birth": {
-          "month": 8,
-          "year": 1974
-        },
-        "address": {
-          "locality": "Stanley",
-          "postal_code": "DH9 6YX",
-          "country": "England"
-        }
-      },
-      {
-        "name": "OVERTON, Emma Jo",
-        "role": "director",
-        "appointed_on": "2017-03-22",
-        "resigned_on": null,
-        "nationality": "British",
-        "occupation": null,
-        "country_of_residence": "England",
-        "date_of_birth": {
-          "month": 5,
-          "year": 1977
-        },
-        "address": {
-          "locality": "Stanley",
-          "postal_code": "DH9 6YX",
-          "country": "England"
-        }
-      }
-    ],
-    "resigned_officers_summary": {
-      "count": 0,
-      "recent": []
-    },
-    "direct_psc_count": 2,
-    "direct_psc_statements": []
+    ]
   },
   "ownership_chain": {
     "resolution": "individual",
@@ -254,5 +187,61 @@
     "note": "No Contracts Finder matches for this supplier in 2020-2024."
   },
   "top_buyer_type": "other",
-  "buyer_type_breakdown": {}
+  "buyer_type_breakdown": {},
+  "ch_profile": {
+    "api_date": "2026-04-27T14:18:06Z",
+    "company_name": "THE SKILLS, BUSINESS AND INNOVATION TEAM LIMITED",
+    "company_status": "dissolved",
+    "date_of_creation": "2017-03-22",
+    "date_of_cessation": "2017-12-05",
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": null,
+    "accounts_overdue": null,
+    "accounts_next_due": null,
+    "accounts_last_made_up": null,
+    "confirmation_statement_overdue": null,
+    "confirmation_statement_next_due": null
+  },
+  "pscs": {
+    "api_date": "2026-04-27T14:18:09Z",
+    "total_results": 2,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Mrs Sara Louise O'Brien",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2017-03-22",
+        "identification": null
+      },
+      {
+        "name": "Miss Emma Jo Overton",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2017-03-22",
+        "identification": null
+      }
+    ]
+  },
+  "enrichment_stages": {
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true
+  }
 }

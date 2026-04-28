@@ -64,13 +64,114 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "agency",
   "buyer_type_breakdown": {
     "agency": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T03:49:55Z",
+    "company_name": "AHEAD PARTNERSHIP LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2006-01-25",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-08"
+  },
+  "governance": {
+    "api_date": "2026-04-28T03:49:56Z",
+    "total_officers": 26,
+    "active_count": 9,
+    "resigned_count": 17,
+    "active_officers": [
+      {
+        "name": "BURRAS, Stephanie Louise",
+        "role": "director",
+        "appointed_on": "2006-01-25",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HAMLIN, Claire Marie",
+        "role": "director",
+        "appointed_on": "2023-09-20",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HARRISON, Caroline",
+        "role": "director",
+        "appointed_on": "2025-12-05",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HEWITT, Rebecca",
+        "role": "director",
+        "appointed_on": "2020-03-05",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LARGE, Emily May",
+        "role": "director",
+        "appointed_on": "2025-12-05",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "OSBORNE, Gareth",
+        "role": "director",
+        "appointed_on": "2022-09-13",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SHERIFF, Janet",
+        "role": "director",
+        "appointed_on": "2023-09-20",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WARD, Matt",
+        "role": "director",
+        "appointed_on": "2023-09-20",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WEBB, Steven John",
+        "role": "director",
+        "appointed_on": "2018-07-23",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T03:49:58Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NDAyOTAwOGFkaXF6a2N4",
+    "date": "2025-07-18",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/xHNrD1froal9C9z2aO1VWCt8-xjET6uWAzXXHEYoWak/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/05687891/filing-history/MzQ3NDAyOTAwOGFkaXF6a2N4"
   }
 }

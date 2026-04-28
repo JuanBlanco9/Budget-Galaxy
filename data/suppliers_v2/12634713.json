@@ -65,10 +65,10 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "agency",
   "buyer_type_breakdown": {
@@ -77,5 +77,105 @@
     "other": 0.1281,
     "council": 0.0206,
     "central_govt": 0.0069
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T13:39:15Z",
+    "company_name": "MATRIX BOOKING LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2020-05-30",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-06-30",
+    "accounts_last_made_up": "2024-09-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-12"
+  },
+  "governance": {
+    "api_date": "2026-04-28T13:39:16Z",
+    "total_officers": 6,
+    "active_count": 3,
+    "resigned_count": 3,
+    "active_officers": [
+      {
+        "name": "BREEZE, Karl Spencer",
+        "role": "secretary",
+        "appointed_on": "2020-08-04",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BREEZE, Karl Spencer",
+        "role": "director",
+        "appointed_on": "2020-08-03",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "KNIGHT, Stephen",
+        "role": "director",
+        "appointed_on": "2020-09-30",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T13:39:17Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Matrix Eot Limited (Acting As Trustee Of The Matrix Employee Ownership Trust)",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2020-09-30",
+        "identification": {
+          "legal_form": "Private Company Limited By Guarantee",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "England And Wales",
+          "registration_number": "12903653"
+        }
+      },
+      {
+        "name": "Keytree Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2020-05-30",
+        "identification": {
+          "legal_form": "Corporate",
+          "legal_authority": "United Kingdom",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "05744007"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2NDgzODI5NGFkaXF6a2N4",
+    "date": "2025-05-01",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/CyNQCtYXtJAKB4D2Gp2XgKzCREW5ZmjtG7iqq4tXXSA/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/12634713/filing-history/MzQ2NDgzODI5NGFkaXF6a2N4"
   }
 }

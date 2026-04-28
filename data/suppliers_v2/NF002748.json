@@ -55,13 +55,149 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T20:20:14Z",
+    "company_name": "COMPASS SERVICES (U.K.) LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1988-02-12",
+    "date_of_cessation": null,
+    "jurisdiction": "united-kingdom",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": null,
+    "accounts_overdue": false,
+    "accounts_next_due": null,
+    "accounts_last_made_up": null,
+    "confirmation_statement_overdue": null,
+    "confirmation_statement_next_due": null
+  },
+  "governance": {
+    "api_date": "2026-04-27T20:20:16Z",
+    "total_officers": 16,
+    "active_count": 14,
+    "resigned_count": 2,
+    "active_officers": [
+      {
+        "name": "MASON TIMOTHY C, Queens Wharf",
+        "role": "secretary",
+        "appointed_on": "1988-02-12",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BRIGGS, Trevor Holden",
+        "role": "director",
+        "appointed_on": "1988-02-12",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "BUCKNALL, Christopher David",
+        "role": "director",
+        "appointed_on": "1988-02-12",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "BURTON, Michael Jeremy",
+        "role": "director",
+        "appointed_on": "2000-07-27",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "DAVENPORT, Donald Andrew",
+        "role": "director",
+        "appointed_on": "2000-07-28",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "DGRUNDY, Clive W P",
+        "role": "director",
+        "appointed_on": "1988-02-12",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "DICKSON, Richard",
+        "role": "director",
+        "appointed_on": "1988-02-12",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "DUNLOP, Nigel John",
+        "role": "director",
+        "appointed_on": "2000-07-27",
+        "country_of_residence": null,
+        "nationality": "South American"
+      },
+      {
+        "name": "GILPIN, Clive A",
+        "role": "director",
+        "appointed_on": "1988-02-12",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "HARRIS, David",
+        "role": "director",
+        "appointed_on": "1988-02-12",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "HARRISSON, Philip Timothy",
+        "role": "director",
+        "appointed_on": "2000-07-27",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "MACKAY, Francis H",
+        "role": "director",
+        "appointed_on": "1988-02-12",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "MASON, Timothy C",
+        "role": "director",
+        "appointed_on": "1988-02-12",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "ROBINSON, Gerrard J",
+        "role": "director",
+        "appointed_on": "1988-02-12",
+        "country_of_residence": null,
+        "nationality": null
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T20:20:18Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MjUwMzc2NTAzNGFkaXF6a2N4",
+    "date": "2001-11-18",
+    "type": "ACX(NI)",
+    "description": "legacy",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/NXCx2liBMMxvZITdoQYWOFxXJ9svNeg7Nzvt8Kaar6Q/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/NF002748/filing-history/MjUwMzc2NTAzNGFkaXF6a2N4"
   }
 }

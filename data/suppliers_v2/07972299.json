@@ -63,13 +63,104 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T13:29:17Z",
+    "company_name": "Q-BOT LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2012-03-01",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-09-30",
+    "accounts_last_made_up": "2025-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-27"
+  },
+  "governance": {
+    "api_date": "2026-04-27T13:29:19Z",
+    "total_officers": 14,
+    "active_count": 3,
+    "resigned_count": 11,
+    "active_officers": [
+      {
+        "name": "CHILDS, Peter Robin Nicholas, Professor",
+        "role": "director",
+        "appointed_on": "2012-10-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GROAT, Maurice James Malcolm",
+        "role": "director",
+        "appointed_on": "2024-03-07",
+        "country_of_residence": "Malta",
+        "nationality": "British,Maltese"
+      },
+      {
+        "name": "ILIEV, Ilian Petkov",
+        "role": "director",
+        "appointed_on": "2014-06-18",
+        "country_of_residence": "England",
+        "nationality": "British,Bulgarian"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T13:29:20Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Emv Capital Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2023-07-20",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "United Kingdom (England And Wales)",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "11412783"
+        }
+      },
+      {
+        "name": "Mr Tomasz Bartlomiej Lipinski",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Polish",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwNzE0Nzc5NmFkaXF6a2N4",
+    "date": "2026-02-25",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/oA_tSWw2cva4vZo9z5jvZa5zB2FfO2nszwajk_s3HN0/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/07972299/filing-history/MzUwNzE0Nzc5NmFkaXF6a2N4"
   }
 }

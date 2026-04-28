@@ -70,13 +70,150 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T04:20:54Z",
+    "company_name": "PARSEQ LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2006-05-12",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-03-31",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-27"
+  },
+  "governance": {
+    "api_date": "2026-04-28T04:20:56Z",
+    "total_officers": 41,
+    "active_count": 4,
+    "resigned_count": 37,
+    "active_officers": [
+      {
+        "name": "CREAN, Pauric",
+        "role": "director",
+        "appointed_on": "2026-02-03",
+        "country_of_residence": "Ireland",
+        "nationality": "Irish"
+      },
+      {
+        "name": "DEVANE, Liam",
+        "role": "director",
+        "appointed_on": "2026-02-03",
+        "country_of_residence": "Ireland",
+        "nationality": "Irish"
+      },
+      {
+        "name": "EDSTROM, Martin Olof",
+        "role": "director",
+        "appointed_on": "2026-02-03",
+        "country_of_residence": "United Kingdom",
+        "nationality": "Swedish"
+      },
+      {
+        "name": "WALTERS, Jeremy Edward Charles",
+        "role": "director",
+        "appointed_on": "2026-02-03",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T04:20:57Z",
+    "total_results": 4,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Paragon Customer Communication (London) Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2026-02-03",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "02788181"
+        }
+      },
+      {
+        "name": "Mr Rami Cassis",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "French",
+        "country_of_residence": "United Arab Emirates",
+        "ceased": true,
+        "natures_of_control": [
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2020-10-08",
+        "identification": null
+      },
+      {
+        "name": "Parabellum Investments (Uk) Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2019-02-21",
+        "identification": {
+          "legal_form": "Limited Liability Company",
+          "legal_authority": "England And Wales",
+          "country_registered": "United Kingdom",
+          "place_registered": "Registrar Of Companies",
+          "registration_number": "11791405"
+        }
+      },
+      {
+        "name": "Cnh Bidco Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Limited Liability Company",
+          "legal_authority": "Companies House 2006",
+          "country_registered": "England",
+          "place_registered": "Registrar Of Companies For England And Wakes",
+          "registration_number": "7795109"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxMjU1MTM3M2FkaXF6a2N4",
+    "date": "2026-03-25",
+    "type": "AA01",
+    "description": "change-account-reference-date-company-current-extended",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/J4qaLWKkUmf_wPcarizs-6dGX9lcIOwYLGro3JkmIZc/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/05815806/filing-history/MzUxMjU1MTM3M2FkaXF6a2N4"
   }
 }

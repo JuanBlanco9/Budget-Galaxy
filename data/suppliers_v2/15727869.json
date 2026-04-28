@@ -59,13 +59,122 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
     "ch_api_accounts_pdf": false
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T05:06:56Z",
+    "company_name": "ACTIVE FUTURE SUNDERLAND CIC",
+    "company_status": "active",
+    "date_of_creation": "2024-05-18",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-05-18",
+    "accounts_last_made_up": null,
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-05-31"
+  },
+  "governance": {
+    "api_date": "2026-04-28T05:06:57Z",
+    "total_officers": 4,
+    "active_count": 4,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "CONNELL, Mark",
+        "role": "director",
+        "appointed_on": "2024-05-18",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CONNELL, Philippa",
+        "role": "director",
+        "appointed_on": "2024-05-18",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "GARDINER, Chris",
+        "role": "director",
+        "appointed_on": "2024-06-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PATTERSON, Elizabeth Rene",
+        "role": "director",
+        "appointed_on": "2024-05-18",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T05:06:58Z",
+    "total_results": 4,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Mrs Philippa Connell",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent"
+        ],
+        "notified_on": "2025-07-03",
+        "identification": null
+      },
+      {
+        "name": "Mr Mark Connell",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent"
+        ],
+        "notified_on": "2025-07-03",
+        "identification": null
+      },
+      {
+        "name": "Mr Mark Connell",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2024-05-18",
+        "identification": null
+      },
+      {
+        "name": "Mrs Philippa Connell",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2024-05-18",
+        "identification": null
+      }
+    ]
   }
 }

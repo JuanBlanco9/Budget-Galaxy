@@ -59,13 +59,93 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T05:16:51Z",
+    "company_name": "ELEMENT SOCIETY",
+    "company_status": "active",
+    "date_of_creation": "2013-06-19",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-03"
+  },
+  "governance": {
+    "api_date": "2026-04-28T05:16:52Z",
+    "total_officers": 26,
+    "active_count": 6,
+    "resigned_count": 20,
+    "active_officers": [
+      {
+        "name": "HILL, Christopher",
+        "role": "secretary",
+        "appointed_on": "2016-01-01",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BALSHAW, Ian Alexander",
+        "role": "director",
+        "appointed_on": "2014-04-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HEADFORD, Samantha",
+        "role": "director",
+        "appointed_on": "2024-12-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ISMAN-EGAL, Marcus",
+        "role": "director",
+        "appointed_on": "2024-12-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LESCA, Gabriella",
+        "role": "director",
+        "appointed_on": "2024-12-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "RATTENBURY, Adrian",
+        "role": "director",
+        "appointed_on": "2019-05-14",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T05:16:53Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NjUyNDcyNWFkaXF6a2N4",
+    "date": "2026-01-03",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/x1VCR-FdPUShwjHmB9mA2YGOxUlmPuSvBr_rPJdrZxw/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/08576383/filing-history/MzQ5NjUyNDcyNWFkaXF6a2N4"
   }
 }

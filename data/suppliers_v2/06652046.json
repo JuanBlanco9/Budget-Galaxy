@@ -70,13 +70,128 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T06:10:26Z",
+    "company_name": "THE MIGHTY CREATIVES",
+    "company_status": "active",
+    "date_of_creation": "2008-07-21",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-08-11"
+  },
+  "governance": {
+    "api_date": "2026-04-28T06:10:28Z",
+    "total_officers": 54,
+    "active_count": 11,
+    "resigned_count": 43,
+    "active_officers": [
+      {
+        "name": "OWEN, Richard, Dr",
+        "role": "secretary",
+        "appointed_on": "2017-12-13",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BRADSHAW, Rebecca",
+        "role": "director",
+        "appointed_on": "2025-04-23",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "DAMMER, Thyll Lukas",
+        "role": "director",
+        "appointed_on": "2025-04-23",
+        "country_of_residence": "Germany",
+        "nationality": "German"
+      },
+      {
+        "name": "DENNIS, Jaysika",
+        "role": "director",
+        "appointed_on": "2023-05-14",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "FARNHILL-BAIN, Jack",
+        "role": "director",
+        "appointed_on": "2024-07-31",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "JEGLINSKA, Wiktoria",
+        "role": "director",
+        "appointed_on": "2025-04-23",
+        "country_of_residence": "England",
+        "nationality": "Polish"
+      },
+      {
+        "name": "LEAMAN, Emma",
+        "role": "director",
+        "appointed_on": "2025-04-23",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MELLIES, Christopher Jason",
+        "role": "director",
+        "appointed_on": "2025-04-23",
+        "country_of_residence": "England",
+        "nationality": "German"
+      },
+      {
+        "name": "ROBEY-TURNER, Charlotte",
+        "role": "director",
+        "appointed_on": "2024-07-31",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ROBINSON, Melanie",
+        "role": "director",
+        "appointed_on": "2024-07-31",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WHITE, Christine Anne, Professor",
+        "role": "director",
+        "appointed_on": "2023-06-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T06:10:29Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3ODc4MDYzMWFkaXF6a2N4",
+    "date": "2025-08-27",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/ajS_jzIGxcKAkWWmJiamFQfEtBSPs3GhHK4iQ9G6BsA/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/06652046/filing-history/MzQ3ODc4MDYzMWFkaXF6a2N4"
   }
 }

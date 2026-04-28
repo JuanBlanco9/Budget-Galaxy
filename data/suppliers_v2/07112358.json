@@ -64,13 +64,107 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T13:20:19Z",
+    "company_name": "THERMO FISHER SCIENTIFIC HOLDINGS EUROPE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2009-12-23",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-09-30",
+    "accounts_last_made_up": "2025-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-06"
+  },
+  "governance": {
+    "api_date": "2026-04-28T13:20:20Z",
+    "total_officers": 20,
+    "active_count": 5,
+    "resigned_count": 15,
+    "active_officers": [
+      {
+        "name": "OAKWOOD CORPORATE SECRETARY LIMITED",
+        "role": "corporate-secretary",
+        "appointed_on": "2010-11-01",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "CAMERON, Euan Daney Ross",
+        "role": "director",
+        "appointed_on": "2018-10-31",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "GREEN, Georgina Adams",
+        "role": "director",
+        "appointed_on": "2024-04-18",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "SMITH, Anthony Hugh",
+        "role": "director",
+        "appointed_on": "2018-11-12",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      },
+      {
+        "name": "STARR, Alison Jane",
+        "role": "director",
+        "appointed_on": "2024-04-18",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T13:20:22Z",
+    "total_results": 1,
+    "active_count": 0,
+    "items": [
+      {
+        "name": "Thermo Fisher Scientific Inc.",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Corporation",
+          "legal_authority": "United States (Delaware)",
+          "country_registered": "Delaware",
+          "place_registered": "Delaware Division Of Corporations",
+          "registration_number": "0558016"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxNDMxNjYxMWFkaXF6a2N4",
+    "date": "2026-04-13",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/GdgYWIloET6h9Gt2eObDA5aaEAwyA2j94yzVBznAE3w/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/07112358/filing-history/MzUxNDMxNjYxMWFkaXF6a2N4"
   }
 }

@@ -59,15 +59,101 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "police_fire",
   "buyer_type_breakdown": {
     "police_fire": 0.4499,
     "nhs": 0.4481,
     "council": 0.1021
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T23:43:13Z",
+    "company_name": "COOPER CLARKE CONSTRUCTION LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1996-08-20",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": true,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-11"
+  },
+  "governance": {
+    "api_date": "2026-04-27T23:43:14Z",
+    "total_officers": 7,
+    "active_count": 5,
+    "resigned_count": 2,
+    "active_officers": [
+      {
+        "name": "COOPER, Dean",
+        "role": "secretary",
+        "appointed_on": "1996-08-21",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "CLARKE, David",
+        "role": "director",
+        "appointed_on": "1996-08-21",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "COOPER, Dean",
+        "role": "director",
+        "appointed_on": "1996-08-21",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "RODBOURNE, Alan Frederick",
+        "role": "director",
+        "appointed_on": "2008-10-31",
+        "country_of_residence": "England",
+        "nationality": "English"
+      },
+      {
+        "name": "SHIELS, Simon",
+        "role": "director",
+        "appointed_on": "2015-09-16",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T23:43:16Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Alan Frederick Rodbourne",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "English",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent"
+        ],
+        "notified_on": "2016-11-30",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2OTE5MTc3NmFkaXF6a2N4",
+    "date": "2025-06-06",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/cSoPmh7ZyziAgyWpOB6NqzMhHb3ECi7OQMsEQRa_Me8/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03239792/filing-history/MzQ2OTE5MTc3NmFkaXF6a2N4"
   }
 }

@@ -59,14 +59,130 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 0.901,
     "other": 0.099
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T00:36:28Z",
+    "company_name": "ENVIROCALL LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1988-08-26",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-11-30",
+    "accounts_last_made_up": "2025-02-28",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-09-12"
+  },
+  "governance": {
+    "api_date": "2026-04-28T00:36:29Z",
+    "total_officers": 14,
+    "active_count": 5,
+    "resigned_count": 9,
+    "active_officers": [
+      {
+        "name": "TYNAN, Lisa",
+        "role": "secretary",
+        "appointed_on": "2004-06-23",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "STARKIE, Niamh",
+        "role": "director",
+        "appointed_on": "2024-03-26",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "TYNAN, Kian",
+        "role": "director",
+        "appointed_on": "2024-03-26",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "TYNAN, Lisa",
+        "role": "director",
+        "appointed_on": "2012-01-17",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "TYNAN, Michael Patrick",
+        "role": "director",
+        "appointed_on": "2002-06-24",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T00:36:31Z",
+    "total_results": 3,
+    "active_count": 3,
+    "items": [
+      {
+        "name": "Mr Michael Patrick Tynan",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mrs Lisa Tynan",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Keelex 273 Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act",
+          "country_registered": "England And Wales",
+          "place_registered": "Registrar Of Companies England & Wales",
+          "registration_number": "04516959"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NTY1MTY5N2FkaXF6a2N4",
+    "date": "2025-07-30",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/vMTpiDkfuaSxh0bVMOSZjj_m3RFjqziRFss78Kml21U/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02290784/filing-history/MzQ3NTY1MTY5N2FkaXF6a2N4"
   }
 }

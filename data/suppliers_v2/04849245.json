@@ -59,15 +59,143 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.7064,
     "education": 0.2873,
     "nhs": 0.0063
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T12:00:35Z",
+    "company_name": "CHECKMATE FIRE SOLUTIONS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2003-07-29",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-06-30",
+    "accounts_last_made_up": "2025-09-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-08-12"
+  },
+  "governance": {
+    "api_date": "2026-04-28T12:00:36Z",
+    "total_officers": 18,
+    "active_count": 5,
+    "resigned_count": 13,
+    "active_officers": [
+      {
+        "name": "CALVERLEY, Sophie Robyn",
+        "role": "director",
+        "appointed_on": "2024-03-22",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "FINNIE, Simon Edward",
+        "role": "director",
+        "appointed_on": "2026-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MARSH, Jonathan Geoffrey",
+        "role": "director",
+        "appointed_on": "2024-03-22",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SLATTERY, Gavin James, Mr.",
+        "role": "director",
+        "appointed_on": "2020-05-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WOFFENDIN, David Paul, Mr.",
+        "role": "director",
+        "appointed_on": "2012-10-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T12:00:37Z",
+    "total_results": 4,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Checkmate Holdings Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-12-08",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006"
+        }
+      },
+      {
+        "name": "Mr Alan Oliver",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Mark Damian Williams",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Patrick Noel Murphy",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "Irish",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwODQ3MjY2MmFkaXF6a2N4",
+    "date": "2026-03-04",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/lvtUgECpbJQX16HcD4C-UI5btzYXC74DrgJ2aUWshzY/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04849245/filing-history/MzUwODQ3MjY2MmFkaXF6a2N4"
   }
 }

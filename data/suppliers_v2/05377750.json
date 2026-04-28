@@ -70,14 +70,94 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.9999,
     "council": 0.0001
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T15:34:56Z",
+    "company_name": "MCLAREN CONSTRUCTION LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2005-02-28",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-04-30",
+    "accounts_last_made_up": "2025-07-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-19"
+  },
+  "governance": {
+    "api_date": "2026-04-27T15:34:58Z",
+    "total_officers": 6,
+    "active_count": 3,
+    "resigned_count": 3,
+    "active_officers": [
+      {
+        "name": "TAYLOR WESSING SECRETARIES LIMITED",
+        "role": "corporate-secretary",
+        "appointed_on": "2011-12-31",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "ARCHER, Maurice",
+        "role": "director",
+        "appointed_on": "2015-11-02",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "PRINGLE, Philip James",
+        "role": "director",
+        "appointed_on": "2005-02-28",
+        "country_of_residence": "United Kingdom",
+        "nationality": "English"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T15:35:00Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mclaren Construction Group Plc",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Public Limited Company",
+          "legal_authority": "United Kingdom (England And Wales)",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "05384316"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwMzg0ODQ4OGFkaXF6a2N4",
+    "date": "2026-02-11",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/LJFK5u-dE2XYm8m4-TjnJl6HH3iUVvisjZFJMUWHwsI/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/05377750/filing-history/MzUwMzg0ODQ4OGFkaXF6a2N4"
   }
 }

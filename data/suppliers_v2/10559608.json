@@ -68,13 +68,90 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T11:38:47Z",
+    "company_name": "MACMARTIN LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2017-01-12",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-10-31",
+    "accounts_last_made_up": "2025-01-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-25"
+  },
+  "governance": {
+    "api_date": "2026-04-28T11:38:48Z",
+    "total_officers": 2,
+    "active_count": 2,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "HUTTON, Anna Marie",
+        "role": "director",
+        "appointed_on": "2017-01-12",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MACDONALD, Claire Louise",
+        "role": "director",
+        "appointed_on": "2017-01-12",
+        "country_of_residence": "United Kingdom",
+        "nationality": "United Kingdom"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T11:38:49Z",
+    "total_results": 2,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Mrs Anna Marie Hutton",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2021-02-01",
+        "identification": null
+      },
+      {
+        "name": "Mrs Claire Louise Macdonald",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "United Kingdom",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2017-01-12",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4NzA1MjU0NmFkaXF6a2N4",
+    "date": "2025-10-31",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-micro-entity",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/kONsDPUB583sdyrP4EhTXJ3NElz2ydav4VE-Twughow/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/10559608/filing-history/MzQ4NzA1MjU0NmFkaXF6a2N4"
   }
 }

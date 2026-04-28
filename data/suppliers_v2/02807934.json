@@ -68,13 +68,142 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T14:43:57Z",
+    "company_name": "VIA COMMUNITY LTD",
+    "company_status": "active",
+    "date_of_creation": "1993-04-02",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-04-12"
+  },
+  "governance": {
+    "api_date": "2026-04-27T14:43:59Z",
+    "total_officers": 34,
+    "active_count": 13,
+    "resigned_count": 21,
+    "active_officers": [
+      {
+        "name": "MCGINN, Brian",
+        "role": "secretary",
+        "appointed_on": "2021-05-27",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "AIKMAN, Jennifer",
+        "role": "director",
+        "appointed_on": "2026-03-19",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "COOK, Heather Jane",
+        "role": "director",
+        "appointed_on": "2026-03-19",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "COPELAND, James Theodore",
+        "role": "director",
+        "appointed_on": "2025-07-18",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "DALTON, Pedro",
+        "role": "director",
+        "appointed_on": "2025-07-30",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "DENTON, Claire",
+        "role": "director",
+        "appointed_on": "2026-03-19",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GILES, Jamie Lockhart",
+        "role": "director",
+        "appointed_on": "2025-07-18",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HOWLETT, Magda",
+        "role": "director",
+        "appointed_on": "2025-07-29",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HUMPHREYS, Lloyd",
+        "role": "director",
+        "appointed_on": "2025-07-24",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MACINTYRE, Don",
+        "role": "director",
+        "appointed_on": "2025-07-18",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PAUL, Richard Jeremy",
+        "role": "director",
+        "appointed_on": "2011-12-15",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WADDICOR, Charles",
+        "role": "director",
+        "appointed_on": "2025-07-24",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WALSH, Michael Jeffrey",
+        "role": "director",
+        "appointed_on": "2019-12-19",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T14:44:01Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NjYyODI0NmFkaXF6a2N4",
+    "date": "2026-01-05",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/c89UIswXzEx2X4U7l2_4o09C61kiQm0tpfBVw8wmGQk/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02807934/filing-history/MzQ5NjYyODI0NmFkaXF6a2N4"
   }
 }

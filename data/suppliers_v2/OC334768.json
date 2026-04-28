@@ -60,13 +60,191 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "education",
   "buyer_type_breakdown": {
     "education": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T09:05:14Z",
+    "company_name": "KUIT STEINART LEVY LLP",
+    "company_status": "active",
+    "date_of_creation": "2008-02-13",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-01-31",
+    "accounts_last_made_up": "2025-04-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-13"
+  },
+  "governance": {
+    "api_date": "2026-04-28T09:05:15Z",
+    "total_officers": 63,
+    "active_count": 39,
+    "resigned_count": 24,
+    "active_officers": [
+      {
+        "name": "ECCLESTON, Steven Peter",
+        "role": "llp-designated-member",
+        "appointed_on": "2008-02-13",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "LEVY, Robert Adrian",
+        "role": "llp-designated-member",
+        "appointed_on": "2008-02-13",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "ADDISON, Tasoula Leanne",
+        "role": "llp-member",
+        "appointed_on": "2025-05-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "ARKWRIGHT, Tim Joseph Christian",
+        "role": "llp-member",
+        "appointed_on": "2021-06-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "BIRD, Sally",
+        "role": "llp-member",
+        "appointed_on": "2008-05-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "BRICKNELL, Paul David",
+        "role": "llp-member",
+        "appointed_on": "2017-05-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "BUCKLEY, Robert",
+        "role": "llp-member",
+        "appointed_on": "2008-05-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "CHAMBERS, David John",
+        "role": "llp-member",
+        "appointed_on": "2025-05-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "CLYNE, Lauren Amy",
+        "role": "llp-member",
+        "appointed_on": "2017-05-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "EAGLE, Christian Martin",
+        "role": "llp-member",
+        "appointed_on": "2024-06-03",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "EVANS, Nichola Karen",
+        "role": "llp-member",
+        "appointed_on": "2023-10-30",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "GLEDHILL, Kate Elizabeth",
+        "role": "llp-member",
+        "appointed_on": "2024-05-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "GRELLIER, Matthew James",
+        "role": "llp-member",
+        "appointed_on": "2023-05-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "HARDY, Christopher Mark",
+        "role": "llp-member",
+        "appointed_on": "2014-06-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "HERON, Claire Louise",
+        "role": "llp-member",
+        "appointed_on": "2024-05-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "HOLLINS, Claire Marie",
+        "role": "llp-member",
+        "appointed_on": "2024-05-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "HONEYANDS, Susan Violet",
+        "role": "llp-member",
+        "appointed_on": "2025-08-04",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "HYMES, Adam Alexander",
+        "role": "llp-member",
+        "appointed_on": "2014-06-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "JACKSON, Samuel John",
+        "role": "llp-member",
+        "appointed_on": "2025-05-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "JACKSON, Steve Andrew",
+        "role": "llp-member",
+        "appointed_on": "2023-05-01",
+        "country_of_residence": "England",
+        "nationality": null
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T09:05:16Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MDM3MjEwMWFkaXF6a2N4",
+    "date": "2025-11-21",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/mkAdM6i7JFcpYjdeuo3Vhm48UmuZ8Rq-543K1ttWEao/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/OC334768/filing-history/MzQ5MDM3MjEwMWFkaXF6a2N4"
   }
 }

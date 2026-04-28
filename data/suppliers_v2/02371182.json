@@ -59,13 +59,152 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T19:35:41Z",
+    "company_name": "BLACKTAX RADIO TAXIS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1989-04-12",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-09-30",
+    "accounts_last_made_up": "2025-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-05-08"
+  },
+  "governance": {
+    "api_date": "2026-04-27T19:35:43Z",
+    "total_officers": 31,
+    "active_count": 4,
+    "resigned_count": 27,
+    "active_officers": [
+      {
+        "name": "FAIRHURST, Lee Malcolm",
+        "role": "director",
+        "appointed_on": "2012-09-10",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HODGIN, Ian",
+        "role": "director",
+        "appointed_on": "2013-09-02",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MCCURLEY, Graham",
+        "role": "director",
+        "appointed_on": "2023-07-10",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "NICKLIN, Michael Stewart",
+        "role": "director",
+        "appointed_on": "2026-03-18",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T19:35:45Z",
+    "total_results": 6,
+    "active_count": 3,
+    "items": [
+      {
+        "name": "Mr Graham Mccurley",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control-as-firm"
+        ],
+        "notified_on": "2023-07-10",
+        "identification": null
+      },
+      {
+        "name": "Mr Ian Kenneth Wharmby",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2021-09-23",
+        "identification": null
+      },
+      {
+        "name": "Mr Lee Malcolm Fairhurst",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2021-09-23",
+        "identification": null
+      },
+      {
+        "name": "Mr Ian Hodgin",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2021-09-23",
+        "identification": null
+      },
+      {
+        "name": "Mr Graham Smith",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2021-09-21",
+        "identification": null
+      },
+      {
+        "name": "Mr Ian Kenneth Wharmby",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-06-01",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxODE0NTkzNWFkaXF6a2N4",
+    "date": "2026-04-24",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/psI79FIHoZDYL2xmTrbeiTQQx7BhR3nacWeAagzbNM4/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02371182/filing-history/MzUxODE0NTkzNWFkaXF6a2N4"
   }
 }

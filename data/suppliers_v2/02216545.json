@@ -59,14 +59,124 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.6757,
     "council": 0.3243
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T20:38:44Z",
+    "company_name": "CHEVIOT TREES LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1988-02-02",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-05-31",
+    "accounts_last_made_up": "2024-08-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-22"
+  },
+  "governance": {
+    "api_date": "2026-04-27T20:38:46Z",
+    "total_officers": 10,
+    "active_count": 5,
+    "resigned_count": 5,
+    "active_officers": [
+      {
+        "name": "FREW, Patricia Anne",
+        "role": "secretary",
+        "appointed_on": null,
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "FREW, Alistair Henry",
+        "role": "director",
+        "appointed_on": "2013-08-01",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      },
+      {
+        "name": "FREW, Henry Forrest",
+        "role": "director",
+        "appointed_on": null,
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "FREW, Patricia Anne",
+        "role": "director",
+        "appointed_on": null,
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "YOUNG, Caroline Anne",
+        "role": "director",
+        "appointed_on": "2013-08-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T20:38:47Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Alistair Henry Frew",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "Scotland",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent"
+        ],
+        "notified_on": "2022-04-11",
+        "identification": null
+      },
+      {
+        "name": "Mr Henry Forrest Frew",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "Scotland",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2017-03-06",
+        "identification": null
+      },
+      {
+        "name": "Mrs Patricia Anne Frew",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "Scotland",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2017-03-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2ODQ3MjU4NGFkaXF6a2N4",
+    "date": "2025-05-30",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-medium",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/nlNuPYceE12xkJKjURKnjnxvnDwXCTj6yRrYbPbftRg/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02216545/filing-history/MzQ2ODQ3MjU4NGFkaXF6a2N4"
   }
 }

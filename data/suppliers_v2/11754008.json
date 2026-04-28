@@ -68,13 +68,123 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T00:54:24Z",
+    "company_name": "FUTURE STREET SMART WASTE LTD",
+    "company_status": "active",
+    "date_of_creation": "2019-01-07",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-06"
+  },
+  "governance": {
+    "api_date": "2026-04-28T00:54:25Z",
+    "total_officers": 9,
+    "active_count": 5,
+    "resigned_count": 4,
+    "active_officers": [
+      {
+        "name": "COOPER, Joanne Lesley",
+        "role": "director",
+        "appointed_on": "2026-02-12",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "CROSSLEY, Andrew Peter",
+        "role": "director",
+        "appointed_on": "2022-12-21",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "KNIGHT, Graeme Martin",
+        "role": "director",
+        "appointed_on": "2024-02-09",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "MCCABE, Brian Martin",
+        "role": "director",
+        "appointed_on": "2023-08-14",
+        "country_of_residence": "Ireland",
+        "nationality": "Irish"
+      },
+      {
+        "name": "OWENS, Garrett Brian",
+        "role": "director",
+        "appointed_on": "2024-02-09",
+        "country_of_residence": "Ireland",
+        "nationality": "Irish"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T00:54:27Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Future Street Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2022-11-16",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Republic Of Ireland Companies Acts 1963-2015",
+          "country_registered": "Ireland",
+          "place_registered": "Companies Registration Office Republic Of Ireland",
+          "registration_number": "619543"
+        }
+      },
+      {
+        "name": "Associated Waste Management Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2019-01-07",
+        "identification": {
+          "legal_form": "Limited",
+          "legal_authority": "Companies Act",
+          "country_registered": "England",
+          "place_registered": "England Company Registry",
+          "registration_number": "04092555"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MzI5NjY1M2FkaXF6a2N4",
+    "date": "2025-09-30",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/GsImHQmA2dsCbAZv0SFjyOLXK5gU--uWYiHHKeYRrcA/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/11754008/filing-history/MzQ4MzI5NjY1M2FkaXF6a2N4"
   }
 }

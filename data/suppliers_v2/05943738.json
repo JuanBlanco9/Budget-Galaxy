@@ -64,14 +64,114 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "agency",
   "buyer_type_breakdown": {
     "agency": 1.0,
     "police_fire": 0.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T16:42:52Z",
+    "company_name": "RED SNAPPER LEARNING LTD",
+    "company_status": "active",
+    "date_of_creation": "2006-09-22",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-02-28",
+    "accounts_last_made_up": "2025-05-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-10"
+  },
+  "governance": {
+    "api_date": "2026-04-27T16:42:53Z",
+    "total_officers": 11,
+    "active_count": 4,
+    "resigned_count": 7,
+    "active_officers": [
+      {
+        "name": "JERROLD, Helen Jane",
+        "role": "secretary",
+        "appointed_on": "2013-06-21",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "JERROLD, Helen Jane",
+        "role": "director",
+        "appointed_on": "2013-06-21",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "JERROLD, Martin",
+        "role": "director",
+        "appointed_on": "2020-09-21",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MIDWINTER, Julian Stephen",
+        "role": "director",
+        "appointed_on": "2020-09-14",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T16:42:55Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Red Snapper Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2018-10-30",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "United Kingdom",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "11285597"
+        }
+      },
+      {
+        "name": "Mr Martin Jerrold",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwODQxMjA4MWFkaXF6a2N4",
+    "date": "2026-03-04",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/gOBE2g-jhQIV9PDqBBr4fAbYvfZcphroOcLY9L5yzqI/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/05943738/filing-history/MzUwODQxMjA4MWFkaXF6a2N4"
   }
 }

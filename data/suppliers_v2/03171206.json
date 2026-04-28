@@ -66,13 +66,114 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T17:00:19Z",
+    "company_name": "YMCA ESSEX",
+    "company_status": "active",
+    "date_of_creation": "1996-03-12",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-04-14"
+  },
+  "governance": {
+    "api_date": "2026-04-27T17:00:21Z",
+    "total_officers": 66,
+    "active_count": 9,
+    "resigned_count": 57,
+    "active_officers": [
+      {
+        "name": "CLARKE, David Alan",
+        "role": "secretary",
+        "appointed_on": "2014-11-12",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BLAIR, John William",
+        "role": "director",
+        "appointed_on": "2022-11-22",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BROMFIELD, Michael David Langley",
+        "role": "director",
+        "appointed_on": "2019-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "KRISHNAN, Rakesh",
+        "role": "director",
+        "appointed_on": "2023-09-13",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MILLER, Ashley Clair",
+        "role": "director",
+        "appointed_on": "2023-09-13",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MINTA, Michael Timothy",
+        "role": "director",
+        "appointed_on": "2019-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MOORE, Nayana",
+        "role": "director",
+        "appointed_on": "2025-09-09",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "NEWMAN, Paulina Magdalena",
+        "role": "director",
+        "appointed_on": "2023-09-13",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "TANDY, Nicola Jane",
+        "role": "director",
+        "appointed_on": "2023-09-13",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T17:00:23Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4Nzg0NjExN2FkaXF6a2N4",
+    "date": "2025-11-10",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/UwY_ocVnjuFhO32UU5qQ7-JXN6w8sv6v264Z4zLdj8s/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03171206/filing-history/MzQ4Nzg0NjExN2FkaXF6a2N4"
   }
 }

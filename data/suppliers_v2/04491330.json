@@ -59,14 +59,80 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "education",
   "buyer_type_breakdown": {
     "education": 0.7208,
     "council": 0.2792
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T09:40:11Z",
+    "company_name": "FIRST RESPONSE TRAINING AND CONSULTANCY SERVICES LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2002-07-22",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-08-05"
+  },
+  "governance": {
+    "api_date": "2026-04-28T09:40:12Z",
+    "total_officers": 5,
+    "active_count": 1,
+    "resigned_count": 4,
+    "active_officers": [
+      {
+        "name": "EDEN, Darren",
+        "role": "director",
+        "appointed_on": "2002-07-25",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T09:40:13Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Spirit Ventures Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "07022944"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NjYxNTI5OGFkaXF6a2N4",
+    "date": "2025-12-29",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/uuYwPzBV391S63cIJuxvCUX9fV4PntdjLomNlez80TQ/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04491330/filing-history/MzQ5NjYxNTI5OGFkaXF6a2N4"
   }
 }

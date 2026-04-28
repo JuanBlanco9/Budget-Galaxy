@@ -59,13 +59,242 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "nhs",
   "buyer_type_breakdown": {
     "nhs": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T06:08:13Z",
+    "company_name": "PANCREATIC CANCER UK",
+    "company_status": "active",
+    "date_of_creation": "2005-12-19",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-30"
+  },
+  "governance": {
+    "api_date": "2026-04-28T06:08:14Z",
+    "total_officers": 39,
+    "active_count": 10,
+    "resigned_count": 29,
+    "active_officers": [
+      {
+        "name": "BACKSHALL, Rachel",
+        "role": "director",
+        "appointed_on": "2024-11-29",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BALMER, Neil John Mackonochie",
+        "role": "director",
+        "appointed_on": "2021-06-22",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HAND, Jeremy",
+        "role": "director",
+        "appointed_on": "2023-06-27",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "HORTON, Rima Elizabeth",
+        "role": "director",
+        "appointed_on": "2021-06-22",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LEMOINE, Nicholas Robert, Professor",
+        "role": "director",
+        "appointed_on": "2024-11-29",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LEWIS, Geraint Hywel, Dr",
+        "role": "director",
+        "appointed_on": "2024-11-29",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ROSE, David Anthony",
+        "role": "director",
+        "appointed_on": "2025-01-15",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "STOTTER, Katie Diana Yasmin",
+        "role": "director",
+        "appointed_on": "2021-06-22",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "TUTT, Anne Catherine",
+        "role": "director",
+        "appointed_on": "2023-06-27",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WILSON, Peter John",
+        "role": "director",
+        "appointed_on": "2024-11-15",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T06:08:15Z",
+    "total_results": 10,
+    "active_count": 0,
+    "items": [
+      {
+        "name": "Mrs Eleanor Kay Phillips",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2023-03-21",
+        "identification": null
+      },
+      {
+        "name": "Mr Daniel John Benjamin",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control-as-trust"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Stuart Robert Fletcher",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control-as-trust"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Ms Lynne Walker",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control-as-trust"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mrs Claire Denise Cardy",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control-as-trust"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Ms Carole Challen",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control-as-trust"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Simon Jeremy Collins",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control-as-trust"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr David Llewellyn Probert",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control-as-trust"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Ms Claire Louise Hickson",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control-as-trust"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mrs Sarah Jane Roberts",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control-as-trust"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MzgwNjY0OWFkaXF6a2N4",
+    "date": "2025-10-08",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/GJQ6omgcQZ9-gZzbriHnLbwDmq8MCQYOud6QBISsIRs/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/05658041/filing-history/MzQ4MzgwNjY0OWFkaXF6a2N4"
   }
 }

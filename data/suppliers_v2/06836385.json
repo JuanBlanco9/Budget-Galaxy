@@ -59,13 +59,94 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T03:21:08Z",
+    "company_name": "NASA UMBRELLA LTD",
+    "company_status": "active",
+    "date_of_creation": "2009-03-04",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-04-05",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-18"
+  },
+  "governance": {
+    "api_date": "2026-04-28T03:21:09Z",
+    "total_officers": 4,
+    "active_count": 4,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "ELSEY, Pippa Townley",
+        "role": "secretary",
+        "appointed_on": "2009-03-04",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "ELSEY, Pippa Townley",
+        "role": "director",
+        "appointed_on": "2009-03-04",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "GREENE, David Charles",
+        "role": "director",
+        "appointed_on": "2009-03-04",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SPENDLEY, Alex Philip",
+        "role": "director",
+        "appointed_on": "2009-03-04",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T03:21:10Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr David Charles Greene",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4NzgxNjE3NGFkaXF6a2N4",
+    "date": "2025-11-07",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/1xfYJp0Ph-EFe9Cn8q0px_v2ekHqZ5rD2Ptuq003pwI/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/06836385/filing-history/MzQ4NzgxNjE3NGFkaXF6a2N4"
   }
 }

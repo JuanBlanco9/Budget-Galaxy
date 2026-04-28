@@ -59,13 +59,117 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "nhs",
   "buyer_type_breakdown": {
     "nhs": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T13:59:30Z",
+    "company_name": "C. S. T. PHARMA LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2001-05-09",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-01-31",
+    "accounts_last_made_up": "2025-04-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-05-11"
+  },
+  "governance": {
+    "api_date": "2026-04-28T13:59:31Z",
+    "total_officers": 14,
+    "active_count": 4,
+    "resigned_count": 10,
+    "active_officers": [
+      {
+        "name": "FALZON, Carl Robert",
+        "role": "director",
+        "appointed_on": "2018-08-28",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "POYNTER, Caroline",
+        "role": "director",
+        "appointed_on": "2018-08-28",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PRITCHARD, Ian",
+        "role": "director",
+        "appointed_on": "2019-08-05",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "YATES, Jason Derick",
+        "role": "director",
+        "appointed_on": "2018-08-28",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T13:59:32Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Cst Pharma Group Holdings",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2025-04-01",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "England And Wales",
+          "country_registered": "England",
+          "place_registered": "England",
+          "registration_number": "11435398"
+        }
+      },
+      {
+        "name": "Cst Holdings (Uk) Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2017-05-09",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act",
+          "country_registered": "United Kingdom",
+          "place_registered": "England And Wales",
+          "registration_number": "08170844"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MTkxNTgzN2FkaXF6a2N4",
+    "date": "2025-12-02",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/P9blYGB6tf4uDJqtvl5BHN_H0j4IOu8lR4jcHXtosRk/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04212740/filing-history/MzQ5MTkxNTgzN2FkaXF6a2N4"
   }
 }

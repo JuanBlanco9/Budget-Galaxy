@@ -64,10 +64,10 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
@@ -76,5 +76,76 @@
     "central_govt": 0.1334,
     "agency": 0.0011,
     "education": 0.0004
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T14:05:09Z",
+    "company_name": "ARCADIS LLP",
+    "company_status": "active",
+    "date_of_creation": "2011-10-12",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-09-05"
+  },
+  "governance": {
+    "api_date": "2026-04-27T14:05:11Z",
+    "total_officers": 373,
+    "active_count": 2,
+    "resigned_count": 371,
+    "active_officers": [
+      {
+        "name": "ARCADIS (BAC) LTD",
+        "role": "corporate-llp-designated-member",
+        "appointed_on": "2011-10-12",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "ARCADIS UK (HOLDINGS) LTD",
+        "role": "corporate-llp-designated-member",
+        "appointed_on": "2024-01-01",
+        "country_of_residence": null,
+        "nationality": null
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T14:05:13Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Arcadis (Bac) Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "voting-rights-75-to-100-percent-as-firm-limited-liability-partnership"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "England & Wales",
+          "registration_number": "07803869"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4Mzc4NTY5MWFkaXF6a2N4",
+    "date": "2025-10-06",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/D9DrtDWwPAIGexpwJ1mnHpfI4H2wYIZv7Zi5sBtkxWw/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/OC368843/filing-history/MzQ4Mzc4NTY5MWFkaXF6a2N4"
   }
 }

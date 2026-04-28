@@ -59,13 +59,112 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T07:24:34Z",
+    "company_name": "D STEVEN & SON",
+    "company_status": "active",
+    "date_of_creation": "1997-04-16",
+    "date_of_cessation": null,
+    "jurisdiction": "scotland",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": null,
+    "accounts_next_due": null,
+    "accounts_last_made_up": null,
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-04-30"
+  },
+  "governance": {
+    "api_date": "2026-04-28T07:24:36Z",
+    "total_officers": 6,
+    "active_count": 4,
+    "resigned_count": 2,
+    "active_officers": [
+      {
+        "name": "STEVEN, Rita",
+        "role": "secretary",
+        "appointed_on": "1997-04-16",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "STEVEN, Christopher",
+        "role": "director",
+        "appointed_on": "1997-04-16",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "STEVEN, David Alexander",
+        "role": "director",
+        "appointed_on": "2017-07-04",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      },
+      {
+        "name": "STEVEN, David Alexander",
+        "role": "director",
+        "appointed_on": "1997-04-16",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T07:24:37Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "D Steven & Son Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2026-03-03",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "Scotland",
+          "place_registered": "Edinburgh",
+          "registration_number": "Sc872444"
+        }
+      },
+      {
+        "name": "Mr David Alexander Steven",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "Scotland",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "Mjc3MTY4NjVhZGlxemtjeA",
+    "date": "1997-07-01",
+    "type": "225",
+    "description": "legacy",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/3LYd0caeHU1_wIrorr2yNyyb4k2AWjSQNyDgFXrBy2A/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/SC174715/filing-history/Mjc3MTY4NjVhZGlxemtjeA"
   }
 }

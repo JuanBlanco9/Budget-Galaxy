@@ -59,13 +59,99 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "agency",
   "buyer_type_breakdown": {
     "agency": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T11:48:30Z",
+    "company_name": "BARCOMBE LANDSCAPES LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1994-05-04",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-02-28",
+    "accounts_last_made_up": "2025-05-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-05-18"
+  },
+  "governance": {
+    "api_date": "2026-04-28T11:48:31Z",
+    "total_officers": 5,
+    "active_count": 3,
+    "resigned_count": 2,
+    "active_officers": [
+      {
+        "name": "COOPER, Bernard Mark Harry",
+        "role": "secretary",
+        "appointed_on": "1994-05-04",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "COOPER, Bernard Mark Harry",
+        "role": "director",
+        "appointed_on": "1994-05-04",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "COOPER, Darryl Cornelius Thomas",
+        "role": "director",
+        "appointed_on": "1994-05-04",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T11:48:33Z",
+    "total_results": 2,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Mr Bernard Mark Harry Cooper",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2016-05-04",
+        "identification": null
+      },
+      {
+        "name": "Mr Darryl Cornelius Thomas Cooper",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-05-04",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NTMzNTI5NGFkaXF6a2N4",
+    "date": "2025-12-19",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/XQ1yzqxfzDOyPzSVb3Q1KHVGCCRrKBVawXrrUcaUr3Y/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02925611/filing-history/MzQ5NTMzNTI5NGFkaXF6a2N4"
   }
 }

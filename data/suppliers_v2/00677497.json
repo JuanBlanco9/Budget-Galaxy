@@ -65,13 +65,72 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T08:28:09Z",
+    "company_name": "LIEBHERR - GREAT BRITAIN LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1960-12-12",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-22"
+  },
+  "governance": {
+    "api_date": "2026-04-28T08:28:10Z",
+    "total_officers": 18,
+    "active_count": 3,
+    "resigned_count": 15,
+    "active_officers": [
+      {
+        "name": "WEBBER, Claire Michelle",
+        "role": "secretary",
+        "appointed_on": "2012-11-01",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "EVERIST, Richard James",
+        "role": "director",
+        "appointed_on": "2009-11-02",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "WEBBER, Claire Michelle",
+        "role": "director",
+        "appointed_on": "2012-11-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T08:28:11Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MzMxOTcyNWFkaXF6a2N4",
+    "date": "2025-07-14",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/kmIVIv1ok_gl78y4GYH_I510ZU0kGYvEl0ud58vjVzk/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/00677497/filing-history/MzQ3MzMxOTcyNWFkaXF6a2N4"
   }
 }

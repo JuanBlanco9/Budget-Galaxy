@@ -59,14 +59,110 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
     "central_govt": 0.9122,
     "agency": 0.0878
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T13:35:38Z",
+    "company_name": "STATISTA LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2015-10-14",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-09-22"
+  },
+  "governance": {
+    "api_date": "2026-04-28T13:35:39Z",
+    "total_officers": 5,
+    "active_count": 1,
+    "resigned_count": 4,
+    "active_officers": [
+      {
+        "name": "STEINTHAL, William Peter",
+        "role": "director",
+        "appointed_on": "2017-11-03",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T13:35:41Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Udo Josef Engelhard Müller",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "German",
+        "country_of_residence": "Germany",
+        "ceased": true,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2022-04-01",
+        "identification": null
+      },
+      {
+        "name": "Statista Gmbh",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "significant-influence-or-control-as-firm"
+        ],
+        "notified_on": "2016-10-01",
+        "identification": {
+          "legal_form": "Gmbh",
+          "legal_authority": "Act Concerning Companies With Limited Liability (Federal Law Gazette Iii 4123-1)",
+          "country_registered": "Cologne, Germany",
+          "place_registered": "Cologne, Germany Registries",
+          "registration_number": "Hrb 87129"
+        }
+      },
+      {
+        "name": "Stroer Se & Co Kgaa",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Corporate",
+          "legal_authority": "Germany",
+          "country_registered": "Germany",
+          "place_registered": "Germany",
+          "registration_number": "Hrb 86922"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2NjE4OTU5OGFkaXF6a2N4",
+    "date": "2025-05-16",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/pErjPBkGBC1FoGVzPNRJkkl5fQywO0On5WbUtGj8ghE/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/09823700/filing-history/MzQ2NjE4OTU5OGFkaXF6a2N4"
   }
 }

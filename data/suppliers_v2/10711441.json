@@ -59,13 +59,145 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T23:23:29Z",
+    "company_name": "HARLING SECURITY SOLUTIONS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2017-04-05",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-04-18"
+  },
+  "governance": {
+    "api_date": "2026-04-27T23:23:31Z",
+    "total_officers": 3,
+    "active_count": 3,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "COOPER, Brendon Lee",
+        "role": "director",
+        "appointed_on": "2017-04-05",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "COOPER, Justin Shane",
+        "role": "director",
+        "appointed_on": "2017-04-05",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "COOPER, Lawrence Hugh",
+        "role": "director",
+        "appointed_on": "2017-10-06",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T23:23:33Z",
+    "total_results": 6,
+    "active_count": 3,
+    "items": [
+      {
+        "name": "Bronwyn Lois Cooper",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2018-12-10",
+        "identification": null
+      },
+      {
+        "name": "Lois-Marie Cooper",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2017-10-06",
+        "identification": null
+      },
+      {
+        "name": "Anna Margaret Cooper",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2017-10-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Lawrence Hugh Cooper",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2017-10-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Justin Shane Cooper",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2017-04-05",
+        "identification": null
+      },
+      {
+        "name": "Mr Brendon Lee Cooper",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2017-04-05",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MzI2Njc5MWFkaXF6a2N4",
+    "date": "2025-09-30",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/MmvSN9Ld65qBa4hZGjAbM7OtGb0ZeT0baIY9sS6-2s8/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/10711441/filing-history/MzQ4MzI2Njc5MWFkaXF6a2N4"
   }
 }

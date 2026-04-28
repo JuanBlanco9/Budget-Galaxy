@@ -61,14 +61,106 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 0.7933,
     "nhs": 0.2067
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T03:26:43Z",
+    "company_name": "ACCLAIM CONTRACTS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1984-02-29",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-04-13"
+  },
+  "governance": {
+    "api_date": "2026-04-28T03:26:44Z",
+    "total_officers": 6,
+    "active_count": 3,
+    "resigned_count": 3,
+    "active_officers": [
+      {
+        "name": "WHITE, Wendy",
+        "role": "secretary",
+        "appointed_on": "2018-07-01",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "DUGGAN, Ian",
+        "role": "director",
+        "appointed_on": "2004-12-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LA-THANGUE, Craig Ashley",
+        "role": "director",
+        "appointed_on": "2022-07-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T03:26:45Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Acclaim Contracts Holding Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2022-07-01",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Companies House, England And Wales",
+          "registration_number": "14047192"
+        }
+      },
+      {
+        "name": "Mr James Peter La-Thangue",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-06-01",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MzQxNjYwNmFkaXF6a2N4",
+    "date": "2025-10-01",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-medium",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/2CdxHmBWcUAjLIIN_O9UvD2LZcSseZnZGoy83jBvs7A/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01795766/filing-history/MzQ4MzQxNjYwNmFkaXF6a2N4"
   }
 }

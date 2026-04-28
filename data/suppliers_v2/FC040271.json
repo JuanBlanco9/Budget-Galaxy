@@ -55,13 +55,65 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
     "central_govt": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T22:20:57Z",
+    "company_name": "EVIDEN TECHNOLOGY SERVICES LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2022-12-28",
+    "date_of_cessation": null,
+    "jurisdiction": "united-kingdom",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": null,
+    "accounts_next_due": null,
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": null,
+    "confirmation_statement_next_due": null
+  },
+  "governance": {
+    "api_date": "2026-04-27T22:20:58Z",
+    "total_officers": 6,
+    "active_count": 2,
+    "resigned_count": 4,
+    "active_officers": [
+      {
+        "name": "CSC CORPORATE SERVICES (JERSEY) LIMITED",
+        "role": "corporate-secretary",
+        "appointed_on": "2023-02-08",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "HERRON, Michael John",
+        "role": "director",
+        "appointed_on": "2025-02-28",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T22:21:00Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3OTUzODM3MGFkaXF6a2N4",
+    "date": "2025-09-02",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/SBSH5dfLkcLyyvbO49CAKOCArOF6s9YWSyHD2D2Y-nM/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/FC040271/filing-history/MzQ3OTUzODM3MGFkaXF6a2N4"
   }
 }

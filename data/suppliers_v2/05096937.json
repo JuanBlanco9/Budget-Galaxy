@@ -59,13 +59,78 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "agency",
   "buyer_type_breakdown": {
     "agency": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T11:46:36Z",
+    "company_name": "GRIP TECH LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2004-04-06",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-01-31",
+    "accounts_last_made_up": "2025-04-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-05"
+  },
+  "governance": {
+    "api_date": "2026-04-28T11:46:37Z",
+    "total_officers": 2,
+    "active_count": 2,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "STANIAK, Lisa",
+        "role": "secretary",
+        "appointed_on": "2004-04-06",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "STANIAK, Marcel",
+        "role": "director",
+        "appointed_on": "2004-04-06",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T11:46:38Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr. Marcel Jack Staniak",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "American",
+        "country_of_residence": "United States",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2017-04-04",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwMTI5NTIyOGFkaXF6a2N4",
+    "date": "2026-01-24",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-dormant",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/fmmD1o6MHtu8dPhfVLm27ISe9iO35-M0VCKWtOQxx4s/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/05096937/filing-history/MzUwMTI5NTIyOGFkaXF6a2N4"
   }
 }

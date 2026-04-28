@@ -59,14 +59,92 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
     "central_govt": 0.8967,
     "other": 0.1033
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T17:06:14Z",
+    "company_name": "NEW VERVE CONSULTING LTD.",
+    "company_status": "active",
+    "date_of_creation": "2011-09-26",
+    "date_of_cessation": null,
+    "jurisdiction": "scotland",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-09-30",
+    "accounts_last_made_up": "2025-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-10"
+  },
+  "governance": {
+    "api_date": "2026-04-27T17:06:16Z",
+    "total_officers": 2,
+    "active_count": 1,
+    "resigned_count": 1,
+    "active_officers": [
+      {
+        "name": "FERNÁNDEZ, José Manuel Rufino",
+        "role": "director",
+        "appointed_on": "2022-11-07",
+        "country_of_residence": "Spain",
+        "nationality": "Spanish"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T17:06:18Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Aplicaciones Y Tratamiento De Sistemas, S.A",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "voting-rights-75-to-100-percent-as-firm"
+        ],
+        "notified_on": "2022-11-07",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Laws Of Spain",
+          "country_registered": "Spain",
+          "place_registered": "The Registro Mercantil",
+          "registration_number": "Cif: A80827694"
+        }
+      },
+      {
+        "name": "Mr Nigel James Rochford",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Irish",
+        "country_of_residence": "Scotland",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxNzExNjM2OWFkaXF6a2N4",
+    "date": "2026-04-20",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/oyXWQPa_u0xUklg8nhYhafj1mZIzS0KGAX-NpzZ9xtM/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/SC408161/filing-history/MzUxNzExNjM2OWFkaXF6a2N4"
   }
 }

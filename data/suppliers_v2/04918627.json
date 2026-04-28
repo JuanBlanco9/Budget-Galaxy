@@ -59,13 +59,125 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T14:27:54Z",
+    "company_name": "GROVE CARE PARTNERSHIP LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2003-10-01",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-15"
+  },
+  "governance": {
+    "api_date": "2026-04-28T14:27:55Z",
+    "total_officers": 22,
+    "active_count": 3,
+    "resigned_count": 19,
+    "active_officers": [
+      {
+        "name": "LILJENDAHL, Anders",
+        "role": "secretary",
+        "appointed_on": "2024-10-14",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "KEYS, Paula Bridget Sarah",
+        "role": "director",
+        "appointed_on": "2022-04-04",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LILJENDAHL, Anders Charles",
+        "role": "director",
+        "appointed_on": "2024-10-14",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T14:27:56Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Sscp Pegasus Bidco Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2022-01-31",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Companies House Of England And Wales",
+          "registration_number": "12947520"
+        }
+      },
+      {
+        "name": "Consensus Support Services Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "England And Wales",
+          "country_registered": "United Kingdom",
+          "place_registered": "England And Wales",
+          "registration_number": "4081379"
+        }
+      },
+      {
+        "name": "Mr Paul Anthony Keith Jeffery",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3OTUzMTQ2MWFkaXF6a2N4",
+    "date": "2025-09-03",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/NOWpRUwu_3eYFgLOPHIZ04RdC6R4ckta7EffT0_n5FM/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04918627/filing-history/MzQ3OTUzMTQ2MWFkaXF6a2N4"
   }
 }

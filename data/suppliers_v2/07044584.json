@@ -59,13 +59,73 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T05:28:59Z",
+    "company_name": "DIGITAL TICKETING SYSTEMS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2009-10-15",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-29",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-21"
+  },
+  "governance": {
+    "api_date": "2026-04-28T05:29:00Z",
+    "total_officers": 3,
+    "active_count": 1,
+    "resigned_count": 2,
+    "active_officers": [
+      {
+        "name": "BOOKER, Richard John",
+        "role": "director",
+        "appointed_on": "2009-10-15",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T05:29:01Z",
+    "total_results": 1,
+    "active_count": 0,
+    "items": [
+      {
+        "name": "Mr Richard John Booker",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxNzA4NjI0OGFkaXF6a2N4",
+    "date": "2026-04-20",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/SP-aleK89fCpNgnBLH5ksutNQneqeOs0wSWjmnHCeRg/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/07044584/filing-history/MzUxNzA4NjI0OGFkaXF6a2N4"
   }
 }

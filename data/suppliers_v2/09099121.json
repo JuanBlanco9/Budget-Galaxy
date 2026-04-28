@@ -64,13 +64,98 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T11:24:05Z",
+    "company_name": "PROSIG LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2014-06-24",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-07"
+  },
+  "governance": {
+    "api_date": "2026-04-28T11:24:06Z",
+    "total_officers": 7,
+    "active_count": 4,
+    "resigned_count": 3,
+    "active_officers": [
+      {
+        "name": "ALLEN, Rachel Jane",
+        "role": "director",
+        "appointed_on": "2014-06-24",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "KNIGHT, Paul Anthony",
+        "role": "director",
+        "appointed_on": "2024-06-20",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LEE-RICHARDS, Gareth Maurice",
+        "role": "director",
+        "appointed_on": "2014-06-24",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "LOBATO, Andres",
+        "role": "director",
+        "appointed_on": "2014-06-24",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T11:24:07Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Condition Monitoring Technology Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-07-01",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "England",
+          "country_registered": "England",
+          "place_registered": "England And Wales",
+          "registration_number": "05794029"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3ODkyNDk0NGFkaXF6a2N4",
+    "date": "2025-08-28",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/VVIMhqSL1tW6bxHHXT7UiwqyXI2tHkmWV6rDZfEqOgg/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/09099121/filing-history/MzQ3ODkyNDk0NGFkaXF6a2N4"
   }
 }

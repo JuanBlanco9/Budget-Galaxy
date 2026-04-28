@@ -65,11 +65,71 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
-  "buyer_type_breakdown": {}
+  "buyer_type_breakdown": {},
+  "ch_profile": {
+    "api_date": "2026-04-28T14:52:37Z",
+    "company_name": "KARIA BEFRIENDING CARE AGENCY LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2018-09-12",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-06-30",
+    "accounts_last_made_up": "2024-09-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-09-25"
+  },
+  "governance": {
+    "api_date": "2026-04-28T14:52:38Z",
+    "total_officers": 3,
+    "active_count": 1,
+    "resigned_count": 2,
+    "active_officers": [
+      {
+        "name": "MONTEIRO, Rosine Toure",
+        "role": "director",
+        "appointed_on": "2023-11-16",
+        "country_of_residence": "England",
+        "nationality": "Guinean"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T14:52:39Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mrs Rosine Toure Monteiro",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Guinean",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors-as-firm"
+        ],
+        "notified_on": "2018-09-12",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2MDI3NDgzOGFkaXF6a2N4",
+    "date": "2025-03-26",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-unaudited-abridged",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/9QxH8YjxgGun57qHVgfXRkmULmtyQvgsa7VcCQJcVwM/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/11565908/filing-history/MzQ2MDI3NDgzOGFkaXF6a2N4"
+  }
 }

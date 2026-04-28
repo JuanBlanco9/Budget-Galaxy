@@ -61,15 +61,93 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "police_fire",
   "buyer_type_breakdown": {
     "police_fire": 0.5089,
     "council": 0.3817,
     "other": 0.1094
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T08:14:12Z",
+    "company_name": "LEICA GEOSYSTEMS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1964-08-31",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-24"
+  },
+  "governance": {
+    "api_date": "2026-04-28T08:14:13Z",
+    "total_officers": 22,
+    "active_count": 3,
+    "resigned_count": 19,
+    "active_officers": [
+      {
+        "name": "YOUNG, Andrew Paul",
+        "role": "secretary",
+        "appointed_on": "1996-12-03",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "FRASER, John Edward",
+        "role": "director",
+        "appointed_on": "2013-12-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SMITH, Kevin Anthony",
+        "role": "director",
+        "appointed_on": "2023-05-23",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T08:14:15Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Hexagon Ab",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Public Limited Liability Company",
+          "legal_authority": "Swedish Law",
+          "country_registered": "Sweden",
+          "place_registered": "Bolagsverket",
+          "registration_number": "556190-4771"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3ODc1ODMxMmFkaXF6a2N4",
+    "date": "2025-08-27",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/QubF_vbYPdUa0ZmiTegYZVFd_NdRI9VhCMJE9MuvNdI/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/00817794/filing-history/MzQ3ODc1ODMxMmFkaXF6a2N4"
   }
 }

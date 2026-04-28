@@ -66,13 +66,93 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T20:21:41Z",
+    "company_name": "ASKEWS AND HOLTS LIBRARY SERVICES LTD.",
+    "company_status": "active",
+    "date_of_creation": "1992-09-07",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-11-30",
+    "accounts_last_made_up": "2025-02-28",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-09-11"
+  },
+  "governance": {
+    "api_date": "2026-04-27T20:21:43Z",
+    "total_officers": 25,
+    "active_count": 3,
+    "resigned_count": 22,
+    "active_officers": [
+      {
+        "name": "HALES, Ashley Elizabeth",
+        "role": "director",
+        "appointed_on": "2025-11-07",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "LITTLE, Jonathan James",
+        "role": "director",
+        "appointed_on": "2007-08-30",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "LITTLE, Nicola Gail",
+        "role": "director",
+        "appointed_on": "2025-11-07",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T20:21:45Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "The Little Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "English Law",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "03246086"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4Nzk2MDA5NWFkaXF6a2N4",
+    "date": "2025-11-10",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/8TlVwUyje3LyKKGDn13PjOoXXtD-avdCRu3Up7rOvgo/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02745298/filing-history/MzQ4Nzk2MDA5NWFkaXF6a2N4"
   }
 }

@@ -68,15 +68,74 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
     "central_govt": 0.6728,
     "other": 0.3272,
     "council": 0.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T14:02:18Z",
+    "company_name": "WE ARE GROUP HOLDINGS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2012-04-04",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": true,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-04-18"
+  },
+  "governance": {
+    "api_date": "2026-04-28T14:02:19Z",
+    "total_officers": 25,
+    "active_count": 3,
+    "resigned_count": 22,
+    "active_officers": [
+      {
+        "name": "DIRKS, George Alexander David",
+        "role": "director",
+        "appointed_on": "2026-01-01",
+        "country_of_residence": "Netherlands",
+        "nationality": "Dutch"
+      },
+      {
+        "name": "FOCKENS, Astrid",
+        "role": "director",
+        "appointed_on": "2023-03-07",
+        "country_of_residence": "France",
+        "nationality": "French,Dutch"
+      },
+      {
+        "name": "WRIGHT, Christopher Robert",
+        "role": "director",
+        "appointed_on": "2025-09-16",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T14:02:20Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MzI1OTQ5OWFkaXF6a2N4",
+    "date": "2025-09-30",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/iunMNFCtofuqdDCUq7uz9pdgeFMHrp8f8BW7mfrV-9E/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/08018895/filing-history/MzQ4MzI1OTQ5OWFkaXF6a2N4"
   }
 }

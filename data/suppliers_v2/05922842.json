@@ -64,14 +64,92 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.9234,
     "education": 0.0766
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T05:13:06Z",
+    "company_name": "VERDE RECREO LTD",
+    "company_status": "active",
+    "date_of_creation": "2006-09-01",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-05-31",
+    "accounts_last_made_up": "2024-08-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-26"
+  },
+  "governance": {
+    "api_date": "2026-04-28T05:13:07Z",
+    "total_officers": 8,
+    "active_count": 1,
+    "resigned_count": 7,
+    "active_officers": [
+      {
+        "name": "JENKINS, James Carlo",
+        "role": "director",
+        "appointed_on": "2008-12-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T05:13:08Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Verde Recreo Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2023-12-20",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "14850033"
+        }
+      },
+      {
+        "name": "Mr Nicholas Barfoot",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent"
+        ],
+        "notified_on": "2016-10-11",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ1OTgyNTM3M2FkaXF6a2N4",
+    "date": "2025-03-24",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/kxPKb6eeSHMc91himZv5UuruK9I-1R2ViEpELusSQh0/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/05922842/filing-history/MzQ1OTgyNTM3M2FkaXF6a2N4"
   }
 }

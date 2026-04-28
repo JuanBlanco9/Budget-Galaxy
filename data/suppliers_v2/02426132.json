@@ -82,14 +82,143 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
     "central_govt": 0.9998,
     "other": 0.0002
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T20:22:49Z",
+    "company_name": "LEONARDO UK LTD",
+    "company_status": "active",
+    "date_of_creation": "1989-09-25",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-23"
+  },
+  "governance": {
+    "api_date": "2026-04-27T20:22:51Z",
+    "total_officers": 44,
+    "active_count": 10,
+    "resigned_count": 34,
+    "active_officers": [
+      {
+        "name": "BERTOLA, Lorenzo",
+        "role": "secretary",
+        "appointed_on": "2023-06-08",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "ALLEN, Wendy",
+        "role": "director",
+        "appointed_on": "2021-02-24",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BONAIUTO, Federico",
+        "role": "director",
+        "appointed_on": "2023-07-14",
+        "country_of_residence": "Italy",
+        "nationality": "Italian"
+      },
+      {
+        "name": "CAMPORA, Andrea",
+        "role": "director",
+        "appointed_on": "2024-02-21",
+        "country_of_residence": "Italy",
+        "nationality": "Italian"
+      },
+      {
+        "name": "COLMAN, Nigel",
+        "role": "director",
+        "appointed_on": "2025-03-11",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CUTILLO, Gian Piero",
+        "role": "director",
+        "appointed_on": "2017-07-20",
+        "country_of_residence": "Italy",
+        "nationality": "Italian"
+      },
+      {
+        "name": "DE FAZIO, Marco",
+        "role": "director",
+        "appointed_on": "2023-07-14",
+        "country_of_residence": "Italy",
+        "nationality": "Italian"
+      },
+      {
+        "name": "HAMILTON, Mark Wayne",
+        "role": "director",
+        "appointed_on": "2023-01-01",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      },
+      {
+        "name": "HIGGINS, Clive James",
+        "role": "director",
+        "appointed_on": "2021-07-23",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LEGGETTER, Allan David",
+        "role": "director",
+        "appointed_on": "2024-02-21",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T20:22:53Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Leonardo S.P.A.",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Joint-Stock Company",
+          "legal_authority": "Italian Civil Code",
+          "country_registered": "Italy",
+          "place_registered": "Chamber Of Commerce & Industry Of Rome, Italy",
+          "registration_number": "0401990585"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NjA4MDQxNGFkaXF6a2N4",
+    "date": "2025-08-04",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/nCIvxoZ-QE2Zg-6tq84gm8h006VDWV0tuoNBa8q5ah4/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02426132/filing-history/MzQ3NjA4MDQxNGFkaXF6a2N4"
   }
 }

@@ -64,13 +64,153 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T08:48:52Z",
+    "company_name": "LEARNING NEXUS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2016-03-11",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-06-29",
+    "accounts_last_made_up": "2024-06-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-24"
+  },
+  "governance": {
+    "api_date": "2026-04-28T08:48:53Z",
+    "total_officers": 9,
+    "active_count": 3,
+    "resigned_count": 6,
+    "active_officers": [
+      {
+        "name": "HINCHLIFF, Stephen",
+        "role": "director",
+        "appointed_on": "2023-11-06",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "MOORE, Caroline",
+        "role": "director",
+        "appointed_on": "2023-08-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "VASILIOU, Rena Maria",
+        "role": "director",
+        "appointed_on": "2026-01-30",
+        "country_of_residence": "United Kingdom",
+        "nationality": "American"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T08:48:54Z",
+    "total_results": 6,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Aplus Bidco Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2022-09-30",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Uk Register Of Companies",
+          "registration_number": "10352632"
+        }
+      },
+      {
+        "name": "Mrs Tiziana Guffanti George",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Italian",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2017-03-11",
+        "identification": null
+      },
+      {
+        "name": "Mr Kenneth Patrick George",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "French",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2017-03-11",
+        "identification": null
+      },
+      {
+        "name": "Mr Peter Fredrick Howell",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2017-03-11",
+        "identification": null
+      },
+      {
+        "name": "Mrs Ruth Elizabeth Irene Howell",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2017-03-11",
+        "identification": null
+      },
+      {
+        "name": "Mr Kenneth Patrick George",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "French",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-07-01",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ1OTQ2MDQ5M2FkaXF6a2N4",
+    "date": "2025-03-20",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-audit-exemption-subsiduary",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/hn-cCI-LNfFwQu3INB0oZNPJsoO2EMP86NFv3557IH4/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/10056772/filing-history/MzQ1OTQ2MDQ5M2FkaXF6a2N4"
   }
 }

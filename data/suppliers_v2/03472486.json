@@ -68,14 +68,159 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 0.6821,
     "other": 0.3179
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T06:51:57Z",
+    "company_name": "TRANSOFT SOLUTIONS (UK) LTD",
+    "company_status": "active",
+    "date_of_creation": "1997-11-27",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-30"
+  },
+  "governance": {
+    "api_date": "2026-04-28T06:51:58Z",
+    "total_officers": 14,
+    "active_count": 4,
+    "resigned_count": 10,
+    "active_officers": [
+      {
+        "name": "BROZEK, Alexander Georg",
+        "role": "director",
+        "appointed_on": "2019-07-19",
+        "country_of_residence": "Austria",
+        "nationality": "Austrian"
+      },
+      {
+        "name": "CARRASCO, Milton Santano Elias",
+        "role": "director",
+        "appointed_on": "2019-07-19",
+        "country_of_residence": "Canada",
+        "nationality": "Canadian"
+      },
+      {
+        "name": "SHIHUNDU, Daniel Akwera",
+        "role": "director",
+        "appointed_on": "2025-07-10",
+        "country_of_residence": "Canada",
+        "nationality": "Canadian"
+      },
+      {
+        "name": "WHITE, Christopher Michael",
+        "role": "director",
+        "appointed_on": "2023-07-26",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T06:51:59Z",
+    "total_results": 5,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Milton Santano Elias Carrasco",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Canadian",
+        "country_of_residence": "Canada",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2025-07-22",
+        "identification": null
+      },
+      {
+        "name": "Transoft Solutions (Uk) Holdings Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2019-09-26",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England And Wales",
+          "place_registered": "Registrar Of Companies For England And Wales",
+          "registration_number": "07550680"
+        }
+      },
+      {
+        "name": "Dr Jeremy Charles Ellis",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-07",
+        "identification": null
+      },
+      {
+        "name": "Mr William Andrew Baron",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-07",
+        "identification": null
+      },
+      {
+        "name": "Be Investments Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Registrar Of Companies For England And Wales",
+          "registration_number": "07607047"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NDg5NTkxOWFkaXF6a2N4",
+    "date": "2025-07-23",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/EpFrjZ6Q9ZC2fqE9R4CKCBWT2iKCzQe075vAQNpkrWY/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03472486/filing-history/MzQ3NDg5NTkxOWFkaXF6a2N4"
   }
 }

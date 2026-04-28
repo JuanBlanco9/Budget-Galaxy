@@ -59,13 +59,128 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T02:32:44Z",
+    "company_name": "SHELL U.K. OIL PRODUCTS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1998-09-03",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-26"
+  },
+  "governance": {
+    "api_date": "2026-04-28T02:32:45Z",
+    "total_officers": 60,
+    "active_count": 8,
+    "resigned_count": 52,
+    "active_officers": [
+      {
+        "name": "PECTEN SECRETARIES LIMITED",
+        "role": "corporate-secretary",
+        "appointed_on": "2022-11-01",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "SHELL CORPORATE SECRETARY LIMITED",
+        "role": "corporate-secretary",
+        "appointed_on": "2000-05-22",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "ALBRECHT WEBB, Janine",
+        "role": "director",
+        "appointed_on": "2025-03-27",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "ALVERNHE, Ana Luisa",
+        "role": "director",
+        "appointed_on": "2022-12-08",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "BOAG, Vanessa Rachel",
+        "role": "director",
+        "appointed_on": "2021-10-08",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BRADLEY, Ben",
+        "role": "director",
+        "appointed_on": "2022-11-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "BROWN, Stephen",
+        "role": "director",
+        "appointed_on": "2022-08-17",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "VINCENT, Patrick Charles",
+        "role": "director",
+        "appointed_on": "2022-07-28",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T02:32:46Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Shell Holdings (U.K.) Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent-as-firm",
+          "voting-rights-75-to-100-percent-as-firm",
+          "right-to-appoint-and-remove-directors-as-firm"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "The Companies Act",
+          "country_registered": "United Kingdom",
+          "place_registered": "Uk Register Of Companies",
+          "registration_number": "1485890"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MzY3NDY2N2FkaXF6a2N4",
+    "date": "2025-07-15",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/D4IcgtUCtD2UvmwHXbLVbjYy0RCWR_QM5zAOOPhATNs/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03625633/filing-history/MzQ3MzY3NDY2N2FkaXF6a2N4"
   }
 }

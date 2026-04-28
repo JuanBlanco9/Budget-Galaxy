@@ -64,13 +64,80 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T05:20:18Z",
+    "company_name": "ASKERTON HOMES LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2011-06-16",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-06-25",
+    "accounts_last_made_up": "2024-06-28",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-30"
+  },
+  "governance": {
+    "api_date": "2026-04-28T05:20:19Z",
+    "total_officers": 7,
+    "active_count": 2,
+    "resigned_count": 5,
+    "active_officers": [
+      {
+        "name": "JESNEY, Nora Irene",
+        "role": "secretary",
+        "appointed_on": "2011-10-03",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "MACDONALD, Andrew Maciain, Mr.",
+        "role": "director",
+        "appointed_on": "2025-07-06",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T05:20:20Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr John Macdonald",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2017-01-01",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxMjU2Mjk4M2FkaXF6a2N4",
+    "date": "2026-03-25",
+    "type": "AA01",
+    "description": "change-account-reference-date-company-previous-shortened",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/x6b9hmH7PZNPN4wGV8d8cEe3MltUlKWL1c5pzGKMznU/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/07672712/filing-history/MzUxMjU2Mjk4M2FkaXF6a2N4"
   }
 }

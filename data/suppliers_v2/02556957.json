@@ -64,13 +64,121 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T09:39:52Z",
+    "company_name": "GROUNDWORK FIVE COUNTIES",
+    "company_status": "active",
+    "date_of_creation": "1990-11-12",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-22"
+  },
+  "governance": {
+    "api_date": "2026-04-28T09:39:54Z",
+    "total_officers": 90,
+    "active_count": 10,
+    "resigned_count": 80,
+    "active_officers": [
+      {
+        "name": "ALLUM, David Peter",
+        "role": "director",
+        "appointed_on": "2025-11-04",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BENKERMI, Mohamed-El Amine",
+        "role": "director",
+        "appointed_on": "2024-10-23",
+        "country_of_residence": "England",
+        "nationality": "French,Algerian"
+      },
+      {
+        "name": "CLARKE, Helen",
+        "role": "director",
+        "appointed_on": "2025-01-21",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CLARKE, Sarah Jayne",
+        "role": "director",
+        "appointed_on": "2024-10-23",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HARRINGTON-LEIGH, Rebecca",
+        "role": "director",
+        "appointed_on": "2025-11-04",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "JONES, Oliver James Ingram",
+        "role": "director",
+        "appointed_on": "2025-11-04",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MACE, Jonathan Michael",
+        "role": "director",
+        "appointed_on": "2024-10-23",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "RAHMAN, Nazibur",
+        "role": "director",
+        "appointed_on": "2025-11-04",
+        "country_of_residence": "England",
+        "nationality": "British,Bangladeshi"
+      },
+      {
+        "name": "SKINNER, Helen",
+        "role": "director",
+        "appointed_on": "2022-02-07",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WRIGHT, Gareth Edward",
+        "role": "director",
+        "appointed_on": "2023-07-24",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T09:39:55Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NjY0NDY3MmFkaXF6a2N4",
+    "date": "2025-08-08",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/xGKegOohmHbOzPNLoWGUiZPiSb0a-_zTIf7I879HLLA/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02556957/filing-history/MzQ3NjY0NDY3MmFkaXF6a2N4"
   }
 }

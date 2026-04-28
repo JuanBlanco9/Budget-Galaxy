@@ -63,10 +63,10 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
@@ -76,5 +76,118 @@
     "agency": 0.0232,
     "council": 0.0044,
     "education": 0.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T19:30:55Z",
+    "company_name": "JIGSAW SYSTEMS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1992-01-30",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-02-28",
+    "accounts_last_made_up": "2025-05-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-13"
+  },
+  "governance": {
+    "api_date": "2026-04-27T19:30:57Z",
+    "total_officers": 15,
+    "active_count": 5,
+    "resigned_count": 10,
+    "active_officers": [
+      {
+        "name": "HUGHES, John Richard Hal",
+        "role": "secretary",
+        "appointed_on": "1998-01-29",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "DUDMAN, David",
+        "role": "director",
+        "appointed_on": "2021-06-16",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HICKING, Robin Frank",
+        "role": "director",
+        "appointed_on": "2021-06-16",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HUGHES, John Richard Hal",
+        "role": "director",
+        "appointed_on": "1994-04-21",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WHITTLE, Roger Keith",
+        "role": "director",
+        "appointed_on": null,
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T19:30:59Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Insanely Great Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2021-10-13",
+        "identification": {
+          "legal_form": "Company Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "07778900"
+        }
+      },
+      {
+        "name": "Jigsaw Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-25-to-50-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "Uk",
+          "place_registered": "England And Wales Companies Registry",
+          "registration_number": "02753843"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5Mzc4NDMwMWFkaXF6a2N4",
+    "date": "2025-12-17",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/Zv-n8QrdvdHhfRGNVeOBrrVwEwZQJg1So1h0jLqs8iA/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02682904/filing-history/MzQ5Mzc4NDMwMWFkaXF6a2N4"
   }
 }

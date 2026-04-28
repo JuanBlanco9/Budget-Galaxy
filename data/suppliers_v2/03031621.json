@@ -64,13 +64,142 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T08:39:19Z",
+    "company_name": "THE SPRINGBOARD CHARITY",
+    "company_status": "active",
+    "date_of_creation": "1995-03-10",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-21"
+  },
+  "governance": {
+    "api_date": "2026-04-28T08:39:20Z",
+    "total_officers": 86,
+    "active_count": 13,
+    "resigned_count": 73,
+    "active_officers": [
+      {
+        "name": "SAFDARI, Mandan",
+        "role": "secretary",
+        "appointed_on": "2025-12-17",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "ADAMS, Timothy",
+        "role": "director",
+        "appointed_on": "2024-11-25",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "DALE, Jonathan Richard",
+        "role": "director",
+        "appointed_on": "2025-12-17",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "FANNER, Michael Richard",
+        "role": "director",
+        "appointed_on": "2025-12-17",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HAMILTON, Fiona",
+        "role": "director",
+        "appointed_on": "2025-12-17",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "NICHOLLS, Katherine",
+        "role": "director",
+        "appointed_on": "2022-11-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "RENTON, Jean Mary",
+        "role": "director",
+        "appointed_on": "2025-07-11",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "RICHARDS, Allister John",
+        "role": "director",
+        "appointed_on": "2020-06-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "RICHARDSON, Philip",
+        "role": "director",
+        "appointed_on": "2024-05-20",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SAVVA, Eleni",
+        "role": "director",
+        "appointed_on": "2025-12-17",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "TAYLOR, Michael John",
+        "role": "director",
+        "appointed_on": "2024-03-31",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WILSON, Alexander",
+        "role": "director",
+        "appointed_on": "2022-02-22",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WILTON, Nicola Louise",
+        "role": "director",
+        "appointed_on": "2025-12-17",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T08:39:21Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4NTIxNjgxMmFkaXF6a2N4",
+    "date": "2025-10-20",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/p2SvFeT827HB_-e8x9Bz3xqJpB2LXbywTMLn79_kKHc/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03031621/filing-history/MzQ4NTIxNjgxMmFkaXF6a2N4"
   }
 }

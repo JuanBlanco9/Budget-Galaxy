@@ -64,11 +64,125 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
-  "buyer_type_breakdown": {}
+  "buyer_type_breakdown": {},
+  "ch_profile": {
+    "api_date": "2026-04-28T14:13:39Z",
+    "company_name": "CPMG ARCHITECTS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1982-07-28",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-01-31",
+    "accounts_last_made_up": "2025-04-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-20"
+  },
+  "governance": {
+    "api_date": "2026-04-28T14:13:40Z",
+    "total_officers": 17,
+    "active_count": 8,
+    "resigned_count": 9,
+    "active_officers": [
+      {
+        "name": "COLLINSON, Judith",
+        "role": "secretary",
+        "appointed_on": "2012-06-08",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "AVISON, Hugh Duncan",
+        "role": "director",
+        "appointed_on": "2017-07-31",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BODILL, Paul Richard",
+        "role": "director",
+        "appointed_on": "2017-07-31",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "FLISHER, Richard William",
+        "role": "director",
+        "appointed_on": "2006-05-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GREGORY, Nicholas Clinton",
+        "role": "director",
+        "appointed_on": "2006-05-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "HARRAWAY, Sara Victoria",
+        "role": "director",
+        "appointed_on": "2006-05-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "PARMAR, Anil",
+        "role": "director",
+        "appointed_on": "2017-07-31",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WHITE, Christopher",
+        "role": "director",
+        "appointed_on": "2017-07-31",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T14:13:41Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Fg2h Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2022-02-08",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "06781345"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NTQyNzcwNWFkaXF6a2N4",
+    "date": "2025-12-19",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/IZ3Pu_0yGBqLA-iVo419HJzXSDQOaSkBMCI7HMTMdQQ/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01654594/filing-history/MzQ5NTQyNzcwNWFkaXF6a2N4"
+  }
 }

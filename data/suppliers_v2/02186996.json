@@ -59,15 +59,180 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.4132,
     "nhs": 0.3189,
     "council": 0.2679
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T14:23:09Z",
+    "company_name": "JACKSON LIFT SERVICES LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1987-11-03",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-05-28"
+  },
+  "governance": {
+    "api_date": "2026-04-27T14:23:10Z",
+    "total_officers": 19,
+    "active_count": 12,
+    "resigned_count": 7,
+    "active_officers": [
+      {
+        "name": "JACKSON, Julia Katherine",
+        "role": "secretary",
+        "appointed_on": "2006-09-01",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "BUTTERFIELD, Anthony",
+        "role": "director",
+        "appointed_on": "2013-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CURTIS, Colin",
+        "role": "director",
+        "appointed_on": "2017-04-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "FELTON, James Christopher",
+        "role": "director",
+        "appointed_on": "2026-02-03",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GRIFFIN, Jason",
+        "role": "director",
+        "appointed_on": "2021-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "JACKSON, George Anthony",
+        "role": "director",
+        "appointed_on": null,
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "JACKSON, Julia Katherine",
+        "role": "director",
+        "appointed_on": "2007-09-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "JACKSON, Mary",
+        "role": "director",
+        "appointed_on": null,
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PHILLIPS, Arthur Edward",
+        "role": "director",
+        "appointed_on": "2026-02-03",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "RINGER, Paul",
+        "role": "director",
+        "appointed_on": "2024-01-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "ROBERTS, Mark Joseph",
+        "role": "director",
+        "appointed_on": "2025-05-28",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "RUDD, Philip John",
+        "role": "director",
+        "appointed_on": "2011-12-09",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T14:23:12Z",
+    "total_results": 3,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Jackson Family Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2018-10-17",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "09519529"
+        }
+      },
+      {
+        "name": "Mrs Mary Jackson",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2017-05-14",
+        "identification": null
+      },
+      {
+        "name": "Mr George Anthony Jackson",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2017-05-14",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MjYzNjQxNmFkaXF6a2N4",
+    "date": "2025-07-08",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-medium",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/I28tJ4HPpeSrIP2IXFSwCynILGB0ROK5eZRsFcTWmNA/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02186996/filing-history/MzQ3MjYzNjQxNmFkaXF6a2N4"
   }
 }

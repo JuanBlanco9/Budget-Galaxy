@@ -59,14 +59,94 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
     "central_govt": 0.75,
     "other": 0.25
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T20:07:58Z",
+    "company_name": "PANEL SYSTEMS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1974-08-05",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-17"
+  },
+  "governance": {
+    "api_date": "2026-04-27T20:08:00Z",
+    "total_officers": 9,
+    "active_count": 1,
+    "resigned_count": 8,
+    "active_officers": [
+      {
+        "name": "IBBOTSON, Christopher Malcolm",
+        "role": "director",
+        "appointed_on": null,
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T20:08:01Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Panel Systems (Holdings) Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2021-11-18",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 1985",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "02577957"
+        }
+      },
+      {
+        "name": "Mr Christopher Malcolm Ibbotson",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors-as-firm"
+        ],
+        "notified_on": "2016-04-07",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NDMzNDQxNGFkaXF6a2N4",
+    "date": "2025-07-18",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/Cy0ZIFTxvb7XR_eHWD7XySpxNCeLwLEju2wAB-t2n5E/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01179701/filing-history/MzQ3NDMzNDQxNGFkaXF6a2N4"
   }
 }

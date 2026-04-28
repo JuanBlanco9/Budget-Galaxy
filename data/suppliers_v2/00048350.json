@@ -59,13 +59,100 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T13:49:17Z",
+    "company_name": "ASTON-MANSFIELD",
+    "company_status": "active",
+    "date_of_creation": "1896-06-16",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-25"
+  },
+  "governance": {
+    "api_date": "2026-04-28T13:49:19Z",
+    "total_officers": 64,
+    "active_count": 7,
+    "resigned_count": 57,
+    "active_officers": [
+      {
+        "name": "DA-SILVA, Eileen",
+        "role": "secretary",
+        "appointed_on": "2014-01-09",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "CHOUDHARY, Noor Ullah",
+        "role": "director",
+        "appointed_on": "2015-03-10",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "FRASER, Jeremy Stuart, Rev",
+        "role": "director",
+        "appointed_on": "2020-01-14",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MINFORD, Alexander Patrick",
+        "role": "director",
+        "appointed_on": "2016-07-19",
+        "country_of_residence": "Wales",
+        "nationality": "Irish"
+      },
+      {
+        "name": "MUNJAYI, Tendai",
+        "role": "director",
+        "appointed_on": "2023-01-24",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SAVJANI, Mahendra Kumar",
+        "role": "director",
+        "appointed_on": "2018-01-16",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WHITEFORD, Amanda",
+        "role": "director",
+        "appointed_on": "2025-01-21",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T13:49:20Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4Mzk4MjYyN2FkaXF6a2N4",
+    "date": "2025-10-08",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/pyOUPxbrtPPE-ldd0dWb-H9FSUp22D12fKMKzD0d9fA/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/00048350/filing-history/MzQ4Mzk4MjYyN2FkaXF6a2N4"
   }
 }

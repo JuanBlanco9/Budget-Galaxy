@@ -59,13 +59,114 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T03:24:44Z",
+    "company_name": "CORNTHWAITE AGRICULTURAL LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2007-05-03",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-23"
+  },
+  "governance": {
+    "api_date": "2026-04-28T03:24:45Z",
+    "total_officers": 10,
+    "active_count": 6,
+    "resigned_count": 4,
+    "active_officers": [
+      {
+        "name": "SHIELD, Benjamin Nicolas",
+        "role": "secretary",
+        "appointed_on": "2021-06-01",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "CORNTHWAITE, Helen Claire",
+        "role": "director",
+        "appointed_on": "2023-04-06",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CORNTHWAITE, Stuart Anthony",
+        "role": "director",
+        "appointed_on": "2007-05-03",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HODGKINSON, Andrew",
+        "role": "director",
+        "appointed_on": "2022-12-19",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MELLING, John Antony Thomas",
+        "role": "director",
+        "appointed_on": "2023-04-06",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SHIELD, Benjamin Nicolas",
+        "role": "director",
+        "appointed_on": "2021-06-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T03:24:46Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Cornthwaite Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act",
+          "country_registered": "England",
+          "place_registered": "England And Wales",
+          "registration_number": "06323376"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MDEwMTA1N2FkaXF6a2N4",
+    "date": "2025-09-08",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/Ir47iPXlwH7ER7qJuayPdR3SvILx2t97cl-LCds8kP8/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/06236827/filing-history/MzQ4MDEwMTA1N2FkaXF6a2N4"
   }
 }

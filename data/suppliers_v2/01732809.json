@@ -59,13 +59,126 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "education",
   "buyer_type_breakdown": {
     "education": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T00:20:05Z",
+    "company_name": "CERAMIC DRYING SYSTEMS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1983-06-20",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-01-31",
+    "accounts_last_made_up": "2025-04-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-07"
+  },
+  "governance": {
+    "api_date": "2026-04-28T00:20:07Z",
+    "total_officers": 19,
+    "active_count": 8,
+    "resigned_count": 11,
+    "active_officers": [
+      {
+        "name": "DUNNE, Gillian Nora",
+        "role": "secretary",
+        "appointed_on": null,
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "BUCKLEY, Christopher Stephen Joseph",
+        "role": "director",
+        "appointed_on": "2015-04-13",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "DUNNE, Lucas Gregory",
+        "role": "director",
+        "appointed_on": "2011-01-17",
+        "country_of_residence": "England",
+        "nationality": "English"
+      },
+      {
+        "name": "DUNNE, Terence Patrick",
+        "role": "director",
+        "appointed_on": null,
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HALL, Andrew James",
+        "role": "director",
+        "appointed_on": "1997-12-15",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "HARRISON, Neil Russell",
+        "role": "director",
+        "appointed_on": "2006-07-17",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "TAYLOR, David",
+        "role": "director",
+        "appointed_on": "2015-04-13",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WALTERS, David Gordon",
+        "role": "director",
+        "appointed_on": "2015-04-13",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T00:20:08Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Fox Hollow Investments Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Limited Company",
+          "country_registered": "Endland And Wales",
+          "place_registered": "England And Wales Registry",
+          "registration_number": "08185270"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5OTUxNzI4M2FkaXF6a2N4",
+    "date": "2026-01-15",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/7wEIleZrG758NfM0gJebYpbaxuj7anKAebgWixg0vSI/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01732809/filing-history/MzQ5OTUxNzI4M2FkaXF6a2N4"
   }
 }

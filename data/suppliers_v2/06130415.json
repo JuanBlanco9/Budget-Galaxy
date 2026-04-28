@@ -68,13 +68,99 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T13:33:04Z",
+    "company_name": "BENCHMARK SCAFFOLDING LTD",
+    "company_status": "active",
+    "date_of_creation": "2007-02-27",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-04-30",
+    "accounts_last_made_up": "2025-06-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-13"
+  },
+  "governance": {
+    "api_date": "2026-04-28T13:33:05Z",
+    "total_officers": 14,
+    "active_count": 4,
+    "resigned_count": 10,
+    "active_officers": [
+      {
+        "name": "BYRNE, Mark",
+        "role": "director",
+        "appointed_on": "2017-07-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PATEL, Hitesh Manji",
+        "role": "director",
+        "appointed_on": "2020-12-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "WEST, Maria Rosario",
+        "role": "director",
+        "appointed_on": "2026-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WEST, Robert John",
+        "role": "director",
+        "appointed_on": "2013-01-07",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T13:33:06Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Benchmark Investments Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "England And Wales",
+          "country_registered": "England And Wales",
+          "place_registered": "England And Wales",
+          "registration_number": "08345934"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwNzE1MzIyOWFkaXF6a2N4",
+    "date": "2026-02-25",
+    "type": "AA01",
+    "description": "change-account-reference-date-company-current-extended",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/N6Wpkx339zf4mQzj-U2O0LsuR243O_Iu2oqx-qZIovY/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/06130415/filing-history/MzUwNzE1MzIyOWFkaXF6a2N4"
   }
 }

@@ -59,13 +59,65 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T13:19:17Z",
+    "company_name": "MORE4APPS UK LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2007-06-22",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-04"
+  },
+  "governance": {
+    "api_date": "2026-04-28T13:19:18Z",
+    "total_officers": 6,
+    "active_count": 2,
+    "resigned_count": 4,
+    "active_officers": [
+      {
+        "name": "DOIG, Bruce Raymond",
+        "role": "secretary",
+        "appointed_on": "2011-12-14",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "O'KEEFFE, John",
+        "role": "director",
+        "appointed_on": "2007-09-01",
+        "country_of_residence": "New Zealand",
+        "nationality": "New Zealander"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T13:19:19Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MzEzMzIwNWFkaXF6a2N4",
+    "date": "2025-12-09",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/k9grLkbsQQ_lVJkOfB_RMPF9ICbESIKVaabmPzgGRng/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/06290033/filing-history/MzQ5MzEzMzIwNWFkaXF6a2N4"
   }
 }

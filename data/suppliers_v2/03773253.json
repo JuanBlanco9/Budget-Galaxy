@@ -64,13 +64,123 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T02:26:55Z",
+    "company_name": "FACTIVA LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1999-05-19",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-03-31",
+    "accounts_last_made_up": "2025-06-29",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-02"
+  },
+  "governance": {
+    "api_date": "2026-04-28T02:26:56Z",
+    "total_officers": 38,
+    "active_count": 5,
+    "resigned_count": 33,
+    "active_officers": [
+      {
+        "name": "DYATLOVA, Eve",
+        "role": "secretary",
+        "appointed_on": "2025-10-10",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "CSC CLS (UK) LIMITED",
+        "role": "corporate-secretary",
+        "appointed_on": "2025-09-18",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "KIRWAN, Dessie, Mr.",
+        "role": "director",
+        "appointed_on": "2024-01-15",
+        "country_of_residence": "United Kingdom",
+        "nationality": "Irish"
+      },
+      {
+        "name": "LANGE, Joel Martin, Mr.",
+        "role": "director",
+        "appointed_on": "2023-12-13",
+        "country_of_residence": "United Kingdom",
+        "nationality": "American"
+      },
+      {
+        "name": "MANDRACKIE, Eric Steven",
+        "role": "director",
+        "appointed_on": "2012-11-27",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T02:26:57Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "News Corporation",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2023-03-29",
+        "identification": {
+          "legal_form": "Corporation",
+          "legal_authority": "United States (Delaware)",
+          "country_registered": "United States",
+          "place_registered": "Delaware Division Of Corporations",
+          "registration_number": "5255798"
+        }
+      },
+      {
+        "name": "Dow Jones & Company, Inc.",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Corporation",
+          "legal_authority": "General Corporation Law Act Of Delaware, Usa",
+          "country_registered": "Usa",
+          "place_registered": "Delaware Secretary Of State",
+          "registration_number": "0434427"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4ODc5MTY5MGFkaXF6a2N4",
+    "date": "2025-11-14",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/OWQvqpRtARFGA1CnT3deyEctkVHD-5CI5Ajdrsc65pE/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03773253/filing-history/MzQ4ODc5MTY5MGFkaXF6a2N4"
   }
 }

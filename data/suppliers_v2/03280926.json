@@ -59,11 +59,98 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
-  "buyer_type_breakdown": {}
+  "buyer_type_breakdown": {},
+  "ch_profile": {
+    "api_date": "2026-04-28T14:19:45Z",
+    "company_name": "FLAMEFAST (U.K.) LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1996-11-20",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-02-28",
+    "accounts_last_made_up": "2025-05-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-04"
+  },
+  "governance": {
+    "api_date": "2026-04-28T14:19:46Z",
+    "total_officers": 15,
+    "active_count": 4,
+    "resigned_count": 11,
+    "active_officers": [
+      {
+        "name": "SWINDEN, Steven Antony",
+        "role": "secretary",
+        "appointed_on": "2013-05-18",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "SWINDEN, Colleen",
+        "role": "director",
+        "appointed_on": "2012-12-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "SWINDEN, Steven Antony",
+        "role": "director",
+        "appointed_on": "2001-11-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "WARBURTON, Jane",
+        "role": "director",
+        "appointed_on": "2012-12-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T14:19:47Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Flamefast Holdings Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "England & Wales",
+          "country_registered": "England And Wales",
+          "place_registered": "England & Wales",
+          "registration_number": "05398978"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwNDkzNjYzMWFkaXF6a2N4",
+    "date": "2026-02-13",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/JJLOWgK4dSMC2otdgHH8F_07R4W21W7zSl_bMelGmXM/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03280926/filing-history/MzUwNDkzNjYzMWFkaXF6a2N4"
+  }
 }

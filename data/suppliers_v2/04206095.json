@@ -65,13 +65,105 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
     "central_govt": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T15:04:57Z",
+    "company_name": "G3 SYSTEMS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2001-04-26",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-05-10"
+  },
+  "governance": {
+    "api_date": "2026-04-27T15:04:59Z",
+    "total_officers": 50,
+    "active_count": 5,
+    "resigned_count": 45,
+    "active_officers": [
+      {
+        "name": "LIPOWITZ, Kenneth",
+        "role": "secretary",
+        "appointed_on": "2024-05-10",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BRINKS, Adrian",
+        "role": "director",
+        "appointed_on": "2023-08-10",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      },
+      {
+        "name": "CHARLTON, Gary Lynn",
+        "role": "director",
+        "appointed_on": "2026-01-31",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "ROSE, Nicholas",
+        "role": "director",
+        "appointed_on": "2023-08-10",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "ROSEN, Robert Gordon",
+        "role": "director",
+        "appointed_on": "2024-05-10",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T15:05:01Z",
+    "total_results": 1,
+    "active_count": 0,
+    "items": [
+      {
+        "name": "Iap Worldwide Services, Inc",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Incorporated",
+          "legal_authority": "Delaware, Usa",
+          "country_registered": "Delaware, Usa",
+          "place_registered": "Delaware Secretary Of State",
+          "registration_number": "3777235"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3Mjg1NjIxNGFkaXF6a2N4",
+    "date": "2025-07-08",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-medium",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/Bys_p3iTB8wEEuVFMeIn0YQcHAcv8XhfrLjyJBXCv18/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04206095/filing-history/MzQ3Mjg1NjIxNGFkaXF6a2N4"
   }
 }

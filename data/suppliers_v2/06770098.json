@@ -64,13 +64,83 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
     "central_govt": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T13:40:49Z",
+    "company_name": "EVENING STANDARD LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2008-12-10",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-09-29",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-07"
+  },
+  "governance": {
+    "api_date": "2026-04-28T13:40:50Z",
+    "total_officers": 19,
+    "active_count": 2,
+    "resigned_count": 17,
+    "active_officers": [
+      {
+        "name": "LEBEDEV, Evgeny",
+        "role": "director",
+        "appointed_on": "2017-02-02",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "VAGHELA, Vijay Kumar Lakhman Meghji",
+        "role": "director",
+        "appointed_on": "2024-11-24",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T13:40:51Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Lebedev Holdings Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Company Limited By Shares",
+          "legal_authority": "Company Limited By Shares"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2NDYxNTIyM2FkaXF6a2N4",
+    "date": "2025-04-30",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/Csm6fX6DYzv4ph2FuCPpsIlnyzFPgc4-ZisESWSmUWs/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/06770098/filing-history/MzQ2NDYxNTIyM2FkaXF6a2N4"
   }
 }

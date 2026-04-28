@@ -64,13 +64,99 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "agency",
   "buyer_type_breakdown": {
     "agency": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T16:21:46Z",
+    "company_name": "FINREGE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2018-01-08",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-04-29"
+  },
+  "governance": {
+    "api_date": "2026-04-27T16:21:47Z",
+    "total_officers": 3,
+    "active_count": 3,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "GUPTA, Rohini",
+        "role": "director",
+        "appointed_on": "2020-07-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "JAIN, Shailendra",
+        "role": "director",
+        "appointed_on": "2025-03-21",
+        "country_of_residence": "England",
+        "nationality": "Indian"
+      },
+      {
+        "name": "MADAHAR, Amit",
+        "role": "director",
+        "appointed_on": "2018-01-08",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T16:21:49Z",
+    "total_results": 2,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Ms Rohini Gupta",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2020-07-01",
+        "identification": null
+      },
+      {
+        "name": "Mr Amit Madahar",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2018-01-08",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MzAzOTczNWFkaXF6a2N4",
+    "date": "2025-09-29",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-unaudited-abridged",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/z2ZbfoR0Nqqp6HOei237W559b26OvPxMe3fKTWnHHAM/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/11139011/filing-history/MzQ4MzAzOTczNWFkaXF6a2N4"
   }
 }

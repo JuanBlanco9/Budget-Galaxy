@@ -68,13 +68,93 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T07:08:57Z",
+    "company_name": "CARING CONNECTIONS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1992-06-12",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-30",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-26"
+  },
+  "governance": {
+    "api_date": "2026-04-28T07:08:58Z",
+    "total_officers": 48,
+    "active_count": 6,
+    "resigned_count": 42,
+    "active_officers": [
+      {
+        "name": "CULLIGAN, Cieran Michael",
+        "role": "director",
+        "appointed_on": "2024-09-18",
+        "country_of_residence": "England",
+        "nationality": "English"
+      },
+      {
+        "name": "KEEGAN, Rebecca Emily",
+        "role": "director",
+        "appointed_on": "2024-12-17",
+        "country_of_residence": "England",
+        "nationality": "English"
+      },
+      {
+        "name": "LEA, Michael Jonathan",
+        "role": "director",
+        "appointed_on": "2024-12-17",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "RICHMOND, Mark Andrew",
+        "role": "director",
+        "appointed_on": "2020-10-01",
+        "country_of_residence": "England",
+        "nationality": "English"
+      },
+      {
+        "name": "TITLEY, Elizabeth",
+        "role": "director",
+        "appointed_on": "2019-04-15",
+        "country_of_residence": "England",
+        "nationality": "English"
+      },
+      {
+        "name": "WILD, Jon William",
+        "role": "director",
+        "appointed_on": "2012-06-21",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T07:08:59Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MzQyNTc1NWFkaXF6a2N4",
+    "date": "2025-12-11",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/qoFOsafachP6y7W5iJSdwM10po4GHLpoWZz2_UQfjzc/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02722484/filing-history/MzQ5MzQyNTc1NWFkaXF6a2N4"
   }
 }

@@ -59,13 +59,86 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T04:15:45Z",
+    "company_name": "ETHICAL LETTINGS C.I.C.",
+    "company_status": "active",
+    "date_of_creation": "2012-01-19",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-10-31",
+    "accounts_last_made_up": "2025-01-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-02"
+  },
+  "governance": {
+    "api_date": "2026-04-28T04:15:47Z",
+    "total_officers": 9,
+    "active_count": 5,
+    "resigned_count": 4,
+    "active_officers": [
+      {
+        "name": "SUMMERFIELD, Trevor Michael",
+        "role": "secretary",
+        "appointed_on": "2012-01-19",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "MEDINA, Holly Elizabeth",
+        "role": "director",
+        "appointed_on": "2020-02-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "RANGECROFT, Georgina",
+        "role": "director",
+        "appointed_on": "2012-01-19",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "RANGECROFT, Michael David",
+        "role": "director",
+        "appointed_on": "2017-06-02",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "TRUSSLER, Laura Jayne",
+        "role": "director",
+        "appointed_on": "2020-02-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T04:15:48Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4NjQyNTMwN2FkaXF6a2N4",
+    "date": "2025-10-27",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/v5O80GgxVjiIjr01wiTOlTJ58_HrM3qPJNnNt6NfZlY/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/07917040/filing-history/MzQ4NjQyNTMwN2FkaXF6a2N4"
   }
 }

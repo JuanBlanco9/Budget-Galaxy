@@ -59,13 +59,114 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T20:28:14Z",
+    "company_name": "WATFORD NEW HOPE TRUST",
+    "company_status": "active",
+    "date_of_creation": "2000-04-10",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-04-19"
+  },
+  "governance": {
+    "api_date": "2026-04-27T20:28:15Z",
+    "total_officers": 37,
+    "active_count": 9,
+    "resigned_count": 28,
+    "active_officers": [
+      {
+        "name": "BOWYER, Alison Mary",
+        "role": "secretary",
+        "appointed_on": "2025-03-27",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BAILEY, Mark Alexander",
+        "role": "director",
+        "appointed_on": "2023-11-23",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "FORD, John Richard",
+        "role": "director",
+        "appointed_on": "2005-03-08",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LOGAN, Claire Elizabeth",
+        "role": "director",
+        "appointed_on": "2025-09-11",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MELDRUM, Samuel Charles Patrick",
+        "role": "director",
+        "appointed_on": "2025-07-10",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "REEVE, Annette Susan",
+        "role": "director",
+        "appointed_on": "2025-07-10",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ROBERTSON, Andrew John",
+        "role": "director",
+        "appointed_on": "2019-09-26",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "ROBSON, Timothy William",
+        "role": "director",
+        "appointed_on": "2024-09-12",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SILLS, Melanie Jane",
+        "role": "director",
+        "appointed_on": "2023-09-14",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T20:28:17Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NTQzMzY1N2FkaXF6a2N4",
+    "date": "2025-12-29",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/yQE9j6VXVxnLeBIfSezeDEkNk4Njbk-PXvtr9_mObSo/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03969063/filing-history/MzQ5NTQzMzY1N2FkaXF6a2N4"
   }
 }

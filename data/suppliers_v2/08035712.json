@@ -63,10 +63,10 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
@@ -74,5 +74,83 @@
     "other": 0.2993,
     "education": 0.0057,
     "council": 0.0054
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T01:01:05Z",
+    "company_name": "WHITEHEAD-ROSS EDUCATION AND CONSULTING LIMITED",
+    "company_status": "liquidation",
+    "date_of_creation": "2012-04-18",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": true,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": true,
+    "accounts_next_due": "2026-01-31",
+    "accounts_last_made_up": "2024-04-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-01"
+  },
+  "governance": {
+    "api_date": "2026-04-28T01:01:07Z",
+    "total_officers": 2,
+    "active_count": 1,
+    "resigned_count": 1,
+    "active_officers": [
+      {
+        "name": "ROSS, Ian William James",
+        "role": "director",
+        "appointed_on": "2012-04-18",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T01:01:08Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Whitehead-Ross Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2025-09-30",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "Uk Register Of Companies",
+          "registration_number": "16692864"
+        }
+      },
+      {
+        "name": "Mr Ian William James Ross",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQzOTI3NjY2MGFkaXF6a2N4",
+    "date": "2024-10-16",
+    "type": "AAMD",
+    "description": "accounts-amended-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/1xQYWKdhczv3xuIW-e2CEPTHZeVNBjFVPqs7OJj3tUQ/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/08035712/filing-history/MzQzOTI3NjY2MGFkaXF6a2N4"
   }
 }

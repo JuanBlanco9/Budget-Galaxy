@@ -55,14 +55,43 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
     "ch_api_accounts_pdf": false
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.7759,
     "council": 0.2241
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T03:26:56Z",
+    "company_name": "CHARTERED INSTITUTE OF INTERNAL AUDITORS",
+    "company_status": "active",
+    "date_of_creation": null,
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": null,
+    "accounts_overdue": null,
+    "accounts_next_due": null,
+    "accounts_last_made_up": null,
+    "confirmation_statement_overdue": null,
+    "confirmation_statement_next_due": null
+  },
+  "governance": {
+    "api_date": "2026-04-28T03:26:57Z",
+    "total_officers": 0,
+    "active_count": 0,
+    "resigned_count": 0,
+    "active_officers": []
+  },
+  "pscs": {
+    "api_date": "2026-04-28T03:26:58Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
   }
 }

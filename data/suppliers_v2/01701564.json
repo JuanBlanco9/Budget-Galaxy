@@ -59,10 +59,10 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
@@ -71,5 +71,97 @@
     "central_govt": 0.0008,
     "agency": 0.0001,
     "education": 0.0001
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T21:50:42Z",
+    "company_name": "SQW LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1983-02-22",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-06"
+  },
+  "governance": {
+    "api_date": "2026-04-27T21:50:44Z",
+    "total_officers": 31,
+    "active_count": 5,
+    "resigned_count": 26,
+    "active_officers": [
+      {
+        "name": "WRIGHT, Katharine Hannah",
+        "role": "secretary",
+        "appointed_on": "2016-11-01",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "CRICHTON-MILLER, David James Laurens",
+        "role": "director",
+        "appointed_on": "2015-06-08",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "DELAHUNTY, Luke Benjamin",
+        "role": "director",
+        "appointed_on": "2022-08-16",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "DOEL, Christine Marie, Doctor",
+        "role": "director",
+        "appointed_on": "2023-03-31",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WRIGHT, Katharine Hannah",
+        "role": "director",
+        "appointed_on": "2016-11-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T21:50:46Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Sqw Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2017-02-20",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "4947276"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NzIyNzAyN2FkaXF6a2N4",
+    "date": "2025-08-14",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/UpmgXArpDc_WKbkeiCVpl-HCGze39-RZu7_oRkjlpfs/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01701564/filing-history/MzQ3NzIyNzAyN2FkaXF6a2N4"
   }
 }

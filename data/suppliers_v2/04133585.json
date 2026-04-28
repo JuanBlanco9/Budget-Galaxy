@@ -66,14 +66,163 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.995,
     "council": 0.005
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T20:06:17Z",
+    "company_name": "CAREIUM UK LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2000-12-29",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-14"
+  },
+  "governance": {
+    "api_date": "2026-04-27T20:06:19Z",
+    "total_officers": 53,
+    "active_count": 2,
+    "resigned_count": 51,
+    "active_officers": [
+      {
+        "name": "GRANATH, David",
+        "role": "director",
+        "appointed_on": "2024-09-30",
+        "country_of_residence": "Sweden",
+        "nationality": "Swedish"
+      },
+      {
+        "name": "POTTER, Maxine",
+        "role": "director",
+        "appointed_on": "2025-10-07",
+        "country_of_residence": "Wales",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T20:06:20Z",
+    "total_results": 6,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Careium Ab",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2023-06-30",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Law Of Sweden",
+          "country_registered": "Sweden",
+          "place_registered": "Registered In Sweden",
+          "registration_number": "559121-5875"
+        }
+      },
+      {
+        "name": "Wealden And Eastbourne Lifeline Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2019-09-02",
+        "identification": {
+          "legal_form": "Private Company Limited By Shaes",
+          "legal_authority": "Companies Act",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "08666755"
+        }
+      },
+      {
+        "name": "Carl-Johan Zetterberg Boudrie",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Swedish",
+        "country_of_residence": "Sweden",
+        "ceased": true,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2019-09-02",
+        "identification": null
+      },
+      {
+        "name": "Mrs Wendy Barbara Darling",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2019-09-02",
+        "identification": null
+      },
+      {
+        "name": "Mr Stephen Leslie Smith",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2019-09-02",
+        "identification": null
+      },
+      {
+        "name": "Circle Care And Support Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Charitable Company Limited By Guarantee Without A Share Capital",
+          "legal_authority": "Companies Act",
+          "country_registered": "Engand",
+          "place_registered": "Companies House England And Wales",
+          "registration_number": "3307684"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4NDAyMTE0NGFkaXF6a2N4",
+    "date": "2025-10-07",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/Z31JLHaFICUdlTIJ-mfKPngQRSgb_phhJ3s_3bRB3VA/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04133585/filing-history/MzQ4NDAyMTE0NGFkaXF6a2N4"
   }
 }

@@ -64,10 +64,10 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
@@ -75,5 +75,109 @@
     "education": 0.0973,
     "council": 0.0486,
     "nhs": 0.0008
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T09:47:37Z",
+    "company_name": "RYDER ARCHITECTURE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1984-10-05",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-01-31",
+    "accounts_last_made_up": "2025-04-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-05-23"
+  },
+  "governance": {
+    "api_date": "2026-04-28T09:47:38Z",
+    "total_officers": 12,
+    "active_count": 3,
+    "resigned_count": 9,
+    "active_officers": [
+      {
+        "name": "HURWORTH, Graeme Richard",
+        "role": "secretary",
+        "appointed_on": "2005-08-01",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "HURWORTH, Graeme Richard",
+        "role": "director",
+        "appointed_on": "2020-05-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "THOMPSON, Mark Richard",
+        "role": "director",
+        "appointed_on": "1995-07-15",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T09:47:39Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Ryder 2025 Trustee Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2025-05-01",
+        "identification": {
+          "legal_form": "Company Limited By Guarantee",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "The Registrar Of Companies For England And Wales",
+          "registration_number": "16347882"
+        }
+      },
+      {
+        "name": "Mr Mark Richard Thompson",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Peter Buchan",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwMjE1NzM0M2FkaXF6a2N4",
+    "date": "2026-01-29",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/WRpwja0xFd4GoHpcUrhT-wTWmvWfFz0yimBjAF9yAvw/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01852938/filing-history/MzUwMjE1NzM0M2FkaXF6a2N4"
   }
 }

@@ -59,10 +59,10 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "agency",
   "buyer_type_breakdown": {
@@ -70,5 +70,85 @@
     "nhs": 0.4119,
     "other": 0.0219,
     "education": 0.017
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T05:44:37Z",
+    "company_name": "QIAGEN LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1993-10-04",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-04"
+  },
+  "governance": {
+    "api_date": "2026-04-28T05:44:38Z",
+    "total_officers": 21,
+    "active_count": 3,
+    "resigned_count": 18,
+    "active_officers": [
+      {
+        "name": "BIRCH, Paul Jonathan",
+        "role": "secretary",
+        "appointed_on": "2016-01-29",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "CRITCHLEY, Andrew David, Dr",
+        "role": "director",
+        "appointed_on": "2018-08-31",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SACKERS, Roland",
+        "role": "director",
+        "appointed_on": "2001-10-02",
+        "country_of_residence": "Germany",
+        "nationality": "German"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T05:44:39Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Qiagen Nv",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Dutch",
+          "country_registered": "Netherlands",
+          "place_registered": "Trade Register (Kamer Van Koophandel) Of Dutch",
+          "registration_number": "12036979"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MTczNjMyMWFkaXF6a2N4",
+    "date": "2025-09-18",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/-WJZCMCQeD2s_x4vsGZ0f5z7DXT9ReKpBwE8Y4zEHJQ/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02858916/filing-history/MzQ4MTczNjMyMWFkaXF6a2N4"
   }
 }

@@ -64,13 +64,145 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "police_fire",
   "buyer_type_breakdown": {
     "police_fire": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T08:55:37Z",
+    "company_name": "QUADIENT FINANCE UK LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1986-03-07",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-10-31",
+    "accounts_last_made_up": "2025-01-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-15"
+  },
+  "governance": {
+    "api_date": "2026-04-28T08:55:38Z",
+    "total_officers": 24,
+    "active_count": 3,
+    "resigned_count": 21,
+    "active_officers": [
+      {
+        "name": "VAITER, Ralitza Dimitrova",
+        "role": "secretary",
+        "appointed_on": "2021-08-30",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "GROOM, Duncan",
+        "role": "director",
+        "appointed_on": "2018-08-01",
+        "country_of_residence": "Ireland",
+        "nationality": "Irish"
+      },
+      {
+        "name": "LEMONNIER, Arnaud Laurent",
+        "role": "director",
+        "appointed_on": "2025-04-24",
+        "country_of_residence": "France",
+        "nationality": "French"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T08:55:39Z",
+    "total_results": 5,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "N",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2018-08-24",
+        "identification": {
+          "legal_form": "Ownership",
+          "legal_authority": "French",
+          "country_registered": "France",
+          "place_registered": "France",
+          "registration_number": "402103907"
+        }
+      },
+      {
+        "name": "Quadient S A",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2018-03-12",
+        "identification": {
+          "legal_form": "Public Company",
+          "legal_authority": "French",
+          "country_registered": "France",
+          "place_registered": "France",
+          "registration_number": "402103907"
+        }
+      },
+      {
+        "name": "Mr Paul Richard Puxty",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-07",
+        "identification": null
+      },
+      {
+        "name": "Mr Jean Francois Labadie",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "French",
+        "country_of_residence": "France",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-07",
+        "identification": null
+      },
+      {
+        "name": "Mr Michael Adrian Stone",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Irish",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-07",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4NzM4OTQwN2FkaXF6a2N4",
+    "date": "2025-11-04",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/7qJWcZggwzsS3yKKPAUdKnZ-tkBf3jEy_FxjEVx02S4/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01997384/filing-history/MzQ4NzM4OTQwN2FkaXF6a2N4"
   }
 }

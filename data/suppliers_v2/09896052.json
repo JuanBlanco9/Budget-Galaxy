@@ -64,14 +64,167 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.8537,
     "police_fire": 0.1463
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T08:35:17Z",
+    "company_name": "SMARTA WATER LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2015-12-01",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-14"
+  },
+  "governance": {
+    "api_date": "2026-04-28T08:35:18Z",
+    "total_officers": 11,
+    "active_count": 4,
+    "resigned_count": 7,
+    "active_officers": [
+      {
+        "name": "BLACK, Stephen",
+        "role": "director",
+        "appointed_on": "2018-05-15",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "DIXON, Kieran",
+        "role": "director",
+        "appointed_on": "2024-12-02",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GREEN, Elizabeth Jane Emma",
+        "role": "director",
+        "appointed_on": "2018-04-11",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "JACQUES, Lee Travis",
+        "role": "director",
+        "appointed_on": "2024-12-02",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T08:35:19Z",
+    "total_results": 6,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "The Smarta Utilities Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2020-01-23",
+        "identification": {
+          "legal_form": "Limited",
+          "legal_authority": "Companies Act",
+          "country_registered": "England And Wales",
+          "place_registered": "England And Wales",
+          "registration_number": "12403015"
+        }
+      },
+      {
+        "name": "Mr Stephen Black",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2019-01-01",
+        "identification": null
+      },
+      {
+        "name": "Mrs Elizabeth Jane Emma Green",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2018-04-11",
+        "identification": null
+      },
+      {
+        "name": "Mrs Elizabeth Jane Emma Green",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2018-04-11",
+        "identification": null
+      },
+      {
+        "name": "Mr Stephen Black",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2017-11-01",
+        "identification": null
+      },
+      {
+        "name": "Mr Kevin Reginald Clark",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MzI5Njg5M2FkaXF6a2N4",
+    "date": "2025-09-30",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-medium",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/svnht53H9M0mq7rE9zAtNRZ2nW-WOIExNYa7WwS0CFY/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/09896052/filing-history/MzQ4MzI5Njg5M2FkaXF6a2N4"
   }
 }

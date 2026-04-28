@@ -64,13 +64,93 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T23:19:44Z",
+    "company_name": "SCCI ALPHATRACK LTD",
+    "company_status": "active",
+    "date_of_creation": "1992-10-30",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-02-28",
+    "accounts_last_made_up": "2025-05-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-05"
+  },
+  "governance": {
+    "api_date": "2026-04-27T23:19:46Z",
+    "total_officers": 15,
+    "active_count": 3,
+    "resigned_count": 12,
+    "active_officers": [
+      {
+        "name": "DELLOW, Paul William",
+        "role": "director",
+        "appointed_on": "2009-08-05",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "FOGELMAN, David Jason",
+        "role": "director",
+        "appointed_on": "2007-06-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WICKINGS, Robert Charles",
+        "role": "director",
+        "appointed_on": "2002-06-24",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T23:19:47Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Scci Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act",
+          "country_registered": "England",
+          "place_registered": "England And Wales",
+          "registration_number": "06089974"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwNjU0OTI5OWFkaXF6a2N4",
+    "date": "2026-02-23",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/78sybeqI6R7v9QkBMN63-h8KBfx3h_nahCBZLvqVej0/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02760731/filing-history/MzUwNjU0OTI5OWFkaXF6a2N4"
   }
 }

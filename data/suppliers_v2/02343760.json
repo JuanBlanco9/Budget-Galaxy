@@ -64,10 +64,10 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
@@ -78,5 +78,99 @@
     "trust": 0.0028,
     "central_govt": 0.0017,
     "agency": 0.0013
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T14:51:51Z",
+    "company_name": "ACCESS UK LTD",
+    "company_status": "active",
+    "date_of_creation": "1989-02-06",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-03-31",
+    "accounts_last_made_up": "2025-06-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-04"
+  },
+  "governance": {
+    "api_date": "2026-04-27T14:51:53Z",
+    "total_officers": 38,
+    "active_count": 5,
+    "resigned_count": 33,
+    "active_officers": [
+      {
+        "name": "AUDIS, Michael James",
+        "role": "director",
+        "appointed_on": "2009-07-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BAYNE, Christopher Andrew Armstrong",
+        "role": "director",
+        "appointed_on": "2009-07-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BINNS, Robert Hugh",
+        "role": "director",
+        "appointed_on": "2019-06-17",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BROWN, Adam John Witherow",
+        "role": "director",
+        "appointed_on": "2011-09-05",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "JORGENSEN, Jonathan Robert",
+        "role": "director",
+        "appointed_on": "2009-07-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T14:51:55Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Access Technology Group",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "05575609"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxNDk3MTg4NGFkaXF6a2N4",
+    "date": "2026-04-08",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/13GySb4iOhw12AS4fXGqpc3Njhh966SuE_sJ0aSMyJ8/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02343760/filing-history/MzUxNDk3MTg4NGFkaXF6a2N4"
   }
 }

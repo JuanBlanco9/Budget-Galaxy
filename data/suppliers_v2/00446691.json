@@ -65,14 +65,124 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.9808,
     "trust": 0.0192
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T17:06:41Z",
+    "company_name": "GEORGE JONES & SON (CONTRACTORS) LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1947-12-16",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-02"
+  },
+  "governance": {
+    "api_date": "2026-04-27T17:06:43Z",
+    "total_officers": 13,
+    "active_count": 4,
+    "resigned_count": 9,
+    "active_officers": [
+      {
+        "name": "MOFFATT, Daniel",
+        "role": "secretary",
+        "appointed_on": "2025-12-19",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "MCGERTY, Paul Frederick",
+        "role": "director",
+        "appointed_on": "2017-06-17",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "QUINN, Paul Anthony",
+        "role": "director",
+        "appointed_on": null,
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "QUINN, Thomas Paul",
+        "role": "director",
+        "appointed_on": "2019-04-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T17:06:45Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Gjs Painting Contractors Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2023-11-18",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Registrar Of Companies",
+          "registration_number": "03982099"
+        }
+      },
+      {
+        "name": "Mr Paul Anthony Quinn",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mrs Karen Quinn",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MDA1OTA0MGFkaXF6a2N4",
+    "date": "2025-09-08",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-medium",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/1Kt9IV6U5Kb1jrQz4yWMmtD8XGaOgZnqHO1wf3EFJ7I/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/00446691/filing-history/MzQ4MDA1OTA0MGFkaXF6a2N4"
   }
 }

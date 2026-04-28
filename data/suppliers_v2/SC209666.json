@@ -68,14 +68,94 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
     "central_govt": 0.7941,
     "education": 0.2059
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T14:45:05Z",
+    "company_name": "GALLIFORD TRY BUILDING 2014 LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2000-08-02",
+    "date_of_cessation": null,
+    "jurisdiction": "scotland",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-03-31",
+    "accounts_last_made_up": "2025-06-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-09-11"
+  },
+  "governance": {
+    "api_date": "2026-04-27T14:45:07Z",
+    "total_officers": 32,
+    "active_count": 3,
+    "resigned_count": 29,
+    "active_officers": [
+      {
+        "name": "GALLIFORD TRY SECRETARIAT SERVICES LIMITED",
+        "role": "corporate-secretary",
+        "appointed_on": "2019-12-20",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "JUBB, Ian Thomas",
+        "role": "director",
+        "appointed_on": "2014-09-05",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "WEST, Graham William",
+        "role": "director",
+        "appointed_on": "2016-11-24",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T14:45:09Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Galliford Try Corporate Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Listed By Shares",
+          "legal_authority": "Companies Act 1985",
+          "country_registered": "Scotland",
+          "place_registered": "Companies House Edinburgh",
+          "registration_number": "209666"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwNjMwNTI5N2FkaXF6a2N4",
+    "date": "2026-02-24",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-dormant",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/6QYHKdIH_78C3aHnzgNagk9CrCgaxkShiKem4OdS-zY/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/SC209666/filing-history/MzUwNjMwNTI5N2FkaXF6a2N4"
   }
 }

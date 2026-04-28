@@ -59,13 +59,113 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "nhs",
   "buyer_type_breakdown": {
     "nhs": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T03:05:13Z",
+    "company_name": "IESO DIGITAL HEALTH (UK) LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2016-07-22",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-08-04"
+  },
+  "governance": {
+    "api_date": "2026-04-28T03:05:14Z",
+    "total_officers": 16,
+    "active_count": 3,
+    "resigned_count": 13,
+    "active_officers": [
+      {
+        "name": "HOUSDEN, Charlotte",
+        "role": "director",
+        "appointed_on": "2024-09-17",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "LARSON, Sara Erica",
+        "role": "director",
+        "appointed_on": "2025-08-12",
+        "country_of_residence": "Sweden",
+        "nationality": "Swedish"
+      },
+      {
+        "name": "WERNERUS, Marie-Louise Matilda",
+        "role": "director",
+        "appointed_on": "2025-08-12",
+        "country_of_residence": "Sweden",
+        "nationality": "Swedish"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T03:05:15Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mindler Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2025-08-12",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "12232933"
+        }
+      },
+      {
+        "name": "Ieso Digital Health Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-07-22",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England And Wales",
+          "place_registered": "England And Wales",
+          "registration_number": "04063351"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwMDc1MzM4NGFkaXF6a2N4",
+    "date": "2026-01-23",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/F9AM8n5YV0dfcvXSWeFzFuRsfKHk1rOMHh-kk1rbXfw/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/10291122/filing-history/MzUwMDc1MzM4NGFkaXF6a2N4"
   }
 }

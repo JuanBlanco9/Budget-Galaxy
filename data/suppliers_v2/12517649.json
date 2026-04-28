@@ -65,13 +65,153 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "police_fire",
   "buyer_type_breakdown": {
     "police_fire": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T20:00:52Z",
+    "company_name": "BLUELIGHT COMMERCIAL LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2020-03-13",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-26"
+  },
+  "governance": {
+    "api_date": "2026-04-27T20:00:54Z",
+    "total_officers": 29,
+    "active_count": 12,
+    "resigned_count": 17,
+    "active_officers": [
+      {
+        "name": "MOSS, Caroline",
+        "role": "secretary",
+        "appointed_on": "2020-12-16",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "ALLEN, David Michael",
+        "role": "director",
+        "appointed_on": "2024-07-25",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "ALLEN, Joy",
+        "role": "director",
+        "appointed_on": "2022-05-26",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "BARBER, Matthew David",
+        "role": "director",
+        "appointed_on": "2023-09-29",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "BENJAMIN, Heather Virginia",
+        "role": "director",
+        "appointed_on": "2020-07-22",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "DEEMING, Lianne Elizabeth",
+        "role": "director",
+        "appointed_on": "2021-06-16",
+        "country_of_residence": "Wales",
+        "nationality": "British"
+      },
+      {
+        "name": "PRICE, Daniel John",
+        "role": "director",
+        "appointed_on": "2025-04-17",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "SANFORD, Paul David",
+        "role": "director",
+        "appointed_on": "2023-07-27",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "STEPHENS, Gavin John",
+        "role": "director",
+        "appointed_on": "2022-07-21",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "TIZARD, John Nigel",
+        "role": "director",
+        "appointed_on": "2025-04-17",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WATSON, Stephen",
+        "role": "director",
+        "appointed_on": "2024-04-25",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PCC KENT",
+        "role": "corporate-director",
+        "appointed_on": "2020-03-13",
+        "country_of_residence": null,
+        "nationality": null
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T20:00:56Z",
+    "total_results": 1,
+    "active_count": 0,
+    "items": [
+      {
+        "name": "Pcc Kent",
+        "kind": "legal-person-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2020-03-13",
+        "identification": {
+          "legal_form": "Corporation Sole",
+          "legal_authority": "Police Reform And Social Responsibility Act 2011"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MzU2NDc0MGFkaXF6a2N4",
+    "date": "2025-12-12",
+    "type": "AAMD",
+    "description": "accounts-amended-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/ZmUKyUT87iU9mpmIEu6MhgnnpC5JkGlYKPBCBSD-tk0/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/12517649/filing-history/MzQ5MzU2NDc0MGFkaXF6a2N4"
   }
 }

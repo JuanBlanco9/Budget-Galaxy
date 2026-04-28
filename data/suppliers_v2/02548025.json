@@ -59,13 +59,114 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T13:45:06Z",
+    "company_name": "SOMERSET CARE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1990-10-09",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-19"
+  },
+  "governance": {
+    "api_date": "2026-04-27T13:45:08Z",
+    "total_officers": 49,
+    "active_count": 9,
+    "resigned_count": 40,
+    "active_officers": [
+      {
+        "name": "ROBINSON, Troy Joseph",
+        "role": "secretary",
+        "appointed_on": "2025-09-24",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "GLYNN, Emma Victoria",
+        "role": "director",
+        "appointed_on": "2019-10-24",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GREEN, Ian Richard",
+        "role": "director",
+        "appointed_on": "2024-05-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "KING, Philip St Lawrence",
+        "role": "director",
+        "appointed_on": "2024-05-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MITCHELL, Eve Frances",
+        "role": "director",
+        "appointed_on": "2025-06-03",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PALMER, Jonathan",
+        "role": "director",
+        "appointed_on": "2024-10-16",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ROBINSON, Troy Joseph",
+        "role": "director",
+        "appointed_on": "2025-08-07",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SANDERSON, Rupert Douglas",
+        "role": "director",
+        "appointed_on": "2024-05-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WILLIAMS, Ieuan Wyn",
+        "role": "director",
+        "appointed_on": "2025-12-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T13:45:10Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4NjcwODM1NGFkaXF6a2N4",
+    "date": "2025-10-29",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/SBJsIq0BwktdsCUs8mpPOaP1R8Gmq_AAza9mjKCZ6jU/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02548025/filing-history/MzQ4NjcwODM1NGFkaXF6a2N4"
   }
 }

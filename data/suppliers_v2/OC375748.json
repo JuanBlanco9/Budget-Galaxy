@@ -55,13 +55,380 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T10:57:52Z",
+    "company_name": "STILES HAROLD WILLIAMS PARTNERSHIP LLP",
+    "company_status": "active",
+    "date_of_creation": "2012-06-01",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-15"
+  },
+  "governance": {
+    "api_date": "2026-04-28T10:57:54Z",
+    "total_officers": 58,
+    "active_count": 21,
+    "resigned_count": 37,
+    "active_officers": [
+      {
+        "name": "BULL, Richard",
+        "role": "llp-designated-member",
+        "appointed_on": "2014-04-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "CARSON, Ryan",
+        "role": "llp-designated-member",
+        "appointed_on": "2014-04-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "COLDBREATH, Peter Stuart",
+        "role": "llp-designated-member",
+        "appointed_on": "2012-08-31",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "DACK, Adrian",
+        "role": "llp-designated-member",
+        "appointed_on": "2018-10-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "GALE, Alex Noel Edward",
+        "role": "llp-designated-member",
+        "appointed_on": "2015-09-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "HARDWICKE, Timothy Robert",
+        "role": "llp-designated-member",
+        "appointed_on": "2012-08-31",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "MARKHAM, Russell Elliott",
+        "role": "llp-designated-member",
+        "appointed_on": "2012-08-31",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "MIDDLE, Kevin",
+        "role": "llp-designated-member",
+        "appointed_on": "2014-04-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "ORMISTON, Emma Ruth",
+        "role": "llp-designated-member",
+        "appointed_on": "2018-04-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "QUINN, Gemma",
+        "role": "llp-designated-member",
+        "appointed_on": "2023-04-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "LAMBERT SMITH HAMPTON GROUP LIMITED",
+        "role": "corporate-llp-designated-member",
+        "appointed_on": "2025-04-02",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BANNISTER, Duncan",
+        "role": "llp-member",
+        "appointed_on": "2023-04-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "CLARK, Martin Robert",
+        "role": "llp-member",
+        "appointed_on": "2012-06-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "COX, Howard Ashley",
+        "role": "llp-member",
+        "appointed_on": "2013-01-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "FARRELL, Paul Andrew",
+        "role": "llp-member",
+        "appointed_on": "2018-07-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "GODFREY, Adam Barnaby",
+        "role": "llp-member",
+        "appointed_on": "2012-08-31",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "HOWLAND, Robin John",
+        "role": "llp-member",
+        "appointed_on": "2022-04-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "JORDAN, Adam",
+        "role": "llp-member",
+        "appointed_on": "2014-04-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "PLANT, Richard Neale Todd",
+        "role": "llp-member",
+        "appointed_on": "2012-08-31",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "PYNE, Richard William Antranik",
+        "role": "llp-member",
+        "appointed_on": "2012-08-31",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T10:57:55Z",
+    "total_results": 15,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Lambert Smith Hampton Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "voting-rights-75-to-100-percent-limited-liability-partnership",
+          "right-to-share-surplus-assets-75-to-100-percent-limited-liability-partnership",
+          "right-to-appoint-and-remove-members-limited-liability-partnership"
+        ],
+        "notified_on": "2025-04-02",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "United Kingdom",
+          "registration_number": "02521225"
+        }
+      },
+      {
+        "name": "Mr Alex Noel Edward Gale",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control-limited-liability-partnership"
+        ],
+        "notified_on": "2022-06-01",
+        "identification": null
+      },
+      {
+        "name": "Mr Ryan Carson",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control-limited-liability-partnership"
+        ],
+        "notified_on": "2021-04-01",
+        "identification": null
+      },
+      {
+        "name": "Mr Richard Bull",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control-limited-liability-partnership"
+        ],
+        "notified_on": "2020-02-24",
+        "identification": null
+      },
+      {
+        "name": "Mr Adrian Dack",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control-limited-liability-partnership"
+        ],
+        "notified_on": "2018-11-12",
+        "identification": null
+      },
+      {
+        "name": "Mr Peter Stuart Coldbreath",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control-limited-liability-partnership"
+        ],
+        "notified_on": "2016-11-01",
+        "identification": null
+      },
+      {
+        "name": "Mr Timothy Robert Hardwicke",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control-limited-liability-partnership"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Russell Elliot Markham",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control-limited-liability-partnership"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr David Peter De Carteret Martin",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control-limited-liability-partnership"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Adam Barnaby Godfrey",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control-limited-liability-partnership"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Richard Neale Todd Plant",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control-limited-liability-partnership"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Haydon Lee Murton",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control-limited-liability-partnership"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Martin Robert Clark",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control-limited-liability-partnership"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Jonathan Saul Dickman",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control-limited-liability-partnership"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Andrew Scholefield",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control-limited-liability-partnership"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5ODg5MzMwMGFkaXF6a2N4",
+    "date": "2026-01-13",
+    "type": "LLAA01",
+    "description": "change-account-reference-date-limited-liability-partnership-previous-shortened",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/1eP9hB5kqBoylTPLen1qkyvo47MiEKcBvMMqEkQyLkQ/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/OC375748/filing-history/MzQ5ODg5MzMwMGFkaXF6a2N4"
   }
 }

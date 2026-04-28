@@ -59,13 +59,114 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "agency",
   "buyer_type_breakdown": {
     "agency": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T19:04:37Z",
+    "company_name": "THE ROWLEY LEARNING TRUST",
+    "company_status": "active",
+    "date_of_creation": "2012-06-29",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-18"
+  },
+  "governance": {
+    "api_date": "2026-04-27T19:04:39Z",
+    "total_officers": 43,
+    "active_count": 9,
+    "resigned_count": 34,
+    "active_officers": [
+      {
+        "name": "BHARDWAJ, Alison",
+        "role": "director",
+        "appointed_on": "2018-06-08",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BLUNT, Amy Louise",
+        "role": "director",
+        "appointed_on": "2025-01-08",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LENTON, Matthew William Arthur",
+        "role": "director",
+        "appointed_on": "2023-01-26",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "NEWBY, Paul",
+        "role": "director",
+        "appointed_on": "2012-06-29",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "POLITO, Sandra Jane",
+        "role": "director",
+        "appointed_on": "2024-04-11",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "RODGERS, Rachel",
+        "role": "director",
+        "appointed_on": "2024-06-13",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SHAW, Karen Louise",
+        "role": "director",
+        "appointed_on": "2023-04-28",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "VAN STRAATEN, Anita",
+        "role": "director",
+        "appointed_on": "2024-09-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WESTBY, Craig",
+        "role": "director",
+        "appointed_on": "2022-09-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T19:04:41Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MzA2OTkzNWFkaXF6a2N4",
+    "date": "2025-07-09",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-micro-entity",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/t-PeTeVsqV37DmQkX_SQHNR89wAj0eDVsyJf0CvH4iw/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/08124820/filing-history/MzQ3MzA2OTkzNWFkaXF6a2N4"
   }
 }

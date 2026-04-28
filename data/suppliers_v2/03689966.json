@@ -64,13 +64,93 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T10:53:05Z",
+    "company_name": "NIOX HEALTHCARE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1998-12-29",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-12"
+  },
+  "governance": {
+    "api_date": "2026-04-28T10:53:06Z",
+    "total_officers": 42,
+    "active_count": 3,
+    "resigned_count": 39,
+    "active_officers": [
+      {
+        "name": "CLAYTON-WHERITY, Rebecca Mary",
+        "role": "director",
+        "appointed_on": "2019-12-04",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "DUNCAN, Sarah Elizabeth",
+        "role": "director",
+        "appointed_on": "2019-12-04",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "EMMS, Jonathan Charles",
+        "role": "director",
+        "appointed_on": "2025-01-16",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T10:53:07Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Niox Group Plc",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Public Limited Company",
+          "legal_authority": "English",
+          "country_registered": "England",
+          "place_registered": "England",
+          "registration_number": "05822706"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NjYzNzU1M2FkaXF6a2N4",
+    "date": "2025-08-08",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-audit-exemption-subsiduary",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/XMtNc5oMscQLmYr6MFG2vdU518RZ_yF_IbyZ-v2YUj4/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03689966/filing-history/MzQ3NjYzNzU1M2FkaXF6a2N4"
   }
 }

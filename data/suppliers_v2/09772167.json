@@ -59,13 +59,110 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T19:37:09Z",
+    "company_name": "ABRI TRADING LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2015-09-10",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": true,
+    "accounts_next_due": "2026-03-31",
+    "accounts_last_made_up": "2024-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-09-23"
+  },
+  "governance": {
+    "api_date": "2026-04-27T19:37:11Z",
+    "total_officers": 18,
+    "active_count": 3,
+    "resigned_count": 15,
+    "active_officers": [
+      {
+        "name": "GORMAN, Tim",
+        "role": "director",
+        "appointed_on": "2024-06-30",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "HOGAN, Keith",
+        "role": "director",
+        "appointed_on": "2024-06-30",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "RILEY, Kevin",
+        "role": "director",
+        "appointed_on": "2024-06-30",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T19:37:12Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Newcastle City Council",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2026-03-31",
+        "identification": {
+          "legal_form": "City Council",
+          "legal_authority": "Local Government Act 1972"
+        }
+      },
+      {
+        "name": "Your Homes Newcastle Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Company Limited By Guarantee",
+          "legal_authority": "Companies Act",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "05076256"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ0OTE2NjE0NGFkaXF6a2N4",
+    "date": "2024-12-31",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/AGMb_FStkDx0O4srewILrunvB9ek3BO5jaWO7vVWUZE/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/09772167/filing-history/MzQ0OTE2NjE0NGFkaXF6a2N4"
   }
 }

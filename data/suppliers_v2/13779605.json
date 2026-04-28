@@ -59,13 +59,113 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "nhs",
   "buyer_type_breakdown": {
     "nhs": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T02:35:45Z",
+    "company_name": "OUTPATIENT NETWORK LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2021-12-03",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": true,
+    "accounts_next_due": "2026-03-31",
+    "accounts_last_made_up": "2024-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-16"
+  },
+  "governance": {
+    "api_date": "2026-04-28T02:35:46Z",
+    "total_officers": 7,
+    "active_count": 6,
+    "resigned_count": 1,
+    "active_officers": [
+      {
+        "name": "DUDLEY, Nigel",
+        "role": "secretary",
+        "appointed_on": "2021-12-03",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "HANKE, Paul Ronald",
+        "role": "director",
+        "appointed_on": "2022-03-25",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HENSER, Preston James",
+        "role": "director",
+        "appointed_on": "2022-06-20",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "NURTHEN, Bradley",
+        "role": "director",
+        "appointed_on": "2021-12-03",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "RAGHURAMAN, Govindan Srinivaan, Dr",
+        "role": "director",
+        "appointed_on": "2022-04-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "RUTTER, Scott",
+        "role": "director",
+        "appointed_on": "2021-12-03",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T02:35:47Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Fresh Medical Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2021-12-03",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "United Kingdom",
+          "country_registered": "United Kingdom",
+          "place_registered": "Register Of Companies In The United Kingdom",
+          "registration_number": "10707557"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2MTM0Njc3NWFkaXF6a2N4",
+    "date": "2025-04-07",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/Lvhq6OOXpp79MRsVy2Jm4NHm6d3XYAOOtOExG1qxWN4/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/13779605/filing-history/MzQ2MTM0Njc3NWFkaXF6a2N4"
   }
 }

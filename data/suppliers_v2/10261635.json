@@ -59,14 +59,66 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "education",
   "buyer_type_breakdown": {
     "education": 0.526,
     "other": 0.474
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T07:09:15Z",
+    "company_name": "PASSAGEWAYS (UK) LTD",
+    "company_status": "active",
+    "date_of_creation": "2016-07-04",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-17"
+  },
+  "governance": {
+    "api_date": "2026-04-28T07:09:16Z",
+    "total_officers": 4,
+    "active_count": 2,
+    "resigned_count": 2,
+    "active_officers": [
+      {
+        "name": "BROWNLEE, Jason",
+        "role": "director",
+        "appointed_on": "2025-03-19",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      },
+      {
+        "name": "TAYLOR, Timothy Ryan",
+        "role": "director",
+        "appointed_on": "2024-05-31",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T07:09:17Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NTk1Mjg1MGFkaXF6a2N4",
+    "date": "2025-08-01",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/gJuKkm7ubEZ-N-2g9q6dcNT9Y2EddbFnAN-bwramvaI/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/10261635/filing-history/MzQ3NTk1Mjg1MGFkaXF6a2N4"
   }
 }

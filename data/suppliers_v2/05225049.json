@@ -59,13 +59,147 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "nhs",
   "buyer_type_breakdown": {
     "nhs": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T10:35:45Z",
+    "company_name": "TEN INSURANCE SERVICES LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2004-09-08",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-30"
+  },
+  "governance": {
+    "api_date": "2026-04-28T10:35:49Z",
+    "total_officers": 35,
+    "active_count": 8,
+    "resigned_count": 27,
+    "active_officers": [
+      {
+        "name": "STAPLES, Hilary Anne",
+        "role": "secretary",
+        "appointed_on": "2025-11-13",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "COOTER, Simon Joseph",
+        "role": "director",
+        "appointed_on": "2024-01-17",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "CROSS, Katherine Anne",
+        "role": "director",
+        "appointed_on": "2024-08-23",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "DYER, Matthew John",
+        "role": "director",
+        "appointed_on": "2024-10-09",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "HOBSON, Jeffrey",
+        "role": "director",
+        "appointed_on": "2024-12-24",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "MCILQUHAM, Mark",
+        "role": "director",
+        "appointed_on": "2024-01-17",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "SEDGLEY, Christopher Thomas",
+        "role": "director",
+        "appointed_on": "2024-09-24",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "SHAYESTEH, Shahram",
+        "role": "director",
+        "appointed_on": "2023-10-02",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T10:35:51Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Acrisure Uk Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2026-01-14",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "United Kingdom (England)",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "14128698"
+        }
+      },
+      {
+        "name": "Ten Operations, Services And Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "England And Wales",
+          "registration_number": "08823331"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4NzcxODQ2NWFkaXF6a2N4",
+    "date": "2025-11-06",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-audit-exemption-subsiduary",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/vrDKfkhk39bOuY-xE-fSZoohmya-661-a7imAxzNdhw/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/05225049/filing-history/MzQ4NzcxODQ2NWFkaXF6a2N4"
   }
 }

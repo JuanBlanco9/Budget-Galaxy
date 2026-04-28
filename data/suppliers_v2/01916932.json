@@ -59,14 +59,127 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "agency",
   "buyer_type_breakdown": {
     "agency": 0.5263,
     "central_govt": 0.4737
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T07:31:25Z",
+    "company_name": "DAVID HORN COMMUNICATIONS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1985-05-28",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-10"
+  },
+  "governance": {
+    "api_date": "2026-04-28T07:31:26Z",
+    "total_officers": 13,
+    "active_count": 4,
+    "resigned_count": 9,
+    "active_officers": [
+      {
+        "name": "BAKKEN, Thomas Peder",
+        "role": "director",
+        "appointed_on": "2025-06-18",
+        "country_of_residence": "Norway",
+        "nationality": "Norwegian"
+      },
+      {
+        "name": "BROWN, Darren Mark",
+        "role": "director",
+        "appointed_on": "2025-06-30",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "HANSEN, Borge",
+        "role": "director",
+        "appointed_on": "2024-01-02",
+        "country_of_residence": "Norway",
+        "nationality": "Norwegian"
+      },
+      {
+        "name": "HORN, Stuart Roger",
+        "role": "director",
+        "appointed_on": "2024-07-08",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T07:31:27Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Indico Systems As",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2021-02-12",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Norwegian",
+          "country_registered": "Norway",
+          "place_registered": "Enhetsregisteret",
+          "registration_number": "984296126"
+        }
+      },
+      {
+        "name": "Mr David Horn",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mrs Maureen Joan Horn",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MzMzOTMzNWFkaXF6a2N4",
+    "date": "2025-09-30",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/-p2MtF2axxv_z8RdPUZHlxIqkvt-v2bqsr5L8zamsVs/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01916932/filing-history/MzQ4MzMzOTMzNWFkaXF6a2N4"
   }
 }

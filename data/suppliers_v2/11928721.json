@@ -59,14 +59,100 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.9843,
     "council": 0.0157
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T15:15:15Z",
+    "company_name": "CHIPTECH INTERNATIONAL LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2019-04-05",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": true,
+    "confirmation_statement_next_due": "2026-04-18"
+  },
+  "governance": {
+    "api_date": "2026-04-27T15:15:17Z",
+    "total_officers": 3,
+    "active_count": 2,
+    "resigned_count": 1,
+    "active_officers": [
+      {
+        "name": "HAMMOND, David",
+        "role": "director",
+        "appointed_on": "2019-10-10",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "MOORE, Graeme John",
+        "role": "director",
+        "appointed_on": "2019-04-05",
+        "country_of_residence": "New Zealand",
+        "nationality": "New Zealander"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T15:15:19Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Chiptech International Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2019-04-05",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "New Zealand",
+          "country_registered": "United Kingdom",
+          "place_registered": "New Zealand Companies Office",
+          "registration_number": "2119553"
+        }
+      },
+      {
+        "name": "Mr Graeme Moore",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "New Zealander",
+        "country_of_residence": "New Zealand",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2019-04-05",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NDkzMzMyNmFkaXF6a2N4",
+    "date": "2025-12-17",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-medium",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/LbFMiRHrI3nInBm4a1B0MQUEf9d6RERDoSUXtIWRg3w/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/11928721/filing-history/MzQ5NDkzMzMyNmFkaXF6a2N4"
   }
 }

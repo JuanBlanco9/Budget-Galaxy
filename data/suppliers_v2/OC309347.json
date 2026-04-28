@@ -55,15 +55,191 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
     "central_govt": 0.8559,
     "other": 0.1421,
     "nhs": 0.002
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T13:51:47Z",
+    "company_name": "PRICEWATERHOUSECOOPERS CI LLP",
+    "company_status": "active",
+    "date_of_creation": "2004-09-22",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-03-31",
+    "accounts_last_made_up": "2025-06-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-11"
+  },
+  "governance": {
+    "api_date": "2026-04-27T13:51:49Z",
+    "total_officers": 31,
+    "active_count": 17,
+    "resigned_count": 14,
+    "active_officers": [
+      {
+        "name": "BRADY, Evelyn",
+        "role": "llp-designated-member",
+        "appointed_on": "2009-07-01",
+        "country_of_residence": "Guernsey",
+        "nationality": null
+      },
+      {
+        "name": "BYRNE, Michael Gabriel",
+        "role": "llp-designated-member",
+        "appointed_on": "2015-07-01",
+        "country_of_residence": "Jersey",
+        "nationality": null
+      },
+      {
+        "name": "DE VEULLE, James Amice",
+        "role": "llp-designated-member",
+        "appointed_on": "2023-07-01",
+        "country_of_residence": "Jersey",
+        "nationality": null
+      },
+      {
+        "name": "HAIRON, Karl John",
+        "role": "llp-designated-member",
+        "appointed_on": "2010-07-01",
+        "country_of_residence": "Jersey",
+        "nationality": null
+      },
+      {
+        "name": "HOWLETT, Neil Jonathan",
+        "role": "llp-designated-member",
+        "appointed_on": "2017-07-01",
+        "country_of_residence": "Jersey",
+        "nationality": null
+      },
+      {
+        "name": "HUNTER, Mark David",
+        "role": "llp-designated-member",
+        "appointed_on": "2023-07-01",
+        "country_of_residence": "Jersey",
+        "nationality": null
+      },
+      {
+        "name": "LITVINTSEVA, Evgeniya",
+        "role": "llp-designated-member",
+        "appointed_on": "2024-07-01",
+        "country_of_residence": "Guernsey",
+        "nationality": null
+      },
+      {
+        "name": "LUFF, John Peter",
+        "role": "llp-designated-member",
+        "appointed_on": "2013-07-01",
+        "country_of_residence": "Guernsey",
+        "nationality": null
+      },
+      {
+        "name": "MCCLURE, Lisa Mary",
+        "role": "llp-designated-member",
+        "appointed_on": "2018-07-01",
+        "country_of_residence": "Jersey",
+        "nationality": null
+      },
+      {
+        "name": "MILLS, Roland Colin",
+        "role": "llp-designated-member",
+        "appointed_on": "2016-07-01",
+        "country_of_residence": "Guernsey",
+        "nationality": null
+      },
+      {
+        "name": "PEACEGOOD, Adrian Lee",
+        "role": "llp-designated-member",
+        "appointed_on": "2021-01-01",
+        "country_of_residence": "Guernsey",
+        "nationality": null
+      },
+      {
+        "name": "TAIT, Ian Keith Benjamin",
+        "role": "llp-designated-member",
+        "appointed_on": "2024-07-01",
+        "country_of_residence": "Jersey",
+        "nationality": null
+      },
+      {
+        "name": "VAN DEN BERG, Christiaan Jacobus Bothma",
+        "role": "llp-designated-member",
+        "appointed_on": "2021-01-01",
+        "country_of_residence": "Jersey",
+        "nationality": null
+      },
+      {
+        "name": "VERMEULEN, Nicholas",
+        "role": "llp-designated-member",
+        "appointed_on": "2011-07-01",
+        "country_of_residence": "Guernsey",
+        "nationality": null
+      },
+      {
+        "name": "WALDRON, David Oliver",
+        "role": "llp-designated-member",
+        "appointed_on": "2021-01-01",
+        "country_of_residence": "Guernsey",
+        "nationality": null
+      },
+      {
+        "name": "BURNE, Ross Alexander Houlihan",
+        "role": "llp-member",
+        "appointed_on": "2022-07-01",
+        "country_of_residence": "Guernsey",
+        "nationality": null
+      },
+      {
+        "name": "PRICEWATERHOUSECOOPERS LLP",
+        "role": "corporate-llp-member",
+        "appointed_on": "2009-07-01",
+        "country_of_residence": null,
+        "nationality": null
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T13:51:51Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Pricewaterhousecoopers Llp",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control-limited-liability-partnership"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Corporate",
+          "legal_authority": "Limited Liability Partnership",
+          "country_registered": "United Kingdom",
+          "place_registered": "United Kingdom",
+          "registration_number": "Oc303525"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxMDA4ODAwOWFkaXF6a2N4",
+    "date": "2026-03-15",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/JT-I2qgqvESxnXmV3-ivx8YusDyITyuFUb3jffQcLoo/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/OC309347/filing-history/MzUxMDA4ODAwOWFkaXF6a2N4"
   }
 }

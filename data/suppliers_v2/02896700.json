@@ -59,14 +59,129 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.9966,
     "nhs": 0.0034
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T13:46:47Z",
+    "company_name": "NCFE",
+    "company_status": "active",
+    "date_of_creation": "1994-02-10",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-04-30",
+    "accounts_last_made_up": "2025-07-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-29"
+  },
+  "governance": {
+    "api_date": "2026-04-27T13:46:49Z",
+    "total_officers": 62,
+    "active_count": 11,
+    "resigned_count": 51,
+    "active_officers": [
+      {
+        "name": "HOARE, Emma Jane",
+        "role": "secretary",
+        "appointed_on": "2022-03-29",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BRIGHTMAN, Jane Emma",
+        "role": "director",
+        "appointed_on": "2026-01-06",
+        "country_of_residence": "Wales",
+        "nationality": "British"
+      },
+      {
+        "name": "BROMLEY, Amanda Elizabeth",
+        "role": "director",
+        "appointed_on": "2024-03-19",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GARNER, Jack",
+        "role": "director",
+        "appointed_on": "2026-01-06",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GHURBHURUN, Robin",
+        "role": "director",
+        "appointed_on": "2022-12-05",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "JENKINS, Deborah Mary",
+        "role": "director",
+        "appointed_on": "2017-03-28",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "LOVE, Michael James",
+        "role": "director",
+        "appointed_on": "2024-03-19",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      },
+      {
+        "name": "SMITH, Michael Alan",
+        "role": "director",
+        "appointed_on": "2023-02-27",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "TANUKU, Purnima Murthy",
+        "role": "director",
+        "appointed_on": "2026-01-06",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "VAZ PIRES, Ana Sofia",
+        "role": "director",
+        "appointed_on": "2026-01-06",
+        "country_of_residence": "England",
+        "nationality": "Portuguese,British"
+      },
+      {
+        "name": "WHITFIELD, Joanne",
+        "role": "director",
+        "appointed_on": "2020-07-08",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T13:46:51Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxNjAyNTAxNmFkaXF6a2N4",
+    "date": "2026-04-19",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/7YYn1k2IhIGj0Ak8tNWxdUEKpwvnPaqh96lNjTY2gWM/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02896700/filing-history/MzUxNjAyNTAxNmFkaXF6a2N4"
   }
 }

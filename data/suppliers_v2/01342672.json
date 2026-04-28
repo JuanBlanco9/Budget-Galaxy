@@ -59,14 +59,158 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "agency",
   "buyer_type_breakdown": {
     "agency": 0.587,
     "nhs": 0.413
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T21:13:53Z",
+    "company_name": "DON WHITLEY SCIENTIFIC LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1977-12-06",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-05-29"
+  },
+  "governance": {
+    "api_date": "2026-04-27T21:13:54Z",
+    "total_officers": 21,
+    "active_count": 7,
+    "resigned_count": 14,
+    "active_officers": [
+      {
+        "name": "CARLISLE, Georgia",
+        "role": "director",
+        "appointed_on": "2012-03-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "HALLIDAY, Michael Charles",
+        "role": "director",
+        "appointed_on": "2021-07-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MURRAY, Fergus",
+        "role": "director",
+        "appointed_on": "2016-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WALTON, Joseph Michael",
+        "role": "director",
+        "appointed_on": "2012-03-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "WALTON, Paul Nicolas",
+        "role": "director",
+        "appointed_on": null,
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WALTON, Thomas Paul",
+        "role": "director",
+        "appointed_on": "2012-03-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "WHITLEY, Pamela",
+        "role": "director",
+        "appointed_on": null,
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T21:13:56Z",
+    "total_results": 4,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Don Whitley Scientific Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2026-02-26",
+        "identification": {
+          "legal_form": "Company Limited By Shares",
+          "legal_authority": "England And Wales",
+          "country_registered": "England",
+          "place_registered": "Companies House (England And Wales)",
+          "registration_number": "16984181"
+        }
+      },
+      {
+        "name": "Mr Joseph Michael Walton",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2019-06-29",
+        "identification": null
+      },
+      {
+        "name": "Mr Thomas Paul Walton",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2019-06-29",
+        "identification": null
+      },
+      {
+        "name": "Mr Paul Nicolas Walton",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MzI2MDA1NGFkaXF6a2N4",
+    "date": "2025-10-03",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/z8giMKIgy7LPklgiCMaoeTsrk1UT517T81mwSLq3buQ/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01342672/filing-history/MzQ4MzI2MDA1NGFkaXF6a2N4"
   }
 }

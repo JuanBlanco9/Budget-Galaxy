@@ -64,14 +64,122 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 0.9187,
     "other": 0.0813
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T17:09:17Z",
+    "company_name": "NORTHAMPTON TOWN FC COMMUNITY TRUST",
+    "company_status": "active",
+    "date_of_creation": "2001-01-16",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-04-30",
+    "accounts_last_made_up": "2025-07-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-29"
+  },
+  "governance": {
+    "api_date": "2026-04-27T17:09:19Z",
+    "total_officers": 36,
+    "active_count": 10,
+    "resigned_count": 26,
+    "active_officers": [
+      {
+        "name": "BALCHIN-LOVE, Mary Elizabeth",
+        "role": "director",
+        "appointed_on": "2022-03-16",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BRINKLEY, Sarah Jean",
+        "role": "director",
+        "appointed_on": "2025-10-13",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CROOT, David John",
+        "role": "director",
+        "appointed_on": "2015-01-15",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "DESBOROUGH, Scott",
+        "role": "director",
+        "appointed_on": "2018-10-18",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HOLLOWELL, Terence John",
+        "role": "director",
+        "appointed_on": "2019-12-04",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "JONES, Simon Peter",
+        "role": "director",
+        "appointed_on": "2022-03-16",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MATTOCK, Deborah",
+        "role": "director",
+        "appointed_on": "2022-03-16",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MAY, Matthew",
+        "role": "director",
+        "appointed_on": "2018-11-02",
+        "country_of_residence": "England",
+        "nationality": "English"
+      },
+      {
+        "name": "RANSLEY, Brandon William",
+        "role": "director",
+        "appointed_on": "2022-03-16",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WHITING, James",
+        "role": "director",
+        "appointed_on": "2018-01-02",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T17:09:20Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxMzI0MDkzNmFkaXF6a2N4",
+    "date": "2026-04-09",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/LOedQoYr6k4sooJ23zc7527WmhfsIQTbW2QxdFQT2Ao/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04141812/filing-history/MzUxMzI0MDkzNmFkaXF6a2N4"
   }
 }

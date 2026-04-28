@@ -59,13 +59,79 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
     "central_govt": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T11:56:22Z",
+    "company_name": "BRYTER SERVICES UK LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2019-06-25",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-24",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-08"
+  },
+  "governance": {
+    "api_date": "2026-04-28T11:56:23Z",
+    "total_officers": 7,
+    "active_count": 4,
+    "resigned_count": 3,
+    "active_officers": [
+      {
+        "name": "TAYLOR WESSING SECRETARIES LIMITED",
+        "role": "corporate-secretary",
+        "appointed_on": "2019-06-25",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BUES, Micha-Manuel",
+        "role": "director",
+        "appointed_on": "2019-06-25",
+        "country_of_residence": "Germany",
+        "nationality": "German"
+      },
+      {
+        "name": "GRUPP, Michael",
+        "role": "director",
+        "appointed_on": "2019-06-25",
+        "country_of_residence": "Germany",
+        "nationality": "German"
+      },
+      {
+        "name": "BRYTER GMBH",
+        "role": "corporate-director",
+        "appointed_on": "2019-06-25",
+        "country_of_residence": null,
+        "nationality": null
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T11:56:24Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NTQwNzE4M2FkaXF6a2N4",
+    "date": "2025-12-19",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/ggvtOI-bJSvBpReBB4lf2UFa31r5rrSohNB4nZOh2ns/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/12068669/filing-history/MzQ5NTQwNzE4M2FkaXF6a2N4"
   }
 }

@@ -59,14 +59,100 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.6327,
     "council": 0.3673
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T05:47:06Z",
+    "company_name": "HAILSHAM ROADWAY CONSTRUCTION CO. LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1966-08-17",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-08-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-04-14"
+  },
+  "governance": {
+    "api_date": "2026-04-28T05:47:07Z",
+    "total_officers": 10,
+    "active_count": 4,
+    "resigned_count": 6,
+    "active_officers": [
+      {
+        "name": "BAILEY, James Robert",
+        "role": "director",
+        "appointed_on": "2015-11-12",
+        "country_of_residence": "Spain",
+        "nationality": "British"
+      },
+      {
+        "name": "PORTMAN, Neil",
+        "role": "director",
+        "appointed_on": "2026-04-08",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SOUTHOUSE, Colin Roy",
+        "role": "director",
+        "appointed_on": "2026-04-08",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "VASILIAUSKAITE, Viktorija",
+        "role": "director",
+        "appointed_on": "2020-03-31",
+        "country_of_residence": "Spain",
+        "nationality": "Lithuanian"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T05:47:08Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Hrcc Holdings Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "England And Wales",
+          "registration_number": "09545651"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MTUxNDg5M2FkaXF6a2N4",
+    "date": "2025-06-25",
+    "type": "AA01",
+    "description": "change-account-reference-date-company-current-extended",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/PtCjvw17vrooIxb4k4gTVbYwYkT3_oLpu1aMatavq1I/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/00885849/filing-history/MzQ3MTUxNDg5M2FkaXF6a2N4"
   }
 }

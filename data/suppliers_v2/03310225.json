@@ -64,14 +64,115 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.75,
     "agency": 0.25
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T01:03:15Z",
+    "company_name": "PAGEGROUP PLC",
+    "company_status": "active",
+    "date_of_creation": "1997-01-30",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-06-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-04-25"
+  },
+  "governance": {
+    "api_date": "2026-04-28T01:03:16Z",
+    "total_officers": 46,
+    "active_count": 9,
+    "resigned_count": 37,
+    "active_officers": [
+      {
+        "name": "MAGUIRE, Kaye Elizabeth",
+        "role": "secretary",
+        "appointed_on": "2018-10-05",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "FOULADI, Babak",
+        "role": "director",
+        "appointed_on": "2023-04-10",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GEARY, Karen Mary",
+        "role": "director",
+        "appointed_on": "2022-04-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HARRISON, Paul",
+        "role": "director",
+        "appointed_on": "2025-07-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HEALY, Michelle Miriam",
+        "role": "director",
+        "appointed_on": "2016-10-10",
+        "country_of_residence": "United Kingdom",
+        "nationality": "Irish"
+      },
+      {
+        "name": "KIRK, Nicholas",
+        "role": "director",
+        "appointed_on": "2023-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SEYMOUR-JACKSON, Angela Charlotte",
+        "role": "director",
+        "appointed_on": "2017-10-01",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      },
+      {
+        "name": "STAGG, Kelvin John",
+        "role": "director",
+        "appointed_on": "2014-06-06",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "STEVENS, John Benedict",
+        "role": "director",
+        "appointed_on": "2021-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T01:03:18Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2OTI5NzI4NWFkaXF6a2N4",
+    "date": "2025-06-09",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/FOB3pCnuXVdCcEGVAIMItJ9Kup9klIGOEdsHwmRg7ZM/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03310225/filing-history/MzQ2OTI5NzI4NWFkaXF6a2N4"
   }
 }

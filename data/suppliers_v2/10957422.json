@@ -68,13 +68,93 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "agency",
   "buyer_type_breakdown": {
     "agency": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T14:44:11Z",
+    "company_name": "CIRROS DOCUMENT SOLUTIONS LTD",
+    "company_status": "active",
+    "date_of_creation": "2017-09-12",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-04-30",
+    "accounts_last_made_up": "2025-07-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-31"
+  },
+  "governance": {
+    "api_date": "2026-04-27T14:44:13Z",
+    "total_officers": 1,
+    "active_count": 1,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "GARRATT, Emma Jayne",
+        "role": "director",
+        "appointed_on": "2017-09-12",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T14:44:14Z",
+    "total_results": 2,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Emma Jayne Garratt",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent-as-firm",
+          "voting-rights-75-to-100-percent-as-firm",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2017-09-12",
+        "identification": null
+      },
+      {
+        "name": "B&G Managed Solutions Holdings Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2017-09-12",
+        "identification": {
+          "legal_form": "Ltd",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England & Wales",
+          "place_registered": "Companies House",
+          "registration_number": "8612985"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxMzg4NjU2MGFkaXF6a2N4",
+    "date": "2026-04-01",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/1MxG7CfGlYJ0gz36Qy_VqXYCyLeZSttGdAqJAByIKP8/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/10957422/filing-history/MzUxMzg4NjU2MGFkaXF6a2N4"
   }
 }

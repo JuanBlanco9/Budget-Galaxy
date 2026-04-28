@@ -59,13 +59,191 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T02:42:36Z",
+    "company_name": "FRANK P. MATTHEWS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1951-03-09",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-03-31",
+    "accounts_last_made_up": "2025-06-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-11"
+  },
+  "governance": {
+    "api_date": "2026-04-28T02:42:37Z",
+    "total_officers": 13,
+    "active_count": 7,
+    "resigned_count": 6,
+    "active_officers": [
+      {
+        "name": "JAMES, Stephanie Lydia",
+        "role": "secretary",
+        "appointed_on": "2024-11-29",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "DUNN, Nicholas David",
+        "role": "director",
+        "appointed_on": null,
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "DUNN, Veronica Anne",
+        "role": "director",
+        "appointed_on": "2008-09-30",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "GIBSON, Graeme Richard",
+        "role": "director",
+        "appointed_on": "2021-03-22",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "JAMES, Charles Alexander",
+        "role": "director",
+        "appointed_on": "2018-04-18",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "JAMES, Stephanie Lydia",
+        "role": "director",
+        "appointed_on": "2018-04-18",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "MASKELL, Lorna Jayne",
+        "role": "director",
+        "appointed_on": "2023-03-17",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T02:42:38Z",
+    "total_results": 7,
+    "active_count": 5,
+    "items": [
+      {
+        "name": "Mrs Veronica Anne Dunn",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2018-05-01",
+        "identification": null
+      },
+      {
+        "name": "Andrew Wright",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Helen Fay Chapman",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Frank P. Matthews (Holdings) Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England And Wales",
+          "place_registered": "England And Wales",
+          "registration_number": "07366671"
+        }
+      },
+      {
+        "name": "Mr Charles Alexander James",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Nicholas David Dunn",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Stephanie James",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxMjkyNTg5MGFkaXF6a2N4",
+    "date": "2026-03-27",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-audited-abridged",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/i_CzUFYV7CX9xJFEd6yFW8WfspNwuo0t9Hph-adYfi0/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/00492484/filing-history/MzUxMjkyNTg5MGFkaXF6a2N4"
   }
 }

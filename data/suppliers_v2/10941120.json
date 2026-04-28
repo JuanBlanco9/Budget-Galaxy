@@ -59,14 +59,112 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.7004,
     "council": 0.2996
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T20:32:05Z",
+    "company_name": "MIDLANDS BUILDING & MAINTENANCE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2017-08-31",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-05-31",
+    "accounts_last_made_up": "2024-08-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-09-13"
+  },
+  "governance": {
+    "api_date": "2026-04-27T20:32:07Z",
+    "total_officers": 5,
+    "active_count": 5,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "SMITH, Joanna Mary",
+        "role": "secretary",
+        "appointed_on": "2017-08-31",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "CLEMMENS, Mark Anthony",
+        "role": "director",
+        "appointed_on": "2022-11-30",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "RHODES-SMITH, Andrew Ryan",
+        "role": "director",
+        "appointed_on": "2024-05-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SMITH, Ian Stanley",
+        "role": "director",
+        "appointed_on": "2017-08-31",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "SMITH, Joanna Mary",
+        "role": "director",
+        "appointed_on": "2022-04-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T20:32:09Z",
+    "total_results": 2,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Mrs Joanna Mary Smith",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2023-09-01",
+        "identification": null
+      },
+      {
+        "name": "Mr Ian Stanley Smith",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent"
+        ],
+        "notified_on": "2017-08-31",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2NjQzOTk3MGFkaXF6a2N4",
+    "date": "2025-05-15",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/e5CM62ONXfMOszHX86z-XfrSUlC8OlF6GDt86XoNhes/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/10941120/filing-history/MzQ2NjQzOTk3MGFkaXF6a2N4"
   }
 }

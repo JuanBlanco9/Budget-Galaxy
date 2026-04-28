@@ -66,13 +66,146 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T20:44:49Z",
+    "company_name": "BOLTON CARES LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2015-09-03",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-09-06"
+  },
+  "governance": {
+    "api_date": "2026-04-27T20:44:50Z",
+    "total_officers": 17,
+    "active_count": 11,
+    "resigned_count": 6,
+    "active_officers": [
+      {
+        "name": "ANTONI, Lisa",
+        "role": "secretary",
+        "appointed_on": "2018-06-27",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "ANTONI, Lisa",
+        "role": "director",
+        "appointed_on": "2025-07-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "DAVIDSON, George Henry",
+        "role": "director",
+        "appointed_on": "2024-08-28",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "JOHNSTON, Kim, Dr",
+        "role": "director",
+        "appointed_on": "2024-10-04",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LAWLESS, Serena Natasha",
+        "role": "director",
+        "appointed_on": "2026-01-05",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MACCARTHY, Diana Susan",
+        "role": "director",
+        "appointed_on": "2022-05-16",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MCCALL, Jane",
+        "role": "director",
+        "appointed_on": "2026-01-05",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "O'NEIL, James Alexander",
+        "role": "director",
+        "appointed_on": "2025-12-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "OWENS, Karen Ruby",
+        "role": "director",
+        "appointed_on": "2024-08-28",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "STONE, Rhian",
+        "role": "director",
+        "appointed_on": "2024-01-29",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BOLTON METROPOLITAN BOROUGH COUNCIL",
+        "role": "corporate-director",
+        "appointed_on": "2020-10-19",
+        "country_of_residence": null,
+        "nationality": null
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T20:44:52Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Borough Council Of Bolton",
+        "kind": "legal-person-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Local Authority",
+          "legal_authority": "Uk Law"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4OTI0NDA1NmFkaXF6a2N4",
+    "date": "2025-11-17",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/e6Qb538CwN1rvbuszQOEa3M5cdG7vC65bzI4nw5Fb1Y/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/09761287/filing-history/MzQ4OTI0NDA1NmFkaXF6a2N4"
   }
 }

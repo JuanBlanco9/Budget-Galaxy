@@ -64,13 +64,162 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "education",
   "buyer_type_breakdown": {
     "education": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T02:34:04Z",
+    "company_name": "CLARION SOLICITORS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2010-03-10",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-02-28",
+    "accounts_last_made_up": "2025-05-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-24"
+  },
+  "governance": {
+    "api_date": "2026-04-28T02:34:05Z",
+    "total_officers": 28,
+    "active_count": 13,
+    "resigned_count": 15,
+    "active_officers": [
+      {
+        "name": "GRANGE, Martin Robert",
+        "role": "director",
+        "appointed_on": "2010-05-13",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HARRISON, Lynsey Jane",
+        "role": "director",
+        "appointed_on": "2025-07-18",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "HATTERSLEY, Matthew Richard",
+        "role": "director",
+        "appointed_on": "2010-05-13",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HUTTON, Charles Nicholas Roger",
+        "role": "director",
+        "appointed_on": "2010-03-10",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "KIRWAN, Esther Victoria",
+        "role": "director",
+        "appointed_on": "2022-06-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MCAULAY, Andrew John",
+        "role": "director",
+        "appointed_on": "2019-04-09",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MILLMORE, Ryan Gregory",
+        "role": "director",
+        "appointed_on": "2010-05-13",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MORAN, Richard John",
+        "role": "director",
+        "appointed_on": "2010-03-10",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SIMMS, Jonathan Daniel",
+        "role": "director",
+        "appointed_on": "2019-04-09",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SLACK, Ben",
+        "role": "director",
+        "appointed_on": "2021-12-14",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "TAHAMTANI, Sarah",
+        "role": "director",
+        "appointed_on": "2010-12-07",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "TEXEL, Lindsay Anne",
+        "role": "director",
+        "appointed_on": "2021-12-14",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "YOUNG, Simon David",
+        "role": "director",
+        "appointed_on": "2010-05-13",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T02:34:06Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Never Ordinary Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2024-05-31",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "14664765"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwNzYzMjI2MmFkaXF6a2N4",
+    "date": "2026-02-28",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/vUCIpD3MwpmAKlK765596pxYueiMCjX9J_xPYLUuYu0/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/07185479/filing-history/MzUwNzYzMjI2MmFkaXF6a2N4"
   }
 }

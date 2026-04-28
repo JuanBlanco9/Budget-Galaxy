@@ -64,13 +64,94 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "agency",
   "buyer_type_breakdown": {
     "agency": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T09:15:18Z",
+    "company_name": "KUKA SYSTEMS UK LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1974-01-03",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-08"
+  },
+  "governance": {
+    "api_date": "2026-04-28T09:15:19Z",
+    "total_officers": 28,
+    "active_count": 2,
+    "resigned_count": 26,
+    "active_officers": [
+      {
+        "name": "OWEN, Neal Paul",
+        "role": "director",
+        "appointed_on": "2024-06-17",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "RUSSELL, Michael Jonathan",
+        "role": "director",
+        "appointed_on": "2024-06-17",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T09:15:20Z",
+    "total_results": 2,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Mr Xiangjian He",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Chinese",
+        "country_of_residence": "China",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2017-01-06",
+        "identification": null
+      },
+      {
+        "name": "Kuka Ag",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Public Limited Company",
+          "legal_authority": "German"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4Mzg3OTY4N2FkaXF6a2N4",
+    "date": "2025-10-06",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-medium",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/yy5cUbn0Acc0UhqZPgUGCJ_JOvGtacESKRWeTg8W_n0/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01154477/filing-history/MzQ4Mzg3OTY4N2FkaXF6a2N4"
   }
 }

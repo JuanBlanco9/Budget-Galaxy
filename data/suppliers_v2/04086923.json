@@ -59,10 +59,10 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
@@ -70,5 +70,85 @@
     "central_govt": 0.0023,
     "police_fire": 0.0012,
     "council": 0.0007
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T08:55:46Z",
+    "company_name": "BEECHWOOD EQUIPMENT LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2000-10-10",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-24"
+  },
+  "governance": {
+    "api_date": "2026-04-28T08:55:47Z",
+    "total_officers": 6,
+    "active_count": 3,
+    "resigned_count": 3,
+    "active_officers": [
+      {
+        "name": "SMITH, Margaret",
+        "role": "secretary",
+        "appointed_on": "2000-11-07",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "SMITH, Carl Mchardy",
+        "role": "director",
+        "appointed_on": "2006-08-24",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SMITH, Margaret",
+        "role": "director",
+        "appointed_on": "2006-08-24",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T08:55:48Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "B W Grey Holdings Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "08028768"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MDAyMDU0NGFkaXF6a2N4",
+    "date": "2025-11-20",
+    "type": "AA01",
+    "description": "change-account-reference-date-company-current-extended",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/-jpZG2IxfkGjiR-aLzWNBleeQHkfOF8bA3-X2kOmZYc/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04086923/filing-history/MzQ5MDAyMDU0NGFkaXF6a2N4"
   }
 }

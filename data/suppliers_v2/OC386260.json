@@ -55,13 +55,99 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T00:15:41Z",
+    "company_name": "IMMEDICARE LLP",
+    "company_status": "active",
+    "date_of_creation": "2013-06-28",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-11"
+  },
+  "governance": {
+    "api_date": "2026-04-28T00:15:42Z",
+    "total_officers": 2,
+    "active_count": 2,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "AIREDALE NHS FOUNDATION TRUST",
+        "role": "corporate-llp-designated-member",
+        "appointed_on": "2013-06-28",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "INVOLVE VISUAL COLLABORATION LTD",
+        "role": "corporate-llp-designated-member",
+        "appointed_on": "2013-06-28",
+        "country_of_residence": null,
+        "nationality": null
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T00:15:44Z",
+    "total_results": 2,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Involve Visual Collaboration Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control-limited-liability-partnership"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act",
+          "country_registered": "England And Wales",
+          "place_registered": "England And Wales",
+          "registration_number": "02383157"
+        }
+      },
+      {
+        "name": "Airedale Nhs Foundation Trust",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control-limited-liability-partnership"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Nhs Foundation Trust",
+          "legal_authority": "Health And Social Care Act"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MTcyOTEzOWFkaXF6a2N4",
+    "date": "2025-09-19",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/XoTAx37Z3OJV7s9xecU7wvOhYGvMLSg1oo7zJUL8Bvw/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/OC386260/filing-history/MzQ4MTcyOTEzOWFkaXF6a2N4"
   }
 }

@@ -59,13 +59,93 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T06:49:18Z",
+    "company_name": "MITEL NETWORKS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1977-04-21",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-07"
+  },
+  "governance": {
+    "api_date": "2026-04-28T06:49:19Z",
+    "total_officers": 33,
+    "active_count": 3,
+    "resigned_count": 30,
+    "active_officers": [
+      {
+        "name": "HISCOCK, Gregory James",
+        "role": "secretary",
+        "appointed_on": "2017-06-16",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "EVANS, Craig Justin",
+        "role": "director",
+        "appointed_on": "2019-06-19",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "HISCOCK, Gregory James",
+        "role": "director",
+        "appointed_on": "2008-07-07",
+        "country_of_residence": "Canada",
+        "nationality": "Canadian"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T06:49:20Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mitel Networks Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Corporate",
+          "legal_authority": "United Kingdom (England And Wales)",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "04186471"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NzA2MTE3MWFkaXF6a2N4",
+    "date": "2026-01-06",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/5EkbMLt5Da9yuALOlnHjptPombgHgz2snRUc42XEGJ0/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01309629/filing-history/MzQ5NzA2MTE3MWFkaXF6a2N4"
   }
 }

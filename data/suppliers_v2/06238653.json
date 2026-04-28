@@ -64,13 +64,79 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T06:44:11Z",
+    "company_name": "COUNTWISE SYSTEMS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2007-05-08",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-03-31",
+    "accounts_last_made_up": "2025-06-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-05-22"
+  },
+  "governance": {
+    "api_date": "2026-04-28T06:44:12Z",
+    "total_officers": 10,
+    "active_count": 1,
+    "resigned_count": 9,
+    "active_officers": [
+      {
+        "name": "MAH, Jun Xiang",
+        "role": "director",
+        "appointed_on": "2022-08-04",
+        "country_of_residence": "Australia",
+        "nationality": "Malaysian"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T06:44:13Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Countwise Europe Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "England And Wales",
+          "country_registered": "England And Wales",
+          "place_registered": "England And Wales",
+          "registration_number": "08753609"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxMzU5NTY0OWFkaXF6a2N4",
+    "date": "2026-03-31",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/tMk8QaT6Wlq9Bi6Cjg62h6QwpSZmaiJTiY1zQMTTZZk/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/06238653/filing-history/MzUxMzU5NTY0OWFkaXF6a2N4"
   }
 }

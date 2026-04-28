@@ -59,13 +59,139 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "education",
   "buyer_type_breakdown": {
     "education": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T12:02:29Z",
+    "company_name": "EUROSAFE SOLUTIONS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1999-10-01",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-03-31",
+    "accounts_last_made_up": "2025-06-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-04"
+  },
+  "governance": {
+    "api_date": "2026-04-28T12:02:30Z",
+    "total_officers": 14,
+    "active_count": 9,
+    "resigned_count": 5,
+    "active_officers": [
+      {
+        "name": "ELLIS, Gavin Mark",
+        "role": "secretary",
+        "appointed_on": "1999-12-08",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "CAPPER, Daniel William",
+        "role": "director",
+        "appointed_on": "2020-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "DOLAN, Richard Andrew",
+        "role": "director",
+        "appointed_on": "2019-07-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ELLIS, Gavin Mark",
+        "role": "director",
+        "appointed_on": "1999-12-08",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MALLETT, Ian Michael",
+        "role": "director",
+        "appointed_on": "2008-03-28",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "POWELL, Paul Edward",
+        "role": "director",
+        "appointed_on": "2019-07-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "REID, Wayne Anthony",
+        "role": "director",
+        "appointed_on": "2019-07-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "VAN BUITEN, Elisa Jacob Marius",
+        "role": "director",
+        "appointed_on": "1999-10-20",
+        "country_of_residence": "Netherlands",
+        "nationality": "Dutch"
+      },
+      {
+        "name": "WOOD, Nathan Michael",
+        "role": "director",
+        "appointed_on": "2019-07-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T12:02:32Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr John Philip Boyle",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-06-30",
+        "identification": null
+      },
+      {
+        "name": "Mr Gavin Mark Ellis",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-06-30",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxMzI3MDI0NWFkaXF6a2N4",
+    "date": "2026-03-30",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/Dx6oGY9aGdrtjJ6PZJcrvPtdeOUYr8kl6K6dWgQJg3s/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03851892/filing-history/MzUxMzI3MDI0NWFkaXF6a2N4"
   }
 }

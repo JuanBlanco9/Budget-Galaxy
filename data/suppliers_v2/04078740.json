@@ -64,13 +64,100 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
     "central_govt": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T01:43:14Z",
+    "company_name": "BOOZ ALLEN HAMILTON INTERNATIONAL (U.K.) LTD",
+    "company_status": "active",
+    "date_of_creation": "2000-09-21",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-30",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-04"
+  },
+  "governance": {
+    "api_date": "2026-04-28T01:43:16Z",
+    "total_officers": 23,
+    "active_count": 4,
+    "resigned_count": 19,
+    "active_officers": [
+      {
+        "name": "BERNSTEIN, Jacob Daniel",
+        "role": "secretary",
+        "appointed_on": "2019-09-02",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "CHO, Thomas Taehong",
+        "role": "director",
+        "appointed_on": "2025-05-07",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      },
+      {
+        "name": "MARKY, James Douglas",
+        "role": "director",
+        "appointed_on": "2024-10-23",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      },
+      {
+        "name": "TURNER, Andrew Hopwood",
+        "role": "director",
+        "appointed_on": "2023-02-15",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T01:43:17Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Booz Allen Hamilton Holding Corporation",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Corporation",
+          "legal_authority": "Delaware",
+          "country_registered": "Delaware",
+          "place_registered": "N/A",
+          "registration_number": "4546052"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxMzg3MTA5N2FkaXF6a2N4",
+    "date": "2026-04-09",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/KqIE4EsD6KLtoeHZbwGuEHUTzZrEypX6ozxDqSh0IiM/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04078740/filing-history/MzUxMzg3MTA5N2FkaXF6a2N4"
   }
 }

@@ -64,15 +64,192 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.743,
     "council": 0.1473,
     "education": 0.1097
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T05:12:22Z",
+    "company_name": "ISIO GROUP LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2019-10-21",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-06-30",
+    "accounts_last_made_up": "2025-09-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-03"
+  },
+  "governance": {
+    "api_date": "2026-04-28T05:12:23Z",
+    "total_officers": 6,
+    "active_count": 2,
+    "resigned_count": 4,
+    "active_officers": [
+      {
+        "name": "COLES, Andrew James",
+        "role": "director",
+        "appointed_on": "2020-02-28",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "ROBERTS, Gareth Huw",
+        "role": "director",
+        "appointed_on": "2026-02-03",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T05:12:24Z",
+    "total_results": 7,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Vincenzo La Ruffa",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "American",
+        "country_of_residence": "United States",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2024-10-29",
+        "identification": null
+      },
+      {
+        "name": "Ignace Louis Ghislain Van Waesberghe",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Dutch",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2024-10-29",
+        "identification": null
+      },
+      {
+        "name": "Exponent Private Equity Co-Investment Gp Llp",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "ownership-of-shares-25-to-50-percent-as-firm",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2024-05-01",
+        "identification": {
+          "legal_form": "Limited Liability Partnership",
+          "legal_authority": "England & Wales",
+          "country_registered": "England & Wales",
+          "place_registered": "Companies House, England & Wales",
+          "registration_number": "No. Oc430948"
+        }
+      },
+      {
+        "name": "Exponent Private Equity Llp",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent-as-firm",
+          "voting-rights-75-to-100-percent-as-firm",
+          "right-to-appoint-and-remove-directors-as-firm"
+        ],
+        "notified_on": "2019-11-07",
+        "identification": {
+          "legal_form": "Limited Liability Partnership",
+          "legal_authority": "England & Wales",
+          "country_registered": "England & Wales",
+          "place_registered": "Companies House, England & Wales",
+          "registration_number": "Oc306781"
+        }
+      },
+      {
+        "name": "Exponent Private Equity Partners Gp Iv Llp",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "ownership-of-shares-25-to-50-percent-as-firm",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2019-11-07",
+        "identification": {
+          "legal_form": "Limited Liability Partnership",
+          "legal_authority": "England & Wales",
+          "country_registered": "England",
+          "place_registered": "Companies House England & Wales",
+          "registration_number": "Oc417979"
+        }
+      },
+      {
+        "name": "Iseran Midco 3 Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2019-11-07",
+        "identification": {
+          "legal_form": "Registered Private Company",
+          "legal_authority": "Companies (Jersey) Law 1991",
+          "country_registered": "Jersey",
+          "place_registered": "Jfsc Companies Registry",
+          "registration_number": "130183"
+        }
+      },
+      {
+        "name": "Iseran Midco 3 Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2019-10-21",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "England & Wales",
+          "country_registered": "United Kingdom",
+          "place_registered": "United Kingdom",
+          "registration_number": "12272858"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxNTM2MzUwNmFkaXF6a2N4",
+    "date": "2026-04-18",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/ASre4noJHtFlLUr6ys3tpqNeEGweqYxDh84y0_NmNqM/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/12273083/filing-history/MzUxNTM2MzUwNmFkaXF6a2N4"
   }
 }

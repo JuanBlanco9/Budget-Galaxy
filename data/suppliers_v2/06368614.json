@@ -64,13 +64,140 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T23:09:57Z",
+    "company_name": "CORRECT CONTRACT SERVICES LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2007-09-12",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": true,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-05-21"
+  },
+  "governance": {
+    "api_date": "2026-04-27T23:09:58Z",
+    "total_officers": 6,
+    "active_count": 6,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "GLADWYN, Danny Lee",
+        "role": "secretary",
+        "appointed_on": "2007-09-12",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "DEMPSEY, Trevor Stanley",
+        "role": "director",
+        "appointed_on": "2007-09-12",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "DENNEY, Andrew Lee",
+        "role": "director",
+        "appointed_on": "2015-04-21",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "FRAY, Martyn George",
+        "role": "director",
+        "appointed_on": "2018-02-28",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GLADWYN, Danny Lee",
+        "role": "director",
+        "appointed_on": "2007-09-12",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HOPE, Leigh Hamilton",
+        "role": "director",
+        "appointed_on": "2025-01-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T23:10:00Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Ccs Tad Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2018-02-28",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Registrar Of Companies",
+          "registration_number": "09307249"
+        }
+      },
+      {
+        "name": "Mr Trevor Stanley Dempsey",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Danny Lee Gladwyn",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NTM0OTA4OWFkaXF6a2N4",
+    "date": "2025-12-19",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-medium",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/7CHGjKF_9PhCdxs0qFbuQVFFadyxeqEX6qdeM4OwhOU/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/06368614/filing-history/MzQ5NTM0OTA4OWFkaXF6a2N4"
   }
 }

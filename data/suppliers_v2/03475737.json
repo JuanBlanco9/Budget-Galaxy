@@ -64,14 +64,114 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "agency",
   "buyer_type_breakdown": {
     "agency": 0.7143,
     "police_fire": 0.2857
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T02:24:34Z",
+    "company_name": "SUEZ RECYCLING AND RECOVERY HOLDINGS UK LTD",
+    "company_status": "active",
+    "date_of_creation": "1997-12-03",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-12"
+  },
+  "governance": {
+    "api_date": "2026-04-28T02:24:35Z",
+    "total_officers": 37,
+    "active_count": 3,
+    "resigned_count": 34,
+    "active_officers": [
+      {
+        "name": "THOMPSON, Mark Hedley",
+        "role": "secretary",
+        "appointed_on": "2009-01-05",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "SCANLON, John James, Mr.",
+        "role": "director",
+        "appointed_on": "2020-01-01",
+        "country_of_residence": "England",
+        "nationality": "Irish"
+      },
+      {
+        "name": "THORN, Christopher Derrick",
+        "role": "director",
+        "appointed_on": "2020-02-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T02:24:36Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Suez Uk Group Holdings Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "Companies Acts",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "02264638"
+        }
+      },
+      {
+        "name": "Suez Recycling And Recovery Uk Group Holdings Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "06032206"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NTYyMDc1MGFkaXF6a2N4",
+    "date": "2025-12-27",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/7CSPwqAql3aGmn4HL_ihiHm3NigSeVTXkUB5Yw3UEdk/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03475737/filing-history/MzQ5NTYyMDc1MGFkaXF6a2N4"
   }
 }

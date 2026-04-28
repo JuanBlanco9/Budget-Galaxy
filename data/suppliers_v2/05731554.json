@@ -59,13 +59,84 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "education",
   "buyer_type_breakdown": {
     "education": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T06:42:17Z",
+    "company_name": "VISBION LTD",
+    "company_status": "active",
+    "date_of_creation": "2006-03-06",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-20"
+  },
+  "governance": {
+    "api_date": "2026-04-28T06:42:18Z",
+    "total_officers": 24,
+    "active_count": 2,
+    "resigned_count": 22,
+    "active_officers": [
+      {
+        "name": "GRIMM, Soeren, Dr",
+        "role": "director",
+        "appointed_on": "2026-03-07",
+        "country_of_residence": "England",
+        "nationality": "German"
+      },
+      {
+        "name": "SCHEURL, David Yuuki",
+        "role": "director",
+        "appointed_on": "2026-03-07",
+        "country_of_residence": "United Kingdom",
+        "nationality": "German"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T06:42:19Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Biotronics 3d Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2024-10-01",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "05029338"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MzkzOTgyMWFkaXF6a2N4",
+    "date": "2025-07-17",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/ibeNLDGQ6SnH134Djz_13e_tm0aboixHuXhWtoryubc/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/05731554/filing-history/MzQ3MzkzOTgyMWFkaXF6a2N4"
   }
 }

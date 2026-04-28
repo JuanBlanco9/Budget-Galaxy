@@ -55,13 +55,42 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
     "ch_api_accounts_pdf": false
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T07:31:47Z",
+    "company_name": "CHARTERED INSTITUTE OF PUBLIC FINANCE AND ACCOUNTANCY (THE)",
+    "company_status": "active",
+    "date_of_creation": null,
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": true,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": true,
+    "accounts_next_due": "1999-01-31",
+    "accounts_last_made_up": null,
+    "confirmation_statement_overdue": true,
+    "confirmation_statement_next_due": "2017-01-15"
+  },
+  "governance": {
+    "api_date": "2026-04-28T07:31:48Z",
+    "total_officers": 0,
+    "active_count": 0,
+    "resigned_count": 0,
+    "active_officers": []
+  },
+  "pscs": {
+    "api_date": "2026-04-28T07:31:49Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
   }
 }

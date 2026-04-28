@@ -59,13 +59,79 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T21:24:58Z",
+    "company_name": "K.M.R. SKIP HIRE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2000-03-27",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-03-31",
+    "accounts_last_made_up": "2025-06-30",
+    "confirmation_statement_overdue": true,
+    "confirmation_statement_next_due": "2026-04-18"
+  },
+  "governance": {
+    "api_date": "2026-04-27T21:24:59Z",
+    "total_officers": 6,
+    "active_count": 4,
+    "resigned_count": 2,
+    "active_officers": [
+      {
+        "name": "HUMPHREY, Christine",
+        "role": "secretary",
+        "appointed_on": "2000-03-27",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "HUMPHREY, Keith",
+        "role": "director",
+        "appointed_on": "2000-03-27",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HUMPHREY, Michael",
+        "role": "director",
+        "appointed_on": "2000-03-27",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HUMPHREY, Roger",
+        "role": "director",
+        "appointed_on": "2000-03-27",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T21:25:01Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5OTcwMDc4OWFkaXF6a2N4",
+    "date": "2026-01-16",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/qNEeTAPOJnrrfIyyaczR_wf_MfvEU2w0WXR0MfRN-sc/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03956535/filing-history/MzQ5OTcwMDc4OWFkaXF6a2N4"
   }
 }

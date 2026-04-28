@@ -59,13 +59,135 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "police_fire",
   "buyer_type_breakdown": {
     "police_fire": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T10:32:39Z",
+    "company_name": "BRITISH UNITED PROVIDENT ASSOCIATION LIMITED(THE)",
+    "company_status": "active",
+    "date_of_creation": "1947-04-03",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-09-30",
+    "accounts_last_made_up": "2025-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-11"
+  },
+  "governance": {
+    "api_date": "2026-04-28T10:32:40Z",
+    "total_officers": 76,
+    "active_count": 12,
+    "resigned_count": 64,
+    "active_officers": [
+      {
+        "name": "CAMPBELL, Colin Robert",
+        "role": "secretary",
+        "appointed_on": "2019-07-01",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BLAIR, Simon Robert Saunders",
+        "role": "director",
+        "appointed_on": "2024-01-25",
+        "country_of_residence": "New Zealand",
+        "nationality": "New Zealander"
+      },
+      {
+        "name": "BROADLEY, Philip Arthur John",
+        "role": "director",
+        "appointed_on": "2026-04-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "ERENO IRIBARREN, Ignacio",
+        "role": "director",
+        "appointed_on": "2021-01-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "Spanish"
+      },
+      {
+        "name": "EVANS, Paul James",
+        "role": "director",
+        "appointed_on": "2018-11-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HAWKER, Michael John",
+        "role": "director",
+        "appointed_on": "2019-04-01",
+        "country_of_residence": "Australia",
+        "nationality": "Australian"
+      },
+      {
+        "name": "HOLTHOF, Bruno Luc Myriam, Professor",
+        "role": "director",
+        "appointed_on": "2026-04-10",
+        "country_of_residence": "England",
+        "nationality": "Belgian"
+      },
+      {
+        "name": "KEERS, Catherine Jane",
+        "role": "director",
+        "appointed_on": "2019-11-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "LENTON, James Alan",
+        "role": "director",
+        "appointed_on": "2021-11-11",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "ROBERT, Donald Austin",
+        "role": "director",
+        "appointed_on": "2025-02-27",
+        "country_of_residence": "England",
+        "nationality": "American"
+      },
+      {
+        "name": "RODRIGUEZ INCIARTE, Matias",
+        "role": "director",
+        "appointed_on": "2019-01-01",
+        "country_of_residence": "Spain",
+        "nationality": "Spanish"
+      },
+      {
+        "name": "WHITEHEAD, Gillian Rosemary",
+        "role": "director",
+        "appointed_on": "2026-04-10",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T10:32:41Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxNTE0ODEzMmFkaXF6a2N4",
+    "date": "2026-04-16",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/0EUzEH66kwtHarb6nMWbJVp_KzcM5Kgq2318bZPoihg/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/00432511/filing-history/MzUxNTE0ODEzMmFkaXF6a2N4"
   }
 }

@@ -61,13 +61,107 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T16:34:04Z",
+    "company_name": "HESSLE ROAD NETWORK",
+    "company_status": "active",
+    "date_of_creation": "2002-01-24",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-31"
+  },
+  "governance": {
+    "api_date": "2026-04-27T16:34:06Z",
+    "total_officers": 24,
+    "active_count": 8,
+    "resigned_count": 16,
+    "active_officers": [
+      {
+        "name": "ROBINSON, Julie",
+        "role": "secretary",
+        "appointed_on": "2011-10-03",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "DRUMMOND HEMMING-TAYLER, Tracy",
+        "role": "director",
+        "appointed_on": "2019-03-12",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ELLIOT, Roger Scott",
+        "role": "director",
+        "appointed_on": "2014-01-28",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HAMILTON, David Ian",
+        "role": "director",
+        "appointed_on": "2019-07-16",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HILLS, Michael Rae Buchanan, Reverend",
+        "role": "director",
+        "appointed_on": "2002-01-24",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HOGBEN, Mark",
+        "role": "director",
+        "appointed_on": "2015-03-24",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LONGLEY, Paul Andrew",
+        "role": "director",
+        "appointed_on": "2025-01-21",
+        "country_of_residence": "England",
+        "nationality": "English"
+      },
+      {
+        "name": "TOCK, Linda Elizabeth",
+        "role": "director",
+        "appointed_on": "2006-03-03",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T16:34:08Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4NzAzNTk5NmFkaXF6a2N4",
+    "date": "2025-11-03",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/ODhQMcEJARPP--yqakKY7E64VPcbSnB88okL7H1aB-k/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04360117/filing-history/MzQ4NzAzNTk5NmFkaXF6a2N4"
   }
 }

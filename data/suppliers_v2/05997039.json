@@ -61,15 +61,283 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "police_fire",
   "buyer_type_breakdown": {
     "police_fire": 0.7977,
     "agency": 0.1124,
     "other": 0.0899
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T01:11:43Z",
+    "company_name": "THE INNOVATION UNIT LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2006-11-13",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-07"
+  },
+  "governance": {
+    "api_date": "2026-04-28T01:11:45Z",
+    "total_officers": 17,
+    "active_count": 7,
+    "resigned_count": 10,
+    "active_officers": [
+      {
+        "name": "JENKINS, Deborah",
+        "role": "secretary",
+        "appointed_on": "2024-04-08",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "AFUAPE, Olufunmike Olusola Omobola",
+        "role": "director",
+        "appointed_on": "2022-04-12",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "AUGST, Charlotte Sophie, Dr",
+        "role": "director",
+        "appointed_on": "2024-07-01",
+        "country_of_residence": "England",
+        "nationality": "German"
+      },
+      {
+        "name": "BYNON, Therese Radhika",
+        "role": "director",
+        "appointed_on": "2024-09-02",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "HANNON, Valerie Maria",
+        "role": "director",
+        "appointed_on": "2010-04-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ROBERTS, David Paul",
+        "role": "director",
+        "appointed_on": "2011-04-04",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "RYAN, Shane Richard",
+        "role": "director",
+        "appointed_on": "2024-09-02",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T01:11:46Z",
+    "total_results": 15,
+    "active_count": 6,
+    "items": [
+      {
+        "name": "Mr Shane Richard Ryan",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2024-09-02",
+        "identification": null
+      },
+      {
+        "name": "Mrs Therese Radhika Bynon",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2024-09-02",
+        "identification": null
+      },
+      {
+        "name": "Dr Charlotte Sophie Augst",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "German",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2024-07-01",
+        "identification": null
+      },
+      {
+        "name": "Miss Olufunmike Olusola Omobola Afuape",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2022-04-12",
+        "identification": null
+      },
+      {
+        "name": "Ms Danielle Jeanine Walker Palmour",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2022-04-11",
+        "identification": null
+      },
+      {
+        "name": "Mr Anthony David Mackay",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Australian",
+        "country_of_residence": "Australia",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2019-03-27",
+        "identification": null
+      },
+      {
+        "name": "Ms Valerie Maria Hannon",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2019-03-27",
+        "identification": null
+      },
+      {
+        "name": "Mr David Paul Roberts",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2019-03-27",
+        "identification": null
+      },
+      {
+        "name": "Mr James David Thomas",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2019-03-26",
+        "identification": null
+      },
+      {
+        "name": "Mrs Rebekah Lois Ayres",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2019-03-26",
+        "identification": null
+      },
+      {
+        "name": "Mr Joseph Michael James Ludlow",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2019-03-26",
+        "identification": null
+      },
+      {
+        "name": "Mr David Paul Roberts",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Anthony David Mackay",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Australian",
+        "country_of_residence": "Australia",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Ms Valerie Maria Hannon",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr David Lewis Albury",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NTk1MjA0OWFkaXF6a2N4",
+    "date": "2025-12-24",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/FZ_UE3rtxlxUZCl81AuQ_23qN0ASymkmEU0e_G8lcjw/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/05997039/filing-history/MzQ5NTk1MjA0OWFkaXF6a2N4"
   }
 }

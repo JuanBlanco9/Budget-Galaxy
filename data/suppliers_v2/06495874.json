@@ -68,10 +68,10 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
@@ -79,5 +79,84 @@
     "council": 0.3854,
     "central_govt": 0.0046,
     "education": 0.001
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T19:01:35Z",
+    "company_name": "LUCION SERVICES LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2008-02-06",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-20"
+  },
+  "governance": {
+    "api_date": "2026-04-27T19:01:37Z",
+    "total_officers": 17,
+    "active_count": 3,
+    "resigned_count": 14,
+    "active_officers": [
+      {
+        "name": "ALLISON, Benjamin",
+        "role": "director",
+        "appointed_on": "2025-09-17",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "COLE, Carolyn Ann",
+        "role": "director",
+        "appointed_on": "2025-04-02",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "COLES, Philip David",
+        "role": "director",
+        "appointed_on": "2025-02-26",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T19:01:39Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Lucion Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Uk Companies Registry",
+          "registration_number": "09476425"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NzA3NjQyNWFkaXF6a2N4",
+    "date": "2026-01-02",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/MKskFpzA9dpH22FPEp4pF0NlZ7qbK9bJd7eTQ79Ysrk/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/06495874/filing-history/MzQ5NzA3NjQyNWFkaXF6a2N4"
   }
 }

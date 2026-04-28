@@ -61,14 +61,143 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.9827,
     "nhs": 0.0173
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T15:24:17Z",
+    "company_name": "PICKER INSTITUTE EUROPE",
+    "company_status": "active",
+    "date_of_creation": "2000-01-12",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-24"
+  },
+  "governance": {
+    "api_date": "2026-04-27T15:24:19Z",
+    "total_officers": 60,
+    "active_count": 13,
+    "resigned_count": 47,
+    "active_officers": [
+      {
+        "name": "GRAHAM, Christopher",
+        "role": "secretary",
+        "appointed_on": "2017-06-22",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "ANYAEGBUNAM, Bunie",
+        "role": "director",
+        "appointed_on": "2025-09-25",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BLOCH, Andrew Charles Danby",
+        "role": "director",
+        "appointed_on": "2023-09-22",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "CLARKE, Graham John",
+        "role": "director",
+        "appointed_on": "2025-09-25",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "COLLINS, Peter Douglas, Dr",
+        "role": "director",
+        "appointed_on": "2023-09-22",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "COULTER, Angela",
+        "role": "director",
+        "appointed_on": "2022-09-29",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "FLASHMAN, Clive Samuel",
+        "role": "director",
+        "appointed_on": "2023-09-22",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "JAMIESON GILMORE, Kendall",
+        "role": "director",
+        "appointed_on": "2025-09-25",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "JOSEPH-WILLIAMS, Natalie, Dr",
+        "role": "director",
+        "appointed_on": "2025-09-25",
+        "country_of_residence": "Wales",
+        "nationality": "British"
+      },
+      {
+        "name": "LEVY, Julia Anna",
+        "role": "director",
+        "appointed_on": "2021-11-24",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "MATIN, Tahreema Nihad Hashmi, Dr",
+        "role": "director",
+        "appointed_on": "2023-09-22",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "SKRYBANT, Magdalena, Dr",
+        "role": "director",
+        "appointed_on": "2021-09-30",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "THOMAS, Alison Victoria",
+        "role": "director",
+        "appointed_on": "2023-09-22",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T15:24:20Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4NzM2MTA2OWFkaXF6a2N4",
+    "date": "2025-11-04",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/Cl0K1qNl4adFONnbpJlwSVoz0tij5YNbgTkpw8bJz1I/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03908160/filing-history/MzQ4NzM2MTA2OWFkaXF6a2N4"
   }
 }

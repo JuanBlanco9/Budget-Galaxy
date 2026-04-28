@@ -63,14 +63,144 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.6049,
     "council": 0.3951
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T14:16:25Z",
+    "company_name": "BRADLEY ENVIRONMENTAL CONSULTANTS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1991-01-15",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2024-10-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-25"
+  },
+  "governance": {
+    "api_date": "2026-04-28T14:16:26Z",
+    "total_officers": 14,
+    "active_count": 5,
+    "resigned_count": 9,
+    "active_officers": [
+      {
+        "name": "REEVES, Chaz",
+        "role": "secretary",
+        "appointed_on": "2018-03-21",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "CRELLIN, Adam Robert James",
+        "role": "director",
+        "appointed_on": "2023-12-11",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "KNIGHT, James Robert",
+        "role": "director",
+        "appointed_on": "2025-12-17",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "PRIESTLEY, Richard Paul",
+        "role": "director",
+        "appointed_on": "2025-12-17",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "REEVES, Chaz",
+        "role": "director",
+        "appointed_on": "2015-10-22",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T14:16:27Z",
+    "total_results": 4,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Vadella Bidco Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2025-07-31",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "England And Wales",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "15759132"
+        }
+      },
+      {
+        "name": "Mr Peter Alan Robinson",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "Spain",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Brent Walker",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mrs Elise Diane Eve Dangerfield",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MjY1Njk4OGFkaXF6a2N4",
+    "date": "2025-09-25",
+    "type": "AA01",
+    "description": "change-account-reference-date-company-current-extended",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/PR_sZyw3lo4KmH_hQDbxLCNa1aolYuO1TbySsK7GaxA/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02573757/filing-history/MzQ4MjY1Njk4OGFkaXF6a2N4"
   }
 }

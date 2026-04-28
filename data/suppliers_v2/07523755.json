@@ -64,13 +64,99 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T22:42:33Z",
+    "company_name": "MUNNINGS SUPPLIES LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2011-02-09",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-11-30",
+    "accounts_last_made_up": "2026-02-28",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-23"
+  },
+  "governance": {
+    "api_date": "2026-04-27T22:42:34Z",
+    "total_officers": 4,
+    "active_count": 4,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "MUNNINGS, Anthony Jack",
+        "role": "secretary",
+        "appointed_on": "2011-02-09",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "MUNNINGS, Anthony Jack",
+        "role": "director",
+        "appointed_on": "2011-02-09",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MUNNINGS, Michael Patrick",
+        "role": "director",
+        "appointed_on": "2011-02-09",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MUNNINGS, Roy John",
+        "role": "director",
+        "appointed_on": "2011-02-09",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T22:42:36Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "J W Munnings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2016-07-01",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act",
+          "country_registered": "England",
+          "place_registered": "England",
+          "registration_number": "00559488"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxMjk1NjI2OGFkaXF6a2N4",
+    "date": "2026-03-27",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-micro-entity",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/pjQ8DOD4XAHLYMNbiaaDDsOP7XwgfRno3frOjdUMapQ/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/07523755/filing-history/MzUxMjk1NjI2OGFkaXF6a2N4"
   }
 }

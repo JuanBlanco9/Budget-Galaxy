@@ -68,13 +68,149 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T08:01:01Z",
+    "company_name": "YMCA BLACK COUNTRY GROUP",
+    "company_status": "active",
+    "date_of_creation": "2000-11-29",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-13"
+  },
+  "governance": {
+    "api_date": "2026-04-28T08:01:03Z",
+    "total_officers": 47,
+    "active_count": 14,
+    "resigned_count": 33,
+    "active_officers": [
+      {
+        "name": "BAVINGTON, Stephen Daniel",
+        "role": "secretary",
+        "appointed_on": "2024-10-29",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BALOGUN, Olaseinde Odunayo",
+        "role": "director",
+        "appointed_on": "2018-08-07",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "FUSSELL, Mark Allan",
+        "role": "director",
+        "appointed_on": "2021-11-17",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MALHAN, Ramesh Kumar",
+        "role": "director",
+        "appointed_on": "2024-06-27",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "OAKLEY, Jeremy Steven",
+        "role": "director",
+        "appointed_on": "2020-11-17",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PATRICK, Stephanie Paula",
+        "role": "director",
+        "appointed_on": "2022-10-06",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ROWE, Jonathan Robert",
+        "role": "director",
+        "appointed_on": "2021-11-17",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SARGEANT, Jayne Alison",
+        "role": "director",
+        "appointed_on": "2022-06-07",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SHENTON, Martin James",
+        "role": "director",
+        "appointed_on": "2021-05-18",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "STONYER, Geoffrey Malcolm",
+        "role": "director",
+        "appointed_on": "2023-12-11",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "TIGERE, Clotilda",
+        "role": "director",
+        "appointed_on": "2024-11-27",
+        "country_of_residence": "England",
+        "nationality": "Zimbabwean"
+      },
+      {
+        "name": "TOMLINSON, Pauline",
+        "role": "director",
+        "appointed_on": "2020-11-17",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "WALKER, Philip Wilfred Leonard",
+        "role": "director",
+        "appointed_on": "2020-05-19",
+        "country_of_residence": "England",
+        "nationality": "English"
+      },
+      {
+        "name": "WALSH, Anne-Marie",
+        "role": "director",
+        "appointed_on": "2018-08-07",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T08:01:04Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MTExMzk5MGFkaXF6a2N4",
+    "date": "2025-11-28",
+    "type": "AAMD",
+    "description": "accounts-amended-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/jcN-dpH2194ggq1siWULPwbzNTS5rF8xIDR-Eu5wkUg/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04116412/filing-history/MzQ5MTExMzk5MGFkaXF6a2N4"
   }
 }

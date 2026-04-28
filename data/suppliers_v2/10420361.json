@@ -68,15 +68,147 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 0.6977,
     "agency": 0.169,
     "other": 0.1333
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T11:23:47Z",
+    "company_name": "INVESTORS IN PEOPLE COMMUNITY INTEREST COMPANY",
+    "company_status": "active",
+    "date_of_creation": "2016-10-11",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-18"
+  },
+  "governance": {
+    "api_date": "2026-04-28T11:23:49Z",
+    "total_officers": 14,
+    "active_count": 7,
+    "resigned_count": 7,
+    "active_officers": [
+      {
+        "name": "DENINSON, Ian Harry",
+        "role": "director",
+        "appointed_on": "2018-05-14",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "DENNING, Adam Michael",
+        "role": "director",
+        "appointed_on": "2024-02-10",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "DEVOY, Paul",
+        "role": "director",
+        "appointed_on": "2017-04-13",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      },
+      {
+        "name": "JOHNSON, Scott Marshall",
+        "role": "director",
+        "appointed_on": "2017-02-15",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      },
+      {
+        "name": "LEACH, Lydia",
+        "role": "director",
+        "appointed_on": "2024-11-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LOBO, Sanjay",
+        "role": "director",
+        "appointed_on": "2024-02-13",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SCOTT, Lindsay Jane",
+        "role": "director",
+        "appointed_on": "2017-06-14",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T11:23:50Z",
+    "total_results": 3,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Iip (Holdings) Community Interest Company",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent"
+        ],
+        "notified_on": "2017-02-01",
+        "identification": {
+          "legal_form": "Private Company Limited By Guarantee Without Share Capital",
+          "legal_authority": "Community Interest Company"
+        }
+      },
+      {
+        "name": "Secretary Of State For Education",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2017-02-01",
+        "identification": {
+          "legal_form": "Government Department",
+          "legal_authority": "Companies Act 2006"
+        }
+      },
+      {
+        "name": "Mr Neil Richard Palmer",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-10-11",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5Njg5MDY1NWFkaXF6a2N4",
+    "date": "2026-01-07",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/_6renlUVH1GT5hrN6beF93FhysmlgAJUi0-gIQxPNt4/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/10420361/filing-history/MzQ5Njg5MDY1NWFkaXF6a2N4"
   }
 }

@@ -59,13 +59,120 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T06:03:31Z",
+    "company_name": "MASERGY COMMUNICATIONS UK LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2001-03-01",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": true,
+    "confirmation_statement_next_due": "2026-03-15"
+  },
+  "governance": {
+    "api_date": "2026-04-28T06:03:32Z",
+    "total_officers": 14,
+    "active_count": 4,
+    "resigned_count": 10,
+    "active_officers": [
+      {
+        "name": "CSC CLS (UK) LIMITED",
+        "role": "corporate-secretary",
+        "appointed_on": "2025-09-18",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BUZZELLI, Jeffrey Michael",
+        "role": "director",
+        "appointed_on": "2026-01-01",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      },
+      {
+        "name": "HACKLEY, Stephen Lloyd",
+        "role": "director",
+        "appointed_on": "2022-06-30",
+        "country_of_residence": "United Kingdom",
+        "nationality": "American"
+      },
+      {
+        "name": "NASH, Stephen Alan",
+        "role": "director",
+        "appointed_on": "2023-02-27",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T06:03:33Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Comcast Corporation",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2021-10-07",
+        "identification": {
+          "legal_form": "For-Profit Business Corporation And Publicly Traded Company",
+          "legal_authority": "Commonwealth Of Pennsylvania United States",
+          "country_registered": "United States",
+          "place_registered": "Pennsylvania Department Of State, United States",
+          "registration_number": "3039985"
+        }
+      },
+      {
+        "name": "Masergy Communications Inc",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "ownership-of-shares-75-to-100-percent-as-firm",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2017-03-01",
+        "identification": {
+          "legal_form": "Corporation",
+          "legal_authority": "Usa",
+          "country_registered": "Usa",
+          "place_registered": "Delaware",
+          "registration_number": "75-2899198"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MTcwNDA1NGFkaXF6a2N4",
+    "date": "2025-12-03",
+    "type": "AAMD",
+    "description": "accounts-amended-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/t8hFCCl6umgY1XRGwzGWkl1MJv0hopQdjiLyYR5PXHM/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04170863/filing-history/MzQ5MTcwNDA1NGFkaXF6a2N4"
   }
 }

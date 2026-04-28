@@ -64,13 +64,170 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "agency",
   "buyer_type_breakdown": {
     "agency": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T12:15:37Z",
+    "company_name": "SCIONTEC DEVELOPMENTS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2018-09-14",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-06-30",
+    "accounts_last_made_up": "2024-09-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-09-26"
+  },
+  "governance": {
+    "api_date": "2026-04-28T12:15:39Z",
+    "total_officers": 24,
+    "active_count": 10,
+    "resigned_count": 14,
+    "active_officers": [
+      {
+        "name": "WALLACE, Patricia",
+        "role": "secretary",
+        "appointed_on": "2025-03-10",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "DAVIES, Nicola Faye",
+        "role": "director",
+        "appointed_on": "2024-05-02",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GALLAGHER, Nuala",
+        "role": "director",
+        "appointed_on": "2023-06-23",
+        "country_of_residence": "England",
+        "nationality": "Irish"
+      },
+      {
+        "name": "JONES, Timothy Simon, Professor",
+        "role": "director",
+        "appointed_on": "2023-01-20",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LEECH, Mark Andrew",
+        "role": "director",
+        "appointed_on": "2024-01-10",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "LEWIS, Andrew James",
+        "role": "director",
+        "appointed_on": "2023-06-23",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "MOLLOY, Robert Edward",
+        "role": "director",
+        "appointed_on": "2025-09-15",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "OGLESBY, Christopher George",
+        "role": "director",
+        "appointed_on": "2020-05-13",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "POWER, Mark Alan, Professor",
+        "role": "director",
+        "appointed_on": "2018-12-04",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SINCLAIR, Colin Duncan",
+        "role": "director",
+        "appointed_on": "2018-09-14",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T12:15:40Z",
+    "total_results": 3,
+    "active_count": 0,
+    "items": [
+      {
+        "name": "Liverpool John Moores University",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2018-12-04",
+        "identification": {
+          "legal_form": "Exempt Charity",
+          "legal_authority": "Charities Act 2011"
+        }
+      },
+      {
+        "name": "Liverpool City Council",
+        "kind": "legal-person-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2018-12-04",
+        "identification": {
+          "legal_form": "Local Authority",
+          "legal_authority": "English Law"
+        }
+      },
+      {
+        "name": "University Of Liverpool",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2018-09-14",
+        "identification": {
+          "legal_form": "Royal Charter",
+          "legal_authority": "English Law",
+          "country_registered": "England",
+          "place_registered": "England",
+          "registration_number": "Rc000660"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MzcxODY2MWFkaXF6a2N4",
+    "date": "2025-10-06",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/51R37_AMgkbCxm89I95cJPnXR4Kr5ydUERtPEOU7jzg/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/11570273/filing-history/MzQ4MzcxODY2MWFkaXF6a2N4"
   }
 }

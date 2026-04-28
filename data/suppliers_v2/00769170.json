@@ -59,13 +59,93 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T11:22:23Z",
+    "company_name": "TRAVELODGE HOTELS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1963-07-29",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": true,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-07"
+  },
+  "governance": {
+    "api_date": "2026-04-28T11:22:25Z",
+    "total_officers": 84,
+    "active_count": 3,
+    "resigned_count": 81,
+    "active_officers": [
+      {
+        "name": "LAING, Andrew Patrick",
+        "role": "secretary",
+        "appointed_on": "2026-04-01",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BOYDELL, Joanna",
+        "role": "director",
+        "appointed_on": "2013-03-19",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "REIDY, Raymond Andrew",
+        "role": "director",
+        "appointed_on": "2025-08-20",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T11:22:26Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Full Moon Holdco 7 Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "09657187"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2NTM4NzUzM2FkaXF6a2N4",
+    "date": "2025-05-07",
+    "type": "AAMD",
+    "description": "accounts-amended-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/8Wo4lPRQsq106AL77BQ_i_YyDoMgDmo-TkMq4QlhWTI/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/00769170/filing-history/MzQ2NTM4NzUzM2FkaXF6a2N4"
   }
 }

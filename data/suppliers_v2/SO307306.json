@@ -55,13 +55,191 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T21:58:16Z",
+    "company_name": "FAIRHURST GROUP LLP",
+    "company_status": "active",
+    "date_of_creation": "2021-06-29",
+    "date_of_cessation": null,
+    "jurisdiction": "scotland",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-12"
+  },
+  "governance": {
+    "api_date": "2026-04-27T21:58:18Z",
+    "total_officers": 27,
+    "active_count": 20,
+    "resigned_count": 7,
+    "active_officers": [
+      {
+        "name": "ALLAN, Garry James",
+        "role": "llp-designated-member",
+        "appointed_on": "2022-01-11",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "HOLMES, Stephen James",
+        "role": "llp-designated-member",
+        "appointed_on": "2022-01-11",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "MCGARRY, Neil",
+        "role": "llp-designated-member",
+        "appointed_on": "2022-01-11",
+        "country_of_residence": "Scotland",
+        "nationality": null
+      },
+      {
+        "name": "BLAIR, Alan Ronald",
+        "role": "llp-member",
+        "appointed_on": "2022-01-11",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "BROWN, Neil Alan",
+        "role": "llp-member",
+        "appointed_on": "2022-01-11",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "BROWNE, Kieran Henry",
+        "role": "llp-member",
+        "appointed_on": "2023-07-01",
+        "country_of_residence": "Scotland",
+        "nationality": null
+      },
+      {
+        "name": "ENOCH, Paul Alister",
+        "role": "llp-member",
+        "appointed_on": "2023-01-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "FLEMING, Andrew Kyle",
+        "role": "llp-member",
+        "appointed_on": "2022-01-11",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "FLETCHER, David John",
+        "role": "llp-member",
+        "appointed_on": "2022-01-11",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "GRAY, Carol",
+        "role": "llp-member",
+        "appointed_on": "2026-01-01",
+        "country_of_residence": "Scotland",
+        "nationality": null
+      },
+      {
+        "name": "GRAY, Ross Lindsay",
+        "role": "llp-member",
+        "appointed_on": "2022-01-11",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "HAIGH, Richard",
+        "role": "llp-member",
+        "appointed_on": "2023-01-01",
+        "country_of_residence": "Scotland",
+        "nationality": null
+      },
+      {
+        "name": "KRAM, Andrew",
+        "role": "llp-member",
+        "appointed_on": "2024-01-01",
+        "country_of_residence": "Scotland",
+        "nationality": null
+      },
+      {
+        "name": "LAU, Wai Chung",
+        "role": "llp-member",
+        "appointed_on": "2022-01-11",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "MCSPADDEN, Nicholas Mark",
+        "role": "llp-member",
+        "appointed_on": "2022-01-11",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "O'NEILL, Hugh Desmond",
+        "role": "llp-member",
+        "appointed_on": "2022-01-11",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "SHILLINGTON, Simon John Graham",
+        "role": "llp-member",
+        "appointed_on": "2023-01-01",
+        "country_of_residence": "Scotland",
+        "nationality": null
+      },
+      {
+        "name": "SIMMONS, Anthony",
+        "role": "llp-member",
+        "appointed_on": "2022-01-11",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "THOMPSON, Stuart Alexander",
+        "role": "llp-member",
+        "appointed_on": "2023-01-01",
+        "country_of_residence": "Scotland",
+        "nationality": null
+      },
+      {
+        "name": "TOWNSEND, David Noel",
+        "role": "llp-member",
+        "appointed_on": "2022-01-11",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T21:58:20Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NTk3NjQxMmFkaXF6a2N4",
+    "date": "2025-12-31",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/opkgMdiH05FTeX_D1HqXR7TSlP0sjd7ED7dBZKLkqAE/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/SO307306/filing-history/MzQ5NTk3NjQxMmFkaXF6a2N4"
   }
 }

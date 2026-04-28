@@ -68,13 +68,163 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T03:18:15Z",
+    "company_name": "SIMANALYTICA LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2019-05-15",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-05-31",
+    "accounts_last_made_up": "2025-08-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-05-28"
+  },
+  "governance": {
+    "api_date": "2026-04-28T03:18:16Z",
+    "total_officers": 13,
+    "active_count": 5,
+    "resigned_count": 8,
+    "active_officers": [
+      {
+        "name": "GILDER, Helen Patricia",
+        "role": "director",
+        "appointed_on": "2019-08-21",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HADLEY, James Marshall",
+        "role": "director",
+        "appointed_on": "2024-11-18",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HARWOOD, Robert, Dr",
+        "role": "director",
+        "appointed_on": "2021-11-30",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MONTAGNANI, Daniele Benedict",
+        "role": "director",
+        "appointed_on": "2024-11-18",
+        "country_of_residence": "England",
+        "nationality": "British,Italian"
+      },
+      {
+        "name": "MERCIA FUND MANAGEMENT (NOMINEES) LIMITED",
+        "role": "corporate-director",
+        "appointed_on": "2025-10-30",
+        "country_of_residence": null,
+        "nationality": null
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T03:18:17Z",
+    "total_results": 4,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Northern Gritstone Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2023-01-09",
+        "identification": {
+          "legal_form": "Corporate",
+          "legal_authority": "United Kingdom",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "12982592"
+        }
+      },
+      {
+        "name": "Enterprise Ventures (General Partner Npif Yhtv Equity) Limited, As General Partner Of Npif Yhtv Equity Lp",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2023-01-09",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "Register Of Companies For England And Wales",
+          "registration_number": "10514398"
+        }
+      },
+      {
+        "name": "Enterprise Ventures (General Partner Npif Yhtv Equity) Limited, As General Partner Of Npif Yhtv Equity Lp",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "voting-rights-25-to-50-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2020-06-06",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "Register Of Companies For England And Wales",
+          "registration_number": "10514398"
+        }
+      },
+      {
+        "name": "University Of Leeds",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2019-08-21",
+        "identification": {
+          "legal_form": "Body Incorporated By Royal Charter",
+          "legal_authority": "English Law",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "Rc000658"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwMTEzNjg2OGFkaXF6a2N4",
+    "date": "2026-01-23",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/X_I1rsnu6Gwa30DFgN2JujSOQYstpV0-tiRl_iY2Om4/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/11996161/filing-history/MzUwMTEzNjg2OGFkaXF6a2N4"
   }
 }

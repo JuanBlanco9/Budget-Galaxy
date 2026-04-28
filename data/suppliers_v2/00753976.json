@@ -64,15 +64,142 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "agency",
   "buyer_type_breakdown": {
     "agency": 0.7411,
     "council": 0.2566,
     "other": 0.0023
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T20:34:07Z",
+    "company_name": "BREHENY CIVIL ENGINEERING LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1963-03-19",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-15"
+  },
+  "governance": {
+    "api_date": "2026-04-27T20:34:08Z",
+    "total_officers": 17,
+    "active_count": 5,
+    "resigned_count": 12,
+    "active_officers": [
+      {
+        "name": "AZIZ, Shums",
+        "role": "secretary",
+        "appointed_on": "2018-12-21",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "AZIZ, Shums",
+        "role": "director",
+        "appointed_on": "2024-07-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BREHENY, John Nicholas Edward",
+        "role": "director",
+        "appointed_on": "1995-04-10",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BURNSIDE, Simon Timothy",
+        "role": "director",
+        "appointed_on": "2020-02-14",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "FLEMING, Andrew",
+        "role": "director",
+        "appointed_on": "2020-02-14",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T20:34:10Z",
+    "total_results": 4,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr John Nicholas Edward Breheny",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mrs Heather Jewell (Formerly Aldous)",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mrs Sandra Marie Jones Dec'D",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Breheny Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4NTEwMzExNmFkaXF6a2N4",
+    "date": "2025-10-15",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/SRh_VGqspLa7P3uZfLDIGpFygt5PYSqXCHZy2PgV3S4/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/00753976/filing-history/MzQ4NTEwMzExNmFkaXF6a2N4"
   }
 }

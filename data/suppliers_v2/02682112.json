@@ -59,13 +59,105 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "education",
   "buyer_type_breakdown": {
     "education": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T04:07:57Z",
+    "company_name": "GRIFFITHS & ARMOUR PROFESSIONAL RISKS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1992-01-29",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-20"
+  },
+  "governance": {
+    "api_date": "2026-04-28T04:07:58Z",
+    "total_officers": 45,
+    "active_count": 3,
+    "resigned_count": 42,
+    "active_officers": [
+      {
+        "name": "COSEC 2000 LIMITED",
+        "role": "corporate-secretary",
+        "appointed_on": "2025-11-01",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "CLARKE, Dean Leonard",
+        "role": "director",
+        "appointed_on": "2025-12-31",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "VICKERS, Alexander Michael",
+        "role": "director",
+        "appointed_on": "2025-12-31",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T04:07:59Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Griffiths & Armour (Holdings) Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2025-01-01",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "02839315"
+        }
+      },
+      {
+        "name": "Mr Robin Mark Hill Griffiths",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "Wales",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-07-20",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NTk0NzcxOGFkaXF6a2N4",
+    "date": "2025-08-01",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-dormant",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/nvaW-4IiUvB3g8HDQlCER_sTYPsaG0TPcYB2OMxsL2Y/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02682112/filing-history/MzQ3NTk0NzcxOGFkaXF6a2N4"
   }
 }

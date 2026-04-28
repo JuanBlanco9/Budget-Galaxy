@@ -68,10 +68,10 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
@@ -79,5 +79,119 @@
     "central_govt": 0.014,
     "council": 0.0032,
     "education": 0.0008
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T13:24:41Z",
+    "company_name": "ANTALIS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1972-12-22",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-16"
+  },
+  "governance": {
+    "api_date": "2026-04-27T13:24:43Z",
+    "total_officers": 47,
+    "active_count": 5,
+    "resigned_count": 42,
+    "active_officers": [
+      {
+        "name": "ABOGADO NOMINEES LIMITED",
+        "role": "corporate-secretary",
+        "appointed_on": "2008-07-01",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "FISHER, Simon Peter",
+        "role": "director",
+        "appointed_on": "2021-04-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "FUJISAWA, Koichi",
+        "role": "director",
+        "appointed_on": "2024-03-01",
+        "country_of_residence": "France",
+        "nationality": "Japanese"
+      },
+      {
+        "name": "RUGGLES, Wayne",
+        "role": "director",
+        "appointed_on": "2025-04-10",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "THOMPSON, Nicholas",
+        "role": "director",
+        "appointed_on": "2021-04-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T13:24:45Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Kpp Group Holdings Co., Ltd.",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2024-09-17",
+        "identification": {
+          "legal_form": "Public Limited Company",
+          "legal_authority": "Japan",
+          "country_registered": "Japan",
+          "place_registered": "Tokyo Legal Affairs Bureau Registrar",
+          "registration_number": "0100-01-048806"
+        }
+      },
+      {
+        "name": "Antalis Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Limited Comapny",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House For England & Wales",
+          "registration_number": "307721"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MzYzOTc5NWFkaXF6a2N4",
+    "date": "2025-10-04",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/iCmQe-m08zYq8xg5t3bvPVOFRPXxjs2_rzcBCHRAO0E/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01088345/filing-history/MzQ4MzYzOTc5NWFkaXF6a2N4"
   }
 }

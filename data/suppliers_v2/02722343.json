@@ -68,10 +68,10 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "agency",
   "buyer_type_breakdown": {
@@ -79,5 +79,90 @@
     "nhs": 0.3058,
     "other": 0.1842,
     "education": 0.0093
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T02:06:29Z",
+    "company_name": "HOLOGIC LTD.",
+    "company_status": "active",
+    "date_of_creation": "1992-06-11",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-06-30",
+    "accounts_last_made_up": "2024-09-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-05-05"
+  },
+  "governance": {
+    "api_date": "2026-04-28T02:06:31Z",
+    "total_officers": 53,
+    "active_count": 4,
+    "resigned_count": 49,
+    "active_officers": [
+      {
+        "name": "KISBY, Joseph John",
+        "role": "secretary",
+        "appointed_on": "2022-03-11",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "KISBY, Joseph John",
+        "role": "director",
+        "appointed_on": "2022-03-11",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "O'SULLIVAN, James Joseph",
+        "role": "director",
+        "appointed_on": "2024-12-04",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "STEFANI, Michelangelo",
+        "role": "director",
+        "appointed_on": "2016-10-06",
+        "country_of_residence": "Switzerland",
+        "nationality": "Italian"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T02:06:33Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Hologic Inc",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Incorporated",
+          "legal_authority": "United States",
+          "country_registered": "Usa",
+          "place_registered": "United States",
+          "registration_number": "549300dyp6f5zjl0lb74"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5Mzk1OTAwMmFkaXF6a2N4",
+    "date": "2025-12-17",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/foCnLHg8zsDd4tsc_k9IlDRPuCk0Ejdovu3tUJYn3Ck/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02722343/filing-history/MzQ5Mzk1OTAwMmFkaXF6a2N4"
   }
 }

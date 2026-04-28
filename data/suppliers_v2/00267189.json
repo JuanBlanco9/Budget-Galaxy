@@ -64,15 +64,122 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 0.58,
     "other": 0.2378,
     "central_govt": 0.1822
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T13:24:26Z",
+    "company_name": "HAYMARKET MEDIA GROUP LTD.",
+    "company_status": "active",
+    "date_of_creation": "1932-07-22",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-03-31",
+    "accounts_last_made_up": "2025-06-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-24"
+  },
+  "governance": {
+    "api_date": "2026-04-28T13:24:27Z",
+    "total_officers": 43,
+    "active_count": 4,
+    "resigned_count": 39,
+    "active_officers": [
+      {
+        "name": "COSTELLO, Kevin Thomas Francis",
+        "role": "director",
+        "appointed_on": "2000-06-19",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "FREEMAN, Brian John",
+        "role": "director",
+        "appointed_on": "2000-06-09",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "HESELTINE, Michael Ray Dibdin, Lord",
+        "role": "director",
+        "appointed_on": "2004-01-28",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "HESELTINE, Rupert, Hon",
+        "role": "director",
+        "appointed_on": "2004-01-28",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T13:24:28Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Thenhurst Agricultural Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2022-09-13",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "England And Wales",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "01301566"
+        }
+      },
+      {
+        "name": "Haymarket Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Governing Law Of England And Wales",
+          "country_registered": "England And Wales",
+          "place_registered": "United Kingdom England And Wales Companies House",
+          "registration_number": "2809261"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwMjQ5NjU3NmFkaXF6a2N4",
+    "date": "2026-02-04",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/xJ96vlqTTakfQsYcDQKV06LQeIF_ZNFzO_X0NTGfRos/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/00267189/filing-history/MzUwMjQ5NjU3NmFkaXF6a2N4"
   }
 }

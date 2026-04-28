@@ -59,15 +59,107 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 0.5868,
     "other": 0.34,
     "agency": 0.0732
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T23:57:23Z",
+    "company_name": "BIP SOLUTIONS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1984-01-09",
+    "date_of_cessation": null,
+    "jurisdiction": "scotland",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-01-31",
+    "accounts_last_made_up": "2025-04-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-25"
+  },
+  "governance": {
+    "api_date": "2026-04-27T23:57:25Z",
+    "total_officers": 21,
+    "active_count": 5,
+    "resigned_count": 16,
+    "active_officers": [
+      {
+        "name": "MCDONALD, Lesley",
+        "role": "secretary",
+        "appointed_on": "2026-02-24",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BURGES, Ronald Llewellyn",
+        "role": "director",
+        "appointed_on": null,
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "BURGES, Simon",
+        "role": "director",
+        "appointed_on": "2006-10-01",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      },
+      {
+        "name": "MCPHILLIMY, James",
+        "role": "director",
+        "appointed_on": "2009-08-14",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "STEED, Grahame",
+        "role": "director",
+        "appointed_on": "2017-01-05",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T23:57:27Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Bip Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-09-25",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act",
+          "country_registered": "England",
+          "place_registered": "England",
+          "registration_number": "09687640"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5OTIzNjU5N2FkaXF6a2N4",
+    "date": "2026-01-14",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/fZ60Ca769eYes2z0LYMQU5j4nh2-AsyccP4jHIQt94c/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/SC086146/filing-history/MzQ5OTIzNjU5N2FkaXF6a2N4"
   }
 }

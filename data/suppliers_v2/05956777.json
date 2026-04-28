@@ -68,13 +68,100 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T20:57:35Z",
+    "company_name": "JUSTPARK PARKING LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2006-10-05",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-02"
+  },
+  "governance": {
+    "api_date": "2026-04-27T20:57:36Z",
+    "total_officers": 15,
+    "active_count": 4,
+    "resigned_count": 11,
+    "active_officers": [
+      {
+        "name": "BAKER, George",
+        "role": "director",
+        "appointed_on": "2024-04-10",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      },
+      {
+        "name": "DERMATAS, Nicholas",
+        "role": "director",
+        "appointed_on": "2024-04-10",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      },
+      {
+        "name": "ESKINAZI, Anthony Matthew",
+        "role": "director",
+        "appointed_on": "2006-10-12",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SHANAHAN, Jeffrey Matthew",
+        "role": "director",
+        "appointed_on": "2024-04-10",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T20:57:38Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Parkhub Uk Holdings Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2024-04-10",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "English Law",
+          "country_registered": "England",
+          "place_registered": "Registrar Of Companies For England And Wales",
+          "registration_number": "15574069"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MzY3MDM3NGFkaXF6a2N4",
+    "date": "2025-10-04",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/5YsJX1Abf6igBnC9c2V0uOmpZGqt0mSj7SRJz2Kr45o/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/05956777/filing-history/MzQ4MzY3MDM3NGFkaXF6a2N4"
   }
 }

@@ -64,13 +64,100 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
     "central_govt": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T07:44:22Z",
+    "company_name": "CIRCLES SOUTH EAST",
+    "company_status": "active",
+    "date_of_creation": "2008-01-31",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-01"
+  },
+  "governance": {
+    "api_date": "2026-04-28T07:44:23Z",
+    "total_officers": 25,
+    "active_count": 7,
+    "resigned_count": 18,
+    "active_officers": [
+      {
+        "name": "TRIMBLE, Timothy",
+        "role": "secretary",
+        "appointed_on": "2018-10-24",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "FRANSHAM, Lydia",
+        "role": "director",
+        "appointed_on": "2017-05-15",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GOLDUP, Richard Mark",
+        "role": "director",
+        "appointed_on": "2020-05-05",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HOLFORD, Nora",
+        "role": "director",
+        "appointed_on": "2017-05-15",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HUDSON, Kirsty",
+        "role": "director",
+        "appointed_on": "2025-07-14",
+        "country_of_residence": "Wales",
+        "nationality": "British"
+      },
+      {
+        "name": "JONES, Elizabeth",
+        "role": "director",
+        "appointed_on": "2011-03-15",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SEABORNE, Rebecca Naomi",
+        "role": "director",
+        "appointed_on": "2019-03-12",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T07:44:24Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5ODI2OTQ5OGFkaXF6a2N4",
+    "date": "2026-01-09",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/IqcB99-sII3XXMx8z5aRjX-o0cHhhmymdAlinzJ_tUw/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/06490001/filing-history/MzQ5ODI2OTQ5OGFkaXF6a2N4"
   }
 }

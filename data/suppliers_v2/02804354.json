@@ -65,15 +65,143 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.8374,
     "nhs": 0.1061,
     "council": 0.0564
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T22:36:05Z",
+    "company_name": "CHARTERHOUSE VOICE & DATA LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1993-03-29",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-04-12"
+  },
+  "governance": {
+    "api_date": "2026-04-27T22:36:07Z",
+    "total_officers": 27,
+    "active_count": 7,
+    "resigned_count": 20,
+    "active_officers": [
+      {
+        "name": "BANKS, James Clifford",
+        "role": "director",
+        "appointed_on": "2025-12-02",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "DERBYSHIRE, Alexander",
+        "role": "director",
+        "appointed_on": "2025-04-23",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MCGARRITY, Eoin Martin",
+        "role": "director",
+        "appointed_on": "2024-02-29",
+        "country_of_residence": "Northern Ireland",
+        "nationality": "Irish"
+      },
+      {
+        "name": "ROFFEY, Joseph Edward",
+        "role": "director",
+        "appointed_on": "2022-02-23",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SMITH, Leah",
+        "role": "director",
+        "appointed_on": "2024-02-29",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "STEVENSON, Kelly Louise",
+        "role": "director",
+        "appointed_on": "2025-04-23",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WARDELL, Michael David",
+        "role": "director",
+        "appointed_on": "2025-07-23",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T22:36:09Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Caretidy Two Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-11-30",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "United Kingdom",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "09113071"
+        }
+      },
+      {
+        "name": "Caretidy Two Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "United Kingdom (England And Wales)",
+          "country_registered": "Enfland And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "02715062"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxMzkwNDc5M2FkaXF6a2N4",
+    "date": "2026-04-11",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/S_QQg4KvgFd5wfmOG4naBlXjB3Cgvtk1oVgdMAy-GLo/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02804354/filing-history/MzUxMzkwNDc5M2FkaXF6a2N4"
   }
 }

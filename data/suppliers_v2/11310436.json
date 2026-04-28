@@ -59,10 +59,10 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
@@ -70,5 +70,138 @@
     "central_govt": 0.1974,
     "education": 0.0248,
     "other": 0.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T22:24:07Z",
+    "company_name": "PURCELL ARCHITECTURE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2018-04-16",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-01-31",
+    "accounts_last_made_up": "2025-04-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-04-19"
+  },
+  "governance": {
+    "api_date": "2026-04-27T22:24:09Z",
+    "total_officers": 11,
+    "active_count": 7,
+    "resigned_count": 4,
+    "active_officers": [
+      {
+        "name": "BUIST, Peter David Frederick",
+        "role": "director",
+        "appointed_on": "2021-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "DEEMING, Jonathan Alan",
+        "role": "director",
+        "appointed_on": "2022-07-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GOLDSPINK, Mark William",
+        "role": "director",
+        "appointed_on": "2018-04-16",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "HENSON, Richard Eric",
+        "role": "director",
+        "appointed_on": "2021-01-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "SKOVRONEK, Tracy Karen",
+        "role": "director",
+        "appointed_on": "2021-01-01",
+        "country_of_residence": "Australia",
+        "nationality": "British"
+      },
+      {
+        "name": "SMITH, Elizabeth Mary",
+        "role": "director",
+        "appointed_on": "2021-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "TRAVERS, Alasdair Charles Winbow",
+        "role": "director",
+        "appointed_on": "2021-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T22:24:11Z",
+    "total_results": 3,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Purcell Trustees Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent-as-trust",
+          "voting-rights-50-to-75-percent-as-trust",
+          "right-to-appoint-and-remove-directors-as-trust"
+        ],
+        "notified_on": "2021-04-30",
+        "identification": {
+          "legal_form": "Company Limited By Guarantee",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "England And Wales",
+          "registration_number": "11962655"
+        }
+      },
+      {
+        "name": "Mr Andrew Robert Clark",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2018-04-16",
+        "identification": null
+      },
+      {
+        "name": "Mr Mark William Goldspink",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2018-04-16",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwMTE1MTI3NmFkaXF6a2N4",
+    "date": "2026-01-28",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/md38zGSUQslcuOm7AsG0wIayqv0dBkgf0EZEXh-IpdM/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/11310436/filing-history/MzUwMTE1MTI3NmFkaXF6a2N4"
   }
 }

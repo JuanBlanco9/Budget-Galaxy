@@ -59,14 +59,93 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "education",
   "buyer_type_breakdown": {
     "education": 0.6265,
     "trust": 0.3735
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T16:47:54Z",
+    "company_name": "ALLIANCE IN PARTNERSHIP LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1998-06-05",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-05-31",
+    "accounts_last_made_up": "2024-08-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-19"
+  },
+  "governance": {
+    "api_date": "2026-04-27T16:47:56Z",
+    "total_officers": 30,
+    "active_count": 3,
+    "resigned_count": 27,
+    "active_officers": [
+      {
+        "name": "DHARIWAL, Amolak Singh",
+        "role": "director",
+        "appointed_on": "2025-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "RENTON, Jean Mary",
+        "role": "director",
+        "appointed_on": "2019-11-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SMITH, Tracey Elizabeth",
+        "role": "director",
+        "appointed_on": "2025-04-10",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T16:47:57Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Aip Catering Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "United Kingdom (England And Wales)",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "05236743"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3ODk0ODAwNWFkaXF6a2N4",
+    "date": "2025-08-28",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/JgcktP7ckVsbpVFgyS5h0x5Z_1xqZdJO0CFiFH41NRg/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03577003/filing-history/MzQ3ODk0ODAwNWFkaXF6a2N4"
   }
 }

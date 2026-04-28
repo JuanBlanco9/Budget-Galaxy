@@ -64,13 +64,110 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "nhs",
   "buyer_type_breakdown": {
     "nhs": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T03:20:33Z",
+    "company_name": "WOODWARD ASSOCIATES LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1996-12-20",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-16"
+  },
+  "governance": {
+    "api_date": "2026-04-28T03:20:34Z",
+    "total_officers": 5,
+    "active_count": 2,
+    "resigned_count": 3,
+    "active_officers": [
+      {
+        "name": "WOODWARD, Roger Hugh Everard",
+        "role": "secretary",
+        "appointed_on": "1996-12-20",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "WOODWARD, Roger Hugh Everard",
+        "role": "director",
+        "appointed_on": "1996-12-20",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T03:20:35Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Rockwood Holdings Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "voting-rights-75-to-100-percent-as-firm"
+        ],
+        "notified_on": "2022-12-30",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Company Act 2006",
+          "country_registered": "England",
+          "place_registered": "England And Wales",
+          "registration_number": "14429462"
+        }
+      },
+      {
+        "name": "Mrs Katherine Maria Woodward",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2018-12-28",
+        "identification": null
+      },
+      {
+        "name": "Mr Roger Hugh Everard Woodward",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent"
+        ],
+        "notified_on": "2016-12-20",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NDQ5NzgyN2FkaXF6a2N4",
+    "date": "2025-12-16",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/95_wdfauu5g1_uHjbyATpTNfJ_V7CM11J3GaAhRqr28/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03297090/filing-history/MzQ5NDQ5NzgyN2FkaXF6a2N4"
   }
 }

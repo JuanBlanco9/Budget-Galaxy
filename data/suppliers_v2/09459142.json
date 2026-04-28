@@ -59,13 +59,65 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T04:33:16Z",
+    "company_name": "PLURALSIGHT EUROPE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2015-02-26",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-26"
+  },
+  "governance": {
+    "api_date": "2026-04-28T04:33:17Z",
+    "total_officers": 9,
+    "active_count": 2,
+    "resigned_count": 7,
+    "active_officers": [
+      {
+        "name": "MURRAY, Stacy Anne",
+        "role": "director",
+        "appointed_on": "2025-11-28",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      },
+      {
+        "name": "SHARMA, Swati",
+        "role": "director",
+        "appointed_on": "2023-07-10",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T04:33:18Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MzczNDk2MGFkaXF6a2N4",
+    "date": "2025-10-07",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/M_xChW4qKcSfgOPiatdTq0WuD0jKVJJamAiqPq6L3tA/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/09459142/filing-history/MzQ4MzczNDk2MGFkaXF6a2N4"
   }
 }

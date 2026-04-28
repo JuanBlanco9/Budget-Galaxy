@@ -64,14 +64,138 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
     "central_govt": 0.9942,
     "agency": 0.0058
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T19:57:42Z",
+    "company_name": "THE ROYAL MINT LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2009-07-16",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-14"
+  },
+  "governance": {
+    "api_date": "2026-04-27T19:57:44Z",
+    "total_officers": 35,
+    "active_count": 10,
+    "resigned_count": 25,
+    "active_officers": [
+      {
+        "name": "INSON, Christopher",
+        "role": "secretary",
+        "appointed_on": "2017-12-15",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BALDOCK, Anne Elizabeth",
+        "role": "director",
+        "appointed_on": "2025-09-22",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BARNETT, Kate Toller",
+        "role": "director",
+        "appointed_on": "2022-02-28",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BUTTERWORTH, Andrew James",
+        "role": "director",
+        "appointed_on": "2021-07-26",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "DAVIES, Michael John",
+        "role": "director",
+        "appointed_on": "2024-10-28",
+        "country_of_residence": "Wales",
+        "nationality": "British"
+      },
+      {
+        "name": "JESSOPP, Anne Patricia",
+        "role": "director",
+        "appointed_on": "2016-04-01",
+        "country_of_residence": "Wales",
+        "nationality": "British"
+      },
+      {
+        "name": "MITCHELL, Nicola",
+        "role": "director",
+        "appointed_on": "2019-11-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "TENTORI, Mark Ian",
+        "role": "director",
+        "appointed_on": "2025-09-22",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "WALTON, Christopher John",
+        "role": "director",
+        "appointed_on": "2025-01-27",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WOOLSEY, Matthew Brenton",
+        "role": "director",
+        "appointed_on": "2022-09-26",
+        "country_of_residence": "United Kingdom",
+        "nationality": "American"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T19:57:45Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "The Solicitor For The Affairs Of His Majesty's Treasury As Nominee For The Chancellor Of The Exchequer In His Capacity As Master Of The Mint",
+        "kind": "legal-person-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Corporation Sole",
+          "legal_authority": "England And Wales"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NTM2ODgwOWFkaXF6a2N4",
+    "date": "2025-12-19",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/x_4bhNW7P6r2u7M2f8_kdhlTXBSg_2yL4YcPmNlT5UM/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/06964873/filing-history/MzQ5NTM2ODgwOWFkaXF6a2N4"
   }
 }

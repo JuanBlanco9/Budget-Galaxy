@@ -59,13 +59,135 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T11:32:35Z",
+    "company_name": "THE CENTRE FOR SUSTAINABLE HEALTHCARE LTD",
+    "company_status": "active",
+    "date_of_creation": "2010-11-24",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-08"
+  },
+  "governance": {
+    "api_date": "2026-04-28T11:32:36Z",
+    "total_officers": 28,
+    "active_count": 12,
+    "resigned_count": 16,
+    "active_officers": [
+      {
+        "name": "WALSH, Hazel",
+        "role": "secretary",
+        "appointed_on": "2024-12-17",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BLOM, Iris",
+        "role": "director",
+        "appointed_on": "2024-09-13",
+        "country_of_residence": "Netherlands",
+        "nationality": "Dutch"
+      },
+      {
+        "name": "HEWLETT, Denise, Professor",
+        "role": "director",
+        "appointed_on": "2026-03-02",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British,Irish"
+      },
+      {
+        "name": "MACKAY, Duncan",
+        "role": "director",
+        "appointed_on": "2020-01-06",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "MARTIN, Jennifer Shona, Dr",
+        "role": "director",
+        "appointed_on": "2025-12-10",
+        "country_of_residence": "United Kingdom",
+        "nationality": "Scottish"
+      },
+      {
+        "name": "MEAD, Elaine Claire Shelford",
+        "role": "director",
+        "appointed_on": "2025-12-10",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      },
+      {
+        "name": "POCHETTI, Stefano",
+        "role": "director",
+        "appointed_on": "2026-03-02",
+        "country_of_residence": "United Kingdom",
+        "nationality": "Italian"
+      },
+      {
+        "name": "ROMANOWICZ, Joanna",
+        "role": "director",
+        "appointed_on": "2024-09-13",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "SCOTT-SAWYER, Daphne",
+        "role": "director",
+        "appointed_on": "2026-03-02",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "SCULLY, Clare",
+        "role": "director",
+        "appointed_on": "2024-09-13",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "TOMSON, Michael John Francis",
+        "role": "director",
+        "appointed_on": "2022-06-14",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "VEAZEY-RAO, Rebecca Sarah",
+        "role": "director",
+        "appointed_on": "2025-12-10",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T11:32:37Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4Mjk1MDA2MWFkaXF6a2N4",
+    "date": "2025-10-02",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/Ov_RrB2duaHfVOmRl-JZp-GzGOxGtWufTYVl5nDZ3hk/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/07450026/filing-history/MzQ4Mjk1MDA2MWFkaXF6a2N4"
   }
 }

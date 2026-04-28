@@ -72,10 +72,10 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
@@ -83,5 +83,78 @@
     "central_govt": 0.2773,
     "agency": 0.0982,
     "police_fire": 0.0581
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T23:32:27Z",
+    "company_name": "BASWARE HOLDINGS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2006-03-07",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-21"
+  },
+  "governance": {
+    "api_date": "2026-04-27T23:32:29Z",
+    "total_officers": 24,
+    "active_count": 2,
+    "resigned_count": 22,
+    "active_officers": [
+      {
+        "name": "KURTZ, Jason Mark",
+        "role": "director",
+        "appointed_on": "2023-11-02",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      },
+      {
+        "name": "NURMINEN, Martti Tapani",
+        "role": "director",
+        "appointed_on": "2019-12-02",
+        "country_of_residence": "Finland",
+        "nationality": "Finnish"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T23:32:31Z",
+    "total_results": 1,
+    "active_count": 0,
+    "items": [
+      {
+        "name": "Basware Oy",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Corporate",
+          "legal_authority": "Finland",
+          "country_registered": "Finland",
+          "place_registered": "Finland",
+          "registration_number": "0592542-4"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MTQ2MjIxN2FkaXF6a2N4",
+    "date": "2025-12-02",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/sy3ugmv59_xQmg_yhIkbdoI1i0FHCzynGReFzrkb03U/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/05732676/filing-history/MzQ5MTQ2MjIxN2FkaXF6a2N4"
   }
 }

@@ -59,14 +59,167 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.9994,
     "council": 0.0006
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T03:19:03Z",
+    "company_name": "MICHAEL DYSON ASSOCIATES LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1994-03-02",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-04-30",
+    "accounts_last_made_up": "2024-04-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-16"
+  },
+  "governance": {
+    "api_date": "2026-04-28T03:19:04Z",
+    "total_officers": 22,
+    "active_count": 8,
+    "resigned_count": 14,
+    "active_officers": [
+      {
+        "name": "ALLDER, Simon Alan Michael",
+        "role": "secretary",
+        "appointed_on": "2024-08-01",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "ALLDER, Simon Alan Michael",
+        "role": "director",
+        "appointed_on": "2025-05-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BINNS, Dave",
+        "role": "director",
+        "appointed_on": "2025-05-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BROWN, Michael Thomas",
+        "role": "director",
+        "appointed_on": "2018-07-12",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "DYSON, Alistair Michael",
+        "role": "director",
+        "appointed_on": "1994-03-02",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "ROBINSON, Andrew James",
+        "role": "director",
+        "appointed_on": "2018-07-12",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "TAYLOR, Emma Louise",
+        "role": "director",
+        "appointed_on": "2023-05-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "TYRER, Paul Andrew",
+        "role": "director",
+        "appointed_on": "2018-07-12",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T03:19:05Z",
+    "total_results": 4,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "M Dyson Associates Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2024-10-08",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "England And Wales",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "15860397"
+        }
+      },
+      {
+        "name": "Mr Alistair Michael Dyson",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent",
+          "voting-rights-50-to-75-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mrs Bridget Caroline Jane Dyson",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Gary Daniel Jackson",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQzNDExMTQ2NWFkaXF6a2N4",
+    "date": "2024-09-03",
+    "type": "AAMD",
+    "description": "accounts-amended-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/HybDVkon2c6EZoFZnwVPrGgj8yl4rrrW-sjcSEDiNBI/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02903668/filing-history/MzQzNDExMTQ2NWFkaXF6a2N4"
   }
 }

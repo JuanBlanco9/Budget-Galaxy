@@ -66,10 +66,10 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
@@ -78,5 +78,80 @@
     "council": 0.0612,
     "nhs": 0.0569,
     "education": 0.0362
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T21:00:10Z",
+    "company_name": "OPTIMA HEALTH UK LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2013-05-24",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-11"
+  },
+  "governance": {
+    "api_date": "2026-04-27T21:00:12Z",
+    "total_officers": 17,
+    "active_count": 3,
+    "resigned_count": 14,
+    "active_officers": [
+      {
+        "name": "MABBOTT, Benjamin Albert",
+        "role": "secretary",
+        "appointed_on": "2025-10-28",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "GILES, Heidi Samsara",
+        "role": "director",
+        "appointed_on": "2024-09-26",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "THOMAS, Jonathan David",
+        "role": "director",
+        "appointed_on": "2016-12-21",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T21:00:13Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Oh Assist Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-12-22",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MTQ2MzE3NmFkaXF6a2N4",
+    "date": "2025-11-28",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-audit-exemption-subsiduary",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/i-ynTCcOwGjDlqoLDJpg_nFw0lRdVLjG48B6Sq7aFcM/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/08544676/filing-history/MzQ5MTQ2MzE3NmFkaXF6a2N4"
   }
 }

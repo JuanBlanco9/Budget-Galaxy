@@ -64,13 +64,124 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T05:36:23Z",
+    "company_name": "KALMAR LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2015-06-30",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-10"
+  },
+  "governance": {
+    "api_date": "2026-04-28T05:36:24Z",
+    "total_officers": 22,
+    "active_count": 5,
+    "resigned_count": 17,
+    "active_officers": [
+      {
+        "name": "VAN DER HOEVEN, Eric",
+        "role": "secretary",
+        "appointed_on": "2024-03-01",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "GARMORY, Joel Eric",
+        "role": "director",
+        "appointed_on": "2025-08-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GRAU, Martin Erik",
+        "role": "director",
+        "appointed_on": "2022-12-01",
+        "country_of_residence": "Austria",
+        "nationality": "German"
+      },
+      {
+        "name": "HIIDENNIEMI, Tero Matti Aleksi",
+        "role": "director",
+        "appointed_on": "2024-03-01",
+        "country_of_residence": "Finland",
+        "nationality": "Finnish"
+      },
+      {
+        "name": "KUMLIN, Annaleena",
+        "role": "director",
+        "appointed_on": "2024-03-01",
+        "country_of_residence": "Sweden",
+        "nationality": "Finnish"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T05:36:25Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Kalmar Oyj",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2024-08-28",
+        "identification": {
+          "legal_form": "Public Company Ltd By Shares",
+          "legal_authority": "Finnish Law",
+          "country_registered": "Finland",
+          "place_registered": "Finnish Patent & Registrations Office",
+          "registration_number": "3424222-7"
+        }
+      },
+      {
+        "name": "Cargotec Oyj",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Finnish Law"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MzY3MzE2M2FkaXF6a2N4",
+    "date": "2025-10-04",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/NGBiiwIjn_69y9IYiWdDN0q8PkIRJXYT0RyFSAzVffU/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/09664412/filing-history/MzQ4MzY3MzE2M2FkaXF6a2N4"
   }
 }

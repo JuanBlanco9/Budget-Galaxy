@@ -59,13 +59,92 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T09:06:11Z",
+    "company_name": "PEOPLE IN ACTION",
+    "company_status": "active",
+    "date_of_creation": "1990-03-29",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-04-14"
+  },
+  "governance": {
+    "api_date": "2026-04-28T09:06:12Z",
+    "total_officers": 24,
+    "active_count": 4,
+    "resigned_count": 20,
+    "active_officers": [
+      {
+        "name": "BONNAR, Lynnette Ann",
+        "role": "director",
+        "appointed_on": "2020-11-12",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "COX, Michael John Broad",
+        "role": "director",
+        "appointed_on": "2022-10-25",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HUNT, Jeffrey William",
+        "role": "director",
+        "appointed_on": null,
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "MORRIS, Susan Janet",
+        "role": "director",
+        "appointed_on": "2001-03-21",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T09:06:13Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Jeff Hunt",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control-as-trust"
+        ],
+        "notified_on": "2017-02-15",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NjUzODQ3MWFkaXF6a2N4",
+    "date": "2026-01-03",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/Yy91PbACczgQ1OVtfyLxXsT3uVr1be8D6_blxsWwOzc/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02486564/filing-history/MzQ5NjUzODQ3MWFkaXF6a2N4"
   }
 }

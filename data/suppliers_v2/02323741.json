@@ -59,10 +59,10 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
@@ -70,5 +70,98 @@
     "agency": 0.0834,
     "central_govt": 0.051,
     "education": 0.039
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T01:10:56Z",
+    "company_name": "BUREAU VAN DIJK ELECTRONIC PUBLISHING LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1988-12-01",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-14"
+  },
+  "governance": {
+    "api_date": "2026-04-28T01:10:58Z",
+    "total_officers": 17,
+    "active_count": 2,
+    "resigned_count": 15,
+    "active_officers": [
+      {
+        "name": "BROUGHTON SECRETARIES LIMITED",
+        "role": "corporate-secretary",
+        "appointed_on": "2019-10-03",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "O'BRIEN, Rebecca",
+        "role": "director",
+        "appointed_on": "2025-05-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T01:10:59Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Moody's Corporation",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2017-08-10",
+        "identification": {
+          "legal_form": "Corporation",
+          "legal_authority": "The Delaware General Corporation Law",
+          "country_registered": "Delaware",
+          "place_registered": "United States",
+          "registration_number": "2882059"
+        }
+      },
+      {
+        "name": "Bureau Van Dijk Electronic Publishing B.V.",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2017-05-16",
+        "identification": {
+          "legal_form": "Corporate",
+          "legal_authority": "Netherlands",
+          "country_registered": "Netherlands",
+          "place_registered": "Kamer Van Koophandel",
+          "registration_number": "33242490"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MzcxMDgwNWFkaXF6a2N4",
+    "date": "2025-10-06",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/ytgqRyWThj4U9RsbMvGawmdJw9peUQNjGWzlaQlSRtY/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02323741/filing-history/MzQ4MzcxMDgwNWFkaXF6a2N4"
   }
 }

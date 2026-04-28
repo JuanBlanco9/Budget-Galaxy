@@ -59,13 +59,120 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T12:49:57Z",
+    "company_name": "COMMUNITY CHILDCARE CENTRES",
+    "company_status": "active",
+    "date_of_creation": "2001-01-26",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": true,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-09"
+  },
+  "governance": {
+    "api_date": "2026-04-28T12:49:58Z",
+    "total_officers": 59,
+    "active_count": 8,
+    "resigned_count": 51,
+    "active_officers": [
+      {
+        "name": "ATTERTON-CAINE, Sara",
+        "role": "director",
+        "appointed_on": "2023-11-21",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CLEAVELEY, Susan Marie",
+        "role": "director",
+        "appointed_on": "2016-01-14",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CONROY, Paul Michael",
+        "role": "director",
+        "appointed_on": "2024-06-21",
+        "country_of_residence": "England",
+        "nationality": "Irish"
+      },
+      {
+        "name": "FOUNTAIN, Michael Brendan",
+        "role": "director",
+        "appointed_on": "2018-11-26",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "GOODWIN, Matthew Adam",
+        "role": "director",
+        "appointed_on": "2013-03-14",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "TANDY, Lynne",
+        "role": "director",
+        "appointed_on": "2023-05-29",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WALSH-GONZALEZ, Nadine",
+        "role": "director",
+        "appointed_on": "2024-02-05",
+        "country_of_residence": "England",
+        "nationality": "Spanish"
+      },
+      {
+        "name": "WARREN, Jacqueline Elizabeth",
+        "role": "director",
+        "appointed_on": "2013-04-29",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T12:49:59Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mrs Jacqueline Elizabeth Warren",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2018-01-30",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5Njg4NzE2NmFkaXF6a2N4",
+    "date": "2026-01-06",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/89sEzIK3R-spAekfJxNwjs_HsRCY-PFo5EBPVLYP-Yc/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04148695/filing-history/MzQ5Njg4NzE2NmFkaXF6a2N4"
   }
 }

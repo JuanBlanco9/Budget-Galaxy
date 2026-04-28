@@ -64,13 +64,142 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T19:23:26Z",
+    "company_name": "MIGRANT HELP",
+    "company_status": "active",
+    "date_of_creation": "2001-03-05",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-19"
+  },
+  "governance": {
+    "api_date": "2026-04-27T19:23:28Z",
+    "total_officers": 74,
+    "active_count": 13,
+    "resigned_count": 61,
+    "active_officers": [
+      {
+        "name": "AL ABDALLAH, Najwa",
+        "role": "director",
+        "appointed_on": "2025-07-03",
+        "country_of_residence": "England",
+        "nationality": "Lebanese,British"
+      },
+      {
+        "name": "ARIE, Katherine Kirk",
+        "role": "director",
+        "appointed_on": "2022-12-15",
+        "country_of_residence": "England",
+        "nationality": "American"
+      },
+      {
+        "name": "BAYLEY, Hugh Nigel Edward, Sir",
+        "role": "director",
+        "appointed_on": "2025-06-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "COOK, Daniel",
+        "role": "director",
+        "appointed_on": "2024-08-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GALLOW, Simon Charles",
+        "role": "director",
+        "appointed_on": "2022-12-15",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "KEMP, Carina Ann",
+        "role": "director",
+        "appointed_on": "2025-12-11",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "KNOTT, Amelia Mary",
+        "role": "director",
+        "appointed_on": "2020-03-11",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "KOLODNER, Eric Arthur",
+        "role": "director",
+        "appointed_on": "2025-01-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "PERLBERG, Brandon Michael",
+        "role": "director",
+        "appointed_on": "2023-09-20",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "QUEK, Victoria",
+        "role": "director",
+        "appointed_on": "2022-12-15",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SAYED, Boshra Idriss",
+        "role": "director",
+        "appointed_on": "2025-10-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SEAFORD, Jamie",
+        "role": "director",
+        "appointed_on": "2022-12-15",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SHAH, Mayan",
+        "role": "director",
+        "appointed_on": "2022-03-23",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T19:23:30Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4OTA3MzI0M2FkaXF6a2N4",
+    "date": "2025-11-17",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/M7Q6i-5kRj3ix8j4TRsvXcFKV4LeAuE21xa9bmtoG9s/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04172880/filing-history/MzQ4OTA3MzI0M2FkaXF6a2N4"
   }
 }

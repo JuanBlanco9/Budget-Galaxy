@@ -59,13 +59,93 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "education",
   "buyer_type_breakdown": {
     "education": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T03:07:42Z",
+    "company_name": "THE HOPE FOUNDATION LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1995-12-27",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-04-30",
+    "accounts_last_made_up": "2024-07-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-10"
+  },
+  "governance": {
+    "api_date": "2026-04-28T03:07:43Z",
+    "total_officers": 23,
+    "active_count": 6,
+    "resigned_count": 17,
+    "active_officers": [
+      {
+        "name": "KEARNEY, John",
+        "role": "secretary",
+        "appointed_on": "1999-01-07",
+        "country_of_residence": null,
+        "nationality": "English"
+      },
+      {
+        "name": "KEARNEY, John",
+        "role": "director",
+        "appointed_on": "1999-01-07",
+        "country_of_residence": "United Kingdom",
+        "nationality": "English"
+      },
+      {
+        "name": "KNIGHT, Angela, Doctor",
+        "role": "director",
+        "appointed_on": "2011-03-15",
+        "country_of_residence": "England",
+        "nationality": "English"
+      },
+      {
+        "name": "RODGERS, Gavin",
+        "role": "director",
+        "appointed_on": "2022-03-22",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SOWERBY, Lynnette Pallent",
+        "role": "director",
+        "appointed_on": "2014-06-16",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WINSTONE, Paul John",
+        "role": "director",
+        "appointed_on": "2011-03-15",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T03:07:44Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2NDU4ODQ1NmFkaXF6a2N4",
+    "date": "2025-04-30",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/RGSW3B3c-yywF_kpkHo-8ByyB6uH9EXlKxvpWbWa28U/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03141290/filing-history/MzQ2NDU4ODQ1NmFkaXF6a2N4"
   }
 }

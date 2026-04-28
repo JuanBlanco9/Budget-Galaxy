@@ -72,13 +72,84 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T05:43:04Z",
+    "company_name": "HANKINSON LIMITED",
+    "company_status": "liquidation",
+    "date_of_creation": "1998-01-20",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": true,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": true,
+    "accounts_next_due": "2022-12-30",
+    "accounts_last_made_up": "2021-03-30",
+    "confirmation_statement_overdue": true,
+    "confirmation_statement_next_due": "2022-09-30"
+  },
+  "governance": {
+    "api_date": "2026-04-28T05:43:05Z",
+    "total_officers": 20,
+    "active_count": 2,
+    "resigned_count": 18,
+    "active_officers": [
+      {
+        "name": "HAND, Neil William",
+        "role": "director",
+        "appointed_on": "2019-10-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HANKINSON, Stephen Roy",
+        "role": "director",
+        "appointed_on": "2011-02-15",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T05:43:06Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Roy Hankinson (Holdings) Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-09-15",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Uk Accounting Standards",
+          "country_registered": "England",
+          "place_registered": "England",
+          "registration_number": "1230965"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzMzNDg3NDg2MWFkaXF6a2N4",
+    "date": "2022-04-05",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/g1iRDV1xUtJ6HgQ0Tr6_O1Q8iKw01Xexbrxv5u7zR2Y/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03495743/filing-history/MzMzNDg3NDg2MWFkaXF6a2N4"
   }
 }

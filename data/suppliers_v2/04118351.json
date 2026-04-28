@@ -59,13 +59,120 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "police_fire",
   "buyer_type_breakdown": {
     "police_fire": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T03:53:31Z",
+    "company_name": "QRO SOLUTIONS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2000-12-01",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-09-30",
+    "accounts_last_made_up": "2025-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-09"
+  },
+  "governance": {
+    "api_date": "2026-04-28T03:53:32Z",
+    "total_officers": 15,
+    "active_count": 4,
+    "resigned_count": 11,
+    "active_officers": [
+      {
+        "name": "GILLAM, Benjamin Neville",
+        "role": "secretary",
+        "appointed_on": "2025-03-25",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "ABDULLAH, Osman",
+        "role": "director",
+        "appointed_on": "2016-04-13",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ABDULLAH, Raschid Michael",
+        "role": "director",
+        "appointed_on": "2016-04-13",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "AUSTIN, Gary Thomas",
+        "role": "director",
+        "appointed_on": "2000-12-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T03:53:33Z",
+    "total_results": 2,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Petards Group Plc",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-13",
+        "identification": {
+          "legal_form": "Plc",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England & Wales",
+          "place_registered": "Companies House",
+          "registration_number": "02990100"
+        }
+      },
+      {
+        "name": "Petards Group Plc",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Plc",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "England & Wales",
+          "registration_number": "02990100"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxNzY5NjIyOWFkaXF6a2N4",
+    "date": "2026-04-26",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/tKoFqE49-BXPo1YlDdiYtygCzoxBL84u3m30cHA0m9o/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04118351/filing-history/MzUxNzY5NjIyOWFkaXF6a2N4"
   }
 }

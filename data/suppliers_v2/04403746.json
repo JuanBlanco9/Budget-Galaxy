@@ -63,13 +63,100 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
     "central_govt": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T05:01:34Z",
+    "company_name": "STEATITE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2002-03-26",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-05-06"
+  },
+  "governance": {
+    "api_date": "2026-04-28T05:01:35Z",
+    "total_officers": 17,
+    "active_count": 4,
+    "resigned_count": 13,
+    "active_officers": [
+      {
+        "name": "DAVIDSON, Lyn Marion Bruce",
+        "role": "secretary",
+        "appointed_on": "2024-03-26",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "JACKSON, Jonathan David",
+        "role": "director",
+        "appointed_on": "2010-04-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "JAMES, Peter Owen",
+        "role": "director",
+        "appointed_on": "2017-02-20",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "RICHARDS, Matthew Thomas",
+        "role": "director",
+        "appointed_on": "2016-04-18",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T05:01:36Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Solid State Plc",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Public Limited Company",
+          "legal_authority": "England & Wales",
+          "country_registered": "England",
+          "place_registered": "England & Wales",
+          "registration_number": "771335"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5Njg0MDU1NGFkaXF6a2N4",
+    "date": "2025-12-30",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-audit-exemption-subsiduary",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/J0enxVjPgCewB6HBQ-0uMAlXFn9A50y8FyZa2rgqHvU/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04403746/filing-history/MzQ5Njg0MDU1NGFkaXF6a2N4"
   }
 }

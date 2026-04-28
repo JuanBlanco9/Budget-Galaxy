@@ -72,13 +72,107 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "nhs",
   "buyer_type_breakdown": {
     "nhs": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T09:04:30Z",
+    "company_name": "LUCY ELECTRIC UK LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1974-08-01",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-05-23"
+  },
+  "governance": {
+    "api_date": "2026-04-28T09:04:31Z",
+    "total_officers": 20,
+    "active_count": 5,
+    "resigned_count": 15,
+    "active_officers": [
+      {
+        "name": "LAXTON, Madeline",
+        "role": "secretary",
+        "appointed_on": "2006-01-01",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "ASHTON, Gary David",
+        "role": "director",
+        "appointed_on": "2007-11-30",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "DICK, Charles Richard",
+        "role": "director",
+        "appointed_on": "1996-02-29",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "FINCH-DICK, Jonathan Charles",
+        "role": "director",
+        "appointed_on": "2017-12-08",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "GRIFFITHS, John",
+        "role": "director",
+        "appointed_on": "2014-06-13",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T09:04:32Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Lucy Group Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "United Kingdom",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "00051908"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NjUwMzg1NGFkaXF6a2N4",
+    "date": "2025-08-08",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/xRvzHb14wiUhCxqHpkxJbFlJTiIgM5-1aJK_mbNS5ms/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01179461/filing-history/MzQ3NjUwMzg1NGFkaXF6a2N4"
   }
 }

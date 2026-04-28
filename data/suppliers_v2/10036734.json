@@ -59,13 +59,123 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T03:46:31Z",
+    "company_name": "T.E.E.P. (TRAINING EDUCATION AND EUROPEAN PROJECT) LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2016-03-02",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-22"
+  },
+  "governance": {
+    "api_date": "2026-04-28T03:46:33Z",
+    "total_officers": 5,
+    "active_count": 1,
+    "resigned_count": 4,
+    "active_officers": [
+      {
+        "name": "FUSARO, Ferdinando",
+        "role": "director",
+        "appointed_on": "2020-01-31",
+        "country_of_residence": "United Kingdom",
+        "nationality": "Italian"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T03:46:34Z",
+    "total_results": 4,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Formamentis S.R.L.",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2019-05-09",
+        "identification": {
+          "legal_form": "Societa' A Responsabilita' Limitata",
+          "legal_authority": "Italian Government Law",
+          "country_registered": "Italy",
+          "place_registered": "Camera Di Commercio Di Roma",
+          "registration_number": "Rea 1329553"
+        }
+      },
+      {
+        "name": "Mr Melara Giuseppe",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Italian",
+        "country_of_residence": "Italy",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent",
+          "voting-rights-50-to-75-percent"
+        ],
+        "notified_on": "2019-05-09",
+        "identification": null
+      },
+      {
+        "name": "Hqf S.R.L.",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2017-10-23",
+        "identification": {
+          "legal_form": "Societa Responsabilita Limitada",
+          "legal_authority": "The Main Rules Governing Trading Companies Derive From Statutory Law Codified In The Italian Civil And Commercial Codes",
+          "country_registered": "Italy",
+          "place_registered": "Camara Di Commercio",
+          "registration_number": "Sa- 438939"
+        }
+      },
+      {
+        "name": "Mr Vito Giuseppe Giacalone",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Italian",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MTYwMTcyNmFkaXF6a2N4",
+    "date": "2025-09-17",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/9fjiGAdad08UZBc3SJ1D9GVZG8-BA79OLKadENK0QpI/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/10036734/filing-history/MzQ4MTYwMTcyNmFkaXF6a2N4"
   }
 }

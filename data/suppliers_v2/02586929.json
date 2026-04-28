@@ -66,14 +66,108 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "police_fire",
   "buyer_type_breakdown": {
     "police_fire": 0.5025,
     "council": 0.4975
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T09:18:15Z",
+    "company_name": "BOC GASES LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1991-02-28",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-09"
+  },
+  "governance": {
+    "api_date": "2026-04-28T09:18:17Z",
+    "total_officers": 36,
+    "active_count": 5,
+    "resigned_count": 31,
+    "active_officers": [
+      {
+        "name": "KELLY, Susan Kathleen",
+        "role": "secretary",
+        "appointed_on": "2007-12-21",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "BLAND, Julian Michael",
+        "role": "director",
+        "appointed_on": "2018-07-18",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "COSSINS, Christopher James",
+        "role": "director",
+        "appointed_on": "2021-11-15",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "KELLY, Susan Kathleen",
+        "role": "director",
+        "appointed_on": "2024-11-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WILLIAMS, Sally Ann",
+        "role": "director",
+        "appointed_on": "2016-01-14",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T09:18:18Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "The Boc Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "The Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "00022096"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MjkwMDA2MmFkaXF6a2N4",
+    "date": "2025-09-30",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/xUAEhEXuVmsrKJI8yjvDWCQuL-XkgWKl22knwC5FaBc/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02586929/filing-history/MzQ4MjkwMDA2MmFkaXF6a2N4"
   }
 }

@@ -64,13 +64,117 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "council",
   "buyer_type_breakdown": {
     "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T07:39:18Z",
+    "company_name": "COMMIFY UK LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2001-05-15",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-17"
+  },
+  "governance": {
+    "api_date": "2026-04-28T07:39:19Z",
+    "total_officers": 25,
+    "active_count": 4,
+    "resigned_count": 21,
+    "active_officers": [
+      {
+        "name": "BURTON, Paul Eric Jonathon",
+        "role": "director",
+        "appointed_on": "2018-02-27",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GOODMAN, Leon Daniel",
+        "role": "director",
+        "appointed_on": "2024-10-31",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "HANSCOTT, Richard John",
+        "role": "director",
+        "appointed_on": "2020-01-13",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MALONE, David Sean",
+        "role": "director",
+        "appointed_on": "2020-04-01",
+        "country_of_residence": "Northern Ireland",
+        "nationality": "Irish"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T07:39:20Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Commify Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2019-04-01",
+        "identification": {
+          "legal_form": "Limited Liability Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Uk Companies Registry",
+          "registration_number": "10354796"
+        }
+      },
+      {
+        "name": "Esendex Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-07-01",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "United Kingdom Companies Registry",
+          "registration_number": "05456469"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MzczNzU0MWFkaXF6a2N4",
+    "date": "2025-10-06",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/LmIgr4fhH1iDnle7zSWw31mNxrbhzf41_xin2Q5_nqk/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04217280/filing-history/MzQ4MzczNzU0MWFkaXF6a2N4"
   }
 }

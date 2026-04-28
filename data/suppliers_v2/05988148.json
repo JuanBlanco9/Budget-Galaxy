@@ -72,13 +72,113 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T10:04:27Z",
+    "company_name": "BIZSPACE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2006-11-03",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-25"
+  },
+  "governance": {
+    "api_date": "2026-04-28T10:04:29Z",
+    "total_officers": 21,
+    "active_count": 6,
+    "resigned_count": 15,
+    "active_officers": [
+      {
+        "name": "GALLAGHER, Anthony James",
+        "role": "secretary",
+        "appointed_on": "2021-11-24",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "ABDUL KHADER, Tariq",
+        "role": "director",
+        "appointed_on": "2020-12-07",
+        "country_of_residence": "England",
+        "nationality": "New Zealander"
+      },
+      {
+        "name": "COOMBS, Andrew James",
+        "role": "director",
+        "appointed_on": "2021-11-24",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "FAFEMI, Olamide Sekinat",
+        "role": "director",
+        "appointed_on": "2026-04-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "JIWAJI, Mohamed Abdulkarim Mohamedali",
+        "role": "director",
+        "appointed_on": "2023-01-18",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SCAMMELL, Vincent Gordon",
+        "role": "director",
+        "appointed_on": "2023-01-18",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T10:04:30Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Bizspace Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Company Limited By Shares",
+          "legal_authority": "Uk",
+          "country_registered": "England",
+          "place_registered": "England And Wales",
+          "registration_number": "9633921"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwNDAyMzE1MmFkaXF6a2N4",
+    "date": "2026-02-10",
+    "type": "AAMD",
+    "description": "accounts-amended-with-accounts-type-audit-exemption-subsiduary",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/ELwbADZXdthVHmrlmS7JwRlcw_FiLCEwwwTgmfsRbJA/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/05988148/filing-history/MzUwNDAyMzE1MmFkaXF6a2N4"
   }
 }

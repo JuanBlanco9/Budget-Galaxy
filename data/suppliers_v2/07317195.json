@@ -80,14 +80,149 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "central_govt",
   "buyer_type_breakdown": {
     "central_govt": 0.6959,
     "other": 0.3041
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T19:07:06Z",
+    "company_name": "NORTHEASTERN UNIVERSITY - LONDON",
+    "company_status": "active",
+    "date_of_creation": "2010-07-16",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-03-31",
+    "accounts_last_made_up": "2025-06-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-19"
+  },
+  "governance": {
+    "api_date": "2026-04-27T19:07:08Z",
+    "total_officers": 33,
+    "active_count": 7,
+    "resigned_count": 26,
+    "active_officers": [
+      {
+        "name": "KLUTTZ-LEACH, Camille",
+        "role": "secretary",
+        "appointed_on": "2023-01-18",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "DEXTER, Julietta Elizabeth Tenant",
+        "role": "director",
+        "appointed_on": "2021-10-29",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "FARQUHARSON, Robert David",
+        "role": "director",
+        "appointed_on": "2021-04-09",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HENDERSON, Ken, Professor",
+        "role": "director",
+        "appointed_on": "2025-09-05",
+        "country_of_residence": "United States",
+        "nationality": "British,American"
+      },
+      {
+        "name": "KIM-WONG, Chong",
+        "role": "director",
+        "appointed_on": "2025-02-12",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      },
+      {
+        "name": "MACGILLIVRAY, Diane",
+        "role": "director",
+        "appointed_on": "2022-01-24",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      },
+      {
+        "name": "NEDELL, Thomas Edward",
+        "role": "director",
+        "appointed_on": "2019-02-19",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T19:07:09Z",
+    "total_results": 3,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Northeastern University",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2019-02-19",
+        "identification": {
+          "legal_form": "Charitable Corporation",
+          "legal_authority": "Massachusetts",
+          "country_registered": "Massachusetts",
+          "place_registered": "Massachusetts Corporations Division",
+          "registration_number": "041679980"
+        }
+      },
+      {
+        "name": "Northeastern University",
+        "kind": "legal-person-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2019-02-19",
+        "identification": {
+          "legal_form": "Non Stock, Non Profit Educational Charity",
+          "legal_authority": "Commonwealth Of Massachusetts, Usa"
+        }
+      },
+      {
+        "name": "Mrs Eva Ebstein",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "German",
+        "country_of_residence": "Switzerland",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent",
+          "voting-rights-50-to-75-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2017-01-12",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwNTE5MTMyMWFkaXF6a2N4",
+    "date": "2026-02-19",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/t99TDHAbMVby5uW_lrWTHbopmzusZO6h8sWk3JLLHsA/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/07317195/filing-history/MzUwNTE5MTMyMWFkaXF6a2N4"
   }
 }

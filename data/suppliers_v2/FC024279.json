@@ -55,13 +55,93 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T11:05:26Z",
+    "company_name": "DAXTEN LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2002-12-01",
+    "date_of_cessation": null,
+    "jurisdiction": "united-kingdom",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": null,
+    "accounts_next_due": null,
+    "accounts_last_made_up": "2023-12-31",
+    "confirmation_statement_overdue": null,
+    "confirmation_statement_next_due": null
+  },
+  "governance": {
+    "api_date": "2026-04-28T11:05:27Z",
+    "total_officers": 6,
+    "active_count": 6,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "AMIN, Bhavik",
+        "role": "secretary",
+        "appointed_on": "2002-12-13",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "AMIN, Bhavik, Mr.",
+        "role": "director",
+        "appointed_on": "2002-12-13",
+        "country_of_residence": "Ireland",
+        "nationality": "British"
+      },
+      {
+        "name": "DONALD, John Gerald",
+        "role": "director",
+        "appointed_on": "2024-04-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "MCGUINNESS, Philip Edward",
+        "role": "director",
+        "appointed_on": "2024-04-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "RISLOV, Chadwick Lee",
+        "role": "director",
+        "appointed_on": "2002-12-13",
+        "country_of_residence": "Germany",
+        "nationality": "German"
+      },
+      {
+        "name": "VARSANI, Hitesh",
+        "role": "director",
+        "appointed_on": "2024-07-01",
+        "country_of_residence": "Ireland",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T11:05:28Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQzODkxOTA0OWFkaXF6a2N4",
+    "date": "2024-10-09",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/DXMYoIrghmoCdHe4hSOUkOtRQyhdQv5eyBxvBm_1Iss/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/FC024279/filing-history/MzQzODkxOTA0OWFkaXF6a2N4"
   }
 }

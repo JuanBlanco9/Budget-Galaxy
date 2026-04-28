@@ -60,14 +60,212 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.7368,
     "council": 0.2632
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T05:41:40Z",
+    "company_name": "RSM UK AUDIT LLP",
+    "company_status": "active",
+    "date_of_creation": "2007-01-15",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-29"
+  },
+  "governance": {
+    "api_date": "2026-04-28T05:41:41Z",
+    "total_officers": 282,
+    "active_count": 92,
+    "resigned_count": 190,
+    "active_officers": [
+      {
+        "name": "ERICSON, Jonathan Mark",
+        "role": "llp-designated-member",
+        "appointed_on": "2007-04-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "HACKNEY, Catherine Jane",
+        "role": "llp-designated-member",
+        "appointed_on": "2021-01-04",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "LAWRANCE, Benjamin George",
+        "role": "llp-designated-member",
+        "appointed_on": "2009-04-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "LEECE, Claire",
+        "role": "llp-designated-member",
+        "appointed_on": "2008-04-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "LOWE, Jonathan William Comrie",
+        "role": "llp-designated-member",
+        "appointed_on": "2013-04-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "ROBERTS, Colin David",
+        "role": "llp-designated-member",
+        "appointed_on": "2007-07-31",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "SALIM, Sana Subzwari",
+        "role": "llp-designated-member",
+        "appointed_on": "2020-09-07",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "WARBURTON, Nicola",
+        "role": "llp-designated-member",
+        "appointed_on": "2018-04-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "WESTBROOK, Andrew John",
+        "role": "llp-designated-member",
+        "appointed_on": "2014-10-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "ABLITT, Claire",
+        "role": "llp-member",
+        "appointed_on": "2008-04-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "ADAMS, Kelly",
+        "role": "llp-member",
+        "appointed_on": "2017-04-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "ADAMS, Peter David",
+        "role": "llp-member",
+        "appointed_on": "2019-06-24",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "AITCHISON, Alan John",
+        "role": "llp-member",
+        "appointed_on": "2009-11-02",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "ALLCHIN, Andrew Philip",
+        "role": "llp-member",
+        "appointed_on": "2007-04-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "ANTHONY, Paul Neville",
+        "role": "llp-member",
+        "appointed_on": "2015-10-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "ASHLEY, Alison",
+        "role": "llp-member",
+        "appointed_on": "2016-04-18",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "BAKER, Andrew Howard",
+        "role": "llp-member",
+        "appointed_on": "2007-04-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "BAKER, Jacqui",
+        "role": "llp-member",
+        "appointed_on": "2021-04-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "BANKS, Euan Charles",
+        "role": "llp-member",
+        "appointed_on": "2007-04-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "BELL, Ian Alexander",
+        "role": "llp-member",
+        "appointed_on": "2007-04-01",
+        "country_of_residence": "England",
+        "nationality": null
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T05:41:42Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Rsm Uk Group Llp",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "right-to-share-surplus-assets-75-to-100-percent-limited-liability-partnership",
+          "right-to-appoint-and-remove-members-limited-liability-partnership"
+        ],
+        "notified_on": "2017-04-20",
+        "identification": {
+          "legal_form": "Limited Liability Partnership",
+          "legal_authority": "Companies Act 2006 & Llp Act 2000",
+          "country_registered": "England & Wales",
+          "place_registered": "Companies House",
+          "registration_number": "Oc325346"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MjE1ODE3MGFkaXF6a2N4",
+    "date": "2025-12-04",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/l8CnHOnm6zzx9D3KMXSM2T7sRZHBEjvoRwvnWdlCVTI/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/OC325350/filing-history/MzQ5MjE1ODE3MGFkaXF6a2N4"
   }
 }

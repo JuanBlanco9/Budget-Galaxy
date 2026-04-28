@@ -59,13 +59,113 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "nhs",
   "buyer_type_breakdown": {
     "nhs": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T02:47:27Z",
+    "company_name": "STUDIO FOUR ARCHITECTS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1992-03-17",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-05-31",
+    "accounts_last_made_up": "2025-08-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-29"
+  },
+  "governance": {
+    "api_date": "2026-04-28T02:47:28Z",
+    "total_officers": 16,
+    "active_count": 7,
+    "resigned_count": 9,
+    "active_officers": [
+      {
+        "name": "CUMBERLAND, Thelma",
+        "role": "secretary",
+        "appointed_on": "2025-08-19",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "AMEY, Philip George",
+        "role": "director",
+        "appointed_on": "2011-07-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "BARNETT, Peter Ashley",
+        "role": "director",
+        "appointed_on": "2008-12-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "BROWNLOW, Michael John",
+        "role": "director",
+        "appointed_on": "1993-04-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "CUMBERLAND, Thelma",
+        "role": "director",
+        "appointed_on": "2025-11-17",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "JENKINS, Gareth Iain",
+        "role": "director",
+        "appointed_on": "2008-12-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "TURNBULL, Stuart",
+        "role": "director",
+        "appointed_on": "2025-11-17",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T02:47:29Z",
+    "total_results": 1,
+    "active_count": 0,
+    "items": [
+      {
+        "name": "Mr Michael John Brownlow",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2017-03-14",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxMDIxNzcyNGFkaXF6a2N4",
+    "date": "2026-03-13",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/6GJezGBXdn05FkyB2VDbCrDEQzQCJpdTEQ6tTqFM2GI/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02697885/filing-history/MzUxMDIxNzcyNGFkaXF6a2N4"
   }
 }

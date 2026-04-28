@@ -59,14 +59,129 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 0.9942,
     "council": 0.0058
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T15:12:04Z",
+    "company_name": "ERIC WRIGHT CONSTRUCTION LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1923-05-25",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-12"
+  },
+  "governance": {
+    "api_date": "2026-04-27T15:12:06Z",
+    "total_officers": 23,
+    "active_count": 8,
+    "resigned_count": 15,
+    "active_officers": [
+      {
+        "name": "KUMAR, Manisha",
+        "role": "secretary",
+        "appointed_on": "2010-01-08",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BROWN, Philip Anthony",
+        "role": "director",
+        "appointed_on": "2021-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "DELANEY, Scott John",
+        "role": "director",
+        "appointed_on": "2023-01-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "EAGER, James",
+        "role": "director",
+        "appointed_on": "2018-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HARTLEY, Jeremy Peter",
+        "role": "director",
+        "appointed_on": "2011-05-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HARTNETT, John Richard",
+        "role": "director",
+        "appointed_on": "2018-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "REID, Steven John",
+        "role": "director",
+        "appointed_on": "2018-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WRIGHT, Richard Eric",
+        "role": "director",
+        "appointed_on": null,
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T15:12:08Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Eric Wright Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Uk Law",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "02841234"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MDI1NzY3OGFkaXF6a2N4",
+    "date": "2025-09-10",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/zsMDiOsVUC4sdcLuevqXbGZCSXAshlfNpHpwck8a-kY/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/00190204/filing-history/MzQ4MDI1NzY3OGFkaXF6a2N4"
   }
 }

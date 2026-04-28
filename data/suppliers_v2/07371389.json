@@ -70,13 +70,116 @@
   ],
   "enrichment_stages": {
     "bcd_skeleton": true,
-    "ch_api_profile": false,
-    "ch_api_officers": false,
-    "ch_api_pscs": false,
-    "ch_api_accounts_pdf": false
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
   },
   "top_buyer_type": "other",
   "buyer_type_breakdown": {
     "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T09:11:02Z",
+    "company_name": "INPROVA LTD",
+    "company_status": "active",
+    "date_of_creation": "2010-09-09",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-05-16"
+  },
+  "governance": {
+    "api_date": "2026-04-28T09:11:03Z",
+    "total_officers": 11,
+    "active_count": 3,
+    "resigned_count": 8,
+    "active_officers": [
+      {
+        "name": "GODSLAND, Richard James",
+        "role": "director",
+        "appointed_on": "2021-10-04",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LYNCH, Lisa Marie",
+        "role": "director",
+        "appointed_on": "2019-03-15",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MALONE, Steven David",
+        "role": "director",
+        "appointed_on": "2020-07-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T09:11:04Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Inprova Group Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2018-12-06",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "08896825"
+        }
+      },
+      {
+        "name": "Mr Mohammed Ramzan",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-09-09",
+        "identification": null
+      },
+      {
+        "name": "Mr Paul Alan Kennedy",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control-as-firm"
+        ],
+        "notified_on": "2016-09-09",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MjU2MDA4OWFkaXF6a2N4",
+    "date": "2025-09-24",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/e7rCEL20I0vCBJUzuZeTPNzSXd5zoIVXG54opACputU/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/07371389/filing-history/MzQ4MjU2MDA4OWFkaXF6a2N4"
   }
 }
