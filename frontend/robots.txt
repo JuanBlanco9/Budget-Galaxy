@@ -1,0 +1,15 @@
+# Budget Galaxy — UK public spending, sourced and audited
+# https://budgetgalaxy.com/
+
+User-agent: *
+Allow: /
+
+# Heavy data files — crawlers can index but humans usually open via the app
+# (no Disallow needed; just informational in case crawlers want to throttle)
+
+# Wayback Machine archiving — friendly to civic preservation
+User-agent: ia_archiver
+Allow: /
+
+# Sitemap
+Sitemap: https://budgetgalaxy.com/sitemap.xml

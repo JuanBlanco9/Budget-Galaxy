@@ -3,25 +3,36 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Budget Galaxy — Where every £ of UK public money goes</title>
-<meta name="description" content="Interactive visualization of UK government spending. From HMRC receipts to your council's bin collection — see where every pound of your tax ends up, with full audit trail.">
-<meta name="keywords" content="UK government budget, UK public spending, HMRC, council tax, budget visualization, fiscal transparency, where does my money go">
+<title id="page-title">Budget Galaxy — UK public spending, sourced and audited</title>
+<meta id="page-description" name="description" content="Trace every £ of UK public money: salary → HMRC tax → 4,872 hand-curated programmes → 19,225 enriched suppliers → ultimate beneficial owner. Every claim cited, every source archived in the Wayback Machine.">
+<meta name="keywords" content="UK government budget, UK public spending, HMRC tax breakdown, council tax explained, where does my tax money go, public procurement UK, NHS spending, DWP welfare, supplier transparency, UBO, ultimate beneficial owner, Companies House, FOI, civic tech UK">
 <meta name="author" content="Juan Blanco">
-<link rel="canonical" href="https://budgetgalaxy.com/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#0a0e1a">
+<link rel="canonical" id="page-canonical" href="https://budgetgalaxy.com/">
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
-<meta property="og:title" content="Budget Galaxy — Where every £ of UK public money goes">
-<meta property="og:description" content="Interactive visualization of UK government spending. From HMRC receipts to your council's bin collection — see where every pound of your tax ends up, with full audit trail.">
+<meta property="og:title" id="og-title" content="Budget Galaxy — UK public spending, sourced and audited">
+<meta property="og:description" id="og-description" content="Trace every £ of UK public money: salary → tax → 4,872 hand-curated programmes → 19,225 suppliers → UBO. Every claim cited, every source archived.">
 <meta property="og:image" content="https://budgetgalaxy.com/og_preview.jpg">
-<meta property="og:url" content="https://budgetgalaxy.com/">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Budget Galaxy — UK public spending visualization">
+<meta property="og:url" id="og-url" content="https://budgetgalaxy.com/">
 <meta property="og:site_name" content="Budget Galaxy">
+<meta property="og:locale" content="en_GB">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Budget Galaxy — Where every £ of UK public money goes">
-<meta name="twitter:description" content="Interactive visualization of UK government spending. From HMRC receipts to your council's bin collection — see where every pound of your tax ends up.">
+<meta name="twitter:title" id="twitter-title" content="Budget Galaxy — UK public spending, sourced and audited">
+<meta name="twitter:description" id="twitter-description" content="Trace every £ of UK public money — salary → tax → 4,872 programmes → 19,225 suppliers → UBO. Every claim cited.">
 <meta name="twitter:image" content="https://budgetgalaxy.com/og_preview.jpg">
+<meta name="twitter:image:alt" content="Budget Galaxy — UK public spending visualization">
+<meta name="twitter:creator" content="@JuanCBlanco91">
+
+<!-- Sitemap reference for crawlers -->
+<link rel="sitemap" type="application/xml" href="/sitemap.xml">
 
 <!-- JSON-LD Structured Data -->
 <script type="application/ld+json">
@@ -5126,6 +5137,9 @@ function showTab(name,el){
   }
   // Save current tab state before switching
   saveCurrentTabState();
+
+  // Update SEO meta (title, description, og:url, canonical) per tab
+  if (typeof _seoUpdateForTab === 'function') _seoUpdateForTab(name);
 
   // Track tab usage (Plausible, fail-open)
   try { if (window.bgTrackTab) window.bgTrackTab(name); } catch(_){}
@@ -18479,6 +18493,48 @@ function _crossProgrammeForBuyerId(buyerId){
     }
   }
   return null;
+}
+
+// ─────────────────────────────────────────────────────────────────────
+// SEO meta — dynamic title + description + canonical per tab
+// ─────────────────────────────────────────────────────────────────────
+const _SEO_TABS = {
+  insights:   { title: 'Insights · Budget Galaxy',                     desc: 'Editorial findings on UK public spending: council tax distribution, NHS workforce, welfare caseload, procurement concentration. 39 curated reads, all sourced.' },
+  taxpayer:   { title: 'Your Taxes · Budget Galaxy',                   desc: 'Type your salary, see exactly what you pay HMRC + NI + VAT + council tax — and where each £ goes in UK gov spending. Exact 2024-25 bands per HMRC.' },
+  galaxy:     { title: 'Budget Galaxy · UK public spending',           desc: '£1.4 trillion of UK government spending visualized. 60+ departments down to the line item, drillable and citable.' },
+  comparelist:{ title: 'Programmes · Budget Galaxy',                   desc: '4,872 hand-curated UK programme entries from DWP pensions to NHS Acute trusts, each with 8-12 stats, 4-6 sources, Wayback-archived.' },
+  explore:    { title: 'Programmes · Budget Galaxy',                   desc: '4,872 hand-curated UK programme entries from DWP pensions to NHS Acute trusts, each with 8-12 stats, 4-6 sources, Wayback-archived.' },
+  suppliers:  { title: 'Recipients · Budget Galaxy',                   desc: '19,225 UK suppliers paid in FY 2024 — full Companies House ficha, officers, PSCs, accounts, geo. Filter by buyer type, see ownership chains.' },
+  about:      { title: 'About · Budget Galaxy',                        desc: 'Methodology, data sources, audit trail layers, quality tiers, and known limitations. Civic-tech transparency at the structural level.' },
+  multiverse: { title: 'Multiverse · Budget Galaxy',                   desc: 'Cross-country government spending comparison.' },
+  map:        { title: 'Map · Budget Galaxy',                          desc: 'Geographic procurement view — UK public buyers + suppliers on the map. 4,130 buyers · ~80% of £ geocoded.' },
+  ranking:    { title: 'Supplier Ranking · Budget Galaxy',             desc: 'Top UK suppliers by FY 2024 government spend, sortable by £ + contracts + buyers + UBO.' },
+};
+
+function _seoUpdateForTab(tabName){
+  const meta = _SEO_TABS[tabName] || _SEO_TABS.galaxy;
+  const url = 'https://budgetgalaxy.com/' + (tabName ? '#' + tabName : '');
+  // Page title
+  const t = document.getElementById('page-title');
+  if (t) t.textContent = meta.title;
+  document.title = meta.title;
+  // Meta description
+  const d = document.getElementById('page-description');
+  if (d) d.setAttribute('content', meta.desc);
+  // Canonical
+  const c = document.getElementById('page-canonical');
+  if (c) c.setAttribute('href', url);
+  // OG + Twitter title/desc/url
+  const ogt = document.getElementById('og-title');
+  const ogd = document.getElementById('og-description');
+  const ogu = document.getElementById('og-url');
+  if (ogt) ogt.setAttribute('content', meta.title);
+  if (ogd) ogd.setAttribute('content', meta.desc);
+  if (ogu) ogu.setAttribute('content', url);
+  const tt = document.getElementById('twitter-title');
+  const td = document.getElementById('twitter-description');
+  if (tt) tt.setAttribute('content', meta.title);
+  if (td) td.setAttribute('content', meta.desc);
 }
 
 // ─────────────────────────────────────────────────────────────────────
