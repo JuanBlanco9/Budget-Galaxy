@@ -1,0 +1,179 @@
+{
+  "schema_version": "v2",
+  "company_number": "01955756",
+  "display_name": "Cadcorp Limited",
+  "official_name": "CADCORP LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "07/11/1985",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "58290",
+    "62020",
+    "62090"
+  ],
+  "sic_labels": [
+    "Other software publishing",
+    "Information technology consultancy activities",
+    "Other information technology service activities"
+  ],
+  "previous_names": [
+    {
+      "name": "COMPUTER AIDED DEVELOPMENT CORPORATION LIMITED",
+      "condate": "05/05/2023"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "C/O NEC SOFTWARE SOLUTIONS SUITE 101, IMEX CENTRE",
+    "address_line_2": "575-599 MAXTED ROAD",
+    "post_town": "HEMEL HEMPSTEAD",
+    "county": "HERTFORDSHIRE",
+    "country": "UNITED KINGDOM",
+    "postal_code": "HP2 7DX"
+  },
+  "accounts": {
+    "category": "SMALL",
+    "last_made_up": "30/06/2025",
+    "next_due": "31/12/2026",
+    "ref_day": "31",
+    "ref_month": "3"
+  },
+  "mortgages": {
+    "num_charges": 6,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 6
+  },
+  "spend_profile": {
+    "total_gbp_2024": 48000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.76687,
+    "lng": -0.435196,
+    "lad24_cd": "E07000096",
+    "lad24_nm": "Dacorum",
+    "region": "East of England"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/01955756"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "police_fire",
+  "buyer_type_breakdown": {
+    "police_fire": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T09:39:48Z",
+    "company_name": "CADCORP LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1985-11-07",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-06-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-19"
+  },
+  "governance": {
+    "api_date": "2026-04-28T09:39:49Z",
+    "total_officers": 16,
+    "active_count": 2,
+    "resigned_count": 14,
+    "active_officers": [
+      {
+        "name": "MAYNARD, Stefan John",
+        "role": "director",
+        "appointed_on": "2025-08-12",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WHITLEY, Tina Jane",
+        "role": "director",
+        "appointed_on": "2025-08-12",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T09:39:50Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Nec Software Solutions Uk Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2025-08-12",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "England And Wales",
+          "registration_number": "00968498"
+        }
+      },
+      {
+        "name": "Martin Peter Daly",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2023-01-01",
+        "identification": null
+      },
+      {
+        "name": "Mr Trevor George Armstrong",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2023-01-01",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MzYwOTI1NGFkaXF6a2N4",
+    "date": "2025-12-11",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/YLNyj3sr1T9KgtV7LRPWq26Xymhtg1fEvlFO1Vh92pU/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01955756/filing-history/MzQ5MzYwOTI1NGFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

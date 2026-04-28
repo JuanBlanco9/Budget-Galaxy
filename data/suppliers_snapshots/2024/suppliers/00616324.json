@@ -1,0 +1,274 @@
+{
+  "schema_version": "v2",
+  "company_number": "00616324",
+  "display_name": "Johnsons Nurseries Limited",
+  "official_name": "JOHNSONS NURSERIES LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "08/12/1958",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "01300"
+  ],
+  "sic_labels": [
+    "Plant propagation"
+  ],
+  "previous_names": [
+    {
+      "name": "JOHNSONS OF WHIXLEY LIMITED",
+      "condate": "07/11/2023"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "HEAD OFFICE GILSTHWAITE LANE",
+    "address_line_2": "KIRK HAMMERTON",
+    "post_town": "YORK",
+    "county": "NORTH YORKSHIRE",
+    "country": "UNITED KINGDOM",
+    "postal_code": "YO26 8AQ"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "30/09/2024",
+    "next_due": "30/06/2026",
+    "ref_day": "30",
+    "ref_month": "9"
+  },
+  "mortgages": {
+    "num_charges": 16,
+    "num_outstanding": 1,
+    "num_part_satisfied": 0,
+    "num_satisfied": 15
+  },
+  "spend_profile": {
+    "total_gbp_2024": 1035689.57,
+    "n_contracts": 2,
+    "n_buyers": 2
+  },
+  "geo": {
+    "lat": 54.013331,
+    "lng": -1.317994,
+    "lad24_cd": "E06000065",
+    "lad24_nm": "North Yorkshire",
+    "region": "Yorkshire and The Humber"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/00616324"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T21:33:26Z",
+    "company_name": "JOHNSONS NURSERIES LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1958-12-08",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-06-30",
+    "accounts_last_made_up": "2025-09-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-17"
+  },
+  "governance": {
+    "api_date": "2026-04-27T21:33:27Z",
+    "total_officers": 14,
+    "active_count": 7,
+    "resigned_count": 7,
+    "active_officers": [
+      {
+        "name": "RICHARDSON, Graham David",
+        "role": "secretary",
+        "appointed_on": "1995-09-25",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "RICHARDSON, Graham David",
+        "role": "director",
+        "appointed_on": "1992-07-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "RICHARDSON, Iain Peter",
+        "role": "director",
+        "appointed_on": "1998-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "RICHARDSON, John Michael",
+        "role": "director",
+        "appointed_on": null,
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "RICHARDSON, Luke John",
+        "role": "director",
+        "appointed_on": "2022-10-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "RICHARDSON, Robert David",
+        "role": "director",
+        "appointed_on": "2022-10-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "THOMPSON, David",
+        "role": "director",
+        "appointed_on": "2000-07-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T21:33:29Z",
+    "total_results": 8,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Johnsons Nurseries (Holdings) Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2018-10-01",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "11465427"
+        }
+      },
+      {
+        "name": "Mr Iain Peter Richardson",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control",
+          "significant-influence-or-control-as-trust"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr John Michael Richardson",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control",
+          "significant-influence-or-control-as-trust"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Andrew John Richardson",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control",
+          "significant-influence-or-control-as-trust"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mrs Joyce Richardson",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control-as-trust"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr David Thompson",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control",
+          "significant-influence-or-control-as-trust"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Graham David Richardson",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control",
+          "significant-influence-or-control-as-trust"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr George Robert Richardson",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control-as-trust"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxNjYyNzIzMmFkaXF6a2N4",
+    "date": "2026-04-16",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/MIRqWlXZesp2dHyg8lbHzBVpqCkJNW67CSQm8huQ7Qo/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/00616324/filing-history/MzUxNjYyNzIzMmFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

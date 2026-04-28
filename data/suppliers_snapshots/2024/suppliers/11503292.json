@@ -1,0 +1,140 @@
+{
+  "schema_version": "v2",
+  "company_number": "11503292",
+  "display_name": "Jules And Field Limited",
+  "official_name": "JULES AND FIELD LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "07/08/2018",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "70229"
+  ],
+  "sic_labels": [
+    "Management consultancy activities other than financial management"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "30 BANKSIDE COURT STATIONFIELDS",
+    "address_line_2": "KIDLINGTON",
+    "post_town": "OXFORD",
+    "county": "",
+    "country": "UNITED KINGDOM",
+    "postal_code": "OX5 1JE"
+  },
+  "accounts": {
+    "category": "DORMANT",
+    "last_made_up": "31/08/2024",
+    "next_due": "31/05/2026",
+    "ref_day": "31",
+    "ref_month": "8"
+  },
+  "mortgages": {
+    "num_charges": 0,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 42000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.83,
+    "lng": -1.301624,
+    "lad24_cd": "E07000177",
+    "lad24_nm": "Cherwell",
+    "region": "South East"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/11503292"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "other",
+  "buyer_type_breakdown": {
+    "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T10:11:41Z",
+    "company_name": "JULES AND FIELD LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2018-08-07",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-05-31",
+    "accounts_last_made_up": "2024-08-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-08-20"
+  },
+  "governance": {
+    "api_date": "2026-04-28T10:11:42Z",
+    "total_officers": 2,
+    "active_count": 2,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "CRM COMPANY SERVICES LIMITED",
+        "role": "corporate-secretary",
+        "appointed_on": "2018-08-07",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "TRANTER, Julian Ashley",
+        "role": "director",
+        "appointed_on": "2018-08-07",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T10:11:43Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Julian Ashley Tranter",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2018-08-07",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ0MzY4MDY0NWFkaXF6a2N4",
+    "date": "2024-11-18",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-dormant",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/D8Yuv7wFhwx8n8GNdvietZOT1V8OBXHF08k4vf9xxMQ/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/11503292/filing-history/MzQ0MzY4MDY0NWFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

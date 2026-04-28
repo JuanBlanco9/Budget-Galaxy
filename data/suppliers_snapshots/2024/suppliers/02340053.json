@@ -1,0 +1,176 @@
+{
+  "schema_version": "v2",
+  "company_number": "02340053",
+  "display_name": "University Of Lancashire Business Services Limited",
+  "official_name": "UNIVERSITY OF LANCASHIRE BUSINESS SERVICES LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "26/01/1989",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "70229",
+    "71200",
+    "85590",
+    "85600"
+  ],
+  "sic_labels": [
+    "Management consultancy activities other than financial management",
+    "Technical testing and analysis",
+    "Other education n.e.c.",
+    "Educational support services"
+  ],
+  "previous_names": [
+    {
+      "name": "UCLAN BUSINESS SERVICES LIMITED",
+      "condate": "08/08/2025"
+    },
+    {
+      "name": "UNIVERSITY OF CENTRAL LANCASHIRE BUSINESS SERVICES LIMITED",
+      "condate": "29/10/2007"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "HARRIS BUILDING, UNIVERSITY OF LANCASHIRE",
+    "address_line_2": "CORPORATION STREET",
+    "post_town": "PRESTON",
+    "county": "LANCASHIRE",
+    "country": "",
+    "postal_code": "PR1 2HE"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/07/2024",
+    "next_due": "30/04/2026",
+    "ref_day": "31",
+    "ref_month": "7"
+  },
+  "mortgages": {
+    "num_charges": 0,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 1080000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 53.761354,
+    "lng": -2.707381,
+    "lad24_cd": "E07000123",
+    "lad24_nm": "Preston",
+    "region": "North West"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/02340053"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "central_govt",
+  "buyer_type_breakdown": {
+    "central_govt": 0.9626,
+    "council": 0.0374
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T21:28:47Z",
+    "company_name": "UNIVERSITY OF LANCASHIRE BUSINESS SERVICES LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1989-01-26",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-04-30",
+    "accounts_last_made_up": "2024-07-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-09-17"
+  },
+  "governance": {
+    "api_date": "2026-04-27T21:28:49Z",
+    "total_officers": 42,
+    "active_count": 4,
+    "resigned_count": 38,
+    "active_officers": [
+      {
+        "name": "WINTERS, Fiona",
+        "role": "secretary",
+        "appointed_on": "2025-05-01",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "CREAN, Vincent St John, Professor",
+        "role": "director",
+        "appointed_on": "2011-09-08",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "KOVVURI, Venkata Dharma",
+        "role": "director",
+        "appointed_on": "2009-01-26",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WALLER, Daniel, Dr",
+        "role": "director",
+        "appointed_on": "2018-09-14",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T21:28:51Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Centralan Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Company",
+          "legal_authority": "Company Law",
+          "country_registered": "England",
+          "place_registered": "Company Registry In England And Wales",
+          "registration_number": "02830642"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ1MDQ3NjA5OGFkaXF6a2N4",
+    "date": "2025-01-09",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/aCgu1t1M_OW2huE3Tx5s5Zb5xuGv2k7gvHmDdFm5r7k/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02340053/filing-history/MzQ1MDQ3NjA5OGFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

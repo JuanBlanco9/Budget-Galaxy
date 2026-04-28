@@ -1,0 +1,174 @@
+{
+  "schema_version": "v2",
+  "company_number": "02585807",
+  "display_name": "Secom Plc",
+  "official_name": "SECOM PLC",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Public Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "26/02/1991",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "80200"
+  ],
+  "sic_labels": [
+    "Security systems service activities"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "SECOM HOUSE",
+    "address_line_2": "52 GODSTONE ROAD",
+    "post_town": "KENLEY",
+    "county": "SURREY",
+    "country": "",
+    "postal_code": "CR8 5JF"
+  },
+  "accounts": {
+    "category": "GROUP",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/06/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 8,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 8
+  },
+  "spend_profile": {
+    "total_gbp_2024": 835000000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.327396,
+    "lng": -0.105097,
+    "lad24_cd": "E09000008",
+    "lad24_nm": "Croydon",
+    "region": "London"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/02585807"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T02:29:46Z",
+    "company_name": "SECOM PLC",
+    "company_status": "active",
+    "date_of_creation": "1991-02-26",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-06-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-14"
+  },
+  "governance": {
+    "api_date": "2026-04-22T02:29:48Z",
+    "total_officers": 27,
+    "active_count": 5,
+    "resigned_count": 22,
+    "active_officers": [
+      {
+        "name": "FANTHOME-HODGSON, Neil",
+        "role": "secretary",
+        "appointed_on": "2017-06-01",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "AWANO, Satoru",
+        "role": "director",
+        "appointed_on": "2023-05-26",
+        "country_of_residence": "England",
+        "nationality": "Japanese"
+      },
+      {
+        "name": "BLAKE, Alan Richard",
+        "role": "director",
+        "appointed_on": "2011-10-05",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "FANTHOME-HODGSON, Neil",
+        "role": "director",
+        "appointed_on": "2017-06-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WEAVER, Paul Arnold",
+        "role": "director",
+        "appointed_on": "2016-01-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T02:29:50Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Secom Co Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2022-12-01",
+        "identification": {
+          "legal_form": "Public Limited Company",
+          "legal_authority": "Companies Act (Act No 86 Of 2005) - Japan"
+        }
+      },
+      {
+        "name": "Mr Minoru Takezawa",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Japanese",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MTk3Nzg1MGFkaXF6a2N4",
+    "date": "2025-07-02",
+    "type": "AAMD",
+    "description": "accounts-amended-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/zyZ0Fs_6UAVBIMSTo-9YkyX08-AqMOlyxi96tHpk-pQ/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02585807/filing-history/MzQ3MTk3Nzg1MGFkaXF6a2N4"
+  },
+  "top_buyer_type": "other",
+  "buyer_type_breakdown": {
+    "other": 1.0
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

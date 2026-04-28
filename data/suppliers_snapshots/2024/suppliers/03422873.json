@@ -1,0 +1,153 @@
+{
+  "schema_version": "v2",
+  "company_number": "03422873",
+  "display_name": "Debit Finance Collections Plc",
+  "official_name": "DEBIT FINANCE COLLECTIONS PLC",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Public Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "21/08/1997",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "64929"
+  ],
+  "sic_labels": [
+    "Other credit granting n.e.c."
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "1ST FLOOR CENTRAL SQUARE SOUTH",
+    "address_line_2": "ORCHARD STREET",
+    "post_town": "NEWCASTLE UPON TYNE",
+    "county": "",
+    "country": "UNITED KINGDOM",
+    "postal_code": "NE1 3AZ"
+  },
+  "accounts": {
+    "category": "AUDIT EXEMPTION SUBSIDIARY",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/06/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 2,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 2
+  },
+  "spend_profile": {
+    "total_gbp_2024": 110070.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 54.967266,
+    "lng": -1.614601,
+    "lad24_cd": "E08000021",
+    "lad24_nm": "Newcastle upon Tyne",
+    "region": "North East"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/03422873"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T05:59:11Z",
+    "company_name": "DEBIT FINANCE COLLECTIONS PLC",
+    "company_status": "active",
+    "date_of_creation": "1997-08-21",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-06-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-09-04"
+  },
+  "governance": {
+    "api_date": "2026-04-28T05:59:12Z",
+    "total_officers": 28,
+    "active_count": 3,
+    "resigned_count": 25,
+    "active_officers": [
+      {
+        "name": "CARABIN, Anthony",
+        "role": "secretary",
+        "appointed_on": "2023-02-08",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "CARABIN, Anthony",
+        "role": "director",
+        "appointed_on": "2023-02-08",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MCGUINESS-BROWN, Nicola Dorothy",
+        "role": "director",
+        "appointed_on": "2023-10-19",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T05:59:13Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Transserv Uk Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "08754210"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5OTI1OTIxMWFkaXF6a2N4",
+    "date": "2026-01-14",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-audit-exemption-subsiduary",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/cjdIdPu9mw6Rb0Pki1fhwjwePs8ddyGOpdeV5Aqy53c/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03422873/filing-history/MzQ5OTI1OTIxMWFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

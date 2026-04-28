@@ -1,0 +1,191 @@
+{
+  "schema_version": "v2",
+  "company_number": "04132533",
+  "display_name": "Ocf Limited",
+  "official_name": "OCF LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "29/12/2000",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "62090"
+  ],
+  "sic_labels": [
+    "Other information technology service activities"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "UNIT 5 ROTUNDA BUSINESS CENTRE",
+    "address_line_2": "THORNCLIFFE PARK",
+    "post_town": "CHAPELTOWN, SHEFFIELD",
+    "county": "SOUTH YORKSHIRE",
+    "country": "",
+    "postal_code": "S35 2PG"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/03/2025",
+    "next_due": "31/12/2026",
+    "ref_day": "31",
+    "ref_month": "3"
+  },
+  "mortgages": {
+    "num_charges": 7,
+    "num_outstanding": 2,
+    "num_part_satisfied": 0,
+    "num_satisfied": 5
+  },
+  "spend_profile": {
+    "total_gbp_2024": 1553187.14,
+    "n_contracts": 7,
+    "n_buyers": 3
+  },
+  "geo": {
+    "lat": 53.472243,
+    "lng": -1.473051,
+    "lad24_cd": "E08000039",
+    "lad24_nm": "Sheffield",
+    "region": "Yorkshire and The Humber"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/04132533"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "education",
+  "buyer_type_breakdown": {
+    "education": 0.9356,
+    "trust": 0.0644
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T20:28:47Z",
+    "company_name": "OCF LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2000-12-29",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-20"
+  },
+  "governance": {
+    "api_date": "2026-04-27T20:28:49Z",
+    "total_officers": 13,
+    "active_count": 4,
+    "resigned_count": 9,
+    "active_officers": [
+      {
+        "name": "EAVES, Damian Walmsley, Mr.",
+        "role": "secretary",
+        "appointed_on": "2019-11-05",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "DEAN, Andrew",
+        "role": "director",
+        "appointed_on": "2019-11-05",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HORROCKS-BARLOW, Laurence Alfred, Mr.",
+        "role": "director",
+        "appointed_on": "2019-11-05",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SLACK, Russell Graham",
+        "role": "director",
+        "appointed_on": "2009-06-29",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T20:28:50Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Ocf Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2019-11-05",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "English",
+          "country_registered": "England",
+          "place_registered": "Companies Register",
+          "registration_number": "11795631"
+        }
+      },
+      {
+        "name": "Steve Reynolds",
+        "kind": "legal-person-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Mr.",
+          "legal_authority": "England"
+        }
+      },
+      {
+        "name": "Julian Scott Fielden",
+        "kind": "legal-person-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Mr.",
+          "legal_authority": "England"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NTMzNTI0M2FkaXF6a2N4",
+    "date": "2025-12-19",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/5Pd3x7AOvLmuOug9R7_B5H9sXzk3ddUzW_uQIP1LT8k/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04132533/filing-history/MzQ5NTMzNTI0M2FkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

@@ -1,0 +1,172 @@
+{
+  "schema_version": "v2",
+  "company_number": "03816964",
+  "display_name": "Talurit (Uk) Limited",
+  "official_name": "TALURIT (UK) LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "30/07/1999",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "28220"
+  ],
+  "sic_labels": [
+    "Manufacture of lifting and handling equipment"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "R-EVOLUTION GATEWAY 36, UNIT 3 KESTREL WAY",
+    "address_line_2": "BIRDWELL",
+    "post_town": "BARNSLEY",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "S70 5SZ"
+  },
+  "accounts": {
+    "category": "SMALL",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 2,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 2
+  },
+  "spend_profile": {
+    "total_gbp_2024": 32425.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 53.502679,
+    "lng": -1.473142,
+    "lad24_cd": "E08000038",
+    "lad24_nm": "Barnsley",
+    "region": "Yorkshire and The Humber"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/03816964"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T11:15:11Z",
+    "company_name": "TALURIT (UK) LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1999-07-30",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-04"
+  },
+  "governance": {
+    "api_date": "2026-04-28T11:15:12Z",
+    "total_officers": 12,
+    "active_count": 3,
+    "resigned_count": 9,
+    "active_officers": [
+      {
+        "name": "COOKE, Neil",
+        "role": "director",
+        "appointed_on": "2009-01-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "United Kingdom"
+      },
+      {
+        "name": "LENNES, Per Erik",
+        "role": "director",
+        "appointed_on": "2025-01-01",
+        "country_of_residence": "Sweden",
+        "nationality": "Swedish"
+      },
+      {
+        "name": "LINDH, John Erik Victor",
+        "role": "director",
+        "appointed_on": "2024-08-29",
+        "country_of_residence": "Sweden",
+        "nationality": "Swedish"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T11:15:13Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Talurit Ab",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent",
+          "voting-rights-50-to-75-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Swedish Law",
+          "country_registered": "Sweden",
+          "place_registered": "Sweden",
+          "registration_number": "556343-7200"
+        }
+      },
+      {
+        "name": "Gerro Ab",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Swedish Law",
+          "country_registered": "Sweden",
+          "place_registered": "Sweden",
+          "registration_number": "556066-1034"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MDM4ODE5OWFkaXF6a2N4",
+    "date": "2025-06-17",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/xXgRMvqF-CEoyLda_0EcShd2PONpu_-bgJulaTnVSlY/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03816964/filing-history/MzQ3MDM4ODE5OWFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

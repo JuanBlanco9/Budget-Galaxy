@@ -1,0 +1,184 @@
+{
+  "schema_version": "v2",
+  "company_number": "02591346",
+  "display_name": "Jackson, Jackson & Sons Limited",
+  "official_name": "JACKSON, JACKSON & SONS LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "13/03/1991",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "41201"
+  ],
+  "sic_labels": [
+    "Construction of commercial buildings"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "JACKSON HOUSE",
+    "address_line_2": "RED LANE",
+    "post_town": "ROCHDALE",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "OL12 9DB"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "30/04/2025",
+    "next_due": "31/01/2027",
+    "ref_day": "30",
+    "ref_month": "4"
+  },
+  "mortgages": {
+    "num_charges": 4,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 4
+  },
+  "spend_profile": {
+    "total_gbp_2024": 872000000.0,
+    "n_contracts": 2,
+    "n_buyers": 2
+  },
+  "geo": {
+    "lat": 53.627627,
+    "lng": -2.143273,
+    "lad24_cd": "E08000005",
+    "lad24_nm": "Rochdale",
+    "region": "North West"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/02591346"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T02:26:09Z",
+    "company_name": "JACKSON, JACKSON & SONS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1991-03-13",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-01-31",
+    "accounts_last_made_up": "2025-04-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-17"
+  },
+  "governance": {
+    "api_date": "2026-04-22T02:26:11Z",
+    "total_officers": 8,
+    "active_count": 3,
+    "resigned_count": 5,
+    "active_officers": [
+      {
+        "name": "JACKSON, Helen",
+        "role": "director",
+        "appointed_on": "2007-07-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "JACKSON, Marilynn Joyce",
+        "role": "director",
+        "appointed_on": "2018-06-08",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MCDONNELL, Kieren",
+        "role": "director",
+        "appointed_on": "1997-05-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T02:26:13Z",
+    "total_results": 4,
+    "active_count": 3,
+    "items": [
+      {
+        "name": "Mrs Marilynn Joyce Jackson",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2018-06-08",
+        "identification": null
+      },
+      {
+        "name": "Mr Graham Jackson",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Kieren Mcdonnell",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Miss Helen Jackson",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NDA0ODQ0MWFkaXF6a2N4",
+    "date": "2025-12-15",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/y82M9EUR7v6gqUaXSSRPi38r0DPMojxeIKQLQVmlZMc/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02591346/filing-history/MzQ5NDA0ODQ0MWFkaXF6a2N4"
+  },
+  "top_buyer_type": "other",
+  "buyer_type_breakdown": {
+    "other": 0.9999,
+    "council": 0.0001
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

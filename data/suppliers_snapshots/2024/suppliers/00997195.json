@@ -1,0 +1,179 @@
+{
+  "schema_version": "v2",
+  "company_number": "00997195",
+  "display_name": "Durkan Limited",
+  "official_name": "DURKAN LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "15/12/1970",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "41100"
+  ],
+  "sic_labels": [
+    "Development of building projects"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "4 ELSTREE GATE",
+    "address_line_2": "ELSTREE WAY",
+    "post_town": "BOREHAMWOOD",
+    "county": "HERTFORDSHIRE",
+    "country": "",
+    "postal_code": "WD6 1JD"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "30/11/2024",
+    "next_due": "31/08/2026",
+    "ref_day": "30",
+    "ref_month": "11"
+  },
+  "mortgages": {
+    "num_charges": 64,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 64
+  },
+  "spend_profile": {
+    "total_gbp_2024": 210000000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.658839,
+    "lng": -0.256518,
+    "lad24_cd": "E07000098",
+    "lad24_nm": "Hertsmere",
+    "region": "East of England"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/00997195"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T14:37:15Z",
+    "company_name": "DURKAN LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1970-12-15",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-08-31",
+    "accounts_last_made_up": "2024-11-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-12"
+  },
+  "governance": {
+    "api_date": "2026-04-22T14:37:17Z",
+    "total_officers": 45,
+    "active_count": 7,
+    "resigned_count": 38,
+    "active_officers": [
+      {
+        "name": "BARTON, Gary",
+        "role": "director",
+        "appointed_on": "2022-04-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "DURKAN, Daniel Gerard",
+        "role": "director",
+        "appointed_on": null,
+        "country_of_residence": "England",
+        "nationality": "Irish"
+      },
+      {
+        "name": "GERMANN, Daniel",
+        "role": "director",
+        "appointed_on": "2025-05-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GORDON, Mark Geoffrey",
+        "role": "director",
+        "appointed_on": "2022-04-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MCARDLE, Ian James",
+        "role": "director",
+        "appointed_on": "2024-12-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MURPHY, Ronan Patrick",
+        "role": "director",
+        "appointed_on": "2015-09-14",
+        "country_of_residence": "England",
+        "nationality": "Irish"
+      },
+      {
+        "name": "MURPHY, Russell",
+        "role": "director",
+        "appointed_on": "2022-04-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T14:37:18Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Durkan Estates Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Uk Companies Act",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House Uk",
+          "registration_number": "02132837"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2NTg5NjgxN2FkaXF6a2N4",
+    "date": "2025-05-13",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/2CSqMrBiD41JCnoqGyAwq3k5hwDP2mJdkiZ6nS2VXuc/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/00997195/filing-history/MzQ2NTg5NjgxN2FkaXF6a2N4"
+  },
+  "top_buyer_type": "other",
+  "buyer_type_breakdown": {
+    "other": 1.0
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

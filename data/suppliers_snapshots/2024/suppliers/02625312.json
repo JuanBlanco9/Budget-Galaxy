@@ -1,0 +1,155 @@
+{
+  "schema_version": "v2",
+  "company_number": "02625312",
+  "display_name": "Project Centre Limited",
+  "official_name": "PROJECT CENTRE LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "28/06/1991",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "82990"
+  ],
+  "sic_labels": [
+    "Other business support service activities n.e.c."
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "RUTLAND HOUSE 8TH FLOOR",
+    "address_line_2": "148 EDMUND STREET",
+    "post_town": "BIRMINGHAM",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "B3 2JR"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/05/2025",
+    "next_due": "28/02/2027",
+    "ref_day": "31",
+    "ref_month": "5"
+  },
+  "mortgages": {
+    "num_charges": 10,
+    "num_outstanding": 2,
+    "num_part_satisfied": 0,
+    "num_satisfied": 8
+  },
+  "spend_profile": {
+    "total_gbp_2024": 98842.65,
+    "n_contracts": 3,
+    "n_buyers": 3
+  },
+  "geo": {
+    "lat": 52.482336,
+    "lng": -1.900985,
+    "lad24_cd": "E08000025",
+    "lad24_nm": "Birmingham",
+    "region": "West Midlands"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/02625312"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 0.8064,
+    "agency": 0.1343,
+    "other": 0.0593
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T06:31:35Z",
+    "company_name": "PROJECT CENTRE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1991-06-28",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-02-28",
+    "accounts_last_made_up": "2025-05-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-15"
+  },
+  "governance": {
+    "api_date": "2026-04-28T06:31:36Z",
+    "total_officers": 48,
+    "active_count": 3,
+    "resigned_count": 45,
+    "active_officers": [
+      {
+        "name": "SQUIRE PATTON BOGGS SECRETARIAL SERVICES LIMITED",
+        "role": "corporate-secretary",
+        "appointed_on": "2017-04-01",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "HANSHAW, Keith",
+        "role": "director",
+        "appointed_on": "2024-01-31",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "JOHNSON, Martin",
+        "role": "director",
+        "appointed_on": "2023-08-04",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T06:31:37Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Nsl Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Company Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "Uk",
+          "place_registered": "England And Wales Registry",
+          "registration_number": "06033060"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwMjQ4MjU2MWFkaXF6a2N4",
+    "date": "2026-02-02",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/vNLnyU1iSbxwCnziJa-oURNhWZYyXMt1MnndVbBhumo/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02625312/filing-history/MzUwMjQ4MjU2MWFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

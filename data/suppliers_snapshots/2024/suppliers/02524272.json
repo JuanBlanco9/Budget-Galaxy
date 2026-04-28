@@ -1,0 +1,151 @@
+{
+  "schema_version": "v2",
+  "company_number": "02524272",
+  "display_name": "Hc 1179F Limited",
+  "official_name": "HC 1179F LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "20/07/1990",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "74990"
+  ],
+  "sic_labels": [
+    "Non-trading company"
+  ],
+  "previous_names": [
+    {
+      "name": "LLOYD WORRALL (NEWCASTLE UPON TYNE) LIMITED",
+      "condate": "07/01/2025"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "GROUND FLOOR BOUNDARY HOUSE",
+    "address_line_2": "2 WYTHALL GREEN WAY",
+    "post_town": "WYTHALL",
+    "county": "BIRMINGHAM",
+    "country": "UNITED KINGDOM",
+    "postal_code": "B47 6LW"
+  },
+  "accounts": {
+    "category": "DORMANT",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 2,
+    "num_outstanding": 2,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 80000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 52.376283,
+    "lng": -1.894168,
+    "lad24_cd": "E07000234",
+    "lad24_nm": "Bromsgrove",
+    "region": "West Midlands"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/02524272"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T07:20:32Z",
+    "company_name": "HC 1179F LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1990-07-20",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-08-03"
+  },
+  "governance": {
+    "api_date": "2026-04-28T07:20:33Z",
+    "total_officers": 12,
+    "active_count": 2,
+    "resigned_count": 10,
+    "active_officers": [
+      {
+        "name": "GRAFTON GROUP SECRETARIAL SERVICES LIMITED",
+        "role": "corporate-secretary",
+        "appointed_on": "2008-04-01",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "SOCKETT, Martin John, Mr.",
+        "role": "director",
+        "appointed_on": "2023-06-27",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T07:20:34Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Lloyd Worrall Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent",
+          "voting-rights-50-to-75-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "England & Wales",
+          "registration_number": "2684903"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MTYzMzQ0N2FkaXF6a2N4",
+    "date": "2025-06-26",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-dormant",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/-DHSdnYhAl7WPbh2dT5u_9NLDJ1y9VyLcDAU1klkm2c/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02524272/filing-history/MzQ3MTYzMzQ0N2FkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

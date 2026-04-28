@@ -1,0 +1,190 @@
+{
+  "schema_version": "v2",
+  "company_number": "02904497",
+  "display_name": "Manx Healthcare Limited",
+  "official_name": "MANX HEALTHCARE LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "03/03/1994",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "21100",
+    "46460"
+  ],
+  "sic_labels": [
+    "Manufacture of basic pharmaceutical products",
+    "Wholesale of pharmaceutical goods"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "UNIT 2 BOSWORTH AVENUE",
+    "address_line_2": "TOURNAMENT FIELDS",
+    "post_town": "WARWICK",
+    "county": "WARWICKSHIRE",
+    "country": "ENGLAND",
+    "postal_code": "CV34 6UQ"
+  },
+  "accounts": {
+    "category": "MEDIUM",
+    "last_made_up": "29/09/2024",
+    "next_due": "29/06/2026",
+    "ref_day": "29",
+    "ref_month": "9"
+  },
+  "mortgages": {
+    "num_charges": 9,
+    "num_outstanding": 2,
+    "num_part_satisfied": 0,
+    "num_satisfied": 7
+  },
+  "spend_profile": {
+    "total_gbp_2024": 380950721.0,
+    "n_contracts": 2,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 52.262842,
+    "lng": -1.609715,
+    "lad24_cd": "E07000222",
+    "lad24_nm": "Warwick",
+    "region": "West Midlands"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/02904497"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T03:32:44Z",
+    "company_name": "MANX HEALTHCARE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1994-03-03",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-06-29",
+    "accounts_last_made_up": "2024-09-29",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-09-29"
+  },
+  "governance": {
+    "api_date": "2026-04-22T03:32:46Z",
+    "total_officers": 11,
+    "active_count": 3,
+    "resigned_count": 8,
+    "active_officers": [
+      {
+        "name": "TAYLOR, Laurence Dudley",
+        "role": "secretary",
+        "appointed_on": "2015-02-09",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "TAYLOR, Laurence Dudley",
+        "role": "director",
+        "appointed_on": "2019-07-26",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "TAYLOR, Simone Elizabeth",
+        "role": "director",
+        "appointed_on": "2001-08-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T03:32:47Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Rebel Holdco Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2024-01-30",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006"
+        }
+      },
+      {
+        "name": "Manx (Holdings) Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2024-01-30",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "12539393"
+        }
+      },
+      {
+        "name": "Richard's Pharma Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "Cardiff",
+          "place_registered": "Cardiff",
+          "registration_number": "05392001"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MTUyNzg3OGFkaXF6a2N4",
+    "date": "2025-06-25",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-medium",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/zzDxpDdKfsUgT5ZpBbmbmnc7342rpMYvg2KDqZGnZ6Q/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02904497/filing-history/MzQ3MTUyNzg3OGFkaXF6a2N4"
+  },
+  "top_buyer_type": "nhs",
+  "buyer_type_breakdown": {
+    "nhs": 1.0
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

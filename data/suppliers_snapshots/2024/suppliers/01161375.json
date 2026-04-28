@@ -1,0 +1,173 @@
+{
+  "schema_version": "v2",
+  "company_number": "01161375",
+  "display_name": "Nottingham Industrial Cleaners Limited",
+  "official_name": "NOTTINGHAM INDUSTRIAL CLEANERS LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "27/02/1974",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "82990"
+  ],
+  "sic_labels": [
+    "Other business support service activities n.e.c."
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "ELIZABETH HOUSE",
+    "address_line_2": "WIGMAN ROAD BILBOROUGH",
+    "post_town": "NOTTINGHAM",
+    "county": "",
+    "country": "",
+    "postal_code": "NG8 3HY"
+  },
+  "accounts": {
+    "category": "SMALL",
+    "last_made_up": "31/03/2025",
+    "next_due": "31/12/2026",
+    "ref_day": "31",
+    "ref_month": "3"
+  },
+  "mortgages": {
+    "num_charges": 4,
+    "num_outstanding": 3,
+    "num_part_satisfied": 0,
+    "num_satisfied": 1
+  },
+  "spend_profile": {
+    "total_gbp_2024": 185000.0,
+    "n_contracts": 3,
+    "n_buyers": 2
+  },
+  "geo": {
+    "lat": 52.962284,
+    "lng": -1.211318,
+    "lad24_cd": "E06000018",
+    "lad24_nm": "Nottingham",
+    "region": "East Midlands"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/01161375"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "nhs",
+  "buyer_type_breakdown": {
+    "nhs": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T04:02:21Z",
+    "company_name": "NOTTINGHAM INDUSTRIAL CLEANERS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1974-02-27",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-18"
+  },
+  "governance": {
+    "api_date": "2026-04-28T04:02:22Z",
+    "total_officers": 6,
+    "active_count": 2,
+    "resigned_count": 4,
+    "active_officers": [
+      {
+        "name": "BARGE, Andrew",
+        "role": "director",
+        "appointed_on": null,
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BARGE, Simon Antony",
+        "role": "director",
+        "appointed_on": null,
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T04:02:23Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Nic Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2021-03-30",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006"
+        }
+      },
+      {
+        "name": "Nic Investments Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2018-04-01",
+        "identification": {
+          "legal_form": "Limited",
+          "legal_authority": "Limited",
+          "country_registered": "England",
+          "place_registered": "England",
+          "registration_number": "06971724"
+        }
+      },
+      {
+        "name": "Mrs Betty Thelma Barge",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2017-01-01",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4NTIwOTIxMGFkaXF6a2N4",
+    "date": "2025-10-16",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/w9dlA0PyWC31UGXORF6jGpJz4wkrjFbB6RJ-QNZzCF4/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01161375/filing-history/MzQ4NTIwOTIxMGFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

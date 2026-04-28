@@ -1,0 +1,155 @@
+{
+  "schema_version": "v2",
+  "company_number": "05315431",
+  "display_name": "Zylpha Ltd",
+  "official_name": "ZYLPHA LTD",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "17/12/2004",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "62012"
+  ],
+  "sic_labels": [
+    "Business and domestic software development"
+  ],
+  "previous_names": [
+    {
+      "name": "ZYLPHA SOLUTIONS LIMITED",
+      "condate": "22/10/2007"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "GROSVENOR HOUSE",
+    "address_line_2": "2 GROSVENOR SQUARE",
+    "post_town": "SOUTHAMPTON",
+    "county": "HAMPSHIRE",
+    "country": "ENGLAND",
+    "postal_code": "SO15 2BE"
+  },
+  "accounts": {
+    "category": "UNAUDITED ABRIDGED",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 0,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 480000.0,
+    "n_contracts": 2,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 50.91065,
+    "lng": -1.408455,
+    "lad24_cd": "E06000045",
+    "lad24_nm": "Southampton",
+    "region": "South East"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/05315431"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "other",
+  "buyer_type_breakdown": {
+    "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T00:24:37Z",
+    "company_name": "ZYLPHA LTD",
+    "company_status": "active",
+    "date_of_creation": "2004-12-17",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-18"
+  },
+  "governance": {
+    "api_date": "2026-04-28T00:24:39Z",
+    "total_officers": 7,
+    "active_count": 2,
+    "resigned_count": 5,
+    "active_officers": [
+      {
+        "name": "LONG, Ethna Mary",
+        "role": "secretary",
+        "appointed_on": "2009-05-01",
+        "country_of_residence": null,
+        "nationality": "Other"
+      },
+      {
+        "name": "LONG, Timothy William",
+        "role": "director",
+        "appointed_on": "2004-12-17",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T00:24:41Z",
+    "total_results": 2,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Mr Timothy William Long",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mrs Ethna Mary Long",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Irish",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MzE3MTQ2M2FkaXF6a2N4",
+    "date": "2025-09-30",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-unaudited-abridged",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/Jw9NI265cea9k4S8G0p_ilhufdlIO0xsu-iidJh_E0M/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/05315431/filing-history/MzQ4MzE3MTQ2M2FkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

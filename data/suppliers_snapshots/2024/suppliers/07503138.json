@@ -1,0 +1,151 @@
+{
+  "schema_version": "v2",
+  "company_number": "07503138",
+  "display_name": "Vercida Limited",
+  "official_name": "VERCIDA LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "24/01/2011",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "73110"
+  ],
+  "sic_labels": [
+    "Advertising agencies"
+  ],
+  "previous_names": [
+    {
+      "name": "DIVERSITY JOBS.CO.UK LIMITED",
+      "condate": "07/09/2017"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "25 STATION ROAD",
+    "address_line_2": "KINGS HEATH",
+    "post_town": "BIRMINGHAM",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "B14 7SR"
+  },
+  "accounts": {
+    "category": "MICRO ENTITY",
+    "last_made_up": "31/01/2025",
+    "next_due": "31/10/2026",
+    "ref_day": "31",
+    "ref_month": "1"
+  },
+  "mortgages": {
+    "num_charges": 1,
+    "num_outstanding": 1,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 40000.0,
+    "n_contracts": 3,
+    "n_buyers": 2
+  },
+  "geo": {
+    "lat": 52.437183,
+    "lng": -1.894819,
+    "lad24_cd": "E08000025",
+    "lad24_nm": "Birmingham",
+    "region": "West Midlands"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/07503138"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "central_govt",
+  "buyer_type_breakdown": {
+    "central_govt": 0.7625,
+    "other": 0.2375
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T10:22:55Z",
+    "company_name": "VERCIDA LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2011-01-24",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-10-31",
+    "accounts_last_made_up": "2025-01-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-23"
+  },
+  "governance": {
+    "api_date": "2026-04-28T10:22:56Z",
+    "total_officers": 7,
+    "active_count": 1,
+    "resigned_count": 6,
+    "active_officers": [
+      {
+        "name": "LOBB, Morgan Charles",
+        "role": "director",
+        "appointed_on": "2011-01-24",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T10:22:57Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Ben Chalcraft",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Morgan Charles Lobb",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4NjU5NjgwNGFkaXF6a2N4",
+    "date": "2025-10-28",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-micro-entity",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/iBn92XKUWo-vinDwM1nhuCNgCl11d95gHeo9DoQcU6M/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/07503138/filing-history/MzQ4NjU5NjgwNGFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

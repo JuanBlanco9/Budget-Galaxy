@@ -1,0 +1,231 @@
+{
+  "schema_version": "v2",
+  "company_number": "03007851",
+  "display_name": "Protocol National Limited",
+  "official_name": "PROTOCOL NATIONAL LIMITED",
+  "status": "in_administration",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "09/01/1995",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "85600"
+  ],
+  "sic_labels": [
+    "Educational support services"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "C/O GRANT THORNTON UK ADVISORY & TAX LLP",
+    "address_line_2": "11TH FLOOR, LANDMARK ST PETERS SQUARE",
+    "post_town": "1 OXFORD STREET",
+    "county": "MANCHESTER",
+    "country": "",
+    "postal_code": "M1 4PB"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/07/2024",
+    "next_due": "30/04/2026",
+    "ref_day": "31",
+    "ref_month": "7"
+  },
+  "mortgages": {
+    "num_charges": 7,
+    "num_outstanding": 3,
+    "num_part_satisfied": 0,
+    "num_satisfied": 4
+  },
+  "spend_profile": {
+    "total_gbp_2024": 390000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 53.477101,
+    "lng": -2.242613,
+    "lad24_cd": "E08000003",
+    "lad24_nm": "Manchester",
+    "region": "North West"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/03007851"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T01:14:19Z",
+    "company_name": "PROTOCOL NATIONAL LIMITED",
+    "company_status": "administration",
+    "date_of_creation": "1995-01-09",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": true,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-04-30",
+    "accounts_last_made_up": "2024-07-31",
+    "confirmation_statement_overdue": true,
+    "confirmation_statement_next_due": "2026-02-14"
+  },
+  "governance": {
+    "api_date": "2026-04-28T01:14:21Z",
+    "total_officers": 35,
+    "active_count": 2,
+    "resigned_count": 33,
+    "active_officers": [
+      {
+        "name": "KELLY, Michael John",
+        "role": "secretary",
+        "appointed_on": "2008-12-09",
+        "country_of_residence": null,
+        "nationality": "Scottish"
+      },
+      {
+        "name": "KELLY, Michael John",
+        "role": "director",
+        "appointed_on": "2018-08-28",
+        "country_of_residence": "Scotland",
+        "nationality": "Scottish"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T01:14:23Z",
+    "total_results": 7,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Protocol Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2020-07-30",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act",
+          "country_registered": "England",
+          "place_registered": "England",
+          "registration_number": "11429586"
+        }
+      },
+      {
+        "name": "Law 2478 Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2019-02-01",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Acts",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "7034825"
+        }
+      },
+      {
+        "name": "Protocol Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2019-02-01",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Acts",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "11429586"
+        }
+      },
+      {
+        "name": "Mr Ian Michael Sackree",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-07-01",
+        "identification": null
+      },
+      {
+        "name": "Mr David Lawrence Wilkinson",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-07-01",
+        "identification": null
+      },
+      {
+        "name": "Mr Derek Compton Lewis",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-07-01",
+        "identification": null
+      },
+      {
+        "name": "Mrs Viv Helen Cruickshank",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-07-01",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2NDgwNzY5NGFkaXF6a2N4",
+    "date": "2025-05-01",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/y9216o3h1JoK4HA-7mp9vh3ucayOZI9wodkTTmJUs9Q/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03007851/filing-history/MzQ2NDgwNzY5NGFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

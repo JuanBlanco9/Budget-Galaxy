@@ -1,0 +1,170 @@
+{
+  "schema_version": "v2",
+  "company_number": "01628868",
+  "display_name": "Civica Uk Limited",
+  "official_name": "CIVICA UK LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "14/04/1982",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "62090"
+  ],
+  "sic_labels": [
+    "Other information technology service activities"
+  ],
+  "previous_names": [
+    {
+      "name": "CIVICA SYSTEMS LIMITED",
+      "condate": "12/07/2006"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "SOUTHBANK CENTRAL",
+    "address_line_2": "30 STAMFORD STREET",
+    "post_town": "LONDON",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "SE1 9LQ"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "30/09/2024",
+    "next_due": "30/06/2026",
+    "ref_day": "30",
+    "ref_month": "9"
+  },
+  "mortgages": {
+    "num_charges": 17,
+    "num_outstanding": 1,
+    "num_part_satisfied": 0,
+    "num_satisfied": 16
+  },
+  "spend_profile": {
+    "total_gbp_2024": 1234182537.19,
+    "n_contracts": 101,
+    "n_buyers": 70
+  },
+  "geo": {
+    "lat": 51.507376,
+    "lng": -0.106618,
+    "lad24_cd": "E09000028",
+    "lad24_nm": "Southwark",
+    "region": "London"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/01628868"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T02:12:43Z",
+    "company_name": "CIVICA UK LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1982-04-14",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-06-30",
+    "accounts_last_made_up": "2024-09-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-09-13"
+  },
+  "governance": {
+    "api_date": "2026-04-22T02:12:45Z",
+    "total_officers": 72,
+    "active_count": 4,
+    "resigned_count": 68,
+    "active_officers": [
+      {
+        "name": "STODDARD, Michael",
+        "role": "secretary",
+        "appointed_on": "2008-07-03",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "O'REILLY, Gerald Eric",
+        "role": "director",
+        "appointed_on": "2025-06-24",
+        "country_of_residence": "England",
+        "nationality": "Canadian"
+      },
+      {
+        "name": "PERKINS, Lee John",
+        "role": "director",
+        "appointed_on": "2022-11-25",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "STODDARD, Michael",
+        "role": "director",
+        "appointed_on": "2003-06-03",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T02:12:47Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Civica Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "02131240"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MjYzMjcwOWFkaXF6a2N4",
+    "date": "2025-07-08",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/3CJ_J0DaaW-1Qomy4NdM7VxhkKCMjaPMu8l0mKzhDSw/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01628868/filing-history/MzQ3MjYzMjcwOWFkaXF6a2N4"
+  },
+  "top_buyer_type": "other",
+  "buyer_type_breakdown": {
+    "other": 0.9571,
+    "council": 0.0363,
+    "nhs": 0.0027,
+    "central_govt": 0.0016,
+    "police_fire": 0.0011,
+    "agency": 0.0007,
+    "education": 0.0002,
+    "trust": 0.0002
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

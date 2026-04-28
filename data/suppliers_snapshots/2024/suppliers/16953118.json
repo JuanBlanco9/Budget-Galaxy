@@ -1,0 +1,125 @@
+{
+  "schema_version": "v2",
+  "company_number": "16953118",
+  "display_name": "Ted&Co Ltd",
+  "official_name": "TED&CO LTD",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "09/01/2026",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "82920"
+  ],
+  "sic_labels": [
+    "Packaging activities"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "71-75 SHELTON STREET",
+    "address_line_2": "COVENT GARDEN",
+    "post_town": "LONDON",
+    "county": "",
+    "country": "UNITED KINGDOM",
+    "postal_code": "WC2H 9JQ"
+  },
+  "accounts": {
+    "category": "NO ACCOUNTS FILED",
+    "last_made_up": null,
+    "next_due": "09/10/2027",
+    "ref_day": "31",
+    "ref_month": "1"
+  },
+  "mortgages": {
+    "num_charges": 0,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 30000000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.514897,
+    "lng": -0.123615,
+    "lad24_cd": "E09000007",
+    "lad24_nm": "Camden",
+    "region": "London"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/16953118"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": false
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T17:55:45Z",
+    "company_name": "TED&CO LTD",
+    "company_status": "active",
+    "date_of_creation": "2026-01-09",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-10-09",
+    "accounts_last_made_up": null,
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-22"
+  },
+  "governance": {
+    "api_date": "2026-04-22T17:55:47Z",
+    "total_officers": 1,
+    "active_count": 1,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "VILDE, Chloe Marie Brigitte",
+        "role": "director",
+        "appointed_on": "2026-01-09",
+        "country_of_residence": "France",
+        "nationality": "French"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T17:55:48Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mrs Chloe Marie Brigitte Vilde",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "French",
+        "country_of_residence": "France",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2026-01-09",
+        "identification": null
+      }
+    ]
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 1.0
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

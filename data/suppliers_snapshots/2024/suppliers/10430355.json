@@ -1,0 +1,150 @@
+{
+  "schema_version": "v2",
+  "company_number": "10430355",
+  "display_name": "Carcinus Ltd",
+  "official_name": "CARCINUS LTD",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "17/10/2016",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "74901"
+  ],
+  "sic_labels": [
+    "Environmental consulting activities"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "UNIT 7 VICARAGE FARM BUSINESS PARK WINCHESTER ROAD",
+    "address_line_2": "FAIR OAK",
+    "post_town": "EASTLEIGH",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "SO50 7HD"
+  },
+  "accounts": {
+    "category": "TOTAL EXEMPTION FULL",
+    "last_made_up": "31/10/2024",
+    "next_due": "31/07/2026",
+    "ref_day": "31",
+    "ref_month": "10"
+  },
+  "mortgages": {
+    "num_charges": 0,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 14145.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 50.977734,
+    "lng": -1.302294,
+    "lad24_cd": "E07000086",
+    "lad24_nm": "Eastleigh",
+    "region": "South East"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/10430355"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "other",
+  "buyer_type_breakdown": {
+    "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T13:16:51Z",
+    "company_name": "CARCINUS LTD",
+    "company_status": "active",
+    "date_of_creation": "2016-10-17",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-07-31",
+    "accounts_last_made_up": "2024-10-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-09"
+  },
+  "governance": {
+    "api_date": "2026-04-28T13:16:52Z",
+    "total_officers": 3,
+    "active_count": 2,
+    "resigned_count": 1,
+    "active_officers": [
+      {
+        "name": "CRABB, Matthew David",
+        "role": "director",
+        "appointed_on": "2016-10-17",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "LEATHER, Stuart William",
+        "role": "director",
+        "appointed_on": "2016-10-17",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T13:16:54Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Stuart William Leather",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-10-17",
+        "identification": null
+      },
+      {
+        "name": "Mr Matthew David Crabb",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-10-17",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NTcwMzE2OWFkaXF6a2N4",
+    "date": "2025-07-30",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/GgmV6K16K5BDF3sv-mv-AE0UcT6_uLY08BD75s0ssRQ/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/10430355/filing-history/MzQ3NTcwMzE2OWFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

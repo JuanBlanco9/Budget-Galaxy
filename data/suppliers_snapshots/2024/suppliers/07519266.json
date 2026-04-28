@@ -1,0 +1,138 @@
+{
+  "schema_version": "v2",
+  "company_number": "07519266",
+  "display_name": "Global Study Uk Ltd",
+  "official_name": "GLOBAL STUDY UK LTD",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "07/02/2011",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "85590"
+  ],
+  "sic_labels": [
+    "Other education n.e.c."
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "135 NOTTING HILL GATE",
+    "address_line_2": "",
+    "post_town": "LONDON",
+    "county": "",
+    "country": "",
+    "postal_code": "W11 3LB"
+  },
+  "accounts": {
+    "category": "MICRO ENTITY",
+    "last_made_up": "30/06/2025",
+    "next_due": "31/03/2027",
+    "ref_day": "30",
+    "ref_month": "6"
+  },
+  "mortgages": {
+    "num_charges": 4,
+    "num_outstanding": 3,
+    "num_part_satisfied": 0,
+    "num_satisfied": 1
+  },
+  "spend_profile": {
+    "total_gbp_2024": 135559.0,
+    "n_contracts": 2,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.508487,
+    "lng": -0.198887,
+    "lad24_cd": "E09000020",
+    "lad24_nm": "Kensington and Chelsea",
+    "region": "London"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/07519266"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "education",
+  "buyer_type_breakdown": {
+    "education": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T05:15:53Z",
+    "company_name": "GLOBAL STUDY UK LTD",
+    "company_status": "active",
+    "date_of_creation": "2011-02-07",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-03-31",
+    "accounts_last_made_up": "2025-06-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-21"
+  },
+  "governance": {
+    "api_date": "2026-04-28T05:15:55Z",
+    "total_officers": 4,
+    "active_count": 2,
+    "resigned_count": 2,
+    "active_officers": [
+      {
+        "name": "MELAIMI, Adel",
+        "role": "secretary",
+        "appointed_on": "2015-07-08",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "MOURAD, Amer",
+        "role": "director",
+        "appointed_on": "2011-02-07",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T05:15:56Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Amer Mourad",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxMzcwNTA0NWFkaXF6a2N4",
+    "date": "2026-03-31",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-micro-entity",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/g87UF-lloaSKWWYsITHD6epBw1smIQOWJLOtYBFM_K0/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/07519266/filing-history/MzUxMzcwNTA0NWFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

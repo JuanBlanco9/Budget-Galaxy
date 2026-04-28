@@ -1,0 +1,169 @@
+{
+  "schema_version": "v2",
+  "company_number": "00943935",
+  "display_name": "Capgemini Uk Plc",
+  "official_name": "CAPGEMINI UK PLC",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Public Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "10/12/1968",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "62020"
+  ],
+  "sic_labels": [
+    "Information technology consultancy activities"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "95 QUEEN VICTORIA STREET",
+    "address_line_2": "",
+    "post_town": "LONDON",
+    "county": "",
+    "country": "UNITED KINGDOM",
+    "postal_code": "EC4V 4HN"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/06/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 2,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 2
+  },
+  "spend_profile": {
+    "total_gbp_2024": 1726930084.64,
+    "n_contracts": 31,
+    "n_buyers": 18
+  },
+  "geo": {
+    "lat": 51.511721,
+    "lng": -0.09671,
+    "lad24_cd": "E09000001",
+    "lad24_nm": "City of London",
+    "region": "London"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/00943935"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T02:02:31Z",
+    "company_name": "CAPGEMINI UK PLC",
+    "company_status": "active",
+    "date_of_creation": "1968-12-10",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-06-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-04-17"
+  },
+  "governance": {
+    "api_date": "2026-04-22T02:02:33Z",
+    "total_officers": 49,
+    "active_count": 5,
+    "resigned_count": 44,
+    "active_officers": [
+      {
+        "name": "MANGAN, Julie",
+        "role": "secretary",
+        "appointed_on": "1998-08-13",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "ALVAREZ TABIO, Fernando",
+        "role": "director",
+        "appointed_on": "2024-11-18",
+        "country_of_residence": "France",
+        "nationality": "American"
+      },
+      {
+        "name": "BHAGAT, Nivedita Krishnamurthy",
+        "role": "director",
+        "appointed_on": "2020-03-31",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HART, Clive David",
+        "role": "director",
+        "appointed_on": "2019-02-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WALKER, Robert Charles",
+        "role": "director",
+        "appointed_on": "2024-11-18",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T02:02:34Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Cgs Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Liability",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "02798276"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2NTM0NDUwMWFkaXF6a2N4",
+    "date": "2025-05-07",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/SyHkmGOt7iAxRIXMetz39Sw-SuqrnGHpFdi1q4eh4cw/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/00943935/filing-history/MzQ2NTM0NDUwMWFkaXF6a2N4"
+  },
+  "top_buyer_type": "other",
+  "buyer_type_breakdown": {
+    "other": 0.9442,
+    "central_govt": 0.0446,
+    "nhs": 0.0101,
+    "agency": 0.0008,
+    "police_fire": 0.0003
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

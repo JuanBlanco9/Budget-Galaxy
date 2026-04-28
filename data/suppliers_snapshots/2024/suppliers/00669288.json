@@ -1,0 +1,184 @@
+{
+  "schema_version": "v2",
+  "company_number": "00669288",
+  "display_name": "Fluke (Uk) Limited",
+  "official_name": "FLUKE (UK) LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "05/09/1960",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "46520"
+  ],
+  "sic_labels": [
+    "Wholesale of electronic and telecommunications equipment and parts"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "52 HURRICANE WAY",
+    "address_line_2": "NORWICH",
+    "post_town": "NORFOLK",
+    "county": "",
+    "country": "",
+    "postal_code": "NR6 6JB"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 1,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 1
+  },
+  "spend_profile": {
+    "total_gbp_2024": 24144.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 52.672474,
+    "lng": 1.292481,
+    "lad24_cd": "E07000148",
+    "lad24_nm": "Norwich",
+    "region": "East of England"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/00669288"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "other",
+  "buyer_type_breakdown": {
+    "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T12:23:18Z",
+    "company_name": "FLUKE (UK) LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1960-09-05",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-11"
+  },
+  "governance": {
+    "api_date": "2026-04-28T12:23:19Z",
+    "total_officers": 34,
+    "active_count": 2,
+    "resigned_count": 32,
+    "active_officers": [
+      {
+        "name": "MEIJS, Robertus",
+        "role": "director",
+        "appointed_on": "2018-10-08",
+        "country_of_residence": "Netherlands",
+        "nationality": "Dutch"
+      },
+      {
+        "name": "SMITH, Christopher John, Mr.",
+        "role": "director",
+        "appointed_on": "2024-07-24",
+        "country_of_residence": "England",
+        "nationality": "English"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T12:23:20Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Fluke Precision Measurement Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-25-to-50-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2025-10-01",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "01410123"
+        }
+      },
+      {
+        "name": "Tga Uk Finance Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2025-02-24",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "10031770"
+        }
+      },
+      {
+        "name": "Tga Industries Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-07-02",
+        "identification": {
+          "legal_form": "Private Ltd Company",
+          "legal_authority": "England And Wales",
+          "country_registered": "Uk",
+          "place_registered": "Companies House",
+          "registration_number": "06020956"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3ODYyNjE1NmFkaXF6a2N4",
+    "date": "2025-08-27",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/RdDzsgYvfyv2DpuTOE5kH5N9s7uihCxvanuYI9fJoDE/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/00669288/filing-history/MzQ3ODYyNjE1NmFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

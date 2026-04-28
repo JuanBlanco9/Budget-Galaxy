@@ -1,0 +1,169 @@
+{
+  "schema_version": "v2",
+  "company_number": "00741598",
+  "display_name": "Ibm United Kingdom Limited",
+  "official_name": "IBM UNITED KINGDOM LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "21/11/1962",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "26200"
+  ],
+  "sic_labels": [
+    "Manufacture of computers and peripheral equipment"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "BUILDING C IBM HURSLEY OFFICE",
+    "address_line_2": "HURSLEY PARK ROAD",
+    "post_town": "WINCHESTER",
+    "county": "HAMPSHIRE",
+    "country": "UNITED KINGDOM",
+    "postal_code": "SO21 2JN"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 6,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 6
+  },
+  "spend_profile": {
+    "total_gbp_2024": 1981279178.87,
+    "n_contracts": 24,
+    "n_buyers": 15
+  },
+  "geo": {
+    "lat": 51.026666,
+    "lng": -1.398623,
+    "lad24_cd": "E07000094",
+    "lad24_nm": "Winchester",
+    "region": "South East"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/00741598"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T01:58:26Z",
+    "company_name": "IBM UNITED KINGDOM LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1962-11-21",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-14"
+  },
+  "governance": {
+    "api_date": "2026-04-22T01:58:28Z",
+    "total_officers": 70,
+    "active_count": 5,
+    "resigned_count": 65,
+    "active_officers": [
+      {
+        "name": "WRIGHT, Emma Danielle",
+        "role": "secretary",
+        "appointed_on": "2021-04-01",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BUTLER, Leon Christopher",
+        "role": "director",
+        "appointed_on": "2025-01-08",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "HODSON, Nicola, Dr",
+        "role": "director",
+        "appointed_on": "2023-01-13",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "KALIA, Rahul",
+        "role": "director",
+        "appointed_on": "2022-11-23",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British,American"
+      },
+      {
+        "name": "STIRLING, James Ian",
+        "role": "director",
+        "appointed_on": "2025-10-13",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T01:58:30Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Ibm United Kingdom Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "United Kingdom",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "00122953"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NDQ1MDM1N2FkaXF6a2N4",
+    "date": "2025-07-21",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/Q8hBoNlBd5AX_tYCQhrP0UE_7SoWI9wnWq3JK2QcjzY/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/00741598/filing-history/MzQ3NDQ1MDM1N2FkaXF6a2N4"
+  },
+  "top_buyer_type": "other",
+  "buyer_type_breakdown": {
+    "other": 0.7098,
+    "central_govt": 0.2353,
+    "nhs": 0.0548,
+    "police_fire": 0.0001
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

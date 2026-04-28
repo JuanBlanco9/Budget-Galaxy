@@ -1,0 +1,192 @@
+{
+  "schema_version": "v2",
+  "company_number": "OC325515",
+  "display_name": "York Consulting Llp",
+  "official_name": "YORK CONSULTING LLP",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Limited Liability Partnership",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "24/01/2007",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [],
+  "sic_labels": [],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "SMITHFIELD HOUSE",
+    "address_line_2": "92 NORTH STREET",
+    "post_town": "LEEDS",
+    "county": "WEST YORKSHIRE",
+    "country": "",
+    "postal_code": "LS2 7PN"
+  },
+  "accounts": {
+    "category": "TOTAL EXEMPTION FULL",
+    "last_made_up": "31/03/2025",
+    "next_due": "31/12/2026",
+    "ref_day": "31",
+    "ref_month": "3"
+  },
+  "mortgages": {
+    "num_charges": 1,
+    "num_outstanding": 1,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 100000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 53.801723,
+    "lng": -1.537792,
+    "lad24_cd": "E08000035",
+    "lad24_nm": "Leeds",
+    "region": "Yorkshire and The Humber"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/OC325515"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 0.5067,
+    "central_govt": 0.319,
+    "other": 0.1743,
+    "education": 0.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T06:26:09Z",
+    "company_name": "YORK CONSULTING LLP",
+    "company_status": "active",
+    "date_of_creation": "2007-01-24",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-10"
+  },
+  "governance": {
+    "api_date": "2026-04-28T06:26:10Z",
+    "total_officers": 12,
+    "active_count": 7,
+    "resigned_count": 5,
+    "active_officers": [
+      {
+        "name": "ALLAN, Timothy John",
+        "role": "llp-designated-member",
+        "appointed_on": "2017-04-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "WILSON, Philip James",
+        "role": "llp-designated-member",
+        "appointed_on": "2007-01-24",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "COWEN, Georgina Elizabeth Eyre",
+        "role": "llp-member",
+        "appointed_on": "2024-10-01",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "RODGER, John Leggat",
+        "role": "llp-member",
+        "appointed_on": "2007-01-24",
+        "country_of_residence": "England",
+        "nationality": null
+      },
+      {
+        "name": "WILSON, Sarah Elizabeth",
+        "role": "llp-member",
+        "appointed_on": "2015-04-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": null
+      },
+      {
+        "name": "CYGNET INTERNATIONAL LIMITED",
+        "role": "corporate-llp-member",
+        "appointed_on": "2017-04-01",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "LISSINGTON LIMITED",
+        "role": "corporate-llp-member",
+        "appointed_on": "2013-02-05",
+        "country_of_residence": null,
+        "nationality": null
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T06:26:11Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Cygnet International Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "voting-rights-25-to-50-percent-limited-liability-partnership",
+          "right-to-share-surplus-assets-25-to-50-percent-limited-liability-partnership"
+        ],
+        "notified_on": "2022-04-01",
+        "identification": {
+          "legal_form": "Company Limited By Shares",
+          "legal_authority": "The Companies Acts Of 1985 And 1989",
+          "country_registered": "United Kingdom",
+          "place_registered": "United Kingdom",
+          "registration_number": "2651797"
+        }
+      },
+      {
+        "name": "Dr Janice Ann Light",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "voting-rights-25-to-50-percent-limited-liability-partnership",
+          "right-to-share-surplus-assets-25-to-50-percent-limited-liability-partnership"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NTgxMjgyMmFkaXF6a2N4",
+    "date": "2025-07-31",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/DYOqJNNmemNXpW388xVxSaWHmES0J8cRi-AmqT4kfxQ/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/OC325515/filing-history/MzQ3NTgxMjgyMmFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

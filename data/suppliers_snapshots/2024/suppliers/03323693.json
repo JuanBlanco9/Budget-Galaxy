@@ -1,0 +1,173 @@
+{
+  "schema_version": "v2",
+  "company_number": "03323693",
+  "display_name": "M & M Medical Limited",
+  "official_name": "M & M MEDICAL LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "25/02/1997",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "43220"
+  ],
+  "sic_labels": [
+    "Plumbing, heat and air-conditioning installation"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "B4, HEOL Y TWYN",
+    "address_line_2": "TALBOT GREEN BUSINESS PARK",
+    "post_town": "TALBOT GREEN",
+    "county": "RHONDDA CYNON TAFF",
+    "country": "",
+    "postal_code": "CF72 9FG"
+  },
+  "accounts": {
+    "category": "TOTAL EXEMPTION FULL",
+    "last_made_up": "31/05/2025",
+    "next_due": "28/02/2027",
+    "ref_day": "31",
+    "ref_month": "5"
+  },
+  "mortgages": {
+    "num_charges": 5,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 5
+  },
+  "spend_profile": {
+    "total_gbp_2024": 329715.0,
+    "n_contracts": 2,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.535204,
+    "lng": -3.407352,
+    "lad24_cd": "W06000016",
+    "lad24_nm": "Rhondda Cynon Taf",
+    "region": null
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/03323693"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "nhs",
+  "buyer_type_breakdown": {
+    "nhs": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T02:02:05Z",
+    "company_name": "M & M MEDICAL LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1997-02-25",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-02-28",
+    "accounts_last_made_up": "2025-05-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-11"
+  },
+  "governance": {
+    "api_date": "2026-04-28T02:02:06Z",
+    "total_officers": 8,
+    "active_count": 3,
+    "resigned_count": 5,
+    "active_officers": [
+      {
+        "name": "CHAPPELL, Paul",
+        "role": "director",
+        "appointed_on": "2019-07-25",
+        "country_of_residence": "Wales",
+        "nationality": "British"
+      },
+      {
+        "name": "SAYER, Paul",
+        "role": "director",
+        "appointed_on": "2019-07-25",
+        "country_of_residence": "Wales",
+        "nationality": "British"
+      },
+      {
+        "name": "TIFFIN, Michael",
+        "role": "director",
+        "appointed_on": "2019-07-25",
+        "country_of_residence": "Wales",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T02:02:08Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "M&M Medical Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2019-07-25",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006"
+        }
+      },
+      {
+        "name": "Mr Steven John Young",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "Wales",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mrs Myra Young",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "Wales",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwNjU1ODI1NGFkaXF6a2N4",
+    "date": "2026-02-23",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/2STZIzM4KC1LKXwMKGOyADnSDWhTJB7XhID7DlVbJIo/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03323693/filing-history/MzUwNjU1ODI1NGFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

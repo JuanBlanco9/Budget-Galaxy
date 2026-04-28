@@ -1,0 +1,195 @@
+{
+  "schema_version": "v2",
+  "company_number": "10714601",
+  "display_name": "Stu3 Ltd",
+  "official_name": "STU3 LTD",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "07/04/2017",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "62012",
+    "62020",
+    "62090",
+    "78200"
+  ],
+  "sic_labels": [
+    "Business and domestic software development",
+    "Information technology consultancy activities",
+    "Other information technology service activities",
+    "Temporary employment agency activities"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "93 ELERS ROAD",
+    "address_line_2": "",
+    "post_town": "LONDON",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "W13 9QE"
+  },
+  "accounts": {
+    "category": "UNAUDITED ABRIDGED",
+    "last_made_up": "31/03/2025",
+    "next_due": "31/12/2026",
+    "ref_day": "31",
+    "ref_month": "3"
+  },
+  "mortgages": {
+    "num_charges": 0,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 59400.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.502586,
+    "lng": -0.315628,
+    "lad24_cd": "E09000009",
+    "lad24_nm": "Ealing",
+    "region": "London"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/10714601"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "education",
+  "buyer_type_breakdown": {
+    "education": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T08:41:18Z",
+    "company_name": "STU3 LTD",
+    "company_status": "active",
+    "date_of_creation": "2017-04-07",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-04-12"
+  },
+  "governance": {
+    "api_date": "2026-04-28T08:41:19Z",
+    "total_officers": 3,
+    "active_count": 3,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "COLLEDGE, Ian Darrell",
+        "role": "director",
+        "appointed_on": "2017-04-07",
+        "country_of_residence": "Wales",
+        "nationality": "British"
+      },
+      {
+        "name": "DOBSON, Daniel James",
+        "role": "director",
+        "appointed_on": "2017-06-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "O'MEARA, James William",
+        "role": "director",
+        "appointed_on": "2017-04-07",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T08:41:20Z",
+    "total_results": 4,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Stu3 Trustees Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent",
+          "voting-rights-50-to-75-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2024-09-11",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House - United Kingdom",
+          "registration_number": "15931833"
+        }
+      },
+      {
+        "name": "Mr Daniel James Dobson",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2017-06-01",
+        "identification": null
+      },
+      {
+        "name": "Mr James William O'Meara",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2017-04-07",
+        "identification": null
+      },
+      {
+        "name": "Mr Ian Darrell Colledge",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "Wales",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2017-04-07",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4NjA2MjQ0MWFkaXF6a2N4",
+    "date": "2025-10-23",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-unaudited-abridged",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/tLL_ey9i-A9yL56pNcA79qujDNR9wSu-mKGK4Seyw0Q/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/10714601/filing-history/MzQ4NjA2MjQ0MWFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

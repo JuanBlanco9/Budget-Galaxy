@@ -1,0 +1,188 @@
+{
+  "schema_version": "v2",
+  "company_number": "02299747",
+  "display_name": "Capita Business Services Ltd",
+  "official_name": "CAPITA BUSINESS SERVICES LTD",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "26/09/1988",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "62020"
+  ],
+  "sic_labels": [
+    "Information technology consultancy activities"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "FIRST FLOOR, 2 KINGDOM STREET",
+    "address_line_2": "PADDINGTON",
+    "post_town": "LONDON",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "W2 6BD"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 8,
+    "num_outstanding": 1,
+    "num_part_satisfied": 0,
+    "num_satisfied": 7
+  },
+  "spend_profile": {
+    "total_gbp_2024": 888251182.62,
+    "n_contracts": 24,
+    "n_buyers": 22
+  },
+  "geo": {
+    "lat": 51.519112,
+    "lng": -0.181704,
+    "lad24_cd": "E09000033",
+    "lad24_nm": "Westminster",
+    "region": "London"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/02299747"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T02:25:07Z",
+    "company_name": "CAPITA BUSINESS SERVICES LTD",
+    "company_status": "active",
+    "date_of_creation": "1988-09-26",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-14"
+  },
+  "governance": {
+    "api_date": "2026-04-22T02:25:09Z",
+    "total_officers": 69,
+    "active_count": 7,
+    "resigned_count": 62,
+    "active_officers": [
+      {
+        "name": "CAPITA GROUP SECRETARY LIMITED",
+        "role": "corporate-secretary",
+        "appointed_on": "2008-12-01",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "GREGORY, Christopher James",
+        "role": "director",
+        "appointed_on": "2024-08-19",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HOLROYD, Richard Charles",
+        "role": "director",
+        "appointed_on": "2023-11-09",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "LANSDOWN, Michael William",
+        "role": "director",
+        "appointed_on": "2022-01-12",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "RIPOCHE VAN HECKE, Corinne",
+        "role": "director",
+        "appointed_on": "2023-04-13",
+        "country_of_residence": "England",
+        "nationality": "French"
+      },
+      {
+        "name": "SMYTHE, Anthony",
+        "role": "director",
+        "appointed_on": "2026-02-11",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CAPITA CORPORATE DIRECTOR LIMITED",
+        "role": "corporate-director",
+        "appointed_on": "2023-05-23",
+        "country_of_residence": null,
+        "nationality": null
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T02:25:11Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Capita Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "United Kingdom (England)",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "06027254"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MTQ5OTk4NmFkaXF6a2N4",
+    "date": "2025-06-25",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/r49er1oogfUj5kpAndABKE_NmVx91yllNl6KyzOnrfM/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02299747/filing-history/MzQ3MTQ5OTk4NmFkaXF6a2N4"
+  },
+  "top_buyer_type": "central_govt",
+  "buyer_type_breakdown": {
+    "central_govt": 0.8761,
+    "other": 0.1182,
+    "council": 0.0043,
+    "education": 0.0009,
+    "trust": 0.0003,
+    "agency": 0.0001,
+    "police_fire": 0.0,
+    "nhs": 0.0
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

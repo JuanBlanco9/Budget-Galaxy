@@ -1,0 +1,221 @@
+{
+  "schema_version": "v2",
+  "company_number": "10222179",
+  "display_name": "Char.Gy Limited",
+  "official_name": "CHAR.GY LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "09/06/2016",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "62012"
+  ],
+  "sic_labels": [
+    "Business and domestic software development"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "55 KING WILLIAM STREET",
+    "address_line_2": "",
+    "post_town": "LONDON",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "EC4R 9AD"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/03/2025",
+    "next_due": "31/12/2026",
+    "ref_day": "31",
+    "ref_month": "3"
+  },
+  "mortgages": {
+    "num_charges": 2,
+    "num_outstanding": 1,
+    "num_part_satisfied": 0,
+    "num_satisfied": 1
+  },
+  "spend_profile": {
+    "total_gbp_2024": 500000000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.510712,
+    "lng": -0.086116,
+    "lad24_cd": "E09000001",
+    "lad24_nm": "City of London",
+    "region": "London"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/10222179"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T03:20:15Z",
+    "company_name": "CHAR.GY LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2016-06-09",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-22"
+  },
+  "governance": {
+    "api_date": "2026-04-22T03:20:17Z",
+    "total_officers": 10,
+    "active_count": 6,
+    "resigned_count": 4,
+    "active_officers": [
+      {
+        "name": "BRIGHTON, Oliver Matthew",
+        "role": "director",
+        "appointed_on": "2022-11-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "LEWIS, John Charles",
+        "role": "director",
+        "appointed_on": "2023-04-20",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LIPCZYNSKI, George Edward",
+        "role": "director",
+        "appointed_on": "2022-04-28",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MCDOWELL, Christopher Stephen",
+        "role": "director",
+        "appointed_on": "2016-08-16",
+        "country_of_residence": "Northern Ireland",
+        "nationality": "British"
+      },
+      {
+        "name": "RIDD, George Phillip",
+        "role": "director",
+        "appointed_on": "2021-06-25",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WATSON, Gillian Anne Mcgregor",
+        "role": "director",
+        "appointed_on": "2021-09-16",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T03:20:19Z",
+    "total_results": 4,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Zciif Hold Co 3 Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2021-06-25",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "The Registrar Of Companies For England And Wales",
+          "registration_number": "13385603"
+        }
+      },
+      {
+        "name": "Unboxed Consulting Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2019-10-31",
+        "identification": {
+          "legal_form": "Private Limted Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England And Wales",
+          "place_registered": "England And Wales Company Registry",
+          "registration_number": "05440833"
+        }
+      },
+      {
+        "name": "Mr Christopher Stephen Mcdowell",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "Northern Ireland",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2018-10-23",
+        "identification": null
+      },
+      {
+        "name": "Mr Richard John Stobart",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2016-06-09",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MTY4MzU1MmFkaXF6a2N4",
+    "date": "2025-06-26",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/XzYlwfyhcV9cUWxCWZYI6056LWoOYoXKEHudNPge35k/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/10222179/filing-history/MzQ3MTY4MzU1MmFkaXF6a2N4"
+  },
+  "top_buyer_type": "other",
+  "buyer_type_breakdown": {
+    "other": 0.9089,
+    "agency": 0.0909,
+    "council": 0.0002
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

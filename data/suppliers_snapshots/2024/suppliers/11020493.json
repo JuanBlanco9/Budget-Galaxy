@@ -1,0 +1,158 @@
+{
+  "schema_version": "v2",
+  "company_number": "11020493",
+  "display_name": "Accipio Digital Ltd",
+  "official_name": "ACCIPIO DIGITAL LTD",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "18/10/2017",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "70229"
+  ],
+  "sic_labels": [
+    "Management consultancy activities other than financial management"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "MERCER HOUSE HIGH STREET",
+    "address_line_2": "REDBOURN",
+    "post_town": "ST. ALBANS",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "AL3 7LE"
+  },
+  "accounts": {
+    "category": "TOTAL EXEMPTION FULL",
+    "last_made_up": "31/03/2025",
+    "next_due": "31/12/2026",
+    "ref_day": "31",
+    "ref_month": "3"
+  },
+  "mortgages": {
+    "num_charges": 0,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 102800.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.797101,
+    "lng": -0.393935,
+    "lad24_cd": "E07000240",
+    "lad24_nm": "St Albans",
+    "region": "East of England"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/11020493"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 0.671,
+    "agency": 0.329
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T06:13:53Z",
+    "company_name": "ACCIPIO DIGITAL LTD",
+    "company_status": "active",
+    "date_of_creation": "2017-10-18",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-02"
+  },
+  "governance": {
+    "api_date": "2026-04-28T06:13:54Z",
+    "total_officers": 2,
+    "active_count": 2,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "BENSON-COOPER, Sascha Alexander",
+        "role": "director",
+        "appointed_on": "2017-10-18",
+        "country_of_residence": "Jersey",
+        "nationality": "Austrian"
+      },
+      {
+        "name": "MCLAUGHLIN, Andrew Edward Graham",
+        "role": "director",
+        "appointed_on": "2023-05-19",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T06:13:55Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Sascha Alexander Benson-Cooper",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Austrian",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2017-10-18",
+        "identification": null
+      },
+      {
+        "name": "Accipio Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2017-10-18",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act",
+          "country_registered": "Uk",
+          "place_registered": "Companies House Uk",
+          "registration_number": "07142802"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NDY4MzMzNWFkaXF6a2N4",
+    "date": "2025-07-22",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/rXW-URLphZHPj7Vl8zBqn1UvetoyVKJnR5KVAb9trF0/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/11020493/filing-history/MzQ3NDY4MzMzNWFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

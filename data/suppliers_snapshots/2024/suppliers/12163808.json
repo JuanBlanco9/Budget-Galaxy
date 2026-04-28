@@ -1,0 +1,139 @@
+{
+  "schema_version": "v2",
+  "company_number": "12163808",
+  "display_name": "Ex1 - Digital Forensic Services Ltd",
+  "official_name": "EX1 - DIGITAL FORENSIC SERVICES LTD",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "19/08/2019",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "62020",
+    "62090",
+    "69109",
+    "74909"
+  ],
+  "sic_labels": [
+    "Information technology consultancy activities",
+    "Other information technology service activities",
+    "Activities of patent and copyright agents; other legal activities n.e.c.",
+    "Other professional, scientific and technical activities n.e.c."
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "OFFICES 1 & 2 BLOCK 2, TEMPLE WORKS",
+    "address_line_2": "FURNACE",
+    "post_town": "LLANELLI",
+    "county": "CARMARTHENSHIRE",
+    "country": "WALES",
+    "postal_code": "SA15 4HT"
+  },
+  "accounts": {
+    "category": "TOTAL EXEMPTION FULL",
+    "last_made_up": "31/08/2024",
+    "next_due": "30/05/2026",
+    "ref_day": "30",
+    "ref_month": "8"
+  },
+  "mortgages": {
+    "num_charges": 2,
+    "num_outstanding": 2,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 150000.0,
+    "n_contracts": 3,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.690216,
+    "lng": -4.168384,
+    "lad24_cd": "W06000010",
+    "lad24_nm": "Carmarthenshire",
+    "region": null
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/12163808"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "police_fire",
+  "buyer_type_breakdown": {
+    "police_fire": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T04:53:14Z",
+    "company_name": "EX1 - DIGITAL FORENSIC SERVICES LTD",
+    "company_status": "active",
+    "date_of_creation": "2019-08-19",
+    "date_of_cessation": null,
+    "jurisdiction": "wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-05-30",
+    "accounts_last_made_up": "2024-08-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-06"
+  },
+  "governance": {
+    "api_date": "2026-04-28T04:53:15Z",
+    "total_officers": 1,
+    "active_count": 1,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "DAVIES, Allen Matthew Marc",
+        "role": "director",
+        "appointed_on": "2019-08-19",
+        "country_of_residence": "Wales",
+        "nationality": "Welsh"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T04:53:16Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Allen Matthew Marc Davies",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Welsh",
+        "country_of_residence": "Wales",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2019-08-19",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2ODQ1MzI3NmFkaXF6a2N4",
+    "date": "2025-05-30",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/yhc6yJz9R_03Z4oQWtZjsyoexHmaBNygvkEmIeg2KWw/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/12163808/filing-history/MzQ2ODQ1MzI3NmFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

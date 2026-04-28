@@ -1,0 +1,144 @@
+{
+  "schema_version": "v2",
+  "company_number": "00103709",
+  "display_name": "Unisys Limited",
+  "official_name": "UNISYS LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "26/06/1909",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "62012"
+  ],
+  "sic_labels": [
+    "Business and domestic software development"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "ENIGMA",
+    "address_line_2": "WAVENDON BUSINESS PARK",
+    "post_town": "MILTON KEYNES",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "MK17 8LX"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 10,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 10
+  },
+  "spend_profile": {
+    "total_gbp_2024": 73322.5,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 52.025511,
+    "lng": -0.679116,
+    "lad24_cd": "E06000042",
+    "lad24_nm": "Milton Keynes",
+    "region": "South East"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/00103709"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "central_govt",
+  "buyer_type_breakdown": {
+    "central_govt": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T07:47:00Z",
+    "company_name": "UNISYS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1909-06-26",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-04-16"
+  },
+  "governance": {
+    "api_date": "2026-04-28T07:47:01Z",
+    "total_officers": 50,
+    "active_count": 2,
+    "resigned_count": 48,
+    "active_officers": [
+      {
+        "name": "BECKER-SMITH, Cassandra",
+        "role": "director",
+        "appointed_on": "2019-06-27",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MALLIA, Franco Paul",
+        "role": "director",
+        "appointed_on": "2010-12-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T07:47:02Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Bmx Information Systems (Uk) Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Liability Company",
+          "legal_authority": "Companies Acts",
+          "country_registered": "England",
+          "place_registered": "England",
+          "registration_number": "1653767"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MzYxMzUyMGFkaXF6a2N4",
+    "date": "2025-10-03",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/sY3pEFraqsiWMFV3PAaLD64kHovHkIBQB1c_K9Sqze0/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/00103709/filing-history/MzQ4MzYxMzUyMGFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

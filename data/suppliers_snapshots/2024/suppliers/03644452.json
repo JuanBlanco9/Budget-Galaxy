@@ -1,0 +1,144 @@
+{
+  "schema_version": "v2",
+  "company_number": "03644452",
+  "display_name": "Sabio Ltd",
+  "official_name": "SABIO LTD",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "05/10/1998",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "61900"
+  ],
+  "sic_labels": [
+    "Other telecommunications activities"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "12TH FLOOR, BLUE FIN BUILDING",
+    "address_line_2": "110 SOUTHWARK STREET",
+    "post_town": "LONDON",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "SE1 0SU"
+  },
+  "accounts": {
+    "category": "GROUP",
+    "last_made_up": "30/09/2024",
+    "next_due": "30/06/2026",
+    "ref_day": "30",
+    "ref_month": "9"
+  },
+  "mortgages": {
+    "num_charges": 20,
+    "num_outstanding": 8,
+    "num_part_satisfied": 0,
+    "num_satisfied": 12
+  },
+  "spend_profile": {
+    "total_gbp_2024": 901000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "lad24_cd": null,
+    "lad24_nm": null,
+    "region": null
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/03644452"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "central_govt",
+  "buyer_type_breakdown": {
+    "central_govt": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T22:02:06Z",
+    "company_name": "SABIO LTD",
+    "company_status": "active",
+    "date_of_creation": "1998-10-05",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-06-30",
+    "accounts_last_made_up": "2024-09-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-14"
+  },
+  "governance": {
+    "api_date": "2026-04-27T22:02:07Z",
+    "total_officers": 19,
+    "active_count": 2,
+    "resigned_count": 17,
+    "active_officers": [
+      {
+        "name": "HAYWARD, Darren John",
+        "role": "director",
+        "appointed_on": "2023-09-12",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ROBERTS, Andrew Charles",
+        "role": "director",
+        "appointed_on": "2003-01-10",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T22:02:09Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Seattle Bidco Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-06-30",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Registrar Of Companies For England And Wales",
+          "registration_number": "10186668"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NzkxODA0NGFkaXF6a2N4",
+    "date": "2025-08-20",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/s9CB2mZkZXY_LekFoDVbnm4kCIxg_o18fCz3lnuScyA/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03644452/filing-history/MzQ3NzkxODA0NGFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

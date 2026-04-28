@@ -1,0 +1,155 @@
+{
+  "schema_version": "v2",
+  "company_number": "00258810",
+  "display_name": "J.T.Mackley & Co.Limited",
+  "official_name": "J.T.MACKLEY & CO.LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "04/09/1931",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "42990"
+  ],
+  "sic_labels": [
+    "Construction of other civil engineering projects n.e.c."
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "BANKSIDE HOUSE",
+    "address_line_2": "HENFIELD ROAD",
+    "post_town": "SMALL DOLE",
+    "county": "WEST SUSSEX",
+    "country": "",
+    "postal_code": "BN5 9XQ"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "29/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 11,
+    "num_outstanding": 1,
+    "num_part_satisfied": 0,
+    "num_satisfied": 10
+  },
+  "spend_profile": {
+    "total_gbp_2024": 12500000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 50.899615,
+    "lng": -0.274956,
+    "lad24_cd": "E07000227",
+    "lad24_nm": "Horsham",
+    "region": "South East"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/00258810"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "agency",
+  "buyer_type_breakdown": {
+    "agency": 0.9738,
+    "council": 0.0203,
+    "other": 0.0059
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T14:16:45Z",
+    "company_name": "J.T.MACKLEY & CO.LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1931-09-04",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-29",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-05-14"
+  },
+  "governance": {
+    "api_date": "2026-04-27T14:16:47Z",
+    "total_officers": 15,
+    "active_count": 3,
+    "resigned_count": 12,
+    "active_officers": [
+      {
+        "name": "MILES, Stewart",
+        "role": "secretary",
+        "appointed_on": "2023-05-11",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "HAMER, Benjamin Alexander",
+        "role": "director",
+        "appointed_on": "2021-09-13",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "PAGE, Gary Charles",
+        "role": "director",
+        "appointed_on": "2005-10-10",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T14:16:49Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Van Oord Uk Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act",
+          "country_registered": "Uk",
+          "place_registered": "Companies House Uk",
+          "registration_number": "01805156"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MzA1NjY4NWFkaXF6a2N4",
+    "date": "2025-09-29",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/Oodd8RtLm58Sx9o5Wfh8Lk9hknT7c4YMtStHr0yZnBM/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/00258810/filing-history/MzQ4MzA1NjY4NWFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

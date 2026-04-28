@@ -1,0 +1,185 @@
+{
+  "schema_version": "v2",
+  "company_number": "12888223",
+  "display_name": "Dh Opco Uk Ltd",
+  "official_name": "DH OPCO UK LTD",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "18/09/2020",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "62020",
+    "62090"
+  ],
+  "sic_labels": [
+    "Information technology consultancy activities",
+    "Other information technology service activities"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "SUITE 2, RIVERSIDE STUDIO, 2 EMBANKMENT",
+    "address_line_2": "SOVEREIGN STREET",
+    "post_town": "LEEDS",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "LS1 4BA"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 1,
+    "num_outstanding": 1,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 1123734.7,
+    "n_contracts": 3,
+    "n_buyers": 2
+  },
+  "geo": {
+    "lat": 53.792949,
+    "lng": -1.54434,
+    "lad24_cd": "E08000035",
+    "lad24_nm": "Leeds",
+    "region": "Yorkshire and The Humber"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/12888223"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "other",
+  "buyer_type_breakdown": {
+    "other": 0.7666,
+    "nhs": 0.2334
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T21:22:48Z",
+    "company_name": "DH OPCO UK LTD",
+    "company_status": "active",
+    "date_of_creation": "2020-09-18",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-09-26"
+  },
+  "governance": {
+    "api_date": "2026-04-27T21:22:50Z",
+    "total_officers": 7,
+    "active_count": 2,
+    "resigned_count": 5,
+    "active_officers": [
+      {
+        "name": "DEARLOVE, Neil",
+        "role": "director",
+        "appointed_on": "2021-04-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "FIUMICELLI, Andrea",
+        "role": "director",
+        "appointed_on": "2021-04-01",
+        "country_of_residence": "Italy",
+        "nationality": "Italian"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T21:22:51Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Dh Target Uk Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2021-04-01",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "12873425"
+        }
+      },
+      {
+        "name": "Csc Computer Sciences Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2021-02-23",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "00963578"
+        }
+      },
+      {
+        "name": "Dh Target Uk Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2020-09-18",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "England And Wales",
+          "country_registered": "United Kingdom",
+          "place_registered": "United Kingdom",
+          "registration_number": "12873425"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4OTM2NTU2OGFkaXF6a2N4",
+    "date": "2025-11-19",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/t9YfYPWZI2Sb-U1jVmNhhxnoSx_pMHypL2woY_5axK4/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/12888223/filing-history/MzQ4OTM2NTU2OGFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

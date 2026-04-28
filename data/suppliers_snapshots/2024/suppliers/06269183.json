@@ -1,0 +1,137 @@
+{
+  "schema_version": "v2",
+  "company_number": "06269183",
+  "display_name": "Accon Uk Limited",
+  "official_name": "ACCON UK LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "05/06/2007",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "71129",
+    "71200",
+    "74901"
+  ],
+  "sic_labels": [
+    "Other engineering activities",
+    "Technical testing and analysis",
+    "Environmental consulting activities"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "12 PARK LANE",
+    "address_line_2": "TILEHURST",
+    "post_town": "READING",
+    "county": "BERKSHIRE",
+    "country": "ENGLAND",
+    "postal_code": "RG31 5DL"
+  },
+  "accounts": {
+    "category": "MICRO ENTITY",
+    "last_made_up": "30/06/2025",
+    "next_due": "31/03/2027",
+    "ref_day": "30",
+    "ref_month": "6"
+  },
+  "mortgages": {
+    "num_charges": 1,
+    "num_outstanding": 1,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 1750000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.456613,
+    "lng": -1.04449,
+    "lad24_cd": "E06000038",
+    "lad24_nm": "Reading",
+    "region": "South East"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/06269183"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "central_govt",
+  "buyer_type_breakdown": {
+    "central_govt": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T20:12:22Z",
+    "company_name": "ACCON UK LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2007-06-05",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-03-31",
+    "accounts_last_made_up": "2025-06-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-04-28"
+  },
+  "governance": {
+    "api_date": "2026-04-27T20:12:24Z",
+    "total_officers": 5,
+    "active_count": 1,
+    "resigned_count": 4,
+    "active_officers": [
+      {
+        "name": "PARRY, Graham Alfred",
+        "role": "director",
+        "appointed_on": "2007-06-05",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T20:12:25Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Graham Alfred Parry",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2017-06-01",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MzQwNjc5MmFkaXF6a2N4",
+    "date": "2025-12-10",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-micro-entity",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/ohVuMLOnRV5d-qrSehGDwyQJeYMHz-Px-FYAghbL-5o/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/06269183/filing-history/MzQ5MzQwNjc5MmFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

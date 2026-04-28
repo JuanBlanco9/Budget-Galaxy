@@ -1,0 +1,197 @@
+{
+  "schema_version": "v2",
+  "company_number": "02530163",
+  "display_name": "Barclaycard Funding Plc",
+  "official_name": "BARCLAYCARD FUNDING PLC",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Public Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "13/08/1990",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "82990"
+  ],
+  "sic_labels": [
+    "Other business support service activities n.e.c."
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "1 CHURCHILL PLACE",
+    "address_line_2": "LONDON",
+    "post_town": "",
+    "county": "",
+    "country": "",
+    "postal_code": "E14 5HP"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/06/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 33,
+    "num_outstanding": 30,
+    "num_part_satisfied": 0,
+    "num_satisfied": 3
+  },
+  "spend_profile": {
+    "total_gbp_2024": 0.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.504924,
+    "lng": -0.014381,
+    "lad24_cd": "E09000030",
+    "lad24_nm": "Tower Hamlets",
+    "region": "London"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/02530163"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "other",
+  "buyer_type_breakdown": {},
+  "ch_profile": {
+    "api_date": "2026-04-28T14:16:07Z",
+    "company_name": "BARCLAYCARD FUNDING PLC",
+    "company_status": "active",
+    "date_of_creation": "1990-08-13",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-06-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-15"
+  },
+  "governance": {
+    "api_date": "2026-04-28T14:16:08Z",
+    "total_officers": 46,
+    "active_count": 4,
+    "resigned_count": 42,
+    "active_officers": [
+      {
+        "name": "BARCOSEC LIMITED",
+        "role": "corporate-secretary",
+        "appointed_on": "1998-10-06",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "COLEMAN, Aisling Marie",
+        "role": "director",
+        "appointed_on": "2025-11-17",
+        "country_of_residence": "United Kingdom",
+        "nationality": "Irish"
+      },
+      {
+        "name": "TAYLOR, Simon",
+        "role": "director",
+        "appointed_on": "2024-01-22",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "CSC DIRECTORS (NO.3) LIMITED",
+        "role": "corporate-director",
+        "appointed_on": "2003-03-24",
+        "country_of_residence": null,
+        "nationality": null
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T14:16:09Z",
+    "total_results": 3,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Barclays Bank Uk Plc",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-50-to-75-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2018-04-01",
+        "identification": {
+          "legal_form": "Public Limited Company",
+          "legal_authority": "United Kingdom",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "9740322"
+        }
+      },
+      {
+        "name": "Barclays Bank Plc",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-50-to-75-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Public Limited Company",
+          "legal_authority": "England And Wales",
+          "country_registered": "England & Wales",
+          "place_registered": "Companies House",
+          "registration_number": "1026167"
+        }
+      },
+      {
+        "name": "Csc Management Services (Uk) Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "England And Wales",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "3853947"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MjczNTEzMmFkaXF6a2N4",
+    "date": "2025-07-08",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/L2AndTadFQeDVr4iyTMdOl7vgeNWZpoSs2CGWtgdzto/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02530163/filing-history/MzQ3MjczNTEzMmFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

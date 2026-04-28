@@ -1,0 +1,187 @@
+{
+  "schema_version": "v2",
+  "company_number": "02776536",
+  "display_name": "Iken Business Ltd",
+  "official_name": "IKEN BUSINESS LTD",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "24/12/1992",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "58290",
+    "62020"
+  ],
+  "sic_labels": [
+    "Other software publishing",
+    "Information technology consultancy activities"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "FIRST FLOOR, PS21",
+    "address_line_2": "21 PRINCE STREET",
+    "post_town": "BRISTOL",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "BS1 4PH"
+  },
+  "accounts": {
+    "category": "TOTAL EXEMPTION FULL",
+    "last_made_up": "31/03/2025",
+    "next_due": "31/12/2026",
+    "ref_day": "31",
+    "ref_month": "3"
+  },
+  "mortgages": {
+    "num_charges": 0,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 92329.65,
+    "n_contracts": 2,
+    "n_buyers": 2
+  },
+  "geo": {
+    "lat": 51.450738,
+    "lng": -2.596275,
+    "lad24_cd": "E06000023",
+    "lad24_nm": "Bristol, City of",
+    "region": "South West"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/02776536"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 0.7535,
+    "police_fire": 0.2465
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T06:45:18Z",
+    "company_name": "IKEN BUSINESS LTD",
+    "company_status": "active",
+    "date_of_creation": "1992-12-24",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-31"
+  },
+  "governance": {
+    "api_date": "2026-04-28T06:45:19Z",
+    "total_officers": 9,
+    "active_count": 5,
+    "resigned_count": 4,
+    "active_officers": [
+      {
+        "name": "CHESTER, Isaac Gerald Amiel",
+        "role": "director",
+        "appointed_on": "2025-04-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "COLEMAN, Philip Martin Anthony",
+        "role": "director",
+        "appointed_on": "2023-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CORSIE, Tanya Jane",
+        "role": "director",
+        "appointed_on": "2015-06-05",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      },
+      {
+        "name": "PEMBERTON, John Leyland",
+        "role": "director",
+        "appointed_on": "2002-04-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "WANLESS, Stephen Peter William",
+        "role": "director",
+        "appointed_on": "2016-03-18",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T06:45:20Z",
+    "total_results": 3,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Mr Isaac Gerald Amiel Chester",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "voting-rights-50-to-75-percent"
+        ],
+        "notified_on": "2025-06-30",
+        "identification": null
+      },
+      {
+        "name": "Mr John Leyland Pemberton",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2025-06-30",
+        "identification": null
+      },
+      {
+        "name": "Dr Andrew Chester",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent"
+        ],
+        "notified_on": "2016-12-20",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MzU4MTk5NWFkaXF6a2N4",
+    "date": "2025-12-11",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/ayc7x2vQosgBy00ykrwsSlvODChkrn4QlV-s9UuUPjE/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02776536/filing-history/MzQ5MzU4MTk5NWFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

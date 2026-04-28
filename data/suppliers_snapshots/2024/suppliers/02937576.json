@@ -1,0 +1,202 @@
+{
+  "schema_version": "v2",
+  "company_number": "02937576",
+  "display_name": "Economic Research Services Limited",
+  "official_name": "ECONOMIC RESEARCH SERVICES LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "10/06/1994",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "70229"
+  ],
+  "sic_labels": [
+    "Management consultancy activities other than financial management"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "SPRING LODGE 172 CHESTER ROAD",
+    "address_line_2": "HELSBY",
+    "post_town": "CHESHIRE",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "WA6 0AR"
+  },
+  "accounts": {
+    "category": "SMALL",
+    "last_made_up": "06/04/2025",
+    "next_due": "31/12/2026",
+    "ref_day": "31",
+    "ref_month": "3"
+  },
+  "mortgages": {
+    "num_charges": 3,
+    "num_outstanding": 2,
+    "num_part_satisfied": 0,
+    "num_satisfied": 1
+  },
+  "spend_profile": {
+    "total_gbp_2024": 48475.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 53.274344,
+    "lng": -2.768206,
+    "lad24_cd": "E06000050",
+    "lad24_nm": "Cheshire West and Chester",
+    "region": "North West"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/02937576"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "police_fire",
+  "buyer_type_breakdown": {
+    "police_fire": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T09:37:29Z",
+    "company_name": "ECONOMIC RESEARCH SERVICES LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1994-06-10",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-04-06",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-08"
+  },
+  "governance": {
+    "api_date": "2026-04-28T09:37:30Z",
+    "total_officers": 33,
+    "active_count": 8,
+    "resigned_count": 25,
+    "active_officers": [
+      {
+        "name": "EVANS, Sally",
+        "role": "secretary",
+        "appointed_on": "2022-10-31",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "HERLIHY, Francis",
+        "role": "director",
+        "appointed_on": "2025-04-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HODGES, Elliott Samuel",
+        "role": "director",
+        "appointed_on": "2024-11-04",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "IRWIN, Jenny Olivia",
+        "role": "director",
+        "appointed_on": "2025-10-31",
+        "country_of_residence": "Northern Ireland",
+        "nationality": "British"
+      },
+      {
+        "name": "LOWE, Samuel John",
+        "role": "director",
+        "appointed_on": "2025-10-31",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MACKIN, Declan Colin",
+        "role": "director",
+        "appointed_on": "2025-10-31",
+        "country_of_residence": "Northern Ireland",
+        "nationality": "Irish"
+      },
+      {
+        "name": "RYDER, Alasdair Alan",
+        "role": "director",
+        "appointed_on": "2022-10-31",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "STRUDWICK, Ian Harry",
+        "role": "director",
+        "appointed_on": "2022-10-31",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T09:37:31Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Rsk Environment Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2022-10-31",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "Scotland",
+          "place_registered": "Companies House",
+          "registration_number": "Sc115530"
+        }
+      },
+      {
+        "name": "Mr Keith Richard Burge",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-09-01",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5Mjc5ODY4NWFkaXF6a2N4",
+    "date": "2025-12-08",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/u-OvKWsUoHGxNe7f6eyknU4stip9XSNLbjal7KmSO2w/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02937576/filing-history/MzQ5Mjc5ODY4NWFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

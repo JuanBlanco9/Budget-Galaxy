@@ -1,0 +1,201 @@
+{
+  "schema_version": "v2",
+  "company_number": "01789170",
+  "display_name": "Costar Uk Limited",
+  "official_name": "COSTAR UK LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "06/02/1984",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "63990"
+  ],
+  "sic_labels": [
+    "Other information service activities n.e.c."
+  ],
+  "previous_names": [
+    {
+      "name": "FOCUS INFORMATION LIMITED",
+      "condate": "17/12/2007"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "C/O CSC CLS (UK) LIMITED 5 CHURCHILL PLACE",
+    "address_line_2": "10TH FLOOR",
+    "post_town": "LONDON",
+    "county": "",
+    "country": "UNITED KINGDOM",
+    "postal_code": "E14 5HU"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 5,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 5
+  },
+  "spend_profile": {
+    "total_gbp_2024": 50922.56,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.504691,
+    "lng": -0.013369,
+    "lad24_cd": "E09000030",
+    "lad24_nm": "Tower Hamlets",
+    "region": "London"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/01789170"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "central_govt",
+  "buyer_type_breakdown": {
+    "central_govt": 0.6619,
+    "council": 0.3381
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T09:13:10Z",
+    "company_name": "COSTAR UK LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1984-02-06",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-15"
+  },
+  "governance": {
+    "api_date": "2026-04-28T09:13:11Z",
+    "total_officers": 40,
+    "active_count": 4,
+    "resigned_count": 36,
+    "active_officers": [
+      {
+        "name": "CSC CLS (UK) LIMITED",
+        "role": "corporate-secretary",
+        "appointed_on": "2025-09-18",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "FLORANCE, Andrew",
+        "role": "director",
+        "appointed_on": "2003-01-09",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      },
+      {
+        "name": "ROSSMANN, Robin Jack",
+        "role": "director",
+        "appointed_on": "2021-12-31",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "SIMURO, Frank",
+        "role": "director",
+        "appointed_on": "2007-08-02",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T09:13:12Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Costar Group Inc.",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2021-11-22",
+        "identification": {
+          "legal_form": "Incorporation",
+          "legal_authority": "Delaware General Corporation Law",
+          "country_registered": "United States",
+          "place_registered": "Delaware",
+          "registration_number": "2854191"
+        }
+      },
+      {
+        "name": "Costar Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England & Wales",
+          "place_registered": "England & Wales",
+          "registration_number": "04590482"
+        }
+      },
+      {
+        "name": "Costar Group, Inc",
+        "kind": "legal-person-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Corporation",
+          "legal_authority": "Delaware Limited Liability Act"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MzYxNDEyNWFkaXF6a2N4",
+    "date": "2025-10-07",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/VvsbD5gQoNKIThY68RfhWPmMqO_dpwom-U7A64067IM/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01789170/filing-history/MzQ4MzYxNDEyNWFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

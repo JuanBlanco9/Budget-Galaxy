@@ -1,0 +1,157 @@
+{
+  "schema_version": "v2",
+  "company_number": "01271033",
+  "display_name": "Ricoh Uk Limited",
+  "official_name": "RICOH UK LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "29/07/1976",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "62020"
+  ],
+  "sic_labels": [
+    "Information technology consultancy activities"
+  ],
+  "previous_names": [
+    {
+      "name": "IKON OFFICE SOLUTIONS LIMITED",
+      "condate": "01/04/2010"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "900 PAVILION DRIVE",
+    "address_line_2": "NORTHAMPTON BUSINESS PARK",
+    "post_town": "NORTHAMPTON",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "NN4 7RG"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/03/2025",
+    "next_due": "31/12/2026",
+    "ref_day": "31",
+    "ref_month": "3"
+  },
+  "mortgages": {
+    "num_charges": 12,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 12
+  },
+  "spend_profile": {
+    "total_gbp_2024": 63779575.75,
+    "n_contracts": 20,
+    "n_buyers": 17
+  },
+  "geo": {
+    "lat": 52.218549,
+    "lng": -0.87856,
+    "lad24_cd": "E06000062",
+    "lad24_nm": "West Northamptonshire",
+    "region": "East Midlands"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/01271033"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T16:42:03Z",
+    "company_name": "RICOH UK LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1976-07-29",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-08-14"
+  },
+  "governance": {
+    "api_date": "2026-04-22T16:42:04Z",
+    "total_officers": 19,
+    "active_count": 2,
+    "resigned_count": 17,
+    "active_officers": [
+      {
+        "name": "HOPTON, Christopher Paul",
+        "role": "director",
+        "appointed_on": "2025-03-05",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "STUART, Timothy Ian",
+        "role": "director",
+        "appointed_on": "2023-10-02",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T16:42:06Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Ricoh Europe Holdings Plc",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Plc",
+          "legal_authority": "Companies Act 1985",
+          "country_registered": "England",
+          "place_registered": "Registrar Of Companies For England And Wales",
+          "registration_number": "6273215"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NDkyNDA0MWFkaXF6a2N4",
+    "date": "2025-12-22",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/t0J0fRdLC5ZaCHGcubLV-0HDNXBfcNjORoRTTybZajA/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01271033/filing-history/MzQ5NDkyNDA0MWFkaXF6a2N4"
+  },
+  "top_buyer_type": "other",
+  "buyer_type_breakdown": {
+    "other": 0.5644,
+    "education": 0.3557,
+    "council": 0.0424,
+    "nhs": 0.0276,
+    "central_govt": 0.0049,
+    "trust": 0.0042,
+    "police_fire": 0.0009
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

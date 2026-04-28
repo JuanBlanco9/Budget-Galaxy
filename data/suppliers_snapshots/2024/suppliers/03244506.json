@@ -1,0 +1,159 @@
+{
+  "schema_version": "v2",
+  "company_number": "03244506",
+  "display_name": "Plp Construction Limited",
+  "official_name": "PLP CONSTRUCTION LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "02/09/1996",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "43999"
+  ],
+  "sic_labels": [
+    "Other specialised construction activities n.e.c."
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "30 ROCHDALE LANE",
+    "address_line_2": "",
+    "post_town": "HEYWOOD",
+    "county": "LANCASHIRE",
+    "country": "",
+    "postal_code": "OL10 1PF"
+  },
+  "accounts": {
+    "category": "TOTAL EXEMPTION FULL",
+    "last_made_up": "30/09/2025",
+    "next_due": "30/06/2027",
+    "ref_day": "30",
+    "ref_month": "9"
+  },
+  "mortgages": {
+    "num_charges": 3,
+    "num_outstanding": 1,
+    "num_part_satisfied": 0,
+    "num_satisfied": 2
+  },
+  "spend_profile": {
+    "total_gbp_2024": 1502135446.92,
+    "n_contracts": 2,
+    "n_buyers": 2
+  },
+  "geo": {
+    "lat": 53.591974,
+    "lng": -2.213298,
+    "lad24_cd": "E08000005",
+    "lad24_nm": "Rochdale",
+    "region": "North West"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/03244506"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T02:06:23Z",
+    "company_name": "PLP CONSTRUCTION LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1996-09-02",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-06-30",
+    "accounts_last_made_up": "2025-09-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-09-16"
+  },
+  "governance": {
+    "api_date": "2026-04-22T02:06:25Z",
+    "total_officers": 8,
+    "active_count": 2,
+    "resigned_count": 6,
+    "active_officers": [
+      {
+        "name": "BRADLEY, Laurence Martin Joseph",
+        "role": "director",
+        "appointed_on": "2012-05-23",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "JAMES, Josephine Anne",
+        "role": "director",
+        "appointed_on": "2007-09-30",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T02:06:27Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Philip Patrick Bradley",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control",
+          "significant-influence-or-control-as-firm"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Plp Developments Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act",
+          "country_registered": "United Kingdom",
+          "place_registered": "England And Wales",
+          "registration_number": "01646570"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwMDQyMzc4M2FkaXF6a2N4",
+    "date": "2026-01-20",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/nsC57pZrsXYpRYiURWv_gTL6z1e2a2Xg4A7HIjuESYk/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03244506/filing-history/MzUwMDQyMzc4M2FkaXF6a2N4"
+  },
+  "top_buyer_type": "other",
+  "buyer_type_breakdown": {
+    "other": 0.9986,
+    "council": 0.0014
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

@@ -1,0 +1,62 @@
+{
+  "year": 2024,
+  "as_of_date": "2026-04-28",
+  "frozen_at": "2026-04-28T21:45:56.585843+00:00",
+  "schema_version": "1.0",
+  "files": {
+    "suppliers_index.json": {
+      "source": "data/suppliers/_index.json",
+      "size_bytes": 278668,
+      "sha256": "0020c6eb926ce866178cf9b11e0a96aab41c054bc3652dd108576a2875ecf45a"
+    },
+    "suppliers_v2_index.json": {
+      "source": "data/suppliers_v2/_index.json",
+      "size_bytes": 9871008,
+      "sha256": "f90566a71614f13d6178db4bff548a99d0d7e014d57e8b652a243ff0026f8a7f"
+    },
+    "node_enrichment.json": {
+      "source": "data/uk/node_enrichment_extended.json",
+      "size_bytes": 24625739,
+      "sha256": "8530d356bc9acd1ae2c52ff0d0eb91466214049b65fb3b69d94ba735945ed4bd"
+    },
+    "budget_tree.json": {
+      "source": "data/uk/uk_budget_tree_2024.json",
+      "size_bytes": 6907472,
+      "sha256": "fe4bec4e069a8130619efe391d34c32da832077a91d85053f5c176eb94c4c8a7"
+    },
+    "buyers.json": {
+      "source": "data/map/buyers.json",
+      "size_bytes": 1520547,
+      "sha256": "c1bca51f82461ebac142a771cee5ec798dac4bea78575a72dfc77f4cd38b5867"
+    },
+    "suppliers_summary.json": {
+      "source": "data/map/suppliers.json",
+      "size_bytes": 13663293,
+      "sha256": "cc6668093b42435776ae9c99c693d44127e984f8ce8cdbafde746a4c05581ba6"
+    },
+    "buyer_to_suppliers.json": {
+      "source": "data/map/buyer_to_suppliers.json",
+      "size_bytes": 2888253,
+      "sha256": "bb17f3724ba9dba3cff75f35498a60e91906e3844bdead2e54d10e7eca59cdae"
+    },
+    "supplier_to_buyers.json": {
+      "source": "data/map/supplier_to_buyers.json",
+      "size_bytes": 6151177,
+      "sha256": "75df114b7df8f3c1170bb2c4f4899f0f399e5f4e4dce253e4c764531b73b9e29"
+    },
+    "suppliers_curated/": {
+      "n_files": 400
+    },
+    "suppliers/": {
+      "n_files": 19238,
+      "n_skipped": 0
+    }
+  },
+  "counts": {
+    "n_suppliers_v2": 19238,
+    "n_suppliers_v2_enriched": 19225,
+    "n_suppliers_v2_basic": 13,
+    "n_node_enrichment_entries": 4872,
+    "n_suppliers_curated": 400
+  }
+}

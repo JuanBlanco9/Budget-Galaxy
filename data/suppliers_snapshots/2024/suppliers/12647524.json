@@ -1,0 +1,223 @@
+{
+  "schema_version": "v2",
+  "company_number": "12647524",
+  "display_name": "Deepseer Limited",
+  "official_name": "DEEPSEER LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "05/06/2020",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "62012",
+    "62090",
+    "63110"
+  ],
+  "sic_labels": [
+    "Business and domestic software development",
+    "Other information technology service activities",
+    "Data processing, hosting and related activities"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "71-75 SHELTON STREET",
+    "address_line_2": "",
+    "post_town": "LONDON",
+    "county": "GREATER LONDON",
+    "country": "UNITED KINGDOM",
+    "postal_code": "WC2H 9JQ"
+  },
+  "accounts": {
+    "category": "MICRO ENTITY",
+    "last_made_up": "30/06/2025",
+    "next_due": "31/03/2027",
+    "ref_day": "30",
+    "ref_month": "6"
+  },
+  "mortgages": {
+    "num_charges": 0,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 75000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.514897,
+    "lng": -0.123615,
+    "lad24_cd": "E09000007",
+    "lad24_nm": "Camden",
+    "region": "London"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/12647524"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "agency",
+  "buyer_type_breakdown": {
+    "agency": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T07:41:47Z",
+    "company_name": "DEEPSEER LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2020-06-05",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-03-31",
+    "accounts_last_made_up": "2025-06-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-18"
+  },
+  "governance": {
+    "api_date": "2026-04-28T07:41:48Z",
+    "total_officers": 5,
+    "active_count": 3,
+    "resigned_count": 2,
+    "active_officers": [
+      {
+        "name": "GARABEDIAN, Deran Thomas",
+        "role": "director",
+        "appointed_on": "2020-08-28",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HARDMAN, William James Howard",
+        "role": "director",
+        "appointed_on": "2020-08-28",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HATWAL, Atul",
+        "role": "director",
+        "appointed_on": "2021-03-29",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T07:41:50Z",
+    "total_results": 6,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Mr Atul Hatwal",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2024-12-18",
+        "identification": null
+      },
+      {
+        "name": "Mr Deran Thomas Garabedian",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2022-03-23",
+        "identification": null
+      },
+      {
+        "name": "Ms Ella Ruth Mason",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2020-08-11",
+        "identification": null
+      },
+      {
+        "name": "Unai Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2020-08-11",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "England & Wales - Register Of Companies",
+          "registration_number": "07383400"
+        }
+      },
+      {
+        "name": "Samanas Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2020-08-11",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "England & Wales - Register Of Companies",
+          "registration_number": "08382452"
+        }
+      },
+      {
+        "name": "Marisa Birchley-Titmus",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2020-06-05",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxMzY0MzMzNmFkaXF6a2N4",
+    "date": "2026-03-31",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-micro-entity",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/wqc4msBhQgLSCm82gn6WGxILmJigOt_RSCZrz2evmbU/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/12647524/filing-history/MzUxMzY0MzMzNmFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

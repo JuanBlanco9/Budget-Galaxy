@@ -1,0 +1,166 @@
+{
+  "schema_version": "v2",
+  "company_number": "14216691",
+  "display_name": "Political Engagement Ltd",
+  "official_name": "POLITICAL ENGAGEMENT LTD",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "05/07/2022",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "63990"
+  ],
+  "sic_labels": [
+    "Other information service activities n.e.c."
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "21 MARINA COURT",
+    "address_line_2": "CASTLE STREET",
+    "post_town": "HULL",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "HU1 1TJ"
+  },
+  "accounts": {
+    "category": "AUDIT EXEMPTION SUBSIDIARY",
+    "last_made_up": "31/03/2025",
+    "next_due": "29/12/2026",
+    "ref_day": "29",
+    "ref_month": "3"
+  },
+  "mortgages": {
+    "num_charges": 0,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 817416.66,
+    "n_contracts": 2,
+    "n_buyers": 2
+  },
+  "geo": {
+    "lat": 53.740408,
+    "lng": -0.336297,
+    "lad24_cd": "E06000010",
+    "lad24_nm": "Kingston upon Hull, City of",
+    "region": "Yorkshire and The Humber"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/14216691"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "other",
+  "buyer_type_breakdown": {
+    "other": 0.9689,
+    "agency": 0.0311
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T22:22:18Z",
+    "company_name": "POLITICAL ENGAGEMENT LTD",
+    "company_status": "active",
+    "date_of_creation": "2022-07-05",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-29",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-18"
+  },
+  "governance": {
+    "api_date": "2026-04-27T22:22:20Z",
+    "total_officers": 5,
+    "active_count": 2,
+    "resigned_count": 3,
+    "active_officers": [
+      {
+        "name": "CARRINGTON, Mark Robert",
+        "role": "director",
+        "appointed_on": "2022-11-30",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WALLACE, Mark Edwin",
+        "role": "director",
+        "appointed_on": "2022-11-30",
+        "country_of_residence": "England",
+        "nationality": "English"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T22:22:22Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Political Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2022-11-30",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "The Laws Of England And Wales",
+          "country_registered": "England",
+          "place_registered": "The Register Of Companies For England And Wales",
+          "registration_number": "07291783"
+        }
+      },
+      {
+        "name": "Dods Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2022-07-05",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "England And Wales",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "1262354"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5ODI0NTI5MmFkaXF6a2N4",
+    "date": "2026-01-08",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-audit-exemption-subsiduary",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/KPH_mL4rTYpeTX7n8h8TUDPczLLGTRceaWLQKsjyL24/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/14216691/filing-history/MzQ5ODI0NTI5MmFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

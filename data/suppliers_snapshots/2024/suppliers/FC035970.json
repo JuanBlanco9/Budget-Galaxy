@@ -1,0 +1,129 @@
+{
+  "schema_version": "v2",
+  "company_number": "FC035970",
+  "display_name": "Willis Towers Watson",
+  "official_name": "WILLIS TOWERS WATSON",
+  "status": "active",
+  "type": "other_company_type",
+  "category_raw": "Other company type",
+  "jurisdiction": "belgium",
+  "incorporated": "15/02/2019",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [],
+  "sic_labels": [],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "PARC D'AFFAIRES ZÉNOBE GRAMME",
+    "address_line_2": "QUAI DES VENNES 18-20",
+    "post_town": "LIEGE",
+    "county": "4020",
+    "country": "BELGIUM",
+    "postal_code": null
+  },
+  "accounts": {
+    "category": "NO ACCOUNTS FILED",
+    "last_made_up": null,
+    "next_due": null,
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 0,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 96520.34,
+    "n_contracts": 2,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "lad24_cd": null,
+    "lad24_nm": null,
+    "region": null
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/FC035970"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": false
+  },
+  "top_buyer_type": "nhs",
+  "buyer_type_breakdown": {
+    "nhs": 0.4643,
+    "other": 0.4478,
+    "agency": 0.0878
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T06:35:07Z",
+    "company_name": "WILLIS TOWERS WATSON",
+    "company_status": "active",
+    "date_of_creation": "2019-02-15",
+    "date_of_cessation": null,
+    "jurisdiction": "united-kingdom",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": null,
+    "accounts_last_made_up": null,
+    "confirmation_statement_overdue": null,
+    "confirmation_statement_next_due": null
+  },
+  "governance": {
+    "api_date": "2026-04-28T06:35:08Z",
+    "total_officers": 14,
+    "active_count": 4,
+    "resigned_count": 10,
+    "active_officers": [
+      {
+        "name": "HARVEY, Nicholas James",
+        "role": "director",
+        "appointed_on": "2026-01-30",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "SWIFT, Alastair John Pardoe",
+        "role": "director",
+        "appointed_on": "2021-10-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "WEDA, Stefan Jan",
+        "role": "director",
+        "appointed_on": "2023-06-16",
+        "country_of_residence": "Netherlands",
+        "nationality": "Dutch"
+      },
+      {
+        "name": "WEGBRANS, Hugo Antonius Martinus",
+        "role": "director",
+        "appointed_on": "2025-05-12",
+        "country_of_residence": "Netherlands",
+        "nationality": "Dutch"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T06:35:09Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

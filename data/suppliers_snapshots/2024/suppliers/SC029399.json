@@ -1,0 +1,153 @@
+{
+  "schema_version": "v2",
+  "company_number": "SC029399",
+  "display_name": "John Gunn & Sons Limited",
+  "official_name": "JOHN GUNN & SONS LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "14/04/1953",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "41201"
+  ],
+  "sic_labels": [
+    "Construction of commercial buildings"
+  ],
+  "previous_names": [
+    {
+      "name": "NEWCO (689) LIMITED",
+      "condate": "23/02/2009"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "SWINEY",
+    "address_line_2": "LYBSTER",
+    "post_town": "CAITHNESS",
+    "county": "",
+    "country": "",
+    "postal_code": "KW3 6BT"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/08/2024",
+    "next_due": "31/05/2026",
+    "ref_day": "31",
+    "ref_month": "8"
+  },
+  "mortgages": {
+    "num_charges": 1,
+    "num_outstanding": 1,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 667502.8,
+    "n_contracts": 7,
+    "n_buyers": 6
+  },
+  "geo": {
+    "lat": 58.302443,
+    "lng": -3.304241,
+    "lad24_cd": "S12000017",
+    "lad24_nm": "Highland",
+    "region": null
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/SC029399"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "other",
+  "buyer_type_breakdown": {
+    "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T23:07:28Z",
+    "company_name": "JOHN GUNN & SONS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1953-04-14",
+    "date_of_cessation": null,
+    "jurisdiction": "scotland",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-05-31",
+    "accounts_last_made_up": "2024-08-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-08"
+  },
+  "governance": {
+    "api_date": "2026-04-27T23:07:29Z",
+    "total_officers": 5,
+    "active_count": 1,
+    "resigned_count": 4,
+    "active_officers": [
+      {
+        "name": "GUNN, Ian George",
+        "role": "director",
+        "appointed_on": "1998-09-11",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T23:07:31Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "John Gunn & Sons (Holdings) Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2025-07-14",
+        "identification": {
+          "legal_form": "Company",
+          "legal_authority": "Companies Act 2006"
+        }
+      },
+      {
+        "name": "Mr Ian George Gunn",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "Scotland",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2017-11-28",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2NTM4MDQ0MmFkaXF6a2N4",
+    "date": "2025-05-07",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/jG_jXa5BFPXlkdkEPh741PPHCaFOco3qLV_wSQeuHio/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/SC029399/filing-history/MzQ2NTM4MDQ0MmFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

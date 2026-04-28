@@ -1,0 +1,147 @@
+{
+  "schema_version": "v2",
+  "company_number": "11360377",
+  "display_name": "Bippit Ltd",
+  "official_name": "BIPPIT LTD",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "14/05/2018",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "62090"
+  ],
+  "sic_labels": [
+    "Other information technology service activities"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "KEMP HOUSE",
+    "address_line_2": "160 CITY ROAD",
+    "post_town": "LONDON",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "EC1V 2NX"
+  },
+  "accounts": {
+    "category": "TOTAL EXEMPTION FULL",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 0,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 206000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.527304,
+    "lng": -0.088894,
+    "lad24_cd": "E09000019",
+    "lad24_nm": "Islington",
+    "region": "London"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/11360377"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "other",
+  "buyer_type_breakdown": {
+    "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T03:37:18Z",
+    "company_name": "BIPPIT LTD",
+    "company_status": "active",
+    "date_of_creation": "2018-05-14",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-08-14"
+  },
+  "governance": {
+    "api_date": "2026-04-28T03:37:19Z",
+    "total_officers": 10,
+    "active_count": 3,
+    "resigned_count": 7,
+    "active_officers": [
+      {
+        "name": "HOLMES, Samuel David",
+        "role": "director",
+        "appointed_on": "2025-01-04",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "LATHEY, Samuel James",
+        "role": "director",
+        "appointed_on": "2018-05-14",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PORTNOY, Roger Alan",
+        "role": "director",
+        "appointed_on": "2023-03-06",
+        "country_of_residence": "United Kingdom",
+        "nationality": "American"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T03:37:20Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Samuel James Lathey",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2018-05-14",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2Mjk2NzQ5OGFkaXF6a2N4",
+    "date": "2025-04-16",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/hvUP_f9ufrU3IA4HnwWLCXtTBTr4mjNbG-JDL9Zw6aQ/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/11360377/filing-history/MzQ2Mjk2NzQ5OGFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

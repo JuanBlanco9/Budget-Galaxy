@@ -1,0 +1,221 @@
+{
+  "schema_version": "v2",
+  "company_number": "07095502",
+  "display_name": "Democracy Counts Limited",
+  "official_name": "DEMOCRACY COUNTS LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "04/12/2009",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "62012"
+  ],
+  "sic_labels": [
+    "Business and domestic software development"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "UNIT 2 FORREST WAY",
+    "address_line_2": "GATEWARTH INDUSTRIAL ESTATE",
+    "post_town": "WARRINGTON",
+    "county": "CHESHIRE",
+    "country": "ENGLAND",
+    "postal_code": "WA5 1DF"
+  },
+  "accounts": {
+    "category": "TOTAL EXEMPTION FULL",
+    "last_made_up": "30/11/2024",
+    "next_due": "31/08/2026",
+    "ref_day": "30",
+    "ref_month": "11"
+  },
+  "mortgages": {
+    "num_charges": 1,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 1
+  },
+  "spend_profile": {
+    "total_gbp_2024": 108037.75,
+    "n_contracts": 2,
+    "n_buyers": 2
+  },
+  "geo": {
+    "lat": 53.381378,
+    "lng": -2.62115,
+    "lad24_cd": "E06000007",
+    "lad24_nm": "Warrington",
+    "region": "North West"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/07095502"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T06:04:02Z",
+    "company_name": "DEMOCRACY COUNTS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2009-12-04",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-08-31",
+    "accounts_last_made_up": "2024-11-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-03"
+  },
+  "governance": {
+    "api_date": "2026-04-28T06:04:03Z",
+    "total_officers": 10,
+    "active_count": 7,
+    "resigned_count": 3,
+    "active_officers": [
+      {
+        "name": "VERDON, Simon Glenn",
+        "role": "secretary",
+        "appointed_on": "2009-12-04",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "COLEMAN, Carol",
+        "role": "director",
+        "appointed_on": "2017-02-28",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "COLEMAN, Claire Louise",
+        "role": "director",
+        "appointed_on": "2019-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "COLEMAN, Michael Andrew",
+        "role": "director",
+        "appointed_on": "2019-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "KEATING, Paul",
+        "role": "director",
+        "appointed_on": "2020-12-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "VERDON, Gillian",
+        "role": "director",
+        "appointed_on": "2017-02-28",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "VERDON, Simon Glenn",
+        "role": "director",
+        "appointed_on": "2009-12-04",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T06:04:04Z",
+    "total_results": 4,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Democracy Global Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2021-01-01",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006"
+        }
+      },
+      {
+        "name": "Mr Simon Glenn Verdon",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Kevan Coleman",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Democracy Global Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "07592724"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MjEzNzE3N2FkaXF6a2N4",
+    "date": "2025-07-01",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/prWEvBGcQCLkfotEWYE50c1HcJMFwVeStD-T7KsWa28/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/07095502/filing-history/MzQ3MjEzNzE3N2FkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

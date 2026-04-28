@@ -1,0 +1,157 @@
+{
+  "schema_version": "v2",
+  "company_number": "12205370",
+  "display_name": "Continuum Health Limited",
+  "official_name": "CONTINUUM HEALTH LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "13/09/2019",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "86101",
+    "86210",
+    "86220",
+    "86900"
+  ],
+  "sic_labels": [
+    "Hospital activities",
+    "General medical practice activities",
+    "Specialists medical practice activities",
+    "Other human health activities"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "71-75 SHELTON STREET",
+    "address_line_2": "",
+    "post_town": "LONDON",
+    "county": "GREATER LONDON",
+    "country": "UNITED KINGDOM",
+    "postal_code": "WC2H 9JQ"
+  },
+  "accounts": {
+    "category": "TOTAL EXEMPTION FULL",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 0,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 65949.18,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.514897,
+    "lng": -0.123615,
+    "lad24_cd": "E09000007",
+    "lad24_nm": "Camden",
+    "region": "London"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/12205370"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "nhs",
+  "buyer_type_breakdown": {
+    "nhs": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T08:12:18Z",
+    "company_name": "CONTINUUM HEALTH LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2019-09-13",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-03"
+  },
+  "governance": {
+    "api_date": "2026-04-28T08:12:19Z",
+    "total_officers": 1,
+    "active_count": 1,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "PANG, Shun, Dr",
+        "role": "director",
+        "appointed_on": "2019-09-13",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T08:12:20Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Anima Group Inc.",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2021-01-25",
+        "identification": {
+          "legal_form": "Corporation",
+          "legal_authority": "Delaware General Corporation Law",
+          "country_registered": "Delaware, United States",
+          "place_registered": "State Of Delaware - Division Of Corporations",
+          "registration_number": "37-1993564"
+        }
+      },
+      {
+        "name": "Dr Shun Pang",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2019-09-13",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MzE3MTIxOWFkaXF6a2N4",
+    "date": "2025-09-30",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/tvzCIcgu9Y7XiUtUtGxcy-WdMmNNFYqPasJF7zXKYyM/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/12205370/filing-history/MzQ4MzE3MTIxOWFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

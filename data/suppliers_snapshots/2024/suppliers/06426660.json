@@ -1,0 +1,147 @@
+{
+  "schema_version": "v2",
+  "company_number": "06426660",
+  "display_name": "Liaison Financial Services Limited",
+  "official_name": "LIAISON FINANCIAL SERVICES LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "14/11/2007",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "64999"
+  ],
+  "sic_labels": [
+    "Financial intermediation not elsewhere classified"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "ESTATE HOUSE",
+    "address_line_2": "EVESHAM STREET",
+    "post_town": "REDDITCH",
+    "county": "WORCESTERSHIRE",
+    "country": "",
+    "postal_code": "B97 4HP"
+  },
+  "accounts": {
+    "category": "GROUP",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 2,
+    "num_outstanding": 1,
+    "num_part_satisfied": 0,
+    "num_satisfied": 1
+  },
+  "spend_profile": {
+    "total_gbp_2024": 60000000.0,
+    "n_contracts": 4,
+    "n_buyers": 3
+  },
+  "geo": {
+    "lat": 52.302957,
+    "lng": -1.942357,
+    "lad24_cd": "E07000236",
+    "lad24_nm": "Redditch",
+    "region": "West Midlands"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/06426660"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T16:51:00Z",
+    "company_name": "LIAISON FINANCIAL SERVICES LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2007-11-14",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-08-22"
+  },
+  "governance": {
+    "api_date": "2026-04-22T16:51:02Z",
+    "total_officers": 4,
+    "active_count": 3,
+    "resigned_count": 1,
+    "active_officers": [
+      {
+        "name": "ARMITAGE, Andrew",
+        "role": "secretary",
+        "appointed_on": "2008-11-14",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "ARMITAGE, Andrew Spencer",
+        "role": "director",
+        "appointed_on": "2008-01-21",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "THEW, Bruce John",
+        "role": "director",
+        "appointed_on": "2007-11-14",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T16:51:03Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Bruce John Thew",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent"
+        ],
+        "notified_on": "2016-07-01",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MzA2OTEyMmFkaXF6a2N4",
+    "date": "2025-09-29",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/Ddunp13HFSM0nT6Rs4ZtUpGs3kmoLuEASrirpuQDz7E/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/06426660/filing-history/MzQ4MzA2OTEyMmFkaXF6a2N4"
+  },
+  "top_buyer_type": "other",
+  "buyer_type_breakdown": {
+    "other": 0.8333,
+    "education": 0.1,
+    "nhs": 0.0667
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

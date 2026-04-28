@@ -1,0 +1,157 @@
+{
+  "schema_version": "v2",
+  "company_number": "02120850",
+  "display_name": "Lagat Limited",
+  "official_name": "LAGAT LIMITED",
+  "status": "liquidation",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "08/04/1987",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "85320"
+  ],
+  "sic_labels": [
+    "Technical and vocational secondary education"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "CROMWELL HOUSE",
+    "address_line_2": "CRUSADER ROAD",
+    "post_town": "LINCOLN",
+    "county": "LINCOLNSHIRE",
+    "country": "",
+    "postal_code": "LN6 7YT"
+  },
+  "accounts": {
+    "category": "TOTAL EXEMPTION FULL",
+    "last_made_up": "31/01/2024",
+    "next_due": "31/10/2025",
+    "ref_day": "31",
+    "ref_month": "1"
+  },
+  "mortgages": {
+    "num_charges": 1,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 1
+  },
+  "spend_profile": {
+    "total_gbp_2024": 1400000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 53.221126,
+    "lng": -0.58913,
+    "lad24_cd": "E07000138",
+    "lad24_nm": "Lincoln",
+    "region": "East Midlands"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/02120850"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T20:46:16Z",
+    "company_name": "LAGAT LIMITED",
+    "company_status": "liquidation",
+    "date_of_creation": "1987-04-08",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": true,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": true,
+    "accounts_next_due": "2025-10-31",
+    "accounts_last_made_up": "2024-01-31",
+    "confirmation_statement_overdue": true,
+    "confirmation_statement_next_due": "2025-07-08"
+  },
+  "governance": {
+    "api_date": "2026-04-27T20:46:18Z",
+    "total_officers": 23,
+    "active_count": 3,
+    "resigned_count": 20,
+    "active_officers": [
+      {
+        "name": "HODGKINSON, Martin Peter",
+        "role": "secretary",
+        "appointed_on": "2003-09-08",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "HODGKINSON, Martin Peter",
+        "role": "director",
+        "appointed_on": null,
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "SPENCER, Hannah",
+        "role": "director",
+        "appointed_on": "2002-12-09",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T20:46:20Z",
+    "total_results": 2,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Mr Martin Peter Hodgkinson",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mrs Hannah Spencer",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ0MTQ3MTUyNGFkaXF6a2N4",
+    "date": "2024-10-30",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/NYhGllFvH-WcFp3HChgi5eKrsoYQZX9yluMN5jJ2IEg/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02120850/filing-history/MzQ0MTQ3MTUyNGFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

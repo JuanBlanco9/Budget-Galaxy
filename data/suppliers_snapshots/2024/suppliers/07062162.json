@@ -1,0 +1,168 @@
+{
+  "schema_version": "v2",
+  "company_number": "07062162",
+  "display_name": "C2R-Fast Limited",
+  "official_name": "C2R-FAST LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "30/10/2009",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "14190"
+  ],
+  "sic_labels": [
+    "Manufacture of other wearing apparel and accessories n.e.c."
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "WOODLANDS BOLSTONE LITTLE DEWCHURCH",
+    "address_line_2": "HEREFORDSHIRE",
+    "post_town": "HEREFORD",
+    "county": "",
+    "country": "",
+    "postal_code": "HR2 6PS"
+  },
+  "accounts": {
+    "category": "TOTAL EXEMPTION FULL",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 0,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 349600.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.984764,
+    "lng": -2.677854,
+    "lad24_cd": "E06000019",
+    "lad24_nm": "Herefordshire, County of",
+    "region": "West Midlands"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/07062162"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "central_govt",
+  "buyer_type_breakdown": {
+    "central_govt": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T01:45:43Z",
+    "company_name": "C2R-FAST LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2009-10-30",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-13"
+  },
+  "governance": {
+    "api_date": "2026-04-28T01:45:45Z",
+    "total_officers": 4,
+    "active_count": 2,
+    "resigned_count": 2,
+    "active_officers": [
+      {
+        "name": "SHEPHERD, Nicholas Arthur",
+        "role": "director",
+        "appointed_on": "2009-10-30",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "TATE, Paul James",
+        "role": "director",
+        "appointed_on": "2019-07-12",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T01:45:46Z",
+    "total_results": 3,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Ridgmont Holdings Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2019-07-12",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act",
+          "country_registered": "England",
+          "place_registered": "England And Wales",
+          "registration_number": "11439888"
+        }
+      },
+      {
+        "name": "Mr Paul James Tate",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2019-07-12",
+        "identification": null
+      },
+      {
+        "name": "Mr Nicholas Arthur Shepherd",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-10-30",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4Mjk3MzQ5OGFkaXF6a2N4",
+    "date": "2025-09-29",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/uEiGtAPBhJRSPJQtrdriXeohSGz12IgMLPMZhhKjhew/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/07062162/filing-history/MzQ4Mjk3MzQ5OGFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

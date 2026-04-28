@@ -1,0 +1,144 @@
+{
+  "schema_version": "v2",
+  "company_number": "03268931",
+  "display_name": "Unw Ltd.",
+  "official_name": "UNW LTD.",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "24/10/1996",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "99999"
+  ],
+  "sic_labels": [
+    "Dormant Company"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "CITYGATE",
+    "address_line_2": "ST JAMES BOULEVARD",
+    "post_town": "NEWCASTLE UPON TYNE",
+    "county": "",
+    "country": "",
+    "postal_code": "NE1 4JE"
+  },
+  "accounts": {
+    "category": "DORMANT",
+    "last_made_up": "31/03/2025",
+    "next_due": "31/12/2026",
+    "ref_day": "31",
+    "ref_month": "3"
+  },
+  "mortgages": {
+    "num_charges": 0,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 30000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 54.972823,
+    "lng": -1.621438,
+    "lad24_cd": "E08000021",
+    "lad24_nm": "Newcastle upon Tyne",
+    "region": "North East"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/03268931"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T11:30:22Z",
+    "company_name": "UNW LTD.",
+    "company_status": "active",
+    "date_of_creation": "1996-10-24",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-05"
+  },
+  "governance": {
+    "api_date": "2026-04-28T11:30:23Z",
+    "total_officers": 10,
+    "active_count": 2,
+    "resigned_count": 8,
+    "active_officers": [
+      {
+        "name": "UNW LLP",
+        "role": "corporate-secretary",
+        "appointed_on": "2003-10-01",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "WILSON, Andrew James Granville",
+        "role": "director",
+        "appointed_on": "2011-11-30",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T11:30:24Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Unw Llp",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-10-24",
+        "identification": {
+          "legal_form": "Llp",
+          "legal_authority": "Limitied Liability Partnerships Act 2000",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "Oc301800"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MjkwNDM5MmFkaXF6a2N4",
+    "date": "2025-07-08",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-dormant",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/wfLFi4jb0wGUnUb-z_SW83PFI_V7TpHOAWHKJgVW9Bo/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03268931/filing-history/MzQ3MjkwNDM5MmFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

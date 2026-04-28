@@ -1,0 +1,176 @@
+{
+  "schema_version": "v2",
+  "company_number": "11917781",
+  "display_name": "Msb Solicitors Limited",
+  "official_name": "MSB SOLICITORS LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "01/04/2019",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "69102"
+  ],
+  "sic_labels": [
+    "Solicitors"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "4 ST. PAULS SQUARE",
+    "address_line_2": "",
+    "post_town": "LIVERPOOL",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "L3 9SJ"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "28/02/2025",
+    "next_due": "30/11/2026",
+    "ref_day": "28",
+    "ref_month": "2"
+  },
+  "mortgages": {
+    "num_charges": 1,
+    "num_outstanding": 1,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 75000000.0,
+    "n_contracts": 2,
+    "n_buyers": 2
+  },
+  "geo": {
+    "lat": 53.410175,
+    "lng": -2.993798,
+    "lad24_cd": "E08000012",
+    "lad24_nm": "Liverpool",
+    "region": "North West"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/11917781"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T16:30:12Z",
+    "company_name": "MSB SOLICITORS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2019-04-01",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-11-30",
+    "accounts_last_made_up": "2025-02-28",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-05-12"
+  },
+  "governance": {
+    "api_date": "2026-04-22T16:30:14Z",
+    "total_officers": 8,
+    "active_count": 7,
+    "resigned_count": 1,
+    "active_officers": [
+      {
+        "name": "ARMSTRONG, Bradley",
+        "role": "director",
+        "appointed_on": "2021-03-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CAREY, Emma Lee",
+        "role": "director",
+        "appointed_on": "2019-04-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "DALTON, Joanne",
+        "role": "director",
+        "appointed_on": "2019-12-12",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "FORMAN, Mark Adrian",
+        "role": "director",
+        "appointed_on": "2019-11-15",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "KELLY, Neil Anthony",
+        "role": "director",
+        "appointed_on": "2019-11-15",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "MURPHY, Louise Susan",
+        "role": "director",
+        "appointed_on": "2026-03-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "PALMER, Emma",
+        "role": "director",
+        "appointed_on": "2019-12-12",
+        "country_of_residence": "Wales",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T16:30:16Z",
+    "total_results": 1,
+    "active_count": 0,
+    "items": [
+      {
+        "name": "Ms Emma Lee Carey",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2019-04-01",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MTUxMzE1OGFkaXF6a2N4",
+    "date": "2025-11-28",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/1yDmOpL5bQZBySvzjME6xx9L6EkT5bgggn0OlTwyWJE/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/11917781/filing-history/MzQ5MTUxMzE1OGFkaXF6a2N4"
+  },
+  "top_buyer_type": "other",
+  "buyer_type_breakdown": {
+    "other": 0.6667,
+    "council": 0.3333
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

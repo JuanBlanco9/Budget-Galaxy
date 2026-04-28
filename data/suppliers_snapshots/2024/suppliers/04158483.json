@@ -1,0 +1,177 @@
+{
+  "schema_version": "v2",
+  "company_number": "04158483",
+  "display_name": "Fairways Contracting Limited",
+  "official_name": "FAIRWAYS CONTRACTING LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "12/02/2001",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "81300"
+  ],
+  "sic_labels": [
+    "Landscape service activities"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "UMBERSLADE BUSINESS CENTRE POUND HOUSE LANE",
+    "address_line_2": "HOCKLEY HEATH",
+    "post_town": "SOLIHULL",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "B94 5DF"
+  },
+  "accounts": {
+    "category": "UNAUDITED ABRIDGED",
+    "last_made_up": "31/03/2025",
+    "next_due": "31/12/2026",
+    "ref_day": "31",
+    "ref_month": "3"
+  },
+  "mortgages": {
+    "num_charges": 1,
+    "num_outstanding": 1,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 1000000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 52.342033,
+    "lng": -1.803464,
+    "lad24_cd": "E07000221",
+    "lad24_nm": "Stratford-on-Avon",
+    "region": "West Midlands"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/04158483"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "other",
+  "buyer_type_breakdown": {
+    "other": 0.702,
+    "trust": 0.298
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T21:42:27Z",
+    "company_name": "FAIRWAYS CONTRACTING LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2001-02-12",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-31"
+  },
+  "governance": {
+    "api_date": "2026-04-27T21:42:29Z",
+    "total_officers": 7,
+    "active_count": 4,
+    "resigned_count": 3,
+    "active_officers": [
+      {
+        "name": "MILLER, Paul Gregory",
+        "role": "secretary",
+        "appointed_on": "2001-02-12",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "MILLER, Julia",
+        "role": "director",
+        "appointed_on": "2001-02-12",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MILLER, Paul Gregory",
+        "role": "director",
+        "appointed_on": "2001-02-12",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MILLER, Samuel James",
+        "role": "director",
+        "appointed_on": "2023-08-01",
+        "country_of_residence": "England",
+        "nationality": "English"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T21:42:31Z",
+    "total_results": 3,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Mr Sam Miller",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "English",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2023-03-26",
+        "identification": null
+      },
+      {
+        "name": "Mr Paul Gregory Miller",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mrs Julia Miller",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NTc2MjEzN2FkaXF6a2N4",
+    "date": "2025-12-22",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-unaudited-abridged",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/SqPcCetU0N07kzj85qNstVyRenCLCUwDthEXvZBZ6LQ/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04158483/filing-history/MzQ5NTc2MjEzN2FkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

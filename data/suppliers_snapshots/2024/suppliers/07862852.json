@@ -1,0 +1,162 @@
+{
+  "schema_version": "v2",
+  "company_number": "07862852",
+  "display_name": "A R Banks Ltd",
+  "official_name": "A R BANKS LTD",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "28/11/2011",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "49410"
+  ],
+  "sic_labels": [
+    "Freight transport by road"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "12A THE SQUARE",
+    "address_line_2": "",
+    "post_town": "WICKHAM",
+    "county": "HAMPSHIRE",
+    "country": "ENGLAND",
+    "postal_code": "PO17 5JQ"
+  },
+  "accounts": {
+    "category": "TOTAL EXEMPTION FULL",
+    "last_made_up": "30/04/2025",
+    "next_due": "31/01/2027",
+    "ref_day": "30",
+    "ref_month": "4"
+  },
+  "mortgages": {
+    "num_charges": 0,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 31386.49,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 50.899502,
+    "lng": -1.187381,
+    "lad24_cd": "E07000094",
+    "lad24_nm": "Winchester",
+    "region": "South East"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/07862852"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T11:22:01Z",
+    "company_name": "A R BANKS LTD",
+    "company_status": "active",
+    "date_of_creation": "2011-11-28",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-01-31",
+    "accounts_last_made_up": "2025-04-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-12"
+  },
+  "governance": {
+    "api_date": "2026-04-28T11:22:02Z",
+    "total_officers": 3,
+    "active_count": 3,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "BANKS, Sarah",
+        "role": "secretary",
+        "appointed_on": "2014-05-23",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BANKS, Sarah",
+        "role": "director",
+        "appointed_on": "2022-11-29",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BANKS, Stuart Christopher",
+        "role": "director",
+        "appointed_on": "2011-11-28",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T11:22:03Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Banks Corporation Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2022-01-07",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006"
+        }
+      },
+      {
+        "name": "Mr Stuart Christopher Banks",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwMjIxNzI5N2FkaXF6a2N4",
+    "date": "2026-01-29",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/biIL7Z9h4TN7iVElAaITQ6G_Qub69GdHITy0EYGzDzI/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/07862852/filing-history/MzUwMjIxNzI5N2FkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

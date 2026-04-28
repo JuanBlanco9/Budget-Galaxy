@@ -1,0 +1,180 @@
+{
+  "schema_version": "v2",
+  "company_number": "04455803",
+  "display_name": "Proludic Limited",
+  "official_name": "PROLUDIC LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "06/06/2002",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "43999"
+  ],
+  "sic_labels": [
+    "Other specialised construction activities n.e.c."
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "C/O FORVIS MAZARS LLP 6 DOMINUS WAY",
+    "address_line_2": "LEICESTER",
+    "post_town": "LEICESTERSHIRE",
+    "county": "",
+    "country": "UNITED KINGDOM",
+    "postal_code": "LE19 1RP"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 6,
+    "num_outstanding": 2,
+    "num_part_satisfied": 0,
+    "num_satisfied": 4
+  },
+  "spend_profile": {
+    "total_gbp_2024": 11119360.18,
+    "n_contracts": 13,
+    "n_buyers": 12
+  },
+  "geo": {
+    "lat": 52.611854,
+    "lng": -1.191261,
+    "lad24_cd": "E07000129",
+    "lad24_nm": "Blaby",
+    "region": "East Midlands"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/04455803"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 0.5865,
+    "other": 0.4135
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T14:24:50Z",
+    "company_name": "PROLUDIC LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2002-06-06",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-25"
+  },
+  "governance": {
+    "api_date": "2026-04-27T14:24:52Z",
+    "total_officers": 8,
+    "active_count": 4,
+    "resigned_count": 4,
+    "active_officers": [
+      {
+        "name": "MORRIS, Joseph",
+        "role": "secretary",
+        "appointed_on": "2021-03-26",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BAKER, Robert Alan",
+        "role": "director",
+        "appointed_on": "2015-03-20",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LE POUPON, Denis Jaques Francois",
+        "role": "director",
+        "appointed_on": "2002-06-06",
+        "country_of_residence": "France",
+        "nationality": "French"
+      },
+      {
+        "name": "PROFIL SARL",
+        "role": "corporate-director",
+        "appointed_on": "2002-06-06",
+        "country_of_residence": null,
+        "nationality": null
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T14:24:54Z",
+    "total_results": 3,
+    "active_count": 3,
+    "items": [
+      {
+        "name": "Mr Denis Le Poupon",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "French",
+        "country_of_residence": "France",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Robert Alan Baker",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Profil Sarl",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "French Private Company",
+          "legal_authority": "French"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MjkzMzY4NGFkaXF6a2N4",
+    "date": "2025-10-01",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/lV2_KreTguQFfzRp5pITK2GqklGcmTQ07nx3V2LYEeI/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04455803/filing-history/MzQ4MjkzMzY4NGFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

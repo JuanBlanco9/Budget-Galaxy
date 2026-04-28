@@ -1,0 +1,205 @@
+{
+  "schema_version": "v2",
+  "company_number": "03514486",
+  "display_name": "Gemco Uk Limited",
+  "official_name": "GEMCO UK LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "20/02/1998",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "33120",
+    "33190",
+    "33200",
+    "47190"
+  ],
+  "sic_labels": [
+    "Repair of machinery",
+    "Repair of other equipment",
+    "Installation of industrial machinery and equipment",
+    "Other retail sale in non-specialised stores"
+  ],
+  "previous_names": [
+    {
+      "name": "GEMCO SERVICE LIMITED",
+      "condate": "26/10/2021"
+    },
+    {
+      "name": "MSI (MAINTENANCE, SERVICE, INSTALLATION) LIMITED",
+      "condate": "16/06/2010"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "UNIT 14C MODERNA BUSINESS PARK MODERNA WAY",
+    "address_line_2": "MYTHOLMROYD",
+    "post_town": "HEBDEN BRIDGE",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "HX7 5QQ"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 5,
+    "num_outstanding": 2,
+    "num_part_satisfied": 0,
+    "num_satisfied": 3
+  },
+  "spend_profile": {
+    "total_gbp_2024": 96000.0,
+    "n_contracts": 2,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 53.729671,
+    "lng": -1.973197,
+    "lad24_cd": "E08000033",
+    "lad24_nm": "Calderdale",
+    "region": "Yorkshire and The Humber"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/03514486"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T06:36:10Z",
+    "company_name": "GEMCO UK LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1998-02-20",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-09-29"
+  },
+  "governance": {
+    "api_date": "2026-04-28T06:36:11Z",
+    "total_officers": 36,
+    "active_count": 3,
+    "resigned_count": 33,
+    "active_officers": [
+      {
+        "name": "LEWIS, Graham",
+        "role": "secretary",
+        "appointed_on": "2022-10-03",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BERGAMINI, Michele",
+        "role": "director",
+        "appointed_on": "2025-12-17",
+        "country_of_residence": "Italy",
+        "nationality": "Italian"
+      },
+      {
+        "name": "MORRALL, Wayne",
+        "role": "director",
+        "appointed_on": "2023-07-03",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T06:36:12Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Nexion S.P.A",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent-as-firm",
+          "voting-rights-75-to-100-percent-as-firm",
+          "right-to-appoint-and-remove-directors-as-firm"
+        ],
+        "notified_on": "2021-05-31",
+        "identification": {
+          "legal_form": "Joint Stock Company",
+          "legal_authority": "Italy",
+          "country_registered": "Italy",
+          "place_registered": "Italian Business Register",
+          "registration_number": "06260730012"
+        }
+      },
+      {
+        "name": "Nexion Northern Europe A/S",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2021-05-31",
+        "identification": {
+          "legal_form": "Corporate",
+          "legal_authority": "Danish"
+        }
+      },
+      {
+        "name": "Gemco Corporate Management Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "United Kingdom",
+          "country_registered": "United Kingdom",
+          "place_registered": "England And Wales",
+          "registration_number": "03633412"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2OTUzODgzOGFkaXF6a2N4",
+    "date": "2025-06-10",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/6brkR2T9GTQ5bOJevVWP0yVCFoJG2nK97htd-4UAGwM/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03514486/filing-history/MzQ2OTUzODgzOGFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

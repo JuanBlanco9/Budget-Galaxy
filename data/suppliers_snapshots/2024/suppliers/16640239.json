@@ -1,0 +1,158 @@
+{
+  "schema_version": "v2",
+  "company_number": "16640239",
+  "display_name": "Thurston Group Limited",
+  "official_name": "THURSTON GROUP LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "11/08/2025",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "25110",
+    "25290"
+  ],
+  "sic_labels": [
+    "Manufacture of metal structures and parts of structures",
+    "Manufacture of other tanks, reservoirs and containers of metal"
+  ],
+  "previous_names": [
+    {
+      "name": "HAMSARD 3822 LIMITED",
+      "condate": "08/01/2026"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "QUARRY HILL INDUSTRIAL ESTATE QUARRY HILL",
+    "address_line_2": "HORBURY",
+    "post_town": "WAKEFIELD",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "WF4 6AJ"
+  },
+  "accounts": {
+    "category": "NO ACCOUNTS FILED",
+    "last_made_up": null,
+    "next_due": "11/05/2027",
+    "ref_day": "31",
+    "ref_month": "8"
+  },
+  "mortgages": {
+    "num_charges": 1,
+    "num_outstanding": 1,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 709961.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 53.659959,
+    "lng": -1.568366,
+    "lad24_cd": "E08000036",
+    "lad24_nm": "Wakefield",
+    "region": "Yorkshire and The Humber"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/16640239"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": false
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T22:53:27Z",
+    "company_name": "THURSTON GROUP LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2025-08-11",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-05-11",
+    "accounts_last_made_up": null,
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-17"
+  },
+  "governance": {
+    "api_date": "2026-04-27T22:53:28Z",
+    "total_officers": 4,
+    "active_count": 1,
+    "resigned_count": 3,
+    "active_officers": [
+      {
+        "name": "RICHARDSON, David Conway",
+        "role": "director",
+        "appointed_on": "2025-12-18",
+        "country_of_residence": "Wales",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T22:53:30Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Gch Corporation Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2025-12-18",
+        "identification": {
+          "legal_form": "Company Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "07200539"
+        }
+      },
+      {
+        "name": "Squire Patton Boggs Directors Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2025-08-11",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "United Kingdom (England And Wales)",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "2806502"
+        }
+      }
+    ]
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

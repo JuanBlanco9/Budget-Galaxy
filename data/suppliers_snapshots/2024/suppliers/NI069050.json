@@ -1,0 +1,157 @@
+{
+  "schema_version": "v2",
+  "company_number": "NI069050",
+  "display_name": "Irwin Carr Ltd",
+  "official_name": "IRWIN CARR LTD",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "24/04/2008",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "71129"
+  ],
+  "sic_labels": [
+    "Other engineering activities"
+  ],
+  "previous_names": [
+    {
+      "name": "MARSHALL DAY ACOUSTICS IRELAND LTD",
+      "condate": "26/04/2016"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "7 OSBORNE PROMENADE",
+    "address_line_2": "",
+    "post_town": "WARRENPOINT",
+    "county": "COUNTY DOWN",
+    "country": "",
+    "postal_code": "BT34 3NQ"
+  },
+  "accounts": {
+    "category": "MICRO ENTITY",
+    "last_made_up": "30/04/2025",
+    "next_due": "31/01/2027",
+    "ref_day": "30",
+    "ref_month": "4"
+  },
+  "mortgages": {
+    "num_charges": 2,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 2
+  },
+  "spend_profile": {
+    "total_gbp_2024": 28750.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 54.098157,
+    "lng": -6.252593,
+    "lad24_cd": "N09000010",
+    "lad24_nm": "Newry, Mourne and Down",
+    "region": null
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/NI069050"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "other",
+  "buyer_type_breakdown": {
+    "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T11:46:14Z",
+    "company_name": "IRWIN CARR LTD",
+    "company_status": "active",
+    "date_of_creation": "2008-04-24",
+    "date_of_cessation": null,
+    "jurisdiction": "northern-ireland",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-01-31",
+    "accounts_last_made_up": "2025-04-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-05-08"
+  },
+  "governance": {
+    "api_date": "2026-04-28T11:46:15Z",
+    "total_officers": 6,
+    "active_count": 2,
+    "resigned_count": 4,
+    "active_officers": [
+      {
+        "name": "CARR, Brigid",
+        "role": "secretary",
+        "appointed_on": "2019-06-28",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "CARR, Shane",
+        "role": "director",
+        "appointed_on": "2011-12-20",
+        "country_of_residence": "Northern Ireland",
+        "nationality": "Irish"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T11:46:16Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Andrew James Irwin",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Australian",
+        "country_of_residence": "Northern Ireland",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2016-05-01",
+        "identification": null
+      },
+      {
+        "name": "Mr Shane Michael Carr",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Irish",
+        "country_of_residence": "Northern Ireland",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2016-05-01",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4NDI4NzMyMWFkaXF6a2N4",
+    "date": "2025-10-10",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-micro-entity",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/TxUAgIDPMM_7Rp3zFB2hnsi4ZW0SBYlTwJfPYIe4xZo/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/NI069050/filing-history/MzQ4NDI4NzMyMWFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

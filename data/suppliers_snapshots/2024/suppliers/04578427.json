@@ -1,0 +1,172 @@
+{
+  "schema_version": "v2",
+  "company_number": "04578427",
+  "display_name": "Second Element Limited",
+  "official_name": "SECOND ELEMENT LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "31/10/2002",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "39000"
+  ],
+  "sic_labels": [
+    "Remediation activities and other waste management services"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "1 CLARE COTTAGE",
+    "address_line_2": "GALLAMORE LANE",
+    "post_town": "MARKET RASEN",
+    "county": "LINCOLNSHIRE",
+    "country": "ENGLAND",
+    "postal_code": "LN8 3HZ"
+  },
+  "accounts": {
+    "category": "UNAUDITED ABRIDGED",
+    "last_made_up": "31/10/2024",
+    "next_due": "31/07/2026",
+    "ref_day": "31",
+    "ref_month": "10"
+  },
+  "mortgages": {
+    "num_charges": 1,
+    "num_outstanding": 1,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 795567.06,
+    "n_contracts": 5,
+    "n_buyers": 5
+  },
+  "geo": {
+    "lat": 53.392457,
+    "lng": -0.338839,
+    "lad24_cd": "E07000142",
+    "lad24_nm": "West Lindsey",
+    "region": "East Midlands"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/04578427"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "other",
+  "buyer_type_breakdown": {
+    "other": 0.4168,
+    "council": 0.2621,
+    "education": 0.2573,
+    "police_fire": 0.0638
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T22:31:15Z",
+    "company_name": "SECOND ELEMENT LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2002-10-31",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-07-31",
+    "accounts_last_made_up": "2024-10-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-07"
+  },
+  "governance": {
+    "api_date": "2026-04-27T22:31:17Z",
+    "total_officers": 2,
+    "active_count": 2,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "DANIELSON, Heather",
+        "role": "secretary",
+        "appointed_on": "2002-10-31",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "DANIELSON, Richard Euan Martin",
+        "role": "director",
+        "appointed_on": "2002-10-31",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T22:31:18Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Second Element (Holdings) Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2017-10-24",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Registrar Of Companies England And Wales",
+          "registration_number": "10857500"
+        }
+      },
+      {
+        "name": "Mrs Heather Margaret Danielson",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-07-01",
+        "identification": null
+      },
+      {
+        "name": "Mr Richard Euan Martin Danielson",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-07-01",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NTUwOTcyOWFkaXF6a2N4",
+    "date": "2025-07-29",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-unaudited-abridged",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/sbycchHI5T3B1mwJTQ1TjmL2pJxRsgZSc6DiY7xz0i0/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04578427/filing-history/MzQ3NTUwOTcyOWFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

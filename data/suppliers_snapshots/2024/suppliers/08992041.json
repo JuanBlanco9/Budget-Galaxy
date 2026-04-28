@@ -1,0 +1,202 @@
+{
+  "schema_version": "v2",
+  "company_number": "08992041",
+  "display_name": "Max Energy Ltd",
+  "official_name": "MAX ENERGY LTD",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "11/04/2014",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "43290"
+  ],
+  "sic_labels": [
+    "Other construction installation"
+  ],
+  "previous_names": [
+    {
+      "name": "COX COMMERCIAL INVESTMENTS LTD",
+      "condate": "13/10/2015"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "1 BOSTON ROAD",
+    "address_line_2": "",
+    "post_town": "LEICESTER",
+    "county": "LEICESTERSHIRE",
+    "country": "",
+    "postal_code": "LE4 1AA"
+  },
+  "accounts": {
+    "category": "MEDIUM",
+    "last_made_up": "31/03/2025",
+    "next_due": "31/03/2027",
+    "ref_day": "30",
+    "ref_month": "6"
+  },
+  "mortgages": {
+    "num_charges": 2,
+    "num_outstanding": 2,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 67985.6,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 52.664453,
+    "lng": -1.174027,
+    "lad24_cd": "E06000016",
+    "lad24_nm": "Leicester",
+    "region": "East Midlands"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/08992041"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "other",
+  "buyer_type_breakdown": {
+    "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T08:06:01Z",
+    "company_name": "MAX ENERGY LTD",
+    "company_status": "active",
+    "date_of_creation": "2014-04-11",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-03-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-20"
+  },
+  "governance": {
+    "api_date": "2026-04-28T08:06:02Z",
+    "total_officers": 10,
+    "active_count": 4,
+    "resigned_count": 6,
+    "active_officers": [
+      {
+        "name": "ADAMS, Shaun Keith",
+        "role": "director",
+        "appointed_on": "2020-05-29",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BEARDSLEY, Paul Anthony",
+        "role": "director",
+        "appointed_on": "2016-05-23",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GREEN, David John",
+        "role": "director",
+        "appointed_on": "2016-05-23",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "POOLE, Nigel Malcolm",
+        "role": "director",
+        "appointed_on": "2020-05-29",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T08:06:03Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Max Energy Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2020-05-29",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "Companies Act 1985",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "12450281"
+        }
+      },
+      {
+        "name": "Effective Energy Groupltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent-as-firm",
+          "voting-rights-50-to-75-percent-as-firm"
+        ],
+        "notified_on": "2017-03-31",
+        "identification": {
+          "legal_form": "Limited",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "09805175"
+        }
+      },
+      {
+        "name": "Effective Energy Solutions Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "Companies Act 1985",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "06743329"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxMjc0Njc0MGFkaXF6a2N4",
+    "date": "2026-03-26",
+    "type": "AA01",
+    "description": "change-account-reference-date-company-current-extended",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/LyGqT8aiOTzVMyL0QqHRItO0zC5oX98_VvbZgIFOjKM/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/08992041/filing-history/MzUxMjc0Njc0MGFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

@@ -1,0 +1,157 @@
+{
+  "schema_version": "v2",
+  "company_number": "02683844",
+  "display_name": "Smith Construction (Heckington) Limited",
+  "official_name": "SMITH CONSTRUCTION (HECKINGTON) LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "04/02/1992",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "42990"
+  ],
+  "sic_labels": [
+    "Construction of other civil engineering projects n.e.c."
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "STATION ROAD",
+    "address_line_2": "HECKINGTON",
+    "post_town": "SLEAFORD",
+    "county": "LINCOLNSHIRE",
+    "country": "",
+    "postal_code": "NG34 9NF"
+  },
+  "accounts": {
+    "category": "MEDIUM",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 3,
+    "num_outstanding": 1,
+    "num_part_satisfied": 0,
+    "num_satisfied": 2
+  },
+  "spend_profile": {
+    "total_gbp_2024": 1009354.24,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 52.978771,
+    "lng": -0.291587,
+    "lad24_cd": "E07000139",
+    "lad24_nm": "North Kesteven",
+    "region": "East Midlands"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/02683844"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T21:38:16Z",
+    "company_name": "SMITH CONSTRUCTION (HECKINGTON) LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1992-02-04",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-17"
+  },
+  "governance": {
+    "api_date": "2026-04-27T21:38:17Z",
+    "total_officers": 10,
+    "active_count": 2,
+    "resigned_count": 8,
+    "active_officers": [
+      {
+        "name": "PRIESTLEY, John Langstaff",
+        "role": "director",
+        "appointed_on": "1994-01-04",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SMITH, Kenneth Martin",
+        "role": "director",
+        "appointed_on": null,
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T21:38:19Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Melbourne Construction Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2023-11-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "Uk Companies House",
+          "registration_number": "12039998"
+        }
+      },
+      {
+        "name": "Mr John Langstaff Priestley",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MjM0NTQxNGFkaXF6a2N4",
+    "date": "2025-09-23",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-medium",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/u1_8usq0MloHVV8LJmKfLjWoVluvp0INSRAagQ0S_2M/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02683844/filing-history/MzQ4MjM0NTQxNGFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

@@ -1,0 +1,137 @@
+{
+  "schema_version": "v2",
+  "company_number": "05265422",
+  "display_name": "Scarlettabbott Ltd",
+  "official_name": "SCARLETTABBOTT LTD",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "20/10/2004",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "74909"
+  ],
+  "sic_labels": [
+    "Other professional, scientific and technical activities n.e.c."
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "THE BONDING WAREHOUSE",
+    "address_line_2": "TERRY AVENUE",
+    "post_town": "YORK",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "YO1 6FA"
+  },
+  "accounts": {
+    "category": "SMALL",
+    "last_made_up": "31/10/2024",
+    "next_due": "31/07/2026",
+    "ref_day": "31",
+    "ref_month": "10"
+  },
+  "mortgages": {
+    "num_charges": 2,
+    "num_outstanding": 1,
+    "num_part_satisfied": 0,
+    "num_satisfied": 1
+  },
+  "spend_profile": {
+    "total_gbp_2024": 77130.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 53.954447,
+    "lng": -1.082143,
+    "lad24_cd": "E06000014",
+    "lad24_nm": "York",
+    "region": "Yorkshire and The Humber"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/05265422"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "other",
+  "buyer_type_breakdown": {
+    "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T07:31:51Z",
+    "company_name": "SCARLETTABBOTT LTD",
+    "company_status": "active",
+    "date_of_creation": "2004-10-20",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-07-31",
+    "accounts_last_made_up": "2024-10-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-25"
+  },
+  "governance": {
+    "api_date": "2026-04-28T07:31:53Z",
+    "total_officers": 8,
+    "active_count": 1,
+    "resigned_count": 7,
+    "active_officers": [
+      {
+        "name": "MANNING, Rowan Esther Kylie",
+        "role": "director",
+        "appointed_on": "2025-02-27",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T07:31:54Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "The Scarlettabbott Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "Companies Act",
+          "country_registered": "England",
+          "place_registered": "England",
+          "registration_number": "11595826"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NDQ3Nzc2MWFkaXF6a2N4",
+    "date": "2025-07-21",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/fSjj0jXgfQL1mOPqX71FJnb-qiREr7iTj_41NNLNqt8/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/05265422/filing-history/MzQ3NDQ3Nzc2MWFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

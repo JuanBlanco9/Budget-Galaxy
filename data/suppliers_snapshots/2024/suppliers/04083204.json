@@ -1,0 +1,149 @@
+{
+  "schema_version": "v2",
+  "company_number": "04083204",
+  "display_name": "London Economics Limited",
+  "official_name": "LONDON ECONOMICS LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "04/10/2000",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "70229"
+  ],
+  "sic_labels": [
+    "Management consultancy activities other than financial management"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "SOMERSET HOUSE, NEW WING",
+    "address_line_2": "STRAND",
+    "post_town": "LONDON",
+    "county": "",
+    "country": "",
+    "postal_code": "WC2R 1LA"
+  },
+  "accounts": {
+    "category": "SMALL",
+    "last_made_up": "31/08/2024",
+    "next_due": "26/05/2026",
+    "ref_day": "26",
+    "ref_month": "8"
+  },
+  "mortgages": {
+    "num_charges": 2,
+    "num_outstanding": 2,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 21096106.28,
+    "n_contracts": 8,
+    "n_buyers": 7
+  },
+  "geo": {
+    "lat": 51.510926,
+    "lng": -0.117683,
+    "lad24_cd": "E09000033",
+    "lad24_nm": "Westminster",
+    "region": "London"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/04083204"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "other",
+  "buyer_type_breakdown": {
+    "other": 0.9549,
+    "central_govt": 0.0331,
+    "agency": 0.0091,
+    "education": 0.0029
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T13:28:50Z",
+    "company_name": "LONDON ECONOMICS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2000-10-04",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-05-26",
+    "accounts_last_made_up": "2024-08-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-18"
+  },
+  "governance": {
+    "api_date": "2026-04-27T13:28:52Z",
+    "total_officers": 8,
+    "active_count": 3,
+    "resigned_count": 5,
+    "active_officers": [
+      {
+        "name": "HOLMES BATT, William",
+        "role": "secretary",
+        "appointed_on": "2001-12-05",
+        "country_of_residence": null,
+        "nationality": "Irish"
+      },
+      {
+        "name": "BATT, William Holmes",
+        "role": "director",
+        "appointed_on": "2001-05-17",
+        "country_of_residence": "Ireland",
+        "nationality": "Irish"
+      },
+      {
+        "name": "GRAY, Alan William",
+        "role": "director",
+        "appointed_on": "2001-05-17",
+        "country_of_residence": "Ireland",
+        "nationality": "Irish"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T13:28:53Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Alan Gray",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Irish",
+        "country_of_residence": "Ireland",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ1MjI1MzI2OWFkaXF6a2N4",
+    "date": "2025-01-22",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/lYHimtkLdi_jO63zTexX_IVuTJmhhpRT1unQHgSekmA/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04083204/filing-history/MzQ1MjI1MzI2OWFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

@@ -1,0 +1,198 @@
+{
+  "schema_version": "v2",
+  "company_number": "05896422",
+  "display_name": "Wavestone Advisors Uk Limited",
+  "official_name": "WAVESTONE ADVISORS UK LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "04/08/2006",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "82990"
+  ],
+  "sic_labels": [
+    "Other business support service activities n.e.c."
+  ],
+  "previous_names": [
+    {
+      "name": "WAVESTONE ADVISORS LIMITED",
+      "condate": "12/08/2016"
+    },
+    {
+      "name": "HUDSON & YORKE LIMITED",
+      "condate": "26/07/2016"
+    },
+    {
+      "name": "HUDSON AND YORKE LIMITED",
+      "condate": "20/04/2010"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "10 EXCHANGE SQUARE (LEVEL 7)",
+    "address_line_2": "BROADGATE",
+    "post_town": "LONDON",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "EC2A 2BR"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/03/2025",
+    "next_due": "31/12/2026",
+    "ref_day": "31",
+    "ref_month": "3"
+  },
+  "mortgages": {
+    "num_charges": 0,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 2000000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.520198,
+    "lng": -0.081653,
+    "lad24_cd": "E09000001",
+    "lad24_nm": "City of London",
+    "region": "London"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/05896422"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "other",
+  "buyer_type_breakdown": {
+    "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T19:52:05Z",
+    "company_name": "WAVESTONE ADVISORS UK LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2006-08-04",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-08-18"
+  },
+  "governance": {
+    "api_date": "2026-04-27T19:52:06Z",
+    "total_officers": 10,
+    "active_count": 4,
+    "resigned_count": 6,
+    "active_officers": [
+      {
+        "name": "DARDE, Benoit",
+        "role": "director",
+        "appointed_on": "2024-02-01",
+        "country_of_residence": "France",
+        "nationality": "French"
+      },
+      {
+        "name": "IMBERT, Pascal Joseph Rene",
+        "role": "director",
+        "appointed_on": "2024-02-01",
+        "country_of_residence": "France",
+        "nationality": "French"
+      },
+      {
+        "name": "MAGHSOUDNIA, Abdol Reza",
+        "role": "director",
+        "appointed_on": "2015-02-11",
+        "country_of_residence": "France",
+        "nationality": "French"
+      },
+      {
+        "name": "NEWLOVE, Michael Peter",
+        "role": "director",
+        "appointed_on": "2006-08-04",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T19:52:08Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Pascal Imbert",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "French",
+        "country_of_residence": "France",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Michel Bernard Robert Emile Dancoisne",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "French",
+        "country_of_residence": "France",
+        "ceased": true,
+        "natures_of_control": [
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Wavestone Sa",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Public Limited Company",
+          "legal_authority": "French Company Law",
+          "country_registered": "Nanterre",
+          "place_registered": "Nanterre",
+          "registration_number": "377 550 249"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MzE4MjUyNWFkaXF6a2N4",
+    "date": "2025-07-10",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/tfP7mmxs4TgkTBQc3r_EuaQ4LoZkkSKcmBhjrsSUsj4/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/05896422/filing-history/MzQ3MzE4MjUyNWFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

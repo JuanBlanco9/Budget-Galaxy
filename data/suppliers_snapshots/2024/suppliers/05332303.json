@@ -1,0 +1,158 @@
+{
+  "schema_version": "v2",
+  "company_number": "05332303",
+  "display_name": "Moriah House Limited",
+  "official_name": "MORIAH HOUSE LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "13/01/2005",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "87300"
+  ],
+  "sic_labels": [
+    "Residential care activities for the elderly and disabled"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "24 HIGH VIEW CLOSE",
+    "address_line_2": "VANTAGE PARK",
+    "post_town": "LEICESTER",
+    "county": "LEICESTERSHIRE",
+    "country": "ENGLAND",
+    "postal_code": "LE4 9LJ"
+  },
+  "accounts": {
+    "category": "TOTAL EXEMPTION FULL",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 6,
+    "num_outstanding": 4,
+    "num_part_satisfied": 0,
+    "num_satisfied": 2
+  },
+  "spend_profile": {
+    "total_gbp_2024": 100000000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 52.656986,
+    "lng": -1.084072,
+    "lad24_cd": "E06000016",
+    "lad24_nm": "Leicester",
+    "region": "East Midlands"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/05332303"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T16:05:39Z",
+    "company_name": "MORIAH HOUSE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2005-01-13",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-26"
+  },
+  "governance": {
+    "api_date": "2026-04-22T16:05:41Z",
+    "total_officers": 4,
+    "active_count": 2,
+    "resigned_count": 2,
+    "active_officers": [
+      {
+        "name": "ALIDINA, Abbas Kazim Ali",
+        "role": "director",
+        "appointed_on": "2026-02-10",
+        "country_of_residence": "England",
+        "nationality": "Tanzanian"
+      },
+      {
+        "name": "ALIDINA, Abdulrasul Kazim Ali",
+        "role": "director",
+        "appointed_on": "2026-02-10",
+        "country_of_residence": "England",
+        "nationality": "Tanzanian"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T16:05:43Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Moriah (Holdings) Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2019-02-20",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "England & Wales",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "11785453"
+        }
+      },
+      {
+        "name": "Mr Paul Hearn",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Irish",
+        "country_of_residence": "Guernsey",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MzIzNDgxNGFkaXF6a2N4",
+    "date": "2025-09-30",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/0NuZJ-vEPQE3fyQQOQP7XP24azPgFg7tep1fizuvlK8/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/05332303/filing-history/MzQ4MzIzNDgxNGFkaXF6a2N4"
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 1.0
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

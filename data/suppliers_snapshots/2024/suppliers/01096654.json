@@ -1,0 +1,165 @@
+{
+  "schema_version": "v2",
+  "company_number": "01096654",
+  "display_name": "Hainenko Limited",
+  "official_name": "HAINENKO LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "16/02/1973",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "32990"
+  ],
+  "sic_labels": [
+    "Other manufacturing n.e.c."
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "284 CHASE ROAD",
+    "address_line_2": "LONDON",
+    "post_town": "",
+    "county": "",
+    "country": "",
+    "postal_code": "N14 6HF"
+  },
+  "accounts": {
+    "category": "GROUP",
+    "last_made_up": "31/08/2024",
+    "next_due": "31/05/2026",
+    "ref_day": "31",
+    "ref_month": "8"
+  },
+  "mortgages": {
+    "num_charges": 1,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 1
+  },
+  "spend_profile": {
+    "total_gbp_2024": 14000000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.63353,
+    "lng": -0.126685,
+    "lad24_cd": "E09000010",
+    "lad24_nm": "Enfield",
+    "region": "London"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/01096654"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 0.5562,
+    "other": 0.4438
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T14:06:38Z",
+    "company_name": "HAINENKO LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1973-02-16",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-05-31",
+    "accounts_last_made_up": "2024-08-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-20"
+  },
+  "governance": {
+    "api_date": "2026-04-27T14:06:40Z",
+    "total_officers": 7,
+    "active_count": 4,
+    "resigned_count": 3,
+    "active_officers": [
+      {
+        "name": "FALLON, Lindsey Kim",
+        "role": "secretary",
+        "appointed_on": "2014-02-17",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "LAUBIS, Hans Peter",
+        "role": "director",
+        "appointed_on": null,
+        "country_of_residence": "England",
+        "nationality": "German"
+      },
+      {
+        "name": "THOMAS, Neil Christopher",
+        "role": "director",
+        "appointed_on": "2014-02-17",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "YAO, Changyin",
+        "role": "director",
+        "appointed_on": "2025-03-14",
+        "country_of_residence": "China",
+        "nationality": "Chinese"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T14:06:42Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Changyin Yao",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Chinese",
+        "country_of_residence": "China",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2019-06-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Douglas Edward John Ashpole",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2NzE3Nzc3M2FkaXF6a2N4",
+    "date": "2025-05-20",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/tk7Za7e5D7pINmWiSXT9IJdcU4EAH_RkRPvsU_kt62I/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01096654/filing-history/MzQ2NzE3Nzc3M2FkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

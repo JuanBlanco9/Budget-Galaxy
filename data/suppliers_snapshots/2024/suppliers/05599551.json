@@ -1,0 +1,165 @@
+{
+  "schema_version": "v2",
+  "company_number": "05599551",
+  "display_name": "05599551 Limited",
+  "official_name": "05599551 LIMITED",
+  "status": "in_administration",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "21/10/2005",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "63990"
+  ],
+  "sic_labels": [
+    "Other information service activities n.e.c."
+  ],
+  "previous_names": [
+    {
+      "name": "INFORM CPI LIMITED",
+      "condate": "17/02/2025"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "5TH FLOOR SHIP CANAL HOUSE",
+    "address_line_2": "98 KING STREET",
+    "post_town": "MANCHESTER",
+    "county": "",
+    "country": "",
+    "postal_code": "M2 4WU"
+  },
+  "accounts": {
+    "category": "SMALL",
+    "last_made_up": "29/09/2022",
+    "next_due": "29/06/2024",
+    "ref_day": "29",
+    "ref_month": "9"
+  },
+  "mortgages": {
+    "num_charges": 5,
+    "num_outstanding": 1,
+    "num_part_satisfied": 0,
+    "num_satisfied": 4
+  },
+  "spend_profile": {
+    "total_gbp_2024": 22500.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 53.480597,
+    "lng": -2.242935,
+    "lad24_cd": "E08000003",
+    "lad24_nm": "Manchester",
+    "region": "North West"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/05599551"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T12:29:38Z",
+    "company_name": "05599551 LIMITED",
+    "company_status": "administration",
+    "date_of_creation": "2005-10-21",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": true,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": true,
+    "accounts_next_due": "2024-06-29",
+    "accounts_last_made_up": "2022-09-29",
+    "confirmation_statement_overdue": true,
+    "confirmation_statement_next_due": "2024-11-27"
+  },
+  "governance": {
+    "api_date": "2026-04-28T12:29:39Z",
+    "total_officers": 10,
+    "active_count": 4,
+    "resigned_count": 6,
+    "active_officers": [
+      {
+        "name": "MCDERMOTT, Paul",
+        "role": "secretary",
+        "appointed_on": "2012-01-20",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "MCDERMOTT, Paul",
+        "role": "director",
+        "appointed_on": "2012-01-31",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MOLDEN, Glenn",
+        "role": "director",
+        "appointed_on": "2016-06-02",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "MURPHY, Stuart Frank",
+        "role": "director",
+        "appointed_on": "2006-03-06",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T12:29:40Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Exacta Plc",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "07081359"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzM5Mzk4NzE0MmFkaXF6a2N4",
+    "date": "2023-09-21",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/7nnFCJoYrT37xUm-oG5V1pp_H8Z2Ohw42v2Ps0t4tjg/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/05599551/filing-history/MzM5Mzk4NzE0MmFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

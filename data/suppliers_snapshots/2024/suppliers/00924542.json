@@ -1,0 +1,171 @@
+{
+  "schema_version": "v2",
+  "company_number": "00924542",
+  "display_name": "Hr Go Plc",
+  "official_name": "HR GO PLC",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Public Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "13/12/1967",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "70100",
+    "78200"
+  ],
+  "sic_labels": [
+    "Activities of head offices",
+    "Temporary employment agency activities"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "THE CEDARS",
+    "address_line_2": "CHURCH ROAD",
+    "post_town": "ASHFORD",
+    "county": "KENT",
+    "country": "ENGLAND",
+    "postal_code": "TN23 1RQ"
+  },
+  "accounts": {
+    "category": "GROUP",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/06/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 14,
+    "num_outstanding": 1,
+    "num_part_satisfied": 0,
+    "num_satisfied": 13
+  },
+  "spend_profile": {
+    "total_gbp_2024": 1275000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.146322,
+    "lng": 0.872144,
+    "lad24_cd": "E07000105",
+    "lad24_nm": "Ashford",
+    "region": "South East"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/00924542"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T21:00:37Z",
+    "company_name": "HR GO PLC",
+    "company_status": "active",
+    "date_of_creation": "1967-12-13",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-06-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-17"
+  },
+  "governance": {
+    "api_date": "2026-04-27T21:00:39Z",
+    "total_officers": 36,
+    "active_count": 3,
+    "resigned_count": 33,
+    "active_officers": [
+      {
+        "name": "PARKINSON, Sydney Jane",
+        "role": "secretary",
+        "appointed_on": "2024-12-20",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "PARKINSON, John Matthew",
+        "role": "director",
+        "appointed_on": "2016-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PARKINSON, Sydney Jane",
+        "role": "director",
+        "appointed_on": "2022-04-21",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T21:00:40Z",
+    "total_results": 3,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Mr John Mathew Parkinson",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2022-04-21",
+        "identification": null
+      },
+      {
+        "name": "Miss Sydney Jane Parkinson",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2022-04-21",
+        "identification": null
+      },
+      {
+        "name": "Mr John Charles Parkinson",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MjQ2NTE2OGFkaXF6a2N4",
+    "date": "2025-07-04",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/uP09Sr62WIbbUwMV2r1QoLdjbwZiDDyP4KDnMHXlzIc/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/00924542/filing-history/MzQ3MjQ2NTE2OGFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

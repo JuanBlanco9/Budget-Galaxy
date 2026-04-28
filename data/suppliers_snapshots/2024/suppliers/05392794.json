@@ -1,0 +1,162 @@
+{
+  "schema_version": "v2",
+  "company_number": "05392794",
+  "display_name": "Etec Contract Services Limited",
+  "official_name": "ETEC CONTRACT SERVICES LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "15/03/2005",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "41201",
+    "41202"
+  ],
+  "sic_labels": [
+    "Construction of commercial buildings",
+    "Construction of domestic buildings"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "SUITE 7, ELMHURST",
+    "address_line_2": "98-106 HIGH ROAD",
+    "post_town": "SOUTH WOODFORD",
+    "county": "ESSEX",
+    "country": "ENGLAND",
+    "postal_code": "E18 2QH"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/03/2025",
+    "next_due": "31/12/2026",
+    "ref_day": "31",
+    "ref_month": "3"
+  },
+  "mortgages": {
+    "num_charges": 5,
+    "num_outstanding": 1,
+    "num_part_satisfied": 0,
+    "num_satisfied": 4
+  },
+  "spend_profile": {
+    "total_gbp_2024": 1858514040.28,
+    "n_contracts": 5,
+    "n_buyers": 4
+  },
+  "geo": {
+    "lat": 51.596609,
+    "lng": 0.022664,
+    "lad24_cd": "E09000026",
+    "lad24_nm": "Redbridge",
+    "region": "London"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/05392794"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T02:01:29Z",
+    "company_name": "ETEC CONTRACT SERVICES LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2005-03-15",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-05"
+  },
+  "governance": {
+    "api_date": "2026-04-22T02:01:31Z",
+    "total_officers": 4,
+    "active_count": 2,
+    "resigned_count": 2,
+    "active_officers": [
+      {
+        "name": "SMITH, Irene Mary",
+        "role": "secretary",
+        "appointed_on": "2005-03-15",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "SMITH, Michael Daniel",
+        "role": "director",
+        "appointed_on": "2005-03-15",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T02:01:33Z",
+    "total_results": 2,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Etec Homes (Uk) Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2017-12-04",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "The Companies Act 2006",
+          "country_registered": "Engalnd And Wales",
+          "place_registered": "Engalnd And Wales",
+          "registration_number": "08446930"
+        }
+      },
+      {
+        "name": "Mr Michael Daniel Smith",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MjE4OTE0MGFkaXF6a2N4",
+    "date": "2025-12-04",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/Dhgd_yU-ymWFhpDN482_OzFVGQxXvnPLxZMd6zcq2PI/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/05392794/filing-history/MzQ5MjE4OTE0MGFkaXF6a2N4"
+  },
+  "top_buyer_type": "other",
+  "buyer_type_breakdown": {
+    "other": 0.6454,
+    "central_govt": 0.3194,
+    "council": 0.0347,
+    "police_fire": 0.0003,
+    "education": 0.0002
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

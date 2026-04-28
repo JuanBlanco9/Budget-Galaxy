@@ -1,0 +1,345 @@
+{
+  "schema_version": "v2",
+  "company_number": "03049649",
+  "display_name": "The Stationery Office Limited",
+  "official_name": "THE STATIONERY OFFICE LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "25/04/1995",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "18140",
+    "58110"
+  ],
+  "sic_labels": [
+    "Binding and related services",
+    "Book publishing"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "18 CENTRAL AVENUE",
+    "address_line_2": "ST. ANDREWS BUSINESS PARK",
+    "post_town": "NORWICH",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "NR7 0HR"
+  },
+  "accounts": {
+    "category": "AUDIT EXEMPTION SUBSIDIARY",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 12,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 12
+  },
+  "spend_profile": {
+    "total_gbp_2024": 50707600.0,
+    "n_contracts": 2,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 52.630272,
+    "lng": 1.365506,
+    "lad24_cd": "E07000144",
+    "lad24_nm": "Broadland",
+    "region": "East of England"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/03049649"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T16:58:42Z",
+    "company_name": "THE STATIONERY OFFICE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1995-04-25",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-05-23"
+  },
+  "governance": {
+    "api_date": "2026-04-22T16:58:44Z",
+    "total_officers": 60,
+    "active_count": 5,
+    "resigned_count": 55,
+    "active_officers": [
+      {
+        "name": "HESS, Eric Gene",
+        "role": "director",
+        "appointed_on": "2025-01-31",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      },
+      {
+        "name": "MORGAN, Nicholas",
+        "role": "director",
+        "appointed_on": "2022-09-30",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "SOUTH, Richard Stephen",
+        "role": "director",
+        "appointed_on": "2024-10-24",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "STEINER, Deborah Louise",
+        "role": "director",
+        "appointed_on": "2025-01-31",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      },
+      {
+        "name": "WIGGINS, Erin Allen",
+        "role": "director",
+        "appointed_on": "2024-09-02",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T16:58:45Z",
+    "total_results": 15,
+    "active_count": 6,
+    "items": [
+      {
+        "name": "Eric G Hess",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "American",
+        "country_of_residence": "United States",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2025-01-31",
+        "identification": null
+      },
+      {
+        "name": "Deborah L. Steiner",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "American",
+        "country_of_residence": "United States",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2025-01-31",
+        "identification": null
+      },
+      {
+        "name": "Mr Richard Stephen South",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2024-10-24",
+        "identification": null
+      },
+      {
+        "name": "Erin A Wiggins",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "American",
+        "country_of_residence": "United States",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2024-09-03",
+        "identification": null
+      },
+      {
+        "name": "Nicholas Morgan",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2022-09-30",
+        "identification": null
+      },
+      {
+        "name": "Williams Lea Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2018-12-31",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "England & Wales Companies Registrar",
+          "registration_number": "01627560"
+        }
+      },
+      {
+        "name": "Mr Jonathan Andrew Simpson-Dent",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2018-04-01",
+        "identification": null
+      },
+      {
+        "name": "Mr David Nicholas Kassler",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British,American",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2017-12-01",
+        "identification": null
+      },
+      {
+        "name": "Mr Stephen James Faulkner",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2017-04-25",
+        "identification": null
+      },
+      {
+        "name": "Mr Andrew James Gunton",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2017-04-25",
+        "identification": null
+      },
+      {
+        "name": "Mr Jeremy Hamilton Hook",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2017-04-25",
+        "identification": null
+      },
+      {
+        "name": "Mr Richard Stanley Coward",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2017-04-25",
+        "identification": null
+      },
+      {
+        "name": "Mr Stuart Dudley Trood",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2017-04-25",
+        "identification": null
+      },
+      {
+        "name": "Ms Andrea Lattimore",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2017-04-25",
+        "identification": null
+      },
+      {
+        "name": "Williams Lea Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "England & Wales",
+          "registration_number": "01627560"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MTk1NzA5OWFkaXF6a2N4",
+    "date": "2025-09-19",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-audit-exemption-subsiduary",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/EIK_zULMy0b_1ADGsbNGUDeg5qpOCIdNTT7o1iiIgmk/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03049649/filing-history/MzQ4MTk1NzA5OWFkaXF6a2N4"
+  },
+  "top_buyer_type": "other",
+  "buyer_type_breakdown": {
+    "other": 1.0
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

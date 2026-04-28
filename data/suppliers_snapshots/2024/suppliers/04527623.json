@@ -1,0 +1,157 @@
+{
+  "schema_version": "v2",
+  "company_number": "04527623",
+  "display_name": "The Grange (Chertsey) 2002 Ltd.",
+  "official_name": "THE GRANGE (CHERTSEY) 2002 LTD.",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "05/09/2002",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "87300"
+  ],
+  "sic_labels": [
+    "Residential care activities for the elderly and disabled"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "31/33 COMMERCIAL ROAD",
+    "address_line_2": "",
+    "post_town": "POOLE",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "BH14 0HU"
+  },
+  "accounts": {
+    "category": "SMALL",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "30",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 9,
+    "num_outstanding": 3,
+    "num_part_satisfied": 0,
+    "num_satisfied": 6
+  },
+  "spend_profile": {
+    "total_gbp_2024": 0.0,
+    "n_contracts": 2,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 50.723735,
+    "lng": -1.958091,
+    "lad24_cd": "E06000058",
+    "lad24_nm": "Bournemouth, Christchurch and Poole",
+    "region": "South West"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/04527623"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "other",
+  "buyer_type_breakdown": {},
+  "ch_profile": {
+    "api_date": "2026-04-28T14:26:39Z",
+    "company_name": "THE GRANGE (CHERTSEY) 2002 LTD.",
+    "company_status": "active",
+    "date_of_creation": "2002-09-05",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-09-20"
+  },
+  "governance": {
+    "api_date": "2026-04-28T14:26:40Z",
+    "total_officers": 7,
+    "active_count": 2,
+    "resigned_count": 5,
+    "active_officers": [
+      {
+        "name": "SIVANANTHAN, Arujuna, Dr",
+        "role": "director",
+        "appointed_on": "2015-10-29",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SIVANANTHAN, Karthika",
+        "role": "director",
+        "appointed_on": "2015-10-29",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T14:26:41Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Serene Ll Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-10-31",
+        "identification": {
+          "legal_form": "Ltd",
+          "legal_authority": "English",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "09674292"
+        }
+      },
+      {
+        "name": "Mr Sean Thomas Costelloe",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MzA2ODgyOWFkaXF6a2N4",
+    "date": "2025-09-29",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/3PLdYTWbqKyr3FS8PRzj1CZ9s2Jrtyml-SI9m9w3MvE/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04527623/filing-history/MzQ4MzA2ODgyOWFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

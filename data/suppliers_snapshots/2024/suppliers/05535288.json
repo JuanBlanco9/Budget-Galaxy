@@ -1,0 +1,205 @@
+{
+  "schema_version": "v2",
+  "company_number": "05535288",
+  "display_name": "Cohesive Uk Group Limited",
+  "official_name": "COHESIVE UK GROUP LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "12/08/2005",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "82990"
+  ],
+  "sic_labels": [
+    "Other business support service activities n.e.c."
+  ],
+  "previous_names": [
+    {
+      "name": "VETASI LIMITED",
+      "condate": "10/05/2023"
+    },
+    {
+      "name": "JF PRIOR CONSULTING LTD",
+      "condate": "30/05/2008"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "8 BISHOPSGATE",
+    "address_line_2": "43RD FLOOR",
+    "post_town": "LONDON",
+    "county": "",
+    "country": "UNITED KINGDOM",
+    "postal_code": "EC2N 4BQ"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 4,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 4
+  },
+  "spend_profile": {
+    "total_gbp_2024": 28586.4,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.514149,
+    "lng": -0.083493,
+    "lad24_cd": "E09000001",
+    "lad24_nm": "City of London",
+    "region": "London"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/05535288"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "other",
+  "buyer_type_breakdown": {
+    "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T11:47:24Z",
+    "company_name": "COHESIVE UK GROUP LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2005-08-12",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-09-09"
+  },
+  "governance": {
+    "api_date": "2026-04-28T11:47:25Z",
+    "total_officers": 14,
+    "active_count": 3,
+    "resigned_count": 11,
+    "active_officers": [
+      {
+        "name": "ELLAM, Colin Francis",
+        "role": "director",
+        "appointed_on": "2023-11-15",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "FITZMAURICE, Barry Timothy",
+        "role": "director",
+        "appointed_on": "2023-11-15",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HACKFORTH, Clive Charles",
+        "role": "director",
+        "appointed_on": "2023-11-15",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T11:47:27Z",
+    "total_results": 4,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Bentley Systems Incorporated",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2022-11-16",
+        "identification": {
+          "legal_form": "Company",
+          "legal_authority": "General Corporation Law (Title 8, Chapter 1, Delaware Code) And The Delaware Limited Liability Company Act (Title 6, Chapter 18, Delaware Code)"
+        }
+      },
+      {
+        "name": "Bsi Holdings B.V.",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2022-11-16",
+        "identification": {
+          "legal_form": "Besloten Vennootschap",
+          "legal_authority": "Dutch Law",
+          "country_registered": "Netherlands",
+          "place_registered": "Netherlands Chamber Of Commerce",
+          "registration_number": "34085508"
+        }
+      },
+      {
+        "name": "Robert James Fair",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "James Prior",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NzQ5NjAyMGFkaXF6a2N4",
+    "date": "2026-01-08",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/PjqjPX3zKFPRze3pMVk4dedHVh-kIapNsFA7G1TMePA/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/05535288/filing-history/MzQ5NzQ5NjAyMGFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

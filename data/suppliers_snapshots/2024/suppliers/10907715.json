@@ -1,0 +1,202 @@
+{
+  "schema_version": "v2",
+  "company_number": "10907715",
+  "display_name": "Orca Medical Limited",
+  "official_name": "ORCA MEDICAL LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "09/08/2017",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "47749",
+    "47990"
+  ],
+  "sic_labels": [
+    "Retail sale of medical and orthopaedic goods in specialised stores (not incl. hearing aids) n.e.c.",
+    "Other retail sale not in stores, stalls or markets"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "FUTURE SPACE UNIVERSITY WEST OF ENGLAND",
+    "address_line_2": "UWE NORTH GATE, FILTON ROAD,",
+    "post_town": "BRISTOL",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "BS34 8RB"
+  },
+  "accounts": {
+    "category": "TOTAL EXEMPTION FULL",
+    "last_made_up": "30/09/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 0,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 8924200.0,
+    "n_contracts": 2,
+    "n_buyers": 2
+  },
+  "geo": {
+    "lat": 51.501478,
+    "lng": -2.552146,
+    "lad24_cd": "E06000025",
+    "lad24_nm": "South Gloucestershire",
+    "region": "South West"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/10907715"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "nhs",
+  "buyer_type_breakdown": {
+    "nhs": 0.9861,
+    "education": 0.0139
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T14:50:57Z",
+    "company_name": "ORCA MEDICAL LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2017-08-09",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-09-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-24"
+  },
+  "governance": {
+    "api_date": "2026-04-27T14:50:59Z",
+    "total_officers": 10,
+    "active_count": 3,
+    "resigned_count": 7,
+    "active_officers": [
+      {
+        "name": "LYNG, John",
+        "role": "director",
+        "appointed_on": "2025-10-02",
+        "country_of_residence": "Ireland",
+        "nationality": "Irish"
+      },
+      {
+        "name": "STEWART, Graham Norman",
+        "role": "director",
+        "appointed_on": "2025-07-29",
+        "country_of_residence": "Northern Ireland",
+        "nationality": "Irish"
+      },
+      {
+        "name": "WALSH, Dominic Gerard",
+        "role": "director",
+        "appointed_on": "2024-03-13",
+        "country_of_residence": "Northern Ireland",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T14:51:00Z",
+    "total_results": 4,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Asker Healthcare Group Ab",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2025-02-04",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Swedish Law",
+          "country_registered": "Sweden",
+          "place_registered": "Swedish Companies Registration Office",
+          "registration_number": "559184-9848"
+        }
+      },
+      {
+        "name": "Hospital Services Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2024-03-13",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "The Companies Act (Northern Ireland) 1960",
+          "country_registered": "Northern Ireland",
+          "place_registered": "Companies House",
+          "registration_number": "Ni005155"
+        }
+      },
+      {
+        "name": "Mr Robert Fowler",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "ownership-of-shares-25-to-50-percent-as-trust",
+          "ownership-of-shares-25-to-50-percent-as-firm"
+        ],
+        "notified_on": "2017-08-09",
+        "identification": null
+      },
+      {
+        "name": "Mr Douglas Ogg",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "ownership-of-shares-25-to-50-percent-as-trust",
+          "ownership-of-shares-25-to-50-percent-as-firm"
+        ],
+        "notified_on": "2017-08-09",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MTUwOTc3OWFkaXF6a2N4",
+    "date": "2025-06-25",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/Ve4VBWEvjhOguO8Y4TP8kKBv80ELU6SqCgAEdYeNvWs/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/10907715/filing-history/MzQ3MTUwOTc3OWFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

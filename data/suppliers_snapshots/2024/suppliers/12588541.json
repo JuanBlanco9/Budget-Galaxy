@@ -1,0 +1,150 @@
+{
+  "schema_version": "v2",
+  "company_number": "12588541",
+  "display_name": "Prompt Cars Limited",
+  "official_name": "PROMPT CARS LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "06/05/2020",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "49320"
+  ],
+  "sic_labels": [
+    "Taxi operation"
+  ],
+  "previous_names": [
+    {
+      "name": "PROMPT TAXI LIMITED",
+      "condate": "17/10/2023"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "OFFICE 26",
+    "address_line_2": "62 PORTMAN ROAD",
+    "post_town": "READING",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "RG30 1EA"
+  },
+  "accounts": {
+    "category": "MICRO ENTITY",
+    "last_made_up": "31/05/2025",
+    "next_due": "28/02/2027",
+    "ref_day": "31",
+    "ref_month": "5"
+  },
+  "mortgages": {
+    "num_charges": 0,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 204630.0,
+    "n_contracts": 2,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.461514,
+    "lng": -1.000369,
+    "lad24_cd": "E06000038",
+    "lad24_nm": "Reading",
+    "region": "South East"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/12588541"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T03:38:15Z",
+    "company_name": "PROMPT CARS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2020-05-06",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-02-28",
+    "accounts_last_made_up": "2025-05-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-17"
+  },
+  "governance": {
+    "api_date": "2026-04-28T03:38:16Z",
+    "total_officers": 2,
+    "active_count": 1,
+    "resigned_count": 1,
+    "active_officers": [
+      {
+        "name": "HAYAT, Sikandar",
+        "role": "director",
+        "appointed_on": "2022-03-03",
+        "country_of_residence": "England",
+        "nationality": "Pakistani"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T03:38:17Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Sikandar Hayat",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Pakistani",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2022-03-03",
+        "identification": null
+      },
+      {
+        "name": "Mr Husnain Ul-Abidin Sikandar",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2020-05-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwNzcyOTYxMWFkaXF6a2N4",
+    "date": "2026-02-28",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-micro-entity",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/c2yH-cQ50wougq029u4U-99noTgR5atA-3SY5MD_Sug/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/12588541/filing-history/MzUwNzcyOTYxMWFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

@@ -1,0 +1,147 @@
+{
+  "schema_version": "v2",
+  "company_number": "08123907",
+  "display_name": "Gb Construction (Herts) Ltd",
+  "official_name": "GB CONSTRUCTION (HERTS) LTD",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "29/06/2012",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "41202"
+  ],
+  "sic_labels": [
+    "Construction of domestic buildings"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "12 CAVENDISH HOUSE",
+    "address_line_2": "PLUMPTON ROAD",
+    "post_town": "HODDESDON",
+    "county": "HERTFORDSHIRE",
+    "country": "UNITED KINGDOM",
+    "postal_code": "EN11 0LB"
+  },
+  "accounts": {
+    "category": "MICRO ENTITY",
+    "last_made_up": "30/06/2024",
+    "next_due": "30/04/2026",
+    "ref_day": "31",
+    "ref_month": "7"
+  },
+  "mortgages": {
+    "num_charges": 1,
+    "num_outstanding": 1,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 2829194.12,
+    "n_contracts": 2,
+    "n_buyers": 2
+  },
+  "geo": {
+    "lat": 51.770291,
+    "lng": 0.003433,
+    "lad24_cd": "E07000095",
+    "lad24_nm": "Broxbourne",
+    "region": "East of England"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/08123907"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T19:05:38Z",
+    "company_name": "GB CONSTRUCTION (HERTS) LTD",
+    "company_status": "active",
+    "date_of_creation": "2012-06-29",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-04-30",
+    "accounts_last_made_up": "2024-06-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-21"
+  },
+  "governance": {
+    "api_date": "2026-04-27T19:05:39Z",
+    "total_officers": 2,
+    "active_count": 1,
+    "resigned_count": 1,
+    "active_officers": [
+      {
+        "name": "BABBAGE, Glenn",
+        "role": "director",
+        "appointed_on": "2012-06-29",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T19:05:41Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Dean Babbage",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent",
+          "voting-rights-50-to-75-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Glenn Babbage",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MTg5OTM5OGFkaXF6a2N4",
+    "date": "2025-06-29",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-micro-entity",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/P1SH55e87Ohta60fY3812Pch8u4gGdYbAtDqusVum_s/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/08123907/filing-history/MzQ3MTg5OTM5OGFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

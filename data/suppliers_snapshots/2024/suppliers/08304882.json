@@ -1,0 +1,208 @@
+{
+  "schema_version": "v2",
+  "company_number": "08304882",
+  "display_name": "Uk Live Limited",
+  "official_name": "UK LIVE LIMITED",
+  "status": "in_administration",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "23/11/2012",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "90020"
+  ],
+  "sic_labels": [
+    "Support activities to performing arts"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "C/O PKF LITTLEJOHN ADVISORY 4TH FLOOR 12",
+    "address_line_2": "KING STREET",
+    "post_town": "LEEDS",
+    "county": "",
+    "country": "",
+    "postal_code": "LS1 2HL"
+  },
+  "accounts": {
+    "category": "SMALL",
+    "last_made_up": "31/12/2022",
+    "next_due": "31/12/2024",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 3,
+    "num_outstanding": 2,
+    "num_part_satisfied": 0,
+    "num_satisfied": 1
+  },
+  "spend_profile": {
+    "total_gbp_2024": 350000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 53.797346,
+    "lng": -1.549834,
+    "lad24_cd": "E08000035",
+    "lad24_nm": "Leeds",
+    "region": "Yorkshire and The Humber"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/08304882"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T01:44:22Z",
+    "company_name": "UK LIVE LIMITED",
+    "company_status": "administration",
+    "date_of_creation": "2012-11-23",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": true,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": true,
+    "accounts_next_due": "2024-12-31",
+    "accounts_last_made_up": "2022-12-31",
+    "confirmation_statement_overdue": true,
+    "confirmation_statement_next_due": "2024-12-07"
+  },
+  "governance": {
+    "api_date": "2026-04-28T01:44:23Z",
+    "total_officers": 13,
+    "active_count": 2,
+    "resigned_count": 11,
+    "active_officers": [
+      {
+        "name": "INCE, Gary Anthony",
+        "role": "secretary",
+        "appointed_on": "2024-11-06",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "INCE, Gary Anthony",
+        "role": "director",
+        "appointed_on": "2024-11-06",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T01:44:25Z",
+    "total_results": 6,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Kilimanjaro Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2021-06-14",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "England And Wales",
+          "registration_number": "07956480"
+        }
+      },
+      {
+        "name": "Mr Matthew Smith",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-11-23",
+        "identification": null
+      },
+      {
+        "name": "Mr Jason David Batten",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-11-23",
+        "identification": null
+      },
+      {
+        "name": "Mr Nicholas Billinghurst",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-11-23",
+        "identification": null
+      },
+      {
+        "name": "Mrs Emma Jean Smith",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mrs Rachel Billinghurst",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQwMzk1NTAzOGFkaXF6a2N4",
+    "date": "2023-12-22",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/xkgJIEuIquqhKLI9n5JiE-WeLNY_6-Dq8xrw-onaqmE/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/08304882/filing-history/MzQwMzk1NTAzOGFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

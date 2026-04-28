@@ -1,0 +1,178 @@
+{
+  "schema_version": "v2",
+  "company_number": "03130362",
+  "display_name": "Oktra Limited",
+  "official_name": "OKTRA LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "24/11/1995",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "82990"
+  ],
+  "sic_labels": [
+    "Other business support service activities n.e.c."
+  ],
+  "previous_names": [
+    {
+      "name": "MARGOLIS OFFICE ENVIRONMENTS LIMITED",
+      "condate": "25/10/2013"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "1 BICKENHALL MANSIONS",
+    "address_line_2": "BICKENHALL STREET",
+    "post_town": "LONDON",
+    "county": "",
+    "country": "",
+    "postal_code": "W1U 6BP"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/05/2025",
+    "next_due": "28/02/2027",
+    "ref_day": "31",
+    "ref_month": "5"
+  },
+  "mortgages": {
+    "num_charges": 8,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 8
+  },
+  "spend_profile": {
+    "total_gbp_2024": 1473564.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.521482,
+    "lng": -0.158373,
+    "lad24_cd": "E09000033",
+    "lad24_nm": "Westminster",
+    "region": "London"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/03130362"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "other",
+  "buyer_type_breakdown": {
+    "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T20:39:04Z",
+    "company_name": "OKTRA LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1995-11-24",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-02-28",
+    "accounts_last_made_up": "2025-05-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-08"
+  },
+  "governance": {
+    "api_date": "2026-04-27T20:39:06Z",
+    "total_officers": 24,
+    "active_count": 6,
+    "resigned_count": 18,
+    "active_officers": [
+      {
+        "name": "GREGORY, Robert David",
+        "role": "director",
+        "appointed_on": "2020-12-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "JUDGE, Wayne",
+        "role": "director",
+        "appointed_on": "2020-12-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LEEPER, Martin Andrew",
+        "role": "director",
+        "appointed_on": "2020-10-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MOSKOWA-STACHOWICZ, Aleksandra",
+        "role": "director",
+        "appointed_on": "2020-06-01",
+        "country_of_residence": "England",
+        "nationality": "Polish"
+      },
+      {
+        "name": "SMITH, Craig Michael",
+        "role": "director",
+        "appointed_on": "2020-09-22",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WARREN, Mark",
+        "role": "director",
+        "appointed_on": "2015-08-25",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T20:39:08Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Vensyn Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent-as-firm",
+          "voting-rights-75-to-100-percent-as-firm"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Uk Law",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "07344381"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MDIyOTgzNWFkaXF6a2N4",
+    "date": "2025-09-09",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/fbkmr4a2eFPMmh47PzPm8VU8KcHK3numbiVWq26rgvE/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03130362/filing-history/MzQ4MDIyOTgzNWFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

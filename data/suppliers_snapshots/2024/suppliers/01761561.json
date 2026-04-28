@@ -1,0 +1,202 @@
+{
+  "schema_version": "v2",
+  "company_number": "01761561",
+  "display_name": "Qbe Uk Limited",
+  "official_name": "QBE UK LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "14/10/1983",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "65120",
+    "65202"
+  ],
+  "sic_labels": [
+    "Non-life insurance",
+    "Non-life reinsurance"
+  ],
+  "previous_names": [
+    {
+      "name": "QBE INSURANCE (EUROPE) LIMITED",
+      "condate": "31/12/2018"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "30 FENCHURCH STREET",
+    "address_line_2": "",
+    "post_town": "LONDON",
+    "county": "",
+    "country": "UNITED KINGDOM",
+    "postal_code": "EC3M 3BD"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 16,
+    "num_outstanding": 9,
+    "num_part_satisfied": 0,
+    "num_satisfied": 7
+  },
+  "spend_profile": {
+    "total_gbp_2024": 46476.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.51136,
+    "lng": -0.08227,
+    "lad24_cd": "E09000001",
+    "lad24_nm": "City of London",
+    "region": "London"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/01761561"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "other",
+  "buyer_type_breakdown": {
+    "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T09:47:06Z",
+    "company_name": "QBE UK LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1983-10-14",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-16"
+  },
+  "governance": {
+    "api_date": "2026-04-28T09:47:07Z",
+    "total_officers": 85,
+    "active_count": 9,
+    "resigned_count": 76,
+    "active_officers": [
+      {
+        "name": "SMITH, Alexandra Jane",
+        "role": "secretary",
+        "appointed_on": "2017-06-26",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BROWN, Catherine Ann",
+        "role": "director",
+        "appointed_on": "2019-05-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "FRESNEAU, Cecile Georgette",
+        "role": "director",
+        "appointed_on": "2021-11-07",
+        "country_of_residence": "England",
+        "nationality": "French,Australian"
+      },
+      {
+        "name": "HARRIS, Jason Richard",
+        "role": "director",
+        "appointed_on": "2020-12-14",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "MADDOCK, Steven",
+        "role": "director",
+        "appointed_on": "2022-02-11",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "SKEOCH, Norman Keith, Sir",
+        "role": "director",
+        "appointed_on": "2023-03-29",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      },
+      {
+        "name": "STONE, Robert Charles",
+        "role": "director",
+        "appointed_on": "2022-12-12",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "TERRY, Nigel Joseph Douty",
+        "role": "director",
+        "appointed_on": "2016-12-19",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "WADE, Timothy Cardwell",
+        "role": "director",
+        "appointed_on": "2024-03-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "Australian"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T09:47:08Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Qbe Holdings (Eo) Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "United Kingdom (England And Wales)",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "6719948"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2MjI1NzE3NmFkaXF6a2N4",
+    "date": "2025-04-14",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/azSaNoP9FCyE8OUjevbFU2YR8lmSqs2kmRNuWh3bajw/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01761561/filing-history/MzQ2MjI1NzE3NmFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

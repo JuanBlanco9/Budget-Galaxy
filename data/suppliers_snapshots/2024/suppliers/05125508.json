@@ -1,0 +1,200 @@
+{
+  "schema_version": "v2",
+  "company_number": "05125508",
+  "display_name": "Wessex Fleet Solutions Limited",
+  "official_name": "WESSEX FLEET SOLUTIONS LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "11/05/2004",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "77110"
+  ],
+  "sic_labels": [
+    "Renting and leasing of cars and light motor vehicles"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "MILFORD HOUSE",
+    "address_line_2": "43-55 MILFORD STREET",
+    "post_town": "SALISBURY",
+    "county": "WILTSHIRE",
+    "country": "ENGLAND",
+    "postal_code": "SP1 2BP"
+  },
+  "accounts": {
+    "category": "TOTAL EXEMPTION FULL",
+    "last_made_up": "31/05/2025",
+    "next_due": "28/02/2027",
+    "ref_day": "31",
+    "ref_month": "5"
+  },
+  "mortgages": {
+    "num_charges": 12,
+    "num_outstanding": 12,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 72000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.068572,
+    "lng": -1.790758,
+    "lad24_cd": "E06000054",
+    "lad24_nm": "Wiltshire",
+    "region": "South West"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/05125508"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "education",
+  "buyer_type_breakdown": {
+    "education": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T07:50:14Z",
+    "company_name": "WESSEX FLEET SOLUTIONS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2004-05-11",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-02-28",
+    "accounts_last_made_up": "2025-05-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-05-25"
+  },
+  "governance": {
+    "api_date": "2026-04-28T07:50:15Z",
+    "total_officers": 7,
+    "active_count": 4,
+    "resigned_count": 3,
+    "active_officers": [
+      {
+        "name": "BLAKE, Spencer",
+        "role": "secretary",
+        "appointed_on": "2004-07-01",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "BLAKE, Spencer",
+        "role": "director",
+        "appointed_on": "2004-07-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MCNALLY, Timothy James",
+        "role": "director",
+        "appointed_on": "2004-05-11",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "NAYLOR, Simon Robert",
+        "role": "director",
+        "appointed_on": "2006-07-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T07:50:16Z",
+    "total_results": 5,
+    "active_count": 3,
+    "items": [
+      {
+        "name": "Mr Spencer Blake",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2019-05-15",
+        "identification": null
+      },
+      {
+        "name": "Mr Timothy James Mcnally",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2019-05-15",
+        "identification": null
+      },
+      {
+        "name": "Mr Spencer Blake",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Timothy James Mcnally",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Simon Robert Naylor",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwNzUwMjY1OWFkaXF6a2N4",
+    "date": "2026-02-27",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/OJ_WPSC9v-U-KuP35K10oD76xjZeooyqKF3j7TQjOb8/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/05125508/filing-history/MzUwNzUwMjY1OWFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

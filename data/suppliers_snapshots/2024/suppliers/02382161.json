@@ -1,0 +1,209 @@
+{
+  "schema_version": "v2",
+  "company_number": "02382161",
+  "display_name": "Ee Limited",
+  "official_name": "EE LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "10/05/1989",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "61900"
+  ],
+  "sic_labels": [
+    "Other telecommunications activities"
+  ],
+  "previous_names": [
+    {
+      "name": "EVERYTHING EVERYWHERE LIMITED",
+      "condate": "02/09/2013"
+    },
+    {
+      "name": "T-MOBILE (UK) LIMITED",
+      "condate": "01/07/2010"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "1 BRAHAM STREET",
+    "address_line_2": "",
+    "post_town": "LONDON",
+    "county": "",
+    "country": "UNITED KINGDOM",
+    "postal_code": "E1 8EE"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/03/2025",
+    "next_due": "31/12/2026",
+    "ref_day": "31",
+    "ref_month": "3"
+  },
+  "mortgages": {
+    "num_charges": 92,
+    "num_outstanding": 54,
+    "num_part_satisfied": 0,
+    "num_satisfied": 38
+  },
+  "spend_profile": {
+    "total_gbp_2024": 1289286419.0,
+    "n_contracts": 2,
+    "n_buyers": 2
+  },
+  "geo": {
+    "lat": 51.513987,
+    "lng": -0.072474,
+    "lad24_cd": "E09000030",
+    "lad24_nm": "Tower Hamlets",
+    "region": "London"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/02382161"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T02:12:15Z",
+    "company_name": "EE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1989-05-10",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-04-25"
+  },
+  "governance": {
+    "api_date": "2026-04-22T02:12:17Z",
+    "total_officers": 95,
+    "active_count": 7,
+    "resigned_count": 88,
+    "active_officers": [
+      {
+        "name": "NEWGATE STREET SECRETARIES LIMITED",
+        "role": "corporate-secretary",
+        "appointed_on": "2018-06-29",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BALL, Lisa",
+        "role": "director",
+        "appointed_on": "2025-10-30",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "CUBITT, Malcolm James",
+        "role": "director",
+        "appointed_on": "2025-06-20",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GILLIES, Claire, Ms.",
+        "role": "director",
+        "appointed_on": "2025-02-11",
+        "country_of_residence": "United Kingdom",
+        "nationality": "Canadian"
+      },
+      {
+        "name": "HARRIS, Stephen Christopher",
+        "role": "director",
+        "appointed_on": "2016-01-29",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "MCCALL, Gregory Victor",
+        "role": "director",
+        "appointed_on": "2025-10-31",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "SMALL, Kerry",
+        "role": "director",
+        "appointed_on": "2023-10-20",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T02:12:19Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Ee Group Investments Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2021-06-23",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "United Kingdom (England And Wales)",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "13233729"
+        }
+      },
+      {
+        "name": "British Telecommunications Plc",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-07",
+        "identification": {
+          "legal_form": "Corporate",
+          "legal_authority": "United Kingdom",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "01800000"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NzI3MDA2M2FkaXF6a2N4",
+    "date": "2025-08-18",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/O0OfmboBFmg2VOsZIVqdjBzcvQSyYmIogZWUcCihyEg/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02382161/filing-history/MzQ3NzI3MDA2M2FkaXF6a2N4"
+  },
+  "top_buyer_type": "central_govt",
+  "buyer_type_breakdown": {
+    "central_govt": 1.0,
+    "police_fire": 0.0
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

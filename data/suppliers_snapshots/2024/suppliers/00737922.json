@@ -1,0 +1,173 @@
+{
+  "schema_version": "v2",
+  "company_number": "00737922",
+  "display_name": "Coleman & Company Limited",
+  "official_name": "COLEMAN & COMPANY LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "16/10/1962",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "43110"
+  ],
+  "sic_labels": [
+    "Demolition"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "COLEMAN & COMPANY SHADY LANE",
+    "address_line_2": "GREAT BARR",
+    "post_town": "BIRMINGHAM",
+    "county": "WEST MIDLANDS",
+    "country": "",
+    "postal_code": "B44 9ER"
+  },
+  "accounts": {
+    "category": "MEDIUM",
+    "last_made_up": "30/04/2025",
+    "next_due": "31/01/2027",
+    "ref_day": "30",
+    "ref_month": "4"
+  },
+  "mortgages": {
+    "num_charges": 11,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 11
+  },
+  "spend_profile": {
+    "total_gbp_2024": 697755.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 52.552454,
+    "lng": -1.895827,
+    "lad24_cd": "E08000025",
+    "lad24_nm": "Birmingham",
+    "region": "West Midlands"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/00737922"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T22:58:26Z",
+    "company_name": "COLEMAN & COMPANY LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1962-10-16",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-01-31",
+    "accounts_last_made_up": "2025-04-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-23"
+  },
+  "governance": {
+    "api_date": "2026-04-27T22:58:27Z",
+    "total_officers": 12,
+    "active_count": 6,
+    "resigned_count": 6,
+    "active_officers": [
+      {
+        "name": "MORRIS, Lesley",
+        "role": "secretary",
+        "appointed_on": "2003-12-19",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "BLASZCZAK, Gordon",
+        "role": "director",
+        "appointed_on": "2022-10-14",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "BRADSHAW, Bryan Andrew",
+        "role": "director",
+        "appointed_on": "2022-10-14",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "COLEMAN, Mark Anthony",
+        "role": "director",
+        "appointed_on": "2000-08-15",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "MORRIS, Lesley",
+        "role": "director",
+        "appointed_on": "2011-05-10",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ROWE, Gareth Paul",
+        "role": "director",
+        "appointed_on": "2019-01-07",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T22:58:29Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Cnc Group Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "4776218"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwMjMzMDA2N2FkaXF6a2N4",
+    "date": "2026-01-30",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-medium",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/VoE8dPqSTIgg5hCfOr9hmOxW3n_wXnOvxxdkgyeExs0/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/00737922/filing-history/MzUwMjMzMDA2N2FkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

@@ -1,0 +1,150 @@
+{
+  "schema_version": "v2",
+  "company_number": "04330856",
+  "display_name": "Vancare Ltd",
+  "official_name": "VANCARE LTD",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "29/11/2001",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "45200"
+  ],
+  "sic_labels": [
+    "Maintenance and repair of motor vehicles"
+  ],
+  "previous_names": [
+    {
+      "name": "KEITH GUTHRIE LIMITED",
+      "condate": "02/12/2008"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "GRANGE FIELD INDUSTRIAL ESTATE",
+    "address_line_2": "RICHARDSHAW ROAD PUDSEY",
+    "post_town": "LEEDS",
+    "county": "",
+    "country": "",
+    "postal_code": "LS28 6QW"
+  },
+  "accounts": {
+    "category": "TOTAL EXEMPTION FULL",
+    "last_made_up": "30/06/2025",
+    "next_due": "31/03/2027",
+    "ref_day": "30",
+    "ref_month": "6"
+  },
+  "mortgages": {
+    "num_charges": 2,
+    "num_outstanding": 1,
+    "num_part_satisfied": 0,
+    "num_satisfied": 1
+  },
+  "spend_profile": {
+    "total_gbp_2024": 2200000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 53.803171,
+    "lng": -1.65914,
+    "lad24_cd": "E08000035",
+    "lad24_nm": "Leeds",
+    "region": "Yorkshire and The Humber"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/04330856"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T19:40:59Z",
+    "company_name": "VANCARE LTD",
+    "company_status": "active",
+    "date_of_creation": "2001-11-29",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-03-31",
+    "accounts_last_made_up": "2025-06-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-13"
+  },
+  "governance": {
+    "api_date": "2026-04-27T19:41:00Z",
+    "total_officers": 7,
+    "active_count": 1,
+    "resigned_count": 6,
+    "active_officers": [
+      {
+        "name": "COCKER, Ryan Troy",
+        "role": "director",
+        "appointed_on": "2008-09-26",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T19:41:02Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Keith Guthrie",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-11-28",
+        "identification": null
+      },
+      {
+        "name": "Mr Ryan Troy Cocker",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-11-28",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxMzY1NTM3MWFkaXF6a2N4",
+    "date": "2026-03-31",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/3CyAhI0WY5DEyEhCo5IK4I-ind_TwDOQEgjr12J19Qw/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04330856/filing-history/MzUxMzY1NTM3MWFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

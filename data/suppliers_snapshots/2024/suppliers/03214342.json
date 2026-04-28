@@ -1,0 +1,179 @@
+{
+  "schema_version": "v2",
+  "company_number": "03214342",
+  "display_name": "Brochet Limited",
+  "official_name": "BROCHET LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "19/06/1996",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "62012"
+  ],
+  "sic_labels": [
+    "Business and domestic software development"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "CADLEY BOTTOM",
+    "address_line_2": "LOWER CHUTE",
+    "post_town": "ANDOVER",
+    "county": "HAMPSHIRE",
+    "country": "",
+    "postal_code": "SP11 9DX"
+  },
+  "accounts": {
+    "category": "MICRO ENTITY",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 0,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 25440.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.276898,
+    "lng": -1.554696,
+    "lad24_cd": "E06000054",
+    "lad24_nm": "Wiltshire",
+    "region": "South West"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/03214342"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "agency",
+  "buyer_type_breakdown": {
+    "agency": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T12:08:19Z",
+    "company_name": "BROCHET LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1996-06-19",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-29"
+  },
+  "governance": {
+    "api_date": "2026-04-28T12:08:20Z",
+    "total_officers": 6,
+    "active_count": 4,
+    "resigned_count": 2,
+    "active_officers": [
+      {
+        "name": "PIKE, Nichola Talitha Darrell",
+        "role": "secretary",
+        "appointed_on": "1996-06-19",
+        "country_of_residence": null,
+        "nationality": "English"
+      },
+      {
+        "name": "PIKE, David Andrew Surridge",
+        "role": "director",
+        "appointed_on": "1996-06-19",
+        "country_of_residence": "England",
+        "nationality": "English"
+      },
+      {
+        "name": "PIKE, Nichola Talitha Darrell",
+        "role": "director",
+        "appointed_on": "1996-06-19",
+        "country_of_residence": "England",
+        "nationality": "English"
+      },
+      {
+        "name": "SIMCOCK, Robert",
+        "role": "director",
+        "appointed_on": "2022-03-31",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T12:08:21Z",
+    "total_results": 3,
+    "active_count": 3,
+    "items": [
+      {
+        "name": "Kutana Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2022-03-16",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006"
+        }
+      },
+      {
+        "name": "Mrs Nichola Talitha Darrell Pike",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "English",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2017-06-19",
+        "identification": null
+      },
+      {
+        "name": "Mr David Andrew Surridge Pike",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "English",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2017-06-19",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NzQyOTcyNmFkaXF6a2N4",
+    "date": "2025-08-15",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-micro-entity",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/PRRCNyZIiIk6n5eKOvqPhmNbCS3HD8BrihclNBm5gfg/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03214342/filing-history/MzQ3NzQyOTcyNmFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

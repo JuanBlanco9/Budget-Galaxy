@@ -1,0 +1,129 @@
+{
+  "schema_version": "v2",
+  "company_number": "16514665",
+  "display_name": "&Insight Limited",
+  "official_name": "&INSIGHT LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "12/06/2025",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "70229"
+  ],
+  "sic_labels": [
+    "Management consultancy activities other than financial management"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "6 GREEN LANE BUSINESS PARK",
+    "address_line_2": "238 GREEN LANE",
+    "post_town": "NEW ELTHAM",
+    "county": "LONDON",
+    "country": "UNITED KINGDOM",
+    "postal_code": "SE9 3TL"
+  },
+  "accounts": {
+    "category": "NO ACCOUNTS FILED",
+    "last_made_up": null,
+    "next_due": "12/03/2027",
+    "ref_day": "30",
+    "ref_month": "6"
+  },
+  "mortgages": {
+    "num_charges": 0,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 1940310.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.436551,
+    "lng": 0.062707,
+    "lad24_cd": "E09000011",
+    "lad24_nm": "Greenwich",
+    "region": "London"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/16514665"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": false
+  },
+  "top_buyer_type": "police_fire",
+  "buyer_type_breakdown": {
+    "police_fire": 0.6472,
+    "central_govt": 0.3021,
+    "nhs": 0.0197,
+    "council": 0.019,
+    "other": 0.012
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T19:59:23Z",
+    "company_name": "&INSIGHT LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2025-06-12",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-03-12",
+    "accounts_last_made_up": null,
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-25"
+  },
+  "governance": {
+    "api_date": "2026-04-27T19:59:24Z",
+    "total_officers": 1,
+    "active_count": 1,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "STORK, Sabine",
+        "role": "director",
+        "appointed_on": "2025-06-12",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T19:59:26Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Ms Sabine Stork",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2025-06-12",
+        "identification": null
+      }
+    ]
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

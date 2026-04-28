@@ -1,0 +1,206 @@
+{
+  "schema_version": "v2",
+  "company_number": "02407950",
+  "display_name": "Haag-Streit Uk Limited",
+  "official_name": "HAAG-STREIT UK LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "25/07/1989",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "26701",
+    "32500"
+  ],
+  "sic_labels": [
+    "Manufacture of optical precision instruments",
+    "Manufacture of medical and dental instruments and supplies"
+  ],
+  "previous_names": [
+    {
+      "name": "CLEMENT CLARKE (HOLDINGS) LIMITED",
+      "condate": "25/01/2022"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "UNIT C, WOODSIDE INDUSTRIAL ESTATE",
+    "address_line_2": "DUNMOW ROAD",
+    "post_town": "BISHOP'S STORTFORD",
+    "county": "HERTFORDSHIRE",
+    "country": "ENGLAND",
+    "postal_code": "CM23 5RG"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 3,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 3
+  },
+  "spend_profile": {
+    "total_gbp_2024": 487943.16,
+    "n_contracts": 2,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.873613,
+    "lng": 0.189166,
+    "lad24_cd": "E07000242",
+    "lad24_nm": "East Hertfordshire",
+    "region": "East of England"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/02407950"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "nhs",
+  "buyer_type_breakdown": {
+    "nhs": 0.7279,
+    "other": 0.2721
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T00:20:59Z",
+    "company_name": "HAAG-STREIT UK LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1989-07-25",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-04-14"
+  },
+  "governance": {
+    "api_date": "2026-04-28T00:21:01Z",
+    "total_officers": 16,
+    "active_count": 2,
+    "resigned_count": 14,
+    "active_officers": [
+      {
+        "name": "O'NEILL, Martin",
+        "role": "secretary",
+        "appointed_on": "2022-05-04",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "JOHNSON, Dean",
+        "role": "director",
+        "appointed_on": "2022-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T00:21:03Z",
+    "total_results": 5,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Metall Zug Ag",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent",
+          "voting-rights-50-to-75-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2018-03-01",
+        "identification": {
+          "legal_form": "Coroporation",
+          "legal_authority": "Switzerland",
+          "country_registered": "Switzerland",
+          "place_registered": "Switzerland",
+          "registration_number": "Che-101.865.948"
+        }
+      },
+      {
+        "name": "Mr Matthias Wilhelm Haag",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Swiss",
+        "country_of_residence": "Switzerland",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-50-to-75-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mrs Anna Inabnit-Haag",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Swiss",
+        "country_of_residence": "Switzerland",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-50-to-75-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Walter Inabnit-Haag",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Swiss",
+        "country_of_residence": "Switzerland",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-50-to-75-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Christoph Peter Haag",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Swiss",
+        "country_of_residence": "Switzerland",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2MjkzMjM0OWFkaXF6a2N4",
+    "date": "2025-04-17",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/zMhCJxAF3bTvqMwGHM0snWM8FUNgX8nsIC_PyLCl6RE/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02407950/filing-history/MzQ2MjkzMjM0OWFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

@@ -1,0 +1,229 @@
+{
+  "schema_version": "v2",
+  "company_number": "02171828",
+  "display_name": "Portable Venues (Group) Limited",
+  "official_name": "PORTABLE VENUES (GROUP) LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "30/09/1987",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "41201"
+  ],
+  "sic_labels": [
+    "Construction of commercial buildings"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "KINGSBURY LINK TRINITY ROAD",
+    "address_line_2": "PICCADILLY",
+    "post_town": "TAMWORTH",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "B78 2EX"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 5,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 5
+  },
+  "spend_profile": {
+    "total_gbp_2024": 44646.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 52.583828,
+    "lng": -1.656673,
+    "lad24_cd": "E07000218",
+    "lad24_nm": "North Warwickshire",
+    "region": "West Midlands"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/02171828"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "education",
+  "buyer_type_breakdown": {
+    "education": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T09:58:16Z",
+    "company_name": "PORTABLE VENUES (GROUP) LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1987-09-30",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-09-30",
+    "accounts_last_made_up": "2025-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-14"
+  },
+  "governance": {
+    "api_date": "2026-04-28T09:58:17Z",
+    "total_officers": 11,
+    "active_count": 6,
+    "resigned_count": 5,
+    "active_officers": [
+      {
+        "name": "BRIGHTMORE, Lee",
+        "role": "director",
+        "appointed_on": "2025-10-24",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HALL, Steven Peter",
+        "role": "director",
+        "appointed_on": "2024-09-05",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HEATH, Tarquin Nicholas",
+        "role": "director",
+        "appointed_on": "2023-08-17",
+        "country_of_residence": "France",
+        "nationality": "British"
+      },
+      {
+        "name": "HOHN, Olivier Valery",
+        "role": "director",
+        "appointed_on": "2023-08-17",
+        "country_of_residence": "France",
+        "nationality": "French"
+      },
+      {
+        "name": "JARVIS, Matthew James",
+        "role": "director",
+        "appointed_on": "2023-08-17",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LYNOCK, Jason Robert",
+        "role": "director",
+        "appointed_on": "2023-08-17",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T09:58:18Z",
+    "total_results": 5,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Tempasset Sas",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2025-01-27",
+        "identification": {
+          "legal_form": "Simplified Joint Stock Company",
+          "legal_authority": "French Law",
+          "country_registered": "France",
+          "place_registered": "Registre Du Commerce Et Des Sociétés",
+          "registration_number": "511 233 553"
+        }
+      },
+      {
+        "name": "Sas Tempasset",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2023-08-17",
+        "identification": {
+          "legal_form": "Simplified Joint Stock Company",
+          "legal_authority": "French Law"
+        }
+      },
+      {
+        "name": "Mr Olivier Valery Hohn",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "French",
+        "country_of_residence": "France",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent-as-firm",
+          "voting-rights-75-to-100-percent-as-firm",
+          "right-to-appoint-and-remove-directors-as-firm"
+        ],
+        "notified_on": "2023-08-17",
+        "identification": null
+      },
+      {
+        "name": "Mr Antony Geoffrey Hunt",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-05-01",
+        "identification": null
+      },
+      {
+        "name": "Mrs Jennifer Elizabeth Hunt",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-05-01",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxMzg4Mzk5M2FkaXF6a2N4",
+    "date": "2026-04-01",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/1KgFdsRvmVfmQK0F_zkzFxJtT-UZhDbj0LkySrjYGV4/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02171828/filing-history/MzUxMzg4Mzk5M2FkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

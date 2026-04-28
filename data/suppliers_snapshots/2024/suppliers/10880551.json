@@ -1,0 +1,195 @@
+{
+  "schema_version": "v2",
+  "company_number": "10880551",
+  "display_name": "Enroly Ltd",
+  "official_name": "ENROLY LTD",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "24/07/2017",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "82990"
+  ],
+  "sic_labels": [
+    "Other business support service activities n.e.c."
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "SUFFOLK HOUSE",
+    "address_line_2": "68-70 SUFFOLK ROAD",
+    "post_town": "CHELTENHAM",
+    "county": "GLOUCESTERSHIRE",
+    "country": "UNITED KINGDOM",
+    "postal_code": "GL50 2ED"
+  },
+  "accounts": {
+    "category": "TOTAL EXEMPTION FULL",
+    "last_made_up": "31/07/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 0,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 301600.0,
+    "n_contracts": 4,
+    "n_buyers": 3
+  },
+  "geo": {
+    "lat": 51.891932,
+    "lng": -2.082846,
+    "lad24_cd": "E07000078",
+    "lad24_nm": "Cheltenham",
+    "region": "South West"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/10880551"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "education",
+  "buyer_type_breakdown": {
+    "education": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T02:31:11Z",
+    "company_name": "ENROLY LTD",
+    "company_status": "active",
+    "date_of_creation": "2017-07-24",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-07-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-08-06"
+  },
+  "governance": {
+    "api_date": "2026-04-28T02:31:12Z",
+    "total_officers": 5,
+    "active_count": 5,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "ADMASU, Kate Patricia",
+        "role": "director",
+        "appointed_on": "2025-05-06",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "ASHMAN, Matthew Peter",
+        "role": "director",
+        "appointed_on": "2025-05-06",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "INKSTER, Maynard",
+        "role": "director",
+        "appointed_on": "2017-07-24",
+        "country_of_residence": "United Kingdom",
+        "nationality": "Australian"
+      },
+      {
+        "name": "WILLIAMS, Jeffrey Robert",
+        "role": "director",
+        "appointed_on": "2017-07-24",
+        "country_of_residence": "England",
+        "nationality": "Australian"
+      },
+      {
+        "name": "WINTER, Catherine Ann",
+        "role": "director",
+        "appointed_on": "2025-05-06",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T02:31:13Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Grs (Holdings) Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2025-05-06",
+        "identification": {
+          "legal_form": "Corporate",
+          "legal_authority": "United Kingdom",
+          "country_registered": "England And Wales",
+          "place_registered": "United Kingdom",
+          "registration_number": "08842584"
+        }
+      },
+      {
+        "name": "Mr Maynard Inkster",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Australian",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2017-07-24",
+        "identification": null
+      },
+      {
+        "name": "Mr Jeffrey Robert Williams",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Australian",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2017-07-24",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MTYzMjE5MGFkaXF6a2N4",
+    "date": "2025-06-26",
+    "type": "AA01",
+    "description": "change-account-reference-date-company-current-extended",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/dXNWgafjhZxlA4MFBNHpsxPTZ_1cKXgS652dKh0gI_I/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/10880551/filing-history/MzQ3MTYzMjE5MGFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

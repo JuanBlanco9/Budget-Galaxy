@@ -1,0 +1,179 @@
+{
+  "schema_version": "v2",
+  "company_number": "01478540",
+  "display_name": "Iron Mountain (Uk) Plc",
+  "official_name": "IRON MOUNTAIN (UK) PLC",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Public Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "11/02/1980",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "52103",
+    "52219"
+  ],
+  "sic_labels": [
+    "Operation of warehousing and storage facilities for land transport activities",
+    "Other service activities incidental to land transportation, n.e.c."
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "GROUND FLOOR",
+    "address_line_2": "4 MORE LONDON RIVERSIDE",
+    "post_town": "LONDON",
+    "county": "",
+    "country": "UNITED KINGDOM",
+    "postal_code": "SE1 2AU"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/06/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 36,
+    "num_outstanding": 13,
+    "num_part_satisfied": 0,
+    "num_satisfied": 23
+  },
+  "spend_profile": {
+    "total_gbp_2024": 1263984145.0,
+    "n_contracts": 8,
+    "n_buyers": 6
+  },
+  "geo": {
+    "lat": 51.504395,
+    "lng": -0.080372,
+    "lad24_cd": "E09000028",
+    "lad24_nm": "Southwark",
+    "region": "London"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/01478540"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T02:12:22Z",
+    "company_name": "IRON MOUNTAIN (UK) PLC",
+    "company_status": "active",
+    "date_of_creation": "1980-02-11",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-06-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-14"
+  },
+  "governance": {
+    "api_date": "2026-04-22T02:12:24Z",
+    "total_officers": 52,
+    "active_count": 3,
+    "resigned_count": 49,
+    "active_officers": [
+      {
+        "name": "VIRGO, John Michael",
+        "role": "secretary",
+        "appointed_on": "2020-05-18",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "FORD, Nicholas Ben",
+        "role": "director",
+        "appointed_on": "2021-01-08",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "MACKIE, Graeme Robert",
+        "role": "director",
+        "appointed_on": "2024-06-14",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T02:12:26Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Iron Mountain Europe (Group) Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2017-10-04",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "England And Wales",
+          "country_registered": "England And Wales",
+          "place_registered": "England And Wales",
+          "registration_number": "05882719"
+        }
+      },
+      {
+        "name": "Iron Mountain Europe Plc",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-11-18",
+        "identification": {
+          "legal_form": "Public Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "2321917"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NDMyMjg1NmFkaXF6a2N4",
+    "date": "2025-07-18",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/oJP6ymHG2BJxl3thpFjf_C3oLhdhscakCZyv54vKL70/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01478540/filing-history/MzQ3NDMyMjg1NmFkaXF6a2N4"
+  },
+  "top_buyer_type": "other",
+  "buyer_type_breakdown": {
+    "other": 0.9566,
+    "agency": 0.0414,
+    "central_govt": 0.0009,
+    "nhs": 0.0008,
+    "council": 0.0003
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

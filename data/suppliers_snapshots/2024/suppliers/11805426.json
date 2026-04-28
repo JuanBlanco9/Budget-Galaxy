@@ -1,0 +1,155 @@
+{
+  "schema_version": "v2",
+  "company_number": "11805426",
+  "display_name": "Copeman Construction Services Ltd",
+  "official_name": "COPEMAN CONSTRUCTION SERVICES LTD",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "04/02/2019",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "41201",
+    "43390"
+  ],
+  "sic_labels": [
+    "Construction of commercial buildings",
+    "Other building completion and finishing"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "UNIT 10 HODGSON WAY",
+    "address_line_2": "HARDWICK NARROWS",
+    "post_town": "KING'S LYNN",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "PE30 4WR"
+  },
+  "accounts": {
+    "category": "TOTAL EXEMPTION FULL",
+    "last_made_up": "31/01/2025",
+    "next_due": "31/10/2026",
+    "ref_day": "31",
+    "ref_month": "1"
+  },
+  "mortgages": {
+    "num_charges": 0,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 70888.7,
+    "n_contracts": 2,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 52.733871,
+    "lng": 0.404106,
+    "lad24_cd": "E07000146",
+    "lad24_nm": "King's Lynn and West Norfolk",
+    "region": "East of England"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/11805426"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "other",
+  "buyer_type_breakdown": {
+    "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T07:52:48Z",
+    "company_name": "COPEMAN CONSTRUCTION SERVICES LTD",
+    "company_status": "active",
+    "date_of_creation": "2019-02-04",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-10-31",
+    "accounts_last_made_up": "2026-01-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-14"
+  },
+  "governance": {
+    "api_date": "2026-04-28T07:52:49Z",
+    "total_officers": 2,
+    "active_count": 2,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "COPEMAN, James",
+        "role": "director",
+        "appointed_on": "2023-02-07",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "COPEMAN, Robert Brian",
+        "role": "director",
+        "appointed_on": "2019-02-04",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T07:52:50Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "James Copeman",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2019-02-04",
+        "identification": null
+      },
+      {
+        "name": "Mr Robert Brian Copeman",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2019-02-04",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxNDc3NDg3OGFkaXF6a2N4",
+    "date": "2026-04-07",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/5L-hOReiy1DvxT-lEgeN-90jcxNSktoseOm2TwZhhVY/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/11805426/filing-history/MzUxNDc3NDg3OGFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

@@ -1,0 +1,230 @@
+{
+  "schema_version": "v2",
+  "company_number": "02643622",
+  "display_name": "Atg Access Ltd",
+  "official_name": "ATG ACCESS LTD",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "06/09/1991",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "32990"
+  ],
+  "sic_labels": [
+    "Other manufacturing n.e.c."
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "WESTHAVEN HOUSE ARLESTON WAY",
+    "address_line_2": "SHIRLEY",
+    "post_town": "SOLIHULL",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "B90 4LH"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 6,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 6
+  },
+  "spend_profile": {
+    "total_gbp_2024": 27000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 52.398503,
+    "lng": -1.80542,
+    "lad24_cd": "E08000029",
+    "lad24_nm": "Solihull",
+    "region": "West Midlands"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/02643622"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T11:57:50Z",
+    "company_name": "ATG ACCESS LTD",
+    "company_status": "active",
+    "date_of_creation": "1991-09-06",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-09-20"
+  },
+  "governance": {
+    "api_date": "2026-04-28T11:57:51Z",
+    "total_officers": 32,
+    "active_count": 4,
+    "resigned_count": 28,
+    "active_officers": [
+      {
+        "name": "ATTERBURY, Karen Lorraine",
+        "role": "secretary",
+        "appointed_on": "2024-08-19",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BALL, Robert Nicholas",
+        "role": "director",
+        "appointed_on": "2000-12-07",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "BATTY, Richard Michael John",
+        "role": "director",
+        "appointed_on": "2021-11-24",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ELLIS, Richard John",
+        "role": "director",
+        "appointed_on": "2022-09-27",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T11:57:52Z",
+    "total_results": 5,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Cobaco Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2019-09-24",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "Companies Act 2006"
+        }
+      },
+      {
+        "name": "Cobaco Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2019-09-24",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "Companies Act 2006"
+        }
+      },
+      {
+        "name": "Cobaco Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2019-09-24",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "08317210"
+        }
+      },
+      {
+        "name": "Cobaco Holdings Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act",
+          "country_registered": "Uk",
+          "place_registered": "Uk",
+          "registration_number": "03864111"
+        }
+      },
+      {
+        "name": "Atg Access (Holdings) Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "0386411"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MzI3NTE1NmFkaXF6a2N4",
+    "date": "2025-07-11",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/ZtNwotOW47RRWIVDv0GCdw11A6Ouc-2u3J9-HHGOW8M/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02643622/filing-history/MzQ3MzI3NTE1NmFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

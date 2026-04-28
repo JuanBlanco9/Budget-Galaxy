@@ -1,0 +1,179 @@
+{
+  "schema_version": "v2",
+  "company_number": "00622352",
+  "display_name": "Hpc Public Limited Company",
+  "official_name": "HPC PUBLIC LIMITED COMPANY",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Public Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "05/03/1959",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "25620",
+    "33190",
+    "46690"
+  ],
+  "sic_labels": [
+    "Machining",
+    "Repair of other equipment",
+    "Wholesale of other machinery and equipment"
+  ],
+  "previous_names": [
+    {
+      "name": "HPC ENGINEERING PUBLIC LIMITED COMPANY",
+      "condate": "04/10/2007"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "2 VICTORIA GARDENS",
+    "address_line_2": "BURGESS HILL",
+    "post_town": "WEST SUSSEX",
+    "county": "",
+    "country": "",
+    "postal_code": "RH15 9RQ"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/08/2025",
+    "next_due": "28/02/2027",
+    "ref_day": "31",
+    "ref_month": "8"
+  },
+  "mortgages": {
+    "num_charges": 9,
+    "num_outstanding": 2,
+    "num_part_satisfied": 0,
+    "num_satisfied": 7
+  },
+  "spend_profile": {
+    "total_gbp_2024": 46499.81,
+    "n_contracts": 2,
+    "n_buyers": 2
+  },
+  "geo": {
+    "lat": 50.953977,
+    "lng": -0.14453,
+    "lad24_cd": "E07000228",
+    "lad24_nm": "Mid Sussex",
+    "region": "South East"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/00622352"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "other",
+  "buyer_type_breakdown": {
+    "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T09:47:01Z",
+    "company_name": "HPC PUBLIC LIMITED COMPANY",
+    "company_status": "active",
+    "date_of_creation": "1959-03-05",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-02-28",
+    "accounts_last_made_up": "2025-08-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-01"
+  },
+  "governance": {
+    "api_date": "2026-04-28T09:47:03Z",
+    "total_officers": 24,
+    "active_count": 4,
+    "resigned_count": 20,
+    "active_officers": [
+      {
+        "name": "MBUNYA, Eric Otundo",
+        "role": "secretary",
+        "appointed_on": "2022-12-19",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "CURTIS, Ian",
+        "role": "director",
+        "appointed_on": "2004-07-15",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CURTIS, Liza Katharine",
+        "role": "director",
+        "appointed_on": "2020-04-30",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "MORGAN, Jason Asa",
+        "role": "director",
+        "appointed_on": "2013-12-27",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T09:47:04Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Lilac Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2020-11-27",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 1985",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "05175238"
+        }
+      },
+      {
+        "name": "Mr Ian Curtis",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwNzUwNjY0OGFkaXF6a2N4",
+    "date": "2026-02-27",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/_tAFRnXjFcFb0XomW801xUZuXDGsFStjPAeI1EqVNoc/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/00622352/filing-history/MzUwNzUwNjY0OGFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

@@ -1,0 +1,166 @@
+{
+  "schema_version": "v2",
+  "company_number": "08840919",
+  "display_name": "Genecon Limited",
+  "official_name": "GENECON LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "10/01/2014",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "70229"
+  ],
+  "sic_labels": [
+    "Management consultancy activities other than financial management"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "FIRST FLOOR, SOUTH WING",
+    "address_line_2": "55 BAKER STREET",
+    "post_town": "LONDON",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "W1U 8EW"
+  },
+  "accounts": {
+    "category": "SMALL",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 1,
+    "num_outstanding": 1,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 143000.0,
+    "n_contracts": 4,
+    "n_buyers": 3
+  },
+  "geo": {
+    "lat": 51.518905,
+    "lng": -0.156344,
+    "lad24_cd": "E09000033",
+    "lad24_nm": "Westminster",
+    "region": "London"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/08840919"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "other",
+  "buyer_type_breakdown": {
+    "other": 0.5078,
+    "council": 0.4922
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T05:03:55Z",
+    "company_name": "GENECON LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2014-01-10",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-23"
+  },
+  "governance": {
+    "api_date": "2026-04-28T05:03:57Z",
+    "total_officers": 8,
+    "active_count": 3,
+    "resigned_count": 5,
+    "active_officers": [
+      {
+        "name": "DOUGAN-GAFTEA, Hannah Elizabeth",
+        "role": "secretary",
+        "appointed_on": "2025-04-07",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "CARTER, Shaun",
+        "role": "director",
+        "appointed_on": "2022-09-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "COLLINGE, Graeme Spencer",
+        "role": "director",
+        "appointed_on": "2014-01-10",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T05:03:58Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Rsbgi Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2020-05-15",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "09592765"
+        }
+      },
+      {
+        "name": "Mr David Tuck",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3OTM1OTU2NGFkaXF6a2N4",
+    "date": "2025-09-01",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/CYdiusDohzOiXPrN7EpBpIx0ajXqY5KGgkx6Alt4d94/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/08840919/filing-history/MzQ3OTM1OTU2NGFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

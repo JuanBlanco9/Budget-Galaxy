@@ -1,0 +1,221 @@
+{
+  "schema_version": "v2",
+  "company_number": "SC024322",
+  "display_name": "James A. Cuthbertson, Limited",
+  "official_name": "JAMES A. CUTHBERTSON, LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "02/07/1946",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "29201"
+  ],
+  "sic_labels": [
+    "Manufacture of bodies (coachwork) for motor vehicles (except caravans)"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "STATION ROAD",
+    "address_line_2": "BIGGAR",
+    "post_town": "",
+    "county": "",
+    "country": "",
+    "postal_code": "ML12 6DQ"
+  },
+  "accounts": {
+    "category": "TOTAL EXEMPTION FULL",
+    "last_made_up": "31/03/2025",
+    "next_due": "31/12/2026",
+    "ref_day": "31",
+    "ref_month": "3"
+  },
+  "mortgages": {
+    "num_charges": 7,
+    "num_outstanding": 3,
+    "num_part_satisfied": 0,
+    "num_satisfied": 4
+  },
+  "spend_profile": {
+    "total_gbp_2024": 472335450.0,
+    "n_contracts": 3,
+    "n_buyers": 3
+  },
+  "geo": {
+    "lat": 55.62024,
+    "lng": -3.525585,
+    "lad24_cd": "S12000029",
+    "lad24_nm": "South Lanarkshire",
+    "region": null
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/SC024322"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T03:22:59Z",
+    "company_name": "JAMES A. CUTHBERTSON, LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1946-07-02",
+    "date_of_cessation": null,
+    "jurisdiction": "scotland",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-01"
+  },
+  "governance": {
+    "api_date": "2026-04-22T03:23:00Z",
+    "total_officers": 18,
+    "active_count": 2,
+    "resigned_count": 16,
+    "active_officers": [
+      {
+        "name": "LAVERY, Deborah Gail",
+        "role": "director",
+        "appointed_on": "2023-10-26",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      },
+      {
+        "name": "LAVERY, Denis Francis",
+        "role": "director",
+        "appointed_on": "2019-08-22",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T03:23:02Z",
+    "total_results": 7,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Atlas Winch & Hoist Services Ltd.",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2019-10-11",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Scots Law",
+          "country_registered": "Scotland",
+          "place_registered": "The Register Of Companies Maintained By The Registrar Of Companies For Scotland",
+          "registration_number": "Sc182734"
+        }
+      },
+      {
+        "name": "Mr Denis Francis Lavery",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "Scotland",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2019-08-22",
+        "identification": null
+      },
+      {
+        "name": "Mr Ewan Tolson",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "Scotland",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-06-01",
+        "identification": null
+      },
+      {
+        "name": "Mr William Stewart Robertson",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "Scotland",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-06-01",
+        "identification": null
+      },
+      {
+        "name": "Mr Andrew Watson",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "Scotland",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-06-01",
+        "identification": null
+      },
+      {
+        "name": "Mr John Kennedy Sturgeon",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "Scotland",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent-as-trust"
+        ],
+        "notified_on": "2016-06-01",
+        "identification": null
+      },
+      {
+        "name": "Mr Raymond Reid",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "Scotland",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-06-01",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MzczODA2M2FkaXF6a2N4",
+    "date": "2025-12-12",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/aFgYS6zqRLRRSchrwVJA_ijn1bwvug1lH9KiA9YCzUQ/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/SC024322/filing-history/MzQ5MzczODA2M2FkaXF6a2N4"
+  },
+  "top_buyer_type": "other",
+  "buyer_type_breakdown": {
+    "other": 0.9997,
+    "council": 0.0003
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

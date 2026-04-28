@@ -1,0 +1,153 @@
+{
+  "schema_version": "v2",
+  "company_number": "05438122",
+  "display_name": "Esro Limited",
+  "official_name": "ESRO LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "27/04/2005",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "70229"
+  ],
+  "sic_labels": [
+    "Management consultancy activities other than financial management"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "THE BALLROOM MARITIME HOUSE",
+    "address_line_2": "GRAFTON SQUARE",
+    "post_town": "LONDON",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "SW4 0JW"
+  },
+  "accounts": {
+    "category": "TOTAL EXEMPTION FULL",
+    "last_made_up": "31/05/2025",
+    "next_due": "28/02/2027",
+    "ref_day": "31",
+    "ref_month": "5"
+  },
+  "mortgages": {
+    "num_charges": 1,
+    "num_outstanding": 1,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 21534308.0,
+    "n_contracts": 7,
+    "n_buyers": 3
+  },
+  "geo": {
+    "lat": 51.46467,
+    "lng": -0.14039,
+    "lad24_cd": "E09000022",
+    "lad24_nm": "Lambeth",
+    "region": "London"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/05438122"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "other",
+  "buyer_type_breakdown": {
+    "other": 0.9308,
+    "central_govt": 0.0407,
+    "agency": 0.021,
+    "council": 0.0075
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T13:27:55Z",
+    "company_name": "ESRO LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2005-04-27",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-02-28",
+    "accounts_last_made_up": "2025-05-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-05-11"
+  },
+  "governance": {
+    "api_date": "2026-04-27T13:27:57Z",
+    "total_officers": 9,
+    "active_count": 2,
+    "resigned_count": 7,
+    "active_officers": [
+      {
+        "name": "DE IONNO, Damon",
+        "role": "director",
+        "appointed_on": "2015-07-10",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "ROWE, Rebecca Anne",
+        "role": "director",
+        "appointed_on": "2010-01-04",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T13:27:59Z",
+    "total_results": 2,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Mr Damon De Ionno",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2017-10-01",
+        "identification": null
+      },
+      {
+        "name": "Ms Rebecca Anne Rowe",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwMjM0OTQwNGFkaXF6a2N4",
+    "date": "2026-01-30",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/YOxelInV7aBO3V4CixWyxYaruihW5LPpIfsx5EmCEm4/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/05438122/filing-history/MzUwMjM0OTQwNGFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

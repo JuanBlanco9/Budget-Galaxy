@@ -1,0 +1,152 @@
+{
+  "schema_version": "v2",
+  "company_number": "03353584",
+  "display_name": "Westminster Homecare Limited",
+  "official_name": "WESTMINSTER HOMECARE LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "16/04/1997",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "86900"
+  ],
+  "sic_labels": [
+    "Other human health activities"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "22 CHURCH ROAD",
+    "address_line_2": "",
+    "post_town": "TUNBRIDGE WELLS",
+    "county": "KENT",
+    "country": "ENGLAND",
+    "postal_code": "TN1 1JP"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "30/04/2025",
+    "next_due": "31/01/2027",
+    "ref_day": "30",
+    "ref_month": "4"
+  },
+  "mortgages": {
+    "num_charges": 6,
+    "num_outstanding": 1,
+    "num_part_satisfied": 0,
+    "num_satisfied": 5
+  },
+  "spend_profile": {
+    "total_gbp_2024": 60500000.0,
+    "n_contracts": 4,
+    "n_buyers": 2
+  },
+  "geo": {
+    "lat": 51.132702,
+    "lng": 0.260571,
+    "lad24_cd": "E07000116",
+    "lad24_nm": "Tunbridge Wells",
+    "region": "South East"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/03353584"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T16:48:39Z",
+    "company_name": "WESTMINSTER HOMECARE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1997-04-16",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-01-31",
+    "accounts_last_made_up": "2025-04-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-14"
+  },
+  "governance": {
+    "api_date": "2026-04-22T16:48:41Z",
+    "total_officers": 25,
+    "active_count": 3,
+    "resigned_count": 22,
+    "active_officers": [
+      {
+        "name": "LANDUCCI-HARMEY, James Conor",
+        "role": "secretary",
+        "appointed_on": "2025-05-02",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "DONALD, Charlotte Kathleen",
+        "role": "director",
+        "appointed_on": "2025-05-02",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LANDUCCI-HARMEY, James Conor",
+        "role": "director",
+        "appointed_on": "2025-12-10",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T16:48:43Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Care At Home Services (South-East) Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent-as-firm"
+        ],
+        "notified_on": "2020-10-08",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "05317196"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NzM4OTY0N2FkaXF6a2N4",
+    "date": "2026-01-02",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/w1PQtBzEJjHXmqZNDmstIiSXBRYYsQdLc94-uKQHJT8/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03353584/filing-history/MzQ5NzM4OTY0N2FkaXF6a2N4"
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 1.0
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

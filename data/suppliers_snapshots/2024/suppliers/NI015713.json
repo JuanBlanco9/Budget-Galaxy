@@ -1,0 +1,190 @@
+{
+  "schema_version": "v2",
+  "company_number": "NI015713",
+  "display_name": "Sdc Trailers Limited",
+  "official_name": "SDC TRAILERS LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "09/04/1982",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "29202"
+  ],
+  "sic_labels": [
+    "Manufacture of trailers and semi-trailers"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "116 DEERPARK ROAD",
+    "address_line_2": "TOOMEBRIDGE",
+    "post_town": "CO ANTRIM",
+    "county": "",
+    "country": "",
+    "postal_code": "BT41 3SS"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 23,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 23
+  },
+  "spend_profile": {
+    "total_gbp_2024": 22200000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 54.76977,
+    "lng": -6.50359,
+    "lad24_cd": "N09000009",
+    "lad24_nm": "Mid Ulster",
+    "region": null
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/NI015713"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "other",
+  "buyer_type_breakdown": {
+    "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T13:23:53Z",
+    "company_name": "SDC TRAILERS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1982-04-09",
+    "date_of_cessation": null,
+    "jurisdiction": "northern-ireland",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-05-08"
+  },
+  "governance": {
+    "api_date": "2026-04-27T13:23:55Z",
+    "total_officers": 29,
+    "active_count": 6,
+    "resigned_count": 23,
+    "active_officers": [
+      {
+        "name": "MCCAULEY, Christopher",
+        "role": "secretary",
+        "appointed_on": "2026-01-21",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BRATTON, Paul",
+        "role": "director",
+        "appointed_on": "2019-01-23",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MUDD, Charles William",
+        "role": "director",
+        "appointed_on": "2026-01-01",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      },
+      {
+        "name": "WEN, Shi",
+        "role": "director",
+        "appointed_on": "2021-09-10",
+        "country_of_residence": "China",
+        "nationality": "Chinese"
+      },
+      {
+        "name": "ZHAN, Rui",
+        "role": "director",
+        "appointed_on": "2020-02-03",
+        "country_of_residence": "China",
+        "nationality": "Chinese"
+      },
+      {
+        "name": "ZHANG, Ling",
+        "role": "director",
+        "appointed_on": "2017-06-15",
+        "country_of_residence": "Belgium",
+        "nationality": "Chinese"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T13:23:57Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Cimc Vehicles Uk Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2017-11-30",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act",
+          "country_registered": "Northern Ireland",
+          "place_registered": "Companies House Northern Ireland",
+          "registration_number": "Ni637623"
+        }
+      },
+      {
+        "name": "China International Marine Containers (Group) Co., Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-06-24",
+        "identification": {
+          "legal_form": "Plc",
+          "legal_authority": "People'S Republic Of China",
+          "country_registered": "People'S Republic Of China",
+          "place_registered": "People'S Republic Of China Registry",
+          "registration_number": "440301501119369"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MDY1NDYzOGFkaXF6a2N4",
+    "date": "2025-09-12",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/PhjLJWP3CtwRGcCT0q3-9DOR7kRQhUFpF5Z7_aSfhqw/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/NI015713/filing-history/MzQ4MDY1NDYzOGFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

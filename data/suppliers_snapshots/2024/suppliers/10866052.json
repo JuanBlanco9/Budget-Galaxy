@@ -1,0 +1,197 @@
+{
+  "schema_version": "v2",
+  "company_number": "10866052",
+  "display_name": "Asbestos Analysts Limited",
+  "official_name": "ASBESTOS ANALYSTS LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "14/07/2017",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "74901"
+  ],
+  "sic_labels": [
+    "Environmental consulting activities"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "3RD FLOOR CROWN HOUSE",
+    "address_line_2": "151 HIGH ROAD",
+    "post_town": "LOUGHTON",
+    "county": "ESSEX",
+    "country": "UNITED KINGDOM",
+    "postal_code": "IG10 4LG"
+  },
+  "accounts": {
+    "category": "TOTAL EXEMPTION FULL",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 0,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 300000000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.644383,
+    "lng": 0.052426,
+    "lad24_cd": "E07000072",
+    "lad24_nm": "Epping Forest",
+    "region": "East of England"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/10866052"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T14:17:04Z",
+    "company_name": "ASBESTOS ANALYSTS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2017-07-14",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-27"
+  },
+  "governance": {
+    "api_date": "2026-04-22T14:17:06Z",
+    "total_officers": 4,
+    "active_count": 4,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "DALEY, Keir Connor",
+        "role": "director",
+        "appointed_on": "2024-02-27",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MCFARLANE, John William",
+        "role": "director",
+        "appointed_on": "2017-07-14",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "O'MAHONY, Graham Richard",
+        "role": "director",
+        "appointed_on": "2017-07-14",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "O'MAHONY, Jacqueline Elizabeth",
+        "role": "director",
+        "appointed_on": "2017-07-14",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T14:17:07Z",
+    "total_results": 4,
+    "active_count": 3,
+    "items": [
+      {
+        "name": "Ipsonne Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2018-11-27",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "United Kingdom (England And Wales)",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "10942127"
+        }
+      },
+      {
+        "name": "Mr John William Mcfarlane",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2017-07-14",
+        "identification": null
+      },
+      {
+        "name": "Mr Graham Richard O'Mahony",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2017-07-14",
+        "identification": null
+      },
+      {
+        "name": "Mrs Jacqueline Elizabeth O'Mahony",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2017-07-14",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2MzY2NzcwNWFkaXF6a2N4",
+    "date": "2025-04-23",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/nLJywILVYGIGzYwI7dUOY264K7QILblqHsa1CoqB_as/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/10866052/filing-history/MzQ2MzY2NzcwNWFkaXF6a2N4"
+  },
+  "top_buyer_type": "other",
+  "buyer_type_breakdown": {
+    "other": 1.0
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

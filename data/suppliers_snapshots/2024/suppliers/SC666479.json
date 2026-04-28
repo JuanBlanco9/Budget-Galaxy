@@ -1,0 +1,140 @@
+{
+  "schema_version": "v2",
+  "company_number": "SC666479",
+  "display_name": "Marfisheco Ltd",
+  "official_name": "MARFISHECO LTD",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "06/07/2020",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "74909"
+  ],
+  "sic_labels": [
+    "Other professional, scientific and technical activities n.e.c."
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "67/6 BRUNSWICK STREET",
+    "address_line_2": "",
+    "post_town": "EDINBURGH",
+    "county": "",
+    "country": "UNITED KINGDOM",
+    "postal_code": "EH7 5HT"
+  },
+  "accounts": {
+    "category": "MICRO ENTITY",
+    "last_made_up": "31/07/2025",
+    "next_due": "30/04/2027",
+    "ref_day": "31",
+    "ref_month": "7"
+  },
+  "mortgages": {
+    "num_charges": 0,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 45883.11,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 55.959913,
+    "lng": -3.180115,
+    "lad24_cd": "S12000036",
+    "lad24_nm": "City of Edinburgh",
+    "region": null
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/SC666479"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "other",
+  "buyer_type_breakdown": {
+    "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T09:50:03Z",
+    "company_name": "MARFISHECO LTD",
+    "company_status": "active",
+    "date_of_creation": "2020-07-06",
+    "date_of_cessation": null,
+    "jurisdiction": "scotland",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-04-30",
+    "accounts_last_made_up": "2025-07-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-19"
+  },
+  "governance": {
+    "api_date": "2026-04-28T09:50:04Z",
+    "total_officers": 2,
+    "active_count": 2,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "JOHNSON, Andrew Frederick",
+        "role": "director",
+        "appointed_on": "2020-07-06",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      },
+      {
+        "name": "TAFT, Carly Rose",
+        "role": "director",
+        "appointed_on": "2025-07-25",
+        "country_of_residence": "Scotland",
+        "nationality": "American"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T09:50:05Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Andrew Frederick Johnson",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "Scotland",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2020-07-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwMjUxMDc3N2FkaXF6a2N4",
+    "date": "2026-01-31",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-micro-entity",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/Ayhtn4ITB3j-AraWygF7M7lp1SPmDIMuVmBXeRLjm8c/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/SC666479/filing-history/MzUwMjUxMDc3N2FkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

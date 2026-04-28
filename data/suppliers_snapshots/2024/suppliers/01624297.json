@@ -1,0 +1,166 @@
+{
+  "schema_version": "v2",
+  "company_number": "01624297",
+  "display_name": "Microsoft Limited",
+  "official_name": "MICROSOFT LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "24/03/1982",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "62020"
+  ],
+  "sic_labels": [
+    "Information technology consultancy activities"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "MICROSOFT CAMPUS",
+    "address_line_2": "THAMES VALLEY PARK",
+    "post_town": "READING",
+    "county": "BERKSHIRE",
+    "country": "",
+    "postal_code": "RG6 1WG"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "30/06/2024",
+    "next_due": "31/03/2026",
+    "ref_day": "30",
+    "ref_month": "6"
+  },
+  "mortgages": {
+    "num_charges": 2,
+    "num_outstanding": 2,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 31514727.04,
+    "n_contracts": 24,
+    "n_buyers": 20
+  },
+  "geo": {
+    "lat": 51.461225,
+    "lng": -0.925986,
+    "lad24_cd": "E06000041",
+    "lad24_nm": "Wokingham",
+    "region": "South East"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/01624297"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T17:46:46Z",
+    "company_name": "MICROSOFT LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1982-03-24",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-03-31",
+    "accounts_last_made_up": "2025-06-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-07"
+  },
+  "governance": {
+    "api_date": "2026-04-22T17:46:48Z",
+    "total_officers": 27,
+    "active_count": 4,
+    "resigned_count": 23,
+    "active_officers": [
+      {
+        "name": "REED SMITH CORPORATE SERVICES LIMITED",
+        "role": "corporate-secretary",
+        "appointed_on": "2011-08-16",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "HARDMAN, Darren",
+        "role": "director",
+        "appointed_on": "2024-11-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "KIVIAT, Leigh Anne",
+        "role": "director",
+        "appointed_on": "2026-01-16",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      },
+      {
+        "name": "ORNDORFF, Benjamin Owen",
+        "role": "director",
+        "appointed_on": "2006-03-07",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T17:46:50Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Microsoft Corporation",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent",
+          "voting-rights-50-to-75-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2017-07-19",
+        "identification": {
+          "legal_form": "Corporate",
+          "legal_authority": "United States (Washington)",
+          "country_registered": "Usa",
+          "place_registered": "Washington",
+          "registration_number": "600413485"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxNDA3MTk0NWFkaXF6a2N4",
+    "date": "2026-04-12",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/Jf3Hr9Wk4Dfo_H3N2FE6-oUHEoQzkljr7vVgFI4dkjk/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01624297/filing-history/MzUxNDA3MTk0NWFkaXF6a2N4"
+  },
+  "top_buyer_type": "other",
+  "buyer_type_breakdown": {
+    "other": 0.5159,
+    "central_govt": 0.3342,
+    "council": 0.1168,
+    "nhs": 0.0145,
+    "police_fire": 0.0073,
+    "education": 0.0064,
+    "agency": 0.0049
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

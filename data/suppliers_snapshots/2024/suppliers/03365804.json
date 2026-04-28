@@ -1,0 +1,178 @@
+{
+  "schema_version": "v2",
+  "company_number": "03365804",
+  "display_name": "S M R S Ltd",
+  "official_name": "S M R S LTD",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "06/05/1997",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "73110"
+  ],
+  "sic_labels": [
+    "Advertising agencies"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "2 EXPRESS NETWORKS",
+    "address_line_2": "3 GEORGE LEIGH STREET",
+    "post_town": "MANCHESTER",
+    "county": "",
+    "country": "",
+    "postal_code": "M4 6BD"
+  },
+  "accounts": {
+    "category": "MEDIUM",
+    "last_made_up": "31/10/2024",
+    "next_due": "31/07/2026",
+    "ref_day": "31",
+    "ref_month": "10"
+  },
+  "mortgages": {
+    "num_charges": 4,
+    "num_outstanding": 1,
+    "num_part_satisfied": 0,
+    "num_satisfied": 3
+  },
+  "spend_profile": {
+    "total_gbp_2024": 254640.77,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 53.486114,
+    "lng": -2.22559,
+    "lad24_cd": "E08000003",
+    "lad24_nm": "Manchester",
+    "region": "North West"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/03365804"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "education",
+  "buyer_type_breakdown": {
+    "education": 0.9538,
+    "other": 0.0462
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T03:01:11Z",
+    "company_name": "S M R S LTD",
+    "company_status": "active",
+    "date_of_creation": "1997-05-06",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-07-31",
+    "accounts_last_made_up": "2024-10-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-05-20"
+  },
+  "governance": {
+    "api_date": "2026-04-28T03:01:12Z",
+    "total_officers": 16,
+    "active_count": 3,
+    "resigned_count": 13,
+    "active_officers": [
+      {
+        "name": "LEWIS, Richard Noel",
+        "role": "director",
+        "appointed_on": "1997-06-06",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "STURGESS, Sarah",
+        "role": "director",
+        "appointed_on": "2002-11-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WINDSOR, Toby Charles",
+        "role": "director",
+        "appointed_on": "1997-06-06",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T03:01:13Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Smrs Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2022-10-03",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "England And Wales",
+          "registration_number": "14110235"
+        }
+      },
+      {
+        "name": "Mr Richard Noel Lewis",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Toby Charles Windsor",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MjE2Mzg5NGFkaXF6a2N4",
+    "date": "2025-07-01",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-medium",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/fFrC5m344biaXoJofCgx2Ffvm_d7fXkxF_6RWY0cUYk/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03365804/filing-history/MzQ3MjE2Mzg5NGFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

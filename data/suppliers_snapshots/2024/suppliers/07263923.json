@@ -1,0 +1,140 @@
+{
+  "schema_version": "v2",
+  "company_number": "07263923",
+  "display_name": "Alpha Rod Ltd",
+  "official_name": "ALPHA ROD LTD",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "25/05/2010",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "43120",
+    "71200"
+  ],
+  "sic_labels": [
+    "Site preparation",
+    "Technical testing and analysis"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "UNIT 5 FARADAY PARK PEGASUS WAY",
+    "address_line_2": "BOWERHILL",
+    "post_town": "MELKSHAM",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "SN12 6TR"
+  },
+  "accounts": {
+    "category": "UNAUDITED ABRIDGED",
+    "last_made_up": "31/05/2025",
+    "next_due": "28/02/2027",
+    "ref_day": "31",
+    "ref_month": "5"
+  },
+  "mortgages": {
+    "num_charges": 1,
+    "num_outstanding": 1,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 26800.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.356772,
+    "lng": -2.129972,
+    "lad24_cd": "E06000054",
+    "lad24_nm": "Wiltshire",
+    "region": "South West"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/07263923"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "education",
+  "buyer_type_breakdown": {
+    "education": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T11:59:59Z",
+    "company_name": "ALPHA ROD LTD",
+    "company_status": "active",
+    "date_of_creation": "2010-05-25",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-02-28",
+    "accounts_last_made_up": "2025-05-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-05"
+  },
+  "governance": {
+    "api_date": "2026-04-28T12:00:00Z",
+    "total_officers": 4,
+    "active_count": 2,
+    "resigned_count": 2,
+    "active_officers": [
+      {
+        "name": "BERRY, Anna",
+        "role": "secretary",
+        "appointed_on": "2025-07-01",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BERRY, Christopher Charles",
+        "role": "director",
+        "appointed_on": "2011-04-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T12:00:01Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Christopher Charles Berry",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2017-05-01",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5OTczNzM0OGFkaXF6a2N4",
+    "date": "2026-01-16",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-unaudited-abridged",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/DnH5adjySezFky1yRuq0wWliAqAJ2PKDcljEo0BBcG4/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/07263923/filing-history/MzQ5OTczNzM0OGFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

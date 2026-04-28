@@ -1,0 +1,159 @@
+{
+  "schema_version": "v2",
+  "company_number": "06497222",
+  "display_name": "King Industries Limited",
+  "official_name": "KING INDUSTRIES LIMITED",
+  "status": "in_administration",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "07/02/2008",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "02100",
+    "71129"
+  ],
+  "sic_labels": [
+    "Silviculture and other forestry activities",
+    "Other engineering activities"
+  ],
+  "previous_names": [
+    {
+      "name": "RICHARD KING UTILITIES LIMITED",
+      "condate": "20/02/2016"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "SUITE 500, UNIT 2, 94A",
+    "address_line_2": "WYCLIFFE ROAD",
+    "post_town": "NORTHAMPTON",
+    "county": "",
+    "country": "",
+    "postal_code": "NN1 5JF"
+  },
+  "accounts": {
+    "category": "TOTAL EXEMPTION FULL",
+    "last_made_up": "30/06/2024",
+    "next_due": "31/03/2026",
+    "ref_day": "30",
+    "ref_month": "6"
+  },
+  "mortgages": {
+    "num_charges": 0,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 342000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 52.240748,
+    "lng": -0.870077,
+    "lad24_cd": "E06000062",
+    "lad24_nm": "West Northamptonshire",
+    "region": "East Midlands"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/06497222"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T01:51:15Z",
+    "company_name": "KING INDUSTRIES LIMITED",
+    "company_status": "administration",
+    "date_of_creation": "2008-02-07",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": true,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": true,
+    "accounts_next_due": "2026-03-31",
+    "accounts_last_made_up": "2024-06-30",
+    "confirmation_statement_overdue": true,
+    "confirmation_statement_next_due": "2025-08-20"
+  },
+  "governance": {
+    "api_date": "2026-04-28T01:51:16Z",
+    "total_officers": 6,
+    "active_count": 2,
+    "resigned_count": 4,
+    "active_officers": [
+      {
+        "name": "FOSTER, Stephen Brian",
+        "role": "director",
+        "appointed_on": "2025-04-02",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "KING, Brendan Keith Harold",
+        "role": "director",
+        "appointed_on": "2025-04-30",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T01:51:18Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Miss Nicola Newton",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2025-04-30",
+        "identification": null
+      },
+      {
+        "name": "Mr Richard Keith King",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2MDc5MzEwN2FkaXF6a2N4",
+    "date": "2025-03-31",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/sYXNOtN2S2ZLLpu-vjy-j4ebRyJEW2IewgNPVG_FPmY/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/06497222/filing-history/MzQ2MDc5MzEwN2FkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

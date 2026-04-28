@@ -1,0 +1,153 @@
+{
+  "schema_version": "v2",
+  "company_number": "01028790",
+  "display_name": "Kaplan Financial Limited",
+  "official_name": "KAPLAN FINANCIAL LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "27/10/1971",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "85421",
+    "85422"
+  ],
+  "sic_labels": [
+    "First-degree level higher education",
+    "Post-graduate level higher education"
+  ],
+  "previous_names": [
+    {
+      "name": "FTC KAPLAN LIMITED",
+      "condate": "11/09/2007"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "179-191 BOROUGH HIGH STREET",
+    "address_line_2": "",
+    "post_town": "LONDON",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "SE1 1HR"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 9,
+    "num_outstanding": 3,
+    "num_part_satisfied": 0,
+    "num_satisfied": 6
+  },
+  "spend_profile": {
+    "total_gbp_2024": 630000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.502862,
+    "lng": -0.091675,
+    "lad24_cd": "E09000028",
+    "lad24_nm": "Southwark",
+    "region": "London"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/01028790"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "other",
+  "buyer_type_breakdown": {
+    "other": 0.9705,
+    "nhs": 0.0295
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T23:17:33Z",
+    "company_name": "KAPLAN FINANCIAL LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1971-10-27",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-04-16"
+  },
+  "governance": {
+    "api_date": "2026-04-27T23:17:35Z",
+    "total_officers": 43,
+    "active_count": 2,
+    "resigned_count": 41,
+    "active_officers": [
+      {
+        "name": "KROON, Soren",
+        "role": "director",
+        "appointed_on": "2025-02-26",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ROBINSON, Zoe Victoria",
+        "role": "director",
+        "appointed_on": "2024-03-15",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T23:17:37Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Kaplan International Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "English",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "04178272"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NzkyMjk3M2FkaXF6a2N4",
+    "date": "2025-08-20",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/NperjzikimuJX512ZBHXcXACg1g2ftEPM3_yXieazls/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01028790/filing-history/MzQ3NzkyMjk3M2FkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

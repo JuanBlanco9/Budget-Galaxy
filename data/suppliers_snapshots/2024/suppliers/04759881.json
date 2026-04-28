@@ -1,0 +1,175 @@
+{
+  "schema_version": "v2",
+  "company_number": "04759881",
+  "display_name": "Inbond Limited",
+  "official_name": "INBOND LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "12/05/2003",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "52103"
+  ],
+  "sic_labels": [
+    "Operation of warehousing and storage facilities for land transport activities"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "NORTHSHORE LOGISTICS CENTRE",
+    "address_line_2": "MALLEABLE WAY",
+    "post_town": "STOCKTON-ON-TEES",
+    "county": "CLEVELAND",
+    "country": "",
+    "postal_code": "TS18 2QX"
+  },
+  "accounts": {
+    "category": "TOTAL EXEMPTION FULL",
+    "last_made_up": "30/09/2024",
+    "next_due": "30/06/2026",
+    "ref_day": "30",
+    "ref_month": "9"
+  },
+  "mortgages": {
+    "num_charges": 7,
+    "num_outstanding": 4,
+    "num_part_satisfied": 0,
+    "num_satisfied": 3
+  },
+  "spend_profile": {
+    "total_gbp_2024": 33715.22,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 54.570211,
+    "lng": -1.296985,
+    "lad24_cd": "E06000004",
+    "lad24_nm": "Stockton-on-Tees",
+    "region": "North East"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/04759881"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "nhs",
+  "buyer_type_breakdown": {
+    "nhs": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T11:05:53Z",
+    "company_name": "INBOND LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2003-05-12",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-06-30",
+    "accounts_last_made_up": "2024-09-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-05-26"
+  },
+  "governance": {
+    "api_date": "2026-04-28T11:05:54Z",
+    "total_officers": 11,
+    "active_count": 3,
+    "resigned_count": 8,
+    "active_officers": [
+      {
+        "name": "ROGERS, Sarah",
+        "role": "secretary",
+        "appointed_on": "2025-04-14",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "LYONS, Phillip",
+        "role": "director",
+        "appointed_on": "2011-10-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "RYE, Craig Derek",
+        "role": "director",
+        "appointed_on": "2014-07-24",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T11:05:55Z",
+    "total_results": 3,
+    "active_count": 3,
+    "items": [
+      {
+        "name": "Mr Craig Derek Rye",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Phillip Lyons",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Inbond Holdings (Ne) Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "Great Britain",
+          "place_registered": "Great Britain",
+          "registration_number": "09077340"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ1OTA4NDIwM2FkaXF6a2N4",
+    "date": "2025-03-18",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/lA_pr8x6qGrJVnEnj3VNQXON4L6Iek1NzSCkQHWTwvU/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04759881/filing-history/MzQ1OTA4NDIwM2FkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

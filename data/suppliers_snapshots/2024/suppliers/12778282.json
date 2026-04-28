@@ -1,0 +1,147 @@
+{
+  "schema_version": "v2",
+  "company_number": "12778282",
+  "display_name": "Cinergi Ltd",
+  "official_name": "CINERGI LTD",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "29/07/2020",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "96090"
+  ],
+  "sic_labels": [
+    "Other service activities n.e.c."
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "UNIT 26 ROMSEY INDUSTRIAL ESTATE",
+    "address_line_2": "GREATBRIDGE ROAD",
+    "post_town": "ROMSEY",
+    "county": "HAMPSHIRE",
+    "country": "ENGLAND",
+    "postal_code": "SO51 0HR"
+  },
+  "accounts": {
+    "category": "TOTAL EXEMPTION FULL",
+    "last_made_up": "31/07/2025",
+    "next_due": "30/04/2027",
+    "ref_day": "31",
+    "ref_month": "7"
+  },
+  "mortgages": {
+    "num_charges": 0,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 75000000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 50.994644,
+    "lng": -1.49569,
+    "lad24_cd": "E07000093",
+    "lad24_nm": "Test Valley",
+    "region": "South East"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/12778282"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T16:30:19Z",
+    "company_name": "CINERGI LTD",
+    "company_status": "active",
+    "date_of_creation": "2020-07-29",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-04-30",
+    "accounts_last_made_up": "2025-07-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-10"
+  },
+  "governance": {
+    "api_date": "2026-04-22T16:30:21Z",
+    "total_officers": 3,
+    "active_count": 3,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "LOVERIDGE, Daniel John",
+        "role": "director",
+        "appointed_on": "2020-07-29",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LOVERIDGE, Kathryn Mary",
+        "role": "director",
+        "appointed_on": "2024-10-28",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PAULETTA D’ANNA, Edoardo",
+        "role": "director",
+        "appointed_on": "2024-10-28",
+        "country_of_residence": "England",
+        "nationality": "Italian"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T16:30:22Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Daniel John Loveridge",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent",
+          "voting-rights-50-to-75-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2020-07-29",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwMzIxMzg3NWFkaXF6a2N4",
+    "date": "2026-02-04",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/TuEIZRvizVnv3kuZcdrVPMu10UYDjURCXbuvxi0J4fY/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/12778282/filing-history/MzUwMzIxMzg3NWFkaXF6a2N4"
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 1.0
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

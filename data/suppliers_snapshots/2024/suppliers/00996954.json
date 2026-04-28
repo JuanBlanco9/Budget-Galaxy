@@ -1,0 +1,177 @@
+{
+  "schema_version": "v2",
+  "company_number": "00996954",
+  "display_name": "H.V. Skan Limited",
+  "official_name": "H.V. SKAN LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "14/12/1970",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "46760"
+  ],
+  "sic_labels": [
+    "Wholesale of other intermediate products"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "425/433 STRATFORD ROAD",
+    "address_line_2": "SHIRLEY SOLIHULL",
+    "post_town": "WEST MIDLANDS",
+    "county": "",
+    "country": "",
+    "postal_code": "B90 4AE"
+  },
+  "accounts": {
+    "category": "SMALL",
+    "last_made_up": "30/09/2024",
+    "next_due": "30/06/2026",
+    "ref_day": "30",
+    "ref_month": "9"
+  },
+  "mortgages": {
+    "num_charges": 0,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 81769.12,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 52.40466,
+    "lng": -1.821988,
+    "lad24_cd": "E08000029",
+    "lad24_nm": "Solihull",
+    "region": "West Midlands"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/00996954"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "other",
+  "buyer_type_breakdown": {
+    "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T07:16:15Z",
+    "company_name": "H.V. SKAN LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1970-12-14",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-06-30",
+    "accounts_last_made_up": "2024-09-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-17"
+  },
+  "governance": {
+    "api_date": "2026-04-28T07:16:17Z",
+    "total_officers": 8,
+    "active_count": 5,
+    "resigned_count": 3,
+    "active_officers": [
+      {
+        "name": "SKAN, Richard Antony",
+        "role": "secretary",
+        "appointed_on": "1997-02-24",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "PAUL, Narinder",
+        "role": "director",
+        "appointed_on": "2018-05-18",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SKAN, Richard Antony",
+        "role": "director",
+        "appointed_on": "2017-09-18",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SKAN, Roger John",
+        "role": "director",
+        "appointed_on": null,
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WATSON, Stephen Richard Hurst",
+        "role": "director",
+        "appointed_on": "2022-03-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T07:16:18Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Skan Group Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2017-06-30",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "England And Wales",
+          "registration_number": "10510590"
+        }
+      },
+      {
+        "name": "Mr Roger John Skan",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2017-02-14",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MTUzMTE4N2FkaXF6a2N4",
+    "date": "2025-06-26",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/f51lgARMU5BzghAOvlmVMgGWvW0uSEpdAQb-FENZsiQ/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/00996954/filing-history/MzQ3MTUzMTE4N2FkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

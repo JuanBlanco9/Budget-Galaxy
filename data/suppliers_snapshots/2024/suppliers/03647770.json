@@ -1,0 +1,199 @@
+{
+  "schema_version": "v2",
+  "company_number": "03647770",
+  "display_name": "Proactive Uk Limited",
+  "official_name": "PROACTIVE UK LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "09/10/1998",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "47430"
+  ],
+  "sic_labels": [
+    "Retail sale of audio and video equipment in specialised stores"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "UNIT 1 EASTMAN WAY",
+    "address_line_2": "HEMEL HEMPSTEAD INDUSTRIAL ESTATE",
+    "post_town": "HEMEL HEMPSTEAD",
+    "county": "HERTFORDSHIRE",
+    "country": "",
+    "postal_code": "HP2 7DU"
+  },
+  "accounts": {
+    "category": "TOTAL EXEMPTION FULL",
+    "last_made_up": "31/10/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 10,
+    "num_outstanding": 3,
+    "num_part_satisfied": 0,
+    "num_satisfied": 7
+  },
+  "spend_profile": {
+    "total_gbp_2024": 180000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.770208,
+    "lng": -0.443487,
+    "lad24_cd": "E07000096",
+    "lad24_nm": "Dacorum",
+    "region": "East of England"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/03647770"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "other",
+  "buyer_type_breakdown": {
+    "other": 0.9878,
+    "police_fire": 0.0077,
+    "education": 0.0045
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T04:08:06Z",
+    "company_name": "PROACTIVE UK LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1998-10-09",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-10-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-05-26"
+  },
+  "governance": {
+    "api_date": "2026-04-28T04:08:07Z",
+    "total_officers": 10,
+    "active_count": 3,
+    "resigned_count": 7,
+    "active_officers": [
+      {
+        "name": "EATON, Kevin John",
+        "role": "director",
+        "appointed_on": "2013-01-30",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MAKEPEACE, Dale Paul",
+        "role": "director",
+        "appointed_on": "2013-01-30",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MILLEN, Nicholas Allan",
+        "role": "director",
+        "appointed_on": "2023-03-02",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T04:08:08Z",
+    "total_results": 4,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Eastman Commercial Properties Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2023-01-26",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "England And Wales",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "14545047"
+        }
+      },
+      {
+        "name": "Proactive Central Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2023-01-26",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "England And Wales",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "14405235"
+        }
+      },
+      {
+        "name": "Mrs Maureen Alice Hart",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-10-09",
+        "identification": null
+      },
+      {
+        "name": "Mr Neil Christian Hart",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-10-09",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4Mzg3Nzc3OGFkaXF6a2N4",
+    "date": "2025-10-06",
+    "type": "AA01",
+    "description": "change-account-reference-date-company-current-extended",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/ByCtmGu5fK-XjNF_j_OfyJNN7Mi1OBoSyMBY3SkN9s4/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03647770/filing-history/MzQ4Mzg3Nzc3OGFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

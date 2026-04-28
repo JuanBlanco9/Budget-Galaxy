@@ -1,0 +1,191 @@
+{
+  "schema_version": "v2",
+  "company_number": "13779434",
+  "display_name": "Stelia Ltd",
+  "official_name": "STELIA LTD",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "03/12/2021",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "58290",
+    "61100",
+    "61900"
+  ],
+  "sic_labels": [
+    "Other software publishing",
+    "Wired telecommunications activities",
+    "Other telecommunications activities"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "37 COMMERCIAL ROAD",
+    "address_line_2": "COMMERCIAL ROAD",
+    "post_town": "POOLE",
+    "county": "DORSET",
+    "country": "ENGLAND",
+    "postal_code": "BH14 0HU"
+  },
+  "accounts": {
+    "category": "TOTAL EXEMPTION FULL",
+    "last_made_up": "31/03/2025",
+    "next_due": "31/12/2026",
+    "ref_day": "31",
+    "ref_month": "3"
+  },
+  "mortgages": {
+    "num_charges": 0,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 39300.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 50.723735,
+    "lng": -1.958091,
+    "lad24_cd": "E06000058",
+    "lad24_nm": "Bournemouth, Christchurch and Poole",
+    "region": "South West"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/13779434"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "other",
+  "buyer_type_breakdown": {
+    "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T10:31:10Z",
+    "company_name": "STELIA LTD",
+    "company_status": "active",
+    "date_of_creation": "2021-12-03",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-16"
+  },
+  "governance": {
+    "api_date": "2026-04-28T10:31:12Z",
+    "total_officers": 3,
+    "active_count": 3,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "HOOTON, Imogen Eve",
+        "role": "director",
+        "appointed_on": "2023-07-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HOOTON, Tobias Christopher",
+        "role": "director",
+        "appointed_on": "2021-12-03",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SMITH, Kevin John",
+        "role": "director",
+        "appointed_on": "2025-11-26",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T10:31:13Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "7 Dials Capital Partners Llp",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2023-03-01",
+        "identification": {
+          "legal_form": "Limited Liability Partnership",
+          "legal_authority": "Limited Liability Partnership Act 2000",
+          "country_registered": "United Kingdom",
+          "place_registered": "England",
+          "registration_number": "Oc445602"
+        }
+      },
+      {
+        "name": "7 Dials Capital Investment Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2022-03-31",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "England",
+          "registration_number": "13977306"
+        }
+      },
+      {
+        "name": "Mr Tobias Christopher Hooton",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2021-12-03",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NTM4NjM3M2FkaXF6a2N4",
+    "date": "2025-12-19",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/8afyVN0bPeMr7EqPJyoWWJ9XA5tweb6f4Pw9xNcmtpY/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/13779434/filing-history/MzQ5NTM4NjM3M2FkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

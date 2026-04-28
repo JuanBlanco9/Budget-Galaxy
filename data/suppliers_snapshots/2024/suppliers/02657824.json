@@ -1,0 +1,170 @@
+{
+  "schema_version": "v2",
+  "company_number": "02657824",
+  "display_name": "Grasstex Ltd",
+  "official_name": "GRASSTEX LTD",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "28/10/1991",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "81300"
+  ],
+  "sic_labels": [
+    "Landscape service activities"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "POLLINGFOLD WORKS, HORSHAM ROAD",
+    "address_line_2": "ELLENS GREEN",
+    "post_town": "RUDGWICK",
+    "county": "HORSHAM, WEST SUSSEX",
+    "country": "",
+    "postal_code": "RH12 3AS"
+  },
+  "accounts": {
+    "category": "TOTAL EXEMPTION FULL",
+    "last_made_up": "31/12/2025",
+    "next_due": "30/09/2027",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 1,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 1
+  },
+  "spend_profile": {
+    "total_gbp_2024": 8000000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.113522,
+    "lng": -0.431776,
+    "lad24_cd": "E07000216",
+    "lad24_nm": "Waverley",
+    "region": "South East"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/02657824"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T15:05:59Z",
+    "company_name": "GRASSTEX LTD",
+    "company_status": "active",
+    "date_of_creation": "1991-10-28",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-09-30",
+    "accounts_last_made_up": "2025-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-12"
+  },
+  "governance": {
+    "api_date": "2026-04-27T15:06:01Z",
+    "total_officers": 11,
+    "active_count": 2,
+    "resigned_count": 9,
+    "active_officers": [
+      {
+        "name": "KRISHNADASAN, Hari Haran",
+        "role": "director",
+        "appointed_on": "2025-04-04",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WRAGG, Roger Barry",
+        "role": "director",
+        "appointed_on": "2025-04-30",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T15:06:02Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Grasstex Dc Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2025-04-04",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "16205551"
+        }
+      },
+      {
+        "name": "Mr Richard Conway",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent"
+        ],
+        "notified_on": "2016-10-28",
+        "identification": null
+      },
+      {
+        "name": "Mrs Margaret Joan Moore",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-10-28",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxMjU3MDg4M2FkaXF6a2N4",
+    "date": "2026-03-25",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/ws2D5_o6R7TCvSmBXKJ6hWovS2L2f41qA5oIzolrdOI/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02657824/filing-history/MzUxMjU3MDg4M2FkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

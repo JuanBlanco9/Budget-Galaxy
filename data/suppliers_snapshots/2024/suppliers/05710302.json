@@ -1,0 +1,140 @@
+{
+  "schema_version": "v2",
+  "company_number": "05710302",
+  "display_name": "Thinking Place Limited",
+  "official_name": "THINKING PLACE LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "15/02/2006",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "70229",
+    "73110"
+  ],
+  "sic_labels": [
+    "Management consultancy activities other than financial management",
+    "Advertising agencies"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "21 MARINA COURT",
+    "address_line_2": "CASTLE STREET",
+    "post_town": "HULL",
+    "county": "",
+    "country": "",
+    "postal_code": "HU1 1TJ"
+  },
+  "accounts": {
+    "category": "MICRO ENTITY",
+    "last_made_up": "31/03/2025",
+    "next_due": "31/12/2026",
+    "ref_day": "31",
+    "ref_month": "3"
+  },
+  "mortgages": {
+    "num_charges": 1,
+    "num_outstanding": 1,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 96375.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 53.740408,
+    "lng": -0.336297,
+    "lad24_cd": "E06000010",
+    "lad24_nm": "Kingston upon Hull, City of",
+    "region": "Yorkshire and The Humber"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/05710302"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T06:35:25Z",
+    "company_name": "THINKING PLACE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2006-02-15",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-01"
+  },
+  "governance": {
+    "api_date": "2026-04-28T06:35:26Z",
+    "total_officers": 9,
+    "active_count": 2,
+    "resigned_count": 7,
+    "active_officers": [
+      {
+        "name": "BANKS COOPERS ASSOCIATES LIMITED",
+        "role": "corporate-secretary",
+        "appointed_on": "2006-05-15",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "TILL, John Joseph",
+        "role": "director",
+        "appointed_on": "2006-05-15",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T06:35:27Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr John Joseph Till",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NDY4MTU5MWFkaXF6a2N4",
+    "date": "2025-07-22",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-micro-entity",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/hy7gEBF8W8ahyyLtg8bwfa5OYV49-uuTpSTmy3whJ94/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/05710302/filing-history/MzQ3NDY4MTU5MWFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

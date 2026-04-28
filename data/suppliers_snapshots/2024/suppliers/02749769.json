@@ -1,0 +1,200 @@
+{
+  "schema_version": "v2",
+  "company_number": "02749769",
+  "display_name": "Openhouse Products Limited",
+  "official_name": "OPENHOUSE PRODUCTS LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "23/09/1992",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "15120"
+  ],
+  "sic_labels": [
+    "Manufacture of luggage, handbags and the like, saddlery and harness"
+  ],
+  "previous_names": [
+    {
+      "name": "OPEN HOUSE PRODUCTS LIMITED",
+      "condate": "14/10/2011"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "125 CRAVEN STREET",
+    "address_line_2": "",
+    "post_town": "BIRKENHEAD",
+    "county": "MERSEYSIDE",
+    "country": "",
+    "postal_code": "CH41 4BW"
+  },
+  "accounts": {
+    "category": "TOTAL EXEMPTION FULL",
+    "last_made_up": "30/09/2024",
+    "next_due": "30/06/2026",
+    "ref_day": "30",
+    "ref_month": "9"
+  },
+  "mortgages": {
+    "num_charges": 6,
+    "num_outstanding": 1,
+    "num_part_satisfied": 0,
+    "num_satisfied": 5
+  },
+  "spend_profile": {
+    "total_gbp_2024": 62856.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 53.391834,
+    "lng": -3.032393,
+    "lad24_cd": "E08000015",
+    "lad24_nm": "Wirral",
+    "region": "North West"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/02749769"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "nhs",
+  "buyer_type_breakdown": {
+    "nhs": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T08:23:31Z",
+    "company_name": "OPENHOUSE PRODUCTS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1992-09-23",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-06-30",
+    "accounts_last_made_up": "2024-09-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-08"
+  },
+  "governance": {
+    "api_date": "2026-04-28T08:23:32Z",
+    "total_officers": 12,
+    "active_count": 6,
+    "resigned_count": 6,
+    "active_officers": [
+      {
+        "name": "JONES, Helen Louisa",
+        "role": "secretary",
+        "appointed_on": "1992-11-10",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "JONES, Andrew Brian",
+        "role": "director",
+        "appointed_on": "2020-06-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "JONES, Brian Edward",
+        "role": "director",
+        "appointed_on": "1992-11-10",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "JONES, Helen Louisa",
+        "role": "director",
+        "appointed_on": "1992-11-10",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "JONES, Laura Helen",
+        "role": "director",
+        "appointed_on": "2014-08-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PROCTOR, Samantha Louise",
+        "role": "director",
+        "appointed_on": "2014-08-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T08:23:33Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Openhouse Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2021-01-31",
+        "identification": {
+          "legal_form": "Limited",
+          "legal_authority": "Companies Act 2000"
+        }
+      },
+      {
+        "name": "Brian Edward Jones",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mrs Helen Louisa Jones",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MDIxNDg5OWFkaXF6a2N4",
+    "date": "2025-06-16",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/5lS7P0ZKZ2KvIkGZ9_kcNP1zOlpAIoCa5tT9Fl5WnaM/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02749769/filing-history/MzQ3MDIxNDg5OWFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

@@ -1,0 +1,198 @@
+{
+  "schema_version": "v2",
+  "company_number": "02754698",
+  "display_name": "Swarco Uk Limited",
+  "official_name": "SWARCO UK LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "09/10/1992",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "28990"
+  ],
+  "sic_labels": [
+    "Manufacture of other special-purpose machinery n.e.c."
+  ],
+  "previous_names": [
+    {
+      "name": "APT CONTROLS LIMITED",
+      "condate": "31/05/2018"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "1 MAXTED CORNER, MAXTED ROAD",
+    "address_line_2": "HEMEL HEMPSTEAD INDUSTRIAL ESTATE",
+    "post_town": "HEMEL HEMPSTEAD",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "HP2 7RA"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 1,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 1
+  },
+  "spend_profile": {
+    "total_gbp_2024": 468063.0,
+    "n_contracts": 2,
+    "n_buyers": 2
+  },
+  "geo": {
+    "lat": 51.766672,
+    "lng": -0.437247,
+    "lad24_cd": "E07000096",
+    "lad24_nm": "Dacorum",
+    "region": "East of England"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/02754698"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 0.866,
+    "other": 0.134
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T00:30:00Z",
+    "company_name": "SWARCO UK LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1992-10-09",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-23"
+  },
+  "governance": {
+    "api_date": "2026-04-28T00:30:02Z",
+    "total_officers": 22,
+    "active_count": 4,
+    "resigned_count": 18,
+    "active_officers": [
+      {
+        "name": "EVANS, Steffan John",
+        "role": "secretary",
+        "appointed_on": "2024-06-30",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "COWLING, Jeremy Peter",
+        "role": "director",
+        "appointed_on": "2018-11-14",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "EVANS, Steffan John",
+        "role": "director",
+        "appointed_on": "2016-02-09",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MEYER, Justin Garth",
+        "role": "director",
+        "appointed_on": "2021-03-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T00:30:03Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Swarco Uk Holdings Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2025-09-01",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "England And Wales",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "13649527"
+        }
+      },
+      {
+        "name": "Mrs Elisabeth Swarovski",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Austrian",
+        "country_of_residence": "Austria",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2021-11-30",
+        "identification": null
+      },
+      {
+        "name": "Swarco Ag",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-07",
+        "identification": {
+          "legal_form": "Private Company",
+          "legal_authority": "Austrian Legal System",
+          "country_registered": "Austria",
+          "place_registered": "Austria",
+          "registration_number": "000001"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MjYzODM5N2FkaXF6a2N4",
+    "date": "2025-09-25",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/zAfyYjQOU2cezwM8BTDF3JEd2ogEC0hFrDGeRCtvr2E/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02754698/filing-history/MzQ4MjYzODM5N2FkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

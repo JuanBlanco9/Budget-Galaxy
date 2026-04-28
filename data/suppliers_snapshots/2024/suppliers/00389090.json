@@ -1,0 +1,159 @@
+{
+  "schema_version": "v2",
+  "company_number": "00389090",
+  "display_name": "Bic U.K. Limited",
+  "official_name": "BIC U.K. LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "04/08/1944",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "46499"
+  ],
+  "sic_labels": [
+    "Wholesale of household goods (other than musical instruments) n.e.c."
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "THE CHARTER BUILDING",
+    "address_line_2": "THE CHARTER BUILDING",
+    "post_town": "UXBRIDGE",
+    "county": "LONDON",
+    "country": "ENGLAND",
+    "postal_code": "UB8 1JG"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 0,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 14000000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.544759,
+    "lng": -0.479387,
+    "lad24_cd": "E09000017",
+    "lad24_nm": "Hillingdon",
+    "region": "London"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/00389090"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 0.5664,
+    "other": 0.4336
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T14:06:11Z",
+    "company_name": "BIC U.K. LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1944-08-04",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-08-20"
+  },
+  "governance": {
+    "api_date": "2026-04-27T14:06:13Z",
+    "total_officers": 31,
+    "active_count": 4,
+    "resigned_count": 27,
+    "active_officers": [
+      {
+        "name": "FISCHER, Albertus",
+        "role": "secretary",
+        "appointed_on": "2020-09-28",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "FISCHER, Albertus Stephanus",
+        "role": "director",
+        "appointed_on": "2024-08-09",
+        "country_of_residence": "England",
+        "nationality": "South African"
+      },
+      {
+        "name": "GRIFFITHS, Brett Conrad",
+        "role": "director",
+        "appointed_on": "2020-03-13",
+        "country_of_residence": "England",
+        "nationality": "South African"
+      },
+      {
+        "name": "RENNER, Alessandro",
+        "role": "director",
+        "appointed_on": "2024-08-09",
+        "country_of_residence": "Italy",
+        "nationality": "Italian"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T14:06:15Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Societe Bic Sa",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "French Commercial Code",
+          "country_registered": "France",
+          "place_registered": "Registre Du Commerce Et Des Societes",
+          "registration_number": "552008443"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NTQ0MjMxOGFkaXF6a2N4",
+    "date": "2025-07-29",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/eqerATanjD0XLzahZvZ4bTD8KLrCs1NdIgGIAswFz0E/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/00389090/filing-history/MzQ3NTQ0MjMxOGFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

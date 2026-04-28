@@ -1,0 +1,202 @@
+{
+  "schema_version": "v2",
+  "company_number": "03611608",
+  "display_name": "Property Tectonics Limited",
+  "official_name": "PROPERTY TECTONICS LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "07/08/1998",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "71129"
+  ],
+  "sic_labels": [
+    "Other engineering activities"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "SUITE 16, LOWRY MILL LEES STREET",
+    "address_line_2": "SWINTON",
+    "post_town": "MANCHESTER",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "M27 6DB"
+  },
+  "accounts": {
+    "category": "TOTAL EXEMPTION FULL",
+    "last_made_up": "31/03/2025",
+    "next_due": "31/12/2026",
+    "ref_day": "31",
+    "ref_month": "3"
+  },
+  "mortgages": {
+    "num_charges": 2,
+    "num_outstanding": 1,
+    "num_part_satisfied": 0,
+    "num_satisfied": 1
+  },
+  "spend_profile": {
+    "total_gbp_2024": 141948.0,
+    "n_contracts": 5,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 53.517927,
+    "lng": -2.335734,
+    "lad24_cd": "E08000006",
+    "lad24_nm": "Salford",
+    "region": "North West"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/03611608"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T05:05:28Z",
+    "company_name": "PROPERTY TECTONICS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1998-08-07",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-08-27"
+  },
+  "governance": {
+    "api_date": "2026-04-28T05:05:29Z",
+    "total_officers": 26,
+    "active_count": 6,
+    "resigned_count": 20,
+    "active_officers": [
+      {
+        "name": "YOUNG, Kathryn Jean",
+        "role": "secretary",
+        "appointed_on": "2012-06-13",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BRADY, Esther Margaret",
+        "role": "director",
+        "appointed_on": "2015-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BRADY, Patrick Thomas",
+        "role": "director",
+        "appointed_on": "2025-04-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CRISP, Salma Almas",
+        "role": "director",
+        "appointed_on": "2021-04-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "RAY, Rachel",
+        "role": "director",
+        "appointed_on": "2026-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "YOUNG, Kathryn Jean",
+        "role": "director",
+        "appointed_on": "2015-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T05:05:30Z",
+    "total_results": 4,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Ms Esther Margaret Brady",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2022-05-24",
+        "identification": null
+      },
+      {
+        "name": "Mr Matthew Trevor Mole",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2022-05-24",
+        "identification": null
+      },
+      {
+        "name": "Professor Trevor Mole",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Professor Trevor Mole",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MTUyMTAzMmFkaXF6a2N4",
+    "date": "2025-11-28",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/fDx1WG2hpzAMsI0V5h_ZKtlc5Z0Z1ZEzqz-gdnMyhR4/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03611608/filing-history/MzQ5MTUyMTAzMmFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

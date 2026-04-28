@@ -1,0 +1,200 @@
+{
+  "schema_version": "v2",
+  "company_number": "03892954",
+  "display_name": "Castellan Solutions Limited",
+  "official_name": "CASTELLAN SOLUTIONS LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "13/12/1999",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "63110"
+  ],
+  "sic_labels": [
+    "Data processing, hosting and related activities"
+  ],
+  "previous_names": [
+    {
+      "name": "BIS-WEB LIMITED",
+      "condate": "28/10/2020"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "3RD FLOOR",
+    "address_line_2": "70 GRACECHURCH STREET",
+    "post_town": "LONDON",
+    "county": "",
+    "country": "UNITED KINGDOM",
+    "postal_code": "EC3V 0XL"
+  },
+  "accounts": {
+    "category": "AUDIT EXEMPTION SUBSIDIARY",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "30",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 8,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 8
+  },
+  "spend_profile": {
+    "total_gbp_2024": 176299.84,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.512066,
+    "lng": -0.084791,
+    "lad24_cd": "E09000001",
+    "lad24_nm": "City of London",
+    "region": "London"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/03892954"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 0.5609,
+    "agency": 0.4391
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T04:15:14Z",
+    "company_name": "CASTELLAN SOLUTIONS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1999-12-13",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-27"
+  },
+  "governance": {
+    "api_date": "2026-04-28T04:15:15Z",
+    "total_officers": 24,
+    "active_count": 4,
+    "resigned_count": 20,
+    "active_officers": [
+      {
+        "name": "JONES, Michael",
+        "role": "secretary",
+        "appointed_on": "2023-03-08",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "PINSENT MASONS SECRETARIAL LIMITED",
+        "role": "corporate-secretary",
+        "appointed_on": "2025-06-11",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "VLERICK, Peter Reynolds",
+        "role": "director",
+        "appointed_on": "2024-06-10",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      },
+      {
+        "name": "WETEKAMP, James",
+        "role": "director",
+        "appointed_on": "2022-07-07",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T04:15:17Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Riskonnect, Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2023-03-03",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "United Kingdom (England And Wales)",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "07878747"
+        }
+      },
+      {
+        "name": "Castellan Solutions Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2018-12-31",
+        "identification": {
+          "legal_form": "Corporate",
+          "legal_authority": "United Kingdom (England And Wales)",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "11271916"
+        }
+      },
+      {
+        "name": "Charles Peter Boffin",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwMjM1MzcwN2FkaXF6a2N4",
+    "date": "2026-01-30",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-audit-exemption-subsiduary",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/Ud9LvmK234_oCS9YGPnKFaeo6sV1-OhXQEudmPad5FE/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03892954/filing-history/MzUwMjM1MzcwN2FkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

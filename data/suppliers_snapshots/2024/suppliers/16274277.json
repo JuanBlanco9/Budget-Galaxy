@@ -1,0 +1,132 @@
+{
+  "schema_version": "v2",
+  "company_number": "16274277",
+  "display_name": "Objective Ltd",
+  "official_name": "OBJECTIVE LTD",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "25/02/2025",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "99999"
+  ],
+  "sic_labels": [
+    "Dormant Company"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "COMPANY-FOR-SALE.CO.UK, 411 OXFORD STREET",
+    "address_line_2": "OFFICE 1.01",
+    "post_town": "LONDON",
+    "county": "GREATER LONDON",
+    "country": "UNITED KINGDOM",
+    "postal_code": "W1C 2PE"
+  },
+  "accounts": {
+    "category": "NO ACCOUNTS FILED",
+    "last_made_up": null,
+    "next_due": "25/11/2026",
+    "ref_day": "28",
+    "ref_month": "2"
+  },
+  "mortgages": {
+    "num_charges": 0,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 16980.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.514018,
+    "lng": -0.150949,
+    "lad24_cd": "E09000033",
+    "lad24_nm": "Westminster",
+    "region": "London"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/16274277"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": false
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 0.8928,
+    "nhs": 0.1072
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T12:58:42Z",
+    "company_name": "OBJECTIVE LTD",
+    "company_status": "active",
+    "date_of_creation": "2025-02-25",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-11-25",
+    "accounts_last_made_up": null,
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-10"
+  },
+  "governance": {
+    "api_date": "2026-04-28T12:58:43Z",
+    "total_officers": 2,
+    "active_count": 1,
+    "resigned_count": 1,
+    "active_officers": [
+      {
+        "name": "GASANOV, Elvin",
+        "role": "director",
+        "appointed_on": "2025-02-25",
+        "country_of_residence": "Georgia",
+        "nationality": "Georgian"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T12:58:44Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Ff Holdings Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2025-02-25",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "Register Of Companies",
+          "registration_number": "11860180"
+        }
+      }
+    ]
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

@@ -1,0 +1,172 @@
+{
+  "schema_version": "v2",
+  "company_number": "02310190",
+  "display_name": "Rivercrest Limited",
+  "official_name": "RIVERCREST LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "28/10/1988",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "43910"
+  ],
+  "sic_labels": [
+    "Roofing activities"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "ONE",
+    "address_line_2": "BELL LANE",
+    "post_town": "LEWES",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "BN7 1JU"
+  },
+  "accounts": {
+    "category": "TOTAL EXEMPTION FULL",
+    "last_made_up": "31/10/2025",
+    "next_due": "31/07/2027",
+    "ref_day": "31",
+    "ref_month": "10"
+  },
+  "mortgages": {
+    "num_charges": 1,
+    "num_outstanding": 1,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 60000000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 50.869238,
+    "lng": -4.3e-05,
+    "lad24_cd": "E07000063",
+    "lad24_nm": "Lewes",
+    "region": "South East"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/02310190"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T16:50:20Z",
+    "company_name": "RIVERCREST LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1988-10-28",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-07-31",
+    "accounts_last_made_up": "2025-10-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-11"
+  },
+  "governance": {
+    "api_date": "2026-04-22T16:50:21Z",
+    "total_officers": 4,
+    "active_count": 3,
+    "resigned_count": 1,
+    "active_officers": [
+      {
+        "name": "SOAN, Anita Shelly",
+        "role": "secretary",
+        "appointed_on": null,
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "SOAN, Anita Shelly",
+        "role": "director",
+        "appointed_on": "2025-01-29",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "SOAN, Richard Anthony",
+        "role": "director",
+        "appointed_on": null,
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T16:50:23Z",
+    "total_results": 3,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Mr Richard Anthony Soan",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent",
+          "voting-rights-50-to-75-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Richard Anthony Soan",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent",
+          "voting-rights-50-to-75-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mrs Anita Shelly Soan",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxMTQ3NDk3M2FkaXF6a2N4",
+    "date": "2026-03-19",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/LDyvZj6D2ybKqhdH1uCDPxXkRlwuKQbB1_PTzM9JA-8/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02310190/filing-history/MzUxMTQ3NDk3M2FkaXF6a2N4"
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 1.0
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

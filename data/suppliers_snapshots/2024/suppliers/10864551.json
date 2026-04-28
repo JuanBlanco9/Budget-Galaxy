@@ -1,0 +1,250 @@
+{
+  "schema_version": "v2",
+  "company_number": "10864551",
+  "display_name": "At Scale Limited",
+  "official_name": "AT SCALE LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "13/07/2017",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "70229"
+  ],
+  "sic_labels": [
+    "Management consultancy activities other than financial management"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "8 RANELAGH ROAD",
+    "address_line_2": "",
+    "post_town": "REDHILL",
+    "county": "",
+    "country": "UNITED KINGDOM",
+    "postal_code": "RH1 6BJ"
+  },
+  "accounts": {
+    "category": "MICRO ENTITY",
+    "last_made_up": "31/03/2025",
+    "next_due": "31/12/2026",
+    "ref_day": "31",
+    "ref_month": "3"
+  },
+  "mortgages": {
+    "num_charges": 0,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 40000000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.237892,
+    "lng": -0.179461,
+    "lad24_cd": "E07000211",
+    "lad24_nm": "Reigate and Banstead",
+    "region": "South East"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/10864551"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T17:27:56Z",
+    "company_name": "AT SCALE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2017-07-13",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": true,
+    "confirmation_statement_next_due": "2026-04-20"
+  },
+  "governance": {
+    "api_date": "2026-04-22T17:27:58Z",
+    "total_officers": 8,
+    "active_count": 3,
+    "resigned_count": 5,
+    "active_officers": [
+      {
+        "name": "BENTON, Alice Elizabeth",
+        "role": "director",
+        "appointed_on": "2019-05-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "EDWARDS, Rachel Mary",
+        "role": "director",
+        "appointed_on": "2017-07-13",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "GILL, Stephen Michael",
+        "role": "director",
+        "appointed_on": "2017-07-13",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T17:28:00Z",
+    "total_results": 8,
+    "active_count": 3,
+    "items": [
+      {
+        "name": "Mrs Alice Elizabeth Benton",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2025-02-20",
+        "identification": null
+      },
+      {
+        "name": "Ms Rachel Mary Edwards",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2025-02-20",
+        "identification": null
+      },
+      {
+        "name": "Mr Stephen Michael Gill",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2025-02-20",
+        "identification": null
+      },
+      {
+        "name": "Mr Kenneth Murdo Macneill",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "Scotland",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2019-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Stephen Michael Gill",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2019-04-06",
+        "identification": null
+      },
+      {
+        "name": "Ms Rachel Mary Edwards",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2019-04-06",
+        "identification": null
+      },
+      {
+        "name": "Pencraig Associates Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2018-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "Uk",
+          "place_registered": "Scotland",
+          "registration_number": "Sc324840"
+        }
+      },
+      {
+        "name": "Dundas Advisory Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2018-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "Uk",
+          "place_registered": "Scotland",
+          "registration_number": "Sc381497"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MzE2MTIxOGFkaXF6a2N4",
+    "date": "2025-12-09",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-micro-entity",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/n-FNdAnRRs5hLFpEyeDjk7ZdqLjrjJjq7Bkhw6p303k/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/10864551/filing-history/MzQ5MzE2MTIxOGFkaXF6a2N4"
+  },
+  "top_buyer_type": "nhs",
+  "buyer_type_breakdown": {
+    "nhs": 1.0
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

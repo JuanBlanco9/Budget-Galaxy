@@ -1,0 +1,155 @@
+{
+  "schema_version": "v2",
+  "company_number": "02561328",
+  "display_name": "Skinner Construction Limited",
+  "official_name": "SKINNER CONSTRUCTION LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "22/11/1990",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "41100"
+  ],
+  "sic_labels": [
+    "Development of building projects"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "STATION YARD,",
+    "address_line_2": "STATION ROAD,",
+    "post_town": "SIDMOUTH,",
+    "county": "DEVON.",
+    "country": "",
+    "postal_code": "EX10 8NN"
+  },
+  "accounts": {
+    "category": "TOTAL EXEMPTION FULL",
+    "last_made_up": "30/09/2024",
+    "next_due": "30/06/2026",
+    "ref_day": "30",
+    "ref_month": "9"
+  },
+  "mortgages": {
+    "num_charges": 10,
+    "num_outstanding": 2,
+    "num_part_satisfied": 0,
+    "num_satisfied": 8
+  },
+  "spend_profile": {
+    "total_gbp_2024": 220898.84,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 50.691101,
+    "lng": -3.245878,
+    "lad24_cd": "E07000040",
+    "lad24_nm": "East Devon",
+    "region": "South West"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/02561328"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "nhs",
+  "buyer_type_breakdown": {
+    "nhs": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T03:25:23Z",
+    "company_name": "SKINNER CONSTRUCTION LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1990-11-22",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-06-30",
+    "accounts_last_made_up": "2024-09-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-06"
+  },
+  "governance": {
+    "api_date": "2026-04-28T03:25:25Z",
+    "total_officers": 12,
+    "active_count": 2,
+    "resigned_count": 10,
+    "active_officers": [
+      {
+        "name": "SOPER, Lloyd Michael",
+        "role": "director",
+        "appointed_on": "2021-12-14",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "TOZE, Shaun Richard",
+        "role": "director",
+        "appointed_on": "2021-12-14",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T03:25:26Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Scmc Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2021-12-14",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006"
+        }
+      },
+      {
+        "name": "Mr Phillip Edward Tucker",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "English",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2018-05-01",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MTgxMjMyOWFkaXF6a2N4",
+    "date": "2025-06-27",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/d7EO0171udrnNPrA7w1YwxsiB-1bQyjY6TnaNaJE8SQ/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02561328/filing-history/MzQ3MTgxMjMyOWFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

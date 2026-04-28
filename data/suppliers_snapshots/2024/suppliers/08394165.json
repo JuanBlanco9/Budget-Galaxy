@@ -1,0 +1,198 @@
+{
+  "schema_version": "v2",
+  "company_number": "08394165",
+  "display_name": "Everlast (Group) Limited",
+  "official_name": "EVERLAST (GROUP) LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "07/02/2013",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "64203"
+  ],
+  "sic_labels": [
+    "Activities of construction holding companies"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "THE LOCK 8 GEORGE MANN ROAD",
+    "address_line_2": "HUNSLET",
+    "post_town": "LEEDS",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "LS10 1DJ"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/05/2025",
+    "next_due": "28/02/2027",
+    "ref_day": "31",
+    "ref_month": "5"
+  },
+  "mortgages": {
+    "num_charges": 6,
+    "num_outstanding": 4,
+    "num_part_satisfied": 0,
+    "num_satisfied": 2
+  },
+  "spend_profile": {
+    "total_gbp_2024": 1168139.64,
+    "n_contracts": 2,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 53.776559,
+    "lng": -1.515595,
+    "lad24_cd": "E08000035",
+    "lad24_nm": "Leeds",
+    "region": "Yorkshire and The Humber"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/08394165"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "nhs",
+  "buyer_type_breakdown": {
+    "nhs": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T21:16:58Z",
+    "company_name": "EVERLAST (GROUP) LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2013-02-07",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-02-28",
+    "accounts_last_made_up": "2025-05-31",
+    "confirmation_statement_overdue": true,
+    "confirmation_statement_next_due": "2026-04-21"
+  },
+  "governance": {
+    "api_date": "2026-04-27T21:17:00Z",
+    "total_officers": 13,
+    "active_count": 6,
+    "resigned_count": 7,
+    "active_officers": [
+      {
+        "name": "BOTT, Christopher Hagevold",
+        "role": "director",
+        "appointed_on": "2021-03-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BUTTREE, Mark Andrew",
+        "role": "director",
+        "appointed_on": "2021-03-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CROSS, Jason Lee",
+        "role": "director",
+        "appointed_on": "2013-02-07",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "DEIGHTON, Scott Sheridan",
+        "role": "director",
+        "appointed_on": "2025-07-16",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HILL, Joshua",
+        "role": "director",
+        "appointed_on": "2025-07-16",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HUNTER, Michael Douglas",
+        "role": "director",
+        "appointed_on": "2013-02-07",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T21:17:02Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Everlast (Group) Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2021-03-02",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Companies House Of England And Wales",
+          "registration_number": "13208919"
+        }
+      },
+      {
+        "name": "Mr Michael Douglas Hunter",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Jason Lee Cross",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwNzE2Njk4MmFkaXF6a2N4",
+    "date": "2026-02-25",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/PHv5PmJtx6ETdecoCqUydZo0_L7FQiaBRZ8maw4gu0A/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/08394165/filing-history/MzUwNzE2Njk4MmFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

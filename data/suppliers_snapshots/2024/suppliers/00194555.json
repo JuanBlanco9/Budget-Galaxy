@@ -1,0 +1,174 @@
+{
+  "schema_version": "v2",
+  "company_number": "00194555",
+  "display_name": "Daler-Rowney Limited",
+  "official_name": "DALER-ROWNEY LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "19/12/1923",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "32990"
+  ],
+  "sic_labels": [
+    "Other manufacturing n.e.c."
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "DALER ROWNEY HOUSE",
+    "address_line_2": "SOUTHERN INDUSTRIAL AREA",
+    "post_town": "BRACKNELL",
+    "county": "BERKSHIRE",
+    "country": "",
+    "postal_code": "RG12 8SS"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 21,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 21
+  },
+  "spend_profile": {
+    "total_gbp_2024": 14000000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.409416,
+    "lng": -0.774936,
+    "lad24_cd": "E06000036",
+    "lad24_nm": "Bracknell Forest",
+    "region": "South East"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/00194555"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 0.5562,
+    "other": 0.4438
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T14:05:57Z",
+    "company_name": "DALER-ROWNEY LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1923-12-19",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-02"
+  },
+  "governance": {
+    "api_date": "2026-04-27T14:05:59Z",
+    "total_officers": 23,
+    "active_count": 4,
+    "resigned_count": 19,
+    "active_officers": [
+      {
+        "name": "NICOLETTI, Cristian",
+        "role": "secretary",
+        "appointed_on": "2023-03-06",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "CANDELA, Massimo",
+        "role": "director",
+        "appointed_on": "2017-02-15",
+        "country_of_residence": "Italy",
+        "nationality": "Italian"
+      },
+      {
+        "name": "NICOLETTI, Cristian",
+        "role": "director",
+        "appointed_on": "2023-03-06",
+        "country_of_residence": "Italy",
+        "nationality": "Italian"
+      },
+      {
+        "name": "PARADIS, Dominique Willy Michel Ghislain",
+        "role": "director",
+        "appointed_on": "2012-06-28",
+        "country_of_residence": "England",
+        "nationality": "Belgian"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T14:06:01Z",
+    "total_results": 2,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Renoir Bidco Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-10-05",
+        "identification": {
+          "legal_form": "Private Limited Liability Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "England And Wales",
+          "registration_number": "07569777"
+        }
+      },
+      {
+        "name": "F.I.L.A. - Fabbrica Italiana Lapis Ed Affini Spa",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "S.P.A. Listed Company",
+          "legal_authority": "Italian"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MTcwODMzNmFkaXF6a2N4",
+    "date": "2025-09-18",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/5L1khA476jdNwDSH5ir4TVTBLlqF4bmofWUpAK983O8/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/00194555/filing-history/MzQ4MTcwODMzNmFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

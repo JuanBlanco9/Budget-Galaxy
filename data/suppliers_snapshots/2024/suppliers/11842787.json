@@ -1,0 +1,149 @@
+{
+  "schema_version": "v2",
+  "company_number": "11842787",
+  "display_name": "Fedcap Employment Limited",
+  "official_name": "FEDCAP EMPLOYMENT LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "22/02/2019",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "85590",
+    "88990"
+  ],
+  "sic_labels": [
+    "Other education n.e.c.",
+    "Other social work activities without accommodation n.e.c."
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "BOAZ HOUSE MASSEY ROAD",
+    "address_line_2": "THORNABY",
+    "post_town": "STOCKTON-ON-TEES",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "TS17 6DY"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "30/09/2024",
+    "next_due": "30/06/2026",
+    "ref_day": "30",
+    "ref_month": "9"
+  },
+  "mortgages": {
+    "num_charges": 1,
+    "num_outstanding": 1,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 5159180228.0,
+    "n_contracts": 2,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 54.56335,
+    "lng": -1.304078,
+    "lad24_cd": "E06000004",
+    "lad24_nm": "Stockton-on-Tees",
+    "region": "North East"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/11842787"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T01:44:22Z",
+    "company_name": "FEDCAP EMPLOYMENT LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2019-02-22",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-06-30",
+    "accounts_last_made_up": "2024-09-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-15"
+  },
+  "governance": {
+    "api_date": "2026-04-22T01:44:24Z",
+    "total_officers": 2,
+    "active_count": 2,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "BREZENOFF, Kenneth Samuel",
+        "role": "director",
+        "appointed_on": "2020-06-18",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      },
+      {
+        "name": "COLLINS, Grant",
+        "role": "director",
+        "appointed_on": "2019-02-22",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T01:44:26Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Fedcap Uk",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2019-02-22",
+        "identification": {
+          "legal_form": "Corporate",
+          "legal_authority": "United Kingdom",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "10466370"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MDM5NDE0MGFkaXF6a2N4",
+    "date": "2025-06-17",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/p0t4cWmVj0DD8advI0dUj7rypekqZpBR_lPWE5ujTy4/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/11842787/filing-history/MzQ3MDM5NDE0MGFkaXF6a2N4"
+  },
+  "top_buyer_type": "central_govt",
+  "buyer_type_breakdown": {
+    "central_govt": 1.0,
+    "council": 0.0
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

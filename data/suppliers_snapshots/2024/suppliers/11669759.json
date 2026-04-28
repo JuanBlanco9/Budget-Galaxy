@@ -1,0 +1,140 @@
+{
+  "schema_version": "v2",
+  "company_number": "11669759",
+  "display_name": "Purple Beard Ltd",
+  "official_name": "PURPLE BEARD LTD",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "09/11/2018",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "58290",
+    "85320",
+    "85590",
+    "85600"
+  ],
+  "sic_labels": [
+    "Other software publishing",
+    "Technical and vocational secondary education",
+    "Other education n.e.c.",
+    "Educational support services"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "NO 6 TV HOUSE",
+    "address_line_2": "269 FIELD END ROAD",
+    "post_town": "EASTCOTE",
+    "county": "MIDDLESEX",
+    "country": "UNITED KINGDOM",
+    "postal_code": "HA4 9LS"
+  },
+  "accounts": {
+    "category": "TOTAL EXEMPTION FULL",
+    "last_made_up": "31/03/2025",
+    "next_due": "31/12/2026",
+    "ref_day": "31",
+    "ref_month": "3"
+  },
+  "mortgages": {
+    "num_charges": 0,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 240000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.575259,
+    "lng": -0.39617,
+    "lad24_cd": "E09000017",
+    "lad24_nm": "Hillingdon",
+    "region": "London"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/11669759"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "central_govt",
+  "buyer_type_breakdown": {
+    "central_govt": 0.7599,
+    "other": 0.19,
+    "council": 0.0501
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T03:11:49Z",
+    "company_name": "PURPLE BEARD LTD",
+    "company_status": "active",
+    "date_of_creation": "2018-11-09",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-21"
+  },
+  "governance": {
+    "api_date": "2026-04-28T03:11:50Z",
+    "total_officers": 1,
+    "active_count": 1,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "KHAGRAM, Dipel Manarchandra",
+        "role": "director",
+        "appointed_on": "2018-11-09",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T03:11:51Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Dipel Manarchandra Khagram",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2018-11-09",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4NDM2MjU1MmFkaXF6a2N4",
+    "date": "2025-10-09",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/OnugWiurZQ2BEAiJ_fq59rMzfTa8SPTqqCt8v98-9WQ/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/11669759/filing-history/MzQ4NDM2MjU1MmFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

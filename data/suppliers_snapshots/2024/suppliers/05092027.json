@@ -1,0 +1,196 @@
+{
+  "schema_version": "v2",
+  "company_number": "05092027",
+  "display_name": "Bic Innovation Ltd",
+  "official_name": "BIC INNOVATION LTD",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "02/04/2004",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "70229"
+  ],
+  "sic_labels": [
+    "Management consultancy activities other than financial management"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "156 PARC GWYDDONIAETH MENAI",
+    "address_line_2": "",
+    "post_town": "GAERWEN",
+    "county": "YNYS MON",
+    "country": "UNITED KINGDOM",
+    "postal_code": "LL60 6AG"
+  },
+  "accounts": {
+    "category": "TOTAL EXEMPTION FULL",
+    "last_made_up": "30/09/2024",
+    "next_due": "30/06/2026",
+    "ref_day": "30",
+    "ref_month": "9"
+  },
+  "mortgages": {
+    "num_charges": 4,
+    "num_outstanding": 1,
+    "num_part_satisfied": 0,
+    "num_satisfied": 3
+  },
+  "spend_profile": {
+    "total_gbp_2024": 250000.0,
+    "n_contracts": 2,
+    "n_buyers": 2
+  },
+  "geo": {
+    "lat": 53.224655,
+    "lng": -4.263375,
+    "lad24_cd": "W06000001",
+    "lad24_nm": "Isle of Anglesey",
+    "region": null
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/05092027"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T03:04:07Z",
+    "company_name": "BIC INNOVATION LTD",
+    "company_status": "active",
+    "date_of_creation": "2004-04-02",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-06-30",
+    "accounts_last_made_up": "2024-09-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-14"
+  },
+  "governance": {
+    "api_date": "2026-04-28T03:04:08Z",
+    "total_officers": 19,
+    "active_count": 4,
+    "resigned_count": 15,
+    "active_officers": [
+      {
+        "name": "ANDERSON, Gail Lindsey",
+        "role": "director",
+        "appointed_on": "2025-09-30",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "GRANT, Linda Ellen June",
+        "role": "director",
+        "appointed_on": "2018-06-29",
+        "country_of_residence": "Wales",
+        "nationality": "British"
+      },
+      {
+        "name": "MAGOWAN, Stephen",
+        "role": "director",
+        "appointed_on": "2025-09-30",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "THOMAS, Alun",
+        "role": "director",
+        "appointed_on": "2023-10-01",
+        "country_of_residence": "Wales",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T03:04:09Z",
+    "total_results": 4,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Bic Innovation Trustee Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2025-09-30",
+        "identification": {
+          "legal_form": "Private Company Limited By Guarantee",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "16732989"
+        }
+      },
+      {
+        "name": "Mr Huw Geraint Watkins",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Welsh",
+        "country_of_residence": "Wales",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2022-02-25",
+        "identification": null
+      },
+      {
+        "name": "Mr Alun Watkin Lewis",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "Wales",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2017-01-01",
+        "identification": null
+      },
+      {
+        "name": "Mr Huw Geraint Watkins",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Welsh",
+        "country_of_residence": "Wales",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2017-01-01",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2NTc4NjA3MmFkaXF6a2N4",
+    "date": "2025-05-12",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/d9S-DGKo-fbSwWs0V2cwRaGBTui31WLWj9LUgL07Ue8/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/05092027/filing-history/MzQ2NTc4NjA3MmFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

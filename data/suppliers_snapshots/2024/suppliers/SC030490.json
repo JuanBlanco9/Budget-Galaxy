@@ -1,0 +1,173 @@
+{
+  "schema_version": "v2",
+  "company_number": "SC030490",
+  "display_name": "Dp&L Group Limited",
+  "official_name": "DP&L GROUP LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "31/12/1954",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "70100"
+  ],
+  "sic_labels": [
+    "Activities of head offices"
+  ],
+  "previous_names": [
+    {
+      "name": "THE DUNDEE PERTH AND LONDON SHIPPING COMPANY LIMITED",
+      "condate": "21/05/2008"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "FIRST FLOOR 2B VALENTINE COURT",
+    "address_line_2": "KINNOULL ROAD",
+    "post_town": "DUNDEE",
+    "county": "",
+    "country": "",
+    "postal_code": "DD2 3QB"
+  },
+  "accounts": {
+    "category": "MICRO ENTITY",
+    "last_made_up": "30/09/2024",
+    "next_due": "30/06/2026",
+    "ref_day": "30",
+    "ref_month": "9"
+  },
+  "mortgages": {
+    "num_charges": 50,
+    "num_outstanding": 3,
+    "num_part_satisfied": 0,
+    "num_satisfied": 47
+  },
+  "spend_profile": {
+    "total_gbp_2024": 30000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 56.481127,
+    "lng": -3.011894,
+    "lad24_cd": "S12000042",
+    "lad24_nm": "Dundee City",
+    "region": null
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/SC030490"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "central_govt",
+  "buyer_type_breakdown": {
+    "central_govt": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T11:36:25Z",
+    "company_name": "DP&L GROUP LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1954-12-31",
+    "date_of_cessation": null,
+    "jurisdiction": "scotland",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-06-30",
+    "accounts_last_made_up": "2024-09-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-17"
+  },
+  "governance": {
+    "api_date": "2026-04-28T11:36:26Z",
+    "total_officers": 21,
+    "active_count": 2,
+    "resigned_count": 19,
+    "active_officers": [
+      {
+        "name": "BISSET, Alexander Melville",
+        "role": "director",
+        "appointed_on": "2014-07-18",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      },
+      {
+        "name": "ROBERTSON, Shona",
+        "role": "director",
+        "appointed_on": "2014-07-18",
+        "country_of_residence": "Scotland",
+        "nationality": "Scottish"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T11:36:27Z",
+    "total_results": 3,
+    "active_count": 3,
+    "items": [
+      {
+        "name": "Cortachy Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "Scotland",
+          "place_registered": "Edinburgh",
+          "registration_number": "Sc141764"
+        }
+      },
+      {
+        "name": "Shona Robertson",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "Scotland",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Alexander Melville Bisset",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "Scotland",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2MjY4ODI4NGFkaXF6a2N4",
+    "date": "2025-04-15",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-micro-entity",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/Xum6plre6eGYqYYPz18BAmNJrH5ajJ8T6PBiG1f_R_Y/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/SC030490/filing-history/MzQ2MjY4ODI4NGFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

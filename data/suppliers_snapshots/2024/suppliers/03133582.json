@@ -1,0 +1,200 @@
+{
+  "schema_version": "v2",
+  "company_number": "03133582",
+  "display_name": "Simply Lunch Ltd",
+  "official_name": "SIMPLY LUNCH LTD",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "04/12/1995",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "10890"
+  ],
+  "sic_labels": [
+    "Manufacture of other food products n.e.c."
+  ],
+  "previous_names": [
+    {
+      "name": "FAT BOYS LIMITED",
+      "condate": "18/06/2021"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "UNIT 2 ZK PARK",
+    "address_line_2": "23 COMMERCE WAY",
+    "post_town": "CROYDON",
+    "county": "SURREY",
+    "country": "",
+    "postal_code": "CR0 4ZS"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "30/06/2025",
+    "next_due": "31/03/2027",
+    "ref_day": "30",
+    "ref_month": "6"
+  },
+  "mortgages": {
+    "num_charges": 5,
+    "num_outstanding": 3,
+    "num_part_satisfied": 0,
+    "num_satisfied": 2
+  },
+  "spend_profile": {
+    "total_gbp_2024": 30090918.0,
+    "n_contracts": 2,
+    "n_buyers": 2
+  },
+  "geo": {
+    "lat": 51.372689,
+    "lng": -0.122726,
+    "lad24_cd": "E09000008",
+    "lad24_nm": "Croydon",
+    "region": "London"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/03133582"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T17:49:31Z",
+    "company_name": "SIMPLY LUNCH LTD",
+    "company_status": "active",
+    "date_of_creation": "1995-12-04",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-03-31",
+    "accounts_last_made_up": "2025-06-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-18"
+  },
+  "governance": {
+    "api_date": "2026-04-22T17:49:33Z",
+    "total_officers": 9,
+    "active_count": 6,
+    "resigned_count": 3,
+    "active_officers": [
+      {
+        "name": "PAGE, Terry Paul",
+        "role": "secretary",
+        "appointed_on": "1996-01-22",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "PAGE, Jack Keith",
+        "role": "director",
+        "appointed_on": "2015-06-08",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PAGE, Julie Ann",
+        "role": "director",
+        "appointed_on": "1998-12-10",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PAGE, Sam Terry",
+        "role": "director",
+        "appointed_on": "2015-06-08",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PAGE, Terry Paul",
+        "role": "director",
+        "appointed_on": "2009-06-10",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PAGE, William",
+        "role": "director",
+        "appointed_on": "2015-05-06",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T17:49:34Z",
+    "total_results": 3,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Sam Terry Page",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2025-05-20",
+        "identification": null
+      },
+      {
+        "name": "Jack Keith Page",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2025-05-20",
+        "identification": null
+      },
+      {
+        "name": "Mr Terry Paul Page",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NDU1ODE1OGFkaXF6a2N4",
+    "date": "2025-12-16",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/7KRftvQ2Hdm0Z-tx6PktX07hXJ7pygtwI2h5uXwl7NE/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03133582/filing-history/MzQ5NDU1ODE1OGFkaXF6a2N4"
+  },
+  "top_buyer_type": "nhs",
+  "buyer_type_breakdown": {
+    "nhs": 0.8199,
+    "other": 0.1757,
+    "education": 0.0037,
+    "council": 0.0007
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

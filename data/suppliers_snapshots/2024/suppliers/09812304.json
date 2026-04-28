@@ -1,0 +1,216 @@
+{
+  "schema_version": "v2",
+  "company_number": "09812304",
+  "display_name": "Chigwell (London) Plc",
+  "official_name": "CHIGWELL (LONDON) PLC",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Public Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "06/10/2015",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "70100"
+  ],
+  "sic_labels": [
+    "Activities of head offices"
+  ],
+  "previous_names": [
+    {
+      "name": "TANNERS LANE DEVELOPMENTS LTD",
+      "condate": "28/01/2020"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "AARON HOUSE ,UNIT 8 HAINAULT BUSINESS PARK",
+    "address_line_2": "FOREST ROAD,HAINAULT",
+    "post_town": "ILFORD",
+    "county": "ESSEX",
+    "country": "ENGLAND",
+    "postal_code": "IG6 3JP"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/01/2025",
+    "next_due": "31/07/2026",
+    "ref_day": "31",
+    "ref_month": "1"
+  },
+  "mortgages": {
+    "num_charges": 8,
+    "num_outstanding": 2,
+    "num_part_satisfied": 0,
+    "num_satisfied": 6
+  },
+  "spend_profile": {
+    "total_gbp_2024": 700000.0,
+    "n_contracts": 2,
+    "n_buyers": 2
+  },
+  "geo": {
+    "lat": 51.606112,
+    "lng": 0.122635,
+    "lad24_cd": "E09000026",
+    "lad24_nm": "Redbridge",
+    "region": "London"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/09812304"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "other",
+  "buyer_type_breakdown": {
+    "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T22:57:25Z",
+    "company_name": "CHIGWELL (LONDON) PLC",
+    "company_status": "active",
+    "date_of_creation": "2015-10-06",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-07-31",
+    "accounts_last_made_up": "2025-01-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-06"
+  },
+  "governance": {
+    "api_date": "2026-04-27T22:57:27Z",
+    "total_officers": 13,
+    "active_count": 6,
+    "resigned_count": 7,
+    "active_officers": [
+      {
+        "name": "CARMICHAEL, James Scott",
+        "role": "secretary",
+        "appointed_on": "2024-06-24",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "ATTLAS, Pushwinder Singh",
+        "role": "director",
+        "appointed_on": "2022-12-02",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "FLOYD, Dean Anthony",
+        "role": "director",
+        "appointed_on": "2015-10-06",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "FLOYD, Melissa",
+        "role": "director",
+        "appointed_on": "2022-12-02",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "KING, Anthony John",
+        "role": "director",
+        "appointed_on": "2024-09-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "English"
+      },
+      {
+        "name": "WILLCOCK, Angela Sunita",
+        "role": "director",
+        "appointed_on": "2024-09-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T22:57:29Z",
+    "total_results": 4,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Chigwell Group Plc",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2023-12-22",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England And Wales",
+          "place_registered": "England And Wales",
+          "registration_number": "15286091"
+        }
+      },
+      {
+        "name": "Mr Dean Anthony Floyd",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Dean Anthony Floyd",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Mark Lee Floyd",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NTY4MzI4NmFkaXF6a2N4",
+    "date": "2025-07-30",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/PDrB20gmobUsY0Hsml_3Twejq9qYHbuBQslax6yDxxY/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/09812304/filing-history/MzQ3NTY4MzI4NmFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

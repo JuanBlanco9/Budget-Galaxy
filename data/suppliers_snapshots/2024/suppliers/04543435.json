@@ -1,0 +1,205 @@
+{
+  "schema_version": "v2",
+  "company_number": "04543435",
+  "display_name": "Mg Scaffolding (Oxford) Limited",
+  "official_name": "MG SCAFFOLDING (OXFORD) LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "24/09/2002",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "41100"
+  ],
+  "sic_labels": [
+    "Development of building projects"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "SPRING LODGE 172 CHESTER ROAD",
+    "address_line_2": "HELSBY",
+    "post_town": "CHESHIRE",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "WA6 0AR"
+  },
+  "accounts": {
+    "category": "SMALL",
+    "last_made_up": "06/04/2025",
+    "next_due": "31/12/2026",
+    "ref_day": "31",
+    "ref_month": "3"
+  },
+  "mortgages": {
+    "num_charges": 3,
+    "num_outstanding": 2,
+    "num_part_satisfied": 0,
+    "num_satisfied": 1
+  },
+  "spend_profile": {
+    "total_gbp_2024": 116609.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 53.274344,
+    "lng": -2.768206,
+    "lad24_cd": "E06000050",
+    "lad24_nm": "Cheshire West and Chester",
+    "region": "North West"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/04543435"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "other",
+  "buyer_type_breakdown": {
+    "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T05:46:31Z",
+    "company_name": "MG SCAFFOLDING (OXFORD) LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2002-09-24",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-04-06",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-11"
+  },
+  "governance": {
+    "api_date": "2026-04-28T05:46:32Z",
+    "total_officers": 13,
+    "active_count": 7,
+    "resigned_count": 6,
+    "active_officers": [
+      {
+        "name": "EVANS, Sally",
+        "role": "secretary",
+        "appointed_on": "2022-07-01",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "HERLIHY, Francis",
+        "role": "director",
+        "appointed_on": "2025-04-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HODGES, Elliott Samuel",
+        "role": "director",
+        "appointed_on": "2024-11-04",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "PRITCHARD, Martin Michael",
+        "role": "director",
+        "appointed_on": "2020-12-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "RYDER, Alasdair Alan",
+        "role": "director",
+        "appointed_on": "2022-07-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "STRUDWICK, Ian Harry",
+        "role": "director",
+        "appointed_on": "2022-07-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "THOMAS, Daniel",
+        "role": "director",
+        "appointed_on": "2022-07-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T05:46:33Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Rsk Environment Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2022-07-01",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "Scotland",
+          "place_registered": "Company House Register",
+          "registration_number": "Sc115530"
+        }
+      },
+      {
+        "name": "Mr Carl Desmond Fallon",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "English",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Stephen John King",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "English",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MjgzMjEzOWFkaXF6a2N4",
+    "date": "2025-09-26",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/_SvD8dSDHLHdPGS4MVp1RltCgveL2hTBpEdzIG_a9Uo/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04543435/filing-history/MzQ4MjgzMjEzOWFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

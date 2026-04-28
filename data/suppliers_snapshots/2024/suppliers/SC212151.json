@@ -1,0 +1,196 @@
+{
+  "schema_version": "v2",
+  "company_number": "SC212151",
+  "display_name": "Vigilant Protect Uk Limited",
+  "official_name": "VIGILANT PROTECT UK LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "19/10/2000",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "80100"
+  ],
+  "sic_labels": [
+    "Private security activities"
+  ],
+  "previous_names": [
+    {
+      "name": "VIGILANT SECURITY (SCOTLAND) LIMITED",
+      "condate": "20/12/2023"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "1ST FLOOR LEFT",
+    "address_line_2": "161 BROOMS ROAD",
+    "post_town": "DUMFRIES",
+    "county": "",
+    "country": "SCOTLAND",
+    "postal_code": "DG1 2SH"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "30/06/2025",
+    "next_due": "31/03/2027",
+    "ref_day": "30",
+    "ref_month": "6"
+  },
+  "mortgages": {
+    "num_charges": 14,
+    "num_outstanding": 6,
+    "num_part_satisfied": 0,
+    "num_satisfied": 8
+  },
+  "spend_profile": {
+    "total_gbp_2024": 1999999.96,
+    "n_contracts": 7,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 55.069253,
+    "lng": -3.596713,
+    "lad24_cd": "S12000006",
+    "lad24_nm": "Dumfries and Galloway",
+    "region": null
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/SC212151"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "other",
+  "buyer_type_breakdown": {
+    "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T19:55:27Z",
+    "company_name": "VIGILANT PROTECT UK LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2000-10-19",
+    "date_of_cessation": null,
+    "jurisdiction": "scotland",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-03-31",
+    "accounts_last_made_up": "2025-06-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-10"
+  },
+  "governance": {
+    "api_date": "2026-04-27T19:55:29Z",
+    "total_officers": 15,
+    "active_count": 3,
+    "resigned_count": 12,
+    "active_officers": [
+      {
+        "name": "KAUR, Natindarjit",
+        "role": "director",
+        "appointed_on": "2023-06-30",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "MORLEY, Sebastian Jake Finch",
+        "role": "director",
+        "appointed_on": "2001-11-20",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      },
+      {
+        "name": "WILLIAMSON, Paul",
+        "role": "director",
+        "appointed_on": "2000-10-19",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T19:55:30Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "M&W Security Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2023-06-30",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "Scotland",
+          "place_registered": "Registrar Of Companies For Scotland",
+          "registration_number": "Sc753198"
+        }
+      },
+      {
+        "name": "Croma Security Solutions Group Plc",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2016-05-01",
+        "identification": {
+          "legal_form": "Public Limited Company",
+          "legal_authority": "Companies Act",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "03184978"
+        }
+      },
+      {
+        "name": "Croma Security Solutions Group Plc",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Plc",
+          "legal_authority": "Companies Act",
+          "country_registered": "England",
+          "place_registered": "England And Wales",
+          "registration_number": "03184978"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5Mzc5Nzk1MmFkaXF6a2N4",
+    "date": "2025-12-12",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/kvJMFPOKxXUrRu_Wyq03p4-iHiWHMv0bGoIsIDaoKIs/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/SC212151/filing-history/MzQ5Mzc5Nzk1MmFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

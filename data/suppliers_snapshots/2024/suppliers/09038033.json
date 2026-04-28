@@ -1,0 +1,155 @@
+{
+  "schema_version": "v2",
+  "company_number": "09038033",
+  "display_name": "Wj Roadmarkings Limited",
+  "official_name": "WJ ROADMARKINGS LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "13/05/2014",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "99999"
+  ],
+  "sic_labels": [
+    "Dormant Company"
+  ],
+  "previous_names": [
+    {
+      "name": "WJ NORTH LIMITED",
+      "condate": "02/02/2015"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "UNIT 7",
+    "address_line_2": "BROCK WAY",
+    "post_town": "NEWCASTLE",
+    "county": "STAFFORDSHIRE",
+    "country": "UNITED KINGDOM",
+    "postal_code": "ST5 6AZ"
+  },
+  "accounts": {
+    "category": "DORMANT",
+    "last_made_up": "31/05/2025",
+    "next_due": "28/02/2027",
+    "ref_day": "31",
+    "ref_month": "5"
+  },
+  "mortgages": {
+    "num_charges": 0,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 57100000.0,
+    "n_contracts": 4,
+    "n_buyers": 3
+  },
+  "geo": {
+    "lat": 53.0173,
+    "lng": -2.254172,
+    "lad24_cd": "E07000195",
+    "lad24_nm": "Newcastle-under-Lyme",
+    "region": "West Midlands"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/09038033"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T16:53:51Z",
+    "company_name": "WJ ROADMARKINGS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2014-05-13",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-02-28",
+    "accounts_last_made_up": "2025-05-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-05-27"
+  },
+  "governance": {
+    "api_date": "2026-04-22T16:53:52Z",
+    "total_officers": 1,
+    "active_count": 1,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "JOHNSTON, Wayne Douglas",
+        "role": "director",
+        "appointed_on": "2014-05-13",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T16:53:54Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Wayne Douglas Johnston",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Wj Linkline Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "Uk Registrar Of Companies",
+          "registration_number": "09034108"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwNjMwNzgyM2FkaXF6a2N4",
+    "date": "2026-02-20",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-dormant",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/I3CfG8SVA8crrhgDUVTyis9zbeH2JZ39aqBMQTvwi3Q/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/09038033/filing-history/MzUwNjMwNzgyM2FkaXF6a2N4"
+  },
+  "top_buyer_type": "other",
+  "buyer_type_breakdown": {},
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

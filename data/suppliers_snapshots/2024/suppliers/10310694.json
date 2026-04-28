@@ -1,0 +1,173 @@
+{
+  "schema_version": "v2",
+  "company_number": "10310694",
+  "display_name": "Unmind Ltd",
+  "official_name": "UNMIND LTD",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "03/08/2016",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "62012"
+  ],
+  "sic_labels": [
+    "Business and domestic software development"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "140 BOROUGH HIGH STREET",
+    "address_line_2": "",
+    "post_town": "LONDON",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "SE1 1LB"
+  },
+  "accounts": {
+    "category": "GROUP",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "30",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 8,
+    "num_outstanding": 3,
+    "num_part_satisfied": 0,
+    "num_satisfied": 5
+  },
+  "spend_profile": {
+    "total_gbp_2024": 33000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.50258,
+    "lng": -0.092566,
+    "lad24_cd": "E09000028",
+    "lad24_nm": "Southwark",
+    "region": "London"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/10310694"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T11:11:47Z",
+    "company_name": "UNMIND LTD",
+    "company_status": "active",
+    "date_of_creation": "2016-08-03",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-08-16"
+  },
+  "governance": {
+    "api_date": "2026-04-28T11:11:48Z",
+    "total_officers": 9,
+    "active_count": 5,
+    "resigned_count": 4,
+    "active_officers": [
+      {
+        "name": "NUSSENBAUM, Antoine Benjamin",
+        "role": "director",
+        "appointed_on": "2019-02-20",
+        "country_of_residence": "England",
+        "nationality": "French"
+      },
+      {
+        "name": "NUWAL, Rohit",
+        "role": "director",
+        "appointed_on": "2024-12-20",
+        "country_of_residence": "United States",
+        "nationality": "Indian"
+      },
+      {
+        "name": "SANDER, Thies",
+        "role": "director",
+        "appointed_on": "2020-01-15",
+        "country_of_residence": "Germany",
+        "nationality": "German"
+      },
+      {
+        "name": "TAYLOR, Nicholas Mccarthy, Dr",
+        "role": "director",
+        "appointed_on": "2016-08-03",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "WHITFIELD, Michael Alexander Gardiner",
+        "role": "director",
+        "appointed_on": "2018-09-05",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T11:11:49Z",
+    "total_results": 2,
+    "active_count": 0,
+    "items": [
+      {
+        "name": "Adrian Jacobs",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "South Africa",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2017-01-16",
+        "identification": null
+      },
+      {
+        "name": "Dr Nick Taylor",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2016-08-03",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MzkxNTAyN2FkaXF6a2N4",
+    "date": "2025-07-16",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/3pMohLZMXDUpaIXyngHgJANcxX3zThwaJfbrz30vX2c/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/10310694/filing-history/MzQ3MzkxNTAyN2FkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

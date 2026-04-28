@@ -1,0 +1,131 @@
+{
+  "schema_version": "v2",
+  "company_number": "05099079",
+  "display_name": "Epd Taxis Ltd",
+  "official_name": "EPD TAXIS LTD",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "08/04/2004",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "49320"
+  ],
+  "sic_labels": [
+    "Taxi operation"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "SEYMOUR CHAMBERS",
+    "address_line_2": "92 LONDON RD",
+    "post_town": "LIVERPOOL",
+    "county": "",
+    "country": "",
+    "postal_code": "L3 5NW"
+  },
+  "accounts": {
+    "category": "UNAUDITED ABRIDGED",
+    "last_made_up": "30/04/2025",
+    "next_due": "31/01/2027",
+    "ref_day": "30",
+    "ref_month": "4"
+  },
+  "mortgages": {
+    "num_charges": 0,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 20000000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 53.409042,
+    "lng": -2.9742,
+    "lad24_cd": "E08000012",
+    "lad24_nm": "Liverpool",
+    "region": "North West"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/05099079"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T13:35:27Z",
+    "company_name": "EPD TAXIS LTD",
+    "company_status": "active",
+    "date_of_creation": "2004-04-08",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-01-31",
+    "accounts_last_made_up": "2025-04-30",
+    "confirmation_statement_overdue": true,
+    "confirmation_statement_next_due": "2026-04-22"
+  },
+  "governance": {
+    "api_date": "2026-04-27T13:35:29Z",
+    "total_officers": 4,
+    "active_count": 1,
+    "resigned_count": 3,
+    "active_officers": [
+      {
+        "name": "DUNNE, Eamon",
+        "role": "director",
+        "appointed_on": "2004-05-11",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T13:35:31Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Eamon Dunne",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2017-01-01",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwMTMxOTUzNWFkaXF6a2N4",
+    "date": "2026-01-25",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-unaudited-abridged",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/AORJ6YWI3HIcxPI6m-0p1QVw8QVK6_N5aafT4yJlvcw/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/05099079/filing-history/MzUwMTMxOTUzNWFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

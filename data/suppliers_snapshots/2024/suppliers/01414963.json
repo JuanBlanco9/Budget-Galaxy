@@ -1,0 +1,151 @@
+{
+  "schema_version": "v2",
+  "company_number": "01414963",
+  "display_name": "Data Track Technology Limited",
+  "official_name": "DATA TRACK TECHNOLOGY LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "14/02/1979",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "62090",
+    "63110"
+  ],
+  "sic_labels": [
+    "Other information technology service activities",
+    "Data processing, hosting and related activities"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "HARLECH BUILDING",
+    "address_line_2": "THEATRE CLWYD COMPLEX",
+    "post_town": "MOLD",
+    "county": "FLINTSHIRE",
+    "country": "UNITED KINGDOM",
+    "postal_code": "CH7 1YA"
+  },
+  "accounts": {
+    "category": "SMALL",
+    "last_made_up": "31/03/2025",
+    "next_due": "31/12/2026",
+    "ref_day": "31",
+    "ref_month": "3"
+  },
+  "mortgages": {
+    "num_charges": 4,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 4
+  },
+  "spend_profile": {
+    "total_gbp_2024": 68050.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 53.179721,
+    "lng": -3.137391,
+    "lad24_cd": "W06000005",
+    "lad24_nm": "Flintshire",
+    "region": null
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/01414963"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "police_fire",
+  "buyer_type_breakdown": {
+    "police_fire": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T08:05:30Z",
+    "company_name": "DATA TRACK TECHNOLOGY LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1979-02-14",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-02"
+  },
+  "governance": {
+    "api_date": "2026-04-28T08:05:31Z",
+    "total_officers": 6,
+    "active_count": 1,
+    "resigned_count": 5,
+    "active_officers": [
+      {
+        "name": "SMITH, Philip Gordon",
+        "role": "director",
+        "appointed_on": "2016-01-11",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T08:05:32Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Qpc 2020 Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2020-09-30",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "12665741"
+        }
+      },
+      {
+        "name": "Mr Philip Gordon Smith",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "Wales",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NTcyNjAyNWFkaXF6a2N4",
+    "date": "2025-12-22",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/21sinnmPgpYZosrqj5ow03nKepXjvu63HT8bySlfyj8/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01414963/filing-history/MzQ5NTcyNjAyNWFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

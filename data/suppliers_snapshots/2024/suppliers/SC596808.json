@@ -1,0 +1,131 @@
+{
+  "schema_version": "v2",
+  "company_number": "SC596808",
+  "display_name": "Bident Ltd",
+  "official_name": "BIDENT LTD",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "10/05/2018",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "96090"
+  ],
+  "sic_labels": [
+    "Other service activities n.e.c."
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "3 MACDONALD AVENUE",
+    "address_line_2": "EAST KILBRIDE",
+    "post_town": "GLASGOW",
+    "county": "",
+    "country": "SCOTLAND",
+    "postal_code": "G74 4SN"
+  },
+  "accounts": {
+    "category": "MICRO ENTITY",
+    "last_made_up": "31/05/2025",
+    "next_due": "28/02/2027",
+    "ref_day": "31",
+    "ref_month": "5"
+  },
+  "mortgages": {
+    "num_charges": 0,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 119774.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 55.775408,
+    "lng": -4.21188,
+    "lad24_cd": "S12000029",
+    "lad24_nm": "South Lanarkshire",
+    "region": null
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/SC596808"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T05:42:20Z",
+    "company_name": "BIDENT LTD",
+    "company_status": "active",
+    "date_of_creation": "2018-05-10",
+    "date_of_cessation": null,
+    "jurisdiction": "scotland",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-02-28",
+    "accounts_last_made_up": "2025-05-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-15"
+  },
+  "governance": {
+    "api_date": "2026-04-28T05:42:21Z",
+    "total_officers": 1,
+    "active_count": 1,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "SHAW, Adele Charmaine",
+        "role": "director",
+        "appointed_on": "2018-05-10",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T05:42:22Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mrs Adele Charmaine Shaw",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2018-05-10",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4OTgwMTk5NGFkaXF6a2N4",
+    "date": "2025-11-19",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-micro-entity",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/40kcTd6Fe5Ms7L3zVQeEEikr2YGOfMk9wesU587nXZU/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/SC596808/filing-history/MzQ4OTgwMTk5NGFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

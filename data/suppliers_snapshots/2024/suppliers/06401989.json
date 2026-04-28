@@ -1,0 +1,188 @@
+{
+  "schema_version": "v2",
+  "company_number": "06401989",
+  "display_name": "Constellia Limited",
+  "official_name": "CONSTELLIA LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "17/10/2007",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "70229"
+  ],
+  "sic_labels": [
+    "Management consultancy activities other than financial management"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "OFFICE 102",
+    "address_line_2": "120 NEW CAVENDISH STREET",
+    "post_town": "LONDON",
+    "county": "",
+    "country": "UNITED KINGDOM",
+    "postal_code": "W1W 6XX"
+  },
+  "accounts": {
+    "category": "GROUP",
+    "last_made_up": "31/03/2025",
+    "next_due": "31/12/2026",
+    "ref_day": "31",
+    "ref_month": "3"
+  },
+  "mortgages": {
+    "num_charges": 0,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 2120139.44,
+    "n_contracts": 5,
+    "n_buyers": 4
+  },
+  "geo": {
+    "lat": 51.520103,
+    "lng": -0.141636,
+    "lad24_cd": "E09000033",
+    "lad24_nm": "Westminster",
+    "region": "London"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/06401989"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "other",
+  "buyer_type_breakdown": {
+    "other": 0.493,
+    "council": 0.3672,
+    "agency": 0.1398
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T19:44:15Z",
+    "company_name": "CONSTELLIA LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2007-10-17",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-09"
+  },
+  "governance": {
+    "api_date": "2026-04-27T19:44:16Z",
+    "total_officers": 7,
+    "active_count": 4,
+    "resigned_count": 3,
+    "active_officers": [
+      {
+        "name": "GOTTO, Alan",
+        "role": "director",
+        "appointed_on": "2007-10-17",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LEVENE, Robert Isador",
+        "role": "director",
+        "appointed_on": "2020-08-27",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PATEL, Shail",
+        "role": "director",
+        "appointed_on": "2026-02-12",
+        "country_of_residence": "England",
+        "nationality": "Kenyan"
+      },
+      {
+        "name": "TAYLOR, David Mclure",
+        "role": "director",
+        "appointed_on": "2026-02-12",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T19:44:18Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Constellia Trustees Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2025-11-12",
+        "identification": {
+          "legal_form": "Private Company Limited By Guarantee",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "16608223"
+        }
+      },
+      {
+        "name": "Mr Robert Isador Levene",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2020-10-10",
+        "identification": null
+      },
+      {
+        "name": "Mr Alan Gotto",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2016-10-17",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxMzI2NTkxNWFkaXF6a2N4",
+    "date": "2026-03-30",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/XsblFUQVx0AeCbdP6oYuVN3y6EE7kLHmb3Y0Gz0WP9Y/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/06401989/filing-history/MzUxMzI2NTkxNWFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

@@ -1,0 +1,151 @@
+{
+  "schema_version": "v2",
+  "company_number": "06923054",
+  "display_name": "County Private Client Limited",
+  "official_name": "COUNTY PRIVATE CLIENT LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "03/06/2009",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "98000"
+  ],
+  "sic_labels": [
+    "Residents property management"
+  ],
+  "previous_names": [
+    {
+      "name": "COUNTY LAND AND NEW HOMES LIMITED",
+      "condate": "28/08/2009"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "MORAN HOUSE SUITE 7 & 8 449-451 HIGH ROAD",
+    "address_line_2": "WILLESDEN",
+    "post_town": "LONDON",
+    "county": "",
+    "country": "",
+    "postal_code": "NW10 2JJ"
+  },
+  "accounts": {
+    "category": "TOTAL EXEMPTION FULL",
+    "last_made_up": "30/06/2025",
+    "next_due": "31/03/2027",
+    "ref_day": "30",
+    "ref_month": "6"
+  },
+  "mortgages": {
+    "num_charges": 0,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 3000000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.548687,
+    "lng": -0.243569,
+    "lad24_cd": "E09000005",
+    "lad24_nm": "Brent",
+    "region": "London"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/06923054"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T18:55:30Z",
+    "company_name": "COUNTY PRIVATE CLIENT LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2009-06-03",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-03-31",
+    "accounts_last_made_up": "2025-06-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-18"
+  },
+  "governance": {
+    "api_date": "2026-04-27T18:55:32Z",
+    "total_officers": 3,
+    "active_count": 2,
+    "resigned_count": 1,
+    "active_officers": [
+      {
+        "name": "KOTECHA, Amit",
+        "role": "secretary",
+        "appointed_on": "2009-06-03",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "KOTECHA, Viren",
+        "role": "director",
+        "appointed_on": "2012-03-31",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T18:55:34Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "South East Consortium Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2017-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act",
+          "country_registered": "United Kingdom",
+          "place_registered": "England & Wales",
+          "registration_number": "10066246"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxMzY1NTA3NGFkaXF6a2N4",
+    "date": "2026-03-31",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/YR6nh_XzxqXfr-9ftZQzDy5DfaViVrwwclftRXCm_vQ/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/06923054/filing-history/MzUxMzY1NTA3NGFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

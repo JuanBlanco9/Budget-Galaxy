@@ -1,0 +1,151 @@
+{
+  "schema_version": "v2",
+  "company_number": "03975073",
+  "display_name": "Dynata Global Uk Ltd",
+  "official_name": "DYNATA GLOBAL UK LTD",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "18/04/2000",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "73200"
+  ],
+  "sic_labels": [
+    "Market research and public opinion polling"
+  ],
+  "previous_names": [
+    {
+      "name": "RESEARCH NOW LIMITED",
+      "condate": "19/08/2019"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "DEVON HOUSE",
+    "address_line_2": "58 ST. KATHARINES WAY",
+    "post_town": "LONDON",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "E1W 1LP"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 12,
+    "num_outstanding": 4,
+    "num_part_satisfied": 0,
+    "num_satisfied": 8
+  },
+  "spend_profile": {
+    "total_gbp_2024": 600000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.506077,
+    "lng": -0.070517,
+    "lad24_cd": "E09000030",
+    "lad24_nm": "Tower Hamlets",
+    "region": "London"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/03975073"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "other",
+  "buyer_type_breakdown": {
+    "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T23:25:53Z",
+    "company_name": "DYNATA GLOBAL UK LTD",
+    "company_status": "active",
+    "date_of_creation": "2000-04-18",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-10"
+  },
+  "governance": {
+    "api_date": "2026-04-27T23:25:55Z",
+    "total_officers": 29,
+    "active_count": 2,
+    "resigned_count": 27,
+    "active_officers": [
+      {
+        "name": "KERRIDGE, David Ian",
+        "role": "director",
+        "appointed_on": "2026-03-06",
+        "country_of_residence": "United States",
+        "nationality": "British"
+      },
+      {
+        "name": "SPAETH, Thomas Michael",
+        "role": "director",
+        "appointed_on": "2025-06-11",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T23:25:57Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "E-Rewards Bidco Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "England And Wales",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "7040633"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MzQwNzYzOGFkaXF6a2N4",
+    "date": "2025-10-02",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/8un_aoW215m4QlY8vyMEjodR10XQw39AsLbmlsdnnKA/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03975073/filing-history/MzQ4MzQwNzYzOGFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

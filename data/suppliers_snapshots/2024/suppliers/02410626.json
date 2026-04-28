@@ -1,0 +1,182 @@
+{
+  "schema_version": "v2",
+  "company_number": "02410626",
+  "display_name": "Mace Limited",
+  "official_name": "MACE LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "02/08/1989",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "41100",
+    "41201",
+    "64203",
+    "70229"
+  ],
+  "sic_labels": [
+    "Development of building projects",
+    "Construction of commercial buildings",
+    "Activities of construction holding companies",
+    "Management consultancy activities other than financial management"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "155 MOORGATE",
+    "address_line_2": "",
+    "post_town": "LONDON",
+    "county": "",
+    "country": "",
+    "postal_code": "EC2M 6XB"
+  },
+  "accounts": {
+    "category": "GROUP",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 19,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 19
+  },
+  "spend_profile": {
+    "total_gbp_2024": 33792281.49,
+    "n_contracts": 8,
+    "n_buyers": 6
+  },
+  "geo": {
+    "lat": 51.518775,
+    "lng": -0.088098,
+    "lad24_cd": "E09000001",
+    "lad24_nm": "City of London",
+    "region": "London"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/02410626"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T17:38:51Z",
+    "company_name": "MACE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1989-08-02",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-08-05"
+  },
+  "governance": {
+    "api_date": "2026-04-22T17:38:53Z",
+    "total_officers": 70,
+    "active_count": 6,
+    "resigned_count": 64,
+    "active_officers": [
+      {
+        "name": "MUSGROVE, Robert Hugh",
+        "role": "secretary",
+        "appointed_on": "2024-12-31",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "ALLEN, David Owen",
+        "role": "director",
+        "appointed_on": "2023-01-09",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "MILLETT, Jason David",
+        "role": "director",
+        "appointed_on": "2013-01-02",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "PENLINGTON, Lee James",
+        "role": "director",
+        "appointed_on": "2013-01-02",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "REYNOLDS, Mark Peter",
+        "role": "director",
+        "appointed_on": "2001-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WILLIS, Mandy Jane",
+        "role": "director",
+        "appointed_on": "2014-10-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T17:38:55Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mace Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Registrar Of Companies For England And Wales",
+          "registration_number": "04228706"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NDY1MDI4MWFkaXF6a2N4",
+    "date": "2025-07-23",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/zT6rWz6_Mjo7DicoCnBbXIuM9AR1NYDlC6mR3hE5zG0/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02410626/filing-history/MzQ3NDY1MDI4MWFkaXF6a2N4"
+  },
+  "top_buyer_type": "education",
+  "buyer_type_breakdown": {
+    "education": 0.7614,
+    "central_govt": 0.1306,
+    "agency": 0.0666,
+    "council": 0.0392,
+    "other": 0.0023
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

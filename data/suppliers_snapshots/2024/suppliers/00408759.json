@@ -1,0 +1,228 @@
+{
+  "schema_version": "v2",
+  "company_number": "00408759",
+  "display_name": "Keeler Limited",
+  "official_name": "KEELER LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "18/04/1946",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "32500"
+  ],
+  "sic_labels": [
+    "Manufacture of medical and dental instruments and supplies"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "CLEWER HILL ROAD",
+    "address_line_2": "WINDSOR",
+    "post_town": "BERKSHIRE",
+    "county": "",
+    "country": "",
+    "postal_code": "SL4 4AA"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/03/2025",
+    "next_due": "31/12/2026",
+    "ref_day": "31",
+    "ref_month": "3"
+  },
+  "mortgages": {
+    "num_charges": 6,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 6
+  },
+  "spend_profile": {
+    "total_gbp_2024": 56453.71,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.470896,
+    "lng": -0.63572,
+    "lad24_cd": "E06000040",
+    "lad24_nm": "Windsor and Maidenhead",
+    "region": "South East"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/00408759"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "other",
+  "buyer_type_breakdown": {
+    "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T08:52:23Z",
+    "company_name": "KEELER LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1946-04-18",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-18"
+  },
+  "governance": {
+    "api_date": "2026-04-28T08:52:24Z",
+    "total_officers": 57,
+    "active_count": 6,
+    "resigned_count": 51,
+    "active_officers": [
+      {
+        "name": "HODGE, Simon Jonathon",
+        "role": "secretary",
+        "appointed_on": "2026-02-19",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "SCHMIDT, Claudia Melanie",
+        "role": "secretary",
+        "appointed_on": "2025-04-07",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BARTLETT, Faye Christina",
+        "role": "director",
+        "appointed_on": "2023-10-02",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "FERGUSON, Claire",
+        "role": "director",
+        "appointed_on": "2022-04-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HODGE, Simon Jonathon",
+        "role": "director",
+        "appointed_on": "2026-01-26",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "SCHMIDT, Claudia",
+        "role": "director",
+        "appointed_on": "2024-01-02",
+        "country_of_residence": "England",
+        "nationality": "German"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T08:52:25Z",
+    "total_results": 6,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mrs Faye Christina Bartlett",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2026-04-01",
+        "identification": null
+      },
+      {
+        "name": "Mr Andrew David James Harbidge",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors",
+          "right-to-appoint-and-remove-directors-as-firm"
+        ],
+        "notified_on": "2023-10-04",
+        "identification": null
+      },
+      {
+        "name": "Mr Matthew Hallam",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2021-06-01",
+        "identification": null
+      },
+      {
+        "name": "Mr Mark Jonathan Osborne",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2021-02-18",
+        "identification": null
+      },
+      {
+        "name": "Mr Christopher Norman Japp",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control-as-firm"
+        ],
+        "notified_on": "2019-05-20",
+        "identification": null
+      },
+      {
+        "name": "Dr Abbas Sotoudeh",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control",
+          "significant-influence-or-control-as-firm"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4ODE1NTQ5OGFkaXF6a2N4",
+    "date": "2025-11-11",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/6orIajkpcCWQmuUquHQBRj9XEKWFwZH5qWG-Xiy-PWg/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/00408759/filing-history/MzQ4ODE1NTQ5OGFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

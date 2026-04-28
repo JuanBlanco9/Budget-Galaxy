@@ -1,0 +1,188 @@
+{
+  "schema_version": "v2",
+  "company_number": "06789099",
+  "display_name": "Kingdom Academy Limited",
+  "official_name": "KINGDOM ACADEMY LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "12/01/2009",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "85320",
+    "85410"
+  ],
+  "sic_labels": [
+    "Technical and vocational secondary education",
+    "Post-secondary non-tertiary education"
+  ],
+  "previous_names": [
+    {
+      "name": "DUTTON FISHER ASSOCIATES LIMITED",
+      "condate": "30/03/2023"
+    },
+    {
+      "name": "DUTTON FISHER & ASSOCIATES LIMITED",
+      "condate": "11/07/2014"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "KINGDOM HOUSE, WOODLANDS PARK",
+    "address_line_2": "ASHTON ROAD",
+    "post_town": "NEWTON-LE-WILLOWS",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "WA12 0HF"
+  },
+  "accounts": {
+    "category": "SMALL",
+    "last_made_up": "31/03/2025",
+    "next_due": "31/12/2026",
+    "ref_day": "31",
+    "ref_month": "3"
+  },
+  "mortgages": {
+    "num_charges": 1,
+    "num_outstanding": 1,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 0.0,
+    "n_contracts": 2,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 53.465782,
+    "lng": -2.631405,
+    "lad24_cd": "E08000013",
+    "lad24_nm": "St. Helens",
+    "region": "North West"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/06789099"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T14:34:20Z",
+    "company_name": "KINGDOM ACADEMY LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2009-01-12",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-31"
+  },
+  "governance": {
+    "api_date": "2026-04-28T14:34:21Z",
+    "total_officers": 5,
+    "active_count": 3,
+    "resigned_count": 2,
+    "active_officers": [
+      {
+        "name": "BARTON, Agnes Mary",
+        "role": "director",
+        "appointed_on": "2023-02-17",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BARTON, Robert John",
+        "role": "director",
+        "appointed_on": "2024-03-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BARTON, Terence",
+        "role": "director",
+        "appointed_on": "2023-02-17",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T14:34:22Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Kingdom Services Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2023-02-17",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "England And Wales Companies Registry",
+          "registration_number": "02795197"
+        }
+      },
+      {
+        "name": "Mrs Joanne Louise Fisher",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-06-21",
+        "identification": null
+      },
+      {
+        "name": "Paul Dutton",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-06-21",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NTc5MDgyMGFkaXF6a2N4",
+    "date": "2025-12-22",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/1NllYydPoBy9MHQma98Xx8one-g3EgBDa10P_3NpxFY/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/06789099/filing-history/MzQ5NTc5MDgyMGFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

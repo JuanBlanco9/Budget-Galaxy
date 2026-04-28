@@ -1,0 +1,200 @@
+{
+  "schema_version": "v2",
+  "company_number": "06663863",
+  "display_name": "Energy Gain Uk Limited",
+  "official_name": "ENERGY GAIN UK LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "04/08/2008",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "74901"
+  ],
+  "sic_labels": [
+    "Environmental consulting activities"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "9 AVOCADO COURT",
+    "address_line_2": "COMMERCE WAY",
+    "post_town": "TRAFFORD PARK",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "M17 1HW"
+  },
+  "accounts": {
+    "category": "TOTAL EXEMPTION FULL",
+    "last_made_up": "28/02/2025",
+    "next_due": "31/01/2027",
+    "ref_day": "30",
+    "ref_month": "4"
+  },
+  "mortgages": {
+    "num_charges": 3,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 3
+  },
+  "spend_profile": {
+    "total_gbp_2024": 823417.07,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 53.461678,
+    "lng": -2.312082,
+    "lad24_cd": "E08000009",
+    "lad24_nm": "Trafford",
+    "region": "North West"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/06663863"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "other",
+  "buyer_type_breakdown": {
+    "other": 0.9154,
+    "council": 0.0846
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T22:20:29Z",
+    "company_name": "ENERGY GAIN UK LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2008-08-04",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-01-31",
+    "accounts_last_made_up": "2025-02-28",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-26"
+  },
+  "governance": {
+    "api_date": "2026-04-27T22:20:31Z",
+    "total_officers": 16,
+    "active_count": 7,
+    "resigned_count": 9,
+    "active_officers": [
+      {
+        "name": "BOULTER, Michael",
+        "role": "director",
+        "appointed_on": "2024-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "JONES, Craig",
+        "role": "director",
+        "appointed_on": "2019-06-21",
+        "country_of_residence": "England",
+        "nationality": "English"
+      },
+      {
+        "name": "MCCOMBE, Stephen",
+        "role": "director",
+        "appointed_on": "2024-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MEADEN, Paul David",
+        "role": "director",
+        "appointed_on": "2024-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "TAYAH, Joseph",
+        "role": "director",
+        "appointed_on": "2019-06-21",
+        "country_of_residence": "Lebanon",
+        "nationality": "Canadian"
+      },
+      {
+        "name": "TOHME, Youssef",
+        "role": "director",
+        "appointed_on": "2019-06-21",
+        "country_of_residence": "Lebanon",
+        "nationality": "British"
+      },
+      {
+        "name": "GOGO GREEN HOLDINGS LIMITED",
+        "role": "corporate-director",
+        "appointed_on": "2019-06-21",
+        "country_of_residence": null,
+        "nationality": null
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T22:20:33Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Gogo Green Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent",
+          "voting-rights-50-to-75-percent",
+          "right-to-appoint-and-remove-directors-as-firm"
+        ],
+        "notified_on": "2019-06-21",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Registrar Of Companies For England And Wales",
+          "registration_number": "11519157"
+        }
+      },
+      {
+        "name": "Energy Gain Holdings Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2019-06-21",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Registrar Of Companies For England And Wales",
+          "registration_number": "11661961"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwNjg4NTE0MGFkaXF6a2N4",
+    "date": "2026-02-24",
+    "type": "AA01",
+    "description": "change-account-reference-date-company-current-extended",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/fm9_IrfdNfnFRDxHUpkGATZhDR4qP60CNgndS865OAo/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/06663863/filing-history/MzUwNjg4NTE0MGFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

@@ -1,0 +1,200 @@
+{
+  "schema_version": "v2",
+  "company_number": "02816419",
+  "display_name": "C.W.Duke & Sons Limited",
+  "official_name": "C.W.DUKE & SONS LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "10/05/1993",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "41201"
+  ],
+  "sic_labels": [
+    "Construction of commercial buildings"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "53 NEWFOUNDLAND CIRCUS",
+    "address_line_2": "BRISTOL",
+    "post_town": "",
+    "county": "",
+    "country": "",
+    "postal_code": "BS2 9AP"
+  },
+  "accounts": {
+    "category": "SMALL",
+    "last_made_up": "30/06/2025",
+    "next_due": "31/03/2027",
+    "ref_day": "30",
+    "ref_month": "6"
+  },
+  "mortgages": {
+    "num_charges": 4,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 4
+  },
+  "spend_profile": {
+    "total_gbp_2024": 100000000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.460089,
+    "lng": -2.583831,
+    "lad24_cd": "E06000023",
+    "lad24_nm": "Bristol, City of",
+    "region": "South West"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/02816419"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T16:02:37Z",
+    "company_name": "C.W.DUKE & SONS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1993-05-10",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-03-31",
+    "accounts_last_made_up": "2025-06-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-05-24"
+  },
+  "governance": {
+    "api_date": "2026-04-22T16:02:39Z",
+    "total_officers": 10,
+    "active_count": 2,
+    "resigned_count": 8,
+    "active_officers": [
+      {
+        "name": "CAMERON, Stephen Ross",
+        "role": "director",
+        "appointed_on": "2016-12-07",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "PORTER, Jonathan David",
+        "role": "director",
+        "appointed_on": "2000-11-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T16:02:40Z",
+    "total_results": 5,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "C W Duke Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2022-06-15",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "English",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "12929835"
+        }
+      },
+      {
+        "name": "C. W. Duke & Sons Contracting Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2020-11-10",
+        "identification": {
+          "legal_form": "Limited",
+          "legal_authority": "The Companies Act",
+          "country_registered": "United Kingdom",
+          "place_registered": "England&Wales",
+          "registration_number": "00533034"
+        }
+      },
+      {
+        "name": "Mr Neil Bracken",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Jonathan David Porter",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Stephen Ross Cameron",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4Nzg0OTYzMmFkaXF6a2N4",
+    "date": "2025-11-07",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/A42xRGPEX0-sBZVGTodWRtB27Pf1O3NGAAt1idb5MCs/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02816419/filing-history/MzQ4Nzg0OTYzMmFkaXF6a2N4"
+  },
+  "top_buyer_type": "other",
+  "buyer_type_breakdown": {
+    "other": 1.0
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

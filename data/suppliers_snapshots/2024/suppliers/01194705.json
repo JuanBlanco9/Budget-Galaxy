@@ -1,0 +1,144 @@
+{
+  "schema_version": "v2",
+  "company_number": "01194705",
+  "display_name": "Interspiro Limited",
+  "official_name": "INTERSPIRO LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "23/12/1974",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "82990"
+  ],
+  "sic_labels": [
+    "Other business support service activities n.e.c."
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "UNIT B11 7 HAWKSWORTH ROAD",
+    "address_line_2": "CENTRAL PARK",
+    "post_town": "TELFORD",
+    "county": "SHROPSHIRE",
+    "country": "",
+    "postal_code": "TF2 9TU"
+  },
+  "accounts": {
+    "category": "SMALL",
+    "last_made_up": "31/08/2025",
+    "next_due": "31/05/2027",
+    "ref_day": "31",
+    "ref_month": "8"
+  },
+  "mortgages": {
+    "num_charges": 3,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 3
+  },
+  "spend_profile": {
+    "total_gbp_2024": 32000.0,
+    "n_contracts": 2,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 52.686825,
+    "lng": -2.44443,
+    "lad24_cd": "E06000020",
+    "lad24_nm": "Telford and Wrekin",
+    "region": "West Midlands"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/01194705"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "central_govt",
+  "buyer_type_breakdown": {
+    "central_govt": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T11:18:06Z",
+    "company_name": "INTERSPIRO LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1974-12-23",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-05-31",
+    "accounts_last_made_up": "2025-08-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-09-30"
+  },
+  "governance": {
+    "api_date": "2026-04-28T11:18:07Z",
+    "total_officers": 17,
+    "active_count": 2,
+    "resigned_count": 15,
+    "active_officers": [
+      {
+        "name": "MURPHY, Tracy Marie",
+        "role": "secretary",
+        "appointed_on": "1997-09-01",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "GYLLBRINK, Lars Niclas",
+        "role": "director",
+        "appointed_on": "2025-09-01",
+        "country_of_residence": "Sweden",
+        "nationality": "Swedish"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T11:18:08Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Interspiro Ab",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Interspiro Ab",
+          "legal_authority": "Swedish",
+          "country_registered": "Sweden",
+          "place_registered": "Bolagsverket",
+          "registration_number": "556569-3792"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4NjM3MDU2OWFkaXF6a2N4",
+    "date": "2025-10-27",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/84-8f3P0DFMdTR3rwJWh72jCyMDrskwxDauNHf5_dsc/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01194705/filing-history/MzQ4NjM3MDU2OWFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

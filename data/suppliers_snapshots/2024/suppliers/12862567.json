@@ -1,0 +1,152 @@
+{
+  "schema_version": "v2",
+  "company_number": "12862567",
+  "display_name": "Jrb Construction Ltd",
+  "official_name": "JRB CONSTRUCTION LTD",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "07/09/2020",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "42220"
+  ],
+  "sic_labels": [
+    "Construction of utility projects for electricity and telecommunications"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "OLDFIELDS BUSINESS PARK GALVESTON GROVE",
+    "address_line_2": "FENTON",
+    "post_town": "STOKE-ON-TRENT",
+    "county": "STAFFORDSHIRE",
+    "country": "UNITED KINGDOM",
+    "postal_code": "ST4 3PE"
+  },
+  "accounts": {
+    "category": "TOTAL EXEMPTION FULL",
+    "last_made_up": "31/08/2025",
+    "next_due": "31/05/2027",
+    "ref_day": "31",
+    "ref_month": "8"
+  },
+  "mortgages": {
+    "num_charges": 1,
+    "num_outstanding": 1,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 257089.78,
+    "n_contracts": 4,
+    "n_buyers": 2
+  },
+  "geo": {
+    "lat": 52.993953,
+    "lng": -2.150088,
+    "lad24_cd": "E06000021",
+    "lad24_nm": "Stoke-on-Trent",
+    "region": "West Midlands"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/12862567"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T02:59:34Z",
+    "company_name": "JRB CONSTRUCTION LTD",
+    "company_status": "active",
+    "date_of_creation": "2020-09-07",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-05-31",
+    "accounts_last_made_up": "2025-08-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-09-27"
+  },
+  "governance": {
+    "api_date": "2026-04-28T02:59:35Z",
+    "total_officers": 1,
+    "active_count": 1,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "BRANNON, James Robert",
+        "role": "director",
+        "appointed_on": "2020-09-07",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T02:59:36Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Jlb Hold Co Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2022-12-01",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "England",
+          "registration_number": "13801215"
+        }
+      },
+      {
+        "name": "Mr James Robert Brannon",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2020-09-07",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwOTM1NjgzN2FkaXF6a2N4",
+    "date": "2026-03-10",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/6bbzf12UwfZq6Gw84j6wsivw_mlytsWD-MC1fx7IQ9E/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/12862567/filing-history/MzUwOTM1NjgzN2FkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

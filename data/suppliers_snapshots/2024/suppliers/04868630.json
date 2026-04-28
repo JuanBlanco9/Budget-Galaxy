@@ -1,0 +1,165 @@
+{
+  "schema_version": "v2",
+  "company_number": "04868630",
+  "display_name": "H Ripley & Co. Limited",
+  "official_name": "H RIPLEY & CO. LIMITED",
+  "status": "liquidation",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "15/08/2003",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "38320"
+  ],
+  "sic_labels": [
+    "Recovery of sorted materials"
+  ],
+  "previous_names": [
+    {
+      "name": "H. RIPLEY & CO. (EXPORT) LTD",
+      "condate": "14/04/2011"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "3RD FLOOR 37",
+    "address_line_2": "FREDERICK PLACE",
+    "post_town": "BRIGHTON",
+    "county": "",
+    "country": "",
+    "postal_code": "BN1 4EA"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/03/2024",
+    "next_due": "29/12/2025",
+    "ref_day": "29",
+    "ref_month": "3"
+  },
+  "mortgages": {
+    "num_charges": 7,
+    "num_outstanding": 6,
+    "num_part_satisfied": 0,
+    "num_satisfied": 1
+  },
+  "spend_profile": {
+    "total_gbp_2024": 50000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 50.827831,
+    "lng": -0.140859,
+    "lad24_cd": "E06000043",
+    "lad24_nm": "Brighton and Hove",
+    "region": "South East"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/04868630"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "police_fire",
+  "buyer_type_breakdown": {
+    "police_fire": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T09:20:33Z",
+    "company_name": "H RIPLEY & CO. LIMITED",
+    "company_status": "liquidation",
+    "date_of_creation": "2003-08-15",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": true,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": true,
+    "accounts_next_due": "2025-12-29",
+    "accounts_last_made_up": "2024-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-08-29"
+  },
+  "governance": {
+    "api_date": "2026-04-28T09:20:34Z",
+    "total_officers": 6,
+    "active_count": 4,
+    "resigned_count": 2,
+    "active_officers": [
+      {
+        "name": "RIPLEY, Simon Matthew",
+        "role": "secretary",
+        "appointed_on": "2003-08-26",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "RIPLEY, Jason Obed",
+        "role": "director",
+        "appointed_on": "2003-08-26",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "RIPLEY, Obed",
+        "role": "director",
+        "appointed_on": "2003-08-26",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "RIPLEY, Simon Matthew",
+        "role": "director",
+        "appointed_on": "2003-08-26",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T09:20:35Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Ripley Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent-as-firm",
+          "voting-rights-75-to-100-percent-as-firm",
+          "right-to-appoint-and-remove-directors-as-firm"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act",
+          "country_registered": "England",
+          "place_registered": "England & Wales",
+          "registration_number": "07527610"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3ODc4ODUxMmFkaXF6a2N4",
+    "date": "2025-08-27",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/1bpIBOoGUIwkoAil7JE69dwKqT59D2pl9xQ7Z_NcTt0/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04868630/filing-history/MzQ3ODc4ODUxMmFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

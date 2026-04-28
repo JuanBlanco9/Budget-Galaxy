@@ -1,0 +1,193 @@
+{
+  "schema_version": "v2",
+  "company_number": "07035703",
+  "display_name": "Premier Care Management Limited",
+  "official_name": "PREMIER CARE MANAGEMENT LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "30/09/2009",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "86900"
+  ],
+  "sic_labels": [
+    "Other human health activities"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "1 GRANTHAM LANE",
+    "address_line_2": "KINGSWOOD",
+    "post_town": "BRISTOL",
+    "county": "",
+    "country": "UNITED KINGDOM",
+    "postal_code": "BS15 1EU"
+  },
+  "accounts": {
+    "category": "SMALL",
+    "last_made_up": "31/03/2025",
+    "next_due": "31/12/2026",
+    "ref_day": "31",
+    "ref_month": "3"
+  },
+  "mortgages": {
+    "num_charges": 3,
+    "num_outstanding": 1,
+    "num_part_satisfied": 0,
+    "num_satisfied": 2
+  },
+  "spend_profile": {
+    "total_gbp_2024": 13000000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.4635,
+    "lng": -2.514015,
+    "lad24_cd": "E06000023",
+    "lad24_nm": "Bristol, City of",
+    "region": "South West"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/07035703"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T14:13:16Z",
+    "company_name": "PREMIER CARE MANAGEMENT LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2009-09-30",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-14"
+  },
+  "governance": {
+    "api_date": "2026-04-27T14:13:18Z",
+    "total_officers": 8,
+    "active_count": 5,
+    "resigned_count": 3,
+    "active_officers": [
+      {
+        "name": "HOLKHAM, Daryl James",
+        "role": "director",
+        "appointed_on": "2023-04-28",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LEDGARD, Phillip Neil",
+        "role": "director",
+        "appointed_on": "2021-06-04",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MCCOOEY, John Charles",
+        "role": "director",
+        "appointed_on": "2023-05-22",
+        "country_of_residence": "England",
+        "nationality": "Irish"
+      },
+      {
+        "name": "VICKERS, Ashley James Ward",
+        "role": "director",
+        "appointed_on": "2021-06-04",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WILLIAMS, Hayley Jayne",
+        "role": "director",
+        "appointed_on": "2016-07-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T14:13:19Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Tristone Pcm Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2021-06-04",
+        "identification": {
+          "legal_form": "Company Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "13231676"
+        }
+      },
+      {
+        "name": "Ms Hayley Jayne Williams",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2017-04-25",
+        "identification": null
+      },
+      {
+        "name": "Mr Stephen Wayne Bristow",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent",
+          "voting-rights-50-to-75-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NjIyNTgwMmFkaXF6a2N4",
+    "date": "2025-12-24",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/4cPZcxhx469ZfMH6CMHwQnAwuG1q0SGIGtCgKyUfl1Q/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/07035703/filing-history/MzQ5NjIyNTgwMmFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

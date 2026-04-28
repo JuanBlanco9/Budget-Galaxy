@@ -1,0 +1,165 @@
+{
+  "schema_version": "v2",
+  "company_number": "10098632",
+  "display_name": "Pekg Ltd",
+  "official_name": "PEKG LTD",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "01/04/2016",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "70100"
+  ],
+  "sic_labels": [
+    "Activities of head offices"
+  ],
+  "previous_names": [
+    {
+      "name": "PICK EVERARD (2016) LIMITED",
+      "condate": "28/05/2016"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "HALFORD HOUSE",
+    "address_line_2": "CHARLES STREET",
+    "post_town": "LEICESTER",
+    "county": "",
+    "country": "UNITED KINGDOM",
+    "postal_code": "LE1 1HA"
+  },
+  "accounts": {
+    "category": "DORMANT",
+    "last_made_up": "30/04/2024",
+    "next_due": "30/04/2026",
+    "ref_day": "30",
+    "ref_month": "4"
+  },
+  "mortgages": {
+    "num_charges": 0,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 1203754.81,
+    "n_contracts": 5,
+    "n_buyers": 4
+  },
+  "geo": {
+    "lat": 52.635217,
+    "lng": -1.130098,
+    "lad24_cd": "E06000016",
+    "lad24_nm": "Leicester",
+    "region": "East Midlands"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/10098632"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 0.7186,
+    "other": 0.1765,
+    "central_govt": 0.1049
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T21:08:57Z",
+    "company_name": "PEKG LTD",
+    "company_status": "active",
+    "date_of_creation": "2016-04-01",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-04-30",
+    "accounts_last_made_up": "2024-04-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-04-14"
+  },
+  "governance": {
+    "api_date": "2026-04-27T21:08:59Z",
+    "total_officers": 9,
+    "active_count": 2,
+    "resigned_count": 7,
+    "active_officers": [
+      {
+        "name": "GREEN, Duncan Comrie",
+        "role": "director",
+        "appointed_on": "2016-04-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HAMILTON, Alastair John",
+        "role": "director",
+        "appointed_on": "2016-04-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T21:09:00Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Artelia Capital Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2024-10-28",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House, England & Wales",
+          "registration_number": "15870115"
+        }
+      },
+      {
+        "name": "Mr Duncan Comrie Green",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ1NjM0MDQ2MmFkaXF6a2N4",
+    "date": "2025-02-25",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-dormant",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/g0GLdHGa3M-7KEKIltb7Re1W-7sdEjNTUNLGxt1yunk/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/10098632/filing-history/MzQ1NjM0MDQ2MmFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

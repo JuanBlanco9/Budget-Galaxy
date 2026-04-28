@@ -1,0 +1,217 @@
+{
+  "schema_version": "v2",
+  "company_number": "01303570",
+  "display_name": "Orano Limited",
+  "official_name": "ORANO LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "18/03/1977",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "74909"
+  ],
+  "sic_labels": [
+    "Other professional, scientific and technical activities n.e.c."
+  ],
+  "previous_names": [
+    {
+      "name": "ORANO PROJECTS LIMITED",
+      "condate": "09/07/2021"
+    },
+    {
+      "name": "AREVA RISK MANAGEMENT CONSULTING LIMITED",
+      "condate": "06/04/2018"
+    },
+    {
+      "name": "R.M. CONSULTANTS LIMITED",
+      "condate": "05/12/2008"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "SUITE 1, 2ND FLOOR, EAST WING THE LAMBOURN",
+    "address_line_2": "WYNDYKE FURLONG",
+    "post_town": "ABINGDON",
+    "county": "OXFORDSHIRE",
+    "country": "UNITED KINGDOM",
+    "postal_code": "OX14 1UJ"
+  },
+  "accounts": {
+    "category": "MEDIUM",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 3,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 3
+  },
+  "spend_profile": {
+    "total_gbp_2024": 1400000.0,
+    "n_contracts": 5,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.673581,
+    "lng": -1.300851,
+    "lad24_cd": "E07000180",
+    "lad24_nm": "Vale of White Horse",
+    "region": "South East"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/01303570"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "agency",
+  "buyer_type_breakdown": {
+    "agency": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T20:46:03Z",
+    "company_name": "ORANO LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1977-03-18",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-14"
+  },
+  "governance": {
+    "api_date": "2026-04-27T20:46:05Z",
+    "total_officers": 39,
+    "active_count": 4,
+    "resigned_count": 35,
+    "active_officers": [
+      {
+        "name": "A G SECRETARIAL LIMITED",
+        "role": "corporate-secretary",
+        "appointed_on": "2021-07-16",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BATTERS, David Gordon",
+        "role": "director",
+        "appointed_on": "2023-11-03",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "CRAMB, Jenna Louise",
+        "role": "director",
+        "appointed_on": "2017-05-30",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "CRAPPIER, Matthieu",
+        "role": "director",
+        "appointed_on": "2021-06-29",
+        "country_of_residence": "France",
+        "nationality": "French"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T20:46:06Z",
+    "total_results": 4,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Orano Sa",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2021-06-04",
+        "identification": {
+          "legal_form": "Corporate",
+          "legal_authority": "Rcs-Registre De Commerce Et Des Societies Nanterre",
+          "country_registered": "France",
+          "place_registered": "France",
+          "registration_number": "712 054 923"
+        }
+      },
+      {
+        "name": "Mr Ian Michael Alderson",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2017-05-30",
+        "identification": null
+      },
+      {
+        "name": "Mr David Loughborough",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2017-02-01",
+        "identification": null
+      },
+      {
+        "name": "Orano Uk Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Company Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "6720995"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2NDgxNjc3MGFkaXF6a2N4",
+    "date": "2025-05-01",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-medium",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/AjEc7rGCBFvkdyVTy8Q2zjq0vBKLtoHf2pr4804Z8Tg/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01303570/filing-history/MzQ2NDgxNjc3MGFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

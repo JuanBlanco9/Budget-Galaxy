@@ -1,0 +1,163 @@
+{
+  "schema_version": "v2",
+  "company_number": "02768268",
+  "display_name": "Cadmus International Uk Limited",
+  "official_name": "CADMUS INTERNATIONAL UK LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "26/11/1992",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "74909"
+  ],
+  "sic_labels": [
+    "Other professional, scientific and technical activities n.e.c."
+  ],
+  "previous_names": [
+    {
+      "name": "NATHAN ASSOCIATES LONDON LIMITED",
+      "condate": "19/12/2023"
+    },
+    {
+      "name": "NATHAN EME LIMITED",
+      "condate": "11/04/2011"
+    },
+    {
+      "name": "EMERGING MARKET ECONOMICS LIMITED",
+      "condate": "19/05/2008"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "5TH FLOOR HOLBORN GATE",
+    "address_line_2": "330 HIGH HOLBORN",
+    "post_town": "LONDON",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "WC1V 7QH"
+  },
+  "accounts": {
+    "category": "SMALL",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 3,
+    "num_outstanding": 2,
+    "num_part_satisfied": 0,
+    "num_satisfied": 1
+  },
+  "spend_profile": {
+    "total_gbp_2024": 8000000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.517652,
+    "lng": -0.110948,
+    "lad24_cd": "E09000001",
+    "lad24_nm": "City of London",
+    "region": "London"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/02768268"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "central_govt",
+  "buyer_type_breakdown": {
+    "central_govt": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T15:06:06Z",
+    "company_name": "CADMUS INTERNATIONAL UK LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1992-11-26",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": true,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-05"
+  },
+  "governance": {
+    "api_date": "2026-04-27T15:06:08Z",
+    "total_officers": 34,
+    "active_count": 1,
+    "resigned_count": 33,
+    "active_officers": [
+      {
+        "name": "KLINE, Ian Patrick",
+        "role": "director",
+        "appointed_on": "2023-02-15",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T15:06:09Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Frederick Iseman",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "American",
+        "country_of_residence": "United States",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2023-02-16",
+        "identification": null
+      },
+      {
+        "name": "Nathan Associates Inc.",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Corporation",
+          "legal_authority": "Laws Of The United States Of America",
+          "country_registered": "State Of Delaware, United States Of America",
+          "place_registered": "State Of Delaware, United States Of America",
+          "registration_number": "410718"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2NjYyMjk1MWFkaXF6a2N4",
+    "date": "2025-05-15",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/3R1gA3QqQwA9uyhWbV5RBy1T4rCV0jNSNNXv9R1q4b4/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02768268/filing-history/MzQ2NjYyMjk1MWFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

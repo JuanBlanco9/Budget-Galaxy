@@ -1,0 +1,152 @@
+{
+  "schema_version": "v2",
+  "company_number": "04105726",
+  "display_name": "Dacol Pvcu Ltd",
+  "official_name": "DACOL PVCU LTD",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "10/11/2000",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "43342"
+  ],
+  "sic_labels": [
+    "Glazing"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "THE GATE HOUSE",
+    "address_line_2": "LITTLEGATE ROAD",
+    "post_town": "PAIGNTON",
+    "county": "DEVON",
+    "country": "",
+    "postal_code": "TQ3 3AZ"
+  },
+  "accounts": {
+    "category": "TOTAL EXEMPTION FULL",
+    "last_made_up": "31/03/2025",
+    "next_due": "31/12/2026",
+    "ref_day": "31",
+    "ref_month": "3"
+  },
+  "mortgages": {
+    "num_charges": 0,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 540000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 50.437947,
+    "lng": -3.569083,
+    "lad24_cd": "E06000027",
+    "lad24_nm": "Torbay",
+    "region": "South West"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/04105726"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "education",
+  "buyer_type_breakdown": {
+    "education": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T23:51:57Z",
+    "company_name": "DACOL PVCU LTD",
+    "company_status": "active",
+    "date_of_creation": "2000-11-10",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-24"
+  },
+  "governance": {
+    "api_date": "2026-04-27T23:51:59Z",
+    "total_officers": 6,
+    "active_count": 2,
+    "resigned_count": 4,
+    "active_officers": [
+      {
+        "name": "HARDING, David John",
+        "role": "director",
+        "appointed_on": "2000-11-10",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "WALLACE, Paul Anthony",
+        "role": "director",
+        "appointed_on": "2000-11-10",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T23:52:00Z",
+    "total_results": 2,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "David John Harding",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Paul Anthony Wallace",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MjY0NDQxMmFkaXF6a2N4",
+    "date": "2025-09-25",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/jIWpL59XxgUgVJDMC1AJnfNhhwTEa86bwkE52NjcEEE/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04105726/filing-history/MzQ4MjY0NDQxMmFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

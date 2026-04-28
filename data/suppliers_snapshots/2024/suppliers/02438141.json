@@ -1,0 +1,158 @@
+{
+  "schema_version": "v2",
+  "company_number": "02438141",
+  "display_name": "Intralink Limited",
+  "official_name": "INTRALINK LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "31/10/1989",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "70229"
+  ],
+  "sic_labels": [
+    "Management consultancy activities other than financial management"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "4A HITCHING COURT",
+    "address_line_2": "BLACKLANDS WAY",
+    "post_town": "ABINGDON",
+    "county": "OXFORDSHIRE",
+    "country": "ENGLAND",
+    "postal_code": "OX14 1RG"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/03/2024",
+    "next_due": "31/03/2026",
+    "ref_day": "31",
+    "ref_month": "3"
+  },
+  "mortgages": {
+    "num_charges": 8,
+    "num_outstanding": 4,
+    "num_part_satisfied": 0,
+    "num_satisfied": 4
+  },
+  "spend_profile": {
+    "total_gbp_2024": 43000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.672306,
+    "lng": -1.301188,
+    "lad24_cd": "E07000180",
+    "lad24_nm": "Vale of White Horse",
+    "region": "South East"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/02438141"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "other",
+  "buyer_type_breakdown": {
+    "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T10:05:47Z",
+    "company_name": "INTRALINK LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1989-10-31",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-09-11"
+  },
+  "governance": {
+    "api_date": "2026-04-28T10:05:48Z",
+    "total_officers": 17,
+    "active_count": 4,
+    "resigned_count": 13,
+    "active_officers": [
+      {
+        "name": "MOCKRIDGE, Alan George",
+        "role": "director",
+        "appointed_on": "2002-01-01",
+        "country_of_residence": "United States",
+        "nationality": "British"
+      },
+      {
+        "name": "SHAW, Jeremy",
+        "role": "director",
+        "appointed_on": "2014-04-01",
+        "country_of_residence": "England",
+        "nationality": "Australian"
+      },
+      {
+        "name": "SUTCH, Gregory James Anthony",
+        "role": "director",
+        "appointed_on": "1999-04-05",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "YEARSLEY, Peter John",
+        "role": "director",
+        "appointed_on": "2023-08-21",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T10:05:49Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Intralink Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Limited Company",
+          "country_registered": "England",
+          "place_registered": "England",
+          "registration_number": "07741119"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxNDA3MzgwMWFkaXF6a2N4",
+    "date": "2026-04-12",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/c1fikEyVEek_Ps9hhZOsZyp8VVbS-WkgnKCtIDUbQ5o/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02438141/filing-history/MzUxNDA3MzgwMWFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

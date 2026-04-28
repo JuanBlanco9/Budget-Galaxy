@@ -1,0 +1,201 @@
+{
+  "schema_version": "v2",
+  "company_number": "04327611",
+  "display_name": "Citysprint (Uk) Limited",
+  "official_name": "CITYSPRINT (UK) LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "23/11/2001",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "53202"
+  ],
+  "sic_labels": [
+    "Unlicensed carrier"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "RED CENTRAL",
+    "address_line_2": "60 HIGH STREET",
+    "post_town": "REDHILL",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "RH1 1SH"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "29/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 20,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 20
+  },
+  "spend_profile": {
+    "total_gbp_2024": 348010.68,
+    "n_contracts": 5,
+    "n_buyers": 4
+  },
+  "geo": {
+    "lat": 51.238735,
+    "lng": -0.168397,
+    "lad24_cd": "E07000211",
+    "lad24_nm": "Reigate and Banstead",
+    "region": "South East"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/04327611"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "other",
+  "buyer_type_breakdown": {
+    "other": 0.9789,
+    "agency": 0.0188,
+    "police_fire": 0.0015,
+    "nhs": 0.0008,
+    "education": 0.0001
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T01:46:50Z",
+    "company_name": "CITYSPRINT (UK) LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2001-11-23",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-29",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-10"
+  },
+  "governance": {
+    "api_date": "2026-04-28T01:46:52Z",
+    "total_officers": 23,
+    "active_count": 7,
+    "resigned_count": 16,
+    "active_officers": [
+      {
+        "name": "CLARKE, Justin Neil",
+        "role": "secretary",
+        "appointed_on": "2022-01-17",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "ADAMS, David Laurence",
+        "role": "director",
+        "appointed_on": "2022-02-14",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CLARKE, Justin Neil",
+        "role": "director",
+        "appointed_on": "2026-02-23",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "KHALIL, Adnan",
+        "role": "director",
+        "appointed_on": "2024-01-29",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LLOYD, Joanna Daubney",
+        "role": "director",
+        "appointed_on": "2026-02-23",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PEGG, Justin",
+        "role": "director",
+        "appointed_on": "2022-02-14",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "STOCKTON, Jonathan",
+        "role": "director",
+        "appointed_on": "2024-01-29",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T01:46:54Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Courier And Passenger Transport Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2023-12-12",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act",
+          "country_registered": "United Kingdom",
+          "place_registered": "England",
+          "registration_number": "06277898"
+        }
+      },
+      {
+        "name": "The Courier And Passenger Transport Group  Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited",
+          "legal_authority": "Company Law",
+          "country_registered": "England",
+          "place_registered": "England And Wales",
+          "registration_number": "4327694"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4Mzc1Mzk3OWFkaXF6a2N4",
+    "date": "2025-10-07",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/FE84NVzQBwGiVQ399Jh3K7JTG0bhvSwFQI2qYPy6FA4/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04327611/filing-history/MzQ4Mzc1Mzk3OWFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

@@ -1,0 +1,172 @@
+{
+  "schema_version": "v2",
+  "company_number": "01702360",
+  "display_name": "Allen Glenold Limited",
+  "official_name": "ALLEN GLENOLD LIMITED",
+  "status": "in_administration",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "24/02/1983",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "46760"
+  ],
+  "sic_labels": [
+    "Wholesale of other intermediate products"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "RIVERMEAD HOUSE, 7 LEWIS COURT",
+    "address_line_2": "GROVE PARK",
+    "post_town": "LEICESTER",
+    "county": "",
+    "country": "",
+    "postal_code": "LE19 1SD"
+  },
+  "accounts": {
+    "category": "TOTAL EXEMPTION FULL",
+    "last_made_up": "31/03/2024",
+    "next_due": "31/12/2025",
+    "ref_day": "31",
+    "ref_month": "3"
+  },
+  "mortgages": {
+    "num_charges": 2,
+    "num_outstanding": 2,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 17544000.0,
+    "n_contracts": 2,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 52.595397,
+    "lng": -1.1905,
+    "lad24_cd": "E07000129",
+    "lad24_nm": "Blaby",
+    "region": "East Midlands"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/01702360"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T13:48:43Z",
+    "company_name": "ALLEN GLENOLD LIMITED",
+    "company_status": "administration",
+    "date_of_creation": "1983-02-24",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": true,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": true,
+    "accounts_next_due": "2025-12-31",
+    "accounts_last_made_up": "2024-03-31",
+    "confirmation_statement_overdue": true,
+    "confirmation_statement_next_due": "2026-01-14"
+  },
+  "governance": {
+    "api_date": "2026-04-27T13:48:45Z",
+    "total_officers": 7,
+    "active_count": 3,
+    "resigned_count": 4,
+    "active_officers": [
+      {
+        "name": "BOSWORTH, Helen Jane",
+        "role": "secretary",
+        "appointed_on": "2012-02-20",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "BOSWORTH, Helen Jane",
+        "role": "director",
+        "appointed_on": "2011-10-07",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LORD, Thomas Askham",
+        "role": "director",
+        "appointed_on": "2011-10-07",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T13:48:47Z",
+    "total_results": 3,
+    "active_count": 3,
+    "items": [
+      {
+        "name": "Mr Thomas Askham Lord",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mrs Helen Jane Bosworth",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Allen Glenold (Holdings) Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ0ODUxNzI5NWFkaXF6a2N4",
+    "date": "2024-12-20",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/05jkvX_KjVoeA6fLOZ7-AtXk5v7QQpz_bGAKQrdP3gQ/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01702360/filing-history/MzQ0ODUxNzI5NWFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

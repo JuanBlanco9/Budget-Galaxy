@@ -1,0 +1,139 @@
+{
+  "schema_version": "v2",
+  "company_number": "01948041",
+  "display_name": "Nottingham Rehab Limited",
+  "official_name": "NOTTINGHAM REHAB LIMITED",
+  "status": "liquidation",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "18/09/1985",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "46900"
+  ],
+  "sic_labels": [
+    "Non-specialised wholesale trade"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "16TH FLOOR",
+    "address_line_2": "1 WESTFIELD AVENUE",
+    "post_town": "STRATFORD",
+    "county": "",
+    "country": "",
+    "postal_code": "E20 1HZ"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/03/2024",
+    "next_due": "31/12/2025",
+    "ref_day": "31",
+    "ref_month": "3"
+  },
+  "mortgages": {
+    "num_charges": 15,
+    "num_outstanding": 3,
+    "num_part_satisfied": 0,
+    "num_satisfied": 12
+  },
+  "spend_profile": {
+    "total_gbp_2024": 462480.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.542808,
+    "lng": -0.009977,
+    "lad24_cd": "E09000025",
+    "lad24_nm": "Newham",
+    "region": "London"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/01948041"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T00:31:35Z",
+    "company_name": "NOTTINGHAM REHAB LIMITED",
+    "company_status": "liquidation",
+    "date_of_creation": "1985-09-18",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": true,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": true,
+    "accounts_next_due": "2025-12-31",
+    "accounts_last_made_up": "2024-03-31",
+    "confirmation_statement_overdue": true,
+    "confirmation_statement_next_due": "2026-04-19"
+  },
+  "governance": {
+    "api_date": "2026-04-28T00:31:37Z",
+    "total_officers": 46,
+    "active_count": 1,
+    "resigned_count": 45,
+    "active_officers": [
+      {
+        "name": "FOTHERINGHAM, Graeme James",
+        "role": "director",
+        "appointed_on": "2024-11-25",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T00:31:39Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Salus Healthcare Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-07-01",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "08415321"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2MTE3ODM0NmFkaXF6a2N4",
+    "date": "2025-04-04",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/J44Cx0riVMa25nla0G5f7gKzeMRK_QtQlM4KKmNDMG0/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01948041/filing-history/MzQ2MTE3ODM0NmFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

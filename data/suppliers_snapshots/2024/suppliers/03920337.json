@@ -1,0 +1,197 @@
+{
+  "schema_version": "v2",
+  "company_number": "03920337",
+  "display_name": "Corrigenda Limited",
+  "official_name": "CORRIGENDA LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "07/02/2000",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "43210",
+    "43220",
+    "81100",
+    "82990"
+  ],
+  "sic_labels": [
+    "Electrical installation",
+    "Plumbing, heat and air-conditioning installation",
+    "Combined facilities support activities",
+    "Other business support service activities n.e.c."
+  ],
+  "previous_names": [
+    {
+      "name": "CHURCHES LIMITED",
+      "condate": "12/11/2012"
+    },
+    {
+      "name": "CORRIGENDA LIMITED",
+      "condate": "08/11/2011"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "COWCROSS STUDIOS GROUND FLOOR REAR BUILDING",
+    "address_line_2": "30-31 COWCROSS STREET",
+    "post_town": "LONDON",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "EC1M 6DQ"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/03/2025",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 3,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 3
+  },
+  "spend_profile": {
+    "total_gbp_2024": 2158728.35,
+    "n_contracts": 3,
+    "n_buyers": 3
+  },
+  "geo": {
+    "lat": 51.52026,
+    "lng": -0.10369,
+    "lad24_cd": "E09000019",
+    "lad24_nm": "Islington",
+    "region": "London"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/03920337"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "nhs",
+  "buyer_type_breakdown": {
+    "nhs": 0.8893,
+    "council": 0.1104,
+    "police_fire": 0.0002
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T19:43:20Z",
+    "company_name": "CORRIGENDA LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2000-02-07",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-06"
+  },
+  "governance": {
+    "api_date": "2026-04-27T19:43:22Z",
+    "total_officers": 10,
+    "active_count": 4,
+    "resigned_count": 6,
+    "active_officers": [
+      {
+        "name": "CASEY, Raymond",
+        "role": "director",
+        "appointed_on": "2025-08-01",
+        "country_of_residence": "Ireland",
+        "nationality": "Irish"
+      },
+      {
+        "name": "CONNOR, Adrian",
+        "role": "director",
+        "appointed_on": "2025-08-01",
+        "country_of_residence": "England",
+        "nationality": "English"
+      },
+      {
+        "name": "FRATER, Fiona",
+        "role": "director",
+        "appointed_on": "2025-08-01",
+        "country_of_residence": "Scotland",
+        "nationality": "Scottish"
+      },
+      {
+        "name": "SPENCER, Paul Stephen",
+        "role": "director",
+        "appointed_on": "2000-02-07",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T19:43:23Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Corrigenda Holdco Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2022-12-23",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "United Kingdom Companies Acts",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "12810803"
+        }
+      },
+      {
+        "name": "Corrigenda Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "United Kingdon Companies Acts",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "07757840"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3ODI0MjAwMmFkaXF6a2N4",
+    "date": "2025-08-21",
+    "type": "AA01",
+    "description": "change-account-reference-date-company-current-shortened",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/ZW5el0SsfbaLuxLqn_-oSumtbRKeoxYNuxpiQ0T2A8s/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03920337/filing-history/MzQ3ODI0MjAwMmFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

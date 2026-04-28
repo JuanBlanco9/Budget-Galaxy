@@ -1,0 +1,210 @@
+{
+  "schema_version": "v2",
+  "company_number": "01380566",
+  "display_name": "P & I Design Limited",
+  "official_name": "P & I DESIGN LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "26/07/1978",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "62012"
+  ],
+  "sic_labels": [
+    "Business and domestic software development"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "ASH HOUSE THREE ACRES",
+    "address_line_2": "THORNABY",
+    "post_town": "STOCKTON-ON-TEES",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "TS17 6AJ"
+  },
+  "accounts": {
+    "category": "TOTAL EXEMPTION FULL",
+    "last_made_up": "31/05/2025",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 2,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 2
+  },
+  "spend_profile": {
+    "total_gbp_2024": 860143.5,
+    "n_contracts": 3,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 54.560754,
+    "lng": -1.299606,
+    "lad24_cd": "E06000004",
+    "lad24_nm": "Stockton-on-Tees",
+    "region": "North East"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/01380566"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "central_govt",
+  "buyer_type_breakdown": {
+    "central_govt": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T22:10:42Z",
+    "company_name": "P & I DESIGN LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1978-07-26",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2025-05-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-09-22"
+  },
+  "governance": {
+    "api_date": "2026-04-27T22:10:43Z",
+    "total_officers": 12,
+    "active_count": 2,
+    "resigned_count": 10,
+    "active_officers": [
+      {
+        "name": "BENNETT, Lisa",
+        "role": "secretary",
+        "appointed_on": "2025-06-23",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "LLOYD-JONES, Gareth",
+        "role": "director",
+        "appointed_on": "2025-06-10",
+        "country_of_residence": "Guernsey",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T22:10:45Z",
+    "total_results": 6,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Limestone Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2025-06-10",
+        "identification": {
+          "legal_form": "Non Cellular Company",
+          "legal_authority": "Companies (Guernsey) Law 2008",
+          "country_registered": "Guernsey",
+          "place_registered": "Guernsey",
+          "registration_number": "Cmp71994"
+        }
+      },
+      {
+        "name": "Mrs Fiona Morgan",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2022-03-28",
+        "identification": null
+      },
+      {
+        "name": "Mr Martin James Morgan",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent",
+          "voting-rights-50-to-75-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2019-11-11",
+        "identification": null
+      },
+      {
+        "name": "Mr Michael Robert Edwards",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2019-11-11",
+        "identification": null
+      },
+      {
+        "name": "Mr John Ernest Edwards",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2016-07-01",
+        "identification": null
+      },
+      {
+        "name": "Mr David Raymond Ransome",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2016-07-01",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MzU5NzQzM2FkaXF6a2N4",
+    "date": "2025-12-11",
+    "type": "AA01",
+    "description": "change-account-reference-date-company-current-shortened",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/6Z8MXE63rrzeMbp2OqnN5sgUCIVst7CODD5VC4xEeuA/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01380566/filing-history/MzQ5MzU5NzQzM2FkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

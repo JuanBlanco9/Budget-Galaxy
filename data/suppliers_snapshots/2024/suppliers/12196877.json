@@ -1,0 +1,135 @@
+{
+  "schema_version": "v2",
+  "company_number": "12196877",
+  "display_name": "Front Street Consulting Ltd",
+  "official_name": "FRONT STREET CONSULTING LTD",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "09/09/2019",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "70210",
+    "70229"
+  ],
+  "sic_labels": [
+    "Public relations and communications activities",
+    "Management consultancy activities other than financial management"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "6 MANLEY ROAD",
+    "address_line_2": "",
+    "post_town": "WINCHESTER",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "SO22 6FN"
+  },
+  "accounts": {
+    "category": "MICRO ENTITY",
+    "last_made_up": "30/09/2024",
+    "next_due": "30/06/2026",
+    "ref_day": "30",
+    "ref_month": "9"
+  },
+  "mortgages": {
+    "num_charges": 0,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 36000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.084654,
+    "lng": -1.328483,
+    "lad24_cd": "E07000094",
+    "lad24_nm": "Winchester",
+    "region": "South East"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/12196877"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T10:49:34Z",
+    "company_name": "FRONT STREET CONSULTING LTD",
+    "company_status": "active",
+    "date_of_creation": "2019-09-09",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-06-30",
+    "accounts_last_made_up": "2024-09-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-09-22"
+  },
+  "governance": {
+    "api_date": "2026-04-28T10:49:35Z",
+    "total_officers": 1,
+    "active_count": 1,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "LEIGHTON, David Michael",
+        "role": "director",
+        "appointed_on": "2019-09-09",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T10:49:36Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr David Michael Leighton",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2019-09-09",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2OTIxOTk5MmFkaXF6a2N4",
+    "date": "2025-06-06",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-micro-entity",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/fAenyMvVgueVO6yvT2W7NzMUeueza8CRo0rKmmI0I8o/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/12196877/filing-history/MzQ2OTIxOTk5MmFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

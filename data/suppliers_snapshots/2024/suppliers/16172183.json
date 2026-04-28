@@ -1,0 +1,129 @@
+{
+  "schema_version": "v2",
+  "company_number": "16172183",
+  "display_name": "B&T Events Ltd",
+  "official_name": "B&T EVENTS LTD",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "08/01/2025",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "47890",
+    "56103",
+    "56210"
+  ],
+  "sic_labels": [
+    "Retail sale via stalls and markets of other goods",
+    "Take-away food shops and mobile food stands",
+    "Event catering activities"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "15 KNIFESMITHGATE",
+    "address_line_2": "",
+    "post_town": "CHESTERFIELD",
+    "county": "",
+    "country": "UNITED KINGDOM",
+    "postal_code": "S40 1RL"
+  },
+  "accounts": {
+    "category": "NO ACCOUNTS FILED",
+    "last_made_up": null,
+    "next_due": "08/10/2026",
+    "ref_day": "31",
+    "ref_month": "1"
+  },
+  "mortgages": {
+    "num_charges": 0,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 285342.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 53.236509,
+    "lng": -1.42712,
+    "lad24_cd": "E07000034",
+    "lad24_nm": "Chesterfield",
+    "region": "East Midlands"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/16172183"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": false
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T02:44:31Z",
+    "company_name": "B&T EVENTS LTD",
+    "company_status": "active",
+    "date_of_creation": "2025-01-08",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-10-08",
+    "accounts_last_made_up": null,
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-21"
+  },
+  "governance": {
+    "api_date": "2026-04-28T02:44:32Z",
+    "total_officers": 1,
+    "active_count": 1,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "GRAINGER, Hannah",
+        "role": "director",
+        "appointed_on": "2025-01-08",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T02:44:33Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Hannah Grainger",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2025-01-08",
+        "identification": null
+      }
+    ]
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

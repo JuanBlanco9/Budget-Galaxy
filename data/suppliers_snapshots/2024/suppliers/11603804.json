@@ -1,0 +1,156 @@
+{
+  "schema_version": "v2",
+  "company_number": "11603804",
+  "display_name": "Ardoq Uk Limited",
+  "official_name": "ARDOQ UK LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "04/10/2018",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "58290"
+  ],
+  "sic_labels": [
+    "Other software publishing"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "1 FINSBURY AVENUE",
+    "address_line_2": "",
+    "post_town": "LONDON",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "EC2M 2PF"
+  },
+  "accounts": {
+    "category": "SMALL",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 0,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 1090400.0,
+    "n_contracts": 3,
+    "n_buyers": 3
+  },
+  "geo": {
+    "lat": 51.519362,
+    "lng": -0.08496,
+    "lad24_cd": "E09000001",
+    "lad24_nm": "City of London",
+    "region": "London"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/11603804"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "central_govt",
+  "buyer_type_breakdown": {
+    "central_govt": 0.5677,
+    "other": 0.2303,
+    "nhs": 0.1595,
+    "education": 0.0425
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T21:27:33Z",
+    "company_name": "ARDOQ UK LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2018-10-04",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-17"
+  },
+  "governance": {
+    "api_date": "2026-04-27T21:27:34Z",
+    "total_officers": 7,
+    "active_count": 3,
+    "resigned_count": 4,
+    "active_officers": [
+      {
+        "name": "AMESTO (UK) CORPORATE SECRETARIAL LIMITED",
+        "role": "corporate-secretary",
+        "appointed_on": "2026-04-01",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BAKSTAD, Erik",
+        "role": "director",
+        "appointed_on": "2020-11-27",
+        "country_of_residence": "Norway",
+        "nationality": "Norwegian"
+      },
+      {
+        "name": "MACEY, Kingsley Warwick",
+        "role": "director",
+        "appointed_on": "2024-12-06",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T21:27:36Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Ardoq As",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2018-10-04",
+        "identification": {
+          "legal_form": "Government",
+          "legal_authority": "Norway",
+          "country_registered": "Norway",
+          "place_registered": "The Bronnoysund Register Centre Norway",
+          "registration_number": "912017818"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2NTM3ODY3OGFkaXF6a2N4",
+    "date": "2025-05-07",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/70Dt9g_20MeaKOldVcL9CgDvMx42BBJAucRPq2CpySo/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/11603804/filing-history/MzQ2NTM3ODY3OGFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

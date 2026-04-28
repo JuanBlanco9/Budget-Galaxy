@@ -1,0 +1,184 @@
+{
+  "schema_version": "v2",
+  "company_number": "05087886",
+  "display_name": "Meadows Care Limited",
+  "official_name": "MEADOWS CARE LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "30/03/2004",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "87900"
+  ],
+  "sic_labels": [
+    "Other residential care activities n.e.c."
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "EGERTON HOUSE",
+    "address_line_2": "WARDLE ROAD",
+    "post_town": "ROCHDALE",
+    "county": "LANCASHIRE",
+    "country": "",
+    "postal_code": "OL12 9EN"
+  },
+  "accounts": {
+    "category": "MEDIUM",
+    "last_made_up": "31/03/2025",
+    "next_due": "31/12/2026",
+    "ref_day": "31",
+    "ref_month": "3"
+  },
+  "mortgages": {
+    "num_charges": 15,
+    "num_outstanding": 13,
+    "num_part_satisfied": 0,
+    "num_satisfied": 2
+  },
+  "spend_profile": {
+    "total_gbp_2024": 36000000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 53.634505,
+    "lng": -2.134223,
+    "lad24_cd": "E08000005",
+    "lad24_nm": "Rochdale",
+    "region": "North West"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/05087886"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T17:34:22Z",
+    "company_name": "MEADOWS CARE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2004-03-30",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-06"
+  },
+  "governance": {
+    "api_date": "2026-04-22T17:34:24Z",
+    "total_officers": 7,
+    "active_count": 4,
+    "resigned_count": 3,
+    "active_officers": [
+      {
+        "name": "RIGG, Jonathan David",
+        "role": "secretary",
+        "appointed_on": "2004-03-30",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "RIGG, Jonathan David",
+        "role": "director",
+        "appointed_on": "2004-03-30",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "SHELMERDINE, Niel David",
+        "role": "director",
+        "appointed_on": "2004-05-04",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "TONER, Jane Michele",
+        "role": "director",
+        "appointed_on": "2015-04-06",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T17:34:25Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Meadows Care Holdco Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2020-03-10",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Register Of Companies England And Wales",
+          "registration_number": "12472132"
+        }
+      },
+      {
+        "name": "Mr Jonathan David Rigg",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Niel David Shelmerdine",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MTI3MDgwMWFkaXF6a2N4",
+    "date": "2025-11-28",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-medium",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/eOQWldVyR11s3xNv9ZM21PZ4kSSgP1Sso4PNZ0joAec/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/05087886/filing-history/MzQ5MTI3MDgwMWFkaXF6a2N4"
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 1.0
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

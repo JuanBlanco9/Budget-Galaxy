@@ -1,0 +1,179 @@
+{
+  "schema_version": "v2",
+  "company_number": "05934862",
+  "display_name": "Reds10 (Uk) Limited",
+  "official_name": "REDS10 (UK) LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "14/09/2006",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "41201"
+  ],
+  "sic_labels": [
+    "Construction of commercial buildings"
+  ],
+  "previous_names": [
+    {
+      "name": "REDS 10 LIMITED",
+      "condate": "05/04/2013"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "129-131 METAL BOX FACTORY, 30 GREAT GUILDFORD STREET",
+    "address_line_2": "BOROUGH",
+    "post_town": "LONDON",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "SE1 0HS"
+  },
+  "accounts": {
+    "category": "GROUP",
+    "last_made_up": "31/03/2025",
+    "next_due": "31/12/2026",
+    "ref_day": "31",
+    "ref_month": "3"
+  },
+  "mortgages": {
+    "num_charges": 1,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 1
+  },
+  "spend_profile": {
+    "total_gbp_2024": 34991803.51,
+    "n_contracts": 5,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.504605,
+    "lng": -0.097669,
+    "lad24_cd": "E09000028",
+    "lad24_nm": "Southwark",
+    "region": "London"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/05934862"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T17:37:37Z",
+    "company_name": "REDS10 (UK) LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2006-09-14",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-05-27"
+  },
+  "governance": {
+    "api_date": "2026-04-22T17:37:38Z",
+    "total_officers": 10,
+    "active_count": 4,
+    "resigned_count": 6,
+    "active_officers": [
+      {
+        "name": "RUDDICK, Anna",
+        "role": "secretary",
+        "appointed_on": "2006-09-14",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "RUDDICK, Michael",
+        "role": "director",
+        "appointed_on": "2017-01-31",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "RUDDICK, Paul",
+        "role": "director",
+        "appointed_on": "2006-09-14",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "RUDDICK, Stephen",
+        "role": "director",
+        "appointed_on": "2020-04-28",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T17:37:40Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Reds10 Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2026-04-01",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Companies House England & Wales",
+          "registration_number": "17042454"
+        }
+      },
+      {
+        "name": "Mr Paul Ruddick",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NTY0NTExN2FkaXF6a2N4",
+    "date": "2025-12-28",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/DIVEBjb3ai75mNWMPC5LrSQq9i2v-Q-iOe9wkPP3NWQ/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/05934862/filing-history/MzQ5NTY0NTExN2FkaXF6a2N4"
+  },
+  "top_buyer_type": "central_govt",
+  "buyer_type_breakdown": {
+    "central_govt": 1.0
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

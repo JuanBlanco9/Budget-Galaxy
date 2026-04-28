@@ -1,0 +1,180 @@
+{
+  "schema_version": "v2",
+  "company_number": "01446825",
+  "display_name": "Price Waterhouse Limited",
+  "official_name": "PRICE WATERHOUSE LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "05/09/1979",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "99999"
+  ],
+  "sic_labels": [
+    "Dormant Company"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "1 EMBANKMENT PLACE",
+    "address_line_2": "",
+    "post_town": "LONDON",
+    "county": "",
+    "country": "UNITED KINGDOM",
+    "postal_code": "WC2N 6RH"
+  },
+  "accounts": {
+    "category": "DORMANT",
+    "last_made_up": "30/06/2025",
+    "next_due": "31/03/2027",
+    "ref_day": "30",
+    "ref_month": "6"
+  },
+  "mortgages": {
+    "num_charges": 0,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 1181364.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.507989,
+    "lng": -0.124663,
+    "lad24_cd": "E09000033",
+    "lad24_nm": "Westminster",
+    "region": "London"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/01446825"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "central_govt",
+  "buyer_type_breakdown": {
+    "central_govt": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T21:14:06Z",
+    "company_name": "PRICE WATERHOUSE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1979-09-05",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-03-31",
+    "accounts_last_made_up": "2025-06-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-11"
+  },
+  "governance": {
+    "api_date": "2026-04-27T21:14:08Z",
+    "total_officers": 43,
+    "active_count": 4,
+    "resigned_count": 39,
+    "active_officers": [
+      {
+        "name": "PATTERSON, Philip",
+        "role": "secretary",
+        "appointed_on": "2018-09-21",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "COPE, Andrew Julian Bailye",
+        "role": "director",
+        "appointed_on": "2016-07-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "HUNT, Simon David",
+        "role": "director",
+        "appointed_on": "2024-12-19",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "SCHWARZMANN, Dan Yoram",
+        "role": "director",
+        "appointed_on": "2017-09-06",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T21:14:10Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Pwc Holdings (Uk) Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-12-31",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "United Kingdom (England And Wales)",
+          "country_registered": "United Kingdom (England And Wales)",
+          "place_registered": "Companies House",
+          "registration_number": "09146932"
+        }
+      },
+      {
+        "name": "Pricewaterhousecoopers Services Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "United Kingdom (England)",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "00728502"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NjU1NzY1MWFkaXF6a2N4",
+    "date": "2026-01-04",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-dormant",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/oJAA8o0SBmhVkPcdCKilh69T7GoJJ0xzJK7CNxIlng0/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01446825/filing-history/MzQ5NjU1NzY1MWFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

@@ -1,0 +1,170 @@
+{
+  "schema_version": "v2",
+  "company_number": "01243967",
+  "display_name": "Mott Macdonald Limited",
+  "official_name": "MOTT MACDONALD LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "11/02/1976",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "71129"
+  ],
+  "sic_labels": [
+    "Other engineering activities"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "10 FLEET PLACE",
+    "address_line_2": "",
+    "post_town": "LONDON",
+    "county": "",
+    "country": "UNITED KINGDOM",
+    "postal_code": "EC4M 7RB"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 3,
+    "num_outstanding": 1,
+    "num_part_satisfied": 0,
+    "num_satisfied": 2
+  },
+  "spend_profile": {
+    "total_gbp_2024": 1020374110.49,
+    "n_contracts": 31,
+    "n_buyers": 21
+  },
+  "geo": {
+    "lat": 51.514962,
+    "lng": -0.103637,
+    "lad24_cd": "E09000001",
+    "lad24_nm": "City of London",
+    "region": "London"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/01243967"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T02:16:08Z",
+    "company_name": "MOTT MACDONALD LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1976-02-11",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-19"
+  },
+  "governance": {
+    "api_date": "2026-04-22T02:16:10Z",
+    "total_officers": 64,
+    "active_count": 5,
+    "resigned_count": 59,
+    "active_officers": [
+      {
+        "name": "FIELD, Joanna Maria",
+        "role": "secretary",
+        "appointed_on": "2024-08-02",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "HARRIS, James Huw Keir",
+        "role": "director",
+        "appointed_on": "2017-12-15",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "JOHNSON, David Andrew",
+        "role": "director",
+        "appointed_on": "2024-01-01",
+        "country_of_residence": "Australia",
+        "nationality": "Australian"
+      },
+      {
+        "name": "ROUD, Edwin George",
+        "role": "director",
+        "appointed_on": "2014-04-14",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "TRAVERS, Catherine Helen",
+        "role": "director",
+        "appointed_on": "2022-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T02:16:11Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mott Macdonald Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2017-05-09",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "England And Wales",
+          "registration_number": "1110949"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4Mjk5OTkyNWFkaXF6a2N4",
+    "date": "2025-09-29",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/NGiipvC_kzPbEIDfFpfXkA9PIn9W6-kvAToNZ85u4YU/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01243967/filing-history/MzQ4Mjk5OTkyNWFkaXF6a2N4"
+  },
+  "top_buyer_type": "other",
+  "buyer_type_breakdown": {
+    "other": 0.8053,
+    "central_govt": 0.1391,
+    "agency": 0.0468,
+    "council": 0.0058,
+    "nhs": 0.0029,
+    "trust": 0.0001
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

@@ -1,0 +1,150 @@
+{
+  "schema_version": "v2",
+  "company_number": "NI060102",
+  "display_name": "Learning Pool Limited",
+  "official_name": "LEARNING POOL LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "10/07/2006",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "85600"
+  ],
+  "sic_labels": [
+    "Educational support services"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "OLD CITY FACTORY",
+    "address_line_2": "100 PATRICK STREET",
+    "post_town": "DERRY",
+    "county": "DERRY",
+    "country": "",
+    "postal_code": "BT48 7EL"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "30/04/2025",
+    "next_due": "31/01/2027",
+    "ref_day": "30",
+    "ref_month": "4"
+  },
+  "mortgages": {
+    "num_charges": 6,
+    "num_outstanding": 3,
+    "num_part_satisfied": 0,
+    "num_satisfied": 3
+  },
+  "spend_profile": {
+    "total_gbp_2024": 840197.66,
+    "n_contracts": 12,
+    "n_buyers": 12
+  },
+  "geo": {
+    "lat": 54.999962,
+    "lng": -7.323334,
+    "lad24_cd": "N09000005",
+    "lad24_nm": "Derry City and Strabane",
+    "region": null
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/NI060102"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 0.642,
+    "other": 0.1897,
+    "education": 0.1053,
+    "nhs": 0.0425,
+    "police_fire": 0.0204
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T22:15:28Z",
+    "company_name": "LEARNING POOL LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2006-07-10",
+    "date_of_cessation": null,
+    "jurisdiction": "northern-ireland",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-01-31",
+    "accounts_last_made_up": "2025-04-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-24"
+  },
+  "governance": {
+    "api_date": "2026-04-27T22:15:30Z",
+    "total_officers": 19,
+    "active_count": 2,
+    "resigned_count": 17,
+    "active_officers": [
+      {
+        "name": "WILKES, Adam",
+        "role": "secretary",
+        "appointed_on": "2024-11-26",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "WILKES, Adam James",
+        "role": "director",
+        "appointed_on": "2026-02-20",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T22:15:32Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Ginnlear Acquisition Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "Northern Ireland",
+          "place_registered": "Companies House",
+          "registration_number": "Ni637947"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwMjI5Njk5MmFkaXF6a2N4",
+    "date": "2026-01-30",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/TwRhFaanL09ysBjfAJV9ewmaEV3D-T5_vbQ3Jz6MFcs/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/NI060102/filing-history/MzUwMjI5Njk5MmFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

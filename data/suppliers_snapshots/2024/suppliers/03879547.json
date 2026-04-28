@@ -1,0 +1,176 @@
+{
+  "schema_version": "v2",
+  "company_number": "03879547",
+  "display_name": "Mergermarket Limited",
+  "official_name": "MERGERMARKET LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "18/11/1999",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "58190"
+  ],
+  "sic_labels": [
+    "Other publishing activities"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "C/O ION 10 QUEEN ST PLACE",
+    "address_line_2": "2ND FLOOR",
+    "post_town": "LONDON",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "EC4R 1BE"
+  },
+  "accounts": {
+    "category": "AUDIT EXEMPTION SUBSIDIARY",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 24,
+    "num_outstanding": 13,
+    "num_part_satisfied": 0,
+    "num_satisfied": 11
+  },
+  "spend_profile": {
+    "total_gbp_2024": 63747.0,
+    "n_contracts": 2,
+    "n_buyers": 2
+  },
+  "geo": {
+    "lat": 51.510276,
+    "lng": -0.093008,
+    "lad24_cd": "E09000001",
+    "lad24_nm": "City of London",
+    "region": "London"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/03879547"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "other",
+  "buyer_type_breakdown": {
+    "other": 0.7451,
+    "agency": 0.2549
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T08:19:51Z",
+    "company_name": "MERGERMARKET LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1999-11-18",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-22"
+  },
+  "governance": {
+    "api_date": "2026-04-28T08:19:52Z",
+    "total_officers": 30,
+    "active_count": 2,
+    "resigned_count": 28,
+    "active_officers": [
+      {
+        "name": "EVANS, Paul Robert",
+        "role": "director",
+        "appointed_on": "2022-07-27",
+        "country_of_residence": "England",
+        "nationality": "English"
+      },
+      {
+        "name": "GULLAPALLI, Kunal Venkat",
+        "role": "director",
+        "appointed_on": "2019-11-01",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T08:19:53Z",
+    "total_results": 3,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Andrea Pignataro",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Italian",
+        "country_of_residence": "Switzerland",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2023-01-01",
+        "identification": null
+      },
+      {
+        "name": "Mergermarket Bidco Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "English Law",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "08743375"
+        }
+      },
+      {
+        "name": "Mergermarket Bidco Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "08743375"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4NzY2NTY4N2FkaXF6a2N4",
+    "date": "2025-11-06",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-audit-exemption-subsiduary",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/qokDcu6DhEBCurNPuN0nEzrBgNnqFwwIJiBQSvnV9qE/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03879547/filing-history/MzQ4NzY2NTY4N2FkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

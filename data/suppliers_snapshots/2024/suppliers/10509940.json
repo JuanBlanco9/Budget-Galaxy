@@ -1,0 +1,140 @@
+{
+  "schema_version": "v2",
+  "company_number": "10509940",
+  "display_name": "Care4Uhomecare Ltd",
+  "official_name": "CARE4UHOMECARE LTD",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "05/12/2016",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "86900",
+    "87300"
+  ],
+  "sic_labels": [
+    "Other human health activities",
+    "Residential care activities for the elderly and disabled"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "UNIT 13A ACTION HOUSE",
+    "address_line_2": "53 SANDGATE STREET",
+    "post_town": "SOUTHWARK",
+    "county": "LONDON",
+    "country": "ENGLAND",
+    "postal_code": "SE15 1LE"
+  },
+  "accounts": {
+    "category": "TOTAL EXEMPTION FULL",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "30",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 0,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 90000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.484526,
+    "lng": -0.062627,
+    "lad24_cd": "E09000028",
+    "lad24_nm": "Southwark",
+    "region": "London"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/10509940"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T06:53:47Z",
+    "company_name": "CARE4UHOMECARE LTD",
+    "company_status": "active",
+    "date_of_creation": "2016-12-05",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-22"
+  },
+  "governance": {
+    "api_date": "2026-04-28T06:53:48Z",
+    "total_officers": 2,
+    "active_count": 2,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "ENOGIERU, Sarah Edna",
+        "role": "director",
+        "appointed_on": "2016-12-05",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "OSIKOROBIA, Eric",
+        "role": "director",
+        "appointed_on": "2017-03-17",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T06:53:49Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Ms Sarah Edna Enogieru",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-12-05",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NjY1MTk1MGFkaXF6a2N4",
+    "date": "2025-12-29",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/VDRbSojGh4BLsSkvUh1StcDZbzj3aE5cl1UU-BOGRy8/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/10509940/filing-history/MzQ5NjY1MTk1MGFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

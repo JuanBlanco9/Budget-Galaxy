@@ -1,0 +1,195 @@
+{
+  "schema_version": "v2",
+  "company_number": "00531793",
+  "display_name": "Lodge Tyre Company Limited(The)",
+  "official_name": "LODGE TYRE COMPANY LIMITED(THE)",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "06/04/1954",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "45320"
+  ],
+  "sic_labels": [
+    "Retail trade of motor vehicle parts and accessories"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "ICKNIELD STREET DRIVE",
+    "address_line_2": "WASHFORD WEST",
+    "post_town": "REDDITCH",
+    "county": "WORCESTERSHIRE",
+    "country": "ENGLAND",
+    "postal_code": "B98 0DE"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "28/03/2025",
+    "next_due": "31/12/2026",
+    "ref_day": "31",
+    "ref_month": "3"
+  },
+  "mortgages": {
+    "num_charges": 9,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 9
+  },
+  "spend_profile": {
+    "total_gbp_2024": 1200000.0,
+    "n_contracts": 2,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 52.288885,
+    "lng": -1.89917,
+    "lad24_cd": "E07000236",
+    "lad24_nm": "Redditch",
+    "region": "West Midlands"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/00531793"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "other",
+  "buyer_type_breakdown": {
+    "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T21:09:38Z",
+    "company_name": "HALFORDS COMMERCIAL FLEET SERVICES LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1954-04-06",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-28",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-08-05"
+  },
+  "governance": {
+    "api_date": "2026-04-27T21:09:39Z",
+    "total_officers": 17,
+    "active_count": 4,
+    "resigned_count": 13,
+    "active_officers": [
+      {
+        "name": "O'GORMAN, Timothy Joseph Gerard",
+        "role": "secretary",
+        "appointed_on": "2022-10-04",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BIRCH, Henry Benedict",
+        "role": "director",
+        "appointed_on": "2025-04-16",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HARTLEY, Johanna Ruth",
+        "role": "director",
+        "appointed_on": "2022-10-04",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MCSHANE, Christopher",
+        "role": "director",
+        "appointed_on": "2026-03-17",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T21:09:41Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Ltc Trading Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2022-09-27",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "England And Wales",
+          "registration_number": "14150432"
+        }
+      },
+      {
+        "name": "Teams Property Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2022-09-16",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "England And Wales",
+          "registration_number": "14150161"
+        }
+      },
+      {
+        "name": "Lodge Holdings (Uk) Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4OTM1NTU0MWFkaXF6a2N4",
+    "date": "2025-11-19",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/QTvj5Uvy-KELB7sgnNGrmYFCQKHlle36DA_mIxueRp8/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/00531793/filing-history/MzQ4OTM1NTU0MWFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

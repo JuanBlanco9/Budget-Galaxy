@@ -1,0 +1,215 @@
+{
+  "schema_version": "v2",
+  "company_number": "01471587",
+  "display_name": "Vodafone Limited",
+  "official_name": "VODAFONE LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "07/01/1980",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "33200",
+    "61900"
+  ],
+  "sic_labels": [
+    "Installation of industrial machinery and equipment",
+    "Other telecommunications activities"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "VODAFONE HOUSE",
+    "address_line_2": "THE CONNECTION",
+    "post_town": "NEWBURY",
+    "county": "BERKSHIRE",
+    "country": "",
+    "postal_code": "RG14 2FN"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/03/2025",
+    "next_due": "31/12/2026",
+    "ref_day": "31",
+    "ref_month": "3"
+  },
+  "mortgages": {
+    "num_charges": 1,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 1
+  },
+  "spend_profile": {
+    "total_gbp_2024": 2528794472.78,
+    "n_contracts": 22,
+    "n_buyers": 22
+  },
+  "geo": {
+    "lat": 51.416718,
+    "lng": -1.319728,
+    "lad24_cd": "E06000037",
+    "lad24_nm": "West Berkshire",
+    "region": "South East"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/01471587"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T01:51:17Z",
+    "company_name": "VODAFONE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1980-01-07",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-01"
+  },
+  "governance": {
+    "api_date": "2026-04-22T01:51:19Z",
+    "total_officers": 112,
+    "active_count": 5,
+    "resigned_count": 107,
+    "active_officers": [
+      {
+        "name": "LERNER, Stephen",
+        "role": "secretary",
+        "appointed_on": "2025-05-31",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "GLIDDON, Nicholas Francis",
+        "role": "director",
+        "appointed_on": "2022-05-25",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "LERNER, Stephen Daniel",
+        "role": "director",
+        "appointed_on": "2025-05-31",
+        "country_of_residence": "United Kingdom",
+        "nationality": "Canadian"
+      },
+      {
+        "name": "PURKIS, Darren Martin",
+        "role": "director",
+        "appointed_on": "2025-05-31",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "TAYLOR, Max",
+        "role": "director",
+        "appointed_on": "2022-12-02",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T01:51:21Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Vodafonethree Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2024-09-25",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "United Kingdom",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "14903490"
+        }
+      },
+      {
+        "name": "Vodafone International Operations Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2022-12-19",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "United Kingdom (England)",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "2797438"
+        }
+      },
+      {
+        "name": "Vodafone Mobile Network Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "United Kingdom (England)",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "03961482"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NjIxNDgyOGFkaXF6a2N4",
+    "date": "2025-12-31",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/ffSCEuLn2pwAE-el4cKx6xWo3Xu8UXwQZXM5OolBUMA/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01471587/filing-history/MzQ5NjIxNDgyOGFkaXF6a2N4"
+  },
+  "top_buyer_type": "other",
+  "buyer_type_breakdown": {
+    "other": 0.9944,
+    "agency": 0.0019,
+    "central_govt": 0.0018,
+    "council": 0.001,
+    "police_fire": 0.0004,
+    "education": 0.0003,
+    "nhs": 0.0003
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

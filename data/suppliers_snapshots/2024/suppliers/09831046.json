@@ -1,0 +1,146 @@
+{
+  "schema_version": "v2",
+  "company_number": "09831046",
+  "display_name": "Isandbox Ltd",
+  "official_name": "ISANDBOX LTD",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "19/10/2015",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "85600"
+  ],
+  "sic_labels": [
+    "Educational support services"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "142-143 PARROCK STREET",
+    "address_line_2": "",
+    "post_town": "GRAVESEND",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "DA12 1EY"
+  },
+  "accounts": {
+    "category": "MICRO ENTITY",
+    "last_made_up": "31/10/2024",
+    "next_due": "31/07/2026",
+    "ref_day": "31",
+    "ref_month": "10"
+  },
+  "mortgages": {
+    "num_charges": 0,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 11748.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.43918,
+    "lng": 0.371525,
+    "lad24_cd": "E07000109",
+    "lad24_nm": "Gravesham",
+    "region": "South East"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/09831046"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "education",
+  "buyer_type_breakdown": {
+    "education": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T13:31:00Z",
+    "company_name": "ISANDBOX LTD",
+    "company_status": "active",
+    "date_of_creation": "2015-10-19",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-07-31",
+    "accounts_last_made_up": "2024-10-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-20"
+  },
+  "governance": {
+    "api_date": "2026-04-28T13:31:01Z",
+    "total_officers": 3,
+    "active_count": 1,
+    "resigned_count": 2,
+    "active_officers": [
+      {
+        "name": "DMITRIJEV, Deniss",
+        "role": "director",
+        "appointed_on": "2016-10-20",
+        "country_of_residence": "England",
+        "nationality": "Estonian"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T13:31:02Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Deniss Dmitrijev",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent",
+          "voting-rights-50-to-75-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2022-05-25",
+        "identification": null
+      },
+      {
+        "name": "Mr Konstantin Nazaruk",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2016-10-18",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NTcwNjEwMGFkaXF6a2N4",
+    "date": "2025-07-30",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-micro-entity",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/RcR4h-Wb1Pw0KpLQ75JMAtkWsjR-mx24m-tKNiXb1Qc/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/09831046/filing-history/MzQ3NTcwNjEwMGFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

@@ -1,0 +1,214 @@
+{
+  "schema_version": "v2",
+  "company_number": "SC204560",
+  "display_name": "Iomart Group Plc",
+  "official_name": "IOMART GROUP PLC",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Public Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "28/02/2000",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "62012",
+    "62020",
+    "63110"
+  ],
+  "sic_labels": [
+    "Business and domestic software development",
+    "Information technology consultancy activities",
+    "Data processing, hosting and related activities"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "6 ATLANTIC QUAY",
+    "address_line_2": "55 ROBERTSON STREET",
+    "post_town": "GLASGOW",
+    "county": "",
+    "country": "SCOTLAND",
+    "postal_code": "G2 8JD"
+  },
+  "accounts": {
+    "category": "GROUP",
+    "last_made_up": "31/03/2025",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "3"
+  },
+  "mortgages": {
+    "num_charges": 3,
+    "num_outstanding": 2,
+    "num_part_satisfied": 0,
+    "num_satisfied": 1
+  },
+  "spend_profile": {
+    "total_gbp_2024": 34404.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 55.857911,
+    "lng": -4.261357,
+    "lad24_cd": "S12000049",
+    "lad24_nm": "Glasgow City",
+    "region": null
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/SC204560"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "nhs",
+  "buyer_type_breakdown": {
+    "nhs": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T11:01:09Z",
+    "company_name": "IOMART GROUP PLC",
+    "company_status": "active",
+    "date_of_creation": "2000-02-28",
+    "date_of_cessation": null,
+    "jurisdiction": "scotland",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-14"
+  },
+  "governance": {
+    "api_date": "2026-04-28T11:01:11Z",
+    "total_officers": 33,
+    "active_count": 7,
+    "resigned_count": 26,
+    "active_officers": [
+      {
+        "name": "BROWN, Julie",
+        "role": "secretary",
+        "appointed_on": "2023-02-28",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "CHAMBERLAIN, Adrian",
+        "role": "director",
+        "appointed_on": "2023-06-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CUNNINGHAM, Scott Thomas",
+        "role": "director",
+        "appointed_on": "2018-09-04",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "LAMONT, Kathryn Elizabeth",
+        "role": "director",
+        "appointed_on": "2019-02-27",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      },
+      {
+        "name": "LAST, Richard",
+        "role": "director",
+        "appointed_on": "2024-06-12",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MACSWEEN, Angus",
+        "role": "director",
+        "appointed_on": "2020-10-01",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      },
+      {
+        "name": "NABAVI, Annette Patricia, Dr",
+        "role": "director",
+        "appointed_on": "2023-05-25",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T11:01:12Z",
+    "total_results": 4,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Miss Lucy Rebecca Dimes",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2023-09-18",
+        "identification": null
+      },
+      {
+        "name": "Mr Reece Garethe Donovan",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2020-10-01",
+        "identification": null
+      },
+      {
+        "name": "Mr Scott Thomas Cunningham",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2018-09-04",
+        "identification": null
+      },
+      {
+        "name": "Mr Angus Macsween",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "Scotland",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control",
+          "significant-influence-or-control-as-firm"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4Mzc3MDI4N2FkaXF6a2N4",
+    "date": "2025-10-10",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/JtzeNULJOl7iHvdzBW5zIwxPZSVriWc_IWUvCBh1ixQ/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/SC204560/filing-history/MzQ4Mzc3MDI4N2FkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

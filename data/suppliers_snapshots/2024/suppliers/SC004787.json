@@ -1,0 +1,198 @@
+{
+  "schema_version": "v2",
+  "company_number": "SC004787",
+  "display_name": "Sylvamo Uk Limited",
+  "official_name": "SYLVAMO UK LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "28/01/1901",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "46180"
+  ],
+  "sic_labels": [
+    "Agents specialized in the sale of other particular products"
+  ],
+  "previous_names": [
+    {
+      "name": "INTERNATIONAL PAPER (UK) LIMITED",
+      "condate": "03/08/2021"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "C/O JOHNSTON CARMICHAEL BISHOP'S COURT",
+    "address_line_2": "29 ALBYN PLACE",
+    "post_town": "ABERDEEN",
+    "county": "",
+    "country": "SCOTLAND",
+    "postal_code": "AB10 1YL"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 6,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 6
+  },
+  "spend_profile": {
+    "total_gbp_2024": 22000000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 57.142706,
+    "lng": -2.121642,
+    "lad24_cd": "S12000033",
+    "lad24_nm": "Aberdeen City",
+    "region": null
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/SC004787"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "other",
+  "buyer_type_breakdown": {
+    "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T13:26:48Z",
+    "company_name": "SYLVAMO UK LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1901-01-28",
+    "date_of_cessation": null,
+    "jurisdiction": "scotland",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-14"
+  },
+  "governance": {
+    "api_date": "2026-04-27T13:26:50Z",
+    "total_officers": 34,
+    "active_count": 3,
+    "resigned_count": 31,
+    "active_officers": [
+      {
+        "name": "DEMETS, Gérald",
+        "role": "director",
+        "appointed_on": "2022-04-20",
+        "country_of_residence": "Belgium",
+        "nationality": "Belgian"
+      },
+      {
+        "name": "DYMKIN, Evgenii",
+        "role": "director",
+        "appointed_on": "2022-07-11",
+        "country_of_residence": "Luxembourg",
+        "nationality": "Belgian"
+      },
+      {
+        "name": "ROBERTSON, Micheal Philip",
+        "role": "director",
+        "appointed_on": "2018-02-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T13:26:52Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Sylvamo Corp",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2021-10-01",
+        "identification": {
+          "legal_form": "Corporation",
+          "legal_authority": "General Corporation Law",
+          "country_registered": "United States",
+          "place_registered": "State Of Delaware",
+          "registration_number": "5462844"
+        }
+      },
+      {
+        "name": "International Paper Company",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Corporation",
+          "legal_authority": "State Of New York",
+          "country_registered": "State Of New York",
+          "place_registered": "Secretary Of State For The State Of New York",
+          "registration_number": "Na"
+        }
+      },
+      {
+        "name": "International Paper Group (Uk) Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "England And Wales",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "03462073"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NjYzMjEwMWFkaXF6a2N4",
+    "date": "2026-01-06",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/h9b3EbaPNO-FowK7InCyLvGcv9Oo7z6UIB5f8rMLSww/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/SC004787/filing-history/MzQ5NjYzMjEwMWFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

@@ -1,0 +1,187 @@
+{
+  "schema_version": "v2",
+  "company_number": "03708416",
+  "display_name": "Tier 1 Asset Management Limited",
+  "official_name": "TIER 1 ASSET MANAGEMENT LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "04/02/1999",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "47910",
+    "62020",
+    "62090"
+  ],
+  "sic_labels": [
+    "Retail sale via mail order houses or via Internet",
+    "Information technology consultancy activities",
+    "Other information technology service activities"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "59 STANLEY ROAD",
+    "address_line_2": "WHITEFIELD",
+    "post_town": "MANCHESTER",
+    "county": "GREATER MANCHESTER",
+    "country": "",
+    "postal_code": "M45 8GZ"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/03/2025",
+    "next_due": "31/12/2026",
+    "ref_day": "31",
+    "ref_month": "3"
+  },
+  "mortgages": {
+    "num_charges": 9,
+    "num_outstanding": 6,
+    "num_part_satisfied": 0,
+    "num_satisfied": 3
+  },
+  "spend_profile": {
+    "total_gbp_2024": 35000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 53.552758,
+    "lng": -2.286683,
+    "lad24_cd": "E08000002",
+    "lad24_nm": "Bury",
+    "region": "North West"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/03708416"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T10:54:47Z",
+    "company_name": "TIER 1 ASSET MANAGEMENT LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1999-02-04",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-23"
+  },
+  "governance": {
+    "api_date": "2026-04-28T10:54:48Z",
+    "total_officers": 12,
+    "active_count": 2,
+    "resigned_count": 10,
+    "active_officers": [
+      {
+        "name": "CHANDLER, Edward",
+        "role": "director",
+        "appointed_on": "2025-02-17",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "ROSE, Jonathan David",
+        "role": "director",
+        "appointed_on": "1999-02-04",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T10:54:49Z",
+    "total_results": 4,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Renaissance Bidco Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2021-11-05",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "United Kingdom (England And Wales)",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "13686319"
+        }
+      },
+      {
+        "name": "Mr Jonathan David Rose",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mrs Claudia Alicia Rose",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Jonathan Anthony Basso",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors",
+          "right-to-appoint-and-remove-directors-as-firm"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxMzY2ODQ2M2FkaXF6a2N4",
+    "date": "2026-03-31",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/TzsqmEM4SOyBK1enP5RrGl7AMklPRS_GzBa2_9o0G1s/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03708416/filing-history/MzUxMzY2ODQ2M2FkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

@@ -1,0 +1,188 @@
+{
+  "schema_version": "v2",
+  "company_number": "03981809",
+  "display_name": "Aerocom (Uk) Limited",
+  "official_name": "AEROCOM (UK) LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "27/04/2000",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "43290"
+  ],
+  "sic_labels": [
+    "Other construction installation"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "12 VICKERY WAY",
+    "address_line_2": "CHETWYND BUSINESS PARK",
+    "post_town": "CHILWELL",
+    "county": "NOTTINGHAM",
+    "country": "",
+    "postal_code": "NG9 6RY"
+  },
+  "accounts": {
+    "category": "SMALL",
+    "last_made_up": "30/09/2024",
+    "next_due": "30/06/2026",
+    "ref_day": "30",
+    "ref_month": "9"
+  },
+  "mortgages": {
+    "num_charges": 2,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 2
+  },
+  "spend_profile": {
+    "total_gbp_2024": 200000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 52.908028,
+    "lng": -1.246784,
+    "lad24_cd": "E07000172",
+    "lad24_nm": "Broxtowe",
+    "region": "East Midlands"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/03981809"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "nhs",
+  "buyer_type_breakdown": {
+    "nhs": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T03:43:57Z",
+    "company_name": "AEROCOM (UK) LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2000-04-27",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-06-30",
+    "accounts_last_made_up": "2024-09-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-09-05"
+  },
+  "governance": {
+    "api_date": "2026-04-28T03:43:58Z",
+    "total_officers": 10,
+    "active_count": 4,
+    "resigned_count": 6,
+    "active_officers": [
+      {
+        "name": "HUGHES, Enda",
+        "role": "secretary",
+        "appointed_on": "2000-10-02",
+        "country_of_residence": null,
+        "nationality": "Irish"
+      },
+      {
+        "name": "HUGHES, Enda Mary",
+        "role": "director",
+        "appointed_on": "2017-07-01",
+        "country_of_residence": "Ireland",
+        "nationality": "Irish"
+      },
+      {
+        "name": "HUGHES, John",
+        "role": "director",
+        "appointed_on": "2000-10-02",
+        "country_of_residence": "Ireland",
+        "nationality": "Irish"
+      },
+      {
+        "name": "HUGHES, Thomas David",
+        "role": "director",
+        "appointed_on": "2020-10-01",
+        "country_of_residence": "England",
+        "nationality": "Irish"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T03:43:59Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mrs Enda Hughes",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Irish",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2021-02-25",
+        "identification": null
+      },
+      {
+        "name": "Aerocom (Holdings) Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2021-02-25",
+        "identification": {
+          "legal_form": "Company Limited By Shares",
+          "legal_authority": "England And Wales",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "13214898"
+        }
+      },
+      {
+        "name": "Mr John Hughes",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Irish",
+        "country_of_residence": "Ireland",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent",
+          "voting-rights-50-to-75-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-27",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MTY3NDcyOWFkaXF6a2N4",
+    "date": "2025-06-26",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/XoQABP1DPZHheDLfCIDfi6vYRySmT5qfvVsPyvJ1iLg/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03981809/filing-history/MzQ3MTY3NDcyOWFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

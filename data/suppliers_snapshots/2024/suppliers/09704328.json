@@ -1,0 +1,166 @@
+{
+  "schema_version": "v2",
+  "company_number": "09704328",
+  "display_name": "Pro Sentry Ltd",
+  "official_name": "PRO SENTRY LTD",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "27/07/2015",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "80100"
+  ],
+  "sic_labels": [
+    "Private security activities"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "UNIT 301, 132-134",
+    "address_line_2": "COLLEGE ROAD",
+    "post_town": "HARROW",
+    "county": "MIDDLESEX",
+    "country": "ENGLAND",
+    "postal_code": "HA1 1BQ"
+  },
+  "accounts": {
+    "category": "TOTAL EXEMPTION FULL",
+    "last_made_up": "31/07/2024",
+    "next_due": "23/04/2026",
+    "ref_day": "30",
+    "ref_month": "4"
+  },
+  "mortgages": {
+    "num_charges": 1,
+    "num_outstanding": 1,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 275490.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.580208,
+    "lng": -0.339533,
+    "lad24_cd": "E09000015",
+    "lad24_nm": "Harrow",
+    "region": "London"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/09704328"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "education",
+  "buyer_type_breakdown": {
+    "education": 0.7075,
+    "council": 0.2925
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T02:50:33Z",
+    "company_name": "PRO SENTRY LTD",
+    "company_status": "active",
+    "date_of_creation": "2015-07-27",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-04-30",
+    "accounts_last_made_up": "2024-07-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-09-14"
+  },
+  "governance": {
+    "api_date": "2026-04-28T02:50:34Z",
+    "total_officers": 3,
+    "active_count": 1,
+    "resigned_count": 2,
+    "active_officers": [
+      {
+        "name": "RASHID, Mohammed Azeem",
+        "role": "director",
+        "appointed_on": "2015-07-27",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T02:50:35Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mar Uk Investments Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2025-08-22",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "15917210"
+        }
+      },
+      {
+        "name": "Mr Atiqul Hassan Malik",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2020-03-01",
+        "identification": null
+      },
+      {
+        "name": "Mr Mohammed Azeem Rashid",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-07-01",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwMTE0NjAyNWFkaXF6a2N4",
+    "date": "2026-01-23",
+    "type": "AA01",
+    "description": "change-account-reference-date-company-previous-shortened",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/9i_Oq2vOrS89GBYEBkJnGP129Rt_wIRH22bRUwKelTo/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/09704328/filing-history/MzUwMTE0NjAyNWFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

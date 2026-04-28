@@ -1,0 +1,140 @@
+{
+  "schema_version": "v2",
+  "company_number": "11340345",
+  "display_name": "Friel Consulting Ltd",
+  "official_name": "FRIEL CONSULTING LTD",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "01/05/2018",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "70229"
+  ],
+  "sic_labels": [
+    "Management consultancy activities other than financial management"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "15B REGATTA QUAY",
+    "address_line_2": "KEY STREET",
+    "post_town": "IPSWICH",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "IP4 1FH"
+  },
+  "accounts": {
+    "category": "TOTAL EXEMPTION FULL",
+    "last_made_up": "31/05/2025",
+    "next_due": "28/02/2027",
+    "ref_day": "31",
+    "ref_month": "5"
+  },
+  "mortgages": {
+    "num_charges": 0,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 39610.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 52.052502,
+    "lng": 1.157938,
+    "lad24_cd": "E07000202",
+    "lad24_nm": "Ipswich",
+    "region": "East of England"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/11340345"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T10:28:53Z",
+    "company_name": "FRIEL CONSULTING LTD",
+    "company_status": "active",
+    "date_of_creation": "2018-05-01",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-02-28",
+    "accounts_last_made_up": "2025-05-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-12"
+  },
+  "governance": {
+    "api_date": "2026-04-28T10:28:54Z",
+    "total_officers": 2,
+    "active_count": 2,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "FRIEL, Clare Catherine",
+        "role": "director",
+        "appointed_on": "2018-05-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SMITH, Michelle Ann",
+        "role": "director",
+        "appointed_on": "2024-11-29",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T10:28:55Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Miss Clare Catherine Friel",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2018-05-01",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwNDkwMjU5OWFkaXF6a2N4",
+    "date": "2026-02-13",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/7yKryc8G5PHepLBJapi5xY-qN2r089kUbO58EY04fNw/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/11340345/filing-history/MzUwNDkwMjU5OWFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

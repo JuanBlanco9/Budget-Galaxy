@@ -1,0 +1,132 @@
+{
+  "schema_version": "v2",
+  "company_number": "12477699",
+  "display_name": "Elta Smith Limited",
+  "official_name": "ELTA SMITH LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "24/02/2020",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "70229"
+  ],
+  "sic_labels": [
+    "Management consultancy activities other than financial management"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "TY CANOL",
+    "address_line_2": "LLANGENNY",
+    "post_town": "CRICKHOWELL",
+    "county": "POWYS",
+    "country": "UNITED KINGDOM",
+    "postal_code": "NP8 1HF"
+  },
+  "accounts": {
+    "category": "MICRO ENTITY",
+    "last_made_up": "28/02/2025",
+    "next_due": "30/11/2026",
+    "ref_day": "29",
+    "ref_month": "2"
+  },
+  "mortgages": {
+    "num_charges": 0,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 57080.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.86443,
+    "lng": -3.09587,
+    "lad24_cd": "W06000023",
+    "lad24_nm": "Powys",
+    "region": null
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/12477699"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "education",
+  "buyer_type_breakdown": {
+    "education": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T08:48:56Z",
+    "company_name": "ELTA SMITH LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2020-02-24",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-11-30",
+    "accounts_last_made_up": "2025-02-28",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-09"
+  },
+  "governance": {
+    "api_date": "2026-04-28T08:48:57Z",
+    "total_officers": 1,
+    "active_count": 1,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "SMITH, Elta Christina",
+        "role": "director",
+        "appointed_on": "2020-02-24",
+        "country_of_residence": "Wales",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T08:48:58Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Ms Elta Christina Smith",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "Wales",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2020-02-24",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MTUxMDg5NWFkaXF6a2N4",
+    "date": "2025-11-28",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-micro-entity",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/xF5ZHMrVslapBDMwClOogQco9dNiNT7wxk7ZR9RVS7Q/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/12477699/filing-history/MzQ5MTUxMDg5NWFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

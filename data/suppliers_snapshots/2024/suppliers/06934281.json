@@ -1,0 +1,188 @@
+{
+  "schema_version": "v2",
+  "company_number": "06934281",
+  "display_name": "Blocc Limited",
+  "official_name": "BLOCC LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "15/06/2009",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "13990"
+  ],
+  "sic_labels": [
+    "Manufacture of other textiles n.e.c."
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "UNIT 37 CAMP LANE",
+    "address_line_2": "KINGS NORTON",
+    "post_town": "BIRMINGHAM",
+    "county": "WEST MIDLANDS",
+    "country": "",
+    "postal_code": "B38 8SL"
+  },
+  "accounts": {
+    "category": "TOTAL EXEMPTION FULL",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 2,
+    "num_outstanding": 2,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 1200000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 52.413144,
+    "lng": -1.933438,
+    "lad24_cd": "E08000025",
+    "lad24_nm": "Birmingham",
+    "region": "West Midlands"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/06934281"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "other",
+  "buyer_type_breakdown": {
+    "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T21:11:25Z",
+    "company_name": "BLOCC LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2009-06-15",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-29"
+  },
+  "governance": {
+    "api_date": "2026-04-27T21:11:27Z",
+    "total_officers": 11,
+    "active_count": 6,
+    "resigned_count": 5,
+    "active_officers": [
+      {
+        "name": "DARBY, Jennie Louise",
+        "role": "director",
+        "appointed_on": "2024-02-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MENDEZ, Owen George",
+        "role": "director",
+        "appointed_on": "2024-10-28",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "NIGHTINGALE, Patricia",
+        "role": "director",
+        "appointed_on": "2009-07-13",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "SIMPSON, Philippa Kate",
+        "role": "director",
+        "appointed_on": "2009-06-16",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "THOMAS, Suzanne Marie",
+        "role": "director",
+        "appointed_on": "2017-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WHILEY, Graham Leonard",
+        "role": "director",
+        "appointed_on": "2009-07-13",
+        "country_of_residence": null,
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T21:11:28Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Interia Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2017-11-09",
+        "identification": {
+          "legal_form": "Uk Limited Company",
+          "legal_authority": "Uk Company Law",
+          "country_registered": "England",
+          "place_registered": "Uk Register",
+          "registration_number": "10998776"
+        }
+      },
+      {
+        "name": "Ms Freda Margaret Dawn Kitchener",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent",
+          "voting-rights-50-to-75-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2017-06-15",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MzA1NDk2OGFkaXF6a2N4",
+    "date": "2025-09-29",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/SzqeGF_js5ZhTy-SxjN9Y-0KWll75ysj1sY1blE2Gc4/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/06934281/filing-history/MzQ4MzA1NDk2OGFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

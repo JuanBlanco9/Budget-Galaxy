@@ -1,0 +1,143 @@
+{
+  "schema_version": "v2",
+  "company_number": "06097500",
+  "display_name": "Good 2 Great Limited",
+  "official_name": "GOOD 2 GREAT LIMITED",
+  "status": "liquidation",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "12/02/2007",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "70229"
+  ],
+  "sic_labels": [
+    "Management consultancy activities other than financial management"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "3 THE COURTYARD",
+    "address_line_2": "HARRIS BUSINESS PARK, HANBURY ROAD",
+    "post_town": "STOKE PRIOR",
+    "county": "BROMSGROVE",
+    "country": "",
+    "postal_code": "B60 4DJ"
+  },
+  "accounts": {
+    "category": "MICRO ENTITY",
+    "last_made_up": "31/03/2024",
+    "next_due": "31/12/2025",
+    "ref_day": "31",
+    "ref_month": "3"
+  },
+  "mortgages": {
+    "num_charges": 1,
+    "num_outstanding": 1,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 381766.0,
+    "n_contracts": 2,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 52.299844,
+    "lng": -2.075412,
+    "lad24_cd": "E07000234",
+    "lad24_nm": "Bromsgrove",
+    "region": "West Midlands"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/06097500"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T01:20:55Z",
+    "company_name": "GOOD 2 GREAT LIMITED",
+    "company_status": "liquidation",
+    "date_of_creation": "2007-02-12",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": true,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": true,
+    "accounts_next_due": "2025-12-31",
+    "accounts_last_made_up": "2024-03-31",
+    "confirmation_statement_overdue": true,
+    "confirmation_statement_next_due": "2026-01-29"
+  },
+  "governance": {
+    "api_date": "2026-04-28T01:20:57Z",
+    "total_officers": 8,
+    "active_count": 1,
+    "resigned_count": 7,
+    "active_officers": [
+      {
+        "name": "THEMANS, John Robert",
+        "role": "director",
+        "appointed_on": "2008-11-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T01:20:58Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Gary Charles Halpin",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr John Robert Themans",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ0NjI2MDA5NWFkaXF6a2N4",
+    "date": "2024-12-05",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-micro-entity",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/ZJ9-fghljIIQs3IWf6kDpDuyCMMrborYtEg0sj9W2-c/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/06097500/filing-history/MzQ0NjI2MDA5NWFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

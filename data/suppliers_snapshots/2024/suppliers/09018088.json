@@ -1,0 +1,148 @@
+{
+  "schema_version": "v2",
+  "company_number": "09018088",
+  "display_name": "Peter Halliday Ltd",
+  "official_name": "PETER HALLIDAY LTD",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "30/04/2014",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "73120"
+  ],
+  "sic_labels": [
+    "Media representation services"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "MILL HOUSE",
+    "address_line_2": "CLUNBURY",
+    "post_town": "CRAVEN ARMS",
+    "county": "",
+    "country": "",
+    "postal_code": "SY7 0HG"
+  },
+  "accounts": {
+    "category": "MICRO ENTITY",
+    "last_made_up": "30/04/2025",
+    "next_due": "31/01/2027",
+    "ref_day": "30",
+    "ref_month": "4"
+  },
+  "mortgages": {
+    "num_charges": 0,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 0.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 52.419287,
+    "lng": -2.927351,
+    "lad24_cd": "E06000051",
+    "lad24_nm": "Shropshire",
+    "region": "West Midlands"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/09018088"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "other",
+  "buyer_type_breakdown": {},
+  "ch_profile": {
+    "api_date": "2026-04-28T14:43:37Z",
+    "company_name": "PETER HALLIDAY LTD",
+    "company_status": "active",
+    "date_of_creation": "2014-04-30",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-01-31",
+    "accounts_last_made_up": "2025-04-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-12"
+  },
+  "governance": {
+    "api_date": "2026-04-28T14:43:38Z",
+    "total_officers": 2,
+    "active_count": 2,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "HALLIDAY, Philippa Mary",
+        "role": "secretary",
+        "appointed_on": "2023-08-18",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "HALLIDAY, Peter Benjamin Russell",
+        "role": "director",
+        "appointed_on": "2014-04-30",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T14:43:40Z",
+    "total_results": 2,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Mrs Philippa Mary Halliday",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2025-12-01",
+        "identification": null
+      },
+      {
+        "name": "Mr Peter Benjamin Russell Halliday",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent"
+        ],
+        "notified_on": "2016-07-01",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3Nzg4NTM5MWFkaXF6a2N4",
+    "date": "2025-08-19",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-micro-entity",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/0hn_-CaXVNxkfCw1MKjgG0xs4GRL20vl_d7QsYTudvE/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/09018088/filing-history/MzQ3Nzg4NTM5MWFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

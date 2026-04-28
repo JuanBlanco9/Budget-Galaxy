@@ -1,0 +1,127 @@
+{
+  "schema_version": "v2",
+  "company_number": "FC029307",
+  "display_name": "V. Guldmann A/S",
+  "official_name": "V. GULDMANN A/S",
+  "status": "active",
+  "type": "other_company_type",
+  "category_raw": "Other company type",
+  "jurisdiction": "denmark",
+  "incorporated": "01/04/2007",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [],
+  "sic_labels": [],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "23A GRAHAM BELLE VEJ",
+    "address_line_2": "",
+    "post_town": "AARHUS",
+    "county": "8200",
+    "country": "DENMARK",
+    "postal_code": null
+  },
+  "accounts": {
+    "category": "NO ACCOUNTS FILED",
+    "last_made_up": null,
+    "next_due": null,
+    "ref_day": null,
+    "ref_month": null
+  },
+  "mortgages": {
+    "num_charges": 0,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 63870.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "lad24_cd": null,
+    "lad24_nm": null,
+    "region": null
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/FC029307"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": false
+  },
+  "top_buyer_type": "nhs",
+  "buyer_type_breakdown": {
+    "nhs": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T08:19:34Z",
+    "company_name": "V. GULDMANN A/S",
+    "company_status": "active",
+    "date_of_creation": "2007-04-01",
+    "date_of_cessation": null,
+    "jurisdiction": "united-kingdom",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": null,
+    "accounts_last_made_up": null,
+    "confirmation_statement_overdue": null,
+    "confirmation_statement_next_due": null
+  },
+  "governance": {
+    "api_date": "2026-04-28T08:19:35Z",
+    "total_officers": 7,
+    "active_count": 4,
+    "resigned_count": 3,
+    "active_officers": [
+      {
+        "name": "NIELSEN, Michael Gundelund",
+        "role": "secretary",
+        "appointed_on": "2012-09-02",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "GULDMANN, Carsten",
+        "role": "director",
+        "appointed_on": "2023-01-01",
+        "country_of_residence": "Denmark",
+        "nationality": "Danish"
+      },
+      {
+        "name": "GULDMANN, Jorgen",
+        "role": "director",
+        "appointed_on": "2009-11-26",
+        "country_of_residence": "Denmark",
+        "nationality": "Danish"
+      },
+      {
+        "name": "OLESEN, Joergen Flodgaard",
+        "role": "director",
+        "appointed_on": "2018-05-29",
+        "country_of_residence": "Denmark",
+        "nationality": "Danish"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T08:19:36Z",
+    "total_results": 0,
+    "active_count": 0,
+    "items": []
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

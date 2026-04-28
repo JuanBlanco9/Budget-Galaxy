@@ -1,0 +1,194 @@
+{
+  "schema_version": "v2",
+  "company_number": "09324612",
+  "display_name": "Portland Clinical Limited",
+  "official_name": "PORTLAND CLINICAL LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "24/11/2014",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "78200"
+  ],
+  "sic_labels": [
+    "Temporary employment agency activities"
+  ],
+  "previous_names": [
+    {
+      "name": "PORTLAND MEDICARE LIMITED",
+      "condate": "11/02/2020"
+    },
+    {
+      "name": "PORTLAND HEALTHCARE LIMITED",
+      "condate": "28/09/2015"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "28 BAILEY STREET",
+    "address_line_2": "",
+    "post_town": "SHEFFIELD",
+    "county": "SOUTH YORKSHIRE",
+    "country": "ENGLAND",
+    "postal_code": "S1 4EH"
+  },
+  "accounts": {
+    "category": "SMALL",
+    "last_made_up": "31/10/2024",
+    "next_due": "31/07/2026",
+    "ref_day": "31",
+    "ref_month": "10"
+  },
+  "mortgages": {
+    "num_charges": 2,
+    "num_outstanding": 2,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 2000000000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 53.382479,
+    "lng": -1.474219,
+    "lad24_cd": "E08000039",
+    "lad24_nm": "Sheffield",
+    "region": "Yorkshire and The Humber"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/09324612"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T01:57:39Z",
+    "company_name": "PORTLAND CLINICAL LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2014-11-24",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-07-31",
+    "accounts_last_made_up": "2024-10-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-08"
+  },
+  "governance": {
+    "api_date": "2026-04-22T01:57:40Z",
+    "total_officers": 7,
+    "active_count": 2,
+    "resigned_count": 5,
+    "active_officers": [
+      {
+        "name": "HEPPENSTALL, Keith Desmond",
+        "role": "director",
+        "appointed_on": "2019-04-02",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "YUILL, Ian Anthony",
+        "role": "director",
+        "appointed_on": "2020-06-05",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T01:57:42Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Portland Investment Group Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2023-03-31",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "14742772"
+        }
+      },
+      {
+        "name": "Portland Clinical Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2023-03-31",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "14746502"
+        }
+      },
+      {
+        "name": "Portland Investment Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Limited",
+          "legal_authority": "United Kingdom",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "4504939"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NTcxNTI1OWFkaXF6a2N4",
+    "date": "2025-07-30",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/qHr3z1Hnjeocz6bde7VHNT321MtjnGyiGzO4N61cpi8/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/09324612/filing-history/MzQ3NTcxNTI1OWFkaXF6a2N4"
+  },
+  "top_buyer_type": "other",
+  "buyer_type_breakdown": {
+    "other": 0.9998,
+    "nhs": 0.0002
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

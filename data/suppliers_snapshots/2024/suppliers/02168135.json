@@ -1,0 +1,159 @@
+{
+  "schema_version": "v2",
+  "company_number": "02168135",
+  "display_name": "Harsh Limited",
+  "official_name": "HARSH LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "22/09/1987",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "29320"
+  ],
+  "sic_labels": [
+    "Manufacture of other parts and accessories for motor vehicles"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "THE INDUSTRIAL ESTATE",
+    "address_line_2": "FULL SUTTON",
+    "post_town": "YORK",
+    "county": "NORTH YORKSHIRE",
+    "country": "",
+    "postal_code": "YO41 1HS"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "28/02/2025",
+    "next_due": "30/11/2026",
+    "ref_day": "28",
+    "ref_month": "2"
+  },
+  "mortgages": {
+    "num_charges": 4,
+    "num_outstanding": 4,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 450000000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 53.97719,
+    "lng": -0.856085,
+    "lad24_cd": "E06000011",
+    "lad24_nm": "East Riding of Yorkshire",
+    "region": "Yorkshire and The Humber"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/02168135"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T03:27:30Z",
+    "company_name": "HARSH LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1987-09-22",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-11-30",
+    "accounts_last_made_up": "2025-02-28",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-08-17"
+  },
+  "governance": {
+    "api_date": "2026-04-22T03:27:32Z",
+    "total_officers": 8,
+    "active_count": 5,
+    "resigned_count": 3,
+    "active_officers": [
+      {
+        "name": "FAULKNER, Robert Grant",
+        "role": "secretary",
+        "appointed_on": null,
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "FAULKNER, David Lloyd",
+        "role": "director",
+        "appointed_on": "2003-08-20",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "FAULKNER, Robert Grant",
+        "role": "director",
+        "appointed_on": null,
+        "country_of_residence": "U.K",
+        "nationality": "British"
+      },
+      {
+        "name": "HARGREAVES, Adam",
+        "role": "director",
+        "appointed_on": "2011-09-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HUSTLER, Harry Mark",
+        "role": "director",
+        "appointed_on": "2024-05-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T03:27:34Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Robert Grant Faulkner",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "U.K",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MTUxNDY4MGFkaXF6a2N4",
+    "date": "2025-11-28",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/coNOtAXkLUGQSW-h8qKbRmA7T2iATyix9ofiRCQVEjA/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02168135/filing-history/MzQ5MTUxNDY4MGFkaXF6a2N4"
+  },
+  "top_buyer_type": "other",
+  "buyer_type_breakdown": {
+    "other": 1.0
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

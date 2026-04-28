@@ -1,0 +1,176 @@
+{
+  "schema_version": "v2",
+  "company_number": "00431173",
+  "display_name": "Ernest Doe & Sons Limited",
+  "official_name": "ERNEST DOE & SONS LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "15/03/1947",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "45190",
+    "45200",
+    "46140",
+    "46610"
+  ],
+  "sic_labels": [
+    "Sale of other motor vehicles",
+    "Maintenance and repair of motor vehicles",
+    "Agents involved in the sale of machinery, industrial equipment, ships and aircraft",
+    "Wholesale of agricultural machinery, equipment and supplies"
+  ],
+  "previous_names": [
+    {
+      "name": "ERNEST DOE & SONS,LIMITED",
+      "condate": "21/07/2015"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "ULTING",
+    "address_line_2": "NR MALDON",
+    "post_town": "ESSEX",
+    "county": "",
+    "country": "",
+    "postal_code": "CM9 6QH"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 1,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 1
+  },
+  "spend_profile": {
+    "total_gbp_2024": 36386.9,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.761348,
+    "lng": 0.629597,
+    "lad24_cd": "E07000074",
+    "lad24_nm": "Maldon",
+    "region": "East of England"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/00431173"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 0.5524,
+    "other": 0.4476
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T10:46:50Z",
+    "company_name": "ERNEST DOE & SONS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1947-03-15",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-17"
+  },
+  "governance": {
+    "api_date": "2026-04-28T10:46:51Z",
+    "total_officers": 10,
+    "active_count": 3,
+    "resigned_count": 7,
+    "active_officers": [
+      {
+        "name": "DOE, Angus Ernest",
+        "role": "director",
+        "appointed_on": "2008-06-18",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "DOE, Colin Ernest",
+        "role": "director",
+        "appointed_on": null,
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PARKER, Graham Charles Kendrick",
+        "role": "director",
+        "appointed_on": "2004-05-18",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T10:46:52Z",
+    "total_results": 2,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Mr Colin Ernest Doe",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-06-16",
+        "identification": null
+      },
+      {
+        "name": "Doe Holdings Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "09988136"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NDQzNzE4MmFkaXF6a2N4",
+    "date": "2025-07-21",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/bX6quBHWY5Nd_wSRgfMs815bk9x3qzIzYEw2EjC2xDM/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/00431173/filing-history/MzQ3NDQzNzE4MmFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

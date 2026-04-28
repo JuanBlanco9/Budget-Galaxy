@@ -1,0 +1,159 @@
+{
+  "schema_version": "v2",
+  "company_number": "01569304",
+  "display_name": "Park Lane Limited",
+  "official_name": "PARK LANE LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "22/06/1981",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "45111",
+    "45200",
+    "45310",
+    "45400"
+  ],
+  "sic_labels": [
+    "Sale of new cars and light motor vehicles",
+    "Maintenance and repair of motor vehicles",
+    "Wholesale trade of motor vehicle parts and accessories",
+    "Sale, maintenance and repair of motorcycles and related parts and accessories"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "SUMMIT ONE",
+    "address_line_2": "SUMMIT AVENUE",
+    "post_town": "FARNBOROUGH",
+    "county": "HAMPSHIRE",
+    "country": "",
+    "postal_code": "GU14 0FB"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 3,
+    "num_outstanding": 3,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 699999.0,
+    "n_contracts": 2,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.292191,
+    "lng": -0.800803,
+    "lad24_cd": "E07000092",
+    "lad24_nm": "Rushmoor",
+    "region": "South East"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/01569304"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "police_fire",
+  "buyer_type_breakdown": {
+    "police_fire": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T22:57:59Z",
+    "company_name": "PARK LANE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1981-06-22",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-27"
+  },
+  "governance": {
+    "api_date": "2026-04-27T22:58:01Z",
+    "total_officers": 27,
+    "active_count": 3,
+    "resigned_count": 24,
+    "active_officers": [
+      {
+        "name": "JOHNSON, William Edwin",
+        "role": "secretary",
+        "appointed_on": "2018-11-19",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "JUHRE, Axel Volker",
+        "role": "director",
+        "appointed_on": "2024-08-01",
+        "country_of_residence": "England",
+        "nationality": "German"
+      },
+      {
+        "name": "ROBERTS, Michelle",
+        "role": "director",
+        "appointed_on": "2024-06-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T22:58:02Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Bmw (Uk) Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limite By Shares",
+          "legal_authority": "Uk England",
+          "country_registered": "England",
+          "place_registered": "Uk England",
+          "registration_number": "01378137"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MDQzNDYxM2FkaXF6a2N4",
+    "date": "2025-09-11",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/nIpGKXZWl7cxLLBXsaK2Ac2jriVkxIDPjsyphr1zDZU/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01569304/filing-history/MzQ4MDQzNDYxM2FkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

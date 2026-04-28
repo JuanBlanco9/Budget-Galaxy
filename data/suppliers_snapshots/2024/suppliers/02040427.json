@@ -1,0 +1,211 @@
+{
+  "schema_version": "v2",
+  "company_number": "02040427",
+  "display_name": "Aden House Limited",
+  "official_name": "ADEN HOUSE LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "24/07/1986",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "87100"
+  ],
+  "sic_labels": [
+    "Residential nursing care facilities"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "5 DUNSTON  PLACE",
+    "address_line_2": "DUNSTON ROAD",
+    "post_town": "CHESTERFIELD",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "S41 8NL"
+  },
+  "accounts": {
+    "category": "MEDIUM",
+    "last_made_up": "31/03/2025",
+    "next_due": "31/12/2026",
+    "ref_day": "31",
+    "ref_month": "3"
+  },
+  "mortgages": {
+    "num_charges": 23,
+    "num_outstanding": 3,
+    "num_part_satisfied": 0,
+    "num_satisfied": 20
+  },
+  "spend_profile": {
+    "total_gbp_2024": 300000000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 53.263517,
+    "lng": -1.435769,
+    "lad24_cd": "E07000034",
+    "lad24_nm": "Chesterfield",
+    "region": "East Midlands"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/02040427"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T14:01:52Z",
+    "company_name": "ADEN HOUSE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1986-07-24",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-05"
+  },
+  "governance": {
+    "api_date": "2026-04-22T14:01:53Z",
+    "total_officers": 23,
+    "active_count": 6,
+    "resigned_count": 17,
+    "active_officers": [
+      {
+        "name": "BHATTI, Nabeel Tariq",
+        "role": "secretary",
+        "appointed_on": "2024-06-01",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "HILL, Alexandra",
+        "role": "secretary",
+        "appointed_on": "2018-03-02",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "MITCHELL, Ian",
+        "role": "secretary",
+        "appointed_on": "2018-03-02",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BEUKES, Elizabeth",
+        "role": "director",
+        "appointed_on": "2024-06-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HILL, John Andrew",
+        "role": "director",
+        "appointed_on": "2018-03-02",
+        "country_of_residence": "United Arab Emirates",
+        "nationality": "British"
+      },
+      {
+        "name": "WADDICOR, Wendy Jane",
+        "role": "director",
+        "appointed_on": "2018-03-02",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T14:01:55Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Hill Care Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2018-03-02",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "08902865"
+        }
+      },
+      {
+        "name": "Custodes Acqco Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent-as-firm"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "08818212"
+        }
+      },
+      {
+        "name": "Custodes Topco Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Registrar Of Companies For England And Wales",
+          "registration_number": "08818238"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NjAwMDA5NGFkaXF6a2N4",
+    "date": "2025-12-31",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-medium",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/Dui5a_zYZqrb7jG92i2o3Oq_BDhlUqnDvI_PZjsC3vw/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02040427/filing-history/MzQ5NjAwMDA5NGFkaXF6a2N4"
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 1.0
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

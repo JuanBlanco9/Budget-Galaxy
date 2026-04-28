@@ -1,0 +1,199 @@
+{
+  "schema_version": "v2",
+  "company_number": "00267550",
+  "display_name": "Roke Manor Research Limited",
+  "official_name": "ROKE MANOR RESEARCH LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "06/08/1932",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "62020",
+    "63110",
+    "72190"
+  ],
+  "sic_labels": [
+    "Information technology consultancy activities",
+    "Data processing, hosting and related activities",
+    "Other research and experimental development on natural sciences and engineering"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "ROKE MANOR",
+    "address_line_2": "OLD SALISBURY LANE",
+    "post_town": "ROMSEY",
+    "county": "HAMPSHIRE",
+    "country": "",
+    "postal_code": "SO51 0ZN"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/10/2025",
+    "next_due": "31/07/2027",
+    "ref_day": "31",
+    "ref_month": "10"
+  },
+  "mortgages": {
+    "num_charges": 3,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 3
+  },
+  "spend_profile": {
+    "total_gbp_2024": 1366000.0,
+    "n_contracts": 2,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 50.999341,
+    "lng": -1.51975,
+    "lad24_cd": "E07000093",
+    "lad24_nm": "Test Valley",
+    "region": "South East"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/00267550"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "agency",
+  "buyer_type_breakdown": {
+    "agency": 0.7493,
+    "other": 0.2507
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T20:51:02Z",
+    "company_name": "ROKE MANOR RESEARCH LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1932-08-06",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-07-31",
+    "accounts_last_made_up": "2025-10-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-15"
+  },
+  "governance": {
+    "api_date": "2026-04-27T20:51:04Z",
+    "total_officers": 36,
+    "active_count": 6,
+    "resigned_count": 30,
+    "active_officers": [
+      {
+        "name": "ELLARD, Sarah Louise",
+        "role": "secretary",
+        "appointed_on": "2010-09-30",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "COOPER, Ian Charles",
+        "role": "director",
+        "appointed_on": "2015-03-12",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ELLARD, Sarah Louise",
+        "role": "director",
+        "appointed_on": "2014-07-24",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MORTENSEN, James Stephen Mccready",
+        "role": "director",
+        "appointed_on": "2024-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ORD, Michael",
+        "role": "director",
+        "appointed_on": "2018-07-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "OVERTON, Marc Anthony John Mchardy",
+        "role": "director",
+        "appointed_on": "2025-11-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T20:51:05Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Chemring Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2023-09-01",
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "United Kingdom",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "2731691"
+        }
+      },
+      {
+        "name": "Chemring Group Plc",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-06-30",
+        "identification": {
+          "legal_form": "Public Limited Company",
+          "legal_authority": "United Kingdom",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "86662"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxMDA3MzU0M2FkaXF6a2N4",
+    "date": "2026-03-15",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/Mo5lfJFYWaObcLQdb73-CQlHCiTpqxYNc6n5B6ws6Oc/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/00267550/filing-history/MzUxMDA3MzU0M2FkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

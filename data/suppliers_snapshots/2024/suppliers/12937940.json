@@ -1,0 +1,202 @@
+{
+  "schema_version": "v2",
+  "company_number": "12937940",
+  "display_name": "St Marys Care Services Ltd",
+  "official_name": "ST MARYS CARE SERVICES LTD",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "08/10/2020",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "82990"
+  ],
+  "sic_labels": [
+    "Other business support service activities n.e.c."
+  ],
+  "previous_names": [
+    {
+      "name": "ST MARYS RIVERSIDE LTD",
+      "condate": "29/06/2022"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "LANCASTER HOUSE LANCASTER ROAD",
+    "address_line_2": "CARNABY INDUSTRIAL ESTATE",
+    "post_town": "BRIDLINGTON",
+    "county": "EAST YORKSHIRE",
+    "country": "UNITED KINGDOM",
+    "postal_code": "YO15 3QY"
+  },
+  "accounts": {
+    "category": "SMALL",
+    "last_made_up": "30/06/2025",
+    "next_due": "31/03/2027",
+    "ref_day": "30",
+    "ref_month": "6"
+  },
+  "mortgages": {
+    "num_charges": 5,
+    "num_outstanding": 3,
+    "num_part_satisfied": 0,
+    "num_satisfied": 2
+  },
+  "spend_profile": {
+    "total_gbp_2024": 300000000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 54.060061,
+    "lng": -0.258067,
+    "lad24_cd": "E06000011",
+    "lad24_nm": "East Riding of Yorkshire",
+    "region": "Yorkshire and The Humber"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/12937940"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T14:20:12Z",
+    "company_name": "ST MARYS CARE SERVICES LTD",
+    "company_status": "active",
+    "date_of_creation": "2020-10-08",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-03-31",
+    "accounts_last_made_up": "2025-06-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-21"
+  },
+  "governance": {
+    "api_date": "2026-04-22T14:20:13Z",
+    "total_officers": 4,
+    "active_count": 2,
+    "resigned_count": 2,
+    "active_officers": [
+      {
+        "name": "DAVIS, Steven Paul",
+        "role": "director",
+        "appointed_on": "2026-02-16",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "HOGGART, Richard Michael",
+        "role": "director",
+        "appointed_on": "2020-10-08",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T14:20:15Z",
+    "total_results": 4,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "North Bay Group Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2023-05-31",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Ca 2006",
+          "country_registered": "England",
+          "place_registered": "England And Wales",
+          "registration_number": "13292171"
+        }
+      },
+      {
+        "name": "North Bay Holdings Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2022-10-05",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Ca 2006",
+          "country_registered": "England",
+          "place_registered": "England And Wales",
+          "registration_number": "10584125"
+        }
+      },
+      {
+        "name": "Burlington (Hessle) Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2020-10-08",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House, Cardiff",
+          "registration_number": "10674329"
+        }
+      },
+      {
+        "name": "Mr Richard Michael Hoggart",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2020-10-08",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxMjk5NzQzMmFkaXF6a2N4",
+    "date": "2026-03-27",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/_uTsU7OAtMT0A8B2j7C81tAzBB1CtMLAaKCwAb6MtIw/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/12937940/filing-history/MzUxMjk5NzQzMmFkaXF6a2N4"
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 1.0
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

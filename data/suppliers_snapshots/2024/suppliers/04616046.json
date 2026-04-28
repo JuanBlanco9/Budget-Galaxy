@@ -1,0 +1,235 @@
+{
+  "schema_version": "v2",
+  "company_number": "04616046",
+  "display_name": "Lumera Ltd",
+  "official_name": "LUMERA LTD",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "12/12/2002",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "70229"
+  ],
+  "sic_labels": [
+    "Management consultancy activities other than financial management"
+  ],
+  "previous_names": [
+    {
+      "name": "LUMERA ITM UK LIMITED",
+      "condate": "29/09/2025"
+    },
+    {
+      "name": "INDEPENDENT TRANSITION MANAGEMENT LIMITED",
+      "condate": "22/07/2024"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "5TH FLOOR, MURO",
+    "address_line_2": "INDIA STREET",
+    "post_town": "LONDON",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "EC3N 2AF"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 5,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 5
+  },
+  "spend_profile": {
+    "total_gbp_2024": 2000000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.512549,
+    "lng": -0.076368,
+    "lad24_cd": "E09000001",
+    "lad24_nm": "City of London",
+    "region": "London"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/04616046"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T19:50:58Z",
+    "company_name": "LUMERA LTD",
+    "company_status": "active",
+    "date_of_creation": "2002-12-12",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-26"
+  },
+  "governance": {
+    "api_date": "2026-04-27T19:50:59Z",
+    "total_officers": 21,
+    "active_count": 4,
+    "resigned_count": 17,
+    "active_officers": [
+      {
+        "name": "ALFREDSON, Jonas Carl",
+        "role": "director",
+        "appointed_on": "2024-07-12",
+        "country_of_residence": "Sweden",
+        "nationality": "Swedish"
+      },
+      {
+        "name": "BLOUNT, Darran Alan",
+        "role": "director",
+        "appointed_on": "2025-02-21",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "GAMMELGARD, Magnus Axel, Dr",
+        "role": "director",
+        "appointed_on": "2024-07-12",
+        "country_of_residence": "Sweden",
+        "nationality": "Swedish"
+      },
+      {
+        "name": "ROOS, Peter",
+        "role": "director",
+        "appointed_on": "2024-07-12",
+        "country_of_residence": "England",
+        "nationality": "Swedish"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T19:51:01Z",
+    "total_results": 6,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Minster Bidco Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2018-05-03",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "11112048"
+        }
+      },
+      {
+        "name": "Mr Grant Stanley",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-12",
+        "identification": null
+      },
+      {
+        "name": "Juliet Stanley",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-12",
+        "identification": null
+      },
+      {
+        "name": "Mr Daniel Hockley",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Guy Nicholas Ridley",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Melanie Ridley",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5OTI5MDA1MGFkaXF6a2N4",
+    "date": "2026-01-19",
+    "type": "AAMD",
+    "description": "accounts-amended-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/n-6USeiAp9Pbn8-88MdSzeWQUEWft8te1ybDT_D3RUY/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04616046/filing-history/MzQ5OTI5MDA1MGFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

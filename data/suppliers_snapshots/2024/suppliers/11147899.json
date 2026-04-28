@@ -1,0 +1,212 @@
+{
+  "schema_version": "v2",
+  "company_number": "11147899",
+  "display_name": "Bcs Robertson Ltd",
+  "official_name": "BCS ROBERTSON LTD",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "12/01/2018",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "43999"
+  ],
+  "sic_labels": [
+    "Other specialised construction activities n.e.c."
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "35A VALE ROAD",
+    "address_line_2": "PORTSLADE",
+    "post_town": "BRIGHTON",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "BN41 1GD"
+  },
+  "accounts": {
+    "category": "TOTAL EXEMPTION FULL",
+    "last_made_up": "31/05/2025",
+    "next_due": "28/02/2027",
+    "ref_day": "31",
+    "ref_month": "5"
+  },
+  "mortgages": {
+    "num_charges": 0,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 148342.78,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 50.83511,
+    "lng": -0.208938,
+    "lad24_cd": "E06000043",
+    "lad24_nm": "Brighton and Hove",
+    "region": "South East"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/11147899"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 1.0,
+    "other": 0.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T04:56:43Z",
+    "company_name": "BCS ROBERTSON LTD",
+    "company_status": "active",
+    "date_of_creation": "2018-01-12",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-02-28",
+    "accounts_last_made_up": "2025-05-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-18"
+  },
+  "governance": {
+    "api_date": "2026-04-28T04:56:44Z",
+    "total_officers": 6,
+    "active_count": 5,
+    "resigned_count": 1,
+    "active_officers": [
+      {
+        "name": "FERRER, Benjamin",
+        "role": "secretary",
+        "appointed_on": "2025-06-05",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "FAIRMAN, Victoria Charlotte",
+        "role": "director",
+        "appointed_on": "2025-06-05",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "FERRER, Ben",
+        "role": "director",
+        "appointed_on": "2018-01-12",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "LAMBERT, William",
+        "role": "director",
+        "appointed_on": "2025-06-05",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ROBERTSON, Aaron David",
+        "role": "director",
+        "appointed_on": "2018-01-12",
+        "country_of_residence": "England",
+        "nationality": "New Zealander"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T04:56:45Z",
+    "total_results": 4,
+    "active_count": 2,
+    "items": [
+      {
+        "name": "Bcs Group Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2025-01-04",
+        "identification": {
+          "legal_form": "Limited",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "07753647"
+        }
+      },
+      {
+        "name": "Brighton Catering Supplies Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2018-01-12",
+        "identification": {
+          "legal_form": "Limited",
+          "legal_authority": "Uk Law",
+          "country_registered": "England",
+          "place_registered": "England & Wales",
+          "registration_number": "07753647"
+        }
+      },
+      {
+        "name": "Mr Ben Ferrer",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2018-01-12",
+        "identification": null
+      },
+      {
+        "name": "Mr Aaron David Robertson",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "New Zealander",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2018-01-12",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwNDA3MTc3M2FkaXF6a2N4",
+    "date": "2026-02-10",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/DJtQBseETViPs-e0Dsycj2HhlurugiKWG0-yNxWy0Sw/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/11147899/filing-history/MzUwNDA3MTc3M2FkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

@@ -1,0 +1,135 @@
+{
+  "schema_version": "v2",
+  "company_number": "07880016",
+  "display_name": "Edaid Ltd",
+  "official_name": "EDAID LTD",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "13/12/2011",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "64999",
+    "82990"
+  ],
+  "sic_labels": [
+    "Financial intermediation not elsewhere classified",
+    "Other business support service activities n.e.c."
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "ALDWYCH HOUSE",
+    "address_line_2": "2ND FLOOR",
+    "post_town": "LONDON",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "WC2A 2AZ"
+  },
+  "accounts": {
+    "category": "MICRO ENTITY",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 0,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 31500.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.513757,
+    "lng": -0.115318,
+    "lad24_cd": "E09000033",
+    "lad24_nm": "Westminster",
+    "region": "London"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/07880016"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "education",
+  "buyer_type_breakdown": {
+    "education": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T11:21:26Z",
+    "company_name": "EDAID LTD",
+    "company_status": "active",
+    "date_of_creation": "2011-12-13",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-09-30",
+    "accounts_last_made_up": "2025-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-18"
+  },
+  "governance": {
+    "api_date": "2026-04-28T11:21:27Z",
+    "total_officers": 1,
+    "active_count": 1,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "WOOLF, Thomas Joseph",
+        "role": "director",
+        "appointed_on": "2011-12-13",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T11:21:28Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Thomas Joseph Woolf",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUxNjMyOTg5MGFkaXF6a2N4",
+    "date": "2026-04-15",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-micro-entity",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/dP6zSYMeRgJz0D43D9H6TSNeXQS_svrYKpD4sf-A48s/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/07880016/filing-history/MzUxNjMyOTg5MGFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

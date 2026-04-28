@@ -1,0 +1,133 @@
+{
+  "schema_version": "v2",
+  "company_number": "14169031",
+  "display_name": "Thames Concrete Ltd",
+  "official_name": "THAMES CONCRETE LTD",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "13/06/2022",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "23630"
+  ],
+  "sic_labels": [
+    "Manufacture of ready-mixed concrete"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "57 HUMBER WAY",
+    "address_line_2": "",
+    "post_town": "SLOUGH",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "SL3 8SR"
+  },
+  "accounts": {
+    "category": "MICRO ENTITY",
+    "last_made_up": "30/06/2025",
+    "next_due": "31/03/2027",
+    "ref_day": "30",
+    "ref_month": "6"
+  },
+  "mortgages": {
+    "num_charges": 1,
+    "num_outstanding": 1,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 1800000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.498519,
+    "lng": -0.539392,
+    "lad24_cd": "E06000039",
+    "lad24_nm": "Slough",
+    "region": "South East"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/14169031"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T20:09:33Z",
+    "company_name": "THAMES CONCRETE LTD",
+    "company_status": "active",
+    "date_of_creation": "2022-06-13",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-03-31",
+    "accounts_last_made_up": "2025-06-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-24"
+  },
+  "governance": {
+    "api_date": "2026-04-27T20:09:34Z",
+    "total_officers": 2,
+    "active_count": 1,
+    "resigned_count": 1,
+    "active_officers": [
+      {
+        "name": "GOYAL, Hitesh",
+        "role": "director",
+        "appointed_on": "2022-06-13",
+        "country_of_residence": "England",
+        "nationality": "Indian"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T20:09:36Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr. Hitesh Goyal",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Indian",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2022-06-13",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MzE4MTUzNGFkaXF6a2N4",
+    "date": "2025-07-10",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-micro-entity",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/YAr-_7rr-XlocBYn_ao5ywSivpAkzkHLA5kjx6dExv4/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/14169031/filing-history/MzQ3MzE4MTUzNGFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

@@ -1,0 +1,205 @@
+{
+  "schema_version": "v2",
+  "company_number": "04587461",
+  "display_name": "A C Morse Limited",
+  "official_name": "A C MORSE LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "12/11/2002",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "52219"
+  ],
+  "sic_labels": [
+    "Other service activities incidental to land transportation, n.e.c."
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "SECOND FLOOR 55 DEGREES NORTH",
+    "address_line_2": "PILGRIM STREET",
+    "post_town": "NEWCASTLE UPON TYNE",
+    "county": "",
+    "country": "UNITED KINGDOM",
+    "postal_code": "NE1 6BL"
+  },
+  "accounts": {
+    "category": "TOTAL EXEMPTION FULL",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 2,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 2
+  },
+  "spend_profile": {
+    "total_gbp_2024": 68798548.91,
+    "n_contracts": 2,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 54.971399,
+    "lng": -1.608579,
+    "lad24_cd": "E08000021",
+    "lad24_nm": "Newcastle upon Tyne",
+    "region": "North East"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/04587461"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T16:37:54Z",
+    "company_name": "A C MORSE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2002-11-12",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-02-15"
+  },
+  "governance": {
+    "api_date": "2026-04-22T16:37:56Z",
+    "total_officers": 13,
+    "active_count": 7,
+    "resigned_count": 6,
+    "active_officers": [
+      {
+        "name": "FERGUSON, Carolyn",
+        "role": "secretary",
+        "appointed_on": "2025-11-28",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "ASHTON, Matthew Thomas",
+        "role": "director",
+        "appointed_on": "2026-02-02",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "BELL, Gordon",
+        "role": "director",
+        "appointed_on": "2026-02-02",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "BENSTEAD, Andrew",
+        "role": "director",
+        "appointed_on": "2026-02-02",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "CLARK, Paul David",
+        "role": "director",
+        "appointed_on": "2026-02-12",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "DEAN, Martin Richard",
+        "role": "director",
+        "appointed_on": "2025-11-28",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "FILLINGHAM, Stuart Matthew",
+        "role": "director",
+        "appointed_on": "2026-02-02",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T16:37:57Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "East Yorkshire Motor Services Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2025-11-28",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "England And Wales",
+          "country_registered": "United Kingdom",
+          "place_registered": "Registrar Of Companies For England And Wales",
+          "registration_number": "00216628"
+        }
+      },
+      {
+        "name": "Mrs Diane Morse",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2025-10-27",
+        "identification": null
+      },
+      {
+        "name": "Mr Andrew Charles Morse",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-11-12",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ2MTY1MTM4OGFkaXF6a2N4",
+    "date": "2025-04-07",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/7wKERtp56SqlpxmfO5YRE2h6a8PUTyOyXQT7rLWm-ro/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04587461/filing-history/MzQ2MTY1MTM4OGFkaXF6a2N4"
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 1.0
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

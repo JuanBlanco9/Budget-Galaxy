@@ -1,0 +1,203 @@
+{
+  "schema_version": "v2",
+  "company_number": "09136550",
+  "display_name": "Bauvill Ltd.",
+  "official_name": "BAUVILL LTD.",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "18/07/2014",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "43999"
+  ],
+  "sic_labels": [
+    "Other specialised construction activities n.e.c."
+  ],
+  "previous_names": [
+    {
+      "name": "BAUVILLE LTD",
+      "condate": "10/09/2014"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "52-54 SIR THOMAS LONGLEY ROAD",
+    "address_line_2": "MEDWAY CITY ESTATE",
+    "post_town": "ROCHESTER",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "ME2 4DP"
+  },
+  "accounts": {
+    "category": "MEDIUM",
+    "last_made_up": "30/06/2025",
+    "next_due": "31/03/2027",
+    "ref_day": "30",
+    "ref_month": "6"
+  },
+  "mortgages": {
+    "num_charges": 4,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 4
+  },
+  "spend_profile": {
+    "total_gbp_2024": 524227.2,
+    "n_contracts": 5,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.390035,
+    "lng": 0.51954,
+    "lad24_cd": "E06000035",
+    "lad24_nm": "Medway",
+    "region": "South East"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/09136550"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "nhs",
+  "buyer_type_breakdown": {
+    "nhs": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T23:58:24Z",
+    "company_name": "BAUVILL LTD.",
+    "company_status": "active",
+    "date_of_creation": "2014-07-18",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-03-31",
+    "accounts_last_made_up": "2025-06-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-10-20"
+  },
+  "governance": {
+    "api_date": "2026-04-27T23:58:26Z",
+    "total_officers": 14,
+    "active_count": 6,
+    "resigned_count": 8,
+    "active_officers": [
+      {
+        "name": "EVANS, Clair Louise",
+        "role": "secretary",
+        "appointed_on": "2022-03-22",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "DONOGHUE, John Patrick",
+        "role": "director",
+        "appointed_on": "2024-11-04",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "EVANS, Daniel",
+        "role": "director",
+        "appointed_on": "2025-11-12",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HOUGHTON-HUNT, Kelly",
+        "role": "director",
+        "appointed_on": "2017-01-05",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SCALLY, Max Samuel",
+        "role": "director",
+        "appointed_on": "2025-11-12",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SOUTH, Damien John",
+        "role": "director",
+        "appointed_on": "2017-01-16",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T23:58:28Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Bauvill Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2021-10-03",
+        "identification": {
+          "legal_form": "Limited Compnay",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "England & Wales",
+          "registration_number": "12979876"
+        }
+      },
+      {
+        "name": "Mr Damien John South",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2021-03-10",
+        "identification": null
+      },
+      {
+        "name": "Kelly Houghton-Hunt",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent"
+        ],
+        "notified_on": "2017-02-02",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwODgwMjc2MmFkaXF6a2N4",
+    "date": "2026-03-06",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-medium",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/7iVczQF399lufadVtVLCU0jU-89yyaDF65PdSaSlDQc/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/09136550/filing-history/MzUwODgwMjc2MmFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

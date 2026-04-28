@@ -1,0 +1,165 @@
+{
+  "schema_version": "v2",
+  "company_number": "12078049",
+  "display_name": "Hello Carz Ltd",
+  "official_name": "HELLO CARZ LTD",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "01/07/2019",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "49320"
+  ],
+  "sic_labels": [
+    "Taxi operation"
+  ],
+  "previous_names": [
+    {
+      "name": "HELLO CABS LIMITED",
+      "condate": "08/10/2021"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "UNIT 1, FLAG BUSINESS EXCHANGE",
+    "address_line_2": "VICARAGE FARM ROAD",
+    "post_town": "PETERBOROUGH",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "PE1 5TX"
+  },
+  "accounts": {
+    "category": "TOTAL EXEMPTION FULL",
+    "last_made_up": "31/07/2024",
+    "next_due": "30/04/2026",
+    "ref_day": "31",
+    "ref_month": "7"
+  },
+  "mortgages": {
+    "num_charges": 0,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 1045380.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 52.578726,
+    "lng": -0.210297,
+    "lad24_cd": "E06000031",
+    "lad24_nm": "Peterborough",
+    "region": "East of England"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/12078049"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T21:32:25Z",
+    "company_name": "HELLO CARZ LTD",
+    "company_status": "active",
+    "date_of_creation": "2019-07-01",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-04-30",
+    "accounts_last_made_up": "2024-07-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-01-31"
+  },
+  "governance": {
+    "api_date": "2026-04-27T21:32:26Z",
+    "total_officers": 2,
+    "active_count": 1,
+    "resigned_count": 1,
+    "active_officers": [
+      {
+        "name": "SINGH, Jatinder",
+        "role": "director",
+        "appointed_on": "2019-10-30",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T21:32:28Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Jatinder Singh",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent",
+          "voting-rights-50-to-75-percent"
+        ],
+        "notified_on": "2020-03-21",
+        "identification": null
+      },
+      {
+        "name": "Mr Jatinder Singh",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "ownership-of-shares-75-to-100-percent-as-trust",
+          "ownership-of-shares-75-to-100-percent-as-firm"
+        ],
+        "notified_on": "2020-03-10",
+        "identification": null
+      },
+      {
+        "name": "Mrs Rupinder Kaur",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Indian",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2019-07-01",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MzM5NTM1OGFkaXF6a2N4",
+    "date": "2025-07-14",
+    "type": "AAMD",
+    "description": "accounts-amended-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/ZP37m7DMV10jVsyeU7tTCMvOp63ulU3e3WeT0_8N5TE/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/12078049/filing-history/MzQ3MzM5NTM1OGFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

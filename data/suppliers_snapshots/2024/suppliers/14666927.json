@@ -1,0 +1,133 @@
+{
+  "schema_version": "v2",
+  "company_number": "14666927",
+  "display_name": "Steve Crocker Consultancy Ltd",
+  "official_name": "STEVE CROCKER CONSULTANCY LTD",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "16/02/2023",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "70229"
+  ],
+  "sic_labels": [
+    "Management consultancy activities other than financial management"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "238 SANDON ROAD",
+    "address_line_2": "",
+    "post_town": "STAFFORD",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "ST16 3HL"
+  },
+  "accounts": {
+    "category": "TOTAL EXEMPTION FULL",
+    "last_made_up": "28/02/2025",
+    "next_due": "30/11/2026",
+    "ref_day": "28",
+    "ref_month": "2"
+  },
+  "mortgages": {
+    "num_charges": 0,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 16650.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 52.821311,
+    "lng": -2.109646,
+    "lad24_cd": "E07000197",
+    "lad24_nm": "Stafford",
+    "region": "West Midlands"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/14666927"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "central_govt",
+  "buyer_type_breakdown": {
+    "central_govt": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T13:00:15Z",
+    "company_name": "STEVE CROCKER CONSULTANCY LTD",
+    "company_status": "active",
+    "date_of_creation": "2023-02-16",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-11-30",
+    "accounts_last_made_up": "2025-02-28",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-01"
+  },
+  "governance": {
+    "api_date": "2026-04-28T13:00:16Z",
+    "total_officers": 1,
+    "active_count": 1,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "CROCKER, Steven James",
+        "role": "director",
+        "appointed_on": "2023-02-16",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T13:00:17Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Steven James Crocker",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent",
+          "voting-rights-50-to-75-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2023-02-16",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MTMwMjI2NWFkaXF6a2N4",
+    "date": "2025-11-27",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/dKLj_OK6FTaSZJspwH_KYU8RSrTWrbSZvi3O1DsM6dQ/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/14666927/filing-history/MzQ5MTMwMjI2NWFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

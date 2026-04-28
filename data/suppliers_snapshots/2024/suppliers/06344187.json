@@ -1,0 +1,151 @@
+{
+  "schema_version": "v2",
+  "company_number": "06344187",
+  "display_name": "Maydencroft Limited",
+  "official_name": "MAYDENCROFT LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "15/08/2007",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "81300"
+  ],
+  "sic_labels": [
+    "Landscape service activities"
+  ],
+  "previous_names": [
+    {
+      "name": "MAYDENCROFT RURAL LIMITED",
+      "condate": "30/05/2012"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "MAYDENCROFT MANOR",
+    "address_line_2": "GOSMORE",
+    "post_town": "HITCHIN",
+    "county": "HERTS",
+    "country": "",
+    "postal_code": "SG4 7QA"
+  },
+  "accounts": {
+    "category": "TOTAL EXEMPTION FULL",
+    "last_made_up": "30/09/2024",
+    "next_due": "30/06/2026",
+    "ref_day": "30",
+    "ref_month": "9"
+  },
+  "mortgages": {
+    "num_charges": 2,
+    "num_outstanding": 1,
+    "num_part_satisfied": 0,
+    "num_satisfied": 1
+  },
+  "spend_profile": {
+    "total_gbp_2024": 12004970.0,
+    "n_contracts": 2,
+    "n_buyers": 2
+  },
+  "geo": {
+    "lat": 51.932784,
+    "lng": -0.28233,
+    "lad24_cd": "E07000099",
+    "lad24_nm": "North Hertfordshire",
+    "region": "East of England"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/06344187"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 0.9977,
+    "other": 0.0023
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T14:19:13Z",
+    "company_name": "MAYDENCROFT LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2007-08-15",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-06-30",
+    "accounts_last_made_up": "2024-09-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-29"
+  },
+  "governance": {
+    "api_date": "2026-04-27T14:19:15Z",
+    "total_officers": 7,
+    "active_count": 1,
+    "resigned_count": 6,
+    "active_officers": [
+      {
+        "name": "WILLIAMS, Thomas Maurice Bennett",
+        "role": "director",
+        "appointed_on": "2007-11-20",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T14:19:16Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Victoria Ann Williams",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Thomas Maurice Bennett Williams",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NDQzMDg3N2FkaXF6a2N4",
+    "date": "2025-07-21",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/ExJLpYs5tfPa8vAla_0GqKb7IrnZs7mnuP1NBcvjMno/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/06344187/filing-history/MzQ3NDQzMDg3N2FkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

@@ -1,0 +1,171 @@
+{
+  "schema_version": "v2",
+  "company_number": "07387325",
+  "display_name": "Workpays Limited",
+  "official_name": "WORKPAYS LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "24/09/2010",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "74909"
+  ],
+  "sic_labels": [
+    "Other professional, scientific and technical activities n.e.c."
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "FLOORS 1 AND 2",
+    "address_line_2": "4 BABINGTON LANE",
+    "post_town": "DERBY",
+    "county": "DERBYSHIRE",
+    "country": "UNITED KINGDOM",
+    "postal_code": "DE1 1SU"
+  },
+  "accounts": {
+    "category": "SMALL",
+    "last_made_up": "31/10/2024",
+    "next_due": "31/07/2026",
+    "ref_day": "31",
+    "ref_month": "10"
+  },
+  "mortgages": {
+    "num_charges": 6,
+    "num_outstanding": 2,
+    "num_part_satisfied": 0,
+    "num_satisfied": 4
+  },
+  "spend_profile": {
+    "total_gbp_2024": 4895292.0,
+    "n_contracts": 3,
+    "n_buyers": 2
+  },
+  "geo": {
+    "lat": 52.919623,
+    "lng": -1.475821,
+    "lad24_cd": "E06000015",
+    "lad24_nm": "Derby",
+    "region": "East Midlands"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/07387325"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "agency",
+  "buyer_type_breakdown": {
+    "agency": 0.9405,
+    "central_govt": 0.0595
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T16:18:52Z",
+    "company_name": "WORKPAYS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2010-09-24",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-07-31",
+    "accounts_last_made_up": "2024-10-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-09-28"
+  },
+  "governance": {
+    "api_date": "2026-04-27T16:18:54Z",
+    "total_officers": 4,
+    "active_count": 2,
+    "resigned_count": 2,
+    "active_officers": [
+      {
+        "name": "GLASNER, Alexander James",
+        "role": "director",
+        "appointed_on": "2021-09-14",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WRIGHT, Anne",
+        "role": "director",
+        "appointed_on": "2015-11-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T16:18:55Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Coniston Peak (Wp) Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2021-09-14",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "England And Wales",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "13563029"
+        }
+      },
+      {
+        "name": "Andrew Richardson",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mrs Helen Kathryn Richardson",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3NTQ0OTM3OGFkaXF6a2N4",
+    "date": "2025-07-29",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-small",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/xg4td-gIjbLG-ht_UoGT72TUINCUxF-wPsUWBX_2VJ4/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/07387325/filing-history/MzQ3NTQ0OTM3OGFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

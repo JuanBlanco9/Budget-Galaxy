@@ -1,0 +1,187 @@
+{
+  "schema_version": "v2",
+  "company_number": "SC360586",
+  "display_name": "Soltyre Limited",
+  "official_name": "SOLTYRE LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "03/06/2009",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "45320",
+    "45400"
+  ],
+  "sic_labels": [
+    "Retail trade of motor vehicle parts and accessories",
+    "Sale, maintenance and repair of motorcycles and related parts and accessories"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "STANDHILL",
+    "address_line_2": "WHITBURN ROAD",
+    "post_town": "BATHGATE",
+    "county": "WEST LOTHIAN",
+    "country": "SCOTLAND",
+    "postal_code": "EH48 2HR"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 4,
+    "num_outstanding": 1,
+    "num_part_satisfied": 0,
+    "num_satisfied": 3
+  },
+  "spend_profile": {
+    "total_gbp_2024": 5000000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 55.88675,
+    "lng": -3.657525,
+    "lad24_cd": "S12000040",
+    "lad24_nm": "West Lothian",
+    "region": null
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/SC360586"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "other",
+  "buyer_type_breakdown": {
+    "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T16:13:32Z",
+    "company_name": "SOLTYRE LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2009-06-03",
+    "date_of_cessation": null,
+    "jurisdiction": "scotland",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-15"
+  },
+  "governance": {
+    "api_date": "2026-04-27T16:13:34Z",
+    "total_officers": 11,
+    "active_count": 6,
+    "resigned_count": 5,
+    "active_officers": [
+      {
+        "name": "RUSSELL, Geoff Campbell",
+        "role": "secretary",
+        "appointed_on": "2019-09-06",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "JOHNSTON, Samuel David",
+        "role": "director",
+        "appointed_on": "2017-07-17",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      },
+      {
+        "name": "MCMILLAN, Alex",
+        "role": "director",
+        "appointed_on": "2025-12-02",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      },
+      {
+        "name": "RUSSELL, Geoff Campbell",
+        "role": "director",
+        "appointed_on": "2017-07-17",
+        "country_of_residence": "Scotland",
+        "nationality": "Scottish"
+      },
+      {
+        "name": "SMITH, Alan",
+        "role": "director",
+        "appointed_on": "2019-01-01",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      },
+      {
+        "name": "SMITH, Andrew",
+        "role": "director",
+        "appointed_on": "2022-07-06",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T16:13:35Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "J. W. Johnston Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2017-07-17",
+        "identification": {
+          "legal_form": "Private Company",
+          "legal_authority": "Companies Act 2006"
+        }
+      },
+      {
+        "name": "Mr Maxwell Robert Murdoch Gordon",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "Scotland",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MzIxOTc3N2FkaXF6a2N4",
+    "date": "2025-09-30",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/ITFOO4PqQHLoBs_2IaUEZf2HLfkSBBo8_jQSA1F8_rY/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/SC360586/filing-history/MzQ4MzIxOTc3N2FkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

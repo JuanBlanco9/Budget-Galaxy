@@ -1,0 +1,147 @@
+{
+  "schema_version": "v2",
+  "company_number": "05285973",
+  "display_name": "Inmomentum Limited",
+  "official_name": "INMOMENTUM LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "15/11/2004",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "49320"
+  ],
+  "sic_labels": [
+    "Taxi operation"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "THE OLD DAIRY, ASHTON HILL FARM WESTON ROAD",
+    "address_line_2": "FAILAND",
+    "post_town": "BRISTOL",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "BS8 3US"
+  },
+  "accounts": {
+    "category": "MICRO ENTITY",
+    "last_made_up": "30/11/2024",
+    "next_due": "31/08/2026",
+    "ref_day": "30",
+    "ref_month": "11"
+  },
+  "mortgages": {
+    "num_charges": 0,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 32000000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.437575,
+    "lng": -2.691014,
+    "lad24_cd": "E06000024",
+    "lad24_nm": "North Somerset",
+    "region": "South West"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/05285973"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T17:45:04Z",
+    "company_name": "INMOMENTUM LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2004-11-15",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-08-31",
+    "accounts_last_made_up": "2024-11-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-10"
+  },
+  "governance": {
+    "api_date": "2026-04-22T17:45:06Z",
+    "total_officers": 6,
+    "active_count": 3,
+    "resigned_count": 3,
+    "active_officers": [
+      {
+        "name": "REES, Alison Elisabeth",
+        "role": "secretary",
+        "appointed_on": "2007-06-11",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "PINCH, Geoff",
+        "role": "director",
+        "appointed_on": "2004-11-15",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "REES, Alison Elisabeth",
+        "role": "director",
+        "appointed_on": "2016-08-17",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T17:45:08Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Geoff Pinch",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3ODA2OTY5NWFkaXF6a2N4",
+    "date": "2025-08-20",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-micro-entity",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/25qUB5fjwNcq-6QtfYsodL7tXhAzLXZPdSIcsJ8tDb4/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/05285973/filing-history/MzQ3ODA2OTY5NWFkaXF6a2N4"
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 1.0
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

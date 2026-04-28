@@ -1,0 +1,134 @@
+{
+  "schema_version": "v2",
+  "company_number": "03037526",
+  "display_name": "Proquest Limited",
+  "official_name": "PROQUEST LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "24/03/1995",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "71122"
+  ],
+  "sic_labels": [
+    "Engineering related scientific and technical consulting activities"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "7-8 PORTMILL LANE",
+    "address_line_2": "",
+    "post_town": "HITCHIN",
+    "county": "HERTFORDSHIRE",
+    "country": "ENGLAND",
+    "postal_code": "SG5 1DJ"
+  },
+  "accounts": {
+    "category": "TOTAL EXEMPTION FULL",
+    "last_made_up": "31/03/2025",
+    "next_due": "31/12/2026",
+    "ref_day": "31",
+    "ref_month": "3"
+  },
+  "mortgages": {
+    "num_charges": 0,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 59679.81,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.948699,
+    "lng": -0.275479,
+    "lad24_cd": "E07000099",
+    "lad24_nm": "North Hertfordshire",
+    "region": "East of England"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/03037526"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "other",
+  "buyer_type_breakdown": {
+    "other": 0.5582,
+    "education": 0.4418
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T08:39:54Z",
+    "company_name": "PROQUEST LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1995-03-24",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-04-07"
+  },
+  "governance": {
+    "api_date": "2026-04-28T08:39:55Z",
+    "total_officers": 5,
+    "active_count": 1,
+    "resigned_count": 4,
+    "active_officers": [
+      {
+        "name": "LOVESY, Stephen William",
+        "role": "director",
+        "appointed_on": "1995-05-19",
+        "country_of_residence": "Northern Ireland",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T08:39:56Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Stephen William Lovesy",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "Northern Ireland",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2017-03-24",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NDA0NTc5OWFkaXF6a2N4",
+    "date": "2025-12-15",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/PQDj6jNQxT7euBcIdVmmSWKgG0aPUStSj2MLBZHSlWY/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03037526/filing-history/MzQ5NDA0NTc5OWFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

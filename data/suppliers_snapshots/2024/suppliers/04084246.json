@@ -1,0 +1,169 @@
+{
+  "schema_version": "v2",
+  "company_number": "04084246",
+  "display_name": "Urm (Uk) Limited",
+  "official_name": "URM (UK) LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "05/10/2000",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "23910",
+    "23990",
+    "38110",
+    "38210"
+  ],
+  "sic_labels": [
+    "Production of abrasive products",
+    "Manufacture of other non-metallic mineral products n.e.c.",
+    "Collection of non-hazardous waste",
+    "Treatment and disposal of non-hazardous waste"
+  ],
+  "previous_names": [
+    {
+      "name": "REUSE COLLECTIONS LIMITED",
+      "condate": "14/03/2015"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "49 LIDGATE CRESCENT LIDGATE CRESCENT",
+    "address_line_2": "LANGTHWAITE BUSINESS PARK, SOUTH KIRKBY",
+    "post_town": "PONTEFRACT",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "WF9 3NR"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "30/09/2024",
+    "next_due": "30/06/2026",
+    "ref_day": "30",
+    "ref_month": "9"
+  },
+  "mortgages": {
+    "num_charges": 16,
+    "num_outstanding": 5,
+    "num_part_satisfied": 0,
+    "num_satisfied": 11
+  },
+  "spend_profile": {
+    "total_gbp_2024": 129000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 53.591348,
+    "lng": -1.30711,
+    "lad24_cd": "E08000036",
+    "lad24_nm": "Wakefield",
+    "region": "Yorkshire and The Humber"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/04084246"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T05:26:24Z",
+    "company_name": "URM (UK) LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2000-10-05",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-06-30",
+    "accounts_last_made_up": "2024-09-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-18"
+  },
+  "governance": {
+    "api_date": "2026-04-28T05:26:25Z",
+    "total_officers": 14,
+    "active_count": 2,
+    "resigned_count": 12,
+    "active_officers": [
+      {
+        "name": "HARRIS, Michael James",
+        "role": "secretary",
+        "appointed_on": "2012-06-20",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "JOHNSTON, Anthony Charles",
+        "role": "director",
+        "appointed_on": "2005-12-23",
+        "country_of_residence": "Australia",
+        "nationality": "Australian"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T05:26:26Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Anthony Charles Johnston",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "Australian",
+        "country_of_residence": "Australia",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent-as-trust"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Reuse Glass Uk Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "Uk",
+          "place_registered": "England & Wales",
+          "registration_number": "03578299"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ3MDU1NTE0M2FkaXF6a2N4",
+    "date": "2025-06-19",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/SODAk84yBB49Zy4LuekswEHLmi9GlGqhAZ5HCGuM1E8/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/04084246/filing-history/MzQ3MDU1NTE0M2FkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

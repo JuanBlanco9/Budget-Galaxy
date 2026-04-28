@@ -1,0 +1,182 @@
+{
+  "schema_version": "v2",
+  "company_number": "00376989",
+  "display_name": "Zurich Insurance Company (U.K.) Limited",
+  "official_name": "ZURICH INSURANCE COMPANY (U.K.) LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "02/11/1942",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "74990",
+    "82990"
+  ],
+  "sic_labels": [
+    "Non-trading company",
+    "Other business support service activities n.e.c."
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "THE ZURICH CENTRE",
+    "address_line_2": "3000 PARKWAY, WHITELEY",
+    "post_town": "FAREHAM",
+    "county": "HAMPSHIRE",
+    "country": "",
+    "postal_code": "PO15 7JZ"
+  },
+  "accounts": {
+    "category": "DORMANT",
+    "last_made_up": "31/12/2025",
+    "next_due": "30/09/2027",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 1,
+    "num_outstanding": 1,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 155645.86,
+    "n_contracts": 2,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 50.881564,
+    "lng": -1.24289,
+    "lad24_cd": "E07000094",
+    "lad24_nm": "Winchester",
+    "region": "South East"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/00376989"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "police_fire",
+  "buyer_type_breakdown": {
+    "police_fire": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T04:43:34Z",
+    "company_name": "ZURICH INSURANCE COMPANY (U.K.) LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1942-11-02",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-09-30",
+    "accounts_last_made_up": "2025-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-18"
+  },
+  "governance": {
+    "api_date": "2026-04-28T04:43:35Z",
+    "total_officers": 39,
+    "active_count": 4,
+    "resigned_count": 35,
+    "active_officers": [
+      {
+        "name": "ZURICH CORPORATE SECRETARY (UK) LIMITED",
+        "role": "corporate-secretary",
+        "appointed_on": "2015-09-23",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "KITSON, Natasha Emma",
+        "role": "director",
+        "appointed_on": "2024-07-16",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "SHEPPARD, Louise Elizabeth",
+        "role": "director",
+        "appointed_on": "2025-06-03",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "VINCENT, Shelby",
+        "role": "director",
+        "appointed_on": "2023-08-21",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T04:43:36Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Zurich Insurance Group Ag",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2018-07-02",
+        "identification": {
+          "legal_form": "Corporate",
+          "legal_authority": "Swiss Law",
+          "country_registered": "Switzerland",
+          "place_registered": "Switzerland",
+          "registration_number": "Ch0203023083-6"
+        }
+      },
+      {
+        "name": "Zurich Insurance Company Ltd",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Corporate",
+          "legal_authority": "Switzerland",
+          "country_registered": "Switzerland",
+          "place_registered": "Switzerland",
+          "registration_number": "Ch0203023083-6"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwNzM2NTE1M2FkaXF6a2N4",
+    "date": "2026-03-03",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-dormant",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/QyrA7CpIauozrCS8amZ51M36SZH8PjZ_dhiaEtwgnqQ/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/00376989/filing-history/MzUwNzM2NTE1M2FkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

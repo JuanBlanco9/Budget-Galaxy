@@ -1,0 +1,192 @@
+{
+  "schema_version": "v2",
+  "company_number": "01693112",
+  "display_name": "Nisbets Limited",
+  "official_name": "NISBETS LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "21/01/1983",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "46900",
+    "47910"
+  ],
+  "sic_labels": [
+    "Non-specialised wholesale trade",
+    "Retail sale via mail order houses or via Internet"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "NISBETS LIMITED",
+    "address_line_2": "FOURTH WAY",
+    "post_town": "BRISTOL",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "BS11 8TB"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 14,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 14
+  },
+  "spend_profile": {
+    "total_gbp_2024": 170000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.502864,
+    "lng": -2.677105,
+    "lad24_cd": "E06000023",
+    "lad24_nm": "Bristol, City of",
+    "region": "South West"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/01693112"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T04:23:29Z",
+    "company_name": "NISBETS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1983-01-21",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-16"
+  },
+  "governance": {
+    "api_date": "2026-04-28T04:23:30Z",
+    "total_officers": 31,
+    "active_count": 6,
+    "resigned_count": 25,
+    "active_officers": [
+      {
+        "name": "BRINKWORTH-BELL, Laura Michelle",
+        "role": "secretary",
+        "appointed_on": "2024-05-23",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "CROMWELL, Richard James",
+        "role": "director",
+        "appointed_on": "2002-01-18",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "HILL, Laurence Walter",
+        "role": "director",
+        "appointed_on": "2024-05-23",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "NISBET, Andrew",
+        "role": "director",
+        "appointed_on": null,
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "STOKES, Dale David",
+        "role": "director",
+        "appointed_on": "2024-05-23",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WALSHAM, Andrew Stuart",
+        "role": "director",
+        "appointed_on": "2021-12-13",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T04:23:31Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Bunzl Uk Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2024-05-23",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "Uk Register Of Companies",
+          "registration_number": "15508354"
+        }
+      },
+      {
+        "name": "Key West (Holdings) Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Liability Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England & Wales",
+          "place_registered": "Register Of Companies In England & Wales",
+          "registration_number": "08963631"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MzY0MDIyOWFkaXF6a2N4",
+    "date": "2025-10-07",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/g5Xn6NbLdFFuS0tQIAjxu7wbQi8dhq3cW7YY_zvBTB4/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01693112/filing-history/MzQ4MzY0MDIyOWFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

@@ -1,0 +1,147 @@
+{
+  "schema_version": "v2",
+  "company_number": "08996218",
+  "display_name": "A1 Buses Ltd",
+  "official_name": "A1 BUSES LTD",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "14/04/2014",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "49320"
+  ],
+  "sic_labels": [
+    "Taxi operation"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "BEAUMONT ACCOUNTANCY SERVICES, FIRST FLOOR, ENTERPRISE HOUSE",
+    "address_line_2": "202-206 LINTHORPE ROAD",
+    "post_town": "MIDDLESBROUGH",
+    "county": "CLEVELAND",
+    "country": "",
+    "postal_code": "TS1 3QW"
+  },
+  "accounts": {
+    "category": "MICRO ENTITY",
+    "last_made_up": "31/03/2025",
+    "next_due": "31/12/2026",
+    "ref_day": "31",
+    "ref_month": "3"
+  },
+  "mortgages": {
+    "num_charges": 0,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 30400.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 54.570154,
+    "lng": -1.238488,
+    "lad24_cd": "E06000002",
+    "lad24_nm": "Middlesbrough",
+    "region": "North East"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/08996218"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T11:27:29Z",
+    "company_name": "A1 BUSES LTD",
+    "company_status": "active",
+    "date_of_creation": "2014-04-14",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-12-31",
+    "accounts_last_made_up": "2025-03-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-11-15"
+  },
+  "governance": {
+    "api_date": "2026-04-28T11:27:30Z",
+    "total_officers": 3,
+    "active_count": 1,
+    "resigned_count": 2,
+    "active_officers": [
+      {
+        "name": "MOODY, Alan John",
+        "role": "director",
+        "appointed_on": "2020-10-29",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T11:27:31Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Alan John Moody",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2022-09-23",
+        "identification": null
+      },
+      {
+        "name": "Mr Matthew Callum Moody",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2017-04-14",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4NTM1MjAxOWFkaXF6a2N4",
+    "date": "2025-10-17",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-micro-entity",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/xcIBl3HjW4w0nJtCQesonCyb-eDNzlGecgJDFDKy6fg/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/08996218/filing-history/MzQ4NTM1MjAxOWFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

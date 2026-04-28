@@ -1,0 +1,158 @@
+{
+  "schema_version": "v2",
+  "company_number": "02913191",
+  "display_name": "Datagraphic Limited",
+  "official_name": "DATAGRAPHIC LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "25/03/1994",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "18129",
+    "63110"
+  ],
+  "sic_labels": [
+    "Printing n.e.c.",
+    "Data processing, hosting and related activities"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "IRELAND INDUSTRIAL ESTATE ADELPHI WAY",
+    "address_line_2": "STAVELEY",
+    "post_town": "CHESTERFIELD",
+    "county": "DERBYSHIRE",
+    "country": "",
+    "postal_code": "S43 3LS"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 11,
+    "num_outstanding": 3,
+    "num_part_satisfied": 0,
+    "num_satisfied": 8
+  },
+  "spend_profile": {
+    "total_gbp_2024": 1000000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 53.259875,
+    "lng": -1.35043,
+    "lad24_cd": "E07000034",
+    "lad24_nm": "Chesterfield",
+    "region": "East Midlands"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/02913191"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T21:41:47Z",
+    "company_name": "DATAGRAPHIC LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1994-03-25",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-09"
+  },
+  "governance": {
+    "api_date": "2026-04-27T21:41:49Z",
+    "total_officers": 19,
+    "active_count": 4,
+    "resigned_count": 15,
+    "active_officers": [
+      {
+        "name": "SPOONER, Bradley Wayne",
+        "role": "secretary",
+        "appointed_on": "2015-12-07",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "KING, Richard Glyn",
+        "role": "director",
+        "appointed_on": "2013-09-06",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PARKES HOON, Robert",
+        "role": "director",
+        "appointed_on": "2013-09-06",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "WELLS, Eric",
+        "role": "director",
+        "appointed_on": "2013-09-06",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T21:41:50Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Trading Transformation Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MzIwNjE0N2FkaXF6a2N4",
+    "date": "2025-09-30",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/IcCLzprwNGoSlWJ7DuaNRmnhQ-0HV9fghqOQGF--OFc/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/02913191/filing-history/MzQ4MzIwNjE0N2FkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

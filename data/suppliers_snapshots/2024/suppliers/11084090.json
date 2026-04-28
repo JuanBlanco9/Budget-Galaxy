@@ -1,0 +1,165 @@
+{
+  "schema_version": "v2",
+  "company_number": "11084090",
+  "display_name": "Cpoms Systems Limited",
+  "official_name": "CPOMS SYSTEMS LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "27/11/2017",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "62020"
+  ],
+  "sic_labels": [
+    "Information technology consultancy activities"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "CPOMS HOUSE UNIT 7",
+    "address_line_2": "ACORN BUSINESS PARK",
+    "post_town": "SKIPTON",
+    "county": "NORTH YORKSHIRE",
+    "country": "UNITED KINGDOM",
+    "postal_code": "BD23 2UE"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 5,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 5
+  },
+  "spend_profile": {
+    "total_gbp_2024": 31996.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 53.939989,
+    "lng": -2.01287,
+    "lad24_cd": "E06000065",
+    "lad24_nm": "North Yorkshire",
+    "region": "Yorkshire and The Humber"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/11084090"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T11:19:03Z",
+    "company_name": "CPOMS SYSTEMS LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2017-11-27",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-11"
+  },
+  "governance": {
+    "api_date": "2026-04-28T11:19:04Z",
+    "total_officers": 18,
+    "active_count": 2,
+    "resigned_count": 16,
+    "active_officers": [
+      {
+        "name": "GARDNER, Richard John",
+        "role": "director",
+        "appointed_on": "2024-08-12",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "HALL, Gray",
+        "role": "director",
+        "appointed_on": "2021-12-04",
+        "country_of_residence": "United States",
+        "nationality": "American"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T11:19:05Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Oaktree Bidco Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2023-08-24",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England And Wales",
+          "place_registered": "England & Wales",
+          "registration_number": "11104840"
+        }
+      },
+      {
+        "name": "Cpoms Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2017-11-27",
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "Law Of England And Wales",
+          "country_registered": "United Kingdom",
+          "place_registered": "England And Wales",
+          "registration_number": "03855196"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MzAzMjA0NWFkaXF6a2N4",
+    "date": "2025-10-03",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/xfC2VeyAFv_SS4bws6x7xG1XpP4l18AUMQ4kSx0vN6k/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/11084090/filing-history/MzQ4MzAzMjA0NWFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

@@ -1,0 +1,200 @@
+{
+  "schema_version": "v2",
+  "company_number": "06901841",
+  "display_name": "Ma Cost Consulting Limited",
+  "official_name": "MA COST CONSULTING LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "11/05/2009",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "70229"
+  ],
+  "sic_labels": [
+    "Management consultancy activities other than financial management"
+  ],
+  "previous_names": [
+    {
+      "name": "HC1118 LIMITED",
+      "condate": "08/12/2009"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "BELL HOUSE SEEBECK PLACE",
+    "address_line_2": "KNOWLHILL",
+    "post_town": "MILTON KEYNES",
+    "county": "",
+    "country": "",
+    "postal_code": "MK5 8FR"
+  },
+  "accounts": {
+    "category": "MEDIUM",
+    "last_made_up": "30/05/2025",
+    "next_due": "28/02/2027",
+    "ref_day": "30",
+    "ref_month": "5"
+  },
+  "mortgages": {
+    "num_charges": 3,
+    "num_outstanding": 2,
+    "num_part_satisfied": 0,
+    "num_satisfied": 1
+  },
+  "spend_profile": {
+    "total_gbp_2024": 149794.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 52.026821,
+    "lng": -0.773747,
+    "lad24_cd": "E06000042",
+    "lad24_nm": "Milton Keynes",
+    "region": "South East"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/06901841"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T04:55:06Z",
+    "company_name": "MA COST CONSULTING LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2009-05-11",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-02-28",
+    "accounts_last_made_up": "2025-05-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-05-25"
+  },
+  "governance": {
+    "api_date": "2026-04-28T04:55:07Z",
+    "total_officers": 12,
+    "active_count": 5,
+    "resigned_count": 7,
+    "active_officers": [
+      {
+        "name": "ALBRIGHTON, Philip",
+        "role": "director",
+        "appointed_on": "2024-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "BECKETT, Joseph Peter",
+        "role": "director",
+        "appointed_on": "2024-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CHRISTIE, James",
+        "role": "director",
+        "appointed_on": "2022-08-17",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "JONES, Jonathan",
+        "role": "director",
+        "appointed_on": "2024-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "ROBERTS, Matthew Anthony",
+        "role": "director",
+        "appointed_on": "2024-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T04:55:08Z",
+    "total_results": 3,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mac Cc Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2019-07-24",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "11976889"
+        }
+      },
+      {
+        "name": "Mr Andrew Nunn",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mr Giles Witheat",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwNzYwOTI1MGFkaXF6a2N4",
+    "date": "2026-02-27",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-medium",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/CBhMiBa1oiMBVYv-v5Z-8md7gLoKpCjxOyNCWYHu8ZY/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/06901841/filing-history/MzUwNzYwOTI1MGFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

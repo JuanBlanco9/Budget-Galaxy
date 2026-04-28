@@ -1,0 +1,162 @@
+{
+  "schema_version": "v2",
+  "company_number": "00222915",
+  "display_name": "Ricardo Limited",
+  "official_name": "RICARDO LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "30/06/1927",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "70100",
+    "71122"
+  ],
+  "sic_labels": [
+    "Activities of head offices",
+    "Engineering related scientific and technical consulting activities"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "SHOREHAM TECHNICAL CENTRE",
+    "address_line_2": "SHOREHAM BY SEA",
+    "post_town": "WEST SUSSEX",
+    "county": "",
+    "country": "",
+    "postal_code": "BN43 5FG"
+  },
+  "accounts": {
+    "category": "GROUP",
+    "last_made_up": "30/06/2025",
+    "next_due": "31/03/2027",
+    "ref_day": "30",
+    "ref_month": "6"
+  },
+  "mortgages": {
+    "num_charges": 4,
+    "num_outstanding": 2,
+    "num_part_satisfied": 0,
+    "num_satisfied": 2
+  },
+  "spend_profile": {
+    "total_gbp_2024": 232600.0,
+    "n_contracts": 3,
+    "n_buyers": 2
+  },
+  "geo": {
+    "lat": 50.841228,
+    "lng": -0.291924,
+    "lad24_cd": "E07000223",
+    "lad24_nm": "Adur",
+    "region": "South East"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/00222915"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "other",
+  "buyer_type_breakdown": {
+    "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T03:16:05Z",
+    "company_name": "RICARDO LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1927-06-30",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-03-31",
+    "accounts_last_made_up": "2025-06-30",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-09"
+  },
+  "governance": {
+    "api_date": "2026-04-28T03:16:06Z",
+    "total_officers": 52,
+    "active_count": 4,
+    "resigned_count": 48,
+    "active_officers": [
+      {
+        "name": "SAGOO, Harpreet",
+        "role": "secretary",
+        "appointed_on": "2023-09-11",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BARNARD, Miles Lawrence",
+        "role": "director",
+        "appointed_on": "2025-10-09",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "PASCOE, Alex",
+        "role": "director",
+        "appointed_on": "2025-12-31",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SEWELL, Karen Anne",
+        "role": "director",
+        "appointed_on": "2025-10-09",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T03:16:07Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Wsp Group Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2025-10-10",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "02136404"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5MDU4NjcxM2FkaXF6a2N4",
+    "date": "2025-11-24",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/YfUU09IV8TLxsFuq3JkPsE6CzA0ynBxmXRah1w8wHHk/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/00222915/filing-history/MzQ5MDU4NjcxM2FkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

@@ -1,0 +1,177 @@
+{
+  "schema_version": "v2",
+  "company_number": "14203044",
+  "display_name": "Castons Consulting Limited",
+  "official_name": "CASTONS CONSULTING LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "29/06/2022",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "70229",
+    "71122",
+    "74902"
+  ],
+  "sic_labels": [
+    "Management consultancy activities other than financial management",
+    "Engineering related scientific and technical consulting activities",
+    "Quantity surveying activities"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "SOUTH KILN",
+    "address_line_2": "44 FELAW STREET",
+    "post_town": "IPSWICH",
+    "county": "SUFFOLK",
+    "country": "ENGLAND",
+    "postal_code": "IP2 8SJ"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 0,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 110000.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 52.049342,
+    "lng": 1.158036,
+    "lad24_cd": "E07000202",
+    "lad24_nm": "Ipswich",
+    "region": "East of England"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/14203044"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "nhs",
+  "buyer_type_breakdown": {
+    "nhs": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T06:00:39Z",
+    "company_name": "CASTONS CONSULTING LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2022-06-29",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-07-12"
+  },
+  "governance": {
+    "api_date": "2026-04-28T06:00:40Z",
+    "total_officers": 10,
+    "active_count": 5,
+    "resigned_count": 5,
+    "active_officers": [
+      {
+        "name": "FOLEY, Nikki",
+        "role": "secretary",
+        "appointed_on": "2024-03-21",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "DAY, Mark Bernard",
+        "role": "director",
+        "appointed_on": "2024-03-21",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "NORMAN, Matthew Paul",
+        "role": "director",
+        "appointed_on": "2024-08-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "PAILHES, Sebastien Patrick Nicolas",
+        "role": "director",
+        "appointed_on": "2026-01-01",
+        "country_of_residence": "France",
+        "nationality": "French"
+      },
+      {
+        "name": "TOMPKINS, Tim",
+        "role": "director",
+        "appointed_on": "2026-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T06:00:42Z",
+    "total_results": 2,
+    "active_count": 0,
+    "items": [
+      {
+        "name": "Mr Peter Geoffrey Dring",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2022-06-29",
+        "identification": null
+      },
+      {
+        "name": "Mr Matthew Paul Norman",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2022-06-29",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MzY2ODg0MGFkaXF6a2N4",
+    "date": "2025-10-04",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/rX08paU3DbQFopfVg7dsA9mYYCw396jimqZ4bBgQC-k/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/14203044/filing-history/MzQ4MzY2ODg0MGFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

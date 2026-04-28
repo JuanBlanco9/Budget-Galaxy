@@ -1,0 +1,180 @@
+{
+  "schema_version": "v2",
+  "company_number": "03031294",
+  "display_name": "J.R. Holland (Food Services) Limited",
+  "official_name": "J.R. HOLLAND (FOOD SERVICES) LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "09/03/1995",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "56290"
+  ],
+  "sic_labels": [
+    "Other food services"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "245 DUKESWAY",
+    "address_line_2": "TEAM VALLEY TRADING ESTATE",
+    "post_town": "GATESHEAD",
+    "county": "TYNE AND WEAR",
+    "country": "",
+    "postal_code": "NE11 0PZ"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "03/05/2025",
+    "next_due": "27/01/2027",
+    "ref_day": "27",
+    "ref_month": "4"
+  },
+  "mortgages": {
+    "num_charges": 4,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 4
+  },
+  "spend_profile": {
+    "total_gbp_2024": 340000000.0,
+    "n_contracts": 2,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 54.931671,
+    "lng": -1.625709,
+    "lad24_cd": "E08000037",
+    "lad24_nm": "Gateshead",
+    "region": "North East"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/03031294"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T13:55:06Z",
+    "company_name": "J.R. HOLLAND (FOOD SERVICES) LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1995-03-09",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-01-27",
+    "accounts_last_made_up": "2025-05-03",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-03-11"
+  },
+  "governance": {
+    "api_date": "2026-04-22T13:55:08Z",
+    "total_officers": 13,
+    "active_count": 6,
+    "resigned_count": 7,
+    "active_officers": [
+      {
+        "name": "FLETCHER, Hazel Marie",
+        "role": "secretary",
+        "appointed_on": "1996-03-05",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "HOLLAND, Janette",
+        "role": "secretary",
+        "appointed_on": "2026-03-30",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "FLETCHER, Hazel Marie",
+        "role": "director",
+        "appointed_on": "2001-05-01",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "HOLLAND, John",
+        "role": "director",
+        "appointed_on": "1995-03-24",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      },
+      {
+        "name": "HUTCHINSON, Dennis Christopher",
+        "role": "director",
+        "appointed_on": "1996-03-05",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "MARSHALL, Paul",
+        "role": "director",
+        "appointed_on": "2023-03-28",
+        "country_of_residence": "United Kingdom",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T13:55:09Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mrs Hazel Marie Fletcher",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ],
+        "notified_on": "2017-01-01",
+        "identification": null
+      },
+      {
+        "name": "Mr John Holland",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ5NTc2NTA5OWFkaXF6a2N4",
+    "date": "2025-12-22",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/SlzFZ0A_c8ZIQJlieHbqLDSbHDeIRjHW49-ObdeJ6uM/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03031294/filing-history/MzQ5NTc2NTA5OWFkaXF6a2N4"
+  },
+  "top_buyer_type": "nhs",
+  "buyer_type_breakdown": {
+    "nhs": 1.0
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

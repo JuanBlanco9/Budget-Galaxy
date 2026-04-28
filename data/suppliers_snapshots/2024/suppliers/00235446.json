@@ -1,0 +1,190 @@
+{
+  "schema_version": "v2",
+  "company_number": "00235446",
+  "display_name": "Ford Motor Company Limited",
+  "official_name": "FORD MOTOR COMPANY LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "07/12/1928",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "29100",
+    "29320",
+    "45111"
+  ],
+  "sic_labels": [
+    "Manufacture of motor vehicles",
+    "Manufacture of other parts and accessories for motor vehicles",
+    "Sale of new cars and light motor vehicles"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "ARTERIAL ROAD",
+    "address_line_2": "",
+    "post_town": "LAINDON",
+    "county": "ESSEX",
+    "country": "ENGLAND",
+    "postal_code": "SS15 6EE"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 12,
+    "num_outstanding": 1,
+    "num_part_satisfied": 0,
+    "num_satisfied": 11
+  },
+  "spend_profile": {
+    "total_gbp_2024": 3153417.64,
+    "n_contracts": 12,
+    "n_buyers": 10
+  },
+  "geo": {
+    "lat": 51.581361,
+    "lng": 0.405309,
+    "lad24_cd": "E07000066",
+    "lad24_nm": "Basildon",
+    "region": "East of England"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/00235446"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "other",
+  "buyer_type_breakdown": {
+    "other": 0.9774,
+    "nhs": 0.0137,
+    "central_govt": 0.0038,
+    "police_fire": 0.0032,
+    "council": 0.0018,
+    "education": 0.0001
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T17:13:06Z",
+    "company_name": "FORD MOTOR COMPANY LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1928-12-07",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-06-26"
+  },
+  "governance": {
+    "api_date": "2026-04-27T17:13:08Z",
+    "total_officers": 67,
+    "active_count": 7,
+    "resigned_count": 60,
+    "active_officers": [
+      {
+        "name": "HIGGINS, Kerry Victoria",
+        "role": "secretary",
+        "appointed_on": "2025-08-29",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "ROBINSON, David Nicholas",
+        "role": "secretary",
+        "appointed_on": "2008-04-02",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "BRANKIN, Lisa",
+        "role": "director",
+        "appointed_on": "2020-11-02",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "DUCKERS, Andrew",
+        "role": "director",
+        "appointed_on": "2023-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SAPSFORD, Terry",
+        "role": "director",
+        "appointed_on": "2022-12-13",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "SKERRY, Jane Louise",
+        "role": "director",
+        "appointed_on": "2014-06-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "WALKER, Nicola Jayne",
+        "role": "director",
+        "appointed_on": "2021-12-09",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T17:13:10Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Ford Technologies Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent-as-firm",
+          "voting-rights-75-to-100-percent-as-firm",
+          "right-to-appoint-and-remove-directors-as-firm"
+        ],
+        "notified_on": "2016-04-15",
+        "identification": {
+          "legal_form": "Company Limited By Shares",
+          "legal_authority": "England & Wales",
+          "country_registered": "United Kingdom",
+          "place_registered": "United Kingdom Register Of Companies",
+          "registration_number": "04850367"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MzA1MTIxOGFkaXF6a2N4",
+    "date": "2025-10-03",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/FsgeW-AlVvf0OHpKrrpAFm006qAbuMcyTU0ka8IG_Ks/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/00235446/filing-history/MzQ4MzA1MTIxOGFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

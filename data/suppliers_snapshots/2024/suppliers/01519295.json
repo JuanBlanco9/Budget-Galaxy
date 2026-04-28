@@ -1,0 +1,197 @@
+{
+  "schema_version": "v2",
+  "company_number": "01519295",
+  "display_name": "Dorelbury Limited",
+  "official_name": "DORELBURY LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "29/09/1980",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "41201",
+    "42990",
+    "43999"
+  ],
+  "sic_labels": [
+    "Construction of commercial buildings",
+    "Construction of other civil engineering projects n.e.c.",
+    "Other specialised construction activities n.e.c."
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "CROMPTON WAY",
+    "address_line_2": "SEGENSWORTH WEST",
+    "post_town": "FAREHAM",
+    "county": "HANTS",
+    "country": "",
+    "postal_code": "PO15 5SS"
+  },
+  "accounts": {
+    "category": "UNAUDITED ABRIDGED",
+    "last_made_up": "31/10/2025",
+    "next_due": "30/07/2027",
+    "ref_day": "30",
+    "ref_month": "10"
+  },
+  "mortgages": {
+    "num_charges": 2,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 2
+  },
+  "spend_profile": {
+    "total_gbp_2024": 541614.23,
+    "n_contracts": 4,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 50.871184,
+    "lng": -1.259345,
+    "lad24_cd": "E07000087",
+    "lad24_nm": "Fareham",
+    "region": "South East"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/01519295"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "council",
+  "buyer_type_breakdown": {
+    "council": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-27T23:50:34Z",
+    "company_name": "DORELBURY LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1980-09-29",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-07-30",
+    "accounts_last_made_up": "2025-10-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-08-21"
+  },
+  "governance": {
+    "api_date": "2026-04-27T23:50:35Z",
+    "total_officers": 8,
+    "active_count": 2,
+    "resigned_count": 6,
+    "active_officers": [
+      {
+        "name": "DUNN, Michael Roger",
+        "role": "director",
+        "appointed_on": "2006-07-20",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "YOUNG, Richard Joseph",
+        "role": "director",
+        "appointed_on": "2009-12-15",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-27T23:50:37Z",
+    "total_results": 5,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Dorelbury Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2025-08-07",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006"
+        }
+      },
+      {
+        "name": "Mr Michael Roger Dunn",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent",
+          "voting-rights-50-to-75-percent"
+        ],
+        "notified_on": "2019-01-10",
+        "identification": null
+      },
+      {
+        "name": "Mr Richard Joseph Young",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2019-01-10",
+        "identification": null
+      },
+      {
+        "name": "Mr Rodney Wilfred Fitzgerald",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      },
+      {
+        "name": "Mrs Jean Fitzgerald",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "England",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzUwODQ3ODA0N2FkaXF6a2N4",
+    "date": "2026-03-04",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-unaudited-abridged",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/QzfBaKvNOGbrJ_vUv-TO77gZ0nMqq7fY37xzb9tuvPE/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/01519295/filing-history/MzUwODQ3ODA0N2FkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

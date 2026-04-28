@@ -1,0 +1,158 @@
+{
+  "schema_version": "v2",
+  "company_number": "03134688",
+  "display_name": "Camera One Ltd",
+  "official_name": "CAMERA ONE LTD",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "06/12/1995",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "80200"
+  ],
+  "sic_labels": [
+    "Security systems service activities"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "1623 WARWICK ROAD",
+    "address_line_2": "KNOWLE",
+    "post_town": "SOLIHULL",
+    "county": "WEST MIDLANDS",
+    "country": "UNITED KINGDOM",
+    "postal_code": "B93 9LF"
+  },
+  "accounts": {
+    "category": "TOTAL EXEMPTION FULL",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 0,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 27660.0,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 52.392218,
+    "lng": -1.739422,
+    "lad24_cd": "E08000029",
+    "lad24_nm": "Solihull",
+    "region": "West Midlands"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/03134688"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "other",
+  "buyer_type_breakdown": {
+    "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T11:53:01Z",
+    "company_name": "CAMERA ONE LTD",
+    "company_status": "active",
+    "date_of_creation": "1995-12-06",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-12-20"
+  },
+  "governance": {
+    "api_date": "2026-04-28T11:53:02Z",
+    "total_officers": 6,
+    "active_count": 2,
+    "resigned_count": 4,
+    "active_officers": [
+      {
+        "name": "BAKER, Nicholas",
+        "role": "secretary",
+        "appointed_on": "1995-12-06",
+        "country_of_residence": null,
+        "nationality": "British"
+      },
+      {
+        "name": "BAKER, Nicholas Clive",
+        "role": "director",
+        "appointed_on": "2026-01-01",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T11:53:03Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "One Group Holdings Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2024-08-16",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act",
+          "country_registered": "England And Wales",
+          "place_registered": "England And Wales",
+          "registration_number": "15816277"
+        }
+      },
+      {
+        "name": "Mr Nicholas Baker",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": null
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MzI1NzE0OWFkaXF6a2N4",
+    "date": "2025-09-30",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-total-exemption-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/8HKf81TkzvztdHGUv3lxVojloeGbRTAo_hB3Xj81tIk/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03134688/filing-history/MzQ4MzI1NzE0OWFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

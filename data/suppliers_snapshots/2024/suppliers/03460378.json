@@ -1,0 +1,175 @@
+{
+  "schema_version": "v2",
+  "company_number": "03460378",
+  "display_name": "Bouygues (U.K.) Limited",
+  "official_name": "BOUYGUES (U.K.) LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "04/11/1997",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "41100",
+    "41201",
+    "41202"
+  ],
+  "sic_labels": [
+    "Development of building projects",
+    "Construction of commercial buildings",
+    "Construction of domestic buildings"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "BECKET HOUSE",
+    "address_line_2": "1 LAMBETH PALACE ROAD",
+    "post_town": "LONDON",
+    "county": "",
+    "country": "UNITED KINGDOM",
+    "postal_code": "SE1 7EU"
+  },
+  "accounts": {
+    "category": "FULL",
+    "last_made_up": "31/12/2024",
+    "next_due": "30/09/2026",
+    "ref_day": "31",
+    "ref_month": "12"
+  },
+  "mortgages": {
+    "num_charges": 11,
+    "num_outstanding": 10,
+    "num_part_satisfied": 0,
+    "num_satisfied": 1
+  },
+  "spend_profile": {
+    "total_gbp_2024": 104865875.0,
+    "n_contracts": 3,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.49994,
+    "lng": -0.116205,
+    "lad24_cd": "E09000022",
+    "lad24_nm": "Lambeth",
+    "region": "London"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/03460378"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "ch_profile": {
+    "api_date": "2026-04-22T15:56:31Z",
+    "company_name": "BOUYGUES (U.K.) LIMITED",
+    "company_status": "active",
+    "date_of_creation": "1997-11-04",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-09-30",
+    "accounts_last_made_up": "2024-12-31",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-09-30"
+  },
+  "governance": {
+    "api_date": "2026-04-22T15:56:33Z",
+    "total_officers": 60,
+    "active_count": 6,
+    "resigned_count": 54,
+    "active_officers": [
+      {
+        "name": "SHEARS, Charissa Jane",
+        "role": "secretary",
+        "appointed_on": "2022-11-10",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BERNARD, Philippe Laurent",
+        "role": "director",
+        "appointed_on": "2025-02-01",
+        "country_of_residence": "England",
+        "nationality": "French"
+      },
+      {
+        "name": "CALAIS, Julien Didier",
+        "role": "director",
+        "appointed_on": "2025-07-01",
+        "country_of_residence": "England",
+        "nationality": "French"
+      },
+      {
+        "name": "CESENEK, Mark",
+        "role": "director",
+        "appointed_on": "2025-12-02",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "CLOIX, Didier",
+        "role": "director",
+        "appointed_on": "2023-12-11",
+        "country_of_residence": "United Kingdom",
+        "nationality": "French"
+      },
+      {
+        "name": "LUX, Pascal Daniel Henri",
+        "role": "director",
+        "appointed_on": "2024-05-09",
+        "country_of_residence": "England",
+        "nationality": "British,French"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-22T15:56:34Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Bouygues S.A.",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "Companies Act 2006"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4MDEyMTc5MWFkaXF6a2N4",
+    "date": "2025-09-08",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-full",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/HV-cj2Efe16_gJ91uXJ4sdIWpJT2c4nby0DkMON2OFg/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/03460378/filing-history/MzQ4MDEyMTc5MWFkaXF6a2N4"
+  },
+  "top_buyer_type": "central_govt",
+  "buyer_type_breakdown": {
+    "central_govt": 0.6702,
+    "other": 0.3298
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

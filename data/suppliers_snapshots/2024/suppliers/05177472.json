@@ -1,0 +1,179 @@
+{
+  "schema_version": "v2",
+  "company_number": "05177472",
+  "display_name": "Analysys Mason Limited",
+  "official_name": "ANALYSYS MASON LIMITED",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "13/07/2004",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "62020",
+    "70229"
+  ],
+  "sic_labels": [
+    "Information technology consultancy activities",
+    "Management consultancy activities other than financial management"
+  ],
+  "previous_names": [
+    {
+      "name": "ANALYSYS MASON GROUP LIMITED",
+      "condate": "19/04/2008"
+    }
+  ],
+  "registered_office": {
+    "address_line_1": "22 UPPER GROUND",
+    "address_line_2": "",
+    "post_town": "LONDON",
+    "county": "",
+    "country": "ENGLAND",
+    "postal_code": "SE1 9PD"
+  },
+  "accounts": {
+    "category": "GROUP",
+    "last_made_up": "28/02/2025",
+    "next_due": "30/11/2026",
+    "ref_day": "28",
+    "ref_month": "2"
+  },
+  "mortgages": {
+    "num_charges": 14,
+    "num_outstanding": 8,
+    "num_part_satisfied": 0,
+    "num_satisfied": 6
+  },
+  "spend_profile": {
+    "total_gbp_2024": 55989.6,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 51.508115,
+    "lng": -0.107264,
+    "lad24_cd": "E09000028",
+    "lad24_nm": "Southwark",
+    "region": "London"
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/05177472"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": true
+  },
+  "top_buyer_type": "other",
+  "buyer_type_breakdown": {
+    "other": 1.0
+  },
+  "ch_profile": {
+    "api_date": "2026-04-28T08:54:00Z",
+    "company_name": "ANALYSYS MASON LIMITED",
+    "company_status": "active",
+    "date_of_creation": "2004-07-13",
+    "date_of_cessation": null,
+    "jurisdiction": "england-wales",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2026-11-30",
+    "accounts_last_made_up": "2025-02-28",
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2026-09-08"
+  },
+  "governance": {
+    "api_date": "2026-04-28T08:54:01Z",
+    "total_officers": 29,
+    "active_count": 3,
+    "resigned_count": 26,
+    "active_officers": [
+      {
+        "name": "RUDKIN, Thomas John",
+        "role": "secretary",
+        "appointed_on": "2011-03-09",
+        "country_of_residence": null,
+        "nationality": null
+      },
+      {
+        "name": "BILLIGE, Mark Stephen",
+        "role": "director",
+        "appointed_on": "2025-11-10",
+        "country_of_residence": "England",
+        "nationality": "British"
+      },
+      {
+        "name": "RUDKIN, Thomas John",
+        "role": "director",
+        "appointed_on": "2017-11-06",
+        "country_of_residence": "England",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T08:54:03Z",
+    "total_results": 2,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Aramis Bidco Limited",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2022-09-27",
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "14106894"
+        }
+      },
+      {
+        "name": "Datatec Plc",
+        "kind": "corporate-entity-person-with-significant-control",
+        "nationality": null,
+        "country_of_residence": null,
+        "ceased": true,
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent",
+          "voting-rights-50-to-75-percent-as-firm",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2016-04-12",
+        "identification": {
+          "legal_form": "Public Limited Company",
+          "legal_authority": "Uk",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "07817963"
+        }
+      }
+    ]
+  },
+  "accounts_pdf": {
+    "transaction_id": "MzQ4ODUzOTYwMmFkaXF6a2N4",
+    "date": "2025-11-13",
+    "type": "AA",
+    "description": "accounts-with-accounts-type-group",
+    "pdf_url": "https://document-api.company-information.service.gov.uk/document/8ryIl-QhMEP7ILwuZCgxnOPPh2O8AT_y9zEnmOHDT5Q/content?format=application/pdf",
+    "view_url": "https://find-and-update.company-information.service.gov.uk/company/05177472/filing-history/MzQ4ODUzOTYwMmFkaXF6a2N4"
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}

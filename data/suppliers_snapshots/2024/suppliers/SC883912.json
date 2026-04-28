@@ -1,0 +1,123 @@
+{
+  "schema_version": "v2",
+  "company_number": "SC883912",
+  "display_name": "E&C Surfacing Ltd",
+  "official_name": "E&C SURFACING LTD",
+  "status": "active",
+  "type": "ltd",
+  "category_raw": "Private Limited Company",
+  "jurisdiction": "united-kingdom",
+  "incorporated": "26/03/2026",
+  "dissolved": null,
+  "age_years": null,
+  "sic_codes": [
+    "42110"
+  ],
+  "sic_labels": [
+    "Construction of roads and motorways"
+  ],
+  "previous_names": [],
+  "registered_office": {
+    "address_line_1": "21-23 MURRAY TERRACE",
+    "address_line_2": "CARNWATH",
+    "post_town": "LANARK",
+    "county": "",
+    "country": "SCOTLAND",
+    "postal_code": "ML11 8JA"
+  },
+  "accounts": {
+    "category": "NO ACCOUNTS FILED",
+    "last_made_up": null,
+    "next_due": "26/12/2027",
+    "ref_day": "31",
+    "ref_month": "3"
+  },
+  "mortgages": {
+    "num_charges": 0,
+    "num_outstanding": 0,
+    "num_part_satisfied": 0,
+    "num_satisfied": 0
+  },
+  "spend_profile": {
+    "total_gbp_2024": 250520.3,
+    "n_contracts": 1,
+    "n_buyers": 1
+  },
+  "geo": {
+    "lat": 55.700109,
+    "lng": -3.621687,
+    "lad24_cd": "S12000029",
+    "lad24_nm": "South Lanarkshire",
+    "region": null
+  },
+  "sources": [
+    {
+      "publisher": "Companies House",
+      "title": "Basic Company Data 2026-04",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/SC883912"
+    }
+  ],
+  "enrichment_stages": {
+    "bcd_skeleton": true,
+    "ch_api_profile": true,
+    "ch_api_officers": true,
+    "ch_api_pscs": true,
+    "ch_api_accounts_pdf": false
+  },
+  "top_buyer_type": "other",
+  "buyer_type_breakdown": {},
+  "ch_profile": {
+    "api_date": "2026-04-28T03:02:47Z",
+    "company_name": "E&C SURFACING LTD",
+    "company_status": "active",
+    "date_of_creation": "2026-03-26",
+    "date_of_cessation": null,
+    "jurisdiction": "scotland",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "accounts_overdue": false,
+    "accounts_next_due": "2027-12-26",
+    "accounts_last_made_up": null,
+    "confirmation_statement_overdue": false,
+    "confirmation_statement_next_due": "2027-04-08"
+  },
+  "governance": {
+    "api_date": "2026-04-28T03:02:48Z",
+    "total_officers": 1,
+    "active_count": 1,
+    "resigned_count": 0,
+    "active_officers": [
+      {
+        "name": "IRVINE, Edward",
+        "role": "director",
+        "appointed_on": "2026-03-26",
+        "country_of_residence": "Scotland",
+        "nationality": "British"
+      }
+    ]
+  },
+  "pscs": {
+    "api_date": "2026-04-28T03:02:49Z",
+    "total_results": 1,
+    "active_count": 1,
+    "items": [
+      {
+        "name": "Mr Edward Irvine",
+        "kind": "individual-person-with-significant-control",
+        "nationality": "British",
+        "country_of_residence": "Scotland",
+        "ceased": false,
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ],
+        "notified_on": "2026-03-26",
+        "identification": null
+      }
+    ]
+  },
+  "as_of_date": "2026-04-28",
+  "data_year": 2024
+}
