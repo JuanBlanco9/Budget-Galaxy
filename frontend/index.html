@@ -2890,6 +2890,49 @@ mark{background:rgba(79,195,247,.3);color:var(--text,#e8ebf5);padding:0 2px;bord
 
 /* Did-you-know callouts */
 .tp-callouts{display:flex;flex-direction:column;gap:8px;margin-bottom:18px}
+
+/* Tax → Programmes drill-down */
+.tp-programmes-link{
+  margin:24px 0 18px;padding:18px 20px;
+  background:linear-gradient(180deg,rgba(74,222,128,.04),rgba(0,0,0,.14));
+  border:1px solid rgba(74,222,128,.2);border-radius:8px;
+}
+.tp-programmes-link:empty{display:none}
+.tp-prog-header{margin-bottom:14px}
+.tp-prog-title{
+  font-size:14px;color:var(--text);font-weight:600;margin-bottom:4px;
+}
+.tp-prog-title strong{color:#86efac;font-variant-numeric:tabular-nums}
+.tp-prog-sub{font-size:11.5px;color:var(--dim);line-height:1.5;}
+.tp-prog-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:8px;
+}
+.tp-prog-card{
+  display:grid;grid-template-columns:auto 1fr auto;gap:10px;align-items:center;
+  padding:10px 12px;background:rgba(74,222,128,.06);
+  border:1px solid rgba(74,222,128,.18);border-radius:6px;
+  cursor:pointer;transition:all .12s;
+  text-align:left;font-family:inherit;color:var(--text);
+}
+.tp-prog-card:hover{
+  background:rgba(74,222,128,.13);border-color:#4ade80;transform:translateX(3px);
+}
+.tp-prog-card-amt{
+  font-size:14px;color:#86efac;font-weight:700;
+  font-variant-numeric:tabular-nums;white-space:nowrap;
+}
+.tp-prog-card-name{
+  font-size:11.5px;color:var(--text);line-height:1.3;
+  overflow:hidden;text-overflow:ellipsis;
+}
+.tp-prog-card-arrow{color:#86efac;font-size:14px}
+.tp-prog-note{
+  margin-top:12px;padding-top:10px;font-size:10.5px;color:var(--dim);
+  font-style:italic;line-height:1.5;border-top:1px dashed rgba(255,255,255,.05);
+}
+@media (max-width:600px){
+  .tp-prog-grid{grid-template-columns:1fr}
+}
 .tp-callout{
   display:flex;gap:12px;align-items:flex-start;
   background:linear-gradient(90deg,rgba(255,213,79,.06),rgba(79,195,247,.04));
@@ -3497,6 +3540,7 @@ mark{background:rgba(79,195,247,.3);color:var(--text,#e8ebf5);padding:0 2px;bord
       <div id="tp-sankey-wrap" class="tp-sankey-wrap">
         <svg id="tp-sankey"></svg>
       </div>
+      <div id="tp-programmes-link" class="tp-programmes-link"></div>
       <!-- Source attribution panel — always visible, 6 data layers listed explicitly -->
       <div class="tp-sources">
         <div class="tp-sources-title">Sources · every number above is traceable</div>
@@ -17287,6 +17331,7 @@ function _tpRecompute(){
   _tpRenderHero(trace);
   _tpRenderCallouts(trace, direct, vatEst);
   _tpRenderSankey(trace);
+  _tpRenderProgrammesLink(trace, direct, vatEst);
   _tpRenderCompareStrip();
 }
 
@@ -17341,6 +17386,63 @@ function _tpApplyBorrowMode(trace, direct, vatEst){
     trace.summary._attribution_mode = 'prorata';
     trace.summary._user_share_of_direct_tax = userShareOfDirect;
   }
+}
+
+// Where your tax went: pro-rata user contribution mapped to top L1 budget
+// tree departments, with click-thru to Programmes tab. Closes the moat
+// narrative: "your salary → your tax → these specific programmes".
+function _tpRenderProgrammesLink(trace, direct, vatEst){
+  const container = document.getElementById('tp-programmes-link');
+  if (!container) return;
+  // Need budget tree loaded
+  const root = window._uk_tree_root;
+  if (!root || !root.children) {
+    // Try to lazy-load the cmplist tree
+    if (typeof _cmplistLoadTree === 'function') {
+      // _cmplistState may not be init yet — set up minimum
+      window._cmplistState = window._cmplistState || {
+        a: { country: 'uk', year: '2024', path: [], _expanded: new Set() },
+        b: { country: 'uk', year: '2024', path: [], _expanded: new Set() },
+        _expanded: new Set(),
+      };
+      _cmplistLoadTree('a').then(() => _tpRenderProgrammesLink(trace, direct, vatEst));
+    }
+    return;
+  }
+  // User's share of national direct taxes
+  const hmrcIT = (trace.nodes.find(n => n.id === 'hmrc_income_tax') || {}).annual_total_gbp || 0;
+  const hmrcNI = (trace.nodes.find(n => n.id === 'hmrc_ni') || {}).annual_total_gbp || 0;
+  const hmrcVAT = (trace.nodes.find(n => n.id === 'hmrc_vat') || {}).annual_total_gbp || 0;
+  const nationalDirect = hmrcIT + hmrcNI + hmrcVAT;
+  if (nationalDirect <= 0) return;
+  const userDirect = direct.total_direct_tax + (vatEst.per_tax_gbp.vat || 0);
+  const userShare = userDirect / nationalDirect;
+  // Top 8 L1 depts by £
+  const depts = (root.children || [])
+    .filter(c => (c.value || 0) > 1e9)
+    .sort((a, b) => (b.value || 0) - (a.value || 0))
+    .slice(0, 8);
+  if (!depts.length) return;
+  const fmt = v => v >= 1e3 ? '£' + Math.round(v).toLocaleString('en-GB') : '£' + v.toFixed(2);
+  const cards = depts.map((c, i) => {
+    const userPaid = userShare * c.value;
+    const idxInRoot = (root.children || []).indexOf(c);
+    const prettyName = typeof _cmplistPrettyName === 'function' ? _cmplistPrettyName(c.name) : c.name;
+    const fromKey = `taxpayer-current`;
+    return `<button class="tp-prog-card" onclick="_crossOpenExplore('${idxInRoot}','your tax calc','${fromKey}')">
+      <div class="tp-prog-card-amt">${fmt(userPaid)}</div>
+      <div class="tp-prog-card-name">${_cmpEsc(prettyName)}</div>
+      <div class="tp-prog-card-arrow">→</div>
+    </button>`;
+  }).join('');
+  container.innerHTML = `
+    <div class="tp-prog-header">
+      <div class="tp-prog-title">Where your <strong>${fmt(userDirect)}</strong> in tax went</div>
+      <div class="tp-prog-sub">Click any department to drill into its programme tree → see specific spending lines, sources, and recipients</div>
+    </div>
+    <div class="tp-prog-grid">${cards}</div>
+    <div class="tp-prog-note">Pro-rata attribution: your share of UK direct tax revenue (${(userShare*1000).toFixed(2)}‰) applied to each department's FY 2024 budget. Excludes Council Tax (which goes directly to your council, shown above).</div>
+  `;
 }
 
 function _tpFmtGBP(v, decimals){
