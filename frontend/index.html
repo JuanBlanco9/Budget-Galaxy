@@ -194,8 +194,69 @@ body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--t
 .tg-enter-btn.enabled:hover{opacity:.85}
 .tg-footer{margin-top:20px;font-size:11px;color:var(--dim)}
 
-.header{background:var(--surface);border-bottom:1px solid var(--border);padding:10px 20px;display:flex;align-items:center;justify-content:space-between;z-index:1000;gap:20px}
-.header-text{display:flex;flex-direction:column;gap:2px;min-width:0;flex:1 1 auto}
+.header{background:var(--surface);border-bottom:1px solid var(--border);padding:10px 20px;display:flex;align-items:center;justify-content:space-between;z-index:1000;gap:20px;position:relative}
+.header-text{display:flex;flex-direction:column;gap:2px;min-width:0;flex:0 1 auto}
+
+/* Global search bar in header */
+.header-search{position:relative;flex:0 1 360px;min-width:0}
+.header-search-input-wrap{
+  display:flex;align-items:center;gap:8px;
+  padding:7px 10px 7px 12px;
+  background:rgba(0,0,0,.3);border:1px solid var(--border);
+  border-radius:6px;transition:all .15s;
+}
+.header-search-input-wrap:focus-within{
+  border-color:var(--accent);box-shadow:0 0 0 3px rgba(79,195,247,.12);
+}
+.header-search-icon{font-size:13px;flex:0 0 auto;opacity:.7}
+.header-search-input{
+  flex:1;min-width:0;background:transparent;border:none;outline:none;
+  color:var(--text);font-size:12.5px;font-family:inherit;
+}
+.header-search-input::placeholder{color:var(--dim);opacity:.7}
+.header-search-shortcut{
+  flex:0 0 auto;font-size:10px;color:var(--dim);
+  padding:2px 6px;border:1px solid var(--border);border-radius:3px;
+  font-family:ui-monospace,monospace;letter-spacing:.04em;
+}
+.header-search-results{
+  position:absolute;top:calc(100% + 4px);left:0;right:0;
+  background:var(--surface);border:1px solid var(--border);border-radius:6px;
+  box-shadow:0 8px 24px rgba(0,0,0,.4);
+  max-height:480px;overflow-y:auto;z-index:1001;
+}
+.search-result{
+  display:grid;grid-template-columns:auto 1fr auto auto;gap:10px;align-items:center;
+  padding:9px 12px;cursor:pointer;font-size:12px;
+  border-bottom:1px solid rgba(255,255,255,.04);
+  transition:background .08s;
+}
+.search-result:last-child{border-bottom:none}
+.search-result:hover, .search-result.selected{background:rgba(79,195,247,.1)}
+.search-result-emoji{font-size:14px;flex:0 0 auto}
+.search-result-name{
+  color:var(--text);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+}
+.search-result-name mark{
+  background:rgba(79,195,247,.25);color:var(--accent);
+  padding:0 2px;border-radius:2px;
+}
+.search-result-kind{
+  font-size:10px;color:var(--dim);
+  padding:2px 6px;background:rgba(255,255,255,.04);border-radius:3px;
+  letter-spacing:.04em;
+}
+.search-result-val{
+  font-size:11px;color:#86efac;font-variant-numeric:tabular-nums;
+  white-space:nowrap;
+}
+.search-result-empty{
+  padding:14px;font-size:12px;color:var(--dim);text-align:center;font-style:italic;
+}
+@media(max-width:900px){
+  .header-search{flex:1 1 auto;order:99;width:100%}
+  .header-search-shortcut{display:none}
+}
 .header h1{font-size:16px;font-weight:600;line-height:1.2;margin:0}
 .header h1 span{color:var(--accent)}
 .header-tagline{font-size:12px;color:var(--dim);font-style:italic;line-height:1.2}
@@ -1353,6 +1414,20 @@ tr:hover .suprank-arrow{opacity:1;}
     <h1 id="app-title" onclick="goToLanding()" title="Back to home" style="cursor:pointer;user-select:none"><span>Budget</span> Galaxy</h1>
     <div class="header-tagline">Where does public money actually go?</div>
     <div class="header-subhead">From your salary to HMRC to every council and service &mdash; UK public money, drillable, auditable, down to the line item.</div>
+  </div>
+  <div class="header-search" id="header-search">
+    <div class="header-search-input-wrap">
+      <span class="header-search-icon">🔍</span>
+      <input type="text" id="globalSearchInput" class="header-search-input"
+             placeholder="Search programmes, suppliers, councils..."
+             autocomplete="off"
+             oninput="_searchHandleInput(this.value)"
+             onfocus="_searchHandleFocus()"
+             onblur="setTimeout(()=>_searchHandleBlur(), 150)"
+             onkeydown="_searchHandleKey(event)"/>
+      <span class="header-search-shortcut" title="Press Cmd+K (Mac) or Ctrl+K (Win/Linux) to focus">⌘K</span>
+    </div>
+    <div id="globalSearchResults" class="header-search-results" style="display:none"></div>
   </div>
   <!-- Country switcher hidden for UK-only launch (2026-04-18). Retained in the DOM
        so internal showTab('multiverse'), switchCountry('*'), and deep-links still
@@ -18227,6 +18302,182 @@ function _crossProgrammeForBuyerId(buyerId){
     }
   }
   return null;
+}
+
+// ─────────────────────────────────────────────────────────────────────
+// GLOBAL SEARCH (Cmd+K) — header search bar with fuzzy matching
+// ─────────────────────────────────────────────────────────────────────
+window._searchIndex = null;
+window._searchSelectedIdx = -1;
+window._searchLastResults = [];
+
+async function _searchEnsureIndex(){
+  if (window._searchIndex) return window._searchIndex;
+  try {
+    const r = await fetch('/data/search_index.json');
+    if (!r.ok) throw new Error('search index fetch failed ' + r.status);
+    const json = await r.json();
+    window._searchIndex = json.items || [];
+    return window._searchIndex;
+  } catch (e) {
+    console.warn('search index load failed:', e);
+    window._searchIndex = [];
+    return window._searchIndex;
+  }
+}
+
+function _searchHandleFocus(){
+  _searchEnsureIndex();
+  const input = document.getElementById('globalSearchInput');
+  if (input && input.value.trim()) _searchHandleInput(input.value);
+}
+
+function _searchHandleBlur(){
+  const r = document.getElementById('globalSearchResults');
+  if (r) r.style.display = 'none';
+}
+
+function _searchHandleInput(query){
+  const q = (query || '').trim().toLowerCase();
+  const r = document.getElementById('globalSearchResults');
+  if (!r) return;
+  if (q.length < 2) { r.style.display = 'none'; r.innerHTML = ''; return; }
+  const idx = window._searchIndex || [];
+  if (!idx.length) {
+    r.innerHTML = '<div class="search-result-empty">Loading index…</div>';
+    r.style.display = 'block';
+    _searchEnsureIndex().then(() => _searchHandleInput(query));
+    return;
+  }
+  // Substring match with priority: starts-with > word-boundary > contains
+  const tokens = q.split(/\s+/).filter(Boolean);
+  const scored = [];
+  for (const it of idx) {
+    const n = it.n.toLowerCase();
+    let score = 0;
+    let allMatch = true;
+    for (const t of tokens) {
+      if (n.startsWith(t)) score += 100;
+      else if (new RegExp(`\\b${t.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')}`, 'i').test(it.n)) score += 50;
+      else if (n.includes(t)) score += 10;
+      else { allMatch = false; break; }
+    }
+    if (!allMatch) continue;
+    // Boost by £ value (higher £ = more relevant)
+    if (it.v) score += Math.min(20, Math.log10(Math.max(1, it.v)) * 2);
+    // Kind-priority bumps (curated > programme > buyer > v2 > insight)
+    if (it.k === 'sup-curated') score += 5;
+    else if (it.k === 'prog') score += 3;
+    else if (it.k === 'buyer') score += 1;
+    scored.push({ it, score });
+  }
+  scored.sort((a, b) => b.score - a.score);
+  const top = scored.slice(0, 12);
+  window._searchLastResults = top;
+  window._searchSelectedIdx = -1;
+  if (!top.length) {
+    r.innerHTML = `<div class="search-result-empty">No matches for "${_supEscapeHtml(q)}"</div>`;
+    r.style.display = 'block';
+    return;
+  }
+  const KIND_LABEL = {
+    'prog':         { lbl: 'Programme',  emoji: '📊' },
+    'sup-curated':  { lbl: 'Supplier ★', emoji: '🏢' },
+    'sup-v2':       { lbl: 'Supplier',   emoji: '🏢' },
+    'buyer':        { lbl: 'Buyer',      emoji: '🏛' },
+    'insight':      { lbl: 'Insight',    emoji: '💡' },
+  };
+  const fmt = v => v >= 1e9 ? '£' + (v/1e9).toFixed(2) + 'B'
+                : v >= 1e6 ? '£' + (v/1e6).toFixed(0) + 'M'
+                : v >= 1e3 ? '£' + (v/1e3).toFixed(0) + 'k' : '';
+  r.innerHTML = top.map((s, i) => {
+    const meta = KIND_LABEL[s.it.k] || { lbl: s.it.k, emoji: '·' };
+    const valSpan = s.it.v ? `<span class="search-result-val">${fmt(s.it.v)}</span>` : '';
+    return `<div class="search-result" data-idx="${i}" onmousedown="_searchOpenResult(${i})">
+      <span class="search-result-emoji">${meta.emoji}</span>
+      <span class="search-result-name">${_searchHighlight(s.it.n, tokens)}</span>
+      <span class="search-result-kind">${meta.lbl}</span>
+      ${valSpan}
+    </div>`;
+  }).join('');
+  r.style.display = 'block';
+}
+
+function _searchHighlight(name, tokens){
+  let html = _supEscapeHtml(name);
+  for (const t of tokens) {
+    const re = new RegExp(`(${t.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')})`, 'gi');
+    html = html.replace(re, '<mark>$1</mark>');
+  }
+  return html;
+}
+
+function _searchHandleKey(e){
+  const r = document.getElementById('globalSearchResults');
+  const items = r ? r.querySelectorAll('.search-result') : [];
+  if (e.key === 'Escape') { e.target.blur(); return; }
+  if (e.key === 'ArrowDown') {
+    e.preventDefault();
+    window._searchSelectedIdx = Math.min(items.length - 1, window._searchSelectedIdx + 1);
+    items.forEach((el, i) => el.classList.toggle('selected', i === window._searchSelectedIdx));
+    if (items[window._searchSelectedIdx]) items[window._searchSelectedIdx].scrollIntoView({ block: 'nearest' });
+  } else if (e.key === 'ArrowUp') {
+    e.preventDefault();
+    window._searchSelectedIdx = Math.max(0, window._searchSelectedIdx - 1);
+    items.forEach((el, i) => el.classList.toggle('selected', i === window._searchSelectedIdx));
+    if (items[window._searchSelectedIdx]) items[window._searchSelectedIdx].scrollIntoView({ block: 'nearest' });
+  } else if (e.key === 'Enter') {
+    e.preventDefault();
+    const idx = window._searchSelectedIdx >= 0 ? window._searchSelectedIdx : 0;
+    if (window._searchLastResults[idx]) _searchOpenResult(idx);
+  }
+}
+
+function _searchOpenResult(idx){
+  const result = window._searchLastResults[idx];
+  if (!result) return;
+  const it = result.it;
+  const t = it.t || '';
+  const m = t.match(/^([\w-]+):(.*)$/);
+  if (!m) return;
+  const kind = m[1], val = m[2];
+  // Clear search UI
+  const input = document.getElementById('globalSearchInput');
+  if (input) input.value = '';
+  const r = document.getElementById('globalSearchResults');
+  if (r) { r.style.display = 'none'; r.innerHTML = ''; }
+  // Reset cross-origin (search jumps shouldn't show breadcrumb)
+  if (typeof _crossClearOrigin === 'function') _crossClearOrigin();
+  // Route by kind
+  if (kind === 'explore') {
+    if (typeof _crossOpenExplore === 'function') _crossOpenExplore(val);
+  } else if (kind === 'sup') {
+    if (typeof _crossOpenSupplier === 'function') _crossOpenSupplier(val);
+  } else if (kind === 'buyer') {
+    if (typeof _crossOpenRecipients === 'function') _crossOpenRecipients(val);
+  } else if (kind === 'insight') {
+    const [cat, id] = val.split('/');
+    if (typeof showTab === 'function') showTab('insights', null);
+    setTimeout(() => {
+      if (typeof _insLoadCard === 'function') _insLoadCard(cat, id);
+    }, 200);
+  }
+}
+
+// Cmd+K / Ctrl+K shortcut to focus the search input
+document.addEventListener('keydown', (e) => {
+  if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+    e.preventDefault();
+    const input = document.getElementById('globalSearchInput');
+    if (input) { input.focus(); input.select(); }
+  }
+});
+
+// Pre-load index on idle for snappy first interaction
+if (typeof requestIdleCallback === 'function') {
+  requestIdleCallback(() => _searchEnsureIndex());
+} else {
+  setTimeout(() => _searchEnsureIndex(), 1500);
 }
 
 // Cross-nav origin tracking — when user jumps tab via cross-nav, remember
