@@ -1189,11 +1189,34 @@ tr:hover .suprank-arrow{opacity:1;}
 }
 
 .supmap-layout{
-  display:grid;grid-template-columns:340px 1fr;height:calc(100vh - 140px);
+  display:grid;grid-template-columns:300px 1fr;height:calc(100vh - 140px);
+  position:relative;transition:grid-template-columns .25s ease;
 }
+.supmap-layout.sidebar-collapsed{grid-template-columns:0px 1fr;}
 .supmap-sidebar{
   border-right:1px solid var(--border,#252d42);
   display:flex;flex-direction:column;background:rgba(18,18,30,.4);overflow:hidden;
+  transition:opacity .2s ease;
+}
+.supmap-layout.sidebar-collapsed .supmap-sidebar{opacity:0;pointer-events:none;}
+.supmap-sidebar-toggle{
+  position:absolute;top:14px;left:14px;z-index:521;
+  width:30px;height:30px;border-radius:5px;
+  background:rgba(18,18,30,.92);border:1px solid rgba(255,255,255,.1);
+  color:var(--text);font-size:14px;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;
+  font-family:inherit;transition:all .12s;
+  box-shadow:0 2px 8px rgba(0,0,0,.3);
+}
+.supmap-sidebar-toggle:hover{background:rgba(79,195,247,.18);border-color:var(--accent);}
+.supmap-layout.sidebar-collapsed .supmap-sidebar-toggle{
+  /* When collapsed, the toggle shifts left so it's flush with the map edge */
+  left:14px;
+}
+@media (max-width:760px){
+  .supmap-layout{grid-template-columns:1fr;}
+  .supmap-sidebar{position:absolute;top:0;left:0;width:100%;max-height:50%;z-index:518;background:rgba(18,18,30,.96);}
+  .supmap-layout.sidebar-collapsed .supmap-sidebar{display:none;}
 }
 .supmap-filters{padding:14px;border-bottom:1px solid rgba(255,255,255,.08)}
 .supmap-title{font-size:14px;font-weight:600;color:var(--text,#e8ebf5);}
@@ -1310,9 +1333,9 @@ tr:hover .suprank-arrow{opacity:1;}
 .supmap-legend-row{display:flex;align-items:center;gap:6px;margin-top:3px;}
 .supmap-legend-dot{width:10px;height:10px;border-radius:50%;display:inline-block;}
 
-/* Mode toggle bar (top-left of map canvas) */
+/* Mode toggle bar (top-left of map canvas, after sidebar-toggle) */
 .supmap-modebar{
-  position:absolute;top:14px;left:14px;z-index:520;
+  position:absolute;top:14px;left:54px;z-index:520;
   display:flex;gap:1px;background:rgba(18,18,30,.92);
   border:1px solid rgba(255,255,255,.1);border-radius:6px;
   overflow:hidden;box-shadow:0 4px 14px rgba(0,0,0,.3);
@@ -1338,7 +1361,7 @@ tr:hover .suprank-arrow{opacity:1;}
 
 /* Mode hint banner (below mode bar) */
 .supmap-mode-hint{
-  position:absolute;top:60px;left:14px;z-index:519;
+  position:absolute;top:60px;left:54px;z-index:519;
   max-width:340px;
   padding:8px 12px;background:rgba(18,18,30,.92);
   border:1px solid rgba(79,195,247,.25);border-radius:5px;
@@ -3935,6 +3958,8 @@ mark{background:rgba(79,195,247,.3);color:var(--text,#e8ebf5);padding:0 2px;bord
 
   <!-- MAP MODE -->
   <div id="sup-mode-map" class="supmap-layout" style="display:none">
+    <button class="supmap-sidebar-toggle" id="supmap-sidebar-toggle"
+            onclick="_supmapToggleSidebar()" title="Show/hide sidebar">☰</button>
     <!-- Left side: filters + selection detail -->
     <div class="supmap-sidebar">
       <div class="supmap-filters">
@@ -20165,18 +20190,20 @@ async function _supmapInit(){
     if (!canvas) return;
     if (loadingEl) loadingEl.remove();
 
-    // UK-centred view with soft elastic bounds (Channel Isles + Shetland + some pan slack).
-    // minZoom 5 prevents escape to Europe; viscosity 0.3 lets the user drift a bit before springing back.
-    const UK_BOUNDS = L.latLngBounds([[48.5, -11.5], [62.5, 4.0]]);
+    // UK-centred view with generous elastic bounds (lots of slack for free panning).
+    // viscosity 0.05 = barely springs back, user can pan fluidly. minZoom 4 lets users
+    // zoom way out to grab a wider context view if they want.
+    const UK_BOUNDS = L.latLngBounds([[44.0, -18.0], [65.0, 9.0]]);
     _supmapLeaflet = L.map('supmap-canvas', {
-      center: [54.0, -2.3],
+      center: [54.5, -3.0],
       zoom: 6,
-      minZoom: 5,
+      minZoom: 4,
       maxZoom: 16,
       preferCanvas: true,
       maxBounds: UK_BOUNDS,
-      maxBoundsViscosity: 0.3,
+      maxBoundsViscosity: 0.05,
       worldCopyJump: false,
+      zoomControl: true,
     });
     // CARTO Dark Matter — clean political basemap, no relief. Already dark-themed (no invert filter needed).
     L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
@@ -20202,6 +20229,9 @@ async function _supmapInit(){
     _supmapRenderBuyerList();
     // Apply persisted mode (Pins / Choropleth / Flow lines)
     _supmapSetMode(_supmapMode);
+    // Restore sidebar collapse state
+    _supmapRestoreSidebar();
+    setTimeout(() => _supmapLeaflet.invalidateSize(), 100);
   } catch (e) {
     console.error('Map init failed:', e);
     if (loadingEl) loadingEl.textContent = 'Failed to load map: ' + e.message;
@@ -20262,21 +20292,36 @@ function _supmapRenderBuyers(){
   if (_supmapBuyersLayer) _supmapLeaflet.removeLayer(_supmapBuyersLayer);
   const markers = [];
   const searchQ = (document.getElementById('supmap-search')?.value || '').trim().toLowerCase();
+  // Focus mode: when a buyer is selected, only show that one (others hidden).
+  // This keeps the map readable when drilled in.
+  const focusMode = !!_supmapSelectedBuyer;
   for (const b of Object.values(_supmapData.buyers)) {
     if (!b.lat || !b.lng) continue;
-    if (_supmapActiveType !== 'all' && b.type !== _supmapActiveType) continue;
-    if (searchQ && !(b.name || '').toLowerCase().includes(searchQ)) continue;
+    if (focusMode && b.id !== _supmapSelectedBuyer) continue;
+    if (!focusMode) {
+      if (_supmapActiveType !== 'all' && b.type !== _supmapActiveType) continue;
+      if (searchQ && !(b.name || '').toLowerCase().includes(searchQ)) continue;
+    }
     // Size based on total £
     const gbpM = b.total_gbp_2024 / 1e6;
     const radius = Math.max(4, Math.min(26, 4 + Math.log10(Math.max(gbpM, 0.01)) * 5));
     const color = SUPMAP_TYPE_COLOR[b.type] || SUPMAP_TYPE_COLOR.other;
+    const isSelected = b.id === _supmapSelectedBuyer;
     const m = L.circleMarker([b.lat, b.lng], {
-      radius, fillColor: color, color: '#fff', weight: 0.5,
-      opacity: 0.9, fillOpacity: 0.55,
+      radius: isSelected ? Math.max(radius, 12) : radius,
+      fillColor: color,
+      color: isSelected ? '#fff' : 'rgba(255,255,255,.5)',
+      weight: isSelected ? 2 : 0.5,
+      opacity: isSelected ? 1 : 0.9,
+      fillOpacity: isSelected ? 0.85 : 0.55,
     });
     m._supBuyerId = b.id;
+    // Tooltip on hover (lightweight) — popups removed (they cover the map data).
+    // Click switches to focus mode (selects + hides others) via _supmapSelectBuyer.
+    m.bindTooltip(`<b>${_cmpEsc(b.name)}</b><br><span style="color:#8892a8;font-size:10px">${SUPMAP_TYPE_LABEL[b.type] || b.type}</span>`, {
+      sticky: true, direction: 'top', offset: [0, -4],
+    });
     m.on('click', () => _supmapSelectBuyer(b.id));
-    m.bindPopup(() => _supmapBuyerPopup(b));
     markers.push(m);
   }
   _supmapBuyersLayer = L.layerGroup(markers).addTo(_supmapLeaflet);
@@ -20285,7 +20330,9 @@ function _supmapRenderBuyers(){
   const info = document.getElementById('sup-modebar-info');
   if (info) {
     const total = Object.keys(_supmapData.buyers).length;
-    info.textContent = `${markers.length.toLocaleString()} of ${total.toLocaleString()} buyers shown${searchQ ? ' · matching "' + searchQ + '"' : ''}`;
+    info.textContent = focusMode
+      ? `Focused on 1 buyer · ← Back to list to see ${total.toLocaleString()} others`
+      : `${markers.length.toLocaleString()} of ${total.toLocaleString()} buyers shown${searchQ ? ' · matching "' + searchQ + '"' : ''}`;
   }
 }
 
@@ -20431,6 +20478,8 @@ function _supmapSelectBuyer(buyerId){
     </div>`;
   }
 
+  // Re-render buyers in focus mode (hides all except selected)
+  _supmapRenderBuyers();
   // Pan map to buyer + render suppliers (mode-aware)
   if (b.lat && b.lng) {
     _supmapLeaflet.setView([b.lat, b.lng], 9, { animate: true });
@@ -20449,6 +20498,9 @@ function _supmapRenderSuppliersFor(buyerId){
   if (_supmapSuppliersLayer) _supmapLeaflet.removeLayer(_supmapSuppliersLayer);
   const flows = _supmapData.b2s[buyerId] || [];
   const buyer = _supmapData.buyers[buyerId];
+  const fmt = v => v >= 1e9 ? '£' + (v/1e9).toFixed(2) + 'B'
+                : v >= 1e6 ? '£' + (v/1e6).toFixed(1) + 'M'
+                : v >= 1e3 ? '£' + (v/1e3).toFixed(0) + 'k' : '£' + Math.round(v);
   const markers = [];
   for (const f of flows) {
     const s = _supmapData.suppliers[f.supplier_id];
@@ -20456,15 +20508,27 @@ function _supmapRenderSuppliersFor(buyerId){
     const gbpM = f.gbp / 1e6;
     const radius = Math.max(5, Math.min(22, 5 + Math.log10(Math.max(gbpM, 0.01)) * 4));
     const m = L.circleMarker([s.lat, s.lng], {
-      radius, fillColor: '#ffb84f', color: '#fff', weight: 0.5,
-      opacity: 0.95, fillOpacity: 0.7,
+      radius, fillColor: '#ffb84f', color: '#fff', weight: 0.8,
+      opacity: 0.95, fillOpacity: 0.75,
     });
-    m.bindPopup(() => _supmapSupplierPopup(s, f));
+    // Tooltip on hover (no popup — popups cover the map). Click opens the
+    // supplier detail page directly (cross-nav).
+    m.bindTooltip(`<b>${_cmpEsc(s.name)}</b><br>${fmt(f.gbp)} · ${f.n_contracts} contract${f.n_contracts>1?'s':''}<br><span style="color:#8ec8ff;font-size:10px">click to open supplier profile →</span>`, {
+      sticky: true, direction: 'top', offset: [0, -4],
+    });
+    if (s.ch_number) {
+      m.on('click', () => {
+        if (typeof _crossOpenSupplier === 'function') {
+          window._crossOrigin = { tab: 'suppliers', label: 'map', handlerKey: 'recipients-buyer:' + buyerId };
+          _crossOpenSupplier(s.ch_number);
+        }
+      });
+    }
     markers.push(m);
-    // Line from buyer to supplier
-    if (buyer && buyer.lat && buyer.lng) {
+    // Subtle connector line (mode 'pins' only — flow mode has its own prominent lines)
+    if (_supmapMode !== 'flow' && buyer && buyer.lat && buyer.lng) {
       const line = L.polyline([[buyer.lat, buyer.lng], [s.lat, s.lng]], {
-        color: '#ffb84f', weight: 0.5, opacity: 0.25,
+        color: '#ffb84f', weight: 0.5, opacity: 0.22,
       });
       markers.push(line);
     }
@@ -20477,6 +20541,27 @@ function _supmapFocusSupplier(supplierId){
   const s = _supmapData.suppliers[supplierId];
   if (!s || !s.lat || !s.lng) return;
   _supmapLeaflet.setView([s.lat, s.lng], 11, { animate: true });
+}
+
+// Sidebar collapse — gives the map full width when desired
+function _supmapToggleSidebar(){
+  const layout = document.querySelector('.supmap-layout');
+  if (!layout) return;
+  layout.classList.toggle('sidebar-collapsed');
+  const collapsed = layout.classList.contains('sidebar-collapsed');
+  try { localStorage.setItem('_supmapSidebarCollapsed', collapsed ? '1' : '0'); } catch(e){}
+  // Refresh Leaflet sizing after CSS transition
+  setTimeout(() => { if (_supmapLeaflet) _supmapLeaflet.invalidateSize(); }, 280);
+}
+
+// On init, restore saved sidebar state
+function _supmapRestoreSidebar(){
+  try {
+    if (localStorage.getItem('_supmapSidebarCollapsed') === '1') {
+      const layout = document.querySelector('.supmap-layout');
+      if (layout) layout.classList.add('sidebar-collapsed');
+    }
+  } catch(e){}
 }
 
 // ─────────────────────────────────────────────────────────────────────
@@ -20566,10 +20651,11 @@ async function _supmapRenderChoropleth(){
       const code = feature.properties && (feature.properties.LAD24CD || feature.properties.code || feature.properties.id);
       const v = gbpByLad.get(code) || 0;
       return {
-        color: '#0a0e1a',
-        weight: 0.5,
+        // Visible borders between councils so polygons don't blur together.
+        color: 'rgba(255,255,255,.35)',
+        weight: 1.0,
         fillColor: colorFor(v),
-        fillOpacity: v ? 0.65 : 0.25,
+        fillOpacity: v ? 0.78 : 0.35,
       };
     },
     onEachFeature: (feature, layer) => {
@@ -20581,10 +20667,10 @@ async function _supmapRenderChoropleth(){
                        : val >= 1e6 ? '£' + (val/1e6).toFixed(1) + 'M'
                        : val >= 1e3 ? '£' + (val/1e3).toFixed(0) + 'k' : '£' + Math.round(val);
       layer.bindTooltip(`<b>${name}</b><br>${v ? fmt(v) + ' procurement FY 2024' : 'No mapped procurement'}`, {
-        sticky: true, direction: 'auto',
+        sticky: true, direction: 'auto', offset: [10, 0],
       });
-      layer.on('mouseover', () => layer.setStyle({ weight: 1.5, color: '#fff' }));
-      layer.on('mouseout', () => layer.setStyle({ weight: 0.5, color: '#0a0e1a' }));
+      layer.on('mouseover', () => layer.setStyle({ weight: 2.5, color: '#ffffff' }));
+      layer.on('mouseout', () => layer.setStyle({ weight: 1.0, color: 'rgba(255,255,255,.35)' }));
     },
   });
   _supmapChoroplethLayer.addTo(_supmapLeaflet);
@@ -20652,18 +20738,27 @@ function _supmapRenderFlowFor(buyerId, subtle){
       smoothFactor: 1.0,
       lineCap: 'round',
     });
-    line.bindTooltip(`<b>${_cmpEsc(s.name)}</b><br>£${(f.gbp/1e6).toFixed(1)}M · ${f.n_contracts} contract${f.n_contracts>1?'s':''}`, { sticky: true });
+    line.bindTooltip(`<b>${_cmpEsc(s.name)}</b><br>£${(f.gbp/1e6).toFixed(1)}M · ${f.n_contracts} contract${f.n_contracts>1?'s':''}<br><span style="color:#8ec8ff;font-size:10px">click to open supplier profile →</span>`, { sticky: true, direction: 'top' });
+    const supClickHandler = () => {
+      if (typeof _crossOpenSupplier === 'function' && s.ch_number) {
+        window._crossOrigin = { tab: 'suppliers', label: 'map', handlerKey: 'recipients-buyer:' + buyerId };
+        _crossOpenSupplier(s.ch_number);
+      }
+    };
     line.on('click', (e) => {
       window.L.DomEvent.stopPropagation(e);
-      _supmapFocusSupplier(f.supplier_id);
+      supClickHandler();
     });
     lines.push(line);
-    // Endpoint marker
+    // Endpoint marker — clickable, sized by £ ratio
     const m = L.circleMarker([s.lat, s.lng], {
-      radius: subtle ? 3 : 5 + ratio * 5,
-      fillColor: '#ffb84f', color: '#fff', weight: 0.8, fillOpacity: 0.9,
+      radius: subtle ? 3 : 6 + ratio * 6,
+      fillColor: '#ffb84f', color: '#fff', weight: 1, fillOpacity: 0.95,
     });
-    m.bindTooltip(_cmpEsc(s.name), { permanent: false, direction: 'top' });
+    m.bindTooltip(`<b>${_cmpEsc(s.name)}</b><br>£${(f.gbp/1e6).toFixed(1)}M · click to open profile →`, {
+      direction: 'top', offset: [0, -4],
+    });
+    if (s.ch_number) m.on('click', supClickHandler);
     lines.push(m);
   }
   _supmapFlowLayer = L.layerGroup(lines).addTo(_supmapLeaflet);
@@ -20707,10 +20802,12 @@ function _supmapBackToList(){
     _supmapSuppliersLayer = null;
   }
   _supmapClearFlow();
+  // Re-render buyer pins (focus mode off → all visible again)
+  _supmapRenderBuyers();
   _supmapRenderBuyerList();
   _supmapRenderModeHint();
   // Fit bounds back to whole UK
-  _supmapLeaflet.setView([54.0, -2.3], 6, { animate: true });
+  _supmapLeaflet.setView([54.5, -3.0], 6, { animate: true });
 }
 
 function _supmapRenderLegend(){
